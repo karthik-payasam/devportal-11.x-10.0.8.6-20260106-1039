@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Template to format a vote summary for the "like" widget.
+ *
+ * @see votingapi-widgets-summary.twig.html
+ * @see template_preprocess_votingapi_widgets_summary()
+ *
+ * @ingroup themeable
+ */
+#}
+{% trans %}
+  {{ results.vote_field_count }} Like
+{% plural results.vote_field_count %}
+  {{ results.vote_field_count }} Likes
+{% endtrans %}

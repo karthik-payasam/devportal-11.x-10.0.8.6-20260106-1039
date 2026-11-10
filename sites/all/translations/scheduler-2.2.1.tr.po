@@ -1,0 +1,1004 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Publish on date"
+msgstr "Yayınlama tarihi"
+
+msgid "The date the %type will be published."
+msgstr "%type'ın yayımlanacağı tarih."
+
+msgid "Unpublish on date"
+msgstr "Yayından kaldırma tarihi"
+
+msgid "The date the %type will be unpublished."
+msgstr "%type'ın yayından kaldırılacağı tarih."
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "The Scheduler module provides the functionality for automatic publishing and unpublishing of entities, such and nodes and media items, at specified future dates."
+msgstr "Zamanlayıcı modülü, gelecekteki belirtilen tarihlerde, varlıkların, düğümlerin ve ortam öğelerinin otomatik olarak yayımlanması ve yayından kaldırılması işlevselliğini sağlar."
+
+msgid "You can read more in the <a href=\"@readme\">readme</a> file or our <a href=\"@project\">project page on Drupal.org</a>."
+msgstr "<a href=\"@readme\">readme</a> dosyasında ya da <a href=\"@project\">Drupal.org sitesindeki proje sayfasında</a> daha fazla bilgi bulabilirsiniz."
+
+msgid "When you have set up Drupal's standard crontab job cron.php then Scheduler will be executed during each cron run. However, if you would like finer granularity to scheduler, but don't want to run Drupal's cron more often then you can use the lightweight cron handler provided by Scheduler. This is an independent cron job which only runs the scheduler process and does not execute any cron tasks defined by Drupal core or any other modules."
+msgstr "Drupal'ın standart cron.php crontab işini ayarladığınızda Zamanlayıcı her bir dönemsel görev sırasında çalıştırılır. Ancak zamanlayıcı için daha fazla ayrıntı isterseniz, ancak Drupal'ın sıralanmış görevini daha sık çalıştırmak istemezseniz Zamanlayıcı tarafından sağlanan basit, dönemsel görev işleyicisini kullanabilirsiniz. Bu, yalnızca zamanlayıcı sürecini çalıştıran ve Drupal çekirdeği ya da diğer modüller tarafından tanımlanmış herhangi bir görevi yürütmeyen bağımsız bir dönemsel görevdir."
+
+msgid "Scheduler's cron is at /scheduler/cron/{access-key} and a sample crontab entry to run scheduler every minute might look like:"
+msgstr "Zamanlayıcının dönemsel görevi /scheduler/cron/{access-key} dizinindedir ve her dakika zamanlayıcıyı çalıştıracak örnek crontab girdisi şu şekilde görünebilir:"
+
+msgid "or"
+msgstr "ya da"
+
+msgid "Scheduling options"
+msgstr "Zamanlama seçenekleri"
+
+msgid "Enter a date. The time part is optional."
+msgstr "Bir tarih girin. Saat bölümü isteğe bağlıdır."
+
+msgid "The default time is @default_time."
+msgstr "Varsayılan saat: @default_time."
+
+msgid "Enter a date and time."
+msgstr "Bir tarih ve saat girin."
+
+msgid "Leave the date blank for no scheduled publishing."
+msgstr "Zamanlanmayan yayınlama için tarihi boş bırakın."
+
+msgid "Leave the date blank for no scheduled unpublishing."
+msgstr "Zamanlanmayan yayından kaldırma için tarihi boş bırakın."
+
+msgid "The widget for field %field is incorrectly set to %wrong. This should be changed to %correct by an admin user via the <a href=\"@link\">Field UI form display</a> :not_available"
+msgstr "%field alanına ilişkin pencere bileşeni yanlışlıkla %wrong olarak ayarlandı. Bu, <a href=\"@link\">Alan UI form görüntüsü</a> :not_available aracılığıyla bir yönetici kullanıcı tarafından %correct olarak değiştirilmelidir"
+
+msgid "not available"
+msgstr "yok"
+
+msgid "Scheduler"
+msgstr "Zamanlayıcı"
+
+msgid "Publishing"
+msgstr "Yayınlama"
+
+msgid "Enable scheduled publishing for %type @plural"
+msgstr "%type @plural için zamanlanmış yayımlamayı etkinleştir"
+
+msgid "Change %type creation time to match the scheduled publish time"
+msgstr "%type oluşturma zamanını zamanlanmış yayımlama zamanıyla eşleşecek şekilde değiştir"
+
+msgid "The entity type does not support the change of creation time."
+msgstr "Varlık tipi, oluşturma saati değişikliğini desteklemiyor."
+
+msgid "Require scheduled publishing"
+msgstr "Zamanlanan yayınlama gerektir"
+
+msgid "Create a new revision on publishing"
+msgstr "Yayında yeni bir düzeltme oluştur"
+
+msgid "Advanced options"
+msgstr "Gelişmiş seçenekler"
+
+msgid "Action to be taken for publication dates in the past"
+msgstr "Geçmişteki yayın tarihleri için gerçekleştirilecek işlem"
+
+msgid "Display an error message - do not allow dates in the past"
+msgstr "Bir hata iletisi görüntüle - geçmişteki tarihlere izin verme"
+
+msgid "Publish the %type @singular immediately after saving"
+msgstr "%type @singular öğesini, kaydettikten hemen sonra yayımla"
+
+msgid "Schedule the %type @singular for publication on the next cron run"
+msgstr "%type @singular öğesini bir sonraki cron çalıştırmasında yayın için zamanlayın"
+
+msgid "Change %type creation time to match the published time, for dates before the %type was created"
+msgstr "%type oluşturma zamanını, %type oluşturulmadan önceki tarihler için, yayımlama zamanıyla eşleşecek şekilde değiştirin"
+
+msgid "The created time will only be altered when the scheduled publishing time is earlier than the existing creation time"
+msgstr "Oluşturma zamanı yalnızca, zamanlanmış yayımlama zamanı, mevcut oluşturma zamanından önce olduğunda değiştirilir"
+
+msgid "Unpublishing"
+msgstr "Yayından kaldırılıyor"
+
+msgid "Enable scheduled unpublishing for %type @plural"
+msgstr "%type @plural için zamanlanmış yayından kaldırmayı etkinleştir"
+
+msgid "Require scheduled unpublishing"
+msgstr "Zamanlanan yayından kaldırma gerektir"
+
+msgid "Create a new revision on unpublishing"
+msgstr "Yayından kaldırmada yeni bir düzeltme oluştur"
+
+msgid "@type edit page"
+msgstr "@type sayfayı düzenle"
+
+msgid "Display scheduling date input fields in"
+msgstr "Bu alanda zamanlama tarihi giriş alanlarını görüntüle"
+
+msgid "Vertical tab"
+msgstr "Dikey sekme"
+
+msgid "Separate fieldset"
+msgstr "Ayrı alan kümesi"
+
+msgid "Use this option to specify how the scheduler fields are displayed when editing %type @plural"
+msgstr "Bu seçeneği %type @plural öğesi düzenlenirken zamanlayıcı alanlarının nasıl görüntüleneceğini belirtmek için kullanın"
+
+msgid "Expand fieldset or vertical tab"
+msgstr "Alan kümesini ya da dikey sekmeyi genişlet"
+
+msgid "Expand only when a scheduled date exists or when a date is required"
+msgstr "Yalnızca zamanlanan bir tarih olduğunda ya da bir tarih gerektiğinde genişlet"
+
+msgid "Always open the fieldset or vertical tab"
+msgstr "Her zaman alan kümesini ya da dikey sekmeyi aç"
+
+msgid "Show message"
+msgstr "İletiyi göster"
+
+msgid "Show a confirmation message when a scheduled %type @singular is saved"
+msgstr "Zamanlanmış bir %type @singular kaydedildiğinde bir onay iletisi göster"
+
+msgid "Scheduler settings"
+msgstr "Zamanlayıcı ayarları"
+
+msgid "Enabled for publishing"
+msgstr "Yayınlama için etkin"
+
+msgid "Enabled for unpublishing"
+msgstr "Yayından kaldırma için etkin"
+
+msgid "None"
+msgstr "Hiçbiri"
+
+msgid "Now"
+msgstr "Şimdi"
+
+msgid "How far into the future should the items be scheduled?"
+msgstr "Öğeler gelecekteki ne kadar bir süre için zamanlanmalı?"
+
+msgid "Scheduled dates will be set randomly within the selected time span."
+msgstr "Zamanlanmış tarihler, seçilen zaman aralığı içinde rastgele olarak ayarlanacaktır."
+
+msgid "Publishing date for Scheduler"
+msgstr "Zamanlayıcı için yayınlama tarihi"
+
+msgid "Enter a percentage for randomly selecting Scheduler-enabled entities to be given a publish-on date. Enter 0 for none, 100 for all. The date and time will be random within the range starting at entity creation date, up to a time in the future matching the same span as selected above."
+msgstr "Bir yayımlama tarihi verilecek \"Zamanlayıcı-etkin\" varlıkları rastgele seçmek için bir yüzde değeri girin. Hiçbiri için 0, tümü için 100 girin. Tarih ve saat, varlık oluşturma tarihinden başlayan ve yukarıda seçilen aynı zaman aralığıyla eşleşen gelecekteki bir saate kadar olan aralık içinde rastgele olacaktır."
+
+msgid "Unpublishing date for Scheduler"
+msgstr "Zamanlayıcı için yayından kaldırma tarihi"
+
+msgid "Enter a percentage for randomly selecting Scheduler-enabled entities to be given an unpublish-on date. Enter 0 for none, 100 for all. The date and time will be random within the range starting at the later of entity creation date and publish-on date, up to a time in the future matching the same span as selected above."
+msgstr "Yayından kaldırma tarihi verilecek \"Zamanlayıcı-etkin\" varlıkları rastgele seçmek için bir yüzde değeri girin. Hiçbiri için 0, tümü için 100 girin. Tarih ve saat, varlık oluşturma tarihi ve yayımlama tarihinden (hangisi daha geçse ondan) başlayan ve yukarıda seçilen aynı zaman aralığıyla eşleşen bir saate kadar olan aralık içinde rastgele olacaktır."
+
+msgid "There is a problem with @entity '@type' - The translatable settings for status field '%status' and Scheduler field '%scheduler_field' should match, either both on or both off"
+msgstr "@entity '@type' ile ilgili bir sorun var - '%status' durum alanına ve '%scheduler_field' Zamanlayıcı alanına ilişkin çevrilebilir ayarlar eşleşmeli, her ikisi de ya açık ya da kapalı olmalıdır"
+
+msgid "Publish on"
+msgstr "Yayınlama tarihi"
+
+msgid "Unpublish on"
+msgstr "Yayından kaldırma tarihi"
+
+msgid "Media Field Data"
+msgstr "Ortam Alanı Verileri"
+
+msgid "Relationship to access the Media fields that are not on Media Revision."
+msgstr "Ortam Düzeltmesi üzerinde olmayan Ortam alanlarına erişmek için kullanılan ilişki."
+
+msgid "Media Field"
+msgstr "Ortam Alanı"
+
+msgid "%title is scheduled to be published @publish_time and unpublished @unpublish_time."
+msgstr "%title yayın saati @publish_time; yayını kaldırma saati @unpublish_time olarak zamanlandı."
+
+msgid "%title is scheduled to be published @publish_time."
+msgstr "%title yayınlama saati @publish_time olarak zamanlandı."
+
+msgid "%title is scheduled to be unpublished @unpublish_time."
+msgstr "%title yayından kaldırma saati @unpublish_time olarak zamanlandı."
+
+msgid "Scheduler Dates"
+msgstr "Zamanlayıcı Tarihleri"
+
+msgid "Fieldset containing Scheduler Publish-on and Unpublish-on date input fields"
+msgstr "Zamanlayıcı Yayınlama ve Yayından kaldırma tarihi giriş alanlarını içeren alan kümesi"
+
+msgid "Scheduler: publish on"
+msgstr "Zamanlayıcı: yayınlama"
+
+msgid "The date when the Scheduler module will publish the content."
+msgstr "Zamanlayıcı modülünün içeriği yayımlayacağı tarih."
+
+msgid "Scheduler: unpublish on"
+msgstr "Zamanlayıcı: yayından kaldırma"
+
+msgid "The date when the Scheduler module will unpublish the content."
+msgstr "Zamanlayıcı modülünün içeriği yayından kaldıracağı tarih."
+
+msgid "Scheduler settings cannot be migrated due to RequirementsException: %message, %requirements, line %line in %file"
+msgstr "Zamanlayıcı ayarları RequirementsException: %message, %requirements, line %line in %file nedeniyle taşınamıyor"
+
+msgid "Function %function has not been executed. Implementations of hook_scheduler_api() should be replaced by Scheduler event listeners."
+msgstr "%function işlevi yürütülmedi. hook_scheduler_api() uygulamaları, Zamanlayıcı olay dinleyicileri ile değiştirilmelidir."
+
+msgid "Local task route %route contains duplicates in addition to Scheduler. %data"
+msgstr "%route yerel görev rotası, Zamanlayıcıya ek olarak yinelemeleri de içeriyor. %data"
+
+msgid "currently in daylight saving mode"
+msgstr "şu anda gün ışığından yararlanma kipinde"
+
+msgid "not in daylight saving mode"
+msgstr "gün ışığından yararlanma kipinde değil"
+
+msgid "In most cases the server time should match Coordinated Universal Time (UTC) / Greenwich Mean Time (GMT)."
+msgstr "Çoğu durumda sunucu saati Eşgüdümlü Evrensel Saat (UTC) / Greenwich Saati (GMT) ile eşleşmelidir."
+
+msgid "Default timezone: %date_default_timezone (%date_default_code), offset from UTC/GMT by %date_default_offset hours. This timezone can be <a href=\"@admin_regional_settings\">changed by admin users</a> with the appropriate access."
+msgstr "Varsayılan saat dilimi: %date_default_timezone (%date_default_code), UTC/GMT'den %date_default_offset saat farkla. Bu saat dilimi, uygun erişime sahip <a href=\"@admin_regional_settings\">yönetici kullanıcılar tarafından değiştirilebilir</a>."
+
+msgid "Local time: %localtime (%daylight_saving). You can change this via your <a href=\"@account_edit\">user account</a>."
+msgstr "Yerel saat: %localtime (%daylight_saving). <a href=\"@account_edit\">Kullanıcı hesabınızla</a> bunu değiştirebilirsiniz."
+
+msgid "Note: The user timezone has not been stored, so defaulting to the website timezone."
+msgstr "Not: Kullanıcı saat dilimi depolanmadı, bu nedenle varsayılan olarak web sitesinin saat dilimine ayarlanıyor."
+
+msgid "Your local time is %localtime (%daylight_saving). This is not configurable by you."
+msgstr "Yerel saatiniz %localtime (%daylight_saving). Bunu siz yapılandıramazsınız."
+
+msgid "Scheduler Time Check"
+msgstr "Zamanlayıcı Saat Denetimi"
+
+msgid "Server time: @utc"
+msgstr "Sunucu saati: @utc"
+
+msgid "The date and time format has been reset."
+msgstr "Tarih ve saat biçimi sıfırlandı."
+
+msgid "Default set on for new option \"Show a message after updating content\""
+msgstr "\"İçeriği güncelledikten sonra bir ileti göster\" yeni seçeneği için varsayılan ayar"
+
+msgid "The \"Scheduled\" tab is now a \"Scheduled content\" sub-task under the \"Content\" tab"
+msgstr "\"Zamanlandı\" sekmesi artık \"İçerik\" sekmesi altında \"Zamanlanmış içerik\" bir alt görevdir."
+
+msgid "Added Scheduler date fields to the following entity types: %updated."
+msgstr "Zamanlayıcı tarih alanları şu varlık tiplerine eklendi: %updated."
+
+msgid "No database fields had to be added."
+msgstr "Hiçbir veritabanı alanının eklenmesine gerek olmadı."
+
+msgid "Updated views: %updated."
+msgstr "Güncelleştirilmiş görünümler: %updated."
+
+msgid "No views require updating."
+msgstr "Hiçbir görünüm güncelleme gerektirmiyor."
+
+msgid "Nothing requires updating for Taxonomy Terms."
+msgstr "Taksonomi Terimleri için hiçbir öğe güncelleme gerektirmiyor."
+
+msgid "No reaction rules required updating with entity context."
+msgstr "Hiçbir tepki kuralının varlık bağlamıyla güncellenmesi gerekmiyor."
+
+msgid "%updated."
+msgstr "%updated."
+
+msgid "No update required."
+msgstr "Güncelleme gerekmiyor."
+
+msgid "1 reaction rule updated with entity context"
+msgid_plural "@count reaction rules updated with entity context"
+msgstr[0] "1 tepki kuralı varlık bağlamıyla güncellendi"
+msgstr[1] "@count reaction rules updated with entity context"
+
+msgid "Publish and unpublish content and entities automatically on specified dates and times."
+msgstr "İçeriği ve varlıkları belirtilen tarih ve saatlerde otomatik olarak yayımlayın ve yayından kaldırın."
+
+msgid "Configure settings for scheduled publishing and unpublishing."
+msgstr "Zamanlanan yayınlama ve yayından kaldırma ayarlarını yapılandırın."
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Lightweight cron"
+msgstr "Basit dönemsel görev"
+
+msgid "Administer scheduler"
+msgstr "Zamanlayıcıyı yönet"
+
+msgid "Configure scheduler - set default times, lightweight cron."
+msgstr "Zamanlayıcı - ayarlı varsayılan zamanları, basit cron'u yapılandırın."
+
+msgid "Allow date-only input with time taken from default time setting"
+msgstr "Varsayılan saat ayarından alınan saatle yalnızca tarih girişine izin ver"
+
+msgid "Full date and time format"
+msgstr "Tam tarih ve saat biçimi"
+
+msgid "The set of PHP date letters allowed in the Scheduler date format"
+msgstr "Zamanlayıcı tarih biçiminde izin verilen PHP tarihi harfleri kümesi"
+
+msgid "Date part of the full format"
+msgstr "Tam biçimin tarih bölümü"
+
+msgid "Default value for entity type setting expand_fieldset"
+msgstr "expand_fieldset varlık tipi ayarı için varsayılan değer"
+
+msgid "Default value for entity type setting fields_display_mode"
+msgstr "fields_display_mode varlık tipi ayarı için varsayılan değer"
+
+msgid "Default value for entity type setting publish_enable"
+msgstr "publish_enable varlık tipi ayarı için varsayılan değer"
+
+msgid "Default value for entity type setting publish_past_date"
+msgstr "publish_past_date varlık tipi ayarı için varsayılan değer"
+
+msgid "Default value for entity type setting publish_past_date_created"
+msgstr "publish_past_date_created varlık tipi ayarı için varsayılan değer"
+
+msgid "Default value for entity type setting publish_required"
+msgstr "publish_required varlık tipi ayarı için varsayılan değer"
+
+msgid "Default value for entity type setting publish_revision"
+msgstr "publish_revision varlık tipi ayarı için varsayılan değer"
+
+msgid "Default value for entity type setting publish_touch"
+msgstr "publish_touch varlık tipi ayarı için varsayılan değer"
+
+msgid "Default value for entity type setting show_message_after_update"
+msgstr "show_message_after_update varlık tipi ayarı için varsayılan değer"
+
+msgid "Default Scheduling Time. This is used with the option to allow date only"
+msgstr "Varsayılan Zamanlama Saati. Bu, yalnızca tarihe izin verme seçeneğiyle kullanılır."
+
+msgid "Default value for entity type setting unpublish_enable"
+msgstr "unpublish_enable varlık tipi ayarı için varsayılan değer"
+
+msgid "Default value for entity type setting unpublish_required"
+msgstr "unpublish_required varlık tipi ayarı için varsayılan değer"
+
+msgid "Default value for entity type setting unpublish_revision"
+msgstr "unpublish_revision varlık tipi ayarı için varsayılan değer"
+
+msgid "Hide the seconds on the input control when entering a time"
+msgstr "Bir saat girerken giriş denetimin saniyelerini gizler"
+
+msgid "Lightweight cron access key"
+msgstr "Basit dönemsel görev erişimi anahtarı"
+
+msgid "Log every Scheduler lightweight cron activation and completion message"
+msgstr "Her Zamanlayıcı basit dönemsel görev etkinleştirmesi ve tamamlama iletisini günlüğe kaydet"
+
+msgid "The set of PHP time letters allowed in the Scheduler time format"
+msgstr "Zamanlayıcı saat biçiminde izin verilen PHP saati harfleri kümesi"
+
+msgid "Time part of the full format"
+msgstr "Tam biçimin saat bölümü"
+
+msgid "Scheduler entity type settings"
+msgstr "Zamanlayıcı varlık tipi ayarları"
+
+msgid "Conditions under which to expand the date input fieldset or vertical tab (\"when_required\" or \"always\")"
+msgstr "Tarih giriş alanı kümesi ya da dikey sekmesinin genişletileceği koşullar (\"when_required\" or \"always\")"
+
+msgid "The way the scheduling fields are displayed in the edit form (\"vertical_tab\" or \"fieldset\")"
+msgstr "Zamanlama alanlarının düzenleme formunda görüntülenme şekli (\"vertical_tab\" ya da \"fieldset\")"
+
+msgid "Enable scheduled publishing"
+msgstr "Zamanlanan yayınlamayı etkinleştir"
+
+msgid "Action to be taken for publication dates in the past (\"error\", \"publish\" or \"schedule\")"
+msgstr "Geçmişteki yayın tarihleri için yapılacak işlem (\"hata\", \"yayımlama\" ya da \"zamanlama\")"
+
+msgid "Change entity creation date for past dates to avoid \"changed\" being earlier than \"created\""
+msgstr "\"Değiştirme\" tarihinin \"oluşturma\" tarihinden önce olmasını önlemek için geçmiş tarihlerdeki varlık oluşturma tarihini değiştir"
+
+msgid "Change entity creation time to match the scheduled publish time"
+msgstr "Varlık oluşturma zamanını zamanlanmış yayımlama zamanıyla eşleşecek şekilde değiştir"
+
+msgid "Show a message after updating an entity which is scheduled"
+msgstr "Zamanlanmış olan bir varlığı güncelledikten sonra bir ileti göster"
+
+msgid "Enable scheduled unpublishing"
+msgstr "Zamanlanan yayından kaldırmayı etkinleştir"
+
+msgid "State Change configuration"
+msgstr "Durum Değişikliği yapılandırması"
+
+msgid "Scheduled for publishing"
+msgstr "Yayınlama için zamanlandı"
+
+msgid "Scheduled for unpublishing"
+msgstr "Yayından kaldırma için zamanlandı"
+
+msgid "Not scheduled"
+msgstr "Zamanlanmadı"
+
+msgid "Publishing enabled"
+msgstr "Yayınlama etkin"
+
+msgid "Unpublishing enabled"
+msgstr "Yayından kaldırma etkin"
+
+msgid "Node form scheduler"
+msgstr "Düğüm formu zamanlayıcısı"
+
+msgid "Scheduler date options on the Node form."
+msgstr "Düğüm formunda zamanlayıcı tarihi seçenekleri."
+
+msgid "Form"
+msgstr "Form"
+
+msgid "Scheduler options"
+msgstr "Zamanlayıcı seçenekleri"
+
+msgid "Send e-mail when content is published by Scheduler"
+msgstr "Zamanlayıcı tarafından içerik yayınlandığında e-posta gönder"
+
+msgid "'[node:title]' has been published on [site:name]"
+msgstr "'[node:title]' [site:name] sitesinde yayınlandı"
+
+msgid ""
+"Dear [node:author:name],\r\n"
+"Your [node:type] '[node:title]' has been published on [site:name].\r\n"
+"The link is [node:url]\r\n"
+""
+msgstr ""
+"Sayın [node:author:name],\r\n"
+"[node:type] '[node:title]' başlıklı içeriğiniz [site:name] sitesinde yayınlandı.\r\n"
+"Bağlantı [node:url]\r\n"
+""
+
+msgid "Send e-mail when content is unpublished by Scheduler"
+msgstr "Zamanlayıcı tarafından içerik yayından kaldırıldığında e-posta gönder"
+
+msgid "'[node:title]' has been unpublished on [site:name]"
+msgstr "'[node:title]' [site:name] sitesinde yayından kaldırıldı"
+
+msgid ""
+"Dear [node:author:name],\r\n"
+"Your [node:type] '[node:title]' has been unpublished on [site:name].\r\n"
+"The link is [node:url]\r\n"
+""
+msgstr ""
+"Sayın [node:author:name],\r\n"
+"[node:type] '[node:title]' başlıklı içeriğiniz [site:name] sitesinde yayından kaldırıldı.\r\n"
+"Bağlantı [node:url]\r\n"
+""
+
+msgid "Node"
+msgstr "Düğüm"
+
+msgid "The node for publishing via Scheduler."
+msgstr "Zamanlayıcı aracılığıyla yayınlanacak düğüm."
+
+msgid "Publish-on Date"
+msgstr "Yayınlama Tarihi"
+
+msgid "The publishing date to be used by Scheduler."
+msgstr "Zamanlayıcı tarafından kullanılacak yayınlama tarihi."
+
+msgid "Set scheduled publishing date"
+msgstr "Zamanlanan yayınlama tarihini ayarla"
+
+msgid "The node for unpublishing via Scheduler."
+msgstr "Zamanlayıcı tarafından yayından kaldırılacak düğüm."
+
+msgid "Unpublish-on Date"
+msgstr "Yayından Kaldırma Tarihi"
+
+msgid "The unpublishing date to be used by Scheduler."
+msgstr "Zamanlayıcı tarafından kullanılacak yayından kaldırma tarihi."
+
+msgid "Set scheduled unpublishing date"
+msgstr "Zamanlanan yayından kaldırma tarihini ayarla"
+
+msgid "The scheduled node"
+msgstr "Zamanlanan düğüm"
+
+msgid "The node scheduled for publishing via Scheduler."
+msgstr "Zamanlayıcı aracılığıyla yayınlama için zamanlanan düğüm."
+
+msgid "Remove scheduled publishing date"
+msgstr "Zamanlanan yayınlama tarihini kaldır"
+
+msgid "The node scheduled for unpublishing via Scheduler."
+msgstr "Zamanlayıcı aracılığıyla yayından kaldırma için zamanlanan düğüm."
+
+msgid "Remove scheduled unpublishing date"
+msgstr "Zamanlanan yayından kaldırma tarihini kaldır"
+
+msgid "Scheduler Rules Integration"
+msgstr "Zamanlayıcı Kuralları Bütünleştirmesi"
+
+msgid "Scheduler sub-module providing conditions, actions and events for use with the Rules module."
+msgstr "Kurallar modülüyle kullanılacak koşulları, eylemleri ve olayları sağlayan zamanlayıcı alt modülü."
+
+msgid "The object representing the scheduled @entity_type"
+msgstr "Zamanlanmış @entity_type öğesini temsil eden nesne"
+
+msgid "After saving a new @entity_type that is scheduled for publishing"
+msgstr "Yayımlanmak üzere zamanlanmış yeni bir @entity_type öğesini kaydettikten sonra"
+
+msgid "After saving a new @entity_type that is scheduled for unpublishing"
+msgstr "Yayından kaldırmak üzere zamanlanmış yeni bir @entity_type öğesini kaydettikten sonra"
+
+msgid "After updating a @entity_type that is scheduled for publishing"
+msgstr "Yayımlanmak üzere zamanlanmış bir @entity_type öğesini güncelledikten sonra"
+
+msgid "After updating a @entity_type that is scheduled for unpublishing"
+msgstr "Yayından kaldırmak üzere zamanlanmış bir @entity_type öğesini güncelledikten sonra"
+
+msgid "After Scheduler has published a @entity_type"
+msgstr "Zamanlayıcı bir @entity_type öğesini yayımlandıktan sonra"
+
+msgid "After Scheduler has unpublished a @entity_type"
+msgstr "Zamanlayıcı bir @entity_type öğesini yayından kaldırdıktan sonra"
+
+msgid "@entity_type_label type is enabled for scheduled publishing"
+msgstr "@entity_type_label tipi zamanlanmış yayımlama için etkinleştirildi"
+
+msgid "@entity_type_label"
+msgstr "@entity_type_label"
+
+msgid "The @entity_type_singular to check for the type being enabled for scheduled publishing."
+msgstr "Zamanlanmış yayımlama için etkinleştirilmekte olan tip olup olmadığı denetlenecek @entity_type_singular öğesi."
+
+msgid "@entity_type_label type is enabled for scheduled unpublishing"
+msgstr "@entity_type_label tipi zamanlanmış yayından kaldırma için etkinleştirildi"
+
+msgid "The @entity_type_singular to check for the type being enabled for scheduled unpublishing."
+msgstr "Zamanlanmış yayından kaldırma için etkinleştirilmekte olan tip olup olmadığı denetlenecek @entity_type_singular öğesi."
+
+msgid "@entity_type_label is scheduled for publishing"
+msgstr "@entity_type_label yayımlanmak üzere zamanlandı"
+
+msgid "The @entity_type_singular to check for having a scheduled publishing date."
+msgstr "Zamanlanmış bir yayımlama tarihi olup olmadığı denetlenecek @entity_type_singular öğesi."
+
+msgid "@entity_type_label is scheduled for unpublishing"
+msgstr "@entity_type_label yayından kaldırma için zamanlandı"
+
+msgid "The @entity_type_singular to check for having a scheduled unpublishing date."
+msgstr "Zamanlanmış bir yayından kaldırma tarihi olup olmadığı denetlenecek @entity_type_singular öğesi."
+
+msgid "Node type is enabled for scheduled publishing"
+msgstr "Düğüm tipi, zamanlanan yayınlama için etkinleştirildi"
+
+msgid "Content (Scheduler)"
+msgstr "İçerik (Zamanlayıcı)"
+
+msgid "The node to check for the type being enabled for scheduled publishing."
+msgstr "Zamanlanmış yayımlama için etkinleştirilmekte olan tip olup olmadığı denetlenecek düğüm."
+
+msgid "Node is scheduled for publishing"
+msgstr "Düğüm yayınlama için zamanlandı"
+
+msgid "The node to check for having a scheduled publishing date."
+msgstr "Zamanlanmış bir yayımlama tarihi olup olmadığı denetlenecek düğüm."
+
+msgid "Node is scheduled for unpublishing"
+msgstr "Düğüm, yayından kaldırma için zamanlandı"
+
+msgid "The node to check for having a scheduled unpublishing date."
+msgstr "Zamanlanmış bir yayından kaldırma tarihi olup olmadığı denetlenecek düğüm."
+
+msgid "Node type is enabled for scheduled unpublishing"
+msgstr "Düğüm tipi, zamanlanan yayından kaldırma için etkinleştirildi"
+
+msgid "The node to check for the type being enabled for scheduled unpublishing."
+msgstr "Zamanlanmış yayından kaldırma için etkinleştirilmekte olan tip olup olmadığı denetlenecek düğüm."
+
+msgid "scheduled publishing"
+msgstr "zamanlanmış yayımlama"
+
+msgid "scheduled unpublishing"
+msgstr "zamanlanmış yayından kaldırma"
+
+msgid "@bundle_label is enabled for @activity"
+msgstr "@bundle_label, @activity için etkinleştirildi"
+
+msgid "@type settings"
+msgstr "@type ayarları"
+
+msgid "Action %action is not valid because @activity is not enabled for %type @group. Add the condition %condition to your Reaction Rule, or enable @activity via the <a href=\"@url\">%type</a> settings."
+msgstr "@activity, %type @group için etkinleştirilmediğinden %action eylemi geçerli değil. %condition koşulunu Tepki Kuralınıza ekleyin ya da <a href=\"@url\">%tip</a> ayarlarıyla @activity öğesini etkinleştirin."
+
+msgid "Action %action is not valid because @activity is not enabled for %type @group. Add the condition %condition to your Reaction Rule, or enable @activity via the %type settings."
+msgstr "@activity, %type @group için etkinleştirilmediğinden %action eylemi geçerli değil. %condition koşulunu Tepki Kuralınıza ekleyin ya da %tip ayarlarıyla @activity öğesini etkinleştirin."
+
+msgid "Set date for publishing a @entity_type_singular"
+msgstr "Bir @entity_type_singular yayımlamak için tarih ayarla"
+
+msgid "@entity_type_label for scheduling"
+msgstr "Zamanlama için @entity_type_label"
+
+msgid "The @entity_type_singular which is to have a scheduled publishing date set"
+msgstr "Ayarlanmış bir zamanlanmış yayımlama tarihi olması gereken @entity_type_singular"
+
+msgid "Date for publishing"
+msgstr "Yayımlama tarihi"
+
+msgid "The date when Scheduler will publish the @entity_type_singular"
+msgstr "Zamanlayıcının @entity_type_singular öğesini yayımlayacağı tarih"
+
+msgid "Set date for unpublishing a @entity_type_singular"
+msgstr "Bir @entity_type_singular öğesini yayından kaldırmak için tarih ayarla"
+
+msgid "The @entity_type_singular which is to have a scheduled unpublishing date set"
+msgstr "Ayarlanmış bir zamanlanmış yayından kaldırma tarihi olması gereken @entity_type_singular"
+
+msgid "Date for unpublishing"
+msgstr "Yayından kaldırma tarihi"
+
+msgid "The date when Scheduler will unpublish the @entity_type_singular"
+msgstr "Zamanlayıcının @entity_type_singular öğesini yayından kaldıracağı tarih"
+
+msgid "Remove date for publishing a @entity_type_singular"
+msgstr "Bir @entity_type_singular yayımlama tarihini kaldır"
+
+msgid "The @entity_type_singular from which to remove the scheduled publishing date"
+msgstr "Zamanlanmış yayımlama tarihinin kaldırılacağı @entity_type_singular"
+
+msgid "Remove date for unpublishing a @entity_type_singular"
+msgstr "Bir @entity_type_singular öğesinin yayından kaldırma tarihini kaldır"
+
+msgid "The @entity_type_singular from which to remove the scheduled unpublishing date"
+msgstr "Zamanlanmış yayından kaldırma tarihinin kaldırılacağı @entity_type_singular"
+
+msgid "Publish a @entity_type_singular immediately"
+msgstr "Hemen bir @entity_type_singular yayımla"
+
+msgid "@entity_type_label for publishing"
+msgstr "Yayımlama için @entity_type_label"
+
+msgid "The @entity_type_singular to be published now"
+msgstr "Şimdi yayımlanacak @entity_type_singular"
+
+msgid "Unpublish a @entity_type_singular immediately"
+msgstr "Hemen bir @entity_type_singular öğesini yayından kaldır"
+
+msgid "@entity_type_label for unpublishing"
+msgstr "Yayından kaldırma için @entity_type_label"
+
+msgid "The @entity_type_singular to be unpublished now"
+msgstr "Şimdi yayından kaldırılacak @entity_type_singular"
+
+msgid "Publish a content item immediately"
+msgstr "Hemen bir içerik öğesi yayımla"
+
+msgid "The node to be published now"
+msgstr "Şimdi yayınlanacak düğüm"
+
+msgid "Remove date for publishing a content item"
+msgstr "Bir içerik öğesinin yayımlanması için tarihi kaldır"
+
+msgid "The node from which to remove the scheduled publishing date"
+msgstr "Zamanlanan yayınlama tarihinin kaldırılacağı düğüm"
+
+msgid "Remove date for unpublishing a content item"
+msgstr "Bir içerik öğesini yayından kaldırma tarihini kaldır"
+
+msgid "The node from which to remove the scheduled unpublishing date"
+msgstr "Zamanlanan yayından kaldırma tarihinin kaldırılacağı düğüm"
+
+msgid "Set date for publishing a content item"
+msgstr "Bir içerik öğesinin yayımlanması için tarih ayarla"
+
+msgid "Node for scheduling"
+msgstr "Zamanlama için düğüm"
+
+msgid "The node which is to have a scheduled publishing date set"
+msgstr "Zamanlanan yayınlama tarihinin ayarlanacağı düğüm"
+
+msgid "The date for publishing"
+msgstr "Yayınlama tarihi"
+
+msgid "The date when Scheduler will publish the node"
+msgstr "Zamanlayıcının düğümü yayınlayacağı tarih"
+
+msgid "Set date for unpublishing a content item"
+msgstr "Bir içerik öğesinin yayından kaldırılması için tarih ayarla"
+
+msgid "The node which is to have a scheduled unpublishing date set"
+msgstr "Zamanlanan yayından kaldırma tarihinin ayarlanacağı düğüm"
+
+msgid "The date for unpublishing"
+msgstr "Yayından kaldırma tarihi"
+
+msgid "The date when Scheduler will unpublish the node"
+msgstr "Zamanlayıcının düğümü yayından kaldıracağı tarih"
+
+msgid "Unpublish a content item immediately"
+msgstr "Bir içerik öğesini hemen yayından kaldır"
+
+msgid "The node to be unpublished now"
+msgstr "Şimdi yayından kaldırılacak düğüm"
+
+msgid "The previous creation date was @old_creation_date, now updated to match the publishing date."
+msgstr "Önceki oluşturma tarihi @old_creation_date idi, şimdi yayınlama tarihiyle eşleşecek şekilde güncellendi."
+
+msgid "Published by Scheduler. The scheduled publishing date was @publish_on."
+msgstr "Zamanlayıcı tarafından yayınlandı. Zamanlanan yayınlama tarihi @publish_on idi."
+
+msgid "View @type"
+msgstr "@type öğesini görüntüle"
+
+msgid "@label settings"
+msgstr "@label ayarları"
+
+msgid "Unpublished by Scheduler. The scheduled unpublishing date was @unpublish_on."
+msgstr "Zamanlayıcı tarafından yayından kaldırıldı. Zamanlanan yayından kaldırma tarihi @unpublish_on idi."
+
+msgid "Config Update for actions"
+msgstr "İşlemler İçin Yapılandırma Güncellemesi"
+
+msgid "Enable Config Update Reports"
+msgstr "Yapılandırma Güncelleme Raporlarını Etkinleştir"
+
+msgid "Action '%action_id' is missing. Use <a href=':url'>Config Update</a> to import the missing action."
+msgstr "'%action_id' işlemi eksik. Eksik işlemi içe aktarmak için <a href=':url'>Config Update</a> (Yapılandırma Güncellemesi) seçeneğini kullan."
+
+msgid "settings"
+msgstr "ayarlar"
+
+msgid "Field '%field' specified by typeFieldName in the Scheduler plugin %id is not found in entity type %entity"
+msgstr "Zamanlayıcı eklentisi %id içindeki typeFieldName ile belirtilen '%field' alanı, %e varlık tipinde bulunamadı"
+
+msgid "Unknown entity types (@unknown)"
+msgstr "Bilinmeyen varlık tipleri (@unknown)"
+
+msgid "Scheduler fields removed from @entityType"
+msgstr "Zamanlayıcı alanları @entityType içinden kaldırıldı"
+
+msgid "Settings removed from @bundle"
+msgstr "Ayarlar @bundle öğesinden kaldırıldı"
+
+msgid "Scheduler issue 3320341"
+msgstr "Zamanlayıcı sorunu 3320341"
+
+msgid ""
+"The Scheduler fields are now hidden by default and automatically changed to be displayed when an entity\n"
+"      bundle is enabled for scheduling. If you have previously manually hidden scheduler fields for enabled\n"
+"      entity types then these fields will now be displayed. You will need to manually hide them again or\n"
+"      implement hook_scheduler_hide_publish_date() or hook_scheduler_TYPE_hide_publish_date() and the\n"
+"      equivalent for unpublish_date. See @issue for details."
+msgstr ""
+"Zamanlayıcı alanları artık varsayılan olarak gizlenir ve bir varlık\n"
+" kod paketi zamanlama için etkinleştirildiğinde görüntülenecek şekilde otomatik olarak değiştirilir. Etkinleştirilen\n"
+" varlık tipleri için zamanlayıcı alanlarını önceden manuel olarak gizlediyseniz, bu alanlar artık görüntülenir. Bunları yeniden manuel olarak gizlemeniz ya da \n"
+" hook_scheduler_hide_publish_date () ya da hook_scheduler_TYPE_hide_publish_date () ve \n"
+"unpublish_date eşdeğerini uygulamanız gerekir. Ayrıntılar için bkz. @issue."
+
+msgid "Publish On field displayed for: @list"
+msgstr "@list için Publish On (Yayımlama Açık) alanı görüntüleniyor"
+
+msgid "Unpublish On field displayed for: @list"
+msgstr "@list için Unpublish On (Yayından Kaldırma Açık) alanı görüntüleniyor"
+
+msgid "Publish On field hidden for: @list"
+msgstr "@list için Publish On (Yayımlama Açık) alanı gizli"
+
+msgid "Unpublish On field hidden for: @list"
+msgstr "@list için Unpublish On (Yayından Kaldırma Açık) alanı gizli"
+
+msgid "%view view updated."
+msgstr "%view görünümü güncellendi."
+
+msgid "%view view loaded from source."
+msgstr "%view görünümü kaynaktan yüklendi."
+
+msgid "%field field removed from %entityType entity type"
+msgstr "%field alanı %entityType varlık tipinden kaldırıldı"
+
+msgid "Scheduler settings removed from %entity %bundle"
+msgstr "Zamanlayıcı ayarları %entity %bundle öğesinden kaldırıldı"
+
+msgid "@type: scheduled \"publish\" processing of %title completed by @sucessful_hooks."
+msgstr "@type: %title öğesinin zamanlanan \"yayımlama\" işlemi, @sucessful_hooks tarafından tamamlandı."
+
+msgid "@type: scheduled publishing of %title."
+msgstr "@type: %title için zamanlanan yayınlama."
+
+msgid "@type: scheduled \"unpublish\" processing of %title completed by @sucessful_hooks."
+msgstr "@type: %title öğesinin zamanlanan \"yayından kaldırma\" işlemi @sucessful_hooks tarafından tamamlandı."
+
+msgid "@type: scheduled unpublishing of %title."
+msgstr "@type: %title için zamanlanan yayından kaldırma."
+
+msgid "Lightweight cron run activated by @trigger."
+msgstr "Basit dönemsel görev çalıştırması, @trigger tarafından etkinleştirildi."
+
+msgid "Lightweight cron run completed."
+msgstr "Basit dönemsel görev çalıştırması tamamlandı."
+
+msgid "%entity entity type updated with %publish_on and %unpublish_on fields."
+msgstr "%entity varlık tipi %publish_on ve %unpublish_on alanlarıyla güncellendi."
+
+msgid "No source file for %full_name in either %install_folder or %optional_folder folders"
+msgstr "%install_folder ya da %optional_folder klasörlerinde %full_name için kaynak dosya yok"
+
+msgid "Publishing failed for %title. @failed_hooks returned a failure code."
+msgstr "%title için yayımlama başarısız oldu. @failed_hooks bir arıza kodu gönderdi."
+
+msgid "Unpublishing failed for %title. @failed_hooks returned a failure code."
+msgstr "%title için yayından kaldırma başarısız oldu. @failed_hooks bir arıza kodu gönderdi."
+
+msgid "Action '%action_id' is missing. Use Config Update to import the missing action."
+msgstr "'%action_id' işlemi eksik. Eksik işlemi içe aktarmak için Yapılandırma Güncellemesini kullan."
+
+msgid "Entity id @id is not a @type entity. Processing skipped."
+msgstr "@id varlık tanıtıcısı bir @type varlığı değil. İşleme atlandı."
+
+msgid "Schedule publishing and unpublishing of %label"
+msgstr "%label öğesinin yayımlanmasını ve yayından kaldırılmasını zamanla"
+
+msgid "Allows users to set a start and end time for %singular_label publication."
+msgstr "Kullanıcıların %singular_label yayını için başlangıç ve bitiş zamanı ayarlamasına olanak tanır."
+
+msgid "View scheduled %label"
+msgstr "Zamanlanan %label öğesini görüntüle"
+
+msgid "Allows users to see a list of all %plural_label that are scheduled."
+msgstr "Kullanıcıların zamanlanan bütün %plural_label listesini görmesini sağlar."
+
+msgid "Scheduler lightweight cron completed."
+msgstr "Zamanlayıcı basit dönemsel görevi tamamlandı."
+
+msgid "nothing to update"
+msgstr "güncellenecek öğe yok"
+
+msgid "Scheduler entity update - @updated"
+msgstr "Zamanlayıcı varlık güncellemesi - @updated"
+
+msgid "nothing to do"
+msgstr "yapılacak bir şey yok"
+
+msgid "Scheduler entity revert - @reverted"
+msgstr "Zamanlayıcı varlık geri döndürme - @reverted"
+
+msgid "Most of the Scheduler options are set independently for each entity type and bundle. These can be accessed from the <a href=\"@link\">admin structure</a> page or directly by using the drop-button"
+msgstr "Zamanlayıcı seçeneklerinin çoğu her varlık tipi ve kod paketi için bağımsız olarak ayarlanır. Bunlara <a href=\"@link\">yönetim yapısı</a> sayfasından ya da doğrudan doğruya açılan düğme kullanılarak erişilebilir"
+
+msgid "Entity Types"
+msgstr "Varlık Tipleri"
+
+msgid "no entity types defined"
+msgstr "hiçbir varlık tipi tanımlanmadı"
+
+msgid "publishing"
+msgstr "yayımlama"
+
+msgid "unpublishing"
+msgstr "yayından kaldırma"
+
+msgid "The settings below are common to all entity types."
+msgstr "Aşağıdaki ayarlar bütün varlık tiplerinde ortaktır."
+
+msgid "Date only"
+msgstr "Yalnızca tarih"
+
+msgid "Allow users to enter only a date and provide a default time."
+msgstr "Kullanıcıların yalnızca bir tarih girmesine ve varsayılan saati sağlamasına izin verin."
+
+msgid "When only a date is entered the time will default to a specified value, but the user can change this if required."
+msgstr "Yalnızca bir tarih girildiğinde saat belirtilen değere varsayılan olarak ayarlanır, ancak kullanıcı gerekirse bunu değiştiremez."
+
+msgid "Default time"
+msgstr "Varsayılan saat"
+
+msgid "Provide a default time in @format format that will be used if the user does not enter a value."
+msgstr "Kullanıcı bir değer girmezse, @format biçiminde varsayılan bir saat sağlayın."
+
+msgid "Time settings"
+msgstr "Saat ayarları"
+
+msgid "Hide the seconds."
+msgstr "Saniyeleri sakla."
+
+msgid "When entering a time, only show hours and minutes in the input field."
+msgstr "Bir saat girilirken, giriş alanında yalnızca saat ve dakika gösterilmesini sağlar."
+
+msgid "The default time should be in the format @format"
+msgstr "Varsayılan saat, @format biçiminde olmalıdır."
+
+msgid "No %bundle_id entity types returned by %module module for use in %plugin_label"
+msgstr "%module modülü tarafından %plugin_label içinde kullanılmak üzere hiçbir %bundle_id varlık tipi belirtilmedi"
+
+msgid "Lightweight cron settings"
+msgstr "Basit dönemsel görev ayarları"
+
+msgid "Log every activation and completion message."
+msgstr "Her etkinleştirme ve tamamlama iletisini günlüğe kaydet"
+
+msgid "When this option is checked, Scheduler will write an entry to the log every time the lightweight cron process is started and completed. This is useful during set up and testing, but can result in a large number of log entries. Any actions performed during the lightweight cron run will always be logged regardless of this setting."
+msgstr "Bu seçenek işaretlendiğinde, Zamanlayıcı, basit dönemsel süreç her başlatıldığında ve tamamlandığında günlüğe bir girdi yazar. Bu seçenek, kurulum ve test sürecinde yararlıdır, ancak çok sayıda günlük girdisiyle sonuçlanabilir. Basit dönemsel görev çalıştırma sırasında gerçekleştirilen işlemler bu ayardan bağımsız olarak her zaman günlüğe kaydedilir."
+
+msgid "Similar to Drupal's cron key this acts as a security token to prevent unauthorised calls to scheduler/cron. The key should be passed as scheduler/cron/{access key}"
+msgstr "Drupal'ın dönemsel görev anahtarına benzer şekilde, zamanlayıcı/dönemsel görev için yetkisiz çağırmaları önlemek üzere bir güvenlik belirteci işlevi görür. Anahtar scheduler/cron/{access key} olarak iletilmelidir"
+
+msgid "Generate new random key"
+msgstr "Yeni rastgele anahtar oluştur"
+
+msgid "You can test Scheduler's lightweight cron process interactively"
+msgstr "Zamanlayıcının basit dönemsel görev sürecini interaktif olarak test edebilirsiniz"
+
+msgid "Run Scheduler's lightweight cron now"
+msgstr "Zamanlayıcının basit dönemsel görevini şimdi çalıştır"
+
+msgid "Lightweight cron run completed. See the <a href=\"@url\">log</a> for details."
+msgstr "Basit dönemsel görev çalıştırma tamamlandı. Ayrıntılar için <a href=\"@url\">günlüğe</a> bakın."
+
+msgid "Scheduled content"
+msgstr "Zamanlanmış içerik"
+
+msgid "Overview"
+msgstr "Genel Bakış"
+
+msgid "Scheduled media"
+msgstr "Zamanlanmış ortam"
+
+msgid "Scheduled products"
+msgstr "Zamanlanmış ürünler"
+
+msgid "Scheduled terms"
+msgstr "Zamanlanmış terimler"
+
+msgid "Leave blank for no date."
+msgstr "Tarih olmadığında boş bırakın."
+
+msgid "Datetime Timestamp for Scheduler"
+msgstr "Zamanlayıcı için Tarih Saat zaman damgası"
+
+msgid "An optional datetime field. Does not fill in the current datetime if left blank. Defined by Scheduler module."
+msgstr "İsteğe bağlı tarih saat alanı. Boş bırakılırsa geçerli tarih saat değerini doldurmaz. Zamanlayıcı modülü tarafından tanımlanır."
+
+msgid "Commerce Product Scheduler Plugin"
+msgstr "Ticaret Ürünü Zamanlayıcı Eklentisi"
+
+msgid "Provides support for scheduling Commerce Product entities"
+msgstr "Ticaret Ürünü varlıklarını zamanlamak için destek sağlar"
+
+msgid "Media Scheduler Plugin"
+msgstr "Ortam Zamanlayıcı Eklentisi"
+
+msgid "Provides support for scheduling media entities"
+msgstr "Ortam varlıklarının zamanlanması için destek sağlar"
+
+msgid "Node Scheduler Plugin"
+msgstr "Düğüm Zamanlayıcı Eklentisi"
+
+msgid "Provides support for scheduling node entities"
+msgstr "Düğüm varlıklarının zamanlanması için destek sağlar"
+
+msgid "Taxonomy Term Scheduler Plugin"
+msgstr "Taksonomi Terimi Zamanlayıcı Eklentisi"
+
+msgid "Provides support for scheduling Taxonomy Term entities"
+msgstr "Taksonomi Terimi varlıklarının zamanlanması için destek sağlar"
+
+msgctxt "Validation"
+msgid "Scheduler publish on"
+msgstr "Zamanlayıcı yayınlama tarihi"
+
+msgctxt "Validation"
+msgid "Scheduler unpublish on"
+msgstr "Zamanlayıcı yayından kaldırma tarihi"
+
+msgid "Scheduled content access. REDUNDANT, DO NOT USE THIS."
+msgstr "Zamanlanmış içerik erişimi. GEREKSİZ, BUNU KULLANMAYIN."
+
+msgid "NOT USED"
+msgstr "KULLANILMIYOR"
+

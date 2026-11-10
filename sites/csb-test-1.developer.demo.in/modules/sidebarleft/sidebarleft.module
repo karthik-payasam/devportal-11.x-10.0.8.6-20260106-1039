@@ -1,0 +1,78 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Primary module hooks for Sidebarleft module.
+ */
+use Drupal\node\Entity\Node;
+use Drupal\file\Entity\File;
+use Drupal\Component\Utility\Html;
+
+function template_preprocess_views_style_sidebarleft_sidebarleft(array &$variables): void {
+  $view = $variables['view'];
+  $options = $view->style_plugin->options;
+
+  $variables['default_row_class'] = $options['default_row_class'];
+  $variables['allProductData'] = []; // Store all products and their APIs
+
+  foreach ($variables['rows'] as $id => $row) {
+    $node = $view->result[$id]->_entity ?? NULL;
+
+    if ($node instanceof Node && $node->bundle() === 'product') {
+      $productTitle = $node->getTitle();
+
+      // Gather product APIs
+      $productApis = [];
+      foreach ($node->product_apis->getValue() as $arrayValue) {
+        $productApis[] = unserialize($arrayValue['value'], ['allowed_classes' => FALSE]);
+      }
+
+      $apiList = [];
+      if (!empty($productApis)) {
+        $apiNames = array_column($productApis, 'name');
+
+        $results = \Drupal::entityQuery('node')
+          ->condition('type', 'api')
+          ->condition('status', 1)
+          ->condition('apic_ref.value', $apiNames, 'IN')
+          ->accessCheck()
+          ->execute();
+
+        foreach (array_chunk($results, 50) as $chunk) {
+          $apis = Node::loadMultiple($chunk);
+          $lang_code = \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+          foreach ($apis as $api) {
+            if ($api->hasTranslation($lang_code)) {
+              $api = $api->getTranslation($lang_code);
+            }
+
+            $icon = NULL;
+            $fid = $api->apic_image->getValue();
+            if (!empty($fid[0]['target_id'])) {
+              if ($file = File::load($fid[0]['target_id'])) {
+                $icon = $file->createFileUrl();
+              }
+            }
+            // Always build URL with /adp-portal/ prefix
+            $custom_url = '/devcustportal/csb-portal/product/' . $node->id() . '/api/' . $api->id();
+            $apiList[] = [
+              'title' => $api->getTitle(),
+              'url'   =>  $custom_url,
+              'icon'  => $icon,
+            ];
+          }
+        }
+      }
+
+      // Store for Twig
+      $variables['allProductData'][] = [
+        'nid'   => $node->id(),
+        'title' => $productTitle,
+        'apis'  => $apiList,
+      ];
+    }
+  }
+}

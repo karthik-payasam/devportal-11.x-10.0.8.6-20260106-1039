@@ -1,0 +1,2447 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "No fields have been added for this datasource."
+msgstr "Для этого источника данных ещё не было добавлено полей."
+
+msgid "Data Type"
+msgstr "Тип данных"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Supported"
+msgstr "Поддерживается"
+
+msgid "Fallback data type"
+msgstr "Резервный тип данных"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "enabled (<a href=\":url\">disable</a>)"
+msgstr "включено (<a href=\":url\">отключить</a>)"
+
+msgid "disabled (<a href=\":url\">enable</a>)"
+msgstr "отключено (<a href=\":url\">включить</a>)"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Invalid or missing backend plugin: %backend_id"
+msgstr "Недопустимый или отсутствующий модуль базовой программы: %backend_id"
+
+msgid "Backend class"
+msgstr "Бэкенд"
+
+msgid "Search indexes"
+msgstr "Поисковые индексы"
+
+msgid "disabled"
+msgstr "отключено"
+
+msgid "@indexed/@total indexed"
+msgstr "Проиндексировано @indexed/@total"
+
+msgid "Invalid or missing datasource plugin: %datasource_id"
+msgstr "Недопустимый или отсутствующий модуль источника данных: %datasource_id"
+
+msgid "Datasource"
+msgstr "Источник данных"
+
+msgid "Invalid or missing tracker plugin: %tracker_id"
+msgstr "Недопустимый или отсутствующий модуль функции отслеживания: %tracker_id"
+
+msgid "Tracker"
+msgstr "Изменения"
+
+msgid "Server"
+msgstr "Сервер"
+
+msgid "Unknown server set for index: %server_id"
+msgstr "Для индекса задан неизвестный сервер: %server_id"
+
+msgid "Server index status"
+msgstr "Состояние индекса"
+
+msgid "Error while checking server index status: @message"
+msgstr "Ошибка при проверке состояния индекса сервера: @message"
+
+msgid "All items will be indexed at once during cron runs."
+msgstr "Во время работы cron все элементы будут проиндексированы за один раз."
+
+msgid "No items will be indexed during cron runs."
+msgstr "Во время работы cron не будут проиндексированы элементы."
+
+msgid "Cron batch size"
+msgstr "Размер очереди в cron"
+
+msgid "There is 1 item indexed on the server for this index. (<a href=\":url\">More information</a>)"
+msgid_plural "There are @count items indexed on the server for this index. (<a href=\":url\">More information</a>)"
+msgstr[0] "На этом сервере проиндексирован @count элемент. (<a href=\":url\">Больше информации</a>)"
+msgstr[1] "На этом сервере проиндексировано @count элемента. (<a href=\":url\">Больше информации</a>)"
+msgstr[2] "На этом сервере проиндексировано @count элементов. (<a href=\":url\">Больше информации</a>)"
+
+msgid "During cron runs, 1 item will be indexed per batch."
+msgid_plural "During cron runs, @count items will be indexed per batch."
+msgstr[0] "Во время запуска cron будет проиндексирован @count элемент."
+msgstr[1] "Во время запуска cron будет проиндексировано @count элемента."
+msgstr[2] "Во время запуска cron будет проиндексировано @count элементов."
+
+msgid "Index @name"
+msgstr "Индекс @name"
+
+msgid "Use the @name search index for filtering and retrieving data."
+msgstr "Использовать индекс поиска @name для фильтрации и извлечения данных."
+
+msgid "(No description available)"
+msgstr "(Нет описания)"
+
+msgid "@datasource datasource"
+msgstr "Источник данных @datasource"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "@field (indexed field)"
+msgstr "@field (индексированное поле)"
+
+msgid "Item ID"
+msgstr "ID элемента"
+
+msgid "The item's internal (Search API-specific) ID"
+msgstr "Внутренний ИД элемента (относящийся к API поиска)"
+
+msgid "The datasource ID"
+msgstr "ИД источника данных"
+
+msgid "Item language"
+msgstr "Язык элемента"
+
+msgid "The item's language"
+msgstr "Язык элемента"
+
+msgid "Item URL"
+msgstr "URL Записи"
+
+msgid "Relevance"
+msgstr "Релевантность"
+
+msgid "The relevance of this search result with respect to the query"
+msgstr "Актуальность этого результата поиска по отношению к запросу"
+
+msgid "Excerpt"
+msgstr "Цитата"
+
+msgid "The search result excerpted to show found search terms"
+msgstr "Результат поиска фрагментирован для отображения найденных условий поиска"
+
+msgid "Fulltext search"
+msgstr "Поиск по тексту"
+
+msgid "Search several or all fulltext fields at once."
+msgstr "Найти несколько полнотекстовых полей или все такие поля одновременно."
+
+msgid "More like this"
+msgstr "Больше похоже на следующее"
+
+msgid "Find similar content."
+msgstr "Найти похожие материалы."
+
+msgid "Rendered item"
+msgstr "Выведенный элемент"
+
+msgid "Renders item in a view mode."
+msgstr "Выводит элемент в режиме просмотра."
+
+msgid "Operations links"
+msgstr "Ссылки операций"
+
+msgid "Provides links to perform entity operations."
+msgstr "Предоставляет ссылки для выполнения операций над сущностью."
+
+msgid "All taxonomy term fields"
+msgstr "Все поля терминов таксономии"
+
+msgid "Search all indexed taxonomy term fields"
+msgstr "Поиск во всех проиндексированных полях терминов таксономии"
+
+msgid "Bulk update"
+msgstr "Массовое обновление"
+
+msgid "Allows users to apply an action to one or more items."
+msgstr "Позволяет пользователям применить действие одному или нескольким элементам."
+
+msgid "@entity_type relationship"
+msgstr "Взаимосвязь @entity_type"
+
+msgid "@label referenced from @field_name"
+msgstr "Сущность \"@label\", на которую ссылаются с поля \"@field_name\""
+
+msgid "@field_name: @label"
+msgstr "@field_name: @label"
+
+msgid "Below is a list of indexes grouped by the server they are associated with. A server is the definition of the actual indexing, querying and storage engine (for example, an Apache Solr server, the database, …). An index defines the indexed content (for example, all content and all comments on \"Article\" posts)."
+msgstr "Ниже приведен список индексов, сгруппированных по серверам, с которыми они связаны. Сервер - это определение фактических модулей индексации, запросов и хранения (например сервер Apache Solr, база данных, …). Индекс определяет индексированный материал (например все содержимое и все комментарии для публикации \"Статья\")."
+
+msgid "The selected caching mechanism does not work with views on Search API indexes. Please either use one of the Search API-specific caching options or \"None\". Caching was turned off for this view."
+msgstr "Выбранный механизм кэширования не работает с представлениями в индексах API поиска. Укажите одну из опций кэширования для API поиска или \"Нет\". Для этого представления кэширование будет отключено."
+
+msgid "The default Drupal core Search module is still enabled. If you are using Search API, you probably want to <a href=\":url\">uninstall</a> the Search module for performance reasons. For more information see <a href=\":documentation\">the Search API handbook</a>."
+msgstr "Стандартный базовый модуль поиска в Drupal по-прежнему включен. Если используется API поиска, то, вероятно, потребуется <a href=\":url\">удалить</a> модуль поиска для повышения быстродействия. Дополнительная информация приведена в документе <a href=\":documentation\">Справочник по API поиска</a>."
+
+msgid "Search result excerpt"
+msgstr "Фрагмент результатов поиска"
+
+msgid "An excerpt provided by Search API when rendered in a search."
+msgstr "Фрагмент, предоставляемый API поиска при выводе результатов поиска."
+
+msgid "Indexed @num items for index %name."
+msgstr "Проиндексировано элементов для индекса %name: @num."
+
+msgid "Search API"
+msgstr "API поиска"
+
+msgid "Execute now"
+msgstr "Выполнить"
+
+msgid "Index config schema updated."
+msgstr "Схема конфигурации индекса обновлена."
+
+msgid "Switched from old \"Node status\" to new \"Entity status\" processor."
+msgstr "Прежний процессор \"Состояние узла\" отключен, включен новый процессор \"Состояние объекта\"."
+
+msgid "Updated the configuration schema of the \"Ignore characters\" processor."
+msgstr "Обновлена схема конфигурации процессора \"Игнорировать символы\"."
+
+msgid "The search server \"@servers\" is currently not available"
+msgid_plural "The following search servers are not available: @servers"
+msgstr[0] "Сервер поиска \"@servers\" в данный момент недоступен"
+msgstr[1] "Следующие серверы поиска недоступны: @servers"
+msgstr[2] "Следующие серверы поиска недоступны: @servers"
+
+msgid "There is @count pending Search API task. @link"
+msgid_plural "There are @count pending Search API tasks. @link"
+msgstr[0] "Обнаружена @count ожидающая задача API поиска. @link"
+msgstr[1] "Обнаружены ожидающие задачи API поиска (@count). @link"
+msgstr[2] "Обнаружены ожидающие задачи API поиска (@count). @link"
+
+msgid "Provides a generic framework for modules offering search capabilities."
+msgstr "Предоставляет универсальную среду для модулей, предлагающих функции поиска."
+
+msgid "Add server"
+msgstr "Добавить сервер"
+
+msgid "Add index"
+msgstr "Добавить индекс"
+
+msgid "Execute pending tasks"
+msgstr "Выполнить ожидающие задачи"
+
+msgid "Create and configure search indexes and servers."
+msgstr "Создать и настроить серверы и индексы поиска."
+
+msgid "View"
+msgstr "Просмотр"
+
+msgid "Edit"
+msgstr "Редактировать"
+
+msgid "Fields"
+msgstr "Поля"
+
+msgid "Processors"
+msgstr "Процессоры"
+
+msgid "Administer Search API"
+msgstr "Администрирование API поиска"
+
+msgid "Create and configure Search API servers and indexes."
+msgstr "Создать и настроить индексы и серверы API поиска."
+
+msgid "Edit field"
+msgstr "Изменить поле"
+
+msgid "Break lock"
+msgstr "Прервать блокировку"
+
+msgid "Entity datasource configuration"
+msgstr "Конфигурация источника данных объекта"
+
+msgid "Bundles"
+msgstr "Наборы"
+
+msgid "Whether to exclude (TRUE) or include (FALSE) the selected bundles."
+msgstr "Исключить (TRUE) или включить (FALSE) выбранные комплекты."
+
+msgid "The selected bundles"
+msgstr "Выбранные комплекты"
+
+msgid "A bundle machine name"
+msgstr "Имя системы комплекта"
+
+msgid "Languages"
+msgstr "Языки"
+
+msgid "Whether to exclude (TRUE) or include (FALSE) the selected languages."
+msgstr "Исключить (TRUE) или включить (FALSE) выбранные языки."
+
+msgid "The selected languages"
+msgstr "Выбранные языки"
+
+msgid "A language code"
+msgstr "Код языка"
+
+msgid "Search index"
+msgstr "Поисковый индекс"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Name"
+msgstr "Название"
+
+msgid "Read-only"
+msgstr "Только чтение"
+
+msgid "Indexed fields"
+msgstr "Проиндексированные поля"
+
+msgid "field"
+msgstr "поле"
+
+msgid "A label for the field"
+msgstr "Метка поля"
+
+msgid "The datasource ID of the field"
+msgstr "ИД источника данных поля"
+
+msgid "The property path of the field"
+msgstr "Путь к свойству поля"
+
+msgid "The data type of the field"
+msgstr "Тип данных поля"
+
+msgid "The boost of the field"
+msgstr "Функция boost поля"
+
+msgid "Whether the field is locked or can be removed"
+msgstr "Указывает, является ли поле заблокированным или может ли быть удалено"
+
+msgid "Whether the field's data type is locked or can be changed"
+msgstr "Указывает, является ли тип данных поля заблокированным или может ли быть изменен"
+
+msgid "Whether the field should appear in the UI"
+msgstr "Указывает, должно ли поле отображаться в пользовательском интерфейсе"
+
+msgid "The field's dependencies"
+msgstr "Зависимости поля"
+
+msgid "Datasource settings"
+msgstr "Параметры источника данных"
+
+msgid "The configuration for a single datasource"
+msgstr "Конфигурация одиночного источника данных"
+
+msgid "Processor settings"
+msgstr "Настройки процессора"
+
+msgid "The configuration for a single processor"
+msgstr "Конфигурация одиночного процессора"
+
+msgid "Tracker settings"
+msgstr "Настройки трекера"
+
+msgid "The configuration for the tracker"
+msgstr "Конфигурация функции отслеживания"
+
+msgid "Options"
+msgstr "Настройки"
+
+msgid "Index items immediately"
+msgstr "Проиндексировать элементы сразу"
+
+msgid "Track changes in referenced entities"
+msgstr "Отслеживать изменения связанных сущностей"
+
+msgid "Server ID"
+msgstr "Сервер ID"
+
+msgid "Language code"
+msgstr "Код языка"
+
+msgid "Dependencies"
+msgstr "Зависимости"
+
+msgid "Default processor configuration"
+msgstr "Конфигурация процессора по умолчанию"
+
+msgid "The processor's weights for the different processing stages"
+msgstr "Весовые коэффициенты процессора для разных этапов обработки"
+
+msgid "The processor's weight for this stage"
+msgstr "Весовой коэффициент процессора для данного этапа"
+
+msgid "Fields processor configuration"
+msgstr "Конфигурация обработчика поля"
+
+msgid "Enabled for all supported fields"
+msgstr "Включено для всех поддерживаемых полей"
+
+msgid "The selected fields"
+msgstr "Выбранные поля"
+
+msgid "Selected field"
+msgstr "Выбранное поле"
+
+msgid "Hierarchy processor configuration"
+msgstr "Конфигурация процессора структуры"
+
+msgid "Fields for which to add the hierarchy, mapped to their hierarchical nested property"
+msgstr "Поля, для которых требуется добавить структуру, связанную с их вложенным свойством иерархических данных"
+
+msgid "Field ID"
+msgstr "ID поля"
+
+msgid "Highlight processor configuration"
+msgstr "Конфигурация обработчика выделения цветом"
+
+msgid "Text/HTML that will be prepended to all occurrences of search keywords in highlighted text"
+msgstr "Текст или HTML, который будет добавлен к началу всех вхождений ключевых слов поиска в выделенном тексте"
+
+msgid "Text/HTML that will be appended to all occurrences of search keywords in highlighted text"
+msgstr "Текст или HTML, который будет добавлен ко всем вхождениям ключевых слов поиска в выделенном тексте"
+
+msgid "When enabled, an excerpt will be created for searches with keywords, containing all occurrences of keywords in a fulltext field."
+msgstr "Если включено, то для операций поиска по ключевым словам будет создан фрагмент, содержащий все вхождения ключевых слов в полнотекстовом поле."
+
+msgid "The requested length of the excerpt, in characters"
+msgstr "Запрошенная длина фрагмента в символах"
+
+msgid "Fields excluded from excerpt"
+msgstr "Поля, исключенные из фрагмента"
+
+msgid "An excluded field's ID"
+msgstr "ИД исключенного поля"
+
+msgid "Defines whether returned fields should be highlighted (always/if returned/never)."
+msgstr "Определяет, должны ли выделяться возвращенные поля (всегда/если возвращено/никогда)."
+
+msgid "Whether matches in parts of words should be highlighted"
+msgstr "Должны ли выделяться совпадающие части слов"
+
+msgid "HTML filter processor configuration"
+msgstr "Конфигурация процессора фильтра HTML"
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "Alt"
+msgstr "Alt"
+
+msgid "Tag boosts"
+msgstr "Бустинг тегов"
+
+msgid "Boost"
+msgstr "Буст"
+
+msgid "Ignore case processor configuration"
+msgstr "Игнорировать конфигурация процессора регистра"
+
+msgid "Ignore Character processor configuration"
+msgstr "Игнорировать конфигурацию процессора символов"
+
+msgid "Regular expression for characters to ignore"
+msgstr "Регулярное выражение для игнорируемых символов"
+
+msgid "Character categories to ignore"
+msgstr "Игнорируемые категории символов"
+
+msgid "Character set"
+msgstr "Кодировка"
+
+msgid "Number field-based boosting processor configuration"
+msgstr "Конфигурация модуля ускорения загрузки на основе числа полей"
+
+msgid "Boost settings"
+msgstr "Параметры функции Boost"
+
+msgid "Field boost settings"
+msgstr "Параметры значимости полей"
+
+msgid "The boost factor for this field"
+msgstr "Коэффициент значимости для данного поля"
+
+msgid "The aggregation function for multi-valued fields"
+msgstr "Функция объединения для полей с несколькими значениями"
+
+msgid "Stemmer processor configuration"
+msgstr "Конфигурация процессора Stemmer"
+
+msgid "Stemming exceptions"
+msgstr "Исключительные ситуации при выделении основы"
+
+msgid "Exception"
+msgstr "Исключение"
+
+msgid "Role filter processor configuration"
+msgstr "Конфигурация процессора фильтра ролей"
+
+msgid "Default"
+msgstr "По умолчанию"
+
+msgid "The selected roles"
+msgstr "Выбранные роли"
+
+msgid "The role name"
+msgstr "Имя роли"
+
+msgid "Stopwords processor configuration"
+msgstr "Конфигурация процессора игнорируемых слов"
+
+msgid "Entered stopwords"
+msgstr "Введенные игнорируемые слова"
+
+msgid "Stopword"
+msgstr "Игнорируемое слово"
+
+msgid "Tokenizer processor configuration"
+msgstr "Конфигурация процессора функции разбиения на лексемы"
+
+msgid "Regular expression for spaces"
+msgstr "Регулярное выражение для пространств"
+
+msgid "Regular expression for ignored characters"
+msgstr "Регулярное выражение для игнорируемых символов"
+
+msgid "Defines if simple CJK handling should be enabled."
+msgstr "Определяет, должен ли быть включен простой обработчик CJK."
+
+msgid "Defines the minimum word size"
+msgstr "Определяет минимальный размер слова"
+
+msgid "Transliteration processor configuration"
+msgstr "Конфигурация процессора транслитерации"
+
+msgid "Type-specific boosting processor configuration"
+msgstr "Конфигурация процессора функции boost для конкретного типа"
+
+msgid "Datasource boost settings"
+msgstr "Параметры функции boost источника данных"
+
+msgid "Base boost for the datasource"
+msgstr "Базовый коэффициент boost для источника данных"
+
+msgid "Bundle-specific boosts"
+msgstr "Коэффициенты boost для конкретных комплектов"
+
+msgid "The boost value for this bundle"
+msgstr "Значение boost для этого комплекта"
+
+msgid "Default field configuration"
+msgstr "Конфигурация поля по умолчанию"
+
+msgid "Aggregated field configuration"
+msgstr "Конфигурация объединенного поля"
+
+msgid "The type of the aggregation"
+msgstr "Тип объединения"
+
+msgid "The properties to be aggregated"
+msgstr "Свойства для объединения"
+
+msgid "A property that should be part of the aggregation"
+msgstr "Свойство, которое должно входить в состав объединения"
+
+msgid "Rendered item processor configuration"
+msgstr "Конфигурация процессора выведенного элемента"
+
+msgid "The user roles which will be active when the entity is rendered"
+msgstr "Роли пользователей, которые будут активны при выводе объекта"
+
+msgid "The selected view modes for each datasource, by bundle"
+msgstr "Выбранные режимы представления для каждого источника данных по комплектам"
+
+msgid "The selected view modes for the datasource, by bundle"
+msgstr "Выбранные режимы представления для источника данных по комплектам"
+
+msgid "The view mode used to render the entity for the specified bundle"
+msgstr "Режим представления, используемый при выводе объекта для указанного комплекта"
+
+msgid "Add URL configuration"
+msgstr "Добавить конфигурацию URL"
+
+msgid "Whether to generate an absolute URL"
+msgstr "Следует ли создавать полный URL"
+
+msgid "Search API settings"
+msgstr "Параметры API поиска"
+
+msgid "Default cron batch size"
+msgstr "Размер пакетного файла cron по умолчанию"
+
+msgid "Maximum runtime for the cron worker"
+msgstr "Максимальное время выполнения утилиты cron"
+
+msgid "The default tracker plugin"
+msgstr "Модуль отслеживания по умолчанию"
+
+msgid "The number of entities loaded at once when adding items to the tracker for a newly created index"
+msgstr "Число одновременно загруженных объектов при добавлении элементов в функцию отслеживания для вновь созданного индекса"
+
+msgid "Search server"
+msgstr "Сервер поиска"
+
+msgid "Backend Plugin ID"
+msgstr "ИД модуля базовой программы"
+
+msgid "Entity tracker configuration"
+msgstr "Конфигурация функции отслеживания объекта"
+
+msgid "Indexing order"
+msgstr "Порядок индексирования"
+
+msgid "Search API query"
+msgstr "Запрос API поиска"
+
+msgid "If the underlying search index has access checks enabled, this option allows you to disable them for this view."
+msgstr "Если для основного индекса поиска включена проверка доступа, то эта опция позволяет отключить эти проверки для данного представления."
+
+msgid "Do not execute additional access checks for all items in the search results."
+msgstr "Не выполнять дополнительные проверки доступа для всех элементов в результатах поиска."
+
+msgid "By default, changing an exposed filter would reset all selected facets. This option allows you to prevent this behavior."
+msgstr "По умолчанию изменение раскрытого фильтра приводит к сбросу всех выбранных фасетов. Эта опция позволяет избежать такого результата."
+
+msgid "Query Tags"
+msgstr "Метки запроса"
+
+msgid "Tag"
+msgstr "Тег"
+
+msgid "Search API rendered item"
+msgstr "Выведенный элемент API поиска"
+
+msgid "View modes for each datasource"
+msgstr "Показать режимы для каждого источника данных"
+
+msgid "A list of all the bundles and their configured view mode"
+msgstr "Список всех комплектов и их настроенных режимов представления"
+
+msgid "View mode for the specific bundle"
+msgstr "Показать режим конкретного комплекта"
+
+msgid "Time-based caching (Search API)"
+msgstr "Кэширование на основе времени (API поиска)"
+
+msgid "Cache options"
+msgstr "Настройки кэша"
+
+msgid "The length of time raw query results should be cached."
+msgstr "Время хранения результатов запроса в кэше."
+
+msgid "Length of time in seconds raw query results should be cached."
+msgstr "Время жизни кэша результатов необработанного запроса в секундах."
+
+msgid "The length of time rendered HTML output should be cached."
+msgstr "Время хранения в кэше выдаваемого HTML-кода."
+
+msgid "Length of time in seconds rendered HTML output should be cached."
+msgstr "Время жизни кэша результатов HTML-вывода в секундах."
+
+msgid "Tag-based caching (Search API)"
+msgstr "Кэширование на основе тегов (API поиска)"
+
+msgid "Search API date"
+msgstr "Дата API поиска"
+
+msgid "Search API more like this"
+msgstr "API поиска больше похоже на"
+
+msgid "Parse mode"
+msgstr "Режим анализа"
+
+msgid "Conjunction"
+msgstr "Конъюнкция"
+
+msgid "Field"
+msgstr "Поле"
+
+msgid "Search API taxonomy term"
+msgstr "Элемент таксономии API поиска"
+
+msgid "Search API standard"
+msgstr "Стандарт API поиска"
+
+msgid "Link to item"
+msgstr "Ссылка на элемент"
+
+msgid "Use highlighted field data"
+msgstr "Использовать выделенные данные поля"
+
+msgid "Handling of multiple values"
+msgstr "Обработка нескольких значений"
+
+msgid "Separator for multiple values"
+msgstr "Разделитель для нескольких значений"
+
+msgid "Search API boolean"
+msgstr "Булевское значение API поиска"
+
+msgid "Search API bulk form"
+msgstr "Форма для группового поиска API"
+
+msgid "Search API entity reference"
+msgstr "Указатель на объект API поиска"
+
+msgid "Display settings"
+msgstr "Настройки отображения"
+
+msgid "Display settings for bundle"
+msgstr "Параметры отображения для комплекта"
+
+msgid "Display method"
+msgstr "Способ отображения"
+
+msgid "View mode"
+msgstr "Режим просмотра"
+
+msgid "Search API entity field"
+msgstr "Поле объекта API поиска"
+
+msgid "Use entity field rendering"
+msgstr "Использовать вывод поля объекта"
+
+msgid "Fallback handler"
+msgstr "Резервный обработчик"
+
+msgid "Options for fallback handler"
+msgstr "Опции для резервного обработчика"
+
+msgid "Pluralized strings"
+msgstr "Строки в форме множественного числа"
+
+msgid "Singular/Plural string"
+msgstr "Строка в форме единственного/множественного числа"
+
+msgid "Search API datasource"
+msgstr "Источник данных API поиска"
+
+msgid "Search API fulltext search"
+msgstr "Полнотекстовый поиска API поиска"
+
+msgid "Minimum search string length"
+msgstr "Минимальная длина строки поиска"
+
+msgid "Fields to search on"
+msgstr "Поля для поиска"
+
+msgid "Field name"
+msgstr "Имя поля"
+
+msgid "Exposed"
+msgstr "Раскрытый"
+
+msgid "Expose the list of searched fields"
+msgstr "Открыть доступ к списку поисковых полей"
+
+msgid "Placeholder"
+msgstr "Заполнитель"
+
+msgid "Searched fields identifier"
+msgstr "Идентификатор поисковых полей"
+
+msgid "Search API language"
+msgstr "Язык API поиска"
+
+msgid "Search API numeric"
+msgstr "Числовое значение API поиска"
+
+msgid "Search API options"
+msgstr "Опции API поиска"
+
+msgid "Search API string"
+msgstr "Строка API поиска"
+
+msgid "Search API text"
+msgstr "Текст API поиска"
+
+msgid "Search API user"
+msgstr "Пользователь API поиска"
+
+msgid "Value"
+msgstr "Значение"
+
+msgid "Do not execute access checks for entities referenced via this relationship."
+msgstr "Не выполнять проверки доступа для объектов, на которые есть ссылки с помощью этой связи."
+
+msgid "Enabled"
+msgstr "Включено"
+
+msgid "Disabled"
+msgstr "Отключено"
+
+msgid "Fulltext field database columns updated."
+msgstr "Столбцы базы данных полнотекстовых полей обновлены."
+
+msgid "Primary keys added to all denormalized index tables."
+msgstr "Первичные ключи добавлены во все денормализованные таблицы индексов."
+
+msgid "Updated 1 server."
+msgid_plural "Updated @count servers."
+msgstr[0] "Обновлен 1 сервер."
+msgstr[1] "Обновлены серверы: @count."
+msgstr[2] "Обновлены серверы: @count."
+
+msgid "Database Search"
+msgstr "Поиск в базе данных"
+
+msgid "Offers an implementation of the Search API that uses database tables for indexing content."
+msgstr "Предлагает реализацию API поиска, использующую таблицы базы данных для индексации материалов."
+
+msgid "Search API DB settings"
+msgstr "Параметры ДБ API поиска"
+
+msgid "Name of the database we are connecting to"
+msgstr "Имя базы данных, к которой выполняется подключение"
+
+msgid "Minimum length of indexed words"
+msgstr "Минимальная длина индексируемых слов"
+
+msgid "The matching mode – \"words\", \"prefix\" or \"partial\""
+msgstr "Режим совпадения – \"слова\", \"префикс\" или \"частично\""
+
+msgid "Suggest suffix"
+msgstr "Предложить суффикс"
+
+msgid "Suggest words"
+msgstr "Предложить слова"
+
+msgid "Maximum occurrences of a term until autocomplete suggestions ignores it"
+msgstr "Максимальное число вхождений термина, после которого они будут игнорироваться предложением автодополнения"
+
+msgid "Database Search Defaults"
+msgstr "Параметры по умолчанию для поиска в базе данных"
+
+msgid "Enable this module for a best-practice default setup of Search API with the Database backend. After installation it is recommended to uninstall this module again for performance reasons. The provided configuration will not be removed."
+msgstr "Включите этот модуль для использования рекомендуемой стандартной настройки API поиска с базовой программой базы данных. После установки рекомендуется повторно удалить этот модуль из системы для повышения быстродействия. Предоставленная конфигурация не будет удалена."
+
+msgid "Database"
+msgstr "База данных"
+
+msgid "Select the database key and target to use for storing indexing information in. Cannot be changed after creation."
+msgstr "Выберите целевой объект и ключ базы данных для хранения информации об индексировании. Эти параметры нельзя изменить после создания."
+
+msgid "Minimum word length"
+msgstr "Минимальная длина слова"
+
+msgid "The minimum number of characters a word must consist of to be indexed"
+msgstr "Минимальное число символов в слове для индексирования"
+
+msgid "Partial matching"
+msgstr "Частичное совпадение"
+
+msgid "Match whole words only"
+msgstr "Сравнивать только слова целиком"
+
+msgid "Match on parts of a word"
+msgstr "Сравнивать части слов"
+
+msgid "Match words starting with given keywords"
+msgstr "Сравнивать слова, начинающиеся с заданных ключевых слов"
+
+msgid "Autocomplete settings"
+msgstr "Настройки автодополнения"
+
+msgid "These settings allow you to configure how suggestions are computed when autocompletion is used. If you are seeing many inappropriate suggestions you might want to deactivate the corresponding suggestion type. You can also deactivate one method to speed up the generation of suggestions."
+msgstr "Эти параметры позволяют настраивать способы вычисления предположений при использовании автодополнения. При отображении большого количества неправильных предположений может потребоваться деактивировать соответствующий тип предположения. Можно также деактивировать один способ для ускорения формирования предположений."
+
+msgid "Suggest word endings"
+msgstr "Предлагать окончания слов"
+
+msgid "Suggest endings for the currently entered word."
+msgstr "Предлагать окончания для вводимого слова."
+
+msgid "Suggest additional words"
+msgstr "Предлагать дополнительные слова"
+
+msgid "Suggest additional words the user might want to search for."
+msgstr "Предлагать дополнительные слова для поиска."
+
+msgid "none"
+msgstr "нет"
+
+msgid "Autocomplete suggestions"
+msgstr "Предложения автодополнения"
+
+msgid "No valid search keys were present in the query."
+msgstr "В запросе не было ни одного допустимого ключевого слова."
+
+msgid "Unknown sort order @order. Assuming \"@default\"."
+msgstr "Неизвестный порядок сортировки @order. Предполагается \"@default\"."
+
+msgid "Unknown facet field @field."
+msgstr "Неизвестное поле фасета @field."
+
+msgid "Unknown field @field: please check (and re-save) the index's fields settings."
+msgstr "Неизвестное поле @field: проверьте (и сохраните повторно) параметры полей индекса."
+
+msgid "An overlong word (more than 50 characters) was encountered while indexing: %word.<br />Since database search servers currently cannot index words of more than 50 characters, the word was truncated for indexing. If this should not be a single word, please make sure the \"Tokenizer\" processor is enabled and configured correctly for index %index."
+msgstr "Во время индексации обнаружено слишком длинное слово (более 50 символов): %word.<br />Так как в настоящее время серверы поиска в базах данных не могут индексировать слова, длина которых превышает 50 символов, слово для индексации было усечено. Если оно не должно быть одним словом, убедитесь, что процессор \"Программа разбиения на лексемы\" включен и правильно настроен для индекса %index."
+
+msgid "An overlong value (more than 255 characters) was encountered while indexing: %value.<br />Database search servers currently cannot index such values correctly – the value was therefore trimmed to the allowed length."
+msgstr "Во время индексации обнаружено слишком длинное значение (более 255 символов): %value.<br />В настоящее время серверы поиска в базах данных не могут правильно индексировать такие значения, поэтому значение было усечено до разрешенной длины."
+
+msgid "Error while adding facets: only \"item_id\" field should be used, used are: @fields."
+msgstr "Ошибка при добавлении фасетов: необходимо использовать только поле \"item_id\", используемые поля: @fields."
+
+msgid "Indexes items in the database. Supports several advanced features, but should not be used for large sites."
+msgstr "Индексирует элементы в базе данных. Поддерживает несколько дополнительных функций, но не должен использоваться для больших сайтов."
+
+msgid "Completed about @percentage% of the indexing operation (@current of @total)."
+msgstr "Индексация завершена на @percentage% (@current из @total)"
+
+msgid "Couldn't index items. Check the logs for details."
+msgstr "Не удалось индексировать элементы. Дополнительные сведения содержатся в протоколах."
+
+msgid "An error occurred while trying to index items. Check the logs for details."
+msgstr "Ошибка при попытке индексации элементов. Дополнительные сведения содержатся в протоколах."
+
+msgid "Successfully indexed 1 item on @index."
+msgid_plural "Successfully indexed @count items on @index."
+msgstr[0] "Успешно проиндексирован @count элемент в @index"
+msgstr[1] "Успешно проиндексировано @count элемента в @index"
+msgstr[2] "Успешно проиндексировано @count элементов в @index"
+
+msgid "Successfully indexed 1 item."
+msgid_plural "Successfully indexed @count items."
+msgstr[0] "Успешно проиндексирован @count элемент."
+msgstr[1] "Успешно проиндексировано @count элемента."
+msgstr[2] "Успешно проиндексировано @count элементов."
+
+msgid "1 item could not be indexed. Check the logs for details."
+msgid_plural "@count items could not be indexed. Check the logs for details."
+msgstr[0] "Не удалось индексировать 1 элемент. Дополнительные сведения содержатся в протоколах."
+msgstr[1] "Не удалось индексировать элементы (кол-во элементов: @count). Дополнительные сведения содержатся в протоколах."
+msgstr[2] "Не удалось индексировать элементы (кол-во элементов: @count). Дополнительные сведения содержатся в протоколах."
+
+msgid "The required Node module is not installed on your site. Database Search Defaults module could not be installed."
+msgstr "На сайте не установлен требуемый модуль узла. Не удалось установить модуль параметров по умолчанию для поиска в базе данных."
+
+msgid "Content type @content_type not found. Database Search Defaults module could not be installed."
+msgstr "Не найден тип содержимого @content_type. Не удалось установить модуль параметров по умолчанию для поиска в базе данных."
+
+msgid "Field @field in content type @node_type not found. Database Search Defaults module could not be installed"
+msgstr "Не найдено поле @field в типе содержимого @node_type. Не удалось установить модуль параметров по умолчанию для поиска в базе данных."
+
+msgid "It looks like the default setup provided by this module already exists on your site. Cannot re-install module."
+msgstr "Похоже, что настройка по умолчанию, заданная этим модулем, уже существует на вашем сайте. Не удается переустановить модуль."
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Index"
+msgstr "Индекс"
+
+msgid "ID: @name"
+msgstr "ИД: @name"
+
+msgid "Unavailable"
+msgstr "Недоступно"
+
+msgid "Indexes not currently associated with any server"
+msgstr "В данный момент не связаны с каким-либо сервером"
+
+msgid "There are no servers or indexes defined. For a quick start, we suggest you install the Database Search Defaults module."
+msgstr "Нет определенных серверов или индексов. Для быстрого запуска рекомендуется установить модуль Параметры по умолчанию для поиска в базе данных."
+
+msgid "There are no servers or indexes defined."
+msgstr "Ещё нет созданных серверов и индексов."
+
+msgid "Deleting some of the items on the server failed. Check the logs for details. The server was still removed."
+msgstr "Не удалось удалить некоторые элементы с сервера. Дополнительные сведения содержатся в протоколах. Сервер все еще удален."
+
+msgid "My backend"
+msgstr "Моя базовая программа"
+
+msgid "Searches with SuperSearch™."
+msgstr "Поиск с помощью SuperSearch™."
+
+msgid "The search index %name has been enabled."
+msgstr "Индекс поиска %name включен."
+
+msgid "The search index %name could not be enabled. Check if its server is set and enabled."
+msgstr "Индекс поиска %name не включен. Убедитесь, что сервер задан и включен."
+
+msgid "The field %field is locked and cannot be removed."
+msgstr "Поле %field заблокировано и не может быть удалено."
+
+msgid "The search server %name has been enabled."
+msgstr "Сервер поиска %name включен."
+
+msgid "My data type"
+msgstr "Мой тип данных"
+
+msgid "Some information about my data type"
+msgstr "Сведения о моем типе данных"
+
+msgid "My datasource"
+msgstr "Мой источник данных"
+
+msgid "Exposes my custom items as a datasource."
+msgstr "Отображает мои пользовательские данные как источник данных."
+
+msgid "My display"
+msgstr "Мое окно"
+
+msgid "A few words about this search display"
+msgstr "Несколько слов об этом окне поиска"
+
+msgid "Could not load the following items on index %index: @items."
+msgstr "Не удалось загрузить следующие элементы индекса %index: @items."
+
+msgid "search index"
+msgstr "индекс поиска"
+
+msgid "search indexes"
+msgstr "поисковые индексы"
+
+msgid "Trying to delete items from index %index which is marked as read-only."
+msgstr "Выполняется попытка удаления элементов из индекса %index, помеченного как доступного только для чтения."
+
+msgid "Search servers"
+msgstr "Серверы поиска"
+
+msgid "search server"
+msgstr "сервер поиска"
+
+msgid "search servers"
+msgstr "серверы поиска"
+
+msgid "Task type"
+msgstr "Тип задачи"
+
+msgid "Index ID"
+msgstr "ИД индекса"
+
+msgid "Task data"
+msgstr "Данные задачи"
+
+msgid "Search task"
+msgstr "Задача поиска"
+
+msgid "Search tasks"
+msgstr "Задачи поиска"
+
+msgid "search task"
+msgstr "задача поиска"
+
+msgid "search tasks"
+msgstr "задачи поиска"
+
+msgid "Unknown field with ID \"@id\"."
+msgstr "Неизвестное поле с ИД \"@id\"."
+
+msgid "Edit field %field"
+msgstr "Изменить поле %field"
+
+msgid "Field %field is not configurable."
+msgstr "Поле %field не является настраиваемым."
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "The field configuration was successfully saved."
+msgstr "Конфигурация поля успешно сохранена."
+
+msgid "Add fields to index %index"
+msgstr "Добавить поля в индекс %index"
+
+msgid "Skipped fields"
+msgstr "Пропущенные поля"
+
+msgid "The following fields cannot be indexed since there is no type mapping for them:"
+msgstr "Не удалось индексировать следующие поля, так как для них нет привязки типов:"
+
+msgid "If you think one of these fields should be available for indexing, please report this in the module's <a href=':url'>issue queue</a>. (Make sure to first search for an existing issue for this field.) Please note that entity-valued fields generally can be indexed by either indexing their parent reference field, or their child entity ID field."
+msgstr "Если одно из этих полей должно быть доступно для индексации, укажите это в <a href=':url'>очереди неполадок</a> модуля. (Убедитесь, что сначала для этого поля найдена существующая неполадка). Обратите внимание, что поля со значением объектов обычно могут индексироваться с помощью индексирования либо поля ссылки на родительский объект, либо поля ИД дочернего объекта."
+
+msgid "General"
+msgstr "Общий"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "Done"
+msgstr "Готово"
+
+msgid "Field %label was added to the index."
+msgstr "Поле %label добавлено в индекс."
+
+msgid "Do you want to break the lock on search index %name?"
+msgstr "Вы действительно хотите снять блокировку индекса поиска %name?"
+
+msgid "By breaking this lock, any unsaved changes made by @user will be lost."
+msgstr "Снятие блокировки приведет к потере всех не сохраненных изменений, сделанных пользователем @user."
+
+msgid "There is no lock on search index %name to break."
+msgstr "Для индекса поиска %name нет блокировки для ее снятия."
+
+msgid "The lock has been broken. You may now edit this search index."
+msgstr "Блокировка снята. Теперь можно изменять этот индекс поиска."
+
+msgid "Are you sure you want to clear the indexed data for the search index %name?"
+msgstr "Вы уверены, что хотите удалить проиндексированные данные из поискового индекса %name?"
+
+msgid "All indexed data for this index will be deleted from the search server. Searches on this index will not return any results until items are reindexed. This action cannot be undone."
+msgstr "Все проиндексированные данные для этого индекса будут удалены с сервера поиска. Поиск по этому индексу не вернет никаких результатов до повторной индексации элементов. Это действие нельзя будет отменить."
+
+msgid "All items were successfully deleted from search index %name."
+msgstr "Все элементы успешно удалены из поискового индекса %name."
+
+msgid "Failed to clear the search index %name."
+msgstr "Не удалось очистить индекс поиска %name."
+
+msgid "Are you sure you want to delete the search index %name?"
+msgstr "Вы действительно хотите удалить индекс поиска %name?"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "The search index %name has been removed."
+msgstr "Индекс поиска %name удален."
+
+msgid "Are you sure you want to disable the search index %name?"
+msgstr "Вы действительно хотите отключить индекс поиска %name?"
+
+msgid "Searches on this index will stop working. Indexed data will be deleted from the server and will need to be reindexed when the index is enabled again."
+msgstr "Поиск по этому индексу не будет работать. Проиндексированные данные будут удалены с сервера и для них потребуется повторная индексация после включения индекса."
+
+msgid "Disable"
+msgstr "Отключить"
+
+msgid "The search index %name has been disabled."
+msgstr "Индекс поиска %name отключен."
+
+msgid "Manage fields for search index %label"
+msgstr "Управление полями поискового индекса \"%label\""
+
+msgid "Add fields"
+msgstr "Добавить поля"
+
+msgid "<p>The data type of a field determines how it can be used for searching and filtering. The boost is used to give additional weight to certain fields, for example titles or tags.</p> <p>For information about the data types available for indexing, see the <a href=\":url\">data types table</a> at the bottom of the page.</p>"
+msgstr "<p>Тип данных поля определяет способ его использования для поиска и фильтрации. Функция boost применяется для добавления дополнительного весового коэффициента определенным полям, например названиям или тегам.</p> <p>Информация о типах данных, доступных для индексации, приведена в <a href=\":url\">таблице типов данных</a> в нижней части страницы.</p>"
+
+msgid "Data types"
+msgstr "Типы данных"
+
+msgid "The data types which can be used for indexing fields in this index. Whether a type is supported depends on the backend of the index's server. If a type is not supported, the fallback type that will be used instead is shown, too."
+msgstr "Типы данных, которые можно использовать для индексации полей в этом индексе. Поддержка типа зависит от базовой программы сервера индекса. Если тип не поддерживается, рядом отображается резервный тип, который будет использоваться вместо него."
+
+msgid "Some of the used data types aren't supported by the server's backend. See the <a href=\":url\">data types table</a> to find out which types are supported."
+msgstr "Некоторые из используемых типов данных не поддерживаются базовой программой сервера. Поддерживаемые типы приведены в <a href=\":url\">таблице типов данных</a>."
+
+msgid "Label"
+msgstr "Метка"
+
+msgid "Machine name"
+msgstr "Машинное имя"
+
+msgid "Property path"
+msgstr "Путь свойства"
+
+msgid "Operations"
+msgstr "Операции"
+
+msgid "Remove"
+msgstr "Удалить"
+
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+msgid "%field_id is a reserved value and cannot be used as the machine name of a normal field."
+msgstr "%field_id - это зарезервированное значение и его нельзя использовать в качестве имени системы в обычном поле."
+
+msgid "Field IDs have to contain non-underscore characters."
+msgstr "ИД полей должны содержать символы без подчеркивания."
+
+msgid "Field IDs must contain only lowercase letters, numbers and underscores."
+msgstr "ИД полей должны содержать только буквы с нижнем регистре, цифры и символы подчеркивания."
+
+msgid "Field ID %field_id is used multiple times. Field IDs must be unique."
+msgstr "ИД поля %field_id используется несколько раз. ИД полей должны быть уникальными."
+
+msgid "The field with ID %field_id does not exist anymore."
+msgstr "Поле с ИД %field_id больше не существует."
+
+msgid "The type of field %field (%field_id) cannot be changed."
+msgstr "Невозможно изменить тип поля %field (%field_id). "
+
+msgid "The changes were successfully saved."
+msgstr "Изменения успешно сохранены."
+
+msgid "All content was scheduled for <a href=\":url\">reindexing</a> so the new settings can take effect."
+msgstr "Запланирована <a href=\":url\">переиндексация</a> контента, чтобы новые настройки вступили в силу."
+
+msgid "Add search index"
+msgstr "Добавить индекс поиска"
+
+msgid "Edit search index %label"
+msgstr "Редактирование поискового индекса %label"
+
+msgid "Index name"
+msgstr "Имя индекса"
+
+msgid "Enter the displayed name for the index."
+msgstr "Введите отображаемое имя для индекса."
+
+msgid "Datasources"
+msgstr "Источник данных"
+
+msgid "Select one or more datasources of items that will be stored in this index."
+msgstr "Выберите один или несколько источников данных для элементов, которые будут храниться в этом индексе."
+
+msgid "Configure"
+msgstr "Настроить"
+
+msgid "Select the type of tracker which should be used for keeping track of item changes."
+msgstr "Выберите тип функции отслеживания, который должен использоваться для отслеживания изменений элементов."
+
+msgid "Select the server this index should use. Indexes cannot be enabled without a connection to a valid, enabled server."
+msgstr "Выберите сервер, который должен использоваться данным индексом. Индексы нельзя включать без подключения к допустимому включенному серверу."
+
+msgid "- No server -"
+msgstr "- Без сервера -"
+
+msgid "Only enabled indexes can be used for indexing and searching. This setting will only take effect if the selected server is also enabled."
+msgstr "Для индексации и поиска можно использовать только включенные индексы. Этот параметр действует только в том случае, если выбранный сервер также включен."
+
+msgid "Enter a description for the index."
+msgstr "Введите описание индекса."
+
+msgid "Index options"
+msgstr "Настройки индексирования"
+
+msgid "Read only"
+msgstr "Только чтение"
+
+msgid "Do not write to this index or track the status of items in this index."
+msgstr "Не следует выполнять запись в этот индекс или отслеживать состояние элементов в этом индексе."
+
+msgid "Immediately index new or updated items instead of waiting for the next cron run. This might have serious performance drawbacks and is generally not advised for larger sites."
+msgstr "Выполнять индексацию новых или обновленных элементов сразу, а не при следующем выполнении задания cron. Это может существенно снизить производительность и, как правило, не рекомендуется для больших сайтов."
+
+msgid "Set how many items will be indexed at once when indexing items during a cron run. \"0\" means that no items will be indexed by cron for this index, \"-1\" means that cron should index all items at once."
+msgstr "Укажите число элементов, индексируемых за одно выполнение задания cron. Значение \"0\" означает, что элементы индексироваться не будут, \"-1\" означает, что за один раз должны проиндексироваться все элементы."
+
+msgid "Configure the %datasource datasource"
+msgstr "Настройки источника данных \"%datasource\""
+
+msgid "Please configure the used datasources."
+msgstr "Настройте используемый источник данных."
+
+msgid "The tracker plugin is missing or invalid."
+msgstr "Модуль отслеживания отсутствует или недопустим."
+
+msgid "Configure the %plugin tracker"
+msgstr "Настройки трекера \"%plugin\""
+
+msgid "Please configure the used tracker."
+msgstr "Настройте используемый модуль отслеживания."
+
+msgid "Save and add fields"
+msgstr "Сохранить и добавить поля"
+
+msgid "The index was successfully saved."
+msgstr "Индекс успешно сохранён."
+
+msgid "The index could not be saved."
+msgstr "Не удалось сохранить индекс."
+
+msgid "It is recommended not to use this processor with the selected server."
+msgstr "Не рекомендуется использовать этот процессор с выбранным сервером."
+
+msgid "Manage processors for search index %label"
+msgstr "Управление процессорами поискового индекса %label"
+
+msgid "Configure processors which will pre- and post-process data at index and search time. Find more information on the <a href=\":url\" target=\"_blank\">processors documentation page</a>."
+msgstr "Настроить процессоры для предварительной и заключительной обработки данных во время индексации и поиска. Дополнительная информация приведена на странице <a href=\":url\" target=\"_blank\">документации по процессорам</a>."
+
+msgid "Processor order"
+msgstr "Порядок процессоров"
+
+msgid "Weight for processor %title"
+msgstr "Весовой коэффициент процессора %title"
+
+msgid "The indexing workflow was successfully edited."
+msgstr "Поток операций индексации успешно изменен."
+
+msgid "No values were changed."
+msgstr "Значения не изменены."
+
+msgid "Processor %id specifies a non-existing class %class."
+msgstr "Процессор %id задает несуществующий класс %class."
+
+msgid "Are you sure you want to rebuild the tracking data for the search index %name?"
+msgstr "Вы действительно хотите перекомпоновать отслеживаемые данные для индекса поиска %name?"
+
+msgid "<p>The complete information about existing and indexed items for this index will be deleted and will have to be rebuilt.</p><p>This should usually not be necessary, but can help if some existing items aren't contained in the index's tracking data for whatever reason (in other words, when the total number of items to be indexed is less than it should be).</p><p>This action cannot be undone.</p>"
+msgstr "<p>Полная информация о существующих и проиндексированных элементах этого индекса будет удалена и для нее потребуется перекомпоновка.</p><p>Обычно в этом нет необходимости, но такое действие может помочь, если некоторые существующие элементы по какой-либо причине не содержатся в данных отслеживания индекса (другими словами, если общее число индексируемых элементов меньше требуемого).</p><p>Это действие нельзя будет отменить.</p>"
+
+msgid "The tracking information for search index %name will be rebuilt."
+msgstr "Информация об отслеживании индекса поиска %name будет перекомпонована."
+
+msgid "Are you sure you want to reindex the search index %name?"
+msgstr "Вы действительно хотите выполнить повторную индексацию индекса поиска %name?"
+
+msgid "Indexed data will remain on the search server until all items have been reindexed. Searches on this index will continue to yield results. This action cannot be undone."
+msgstr "Индексированные данные останутся на сервере поиска до тех пор, пока все элементы не будут переиндексированы. Поиск по этому индексу будет продолжен для получения результатов. Это действие нельзя будет отменить."
+
+msgid "The search index %name was successfully queued for reindexing."
+msgstr "Индекс поиска %name успешно добавлен в очередь для переиндексации."
+
+msgid "Failed to queue items for reindexing on search index %name."
+msgstr "Не удалось добавить элементы в очередь для переиндексации для индекса поиска %name."
+
+msgid "Track items for index"
+msgstr "Отслеживать элементы для индекса"
+
+msgid "Not all items have been tracked for this index. This means the displayed index status is incomplete and not all items will currently be indexed."
+msgstr "Для этого индекса не удалось отследить все элементы. Это означает, что отображаемое состояние индекса - не завершено, а также что не все элементы будут проиндексированы в данный момент."
+
+msgid "Track now"
+msgstr "Отслеживать"
+
+msgid "Start indexing now"
+msgstr "Запустить индексирование"
+
+msgid "all"
+msgstr "все"
+
+msgid "all"
+msgstr "все"
+
+msgid "all"
+msgstr "все"
+
+msgid "all"
+msgstr "все"
+
+msgid "Index @limit items in batches of @batch_size items"
+msgstr "Индексировать @limit элемент(ов) пачками по @batch_size элемент(ов)"
+
+msgid "Number of items to index"
+msgstr "Количество элементов для индексирования"
+
+msgid "Number of items per batch run"
+msgstr "Количество элементов для выполнения одной пакетной операции"
+
+msgid "Index now"
+msgstr "Индексировать сейчас"
+
+msgid "Queue all items for reindexing"
+msgstr "Поставить все элементы в очередь на переиндексацию"
+
+msgid "Clear all indexed data"
+msgstr "Очистить все проиндексированные данные"
+
+msgid "Rebuild tracking information"
+msgstr "Повторно создать информацию об отслеживании"
+
+msgid "Enter a non-zero integer. Use \"-1\" or \"@all\" for \"all items\"."
+msgstr "Введите целое число, не равное 0. Значения \"-1\" и \"@all\" обозначают \"все элементы\"."
+
+msgid "Failed to create a batch, please check the batch size and limit."
+msgstr "Не удалось создать пакет, проверьте правильность размера пакета и предельного значения."
+
+msgid "Are you sure you want to clear all indexed data from the search server %name?"
+msgstr "Вы действительно хотите очистить все проиндексированные данные на сервере поиска %name?"
+
+msgid "This will permanently remove all data currently indexed on this server for indexes that aren't read-only. Items are queued for reindexing. Until reindexing occurs, searches for the affected indexes will not return any results. This action cannot be undone."
+msgstr "Данная операция окончательно удалит все проиндексированные на текущий момент данные на этом сервере для индексов, доступных не только для чтения. Элементы помещены в очередь для повторной индексации. На время выполнения повторной индексации поиск в задействованных индексах не будет возвращать никаких результатов. Это действие нельзя будет отменить."
+
+msgid "All indexed data was successfully deleted from the server."
+msgstr "Все проиндексированные данные успешно удалены с сервера."
+
+msgid "Indexed data could not be cleared for some indexes. Check the logs for details."
+msgstr "Не удалось выполнить очистку проиндексированных данных для некоторых индексов. Дополнительные сведения содержатся в протоколах."
+
+msgid "Failed to mark the following indexes for reindexing: @indexes. Check the logs for details."
+msgstr "Не удалось пометить для повторной индексации следующие индексы: @indexes. Дополнительные сведения содержатся в протоколах."
+
+msgid "Are you sure you want to delete the search server %name?"
+msgstr "Вы действительно хотите удалить сервер поиска %name?"
+
+msgid "Deleting a server will disable all its indexes and their searches."
+msgstr "При удалении сервера будут отключены все его индексы и результаты поиска."
+
+msgid "The search server %name has been deleted."
+msgstr "Сервер поиска %name удален."
+
+msgid "Are you sure you want to disable the search server %name?"
+msgstr "Вы действительно хотите отключить сервер поиска %name?"
+
+msgid "Disabling a server will also disable all attached indexes, clearing their tracking tables and indexed data. When re-enabling the server and its indexes, all data will have to be re-indexed. This action cannot be undone."
+msgstr "При отключении сервера будут отключены все подключенные индексы, а также будет выполнена очистка таблиц отслеживания и проиндексированных данных. При повторном включении сервера и его индексов потребуется повторная индексация всех данных. Это действие нельзя будет отменить."
+
+msgid "The search server %name has been disabled."
+msgstr "Сервер поиска %name отключен."
+
+msgid "Add search server"
+msgstr "Добавить сервер поиска"
+
+msgid "Edit search server %label"
+msgstr "Изменить сервер поиска %label"
+
+msgid "Server name"
+msgstr "Название сервера"
+
+msgid "Enter the displayed name for the server."
+msgstr "Введите отображаемое имя для сервера."
+
+msgid "Only enabled servers can index items or execute searches."
+msgstr "Выполнять поиск и индексировать элементы могут только включенные серверы."
+
+msgid "Enter a description for the server."
+msgstr "Введите описание сервера."
+
+msgid "Backend"
+msgstr "Базовая программа"
+
+msgid "Choose a backend to use for this server."
+msgstr "Выберите базовую программу для работы с этим сервером."
+
+msgid "There are no backend plugins available for the Search API. Please install a <a href=\":url\">module that provides a backend plugin</a> to proceed."
+msgstr "Для API поиска нет доступных модулей базовых программ. Для продолжения установите <a href=\":url\">модуль, предоставляющий компонент базовой программы</a>."
+
+msgid "Please configure the selected backend."
+msgstr "Настройте выбранную базовую программу."
+
+msgid "Configure %plugin backend"
+msgstr "Настроить базовую программу %plugin"
+
+msgid "The backend plugin is missing or invalid."
+msgstr "Модуль базовой программы отсутствует или недопустим."
+
+msgid "The server was successfully saved."
+msgstr "Сервер успешно сохранён."
+
+msgid "The server could not be saved."
+msgstr "Не удалось сохранить сервер."
+
+msgid "Pending server tasks"
+msgstr "Ожидающие задачи сервера"
+
+msgid "Pending tasks are created when operations on the server, such as deleting one or more items, cannot be executed because the server is currently unavailable (which will usually also create an entry in the Drupal logs). They are automatically tried again before any other operation is executed and the operation is aborted if the tasks could still not be executed, or if there are too many pending tasks to be executed in a single page request. In the latter case, you can use this form to manually execute all tasks and thus unblock the server again."
+msgstr "Ожидающие задачи создаются при невозможности выполнения операций на сервере, таких как удаление одного или нескольких элементов, из-за недоступности сервера в данный момент (обычно при этом также создается запись в протоколе Drupal). Они автоматически повторяют попытку выполнения перед другой операцией, при этом операция прерывается, если задачу все еще не удается выполнить либо если в одном запросе страницы необходимо выполнить слишком много ожидающих задач. В последнем случае можно с помощью данной формы вручную выполнить все задачи и таким образом разблокировать сервер."
+
+msgid "Execute tasks now"
+msgstr "Выполнить задачи"
+
+msgid "Delete all indexed data on this server"
+msgstr "Удалить все проиндексированные данные с этого сервера"
+
+msgid "There is currently @count task pending for this server."
+msgid_plural "There are currently @count tasks pending for this server."
+msgstr[0] "В данный момент на этом сервере обнаружена @count ожидающая задача."
+msgstr[1] "В данный момент на этом сервере обнаружено ожидающих задач: @count."
+msgstr[2] "В данный момент на этом сервере обнаружено ожидающих задач: @count."
+
+msgid "This index is being edited by user @user, and is therefore locked from editing by others. This lock is @age old. Click here to <a href=\":url\">break this lock</a>."
+msgstr "В данный момент пользователь @user редактирует этот индекс, поэтому индекс заблокирован для редактирования другими пользователями. Время этой блокировки: @age. Щелкните <a href=\":url\">здесь для снятия этой блокировки</a>."
+
+msgid "You have unsaved changes."
+msgstr "Есть несохранённые изменения."
+
+msgid "My parse mode"
+msgstr "Мой режим анализа"
+
+msgid "Some information about my parse mode"
+msgstr "Сведения о режиме анализа"
+
+msgid "HTML text (Search API)"
+msgstr "Текст HTML (API поиска)"
+
+msgid "Text (Search API)"
+msgstr "Текст (API поиска)"
+
+msgid "Boolean"
+msgstr "Логическое"
+
+msgid "Boolean fields can only have one of two values: true or false."
+msgstr "В булевских полях могут указывать только два значения: true или false."
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "Represents points in time."
+msgstr "Представляет моменты времени."
+
+msgid "Decimal"
+msgstr "Десятичное число"
+
+msgid "Contains numeric, typically non-integer values."
+msgstr "Содержит числовые значения, обычно нецелочисленные."
+
+msgid "Integer"
+msgstr "Целое число"
+
+msgid "Contains integer values."
+msgstr "Содержит целочисленные значения."
+
+msgid "String"
+msgstr "Строка"
+
+msgid "String fields are used for short, keyword-like character strings where you only want to find complete field values, not individual words."
+msgstr "Строковые поля применяются для коротких символьных строк, например ключевых слов, для которых требуется найти только полное значение поля, и не применяются для отдельных слов."
+
+msgid "Fulltext"
+msgstr "Полнотекстовый"
+
+msgid "Fulltext fields are analyzed fields which are made available for fulltext search. This data type should be used for any fields (usually with free text input by users) which you want to search for individual words."
+msgstr "Полнотекстовые поля - это анализируемые поля, сделанные доступными для полнотекстового поиска. Этот тип данных должен использоваться для любых полей (как правило, со свободным вводом текста пользователями), в которых требуется выполнить поиск по отдельным словам."
+
+msgid "Which bundles should be indexed?"
+msgstr "Какие бандлы надо индексировать?"
+
+msgid "Only those selected"
+msgstr "Только выбранные"
+
+msgid "All except those selected"
+msgstr "Все кроме выбранных"
+
+msgid "Which languages should be indexed?"
+msgstr "Какие языки надо индексировать?"
+
+msgid "Go to changed %entity_type with ID \"@entity_id\""
+msgstr "Перейти к измененному %entity_type с ИД \"@entity_id\""
+
+msgid "Provides %entity_type entities for indexing and searching."
+msgstr "Предоставляет записи (кол-во записей: %entity_type) для индексирования и поиска."
+
+msgid "View %view_name, display %display_title"
+msgstr "Представление: %view_name, окно: %display_title"
+
+msgid "%view_description – Represents the display %display_title of view %view_name."
+msgstr "%view_description – представляет собой окно %display_title представления %view_name."
+
+msgid "Represents the display %display_title of view %view_name."
+msgstr "Представляет собой окно %display_title представления %view_name."
+
+msgid "Direct query"
+msgstr "Прямой запрос"
+
+msgid "Don't parse the query, just hand it to the search server unaltered. Might fail if the query contains syntax errors in regard to the specific server's query syntax."
+msgstr "Не анализировать запрос, просто передать его на сервер поиска неизмененным. Возможен сбой при наличии синтаксических ошибок в запросе в части синтаксиса запроса конкретного сервера."
+
+msgid "Single phrase"
+msgstr "Одиночная фраза"
+
+msgid "The query is interpreted as a single phrase, possibly containing spaces or special characters, that should appear exactly like this in the results."
+msgstr "Запрос интерпретируется как одиночная фраза, возможно, содержащая пробелы или специальные символы, которые должны в точности перенестись в результаты."
+
+msgid "Multiple words"
+msgstr "Несколько слов"
+
+msgid "Select the fields to which hierarchical data should be added."
+msgstr "Выберите поля, в которые необходимо добавить иерархические данные."
+
+msgid "Hierarchy property to use"
+msgstr "Свойство используемой структуры"
+
+msgid "This field has several nested properties which look like they might contain hierarchy data for the field. Please pick the one that should be used."
+msgstr "В этом поле есть несколько вложенных свойств, которые выглядят как содержащие иерархические данные для поля. Выберите свойство для использования."
+
+msgid "You need to select a nested property to use for the hierarchy data."
+msgstr "Необходимо выбрать вложенное свойство для иерархических данных."
+
+msgid "You need to select at least one field for which to add hierarchy data."
+msgstr "Необходимо выбрать хотя бы одно поле, для которого требуется добавить иерархические данные."
+
+msgid "Index hierarchy"
+msgstr "Индексация иерархии"
+
+msgid "Allows the indexing of values along with all their ancestors for hierarchical fields (like taxonomy term references)"
+msgstr "Позволяет индексировать значений вместе со всеми родительскими полями для иерархических полей (например указателей на термины таксономии)"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "A URI where the item can be accessed"
+msgstr "URI для доступа к элементу"
+
+msgid "URL field"
+msgstr "Поле URL"
+
+msgid "Adds the item's URL to the indexed data."
+msgstr "Добавляет URL элемента в индексированные данные."
+
+msgid "Aggregated field"
+msgstr "Объединенное поле"
+
+msgid "An aggregation of multiple other fields."
+msgstr "Объединение нескольких других полей."
+
+msgid "Aggregated fields"
+msgstr "Агрегированные поля"
+
+msgid "Add customized aggregations of existing fields to the index."
+msgstr "Добавить настроенные объединения существующих полей в индексы."
+
+msgid "Node access information"
+msgstr "Информация о доступе к узлу"
+
+msgid "Data needed to apply node access."
+msgstr "Данные, необходимые для доступа к узлу."
+
+msgid "You have no access to any results in this search."
+msgstr "У вас нет доступа ни к каким результатам в этом поиске."
+
+msgid "An illegal user UID was given for node access: @uid."
+msgstr "Для доступа к узлу предоставлен недопустимый UID пользователя: @uid."
+
+msgid "Content access"
+msgstr "Доступ к материалу"
+
+msgid "Adds content access checks for nodes and comments."
+msgstr "Добавляет проверки доступа к содержимому для узлов и комментариев."
+
+msgid "Entity status"
+msgstr "Статус сущности"
+
+msgid "Entity type"
+msgstr "Тип сущности"
+
+msgid "Highlight returned field data"
+msgstr "Выделить данные возвращенных полей"
+
+msgid "Select whether returned fields should be highlighted."
+msgstr "Укажите, следует ли выделять возвращенные поля."
+
+msgid "Always"
+msgstr "Всегда"
+
+msgid "If the server returns fields"
+msgstr "Возвращает ли сервер поля"
+
+msgid "Never"
+msgstr "Никогда"
+
+msgid "Highlight partial matches"
+msgstr "Выделить частичные совпадения"
+
+msgid "When enabled, matches in parts of words will be highlighted as well."
+msgstr "Если включено, совпадающие части слов выделяются цветом."
+
+msgid "Create excerpt"
+msgstr "Создать фрагмент"
+
+msgid "Excerpt length"
+msgstr "Длина фрагмента"
+
+msgid "Exclude fields from excerpt"
+msgstr "Исключить поля из фрагмента"
+
+msgid "Exclude certain fulltext fields from being included in the excerpt."
+msgstr "Исключить некоторые полнотекстовые поля из включенных во фрагмент."
+
+msgid "Highlighting prefix"
+msgstr "Префикс выделения цветом"
+
+msgid "Highlighting suffix"
+msgstr "Суффикс выделения цветом"
+
+msgid "… @excerpt … @excerpt …"
+msgstr "… @excerpt … @excerpt …"
+
+msgid "A PCRE error (#%error_num) occurred during results highlighting."
+msgstr "При выделении результатов произошла ошибка PCRE (#%error_num). "
+
+msgid "Highlight"
+msgstr "Подсвеченный"
+
+msgid "Adds a highlighted excerpt to results and highlights returned fields."
+msgstr "Добавляет выделенный фрагмент в результаты и выделяет возвращенные поля."
+
+msgid "Index title attribute"
+msgstr "Индексировать атрибут title"
+
+msgid "If set, the contents of title attributes will be indexed."
+msgstr "Если задано, будет проиндексировано содержимое атрибутов title."
+
+msgid "Index alt attribute"
+msgstr "Индексировать атрибут alt"
+
+msgid "If set, the alternative text of images will be indexed."
+msgstr "Если задано, будет индексироваться альтернативный текст для изображений."
+
+msgid "Specify special boost values for certain HTML elements, in <a href=\":url\">YAML file format</a>. The boost values of nested elements are multiplied, elements not mentioned will have the default boost value of 1. Assign a boost of 0 to ignore the text content of that HTML element."
+msgstr "Укажите специальные значения параметра boost для определенных элементов HTML <a href=\":url\">формате файла YAML</a>. Значения параметра boost вложенных элементов перемножаются, элементам, которые не были упомянуты, присваивается значение boost по умолчанию (1). Присвойте значение boost, равное 0, для игнорирования текстового контекста такое элемента HTML."
+
+msgid "Tags is not a valid YAML map. See @link for information on how to write correctly formed YAML."
+msgstr "Теги не являются допустимой картой связей YAML. Запись правильно сформированного YAML описана в разделе @link."
+
+msgid "Boost value for tag @tag can't be an array."
+msgstr "Значение параметра Boost для тега @tag не может быть массивом."
+
+msgid "Boost value for tag @tag must be numeric."
+msgstr "Значение параметра Boost для тега @tag должно быть числовым."
+
+msgid "Boost value for tag @tag must be non-negative."
+msgstr "Значение параметра Boost для тега @tag должно быть неотрицательным."
+
+msgid "HTML filter"
+msgstr "Фильтр HTML"
+
+msgid "Strips HTML tags from fulltext fields and decodes HTML entities. Use this processor when indexing HTML data – for example, node bodies for certain text formats. The processor also allows to boost (or ignore) the contents of specific elements."
+msgstr "Удаляет теги HTML из полнотекстовых полей и декодирует объекты HTML. Этот процессор следует применять при индексации данных HTML, например тел узлов для определенных текстовых форматов. Процессор позволяет также игнорировать содержимое указанных элементов или повысить весовой коэффициент этого содержимого."
+
+msgid "Ignore case"
+msgstr "Игнорировать регистр"
+
+msgid "Makes searches case-insensitive on selected fields."
+msgstr "Задает в выбранных полях поиск без учета регистра."
+
+msgid "Strip by regular expression"
+msgstr "Удалить с помощью регулярного выражения"
+
+msgid "Specify characters which should be removed from fulltext fields and search strings, as a <a href=\":url\">PCRE regular expression</a>."
+msgstr "Укажите символы, которые должны быть удалены из полнотекстовых полей и строк поиска как <a href=\":url\">регулярное выражение PCRE</a>."
+
+msgid "Strip by character property"
+msgstr "Выделять по свойству символа"
+
+msgid "Specify <a href=\":url\">Unicode character properties</a> of characters to be ignored."
+msgstr "Укажите <a href=\":url\">свойства символов Unicode</a> для игнорируемых символов."
+
+msgid "Ignored character properties"
+msgstr "Игнорируемые свойства символов"
+
+msgid "The entered text is no valid regular expression."
+msgstr "Введенный текст не является допустимым регулярным выражением."
+
+msgid "Punctuation, Connector Characters"
+msgstr "Пунктуация, символы-коннекторы"
+
+msgid "Punctuation, Dash Characters"
+msgstr "Пунктуация, символы тире"
+
+msgid "Punctuation, Close Characters"
+msgstr "Пунктуация, закрывающие символы"
+
+msgid "Punctuation, Final quote Characters"
+msgstr "Пунктуация, символы закрывающих кавычек"
+
+msgid "Punctuation, Initial quote Characters"
+msgstr "Пунктуация, символы открывающих кавычек"
+
+msgid "Punctuation, Other Characters"
+msgstr "Пунктуация, другие символы"
+
+msgid "Punctuation, Open Characters"
+msgstr "Пунктуация, открывающие символы"
+
+msgid "Other, Control Characters"
+msgstr "Прочее, управляющие символы"
+
+msgid "Other, Format Characters"
+msgstr "Прочее, символы форматирования"
+
+msgid "Other, Private Use Characters"
+msgstr "Прочее, символы частного использования"
+
+msgid "Mark, Spacing Combining Characters"
+msgstr "Пометка, интервал между символами комбинирования"
+
+msgid "Mark, Enclosing Characters"
+msgstr "Пометка, ограничение ширины знаков"
+
+msgid "Mark, Nonspacing Characters"
+msgstr "Пометка, неразделяемые символы"
+
+msgid "Symbol, Currency Characters"
+msgstr "Символ, символы валюты"
+
+msgid "Symbol, Modifier Characters"
+msgstr "Символ, символ модификатора"
+
+msgid "Symbol, Math Characters"
+msgstr "Символ, математические символы"
+
+msgid "Symbol, Other Characters"
+msgstr "Символ, прочие символы"
+
+msgid "Separator, Line Characters"
+msgstr "Разделитель, символы строк"
+
+msgid "Separator, Paragraph Characters"
+msgstr "Разделитель, символы абзаца"
+
+msgid "Separator, Space Characters"
+msgstr "Разделитель, символы пробелов"
+
+msgid "Ignore characters"
+msgstr "Игнорировать символы"
+
+msgid "Configure types of characters which should be ignored for searches."
+msgstr "Настроить типы символов, которые должны быть проигнорированы при поиске."
+
+msgid "Language (with fallback)"
+msgstr "Язык (с возможностью переключения)"
+
+msgid "The item language, or a language the item is a fallback for."
+msgstr "Язык элемента или резервный язык элемента. "
+
+msgid "Adds the item's language to the indexed data, and considers language fallbacks."
+msgstr "Добавляет язык элемента в индексируемые данные и учитывает резервные языки. "
+
+msgid "Ignore"
+msgstr "Игнорировать"
+
+msgid "Boost factor"
+msgstr "Буст-фактор"
+
+msgid "Aggregation"
+msgstr "Сбор новостей"
+
+msgid "maximum"
+msgstr "максимальное"
+
+msgid "minimum"
+msgstr "минимальное"
+
+msgid "average"
+msgstr "средне"
+
+msgid "sum"
+msgstr "сум"
+
+msgid "product"
+msgstr "товар"
+
+msgid "use first value"
+msgstr "использовать первое значение"
+
+msgid "Select the method of aggregation to use in case the field has multiple values."
+msgstr "Выберите метод объединения для использования в случае многозначного поля."
+
+msgid "Number field-based boosting"
+msgstr "Повышение значимости на основе числового поля"
+
+msgid "Adds a boost to indexed items based on the value of a numeric field."
+msgstr "Добавляет значимость к индексированным элементам на основе значения числового поля."
+
+msgid "Rendered HTML output"
+msgstr "Выведенный HTML"
+
+msgid "The complete HTML which would be displayed when viewing the item"
+msgstr "Полный HTML, который должен отображаться при показе элемента"
+
+msgid "Field settings"
+msgstr "Настройки поля"
+
+msgid "The field %field_label (%field_id) on index %index is missing view mode configuration for some datasources or bundles. Please review (and re-save) the field settings."
+msgstr "В поле %field_label (%field_id) из индекса %index отсутствует конфигурация режима просмотра для отдельных источников данных или комплектов. Проверьте (и повторно сохраните) параметры поля. "
+
+msgid "Adds an additional field containing the rendered item as it would look when viewed."
+msgstr "Добавляет поле, содержащее выведенный элемент в том виде, в каком он будет отображаться при просмотре."
+
+msgid "Reverse reference: %entity_type using %property"
+msgstr "Обратная ссылка: %entity_type с %property"
+
+msgid "All %entity_type entities that reference this item via the %property field."
+msgstr "Все объекты %entity_type, связанные с этим элементом с помощью поля %property."
+
+msgid "Reverse entity references"
+msgstr "Обратные ссылки на объекты"
+
+msgid "Allows indexing of entities that link to the indexed entity."
+msgstr "Разрешает индексацию объектов, содержащих ссылки на проиндексированный объект."
+
+msgid "Role-based access information"
+msgstr "Информация о доступе на основе ролей"
+
+msgid "Data needed to apply role-based item access"
+msgstr "Данные, необходимые для применения ролевого доступа к элементам"
+
+msgid "Role-based access checks could not be added to a search query on index %index since the required field is not available. Please re-save the index."
+msgstr "Не удалось добавить проверки ролевого доступа к запросу на поиск в индексе %index, так как обязательное поле недоступно. Сохраните индекс повторно."
+
+msgid "Role-based access"
+msgstr "Доступ на основе ролей"
+
+msgid "Which users should be indexed?"
+msgstr "Какие пользователи должны быть проиндексированы?"
+
+msgid "All but those from one of the selected roles"
+msgstr "Все, кроме одной из выбранных ролей"
+
+msgid "Only those from the selected roles"
+msgstr "Только выбранные роли"
+
+msgid "Roles"
+msgstr "Роли"
+
+msgid "Role filter"
+msgstr "Фильтр ролей"
+
+msgid "Filters out users based on their role."
+msgstr "Отфильтровать пользователей на основе их ролей."
+
+msgid "If the <a href=\"http://snowball.tartarus.org/algorithms/english/stemmer.html\">algorithm</a> does not stem words in your dataset in the desired way, you can enter specific exceptions in the form of WORD=STEM, where \"WORD\" is the original word in the text and \"STEM\" is the resulting stem. List each exception on a separate line."
+msgstr "Если <a href=\"http://snowball.tartarus.org/algorithms/english/stemmer.html\">алгоритм</a> не создает основы слов в наборе данных должным образом, можно указать конкретные исключения в формате WORD=STEM, где \"WORD\" - исходное слово в тексте, а \"STEM\" - результирующая основа. Каждое исключение указывается на отдельной строке."
+
+msgid "Exceptions"
+msgstr "Исключения"
+
+msgid "The entered text is not in valid WORD=STEM format."
+msgstr "Текст введен не в допустимом формате WORD=STEM."
+
+msgid "Stemmer"
+msgstr "Функция определения основы"
+
+msgid "Enter a list of stopwords, each on a separate line, that will be removed from content before it is indexed and from search terms before searching. <a href=\":url\">More info about stopwords.</a>."
+msgstr "Введите список игнорируемых слов, которые будут удаляться из материалов перед их индексацией и из условий поиска перед операцией поиска. <a href=\":url\">Дополнительная информация об игнорируемых словах.</a>."
+
+msgid "Stopwords"
+msgstr "Стоп-слова"
+
+msgid "Allows you to define stopwords which will be ignored in searches. <strong>Caution:</strong> Only use after both 'Ignore case' and 'Tokenizer' have run."
+msgstr "Позволяет определять слова, которые будут игнорироваться при поиске. <strong>Внимание:</strong> применяется только после выполнения обеих функций 'Игнорировать регистр' и 'Программа разбиения на лексемы'."
+
+msgid "Ignored characters"
+msgstr "Игнорируемые символы"
+
+msgid "Whitespace characters"
+msgstr "Символы пробелов"
+
+msgid "Specify the characters that should be regarded as whitespace and therefore used as word-delimiters. Specify the characters as the inside of a <a href=\":pcre-url\">PCRE character class</a>. Leave empty to use a <a href=\":doc-url\">default</a> which should be suitable for most languages with a Latin alphabet."
+msgstr "Укажите символы, которые будут использоваться в качестве пробелов и, таким образом, будут применяться как разделители слов. Укажите символы как в <a href=\":pcre-url\">классе символов PCRE</a>. Оставьте поле пустым для использования <a href=\":doc-url\">значений по умолчанию</a>, которые должны подходить для большинства языков, использующих латинский алфавит."
+
+msgid "Simple CJK handling"
+msgstr "Простая обработка CJK"
+
+msgid "Whether to apply a simple Chinese/Japanese/Korean tokenizer based on overlapping sequences. Does not affect other languages."
+msgstr "Следует ли применять простую программу разбиения на лексемы китайского/японского/корейского языка на основе перекрывающихся последовательностей. Не влияет на другие языки."
+
+msgid "Minimum word length to index"
+msgstr "Минимальная длина слова для индексации"
+
+msgid "The number of characters a word has to be to be indexed. A lower setting means better search result ranking, but also a larger database. Each search query must contain at least one keyword that is this size (or longer)."
+msgstr "Минимальное количество знаков в словах которые будут индексироваться. Меньшее количество знаков позволяет улучшить качество поиска, но одновременно увеличивает размер индекса. Поисковый запрос не может состоять из меньшего количества знаков."
+
+msgid "The entered text is no valid PCRE character class."
+msgstr "Введенный текст не является допустимым классом символов PCRE."
+
+msgid "Tokenizer"
+msgstr "Программа разбиения на лексемы"
+
+msgid "Splits text into individual words for searching."
+msgstr "Разделяет текст на отдельные слова для поиска."
+
+msgid "Transliteration"
+msgstr "Транслитерация"
+
+msgid "Makes searches insensitive to accents and other non-ASCII characters."
+msgstr "Выполняет поиск без учета акцентов и других символов, не относящихся к ASCII."
+
+msgid "Use datasource default"
+msgstr "Использовать источники данных по умолчанию"
+
+msgid "Boost settings for %datasource"
+msgstr "Параметры функции Boost для %datasource"
+
+msgid "Default boost for items from this datasource"
+msgstr "Параметры boost по умолчанию для элементов из этого источника данных"
+
+msgid "Boost for the %bundle bundle"
+msgstr "Функция Boost для комплекта %bundle"
+
+msgid "Type-specific boosting"
+msgstr "Функция boost для конкретного типа"
+
+msgid "Adds a boost to indexed items based on their datasource and/or bundle."
+msgstr "Добавляет boost в индексированные элементы на основе источника данных и (или) комплекта."
+
+msgid "Generate absolute URL"
+msgstr "Создать полный URL"
+
+msgid "Check this box to pass absolute URLs to the index. This can be useful when indexing multiple sites with a single search index."
+msgstr "Выберите этот параметр, чтобы передавать полные URL в индекс. Это может применяться, если в один индекс поиска индексируются несколько сайтов."
+
+msgid "Aggregation type"
+msgstr "Тип агрегации"
+
+msgid "Apart from the @union type, all types will result in just a single value."
+msgstr "Все типы кроме типа @union дадут всего одно значение."
+
+msgid "Union"
+msgstr "Объединение"
+
+msgid "Contained fields"
+msgstr "Вложенные поля"
+
+msgid "Machine name: @name"
+msgstr "Машинное имя: @name"
+
+msgid "A @type aggregation of the following fields: @fields."
+msgstr "Объединение @type следующих полей: @fields."
+
+msgid "Concatenation"
+msgstr "Конкатенация"
+
+msgid "Sum"
+msgstr "Сумма"
+
+msgid "Count"
+msgstr "Количество"
+
+msgid "Maximum"
+msgstr "Максимум"
+
+msgid "Minimum"
+msgstr "Минимум"
+
+msgid "First"
+msgstr "Первый"
+
+msgid "Last"
+msgstr "Последний"
+
+msgid "First letter"
+msgstr "Первая буква"
+
+msgid "The Union aggregation does an union operation of all the values of the field. 2 fields with 2 values each become 1 field with 4 values."
+msgstr "Объединение Union выполняет операцию union для всех значений поля. 2 поля, в каждом из которых содержится по 2 значения станут одним полем с 4 значениями."
+
+msgid "The Concatenation aggregation concatenates the text data of all contained fields."
+msgstr "Объединение Concatenation выполняет конкатенацию текстовых данных всех вложенных полей."
+
+msgid "The Sum aggregation adds the values of all contained fields numerically."
+msgstr "Объединение Sum добавляет значения всех вложенных полей в числовом виде."
+
+msgid "The Count aggregation takes the total number of contained field values as the aggregated field value."
+msgstr "Объединение Count получает общее число значений вложенных полей в качестве значения объединенного поля."
+
+msgid "The Maximum aggregation computes the numerically largest contained field value."
+msgstr "Объединение Maximum вычисляет в числовом виде самое большое значение вложенных полей."
+
+msgid "The Minimum aggregation computes the numerically smallest contained field value."
+msgstr "Объединение Minimum вычисляет в числовом виде самое маленькое значение вложенных полей."
+
+msgid "The First aggregation will simply keep the first encountered field value."
+msgstr "Объединение First просто сохраняет первое обнаруженное значение поля."
+
+msgid "The Last aggregation will keep the last encountered field value."
+msgstr "Объединение Last сохранит последнее обнаруженное значение поля."
+
+msgid "The “First letter” aggregation uses just the first letter of the first encountered field value as the aggregated value. This can, for example, be used to build a Glossary view."
+msgstr "Объединение “Первая буква” использует в качестве объединенного значения только первую букву значения первого встреченного поля. Например, это может пригодиться для создания представления Глоссарий."
+
+msgid "User roles"
+msgstr "Роли пользователя"
+
+msgid "Your item will be rendered as seen by a user with the selected roles. We recommend to just use \"@anonymous\" here to prevent data leaking out to unauthorized roles."
+msgstr "Элемент будет выведен с точки зрения пользователя с выбранными ролями. Рекомендуется использовать здесь \"@anonymous\" для предотвращения утечки данных в неавторизованные роли."
+
+msgid "You can choose the view modes to use for rendering the items of different datasources and bundles. We recommend using a dedicated view mode (for example, the \"Search index\" view mode available by default for content) to make sure that only relevant data (especially no field labels) will be included in the index."
+msgstr "Можно выбрать режимы просмотра с целью использования для вывода элементов из других источников данных и комплектов. Рекомендуется использовать режим выделенного просмотра (например режим просмотра \"Индекс поиска\" по умолчанию доступен для материалов) для гарантии, что в индекс будут включены только значимые данные (в частности, без меток полей)."
+
+msgid "Don't include the rendered item."
+msgstr "Не включать выведенный элемент."
+
+msgid "View mode for %datasource » %bundle"
+msgstr "Режим просмотра для %datasource » %bundle"
+
+msgid "The order in which items will be indexed."
+msgstr "Порядок, в котором будут индексироваться элементы."
+
+msgid "Index items in the same order in which they were saved"
+msgstr "Индексировать элементы в том порядке, в котором они были сохранены"
+
+msgid "Index the most recent items first"
+msgstr "Индексировать сначала новые элементы"
+
+msgid "Default index tracker which uses a simple database table for tracking items."
+msgstr "Функция отслеживания индекса по умолчанию, использующий для отслеживания элементов простую таблицу базы данных."
+
+msgid "No valid taxonomy term IDs given for \"All taxonomy term fields\" contextual filter."
+msgstr "Не указаны допустимые ИД терминов таксономии для контекстного фильтра \"Все поля терминов таксономии\"."
+
+msgid "\"All taxonomy term fields\" contextual filter could not be applied as taxonomy term %label (ID: @id) belongs to vocabulary %vocabulary, not contained in any indexed fields."
+msgstr "Не удалось применить контекстный фильтр \"Все поля терминов таксономии\", поскольку термин таксономии %label (ИД: @id) из словаря %vocabulary отсутствует в индексируемых полях."
+
+msgid "Choose how the search keys will be parsed."
+msgstr "Выберите способ анализа ключей поиска."
+
+msgid "Searched fields"
+msgstr "Поисковые поля"
+
+msgid "Select the fields that will be searched. If no fields are selected, all available fulltext fields will be searched."
+msgstr "Выберите поля для поиска. Если поля не выбраны, поиск будет выполняться по всем доступным полнотекстовым полям."
+
+msgid "Operator"
+msgstr "Оператор"
+
+msgid "Determines how multiple keywords entered for the search will be combined."
+msgstr "Определяет способ объединения нескольких ключевых слов, введенных для поиска."
+
+msgid "Contains all of these words"
+msgstr "Содержит все эти слова"
+
+msgid "Contains any of these words"
+msgstr "Содержит любое из этих слов"
+
+msgid "Fields for similarity"
+msgstr "Поля для поиска похожих материалов"
+
+msgid "Select the fields that will be used for finding similar content. If no fields are selected, all available fields will be used."
+msgstr "Выберите поля для поиска похожих материалов. Если поля не выбраны, будут использоваться все доступные поля."
+
+msgid "The search backend \"@backend_id\" does not offer \"More like this\" functionality."
+msgstr "Базовая программа поиска \"@backend_id\" не предлагает функцию \"Больше похоже на следующее\"."
+
+msgid "Allow multiple values"
+msgstr "Разрешить множественные значения"
+
+msgid "If selected, users can enter multiple values in the form of 1+2+3 (for OR) or 1,2,3 (for AND)."
+msgstr "Если выбрано, пользователь сможет ввести несколько значений в виде 1+2+3 (для OR), или 1,2,3 (для AND)."
+
+msgid "Exclude"
+msgstr "Исключить"
+
+msgid "If selected, the values entered for the filter will be excluded rather than limiting the view to those values."
+msgstr "Если выбрано, то введенные значения для фильтра будут исключены и не будут использоваться для отображения только этих значений."
+
+msgid "Search API (tag-based)"
+msgstr "API поиска (на основе тегов)"
+
+msgid "Cache results until the associated cache tags are invalidated. Useful for small sites that use the database search backend. <strong>Caution:</strong> Can lead to stale results and might harm performance for complex search pages."
+msgstr "Кэшировать результаты, если связанные теги кэша не будут аннулированы. Применяется для небольших сайтов, использующих базовую программу поиска в базе данных. <strong>Внимание:</strong> может привести к устареванию результатов и снижению быстродействия для сложных страниц поиска."
+
+msgid "Search API (time-based)"
+msgstr "API поиска (на основе времени)"
+
+msgid "Cache results for a predefined time period. Useful for sites that use external search engines such as Solr, or index multiple datasources. <strong>Caution:</strong> Will lead to stale results and might harm performance for complex search pages."
+msgstr "Кэшировать результаты для заранее определенного промежутка времени. Применяется для сайтов, использующих внешние модули поиска, такие как Solr, или индексирующих несколько источников данных. <strong>Внимание:</strong> это приведет к устареванию результатов и снижению быстродействия для сложных страниц поиска."
+
+msgid "Update this item"
+msgstr "Обновить этот элемент"
+
+msgid "Apply to selected items"
+msgstr "Применить к отмеченным позициям"
+
+msgid "Row %items removed from selection as it's not compatible with %action action."
+msgid_plural "Rows %items removed from selection as they are not compatible with %action action."
+msgstr[0] "Строка %items удалена из числа выбранных, поскольку она несовместима с действием %action. "
+msgstr[1] "Строки %items удалены из числа выбранных, поскольку они несовместимы с действием %action."
+msgstr[2] "Строки %items удалены из числа выбранных, поскольку они несовместимы с действием %action."
+
+msgid "Display for \"@bundle\" bundle"
+msgstr "Показать данные для комплекта \"@bundle\""
+
+msgid "Hide"
+msgstr "Скрыть"
+
+msgid "Raw ID"
+msgstr "Непосредственный ИД"
+
+msgid "Only label"
+msgstr "Только метка"
+
+msgid "Entity view"
+msgstr "Представление объекта"
+
+msgid "View mode for \"@bundle\" bundle"
+msgstr "Режим представления для комплекта \"@bundle\""
+
+msgid "This will only take effect for entities for which only the entity label is displayed."
+msgstr "Это повлияет только на объекты, для которых отображаются только метки объекта."
+
+msgid "If checked, Drupal's built-in field rendering mechanism will be used for rendering this field's values, which requires the entity to be loaded. If unchecked, a type-specific, entity-independent rendering mechanism will be used."
+msgstr "Если опция выбрана, встроенный механизм вывода полей Drupal будет применяться для вывода значений этих полей, для чего потребуется загрузка объекта. Если опция не выбрана, будет применяться объектно-независимый механизм вывода для конкретного типа."
+
+msgid "Render settings"
+msgstr "Параметры вывода"
+
+msgid "Link this field to its item"
+msgstr "Связать это поле с его элементом"
+
+msgid "Display this field as a link to its original entity or item."
+msgstr "Показать это поле в виде ссылки на его исходный объект или элемент."
+
+msgid "Display field with matches of the search keywords highlighted, if available."
+msgstr "Показать поле, соответствующее выделенным ключевым словам поиска (если доступно)."
+
+msgid "Multiple values handling"
+msgstr "Обработка нескольких значений"
+
+msgid "If this field contains multiple values for an item, these settings will determine how they are handled."
+msgstr "Если в поле содержится несколько значений для элемента, эти параметры будут определять способ их обработки."
+
+msgid "Display type"
+msgstr "Тип отображения"
+
+msgid "Unordered list"
+msgstr "Маркированный список"
+
+msgid "Ordered list"
+msgstr "Пронумерованный список"
+
+msgid "Simple separator"
+msgstr "Простой разделитель"
+
+msgid "Separator"
+msgstr "Разделитель"
+
+msgid "View mode for datasource %name"
+msgstr "Способ отображения источника данных %name"
+
+msgid "This datasource doesn't have any view modes available. It is therefore not possible to display results of this datasource in this field."
+msgstr "Для этого источника данных нет доступных режимов представления. Поэтому показать результаты этого источника данных в этом поле невозможно."
+
+msgid "View mode for datasource %datasource, bundle %bundle"
+msgstr "Способ отображения для источника данных %datasource и бандла %bundle"
+
+msgid "This bundle doesn't have any view modes available. It is therefore not possible to display results of this bundle using this row plugin."
+msgstr "Для этого комплекта нет доступных режимов представления. Поэтому показать результаты этого комплекта с помощью модуля строк невозможно."
+
+msgid "Failed to load item %item_id in view %view."
+msgstr "Не удалось загрузить элемент %item_id в представлении %view."
+
+msgid "Item of unknown datasource %datasource returned in view %view."
+msgstr "В %view возвращен элемент из неизвестного источника данных %datasource."
+
+msgid "Depending on the parse mode set, some of these options might not work as expected. Please either use \"@multiple_words\" as the parse mode or make sure that the filter behaves as expected for multiple words."
+msgstr "В зависимости от заданного режима анализа некоторые из этих опций могут работать непредсказуемым образом. Используйте режим анализа \"@multiple_words\" или убедитесь, что фильтр правильно работает для нескольких слов."
+
+msgid "and"
+msgstr "и"
+
+msgid "or"
+msgstr "или"
+
+msgid "Contains none of these words"
+msgstr "Не содержит эти слова"
+
+msgid "not"
+msgstr "нет"
+
+msgid "Minimum keyword length"
+msgstr "Минимальная длина ключевого слова"
+
+msgid "Minimum length of each word in the search keys. Leave empty to allow all words."
+msgstr "Минимальная длина каждого слова в ключах поиска. Для использования всех слов оставьте поле пустым."
+
+msgid "Hint text that appears inside the field when empty."
+msgstr "Текст подсказки, который появляется внутри поля, когда пусто."
+
+msgid "Expose searched fields"
+msgstr "Открыть доступ к поисковым полям"
+
+msgid "Expose the list of searched fields. This allows users to narrow the search to the desired fields."
+msgstr "Откройте доступ к списку поисковых полей. Пользователи могут сократить область поиска до указанных полей. "
+
+msgid "This will appear in the URL after the ? to identify this searched fields form element."
+msgstr "Отображается в URL после знака вопроса, чтобы отличать поисковые поля от элемента. "
+
+msgid "Search fields"
+msgstr "Поля для поиска"
+
+msgid "You must include at least one positive keyword with @count characters or more."
+msgstr "Необходимо указать хотя бы одно не исключающее ключевое слово, содержащее не менее @count символов."
+
+msgid "contains"
+msgstr "содержит"
+
+msgid "doesn't contain"
+msgstr "не содержит"
+
+msgid "Is one of"
+msgstr "Один из"
+
+msgid "="
+msgstr "="
+
+msgid "Is all of"
+msgstr "Все"
+
+msgid "Is none of"
+msgstr "Кроме"
+
+msgid "<>"
+msgstr "<>"
+
+msgid "Is empty (NULL)"
+msgstr "Пустое (NULL)"
+
+msgid "empty"
+msgstr "пусто"
+
+msgid "Is not empty (NOT NULL)"
+msgstr "Не пустое (NOT NULL)"
+
+msgid "not empty"
+msgstr "не пусто"
+
+msgid "Skip item access checks"
+msgstr "Пропустить проверки доступа к элементу"
+
+msgid "By default, an additional access check will be executed for each item returned by the search query. However, since removing results this way will break paging and result counts, it is preferable to configure the view in a way that it will only return accessible results. If you are sure that only accessible results will be returned in the search, or if you want to show results to which the user normally wouldn't have access, you can enable this option to skip those additional access checks. This should be used with care."
+msgstr "По умолчанию для каждого элемента, возвращенного поисковым запросом, будет выполняться дополнительная проверка доступа. Однако удаление результатов этим способом приведет к неправильному формированию числа страниц и результатов, предпочтительнее настраивать представление таким способом, чтобы оно возвращало только доступные результаты. Если есть уверенность, что поиск возвратит только доступные результаты, или если требуется показать результаты, к которым пользователь не имеет доступа, можно включить эту опцию для пропуска этих дополнительных проверок доступа. Эту опцию следует использовать с осторожностью."
+
+msgid "Bypass access checks"
+msgstr "Пропускать проверки доступа"
+
+msgid "If the underlying search index has access checks enabled (for example, through the \"Content access\" processor), this option allows you to disable them for this view. This will never disable any filters placed on this view."
+msgstr "Если для основного индекса поиска включена проверка доступа (например с помощью процессора \"Доступ к содержимому\"), то эта опция позволяет отключить их для данного представления. При этом никакие фильтры в этом представлении никогда не будут отключены."
+
+msgid "Preserve facets while using filters"
+msgstr "Сохранить фасеты при использовании фильтров"
+
+msgid "If set, these tags will be appended to the query and can be used to identify the query in a module. This can be helpful for altering queries."
+msgstr "Если установлено, то эта метка будет добавлена к запросу и будет возможно идентифицировать запрос в модуле. Это может быть полезно для изменения запросов."
+
+msgid "Tried to sort results randomly on server %server which does not support random sorting."
+msgstr "Выполнена попытка сортировки результатов случайным образом на сервере %server, которые не поддерживает сортировку случайным образом."
+
+msgid "Search API Query"
+msgstr "Запрос API поиска"
+
+msgid "The query will be generated and run using the Search API."
+msgstr "Запрос будет сформирован и выполнен с помощью API поиска."
+
+msgid "Skip access checks"
+msgstr "Пропустить проверки доступа"
+
+msgid "Do not verify that the user has access to the entities referenced through this relationship. This will allow you to display data to the user to which they normally would not have access. This should therefore be used with care."
+msgstr "Не следует проверять права доступа пользователя к объектам, на которые есть ссылки из этой взаимосвязи. Это позволит показать пользователю данные, к которым он обычно не имеет доступа. Поэтому эту опцию следует использовать с осторожностью."
+
+msgid "This datasource doesn't have any view modes available. It is therefore not possible to display results of this datasource using this row plugin."
+msgstr "Для этого источника данных нет доступных режимов представления. Поэтому показать результаты этого источника данных с помощью модуля строк невозможно."
+
+msgid "Rendered entity"
+msgstr "Готовая к выводу сущность"
+
+msgid "Displays entity of the matching search API item"
+msgstr "Показывает объект соответствующего элемента API поиска"
+
+msgid "Enable on all supported fields"
+msgstr "Включить для всех поддерживаемых полей"
+
+msgid "Enable this processor for all supported fields. This will also automatically update the setting when new supported fields are added to the index."
+msgstr "Включить этот процессор для всех поддерживаемых полей. При этом параметр будет обновляться автоматически при добавлении в индекс новых поддерживаемых полей."
+
+msgid "Enable this processor on the following fields"
+msgstr "Включить этот процессор для следующих полей"
+
+msgid "Note: The Search API currently doesn't support per-field keywords processing, so this setting will be ignored when preprocessing search keywords. It is therefore usually recommended that you enable the processor for all fields that you intend to use as fulltext search fields, to avoid undesired consequences."
+msgstr "Примечание: В настоящее время API поиска не поддерживает обработку ключевых слов по каждому полю, поэтому этот параметр будет игнорироваться при предварительной обработке ключевых слов поиска. Поэтому во избежание нежелательных последствий рекомендуется включать процессор для всех полей, которые планируется использовать в качестве полей полнотекстового поиска."
+
+msgid "My Processor"
+msgstr "Мой процессор"
+
+msgid "Does … something."
+msgstr "Что-то делает."
+
+msgid "Preprocess index"
+msgstr "Предварительная обработка индекса"
+
+msgid "Preprocess query"
+msgstr "Предварительная обработка запроса"
+
+msgid "Postprocess query"
+msgstr "Выполнить обработку после запроса"
+
+msgid "An error occurred while trying to execute tasks. Check the logs for details."
+msgstr "Ошибка при выполнении задач. Дополнительные сведения содержатся в протоколах."
+
+msgid "Successfully executed @count pending task."
+msgid_plural "Successfully executed @count pending tasks."
+msgstr[0] "Успешно выполнена @count ожидающая задача."
+msgstr[1] "Успешно выполнено ожидающих задач: @count."
+msgstr[2] "Успешно выполнено ожидающих задач: @count."
+
+msgid "My tracker"
+msgstr "Функция отслеживания"
+
+msgid "Simple tracking system."
+msgstr "Простая система отслеживания."
+
+msgid "enabled"
+msgstr "включено"
+
+msgid "There are no indexes defined. Please create an index before trying to enable it."
+msgstr "Не определены индексы. Перед включением индекса его необходимо создать."
+
+msgid "You must specify at least one index to enable."
+msgstr "Необходимо указать хотя бы один индекс для включения."
+
+msgid "There are no indexes defined. Please create an index before trying to disable it."
+msgstr "Не определены индексы. Перед отключением индекса его необходимо создать."
+
+msgid "You must specify at least one index to disable."
+msgstr "Необходимо указать хотя бы один индекс для отключения."
+
+msgid "The index @index is up to date."
+msgstr "Индекс @index в актуальном состоянии."
+
+msgid "Found @remaining items to index for @index. Indexing @limit items."
+msgstr "Найдены элементы (@remaining) для индексации в @index. Выполняется индексация элементов (число элементов: @limit)."
+
+msgid "Indexing a maximum number of @limit items (@batch_size items per batch run) for the index '@index'."
+msgstr "Индексация максимального числа элементов (@limit) (при пакетном выполнении максимальное число элементов равно @batch_size) для индекса '@index'."
+
+msgid "Couldn't create a batch, please check the batch size and limit parameters."
+msgstr "Не удалось создать пакет, проверьте правильность параметров размера пакета и предельного значения."
+
+msgid "@index was successfully cleared."
+msgstr "@index успешно очищен."
+
+msgid "@index was not found"
+msgstr "@index не найден"
+
+msgid "There are no servers present."
+msgstr "Отсутствуют серверы."
+
+msgid "The server could not be loaded."
+msgstr "Не удалось загрузить сервер."
+
+msgid "Invalid index ID \"@index_id\"."
+msgstr "Недопустимый ИД индекса \"@index_id\"."
+
+msgid "Invalid server ID \"@server_id\"."
+msgstr "Недопустимый ИД сервера \"@server_id\"."
+
+msgid "Index @index has been set to use server @server and items have been queued for indexing."
+msgstr "Для индекса @index задано использование сервера @server, элементы помещены в очередь для индексации."
+
+msgid "There was an error setting index @index to use server @server, or this index is already configured to use this server."
+msgstr "Ошибка настройки индекса @index для использования сервера @server, или этот индекс уже настроен для использования этого сервера."
+
+msgid "The index @index is already @desired_state."
+msgstr "Индекс @index уже находится в состоянии @desired_state."
+
+msgid "Index @index could not be @desired_state because it is not bound to any server."
+msgstr "Не удалось перевести индекс @index в состояние @desired_state, так как он не связан ни с одним сервером."
+
+msgid "The index @index was successfully @desired_state."
+msgstr "Индекс @index успешно переведен в состояние @desired_state."
+
+msgid "Index status"
+msgstr "Состояние индекса"
+

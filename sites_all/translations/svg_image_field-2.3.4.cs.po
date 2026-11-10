@@ -1,0 +1,375 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "svg image from @field_name"
+msgstr "Obrázek svg z @field_name"
+
+msgid "@entity using @field"
+msgstr "@entity používající @field"
+
+msgid "@field_name"
+msgstr "@field_name"
+
+msgid "Relate each @entity with a @field set to the svg image."
+msgstr "Každou položku @entity dejte do vztahu s položkou @field nastavenou na obrázek svg."
+
+msgid "About"
+msgstr "Popis"
+
+msgid ""
+"The SVG image field module allows you to create fields that contain\n"
+" svg image files and to configure svg output. See the <a href=\":field\">Field module help</a> and\n"
+"  the <a href=\":field_ui\">Field UI help</a> pages for terminology and general information on\n"
+"  entities, fields, and how to create and manage fields."
+msgstr ""
+"Modul Pole s obrázkem SVG vám umožňuje vytvářet pole, která obsahují\n"
+" soubory obrázků svg, a konfigurovat výstup svg. Viz stránky <a href=\":field\">nápovědy modulu Pole</a> a\n"
+"  <a href=\":field_ui\">nápovědy uživatelského rozhraní pole</a>, kde naleznete terminologii a obecné informace o \n"
+"  entitách, polích a jak pole vytvořit a spravovat."
+
+msgid "Uses"
+msgstr "Použití"
+
+msgid "Configuring svg image fields"
+msgstr "Konfigurace polí s obrázkem svg"
+
+msgid ""
+"A few of the settings for svg image fields are defined once when you create the field and\n"
+"      cannot be changed later; these include the choice of public or private file storage and the number of images that can be stored in the field.\n"
+"       The rest of the settings can be edited later; these settings include the field label, help text, and the subdirectory in the public or private file storage\n"
+"       where the images will be stored. The editable settings can also have different values for different entity sub-types; for instance,\n"
+"       if your image field is used on both Page and Article content types, you can store the files in a\n"
+"        different subdirectory for the two content types."
+msgstr ""
+"Několik nastavení pro pole s obrázky SVG je definováno jen jednou, když vytvoříte pole, a \n"
+"      později je nemůžete změnit; tato volba zahrnuje výběr veřejného nebo soukromého úložiště souborů a počet obrázků, které lze do pole uložit.\n"
+"       Zbytek nastavení lze upravit později; tato nastavení zahrnují popisek pole, text nápovědy a podadresář ve veřejném nebo soukromém úložišti souborů, \n"
+"       kde budou obrázky uloženy. Upravitelná nastavení mohou mít také různé hodnoty pro různé podtypy entit; \n"
+"       pokud se vaše pole s obrázkem používá na typech obsahu stránky i článku, můžete tyto soubory uložit do \n"
+"        jiného podadresáře pro dva typy obsahu."
+
+msgid ""
+"For accessibility and search engine optimization, all images that convey meaning on web sites should have alternate text.\n"
+"       Drupal also allows entry of title text for images, but it can lead to confusion for screen reader users and its use is not recommended.\n"
+"       SVG image fields can be configured so that alternate and title text fields are enabled or disabled; if enabled, the fields can be set to be required.\n"
+"        The recommended setting is to enable and require alternate text and disable title text."
+msgstr ""
+"Z důvodu usnadnění přístupu a optimalizace vyhledávacího stroje by alternativní text měly mít všechny obrázky, které vyjadřují na webových stránkách nějaký význam.\n"
+"       Drupal také umožňuje zadání textu nadpisu pro obrázky, ale může vést k záměně u uživatelů zařízení pro čtení obrazovky, a jeho použití se nedoporučuje. \n"
+"       Pole s obrázkem SVG lze konfigurovat tak, aby byla povolena nebo zakázána textová pole pro nadpis a alternativní text; v případě povolení lze pole nastavit jako povinná. \n"
+"        Doporučené nastavení je povolit a požadovat alternativní text a zakázat text nadpisu."
+
+msgid ""
+"When you create an svg image field, you will need to choose whether the uploaded images will be stored in the public or\n"
+" private file directory defined in your settings.php file and shown on the <a href=\":file-system\">File system page</a>. This choice cannot be changed later.\n"
+"  You can also configure your field to store files in a subdirectory of the public or private directory; this setting can be changed later and\n"
+"  can be different for each entity sub-type using the field. For more information on file storage,\n"
+"  see the <a href=\":system-help\">System module help page</a>."
+msgstr ""
+"Když vytvoříte pole s obrázkem svg, budete muset zvolit, zda budou odeslané obrazy uloženy ve veřejném \n"
+" nebo soukromém adresáři souborů definovaném v souboru settings.php a na <a href=\":file-system\">stránce systému souborů</a>. Tuto volbu nelze později změnit. \n"
+"  Můžete také nakonfigurovat pole k uložení souborů do podadresáře veřejného nebo soukromého adresáře; toto nastavení lze později \n"
+"  změnit a může se lišit pro jednotlivé podtypy entit s použitím pole. Další informace k paměti souborů \n"
+"  viz <a href=\":system-help\">stránka nápovědy modulu Systém</a>."
+
+msgid ""
+"The maximum file size that can be uploaded is limited by PHP settings of the server,\n"
+" but you can restrict it further by configuring a <em>Maximum upload size</em> in the field settings (this setting can be changed later).\n"
+" The maximum file size, either from PHP server settings or field configuration, is automatically displayed to users in the help text of the image field."
+msgstr ""
+"Maximální velikost souboru, kterou lze odeslat, je omezena nastavením PHP na serveru, \n"
+" ale můžete ji dále omezit konfigurací <em>Maximální velikost pro odeslání</em> v nastavení pole (toto nastavení lze později změnit).\n"
+" Maximální velikost souboru buď z nastavení serveru PHP, nebo konfigurace pole se automaticky zobrazí uživatelům v textu nápovědy pole s obrázkem."
+
+msgid ""
+"You can also configure a default image that will be used if no image is uploaded in an image field.\n"
+"       This default can be defined for all instances of the field in the field storage settings when you create a field, and the setting can be overridden\n"
+"        for each entity sub-type that uses the field."
+msgstr ""
+"Můžete také konfigurovat výchozí obrázek, který bude použit v případě, že v poli s obrázkem není odeslán žádný obrázek. \n"
+"       Toto výchozí nastavení lze definovat pro všechny instance pole v nastavení úložiště polí, když vytvoříte pole, a nastavení lze přepsat \n"
+" pro každý podtyp entity, který pole používá."
+
+msgid "Configuring displays and form displays"
+msgstr "Konfigurace zobrazení a zobrazení formulářů"
+
+msgid ""
+"On the <em>Manage display</em> page, you can choose the image formatter,\n"
+" which determines the image width and height used to display the image in each display mode and whether or not to display the image alt and title.\n"
+"  On the <em>Manage form display</em> page, you can configure the image upload widget, including setting the preview image max-width and max-height\n"
+"   shown on the entity edit form."
+msgstr ""
+"Na stránce <em>Spravovat zobrazení</em> můžete zvolit formátovač obrázku, \n"
+" který určuje šířku a výšku obrázku použitou k zobrazení obrázku v každém režimu zobrazení, a zda má obrázek zobrazit atribut alt a title. \n"
+"  Na stránce <em>Spravovat zobrazení formuláře</em> můžete konfigurovat modul widget pro odeslání obrázků včetně nastavení maximální šířky a maximální výšky\n"
+" náhledu obrázku zobrazeného ve formuláři úpravy entity."
+
+msgid "Only files with mime type %mime-types-allowed are allowed. Mime type detected %mime-type-detected"
+msgstr "Povoleny jsou pouze soubory s typem MIME %mime-types-allowed. Zjištěn typ MIME %mime-type-detected."
+
+msgid "File %file-name is not valid svg"
+msgstr "Soubor %file-name není platný svg"
+
+msgid "SVG image field"
+msgstr "Pole s obrázkem SVG"
+
+msgid "Provides svg image field"
+msgstr "Poskytuje pole s obrázkem svg"
+
+msgid "Field types"
+msgstr "Typy polí"
+
+msgid "Image settings"
+msgstr "Nastavení obrázků"
+
+msgid "Default value"
+msgstr "Výchozí hodnota"
+
+msgid "Enable Alt field"
+msgstr "Povolit pole Alt"
+
+msgid "Alt field required"
+msgstr "Pole Alt je povinné"
+
+msgid "Enable Title field"
+msgstr "Povolit pole titulku"
+
+msgid "Title field required"
+msgstr "Pole titulku je povinné"
+
+msgid "Image field display format settings"
+msgstr "Nastavení formátu zobrazení pole s obrázkem"
+
+msgid "Output SVG inline"
+msgstr "Vložené výstupní SVG"
+
+msgid "Apply dimensions"
+msgstr "Použít rozměry"
+
+msgid "Width"
+msgstr "Šířka"
+
+msgid "Height"
+msgstr "Výška"
+
+msgid "Enable alt"
+msgstr "Povolit alt"
+
+msgid "Enable title"
+msgstr "Povolit nadpis"
+
+msgid "Link image to"
+msgstr "Odkázat obrázkem na"
+
+msgid "Force fill"
+msgstr "Vynutit vyplnění"
+
+msgid "Sanitize"
+msgstr "Ošetřit"
+
+msgid "Sanitize remote"
+msgstr "Ošetřit vzdálený"
+
+msgid "Progress indicator"
+msgstr "Ukazatel průběhu"
+
+msgid "Preview max width"
+msgstr "Maximální šířka náhledu"
+
+msgid "Preview max height"
+msgstr "Maximální výška náhledu"
+
+msgid "SVG Image Field - Media Bundle"
+msgstr "Pole obrázku SVG - Balík médií"
+
+msgid "Creates a media bundle to use SVG Image Field with the Media capabilities in core. NOTE: if you are planning to use this with the Media Library in core, it is recommended to install that module before this one. Will also install Acquia Site Studio Components if that is installed."
+msgstr "Vytvoří balík médií pro použití pole s obrázkem SVG se schopnostmi médií v základu. POZNÁMKA: Jestliže plánujete toto používat s knihovnou médií v základu, doporučuje se daný modul instalovat před tímto modulem. Nainstaluje také komponenty Acquia Site Studio, je-li nainstalována."
+
+msgid "Content"
+msgstr "Obsah"
+
+msgid "File"
+msgstr "Soubor"
+
+msgid ""
+"Check this option if you want to manipulate the SVG image with CSS and JavaScript.\n"
+"       Notice only trusted users should use fields with this option enabled because of\n"
+"       <a href=\"@svg_security_link\">inline svg security</a>"
+msgstr ""
+"Tuto volbu zaškrtněte, chcete-li s obrázkem SVG manipulovat s pomocí CSS a JavaScriptu. \n"
+"       Pozor, pole s touto povolenou volbou by měli používat pouze důvěryhodní uživatelé \n"
+"       <a href=\"@svg_security_link\">kvůli vloženému zabezpečení svg</a>"
+
+msgid "Apply dimensions."
+msgstr "Použít rozměry."
+
+msgid "Image width."
+msgstr "Šířka obrázku."
+
+msgid "Image height."
+msgstr "Výška obrázku."
+
+msgid "Force the fill to currentColor"
+msgstr "Vynutit vyplnění hodnoty currentColor"
+
+msgid "This can allow the SVG to inherit coloring from the enclosing tag, such as a link tag."
+msgstr "To může umožnit, aby SVG zdědil barvy z uzavírající značky, jako je např. značka odkazu."
+
+msgid "Sanitize SVG code"
+msgstr "Ošetřit kód SVG"
+
+msgid "Sanitize the SVG XML code and prevent XSS attacks."
+msgstr "Ošetřete kód XML SVG a zabraňte útokům XSS."
+
+msgid "Sanitize: Remove remote references"
+msgstr "Ošetřit: Odebrání vzdálených odkazů"
+
+msgid "Remove attributes that reference remote files, this will stop HTTP leaks but will add an overhead to the sanitizer."
+msgstr "Odeberte atributy odkazující na vzdálené soubory, tím zastavíte úniky HTTP, ale přidáte k ošetřovacímu programu režii."
+
+msgid "Nothing"
+msgstr "Nic"
+
+msgid "Enable alt attribute."
+msgstr "Povolte atribut alt."
+
+msgid "Enable title attribute."
+msgstr "Povolte atribut title."
+
+msgid "Inline SVG"
+msgstr "Vložený SVG"
+
+msgid "Image width: @width"
+msgstr "Šířka obrázku: @width"
+
+msgid "Image height: @height"
+msgstr "Výška obrázku: @height"
+
+msgid "Alt enabled"
+msgstr "Alt povolen"
+
+msgid "Title enabled"
+msgstr "Titulek povolen"
+
+msgid "Inline file %file is missing or empty. Inline display will be disabled and an image tag used instead."
+msgstr "Vložený soubor %file chybí nebo je prázdný. Vložené zobrazení bude zakázáno a místo něj bude použita značka obrázku."
+
+msgid "File %file could not be displayed by image formatter because it does not exist on server."
+msgstr "Soubor %file nelze zobrazit formátovačem obrázku, protože neexistuje na serveru."
+
+msgid "SVG Image Field formatter"
+msgstr "Formátovač pole obrázku SVG"
+
+msgid "SVG Image URL formatter"
+msgstr "Formátovač adresy URL obrázku SVG"
+
+msgid "Alternative text"
+msgstr "Alternativní text"
+
+msgid "Alternative image text, for the image's 'alt' attribute."
+msgstr "Alternativní popis obrázku - 'alt' atribut."
+
+msgid "Title"
+msgstr "Nadpis"
+
+msgid "Image title text, for the image's 'title' attribute."
+msgstr "Název obrázku - 'title' atribut."
+
+msgid "Upload destination"
+msgstr "Cíl nahrávání"
+
+msgid "Select where the final files should be stored. Private file storage has significantly more overhead than public files, but allows restricted access to files within this field."
+msgstr "Vyberte kde má být finální úložiště souborů. Uložiště soukromých souborů má mnohem vyšší režii než uložiště veřejných souborů, ale umožňuje omezovat přístup k souborům tohoto pole."
+
+msgid "If no image is uploaded, this image will be shown on display."
+msgstr "Pokud nebude nahrán žádný obrázek, zobrazí se tento."
+
+msgid "Enable <em>Alt</em> field"
+msgstr "Zapnout pole <em>Alt</em>"
+
+msgid "The alt attribute may be used by search engines, screen readers, and when the image cannot be loaded. Enabling this field is recommended."
+msgstr "Atribut alt může být použit vyhledávači, čtečkami obrazovky a v situacích, kdy obrázek není dostupný. Povolení tohoto pole je doporučeno."
+
+msgid "<em>Alt</em> field required"
+msgstr "Povinné pole <em>Alt</em>"
+
+msgid "Making this field required is recommended."
+msgstr "Doporučuje se nastavit toto pole jako povinné."
+
+msgid "Enable <em>Title</em> field"
+msgstr "Zapnout pole <em>Název</em>"
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image. Enabling this field is not recommended as it can cause problems with screen readers."
+msgstr "Atribut title se používá jako popisek při přejetí myší přes obrázek. Zapnutí tohoto pole se nedoporučuje, protože způsobuje problémy čtečkám obrazovky."
+
+msgid "<em>Title</em> field required"
+msgstr "Pole <em>titulku</em> je povinné"
+
+msgid "If no image is uploaded, this image will be shown on display and will override the field's default image."
+msgstr "Pokud není nahrán žádný nový obrázek, bude se zobrazovat právě tento obrázek místo výchozího obrázku pro toto pole"
+
+msgid "Default image"
+msgstr "Výchozí obrázek"
+
+msgid "Image"
+msgstr "Obrázek"
+
+msgid "Image to be shown if no image is uploaded."
+msgstr "Tento obrázek se zobrazí, pokud žádný jiný nenahrajete."
+
+msgid "This text will be used by screen readers, search engines, and when the image cannot be loaded."
+msgstr "Tento text se použije pro čtečky obrazovky a vyhledávače a také v případě, že obrázek nebude dostupný."
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image."
+msgstr "Atribut title se používá jako popisek při přejetí myší přes obrázek."
+
+msgid "Svg Image"
+msgstr "Obrázek Svg"
+
+msgid "This field stores the ID of an image file as an integer value."
+msgstr "Toto pole ukládá ID obrázku jako číslo."
+
+msgid "Reference"
+msgstr "Reference"
+
+msgid "Alt"
+msgstr "Popisek (Alt)"
+
+msgid "Preview image max width"
+msgstr "Maximální šířka obrázku náhledu"
+
+msgid "Preview image max height"
+msgstr "Maximální výška obrázku náhledu"
+
+msgid "Preview image width: @width"
+msgstr "Šířka obrázku náhledu: @width"
+
+msgid "Preview image height: @height"
+msgstr "Výška obrázku náhledu: @height"
+
+msgid "This text will be used by screen readers, search engines, or when the image cannot be loaded."
+msgstr "Tento text použijí programy na čtení obrazovky, vyhledávače nebo se zobrazí, pokud se nepodaří načíst obrázek."
+
+msgid "The title is used as a tool tip when the user hovers the mouse over the image."
+msgstr "Nadpis se používá pro vyskakovací okno, když uživatel přetáhne myš na obrázek."
+
+msgid "SVG image"
+msgstr "Obrázek SVG "
+
+msgid "SVG"
+msgstr "SVG"
+
+msgid "Provides business logic and metadata for SVG files."
+msgstr "Zajišťuje obchodní logiku a metadata pro soubory SVG."
+

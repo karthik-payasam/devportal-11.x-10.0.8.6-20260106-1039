@@ -1,0 +1,765 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "EU Cookie Compliance Consents"
+msgstr "Согласие с требованиями ЕС для cookie"
+
+msgid "EU Cookie Compliance consent data from the database."
+msgstr "Данные о согласии с требованиями ЕС для cookie из базы данных. "
+
+msgid "User ID"
+msgstr "ID Пользователя"
+
+msgid "User ID."
+msgstr "ID пользователя"
+
+msgid "Users"
+msgstr "Пользователи"
+
+msgid "Timestamp"
+msgstr "Время"
+
+msgid "Time of consent."
+msgstr "Время согласия. "
+
+msgid "IP address"
+msgstr "IP-адрес"
+
+msgid "The IP address."
+msgstr "IP-адрес."
+
+msgid "Consent Type"
+msgstr "Тип согласия"
+
+msgid "The type of consent, such as \"banner\" for the banner and form_id for forms."
+msgstr "Тип согласия, такой как \"banner\" для баннера и form_id для формы. "
+
+msgid "Revision ID"
+msgstr "ID редакции"
+
+msgid "Revision of the privacy policy at the time of consent."
+msgstr "Ревизия политики конфиденциальности на момент согласия. "
+
+msgid "About"
+msgstr "Информация"
+
+msgid "This module intends to deal with the EU Directive on Privacy and Electronic Communications that comes into effect on 26th May 2012. From that date, if you are not compliant or visibly working towards compliance, you run the risk of enforcement action, which can include a fine of up to half a million pounds for a serious breach."
+msgstr "Этот модуль предназначен для выполнения директивы ЕС о конфиденциальности и электронных средствах связи от 26 мая 2012 г. Начиная с этой даты, если требования не выполнены и нет заметного прогресса в их выполнении, есть риск понести ответственность, включая штраф до 500000 фунтов стерлингов."
+
+msgid "How it works"
+msgstr "Принцип действия"
+
+msgid "The module displays a banner at the bottom or the top of website to make users aware of the fact that cookies are being set. The user may then give his/her consent or move to a page that provides more details. Consent is given by user pressing the agree buttons or by continuing browsing the website. Once consent is given another banner appears with a \"Thank you\" message."
+msgstr "Модуль показывает информационную строку в нижней или верхней части веб-сайта для уведомления пользователей об установке cookie. Затем пользователь может подтвердить свое согласие или перейти на страницу с более подробной информацией. Согласие выражается путем нажатия кнопки согласия или продолжения просмотра веб-сайта. Согласие приводит к появлению другой информационной строки с сообщением \"Спасибо\"."
+
+msgid "The module provides a settings page where the banner can be customized. There are also template files for the banners that can be overridden by your theme."
+msgstr "Модуль предоставляет страницу параметров для настройки информационной строки. Кроме того, существуют файлы шаблонов для информационных строк, которые можно переопределить своей темой."
+
+msgid "Installation"
+msgstr "Установка"
+
+msgid "Unzip the files to the \"sites/all/modules\" OR \"modules\" directory and enable the module."
+msgstr "Распакуйте файлы в каталог \"sites/all/modules\" или \"modules\", чтобы активировать модуль."
+
+msgid "If desired, give the administer EU Cookie Compliance banner permissions that allow users of certain roles access the administration page. You can do so on the admin/user/permissions page."
+msgstr "При необходимости предоставьте пользователям права доступа к информационной строке Соответствие требованиям ЕС для cookie, которые позволяют пользователям определенных ролей иметь доступ к странице администрирования. Это делается на странице admin/user/permissions."
+
+msgid "there is also a 'display eu cookie compliance banner' permission that helps you show the banner to the roles you desire."
+msgstr "Кроме того, есть права доступа на 'показ информационной строки соответствия требованиям ЕС для cookie', которые позволяют выводить информационную строку пользователям выбранных ролей."
+
+msgid "You may want to create a page that would explain how your site uses cookies. Alternatively, if you have a privacy policy, you can link the banner to that page (see next step)."
+msgstr "Возможно, потребуется создать страницу с объяснением того, как на сайте используются cookie. Или, если есть правила работы с личными данными, можно добавить в информационную строку ссылку на эту страницу (см. следующий шаг)."
+
+msgid "Go to the admin/config/system/eu-cookie-compliance page to configure and enable the banner."
+msgstr "Перейдите на страницу admin/config/system/eu-cookie-compliance для настройки и активации информационной строки."
+
+msgid "If you want to theme your banner override the themes in the template file."
+msgstr "Если требуется изменить тему оформления информационной строки, переопределите темы в файле шаблона."
+
+msgid "If you want to show the message in EU countries only, install the Smart IP module: http://drupal.org/project/smart_ip and enable the option on the admin page."
+msgstr "Если требуется показывать сообщение только в странах ЕС, установите модуль Smart IP (http://drupal.org/project/smart_ip) и включите соответствующий параметр на странице администрирования."
+
+msgid "NOTICE: The module does not audit your cookies nor does it prevent cookies from being set."
+msgstr "ПРИМЕЧАНИЕ: модуль не проверяет cookie и не препятствует их установке."
+
+msgid "For developers"
+msgstr "Для разработчиков"
+
+msgid "If you want to conditionally set cookies in your module, there is a javascript function provided that returns TRUE if the current user has given his consent:"
+msgstr "Если требуется условно задать cookie в модуле, то существует функция javascript, которая возвращает значение TRUE, если текущий пользователь дал свое согласие:"
+
+msgid "%name must be a HEX value (without leading #) or empty."
+msgstr "Значение %name должно быть 16-ричным (без начального #) или пустым."
+
+msgid "Withdraw consent"
+msgstr "Аннулировать согласие"
+
+msgid "EU Cookie Compliance"
+msgstr "Соответствие требованиям ЕС для cookie"
+
+msgid "Privacy policy link not provided"
+msgstr "Не указана ссылка на правила работы с личными данными"
+
+msgid "Language @language_id: Your privacy policy link is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "Язык @language_id: ваша ссылка на политику конфиденциальности указывает на главную страницу. Это значение по умолчанию после установки и, если правила работы с личными данными опубликованы не на главной странице, необходимо создать отдельную страницу для этого и указать ее адрес в ссылке."
+
+msgid "Cookie category"
+msgstr "Категория cookie"
+
+msgid "Cookie categories"
+msgstr "Категории cookie"
+
+msgid "This module aims at making the website compliant with the new EU cookie regulation"
+msgstr "Этот модуль предназначен для того, чтобы сделать веб-сайт совместимым с новыми правилами ЕС для cookie"
+
+msgid "User interface"
+msgstr "Интерфейс пользователя"
+
+msgid "Add Cookie category"
+msgstr "Добавить категорию cookie"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Categories"
+msgstr "Категории"
+
+msgid "Make your website compliant with the EU Directive on Privacy and Electronic Communications."
+msgstr "Сделайте свой веб-сайт соответствующим требованиям директивы ЕС о конфиденциальности и электронных средствах связи."
+
+msgid "Configure the cookie consent popup."
+msgstr "Настройте всплывающий запрос о согласии на использование cookie."
+
+msgid "Administer cookie categories."
+msgstr "Настройте категории cookie."
+
+msgid "Administer EU Cookie Compliance banner"
+msgstr "Управление информационной строкой для соответствия требованиям EU для cookie"
+
+msgid "Administer EU Cookie Compliance categories"
+msgstr "Настроить категории в соответствии с требованиями ЕС к cookie"
+
+msgid "Display EU Cookie Compliance banner"
+msgstr "Показать информационную строку для соответствия требованиям ЕС для cookie"
+
+msgid "EU Cookie Compliance store consent"
+msgstr "Согласие на хранение в соответствии с требованиями ЕС для Cookie"
+
+msgid "Cookie category config"
+msgstr "Конфигурация категорий cookie"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "Метка"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Checkbox default state"
+msgstr "Состояние переключателя по умолчанию"
+
+msgid "Weight"
+msgstr "Вес"
+
+msgid "EU Cookie Compliance Settings"
+msgstr "Параметры соответствия требованиям ЕС для cookie"
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "Enable banner"
+msgstr "Включить информационную строку"
+
+msgid "Consent by clicking"
+msgstr "Согласие по щелчку"
+
+msgid "Consent by scrolling"
+msgstr "Согласие по прокрутке окна"
+
+msgid "Only display banner in EU countries."
+msgstr "Показывать информационную строку только в странах ЕС."
+
+msgid "Only display banner in EU countries (Javascript based)."
+msgstr "Показывать информационную строку только в странах ЕС (Javascript)."
+
+msgid "Place the banner at the top of the website"
+msgstr "Поместить информационную строку в верхней части веб-сайта"
+
+msgid "If the banner is at the top, don't scroll the banner with the page."
+msgstr "Если информационная строка находится в верхней части страницы, не прокручивать ее вместе со страницей."
+
+msgid "Cookie information banner message"
+msgstr "Сообщение информационной строки cookie"
+
+msgid "Cookie information banner message - mobile"
+msgstr "Сообщение информационной строки cookie - мобильные устройства"
+
+msgid "Template to use for \"consent by default\" method"
+msgstr "Шаблон для метода \"согласие по умолчанию\""
+
+msgid "Agree button message"
+msgstr "Сообщение кнопки Согласен"
+
+msgid "Cookie Policy button message"
+msgstr "Сообщение кнопки Стратегия использования cookie"
+
+msgid "Mobile breakpoint"
+msgstr "Мобильный брикпоинт"
+
+msgid "Enable \"Thank you\" banner."
+msgstr "Включить информационную строку \"Спасибо\"."
+
+msgid "Clicking hides \"Thank you\" banner."
+msgstr "Щелчок скрывает информационную строку \"Спасибо\"."
+
+msgid "Disagree button label"
+msgstr "Метка кнопки Не согласен"
+
+msgid "Thank you banner message"
+msgstr "Сообщение информационной строки 'Спасибо'"
+
+msgid "More info button label"
+msgstr "Надпись кнопки Дополнительная информация"
+
+msgid "Hide button label"
+msgstr "Надпись кнопки Скрыть"
+
+msgid "Privacy policy link"
+msgstr "Ссылка на правила работы с личными данными"
+
+msgid "Open privacy policy link in a new window."
+msgstr "Открывать ссылку на правила работы с личными данными в новом окне."
+
+msgid "Banner height in pixels"
+msgstr "Высота информационной строки в пикселях"
+
+msgid "Banner width in pixels or a percentage value"
+msgstr "Ширина информационной строки в пикселях или в процентах"
+
+msgid "Banner sliding animation time in milliseconds"
+msgstr "Время анимации слайдов в информационной строке (мс)"
+
+msgid "Show \"Cookie Policy\" and \"More info\" buttons"
+msgstr "Показывать кнопки \"Стратегия cookie\" и \"Дополнительная информация\""
+
+msgid "Background color"
+msgstr "Цвет фона"
+
+msgid "Text color"
+msgstr "Цвет текста"
+
+msgid "Domain"
+msgstr "Домен"
+
+msgid "Add/Remove banner on specified domains"
+msgstr "Добавить/удалить информационную строку в указанных доменах"
+
+msgid "Domains list"
+msgstr "Список доменов"
+
+msgid "Exclude paths"
+msgstr "Исключить пути"
+
+msgid "Exclude admin pages."
+msgstr "Исключить административные страницы."
+
+msgid "Cookie session"
+msgstr "Сеанс cookie"
+
+msgid "Disagree set cookie session"
+msgstr "Не согласен с использованием cookie"
+
+msgid "Cookie lifetime"
+msgstr "Срок действия cookie"
+
+msgid "Use a different message for mobile phones"
+msgstr "Использовать другое сообщение для мобильных телефонов"
+
+msgid "Include minimal CSS, I want to style the overlay in the theme CSS"
+msgstr "Добавить минимальный CSS, нужно изменить стиль перекрытия в CSS темы"
+
+msgid "Do not show cookie policy when the user clicks the \"Cookie Policy\" button."
+msgstr "Не показывать стратегию cookie при нажатии пользователем кнопки \"Стратегия cookie\"."
+
+msgid "Reload page after user clicks the \"Agree\" button."
+msgstr "Обновить страницу после нажатия пользователем кнопки \"Согласен\"."
+
+msgid "Include/exclude specified routes for reloading"
+msgstr "Включить/исключить указанные маршруты для перезагрузки"
+
+msgid "Routes list"
+msgstr "Список маршрутов"
+
+msgid "Cookie name"
+msgstr "Имя cookie"
+
+msgid "Don't show the banner for UID 1."
+msgstr "Не показывать информационную строку для UID 1."
+
+msgid "Let screen readers see the banner before other links on the page"
+msgstr "Разрешить программам чтения с экрана видеть информационную строку до других ссылок на странице"
+
+msgid "Consent method"
+msgstr "Способ согласия"
+
+msgid "Disable JavaScripts"
+msgstr "Отключить JavaScript"
+
+msgid "Enable cookie(s) automatic-removal when consent is not explicitly given"
+msgstr "Включить автоматическое удаление cookie при отсутствии явного согласия на их использование"
+
+msgid "Allowed cookies"
+msgstr "Разрешенные cookie"
+
+msgid "Consent storage method"
+msgstr "Способ хранения согласия"
+
+msgid "Withdraw consent banner message"
+msgstr "Сообщение информационной строки об аннулировании согласия"
+
+msgid "Privacy settings tab label"
+msgstr "Метка вкладки параметров конфиденциальности"
+
+msgid "Withdraw consent action button label"
+msgstr "Метка кнопки действия аннулирования согласия"
+
+msgid "Enable floating privacy settings tab and withdraw consent banner"
+msgstr "Включить нефиксированную вкладку параметров конфиденциальности и информационную строку аннулирования согласия"
+
+msgid "Put the withdraw consent action button on the cookie information banner"
+msgstr "Добавить кнопку аннулирования согласия на информационную строку cookie"
+
+msgid "Save preferences action button label"
+msgstr "Надпись кнопки Сохранить параметры"
+
+msgid "Accept all categories action button label"
+msgstr "Надпись кнопки Принять все категории"
+
+msgid "Replace the Agree button by a Save preferences and an Accept all categories button"
+msgstr "Заменить кнопку Согласен кнопками Сохранить параметры и Принять все категории"
+
+msgid "Allow the cookie to be set for all sites on the same domain"
+msgstr "Разрешить установку cookie для всех сайтов в одном домене"
+
+msgid "Enable floating privacy settings permanently"
+msgstr "Постоянно применять нефиксированные параметры конфиденциальности"
+
+msgid "Containing element"
+msgstr "Внешний элемент"
+
+msgid "Cookie Policy Version"
+msgstr "Версия стратегии использования cookie"
+
+msgid "Cookie value (disagreed)"
+msgstr "Значение cookie (несогласие)"
+
+msgid "Cookie value (agreed, show thank you banner)"
+msgstr "Значение Cookie (согласие, отображение баннера Спасибо)"
+
+msgid "Cookie value (agreed)"
+msgstr "Значение Cookie (согласие)"
+
+msgid "Show disagree button (DEPRECATED)"
+msgstr "Показать кнопку Не принимаю (устарело)"
+
+msgid "Disagree button message (DEPRECATED)"
+msgstr "Сообщение кнопки Не принимаю (устарело)"
+
+msgid "Whitelisted cookies (DEPRECATED)"
+msgstr "Объекты cookie из белого списка (устарело)"
+
+msgid "Cookie categories (DEPRECATED)"
+msgstr "Категории cookie (устарело)"
+
+msgid "Boolean value to indicate that the first consent category cannot be unchecked (DEPRECATED)"
+msgstr "Булевское значение, указывающее на невозможность отмены первой категории согласия (устарело)"
+
+msgid "Select all categories by default (DEPRECATED)"
+msgstr "Выбрать все категории по умолчанию (устарело)"
+
+msgid "Buttons have red focus outline (for accessibility)"
+msgstr "Активные кнопки выделены красной рамкой (для специальных возможностей)"
+
+msgid "Unchecked by default"
+msgstr "По умолчанию не выбрано"
+
+msgid "Checked by default"
+msgstr "По умолчанию выбрано"
+
+msgid "Checked and disabled (user cannot clear the checkbox)"
+msgstr "Выбрано и не активно (без возможности отменить выбор)"
+
+msgid "Machine name"
+msgstr "Машинное имя"
+
+msgid "Save configuration"
+msgstr "Сохранить конфигурацию"
+
+msgid "I accept processing of my personal data. For more information, read the <a href=\"@url\">privacy policy</a>,"
+msgstr "Я разрешаю обработку своих персональных данных. См. <a href=\"@url\">политику конфиденциальности</a>,"
+
+msgid "Are you sure you want to delete %name?"
+msgstr "Вы уверены, что хотите удалить %name?"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "content @type: deleted @label."
+msgstr "содержимое @type: удалено @label."
+
+msgid "The name that will be shown to the website visitor."
+msgstr "Имя, отображаемое посетителю веб-сайта."
+
+msgid "The description that will be shown to the website visitor."
+msgstr "Описание, отображаемое посетителю веб-сайта."
+
+msgid "Determines the default state of this category's selection checkbox on the cookie consent popup."
+msgstr "Состояние, в котором по умолчанию находится переключатель выбора категории во всплывающем окне запроса согласия на использование cookie."
+
+msgid "Created the %label Cookie category."
+msgstr "Категория cookie %label создана."
+
+msgid "Saved the %label Cookie category."
+msgstr "Категория cookie %label сохранена."
+
+msgid "Do not store"
+msgstr "Не хранить"
+
+msgid "Permissions"
+msgstr "Права доступа"
+
+msgid "Display the banner for"
+msgstr "Показывать информационную строку для"
+
+msgid "Consent for processing of personal information"
+msgstr "Согласие на обработку персональных данных"
+
+msgid "Consent by default. Don't provide any option to opt out."
+msgstr "Согласие по умолчанию. Вариант отказа не предусмотрен."
+
+msgid "Opt-in. Don't track visitors unless they specifically give consent. (GDPR compliant)"
+msgstr "Согласие. Не отслеживать посетителей, если они не дали явного согласия. (соответствие GDPR)"
+
+msgid "Opt-in with categories. Let visitors choose which cookie categories they want to opt-in for (GDPR compliant)."
+msgstr "Принятие по категориям. Разрешить посетителям принимать cookie по категориям на выбор (в соответствии с законом GDPR)."
+
+msgid "Opt-out. Track visitors by default, unless they choose to opt out."
+msgstr "Отказ. По умолчанию посетители отслеживаются, если не выбран пункт Отказ."
+
+msgid "Automatic. Respect the DNT (Do not track) setting in the browser, if present. Uses opt-in when DNT is 1 or not set, and consent by default when DNT is 0."
+msgstr "Автоматически. Если в браузере присутствует параметр DNT (Не отслеживать), то принимать его. Если значение DNT равно 1 или не указано, используется Согласие, и если DNT равно 0, то используется Согласие по умолчанию."
+
+msgid "Cookie categories are managed in the Categories tab (found at the top of this page)."
+msgstr "Категории cookie можно настроить на вкладке Категории, которая показана в верхней области страницы."
+
+msgid "Replace the Agree button with \"Save preferences\" and \"Accept all categories\" buttons."
+msgstr "Заменить кнопку Согласен кнопками \"Сохранить параметры\" и \"Принять все категории\"."
+
+msgid "\"Save preferences\" button label"
+msgstr "Надпись кнопки \"Сохранить параметры\""
+
+msgid "\"Accept all categories\" button label"
+msgstr "Надпись кнопки \"Принять все категории\""
+
+msgid "Select the popup info template for 'default by consent' option"
+msgstr "Выберите шаблон всплывающего сообщения для опции 'по умолчанию при согласии'"
+
+msgid "Info banner template"
+msgstr "Шаблон информационной строки"
+
+msgid ""
+"Cookie policy button in popup-buttons section and styled similarly to the Agree button,\n"
+"        as in earlier versions of this module"
+msgstr ""
+"Стиль кнопки Стратегия cookie в разделе popup-buttons похож на стиль кнопки Согласие, \n"
+"        как предыдущих версиях этого модуля"
+
+msgid "Cookie policy button in popup-text section, styled differently than Agree button."
+msgstr "Стиль кнопки Стратегия cookie в разделе popup-text отличается от стиля кнопки Согласие."
+
+msgid "Disable the following JavaScripts when consent isn't given"
+msgstr "Если согласие не получено, отключить следующие сценарии JavaScript"
+
+msgid "<span class='eu-cookie-compliance-word-break'>Include the full path of JavaScripts, each on a separate line. When using the opt-in or opt-out consent options, you can block certain JavaScript files from being loaded when consent isn't given. The on-site JavaScripts should be written as root relative paths <strong>without the leading slash</strong>, you can use public://path/to/file.js and private://path/to/file.js, and off-site JavaScripts should be written as complete URLs <strong>with the leading http(s)://</strong>. Note that after the user gives consent, the scripts will be executed in the order you enter here.<br /><br />Libraries and scripts that attach to Drupal.behaviors are supported. To indicate a behavior that needs to be loaded on consent, append the behavior name after the script with a | (vertical bar). If you also want to conditionally load a library, place that as the third parameter, following another | (vertical bar). <strong>Example: modules/custom/custom_module/js/custom.js|customModule|custom_module/custom_module</strong>.<br />If your script file does not attach to Drupal.attributes, you may skip the second parameter. <strong>Example: modules/custom/custom_module/js/custom.js||custom_module/custom_module</strong><br /><strong>Note that Drupal behavior name and library parameters are both optional</strong>, but may be required to achieve your objective.</span>"
+msgstr "<span class='eu-cookie-compliance-word-break'>Добавьте полный путь к сценариям JavaScript по одному на строке. При использовании опции Согласие или Отказ можно запретить загрузку некоторых файлов JavaScript при отсутствии явного согласия. Для расположенных на сайте сценариев JavaScript пути должны быть записаны по отношению к корневому каталогу <strong>без начальной косой черты</strong>, можно использовать public://path/to/file.js и private://path/to/file.js, а для внешних сценариев JavaScript пути необходимо указывать в виде полных URL <strong>с указанием http(s)://</strong>. Обратите внимание, что после получения согласия пользователя сценарии будут выполняться в указанном здесь порядке.<br /><br />Поддерживаются библиотеки и сценарии с возможностью подключения к Drupal.behaviors. Для того чтобы указать поведение, загружаемое при получении согласия, добавьте имя поведения после сценария с помощью вертикальной черты (|). Если требуется условная загрузка библиотеки, укажите третий параметр с помощью еще одной вертикальной черты (|). <strong>Пример: modules/custom/custom_module/js/custom.js|customModule|custom_module/custom_module</strong>.<br />Если файл сценария не подключается к Drupal.attributes, второй параметр можно пропустить. <strong>Пример: modules/custom/custom_module/js/custom.js||custom_module/custom_module</strong><br /><strong>Примечание: поведение Drupal и библиотеку указывать необязательно</strong>, однако они могут потребоваться для достижения цели.</span>"
+
+msgid "When using the consent method \"Opt-in with categories\", you can link the script to a specific category by using the format: \"category:path/to/the/script.js\"."
+msgstr "Когда используется способ согласия \"Принятие по категориям\", можно связать сценарий с определенной категорией, используя следующий формат: \"категория:путь/к/сценарию.js\"."
+
+msgid "Cookie handling"
+msgstr "Обработка Cookie"
+
+msgid "Enable cookie(s) automatic-removal when consent isn't given."
+msgstr "Включить автоматическое удаление cookie, если согласие не получено."
+
+msgid "Include the name of cookies, each on a separate line. When using the opt-in or opt-out consent options, this module will <strong>delete cookies from your domain that are not allowed</strong> every few seconds when consent isn't given. PHP session cookies and the cookie for this module are always allowed."
+msgstr "Добавьте имена cookie, по одному на строке. Когда используются действия принятия и отказа, данный модуль будет <strong>удалять из домена cookie, которые не разрешены,</strong> каждые несколько секунд, если согласие не получено. Cookie сеанса PHP и cookie для данного модуля всегда входят в число разрешенных."
+
+msgid "When using the consent method \"Opt-in with categories\", you can link the cookie to a specific consent category by using the format: \"category:cookie_name\".  Only when consent is given for the given category, will the cookie be allowed."
+msgstr "Когда используется способ согласия \"Принятие по категориям\", можно связать cookie с определенной категорией согласия, используя следующий формат: \"категория:имя-cookie\".  Cookie считается разрешенным, только когда дано согласие для данной категории."
+
+msgid "Cookie names can contain \"*\" characters which mean a series of any characters."
+msgstr "Имена cookie могут содержать символы подстановки \"*\", заменяющие последовательность любых символов."
+
+msgid "Store record of consent"
+msgstr "Хранить запись о согласии"
+
+msgid "Depending on your implementation of GDPR, you may have to store a record when the user consents. This module comes with a basic consent storage plugin that writes a record to the database. Note that if your site has significant traffic, the basic consent storage may become a bottleneck, as every consent action will require a write to the database. You can easily create your own module with a ConsentStorage Plugin that extends ConsentStorageBase, using BasicConsentStorage from this module as a template. If you create a highly performant consent storage plugin, please consider contributing it back to the Drupal community as a contrib module."
+msgstr "В зависимости от вашей реализации GDPR может потребоваться хранить запись о согласии пользователя. Данный модуль поставляется с простым инструментом сохранения согласия, который вносит запись в базу данных. При большом объеме трафика сайта это может стать узким местом, так как для каждого подтверждения согласия потребуется операция записи в базу данных. Можно без труда создать свой модуль на основе компонента ConsentStorage, который расширяет ConsentStorageBase, используя BasicConsentStorage из этого модуля в качестве шаблона. Если производительность вашего модуля выше исходного, поделитесь им в сообществе Drupal."
+
+msgid "Cookie information banner"
+msgstr "Информационная строка cookie"
+
+msgid "By default by clicking any link or button on the website the visitor accepts the cookie policy. Uncheck this box if you don’t require this functionality. You may want to edit the banner message below accordingly."
+msgstr "По умолчанию, щелкая на любой ссылке или кнопке на веб-сайте, посетитель принимает стратегию cookie. Выключите этот переключатель, если данная функциональность не нужна. Возможно, потребуется изменить сообщение информационной строки внизу соответствующим образом."
+
+msgid "Use a different message for mobile phones."
+msgstr "Использовать другое сообщение для мобильных телефонов."
+
+msgid "px"
+msgstr "px"
+
+msgid "The mobile message will be used when the window width is below or equal to the given value."
+msgstr "Это сообщение для мобильных устройств будет использоваться, когда ширина окна меньше или равна указанному значению."
+
+msgid "Agree button label"
+msgstr "Надпись кнопки Согласен"
+
+msgid "If this option is checked, the cookie policy button will be shown on the site. Disabling this option will hide both the \"Cookie Policy\" button on the information banner and the \"More info\" button on the \"Thank you\" banner."
+msgstr "Если включен этот параметр, то на сайте будет показываться кнопка стратегии cookie. При выключении этого параметра кнопка \"Стратегия Cookie\" в информационной строке и кнопка \"Дополнительная информация\" в информационной строке \"Спасибо\" не показываются."
+
+msgid "Cookie policy button label"
+msgstr "Надпись кнопки Стратегия cookie"
+
+msgid "GDPR requires that withdrawing consent for handling personal information should be as easy as giving consent. This module offers a tab button that when clicked brings up a message and a button that can be used to withdraw consent."
+msgstr "В соответствии с требованиями GDPR аннулирование согласия на обработку персональных данных должно быть таким же простым, как и само согласие. Данный модуль предоставляет вкладку, при открытии которой выводится сообщение и кнопка, с помощью которой можно аннулировать согласие."
+
+msgid "Enable floating privacy settings tab after withdrawing consent"
+msgstr "Активировать нефиксированную вкладку параметров конфиденциальности в случае аннулирования согласия"
+
+msgid "Put the \"Withdraw consent\" button on the cookie information banner."
+msgstr "Добавить кнопку \"Аннулировать согласие\" в информационную строку cookie."
+
+msgid "Text that will be displayed in the banner that appears when the privacy settings tab is clicked."
+msgstr "Текст, отображаемый в информационной строке при открытии вкладки параметров конфиденциальности."
+
+msgid "Tab button that reveals/hides the withdraw message and action button when clicked."
+msgstr "Кнопка вкладки, при нажатии отображающая или скрывающая кнопку и сообщение аннулирования."
+
+msgid "Withdraw consent button label"
+msgstr "Надпись кнопки Аннулировать согласия"
+
+msgid "This button will withdraw consent when clicked."
+msgstr "При нажатии этой кнопки согласие будет аннулировано."
+
+msgid "Thank you banner"
+msgstr "Информационная строка 'Спасибо'"
+
+msgid "Enable \"Thank you\" banner"
+msgstr "Включить информационную строку \"Спасибо\""
+
+msgid "Clicking a link or button hides the \"Thank you\" message automatically."
+msgstr "При щелчке на ссылке или кнопке сообщение \"Спасибо\" автоматически скрывается."
+
+msgid "\"Thank you\" banner message"
+msgstr "Сообщение информационной строки \"Спасибо\""
+
+msgid "Privacy policy"
+msgstr "Политика конфиденциальности"
+
+msgid "Enter link to your privacy policy or other page that will explain cookies to your users, external links should start with http:// or https://."
+msgstr "Введите ссылку на правила работы с личными данными или на другую страницу с разъяснениями относительно cookie. Внешние ссылки должны начинаться с http:// или https://."
+
+msgid "Privacy Policy Version"
+msgstr "Версия политики конфиденциальности"
+
+msgid "Change this value to make the cookie information banner reappear for all visitors. A typical usage of this field is to increase the value when the privacy policy has been changed."
+msgstr "Измените это значение, чтобы баннер с информацией о cookie отображался каждый раз для всех посетителей. Обычно значение в этом поле увеличивается при изменении политики конфиденциальности."
+
+msgid "Appearance"
+msgstr "Оформление"
+
+msgid "Change the text color of the banner. Provide HEX value without the #."
+msgstr "Измените цвет текста в информационной строке. Укажите 16-ричное значение без #."
+
+msgid "Change the background color of the banner. Provide HEX value without the #."
+msgstr "Измените цвет фона в информационной строке. Укажите 16-ричное значение без #."
+
+msgid "Serves as the parent element to append cookie banner html to."
+msgstr "Служит родительским элементом, в который добавляется html баннера с информацией о cookie."
+
+msgid "Bottom"
+msgstr "Снизу"
+
+msgid "Top"
+msgstr "Вверху"
+
+msgid "Position"
+msgstr "Позиция"
+
+msgid "Include minimal CSS, I want to style the banner in the theme CSS."
+msgstr "Добавить минимальный CSS, нужно изменить стиль информационной строки в CSS темы."
+
+msgid "This may be useful if you want the banner to share the button style of your theme. Note that you will have to configure values like the banner width, text color and background color in your CSS file."
+msgstr "Это может быть полезно, если требуется, чтобы информационная строка была в одном стиле с кнопками темы. Примечание: придется настраивать значения, такие как ширина информационной строки, цвет текста и цвет фона в файле CSS."
+
+msgid "Banner height"
+msgstr "Высота информационной строки"
+
+msgid "Enter an integer value for a desired height in pixels or leave empty for automatically adjusted height."
+msgstr "Введите целое значение требуемой высоты в пикселях или оставьте поле пустым для автоматической регулировки высоты."
+
+msgid "px or %"
+msgstr "px или %"
+
+msgid "Set the width of the banner. This can be either an integer value or percentage of the screen width. For example: 200 or 50%."
+msgstr "Укажите ширину информационной строки. Это может быть целочисленное значение или процент от ширины экрана. Пример: 200 или 50%."
+
+msgid "EU countries"
+msgstr "Страны ЕС"
+
+msgid "You can choose to show the banner only to visitors from EU countries. In order to achieve this, you need to install the <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> module or install the <a href=\"http://drupal.org/project/geoip\">geoip</a> module or enable the <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP function."
+msgstr "Можно выбрать показ информационной строки только посетителям из стран ЕС. Для этого необходимо установить модуль <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> или <a href=\"http://drupal.org/project/geoip\">geoip</a> либо включить функцию PHP <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_byn_name()</a>."
+
+msgid "Advanced"
+msgstr "Расширенные"
+
+msgid "Use position:fixed for the banner when displayed at the top."
+msgstr "Использовать position:fixed для информационной строки, когда она показывается вверху."
+
+msgid "Banner sliding animation time"
+msgstr "Время анимации слайдов в информационной строке"
+
+msgid "ms"
+msgstr "мс"
+
+msgid "Enabling this will make it possible to record the fact that the user disagrees without the user having to see the privacy policy."
+msgstr "Включение этого позволяет зафиксировать факт несогласия пользователя без необходимости просмотра правил работы с личными данными пользователем."
+
+msgid "Include"
+msgstr "Включить"
+
+msgid "Exclude"
+msgstr "Исключить"
+
+msgid "Specify if you want to include or exclude the listed below routes for reloading the page after agreeing cookies."
+msgstr "Включите или исключите указанные ниже маршруты для использования при перезагрузке страницы после получения согласия на использование cookie."
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. Leave blank for reloading all pages. Leave the list empty to reload on all pages. This field does not support url aliases."
+msgstr "Укажите страницы с помощью путей к ним. Каждый путь указывается на отдельной строке. Символ '*' является символом замены. Примеры путей: %blog для страницы блога, %blog-wildcard для любого персонального блога. Оставьте значение пустым для перезагрузки всех страниц. Оставьте список пустым для перезагрузки на всех страницах. В этом поле нельзя указывать псевдонимы URL."
+
+msgid "Scrolling makes the visitors to accept the cookie policy. In some countries, like Italy, it is permitted."
+msgstr "Прокрутка страницы посетителями равносильна принятию стратегии cookie. В некоторых странах, например в Италии, это разрешено."
+
+msgid "Sets the cookie name that is used to check whether the user has agreed or not. This option is useful when policies change and the user needs to agree again."
+msgstr "Задает имя cookie, которое используется для проверки согласия пользователя. Этот параметр полезен, когда стратегии изменяются, и требуется повторное согласие пользователя."
+
+msgid "The cookie value which will be set where the user has disagreed."
+msgstr "Значение cookie, которое будет установлено в случае несогласия пользователя."
+
+msgid "The cookie value which will be set where the user has agreed and we will show a thank-you banner."
+msgstr "Значение cookie, которое будет установлено в случае согласия пользователя; будет показан баннер Спасибо."
+
+msgid "The cookie value which will be set where the user has agreed."
+msgstr "Значение cookie, которое будет установлено в случае согласия пользователя."
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "Remove"
+msgstr "Удалить"
+
+msgid "Add/remove banner on specified domains"
+msgstr "Добавить/удалить информационную строку в указанных доменах"
+
+msgid "Specify if you want to add or remove banner on the listed below domains."
+msgstr "Укажите, если требуется добавить или удалить информационную строку в перечисленных ниже доменах."
+
+msgid "Specify domains with protocol (e.g., http or https). Enter one domain per line."
+msgstr "Укажите домены с протоколом (например, http или https). По одному домену на строке."
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page."
+msgstr "Вводите путь к каждой странице в отдельной строке. При указании пути можно использовать маску *. Например, если ввести <em>blog</em>, то действие будет распространяться только на страницу блогов, если ввести <em>blog/*</em>, то действие будет распространяться на все страницы имеющие в пути слово <em>blog</em> (страница блогов и все записи в персональных блогах). Для указания первой страницы, используйте запись %front."
+
+msgid "Note: if you enable the Withdraw feature, the Privacy settings tab will be displayed also on admin pages, but the banner will not open until you click the tab."
+msgstr "Примечание: если включить функцию Withdraw, вкладка Параметры конфиденциальности будет отображаться также на страницах администрирования, но баннер откроется только при переходе на эту вкладку."
+
+msgid "Don't show the banner for site administrators (including UID 1)."
+msgstr "Не показывать баннер администраторам сайта (включая UID 1)."
+
+msgid "Note: if you enable the Withdraw feature, the Privacy settings tab will be displayed also for site administrators, but the banner will not open until you click the tab."
+msgstr "Примечание: если включить функцию Withdraw, вкладка Параметры конфиденциальности будет также отображаться для администраторов сайта, но баннер откроется только при переходе на эту вкладку."
+
+msgid "Let screen readers see the banner before other links on the page."
+msgstr "Разрешить программам чтения с экрана видеть информационную строку до других ссылок на странице."
+
+msgid "Enable this if you want to place the banner as the first HTML element on the page. This will make it possible for screen readers to close the banner without tabbing through all links on the page."
+msgstr "Включите, если нужно поместить информационную строку в качестве первого элемента HTML на странице. Это позволит программам чтения экрана закрыть информационную строку без перехода по всем ссылкам на этой странице."
+
+msgid "Prompt for consent (from the same user) at every new browser session."
+msgstr "Запрашивать согласие (у одного пользователя) в каждом новом сеансе браузера."
+
+msgid "This sets cookie lifetime to 0, invalidating the cookie at the end of the browser session. To set a cookie lifetime greater than 0, uncheck this option. Note that some users will find this behavior highly annoying, and it's recommended to double-check with the legal advisor whether you really need this option enabled."
+msgstr "Задает срок действия cookie равным 0, при этом cookie будет аннулироваться при закрытии сеанса браузера. Выключите эту опцию для присвоения сроку действия cookie значения больше 0. Обратите внимание, что некоторых пользователей это будет раздражать, поэтому рекомендуется вместе с юрисконсультом проверить, действительно ли необходимо включать эту опцию."
+
+msgid "Sets the domain of the cookie to a specific url. Used when you need consistency across domains. This is language independent. Note: Make sure you actually enter a domain that the browser can make use of. For example if your site is accessible at both www.domain.com and domain.com, you will not be able to hide the banner at domain.com if your value for this field is www.domain.com."
+msgstr "Задает конкретный URL для домена cookie. Используется, когда требуется согласованность между доменами. Это не зависит от языка. Примечание: убедитесь, что введенный домен может использоваться браузером. Например, если сайт доступен и по адресу www.domain.com, и по адресу domain.com, то информационную строку нельзя будет скрыть domain.com, если значение этого поля - www.domain.com."
+
+msgid "Allow the cookie to be set for all sites on the same domain."
+msgstr "Разрешить установку cookie для всех сайтов в одном домене."
+
+msgid "Sets the path of the cookie to '/' so that the cookie works across all sites on the domain."
+msgstr "Задает путь cookie '/', чтобы запись cookie работала на всех сайтах домена."
+
+msgid "Set cookie lifetime to 0 if the user clicks the \"Decline\" or the \"Withdraw consent\" button."
+msgstr "Обнулять срок действия cookie, когда пользователь нажимает кнопку \"Отклонить\" или \"Аннулировать согласие\"."
+
+msgid "Enable this if you want to show the consent banner at every new session until the user clicks the \"Agree\" button."
+msgstr "Выберите этот параметр, если баннер запроса согласия должен появляться при открытии любого сеанса после нажатия кнопки \"Я согласен\"."
+
+msgid "How many days the system remember the user's choice."
+msgstr "Как долго система должна помнить выбор пользователя в днях."
+
+msgid "days"
+msgstr "дней"
+
+msgid "@name field is required"
+msgstr "Необходимо задать значение в поле @name"
+
+msgid "Invalid cookie name, please remove any special characters and try again."
+msgstr "Недопустимое имя cookie, удалите все специальные символы и выполните операцию повторно."
+
+msgid "Your privacy policy link is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "Ссылка на правила работы с личными данными ведет на главную страницу. Это значение по умолчанию после установки и, если правила работы с личными данными опубликованы не на главной странице, необходимо создать отдельную страницу для этого и указать ее адрес в ссылке."
+
+msgid "The user role permission could not be set because the <code>config_readonly</code> module is enabled. To allow setting of user role permissions, please add <code>user.role.%name</code> to the <code>config_readonly</code> allowlist."
+msgstr "Не удалось задать разрешение для роли пользователя, так как включен модуль <code>config_readonly</code>. Чтобы можно было настроить разрешения для роли пользователя, добавьте <code>user.role.%name</code> в белый список модуля <code>config_readonly</code>."
+
+msgid "The module weight could not be set because the <code>config_readonly</code> module is enabled. To allow setting of module weight, please add <code>core.extension</code> to the <code>config_readonly</code> allowlist."
+msgstr "Не удалось задать вес модуля, так как включен модуль <code>config_readonly</code>. Чтобы разрешить настройку веса модуля, добавьте <code>core.extension</code> в белый список <code>config_readonly</code>."
+
+msgid "Invalid protocol specified for the %name (valid protocols: %protocols)."
+msgstr "Указан недопустимый протокол для %name (допустимые протоколы: %protocols)."
+
+msgid "Invalid %name (:message)."
+msgstr "Недопустимый %name (:message)."
+
+msgid "Invalid URL in %name field (:message)."
+msgstr "Недопустимый URL в поле %name (:message)."
+
+msgid "Basic storage"
+msgstr "Простое хранилище"
+

@@ -1,0 +1,28 @@
+/********************************************************* {COPYRIGHT-TOP} ***
+ * Licensed Materials - Property of IBM
+ *
+ * (C) Copyright IBM Corporation 2021, 2025
+ *
+ * All Rights Reserved.
+ * US Government Users Restricted Rights - Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ ********************************************************** {COPYRIGHT-END} **/
+
+// By default, `@carbon/react` emits font URLs with leading tildes, which are not supported.
+// This is the recommended workaround:
+// https://github.com/carbon-design-system/carbon/issues/15277#issuecomment-1831211364
+// https://github.com/carbon-design-system/carbon/issues/11970#issuecomment-1222578097
+@use '@carbon/react' with (
+  $font-path: '@ibm/plex'
+);
+
+@use '@carbon/react/scss/type' as *;
+$css--font-face: false;
+@use 'fonts.scss';
+@use 'highlight.js/scss/sunburst.scss';
+@use 'stepzen-graphiql/style.css';
+
+// Needed to use the type-style mixin further down
+
+@use 'apiconnect-explorer.scss';
+@use 'copier.css';

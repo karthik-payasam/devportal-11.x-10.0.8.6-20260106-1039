@@ -1,0 +1,875 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Simple XML Sitemap settings will be added only to entity forms of entity types enabled here. Settings for specific entity bundles (e.g. <em>page</em>) can be adjusted here or on the bundle pages."
+msgstr "Le impostazioni della mappa del sito XML semplice verranno aggiunte solo ai moduli entità dei tipi di entità abilitati in questo punto. Le impostazioni per specifici bundle di entità (ad esempio, <em>pagina</em>) possono essere modificate qui o nelle pagine del bundle."
+
+msgid "Add custom internal drupal paths to specific sitemaps."
+msgstr "Aggiungere percorsi drupal interni personalizzati a specifiche mappe dei siti."
+
+msgid "Specify drupal internal (relative) paths, one per line. Do not forget to prepend the paths with a '/'.<br>Optionally link priority <em>(0.0 - 1.0)</em> can be added by appending it after a space.<br> Optionally link change frequency <em>(always / hourly / daily / weekly / monthly / yearly / never)</em> can be added by appending it after a space."
+msgstr "Specificare i percorsi interni (relativi) drupal, uno per riga. Non dimenticare di anteporre ai percorsi un carattere '/'.<br>Facoltativamente, la priorità del link <em>(0.0 - 1.0)</em> può essere aggiunta accodandola dopo uno spazio.<br> Facoltativamente, la frequenza di modifica del link <em>(always / hourly / daily / weekly / monthly / yearly / never)</em> può essere aggiunta accodandola dopo uno spazio."
+
+msgid "<strong>Examples:</strong><br><em>/ 1.0 daily</em> -> home page with the highest priority and daily change frequency<br><em>/contact</em> -> contact page with the default priority and no change frequency information"
+msgstr "<strong>Esempi:</strong><br><em>/ 1.0 daily</em> -> home page con la priorità più alta e la frequenza di modifica giornaliera<br><em>/contact</em> -> pagina di contatti con la priorità predefinita e senza informazioni sulla frequenza di modifica"
+
+msgid "Simple XML Sitemap"
+msgstr "Mappa del sito XML semplice "
+
+msgid "Simple XML Sitemap settings"
+msgstr "Impostazioni mappa del sito XML semplice"
+
+msgid "Simple XML Sitemap PHP extensions"
+msgstr "Estensioni PHP mappa del sito XML semplice "
+
+msgid "Missing PHP xmlwriter extension"
+msgstr "Estensione PHP xmlwriter mancante"
+
+msgid "In order to be able to generate sitemaps, the Simple XML Sitemap module requires the <em>xmlwriter</em> PHP extension to be enabled."
+msgstr "Per poter generare le mappe del sito, il modulo Mappa del sito XML semplice richiede l'abilitazione dell'estensione PHP <em>xmlwriter</em>. "
+
+msgid "You may now want to configure the new changefreq setting for the XML sitemap entities and custom links."
+msgstr "È possibile che si desideri configurare la nuova impostazione changefreq per le entità della mappa del sito ed i collegamenti personalizzati. "
+
+msgid "You may now want to configure your XML sitemap entities to include images."
+msgstr "È possibile che si desideri configurare le entità della mappa del sito XML in modo da includere immagini. "
+
+msgid "The XML sitemaps need to be regenerated."
+msgstr "È necessario rigenerare le mappe del sito XML. "
+
+msgid "The new 'Entities per queue item' setting has been set to 50 to improve generation performance. This changes the memory footprint during generation, so please make sure to test and adjust performance settings to your needs on the module's settings page."
+msgstr "La nuova impostazione 'Entità per elementi della coda' è stata impostata su 50 per migliorare le prestazioni di generazione. Questa impostazione modifica l'impronta di memoria durante la generazione, quindi assicurarsi di verificare e ottimizzare le impostazioni delle prestazioni alle proprie esigenze nella pagina delle impostazioni del modulo."
+
+msgid "All variants belonging to the built-in \"Default hreflang\" sitemap type have been converted to entities. Custom sitemap types added via plugins will have to be recreated manually. See simple_sitemap.type.default_hreflang.yml. The sitemaps need to be regenerated now."
+msgstr "Tutte le varianti appartenenti al tipo di mappa del sito \"Default hreflang\" integrato sono state convertite in entità. I tipi di mappa del sito personalizzati aggiunti tramite plugin dovranno essere ricreati manualmente. Vedere simple_sitemap.type.default_hreflang.yml. Le mappe del sito devono essere rigenerate ora."
+
+msgid "A sitemap index which lists all other sitemaps is now available and can be enabled."
+msgstr "Un indice della mappa del sito che elenca tutte le altre mappe del sito è ora disponibile e può essere attivato."
+
+msgid "Generates standard conform hreflang XML sitemaps of the site content and provides a framework for developing other sitemap types."
+msgstr "Genera mappe del sito XML hreflang conformi agli standard del contenuto del sito e fornisce un framework per lo sviluppo di altri tipi di mappe del sito. "
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Add sitemap"
+msgstr "Aggiungi mappa del sito"
+
+msgid "Add sitemap type"
+msgstr "Aggiungi tipo di mappa del sito"
+
+msgid "Sitemaps"
+msgstr "Mappe del sito"
+
+msgid "Inclusion"
+msgstr "Inclusione"
+
+msgid "Configure, add content to and generate XML sitemaps."
+msgstr "Configurare, aggiungere contenuto e generare mappe del sito XML."
+
+msgid "Status"
+msgstr "Stato"
+
+msgid "Types"
+msgstr "Tipi"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Entities"
+msgstr "Entità"
+
+msgid "Custom links"
+msgstr "Link personalizzati"
+
+msgid "Administer sitemap settings"
+msgstr "Amministra impostazioni mappa del sito"
+
+msgid "Administer Simple XML Sitemap settings, alter inclusion settings of content and generate sitemaps on demand."
+msgstr "Amministra le impostazioni della mappa del sito XML semplice, modifica le impostazioni di inclusione del contenuto e genera le mappe del sito su richiesta. "
+
+msgid "Max links"
+msgstr "Numero massimo di link"
+
+msgid "Cron generation"
+msgstr "Generazione cron "
+
+msgid "Cron generation interval"
+msgstr "Intervallo di generazione cron "
+
+msgid "Generation duration"
+msgstr "Durata generazione "
+
+msgid "Entities per queue item"
+msgstr "Entità per elementi della coda"
+
+msgid "Remove duplicates"
+msgstr "Rimuovi duplicati"
+
+msgid "Skip untranslated"
+msgstr "Ignora non tradotti"
+
+msgid "Include a stylesheet in the sitemaps for humans"
+msgstr "Include un foglio di stile nelle mappe del sito per gli esseri umani"
+
+msgid "Base URL"
+msgstr "URL base"
+
+msgid "Default variant"
+msgstr "Variante predefinita"
+
+msgid "Include images of custom links"
+msgstr "Includi immagini dei collegamenti personalizzati "
+
+msgid "Disable language hreflang"
+msgstr "Disabilita lingua hreflang"
+
+msgid "Hide branding"
+msgstr "Nascondi marchio"
+
+msgid "Excluded languages"
+msgstr "Lingue escluse"
+
+msgid "Enabled entity types"
+msgstr "Tipi di entità abilitati"
+
+msgid "Entity bundle settings"
+msgstr "Impostazioni bundle entità"
+
+msgid "Index"
+msgstr "Indice"
+
+msgid "Priority"
+msgstr "Priorità"
+
+msgid "Change frequency"
+msgstr "Cambia frequenza"
+
+msgid "Include images"
+msgstr "Includi immagini"
+
+msgid "Path"
+msgstr "Percorso"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "Etichetta"
+
+msgid "Description"
+msgstr "Descrizione"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Weight"
+msgstr "Peso"
+
+msgid "Sitemap types"
+msgstr "Tipi di mappa del sito"
+
+msgid "Sitemap generator"
+msgstr "Generatore di mappa del sito"
+
+msgid "URL generators"
+msgstr "Generatori di URL"
+
+msgid "IndexNow notification enabled"
+msgstr "Notifica IndexNow abilitata"
+
+msgid "IndexNow notification disabled"
+msgstr "Notifica IndexNow disabilitata"
+
+msgid "Included in sitemaps: "
+msgstr "Incluso nelle mappe del sito: "
+
+msgid "Excluded from all sitemaps"
+msgstr "Escluso da tutte le mappe del sito"
+
+msgid "The sitemap settings and any per-entity overrides will be deleted for the unchecked entity types."
+msgstr "Le impostazioni della mappa del sito e le eventuali sovrascritture per entità verranno eliminate per i tipi di entità non selezionati."
+
+msgid "IndexNow notification"
+msgstr "Notifica IndexNow"
+
+msgid "IndexNow notification checkbox"
+msgstr "Casella di spunta notifica IndexNow"
+
+msgid "Simple XML Sitemap IndexNow"
+msgstr "IndexNow mappa del sito XML semplice"
+
+msgid "Verification key in Drupal State"
+msgstr "Chiave di verifica in stato Drupal"
+
+msgid "Verification key not available"
+msgstr "Chiave di verifica non disponibile"
+
+msgid "In order to generate a verification key for the IndexNow service and choose which sitemaps are to be submitted to search engines, visit <a href=\"@url\">this</a> configuration page."
+msgstr "Per generare una chiave di verifica per il servizio IndexNow e scegliere quali mappe del sito devono essere inoltrate ai motori di ricerca, visitare <a href=\"@url\">questa pagina di configurazione</a>."
+
+msgid "Simple XML Sitemap (Search engines)"
+msgstr "Mappa del sito XML semplice (motori di ricerca)"
+
+msgid "Submits sitemaps to search engines and notifies IndexNow compatible engines about changes to entities."
+msgstr "Inoltra le mappe del sito ai motori di ricerca e invia notifica delle modifiche alle entità ai motori compatibili con IndexNow."
+
+msgid "Search engines"
+msgstr "Motori di ricerca"
+
+msgid "Index entity on save"
+msgstr "Indicizza entità al salvataggio"
+
+msgid "Allows optionally sending a change notice to IndexNow compatible search engines on entity form save."
+msgstr "Consente di inviare facoltativamente una notifica di modifica ai motori di ricerca compatibili con IndexNow al salvataggio del form di entità."
+
+msgid "Search engine"
+msgstr "Motore di ricerca"
+
+msgid "Search engine ID"
+msgstr "ID motore di ricerca"
+
+msgid "Submission URL"
+msgstr "URL di invio"
+
+msgid "IndexNow URL"
+msgstr "URL IndexNow"
+
+msgid "Sitemap variants"
+msgstr "Varianti della mappa del sito"
+
+msgid "Sitemap variant"
+msgstr "Variante mappa del sito "
+
+msgid "IndexNow bundle settings"
+msgstr "Impostazioni del bundle IndexNow"
+
+msgid "IndexNow"
+msgstr "IndexNow"
+
+msgid "Sitemap search engine submission settings"
+msgstr "Impostazioni di inoltro del motore di ricerca nella mappa del sito"
+
+msgid "Sitemap submission enabled"
+msgstr "Abilitato inoltro mappa del sito"
+
+msgid "Sitemap submission frequency"
+msgstr "Frequenza di inoltro mappa del sito"
+
+msgid "IndexNow submission enabled"
+msgstr "Inoltro IndexNow abilitato"
+
+msgid "Selected engine for IndexNow submissions"
+msgstr "Motore selezionato per gli inoltri IndexNow"
+
+msgid "IndexNow on entity save"
+msgstr "IndexNow al salvataggio dell'entità"
+
+msgid "Sitemap submission status"
+msgstr "Stato di inoltro mappa del sito"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Last submitted"
+msgstr "Ultimo inoltro"
+
+msgid "There are no @label yet."
+msgstr "Non ci sono ancora @label."
+
+msgid "Submission settings can be configured <a href=\"@url\">here</a>."
+msgstr "Le impostazioni di inoltro possono essere configurate <a href=\"@url\">qui</a>."
+
+msgid "Never"
+msgstr "Mai"
+
+msgid "No search engines supporting sitemap submission have been found."
+msgstr "Non è stato trovato nessun motore di ricerca che supporti l'inoltro della mappa del sito."
+
+msgid "Sitemap submission is disabled."
+msgstr "L'inoltro della mappa del sito è disabilitato."
+
+msgid "IndexNow status"
+msgstr "Stato IndexNow"
+
+msgid "The last IndexNow submission was <em>@entity</em> to @engine_label on @time"
+msgstr "L'ultimo inoltro di IndexNow è stato <em>@entity</em> a @engine_label il @time"
+
+msgid "IndexNow settings can be configured <a href=\"@url\">here</a>."
+msgstr "Le impostazioni di IndexNow possono essere configurate <a href=\"@url\">qui</a>."
+
+msgid "No search engines supporting IndexNow have been found."
+msgstr "Non è stato trovato alcun motore di ricerca che supporta IndexNow."
+
+msgid "IndexNow submission is disabled."
+msgstr "L'inoltro IndexNow è disabilitato."
+
+msgid "Excluded"
+msgstr "Escluso"
+
+msgid "Sitemap submission settings"
+msgstr "Impostazioni di inoltro della mappa del sito"
+
+msgid "Submit sitemaps to search engines"
+msgstr "Inoltra mappe del sito ai motori di ricerca"
+
+msgid "This enables/disables sitemap submission; don't forget to choose sitemaps below."
+msgstr "Questo abilita/disabilita l'inoltro delle mappe del sito; non dimenticare di scegliere le mappe del sito di seguito."
+
+msgid "Submission interval"
+msgstr "Intervallo di inoltro"
+
+msgid "Engines"
+msgstr "Motori"
+
+msgid "Choose which sitemaps are to be submitted to which search engines.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "Scegliere le mappe del sito da inoltrare ai motori di ricerca.<br>Le mappe del sito possono essere configurate <a href=\"@url\">qui</a>."
+
+msgid "IndexNow settings"
+msgstr "Impostazioni IndexNow"
+
+msgid "Submit changes to IndexNow capable engines"
+msgstr "Inoltra le modifiche ai motori compatibili con IndexNow"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting entity forms. Changes include creating, deleting and updating of an entity.<br/>This behaviour can be overridden on entity forms. Don't forget to <a href=\"@inclusion_url\">include entities</a>."
+msgstr "Inviare la notifica di modifica ai motori di ricerca compatibili con IndexNow subito dopo l'inoltro dei form di entità. Le modifiche includono la creazione, l'eliminazione e l'aggiornamento di un'entità. <br/>Questo comportamento può essere sovrascritto nei form di entità. Non dimenticare di <a href=\"@inclusion_url\">includere le entità</a>."
+
+msgid "Preferred IndexNow engine"
+msgstr "Motore IndexNow preferito"
+
+msgid "All IndexNow requests will be sent to the engine selected here. Only one engine needs to be notified, as it will notify other IndexNow compatible engines for you.<br/>For the sake of equality of opportunity, <strong>consider leaving this at <em>Random</em></strong>, so a random engine can be picked on each submission."
+msgstr "Tutte le richieste IndexNow verranno inviate al motore selezionato qui. È necessario inviare notifica solo un motore, poiché questo invierà notifica agli altri motori compatibili con IndexNow. <br/>Per motivi di uguaglianza di opportunità, <strong>lasciare questa opzione su <em>Casuale</em></strong>, in modo che un motore casuale possa essere selezionato per ogni inoltro."
+
+msgid "Random"
+msgstr "Casuale"
+
+msgid "Index on every entity save operation"
+msgstr "Indicizza a ogni operazione di salvataggio entità"
+
+msgid "If checked, all entity save operations for <a href=\"@inclusion_url\">included entities</a> will trigger notification of IndexNow search engines.<br/>If unchecked, this will only be possible by adding/altering/deleting an entity through a form.<br/>This should be unchecked if there are mass operations performed on entities that are irrelevant to indexing."
+msgstr "Se selezionato, tutte le operazioni di salvataggio entità per le <a href=\"@inclusion_url\">entità incluse</a> attiveranno la notifica ai motori di ricerca IndexNow. <br/>Se deselezionato, questo sarà possibile solo aggiungendo/modificando/eliminando un'entità tramite un form. <br/>Questa operazione deve essere deselezionata se vi sono operazioni di massa eseguite su entità non rilevanti per l'indicizzazione."
+
+msgid "Remove verification key from state"
+msgstr "Rimuovi chiave di verifica dallo stato"
+
+msgid "Generate verification key"
+msgstr "Genera chiave di verifica"
+
+msgid "The IndexNow verification key is saved in <em>settings.php</em>: @key"
+msgstr "La chiave di verifica IndexNow viene salvata in <em>settings.php</em>: @key"
+
+msgid "The IndexNow verification key is defined in <em>Drupal state</em>: @key"
+msgstr "La chiave di verifica IndexNow è definita nello stato <em>Drupal</em>: @key"
+
+msgid "The IndexNow verification key is saved in <em>Drupal state</em>. Consider defining it in <em>settings.php</em> like so:<br/>@code"
+msgstr "La chiave di verifica IndexNow viene salvata nello stato <em>Drupal</em>. Valutare se definirlo in <em>settings.php</em> come: <br/>@code"
+
+msgid "The IndexNow verification key is saved in <em>settings.php</em> and can be safely removed from <em>Drupal state</em>."
+msgstr "La chiave di verifica IndexNow viene salvata in <em>settings.php</em> e può essere rimossa in modo sicuro dallo stato <em>Drupal</em>."
+
+msgid "An IndexNow verification key needs to be generated and optionally added to <em>settings.php</em> in order for IndexNow engines to get notified about changes. This warning only applies to the production environment."
+msgstr "Una chiave di verifica IndexNow deve essere generata e, facoltativamente, aggiunta a <em>settings.php</em> affinché i motori IndexNow ricevano una notifica sulle modifiche. Questa avvertenza si applica solo all'ambiente di produzione."
+
+msgid "No sitemaps have been selected for submission."
+msgstr "Non è stata selezionata nessuna mappa del sito per l'inoltro."
+
+msgid "Notify IndexNow search engines of changes <em>now</em>"
+msgstr "Invia notifica delle modifiche ai motori di ricerca IndexNow <em>ora</em>"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting this form."
+msgstr "Inviare un avviso di modifica ai motori di ricerca compatibili con IndexNow subito dopo aver inoltrato questo form."
+
+msgid "Notify IndexNow search engines of changes <em>by default</em>"
+msgstr "Invia notifica delle modifiche ai motori di ricerca IndexNow <em>per impostazione predefinita</em>"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting entity forms of this type.<br/>Changes include creating, deleting and updating of an entity. This setting can be overridden on the entity form."
+msgstr "Inviare la notifica di modifica ai motori di ricerca compatibili con IndexNow subito dopo aver inoltrato i form di entità di questo tipo. <br/>Le modifiche includono la creazione, l'eliminazione e l'aggiornamento di una entità. Questa impostazione può essere sovrascritta sul modulo dell'entità."
+
+msgid "Sitemap search engine submission"
+msgstr "Inoltro motore di ricerca della mappa del sito"
+
+msgid "In order to use the Simple XML Sitemap Views module, the Views URL generator must be <a href=\"@url\">added</a> to a sitemap type."
+msgstr "Per utilizzare il modulo Simple XML Sitemap Views, il generatore di URL delle viste deve essere <a href=\"@url\">aggiunto</a> a un tipo di mappa del sito."
+
+msgid "Simple XML Sitemap (Views)"
+msgstr "Mappa del sito XML semplice (Viste) "
+
+msgid "Provides integration of the Simple XML Sitemap module with the Views module."
+msgstr "Fornisce l'integrazione del modulo Mappa del sito XML semplice con il modulo Viste. "
+
+msgid "Views"
+msgstr "Viste"
+
+msgid "Variants"
+msgstr "Varianti"
+
+msgid "Indexed arguments"
+msgstr "Argomenti indicizzati "
+
+msgid "View"
+msgstr "Visualizza"
+
+msgid "Display"
+msgstr "Visualizzazione"
+
+msgid "Operations"
+msgstr "Operazioni"
+
+msgid "No view displays are set to be indexed yet. <a href=\"@url\">Edit a view.</a>"
+msgstr "Nessuna visualizzazione vista impostata per l'indicizzazione. <a href=\"@url\">Modificare una vista. </a>"
+
+msgid "Please configure at least one <a href=\"@sitemaps_url\">sitemap</a> to be of a <a href=\"@types_url\">type</a> that implements the views URL generator."
+msgstr "Configurare almeno una <a href=\"@sitemaps_url\">mappa del sito</a> in modo che sia un <a href=\"@types_url\">tipo</a> che implementa il generatore di URL delle viste."
+
+msgid "Edit"
+msgstr "Modifica"
+
+msgid "Garbage collection in the simple_sitemap_views table"
+msgstr "Raccolta dati inutilizzati nella tabella simple_sitemap_views "
+
+msgid "Views URL generator"
+msgstr "Generatore URL viste "
+
+msgid "Generates URLs for views."
+msgstr "Genera gli URL per le viste. "
+
+msgid "Index this display in sitemap <em>@variant_label</em>"
+msgstr "Indicizza questa visualizzazione nella mappa del sito <em>@variant_label</em>"
+
+msgid "The priority this display will have in the eyes of search engine bots."
+msgstr "La priorità di questa visualizzazione per i bot del motore di ricerca. "
+
+msgid "The frequency with which this display changes. Search engine bots may take this as an indication of how often to index it."
+msgstr "La frequenza con cui questa visualizzazione viene modificata. I bot del motore di ricerca possono utilizzare tale valore come indicazione per la frequenza con cui eseguire l'indicizzazione. "
+
+msgid "Maximum display variations"
+msgstr "Numero massimo di variazioni della visualizzazione "
+
+msgid "The maximum number of link variations to be indexed for this display. If left blank, each argument will create link variations for this display. Use with caution, as a large number of argument values​can significantly increase the number of sitemap links."
+msgstr "Il numero massimo di variazioni di collegamento da indicizzare per questa visualizzazione. Se lasciato vuoto, ciascun argomento creerà variazioni di collegamento per questa visualizzazione. Utilizzare con cautela, in quanto un numero elevato di valori dell'argomento può incrementare in modo significativo il numero di collegamenti della mappa del sito. "
+
+msgid "Simple XML Sitemap settings for this display"
+msgstr "Impostazioni Mappa del sito XML semplice per questa visualizzazione "
+
+msgid "Included in sitemaps: @variants"
+msgstr "Incluso nelle mappe del sito: @variants"
+
+msgid "To enable indexing of an argument, you must enable indexing of all previous arguments."
+msgstr "Per abilitare l'indicizzazione di un argomento, è necessario abilitare l'indicizzazione di tutti gli argomenti precedenti. "
+
+msgid "Simple XML Sitemap settings for this view."
+msgstr "Impostazioni Mappa del sito XML semplice per questa visualizzazione. "
+
+msgid "Sitemap"
+msgstr "Mappa del sito"
+
+msgid "Link count"
+msgstr "Numero di collegamenti"
+
+msgid "disabled"
+msgstr "disattivato"
+
+msgid "pending"
+msgstr "in attesa"
+
+msgid "generating"
+msgstr "generazione "
+
+msgid "published on @time"
+msgstr "pubblicato il @time"
+
+msgid "published on @time, regenerating"
+msgstr "pubblicato il @time, rigenerazione"
+
+msgid "Delete"
+msgstr "Elimina"
+
+msgid "No sitemaps have been defined yet. <a href=\"@url\">Add a new one</a>."
+msgstr "Non è stata ancora definita nessuna mappa del sito. <a href=\"@url\">Aggiungi una nuova</a>."
+
+msgid "Sitemap type"
+msgstr "Tipo di mappa del sito"
+
+msgid "No sitemap types have been defined yet. <a href=\"@url\">Add a new one</a>."
+msgstr "Non è stato ancora definito nessun tipo di mappa del sito. <a href=\"@url\">Aggiungi uno nuovo</a>."
+
+msgid "sitemap"
+msgstr "mappa del sito"
+
+msgid "sitemaps"
+msgstr "mappe del sito "
+
+msgid "Simple XML sitemap type"
+msgstr "Tipo di mappa del sito XML semplice"
+
+msgid "sitemap type"
+msgstr "tipo di mappa del sito"
+
+msgid "sitemap types"
+msgstr "tipi di mappa del sito"
+
+msgid "If a custom link points to an entity, include its referenced images in the sitemap."
+msgstr "Se un collegamento personalizzato punta ad un'entità, includere le immagini di riferimento nella mappa del sito. "
+
+msgid "No"
+msgstr "No"
+
+msgid "Yes"
+msgstr "Sì"
+
+msgid "<strong>@sitemap, line @line</strong>: The path <em>@path</em> does not exist."
+msgstr "<strong>@sitemap, riga @line</strong>: il percorso <em>@path</em> non esiste."
+
+msgid "<strong>@sitemap, line @line</strong>: The path <em>@path</em> needs to start with a '/'."
+msgstr "<strong>@sitemap, riga @line</strong>: il percorso <em>@path</em> deve iniziare con '/'."
+
+msgid "<strong>@sitemap, line @line</strong>: The priority setting <em>@priority</em> for path <em>@path</em> is incorrect. Set the priority from 0.0 to 1.0."
+msgstr "<strong>@sitemap, riga @line</strong>: l'impostazione della priorità <em>@priority</em> per il percorso <em>@path</em> non è corretta. Impostare la priorità su un valore da 0.0 a 1.0."
+
+msgid "<strong>@sitemap, line @line</strong>: The changefreq setting <em>@changefreq</em> for path <em>@path</em> is incorrect. The following are the correct values: <em>@changefreq_options</em>."
+msgstr "<strong>@sitemap, riga @line</strong>: l'impostazione changefreq <em>@changefreq</em> per il percorso <em>@path</em> è errata. I valori corretti sono: <em>@changefreq_options</em>."
+
+msgid "Entity type"
+msgstr "Tipo di entità"
+
+msgid "Indexed bundles"
+msgstr "Bundle indicizzati"
+
+msgid "Enabled"
+msgstr "Attivato"
+
+msgid "No supported entity types available."
+msgstr "Non è disponibile nessun tipo di entità supportato."
+
+msgid "Configure"
+msgstr "Configura"
+
+msgid "%bundle_label <span class=\"description\">(sitemaps: %sitemaps)</span>"
+msgstr "%bundle_label <span class=\"description\">(mappe del sito: %sitemaps)</span>"
+
+msgid "Configure %label entity type"
+msgstr "Configura tipo di entità %label"
+
+msgid "Regenerate all sitemaps after hitting <em>Save</em>"
+msgstr "Rigenera tutte le mappe del sito dopo aver selezionato <em>Salva</em>"
+
+msgid "This setting will regenerate all sitemaps including the above changes."
+msgstr "Questa impostazione rigenera tutte le mappe del sito includendo le modifiche precedenti. "
+
+msgid "Otherwise the sitemaps will be regenerated during a future cron run."
+msgstr "In caso contrario, le mappe del sito verranno rigenerate durante un'esecuzione cron successiva. "
+
+msgid "- Not specified -"
+msgstr "- Non specificato -"
+
+msgid "always"
+msgstr "sempre"
+
+msgid "hourly"
+msgstr "orario"
+
+msgid "daily"
+msgstr "giornaliero"
+
+msgid "weekly"
+msgstr "settimanale"
+
+msgid "monthly"
+msgstr "mensile"
+
+msgid "yearly"
+msgstr "annuale"
+
+msgid "never"
+msgstr "mai"
+
+msgid "On every cron run"
+msgstr "Ad ogni esecuzione di cron"
+
+msgid "Regenerate the sitemaps during cron runs"
+msgstr "Rigenera le mappe del sito durante le esecuzioni cron "
+
+msgid "Uncheck this if you intend to only regenerate the sitemaps manually or via drush."
+msgstr "Annullare la selezione di questa opzione se si desidera generare le mappe del sito solo manualmente o mediante drush. "
+
+msgid "Sitemap generation interval"
+msgstr "Intervallo di generazione della mappa del sito"
+
+msgid "The sitemap will be generated according to this interval."
+msgstr "La mappa del sito verrà generata in base a questo intervallo. "
+
+msgid "Add styling and sorting to sitemaps"
+msgstr "Aggiungi stile ed ordinamento alle mappe del sito "
+
+msgid "If checked, sitemaps will be displayed as tables with sortable entries and thus become much friendlier towards human visitors. Search engines will not care."
+msgstr "Se selezionata, le mappe del sito verranno visualizzate come tabelle con voci ordinabili e quindi saranno più leggibili. Nessuna differenza per i motori di ricerca. "
+
+msgid "Remove the 'Generated by the Simple XML Sitemap Drupal module' string from the XSL output."
+msgstr "Rimuovere la stringa 'Generated by the Simple XML Sitemap Drupal module' dall'output XSL."
+
+msgid "Language settings"
+msgstr "Impostazioni lingua"
+
+msgid "Remove hreflang markup in HTML"
+msgstr "Rimuovi markup hreflang in HTML"
+
+msgid "Google recommends displaying hreflang definitions either in the HTML markup or in the sitemap, but not in both places.<br>If checked, hreflang definitions created by the language module will be removed from the markup reducing its size."
+msgstr "Google consiglia la visualizzazione delle definizioni hreflang nella markup HTML markup oppure nella mappa del sito ma non in entrambi i posti. <br>Se contrassegnate, le definizioni di hreflang create dal modulo linguistico verranno eliminate dalla markup, riducendone la dimensione."
+
+msgid "Skip non-existent translations"
+msgstr "Ignora traduzioni non esistenti"
+
+msgid "If checked, entity links are generated exclusively for languages the entity has been translated to as long as the language is not excluded below.<br>Otherwise entity links are generated for every language installed on the site apart from languages excluded below.<br>Bear in mind that non-entity paths like homepage will always be generated for every non-excluded language."
+msgstr "Se selezionata, i collegamenti entità vengono generati esclusivamente per le lingue in cui l'entità è stata tradotta a condizione che la lingua non sia esclusa di seguito. <br>In caso contrario, i collegamenti entità vengono generati per qualsiasi lingua installata sul sito ad eccezione delle lingue escluse di seguito. <br>Tenere presente che i percorsi non di entità come la homepage verranno sempre generati per tutte le pagine non escluse. "
+
+msgid "Exclude languages"
+msgstr "Escludi lingue"
+
+msgid "There will be no links generated for languages checked here."
+msgstr "Per le lingue selezionate qui, non verrà generato alcun collegamento. "
+
+msgid "There are no languages other than the default language available."
+msgstr "Non sono disponibili lingue diverse dalla lingua predefinita."
+
+msgid "Advanced settings"
+msgstr "Impostazioni avanzate"
+
+msgid "Default sitemap"
+msgstr "Mappa del sito predefinita"
+
+msgid "This sitemap will be available under <em>/sitemap.xml</em> in addition to its default path <em>/variant-name/sitemap.xml</em>.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "Questa mappa del sito sarà disponibile in <em>/sitemap.xml</em> oltre che nel percorso predefinito <em>/variant-name/sitemap.xml</em>.<br>Le mappe del sito possono essere configurate <a href=\"@url\">qui</a>."
+
+msgid "- None -"
+msgstr "- Nessuno -"
+
+msgid "Default base URL"
+msgstr "URL di base predefinito"
+
+msgid "On some hosting providers it is impossible to pass parameters to cron to tell Drupal which URL to bootstrap with. In this case the base URL of sitemap links can be overridden here.<br>Example: <em>@url</em>"
+msgstr "Su alcuni provider di hosting è impossibile passare i parametri a cron per indicare a Drupal l'URL con cui eseguire il bootstrap. In questo caso, l'URL di base dei link della mappa del sito può essere sovrascritto qui. <br>Esempio: <em>@url</em>"
+
+msgid "Exclude duplicate links"
+msgstr "Escludi link duplicati"
+
+msgid "Prevent per-sitemap duplicate links.<br>Unchecking this may help avoiding PHP memory errors on huge sites."
+msgstr "Impedire link duplicati per mappa del sito. <br>Deselezionare questa opzione potrebbe aiutare a evitare errori di memoria PHP su siti di grandi dimensioni."
+
+msgid "Maximum links in a sitemap"
+msgstr "Numero massimo di link in una mappa del sito"
+
+msgid "The maximum number of links one sitemap can hold. If more links are generated than set here, a sitemap index will be created and the links split into several sub-sitemaps.<br>50 000 links is the maximum Google will parse per sitemap, but choosing a lower value may be needed to avoid PHP memory errors on huge sites.<br>If left blank, all links will be shown on a single sitemap."
+msgstr "Il numero massimo di link che una mappa del sito può contenere. Se viene generato un numero di link maggiore di quello impostato in questo punto, verrà creato un indice della mappa del sito ed i link verranno suddivisi in diverse mappe del sito secondarie.<br>50000 link è il massimo che Google analizzerà per mappa di sito, ma scegliere un valore inferiore potrebbe essere necessario per evitare errori di memoria PHP su siti di enormi. <br>Se lasciato vuoto, tutti i collegamenti verranno visualizzati su una singola mappa del sito."
+
+msgid "Sitemap generation max duration"
+msgstr "Durata massima generazione mappa del sito "
+
+msgid "The maximum duration <strong>in seconds</strong> the generation task can run during a single cron run or during one batch process iteration.<br>The higher the number, the quicker the generation process, but higher the risk of PHP timeout errors."
+msgstr "La durata massima <strong>in secondi</strong> dell'attività di generazione durante una singola esecuzione cron o durante un'iterazione del processo batch. <br>Più alto è il numero, più rapido è il processo di generazione, ma maggiore è il rischio di errori di timeout PHP. "
+
+msgid "The number of entities to process in each queue item.<br>Increasing this number will use more memory but will result in less queries improving generation speed."
+msgstr "Il numero di entità da elaborare in ciascun elemento della coda. <br>Aumentando questo numero si utilizzerà più memoria ma si diminuirà il numero di query, migliorando di conseguenza la velocità di generazione."
+
+msgid "The base URL is invalid."
+msgstr "L'URL di base non è valido. "
+
+msgid "Include this sitemap during generation"
+msgstr "Includi questa mappa del sito durante la generazione"
+
+msgid "The sitemap ID will be part of the URL and can only contain lowercase letters, numbers, dashes and underscores."
+msgstr "L'ID mappa del sito farà parte dell'URL e può contenere solo lettere minuscole, numeri, trattini e caratteri di sottolineatura."
+
+msgid "The sitemap's type defines its looks and content. Sitemaps types can be configured <a href=\"@url\">here</a>."
+msgstr "Il tipo di mappa del sito ne definisce l'aspetto e il contenuto. I tipi di mappa del sito possono essere configurati <a href=\"@url\">qui</a>."
+
+msgid "Administrative description"
+msgstr "Descrizione per l'amministratore"
+
+msgid "Save"
+msgstr "Salva"
+
+msgid "Sitemap %label has been updated."
+msgstr "La mappa del sito %label è stata aggiornata."
+
+msgid "Sitemap %label has been created."
+msgstr "La mappa del sito %label è stata creata."
+
+msgid "Sitemaps of this type will be built according to the sitemap generator plugin chosen here."
+msgstr "Le mappe del sito di questo tipo saranno create in base al plugin generatore di mappa del sito scelto qui."
+
+msgid "Sitemaps of this type will be populated with URLs generated by these URL generator plugins."
+msgstr "Le mappe del sito di questo tipo verranno popolate con gli URL generati da questi plugin generatori di URL."
+
+msgid "Sitemap type %label has been updated."
+msgstr "Il tipo di mappa del sito %label è stato aggiornato."
+
+msgid "Sitemap type %label has been created."
+msgstr "Il tipo di mappa del sito %label è stato creato."
+
+msgid "Sitemap status"
+msgstr "Stato mappa del sito "
+
+msgid "Sitemaps can be regenerated on demand here."
+msgstr "Le mappe del sito possono essere generate su richiesta in questo punto. "
+
+msgid "Rebuild queue"
+msgstr "Ricrea coda "
+
+msgid "Resume generation"
+msgstr "Riprendi generazione"
+
+msgid "Rebuild queue & generate"
+msgstr "Ricrea coda & genera "
+
+msgid "Progress of sitemap regeneration"
+msgstr "Avanzamento della rigenerazione della mappa del sito "
+
+msgid "@indexed out of @total queue items have been processed.<br>Each sitemap is published after all of its items have been processed."
+msgstr "@indexed di @total elementi della coda sono stati elaborati. <br>Ogni mappa del sito viene pubblicata dopo che tutti i relativi elementi sono stati elaborati."
+
+msgid "There are no items to be indexed."
+msgstr "Nessun elemento da indicizzare. "
+
+msgid "Do not index entities of type <em>@bundle</em> in sitemap <em>@sitemap</em>"
+msgstr "Non indicizzare le entità di tipo <em>@bundle</em> nella mappa del sito <em>@sitemap</em>"
+
+msgid "Index entities of type <em>@bundle</em> in sitemap <em>@sitemap</em>"
+msgstr "Indicizza entità di tipo <em>@bundle</em> nella mappa del sito <em>@sitemap</em>"
+
+msgid "The priority entities of this type will have in the eyes of search engine bots."
+msgstr "La priorità che verrà assegnata alle priorità di questo tipo dal punto di vista dei bot del motore di ricerca."
+
+msgid "The frequency with which entities of this type change. Search engine bots may take this as an indication of how often to index them."
+msgstr "La frequenza con cui vengono modificate le entità di questo tipo. I bot del motore di ricerca potrebbero utilizzare questo valore come indicazione per la frequenza di indicizzazione. "
+
+msgid "Determines if images referenced by entities of this type should be included in the sitemap."
+msgstr "Determina se le immagini indicate dalle entità di questo tipo devono essere incluse nella mappa del sito. "
+
+msgid "Settings for this entity can be overridden here."
+msgstr "Le impostazioni per questa entità possono essere sovrascritte in questo punto. "
+
+msgid "Do not index this <em>@bundle</em> entity in sitemap <em>@sitemap</em>"
+msgstr "Non indicizzare questa entità <em>@bundle</em> nella mappa del sito <em>@sitemap</em>"
+
+msgid "Index this <em>@bundle</em> entity in sitemap <em>@sitemap</em>"
+msgstr "Indicizza questa entità <em>@bundle</em> nella mappa del sito <em>@sitemap</em>"
+
+msgid "The priority this <em>@bundle</em> entity will have in the eyes of search engine bots."
+msgstr "La priorità di questa entità <em>@bundle</em> per i bot del motore di ricerca. "
+
+msgid "The frequency with which this <em>@bundle</em> entity changes. Search engine bots may take this as an indication of how often to index it."
+msgstr "La frequenza con cui questa entità <em>@bundle</em> viene modificata. I bot del motore di ricerca possono utilizzare tale valore come indicazione per la frequenza con cui eseguire l'indicizzazione. "
+
+msgid "Determines if images referenced by this <em>@bundle</em> entity should be included in the sitemap."
+msgstr "Determina se le immagini indicate da questa entità <em>@bundle</em> devono essere incluse nella mappa del sito. "
+
+msgid "default"
+msgstr "predefinito"
+
+msgid "At least one sitemap needs to be defined for a bundle to be indexable.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "È necessario definire almeno una mappa del sito affinché un bundle sia indicizzabile. <br>Le mappe del sito possono essere configurate <a href=\"@url\">qui</a>."
+
+msgid "Do not index entities of this type in sitemap <em>@sitemap</em>"
+msgstr "Non indicizzare entità di questo tipo nella mappa del sito <em>@sitemap</em>"
+
+msgid "Index entities of this type in sitemap <em>@sitemap</em>"
+msgstr "Indicizza entità di questo tipo nella mappa del sito <em>@sitemap</em>"
+
+msgid "Sitemap file"
+msgstr "File della sitemap"
+
+msgid "Generated by the <a href=\"@url\">@module_name</a> Drupal module."
+msgstr "Generato dal modulo Drupal <a href=\"@url\">@module_name</a>."
+
+msgid "Number of sitemaps in this index"
+msgstr "Numero di mappe del sito in questo indice "
+
+msgid "Sitemap URL"
+msgstr "URL della sitemap"
+
+msgid "Number of URLs in this sitemap"
+msgstr "Numero di URL in questa mappa del sito "
+
+msgid "URL location"
+msgstr "Ubicazione URL "
+
+msgid "Last modification date"
+msgstr "Data dell'ultima modifica"
+
+msgid "Translation set"
+msgstr "Insieme di traduzione"
+
+msgid "Images"
+msgstr "Immagini"
+
+msgid "Title"
+msgstr "Titolo"
+
+msgid "Caption"
+msgstr "Didascalia"
+
+msgid "Default sitemap generator"
+msgstr "Generatore mappa del sito predefinita "
+
+msgid "Generates a standard conform hreflang sitemap of your content."
+msgstr "Genera una mappa del sito hreflang conforme agli standard del proprio contenuto. "
+
+msgid "Sitemap index generator"
+msgstr "Generatore di indice mappa del sito"
+
+msgid "Generates an index of your sitemaps."
+msgstr "Genera un indice delle mappe dei siti."
+
+msgid "Arbitrary URL generator"
+msgstr "Generatore URL arbitrario "
+
+msgid "Generates URLs from data sets collected in the hook_arbitrary_links_alter hook."
+msgstr "Genera gli URL dagli insiemi di dati raccolti nell'hook hook_arbitrary_links_alter. "
+
+msgid "Custom URL generator"
+msgstr "Generatore URL personalizzato "
+
+msgid "Generates URLs set in admin/config/search/simplesitemap/custom."
+msgstr "Genera gli URL impostati in admin/config/search/simplesitemap/custom."
+
+msgid "Menu link URL generator"
+msgstr "Generatore URL di collegamento del menu "
+
+msgid "Generates menu link URLs by overriding the 'entity' URL generator."
+msgstr "Genera gli URL di collegamento del menu sostituendo il generatore di URL 'entità'."
+
+msgid "Entity URL generator"
+msgstr "Generatore URL entità "
+
+msgid "Generates URLs for entity bundles and bundle overrides."
+msgstr "Genera gli URL per i bundle entità e le sovrascritture bundle. "
+
+msgid "Sitemap URL generator"
+msgstr "Generatore di URL mappa del sito"
+
+msgid "Generates sitemap URLs for a sitemap index."
+msgstr "Genera URL di mappa del sito per un indice di mappa del sito."
+
+msgid "Generating XML sitemaps"
+msgstr "Generazione delle mappe del sito XML "
+
+msgid "Initializing..."
+msgstr "Inizializzazione..."
+
+msgid "Processing items from the queue.<br>Each sitemap gets published after all of its items have been processed."
+msgstr "Elaborazione degli elementi dalla coda.<br>Ogni mappa del sito viene pubblicata dopo che tutti i relativi elementi sono stati elaborati."
+
+msgid "@indexed out of @total total queue items have been processed."
+msgstr "Sono stati elaborati @indexed su @total elementi della coda totali. "
+

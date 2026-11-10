@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports["default"]=void 0;var a={markdown:"markdown",commonmark:"commonmark"},b=exports["default"]=a;

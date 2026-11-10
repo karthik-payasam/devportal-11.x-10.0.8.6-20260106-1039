@@ -1,0 +1,1004 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Publish on date"
+msgstr "Publier le"
+
+msgid "The date the %type will be published."
+msgstr "Date à laquelle le %type sera publié."
+
+msgid "Unpublish on date"
+msgstr "Dépublier le"
+
+msgid "The date the %type will be unpublished."
+msgstr "Date à laquelle le %type sera dépublié."
+
+msgid "About"
+msgstr "À propos"
+
+msgid "The Scheduler module provides the functionality for automatic publishing and unpublishing of entities, such and nodes and media items, at specified future dates."
+msgstr "Le module Scheduler permet la publication et la dépublication automatiques d'entités, telles que des noeuds et des éléments de média, à des dates futures spécifiées."
+
+msgid "You can read more in the <a href=\"@readme\">readme</a> file or our <a href=\"@project\">project page on Drupal.org</a>."
+msgstr "Pour en savoir plus, consultez le fichier <a href=\"@readme\">readme</a> ou la <a href=\"@project\">page de notre projet sur Drupal.org</a>."
+
+msgid "When you have set up Drupal's standard crontab job cron.php then Scheduler will be executed during each cron run. However, if you would like finer granularity to scheduler, but don't want to run Drupal's cron more often then you can use the lightweight cron handler provided by Scheduler. This is an independent cron job which only runs the scheduler process and does not execute any cron tasks defined by Drupal core or any other modules."
+msgstr "Si vous avez configuré un travail crontab standard de Drupal cron.php, le planificateur est exécuté lors de chaque exécution du travail cron. Toutefois, si vous voulez que la granularité soit plus fine pour le planificateur sans exécuter le travail cron de Drupal plus souvent, vous pouvez utiliser le gestionnaire des travaux cron simples fourni par le planificateur. Il s'agit d'un travail cron indépendant qui n'exécute que le processus du planificateur et pas les tâches cron définies par le coeur de Drupal ou d'autres modules. "
+
+msgid "Scheduler's cron is at /scheduler/cron/{access-key} and a sample crontab entry to run scheduler every minute might look like:"
+msgstr "Le travail cron du planificateur se trouve dans /scheduler/cron/{access-key}. Exemple d'entrée crontab pour l'exécution du planificateur toutes les minutes : "
+
+msgid "or"
+msgstr "ou"
+
+msgid "Scheduling options"
+msgstr "Options de planification"
+
+msgid "Enter a date. The time part is optional."
+msgstr "Saisir une date. L'heure est optionelle."
+
+msgid "The default time is @default_time."
+msgstr "L'heure par défaut est @default_time."
+
+msgid "Enter a date and time."
+msgstr "Saisir une date et une heure."
+
+msgid "Leave the date blank for no scheduled publishing."
+msgstr "Laisser le champ date vide pour ne pas planifier la publication"
+
+msgid "Leave the date blank for no scheduled unpublishing."
+msgstr "Laisser le champ date vide pour ne pas planifier la dépublication"
+
+msgid "The widget for field %field is incorrectly set to %wrong. This should be changed to %correct by an admin user via the <a href=\"@link\">Field UI form display</a> :not_available"
+msgstr "Le widget de la zone %field n'est incorrectement défini à %wrong. Cette valeur doit être remplacé par %correct par un administrateur via l'<a href=\"@link\">écran de formulaire d'interface utilisateur des zones</a> :not_available"
+
+msgid "not available"
+msgstr "indisponible(s)"
+
+msgid "Scheduler"
+msgstr "Scheduler"
+
+msgid "Publishing"
+msgstr "Publication"
+
+msgid "Enable scheduled publishing for %type @plural"
+msgstr "Activer la publication planifiée pour %type @plural"
+
+msgid "Change %type creation time to match the scheduled publish time"
+msgstr "Modifier la date de création du %type pour qu'elle corresponde à la date de publication planifiée"
+
+msgid "The entity type does not support the change of creation time."
+msgstr "Le type d'entité ne prend pas en charge le changement de la date de création."
+
+msgid "Require scheduled publishing"
+msgstr "Rendre la publication planifiée obligatoire"
+
+msgid "Create a new revision on publishing"
+msgstr "Créer une nouvelle révision à la publication"
+
+msgid "Advanced options"
+msgstr "Options avancées"
+
+msgid "Action to be taken for publication dates in the past"
+msgstr "Action en cas de date de publication dans le passé"
+
+msgid "Display an error message - do not allow dates in the past"
+msgstr "Afficher un message d'erreur - Les dates de publication dans le passé ne sont pas autorisées"
+
+msgid "Publish the %type @singular immediately after saving"
+msgstr "Publier le %type @singular immédiatement après la sauvegarde"
+
+msgid "Schedule the %type @singular for publication on the next cron run"
+msgstr "Planifier la publication du %type @singular à la prochaine exécution de cron"
+
+msgid "Change %type creation time to match the published time, for dates before the %type was created"
+msgstr "Modifier la date de création du %type pour qu'elle corresponde à la date de publication, pour les dates antérieures à la création du %type"
+
+msgid "The created time will only be altered when the scheduled publishing time is earlier than the existing creation time"
+msgstr "La date de création ne sera modifiée que si la date de publication planifiée est antérieure à la date de création existante"
+
+msgid "Unpublishing"
+msgstr "Dépublication"
+
+msgid "Enable scheduled unpublishing for %type @plural"
+msgstr "Activer la dépublication planifiée pour %type @plural"
+
+msgid "Require scheduled unpublishing"
+msgstr "Rendre la dépublication planifiée obligatoire"
+
+msgid "Create a new revision on unpublishing"
+msgstr "Créer une nouvelle révision à la dépublication"
+
+msgid "@type edit page"
+msgstr "Page d'édition du @type"
+
+msgid "Display scheduling date input fields in"
+msgstr "Afficher les zones d'entrée de date de planification dans"
+
+msgid "Vertical tab"
+msgstr "Onglet vertical"
+
+msgid "Separate fieldset"
+msgstr "Groupe de champs séparé"
+
+msgid "Use this option to specify how the scheduler fields are displayed when editing %type @plural"
+msgstr "Utilisez cette option pour spécifier le mode d'affichage des zones du planificateur lors de l'édition du %type @plural"
+
+msgid "Expand fieldset or vertical tab"
+msgstr "Déplier le groupe de champs ou l'onglet vertical"
+
+msgid "Expand only when a scheduled date exists or when a date is required"
+msgstr "Déplier uniquement lorsqu'une date programmée existe ou lorsqu'une date est requise"
+
+msgid "Always open the fieldset or vertical tab"
+msgstr "Toujours déplier le groupe de champs ou l'onglet vertical"
+
+msgid "Show message"
+msgstr "Voir le message"
+
+msgid "Show a confirmation message when a scheduled %type @singular is saved"
+msgstr "Afficher un message de confirmation lorsqu'un %type @singular planifié est sauvegardé"
+
+msgid "Scheduler settings"
+msgstr "Paramètres de planification (module Scheduler)"
+
+msgid "Enabled for publishing"
+msgstr "Activé pour la publication"
+
+msgid "Enabled for unpublishing"
+msgstr "Activer pour la dépublication"
+
+msgid "None"
+msgstr "Aucun(e)"
+
+msgid "Now"
+msgstr "Maintenant"
+
+msgid "How far into the future should the items be scheduled?"
+msgstr "Jusqu'à quand dans le futur les éléments doivent-ils être planifiés ?"
+
+msgid "Scheduled dates will be set randomly within the selected time span."
+msgstr "Les dates planifiées seront définies de manière aléatoire dans l'intervalle de temps sélectionné."
+
+msgid "Publishing date for Scheduler"
+msgstr "Date de publication pour le planificateur "
+
+msgid "Enter a percentage for randomly selecting Scheduler-enabled entities to be given a publish-on date. Enter 0 for none, 100 for all. The date and time will be random within the range starting at entity creation date, up to a time in the future matching the same span as selected above."
+msgstr "Entrez un pourcentage pour la sélection aléatoire des entités activées pour le planificateur auxquelles donner une date de publication. Entrez 0 pour aucun noeud et 100 pour tous les noeuds. La date et l'heure seront aléatoires dans la plage allant de la date de création de l'entité à une date future donnant le même intervalle que ci-dessus."
+
+msgid "Unpublishing date for Scheduler"
+msgstr "Date d'annulation de publication pour le planificateur "
+
+msgid "Enter a percentage for randomly selecting Scheduler-enabled entities to be given an unpublish-on date. Enter 0 for none, 100 for all. The date and time will be random within the range starting at the later of entity creation date and publish-on date, up to a time in the future matching the same span as selected above."
+msgstr "Entrez un pourcentage pour la sélection aléatoire les entités activées pour le planificateur auxquelles donner une date de dépublication. Entrez 0 pour aucun noeud et 100 pour tous les noeuds. La date et l'heure seront aléatoires dans la plage allant de la date de création de l'entité ou de la date de publication de l'entité si elle est postérieure, à une date future donnant le même intervalle que ci-dessus."
+
+msgid "There is a problem with @entity '@type' - The translatable settings for status field '%status' and Scheduler field '%scheduler_field' should match, either both on or both off"
+msgstr "Il y a un problème avec @entity '@type' - Les valeurs traduisibles de la zone de statut '%status' et de la zone de planificateur '%scheduler_field' doivent correspondre, elles doivent être toutes deux activées ou toutes deux désactivées"
+
+msgid "Publish on"
+msgstr "Publier le"
+
+msgid "Unpublish on"
+msgstr "Dépublier le"
+
+msgid "Media Field Data"
+msgstr "Données de zone de média"
+
+msgid "Relationship to access the Media fields that are not on Media Revision."
+msgstr "Relation permettant d'accéder aux zones de média qui ne sont pas en révision de média."
+
+msgid "Media Field"
+msgstr "Champ Media"
+
+msgid "%title is scheduled to be published @publish_time and unpublished @unpublish_time."
+msgstr "%title est programmé pour être publié le @publish_time et être dépublié le @unpublish_time."
+
+msgid "%title is scheduled to be published @publish_time."
+msgstr "%title est programmé pour être publié le @publish_time."
+
+msgid "%title is scheduled to be unpublished @unpublish_time."
+msgstr "%title est programmé pour être dépublié le @unpublish_time."
+
+msgid "Scheduler Dates"
+msgstr "Dates du planificateur "
+
+msgid "Fieldset containing Scheduler Publish-on and Unpublish-on date input fields"
+msgstr "Ensemble de zones contenant les zones d'entrée pour la date de publication et la date d'annulation de publication du planificateur "
+
+msgid "Scheduler: publish on"
+msgstr "Scheduler : publier le"
+
+msgid "The date when the Scheduler module will publish the content."
+msgstr "Date à laquelle le module Scheduler publiera le contenu."
+
+msgid "Scheduler: unpublish on"
+msgstr "Scheduler : dépublier le"
+
+msgid "The date when the Scheduler module will unpublish the content."
+msgstr "Date à laquelle le module Scheduler dépubliera le contenu."
+
+msgid "Scheduler settings cannot be migrated due to RequirementsException: %message, %requirements, line %line in %file"
+msgstr "Les paramètres du planificateur ne peuvent pas être migrés en raison d'une exception RequirementsException : %message, %requirements, ligne %line dans %file"
+
+msgid "Function %function has not been executed. Implementations of hook_scheduler_api() should be replaced by Scheduler event listeners."
+msgstr "La fonction %function n'a pas été exécutée. Les implémentations de hook_scheduler_api () doivent être remplacées par des programmes d'écoute d'événements du planificateur."
+
+msgid "Local task route %route contains duplicates in addition to Scheduler. %data"
+msgstr "La route de tâche locale %route contient des doublons en plus du planificateur. %data"
+
+msgid "currently in daylight saving mode"
+msgstr "actuellement en mode heure d'été "
+
+msgid "not in daylight saving mode"
+msgstr "pas en mode heure d'été "
+
+msgid "In most cases the server time should match Coordinated Universal Time (UTC) / Greenwich Mean Time (GMT)."
+msgstr "Dans la plupart des cas, l'heure du serveur doit correspondre à l'heure TUC (temps universel coordonné/GMT (temps moyen de Greenwich). "
+
+msgid "Default timezone: %date_default_timezone (%date_default_code), offset from UTC/GMT by %date_default_offset hours. This timezone can be <a href=\"@admin_regional_settings\">changed by admin users</a> with the appropriate access."
+msgstr "Fuseau horaire par défaut : %date_default_timezone (%date_default_code), décalage par rapport à l'heure TUC/GMT de %date_default_offset heures. Ce fuseau horaire peut être <a href=\"@admin_regional_settings\">changé par les administrateurs</a> disposant de l'accès approprié. "
+
+msgid "Local time: %localtime (%daylight_saving). You can change this via your <a href=\"@account_edit\">user account</a>."
+msgstr "Heure locale : %localtime (%daylight_saving). Vous pouvez changer cette configuration sur votre <a href=\"@account_edit\">compte utilisateur.</a>."
+
+msgid "Note: The user timezone has not been stored, so defaulting to the website timezone."
+msgstr "Remarque : le fuseau horaire de l'utilisateur n'a pas été stocké ; par défaut, le fuseau horaire est celui du site Web. "
+
+msgid "Your local time is %localtime (%daylight_saving). This is not configurable by you."
+msgstr "L'heure locale est %localtime (%daylight_saving). Vous ne pouvez pas la modifier."
+
+msgid "Scheduler Time Check"
+msgstr "Vérification de la planification"
+
+msgid "Server time: @utc"
+msgstr "Heure du serveur : @utc"
+
+msgid "The date and time format has been reset."
+msgstr "Le format de date et heure a été réinitialisé."
+
+msgid "Default set on for new option \"Show a message after updating content\""
+msgstr "Ensemble par défaut pour la nouvelle option \"Afficher un message après avoir mis à jour le contenu\""
+
+msgid "The \"Scheduled\" tab is now a \"Scheduled content\" sub-task under the \"Content\" tab"
+msgstr "L'onglet \"Planifié\" est désormais une sous-tâche \"Contenu planifié\" sous l'onglet \"Contenu\""
+
+msgid "Added Scheduler date fields to the following entity types: %updated."
+msgstr "Des zones de date du planificateur ont été ajoutées aux types d'entité suivants : %updated."
+
+msgid "No database fields had to be added."
+msgstr "Aucune zone de base de données n'a dû être ajoutée."
+
+msgid "Updated views: %updated."
+msgstr "Vues mises à jour : %updated."
+
+msgid "No views require updating."
+msgstr "Aucune vue n'a besoin d'être mise à jour."
+
+msgid "Nothing requires updating for Taxonomy Terms."
+msgstr "Rien ne nécessite une mise à jour pour les termes de taxonomie."
+
+msgid "No reaction rules required updating with entity context."
+msgstr "Aucune règle de réaction n'a nécessité de mise à jour avec le contexte d'entité."
+
+msgid "%updated."
+msgstr "%updated."
+
+msgid "No update required."
+msgstr "Aucune mise à jour n'est requise."
+
+msgid "1 reaction rule updated with entity context"
+msgid_plural "@count reaction rules updated with entity context"
+msgstr[0] "1 règle de réaction mise à jour avec le contexte d'entité"
+msgstr[1] "@count règles de réaction mises à jour avec le contexte d'entité"
+
+msgid "Publish and unpublish content and entities automatically on specified dates and times."
+msgstr "Publier et dépublier le contenu et les entités automatiquement aux dates et heures spécifiées."
+
+msgid "Configure settings for scheduled publishing and unpublishing."
+msgstr "Configurer les paramètres de publication et dépublication programmée."
+
+msgid "Settings"
+msgstr "Paramètres"
+
+msgid "Lightweight cron"
+msgstr "Tâche plannifiée (cron) légère"
+
+msgid "Administer scheduler"
+msgstr "Administrer le planificateur"
+
+msgid "Configure scheduler - set default times, lightweight cron."
+msgstr "Configurez le planificateur - définissez les dates par défaut, cron léger."
+
+msgid "Allow date-only input with time taken from default time setting"
+msgstr "Permettre l'entrée de date uniquement en appliquant l'heure définie par défaut "
+
+msgid "Full date and time format"
+msgstr "Format de l'heure et de la date complète"
+
+msgid "The set of PHP date letters allowed in the Scheduler date format"
+msgstr "Ensemble des lettres de date PHP admises dans le format de date du planificateur "
+
+msgid "Date part of the full format"
+msgstr "Fragment de la date dans le format complet"
+
+msgid "Default value for entity type setting expand_fieldset"
+msgstr "Valeur par défaut pour le paramètre de type d'entité expand_fieldset"
+
+msgid "Default value for entity type setting fields_display_mode"
+msgstr "Valeur par défaut pour le paramètre de type d'entité fields_display_mode"
+
+msgid "Default value for entity type setting publish_enable"
+msgstr "Valeur par défaut pour le paramètre de type d'entité publish_enable"
+
+msgid "Default value for entity type setting publish_past_date"
+msgstr "Valeur par défaut pour le paramètre de type d'entité publish_past_date"
+
+msgid "Default value for entity type setting publish_past_date_created"
+msgstr "Valeur par défaut pour le paramètre de type d'entité publish_past_date_created"
+
+msgid "Default value for entity type setting publish_required"
+msgstr "Valeur par défaut pour le paramètre de type d'entité publish_required"
+
+msgid "Default value for entity type setting publish_revision"
+msgstr "Valeur par défaut pour le paramètre de type d'entité publish_revision"
+
+msgid "Default value for entity type setting publish_touch"
+msgstr "Valeur par défaut pour le paramètre de type d'entité publish_touch"
+
+msgid "Default value for entity type setting show_message_after_update"
+msgstr "Valeur par défaut pour le paramètre de type d'entité show_message_after_update"
+
+msgid "Default Scheduling Time. This is used with the option to allow date only"
+msgstr "Heure de planification par défaut. Elle est utilisée avec l'option d'entrée de date uniquement. "
+
+msgid "Default value for entity type setting unpublish_enable"
+msgstr "Valeur par défaut pour le paramètre de type d'entité unpublish_enable"
+
+msgid "Default value for entity type setting unpublish_required"
+msgstr "Valeur par défaut pour le paramètre de type d'entité unpublish_required"
+
+msgid "Default value for entity type setting unpublish_revision"
+msgstr "Valeur par défaut pour le paramètre de type d'entité unpublish_revision"
+
+msgid "Hide the seconds on the input control when entering a time"
+msgstr "Masquer les secondes sur le contrôle d'entrée lors de la saisie d'une heure"
+
+msgid "Lightweight cron access key"
+msgstr "Clé d'accès à la tâche planifiée (cron) légère"
+
+msgid "Log every Scheduler lightweight cron activation and completion message"
+msgstr "Consigner tous les messages d'activation et d'achèvement des travaux cron simples du planificateur "
+
+msgid "The set of PHP time letters allowed in the Scheduler time format"
+msgstr "Ensemble des lettres d'heure PHP admises dans le format d'heure du planificateur "
+
+msgid "Time part of the full format"
+msgstr "Partie heure du format complet "
+
+msgid "Scheduler entity type settings"
+msgstr "Paramètres de type d'entité du planificateur"
+
+msgid "Conditions under which to expand the date input fieldset or vertical tab (\"when_required\" or \"always\")"
+msgstr "Conditions dans lesquelles développer l'ensemble de zones d'entrée de date ou la tabulation verticale (\"when_required\" ou \"always\")"
+
+msgid "The way the scheduling fields are displayed in the edit form (\"vertical_tab\" or \"fieldset\")"
+msgstr "Mode d'affichage des zones de planification dans le formulaire d'édition (\"vertical_tab\" ou \"fieldset\")"
+
+msgid "Enable scheduled publishing"
+msgstr "Activer la publication planifiée"
+
+msgid "Action to be taken for publication dates in the past (\"error\", \"publish\" or \"schedule\")"
+msgstr "Action à effectuer pour les dates de publication passées (\"error\", \"publish\" ou \"schedule\")"
+
+msgid "Change entity creation date for past dates to avoid \"changed\" being earlier than \"created\""
+msgstr "Modifier la date de création de l'entité pour les dates passées afin d'éviter que \"changed\" soit antérieur à \"created\""
+
+msgid "Change entity creation time to match the scheduled publish time"
+msgstr "Modifier la date de création de l'entité pour qu'elle corresponde à la date de publication planifiée"
+
+msgid "Show a message after updating an entity which is scheduled"
+msgstr "Afficher un message après la mise à jour d'une entité planifiée"
+
+msgid "Enable scheduled unpublishing"
+msgstr "Activer la dépublication planifiée"
+
+msgid "State Change configuration"
+msgstr "Configuration des changements d'état"
+
+msgid "Scheduled for publishing"
+msgstr "Planifié pour publication"
+
+msgid "Scheduled for unpublishing"
+msgstr "Planifié pour dépublication"
+
+msgid "Not scheduled"
+msgstr "Non planifié"
+
+msgid "Publishing enabled"
+msgstr "Publication activée"
+
+msgid "Unpublishing enabled"
+msgstr "Dépublication activée"
+
+msgid "Node form scheduler"
+msgstr "Planificateur du formulaire de noeud "
+
+msgid "Scheduler date options on the Node form."
+msgstr "Options de date du planificateur dans le formulaire de noeud. "
+
+msgid "Form"
+msgstr "Formulaire"
+
+msgid "Scheduler options"
+msgstr "Options de Scheduler"
+
+msgid "Send e-mail when content is published by Scheduler"
+msgstr "Envoyer un courriel quand du contenu a été publié par Scheduler"
+
+msgid "'[node:title]' has been published on [site:name]"
+msgstr "'[node:title]' a été publié sur [site:name]"
+
+msgid ""
+"Dear [node:author:name],\r\n"
+"Your [node:type] '[node:title]' has been published on [site:name].\r\n"
+"The link is [node:url]\r\n"
+""
+msgstr ""
+"Cher(ère) [node:author:name],\r\n"
+"Votre [node:type] '[node:title]' a été publié sur [site:name].\r\n"
+"L'adresse est [node:url]\r\n"
+""
+
+msgid "Send e-mail when content is unpublished by Scheduler"
+msgstr "Envoyer un courriel quand du contenu a été dépublié par Scheduler"
+
+msgid "'[node:title]' has been unpublished on [site:name]"
+msgstr "'[node:title]' a été dépublié sur [site:name]"
+
+msgid ""
+"Dear [node:author:name],\r\n"
+"Your [node:type] '[node:title]' has been unpublished on [site:name].\r\n"
+"The link is [node:url]\r\n"
+""
+msgstr ""
+"Cher(e) [node:author:name],\r\n"
+"Votre [node:type] '[node:title]' a été dépublié sur [site:name].\r\n"
+"L'adresse est [node:url]\r\n"
+""
+
+msgid "Node"
+msgstr "Nœud"
+
+msgid "The node for publishing via Scheduler."
+msgstr "Noeud pour la publication via le planificateur. "
+
+msgid "Publish-on Date"
+msgstr "Date de publication"
+
+msgid "The publishing date to be used by Scheduler."
+msgstr "Date de publication que le planificateur doit utiliser. "
+
+msgid "Set scheduled publishing date"
+msgstr "Planifier la date de publication"
+
+msgid "The node for unpublishing via Scheduler."
+msgstr "Noeud pour l'annulation de publication via le planificateur. "
+
+msgid "Unpublish-on Date"
+msgstr "Date de dépublication"
+
+msgid "The unpublishing date to be used by Scheduler."
+msgstr "Date d'annulation de publication que le planificateur doit utiliser. "
+
+msgid "Set scheduled unpublishing date"
+msgstr "Planifier la date de dépublication"
+
+msgid "The scheduled node"
+msgstr "Le nœud planifié"
+
+msgid "The node scheduled for publishing via Scheduler."
+msgstr "Noeud planifié pour la publication via le planificateur. "
+
+msgid "Remove scheduled publishing date"
+msgstr "Supprimer la date planifiée de publication"
+
+msgid "The node scheduled for unpublishing via Scheduler."
+msgstr "Noeud planifié pour l'annulation de publication via le planificateur. "
+
+msgid "Remove scheduled unpublishing date"
+msgstr "Supprimer la date planifiée de dépublication"
+
+msgid "Scheduler Rules Integration"
+msgstr "Intégration des règles du planificateur "
+
+msgid "Scheduler sub-module providing conditions, actions and events for use with the Rules module."
+msgstr "Sous-module Planificateur fournissant les conditions, les actions et les événements à utiliser avec le module Règles. "
+
+msgid "The object representing the scheduled @entity_type"
+msgstr "Objet représentant le @entity_type planifié"
+
+msgid "After saving a new @entity_type that is scheduled for publishing"
+msgstr "Après la sauvegarde d'un nouveau @entity_type planifié pour publication"
+
+msgid "After saving a new @entity_type that is scheduled for unpublishing"
+msgstr "Après la sauvegarde d'un nouveau @entity_type planifié pour dépublication"
+
+msgid "After updating a @entity_type that is scheduled for publishing"
+msgstr "Après la mise à jour d'un @entity_type planifié pour publication"
+
+msgid "After updating a @entity_type that is scheduled for unpublishing"
+msgstr "Après la mise à jour d'un @entity_type planifié pour dépublication"
+
+msgid "After Scheduler has published a @entity_type"
+msgstr "Après la publication d'un @entity_type par le planificateur"
+
+msgid "After Scheduler has unpublished a @entity_type"
+msgstr "Après la dépublication d'un @entity_type par le planificateur"
+
+msgid "@entity_type_label type is enabled for scheduled publishing"
+msgstr "Le type @entity_type_label est activé pour la publication planifiée"
+
+msgid "@entity_type_label"
+msgstr "@entity_type_label"
+
+msgid "The @entity_type_singular to check for the type being enabled for scheduled publishing."
+msgstr "@entity_type_singular à consulter pour le type activé pour la publication planifiée."
+
+msgid "@entity_type_label type is enabled for scheduled unpublishing"
+msgstr "Le type @entity_type_label est activé pour la dépublication planifiée"
+
+msgid "The @entity_type_singular to check for the type being enabled for scheduled unpublishing."
+msgstr "@entity_type_singular à consulter pour le type activé pour la dépublication planifiée."
+
+msgid "@entity_type_label is scheduled for publishing"
+msgstr "@entity_type_label est planifié pour publication"
+
+msgid "The @entity_type_singular to check for having a scheduled publishing date."
+msgstr "@entity_type_singular à consulter pour une date de publication planifiée."
+
+msgid "@entity_type_label is scheduled for unpublishing"
+msgstr "@entity_type_label est planifié pour dépublication"
+
+msgid "The @entity_type_singular to check for having a scheduled unpublishing date."
+msgstr "@entity_type_singular à consulter pour une date de dépublication planifiée."
+
+msgid "Node type is enabled for scheduled publishing"
+msgstr "Le type de noeud est activé pour la publication planifiée "
+
+msgid "Content (Scheduler)"
+msgstr "Contenu (Scheduler)"
+
+msgid "The node to check for the type being enabled for scheduled publishing."
+msgstr "Noeud à consulter pour le type activé pour la publication planifiée."
+
+msgid "Node is scheduled for publishing"
+msgstr "Le nœud est planifié pour publication."
+
+msgid "The node to check for having a scheduled publishing date."
+msgstr "Noeud à consulter pour une date de publication planifiée."
+
+msgid "Node is scheduled for unpublishing"
+msgstr "Le noeud est planifié pour l'annulation de publication "
+
+msgid "The node to check for having a scheduled unpublishing date."
+msgstr "Noeud à consulter pour une date de dépublication planifiée."
+
+msgid "Node type is enabled for scheduled unpublishing"
+msgstr "Le type de noeud est activé pour l'annulation de publication planifiée "
+
+msgid "The node to check for the type being enabled for scheduled unpublishing."
+msgstr "Noeud à consulter pour le type activé pour la dépublication planifiée."
+
+msgid "scheduled publishing"
+msgstr "publication planifiée"
+
+msgid "scheduled unpublishing"
+msgstr "dépublication planifiée"
+
+msgid "@bundle_label is enabled for @activity"
+msgstr "@bundle_label est activé pour @activity"
+
+msgid "@type settings"
+msgstr "Paramètres de @type"
+
+msgid "Action %action is not valid because @activity is not enabled for %type @group. Add the condition %condition to your Reaction Rule, or enable @activity via the <a href=\"@url\">%type</a> settings."
+msgstr "L'action %action n'est pas valide car @activity n'est pas activé pour %type @group. Ajoutez la condition %condition à votre règle de réaction ou activez @activity via les paramètres de <a href=\"@url\">%type</a>."
+
+msgid "Action %action is not valid because @activity is not enabled for %type @group. Add the condition %condition to your Reaction Rule, or enable @activity via the %type settings."
+msgstr "L'action %action n'est pas valide car @activity n'est pas activé pour %type @group. Ajoutez la condition %condition à votre règle de réaction ou activez @activity via les paramètres de %type."
+
+msgid "Set date for publishing a @entity_type_singular"
+msgstr "Définir une date pour la publication d'un @entity_type_singular"
+
+msgid "@entity_type_label for scheduling"
+msgstr "@entity_type_label pour la planification"
+
+msgid "The @entity_type_singular which is to have a scheduled publishing date set"
+msgstr "@entity_type_singular pour lequel une date de publication planifiée doit être définie"
+
+msgid "Date for publishing"
+msgstr "Date de publication"
+
+msgid "The date when Scheduler will publish the @entity_type_singular"
+msgstr "Date à laquelle le planificateur publiera le @entity_type_singular"
+
+msgid "Set date for unpublishing a @entity_type_singular"
+msgstr "Définir une date pour la dépublication d'un @entity_type_singular"
+
+msgid "The @entity_type_singular which is to have a scheduled unpublishing date set"
+msgstr "@entity_type_singular pour lequel une date de dépublication planifiée doit être définie"
+
+msgid "Date for unpublishing"
+msgstr "Date de dépublication"
+
+msgid "The date when Scheduler will unpublish the @entity_type_singular"
+msgstr "Date à laquelle le planificateur dépubliera le @entity_type_singular"
+
+msgid "Remove date for publishing a @entity_type_singular"
+msgstr "Retirer la date de publication d'un @entity_type_singular"
+
+msgid "The @entity_type_singular from which to remove the scheduled publishing date"
+msgstr "Le @entity_type_singular duquel retirer la date de publication planifiée"
+
+msgid "Remove date for unpublishing a @entity_type_singular"
+msgstr "Retirer la date de dépublication d'un @entity_type_singular"
+
+msgid "The @entity_type_singular from which to remove the scheduled unpublishing date"
+msgstr "Le @entity_type_singular duquel retirer la date de dépublication planifiée"
+
+msgid "Publish a @entity_type_singular immediately"
+msgstr "Publier un @entity_type_singular immédiatement"
+
+msgid "@entity_type_label for publishing"
+msgstr "@entity_type_label à publier"
+
+msgid "The @entity_type_singular to be published now"
+msgstr "@entity_type_singular à publier maintenant"
+
+msgid "Unpublish a @entity_type_singular immediately"
+msgstr "Dépublier un @entity_type_singular immédiatement"
+
+msgid "@entity_type_label for unpublishing"
+msgstr "@entity_type_label à dépublier"
+
+msgid "The @entity_type_singular to be unpublished now"
+msgstr "@entity_type_singular à dépublier maintenant"
+
+msgid "Publish a content item immediately"
+msgstr "Publier un élément de contenu immédiatement"
+
+msgid "The node to be published now"
+msgstr "Noeud à publier immédiatement "
+
+msgid "Remove date for publishing a content item"
+msgstr "Retirer la date de publication d'un élément de contenu"
+
+msgid "The node from which to remove the scheduled publishing date"
+msgstr "Noeud sur lequel retirer la date de publication planifiée "
+
+msgid "Remove date for unpublishing a content item"
+msgstr "Retirer la date de dépublication d'un élément de contenu"
+
+msgid "The node from which to remove the scheduled unpublishing date"
+msgstr "Noeud sur lequel retirer la date d'annulation de publication planifiée "
+
+msgid "Set date for publishing a content item"
+msgstr "Définir la date de publication d'un élément de contenu"
+
+msgid "Node for scheduling"
+msgstr "Noeud pour la planification "
+
+msgid "The node which is to have a scheduled publishing date set"
+msgstr "Noeud pour lequel la date de publication planifiée doit être définie "
+
+msgid "The date for publishing"
+msgstr "La date de publication"
+
+msgid "The date when Scheduler will publish the node"
+msgstr "La date à laquelle le module Scheduler publiera le nœud."
+
+msgid "Set date for unpublishing a content item"
+msgstr "Définir la date de dépublication d'un élément de contenu"
+
+msgid "The node which is to have a scheduled unpublishing date set"
+msgstr "Noeud pour lequel la date d'annulation de publication planifiée doit être définie "
+
+msgid "The date for unpublishing"
+msgstr "La date de dépublication"
+
+msgid "The date when Scheduler will unpublish the node"
+msgstr "Date à laquelle le planificateur va annuler la publication du noeud "
+
+msgid "Unpublish a content item immediately"
+msgstr "Dépublier un élément de contenu immédiatement"
+
+msgid "The node to be unpublished now"
+msgstr "Noeud dont la publication doit être annulée immédiatement "
+
+msgid "The previous creation date was @old_creation_date, now updated to match the publishing date."
+msgstr "La date de création précédente était @old_creation_date. Elle a été mise à jour pour correspondre à la date de publication."
+
+msgid "Published by Scheduler. The scheduled publishing date was @publish_on."
+msgstr "Publié par le module Scheduler. La date de publication planifiée était @publish_on."
+
+msgid "View @type"
+msgstr "Vue @type"
+
+msgid "@label settings"
+msgstr "Paramètres @label"
+
+msgid "Unpublished by Scheduler. The scheduled unpublishing date was @unpublish_on."
+msgstr "Publication annulée par le planificateur. La date d'annulation de la publication planifiée était @unpublish_on."
+
+msgid "Config Update for actions"
+msgstr "Mise à jour de la configuration pour les actions"
+
+msgid "Enable Config Update Reports"
+msgstr "Activer les rapports de mise à jour de la configuration"
+
+msgid "Action '%action_id' is missing. Use <a href=':url'>Config Update</a> to import the missing action."
+msgstr "L'action '%action_id' est manquante. Utilisez <a href=':url'>Mise à jour de la configuration</a> pour importer l'action manquante."
+
+msgid "settings"
+msgstr "paramètres"
+
+msgid "Field '%field' specified by typeFieldName in the Scheduler plugin %id is not found in entity type %entity"
+msgstr "La zone '%field' spécifiée par typeFieldName dans le plug-in Scheduler %id est introuvable dans le type d'entité %entity"
+
+msgid "Unknown entity types (@unknown)"
+msgstr "Types d'entité inconnus (@unknown)"
+
+msgid "Scheduler fields removed from @entityType"
+msgstr "Zones du planificateur retirées de @entityType"
+
+msgid "Settings removed from @bundle"
+msgstr "Paramètres retirés de @bundle"
+
+msgid "Scheduler issue 3320341"
+msgstr "Problème Scheduler 3320341"
+
+msgid ""
+"The Scheduler fields are now hidden by default and automatically changed to be displayed when an entity\n"
+"      bundle is enabled for scheduling. If you have previously manually hidden scheduler fields for enabled\n"
+"      entity types then these fields will now be displayed. You will need to manually hide them again or\n"
+"      implement hook_scheduler_hide_publish_date() or hook_scheduler_TYPE_hide_publish_date() and the\n"
+"      equivalent for unpublish_date. See @issue for details."
+msgstr ""
+"Les zones Scheduler sont maintenant masquées par défaut et modifiées automatiquement pour s'afficher lorsqu'un regroupement d'entités\n"
+" est activé pour la planification. Si vous avez précédemment masqué manuellement les zones du planificateur pour des types d'entité activés,\n"
+" ces zones seront maintenant affichées. Vous devrez les masquer à nouveau manuellement ou\n"
+"      implémenter hook_scheduler_hide_publish_date() ou hook_scheduler_TYPE_hide_publish_date() et\n"
+"      l'équivalent pour unpublish_date. Pour plus de détails, voir @issue."
+
+msgid "Publish On field displayed for: @list"
+msgstr "Zone Publier le affichée pour : @list"
+
+msgid "Unpublish On field displayed for: @list"
+msgstr "Zone Dépublier le affichée pour : @list"
+
+msgid "Publish On field hidden for: @list"
+msgstr "Zone Publier le masquée pour : @list"
+
+msgid "Unpublish On field hidden for: @list"
+msgstr "Zone Dépublier le masquée pour : @list"
+
+msgid "%view view updated."
+msgstr "Vue %view mise à jour."
+
+msgid "%view view loaded from source."
+msgstr "Vue %view chargée à partir de la source."
+
+msgid "%field field removed from %entityType entity type"
+msgstr "Zone %field retirée du type d'entité %entityType"
+
+msgid "Scheduler settings removed from %entity %bundle"
+msgstr "Paramètres du planificateur retirés de %entity %bundle"
+
+msgid "@type: scheduled \"publish\" processing of %title completed by @sucessful_hooks."
+msgstr "@type : traitement \"publish\" planifié de %title effectué par @sucessful_hooks."
+
+msgid "@type: scheduled publishing of %title."
+msgstr "@type : publication planifiée de %title."
+
+msgid "@type: scheduled \"unpublish\" processing of %title completed by @sucessful_hooks."
+msgstr "@type : traitement \"unpublish\" planifié de %title effectué par @sucessful_hooks."
+
+msgid "@type: scheduled unpublishing of %title."
+msgstr "@type : dépublication planifiée de %title."
+
+msgid "Lightweight cron run activated by @trigger."
+msgstr "Exécution du travail cron simple activée par @trigger."
+
+msgid "Lightweight cron run completed."
+msgstr "Exécution de la tâche planifiée (cron) légère terminée."
+
+msgid "%entity entity type updated with %publish_on and %unpublish_on fields."
+msgstr "Type d'entité %entity mis à jour avec les zones %publish_on et %unpublish_on."
+
+msgid "No source file for %full_name in either %install_folder or %optional_folder folders"
+msgstr "Aucun fichier source pour %full_name dans les dossiers %install_folder ou %optional_folder"
+
+msgid "Publishing failed for %title. @failed_hooks returned a failure code."
+msgstr "La publication a échoué pour %title. @failed_hooks a renvoyé un code d'échec."
+
+msgid "Unpublishing failed for %title. @failed_hooks returned a failure code."
+msgstr "La dépublication a échoué pour %title. @failed_hooks a renvoyé un code d'échec."
+
+msgid "Action '%action_id' is missing. Use Config Update to import the missing action."
+msgstr "L'action '%action_id' est manquante. Utilisez Mise à jour de la configuration pour importer l'action manquante."
+
+msgid "Entity id @id is not a @type entity. Processing skipped."
+msgstr "L'ID d'entité @id n'est pas une entité @type. Traitement sauté."
+
+msgid "Schedule publishing and unpublishing of %label"
+msgstr "Planifier la publication et la dépublication de %label"
+
+msgid "Allows users to set a start and end time for %singular_label publication."
+msgstr "Permet aux utilisateurs de définir une date de début et de fin pour la publication de %singular_label."
+
+msgid "View scheduled %label"
+msgstr "Afficher le %label planifié"
+
+msgid "Allows users to see a list of all %plural_label that are scheduled."
+msgstr "Permet aux utilisateurs d'afficher la liste de tous les %plural_label planifiés."
+
+msgid "Scheduler lightweight cron completed."
+msgstr "La tâche planifiée (cron) légère du module Scheduler est terminée."
+
+msgid "nothing to update"
+msgstr "rien à mettre à jour"
+
+msgid "Scheduler entity update - @updated"
+msgstr "Mise à jour d'entité du planificateur - @updated"
+
+msgid "nothing to do"
+msgstr "rien à effectuer"
+
+msgid "Scheduler entity revert - @reverted"
+msgstr "Rétablissement d'entité du planificateur - @reverted"
+
+msgid "Most of the Scheduler options are set independently for each entity type and bundle. These can be accessed from the <a href=\"@link\">admin structure</a> page or directly by using the drop-button"
+msgstr "La plupart des options du planificateur se définissent indépendamment pour chaque type d'entité et regroupement. Vous pouvez y accéder à partir de la page <a href=\"@link\">structure d'administration</a> ou directement à l'aide du bouton de dépôt"
+
+msgid "Entity Types"
+msgstr "Types d'entités"
+
+msgid "no entity types defined"
+msgstr "aucun type d'entité défini"
+
+msgid "publishing"
+msgstr "publication"
+
+msgid "unpublishing"
+msgstr "dépublication"
+
+msgid "The settings below are common to all entity types."
+msgstr "Les paramètres ci-dessous sont communs à tous les types d'entité."
+
+msgid "Date only"
+msgstr "Date seulement"
+
+msgid "Allow users to enter only a date and provide a default time."
+msgstr "Autoriser les utilisateur à renseigner uniquement une date et définir une heure par défaut."
+
+msgid "When only a date is entered the time will default to a specified value, but the user can change this if required."
+msgstr "Lorsqu'une date uniquement est entrée, l'heure est par défaut la valeur spécifiée, mais l'utilisateur peut la changer si nécessaire. "
+
+msgid "Default time"
+msgstr "Heure par défaut"
+
+msgid "Provide a default time in @format format that will be used if the user does not enter a value."
+msgstr "Indiquez une heure par défaut au format @format qui sera utilisée si l'utilisateur n'entre pas de valeur."
+
+msgid "Time settings"
+msgstr "Paramètres d'heure"
+
+msgid "Hide the seconds."
+msgstr "Masquer les secondes."
+
+msgid "When entering a time, only show hours and minutes in the input field."
+msgstr "Lors de la saisie d'une heure, n'afficher que les heures et minutes dans le champ."
+
+msgid "The default time should be in the format @format"
+msgstr "L'heure par défaut doit être au format @format"
+
+msgid "No %bundle_id entity types returned by %module module for use in %plugin_label"
+msgstr "Aucun type d'entité %bundle_id renvoyé par le module %module pour utilisation dans %plugin_label"
+
+msgid "Lightweight cron settings"
+msgstr "Paramètres de la tâche planifiée (cron)"
+
+msgid "Log every activation and completion message."
+msgstr "Journaliser toute activation et message de confirmation."
+
+msgid "When this option is checked, Scheduler will write an entry to the log every time the lightweight cron process is started and completed. This is useful during set up and testing, but can result in a large number of log entries. Any actions performed during the lightweight cron run will always be logged regardless of this setting."
+msgstr "Lorsque cette option est sélectionnée, le planificateur écrit une entrée dans le journal à chaque fois que le processus cron simple est démarré et terminé. Ce comportement est utile lors de la configuration et du test mais peut entraîner l'écriture d'un grand nombre d'entrées dans le journal. Les actions effectuées au cours de l'exécution d'un travail cron simple sont toujours consignées, quelle que soit la valeur de ce paramètre. "
+
+msgid "Similar to Drupal's cron key this acts as a security token to prevent unauthorised calls to scheduler/cron. The key should be passed as scheduler/cron/{access key}"
+msgstr "A l'instar de la clé de travail cron de Drupal, il s'agit d'un jeton de sécurité empêchant les appels non autorisés de scheduler/cron. La clé doit être transmise sous la forme scheduler/cron/{access key}"
+
+msgid "Generate new random key"
+msgstr "Générer une nouvelle clé aléatoire"
+
+msgid "You can test Scheduler's lightweight cron process interactively"
+msgstr "Vous pouvez tester le processus de cron simplifié du Planificateur interactivement"
+
+msgid "Run Scheduler's lightweight cron now"
+msgstr "Exécuter le travail cron simple du planificateur maintenant "
+
+msgid "Lightweight cron run completed. See the <a href=\"@url\">log</a> for details."
+msgstr "Exécution du travail cron simple terminée. Voir le <a href=\"@url\">journal</a> pour des détails. "
+
+msgid "Scheduled content"
+msgstr "Contenu(s) planifié(s)"
+
+msgid "Overview"
+msgstr "Vue d'ensemble"
+
+msgid "Scheduled media"
+msgstr "Média planifié"
+
+msgid "Scheduled products"
+msgstr "Produits planifiés"
+
+msgid "Scheduled terms"
+msgstr "Termes planifiés"
+
+msgid "Leave blank for no date."
+msgstr "Laisser en blanc en l'absence de date."
+
+msgid "Datetime Timestamp for Scheduler"
+msgstr "Horodatage de type date et heure pour le planificateur "
+
+msgid "An optional datetime field. Does not fill in the current datetime if left blank. Defined by Scheduler module."
+msgstr "Zone de date/heure facultative. Ne remplit pas la date/heure en cours si cette zone et vide. Définie par le module de planification."
+
+msgid "Commerce Product Scheduler Plugin"
+msgstr "Plug-in Commerce Product Scheduler"
+
+msgid "Provides support for scheduling Commerce Product entities"
+msgstr "Fournit la prise en charge de la planification des entités de produit commercial"
+
+msgid "Media Scheduler Plugin"
+msgstr "Plug-in Media Scheduler"
+
+msgid "Provides support for scheduling media entities"
+msgstr "Fournit la prise en charge de la planification des entités de média"
+
+msgid "Node Scheduler Plugin"
+msgstr "Plug-in Node Scheduler"
+
+msgid "Provides support for scheduling node entities"
+msgstr "Fournit la prise en charge de la planification des entités de noeud"
+
+msgid "Taxonomy Term Scheduler Plugin"
+msgstr "Plug-in Taxonomy Term Scheduler"
+
+msgid "Provides support for scheduling Taxonomy Term entities"
+msgstr "Fournit la prise en charge de la planification des entités de terme de taxonomie"
+
+msgctxt "Validation"
+msgid "Scheduler publish on"
+msgstr "Scheduler publier le"
+
+msgctxt "Validation"
+msgid "Scheduler unpublish on"
+msgstr "Scheduler dépublier le"
+
+msgid "Scheduled content access. REDUNDANT, DO NOT USE THIS."
+msgstr "Accès au contenu planifié. REDONDANT, N'UTILISEZ PAS CELA."
+
+msgid "NOT USED"
+msgstr "NON UTILISE"
+

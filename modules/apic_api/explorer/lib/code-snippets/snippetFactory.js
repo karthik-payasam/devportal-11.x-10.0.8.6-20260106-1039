@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.snippetFactory=void 0;var a=require("./kafka"),b=require("./constants"),c=exports.snippetFactory=function(c){switch(c){case b.apiTypes.kafka:return a.renderSnippet;default:throw new Error("".concat(c," is not supported"))}};

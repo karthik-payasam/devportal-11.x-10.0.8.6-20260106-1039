@@ -1,0 +1,375 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "svg image from @field_name"
+msgstr "@field_name içindeki svg resmi"
+
+msgid "@entity using @field"
+msgstr "@field kullanan @entity"
+
+msgid "@field_name"
+msgstr "@field_name"
+
+msgid "Relate each @entity with a @field set to the svg image."
+msgstr "Her bir @entity öğesini, svg resmine ayarlanan @field ile ilişkilendirin."
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid ""
+"The SVG image field module allows you to create fields that contain\n"
+" svg image files and to configure svg output. See the <a href=\":field\">Field module help</a> and\n"
+"  the <a href=\":field_ui\">Field UI help</a> pages for terminology and general information on\n"
+"  entities, fields, and how to create and manage fields."
+msgstr ""
+"SVG resim alanı modülü, svg resim dosyalarını içeren alanlar\n"
+" oluşturmanızı ve svg çıkışını yapılandırmanızı sağlar. <a href=\":field\">Alan modülü yardımı</a> ve\n"
+"  <a href=\":field_ui\">Alan UI yardımı</a> sayfalarına bakarak varlıklar, alanlar ve alanları oluşturma ve yönetme\n"
+"  hakkında genel bilgileri ve terminolojiyi bulabilirsiniz."
+
+msgid "Uses"
+msgstr "Kullanım"
+
+msgid "Configuring svg image fields"
+msgstr "Svg resim alanları yapılandırılıyor"
+
+msgid ""
+"A few of the settings for svg image fields are defined once when you create the field and\n"
+"      cannot be changed later; these include the choice of public or private file storage and the number of images that can be stored in the field.\n"
+"       The rest of the settings can be edited later; these settings include the field label, help text, and the subdirectory in the public or private file storage\n"
+"       where the images will be stored. The editable settings can also have different values for different entity sub-types; for instance,\n"
+"       if your image field is used on both Page and Article content types, you can store the files in a\n"
+"        different subdirectory for the two content types."
+msgstr ""
+"Alanı oluşturduğunuz anda svg resim alanları için bazı ayarlar tanımlanır ve\n"
+"      daha sonra değiştirilemez; genel ya da özel dosya depolama seçimi ve o alanda depolanabilecek resim sayısı bu ayarlar arasındadır.\n"
+"       Ayarların geri kalanı daha sonra düzenlenebilir; alan etiketi, yardım metni ve resimlerin depolanacağı genel ya da özel dosya depolama yerindeki\n"
+"       alt dizin bu ayarlar arasındadır. Düzenlenebilir ayarlar, farklı varlık alt tipleri için farklı değerler de içerebilir;\n"
+"       örneğin, resim alanınız hem Sayfa hem de Makale içerik tiplerinde kullanılıyorsa,\n"
+"        dosyaları iki içerik tipi için farklı bir alt dizinde depolayabilirsiniz."
+
+msgid ""
+"For accessibility and search engine optimization, all images that convey meaning on web sites should have alternate text.\n"
+"       Drupal also allows entry of title text for images, but it can lead to confusion for screen reader users and its use is not recommended.\n"
+"       SVG image fields can be configured so that alternate and title text fields are enabled or disabled; if enabled, the fields can be set to be required.\n"
+"        The recommended setting is to enable and require alternate text and disable title text."
+msgstr ""
+"Erişilebilirlik ve arama motoru optimizasyonu için, web sitelerinde anlam taşıyan tüm resimlerin alternatif metni olmalıdır.\n"
+"        Drupal, resimler için başlık metni girilmesine de olanak sağlar, ancak ekran okuyucu kullanıcıları için kafa karışıklığına yol açabileceğinden kullanılması önerilmez.\n"
+"        SVG resim alanları, alternatif ve başlık metin alanları etkinleştirilecek ya da devre dışı bırakılacak şekilde yapılandırılabilir; etkinleştirilirse, alanlar zorunlu olarak ayarlanabilir.\n"
+"         Önerilen ayar, alternatif metni etkinleştirip zorunlu tutmak ve başlık metnini devre dışı bırakmaktır."
+
+msgid ""
+"When you create an svg image field, you will need to choose whether the uploaded images will be stored in the public or\n"
+" private file directory defined in your settings.php file and shown on the <a href=\":file-system\">File system page</a>. This choice cannot be changed later.\n"
+"  You can also configure your field to store files in a subdirectory of the public or private directory; this setting can be changed later and\n"
+"  can be different for each entity sub-type using the field. For more information on file storage,\n"
+"  see the <a href=\":system-help\">System module help page</a>."
+msgstr ""
+"Bir svg resim alanı oluşturduğunuzda, karşıya yüklenen dosyaların, settings.php dosyanızda tanımlanan genel\n"
+" dosya dizininde mi yoksa özel dosya dizininde mi depolanacağını ve <a href=\":file-system\">Dosya sistemi sayfasında</a> gösterilip gösterilmeyeceğini seçmeniz gerekir. Bu seçenek daha sonra değiştirilemez.\n"
+"  Alanınızı, genel ya da özel dizinin bir alt dizininde dosyaları depolayacak şekilde de yapılandırabilirsiniz; bu ayar daha sonra değiştirilebilir ve\n"
+"  alanı kullanan her varlık alt tipi için farklı olabilir. Dosya depolama hakkında daha fazla bilgi için,\n"
+"  <a href=\":system-help\">Sistem modülü yardım sayfasına</a> bakın."
+
+msgid ""
+"The maximum file size that can be uploaded is limited by PHP settings of the server,\n"
+" but you can restrict it further by configuring a <em>Maximum upload size</em> in the field settings (this setting can be changed later).\n"
+" The maximum file size, either from PHP server settings or field configuration, is automatically displayed to users in the help text of the image field."
+msgstr ""
+"Karşıya yüklenebilen dosya boyutu üst sınırı,\n"
+" sunucunun PHP ayarları tarafından sınırlanır; ancak alan ayarlarında bir <em>Karşıya yükleme boyutu üst sınırı</em> yapılandırarak bunu daha fazla kısıtlayabilirsiniz (bu ayar daha sonra değiştirilebilir).\n"
+" PHP sunucu ayarlarındaki ya da alan yapılandırmasındaki dosya boyutu üst sınırı, kullanıcılara otomatik olarak resim alanının yardım metninde görüntülenir."
+
+msgid ""
+"You can also configure a default image that will be used if no image is uploaded in an image field.\n"
+"       This default can be defined for all instances of the field in the field storage settings when you create a field, and the setting can be overridden\n"
+"        for each entity sub-type that uses the field."
+msgstr ""
+"Resim alanına resim yüklenmediğinde kullanılacak varsayılan bir resim de yapılandırabilirsiniz.\n"
+" Bu varsayılan, bir alan oluşturduğunuzda alan depolama ayarlarındaki alanın tüm eşgörünümleri için tanımlanabilir ve ayar,\n"
+"        alanı kullanan her varlık alt tipi için geçersiz kılınabilir."
+
+msgid "Configuring displays and form displays"
+msgstr "Görüntüleri ve form görüntülerini yapılandırma"
+
+msgid ""
+"On the <em>Manage display</em> page, you can choose the image formatter,\n"
+" which determines the image width and height used to display the image in each display mode and whether or not to display the image alt and title.\n"
+"  On the <em>Manage form display</em> page, you can configure the image upload widget, including setting the preview image max-width and max-height\n"
+"   shown on the entity edit form."
+msgstr ""
+"<em>Görüntüyü yönet</em> sayfasında,\n"
+" her bir görüntüleme kipinde resmi göstermek için kullanılan resim stilini ve resim alt ve başlığının görüntülenip görüntülenmeyeceğini belirleyen resim biçimleyiciyi kullanabilirsiniz.\n"
+" <em>Form görüntüsünü yönet</em> sayfasında, varlık düzenleme formunda gösterilen önizleme resmi maksimum genişliğinin ve maksimum yüksekliğinin ayarlanmasını da kapsayan,\n"
+"   resim karşıya yükleme pencere bileşenini yapılandırabilirsiniz."
+
+msgid "Only files with mime type %mime-types-allowed are allowed. Mime type detected %mime-type-detected"
+msgstr "Yalnızca %mime-types-allowed mime tipindeki dosyalara izin verilir. Algılanan mime tipi: %mime-type-detected"
+
+msgid "File %file-name is not valid svg"
+msgstr "%file-name dosyası geçerli svg değil"
+
+msgid "SVG image field"
+msgstr "SVG resim alanı"
+
+msgid "Provides svg image field"
+msgstr "Svg resim alanı sağlar"
+
+msgid "Field types"
+msgstr "Alan tipleri"
+
+msgid "Image settings"
+msgstr "Görsel ayarları"
+
+msgid "Default value"
+msgstr "Varsayılan değer"
+
+msgid "Enable Alt field"
+msgstr "Alternatif alanı etkinleştir"
+
+msgid "Alt field required"
+msgstr "Alternatif alanı zorunludur"
+
+msgid "Enable Title field"
+msgstr "Başlık alanını etkinleştir"
+
+msgid "Title field required"
+msgstr "Başlık alanı zorunludur"
+
+msgid "Image field display format settings"
+msgstr "Resim alanı görüntüleme biçimi ayarları"
+
+msgid "Output SVG inline"
+msgstr "Satır içi SVG çıkışı yap"
+
+msgid "Apply dimensions"
+msgstr "Boyutları uygula"
+
+msgid "Width"
+msgstr "Genişlik"
+
+msgid "Height"
+msgstr "Yükseklik"
+
+msgid "Enable alt"
+msgstr "Alt seçeneğini etkinleştir"
+
+msgid "Enable title"
+msgstr "Başlığı etkinleştir"
+
+msgid "Link image to"
+msgstr "Resmin bağlanacağı yer"
+
+msgid "Force fill"
+msgstr "Doldurmayı uygula"
+
+msgid "Sanitize"
+msgstr "Temizle"
+
+msgid "Sanitize remote"
+msgstr "Uzak temizle"
+
+msgid "Progress indicator"
+msgstr "İlerleme göstergesi"
+
+msgid "Preview max width"
+msgstr "Maksimum önizleme genişliği"
+
+msgid "Preview max height"
+msgstr "Maksimum önizleme yüksekliği"
+
+msgid "SVG Image Field - Media Bundle"
+msgstr "SVG Resim Alanı - Ortam Paketi"
+
+msgid "Creates a media bundle to use SVG Image Field with the Media capabilities in core. NOTE: if you are planning to use this with the Media Library in core, it is recommended to install that module before this one. Will also install Acquia Site Studio Components if that is installed."
+msgstr "Temelde Ortam yetenekleriyle SVG Resim Alanında kullanılacak bir ortam paketi oluşturur. NOT: Bunu temelde Ortam Kitaplığı ile kullanmayı planlıyorsanız bundan önce bu modülü kurmanız önerilir. Kuruluysa, Acqua Site Studio Bileşenlerini de kuracaktır."
+
+msgid "Content"
+msgstr "İçerik"
+
+msgid "File"
+msgstr "Dosya"
+
+msgid ""
+"Check this option if you want to manipulate the SVG image with CSS and JavaScript.\n"
+"       Notice only trusted users should use fields with this option enabled because of\n"
+"       <a href=\"@svg_security_link\">inline svg security</a>"
+msgstr ""
+"CSS ve JavaScript ile SVG resmini değiştirmek istiyorsanız bu seçeneği işaretleyin.\n"
+"       <a href=\"@svg_security_link\">Satır içi svg güvenliği</a> nedeniyle bu seçenek etkin şekilde yalnızca\n"
+"       güvenilir kullanıcıların alanları kullanması gerektiğine dikkat edin"
+
+msgid "Apply dimensions."
+msgstr "Boyutları uygulayın."
+
+msgid "Image width."
+msgstr "Resim genişliği."
+
+msgid "Image height."
+msgstr "Resim yüksekliği."
+
+msgid "Force the fill to currentColor"
+msgstr "Dolguyu currentColor olarak zorla"
+
+msgid "This can allow the SVG to inherit coloring from the enclosing tag, such as a link tag."
+msgstr "Bu, SVG'nin bağlantı etiketi gibi kapsayan etiketten renklendirmeyi devralmasını sağlayabilir."
+
+msgid "Sanitize SVG code"
+msgstr "SVG kodunu temizleyin"
+
+msgid "Sanitize the SVG XML code and prevent XSS attacks."
+msgstr "SVG XML kodunu temizleyin ve XSS saldırılarını önleyin."
+
+msgid "Sanitize: Remove remote references"
+msgstr "Temizle: Uzak başvuruları kaldır"
+
+msgid "Remove attributes that reference remote files, this will stop HTTP leaks but will add an overhead to the sanitizer."
+msgstr "Uzak dosyalara gönderme yapan öznitelikleri kaldırın; bu, HTTP sızıntılarını durdurur, ancak temizleyiciye ek yük ekler."
+
+msgid "Nothing"
+msgstr "Hiçbir şey"
+
+msgid "Enable alt attribute."
+msgstr "Alt özniteliğini etkinleştirin."
+
+msgid "Enable title attribute."
+msgstr "Başlık özniteliğini etkinleştirin."
+
+msgid "Inline SVG"
+msgstr "Satır içi SVG"
+
+msgid "Image width: @width"
+msgstr "Resim genişliği: @width"
+
+msgid "Image height: @height"
+msgstr "Resim yüksekliği: @height"
+
+msgid "Alt enabled"
+msgstr "Alt etkin"
+
+msgid "Title enabled"
+msgstr "Başlık etkin"
+
+msgid "Inline file %file is missing or empty. Inline display will be disabled and an image tag used instead."
+msgstr "%file adlı yerleşik dosya eksik ya da boş. Yerleşik görüntü devre dışı bırakılacak ve bunun yerine bir resim etiketi kullanılacak."
+
+msgid "File %file could not be displayed by image formatter because it does not exist on server."
+msgstr "%file adlı dosya sunucuda var olmadığı için resim biçimlendirici tarafından görüntülenemedi."
+
+msgid "SVG Image Field formatter"
+msgstr "SVG Resim Alanı biçimleyici"
+
+msgid "SVG Image URL formatter"
+msgstr "SVG Resim URL'si biçimlendirici"
+
+msgid "Alternative text"
+msgstr "Alternatif metin"
+
+msgid "Alternative image text, for the image's 'alt' attribute."
+msgstr "Görselin 'alt' özniteliği için, alternatif görsel metni."
+
+msgid "Title"
+msgstr "Başlık"
+
+msgid "Image title text, for the image's 'title' attribute."
+msgstr "Görselin 'title' özniteliği için, görsel başlığı metni."
+
+msgid "Upload destination"
+msgstr "Yükleme adresi"
+
+msgid "Select where the final files should be stored. Private file storage has significantly more overhead than public files, but allows restricted access to files within this field."
+msgstr "Nihai dosyaların nerede saklanacağını seçin. Dosyaların özel saklanması, açık dosyalara kıyasla fazladan önemli ölçüde yük getirir ama bu alanlardaki dosyalara erişimi kısıtlamanıza da olanak sağlar."
+
+msgid "If no image is uploaded, this image will be shown on display."
+msgstr "Eğer hiç resim yüklenmezse, görüntülenirken bu resim kullanılacaktır."
+
+msgid "Enable <em>Alt</em> field"
+msgstr "<em>Alt</em> alanını etkinleştir"
+
+msgid "The alt attribute may be used by search engines, screen readers, and when the image cannot be loaded. Enabling this field is recommended."
+msgstr "Alt özniteliği, arama motorları, ekran okuyucuları tarafından ve resim yüklenemediğinde kullanılabilir. Bu alanın etkinleştirilmesi önerilir."
+
+msgid "<em>Alt</em> field required"
+msgstr "<em>Alt</em> alanı zorunludur"
+
+msgid "Making this field required is recommended."
+msgstr "Bu alanın zorunlu hale getirilmesi önerilir."
+
+msgid "Enable <em>Title</em> field"
+msgstr "<em>Başlık</em> alanını etkinleştir"
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image. Enabling this field is not recommended as it can cause problems with screen readers."
+msgstr "Başlık (title) özniteliği fare resim üzerinde gezinirken ipucu olarak gösterilir. Bu alanın etkinleştirilmesi, ekran okuyucularla ilgili sorunlara neden olabileceğinden önerilmez."
+
+msgid "<em>Title</em> field required"
+msgstr "<em>Başlık</em> alanı zorunludur"
+
+msgid "If no image is uploaded, this image will be shown on display and will override the field's default image."
+msgstr "Herhangi bir görsel yüklenmemişse bu görsel görüntülenir ve alanın varsayılan görselinin yerine geçer."
+
+msgid "Default image"
+msgstr "Ön tanımlı resim"
+
+msgid "Image"
+msgstr "Görsel"
+
+msgid "Image to be shown if no image is uploaded."
+msgstr "Görsel yüklenmediğinde gösterilecek görsel."
+
+msgid "This text will be used by screen readers, search engines, and when the image cannot be loaded."
+msgstr "Bu metin ekran okuyucular, arama motorları tarafından ve görsel yüklenemediğinde kullanılır."
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image."
+msgstr "Başlık (title) özniteliği fare resim üzerinde gezinirken ipucu olarak gösterilecektir."
+
+msgid "Svg Image"
+msgstr "Svg Resmi"
+
+msgid "This field stores the ID of an image file as an integer value."
+msgstr "Bu alan bir resim dosyasının ID'sini tamsayı bir değer olarak saklar."
+
+msgid "Reference"
+msgstr "Kaynak"
+
+msgid "Alt"
+msgstr "Alt"
+
+msgid "Preview image max width"
+msgstr "Önizleme resmi maksimum genişliği"
+
+msgid "Preview image max height"
+msgstr "Önizleme resmi maksimum yüksekliği"
+
+msgid "Preview image width: @width"
+msgstr "Önizleme resmi genişliği: @width"
+
+msgid "Preview image height: @height"
+msgstr "Önizleme resmi yüksekliği: @height"
+
+msgid "This text will be used by screen readers, search engines, or when the image cannot be loaded."
+msgstr "Bu metin ekran okuyucuları ve arama motorları tarafından ve resim yüklenemediği zamanlarda kullanılacaktır."
+
+msgid "The title is used as a tool tip when the user hovers the mouse over the image."
+msgstr "Başlık fare resim üzerinde gezinirken ipucu olarak gösterilecektir."
+
+msgid "SVG image"
+msgstr "SVG resmi"
+
+msgid "SVG"
+msgstr "SVG"
+
+msgid "Provides business logic and metadata for SVG files."
+msgstr "SVG dosyaları için iş mantığı ve meta veri sağlar."
+

@@ -1,0 +1,1 @@
+var a={kafka:"kafka",kafkaSecure:"kafka-secure"},b=function(b){return b===a.kafka||b===a.kafkaSecure?"Kafka":b},c=function(b){return b===a.kafka||b===a.kafkaSecure},d=function(b){return b===a.kafkaSecure};export{a as ProtocolTypes,b as displayType,c as isKafka,d as isKafkaSecure};

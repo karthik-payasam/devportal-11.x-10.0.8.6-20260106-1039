@@ -1,0 +1,294 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "Информация"
+
+msgid "This module allows you to force site users to be logged out after a given amount of time due to inactivity after first being presented with a confirmation dialog. Your current logout threshold is %seconds seconds."
+msgstr "Этот модуль позволяет в принудительном режиме завершать сеансы пользователей после указанного времени бездействия с предварительным отображением подтверждения. Текущее пороговое значение выхода из системы: %seconds сек. "
+
+msgid "Your current logout threshold"
+msgstr "Текущий порог завершения сеанса"
+
+msgid "The timeout must be an integer greater than 60, and less then %max."
+msgstr "Тайм-аут должен быть целым числом больше 60 и меньше %max."
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "Autologout settings are successfully updated. Updated @users"
+msgstr "Параметры автоматического выхода из системы успешно обновлены. Обновлено: @users"
+
+msgid "Automated Logout"
+msgstr "Автоматический выход из системы"
+
+msgid "Adds automated timed logout."
+msgstr "Добавляет возможность автоматического выхода из системы по тайм-ауту. "
+
+msgid "Automated logout settings"
+msgstr "Параметры автоматического выхода из системы"
+
+msgid "Configure default automated logout settings."
+msgstr "Настройте параметры автоматического выхода из системы по умолчанию. "
+
+msgid "Change own logout threshold"
+msgstr "Изменить собственный порог завершения сеанса"
+
+msgid "Administer Autologout"
+msgstr "Администрирование автоматического выхода из системы"
+
+msgid "Timeout value"
+msgstr "Значение тайм-аута"
+
+msgid "Max timeout value"
+msgstr "Максимальное значение тайм-аута"
+
+msgid "Seconds to give a user to respond"
+msgstr "Время, в течение которого пользователь может ответить на запрос (в секундах)"
+
+msgid "Disable user-specific logout thresholds"
+msgstr "Выключить пользовательские пороги завершения сеансов"
+
+msgid "Enable role timeout"
+msgstr "Включить тайм-аут роли"
+
+msgid "Use highest role timeout value"
+msgstr "Использовать наибольшее значение тайм-аута роли"
+
+msgid "Redirect url"
+msgstr "Url пересылки"
+
+msgid "Integer label"
+msgstr "Целочисленная метка"
+
+msgid "Message to display"
+msgstr "Отображаемое сообщение"
+
+msgid "Message displayed after logging out"
+msgstr "Сообщение, отображаемое после выхода из системы"
+
+msgid "Type of the message displayed"
+msgstr "Тип отображаемого сообщения"
+
+msgid "Enable admin logout"
+msgstr "Разрешить завершение сеанса администратора"
+
+msgid "JS timer format"
+msgstr "Формат таймера JS"
+
+msgid "JS timer load"
+msgstr "Загрузка таймера JS"
+
+msgid "Use alternate logout methode"
+msgstr "Использовать альтернативный метод выхода из системы"
+
+msgid "Use watchdog"
+msgstr "Использовать контрольный таймер"
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "Disable buttons"
+msgstr "Отключение кнопок"
+
+msgid "Whitelisted IP addresses"
+msgstr "Разрешенные IP-адреса"
+
+msgid "Role Settings"
+msgstr "Настройки роли"
+
+msgid "Enabled"
+msgstr "Включено"
+
+msgid "Timeout"
+msgstr "Время ожидания"
+
+msgid "redirect_url"
+msgstr "redirect_url"
+
+msgid "@message"
+msgstr "@message"
+
+msgid "Session automatically closed for %name by autologout."
+msgstr "Сеанс пользователя %name завершен функцией автоматического выхода из системы. "
+
+msgid "Reset Timeout"
+msgstr "Тайм-аут сброса"
+
+msgid "Timeout value in seconds"
+msgstr "Значение тайм-аута в секундах"
+
+msgid "The length of inactivity time, in seconds, before automated log out. Must be 60 seconds or greater. Will not be used if role timeout is activated."
+msgstr "Время простоя в секундах перед автоматическим завершением сеанса. Должно быть указано значение не менее 60 секунд. Игнорируется, если указан тайм-аут роли."
+
+msgid "Max timeout setting"
+msgstr "Максимальный тайм-аут"
+
+msgid "The maximum logout threshold time that can be set by users who have the permission to set user level timeouts."
+msgstr "Для указания максимального порога выхода из системы требуются права на изменение тайм-аута уровня пользователя. "
+
+msgid "Timeout padding"
+msgstr "Дополнительный тайм-аут"
+
+msgid "How many seconds to give a user to respond to the logout dialog before ending their session."
+msgstr "Время в секундах, в течение которого пользователь может ответить на запрос перед завершением сеанса. "
+
+msgid "Enable this to only allow autologout thresholds to be set globally on this form and don't allow users to set their own logout threshold."
+msgstr "Позволяет разрешить настройку порогов автоматического завершения сеансов для этой формы только на глобальном уровне и запретить пользователям указывать собственные пороги завершения сеансов. "
+
+msgid "Role Timeout"
+msgstr "Тайм-аут роли"
+
+msgid "Enable each role to have its own timeout threshold and redirect URL, a refresh may be required for changes to take effect. Any role not ticked will use the default timeout value and default redirect URL. Any role can have a timeout value of 0 which means that they will never be logged out. Roles without specified redirect URL will use the default redirect URL."
+msgstr "Настройте тайм-аут и URL перенаправления для каждой роли. Для применения изменений может потребоваться обновление. Если тайм-аут и URL перенаправления роли не указаны, то применяются значения по умолчанию. Значение тайм-аута 0 запрещает автоматический выход из системы для роли. Роли без URL перенаправления используют URL перенаправления по умолчанию. "
+
+msgid "Check this to use the highest timeout value instead of the lowest for users that have more than one role."
+msgstr "Позволяет использовать наибольшее значение тайм-аута вместо наименьшего для пользователей, которым присвоено несколько ролей. "
+
+msgid "Redirect URL at logout"
+msgstr "URL перенаправления при выходе из системы "
+
+msgid "Send users to this internal page when they are logged out."
+msgstr "После завершения сеанса пользователи перенаправляются на указанную внутреннюю страницу. "
+
+msgid "Do not display the logout dialog"
+msgstr "Не показывать окно выхода из системы"
+
+msgid "Enable this if you want users to logout right away and skip displaying the logout dialog."
+msgstr "Позволяет сразу завершать сеансы пользователей, не открывая окно выхода из системы. "
+
+msgid "Use alternate logout method"
+msgstr "Использовать альтернативный метод выхода из системы"
+
+msgid "Normally when auto logout is triggered, it is done via an AJAX service call. Sites that use an SSO provider, such as CAS, are likely to see this request fail with the error \"Origin is not allowed by Access-Control-Allow-Origin\". The alternate approach is to have the auto logout trigger a page redirect to initiate the logout process instead."
+msgstr "Как правило, для автоматического выхода из системы вызывается служба AJAX. Если на сайте применяется провайдер SSO, такой как CAS, то в ходе обработки запроса может возникнуть ошибка \"Источник запрещен в заголовке Access-Control-Allow-Origin\". В качестве альтернативного подхода для запуска процесса автоматического выхода из системы можно использовать перенаправление на другую страницу. "
+
+msgid "Dialog title"
+msgstr "Заголовок окна"
+
+msgid "This text will be dialog box title."
+msgstr "Этот текст будет показан в качестве заголовка окна диалога. "
+
+msgid "Message to display in the logout dialog"
+msgstr "Сообщение, отображаемое в окне выхода из системы"
+
+msgid "This message must be plain text as it might appear in a JavaScript confirm dialog."
+msgstr "Сообщение должно содержать только текст, поскольку оно может отображаться в окне подтверждения JavaScript. "
+
+msgid "Message to display to the user after they are logged out"
+msgstr "Сообщение, отображаемое пользователю после завершения сеанса"
+
+msgid "This message is displayed after the user was logged out due to inactivity. You can leave this blank to show no message to the user."
+msgstr "Это сообщение отображается после завершения сеанса пользователя в результате бездействия. Если значение не указано, то сообщение не отображается. "
+
+msgid "Type of the message to display"
+msgstr "Тип отображаемого сообщения"
+
+msgid "Specifies whether to display the message as status or warning."
+msgstr "Указывает, следует ли показывать сообщение в качестве состояния или предупреждения. "
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Warning"
+msgstr "Предупреждение"
+
+msgid "Disable Yes/No buttons for automatic logout popout."
+msgstr "Выключить кнопки Да/Нет для всплывающего окна автоматического завершения сеанса. "
+
+msgid "Custom confirm button text"
+msgstr "Пользовательский текст кнопки подтверждения"
+
+msgid "Add custom text to confirmation button."
+msgstr "Добавьте пользовательский текст кнопки подтверждения."
+
+msgid "Custom decline button text"
+msgstr "Пользовательский текст кнопки отклонения"
+
+msgid "Add custom text to decline button."
+msgstr "Добавьте пользовательский текст кнопки отклонения. "
+
+msgid "Enable watchdog Automated Logout logging"
+msgstr "Включить протокол автоматического выхода из системы"
+
+msgid "Enable logging of automatically logged out users"
+msgstr "Регистрировать автоматически завершаемые сеансы пользователей в протоколе"
+
+msgid "Enforce auto logout on admin pages"
+msgstr "Включить автоматический выход из системы на страницах администрирования"
+
+msgid "If checked, then users will be automatically logged out when administering the site."
+msgstr "Позволяет разрешить автоматический выход из системы в процессе администрирования сайта. "
+
+msgid "Whitelisted ip addresses"
+msgstr "Разрешенные IP-адреса"
+
+msgid "Users from these IP addresses will not be logged out."
+msgstr "Сеансы пользователей с этими IP-адресами не завершаются. "
+
+msgid "Autologout block time format"
+msgstr "Формат времени автоматического выхода из системы"
+
+msgid "Change the display of the dynamic timer. Available replacement values are: %day%, %month%, %year%, %dow%, %moy%, %years%, %ydays%, %days%, %hours%, %mins%, and %secs%."
+msgstr "Измените параметры отображения динамического таймера. Допустимые значения: %day%, %month%, %year%, %dow%, %moy%, %years%, %ydays%, %days%, %hours%, %mins% и %secs%."
+
+msgid "Customize"
+msgstr "Настроить"
+
+msgid "Role Name"
+msgstr "Имя роли"
+
+msgid "Timeout (seconds)"
+msgstr "Тайм-аут (секунды)"
+
+msgid "%role role timeout must be an integer greater than 60, less then %max or 0 to disable autologout for that role."
+msgstr "Тайм-аут роли %role должен быть целым числом больше 60 и меньше %max. Нулевое значение позволяет выключить автоматический выход из системы для роли. "
+
+msgid "%role role redirect URL at logout :redirect_url must begin with a '/'"
+msgstr "URL перенаправления роли %role при завершении сеанса: redirect_url должен начинаться с символа '/'"
+
+msgid "The timeout value must be an integer 60 seconds or greater."
+msgstr "Значение тайм-аута должно быть целым числом больше 60. "
+
+msgid "The max timeout must be an integer greater than 60."
+msgstr "Максимальный тайм-аут должен быть целым числом больше 60."
+
+msgid "The timeout must be an integer greater than or equal to 60 and less then or equal to %max."
+msgstr "Тайм-аут должен быть целым числом в диапазоне от 60 до %max."
+
+msgid "Redirect URL at logout :redirect_url must begin with a '/'"
+msgstr "URL перенаправления при завершении сеанса: redirect_url должен начинаться с символа '/'"
+
+msgid "Whitlelisted IP address list should contain only valid IP addresses, one per row"
+msgstr "Список разрешенных IP-адресов может содержать только допустимые IP-адреса (по одному в каждой строке)"
+
+msgid ""
+"Autologout does not apply on the current page,\n"
+"         you will be kept logged in whilst this page remains open."
+msgstr ""
+"Функция автоматического выхода из системы не работает на текущей странице, \n"
+"         сеанс будет оставаться активным до тех пор, пока страница не будет закрыта. "
+
+msgid "You will be logged out in @time if this page is not refreshed before then."
+msgstr "Сеанс будет завершен через @time, если страница не будет обновлена. "
+
+msgid "Automated logout info"
+msgstr "Информация об автоматическом выходе из системы"
+
+msgid "User"
+msgstr "Пользователь"
+

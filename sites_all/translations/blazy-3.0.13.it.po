@@ -1,0 +1,861 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Blazy"
+msgstr "Blazy"
+
+msgid "Displays a preview of a File using Blazy, if applicable."
+msgstr "Visualizza un'anteprima di un file utilizzando Blazy, se possibile."
+
+msgid "Displays a preview of a Media using Blazy, if applicable."
+msgstr "Visualizza un'anteprima di un Media utilizzando Blazy, se possibile."
+
+msgid "Display the results in a Blazy grid."
+msgstr "Visualizza i risultati in una griglia Blazy."
+
+msgid "Works best with Views field containing Blazy."
+msgstr "Funziona meglio con i campi Viste contenenti Blazy."
+
+msgid "Blazy requires Media core module"
+msgstr "Blazy richiede il modulo core Supporti"
+
+msgid "Blazy now requires core Media module, which is currently not installed. By continuing the update the module will be installed."
+msgstr "Blazy ora richiede il modulo core Supporti, attualmente non installato. Continuando l'aggiornamento verrà installato il modulo."
+
+msgid "Blazy 3.x replaces sub-modules theme_ITEM() contents with theme_blazy(). Keep \"Use theme_blazy()\" enabled at <a href=\":url\">Blazy UI</a> to pass blazy:3.x."
+msgstr ""
+
+msgid "Enabled: Use theme_blazy()"
+msgstr ""
+
+msgid "Not enabled: Use theme_blazy()"
+msgstr ""
+
+msgid "Blazy has installed core \"Media\" module."
+msgstr "Blazy ha installato il modulo core \"Supporti\"."
+
+msgid "Provides basic Blazy integration for lazy loading and multi-serving images."
+msgstr "Fornisce un'integrazione Blazy di base per le immagini lazy loading e multi-serving."
+
+msgid "Blazy UI"
+msgstr "Interfaccia utente Blazy"
+
+msgid "Provides Blazy configuration UI."
+msgstr "Fornisce un'interfaccia utente di configurazione Blazy"
+
+msgid "Manage Blazy UI."
+msgstr "Gestisci interfaccia utente Blazy."
+
+msgid "Administer the Blazy module"
+msgstr "Gestisci il modulo Blazy"
+
+msgid "The DOMPurify library is installed to sanitize lightbox captions. Be sure to clear cache for library discoveries. [<a href=\":ui\">Blazy UI help</a>]"
+msgstr ""
+
+msgid "<strong>Warning!</strong> The <a href=\":url\">DOMPurify</a> library is not installed. It is necessary for HTML in lightbox captions. Without it, they are only sanitized server-side, or builtin. [<a href=\":ui\">Blazy UI help</a>]."
+msgstr ""
+
+msgid "The SVG Sanitizer library is installed to sanitize inline SVG. [<a href=\":ui\">Blazy UI help</a>]"
+msgstr ""
+
+msgid "<strong>Warning!</strong> The <a href=\":url\">SVG Sanitizer</a> library is not installed. This library is necessary if you want to use SVG inline. Without it, the world would be ended. [<a href=\":ui\">Blazy UI help</a>]."
+msgstr ""
+
+msgid "Admin CSS"
+msgstr "CSS admin"
+
+msgid "Uncheck to disable blazy related admin compact form styling, only if not compatible with your admin theme."
+msgstr "Deselezionare per disabilitare lo stile compatto di admin correlato a blazy, solo se non compatibile con il tema admin."
+
+msgid "Use theme_blazy()"
+msgstr ""
+
+msgid "Check to use theme_blazy() specific for sub-modules theme_ITEM() (theme_slick_slide(), theme_splide_slide(), theme_gridstack_box(), etc.) contents with images/media along with their captions. This will be forced at blazy:3.x. You can help starting the migrations by enabling this to spot problems. If any issues, please disable and report for fixes, <a href=\":url\">read more</a>."
+msgstr ""
+
+msgid "Use oEmbed"
+msgstr ""
+
+msgid "Check to use oEmbed when available. Only relevant for VEF compatibility which already managed their embed codes. Irrelevant for core which already uses oEmbed. If checked, VEF embed will be converted into oEmbed if the provider is available, otherwise left as is. Be informed! Using oEmbed may require having App ID and secret credentials for some providers even for simple oEmbed read such as Instagram or Facebook, not Youtube, etc."
+msgstr ""
+
+msgid "Lazy load HTML (Experimental)"
+msgstr ""
+
+msgid "When theme_blazy() does not understand a media output, it will print it as HTML as is. This HTML is normally a paragraph size. Check this to lazy load such HTML content (normally heavy third party contents, like oembed Instagram, Pinterest, etc.), no AJAX, otherwise printed as is. A new feature since 2.17, not battle-tested. Potential issues are with the attached libraries, and other various Blazy features. Please disable and report if any issues."
+msgstr ""
+
+msgid "Use encoding for HTML (Experimental)"
+msgstr ""
+
+msgid "If checked, and the lightbox supports this feature, the lightbox HTML (normally local audio/video, Picture/Responsive image, oembed Instagram, etc.) will be encoded. Also applies to CSS background. A minor byte saving. Please disable if any issues."
+msgstr ""
+
+msgid "No JavaScript"
+msgstr "Nessun JavaScript"
+
+msgid "Lazyload"
+msgstr "Lazyload"
+
+msgid "Basic polyfills (ie9-ie11)"
+msgstr "Polyfill di base (ie9-ie11)"
+
+msgid "classList polyfill (ie9-ie11)"
+msgstr "Polyfill classList (ie9-ie11)"
+
+msgid "Promise polyfill (ie11)"
+msgstr "Polyfill Promise (ie11)"
+
+msgid "requestAnimationFrame polyfill (ie9)"
+msgstr "Polyfill requestAnimationFrame (ie9)"
+
+msgid "webp fallback (ie9-ie11, old Safari)"
+msgstr "Fallback webp (ie9-ie11, versioni precedenti di Safari)"
+
+msgid "Enable to not load them if you don't support IEs and other oldies, or have polyfills at your theme globally. File sizes approximately in minified gzip. The plus (+) sign refers to dependencies like <code>dblazy.js (~4KB)</code>, etc. A few can be removed via this form. For illustration, Colorbox which is called very lightweight is 4.8KB + jQuery (31KB) = 35.8KB. Blazy never loads all its JavaScript at once, instead conditionally and carefully loads ones as required. Mostly based on your options including these ones. <ul><li><b>Lazyload</b>: remove libraries and loader/ initializer scripts (<code>blazy.js (original: 2.2KB, fork: 1.6KB+), blazy.load.js (1KB+), bio.js (1.7KB+)</code>.) for non-js Native lazy. <br><b>Note!</b> While the above is always valid, a <code>blazy/compat (<1KB + bio.js)</code> and or <code>blazy/dblazy</code> in the least is conditionally loaded as required if any js-dependent options are enabled: <ul><li>Image effect animation or Blur.</li><li>Dynamic multi-breakpoint aka Fluid aspect ratio (excluding fixed ones).</li><li>Dynamic multi-breakpoint (Responsive|Picture based), or static CSS background.</li><li>Local video.</li><li>Loading priority: defer.</li><li>Sub-module requirements. Slick, Splide, Ultimenu, Jumper, etc. might require <code>blazy/dblazy</code>, not a lazyload script, just common jQuery replacement methods for vanilla ones.</li></ul></li><li><b>Polyfills</b>: Only loaded (total 3.6KB) if the above conditions are met, and left unchecked. <b>Basic polyfills</b>: <code>Object.assign, closest, forEach, matches, startsWith, CustomEvent</code>. <b>webp falback</b>: FWIW, IE9, not tested against old Safari, works fine with core/picturefill w/o this fallback. For other polyfills, due to questionabe licenses, include them into your theme as needed such as <a href=':io'>IntersectionObserver</a>, etc. <br><b>Warning!</b> The polyfills may be deprecated and removed when <a href=':cash'>Cash DOM</a> module is available, and will be replaced by Cash accordingly.</li></ul>As of 2022/1, Native only supports IMG and IFRAME, the exceptions above cover BLUR, DIV, VIDEO, ratio FLUID, LOADING: defer, etc. Other JavaScript (Media Player, Lightbox, Non-css Masonry (Flexbox or Nativegrid), etc.) can already be disabled via Formatters since 1.x. jQuery (31KB) is only loaded for Colorbox (4.8KB) + blazy.colorbox.js (1.2KB+) and admin UIs. Details in blazy/js directory. <a href=':url'>Read more</a>."
+msgstr "Abilitare per non caricarli se non si supportano IE e altri vecchi browser, oppure avere polyfill nel tema globalmente. Dimensioni del file approssimative in gzip minimizzato. Il segno più (+) fa riferimento a dipendenze come <code>dblazy.js (~4KB)</code>, ecc. Alcuni possono essere rimossi tramite questo modulo. Ad esempio, Colorbox, che è indicato come molto leggero, è 4,8KB + jQuery (31KB) = 35,8KB. Blazy non carica mai tutti i JavaScript in una volta sola, ma ne carica uno in modo condizionato e accurato, come richiesto. Principalmente basato sulle tue opzioni, incluse queste. <ul><li><b>Lazyload</b>: rimuovere le librerie e gli script del programma di caricamento/inizializzazione (<code>blazy.js (originale: 2,2KB, fork: 1,6KB+), blazy.load.js (1KB+), bio.js (1,7KB+)</code>.) per lazy nativo non js. <br><b>Nota!</b> Mentre quanto sopra è sempre valido, un <code>blazy/compat (<1KB + bio.js)</code> e/o <code>blazy/dblazy</code> vengono caricati in modo condizionale, come richiesto, se sono abilitate le opzioni dipendenti da js: <ul><li>Effetto animazione o sfocatura immagine.</li><li>Punto di interruzione multiplo dinamico ovvero proporzioni fluide (esclusi fissi).</li><li>Punto di interruzione multiplo dinamico (basato su Responsive|Picture) o sfondo CSS statico.</li><li>Video locale.</li><li>Priorità di caricamento: differire.</li><li>Requisiti del modulo secondario. Slick, Splide, Ultimenu, Jumper, ecc. potrebbe richiedere <code>blazy/dblazy</code>, non uno script lazyload, solo metodi di sostituzione jQuery comuni per quelli vanilla.</li></ul></li><li><b>Polyfill</b>: caricato (totale 3,6KB) solo se vengono soddisfatte le condizioni precedenti e lasciato non selezionato. <b>Polyfill di base</b>: <code>Object.assign, closest, forEach, matches, startsWith, CustomEvent</code>. <b>falback webp</b>: FWIW, IE9, non testato rispetto al vecchio Safari, funziona bene con core/picturefill senza questo fallback. Per altri polyfill, a causa delle licenze dubbie, includerli nel tema come necessario, ad esempio <a href=':io'>IntersectionObserver</a>, ecc. <br><b>Avvertenza!</b> I poyfill potrebbero essere obsoleti e rimossi quando il modulo di <a href=':cash'>Cash DOM</a> è disponibile e verranno sostituiti di conseguenza da Cash.</li></ul>A partire da 2022/1, nativo supporta solo IMG e IFRAME, le eccezioni di cui sopra coprono BLUR, DIV, VIDEO, proporzione FLUID, LOADING: differer, ecc. Altri JavaScript (Media Player, Lightbox, Masonry non css (Flexbox o Nativegrid), ecc.) possono essere già disabilitati tramite programmi di formattazione a partire da 1.x. jQuery (31KB) viene caricato solo per Colorbox (4,8KB) + blazy.colorbox.js (1,2KB+) e le interfacce utente admin. Dettagli nella directory blazy/js. <a href=':url'>Ulteriori informazioni</a>."
+
+msgid "Add noscript"
+msgstr "Aggiungi noscript"
+
+msgid "Enable noscript if you want to support <a href=\":url\">non-javascript users</a>."
+msgstr "Abilita noscript se si desidera supportare <a href=\":url\">utenti non-javascript</a>."
+
+msgid "Support Responsive image"
+msgstr "Supporta immagine Responsive"
+
+msgid "(Deprecated in blazy:2.5, and is removed in blazy:3.x for module exists check. It was a user consent option due to not being fully integrated till likely blazy:2.4+ so to disable easily without breaking things). Old description: Check to support lazyloading for the core Responsive image module. Be sure to use blazy-related formatters."
+msgstr ""
+
+msgid "Responsive image 1px placeholder"
+msgstr "Segnaposto 1px dell'immagine Responsive"
+
+msgid "By default a 1px Data URI image is the placeholder for lazyloaded (Responsive) image. Useful to perform a lot better. Uncheck to disable, and use Drupal-managed smallest/fallback image style instead. Be sure to add proper dimensions or at least min-height/min-width via CSS accordingly to avoid layout reflow, or choose an Aspect ratio via Blazy formatters. <br>Since <b>2.10</b>, disabling this will no longer result in downloading fallback image (double downloads). Thus, allows you to have non <code>empty image</code> for fallback at Responsive image style UI without extra HTTP requests, while using <code>empty image</code> (enforced now) for the SRC. Basically marrying those options. not negating each other anymore."
+msgstr "Per impostazione predefinita, un'immagine URI dati da 1px è il segnaposto per l'immagine con lazyload (Responsive). Utile per il miglioramento delle prestazioni. Deselezionare l'opzione per disabilitarla, ed utilizzare lo stile d'immagine più piccola o di riserva gestito da Drupal. Assicurarsi di aggiungere le dimensioni corrette o, almeno, le opzioni min-height/min-width tramite CSS di conseguenza per evitare un adattamento dinamico del layout oppure selezionare un formato tramite i programmi di formattazione Blazy. <br>A partire dalla versione <b>2.10</b>, la disabilitazione di questa opzione non comporterà più il download dell'immagine di fallback (doppi download). Pertanto, consente di avere una <code>immagine non vuota</code> per il fallback all'interfaccia utente dello stile di immagine Responsive senza ulteriori richieste HTTP, mentre si utilizza l'<code>immagine vuota</code> (applicata ora) per SRC. Fondamentalmente sposando quelle opzioni. non si negano più a vicenda."
+
+msgid "Add is-b-visible class"
+msgstr ""
+
+msgid "Add <code>is-b-visible</code> CSS class when entering the viewport. Only enable if any real use for animating anything, otherwise disable it. If enabled, IO is not destroyed so to keep watching the class changes."
+msgstr ""
+
+msgid "Remove field/ view wrapper classes"
+msgstr ""
+
+msgid "Remove useful classes for DOM diets when you can get rid of Field, Block, Views, etc. wrappers so you have context for styling. Other required classes: lightbox, grid, etc. are intact if so-configured."
+msgstr ""
+
+msgid "Remove deprecated classes"
+msgstr ""
+
+msgid "Remove some legacy Foundation CSS grid classes to avoid conflict with core block, e.g: block-nativegrid for b-nativegrid, etc. CHECK if not using those classes, or to avoid themers using them. Leave it UNCHECKED if using them till you update them. See <a href=':url'>Notable changes</a> for details. Be sure to clear cache!"
+msgstr ""
+
+msgid "Placeholder"
+msgstr "Segnalibro"
+
+msgid "Only useful if continuously using Views rewrite results, see <a href=':url2'>#2908861</a>. Inputting this means having trouble with `data:image` placeholder being stripped out by Views sanitization procedures causing 404. Will override global 1px `data:image` placeholder, including core Responsive image 1px `data:image` with this so to avoid 404, and independent from the previous `Responsive image 1px placeholder` option. Must be URL, e.g.: /blank.gif or /blank.svg. Be warned: unlike .svg, browsers have display issues with 1px .gif, see <a href=':url1'>#2795415</a>. Alternatively use <code>hook_blazy_settings_alter()</code> for more fine-grained control. Leave it empty to use default inline SVG or Data URI to avoid extra HTTP requests. If you have 100 images on a page, you will save hammering your server with 100 extra HTTP requests by leaving it empty. The <b>blank.svg</b> content sample if not using blank.gif: <br><code>&lt;svg xmlns='https://www.w3.org/2000/svg' viewBox='0 0 100 100'/&gt;</code><br>Save it at Drupal web root as <code>blank.svg</code>, and reference it as <code>/blank.svg</code> in the Placeholder field."
+msgstr ""
+
+msgid "Extensions without image styles"
+msgstr "Estensioni senza stili di immagine"
+
+msgid "Extensions that should not use (Responsive) image style, space delimited without dot, e.g.: <code>gif apng</code> <br>Normally animated images. No way to distinguish animated from static gif, it is all or nothing. This means no thumbnail, no blur, nor features which makes use image style. Default to svg."
+msgstr "Estensioni che non dovrebbero utilizzare stili di immagine (Responsive), spazio delimitato senza dot, ad esempio: <code>gif apng</code> <br>Di norma immagini animate. Nessun modo per distinguere l'animazione dal gif statico. Ciò significa nessuna miniatura, nessun blur, né alcuna funzione che faccia uso dello stile dell'immagine. Impostazione predefinita svg."
+
+msgid "Image effect"
+msgstr "Effetto immagine"
+
+msgid "Choose the image effect. Will use Thumbnail style option at Blazy formatters for the placeholder with fallback to core Thumbnail style. For best results: use similar aspect ratio for both Thumbnail and Image styles; adjust Offset and or threshold; the smaller the better. Use <code>hook_blazy_image_effects_alter()</code> to add more effects -- curtain, fractal, slice, whatever. <b>Limitations</b>: Best with a proper Aspect ratio option as otherwise collapsed image. Be sure to add one. If not, add regular CSS <code>min-height</code> for each mediaquery. The Placeholder option is still respected. It is permanently cached, be sure to clear cache if your or a module's provided additional altered data do not appear here. <ul><li>To avoid complications, it will be disabled when being unlazy: no JS, iframe only, sandboxed, etc. since it requires lazy load as a trigger.</li></ul>"
+msgstr ""
+
+msgid "Use client-side blur"
+msgstr "Utilizza sfocatura lato client"
+
+msgid "Uncheck to preserve old behaviors data URI printed on the page server-side. Check to enable Blur client-side. <br><b>Pros:</b> Client-side doesn't add ugly data URI to the page till required, and automatically cleared when done, meaning lighter page weight at initial and end, and at the next pages if any stored data found (meaning cacheable unlike server-side), but not during runtime animation. It leverages lazy load mechanism. <br><b>Cons:</b> Client-side does a HTTP request initially. Can use localStorage option below to cache them."
+msgstr "Deselezionare per conservare i vecchi URI dei dati di comportamento scritti sul lato server della pagina. Selezionare per abilitare la sfocatura lato client. <br><b>Pros:</b> il lato client non aggiunge l'URI dei dati non corretti alla pagina fino a quando non viene richiesto e viene automaticamente cancellato quando terminato, questo comporta un peso della pagina più leggero all'inizio e alla fine, e alle pagine successive, se vengono trovati dei dati memorizzati (ovvero memorizzabili nella cache a differenza del lato server), ma non durante l'animazione di runtime. Sfrutta il meccanismo lazyload. <br><b>Cons:</b> il lato client effettua una richiesta HTTP inizialmente. È possibile utilizzare l'opzione localStorage di seguito per memorizzare nella cache."
+
+msgid "Store blur in localStorage"
+msgstr "Memorizza sfocatura in localStorage"
+
+msgid "Check to cache Blur data URI in localStorage to save HTTP requests on the next requests. Uncheck if using localStorage for more custom important stuffs. Core localStorage providers vary 0.05KB - 150KB, to a tentative amount of 739.07 KB. This option will obviously hit the limit anytime (says 40KB x 100 images = 4000KB), can be larger given non-optimized or large Blur image style. However, configurable at <b>Thumbnail style</b> option, or Responsive image style fallback. That is why the smaller, file size and dimension, the more efficient. Will auto-clear, and recycle, when the quota (2-10MB) is exceeded."
+msgstr "Selezionare per memorizzare nella cache l'URI dei dati sfocati in localStorage per risparmiare richieste HTTP alle successive richieste. Deselezionare se si utilizza localStorage per altre risorse importanti personalizzate. I provider di localStorage base variano da 0,05KB a 150KB, per una quantità approssimativa di 739,07 KB. Questa opzione ovviamente raggiungerà il limite in qualsiasi momento (40KB x 100 immagini = 4000KB), può essere più grande per uno stile dell'immagine sfocata non ottimizzato o grande. Tuttavia, configurabile con l'opzione <b>Stile miniatura</b> o fallback dello stile dell'immagine Responsive. Questo è il motivo per cui più piccole sono le dimensione e grandezza del file, più è efficiente. Cancellerà automaticamente e riavvierà il ciclo quando la quota (2-10MB) viene superata."
+
+msgid "Blur min-width"
+msgstr "Minima larghezza sfocatura"
+
+msgid "Only enable Blur if the image style (not window) width is bigger than this value. Useful to disable it for mobile to avoid potential unverified OOM (Out of Memory) issues, or non-fancy listing thumbnails, says 767."
+msgstr ""
+
+msgid "Blazy settings"
+msgstr "Impostazioni di Blazy"
+
+msgid "The following settings are related to old bLazy library."
+msgstr "Le seguenti impostazioni sono relative alla vecchia libreria bLazy."
+
+msgid "Load invisible"
+msgstr "Carica invisibili"
+
+msgid "Check if you want to load invisible (hidden) elements. If any issues with tabs, accordions, or anything hidden, enable this."
+msgstr "Selezionare se si desidera caricare elementi invisibili (nascosti). Se si verificano problemi con schede, accordion o elementi nascosti, abilitare questa opzione."
+
+msgid "Offset"
+msgstr "Scostamento"
+
+msgid "The offset controls how early you want the elements to be loaded before they're visible. Default is <strong>100</strong>, so 100px before an element is visible it'll start loading."
+msgstr "L'offset definisce quando si desidera caricare gli elementi prima che siano visibili. Il valore predefinito è <strong>100</strong>, quindi l'elemento verrà caricato 100px prima che sia visibile."
+
+msgid "Save viewport offset delay"
+msgstr "Salva il ritardo offset di viewport"
+
+msgid "Delay for how often it should call the saveViewportOffset function on resize. Default is <strong>50</strong>ms."
+msgstr "Ritardo relativo alla frequenza di chiamata della funzione saveViewportOffset durante il ridimensionamento. Valore predefinito <strong>50</strong>ms."
+
+msgid "Set validate delay"
+msgstr "Imposta ritardo convalida"
+
+msgid "Delay for how often it should call the validate function on scroll/resize. Default is <strong>25</strong>ms."
+msgstr "Ritardo per la frequenza con cui si deve richiamare la funzione di convalida su scorrimento o ridimensionamento. Il valore predefinito è <strong>25</strong>ms."
+
+msgid "Scrolling container"
+msgstr "Contenitore di scorrimento"
+
+msgid "If you put Blazy within a scrolling container, provide valid comma separated CSS selectors, except <code>#drupal-modal, .is-b-scroll</code>, e.g.: <code>#my-scrolling-container, .another-scrolling-container</code>. Known scrolling containers are <code>#drupal-modal</code> like seen at Media library, parallax containers with fixed height replacing default browser scrollbar. A scrolling modal with an iframe like Entity Browser has no issue since the scrolling container is the entire DOM. Must know <code>.blazy</code> parent container, or itself, which has CSS rules containing <code>overflow</code> with values anything but <code>hidden</code> such as <code>auto or scroll</code>. Press <code>F12</code> at any browser to inspect elements. IO does not need it, old bLazy does. Default to known <code>#drupal-modal, .is-b-scroll</code>. The <code>.is-b-scroll</code> is for modules which cannot reach this UI without extra legs. Symptons: eternal blue loader while should be loaded."
+msgstr "Se si pone Blazy all'interno di un contenitore di scorrimento, fornire dei validi selettori CSS separati da virgola, tranne <code>#drupal-modal, .is-b-scroll</code>, ad esempio: <code>#my-scrolling-container, .another-scrolling-container</code>. I contenitori di scorrimento conosciuti sono <code>#drupal-modal</code> come visto alla libreria Supporti, contenitori parallasse con altezza fissa che sostituiscono la barra di scorrimento del browser predefinito. Uno scorrimento modale con un iframe come Browser entità non ha alcun problema dal momento che il contenitore di scorrimento è l'intero DOM. Bisogna conoscere il contenitore principale <code>.blazy</code>, o esso stesso, che ha regole CSS contenenti <code>overflow</code> con valori tutt'altro che <code>nascosti</code> come <code>auto or scorri</code>. Premere <code>F12</code> in qualsiasi browser per ispezionare gli elementi. IO non ne ha bisogno, il vecchio bLazy sì. Predefinito su <code>#drupal-modal, .is-b-scroll</code> noti. <code>.is-b-scroll</code> è per i moduli che non possono raggiungere questa UI. Sintomi: il programma di caricamento Eternal blue mentre deve essere caricato."
+
+msgid "Intersection Observer API (IO) settings"
+msgstr "Impostazioni dell'API Intersection Observer (IO)"
+
+msgid "Will fallback gracefully with Native support for old browsers using old bLazy fork, unless unloaded. Works absurdly fine at IE9. None essential features like Blur, etc. which require additional polyfills (dataset, etc.) not included above may not, and fail silently instead. <br>The following settings are related to <a href=\":url\">IntersectionObserver API</a>."
+msgstr "Verrà eseguito un fallback graduale con il supporto nativo per le versioni precedenti dei browser utilizzando una versione precedente del fork bLazy, a meno che non ne venga annullato il caricamento. Funziona perfettamente con IE9. Le funzionalità non essenziali quali Blur e così via, che richiedono ulteriori Polyfill (dataset eccetera) non inclusi in precedenza potrebbero non essere possibili e potrebbero non riuscire in modalità silenziosa. <br>Le seguenti impostazioni sono correlate all'<a href=\":url\">API IntersectionObserver</a>."
+
+msgid "Unload bLazy"
+msgstr "Scarica Blazy"
+
+msgid "Check if you are happy with IO, and don't support IEs. This will not load the forked bLazy library. Forked bLazy is just ~1KB gzip. Clear caches!"
+msgstr "Valutare se si ritiene soddisfacente l'IO e non supportare gli IE. In tal modo, la libreria bLazy clone non verrà caricata. La bLazy clonata è un archivio gzip che occupa uno spazio di appena ~1KB. Svuota tutte le cache."
+
+msgid "rootMargin"
+msgstr "rootMargin"
+
+msgid "Margin around the root. Can have values similar to the CSS margin property, e.g. <code>10px 20px 30px 40px</code> (top, right, bottom, left). The values can be percentages. This set of values serves to grow or shrink each side of the root element's bounding box before computing intersections. Defaults to all zeros."
+msgstr "Margine intorno all'elemento root. Può avere valori simili alla proprietà Margini CSS, ad esempio <code>10px 20px 30px 40px</code> (in alto, a destra, in basso, a sinistra). Il valore può essere espresso in percentuale. Questo insieme di valori serve ad ingrandire e ridurre ciascun lato della casella che racchiude l'elemento root prima del calcolo delle intersezioni. I valori predefiniti sono tutti zero."
+
+msgid "threshold"
+msgstr "soglia"
+
+msgid "Either a single number or an array of numbers which indicate at what percentage of the target's visibility the observer's callback should be executed. If you only want to detect when visibility passes the 50% mark, you can use a value of 0.5. If you want the callback to run every time visibility passes another 25%, you would specify the array [<code>0, 0.25, 0.5, 0.75, 1</code>] (without brackets). The default is 0 (meaning as soon as even one pixel is visible, the callback will be run). A value of 1.0 means that the threshold isn't considered passed until every pixel is visible."
+msgstr "Può essere un singolo numero o un insieme di numeri che indicano a quale percentuale di visibilità di destinazione deve essere eseguita la callback dell'osservatore. Se si desidera rilevare solo quando la visibilità supera il contrassegno 50%, è possibile utilizzare un valore di 0,5. Se si desidera che la callback venga eseguita ogni volta che la visibilità supera un altro 25%, si deve specificare l'insieme [<code>0, 0,25, 0,5, 0,75, 1</code>] (senza parentesi). Il valore predefinito è 0 (significa che non appena anche un solo pixel diventa visibile, viene eseguita la callback). Un valore pari a 1,0 significa che la soglia non viene considerata superata fino a quando non sono visibili tutti i pixel."
+
+msgid "Disconnect"
+msgstr "Scollega"
+
+msgid "Check if you want to disconnect IO once all images loaded. If you keep seeing eternal blue loader while an image should be already loaded, this means it is not working yet in all cases. Just uncheck this."
+msgstr "Selezionare questa opzione se si desidera scollegare IO una volta caricate tutte le immagini. Se si continua a vedere il programma di caricamento eternal blue, quando l'immagine dovrebbe essere stata già caricata, significa che non funziona ancora in tutti i casi. Nel caso deselezionare questa opzione."
+
+msgid "Extra settings"
+msgstr "Impostazioni extra"
+
+msgid "Be sure to <a href=\":clear_cache\">clear the cache</a> if trouble to see the updated settings."
+msgstr "<a href=\":clear_cache\">Ripulire la cache</a> se si riscontrano problemi nella visualizzazione delle impostazioni aggiornate."
+
+msgid "Lazy load HTML"
+msgstr ""
+
+msgid "nojs"
+msgstr "nojs"
+
+msgid "One pixel placeholder"
+msgstr "Segnaposto di un pixel"
+
+msgid "Use encoding for lightbox HTML"
+msgstr ""
+
+msgid "IO"
+msgstr "IO"
+
+msgid "Extras"
+msgstr "Extra"
+
+msgid "Blazy image base display format settings"
+msgstr "Impostazioni del formato di visualizzazione di base dell'immagine Blazy"
+
+msgid "Captions"
+msgstr "Didascalie"
+
+msgid "Caption"
+msgstr "Didascalia"
+
+msgid "Optionset"
+msgstr "Serie di opzioni"
+
+msgid "Blazy image display format settings"
+msgstr "Impostazioni del formato di visualizzazione dell'immagine Blazy"
+
+msgid "Blazy entity display format settings"
+msgstr ""
+
+msgid "Blazy media display format settings"
+msgstr "Impostazioni del formato di visualizzazione dei media Blazy"
+
+msgid "Blazy oembed display format settings"
+msgstr "Impostazioni del formato di visualizzazione Blazy oembed"
+
+msgid "Blazy text display format settings"
+msgstr "Impostazioni del formato di visualizzazione del testo Blazy"
+
+msgid "Blazy third party display format settings"
+msgstr "Impostazioni del formato di visualizzazione di terze parti Blazy"
+
+msgid "Blazy filter"
+msgstr "Filtro Blazy"
+
+msgid "Media switcher"
+msgstr "Media switcher"
+
+msgid "(Responsive) image style"
+msgstr "Stile immagine (Responsive)"
+
+msgid "Lightbox (Responsive) image style"
+msgstr "Stile immagine Lightbox (Responsive)"
+
+msgid "Lightbox media style"
+msgstr ""
+
+msgid "Lightbox caption"
+msgstr "Didascalia Lightbox"
+
+msgid "HTML tags"
+msgstr "Tag HTML"
+
+msgid "tag"
+msgstr "tag"
+
+msgid "Trust data URI"
+msgstr "Considera attendibile URI dei dati"
+
+msgid "Blazy File/SVG display format settings"
+msgstr ""
+
+msgid "Blazy Title format settings"
+msgstr ""
+
+msgid "Delimiter"
+msgstr "Delimitatore"
+
+msgid "Tag"
+msgstr "Etichetta"
+
+msgid "Add Linebreak"
+msgstr ""
+
+msgid "Blazy image with VEF display format settings"
+msgstr "Immagine Blazy con impostazioni del formato di visualizzazione VEF"
+
+msgid "Lightbox image style"
+msgstr "Stile immagine Lightbox"
+
+msgid "Lightbox video style"
+msgstr "Stile video Lightbox"
+
+msgid "Image style"
+msgstr "Stile immagine"
+
+msgid "Media switch"
+msgstr "Cambia Media"
+
+msgid "Aspect ratio"
+msgstr "Proporzioni"
+
+msgid "Thumbnail style"
+msgstr "Stile miniatura"
+
+msgid "View mode"
+msgstr "Modo di visualizzazione"
+
+msgid "Blazy Grid"
+msgstr "Griglia Blazy"
+
+msgid "blazy.done is deprecated in 2.17, use with colon blazy:done to allow namespacing instead."
+msgstr ""
+
+msgid "Stop and close the video"
+msgstr ""
+
+msgid "Load and play the video"
+msgstr ""
+
+msgid "<h5>No SVG file extensions, use @provider Image instead.</h5>"
+msgstr ""
+
+msgid "Configure"
+msgstr "Configura"
+
+msgid "Duplicate"
+msgstr "Duplicata"
+
+msgid "The optionsets order has been updated."
+msgstr "L'ordine delle serie di opzioni è stato aggiornato."
+
+msgid "Image to iFrame"
+msgstr "Immagine a iFrame"
+
+msgid "Displays lazyloaded images, or iframes, for VEF/ ME."
+msgstr "Visualizza immagini con lazyload o iframe, per VEF/ ME."
+
+msgid "Blazy VEF (deprecated)"
+msgstr ""
+
+msgid "Image rendered by its formatter"
+msgstr "L'immagine presentata dal formattatore"
+
+msgid "<b>Image rendered</b> requires <b>Image</b> option filled out and is useful if the formatter offers awesomeness that Blazy does not have but still wants Blazy for a Grid, etc. Be sure the enabled fields here are not hidden/ disabled at its view mode."
+msgstr ""
+
+msgid "Check fields to be treated as captions, even if not caption texts."
+msgstr "Verificare che i campi siano gestiti come didascalie, anche se non rappresentano il testo di una didascalia."
+
+msgid "The formatter/renderer is managed by <strong>@plugin_id</strong> formatter. Meaning original formatter ignored."
+msgstr ""
+
+msgid "Image Title"
+msgstr "Titolo immagine"
+
+msgid "Image Alt"
+msgstr "Alt immagine"
+
+msgid "Create a dedicated List (text - max number 1) field related to the caption placement to have unique layout per slide with the following supported keys: top, right, bottom, left, center, center-top, etc. Be sure its formatter is Key."
+msgstr "Crea un campo Elenco dedicato (testo - numero massimo 1) correlato all'ubicazione della didascalia per ottenere un layout univoco per il dispositivo di scorrimento con le seguenti chiavi supportate: in alto, destra, in basso, sinistra, centro, in alto al centro, etc. Verificare che il formattatore relativo sia Key."
+
+msgid "The formatter/renderer is managed by the child formatter."
+msgstr "Il programma di presentazione o il formattatore viene gestito dal formattatore child."
+
+msgid "Recursive rendering detected when rendering entity @entity_type @entity_id. Aborting rendering."
+msgstr "Rendering recursivo rilevato per la entità @entity_type @entity_id. Rendering interrotto."
+
+msgid "Display style"
+msgstr "Stile di visualizzazione"
+
+msgid "- None -"
+msgstr "- Nessuno -"
+
+msgid "Skin"
+msgstr "Tema grafico"
+
+msgid "Use CSS background"
+msgstr "Utilizza sfondo CSS"
+
+msgid "Layout"
+msgstr "Layout"
+
+msgid "Caption fields"
+msgstr "Campi didascalia"
+
+msgid "Group individual items as block grid?"
+msgstr ""
+
+msgid "Grid large"
+msgstr "Griglia larga"
+
+msgid "Grid medium"
+msgstr "Griglia media"
+
+msgid "Grid small"
+msgstr "Griglia piccola"
+
+msgid "Visible items"
+msgstr "Elementi visibili"
+
+msgid "Preserve keys"
+msgstr "Conserva chiavi"
+
+msgid "Preload"
+msgstr "Precaricamento"
+
+msgid "Loading priority"
+msgstr "Priorità di caricamento"
+
+msgid "lazy"
+msgstr "lazy"
+
+msgid "Image linked to content"
+msgstr "Immagine collegata al contenuto"
+
+msgid "Image linked by Link field"
+msgstr ""
+
+msgid "Main stage"
+msgstr "Stage principale"
+
+msgid "Fields"
+msgstr "Campi"
+
+msgid "<strong>Tips!</strong> Reload the page, or save first, only when changing formatters. Some form items may not be loaded after AJAX."
+msgstr ""
+
+msgid "Image to @lightbox"
+msgstr "Immagine a @lightbox"
+
+msgid "Lightbox custom caption"
+msgstr "Didascaliza personalizzata Lightbox"
+
+msgid "Tokens"
+msgstr "Token"
+
+msgid "@title"
+msgstr "@title"
+
+msgid "SVG"
+msgstr ""
+
+msgid "Vanilla @namespace"
+msgstr "@namespace Vanilla"
+
+msgid "Thumbnail image"
+msgstr "Immagine in miniatura"
+
+msgid "Overlay media"
+msgstr "Sovrapposizione media"
+
+msgid "Title"
+msgstr "Titolo"
+
+msgid "Link"
+msgstr "Link"
+
+msgid "Item class"
+msgstr "Classe di elementi"
+
+msgid "Cache"
+msgstr "Cache"
+
+msgid "Ditch all the logic to cached bare HTML. <ol><li><strong>Permanent</strong>: cached contents will persist (be displayed) till the next cron runs.</li><li><strong>Any number</strong>: expired by the selected expiration time, and fresh contents are fetched till the next cache rebuilt.</li></ol>A working cron job is required to clear stale cache. At any rate, cached contents will be refreshed regardless of the expiration time after the cron hits. <br />Leave it empty to disable caching.<br /><strong>Warning!</strong> Be sure no useless/ sensitive data such as Edit links as they are rendered as is regardless permissions. No permissions are changed, just ugly. Only enable it when all is done, otherwise cached options will be displayed while changing them."
+msgstr "Non considerare la logica collegata all'HTML semplice memorizzato in cache.<ol><li><strong>Permanente</strong>: il contenuto memorizzato nella cache sarà conservato (visualizzato) fino alla successiva esecuzione di cron. </li><li><strong>Qualsiasi numero</strong>: scaduto in base al tempo di scadenza selezionato, ed i nuovi contenuti vengono caricati fino alla successiva creazione della cache.</li></ol>Un lavoro cron in esecuzione deve ripulire la cache non aggiornata. In ogni caso, i contenuti memorizzati nella cache verranno aggiornati indipendentemente dalla scadenza dopo l'esecuzione di cron.<br />Lascia questo campo vuoto per disabilitare la memorizzazione nella cache.<br /><strong>Avvertenza!</strong> Assicurarsi che non vi siano dati inutili o riservarti, poiché questi sono visibili indipendentemente dalle autorizzazioni. Nessuna autorizzazione viene cambiata. Abilitarla solo al completamento di tutte le operazioni, altrimenti le opzioni memorizzate nella cache verranno visualizzare quando le si modifica."
+
+msgid "Enable any of the following fields as captions. These fields are treated and wrapped as captions."
+msgstr "Abilitare uno dei seguenti campi come didascalia. Questi campi vengono gestiti ed inclusi come didascalie."
+
+msgid "Overlay is displayed over the main stage. Can be plain image, sliders, etc."
+msgstr ""
+
+msgid "Also disable Views cache (<strong>Advanced &gt; Caching</strong>) temporarily _only if trouble to see updated settings."
+msgstr "Disabilita inoltre temporaneamente la cache delle viste (<strong>Avanzate &gt; Caching</strong>), solo se vi sono problemi di visualizzazione delle impostazioni."
+
+msgid "Be sure to CHECK \"Use field template\" under its formatter if using Slick field formatter."
+msgstr "Selezionare \"Usa il template del campo\" nel relativo formattatore se si utilizza il formattatore del campo Slick."
+
+msgid "Be sure to make them visible at their relevant Manage display if View Mode option is provided."
+msgstr ""
+
+msgid "If provided, individual item will have this class, e.g.: to have different background with transparent images. Be sure its formatter is Key or Label. Accepted field types: list text, string (e.g.: node title), term/entity reference label."
+msgstr "Se fornito, l'elemento individuale avrà questa classe, ad esempio: differenti background con immagini trasparenti. Verificare il relativo formattatore sia Chiave o Etichetta. Tipi di campo accettato: testo elenco, stringa (ad es.: titolo nodo), etichetta riferimento termine/entità."
+
+msgid "<strong>Supported types</strong>: Link or plain Text containing URL. Link to content: Read more, View Case Study, etc. If an entity, be sure its formatter is linkable strings like ID or Label. <strong>Two behaviors</strong>: <ol><li>If <strong>Media switcher &gt; Image linked by Link field</strong> is selected, it will be gone to serve as a wrapping link of the image, only if its formatter/ output is plain text URL.</li><li>As opposed to <strong>Caption fields</strong>, it will be positioned and wrapped with a dedicated class: <strong>@namespace__link</strong>.</li></ol>"
+msgstr ""
+
+msgid "Enable the optionset UI module to manage the optionsets."
+msgstr "Abilitare il modulo UI serie di opzioni per gestire le serie di opzioni."
+
+msgid "Leave empty to not use thumbnail/ pager."
+msgstr ""
+
+msgid "<strong>Supported types</strong>: basic Image title, and fields like a dedicated field Title, Link, etc. If an entity, be sure its formatter is strings like ID or Label. As opposed to <strong>Caption fields</strong>, it will be positioned and wrapped with H2 (overriden by <code>hook_blazy_item_alter() with blazies.item.title_tag</code>) and a dedicated class: <strong>@module__title</strong>."
+msgstr ""
+
+msgid "<strong>Check</strong>:<ul><li>To render individual item as is as without extra logic.</li><li>To disable 99% @module features, and most of the mentioned options here, such as layouts, et al.</li><li>When the @module features can not satisfy the need.</li><li>Things may be broken! You are on your own.</li></ul><strong>Uncheck</strong>:<ul><li>To get consistent markups and its advanced features -- relevant for the provided options as @module needs to know what to style/work with.</li></ul>"
+msgstr "<strong>Selezionare</strong>:<ul><li>Per rappresentare fedelmente i singoli elementi.</li><li>Per disabilitare il 99% delle funzioni @module e la maggior parte delle opzioni qui menzionate, come ad esempio i layout.</li><li>Quando le funzioni @module non soddisfano le proprie esigenze.</li><li>Se in caso di malfunzionamenti, non vi è supporto.</li></ul><strong>Deselezionare</strong>:<ul><li>Per disporre di notevoli miglioramenti e di funzioni avanzate, correlate alle opzioni fornite, poiché @module necessita di sapere cosa utilizzare e con quale stile.</li></ul>"
+
+msgid "Responsive image"
+msgstr "Immagine responsive"
+
+msgid "Responsive image style for the main stage image is more reasonable for large images. Works with multi-serving IMG, or PICTURE element. Leave empty to disable. <a href=\":url\" target=\"_blank\">Manage responsive image styles</a>."
+msgstr "È consigliabile applicare lo stile Responsive all'immagine dello stage principale, se le immagini sono grandi. Utilizza elementi IMG multi-serving o PICTURE. Lasciare vuota per disabilitare. <a href=\":url\" target=\"_blank\">Gestisci stili immagine Responsive</a>."
+
+msgid "<a href=\":url2\">Enable lazyloading Responsive image</a>."
+msgstr ""
+
+msgid "@title: <strong>@setting</strong>"
+msgstr "@title: <strong>@setting</strong>"
+
+msgid "Are you sure you want to delete the %name optionset %label?"
+msgstr "Eliminare la serie di opzioni %name %label?"
+
+msgid "Delete"
+msgstr "Elimina"
+
+msgid "The %name optionset %label has been deleted."
+msgstr "La serie di opzioni %name %label è stata eliminata."
+
+msgid "Deleted optionset %oid (%label)"
+msgstr "%oid (%label) serie di opzioni eliminata"
+
+msgid "<em>Duplicate %name optionset</em>: @label"
+msgstr "<em>Serie di opzioni %name duplicata</em>: @label"
+
+msgid "<em>Edit %name optionset</em>: @label"
+msgstr "<em>Modifica serie di opzioni %name</em>: @label"
+
+msgid "@config_prefix %label has been updated."
+msgstr "@config_prefix %label aggiornato."
+
+msgid "@config_prefix %label has been added."
+msgstr "@config_prefix %label aggiunto."
+
+msgid "Alt"
+msgstr "Alt"
+
+msgid "No caching"
+msgstr "Nessuna cache"
+
+msgid "Permanent"
+msgstr "Permanente"
+
+msgid "Automatic"
+msgstr "Automatico"
+
+msgid "Alt text"
+msgstr "Testo alternativo"
+
+msgid "Title text"
+msgstr "Testo per il titolo"
+
+msgid "Alt and Title"
+msgstr "Alt e Titolo"
+
+msgid "Title and Alt"
+msgstr "Titolo e Alt"
+
+msgid "Content title"
+msgstr "Titolo del contenuto"
+
+msgid "Custom"
+msgstr "Personalizzato"
+
+msgid "Required to grab the fields, or to have custom entity display as fallback display. If it has fields, be sure the selected \"View mode\" is enabled, and the enabled fields here are not hidden there."
+msgstr "Obbligatorio per acquisire i campi, o per visualizzare l'entità personalizzata come visualizzazione di riserva. Se vi sono campi, assicurarsi che \"Modalità di visualizzazione\" sia selezionata e che i campi abilitati non siano nascosti."
+
+msgid "Manage view modes on the <a href=\":view_modes\">View modes page</a>."
+msgstr "Gestire le modalità di visualizzazione nella <a href=\":view_modes\">pagina Modalità di visualizzazione</a>."
+
+msgid "Preload to optimize the loading of late-discovered resources. Normally large or hero images below the fold. By preloading a resource, you tell the browser to fetch it sooner than the browser would otherwise discover it before Native lazy or lazyloader JavaScript kicks in, or starts its own preload or decoding. The browser caches preloaded resources so they are available immediately when needed. Nothing is loaded or executed at preloading stage. <br>Just a friendly heads up: do not overuse this option, because not everything are critical, <a href=':url'>read more</a>."
+msgstr "Precaricare per ottimizzare il caricamento delle risorse rilevate in un secondo momento. Normalmente, immagini con dimensioni elevate o di tipo hero nella parte non immediatamente visibile della pagina. Precaricando una risorsa, si indica al browser di recuperarla in anticipo rispetto a quando l'avrebbe normalmente rilevata, prima dell'attivazione di lazy nativo o del JavaScript lazyloader o dell'avvio dei propri processi di precaricamento o decodifica. Il browser memorizza nella cache le risorse precaricate in modo che siano immediatamente disponibili quando necessarie. Nella fase di precaricamento, niente viene caricato o eseguito. <br>Suggerimento: utilizzare questa opzione con parsimonia, in quanto non tutti gli elementi sono critici. <a href=':url'>Ulteriori informazioni</a>."
+
+msgid "Decide the `loading` attribute affected by the above fold aka onscreen critical contents aka <a href=':lcp'>LCP</a>. <ul><li>`lazy`, the default: defers loading below fold or offscreen images and iframes until users scroll near them.</li><li>`auto`: browser determines whether or not to lazily load. Only if uncertain about the above fold boundaries given different devices. </li><li>`eager`: loads right away. Similar effect like without `loading`, included for completeness. Good for above fold.</li><li>`defer`: trigger native lazy after the first row is loaded. Will disable global `No JavaScript: lazy` option on this particular field, <a href=':defer'>read more</a>.</li><li>`unlazy`: explicitly removes loading attribute enforced by core. Also removes old `data-[SRC|SRCSET|LAZY]` if `No JavaScript` is disabled. Best for the above fold.</li><li>`slider`, if applicable: will `unlazy` the first visible, and leave the rest lazyloaded. Best for sliders (one visible at a time), not carousels (multiple visible slides at once).</li></ul><b>Note</b>: lazy loading images/ iframes for the above fold is anti-pattern, avoid, <a href=':more'>read more</a>, even <a href=':webdev'>more</a>."
+msgstr ""
+
+msgid "The content image style. This will be treated as the fallback image to override the global option <a href=\":url\">Responsive image 1px placeholder</a>, which is normally smaller, if Responsive image are provided. Shortly, leave it empty to make Responsive image fallback respected. Otherwise this is the only image displayed. This image style is also used to provide dimensions not only for image/iframe but also any media entity like local video, where no images are even associated with, to have the designated dimensions in tandem with aspect ratio as otherwise no UI to customize for."
+msgstr "Lo stile dell'immagine del contenuto. Verrà considerata l'immagine di riserva per sovrascrivere l'opzione globale <a href=\":url\">Segnaposto 1px immagine Responsive</a>, che di norma ha dimensioni inferiori, se vengono fornite immagini Responsive. In breve, lasciare vuota questa opzione per rispettare la selezione di immagini di riserva Responsive. In caso contrario, è l'unica immagine visualizzata. Questo stile di immagine viene utilizzato anche per fornire le dimensioni non solo per l'immagine/iframe, ma anche per eventuali entità multimediali come i video in locale, a cui non sono associate immagini, per avere le dimensioni designate in associazione al formato; in caso contrario, non vi sarebbero interfacce utente da personalizzare."
+
+msgid "Clear cache if lightboxes do not appear here due to being permanently cached. <ol><li>Link to content/ by Link field: for aggregated small media contents -- slicks, splides, grids, etc.</li><li>Image to iframe: video is hidden below image until toggled, otherwise iframe is always displayed, and draggable fails. Aspect ratio applies.</li><li>(Quasi-)lightboxes: Colorbox, ElevateZoomPlus, Intense, Photobox, PhotoSwipe, Magnific Popup, Slick Lightbox, Splidebox, Zooming, etc. Depends on the enabled supported modules, or has known integration with Blazy. See docs or <em>/admin/help/blazy_ui</em> for details.</li></ol> Add <em>Thumbnail style</em> if using Photobox, Slick, or others which may need it. Try selecting \"<strong>- None -</strong>\" first before changing if trouble with this complex form states."
+msgstr ""
+
+msgid "Supports both Responsive and regular images."
+msgstr "Supporta sia le immagini Responsive che quelle regolari."
+
+msgid "Allows different lightbox video dimensions. Or can be used to have a swipable video if <a href=\":photoswipe\">Blazy PhotoSwipe</a>, or <a href=\":slick\">Slick Lightbox</a>, or <a href=\":splidebox\">Splidebox</a> installed."
+msgstr ""
+
+msgid "Automatic will search for Alt text first, then Title text. Try selecting <strong>- None -</strong> first when changing if trouble with form states."
+msgstr "L'opzione Automatico cercherà innanzitutto il testo Alt, quindi quello del Titolo. Provare a selezionare <strong>- Nessuno -</strong> prima di cambiare, in caso di problemi con questi stati del form. "
+
+msgid "Multi-value rich text field will be mapped to each image by its delta."
+msgstr "A ciascun campo rich text con valore multiplo verrà associata un'immagine."
+
+msgid "Aspect ratio to get consistently responsive images and iframes. Coupled with Image style. And to fix layout reflow, excessive height issues, whitespace below images, collapsed container, no-js users, etc. <a href=\":dimensions\" target=\"_blank\">Image styles and video dimensions</a> must <a href=\":follow\" target=\"_blank\">follow the aspect ratio</a>. If not, images will be distorted. <a href=\":link\" target=\"_blank\">Learn more</a>. <ul><li><b>Fixed ratio:</b> all images use the same aspect ratio mobile up. Use it to avoid JS works, or if it fails Responsive image. </li><li><b>Fluid:</b> aka dynamic, dimensions are calculated. First specific for non-responsive images, using PHP for pure CSS if any matching the fixed ones (1:1, 2:3, etc.), <a href=\":ratio\">read more</a>. If none found, JS works are attempted to fix it.</li><li><b>Leave empty:</b> to DIY (such as using CSS mediaquery), or when working with gapless grids like GridStack, or Blazy Native Grid.</li></ul>"
+msgstr ""
+
+msgid "Usages: <ol><li>Placeholder replacement for image effects (blur, etc.)</li><li>Photobox/PhotoSwipe thumbnail</li><li>Custom works with thumbnails.</li></ol> Be sure to have similar aspect ratio for the best blur effect. Leave empty to not use thumbnails."
+msgstr ""
+
+msgid "<strong>Required for</strong>: <ul><li>image attribute translation,</li><li>lightboxes as image triggers,</li><li>(remote|local) video high-res or poster image.</li><li>thumbnail/ slider navigation association, etc.</li></ul>Main background/stage/poster image field with the only supported field types: <b>Image</b> or <b>Media</b> containing an Image field. Add a new Image field to this entity, if not the Image bundle. Reuse the exact same image field (normally <strong>field_media_image</strong>) across various entitiy types (Image, Remote video, Local audio/video, etc.) within this particular entity (says, Media). This exact same field is also used for bundle <b>Image</b> to have a mix of videos and images if this entity is Media. Leaving it empty will fallback to the video provider thumbnails, and may cause issues due to failing requirements above."
+msgstr ""
+
+msgid "Empty the value first if trouble with changing form states. The amount of block grid columns (1 - 12, or empty) for large monitors 64.063em  (1025px) up."
+msgstr ""
+
+msgid "<br /><strong>Requires</strong>:<ol><li>Any grid-related Display style,</li><li>Visible items,</li><li>Skin Grid for starter,</li><li>A reasonable amount of contents.</li></ol>"
+msgstr ""
+
+msgid "Only accepts uniform columns (1 - 12, or empty) for medium devices 40.063em - 64em (641px - 1024px) up, even for Native Grid due to being pure CSS without JS."
+msgstr "Accetta solo colonne uniformi (1 - 12 o vuote) per i dispositivi di medie dimensioni, da 40.063em - 64em (641px - 1024px) a salire, anche per la griglia nativa, in quanto si tratta di CSS puro senza JS."
+
+msgid "Only accepts uniform columns (1 - 2, or empty) for small devices 0 - 40em (640px) up due to small real estate, even for Native Grid due to being pure CSS without JS. Below this value, always one column."
+msgstr ""
+
+msgid "How many items per display at a time."
+msgstr "Quantità di elementi per schermata alla volta."
+
+msgid "If checked, keys will be preserved. Default is FALSE which will reindex the grid chunk numerically."
+msgstr "Se selezionato, le chiavi verranno sempre conservate. Il valore predefinito è FALSE per reindicizzare la porzione di griglia numericamente."
+
+msgid "Depends on the <strong>Display style</strong>."
+msgstr ""
+
+msgid "<br>Specific for <b>Native Grid</b>, two recipes: <ol><li><b>One-dimensional</b>: Input a single numeric column grid, acting as Masonry. <em>Best with</em>: scaled images.</li><li><b>Two-dimensional</b>: Input a space separated value with <code>WIDTHxHEIGHT</code> pair based on the amount of columns/ rows, at max 12, e.g.: <br><code>4x4 4x3 2x2 2x4 2x2 2x3 2x3 4x2 4x2</code> <br>This will resemble GridStack optionset <b>Tagore</b>. Any single value e.g.: <code>4x4</code> will repeat uniformly like one-dimensional. <br><em>Best with</em>: <ul><li><b>Use CSS background</b> ON.</li><li>Exact item amount or better more designated grids than lacking. Use a little math with the exact item amount to have gapless grids.</li><li>Disabled image aspect ratio to use grid ratio instead.</li></ul></li></ol>This requires any grid-related <b>Display style</b>. Unless required, leave empty to DIY, or to not build grids."
+msgstr ""
+
+msgid "Check this to turn the image into CSS background. This opens up the goodness of CSS, such as background cover, fixed attachment, etc. <br /><strong>Important!</strong> Requires an Aspect ratio, otherwise collapsed containers. Unless explicitly removed such as for GridStack which manages its own problem, or a min-height is added manually to <strong>.b-bg</strong> selector."
+msgstr "Selezionare questa opzione per trasformare l'immagine in sfondo CSS. Questa opzione consente di sfruttare le qualità di CSS, quali ad esempio la copertura dello sfondo, gli allegati fissi e così via. <br /><strong>Importante:</strong> Richiede un formato, altrimenti causa malfunzionamenti dei contenitori. A meno che non venga esplicitamente rimosso, come per GridStack che gestisce i propri problemi o che non venga aggiunta manualmente un'opzione min-height al selettore <strong>.b-bg</strong>."
+
+msgid "Requires a skin. The builtin layouts affects the entire items uniformly. Leave empty to DIY."
+msgstr "Richiede un tema grafico. I layout incorporati incidono su tutti gli elementi in modo uniforme. Lasciare vuoto per DIY."
+
+msgid "Skins allow various layouts with just CSS. Some options below depend on a skin. Leave empty to DIY. Or use the provided hook_info() and implement the skin interface to register ones."
+msgstr "I temi grafici consentono l'utilizzo di diversi layout con CSS. Alcune delle seguenti opzioni dipendono dal tema grafico. Lasciare vuoto per DIY. Oppure utilizzare lo hook_info() fornito ed implementare l'interfaccia dei temi grafici per registrarli."
+
+msgid "Unless otherwise specified, the styles require <strong>Grid</strong>. Difference: <ul><li><strong>Columns</strong> is best with irregular image sizes (scale width, empty height), affects the natural order of grid items, top-bottom, not left-right.</li><li><strong>Foundation</strong> with regular cropped ones, left-right.</li><li><strong>Flex Masonry</strong> (@deprecated due to an epic failure) uses Flexbox, supports (ir)-regular, left-right flow, requires aspect ratio fluid to layout correctly.</li><li><strong>Native Grid</strong> supports both one and two dimensional grid.</li></ul> Unless required, leave empty to use default formatter, or style. Save for <b>Grid Foundation</b>, the rest are experimental!"
+msgstr ""
+
+msgid "If checked, SVG is not embedded in the IMG tag. Be sure to disable CSS background option. Only enable for CSS and JavaScript manipulations, and trusted users, due to <a href=\":url1\">inline SVG security</a>. Required <a href=\":url2\">SVG Sanitizer</a>."
+msgstr ""
+
+msgid "Sanitize the SVG XML code to prevent XSS attacks. Required <a href=\":url\">SVG Sanitizer</a>."
+msgstr ""
+
+msgid "Remove attributes that reference remote files, this will stop HTTP leaks but will add an overhead to the sanitizer."
+msgstr ""
+
+msgid "Force the fill to currentColor to allow the SVG inherit coloring from the enclosing tag, such as a link tag."
+msgstr ""
+
+msgid "Unlike images, SVG has no ALT and TITLE attributes, except for SVG Image Field, or core file Description field. This option will hide captions, and put them into image attributes instead. Relevant if Inline option is disabled aka using IMG tag. Be sure to enable them under the Caption fields."
+msgstr ""
+
+msgid "Input one of SVG dimension sources: <code>none, image_style, or WIDTHxHEIGHT</code>. To disable, input: <strong>none</strong>, and will also disable Aspect ratio option. The <strong>image_style</strong> ansich will use the provided Image style, useful to get consistent heights within carousels, or rigid grids. The <strong>WIDTHxHEIGHT</strong>, e.g.: 800x400, for custom defined dimensions. Default or fallback to extract from SVG attributes, unless <strong>none</strong> is set. Only width and height are supported. Affected by Aspect ratio option."
+msgstr ""
+
+msgid "Preview"
+msgstr "Anteprima"
+
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+msgid "Image convert failed using the %toolkit toolkit on %path (%mimetype)"
+msgstr "Conversione dell'immagine fallita usando il toolkit %toolkit su %path (%mimetype)"
+
+msgid "Blazy File/SVG"
+msgstr ""
+
+msgid "Description"
+msgstr "Descrizione"
+
+msgid "Blazy Image"
+msgstr ""
+
+msgid "Blazy Media"
+msgstr ""
+
+msgid "Blazy OEmbed"
+msgstr ""
+
+msgid "When provided the text will be separated by this delimiter. Use comma to have multiple delimiters."
+msgstr ""
+
+msgid "Blazy Title will format delimited plain text or string as HTML title with a sub-title."
+msgstr ""
+
+msgid "Sub-title tag"
+msgstr ""
+
+msgid "The tag for the second/ last split as sub-title. Only one tag can exist."
+msgstr ""
+
+msgid "Add line break"
+msgstr ""
+
+msgid "Use CSS <code>display:block</code> on the Sub-title tag to have multiple lines for better display, or enable this to add the ugly line break."
+msgstr ""
+
+msgid "Delimiter: <strong>@delimiter</strong> <br />Sub-title tag: <strong>@tag</strong> <br />Linebreak: <strong>@break</strong>"
+msgstr ""
+
+msgid "Yes"
+msgstr "Sì"
+
+msgid "No"
+msgstr "No"
+
+msgid "Blazy Title"
+msgstr ""
+
+msgid ""
+"<b>Blazy</b>: <ul><li>With HTML: <code>[blazy]..[item]IMG[/item]..[/blazy]</code></li><li>With self-closing using data entity, <code>data=ENTITY_TYPE:ID:FIELD_NAME:FIELD_IMAGE</code>:<br><code>[blazy data=\"node:44:field_media\" /]</code>. <code>FIELD_IMAGE</code> is optional for video poster, or hires, normally <code>field_media_image</code>.<li>Grid format:\n"
+"      <code>STYLE:SMALL-MEDIUM-LARGE</code>, where <code>STYLE</code> is one of <code>column grid\n"
+"      flex nativegrid</code>.<br>\n"
+"      <code>[blazy grid=\"column:2-3-4\" data=\"node:44:field_media\" /]</code><br>\n"
+"      <code>[blazy grid=\"nativegrid:2-3-4\"]...[/blazy]</code><br>\n"
+"      <code>[blazy grid=\"nativegrid:2-3-4x4 4x3 2x2 2x4 2x2 2x3 2x3 4x2 4x2\"]...[/blazy]\n"
+"      </code><br>Only nativegrid can have number or dimension string (4x4...). The rest number only.</li><li>The attributes grid, data, settings can be combined into one [blazy].</li><li>To disable, add <code>data-unblazy</code>, e.g.: <code>&lt;img data-unblazy</code> or <code>&lt;iframe data-unblazy</code>. Add width and height for SVG, and non-uploaded images without image styles.</li></ul>"
+msgstr ""
+
+msgid "Enable HTML tags"
+msgstr "Abilita tag HTML"
+
+msgid "Image"
+msgstr "Immagine"
+
+msgid "Video iframe"
+msgstr "Iframe video"
+
+msgid "To disable Blazy per individual item, add attribute <code>data-unblazy</code>."
+msgstr "Per disabilitare Blazy per un singolo elemento, aggiungere l'attributo <code>data-unblazy</code>."
+
+msgid "<b>Warning!</b> Blazy Filter is useless and broken when you enable <b>Media embed</b> or <b>Display embedded entities</b>. You can disable Blazy Filter in favor of Blazy formatter embedded inside <b>Media embed</b> or <b>Display embedded entities</b> instead. However it might be useful for User Generated Contents (UGC) where Entity/Media Embed are likely more for privileged users, authors, editors, admins, alike. Or when Entity/Media Embed is disabled. Or when editors prefer pasting embed codes from video providers rather than creating media entities. Or want the new shortcodes for embedding known entity, grid, Native Grid, etc."
+msgstr "<b>Avvertenza.</b> Il filtro Blazy è inutile e non funziona correttamente quando si abilita <b>Incorpora contenuti multimediali</b> o <b>Visualizza entità incorporate</b>. È possibile disabilitare il filtro Blazy in favore del formattatore Blazy incorporato in <b>Incorpora contenuti multimediali</b> o <b>Visualizza entità incorporate</b>. Tuttavia, potrebbe essere utile per i contenuti generati dagli utenti (UCG, User Generated Content) in cui l'incorporazione di entità o di contenuti multimediali è probabilmente rivolta a utenti privilegiati, autori, editor, amministratori o figure simili. Oppure, quando l'incorporazione di entità o contenuti multimediali è disabilitata. Oppure quando gli editor preferiscono incollare i codici di incorporazione dai provider video piuttosto che creare le entità multimediali. Oppure quando si desiderano nuovi Shortcode per l'incorporazione di entità note, griglie, griglie native eccetera."
+
+msgid "Enable to support the use of data URI. Leave it unchecked if unsure, or never use data URI. <b>Warning! It has security implications given to untrusted users.</b>"
+msgstr ""
+
+msgid "Recommended placement after Align / Caption images. Not tested against, nor dependent on, Shortcode module. Be sure to place Blazy filter before any other Shortcode if installed."
+msgstr "Posizionamento consigliato dopo le immagini Align / Caption. Non verificato su, né dipendente da, il modulo Shortcode. Assicurarsi di posizionare il filtro Blazy prima di altri Shortcode, se installati."
+
+msgid "Lazyload inline images, or video iframes using Blazy."
+msgstr "Lazyload delle immagini inline o degli iframes video utilizzando Blazy."
+
+msgid "Image to iframe"
+msgstr "Immagine a iframe"
+
+msgid "<ul><li><b>Image to iframe</b> will play video when toggled.</li><li><b>Image to lightbox</b> (Colorbox, Photobox, PhotoSwipe, Slick Lightbox, Zooming, Intense, etc.) will display media in lightbox.</li></ul>Both can stand alone or grouped as a gallery. To build a gallery, use the grid shortcodes."
+msgstr "<ul><li><b>Immagine su iframe</b> riprodurrà il video quando attivato.</li><li><b>Immagine su lightbox</b> (Colorbox, Photobox, PhotoSwipe, Slick Lightbox, Zooming, eccetera) visualizzerà il contenuto multimediale in lightbox.</li></ul>Entrambe le opzioni possono essere autonome o raggruppate come galleria. Per creare una galleria, utilizzare gli Shortcode della griglia."
+
+msgid "Fallback (Responsive) image style when <code>[data-image-style]</code> or <code>[data-responsive-image-style]</code> attributes are not present, see https://drupal.org/node/2061377."
+msgstr "Per lo stile dell'immagine di riserva (Responsive) quando gli attributi <code>[data-image-style]</code> o <code>[data-responsive-image-style]</code> non sono presenti, consultare https://drupal.org/node/2061377."
+
+msgid "Caption filter"
+msgstr "Filtro didascalia"
+
+msgid "Automatic will search for Alt text first, then Title text. <br>Image styles only work for uploaded images, not hand-coded ones. Caption filter will use <code>data-caption</code> normally managed by Caption filter, will not work for shortcode without [item] element."
+msgstr ""
+
+msgid "Will fallback to this view mode, else entity label."
+msgstr "Utilizzerà questa modalità di visualizzazione come riserva, altrimenti l'etichetta entità."
+
+msgid "Preview image for the @bundle \"@label\" - @alt."
+msgstr ""
+
+msgid "Preview image for the @bundle \"@label\"."
+msgstr ""
+
+msgid "Load and play video."
+msgstr "Carica e riproduci il video."
+
+msgid "Stop and close video."
+msgstr "Arresta e chiudi il video."
+
+msgid "Load and play the video \"@label\"."
+msgstr "Carica e riproduci il video \"@label\"."
+
+msgid "Stop and close the video \"@label\"."
+msgstr "Arresta e chiudi il video \"@label\"."
+

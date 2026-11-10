@@ -1,0 +1,754 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "The answer you entered for the CAPTCHA was not correct."
+msgstr "CAPTCHA için girdiğiniz cevap doğru değildi."
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "\"CAPTCHA\" is an acronym for \"Completely Automated Public Turing test to tell Computers and Humans Apart\". It is typically a challenge-response test to determine whether the user is human. The CAPTCHA module is a tool to fight automated submission by malicious users (spamming) of for example comments forms, user registration forms, guestbook forms, etc. You can extend the desired forms with an additional challenge, which should be easy for a human to solve correctly, but hard enough to keep automated scripts and spam bots out."
+msgstr "\"CAPTCHA\", \"Completely Automated Public Turing test to tell Computers and Humans Apart\" (İnsan ve Bilgisayar Ayrımı Amaçlı Tam Otomatik Genel Turing Testi) ifadesinin kısaltmasıdır. Genellikle kullanıcının insan olup olmadığını belirleyecek bir sınama-yanıt testidir. CAPTCHA modülü, köyü niyetli kullanıcılar tarafından örneğin yorum formu, kullanıcı kaydı formu, konuk defteri formunun otomatik olarak gönderilmesine (istenmeyen posta) karşı savaşan bir araçtır. İstenilen formları bir insanın kolaylıkla çözebilmesi için kolay, ancak otomatik komut dosyalarından ve istenmeyen posta bot'larından uzak tutacak kadar zor olması gereken ek bir sınamayla genişletebilirsiniz."
+
+msgid "Note that the CAPTCHA module interacts with page caching (see <a href=\":performancesettings\">performance settings</a>). Because the challenge should be unique for each generated form, the caching of the page it appears on is prevented. Make sure that these forms do not appear on too many pages or you will lose much caching efficiency. For example, if you put a CAPTCHA on the user login block, which typically appears on each page for anonymous visitors, caching will practically be disabled. The comment submission forms are another example. In this case you should set the <em>Location of comment submission form</em> to <em>Display on separate page</em> in the comment settings of the relevant <a href=\":contenttypes\">content types</a> for better caching efficiency."
+msgstr "CAPTCHA modülünün sayfa önbelleğe alma özelliğiyle etkileşim kurduğunu göz önünde bulundurun (<a href=\":performancesettings\">performans ayarlarına</a> bakın) . Sınamanın oluşturulan her form için benzersiz olması gerektiğinden, göründüğü sayfanın önbelleğe alınması önlenir. Bu formların çok sayıda sayfada görünmediğinden emin olun, aksi halde önbelleğe alma işleminin verimliliğini büyük ölçüde kaybedersiniz. Örneğin genellikle anonim kullanıcılar için her sayfada çıkan kullanıcı oturum açma bloğuna bir CAPTCHA koyarsanız, önbelleğe alma pratikte devre dışı bırakılacaktır. Yorum gönderme formları bir diğer örnektir. Bu durumda daha verimli bir önbelleğe alma süreci için ilgili <a href=\":contenttypes\">içerik tiplerinin</a> yorum ayarlarında <em>Yorum gönderme formunun yeri</em>'ni <em>Ayrı sayfada görüntüle</em> olarak ayarlamanız gerekir."
+
+msgid "CAPTCHA is a trademark of Carnegie Mellon University."
+msgstr "CAPTCHA, Carnegie Mellon Universitesinin tescilli ticari markasıdır."
+
+msgid "A CAPTCHA can be added to virtually any Drupal form, through adding an affiliated <em>CAPTCHA Point</em>. Some default <em>CAPTCHA Points</em> are already provided in the <em>CAPTCHA Point</em> section, but arbitrary forms can be easily added and managed."
+msgstr "CAPTCHA, bağlı bir <em>CAPTCHA Noktası</em> eklenerek hemen hemen her Drupal formuna sanal olarak eklenebilir. Bazı varsayılan <em>CAPTCHA Noktaları</em> zaten <em>CAPTCHA Noktası</em> bölümünde sağlanmıştır, ancak isteğe bağlı formlar kolayca eklenebilir ve yönetilebilir."
+
+msgid "Users with the <em>Skip CAPTCHA</em> <a href=\":perm\">permission</a> won't be offered a challenge. Be sure to grant this permission to the trusted users (e.g. site administrators). If you want to test a protected form, be sure to do it as a user without the <em>Skip CAPTCHA</em> permission (e.g. as anonymous user)."
+msgstr "<em>CAPTCHA'yı atlama</em> <a href=\":perm\">izni</a> olan kullanıcılara bir sınama sunulmaz. Bu izni güvenli kullanıcılara (site yöneticileri gibi) verdiğinizden emin olun. Korunan bir formu test etmek istiyorsanız bunu <em>CAPTCHA'yı atlama</em> izni olmayan bir kullanıcı (anonim kullanıcı gibi) olarak yapmayı unutmayın."
+
+msgid "Note that the CAPTCHA module disables <a href=\":performancesettings\">page caching</a> of pages that include a CAPTCHA challenge."
+msgstr "CAPTCHA modülünün bir CAPTCHA sınaması içeren sayfaların <a href=\":performancesettings\">sayfa önbelleğe alma</a> özelliğini devre dışı bıraktığını göz önünde bulundurun."
+
+msgid "CAPTCHA"
+msgstr "CAPTCHA"
+
+msgid "CAPTCHA: challenge \"@type\" enabled"
+msgstr "CAPTCHA: \"@type\" sınaması etkin"
+
+msgid "CAPTCHA: challenge \"@type\" disabled"
+msgstr "CAPTCHA: \"@type\" sınaması devre dışı"
+
+msgid "Users without the \"skip CAPTCHA\" permission will see a CAPTCHA here (<a href=\"@settings\">general CAPTCHA settings</a>)."
+msgstr "\"skip CAPTCHA\" izni olmayan kullanıcılar burada bir CAPTCHA görürler (<a href=\"@settings\">genel CAPTCHA ayarları</a>)."
+
+msgid "CAPTCHA disabled, Untrusted users won't see the captcha (<a href=\"@settings\">general CAPTCHA settings</a>)."
+msgstr "CAPTCHA devre dışı, Güvenilir olmayan kullanıcılar captcha (<a href=\"@settings\">genel CAPTCHA ayarları</a>) görmez."
+
+msgid "Enabled challenge"
+msgstr "CAPTCHA sınaması etkin"
+
+msgid "change"
+msgstr "değiştir"
+
+msgid "CAPTCHA: no challenge enabled"
+msgstr "CAPTCHA: etkinleştirilmiş sınama yok"
+
+msgid "Place a CAPTCHA here for untrusted users."
+msgstr "Güvenilir olmayan kullanıcılar için buraya CAPTCHA koy."
+
+msgid "Most CAPTCHA methods will disable the caching of pages that contain a CAPTCHA element. Check the different implementations to know more about how it affects caching."
+msgstr "Çoğu CAPTCHA yöntemi, bir CAPTCHA öğesi içeren sayfaların önbelleğe alınmasını devre dışı bırakır. Önbelleğe alımı nasıl etkilediği hakkında daha fazla bilgi edinmek için farklı uygulamalara göz atın."
+
+msgid "Captcha is currently disabled via settings.php."
+msgstr "Captcha şu anda settings.php aracılığıyla devre dışı bırakıldı."
+
+msgid "CAPTCHA configuration error: Contact the site administrator."
+msgstr "CAPTCHA yapılandırma hatası: Site yöneticisiyle iletişim kurun."
+
+msgid "CAPTCHA validation error: unknown CAPTCHA session ID. Contact the site administrator if this problem persists."
+msgstr "CAPTCHA doğrulama hatası: bilinmeyen CAPTCHA oturumu tanıtıcısı. Bu sorun devam ederse site yöneticisiyle iletişim kurun."
+
+msgid "Math question"
+msgstr "Matematik sorusu"
+
+msgid "Solve this simple math problem and enter the result. E.g. for 1+3, enter 4."
+msgstr "Bu basit matematik problemini çözün ve sonucu girin. Örn. 1+3 için cevabı 4 olarak girin."
+
+msgid "@x + @y ="
+msgstr "@x + @y ="
+
+msgid "Test one two three"
+msgstr "Test bir iki üç"
+
+msgid "CAPTCHA session reuse attack detected on @form_id <br/>Posted CAPTCHA token: @posted_captcha_token <br/>Expected captcha token: @expected_captcha_token"
+msgstr "@form tanıtıcısında CAPTCHA oturumu yeniden kullanma saldırısı saptandı. <br/>Gönderilen CAPTCHA belirteci: @posted_captcha_token <br/>Beklenen captcha belirteci: @expected_captcha_token"
+
+msgid "%form_id post blocked by CAPTCHA module: challenge %challenge (by module %module)."
+msgstr "CAPTCHA modülü %form_id gönderisini engelledi: %challenge engeli (%module modülü tarafından)."
+
+msgid "%form_id post blocked by CAPTCHA module: challenge %challenge (by module %module), user answered \"@response\", but the solution was \"@solution\"."
+msgstr "%form_id gönderisi CAPTCHA modülü tarafından engellendi: sınama %challenge (%module modülü tarafından), kullanıcı \"@response\" yanıtını verdi, ancak çözüm şuydu: \"@solution\"."
+
+msgid "CAPTCHA validation error: unknown CAPTCHA session ID (%csid)."
+msgstr "CAPTCHA doğrulama hatası: bilinmeyen CAPTCHA oturum tanıtıcısı (%csid)."
+
+msgid "CAPTCHA configuration error: cacheable CAPTCHA type %challenge did not provide a validation function."
+msgstr "CAPTCHA yapılandırma hatası: önbelleğe alınabilir CAPTCHA tipi %challenge bir doğrulama işlevi sağlamadı."
+
+msgid "Already 1 blocked form submission"
+msgid_plural "Already @count blocked form submissions"
+msgstr[0] "1 engellenmiş form gönderimi"
+msgstr[1] "@count engellenmiş form gönderimi"
+
+msgid "Provides the CAPTCHA API for adding challenges to arbitrary forms."
+msgstr "Rastgele formlara sınama eklemek için CAPTCHA API'sini sağlar."
+
+msgid "Spam control"
+msgstr "İstenmeyen posta (spam) denetimi"
+
+msgid "Add Captcha Point"
+msgstr "CAPTCHA Noktası ekleyin"
+
+msgid "CAPTCHA settings"
+msgstr "CAPTCHA ayarları"
+
+msgid "CAPTCHA examples"
+msgstr "CAPTCHA örnekleri"
+
+msgid "Administer CAPTCHA settings"
+msgstr "CAPTCHA ayarlarını yönet"
+
+msgid "Overview of the available CAPTCHA challenge types with examples'"
+msgstr "Örneklerle birlikte, kullanılabilir CAPTCHA sınama tiplerine genel bakış"
+
+msgid "CAPTCHA Settings"
+msgstr "CAPTCHA Ayarları"
+
+msgid "CAPTCHA Examples"
+msgstr "CAPTCHA Örnekleri"
+
+msgid "Captcha Points"
+msgstr "Captcha Noktaları"
+
+msgid "Skip CAPTCHA"
+msgstr "CAPTCHA'yı atla"
+
+msgid "Users with this permission will not be offered a CAPTCHA."
+msgstr "Bu izne sahip kullanıcılara bir CAPTCHA sunulmaz."
+
+msgid "CAPTCHA configuration"
+msgstr "CAPTCHA yapılandırması"
+
+msgid "Add CAPTCHA point"
+msgstr "CAPTCHA noktası ekle"
+
+msgid "Edit CAPTCHA point"
+msgstr "CAPTCHA noktasını düzenle"
+
+msgid "Disable CAPTCHA point"
+msgstr "CAPTCHA noktasını devre dışı bırak"
+
+msgid "Enable CAPTCHA point"
+msgstr "CAPTCHA noktasını etkinleştir"
+
+msgid "Delete CAPTCHA point"
+msgstr "CAPTCHA noktasını sil"
+
+msgid "CAPTCHA point"
+msgstr "CAPTCHA noktası"
+
+msgid "Form ID"
+msgstr "Form ID"
+
+msgid "Captcha Type"
+msgstr "Captcha Tipi"
+
+msgid "Label"
+msgstr "Etiket"
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "Add captcha to all forms."
+msgstr "Tüm formlara captcha ekleyin."
+
+msgid "Additionally add captcha to admin forms."
+msgstr "Ayrıca yönetici formlarına captcha ekleyin."
+
+msgid "The default challenge for captcha."
+msgstr "Captcha için varsayılan sınama."
+
+msgid "The default captcha description."
+msgstr "Varsayılan captcha açıklaması."
+
+msgid "The default captcha title."
+msgstr "Varsayılan captcha başlığı."
+
+msgid "Add CAPTCHA administration links to forms"
+msgstr "Formlara CAPTCHA yönetim bağlantılarını ekle"
+
+msgid "Additionally add administration links on admin pages"
+msgstr "Yönetim sayfalarına yönetim bağlantıları da ekle"
+
+msgid "IP addresses list"
+msgstr "IP adresleri listesi"
+
+msgid "The error message when a user has entered an incorrect CAPTCHA answer."
+msgstr "Bir kullanıcı hatalı CAPTCHA yanıtı girdiğinde hata iletisi."
+
+msgid "Default CAPTCHA validation"
+msgstr "Varsayılan CAPTCHA doğrulaması"
+
+msgid "CAPTCHA Persistence"
+msgstr "CAPTCHA Kalıcılığı"
+
+msgid "Enable statistics"
+msgstr "İstatistikleri etkileştir"
+
+msgid "Log wrong responses"
+msgstr "Yanlış yanıtları kaydet"
+
+msgid "The image CAPTCHA is a popular challenge where a random textual code is obfuscated in an image. The image is generated on the fly for each request, which is rather CPU intensive for the server. Be careful with the size and computation related settings."
+msgstr "Resimli CAPTCHA, rastgele bir metin kodunun bir resmin içinde gizlenmiş olarak sunulduğu, sık kullanılan bir sınamadır. Resim her istek için anında oluşturulur ve bu, sunucuda yoğun CPU kullanımı gerektirir. Boyut ve hesaplamayla ilgili ayarlarda dikkatli olun."
+
+msgid "Image CAPTCHA"
+msgstr "Resimli CAPTCHA"
+
+msgid "What code is in the image?"
+msgstr "Resmin içindeki kod nedir?"
+
+msgid "Enter the characters shown in the image."
+msgstr "Resimde görünen karakterleri girin."
+
+msgid "Encountered an illegal byte while splitting an utf8 string in characters."
+msgstr "Karakterlerdeki UTF-8 dizesini ayrıştırırken geçersiz bir baytla karşılaşıldı."
+
+msgid "Provides an image based CAPTCHA."
+msgstr "Resim tabanlı CAPTCHA sağlar."
+
+msgid "Image Captcha"
+msgstr "Resimli Captcha"
+
+msgid "Configure Image Captcha Settings."
+msgstr "Resimli Captcha Ayarlarını yapılandırın."
+
+msgid "Image Captcha settings"
+msgstr "Resim Captcha ayarları"
+
+msgid "Font preview map cache"
+msgstr "Yazı tipi önizleme eşlemi önbelleği"
+
+msgid "Uri"
+msgstr "Uri"
+
+msgid "Filename"
+msgstr "Dosya adı"
+
+msgid "Name"
+msgstr "İsim"
+
+msgid "Fonts"
+msgstr "Yazı tipleri"
+
+msgid "Font filepath"
+msgstr "Yazı tipi dosya yolu"
+
+msgid "Font Size in Image Captcha"
+msgstr "Resim Captcha'da Yazı Tipi Boyutu"
+
+msgid "Spacing between characters"
+msgstr "Karakterler arası boşluk"
+
+msgid "String with allowed characters"
+msgstr "İzin verilen karakterleri içeren dize"
+
+msgid "Captcha code length"
+msgstr "Captcha kodu uzunluğu"
+
+msgid "Right to left support"
+msgstr "Sağdan sola destek"
+
+msgid "Hexadecimal background color code"
+msgstr "Onaltılı arka plan rengi kodu"
+
+msgid "Hexadecimal foreground color code"
+msgstr "Onaltılı ön plan rengi kodu"
+
+msgid "Background color randomness"
+msgstr "Arka plan rengi rastgele"
+
+msgid "File format"
+msgstr "Dosya biçimi"
+
+msgid "Distortion amplitude"
+msgstr "Bozulma çokluğu"
+
+msgid "Bilinear interpolation"
+msgstr "İkili doğrusal iç değerleme"
+
+msgid "Dot noise"
+msgstr "Nokta gürültüsü"
+
+msgid "Line noise"
+msgstr "Çizgi gürültüsü"
+
+msgid "Noise level"
+msgstr "Gürültü seviyesi"
+
+msgid "Generation of image CAPTCHA failed. Check your image CAPTCHA configuration and especially the used font."
+msgstr "Resimli CAPTCHA oluşturulamadı. Resimli CAPTCHA yapılandırmanızı, özellikle de kullanılan yazı tipini kontrol edin."
+
+msgid "Error has occurred. Please contact to site administrator."
+msgstr "Hata oluştu. Lütfen site yöneticinizle iletişim kurun."
+
+msgid "The Image CAPTCHA module can not generate images because your PHP setup does not support it (no <a href=\"!gdlib\" target=\"_blank\">GD library</a> with JPEG support)."
+msgstr "PHP kurulumunuz desteklemediğinden (JPEG desteğiyle <a href=\"!gdlib\" target=\"_blank\">GD kitaplığı</a>) Resimli CAPTCHA modülü resim oluşturamıyor."
+
+msgid "Example"
+msgstr "Örnek"
+
+msgid "Presolved image CAPTCHA example, generated with the current settings."
+msgstr "Önceden çözülen resimli CAPTCHA örneği, geçerli ayarlarla oluşturuldu."
+
+msgid "Code settings"
+msgstr "Kod ayarları"
+
+msgid "Characters to use in the code"
+msgstr "Kodda kullanılacak karakterler"
+
+msgid "Code length"
+msgstr "Kod uzunluğu"
+
+msgid "The code length influences the size of the image. Note that larger values make the image generation more CPU intensive."
+msgstr "Kod uzunluğu resmin boyutunu etkiler. Büyük değerlerin, resim oluşturma sırasında fazla CPU kullanımı gerektireceğini unutmayın."
+
+msgid "RTL support"
+msgstr "RTL desteği"
+
+msgid "Enable this option to render the code from right to left for right to left languages."
+msgstr "Sağdan sola olan diller için kodun görüntüsünü sağdan sola oluşturmak üzere bu seçeneği etkinleştirin. "
+
+msgid "Color and image settings"
+msgstr "Renk ve resim ayarları"
+
+msgid "Configuration of the background, text colors and file format of the image CAPTCHA."
+msgstr "Resimli CAPTCHA'sının dosya biçimi, metin renkleri ve arka planı yapılandırması."
+
+msgid "Background color"
+msgstr "Arkaplan rengi"
+
+msgid "Enter the hexadecimal code for the background color (e.g. #FFF or #FFCE90). When using the PNG file format with transparent background, it is recommended to set this close to the underlying background color."
+msgstr "Arka plan rengi için onaltılı kod (örneğin #FFF ya da #FFCE90) girin. Şeffaf arka planla PNG dosya biçimi kullanırken bunu temel arka plan rengine yakın ayarlamanız önerilir."
+
+msgid "Text color"
+msgstr "Yazı rengi"
+
+msgid "Enter the hexadecimal code for the text color (e.g. #000 or #004283)."
+msgstr "Metin rengi için onaltılı kodu girin (örnek: #000 ya da #004283)."
+
+msgid "Additional variation of text color"
+msgstr "Metin rengi için ek çeşitler"
+
+msgid "No variation"
+msgstr "Değişiklik yok"
+
+msgid "Little variation"
+msgstr "Küçük değişiklik"
+
+msgid "Medium variation"
+msgstr "Orta değişiklik"
+
+msgid "High variation"
+msgstr "Yüksek değişiklik"
+
+msgid "Very high variation"
+msgstr "Çok yüksek değişiklik"
+
+msgid "The different characters will have randomized colors in the specified range around the text color."
+msgstr "Farklı karakterlerin metin renginde belirtilen aralıkta rastgele renkleri olur."
+
+msgid "Select the file format for the image. JPEG usually results in smaller files, PNG allows transparency."
+msgstr "Resim için dosya biçimi seçin. JPEG genellikle daha küçük dosyalarla sonuçlanır, PNG şeffaflığa izin verir."
+
+msgid "JPEG"
+msgstr "JPEG"
+
+msgid "PNG"
+msgstr "PNG"
+
+msgid "PNG with transparent background"
+msgstr "Saydam zeminli PNG"
+
+msgid "Distortion and noise"
+msgstr "Bozunum ve gürültü"
+
+msgid "With these settings you can control the degree of obfuscation by distortion and added noise. Do not exaggerate the obfuscation and assure that the code in the image is reasonably readable. For example, do not combine high levels of distortion and noise."
+msgstr "Bu ayarlarla bozulma ve eklenen gürültüye göre gizleme derecesini kontrol edebilirsiniz. Gizlemeyi abartmayın ve resimdeki kodun okunabilir olmasını sağlayın. Örneğin, yüksek düzeylerde bozulma ve gürültüyü birleştirmeyin."
+
+msgid "Distortion level"
+msgstr "Bozulum düzeyi"
+
+msgid "@level - no distortion"
+msgstr "@level - bozulum yok"
+
+msgid "@level - low"
+msgstr "@level - düşük"
+
+msgid "@level - medium"
+msgstr "@level - orta"
+
+msgid "@level - high"
+msgstr "@level - yüksek"
+
+msgid "Set the degree of wave distortion in the image."
+msgstr "Resimdeki dalga bozulumu derecesini ayarlayın."
+
+msgid "Smooth distortion"
+msgstr "Bozulumu yumuşat"
+
+msgid "This option enables bilinear interpolation of the distortion which makes the image look smoother, but it is more CPU intensive."
+msgstr "Bu seçenek, resmin daha net görünmesini sağlayan, ancak CPU yoğunluğu daha yüksek olan bozulmanın ikili doğrusal iç değerlemesini sağlar."
+
+msgid "Add salt and pepper noise"
+msgstr "Tuz ve biber gürültüsü ekle"
+
+msgid "This option adds randomly colored point noise."
+msgstr "Bu seçenek, rastgele renklendirilmiş noktalı gürültü ekler."
+
+msgid "Add line noise"
+msgstr "Çizgi gürültü ekle"
+
+msgid "This option enables lines randomly drawn on top of the text code."
+msgstr "Bu seçenek metin kodunun üzerine rasgele çizilmiş çizgiler ekler."
+
+msgid "low"
+msgstr "düşük"
+
+msgid "medium"
+msgstr "orta"
+
+msgid "high"
+msgstr "yüksek"
+
+msgid "severe"
+msgstr "şiddetli"
+
+msgid "Text Content"
+msgstr "Metin İçeriği"
+
+msgid "Customize image CAPTCHA text content."
+msgstr "Resim CAPTCHA metin içeriğini özelleştirin."
+
+msgid "Refresh button text."
+msgstr "Yenile düğmesi metni."
+
+msgid "Customize the refresh button text."
+msgstr "Yenile düğmesi metnini özelleştirin."
+
+msgid "The list of characters to use should not contain spaces."
+msgstr "Kullanılacak karakter listesi boşluk içermemelidir."
+
+msgid "You need to select at least one font."
+msgstr "En azından bir yazı tipi seçmelisiniz."
+
+msgid "The built-in font only supports Latin2 characters. Only use \"a\" to \"z\" and numbers."
+msgstr "Yerleşik yazı tipi yalnızca Latin2 karakterlerini destekler. Yalnızca \"a\" - \"z\" ve rakamları kullanın."
+
+msgid "The following fonts are not readable: %fonts."
+msgstr "Bu yazıtipleri okunamıyor: %fonts."
+
+msgid "Background color is not a valid hexadecimal color value."
+msgstr "Arka plan rengi geçerli bir onaltılık renk değeri değil."
+
+msgid "Text color is not a valid hexadecimal color value."
+msgstr "Metin rengi geçerli bir onaltılık renk değeri değil."
+
+msgid "Font settings"
+msgstr "Yazı tipi ayarları"
+
+msgid "No TrueType support"
+msgstr "TrueType desteklenmiyor"
+
+msgid "The Image CAPTCHA module can not use TrueType fonts because your PHP setup does not support it. You can only use a PHP built-in bitmap font of fixed size."
+msgstr "PHP kurulumunuz desteklemediğinden Resimli CAPTCHA modülü, TrueType yazı tiplerini kullanamaz. Yalnızca sabit boyutlu PHP yerleşik bit eşlemi yazı tipini kullanabilirsiniz."
+
+msgid "Font preview of @font (@file)"
+msgstr "@font yazı tipi önizlemesi (@file)"
+
+msgid "Preview of built-in font"
+msgstr "Yerleşik yazı tipinin önizlemesi"
+
+msgid "PHP built-in font: <img src=\"@font_preview_url\" alt=\"@title\" title=\"@title\">"
+msgstr "PHP yerleşik yazı tipi: <img src=\"@font_preview_url\" alt=\"@title\" title=\"@title\">"
+
+msgid "Select the fonts to use for the text in the image CAPTCHA. Apart from the provided defaults, you can also use your own TrueType fonts (filename extension .ttf) by putting them in %fonts_library_general or %fonts_library_specific."
+msgstr "Resimli CAPTCHA'da metin için kullanılacak yazı tiplerini seçin. Sağlanan varsayılanların dışında %fonts_library_general ya da %fonts_library_specific içine koyarak kendi TrueType yazı tiplerinizi (dosya adı uzantısı .ttf) kullanabilirsiniz. "
+
+msgid "Font size"
+msgstr "Yazı tipi boyutu"
+
+msgid "tiny"
+msgstr "ufak"
+
+msgid "small"
+msgstr "küçük"
+
+msgid "normal"
+msgstr "normal"
+
+msgid "large"
+msgstr "geniş"
+
+msgid "extra large"
+msgstr "çok büyük (920x660)"
+
+msgid "The font size influences the size of the image. Note that larger values make the image generation more CPU intensive."
+msgstr "Yazı tipi boyutu, resmin boyutunu etkiler. Büyük değerlerin, resim oluşturma sırasında fazla CPU kullanımı gerektireceğini unutmayın."
+
+msgid "Character spacing"
+msgstr "Karakter aralığı"
+
+msgid "Define the average spacing between characters. Note that larger values make the image generation more CPU intensive."
+msgstr "Karakterler arasındaki ortalama boşluğu tanımlayın. Büyük değerlerin resim oluşturulmasını daha CPU yorucu yapacağını unutmayın."
+
+msgid "tight"
+msgstr "dar"
+
+msgid "wide"
+msgstr "geniş"
+
+msgid "extra wide"
+msgstr "çok geniş"
+
+msgid "Get new captcha!"
+msgstr "Yeni captcha al!"
+
+msgid "Missing required form ID on route @route"
+msgstr "@route rotasında gerekli form tanıtıcısı eksik"
+
+msgid "Generate new CAPTCHA image"
+msgstr "Yeni CAPTCHA resmi oluştur"
+
+msgid "CAPTCHA problem: unexpected result from hook_captcha() of module %module when trying to retrieve challenge type %type for form %form_id."
+msgstr "CAPTCHA sorunu: %form_id formu için %type sınama tipi alınmaya çalışılırken %module modülünün hook_captcha() öğesinden beklenmeyen sonuç."
+
+msgid "Captcha Point"
+msgstr "Captcha Noktası"
+
+msgid "Captcha Point form ID"
+msgstr "Captcha Noktası form tanıtıcısı"
+
+msgid "Captcha Point challenge type"
+msgstr "Captcha Noktası sınama tipi"
+
+msgid "Status"
+msgstr "Durum"
+
+msgid "Enabled"
+msgstr "Etkin"
+
+msgid "Disabled"
+msgstr "Etkin değil"
+
+msgid "This page gives an overview of all available challenge types, generated with their current settings."
+msgstr "Bu sayfada, kullanılabilir tüm CAPTCHA'ların mevcut ayarlarıyla oluşturulmuş görünümleri vardır."
+
+msgid "Challenge %challenge by module %module"
+msgstr "%module modülü tarafından %challenge sınaması"
+
+msgid "10 more examples of this challenge."
+msgstr "Bu CAPTCHA için 10 tane daha örnekl."
+
+msgid "Are you sure you want to delete %name?"
+msgstr "%name kişisini silmek istediğinize emin misiniz?"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Captcha point %label has been deleted."
+msgstr "Captcha noktası %label silindi."
+
+msgid "Are you sure you want to disable the Captcha?"
+msgstr "Captcha'yı devre dışı bırakmak istediğinizden emin misiniz?"
+
+msgid "This will disable the captcha."
+msgstr "Bu işlem, captcha'yı devre dışı bırakacak."
+
+msgid "Disable"
+msgstr "Devre dışı bırak"
+
+msgid "Captcha point %label has been disabled."
+msgstr "Captcha noktası %label devre dışı bırakıldı."
+
+msgid "Are you sure you want to enable the Captcha?"
+msgstr "Captcha'yı etkinleştirmek istediğinizden emin misiniz?"
+
+msgid "This will enable the captcha."
+msgstr "Bu işlem, captcha'yı etkinleştirecek."
+
+msgid "Enable"
+msgstr "Etkinleştir"
+
+msgid "Captcha point %label has been enabled."
+msgstr "Captcha noktası %label etkinleştirildi."
+
+msgid "Also works with the base form ID."
+msgstr "Temel form tanıtıcısıyla da çalışır."
+
+msgid "Challenge type"
+msgstr "Soru türü"
+
+msgid "The CAPTCHA type to use for this form."
+msgstr "Bu form için kullanılacak CAPTCHA tipi."
+
+msgid "Captcha Point for %form_id form was created."
+msgstr "%form_id formu için Captcha Noktası oluşturuldu."
+
+msgid "Captcha Point for %form_id form was updated."
+msgstr "%form_id formu için Captcha Noktası güncellendi."
+
+msgid "Default challenge type"
+msgstr "Öntanımlı sınama türü"
+
+msgid "Select the default <em>CAPTCHA Point</em> challenge type. This can be overridden for each <em>CAPTCHA Point</em> individually."
+msgstr "Varsayılan <em>CAPTCHA Noktası</em> sınama tipini seçin. Bu, her bir <em>CAPTCHA Noktası</em> için tek tek geçersiz kılınabilir."
+
+msgid "Add CAPTCHA challenges on all forms"
+msgstr "Tüm formlara CAPTCHA sınamaları ekleyin"
+
+msgid "Adds CAPTCHA to all Drupal forms, regardless of the Captcha Points list. Note, that the captcha point <em>default challenge</em> will be used as the challenge type for the created CAPTCHA challenges."
+msgstr "Captcha Noktaları listesinden bağımsız olarak tüm Drupal formlarına CAPTCHA ekler. Captcha noktasının <em>varsayılan sınamasının</em>, oluşturulan CAPTCHA sınaması için sınama tipi olarak kullanılacağına dikkat edin."
+
+msgid "Additionally add CAPTCHA challenges on admin forms"
+msgstr "Ayrıca yönetici formlarında CAPTCHA sınamaları ekleyin"
+
+msgid "Add CAPTCHA administration information to forms"
+msgstr "Formlara CAPTCHA yönetim bilgilerini ekleme"
+
+msgid "This option makes it easy to manage CAPTCHA settings on forms. When enabled, users with the <em>administer CAPTCHA settings</em> permission will see a fieldset with CAPTCHA administration links and informations on all forms, except on administrative pages."
+msgstr "Bu seçenek, formlarda CAPTCHA ayarlarının yönetilmesini kolaylaştırır. Etkinleştirildiğinde, <em>CAPTCHA ayarlarını yönet</em> iznine sahip kullanıcılar, yönetim sayfaları dışında tüm formlarda CAPTCHA yönetim bağlantıları ve bilgileriyle bir alan kümesi görür."
+
+msgid "Additionally add administration informations on admin pages"
+msgstr "Ayrıca yönetici sayfalarına yönetim bilgileri ekleyin"
+
+msgid "Typically this isn't needed. In some situations, e.g. in the case of demo sites, it can be useful to allow CAPTCHAs on administrative pages."
+msgstr "Genellikle bu gerekli değildir. Bazı durumlarda, örneğin demo sitelerinde, yönetim sayfalarında CAPTCHA'lara izin verilmesi yararlı olabilir."
+
+msgid "Whitelisted IP Addresses"
+msgstr "Güvenilir IP Adresleri"
+
+msgid "Enter the IP addresses or IP address ranges you wish to whitelist. All CAPTCHA challenges will be skipped for these IP addresses."
+msgstr "Beyaz listeye almak istediğiniz IP adreslerini ya da IP adresi aralıklarını girin. Bu IP adresleri için tüm CAPTCHA sınamaları atlanacaktır."
+
+msgid "Enter one IP-address per row in the format XXX.XXX.XXX.XXX. Alternatively you can also define IP-address ranges per row in the format XXX.XXX.XXX.YYY-XXX.XXX.XXX.ZZZ. No spaces allowed. Your current IP address is %ip_address."
+msgstr "Her satırda, XXX.XXX.XXX.XXX, biçiminde bir IP adresi girin. Alternatif olarak, her bir satırda, XXX.XXX.XXX.YYY-XXX.XXX.XXX.ZZZ biçiminde IP adresi aralıkları da belirtebilirsiniz. Boşluklara izin verilmez. Geçerli IP adresiniz: %ip_address."
+
+msgid "CAPTCHA placement caching"
+msgstr "CAPTCHA yerleştirme önbelleği"
+
+msgid "For efficiency, the positions of the CAPTCHA elements in each of the configured forms are cached. Most of the time, the structure of a form does not change and it would be a waste to recalculate the positions every time. Occasionally however, the form structure can change (e.g. during site building) and clearing the CAPTCHA placement cache can be required to fix the CAPTCHA placement."
+msgstr "Verimlilik için, yapılandırılan formların her birinde CAPTCHA öğelerinin yerleri önbelleğe alınır. Çoğu zaman bir formun yapısı değişmez ve her an konumların yeniden hesaplanması zaman kaybı olur. Ancak genellikle form yapısı değişebilir (örneğin site oluşturma sırasında) ve CAPTCHA yerleşiminin düzeltilmesi için CAPTCHA yerleşimi önbelleğinin temizlenmesi gerekebilir."
+
+msgid "Clear the CAPTCHA placement cache"
+msgstr "CAPTCHA yerleşimi önbelleğini temizle"
+
+msgid "Challenge title"
+msgstr "Sınama başlığı"
+
+msgid "Configure the title for the CAPTCHA form. Leave empty to show no title. Default: \"@title_default\""
+msgstr "CAPTCHA formu için başlığı yapılandırın. Başlık göstermemek için boş bırakın. Varsayılan: \"@title_default\""
+
+msgid "Challenge description"
+msgstr "Sınama açıklaması"
+
+msgid "Configurable description of the CAPTCHA. Leave empty to show no description. Default: \"@description_default\""
+msgstr "Yapılandırılabilir CAPTCHA açıklaması. Açıklama göstermemek için boş bırakın. Varsayılan: \"@description_default\""
+
+msgid "This question is for testing whether or not you are a human visitor and to prevent automated spam submissions."
+msgstr "Bu soru, gerçek bir ziyaretçi olup olmadığınızı test etmek ve otomatik istenmeyen gönderimleri önlemek içindir."
+
+msgid "Wrong CAPTCHA response error message"
+msgstr "Hatalı CAPTCHA yanıtı hata iletisi"
+
+msgid "Configurable error message that the user gets when it enters an incorrect CAPTCHA answer."
+msgstr "Hatalı bir CAPTCHA yanıtı girdiğinde kullanıcının aldığı yapılandırılabilir hata iletisi."
+
+msgid "Define how the response should be processed by default. Note that the modules that provide the actual challenges can override or ignore this."
+msgstr "Yanıtın varsayılan olarak nasıl işlenmesi gerektiğini tanımlayın. Gerçek sınamaları sağlayan modüllerin bunu geçersiz kılabileceğini ya da yok sayabileceğini göz önünde bulundurun."
+
+msgid "Case sensitive validation: the response has to exactly match the solution."
+msgstr "Büyük/küçük harf duyarlılığı doğrulaması: yanıtın çözümle tam olarak eşleşmesi gerekir."
+
+msgid "Case insensitive validation: lowercase/uppercase errors are ignored."
+msgstr "Büyük/küçük harf duyarsızlığı doğrulaması: küçük/büyük harf hataları yok sayılır."
+
+msgid "Persistence"
+msgstr "Kalıcılık"
+
+msgid "Always add a challenge."
+msgstr "Her zaman bir sınama ekle."
+
+msgid "Omit challenges in a multi-step/preview workflow once the user successfully responds to a challenge."
+msgstr "Kullanıcı bir sınamaya başarıyla yanıt verdiğinde çok adımlı/önizleme iş akışında sınamaları atlayın. "
+
+msgid "Omit challenges on a form type once the user successfully responds to a challenge on a form of that type."
+msgstr "Kullanıcı bir form tipinde bir sınamaya başarıyla yanıt verdiğinde o tipteki sınamaları atlayın. "
+
+msgid "Omit challenges on all forms once the user successfully responds to any challenge on the site."
+msgstr "Kullanıcı sitedeki bir sınamaya başarıyla yanıt verdiğinde tüm formlarda sınamaları atlayın. "
+
+msgid "Define if challenges should be omitted during the rest of a session once the user successfully responds to a challenge."
+msgstr "Kullanıcı bir sınamaya başarıyla yanıt verdiğinde bir oturumun geri kalanında sınamaların atlanması gerekip gerekmediğini tanımlayın."
+
+msgid "Keep CAPTCHA related counters in the <a href=\":statusreport\">status report</a>. Note that this comes with a performance penalty as updating the counters results in clearing the variable cache."
+msgstr "<a href=\":statusreport\">Durum raporunda</a> CAPTCHA ile ilgili sayaçları koruyun. Sayaç sonuçlarının güncellenmesi değişken önbelleğin temizlenmesiyle sonuçlandığından bunun bir performans cezası getirebileceğini göz önünde bulundurun."
+
+msgid "Report information about wrong responses to the log."
+msgstr "Günlüğe hatalı yanıtlar hakkında bilgileri raporlayın."
+
+msgid "Report information about wrong responses to the <a href=\":dblog\">log</a>."
+msgstr "<a href=\":dblog\">Günlüğe</a> hatalı yanıtlar hakkında bilgileri raporlayın."
+
+msgid "Save configuration"
+msgstr "Yapılandırmayı kaydet"
+
+msgid "IP address %ip_address is not valid."
+msgstr "IP adresi %ip_address geçerli değil."
+
+msgid "Lower IP address %ip_address in range %ip_range is not valid."
+msgstr "%ip_range aralığında alt IP adresi %ip_address geçerli değil."
+
+msgid "Upper IP address %ip_address in range %ip_range is not valid."
+msgstr "%ip_range aralığındaki üst IP adresi %ip_address geçerli değil."
+
+msgid "Lower and upper IP addresses should be different. Please correct range %ip_range."
+msgstr "Alt ve üst IP adresleri farklı olmalıdır. Lütfen %ip_range aralığını düzeltin."
+
+msgid "Lower IP can't be greater than upper IP addresses in range. Please correct range %ip_range."
+msgstr "Alt IP, aralıktaki üst IP adreslerinden büyük olamaz. Lütfen %ip_range aralığını düzeltin."
+
+msgid "The CAPTCHA settings have been saved."
+msgstr "CAPTCHA ayarları kaydedildi."
+
+msgid "Cleared the CAPTCHA placement cache."
+msgstr "CAPTCHA yerleşim önbelleği temizlendi."
+
+msgid "The name of the form"
+msgstr "Formun adı"
+
+msgid "The captcha point providing module."
+msgstr "Modül sağlayan captcha noktası."
+
+msgid "The captcha type."
+msgstr "Captcha tipi."
+
+msgid "@type (from module @module)"
+msgstr "@type (@module modülünden)"
+

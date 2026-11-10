@@ -1,0 +1,458 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Vote Result \"@result_function\" for @plural_label"
+msgstr "Výsledek hlasování \"@result_function\" pro @plural_label"
+
+msgid "This includes vote result \"@result_function\" for the @plural_label"
+msgstr "Zahrnuje výsledek hlasování \"@result_function\" pro @plural_label"
+
+msgid "Vote Result \"@result_function\" for @plural_label: @vote_type_label"
+msgstr "Výsledek hlasování \"@result_function\" pro @plural_label: @vote_type_label"
+
+msgid "This includes vote result \"@result_function\" for the @plural_label voted with @vote_type"
+msgstr "Zahrnuje výsledek hlasování \"@result_function\" pro @plural_label odevzdaný v rámci @vote_type"
+
+msgid "About"
+msgstr "Popis"
+
+msgid "VotingAPI helps developers who want to use a standardized API and schema for storing, retrieving and tabulating votes for Drupal content."
+msgstr "Rozhraní API hlasování pomáhá vývojářům, kteří chtějí použít standardizované rozhraní API a schéma pro ukládání, načítání a zobrazování hlasů pro obsah Drupal."
+
+msgid "Please view the %url page for more details."
+msgstr "Další podrobnosti naleznete na stránce %url."
+
+msgid "Voting API"
+msgstr "Rozhraní API hlasování"
+
+msgid "Uses"
+msgstr "Používá"
+
+msgid "General"
+msgstr "Obecné"
+
+msgid "VotingAPI uses a flexible, easy-to-use framework for rating, voting, moderation, and consensus-gathering modules in Drupal. Module developers use it to focus on their ideas (say, providing a \"rate this thread\" widget at the bottom of each forum post) without worrying about the grunt work of storing votes, preventing ballot-stuffing, calculating the results, and so on."
+msgstr "VotingAPI používá flexibilní, snadno použitelný rámec pro moduly hodnocení, hlasování, moderování a získávání konsensu v prostředí Drupal. Vývojáři modulů jej používají k zaměření na své nápady (např. poskytnutím modulu widget \"ohodnotit toto vlákno\" v dolní části každého příspěvku fóra) bez obav o hlavní účel práce, tj. ukládání hlasů, zabránění kumulace vhazovaných hlasovacích lístků, počítání výsledků atd."
+
+msgid "Basic Concepts and Features"
+msgstr "Základní koncepty a funkce"
+
+msgid "VotingAPI does NOT directly expose any voting mechanisms to end users. It is a framework designed to make life easier for other developers, and to standardize voting data for consumption by other modules (like Views)."
+msgstr "VotingAPI NEBUDE přímo vystavovat žádné hlasovací mechanismy koncovým uživatelům. Je to rámec zkonstruovaný tak, aby usnadnil život dalším vývojářům a standardizoval hlasovací data pro jejich využití jinými moduly (například pohledy)."
+
+msgid "Two kinds of records are stored: individual votes by each user on each piece of content, and cached \"result\" records. The cached records aggregate calculated values like the average vote for a piece of content, how many people voted on it, etc. Each time a user votes, the cached result records are automatically recalculated. This means that no \"on-the-fly\" calculations have to be done when displaying content ratings."
+msgstr "Ukládány jsou dva druhy záznamů: individuální hlasy jednotlivých uživatelů pro každou položku obsahu a agregované záznamy typu \"výsledek\". Agregované záznamy jsou sloučené vypočítávané hodnoty, jako je např. průměrné hlasování pro určitý obsah, kolik lidí k němu hlasovalo atd. Pokaždé, když uživatel odhlasuje, jsou tyto agregované výsledky automaticky přepočítány. To znamená, že při zobrazení hodnocení obsahu nemusejí být vykonávány žádné výpočty tzv. \"za běhu\"."
+
+msgid "Provides a voting API that other modules can make use of."
+msgstr "Poskytuje rozhraní API hlasování, jež může být používáno ostatními moduly."
+
+msgid "Voting"
+msgstr "Hlasování"
+
+msgid "Add vote type"
+msgstr "Přidat typ hlasování"
+
+msgid "Voting API Settings"
+msgstr "Nastavení rozhraní API hlasování"
+
+msgid "Vote Types"
+msgstr "Typy hlasování"
+
+msgid "Configure Voting API."
+msgstr "Konfigurujte rozhraní API hlasování."
+
+msgid "Manage Vote Types."
+msgstr "Spravujte typy hlasování."
+
+msgid "Settings"
+msgstr "Nastavení"
+
+msgid "Edit"
+msgstr "Upravit"
+
+msgid "List"
+msgstr "Seznam"
+
+msgid "Administer Voting API"
+msgstr "Spravovat rozhraní API hlasování"
+
+msgid "Allow access to configure Voting API."
+msgstr "Umožňuje přístup ke konfiguraci rozhraní API hlasování."
+
+msgid "Administer Vote Types"
+msgstr "Spravovat typy hlasování"
+
+msgid "Allow access to create/edit vote types."
+msgstr "Umožňuje přístup k vytváření/úpravě typů hlasování."
+
+msgid "Delete Votes"
+msgstr "Odstranit hlasy"
+
+msgid "Allow access to delete any vote."
+msgstr "Povolte přístup k odstranění všech hlasů."
+
+msgid "Voting API settings"
+msgstr "Nastavení rozhraní API hlasování"
+
+msgid "Delete"
+msgstr "Odstranit"
+
+msgid "VotingApi settings"
+msgstr "Nastavení rozhraní API hlasování"
+
+msgid "Anonymous vote rollover"
+msgstr "Překlopení anonymního hlasu"
+
+msgid "Registered user vote rollover"
+msgstr "Překlopení hlasu registrovaného uživatele"
+
+msgid "Vote tallying"
+msgstr "Sčítání hlasů"
+
+msgid "Delete everywhere"
+msgstr "Odstranit všude"
+
+msgid "Vote Type"
+msgstr "Typ hlasování"
+
+msgid "Machine-readable name"
+msgstr "Název čitelný pro počítač"
+
+msgid "Name"
+msgstr "Název"
+
+msgid "Type of vote value (percentage, points, etc.)"
+msgstr "Typ hodnoty hlasování (procentní hodnota, body atd.)"
+
+msgid "Description"
+msgstr "Popis"
+
+msgid "Voting API widget field settings."
+msgstr "Nastavení pole modulu widget rozhraní API hlasování."
+
+msgid "Vote plugin"
+msgstr "Modul plug-in hlasování"
+
+msgid "Vote type"
+msgstr "Typ hlasování"
+
+msgid "Status"
+msgstr "Stav"
+
+msgid "Result function"
+msgstr "Funkce výsledku"
+
+msgid "Widget format"
+msgstr "Formát modulu widget"
+
+msgid "Default value"
+msgstr "Výchozí hodnota"
+
+msgid "VotingAPI tokens"
+msgstr "Tokeny VotingAPI"
+
+msgid "Dynamic Tokens for VotingAPI."
+msgstr "Dynamické tokeny pro VotingAPI."
+
+msgid "Vote count"
+msgstr "Počet hlasů"
+
+msgid "Number of votes."
+msgstr "Počet hlasů."
+
+msgid "Average Result"
+msgstr "Průměrný výsledek"
+
+msgid "Average result of votes."
+msgstr "Průměrný výsledek hlasování."
+
+msgid "Best Vote"
+msgstr "Nejlepší hlas"
+
+msgid "Best Vote cast."
+msgstr "Odevzdání nejlepšího hlasu."
+
+msgid "Worst Vote"
+msgstr "Nejhorší hlas"
+
+msgid "Worst Vote cast."
+msgstr "Odevzdání nejhoršího hlasu."
+
+msgid "This module enables tokens for all entity types that has <kbd>voting_api_field</kbd>."
+msgstr "Tento modul povoluje tokeny pro všechny typy entit, které mají <kbd>voting_api_field</kbd>."
+
+msgid "Usage"
+msgstr "Použití"
+
+msgid "Tokens are dynamic and you have to pass <emph>vote_type</emph> as the last parameter. Module defines four tokens:"
+msgstr "Tokeny jsou dynamické a vy musíte předat <emph>vote_type</emph> jako poslední parametr. Modul definuje čtyři tokeny:"
+
+msgid "<ul><li>Vote count :: <code>[votingapi_ENTITY_TYPE_token:vote_count:VOTE_TYPE]</code></li>"
+msgstr "<ul><li>Počet hlasů :: <code>[votingapi_ENTITY_TYPE_token:vote_count:VOTE_TYPE]</code></li>"
+
+msgid "<li>Vote average :: <code>[votingapi_ENTITY_TYPE_token:vote_average:VOTE_TYPE]</code></li>"
+msgstr "<li>Průměr hlasování :: <code>[votingapi_ENTITY_TYPE_token:vote_average:VOTE_TYPE]</code></li>"
+
+msgid "<li>Best vote :: <code>[votingapi_ENTITY_TYPE_token:best_vote:VOTE_TYPE]</code></li>"
+msgstr "<li>Nejlepší hlas :: <code>[votingapi_ENTITY_TYPE_token:best_vote:VOTE_TYPE]</code></li>"
+
+msgid "<li>Worst vote :: <code>[votingapi_ENTITY_TYPE_token:worst_vote:VOTE_TYPE]</code></li>"
+msgstr "<li>Nejhorší hlas :: <code>[votingapi_ENTITY_TYPE_token:worst_vote:VOTE_TYPE]</code></li>"
+
+msgid "Voting API Tokens"
+msgstr "Tokeny rozhraní API hlasování"
+
+msgid "Token support for Voting API"
+msgstr "Podpora tokenu pro rozhraní API hlasování"
+
+msgid "Edit %label vote type"
+msgstr "Upravit typ hlasování %label"
+
+msgid "The human-readable name of this vote type. This text will be displayed as part of the list on the <em>Add vote type</em> page. This name must be unique."
+msgstr "Název tohoto typu hlasování čitelný pro člověka. Tento text se bude zobrazovat v seznamu na stránce <em>Přidat typ hlasování</em>. Tento název musí být jedinečný."
+
+msgid "A unique machine-readable name for this vote type. It must only contain lowercase letters, numbers, and underscores."
+msgstr "Jedinečný strojově čitelný název pro tento typ hlasování. Smí obsahovat pouze malá písmena, číslice a podtržítka."
+
+msgid "Value type"
+msgstr "Typ hodnoty"
+
+msgid "The type of value for this vote (percentage, points, etc.)"
+msgstr "Typ hodnoty pro toto hlasování (procentní hodnota, body atd.)"
+
+msgid "Describe this vote type. The text will be displayed on administrative pages."
+msgstr "Popište tento typ hlasování. Text se bude zobrazovat na stránkách administrace."
+
+msgid "Save vote type"
+msgstr "Uložit typ hlasování"
+
+msgid "Delete vote type"
+msgstr "Odstranit typ hlasování"
+
+msgid "The vote type %name has been updated."
+msgstr "Typ hlasování %name byl aktualizován."
+
+msgid "The vote type %name has been added."
+msgstr "Typ hlasování %name byl přidán."
+
+msgid "View"
+msgstr "Zobrazit"
+
+msgid "Added vote type %name."
+msgstr "Byl přidán typ hlasování %name."
+
+msgid "Id"
+msgstr "ID"
+
+msgid "Label"
+msgstr "Štítek"
+
+msgid "No vote types available. <a href=\"@link\">Add vote type</a>."
+msgstr "Nejsou k dispozici žádné typy hlasování. <a href=\"@link\">Přidat typ hlasování</a>."
+
+msgid "Generated @vtype votes for @etype entities."
+msgstr "Generované hlasy @vtype pro entity @etype."
+
+msgid "Rebuilt voting results for @type votes."
+msgstr "Opětovné sestavení výsledků hlasování pro hlasování @type."
+
+msgid "Rebuilt voting results for @type id: @entity_id."
+msgstr "Opětovné sestavení výsledků hlasování pro @type id: @entity_id."
+
+msgid "Delete @type voting data?"
+msgstr "Odstranit data hlasování @type?"
+
+msgid "Flushed vote data for @type entities."
+msgstr "Vyprázdněná data hlasování pro entity @type."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "The vote ID."
+msgstr "ID hlasování."
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "The vote UUID."
+msgstr "UUID hlasování."
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "The vote type."
+msgstr "Typ hlasování."
+
+msgid "Entity Type"
+msgstr "Typ entity"
+
+msgid "The type from the voted entity."
+msgstr "Typ z hlasované entity."
+
+msgid "Voted entity"
+msgstr "Hlasovaná entita"
+
+msgid "The ID from the voted entity"
+msgstr "ID z hlasované entity"
+
+msgid "Value"
+msgstr "Hodnota"
+
+msgid "The numeric value of the vote."
+msgstr "Číselná hodnota hlasování."
+
+msgid "Value Type"
+msgstr "Typ hodnoty"
+
+msgid "Authored by"
+msgstr "Author"
+
+msgid "The user who submitted the vote."
+msgstr "Uživatel, který odevzdal hlas."
+
+msgid "Created"
+msgstr "Vytvořeno"
+
+msgid "The time that the entity was created."
+msgstr "Čas vytvoření entity."
+
+msgid "Vote Source"
+msgstr "Zdroj hlasu"
+
+msgid "The IP address hash from the user who submitted the vote."
+msgstr "Hašování adresy IP, kterou uživatel použil k odevzdání hlasu."
+
+msgid "Vote"
+msgstr "Hlas"
+
+msgid "Votes"
+msgstr "Hlasy"
+
+msgid "vote"
+msgstr "hlas"
+
+msgid "votes"
+msgstr "hlasy"
+
+msgid "The vote result ID."
+msgstr "ID výsledku hlasování."
+
+msgid "Function"
+msgstr "Funkce"
+
+msgid "Function to apply to the numbers."
+msgstr "Funkce, která má být použita na čísla."
+
+msgid "Vote result"
+msgstr "Výsledek hlasování"
+
+msgid "Vote results"
+msgstr "Výsledky hlasování"
+
+msgid "vote result"
+msgstr "výsledek hlasování"
+
+msgid "vote results"
+msgstr "výsledky hlasování"
+
+msgid "Vote Result"
+msgstr "Výsledek hlasování"
+
+msgid "The Vote Result ID."
+msgstr "ID výsledku hlasování."
+
+msgid "Vote types"
+msgstr "Typy hlasování"
+
+msgid "vote type"
+msgstr "Typ hlasování"
+
+msgid "vote types"
+msgstr "Typy hlasování"
+
+msgid "The Vote ID."
+msgstr "ID hlasování."
+
+msgid "The amount of time that must pass before two anonymous votes from the same computer are considered unique. Setting this to 'never' will eliminate most double-voting, but will make it impossible for multiple anonymous on the same computer (like internet cafe customers) from casting votes."
+msgstr "Čas, který musí uplynout předtím, než budou dva anonymní hlasy na témže počítači považovány za jedinečné. Nastavíte-li zde hodnotu 'Nikdy', odstraníte tak většinu vícenásobného hlasování, avšak znemožníte hlasování více anonymním uživatelům na témže počítači (například zákazníkům internetové kavárny)."
+
+msgid "The amount of time that must pass before two registered user votes from the same user ID are considered unique. Setting this to 'never' will eliminate most double-voting for registered users."
+msgstr "Čas, který musí uplynout před tím, než budou dva hlasy téhož registrovaného uživatele považovány za dva jedinečné hlasy. Nastavíte-li zde hodnotu 'Nikdy', odstraníte tak většinu vícenásobného hlasování registrovaných uživatelů."
+
+msgid "Calculation schedule"
+msgstr "Rozvrh výpočtu"
+
+msgid "On high-traffic sites, administrators can use this setting to postpone the calculation of vote results."
+msgstr "Na webech s vysokým provozem mohou administrátoři použít toto nastavení k odložení výpočtu výsledků hlasování."
+
+msgid "Tally results whenever a vote is cast"
+msgstr "Sečíst výsledky při každém odevzdání hlasu"
+
+msgid "Tally results at cron-time"
+msgstr "Sečíst výsledky v čase programu cron"
+
+msgid "Do not tally results automatically: I am using a module that manages its own vote results."
+msgstr "Nesčítat hlasy automaticky: Používám modul, který zajišťuje správu vlastních výsledků hlasování."
+
+msgid "Allow deleting votes to someone else's entity when owner user of this votes is deleting."
+msgstr "Povolit odstraňování hlasů pro entitu někoho jiného, když odstranění provádí uživatel - vlastník těchto hlasů."
+
+msgid "Are you sure you want to delete the vote?"
+msgstr "Opravdu chcete hlas odstranit?"
+
+msgid "The vote by %user on @entity-type %label has been deleted."
+msgstr "Hlas od %user v @entity-type %label byl odstraněn."
+
+msgid "You are about to delete a vote by %user on @entity-type %label. This action cannot be undone."
+msgstr "Chystáte se odstranit hlas od %user v @entity-type %label. Tuto akci nelze vrátit zpět."
+
+msgid "%type is used by 1 piece of content on your site. You can not remove this vote type until you have removed that vote."
+msgid_plural "%type is used by @count pieces of content on your site. You may not remove %type until you have removed all of the %type votes."
+msgstr[0] "%type je používán jednou položkou obsahu na vašem webu. Tento typ hlasování budete moci odebrat až po odebrání tohoto hlasování."
+msgstr[1] "%type je používán @count položkami obsahu na vašem webu. %type budete moci odebrat až po odebrání všech hlasování typu %type."
+msgstr[2] "%type je používán @count položkami obsahu na vašem webu. %type budete moci odebrat až po odebrání všech hlasování typu %type."
+
+msgid "Average"
+msgstr "Průměr"
+
+msgid "The average vote value."
+msgstr "Průměrná hodnota hlasování. "
+
+msgid "Count"
+msgstr "Počet"
+
+msgid "The number of votes cast."
+msgstr "Počet odevzdaných hlasů. "
+
+msgid "Sum"
+msgstr "Součet"
+
+msgid "The total of all vote values."
+msgstr "Součet všech hodnot odevzdaných hlasů."
+
+msgid "Vote ID"
+msgstr "ID hlasování"
+
+msgid "Entity ID"
+msgstr "ID entity"
+
+msgid "Tag"
+msgstr "Značka"
+
+msgid "User ID"
+msgstr "ID uživatele"
+
+msgid "Timestamp"
+msgstr "Časová značka"
+

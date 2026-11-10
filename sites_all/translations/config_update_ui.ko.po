@@ -1,0 +1,254 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "정보"
+
+msgid "The Configuration Update Reports module provides a report that allows you to see the differences between the default configuration provided by the current versions of your installed modules, themes, and install profile, and the active configuration of your site. From this report, you can also import new configuration provided by updates, and revert your active configuration to the provided default values."
+msgstr "구성 업데이트 보고서 모듈은 사용자가 설치된 모듈, 테마 및 설치 프로파일의 현재 버전이 제공하는 기본 구성과 사이트의 활성 구성 사이의 차이를 알 수 있는 보고서를 제공합니다. 이 보고서에서 업데이트가 제공하는 새 구성을 가져올 수도 있고, 활성 구성을 제공되는 기본값으로 되돌릴 수도 있습니다. "
+
+msgid "Uses"
+msgstr "사용"
+
+msgid "Checking for configuration differences"
+msgstr "구성 차이점 확인"
+
+msgid "The <a href=\":report\">Updates report</a> shows you configuration that differs between your site's active configuration and the installed modules, themes, and install profile. Choose a particular configuration type (or All), or run the report for a particular module, theme, or your install profile."
+msgstr "<a href=\":report\">업데이트 보고서</a>는 사용자 사이트의 활성 구성과 설치된 모듈, 테마 및 설치 프로파일 사이에서 다른 구성을 표시합니다. 특정 구성 유형(또는 모두)을 선택하거나, 특정 모듈, 테마 또는 설치 프로파일에 대한 보고서를 실행하십시오. "
+
+msgid "This report shows which default configuration items provided by the current versions of your installed modules, themes, and install profile differ from the active configuration of your site. You can generate the report for all configuration of a certain type; for a particular installed module, theme, or your install profile (only modules, themes, and install profiles that actually provide configuration are listed); or for all configuration."
+msgstr "이 보고서는 사용자의 설치된 모듈, 테마 및 설치 프로파일이 제공하는 기본 구성 항목이 사이트의 활성 구성과 다른 구성 항목을 표시합니다. 특정 유형의 모든 구성에 대한 보고서를 생성하거나, 특정 설치된 모듈, 테마 또는 설치 프로파일(실제로 구성을 제공하는 모듈, 테마 및 설치 프로파일만 나열됨)또는 모든 구성에 대한 보고서를 생성할 수 있습니다."
+
+msgid "Some configuration provided by modules has dependencies, and is only added to your system when all the dependencies are satisfied. This is known as <em>optional</em> configuration."
+msgstr "모듈이 제공하는 일부 구성은 종속성을 갖고 있으며, 모든 종속성이 만족되었을 때만 사용자 시스템에 추가됩니다. 이것을 <em>선택적</em> 구성이라고 합니다. "
+
+msgid "Differences, including missing and added configuration, can be due to either an updated module or theme providing different configuration from when you installed it, or to changes made by site administrators. This report does not differentiate between these two sources for differences, and note that an install profile can also silently override module/theme configuration. Overrides (such as those in your settings.php file) and translations are not considered when looking at differences."
+msgstr "누락 및 추가된 구성을 포함한 차이는 설치할 때 다른 구성을 제공하는 업데이트된 모듈이나 테마 또는 사이트 관리자가 작성한 변경사항으로 인한 것일 수 있습니다. 이 보고서는 이런 두 개의 차이점 소스 사이를 구별하지 않으며, 설치 프로파일이 자동으로 모듈/테마 구성을 대체할 수도 있음을 참고하십시오. 대체(settings.php 파일에 있는 대체 같은) 및 변환은 차이점을 찾을 때 고려되지 않습니다. "
+
+msgid "Most configuration is organized into a hierarchy of settings; at a minimum, it is a one-level hierarchy where each setting has a name and a value, and the hierarchy comes in when some of the settings have multiple components."
+msgstr "대부분의 구성은 설정 계층 구조로 구성됩니다. 최소한 각 설정이 이름과 값을 갖는 1레벨 계층이며, 계층은 설정의 일부가 다중 컴포넌트를 가질 때 발생합니다. "
+
+msgid "Configuration items are normalized and formatted before computing differences. The normalization step alphabetizes the components at each level of the hierarchy, and removes a few components whose differences should be ignored, such as the UUID. The formatting step shows the full hierarchy of each configuration value with :: separators for the hierarchy levels, and a : separator between the lowest-level setting name and the value, so that in a line-by-line diff you can always see which values are actually different. Green lines with + signs have been added, and yellow lines with - signs have been removed."
+msgstr "구성 항목은 차이를 계산하기 전에 명목화 및 형식화됩니다. 명목화 단계는 계층의 각 레벨에 있는 컴포넌트를 영문자로 만들고, UUID 같이 그의 차이를 무시해야 하는 소수의 컴포넌트를 제거합니다. 형식화 단계는 계층 구조 레벨에 대한 :: 구분 기호와 최하위 레벨 설정 이름과 값 사이의 : 구분 기호와 함께 각 구성값의 전체 계층 구조를 표시하므로, 행별 차이에서 항상 실제로 다른 값을 알 수 있습니다. + 부호를 갖는 초록색 선이 추가되었고, - 부호를 갖는 노란색 행이 제거되었습니다. "
+
+msgid "Note that differences are considering the base configuration, without overrides from your settings.php file, or translations."
+msgstr "차이는 settings.php 파일이나 변환의 대체 없이 기본 구성을 고려하고 있음을 참고하십시오. "
+
+msgid "Updates report"
+msgstr "업데이트 보고서"
+
+msgid "Configuration Update Reports"
+msgstr "구성 업데이트 보고서"
+
+msgid "Adds an updates report and revert functionality to configuration management."
+msgstr "구성 관리에 업데이트 보고서 및 되돌리기 기능을 추가합니다."
+
+msgid "View configuration updates report"
+msgstr "구성 업데이트 보고서 보기"
+
+msgid "Revert any configuration"
+msgstr "모든 구성 되돌리기"
+
+msgid "Delete any configuration"
+msgstr "모든 구성 삭제"
+
+msgid "Import"
+msgstr "가져오기"
+
+msgid "Differences"
+msgstr "차이점"
+
+msgid "Revert"
+msgstr "되돌리기"
+
+msgid "Delete"
+msgstr "삭제"
+
+msgid "Configuration Update Reports settings"
+msgstr "구성 업데이트 보고서 설정"
+
+msgid "Ignored configuration items"
+msgstr "무시된 구성 항목"
+
+msgid "No added config."
+msgstr "추가된 구성이 없습니다."
+
+msgid "No missing config."
+msgstr "누락된 구성이 없습니다."
+
+msgid "No inactive config."
+msgstr "비활성 구성이 없습니다."
+
+msgid "No different config"
+msgstr "다른 구성이 없음"
+
+msgid "Config is missing, cannot diff."
+msgstr "구성이 누락되었으며 구별할 수 없습니다."
+
+msgid "The configuration item @name was reverted to its source."
+msgstr "@name 구성 항목이 그의 소스로 되돌아갔습니다. "
+
+msgid "There was an error and the configuration item @name was not reverted."
+msgstr "오류가 있으며 @name 구성 항목이 되돌아가지 않았습니다. "
+
+msgid "The configuration item @name was imported from its source."
+msgstr "@name 구성 항목을 그의 소스로부터 가져왔습니다. "
+
+msgid "There was an error and the configuration item @name was not imported."
+msgstr "오류가 있으며 @name 구성 항목을 가져오지 않았습니다. "
+
+msgid "Simple configuration"
+msgstr "단순 구성"
+
+msgid "Config difference for @type @name"
+msgstr "@type @name에 대한 구성 차이"
+
+msgid "Source config"
+msgstr "소스 구성"
+
+msgid "Site config"
+msgstr "사이트 구성"
+
+msgid "There are no changes."
+msgstr "변경사항이 없습니다."
+
+msgid "Revert to source"
+msgstr "소스로 되돌리기"
+
+msgid "Export"
+msgstr "내보내기"
+
+msgid "Back to 'Updates report' page"
+msgstr "'업데이트 보고서' 페이지로 돌아가기"
+
+msgid "Generate new report"
+msgstr "새 보고서 생성"
+
+msgid "Report type"
+msgstr "보고서 유형"
+
+msgid "Report on"
+msgstr "보고 대상"
+
+msgid "Everything"
+msgstr "모두"
+
+msgid "Full report"
+msgstr "전체 보고서"
+
+msgid "Single configuration type"
+msgstr "단일 구성 유형"
+
+msgid "Single module"
+msgstr "단일 모듈"
+
+msgid "Single theme"
+msgstr "단일 테마"
+
+msgid "Installation profile"
+msgstr "설치 프로파일"
+
+msgid "All configuration"
+msgstr "모든 구성"
+
+msgid "@name configuration"
+msgstr "@name 구성"
+
+msgid "@name module"
+msgstr "@name 모듈"
+
+msgid "@name theme"
+msgstr "@name 테마"
+
+msgid "@name profile"
+msgstr "@name 프로파일"
+
+msgid "Configuration updates report for @label"
+msgstr "@label에 대한 구성 업데이트 보고서"
+
+msgid "Missing configuration items"
+msgstr "누락된 구성 항목"
+
+msgid "None: all provided configuration items are in your active configuration."
+msgstr "없음: 모든 제공된 구성 항목이 활성 구성에 있습니다. "
+
+msgid "Inactive optional items"
+msgstr "비활성 선택적 항목"
+
+msgid "None: all optional configuration items are in your active configuration."
+msgstr "없음: 모든 선택적 구성 항목이 활성 구성에 있습니다. "
+
+msgid "Added configuration items"
+msgstr "구성 항목 추가"
+
+msgid "None: all active configuration items of this type were provided by modules, themes, or install profile."
+msgstr "없음: 이 유형의 모든 활성 구성 항목이 모듈, 테마 또는 설치 프로파일에 의해 제공되었습니다. "
+
+msgid "Changed configuration items"
+msgstr "구성 항목 변경"
+
+msgid "None: no active configuration items differ from their current provided versions."
+msgstr "없음: 현재 제공되는 버전과 다른 활성 구성 항목이 없습니다. "
+
+msgid "Machine name"
+msgstr "머신 이름"
+
+msgid "Label (if any)"
+msgstr "레이블(있는 경우)"
+
+msgid "Type"
+msgstr "유형"
+
+msgid "Provider"
+msgstr "제공자"
+
+msgid "Operations"
+msgstr "오퍼레이션"
+
+msgid "Import from source"
+msgstr "소스에서 가져오기"
+
+msgid "Show differences"
+msgstr "차이 표시"
+
+msgid "Malformed config file @config_name."
+msgstr "구성 파일 @config_name이(가) 올바르지 않습니다."
+
+msgid "Are you sure you want to delete the %type config %item?"
+msgstr "%type 구성 %item을(를) 삭제하시겠습니까? "
+
+msgid "This action cannot be undone. Manually deleting configuration from this page can cause problems on your site due to missing dependencies, and should only be done if there is no other way to delete a problematic piece of configuration."
+msgstr "이 조치를 실행 취소할 수 없습니다. 이 페이지에서 구성을 수동으로 삭제하면 누락된 종속 항목으로 인해 사이트에 문제점을 유발할 수 있으며, 구성의 문제가 있는 부분을 삭제할 다른 방법이 없는 경우에만 수행되어야 합니다. "
+
+msgid "The configuration %item has been deleted."
+msgstr "구성 %item이(가) 삭제되었습니다."
+
+msgid "Are you sure you want to import the %type config %item from its source configuration?"
+msgstr "소스 구성에서 %type 구성 %item을(를) 가져오시겠습니까?"
+
+msgid "Configuration will be added to your site. This action cannot be undone."
+msgstr "구성이 사이트에 추가됩니다. 이 조치를 실행 취소할 수 없습니다."
+
+msgid "The configuration %item has been imported from its source."
+msgstr "구성 %item을(를) 소스에서 가져왔습니다."
+
+msgid "Are you sure you want to revert the %type config %item to its source configuration?"
+msgstr "%type 구성 %item을(를) 그의 소스 구성으로 되돌리시겠습니까? "
+
+msgid "Customizations will be lost. This action cannot be undone."
+msgstr "사용자 정의가 유실됩니다. 이 조치를 실행 취소할 수 없습니다. "
+
+msgid "The configuration %item has been reverted to its source."
+msgstr "구성 %item이(가) 해당 소스로 되돌아갔습니다."
+

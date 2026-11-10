@@ -1,0 +1,176 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Warmer"
+msgstr "預熱程式"
+
+msgid "Module that provides infrastructure for common cache warming/pre-fetching techniques."
+msgstr "為一般快取預熱/預先提取技術提供基礎架構的模組。"
+
+msgid "Cache warming"
+msgstr "快取預熱"
+
+msgid "Configure cache warming behaviors to improve application performance."
+msgstr "配置快取預熱行為以提高應用程式效能。"
+
+msgid "Warm caches"
+msgstr "暖快取"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Configure cache warmers"
+msgstr "配置快取預熱程式"
+
+msgid "Warmer Settings"
+msgstr "預熱程式設定"
+
+msgid "Warmers"
+msgstr "預熱程式"
+
+msgid "CDN Warmer"
+msgstr "CDN 預熱程式"
+
+msgid "Executes HTTP requests to warm the edge caches. It is useful without a CDN as well, as it will also warm Varnish and Page Cache."
+msgstr "執行 HTTP 要求以對邊緣快取進行預熱。 沒有 CDN 也很有用，因為它還會對 Varnish 及頁面快取進行預熱。"
+
+msgid "URLs"
+msgstr "URL"
+
+msgid "Enter the list of URLs. One on each line. Examples: https://example.org/foo/bar, /foo/bar."
+msgstr "輸入 URL 清單。 每行各一個。 範例：https://example.org/foo/bar, /foo/bar。"
+
+msgid "Headers"
+msgstr "標題"
+
+msgid "Specific headers to use when making HTTP requests. Format: <code>Header-Name: value1; value2</code>"
+msgstr "發出 HTTP 要求時要使用的特定標頭。 格式：<code>Header-Name: value1; value2</code>"
+
+msgid "Enable SSL verification"
+msgstr "啟用 SSL 驗證"
+
+msgid "Enable SSL verification. Recommended to keep it checked for security reasons."
+msgstr "啟用 SSL 驗證。 基於安全考量，建議將其保持為已勾選。"
+
+msgid "Maximum number of concurrent Requests."
+msgstr "並行要求數目上限。"
+
+msgid "The maximum number of concurrent requests."
+msgstr "並行要求數目上限。"
+
+msgid "CDN"
+msgstr "CDN"
+
+msgid "minPriority should be a float between 0 and 1."
+msgstr "minPriority 應該是介於 0 與 1 之間的浮點。"
+
+msgid "Sitemaps"
+msgstr "網站地圖"
+
+msgid "Enter the list of sitemap URLs. One on each line. Examples: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+msgstr "輸入網站地圖 URL 的清單。 每行各一個。 範例：https://example.org/sitemap.xml, /drupal-sitemap.xml。"
+
+msgid "Minimum Priority"
+msgstr "最低優先順序"
+
+msgid "URLs with a lower priority than the configured will not be warmed. A float value between 0 and 1."
+msgstr "將不會對優先順序低於所配置優先順序的 URL 進行預熱。 介於 0 與 1 之間的浮點值。"
+
+msgid "This defines the maximum number of concurrent requests."
+msgstr "這會定義並行要求的數目上限。"
+
+msgid "There was an error parsing the Sitemap in %location. Please check the watchdog logs for more information."
+msgstr "剖析 %location 中的網站地圖時發生錯誤。 如需相關資訊，請檢查監視器日誌。"
+
+msgid "CDN via Sitemap"
+msgstr "透過網站地圖的 CDN"
+
+msgid "Collects the URLs to warm from the sitemap. Then uses the CDN warmer for those."
+msgstr "從網站地圖中收集要預熱的 URL。 然後，針對其使用 CDN 預熱程式。"
+
+msgid "All headers must have a colon. Follow the format: <code>the-name: the-value</code>"
+msgstr "所有標頭皆必須具有冒號。 遵循下列格式： <code>the-name: the-value</code>"
+
+msgid "Entity Warmer"
+msgstr "實體預熱程式"
+
+msgid "Warms the entity cache for the configured entity types."
+msgstr "對已配置實體類型的實體快取進行預熱。"
+
+msgid "Entity Types"
+msgstr "實體類型"
+
+msgid "Enable the entity types to warm asynchronously."
+msgstr "允許實體類型非同步預熱。"
+
+msgid "Entity"
+msgstr "實體"
+
+msgid "Loads entities from the selected entity types & bundles to warm the entity cache."
+msgstr "從選定實體類型載入實體，並組合以針對實體快取發出警告。"
+
+msgid "@total items enqueued for cache warming."
+msgstr "已將 @total 個項目放入佇列進行快取預熱。"
+
+msgid "If you need your items into cache right away you can run \"drush queue-run warmer\"."
+msgstr "如果您需要立即將項目放入快取中，則可以執行「drush 佇列-執行預熱程式」。"
+
+msgid "Warming caches in @count batches from the \"warmer\" queue."
+msgstr "從「預熱程式」佇列對 @count 批次中的快取進行預熱。"
+
+msgid "Warmer plugin(s) not found: !names."
+msgstr "找不到預熱程式外掛程式：!names。"
+
+msgid "This page allows you to enqueue cache warming operations manually. This will put the cache warming operations in a queue. If you want to actually execute them right away you can force processing the queue. A good way to do that is by installing the <a href=\":url\">Queue UI</a> module or using Drush. This module will provide a UI to process an entire queue."
+msgstr "此頁面可讓您手動將快取預熱作業放入佇列。 這會將快取預熱作業放入佇列中。 如果要立即實際執行這些作業，則可強制處理該佇列。 安裝<a href=\":url\">佇列使用者介面</a>模組或使用 Drush，是執行此動作的良好方法。 此模組將提供使用者介面來處理整個佇列。"
+
+msgid "Description"
+msgstr "說明"
+
+msgid "No warmers available. Enable the Entity Warmer submodule, or try installing extending modules like JSON:API Boost."
+msgstr "沒有可用的預熱程式。 請啟用「實體預熱程式」子模組，或嘗試安裝諸如 JSON:API Boost 的延伸模組。"
+
+msgid "Warm Caches"
+msgstr "暖快取"
+
+msgid "List of queues"
+msgstr "佇列清單"
+
+msgid "Configure the cache warming behaviors. Each cache warmer is a plugin that may contain specific settings. They are all configured here."
+msgstr "配置快取預熱行為。 每個快取預熱程式都是可能包含特定設定的外掛程式。 它們全部在這裡進行配置。"
+
+msgid "Settings saved for plugin(s): %names"
+msgstr "已儲存外掛程式的設定：%names"
+
+msgid "Frequency should be a positive number."
+msgstr "頻率應該為正數。"
+
+msgid "Batch size should be a number greater than 1."
+msgstr "批次大小應該是大於 1 的數字。"
+
+msgid "Frequency"
+msgstr "頻率"
+
+msgid "Only re-enqueue warming operations after at least this many seconds have passed."
+msgstr "只有在至少經過此秒數之後，才將預熱作業重新移入佇列。"
+
+msgid "Batch Size"
+msgstr "批次大小"
+
+msgid "Number of items to enqueue and process in a single go."
+msgstr "每次要放入佇列及處理的項目數。"
+
+msgid "Cache warmer"
+msgstr "快取預熱程式"
+

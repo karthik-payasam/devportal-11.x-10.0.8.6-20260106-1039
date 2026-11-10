@@ -1,0 +1,2971 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Processed @processed of @total overridden Metatag records."
+msgstr "Zpracováno @processed z @total přepsaných záznamů metaznaček."
+
+msgid "There were no overridden Metatag records."
+msgstr "Nebyly přepsány žádné záznamy metaznaček."
+
+msgid "Metatags"
+msgstr "Metaznačky"
+
+msgid "Tokens related to Metatags."
+msgstr "Tokeny související s metaznačkami."
+
+msgid "Metatag values for the current page."
+msgstr "Hodnoty metaznaček pro aktuální stránku."
+
+msgid "@label tokens."
+msgstr "Tokeny @label."
+
+msgid "List of @type values"
+msgstr "Seznam hodnot @type"
+
+msgid "Tokens for lists of @type values."
+msgstr "Tokeny pro seznamy hodnot @type."
+
+msgid "@type type with delta @delta"
+msgstr "Typ @type s rozdílem @delta"
+
+msgid "Metatags (Hidden field for JSON support)"
+msgstr "Metaznačky (skryté pole pro podporu JSON)"
+
+msgid "The meta tags for the entity."
+msgstr "Metaznačky pro entitu. "
+
+msgid "About"
+msgstr "Popis"
+
+msgid "This module allows a site to automatically provide structured metadata, aka \"meta tags\", about the site and individual pages."
+msgstr "Tento modul umožňuje webu automaticky poskytovat strukturovaná metadata, známá rovněž jako \"metaznačky\", o webu a jednotlivých stránkách. "
+
+msgid "In the context of search engine optimization, providing an extensive set of meta tags may help improve the site's and pages' rankings, thus may aid with achieving a more prominent display of the content within search engine results. They can also be used to tailor how content is displayed when shared on social networks. For additional information, see the <a href=\":online\">online documentation for Metatag</a>."
+msgstr "V kontextu optimalizace vyhledávacího stroje může poskytování rozsáhlé sady metaznaček pomoci zlepšit hodnocení webu a stránek, a může tak pomoci dosáhnout výraznějšího zobrazení obsahu v rámci výsledků vyhledávacího stroje. Je rovněž vhodné k přizpůsobení zobrazení obsahu při sdílení na sociálních sítích. Další informace naleznete v <a href=\":online\">dokumentaci online pro modul Metaznačka</a>."
+
+msgid "Intended workflow"
+msgstr "Zamýšlený sled prací"
+
+msgid "The module uses <a href=\":tokens\">\"tokens\"</a> to automatically fill in values for different meta tags. Specific values may also be filled in."
+msgstr "Modul používá <a href=\":tokens\">\"tokeny\"</a> k automatickému vyplňování hodnot pro různé metaznačky. Vyplňovat lze i konkrétní hodnoty."
+
+msgid "The best way of using Metatag is as follows:"
+msgstr "Nejlepší způsob používání modulu Metaznačka:"
+
+msgid "Customize the <a href=\":defaults\">global defaults</a>, fill in the specific values and tokens that every page should have."
+msgstr "Upravte <a href=\":defaults\">globální předvolby</a>, vyplňte konkrétní hodnoty a tokeny, které musí mít každá stránka."
+
+msgid "Override each of the <a href=\":defaults\">other defaults</a>, fill in specific values and tokens that each item should have by default. This allows e.g. for all nodes to have different values than taxonomy terms."
+msgstr "Potlačte každé z <a href=\":defaults\">ostatních výchozích nastavení</a>, vyplňte konkrétní hodnoty a tokeny, jež má mít standardně každá položka. To umožňuje například mít pro všechny uzly jiné hodnoty než taxonomické termíny."
+
+msgid "<a href=\":add\">Add more default configurations</a> as necessary for different entity types and entity bundles, e.g. for different content types or different vocabularies."
+msgstr "<a href=\":add\">Přidejte další výchozí konfigurace</a> podle potřeby pro různé typy entit a balíky entit, např. pro různé typy obsahu či různé slovníky."
+
+msgid "To override the meta tags for individual entities, e.g. for individual nodes, add the \"Metatag\" field via the field settings for that entity or bundle type."
+msgstr "Pro potlačení metaznaček pro jednotlivé entity, tj. například pro jednotlivé uzly, přidejte pole \"Metaznačka\" prostřednictvím nastavení pole pro dotyčný typ entity nebo balíku."
+
+msgid "Configure global meta tag default values below. Meta tags may be left as the default."
+msgstr "Nakonfigurujte níže globální výchozí hodnoty metaznaček. Metaznačky mohou být ponechány ve výchozím stavu."
+
+msgid "Meta tag patterns are passed down from one level to the next unless they are overridden. To view a summary of the individual meta tags and the pattern for a specific configuration, click on its name below."
+msgstr "Vzory metaznaček se předávají z jedné úrovně do druhé, nejsou-li potlačeny. Chcete-li zobrazit souhrn jednotlivých metaznaček a vzor pro konkrétní konfiguraci, klepněte na název této konfigurace níže."
+
+msgid "If the top-level configuration is not specific enough, additional default meta tag configurations can be added for a specific entity type or entity bundle, e.g. for a specific content type."
+msgstr "Pokud není konfigurace nejvyšší úrovně dostatečně specifická, lze přidat další výchozí konfigurace metaznaček pro specifický typ entity nebo balík entit, např. pro konkrétní typ obsahu."
+
+msgid "Meta tags can be further refined on a per-entity basis, e.g. for individual nodes, by adding the \"Metatag\" field to that entity type through its normal field settings pages."
+msgstr "Meta značky mohou být dále upřesněny pro jednotlivé entity, např. pro jednotlivé uzly, přidáním pole \"Metaznačka\" do daného typu entity prostřednictvím běžných stránek nastavení pole."
+
+msgid "Use the following form to override the global default meta tags for a specific entity type or entity bundle. In practical terms, this allows the meta tags to be customized for a specific content type or taxonomy vocabulary, so that its content will have different meta tags <em>default values</em> than others."
+msgstr "Pomocí následujícího formuláře můžete potlačit globální výchozí metaznačky pro konkrétní typ entity nebo balík entit. V praxi to umožňuje přizpůsobení metaznaček pro konkrétní typ obsahu nebo taxonomický slovník tak, aby jeho obsah měl jiné <em>výchozí hodnoty</em> metaznaček než ostatní."
+
+msgid "As a reminder, if the \"Metatag\" field is added to the entity type through its normal field settings, the meta tags can be further refined on a per entity basis; this allows each node to have its meta tags  customized on an individual basis."
+msgstr "Připomeňme, že pokud se pole \"Metaznačka\" přidá do typu entity prostřednictvím jeho normálních nastavení pole, lze metaznačky dále zpřesnit pro jednotlivé entity. To umožňuje přizpůsobení metaznaček pro individuální uzly."
+
+msgid "Not enabled while in maintenance mode"
+msgstr "Není povoleno, když je v režimu údržby"
+
+msgid "Please note that while the site is in maintenance mode none of the usual meta tags will be output."
+msgstr "Mějte na zřeteli, že po dobu, co je web v režimu údržby, nebude na výstup odesílána žádná z obvyklých metaznaček."
+
+msgid "Schema.org Metatag is recommended"
+msgstr "Je doporučen modul Metaznačka Schema.org"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is highly recommended to add <a href=\"@jsonld\">JSON-LD</a> -formatted <a href=\"@schema\">schema.org</a> compatible data structures to the site."
+msgstr "Modul <a href=\"@module\">Metaznačka Schema.org</a> důrazně doporučujeme pro přidávání datových struktur ve formátu <a href=\"@jsonld\">JSON-LD</a> kompatibilních se službou <a href=\"@schema\">schema.org</a> na web."
+
+msgid "Schema.org Metatag is installed"
+msgstr "Modul Metaznačka Schema.org je nainstalován"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is installed."
+msgstr "Modul <a href=\"@module\">Metaznačka Schema.org</a> je nainstalován."
+
+msgid "Token Or"
+msgstr "Token OR"
+
+msgid "The <a href=\"@module\">Token OR module</a> is suggested for when the basic content tokens are not flexible enough, e.g. to make a meta tag show the contents of one field if it is filled in or another if the first one is empty."
+msgstr "<a href=\"@module\">Modul Token OR</a> je doporučován pro případ, že základní tokeny obsahu nejsou dostatečně flexibilní, například aby metaznačka zobrazovala obsah jednoho pole, je-li vyplněno, nebo jiného pole, pokud je první prázdné."
+
+msgid "The new Metatag: Open Graph module has been enabled."
+msgstr "Byl povolen nový modul Metaznačka: Otevřený graf."
+
+msgid "The sites's caches will need to be rebuild to ensure Metatag works as intended."
+msgstr "Mezipaměti webu budou muset být znovu sestaveny, aby bylo zajištěno, že metaznačka bude fungovat podle očekávání."
+
+msgid "Metatag"
+msgstr "Metaznačka"
+
+msgid "Manage meta tags for all entities."
+msgstr "Spravujte metaznačky pro všechny entity."
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Add default meta tags"
+msgstr "Přidat výchozí metaznačky"
+
+msgid "Settings"
+msgstr "Nastavení"
+
+msgid "Metatag plugins"
+msgstr "Moduly plug-in metaznačky"
+
+msgid "Configure Metatag defaults."
+msgstr "Konfigurovat výchozí nastavení metaznačky."
+
+msgid "Overview of plugins used in metatag."
+msgstr "Přehled modulů plug-in používaných v metaznačkách."
+
+msgid "Metatag defaults"
+msgstr "Výchozí nastavení metaznaček"
+
+msgid "Administer meta tags"
+msgstr "Spravovat metaznačky"
+
+msgid "Control the main settings pages and modify per-object meta tags."
+msgstr "Ovládejte hlavní stránky nastavení a upravujte metaznačky pro jednotlivé objekty."
+
+msgid "Delete default meta tags"
+msgstr "Odstranit výchozí metaznačky"
+
+msgid "Revert default meta tags"
+msgstr "Vrátit zpět výchozí metaznačky"
+
+msgid "Configure the Metatag module"
+msgstr "Konfigurovat modul Metaznačka"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "Tags"
+msgstr "Štítky"
+
+msgid "Abstract"
+msgstr "Abstrakt"
+
+msgid "Cache control"
+msgstr "Řízení mezipaměti"
+
+msgid "Canonical URL"
+msgstr "Kanonická adresa URL"
+
+msgid "Content Language"
+msgstr "Jazyk obsahu"
+
+msgid "Description"
+msgstr "Popis"
+
+msgid "Expires"
+msgstr "Expiruje"
+
+msgid "Generator"
+msgstr "Generátor"
+
+msgid "Image SRC"
+msgstr "Zdroj obrázku"
+
+msgid "Keywords"
+msgstr "Klíčová slova"
+
+msgid "Google News Keywords"
+msgstr "Klíčová slova Google News"
+
+msgid "Next page URL"
+msgstr "Adresa URL další stránky"
+
+msgid "Original source"
+msgstr "Původní zdroj"
+
+msgid "Pragma"
+msgstr "Pragma"
+
+msgid "Previous page URL"
+msgstr "Adresa URL předchozí stránky"
+
+msgid "Rating"
+msgstr "Hodnocení"
+
+msgid "Referrer policy"
+msgstr "Zásada odkazujícího webu"
+
+msgid "Refresh"
+msgstr "Obnovení"
+
+msgid "Revisit After"
+msgstr "Znovu navštívit po"
+
+msgid "Rights"
+msgstr "Práva"
+
+msgid "Robots"
+msgstr "Roboti"
+
+msgid "Shortlink"
+msgstr "Krátký odkaz "
+
+msgid "Standout"
+msgstr "Standout"
+
+msgid "Page title"
+msgstr "Název stránky"
+
+msgid "ICBM"
+msgstr "ICBM"
+
+msgid "Geographical region"
+msgstr "Zeměpisná oblast"
+
+msgid "Geographical place name"
+msgstr "Místopisný název"
+
+msgid "Geographical position"
+msgstr "Zeměpisná poloha"
+
+msgid "Set Cookie"
+msgstr "Nastavit soubor cookie"
+
+msgid "Google"
+msgstr "Google"
+
+msgid "Author"
+msgstr "Autor"
+
+msgid "Default value"
+msgstr "Výchozí hodnota"
+
+msgid "Advanced meta tags form"
+msgstr "Formulář rozšířených metaznaček"
+
+msgid "Place field in sidebar"
+msgstr "Umístit pole do postranního panelu"
+
+msgid "Place field in collapsed details container"
+msgstr "Umístit pole do kontejneru sbalených podrobností"
+
+msgid "Metatag settings"
+msgstr "Nastavení metaznačky"
+
+msgid "Metatag groups that apply to each entity type"
+msgstr "Skupiny metaznaček, které platí pro všechny typy entit"
+
+msgid "Entity type"
+msgstr "Typ entity"
+
+msgid "Bundle"
+msgstr "Bundle"
+
+msgid "Group"
+msgstr "Skupina"
+
+msgid "Trim method for trimmable tags."
+msgstr "Oříznout metodu pro oříznutelné značky."
+
+msgid "Use Maxlength module to force these limits?"
+msgstr "Chcete použit modul Maxlength a vynutit tyto limity?"
+
+msgid "Tag-specific maximum length"
+msgstr "Maximální délka specifická pro značky"
+
+msgid "Tag maximum length in characters"
+msgstr "Maximální délka značky ve znacích"
+
+msgid "Add max height value"
+msgstr "Přidat hodnotu maximální výšky"
+
+msgid "Provides support for applinks.org meta tags."
+msgstr "Poskytuje podporu pro metaznačky applinks.org."
+
+msgid "Metatag: App Links"
+msgstr "Metaznačka: App Links"
+
+msgid "Android app name"
+msgstr "Název aplikace Android"
+
+msgid "Android app Activity Class"
+msgstr "Třída aktivity aplikace Android"
+
+msgid "Android app package ID"
+msgstr "ID balíku aplikace Android"
+
+msgid "Android app URL scheme"
+msgstr "Schéma adresy URL aplikace Android"
+
+msgid "iOS app URL scheme"
+msgstr "Schéma adresy URL aplikace iOS"
+
+msgid "iOS app store ID"
+msgstr "ID App Store iOS"
+
+msgid "iOS app name"
+msgstr "Název aplikace iOS"
+
+msgid "iPad app URL scheme"
+msgstr "Schéma adresy URL aplikace iPad"
+
+msgid "iPad app store ID"
+msgstr "ID App Store iPad"
+
+msgid "iPad app name"
+msgstr "Název aplikace iPad"
+
+msgid "iPhone app URL scheme"
+msgstr "Schéma adresy URL aplikace iPhone"
+
+msgid "iPhone app store ID"
+msgstr "ID App Store iPhone"
+
+msgid "Windows app GUID"
+msgstr "GUID aplikace Windows"
+
+msgid "Windows app name"
+msgstr "Název aplikace Windows"
+
+msgid "Windows app URL scheme"
+msgstr "Schéma adresy URL aplikace Windows"
+
+msgid "Windows Phone app URL scheme"
+msgstr "Schéma adresy URL aplikace Windows Phone"
+
+msgid "Windows Phone app GUID"
+msgstr "GUID aplikace Windows Phone"
+
+msgid "Windows Phone app name"
+msgstr "Název aplikace Windows Phone"
+
+msgid "Windows Universal app URL scheme"
+msgstr "Schéma adresy URL Windows Universal"
+
+msgid "Windows Universal app GUID"
+msgstr "GUID aplikace Windows Universal"
+
+msgid "Windows Universal app name"
+msgstr "Název aplikace Windows Universal"
+
+msgid "Web URL"
+msgstr "Adresa URL webu"
+
+msgid "Should fallback"
+msgstr "Má použít náhradní"
+
+msgid "App Links"
+msgstr "App Links"
+
+msgid "The name of the app (suitable for display)."
+msgstr "Název aplikace (vhodný k zobrazení)."
+
+msgid "A fully-qualified Activity class name for intent generation."
+msgstr "Úplný název třídy aktivity pro generování záměru."
+
+msgid "A fully-qualified package name for intent generation. <strong>This attribute is required by the App Links specification.</strong>"
+msgstr "Úplný název balíku pro generování záměru. <strong>Tento atribut je vyžadován specifikací App Links.</strong>"
+
+msgid "A custom scheme for the Android app."
+msgstr "Vlastní schéma pro aplikaci Android."
+
+msgid "The name of the app (suitable for display)"
+msgstr "Název aplikace (vhodný pro zobrazení)"
+
+msgid "The app ID for the app store."
+msgstr "ID aplikace pro App Store."
+
+msgid "A custom scheme for the iOS app. <strong>This attribute is required by the app Links specification.</strong>"
+msgstr "Vlastní schéma pro aplikaci iOS. <strong>Tento atribut je vyžadován specifikací App Links.</strong>"
+
+msgid "iPhone app name"
+msgstr "Název aplikace iPhone"
+
+msgid "The web URL; defaults to the URL for the content that contains this tag."
+msgstr "Adresa URL webu. Výchozí hodnotou je adresa URL pro obsah obsahující tuto značku."
+
+msgid "Windows app ID"
+msgstr "ID aplikace Windows"
+
+msgid "Windows Phone app ID"
+msgstr "ID aplikace Windows Phone"
+
+msgid "Windows Universal app ID"
+msgstr "ID aplikace Windows Universal"
+
+msgid "Metatag: Dublin Core"
+msgstr "Metaznačka: Dublin Core"
+
+msgid "Provides the fifteen <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "Poskytuje patnáct metaznaček <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> od institutu <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+
+msgid "Dublin Core: Contributor"
+msgstr "Dublin Core: Přispěvatel"
+
+msgid "Dublin Core: Coverage"
+msgstr "Dublin Core: Pokrytí"
+
+msgid "Dublin Core: Creator"
+msgstr "Dublin Core: Autor"
+
+msgid "Dublin Core: Date"
+msgstr "Dublin Core: Datum"
+
+msgid "Dublin Core: Description"
+msgstr "Dublin Core: Popis"
+
+msgid "Dublin Core: Format"
+msgstr "Dublin Core: Formát"
+
+msgid "Dublin Core: Identifier"
+msgstr "Dublin Core: Identifikátor"
+
+msgid "Dublin Core: Language"
+msgstr "Dublin Core: Jazyk"
+
+msgid "Dublin Core: Publisher"
+msgstr "Dublin Core: Vydavatel"
+
+msgid "Dublin Core: Relation"
+msgstr "Dublin Core: Vztah"
+
+msgid "Dublin Core: Rights"
+msgstr "Dublin Core: Práva"
+
+msgid "Dublin Core: Source"
+msgstr "Dublin Core: Zdroj"
+
+msgid "Dublin Core: Subject"
+msgstr "Dublin Core: Předmět"
+
+msgid "Dublin Core: Title"
+msgstr "Dublin Core: Název"
+
+msgid "Dublin Core: Type"
+msgstr "Dublin Core: Typ"
+
+msgid "Dublin Core"
+msgstr "Dublin Core"
+
+msgid "Contributor"
+msgstr "Přispěvatel"
+
+msgid "An entity responsible for making contributions to the resource. Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."
+msgstr "Entita odpovídající za přispívání do prostředku. Jako příklad přispěvatele lze uvést osobu, organizaci a službu. Obvykle se k určení entity používá jméno či název přispěvatele."
+
+msgid "Coverage"
+msgstr "Pokrytí"
+
+msgid "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."
+msgstr "Prostorové nebo časové téma prostředku, prostorová sféra platnosti prostředku nebo jurisdikce, v níž je prostředek relevantní. Prostorové téma a prostorová platnost mohou být pojmenované místo nebo místo určené zeměpisnými souřadnicemi. Časové téma může být pojmenovaný časový úsek, datum nebo rozsah dat. Jurisdikce může být pojmenovaná administrativní entita nebo zeměpisné místo, pro které prostředek platí. Doporučeným postupem je použití řízeného slovníku, např. Thesaurus of Geographic Names [TGN]. Je-li to vhodné, lze pojmenovaná místa nebo časové úseky používat přednostně před číselnými identifikátory, tj. sadami souřadnic či rozsahů dat."
+
+msgid "Creator"
+msgstr "Tvůrce"
+
+msgid "An entity primarily responsible for making the resource. Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."
+msgstr "Entita odpovědná primárně za vytvoření prostředku. Jako příklad tvůrce lze uvést osobu, organizaci a službu. Obvykle se k určení entity používá jméno či název tvůrce."
+
+msgid "Date"
+msgstr "Datum"
+
+msgid "A point or period of time associated with an event in the lifecycle of the resource. Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."
+msgstr "Časový moment nebo časový úsek přidružený k události v životním cyklu prostředku. Datum lze použít k vyjádření časové informace na libovolné úrovni přesnosti. Doporučujeme použít určité schéma kódování, např. profil W3CDTF normy ISO 8601 [W3CDTF]."
+
+msgid "An account of the resource. Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."
+msgstr "Účet prostředku. Popis může obsahovat například abstrakt, obsah, grafickou reprezentaci nebo netextovou reprezentaci prostředku."
+
+msgid "Format"
+msgstr "Formát"
+
+msgid "The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."
+msgstr "Časový formát, fyzický nosič nebo rozměry prostředku. Jako příklad rozměrů lze uvést velikost a dobu trvání. Doporučujeme použít řízený slovník, například seznam Internet Media Types [MIME]."
+
+msgid "Identifier"
+msgstr "Identifikátor"
+
+msgid "An unambiguous reference to the resource within a given context. Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."
+msgstr "Jednoznačný odkaz na prostředek v rámci daného kontextu. Doporučujeme identifikovat prostředek řetězcem, který odpovídá formálnímu identifikačnímu systému."
+
+msgid "Language"
+msgstr "Jazyk"
+
+msgid "A language of the resource. Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."
+msgstr "Jazyk prostředku. Doporučujeme použít řízený slovník, například RFC 4646 [RFC4646]."
+
+msgid "Publisher"
+msgstr "Vydavatel"
+
+msgid "An entity responsible for making the resource available. Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."
+msgstr "Entita odpovídající za zpřístupnění prostředku. Jako příklad vydavatele lze uvést osobu, organizaci a službu. Obvykle se k určení entity používá jméno či název vydavatele."
+
+msgid "Relation"
+msgstr "Vztah"
+
+msgid "A related resource. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "Související prostředek. Doporučujeme identifikovat související prostředek řetězcem, který odpovídá formálnímu identifikačnímu systému."
+
+msgid "Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."
+msgstr "Informace o právech souvisejících s prostředkem. Obvykle informace o právech obsahují prohlášení o různých právech souvisejících s prostředkem, například o právech duševního vlastnictví."
+
+msgid "Source"
+msgstr "Zdroj"
+
+msgid "A related resource from which the described resource is derived. The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "Související prostředek, z něhož je popisovaný prostředek odvozen. Popisovaný prostředek může být odvozen ze souvisejícího prostředku ve svém celku nebo částečně. Doporučujeme identifikovat související prostředek řetězcem, který odpovídá formálnímu identifikačnímu systému."
+
+msgid "Subject"
+msgstr "Předmět"
+
+msgid "The topic of the resource. Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary. To describe the spatial or temporal topic of the resource, use the Coverage element."
+msgstr "Téma prostředku. Předmět bude obvykle reprezentován pomocí klíčových slov, klíčových frází nebo klasifikačních kódů. Doporučujeme použít řízený slovník. K popisu prostorově nebo časově určeného tématu použijte prvek Pokrytí."
+
+msgid "Title"
+msgstr "Nadpis"
+
+msgid "The name given to the resource."
+msgstr "Název daný prostředku."
+
+msgid "The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."
+msgstr "Povaha nebo žánr prostředku. Doporučujeme použít řízený slovník, například DCMI Type Vocabulary [DCMITYPE]. K popisu formátu souboru, fyzického nosiče a rozměrů prostředku použijte prvek Formát."
+
+msgid "Provides forty additional meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "Poskytuje čtyřicet dalších metaznaček od institutu <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+
+msgid "Metatag: Dublin Core Advanced"
+msgstr "Metaznačka: Dublin Core Advanced"
+
+msgid "Dublin Core: Abstract"
+msgstr "Dublin Core: Abstrakt"
+
+msgid "Dublin Core: Access Rights"
+msgstr "Dublin Core: Přístupová práva"
+
+msgid "Dublin Core: Accrual Method"
+msgstr "Dublin Core: Metoda přidávání"
+
+msgid "Dublin Core: Accrual Periodicity"
+msgstr "Dublin Core: Pravidelnost přidávání"
+
+msgid "Dublin Core: Accrual Policy"
+msgstr "Dublin Core: Zásada přidávání"
+
+msgid "Dublin Core: Alternative Title"
+msgstr "Dublin Core: Alternativní název"
+
+msgid "Dublin Core: Audience"
+msgstr "Dublin Core: Cílová skupina"
+
+msgid "Dublin Core: Date Available"
+msgstr "Dublin Core: Datum dostupnosti"
+
+msgid "Dublin Core: Bibliographic Citation"
+msgstr "Dublin Core: Bibliografická citace"
+
+msgid "Dublin Core: Conforms To"
+msgstr "Dublin Core: V souladu"
+
+msgid "Dublin Core: Date Created"
+msgstr "Dublin Core: Datum vytvoření"
+
+msgid "Dublin Core: Date Accepted"
+msgstr "Dublin Core: Datum přijetí"
+
+msgid "Dublin Core: Date Copyrighted"
+msgstr "Dublin Core: Datum vzniku autorského práva"
+
+msgid "Dublin Core: Date Submitted"
+msgstr "Dublin Core: Datum poskytnutí"
+
+msgid "Dublin Core: Audience Education Level"
+msgstr "Dublin Core: Úroveň vzdělání cílové skupiny"
+
+msgid "Dublin Core: Extent"
+msgstr "Dublin Core: Rozsah"
+
+msgid "Dublin Core: Has Format"
+msgstr "Dublin Core: Má formát"
+
+msgid "Dublin Core: Has Part"
+msgstr "Dublin Core: Má část"
+
+msgid "Dublin Core: Has Version"
+msgstr "Dublin Core: Má verzi"
+
+msgid "Dublin Core: Instructional Method"
+msgstr "Dublin Core: Instrukční metoda"
+
+msgid "Dublin Core: Is Format Of"
+msgstr "Dublin Core: Je formátem"
+
+msgid "Dublin Core: Is Part Of"
+msgstr "Dublin Core: Je částí"
+
+msgid "Dublin Core: Is Referenced By"
+msgstr "Dublin Core: Je odkazován"
+
+msgid "Dublin Core: Is Replaced By"
+msgstr "Dublin Core: Je nahrazen"
+
+msgid "Dublin Core: Is Required By"
+msgstr "Dublin Core: Je požadován"
+
+msgid "Dublin Core: Date Issued"
+msgstr "Dublin Core: Datum vydání"
+
+msgid "Dublin Core: Is Version Of"
+msgstr "Dublin Core: Je verzí"
+
+msgid "Dublin Core: License"
+msgstr "Dublin Core: Licence"
+
+msgid "Dublin Core: Mediator"
+msgstr "Dublin Core: Zprostředkovatel"
+
+msgid "Dublin Core: Medium"
+msgstr "Dublin Core: Médium"
+
+msgid "Dublin Core: Date Modified"
+msgstr "Dublin Core: Datum úpravy"
+
+msgid "Dublin Core: Provenance"
+msgstr "Dublin Core: Původ"
+
+msgid "Dublin Core: References"
+msgstr "Dublin Core: Odkazy"
+
+msgid "Dublin Core: Replaces"
+msgstr "Dublin Core: Nahrazuje"
+
+msgid "Dublin Core: Requires"
+msgstr "Dublin Core: Vyžaduje"
+
+msgid "Dublin Core: Rights Holder"
+msgstr "Dublin Core: Držitel práv"
+
+msgid "Dublin Core: Spatial Coverage"
+msgstr "Dublin Core: Prostorové pokrytí"
+
+msgid "Dublin Core: Table Of Contents"
+msgstr "Dublin Core: Obsah"
+
+msgid "Dublin Core: Temporal Coverage"
+msgstr "Dublin Core: Časové pokrytí"
+
+msgid "Dublin Core: Date Valid"
+msgstr "Dublin Core: Datum platnosti"
+
+msgid "Dublin Core Additional Tags"
+msgstr "Další značky Dublin Core"
+
+msgid "These tags are not part of the Metadata Element Set but may be useful for certain scenarios."
+msgstr "Tyto značky nejsou součástí sady prvků metadat, ale mohou být užitečné v různých situacích."
+
+msgid "A summary of the resource."
+msgstr "Souhrn prostředku."
+
+msgid "Access Rights"
+msgstr "Přístupová práva"
+
+msgid "Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."
+msgstr "Informace o osobách, jež mohou přistupovat k prostředku, nebo určení stavu zabezpečení prostředku. Přístupová práva mohou obsahovat informace týkající se přístupu nebo omezení na základě ochrany soukromí, zabezpečení nebo jiných zásad."
+
+msgid "Accrual Method"
+msgstr "Metoda přidávání"
+
+msgid "The method by which items are added to a collection."
+msgstr "Metoda používaná k přidávání položek do kolekce."
+
+msgid "Accrual Periodicity"
+msgstr "Pravidelnost přidávání"
+
+msgid "The frequency with which items are added to a collection."
+msgstr "Četnost přidávání položek do kolekce."
+
+msgid "Accrual Policy"
+msgstr "Zásada přidávání"
+
+msgid "The policy governing the addition of items to a collection."
+msgstr "Zásada, kterou se řídí přidávání položek do kolekce."
+
+msgid "Alternative Title"
+msgstr "Alternativní název"
+
+msgid "An alternative name for the resource. The distinction between titles and alternative titles is application-specific."
+msgstr "Alternativní název prostředku. Rozdíl mezi názvy a alternativními názvy závisí na daném použití."
+
+msgid "Audience"
+msgstr "Cílová skupina"
+
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "Třída entity určující, komu je prostředek určen nebo pro koho je užitečný."
+
+msgid "Date Available"
+msgstr "Datum dostupnosti"
+
+msgid "Date (often a range) that the resource became or will become available."
+msgstr "Datum (často rozsah dat), k němuž prostředek byl nebo bude dostupný."
+
+msgid "Bibliographic Citation"
+msgstr "Bibliografická citace"
+
+msgid "A bibliographic reference for the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."
+msgstr "Bibliografický odkaz pro prostředek. Doporučujeme zahrnout dostatečné bibliografické informace postačující k jednoznačné identifikaci prostředku."
+
+msgid "Conforms To"
+msgstr "V souladu"
+
+msgid "An established standard to which the described resource conforms."
+msgstr "Uznávaný standard, jehož požadavkům prostředek vyhovuje."
+
+msgid "Date Created"
+msgstr "Datum vytvoření"
+
+msgid "Date of creation of the resource."
+msgstr "Datum vytvoření prostředku."
+
+msgid "Date Accepted"
+msgstr "Datum přijetí"
+
+msgid "Date of acceptance of the resource. Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."
+msgstr "Datum přijetí prostředku. Jako příklad prostředku, pro nějž může být relevantní Datum přijetí, lze uvést diplomovou práci (kterou přijímá univerzitní pracoviště) nebo článek (přijatý určitým periodikem ke zveřejnění)."
+
+msgid "Date Copyrighted"
+msgstr "Datum vzniku autorského práva"
+
+msgid "Date of copyright."
+msgstr "Datum vzniku autorského práva."
+
+msgid "Date Submitted"
+msgstr "Datum poskytnutí"
+
+msgid "Date of submission of the resource. Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal)."
+msgstr "Datum poskytnutí prostředku. Jako příklad prostředku, pro který může být relevantní Datum poskytnutí, lze uvést diplomovou práci (poskytnutou univerzitnímu pracovišti ke schválení) nebo článek (poskytnutý časopisu)."
+
+msgid "Audience Education Level"
+msgstr "Úroveň vzdělání cílové skupiny"
+
+msgid "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."
+msgstr "Třída entity definovaná jako dosažený stupeň vzdělávacího či školicího procesu, pro který je popisovaný prostředek určen. "
+
+msgid "Extent"
+msgstr "Rozsah"
+
+msgid "The size or duration of the resource."
+msgstr "Velikost nebo doba trvání prostředku."
+
+msgid "Has Format"
+msgstr "Má formát"
+
+msgid "A related resource that is substantially the same as the pre-existing described resource, but in another format."
+msgstr "Související prostředek, který je v podstatě stejný jako již existující popisovaný prostředek, ale je v jiném formátu."
+
+msgid "Has Part"
+msgstr "Má část"
+
+msgid "A related resource that is included either physically or logically in the described resource."
+msgstr "Související prostředek, který je fyzicky nebo logicky zahrnut do popisovaného prostředku."
+
+msgid "Has Version"
+msgstr "Má verzi"
+
+msgid "A related resource that is a version, edition, or adaptation of the described resource."
+msgstr "Související prostředek, který je verzí, vydáním nebo adaptací popisovaného prostředku."
+
+msgid "Instructional Method"
+msgstr "Instrukční metoda "
+
+msgid "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support. Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured. Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."
+msgstr "Proces určený k předání znalostí, stanovisek a dovedností, jejž má popisovaný prostředek podporovat. Instrukční metoda obvykle zahrnuje metody prezentace instrukčního materiálu a provádění instrukčních aktivit, vzorce interakcí uživatele a žáka a mechanizmy měření individuálních úrovní učení. Instrukční metody zahrnují veškeré aspekty procesů poskytování pokynů a výuky od plánování přes vlastní výuku až po hodnocení a zpětnou vazbu."
+
+msgid "Is Format Of"
+msgstr "Je formátem"
+
+msgid "A related resource that is substantially the same as the described resource, but in another format."
+msgstr "Související prostředek, který je v podstatě stejný jako popisovaný prostředek, ale je v jiném formátu."
+
+msgid "Is Part Of"
+msgstr "Je částí"
+
+msgid "A related resource in which the described resource is physically or logically included."
+msgstr "Související prostředek, v němž je popisovaný prostředek fyzicky nebo logicky zahrnut."
+
+msgid "Is Referenced By"
+msgstr "Je odkazován"
+
+msgid "A related resource that references, cites, or otherwise points to the described resource."
+msgstr "Související prostředek, který odkazuje, cituje nebo jiným způsobem ukazuje na popisovaný prostředek."
+
+msgid "Is Replaced By"
+msgstr "Je nahrazen"
+
+msgid "A related resource that supplants, displaces, or supersedes the described resource."
+msgstr "Související prostředek, který nahrazuje popisovaný prostředek."
+
+msgid "Is Required By"
+msgstr "Je vyžadován"
+
+msgid "A related resource that requires the described resource to support its function, delivery, or coherence."
+msgstr "Související prostředek, který vyžaduje popisovaný prostředek k podpoře svých funkcí, poskytování či koherence."
+
+msgid "Is Version Of"
+msgstr "Je verzí"
+
+msgid "A related resource of which the described resource is a version, edition, or adaptation. Changes in version imply substantive changes in content rather than differences in format."
+msgstr "Související prostředek, jehož verzí, vydáním či adaptací je popisovaný prostředek. Změny ve verzi znamenají závažné změny v obsahu, nikoli rozdíly ve formátu."
+
+msgid "Date Issued"
+msgstr "Datum vydání"
+
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "Datum formálního vydání (např. publikace) prostředku."
+
+msgid "License"
+msgstr "Licence"
+
+msgid "A legal document giving official permission to do something with the resource."
+msgstr "Právně závazný dokument poskytující oficiální svolení k určitému zacházení s prostředkem."
+
+msgid "Mediator"
+msgstr "Zprostředkovatel"
+
+msgid "An entity that mediates access to the resource and for whom the resource is intended or useful. In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."
+msgstr "Entita zprostředkovávající přístup k prostředku, a pro kterou je prostředek určen nebo pro kterou je prostředek užitečný. Ve výukovém kontextu může být zprostředkovatel rodičem, učitelem, instruktorem nebo ošetřovatelem."
+
+msgid "Medium"
+msgstr "Střední"
+
+msgid "The material or physical carrier of the resource."
+msgstr "Materiál nebo fyzický nosič prostředku."
+
+msgid "Date Modified"
+msgstr "Datum úpravy"
+
+msgid "Date on which the resource was changed."
+msgstr "Datum provedení změny prostředku."
+
+msgid "Provenance"
+msgstr "Původ"
+
+msgid "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation. The statement may include a description of any changes successive custodians made to the resource."
+msgstr "Prohlášení o změnách vlastnictví a držby prostředku od jeho vytvoření, které jsou důležité pro jeho autenticitu, integritu a interpretaci. Prohlášení může obsahovat popis veškerých změn provedených oprávněnými osobami na prostředku."
+
+msgid "References"
+msgstr "Odkazy"
+
+msgid "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+msgstr "Související prostředek, který je odkazován, citován nebo jiným způsobem používán popisovaným prostředkem."
+
+msgid "Replaces"
+msgstr "Nahrazuje"
+
+msgid "A related resource that is supplanted, displaced, or superseded by the described resource."
+msgstr "Související prostředek, který je nahrazován popisovaným prostředkem."
+
+msgid "Requires"
+msgstr "Vyžaduje"
+
+msgid "A related resource that is required by the described resource to support its function, delivery, or coherence."
+msgstr "Související prostředek, který je vyžadován popisovaným prostředkem k podpoře svých funkcí, poskytování nebo koherence."
+
+msgid "Rights Holder"
+msgstr "Držitel práv"
+
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "Osoba či organizace, která je držitelem nebo správcem práv k prostředku."
+
+msgid "Spatial Coverage"
+msgstr "Prostorové pokrytí"
+
+msgid "Spatial characteristics of the resource."
+msgstr "Prostorové charakteristiky prostředku."
+
+msgid "Table Of Contents"
+msgstr "Obsah"
+
+msgid "A list of subunits of the resource."
+msgstr "Seznam dílčích jednotek prostředku."
+
+msgid "Temporal Coverage"
+msgstr "Časové pokrytí"
+
+msgid "Temporal characteristics of the resource."
+msgstr "Časové charakteristiky prostředku."
+
+msgid "Date Valid"
+msgstr "Datum platnosti"
+
+msgid "Date (often a range) of validity of a resource."
+msgstr "Datum (často rozsah dat) platnosti prostředku."
+
+msgid "Metatag Extended Permissions"
+msgstr "Rozšířená oprávnění metaznačky"
+
+msgid "Adds individual permissions for each meta tag, allowing for fine-grained access to the meta tags. Note: this may lead to performance issues on the permissions admin page, please see the included README.txt file for details."
+msgstr "Přidá individuální oprávnění pro každou metaznačku, která umožňuje přístup s vysokou úrovní granularity na metaznačky. Poznámka: To může vést k problémům s výkonem na stránce administrace oprávnění, prohlédněte si prosím podrobnosti v zahrnutém souboru README.txt."
+
+msgid "Access %tag in %group"
+msgstr "Přístup k %tag v %group"
+
+msgid "Metatag: Facebook"
+msgstr "Metaznačka: Facebook"
+
+msgid "A set of meta tags specially for controlling advanced functionality with Facebook."
+msgstr "Sada metaznaček určených k obsluze pokročilých funkcí spolupracujících s platformou Facebook."
+
+msgid "Facebook Admins"
+msgstr "Administrátoři Facebook"
+
+msgid "Facebook App ID"
+msgstr "ID aplikace Facebook"
+
+msgid "Facebook Pages"
+msgstr "Stránky Facebook"
+
+msgid "facebook"
+msgstr "facebook"
+
+msgid "A comma-separated list of Facebook user IDs of people who are considered administrators or moderators of this page."
+msgstr "Seznam s položkami oddělenými čárkou pro ID uživatelů platformy Facebook, kteří jsou považováni za administrátory či moderátory této stránky."
+
+msgid "Facebook Application ID"
+msgstr "ID aplikace Facebook"
+
+msgid "A comma-separated list of Facebook Platform Application IDs applicable for this site."
+msgstr "Seznam položek oddělených čárkami pro ID aplikací platformy Facebook, která používá tento web."
+
+msgid "Facebook Instant Articles claim URL token."
+msgstr "Token adresy URL nároku na interaktivní články Facebook."
+
+msgid "Provides support for many different favicons."
+msgstr "Poskytuje podporu pro řadu různých ikon favicon."
+
+msgid "Metatag: Favicons"
+msgstr "Metaznačka: Favicons"
+
+msgid "Default shortcut icon"
+msgstr "Výchozí ikona zástupce"
+
+msgid "Icon: SVG"
+msgstr "Ikona: SVG"
+
+msgid "href"
+msgstr "href"
+
+msgid "Color"
+msgstr "Barvy"
+
+msgid "Icon: 16px x 16px"
+msgstr "Ikona: 16px x 16px"
+
+msgid "Icon: 32px x 32px"
+msgstr "Ikona: 32px x 32px"
+
+msgid "Icon: 96px x 96px"
+msgstr "Ikona: 96px x 96px"
+
+msgid "Icon: 192px x 192px"
+msgstr "Ikona: 192px x 192px"
+
+msgid "Apple touch icon: 60px x 60px"
+msgstr "Dotyková ikona Apple: 60px x 60px"
+
+msgid "Apple touch icon: 72px x 72px"
+msgstr "Dotyková ikona Apple: 72px x 72px"
+
+msgid "Apple touch icon: 76px x 76px"
+msgstr "Dotyková ikona Apple: 76px x 76px"
+
+msgid "Apple touch icon: 114px x 114px"
+msgstr "Dotyková ikona Apple: 114px x 114px"
+
+msgid "Apple touch icon: 120px x 120px"
+msgstr "Dotyková ikona Apple: 120px x 120px"
+
+msgid "Apple touch icon: 144px x 144px"
+msgstr "Dotyková ikona Apple: 144px x 144px"
+
+msgid "Apple touch icon: 152px x 152px"
+msgstr "Dotyková ikona Apple: 152px x 152px"
+
+msgid "Apple touch icon: 180px x 180px"
+msgstr "Dotyková ikona Apple: 180px x 180px"
+
+msgid "Apple touch icon (precomposed): 57px x 57px"
+msgstr "Dotyková ikona Apple (připravená): 57px x 57px"
+
+msgid "Apple touch icon (precomposed): 72px x 72px"
+msgstr "Dotyková ikona Apple (připravená): 72px x 72px"
+
+msgid "Apple touch icon (precomposed): 76px x 76px"
+msgstr "Dotyková ikona Apple (připravená): 76px x 76px"
+
+msgid "Apple touch icon (precomposed): 114px x 114px"
+msgstr "Dotyková ikona Apple (připravená): 114px x 114px"
+
+msgid "Apple touch icon (precomposed): 120px x 120px"
+msgstr "Dotyková ikona Apple (připravená): 120px x 120px"
+
+msgid "Apple touch icon (precomposed): 144px x 144px"
+msgstr "Dotyková ikona Apple (připravená): 144px x 144px"
+
+msgid "Apple touch icon (precomposed): 152px x 152px"
+msgstr "Dotyková ikona Apple (připravená): 152px x 152px"
+
+msgid "Apple touch icon (precomposed): 180px x 180px"
+msgstr "Dotyková ikona Apple (připravená): 180px x 180px"
+
+msgid "Favicons & touch icons"
+msgstr "Ikony favicon a dotykové ikony"
+
+msgid "A PNG image that is 60px wide by 60px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "Obrázek PNG o šířce 60px a výšce 60px. Používá se pro zařízení iPhone a iPod Touch bez displeje Retina a Android 2.1+."
+
+msgid "A PNG image that is 114px wide by 114px high. Used with iPhone with @2x display running iOS <= 6."
+msgstr "Obrázek PNG o šířce 114px a výšce 114px. Používá se pro zařízení iPhone s displejem @2x a systémem iOS <= 6."
+
+msgid "A PNG image that is 120px wide by 120px high. Used with iPhone with @2x display running iOS >= 7."
+msgstr "Obrázek PNG o šířce 120px a výšce 120px. Používá se pro zařízení iPhone s displejem @2x a systémem iOS >= 7."
+
+msgid "A PNG image that is 144px wide by 144px high. Used with iPad with @2x display running iOS <= 6."
+msgstr "Obrázek PNG o šířce 144px a výšce 144px. Používá se pro zařízení iPad s displejem @2x a systémem iOS <= 6."
+
+msgid "A PNG image that is 152px wide by 152px high. Used with iPad with @2x display running iOS >= 7."
+msgstr "Obrázek PNG o šířce 152px a výšce 152px. Používá se pro zařízení iPad s displejem @2x a systémem iOS >= 7."
+
+msgid "A PNG image that is 180px wide by 180px high. Used with iPhone 6 Plus with @3x display."
+msgstr "Obrázek PNG o šířce 180px a výšce 180px. Používá se pro zařízení iPhone 6 Plus s displejem @3x."
+
+msgid "A PNG image that is 72px wide by 72px high. Used with the iPad mini and the first- and second-generation iPad (@1x display) on iOS <= 6."
+msgstr "Obrázek PNG o šířce 72px a výšce 72px. Používá se pro zařízení iPad mini a první i druhou generaci zařízení iPad (displej @1x) se systémem iOS <= 6."
+
+msgid "A PNG image that is 76px wide by 76px high. Used with the iPad mini and the second-generation iPad (@1x display) on iOS >= 7."
+msgstr "Obrázek PNG o šířce 76px a výšce 76px. Používá se pro zařízení iPad mini a druhou generaci zařízení iPad (displej @1x) se systémem iOS >= 7."
+
+msgid "A PNG image that is 57px wide by 57px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "Obrázek PNG o šířce 57px a výšce 57px. Používá se pro zařízení iPhone a iPod Touch bez displeje Retina a Android 2.1+."
+
+msgid "A PNG image that is 16px wide by 16px high."
+msgstr "Obrázek PNG o šířce 16px a výšce 16px."
+
+msgid "A PNG image that is 192px wide by 192px high."
+msgstr "Obrázek PNG o šířce 192px a výšce 192px."
+
+msgid "A PNG image that is 32px wide by 32px high."
+msgstr "Obrázek PNG o šířce 32px a výšce 32px."
+
+msgid "A PNG image that is 96px wide by 96px high."
+msgstr "Obrázek PNG o šířce 96px a výšce 96px."
+
+msgid "Mask icon color"
+msgstr "Barva ikony masky"
+
+msgid "Color attribute for SVG (mask) icon in hexadecimal format, e.g. '#0000ff'. Setting it will break HTML validation. If not set macOS Safari ignores the Mask Icon entirely, making the Icon: SVG completely useless."
+msgstr "Atribut barvy pro ikonu SVG (maska) v hexadecimálním formátu, například '#0000ff'. Jeho nastavení bude přerušovat ověření platnosti HTML. Pokud jej nenastavíte, prohlížeč macOS Safari ikonu masky zcela ignoruje, takže je ikona: SVG zcela nepoužitelná."
+
+msgid "Mask icon (SVG)"
+msgstr "Ikona masky (SVG)"
+
+msgid "A grayscale scalable vector graphic (SVG) file."
+msgstr "Soubor SVG (scalable vector graphic) s obrázkem ve stupních šedi."
+
+msgid "Default icon"
+msgstr "Výchozí ikona"
+
+msgid "The traditional favicon, must be either a GIF, ICO, JPG/JPEG or PNG image."
+msgstr "Tradiční ikona favicon musí být obrázkem GIF, ICO, JPG/JPEG nebo PNG."
+
+msgid "Provides support for meta tags used for Google Custom Search Engine."
+msgstr "Poskytuje podporu pro metaznačky používané vyhledávačem Google Custom Search Engine."
+
+msgid "Metatag: Google Custom Search Engine (CSE)"
+msgstr "Metaznačka: Google Custom Search Engine (CSE)"
+
+msgid "Thumbnail"
+msgstr "Náhled"
+
+msgid "Department"
+msgstr "Oddělení"
+
+msgid "Content audience"
+msgstr "Cílová skupina obsahu"
+
+msgid "Document status"
+msgstr "Stav dokumentu"
+
+msgid "google_rating"
+msgstr "google_rating"
+
+msgid "Google Custom Search Engine (CSE)"
+msgstr "Google Custom Search Engine (CSE)"
+
+msgid "Meta tags used to control the mobile browser experience. Some of these meta tags have been replaced by newer mobile browsers. These meta tags usually only need to be set globally, rather than per-page."
+msgstr "Metaznačky, jež se používají k ovládání interakcí s mobilním prohlížečem. Některé z těchto metaznaček byly u novějších mobilních prohlížečů nahrazeny. Tyto metaznačky se obvykle nastavují pouze v globálním rozsahu a nikoli pro jednotlivé stránky."
+
+msgid "Department tag."
+msgstr "Značka oddělení."
+
+msgid "Content rating"
+msgstr "Hodnocení obsahu"
+
+msgid "Works only with numeric values."
+msgstr "Pracuje pouze s číselnými hodnotami."
+
+msgid "Use a url of a valid image."
+msgstr "Použijte adresu URL platného obrázku."
+
+msgid "Metatag: Google Plus"
+msgstr "Metaznačka: Google Plus"
+
+msgid "Provides support for Google's Plus meta tags. Deprecated, will be removed in Metatag 2.0.0."
+msgstr "Poskytuje podporu pro metaznačky Google Plus. Zamítnuto, bude odebráno v Metatag 2.0.0."
+
+msgid "Google Plus: name"
+msgstr "Google Plus: název"
+
+msgid "Google Plus: image"
+msgstr "Google Plus: obrázek"
+
+msgid "Google Plus: description"
+msgstr "Google Plus: popis"
+
+msgid "Publisher URL"
+msgstr "Adresa URL vydavatele"
+
+msgid "Google Plus"
+msgstr "Google Plus"
+
+msgid "DEPRECATED, use Advanced-Author instead."
+msgstr "Zamítnuto, použijte místo toho funkci Advanced-Author."
+
+msgid "Content description less than 200 characters."
+msgstr "Popis obsahu kratší 200 znaků."
+
+msgid "Image"
+msgstr "Obrázek"
+
+msgid "The URL of an image which should represent the content. For best results use an image that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Supports PNG, JPEG and GIF formats."
+msgstr "Adresa URL obrázku reprezentujícího obsah. Optimálně použijte obrázek, který má velikost nejméně 1200 x 630 pixelů. Doporučené minimum je 600 x 316 pixelů. Podporuje formáty PNG, JPEG a GIF."
+
+msgid "Name"
+msgstr "Jméno"
+
+msgid "Content title."
+msgstr "Název obsahu."
+
+msgid "Used by some search engines to confirm publication of the content on a page. Should be the full URL for the publication's Google+ profile page."
+msgstr "Používají některé vyhledávače pro potvrzení publikace obsahu na stránce. Musí jít o úplnou adresu URL stránky profilu Google+ publikace."
+
+msgid "Provides support for the hreflang meta tag with some extra logic to simplify it."
+msgstr "Poskytuje podporu pro metaznačku hreflang s další zjednodušující logikou."
+
+msgid "Metatag: Hreflang"
+msgstr "Metaznačka: Hreflang"
+
+msgid "Default locale (x-default)"
+msgstr "Výchozí národní prostředí (x-default)"
+
+msgid "Href per language"
+msgstr "Href na jazyk"
+
+msgid "URL for a version of this page in %langcode"
+msgstr "Adresa URL pro verzi této stránky v %langcode"
+
+msgid "Alternative language links (hreflang)"
+msgstr "Odkazy na alternativní jazyky (hreflang)"
+
+msgid "These meta tags are designed to point visitors to versions of the current page in other languages."
+msgstr "Tyto metaznačky jsou určeny pro odkazování návštěvníků na jiné jazykové verze aktuální stránky."
+
+msgid "Hreflang per language"
+msgstr "Hreflang pro jazyk"
+
+msgid "This plugin will be cloned from these settings for each enabled language."
+msgstr "Tento modul plugin bude klonován z těchto nastavení pro každý povolený jazyk."
+
+msgid "This should point to the version of the page that is for the main or primary locale, e.g. the original version of an article that is translated into other languages."
+msgstr "Musí ukazovat na verzi stránky, která je určena pro hlavní či primární národní prostředí, např. na původní verzi článku, který je přeložen do dalších jazyků."
+
+msgid "Provides support for meta tags used to control the mobile browser experience."
+msgstr "Poskytuje podporu pro metaznačky používané k ovládání interakcí s mobilním prohlížečem."
+
+msgid "Metatag: Mobile & UI Adjustments"
+msgstr "Metaznačka: Nastavení mobilního a uživatelského rozhraní"
+
+msgid "Handheld URL"
+msgstr "Adresa URL Handheld "
+
+msgid "Android Mobile: Android App Link Alternative"
+msgstr "Android Mobile: Alternativní odkaz na aplikaci Android"
+
+msgid "Android Mobile: Manifest"
+msgstr "Android Mobile: Manifest"
+
+msgid "Apple Mobile: iTunes App"
+msgstr "Apple Mobile: Aplikace iTunes"
+
+msgid "Apple Mobile: Web App Capable"
+msgstr "Apple Mobile: Podpora webové aplikace"
+
+msgid "Apple Mobile: Web App Status bar color"
+msgstr "Apple Mobile: Barva stavového řádku webové aplikace"
+
+msgid "Apple Mobile: Web App Title"
+msgstr "Apple Mobile: Název webové aplikace"
+
+msgid "Application name"
+msgstr "Název aplikace"
+
+msgid "Mobile: Cleartype"
+msgstr "Mobile: Cleartype"
+
+msgid "Apple Mobile: Format Detection"
+msgstr "Apple Mobile: Detekce formátu"
+
+msgid "Mobile: Handheld-Friendly"
+msgstr "Mobile: Podporuje kapesní zařízení"
+
+msgid "Apple Mobile: iOS App Link Alternative"
+msgstr "Apple Mobile: Alternativní odkaz na aplikaci iOS"
+
+msgid "Mobile: Mobile Optimized"
+msgstr "Mobile: Optimalizováno pro mobilní telefony"
+
+msgid "MSApplication - Allow domain API calls"
+msgstr "MSApplication - Povolit doménová volání rozhraní API"
+
+msgid "MSApplication - Allow domain meta tags"
+msgstr "MSApplication - Povolit doménové metaznačky"
+
+msgid "MSApplication - Badge"
+msgstr "MSApplication - Průkaz"
+
+msgid "MSApplication - Config"
+msgstr "MSApplication - Konfigurace"
+
+msgid "MSApplication - Nav button color"
+msgstr "MSApplication - Barva navigačního tlačítka"
+
+msgid "MSApplication - Notification"
+msgstr "MSApplication - Oznámení"
+
+msgid "MSApplication - Square logo, 150px x 150px"
+msgstr "MSApplication - Čtvercové logo, 150px x 150px"
+
+msgid "MSApplication - Square logo, 310px x 310px"
+msgstr "MSApplication - Čtvercové logo, 310px x 310px"
+
+msgid "MSApplication - Square logo, 70px x 70px"
+msgstr "MSApplication - Čtvercové logo, 70px x 70px"
+
+msgid "MSApplication - Start URL"
+msgstr "MSApplication - Adresa URL spuštění"
+
+msgid "MSApplication - Task"
+msgstr "MSApplication - Úloha"
+
+msgid "MSApplication - Task separator"
+msgstr "MSApplication - Oddělovač úloh"
+
+msgid "MSApplication - Tile color"
+msgstr "MSApplication - Barva dlaždice"
+
+msgid "MSApplication - Tile image"
+msgstr "MSApplication - Obrázek dlaždice"
+
+msgid "MSApplication - Tooltip"
+msgstr "MSApplication - Popisek nástroje"
+
+msgid "MSApplication - Wide logo, 310px x 150px"
+msgstr "MSApplication - Široké logo, 310px x 150px"
+
+msgid "MSApplication - Window"
+msgstr "MSApplication - Okno"
+
+msgid "Mobile: Theme Color"
+msgstr "Mobile: Barva motivu"
+
+msgid "Mobile: Viewport"
+msgstr "Mobile: Průhled"
+
+msgid "Mobile: Web Manifest"
+msgstr "Mobile: Webový manifest"
+
+msgid "X-UA-Compatible"
+msgstr "Kompatibilita-X-UA"
+
+msgid "Android"
+msgstr "Android"
+
+msgid "Custom meta tags used by the Android OS, browser, etc."
+msgstr "Vlastní metaznačky používané systémem Android, prohlížečem atd."
+
+msgid "Apple & iOS"
+msgstr "Apple & iOS"
+
+msgid "Custom meta tags used by Apple's software, iOS, Safari, etc."
+msgstr "Vlastní metaznačky používané softwarem Apple, iOS, Safari atd."
+
+msgid "Mobile & UI Adjustments"
+msgstr "Nastavení mobilního a uživatelského rozhraní"
+
+msgid "Windows & Windows Mobile"
+msgstr "Windows & Windows Mobile"
+
+msgid "Custom meta tags used by the Windows and Windows Mobile OSes, IE browser, etc."
+msgstr "Vlastní metaznačky používané systémy Windows a Windows Mobile, prohlížečem IE atd."
+
+msgid "Provides an absolute URL to a specially formatted version of the current page designed for 'feature phones', mobile phones that do not support modern browser standards. See the <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>official Google Mobile SEO Guide</a> for details on how the page should be formatted."
+msgstr "Poskytuje absolutní adresu URL pro speciálně formátovanou verzi aktuální stránky určené pro 'telefony se základními funkcemi', mobilní telefony, které nepodporují moderní standardy prohlížeče. Podrobnosti, jak by měla být stránka naformátována viz <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>oficiální příručka Google Mobile SEO Guide</a>."
+
+msgid "Android app link alternative"
+msgstr "Alternativní odkaz na aplikaci Android"
+
+msgid "A custom string for deeplinking to an Android mobile app. Should be in the format 'package_name/host_path', e.g. 'com.example.android/example/hello-screen'. The 'android-app://' prefix will be included automatically."
+msgstr "Vlastní řetězec hlubokého odkazu na mobilní aplikaci Android. Musí být ve formátu 'název_balíku/cesta_hostitele', např. 'com.example.android/example/hello-screen'. Předpona 'android-app://' bude přidána automaticky."
+
+msgid "iTunes App details"
+msgstr "Podrobnosti aplikace iTunes"
+
+msgid "This informs iOS devices to display a banner to a specific app. If used, it must provide the 'app-id' value, the 'affiliate-data' and 'app-argument' values are optional."
+msgstr "Dává pokyn zařízení iOS k zobrazení proužku konkrétní aplikace. Je-li použita, musí poskytnout hodnotu 'app-id', hodnoty 'affiliate-data' a 'app-argument' jsou nepovinné."
+
+msgid "Web app capable?"
+msgstr "Podpora webové aplikace?"
+
+msgid "If set to 'yes', the application will run in full-screen mode; the default behavior is to use Safari to display web content."
+msgstr "Je-li nastavena hodnota 'ano', spustí se aplikace v celoobrazovkovém režimu. Výchozí chování je použití prohlížeče Safari k zobrazení webového obsahu."
+
+msgid "Status bar color"
+msgstr "Barva stavového řádku"
+
+msgid "Requires the 'Web app capable' meta tag to be set to 'yes'. May be set to 'default', 'black', or 'black-translucent'."
+msgstr "Vyžaduje nastavení hodnoty 'ano' pro metaznačku 'Podpora webové aplikace'. Nastavit lze hodnotu 'výchozí', 'černá' nebo 'černá-průhledná'."
+
+msgid "Apple Web App Title"
+msgstr "Název webové aplikace Apple"
+
+msgid "Overrides the long site title when using the Apple Add to Home Screen."
+msgstr "Potlačuje dlouhý název webu při použití funkce Apple Přidat na domovskou obrazovku."
+
+msgid "The default name displayed with the pinned sites tile (or icon). Set the content attribute to the desired name."
+msgstr "Výchozí název, který se zobrazuje na dlaždici (či ikoně) připnutých webů. Pro atribut obsahu zadejte požadovaný název."
+
+msgid "Cleartype"
+msgstr "Cleartype"
+
+msgid "A legacy meta tag for older versions of Internet Explorer on Windows, use the value 'on' to enable it; this tag is ignored by all other browsers."
+msgstr "Starší metaznačka pro starší verze prohlížeče Internet Explorer v systému Windows. Použitím hodnoty 'zap' jej zapnete. Tuto značku ignorují všechny ostatní prohlížeče."
+
+msgid "Format detection"
+msgstr "Detekce formátu"
+
+msgid "If set to 'telephone=no' the page will not be checked for phone numbers, which would be presented."
+msgstr "Je-li nastavena hodnota 'telephone=no', na stránce nebudou zjišťována telefonní čísla, která se zde mohou zobrazovat."
+
+msgid "Handheld-Friendly"
+msgstr "Podporuje kapesní zařízení"
+
+msgid "Some older mobile browsers will expect this meta tag to be set to 'true' to indicate that the site has been designed with mobile browsers in mind."
+msgstr "Některé starší mobilní prohlížeče očekávají, že je pro tuto metaznačku nastavena hodnota 'true', jako signalizace skutečnosti, že je web navržen s ohledem na mobilní prohlížeče."
+
+msgid "iOS app link alternative"
+msgstr "Alternativní odkaz na aplikaci iOS"
+
+msgid "A custom string for deeplinking to an iOS mobile app. Should be in the format 'itunes_id/scheme/host_path', e.g. 123456/example/hello-screen'. The 'ios-app://' prefix will be included automatically."
+msgstr "Vlastní řetězec hlubokého odkazu na mobilní aplikaci iOS. Musí být ve formátu 'itunes_id/scheme/host_path', např. 123456/example/hello-screen'. Předpona 'ios-app://' bude přidána automaticky."
+
+msgid "Mobile Optimized"
+msgstr "Optimalizováno pro mobilní telefony"
+
+msgid "Using the value 'width' tells certain mobile Internet Explorer browsers to display as-is, without being resized. Alternatively a numerical width may be used to indicate the desired page width the page should be rendered in: '240' is the suggested default, '176' for older browsers or '480' for newer devices with high DPI screens."
+msgstr "Použití hodnoty 'width' informuje určité mobilní prohlížeče Internet Explorer, že mají obsah zobrazovat takový, jaký je, tj. bez změny velikosti. Případně lze použít číselnou šířku, a zadat tak požadovanou šířku stránky, jež má být použita k vykreslení: '240' je doporučená výchozí hodnota, '176' pro starší prohlížeče nebo '480' pro novější zařízení vybavená obrazovkami s vysokým rozlišením."
+
+msgid "Allows tasks to be defined on child domains of the fully qualified domain name associated with the pinned site. Should be either 'true' or 'false'."
+msgstr "Umožňuje definování úloh v podřízených doménách úplného názvu domény, který je přidružen k připnutému webu. Zadává se 'true' nebo 'false'."
+
+msgid "A semi-colon -separated string that must contain the 'polling-uri=' value with the full URL to a <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>Badge Schema XML file</a>. May also contain 'frequency=' value set to either 30, 60, 360, 720 or 1440 (default) which specifies (in minutes) how often the URL should be polled."
+msgstr "Řetězec s oddělovačem středník musí obsahovat atribut 'polling-uri=' s úplnou adresou URL odkazující na <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>soubor XML schématu průkazu</a>. Rovněž může obsahovat atribut 'frequency=' s hodnotou 30, 60, 360, 720 nebo 1440 (výchozí), jež určuje četnost provádění požadavků pro adresu URL v minutách."
+
+msgid "Should contain the full URL to a <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>Browser configuration schema</a> file that further controls tile customizations."
+msgstr "Musí obsahovat úplnou adresu URL souboru <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>schématu konfigurace prohlížeče</a>, který řídí přizpůsobení souborů."
+
+msgid "Controls the color of the Back and Forward buttons in the pinned site browser window."
+msgstr "Určuje barvu tlačítek Vpřed a Zpět v okně prohlížeče připnutého webu."
+
+msgid "A semi-colon -separated string containing 'polling-uri=' (required), 'polling-uri2=', 'polling-uri3=', 'polling-uri4=' and 'polling-uri5=' to indicate the URLs for notifications. May also contain a 'frequency=' value to specify how often (in minutes) the URLs will be polled; limited to 30, 60, 360, 720 or 1440 (default). May also contain the value 'cycle=' to control the notifications cycle."
+msgstr "Řetězec s oddělovačem středník obsahující atributy 'polling-uri=' (povinné), 'polling-uri2=', 'polling-uri3=', 'polling-uri4=' a 'polling-uri5=' určující adresy URL pro oznamování. Může obsahovat rovněž atribut 'frequency=' pro určení četnosti dotazování adresy URL v minutách. Použít lze pouze některou z hodnot 30, 60, 360, 720 a 1440 (výchozí). Může obsahovat atribut 'cycle=' pro řízení cyklu oznamování."
+
+msgid "The URL to a logo file that is 150px by 150px."
+msgstr "Adresa URL souboru s logem o velikosti 150px krát 150px."
+
+msgid "The URL to a logo file that is 310px by 310px."
+msgstr "Adresa URL souboru s logem o velikosti 310px krát 310px."
+
+msgid "The URL to a logo file that is 70px by 70px."
+msgstr "Adresa URL souboru s logem o velikosti 70px krát 70px."
+
+msgid "The URL to the root page of the site."
+msgstr "Adresa URL kořenové stránky webu."
+
+msgid "A semi-colon -separated string defining the 'jump' list task. Should contain the 'name=' value to specify the task's name, the 'action-uri=' value to set the URL to load when the jump list is clicked, the 'icon-uri=' value to set the URL to an icon file to be displayed, and 'window-type=' set to either 'tab' (default), 'self' or 'window' to control how the link opens in the browser."
+msgstr "Řetězec s oddělovačem středník definující úlohu seznamu 'jump'. Musí obsahovat atribut 'name=' s hodnotou určující název úlohy, atribut 'action-uri=' s hodnotou určující adresu URL, která má být načtena při klepnutí na seznam skoku, atribut 'icon-uri=' s hodnotou určující URL souboru ikony, jež má být zobrazena, a atribut 'window-type=' s hodnotou 'tab' (výchozí), 'self' nebo 'window', jež určuje, jak se má odkaz otevírat v prohlížeči."
+
+msgid "The HTML color to use as the background color for the live tile."
+msgstr "Barva HTML, jež má být použita jako barva pozadí pro aktuální dlaždici."
+
+msgid "The URL to an image to use as the background for the live tile."
+msgstr "Adresa URL obrázku, který má být použit jako pozadí pro aktuální dlaždici."
+
+msgid "Controls the text shown in the tooltip for the pinned site's shortcut."
+msgstr "Ovládá text zobrazující se v popisku nástroje pro zástupce připnutého webu."
+
+msgid "The URL to a logo file that is 310px by 150px."
+msgstr "Adresa URL souboru s logem o velikosti 310px krát 150px."
+
+msgid "A semi-colon -separated value that controls the dimensions of the initial window. Should contain the values 'width=' and 'height=' to control the width and height respectively."
+msgstr "Hodnota s položkami oddělenými středníkem určující rozměry počátečního okna. Musí obsahovat atributy 'width=' a 'height=' určující šířku a výšku."
+
+msgid "Theme Color"
+msgstr "Barva motivu"
+
+msgid "A color in hexadecimal format, e.g. '#0000ff' for blue; must include the '#' symbol. Used by some browsers to control the background color of the toolbar, the color used with an icon, etc."
+msgstr "Barva v hexadecimálním formátu, např. '#0000ff' pro modrou. Musí být uvozena znakem '#'. Tuto hodnotu používají některé prohlížeče pro nastavení barvy pozadí panelu nástrojů, barvy použité v ikoně atd."
+
+msgid "Viewport"
+msgstr "Průhled"
+
+msgid "Used by most contemporary browsers to control the display for mobile browsers. Please read a guide on responsive web design for details of what values to use."
+msgstr "Tuto značku používá většina současných prohlížečů k ovládání zobrazení pro mobilní prohlížeče. Podrobnosti k hodnotám, jež se zde používají, naleznete v příručce návrhu responzivního webu."
+
+msgid "Web Manifest"
+msgstr "Webový manifest"
+
+msgid "A URL to a manifest.json file that describes the application. The <a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>JSON-based manifest</a> provides developers with a centralized place to put metadata associated with a web application."
+msgstr "Adresa URL souboru manifest.json popisujícího aplikaci. <a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>Manifest JSON</a> poskytuje vývojářům centralizované místo k umístění metadat přidružených k webové aplikaci."
+
+msgid "Indicates to IE which rendering engine should be used for the current page."
+msgstr "Signalizuje prohlížeči IE, který vykreslovací modul má být použit pro aktuální stránku."
+
+msgid "Metatag: Open Graph"
+msgstr "Metaznačka: Open Graph"
+
+msgid "Provides support for Open Graph Protocol meta tags."
+msgstr "Poskytuje podporu pro metaznačky Open Graph Protocol."
+
+msgid "Article author"
+msgstr "Autor článku"
+
+msgid "Article expiration time"
+msgstr "Čas vypršení platnosti článku"
+
+msgid "Article modified time"
+msgstr "Čas změny článku"
+
+msgid "Article published time"
+msgstr "Čas publikace článku"
+
+msgid "Article publisher"
+msgstr "Vydavatel článku"
+
+msgid "Article section"
+msgstr "Sekce článku"
+
+msgid "Article tag(s)"
+msgstr "Značka (značky) článku"
+
+msgid "Book Author"
+msgstr "Autor knihy"
+
+msgid "Book ISBN"
+msgstr "ISBN knihy"
+
+msgid "Book Release Date"
+msgstr "Datum vydání knihy"
+
+msgid "Book Tags"
+msgstr "Značky knihy"
+
+msgid "Audio URL"
+msgstr "Adresa URL zvuku"
+
+msgid "Audio secure URL"
+msgstr "Zabezpečená adresa URL zvuku"
+
+msgid "Audio type"
+msgstr "Typ zvuku"
+
+msgid "Open Graph: Country name"
+msgstr "Open Graph: Název země"
+
+msgid "Open Graph: Description"
+msgstr "Open Graph: Popis"
+
+msgid "Open Graph: Determiner"
+msgstr "Open Graph: Uvození"
+
+msgid "Open Graph: Email"
+msgstr "Open Graph: E-mail"
+
+msgid "Open Graph: Fax number"
+msgstr "Open Graph: Faxové číslo"
+
+msgid "Open Graph: Image"
+msgstr "Open Graph: Obrázek"
+
+msgid "Open Graph: Image alt"
+msgstr "Otevřít graf: Alt obrázku"
+
+msgid "Open Graph: Image height"
+msgstr "Open Graph: Výška obrázku"
+
+msgid "Open Graph: Image secure URL"
+msgstr "Open Graph: Zabezpečená adresa URL obrázku"
+
+msgid "Open Graph: Image type"
+msgstr "Open Graph: Typ obrázku"
+
+msgid "Open Graph: Image URL"
+msgstr "Open Graph: Adresa URL obrázku"
+
+msgid "Open Graph: Image width"
+msgstr "Open Graph: Šířka obrázku"
+
+msgid "Open Graph: Latitude"
+msgstr "Open Graph: Zeměpisná šířka"
+
+msgid "Open Graph: Locale"
+msgstr "Open Graph: Národní prostředí"
+
+msgid "Open Graph: Alternative locale"
+msgstr "Open Graph: Alternativní národní prostředí"
+
+msgid "Open Graph: Locality"
+msgstr "Open Graph: Lokalita"
+
+msgid "Open Graph: Longitude"
+msgstr "Open Graph: Zeměpisná délka"
+
+msgid "Open Graph: Phone number"
+msgstr "Open Graph: Telefonní číslo"
+
+msgid "Open Graph: Postal code"
+msgstr "Open Graph: PSČ"
+
+msgid "Open Graph: Region"
+msgstr "Open Graph: Oblast"
+
+msgid "Open Graph: See also"
+msgstr "Open Graph: Viz také"
+
+msgid "Open Graph: Site name"
+msgstr "Open Graph: Název webu"
+
+msgid "Open Graph: Street address"
+msgstr "Open Graph: Poštovní adresa"
+
+msgid "Open Graph: Title"
+msgstr "Open Graph: Název"
+
+msgid "Open Graph: Type"
+msgstr "Open Graph: Typ"
+
+msgid "Open Graph: Updated time"
+msgstr "Open Graph: Aktualizovaný čas"
+
+msgid "Open Graph: URL"
+msgstr "Open Graph: Adresa URL"
+
+msgid "Open Graph: Video URL"
+msgstr "Open Graph: Adresa URL videa"
+
+msgid "Open Graph: Video duration"
+msgstr "Open Graph: Doba trvání videa"
+
+msgid "Open Graph: Video height"
+msgstr "Open Graph: Výška videa"
+
+msgid "Open Graph: Video Secure URL"
+msgstr "Open Graph: Zabezpečená adresa videa"
+
+msgid "Open Graph: Video type"
+msgstr "Open Graph: Typ videa"
+
+msgid "Open Graph: Video width"
+msgstr "Open Graph: Šířka videa"
+
+msgid "First name"
+msgstr "Jméno"
+
+msgid "Gender"
+msgstr "Pohlaví"
+
+msgid "Last name"
+msgstr "Příjmení"
+
+msgid "Username"
+msgstr "Uživatelské jméno"
+
+msgid "Actor(s)"
+msgstr "Aktér (aktéři)"
+
+msgid "Actor's role"
+msgstr "Role aktéra"
+
+msgid "Director(s)"
+msgstr "Ředitel (ředitelé)"
+
+msgid "Release date"
+msgstr "Datum vydání"
+
+msgid "Series"
+msgstr "Řada"
+
+msgid "Tag words"
+msgstr "Taggovaná slova"
+
+msgid "Scriptwriter(s)"
+msgstr "Zapisovač(e) skriptu"
+
+msgid "Open Graph"
+msgstr "Open Graph"
+
+msgid "The <a href='https://ogp.me/'>Open Graph meta tags</a> are used to control how Facebook, Pinterest, LinkedIn and other social networking sites interpret the site's content.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "<a href='https://ogp.me/'>Metaznačky Open Graph</a> se používají k řízení způsobu, kterým portály Facebook, Pinterest, LinkedIn a další weby sociálních sítí interpretují obsah webu.<br><br>Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> vám umožní zobrazit náhled, jak bude váš obsah vypadat, když je sdílen na Facebooku, a ladit případné problémy se značkami Open Graph."
+
+msgid "Links an article to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "Odkazy na článek na profil Facebook autora. Jde o adresu URL na stránku profilu autora nebo o ID jeho profilu Facebook."
+
+msgid "Article expiration date & time"
+msgstr "Datum a čas vypršení platnosti článku"
+
+msgid "The date this content will expire, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "Datum, k němuž vyprší platnost tohoto obsahu, s volitelnou hodnotou času. Musí být ve formátu <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>."
+
+msgid "Article modification date & time"
+msgstr "Datum a čas úpravy článku"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "Datum poslední úpravy tohoto obsahu s volitelnou hodnotou času. Musí být ve formátu <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>."
+
+msgid "Article publication date & time"
+msgstr "Datum a čas publikování článku"
+
+msgid "The date this content was published on, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "Datum, k němuž byl tento obsah publikován, s volitelnou hodnotou času. Musí být ve formátu <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>."
+
+msgid "Links an article to a publisher's Facebook page."
+msgstr "Propojuje článek se stránkou Facebook vydavatele."
+
+msgid "The primary section of this website the content belongs to."
+msgstr "Primární sekce tohoto webu, do níž patří obsah."
+
+msgid "Appropriate keywords for this content."
+msgstr "Klíčová slova vhodná pro tento obsah."
+
+msgid "Book author"
+msgstr "Autor knihy"
+
+msgid "Links a book to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "Propojuje knihu s profilem Facebook autora. Jde o adresu URL profilové stránky autora nebo o ID jeho profilu Facebook."
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "The Book's ISBN"
+msgstr "Kód ISBN knihy"
+
+msgid "Release Date"
+msgstr "Datum vydání"
+
+msgid "The date the book was released."
+msgstr "Datum, k němuž byla kniha vydána."
+
+msgid "Book tag(s)"
+msgstr "Značka (značky) knihy"
+
+msgid "The URL to an audio file that complements this object."
+msgstr "Adresa URL zvukového souboru, který doplňuje tento objekt."
+
+msgid "The secure URL to an audio file that complements this object. All 'http://' URLs will automatically be converted to 'https://'."
+msgstr "Zabezpečená adresa URL zvukového souboru, který doplňuje tento objekt. Všechny adresy URL 'http://' budou automaticky převedeny na 'https: //'."
+
+msgid "The MIME type of the audio file. Examples include 'application/mp3' for an MP3 file."
+msgstr "Typ MIME zvukového souboru. Příklady zahrnují 'application/mp3' pro soubor MP3."
+
+msgid "Country name"
+msgstr "Název země"
+
+msgid "A one to two sentence description of the content."
+msgstr "Popis obsahu o jedné či dvou větách."
+
+msgid "Determiner"
+msgstr "Uvození"
+
+msgid "The word that appears before the content's title in a sentence. The default ignores this value, the 'Automatic' value should be sufficient if this is actually needed."
+msgstr "Slovo, které se uvádí před názvem obsahu v knize. Při výchozím nastavení je tato hodnota ignorována. Je-li tato funkce zapotřebí, postačí hodnota 'Automaticky'. "
+
+msgid "Email address"
+msgstr "E-mail"
+
+msgid "Fax number"
+msgstr "Číslo faxu"
+
+msgid "The URL of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats. Should not be used if og:image:url is used. Note: if multiple images are added many services (e.g. Facebook) will default to the largest image, not specifically the first one."
+msgstr "Adresa URL obrázku reprezentujícího obsah. Obrázek musí mít velikost nejméně 200 x 200 pixelů. Optimální velikost obrázku je 600 x 316 pixelů. Podporuje formáty PNG, JPEG a GIF. Nesmí být použita, je-li použita značka og:image:url. Poznámka: Je-li přidáno více obrázků, řada služeb (např. Facebook) bude používat největší z obrázků, nikoli první obrázek."
+
+msgid "Image 'alt'"
+msgstr "'Alt' obrázku"
+
+msgid "A description of what is in the image, not a caption. If the page specifies an og:image it should specify og:image:alt."
+msgstr "Popis toho, co je v obrázku, ne v popisku. Pokud stránka uvádí značku og:image, měla by uvádět og:image:alt."
+
+msgid "Image height"
+msgstr "Výška obrázku"
+
+msgid "The height of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "Výška výše uvedeného obrázku (obrázků). Poznámka: Jsou-li zadány nezabezpečené i zabezpečené obrázky, musejí mít shodnou velikost."
+
+msgid "Image Secure URL"
+msgstr "Zabezpečená adresa URL obrázku"
+
+msgid "The secure URL (HTTPS) of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats."
+msgstr "Zabezpečená adresa URL (HTTPS) obrázku představujícího obsah. Obrázek musí mít velikost nejméně 200 x 200 pixelů. Optimální velikost obrázku je 600 x 316 pixelů. Podporuje formáty PNG, JPEG a GIF."
+
+msgid "Image type"
+msgstr "Typ obrázku"
+
+msgid "The type of image referenced above. Should be either 'image/gif' for a GIF image, 'image/jpeg' for a JPG/JPEG image, or 'image/png' for a PNG image. Note: there should be one value for each image, and having more than there are images may cause problems."
+msgstr "Typ výše odkazovaného obrázku. Musí být 'image/gif' pro obrázek GIF, 'image/jpeg' pro obrázek JPG/JPEG nebo 'image/png' pro obrázek PNG. Poznámka: Pro každý obrázek smí být zadána pouze jediná hodnota. V opačném případě může dojít k problémům."
+
+msgid "Image URL"
+msgstr "Adresa URL obrázku"
+
+msgid "A alternative version of og:image and has exactly the same requirements; only one needs to be used."
+msgstr "Alternativní verze značky og:image se přesně stejnými požadavky. Používá se pouze jedna z těchto dvou značek."
+
+msgid "Image width"
+msgstr "Šířka obrázku"
+
+msgid "The width of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "Šířka výše uvedeného obrázku(ů). Poznámka: Jsou-li zadány nezabezpečené i zabezpečené obrázky, musejí mít shodnou velikost."
+
+msgid "Latitude"
+msgstr "Zeměpisná šířka"
+
+msgid "Locale"
+msgstr "Lokalizace"
+
+msgid "The locale these tags are marked up in, must be in the format language_TERRITORY. Default is 'en_US'."
+msgstr "Národní prostředí, v němž jsou tyto značky kódovány, musí být ve formátu jazyk_ŮZEMÍ. Výchozí hodnota: 'en_US'."
+
+msgid "Alternative locales"
+msgstr "Alternativní národní prostředí"
+
+msgid "Other locales this content is available in, must be in the format language_TERRITORY, e.g. 'fr_FR'."
+msgstr "Další národní prostředí, v nichž je tento obsah k dispozici, musejí být ve formátu jazyk_ÚZEMÍ, např. 'fr_FR'."
+
+msgid "Locality"
+msgstr "Lokalita"
+
+msgid "Longitude"
+msgstr "Zeměpisná délka"
+
+msgid "Phone number"
+msgstr "Telefonní číslo"
+
+msgid "Postal/ZIP code"
+msgstr "PSČ"
+
+msgid "Region"
+msgstr "Region"
+
+msgid "See also"
+msgstr "Viz také"
+
+msgid "URLs to related content"
+msgstr "Adresy URL souvisejícího obsahu"
+
+msgid "Site name"
+msgstr "Název webu"
+
+msgid "A human-readable name for the site, e.g., <em>IMDb</em>."
+msgstr "Název čitelný pro člověka pro web, např. <em>IMDb</em>."
+
+msgid "Street address"
+msgstr "Ulice"
+
+msgid "The title of the content, e.g., <em>The Rock</em>."
+msgstr "Název obsahu, např. <em>The Rock</em>."
+
+msgid "Content type"
+msgstr "Typ obsahu"
+
+msgid "The type of the content, e.g., <em>movie</em>."
+msgstr "Typ obsahu, např. <em>film</em>."
+
+msgid "Content modification date & time"
+msgstr "Datum a čas úpravy obsahu"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format. Can be the same as the 'Article modification date' tag."
+msgstr "Datum poslední úpravy tohoto obsahu s volitelnou hodnotou času. Musí být ve formátu <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>. Může být stejné jako ve značce 'Datum úpravy článku'."
+
+msgid "Page URL"
+msgstr "Adresa URL stránky"
+
+msgid "Preferred page location or URL to help eliminate duplicate content for search engines, e.g., <em>https://www.imdb.com/title/tt0117500/</em>."
+msgstr "Upřednostňované umístění stránky nebo adresa URL, jež pomáhá eliminovat duplicitní obsah pro vyhledávače, např. <em>https://www.imdb.com/title/tt0117500/</em>."
+
+msgid "Video URL"
+msgstr "Adresa URL videa"
+
+msgid "The URL of an video which should represent the content. For best results use a source that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Object types supported include video.episode, video.movie, video.other, and video.tv_show."
+msgstr "Adresa URL videa, jež představuje obsah. Optimálně použijte zdroj o velikosti nejméně 1200 x 630. Doporučené minimum je 600 x 316 pixelů. Podporované typy objektů: video.episode, video.movie, video.other a video.tv_show."
+
+msgid "Video duration (seconds)"
+msgstr "Doba trvání videa (sekundy)"
+
+msgid "The length of the video in seconds"
+msgstr "Délka videa v sekundách"
+
+msgid "Video height"
+msgstr "Výška videa"
+
+msgid "The height of the above video(s). Note: if both the unsecured and secured videos are provided, they should both be the same size."
+msgstr "Výška výše uvedeného videa. Poznámka: Jsou-li zadána nezabezpečená i zabezpečená videa, musejí mít shodnou velikost."
+
+msgid "Video Secure URL"
+msgstr "Zabezpečená adresa URL videa "
+
+msgid "The secure URL (HTTPS) of an video which should represent the content."
+msgstr "Zabezpečená adresa URL (HTTPS) videa představujícího obsah."
+
+msgid "Video type"
+msgstr "Typ Videa"
+
+msgid "The type of video referenced above. Should be either  video.episode, video.movie, video.other, and video.tv_show. Note: there should be one value for each video, and having more than there are videos may cause problems."
+msgstr "Typ výše uvedeného videa. Musí jít o objekt typu video.episode, video.movie, video.other nebo video.tv_show. Poznámka: Pro každé video smí být zadána pouze jediná hodnota. Při zadání více videí může dojít k problémům."
+
+msgid "Video width"
+msgstr "Šířka videa"
+
+msgid "The first name of the person who's Profile page this is."
+msgstr "Křestní jméno osoby, jíž stránka profilu patří."
+
+msgid "Any of Facebook's gender values should be allowed, the initial two being 'male' and 'female'."
+msgstr "Povoleny by měly být veškeré hodnoty Facebooku pro pohlaví, jako první dvě to jsou 'muž' a 'žena'."
+
+msgid "The person's last name."
+msgstr "Příjmení osoby."
+
+msgid "A pseudonym / alias of this person."
+msgstr "Pseudonym/alias této osoby."
+
+msgid "Links to the Facebook profiles for actor(s) that appear in the video."
+msgstr "Odkazy na profily Facebook pro aktéra(y), jenž se objevují ve videu."
+
+msgid "The roles of the actor(s)."
+msgstr "Role aktéra(ů)."
+
+msgid "Links to the Facebook profiles for director(s) that worked on the video."
+msgstr "Odkazy na profily Facebook pro ředitele, kteří pracovali na videu."
+
+msgid "The date the video was released."
+msgstr "Datum, kdy bylo video uvolněno."
+
+msgid "The TV show this series belongs to."
+msgstr "Televizní pořad, do kterého tato série patří."
+
+msgid "Tag words associated with this video."
+msgstr "Taggovaná slova přidružená k tomuto videu."
+
+msgid "Links to the Facebook profiles for scriptwriter(s) for the video."
+msgstr "Odkazy na profily Facebook pro zapisovač(e) skriptu pro video."
+
+msgid "Provides additional Open Graph Protocol meta tags for describing products."
+msgstr "Poskytuje další metaznačky Open Graph Protocol k popisu produktů."
+
+msgid "Metatag: Open Graph Products"
+msgstr "Metaznačka: Produkty Open Graph"
+
+msgid "Open Graph Product: Price availability"
+msgstr "Otevřít produkt Graf: Dostupnost cen"
+
+msgid "Open Graph Product: Product condition"
+msgstr "Otevřít produkt Graf: Stav produktu"
+
+msgid "Open Graph Product: Price amount"
+msgstr "Produkt Open Graph: Cena"
+
+msgid "Open Graph Product: Price currency"
+msgstr "Produkt Open Graph: Měna ceny"
+
+msgid "Open Graph Product: Retailer Item ID"
+msgstr "Otevřít produkt Graf: ID položky maloobchodníka"
+
+msgid "Open Graph - Products"
+msgstr "Open Graph - Produkty"
+
+msgid "These <a href='https://ogp.me/'>Open Graph meta tags</a> are for describing products.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "Tyto <a href='https://ogp.me/'>metaznačky Open Graph</a> jsou určeny k popisu produktů.<br><br>Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> vám umožní zobrazit náhled, jak bude váš obsah vypadat, když je sdílen na Facebooku, a ladit případné problémy se značkami Open Graph."
+
+msgid "Product availability"
+msgstr "Dostupnost produktu"
+
+msgid "The availability of the product."
+msgstr "Dostupnost produktu."
+
+msgid "Product condition"
+msgstr "Stav produktu"
+
+msgid "The condition of the product."
+msgstr "Stav produktu."
+
+msgid "Product price amount"
+msgstr "Cena produktu"
+
+msgid "The price amount of the product."
+msgstr "Cena produktu."
+
+msgid "Product price currency"
+msgstr "Měna ceny produktu"
+
+msgid "The price currency of the product."
+msgstr "Měna ceny produktu."
+
+msgid "Retailer Item ID"
+msgstr "ID položky maloobchodníka"
+
+msgid "The ID of the product as provided by the retailer."
+msgstr "ID produktu, jak je uveden maloobchodníkem."
+
+msgid "Metatag: Page Manager"
+msgstr "Metaznačka: Správce stránek"
+
+msgid "Provides metatag support for Page Manager variants."
+msgstr "Poskytuje podporu metaznaček pro varianty správce stránek."
+
+msgid "Metatag: Pinterest"
+msgstr "Metaznačka: Pinterest"
+
+msgid "Provides support for Pinterest's custom meta tags."
+msgstr "Poskytuje podporu pro vlastní metaznačky platformy Pinterest."
+
+msgid "Pinterest: Description"
+msgstr "Pinterest: Popis"
+
+msgid "Pinterest: ID"
+msgstr "Pinterest: ID"
+
+msgid "Pinterest: Media"
+msgstr "Pinterest: Média"
+
+msgid "Pinterest: No hover"
+msgstr "Pinterest: Bez události hover"
+
+msgid "Pinterest: No pin"
+msgstr "Pinterest: Bez ukotvení"
+
+msgid "Pinterest: No search"
+msgstr "Pinterest: Bez hledání"
+
+msgid "Pinterest: URL"
+msgstr "Pinterest: Adresa URL"
+
+msgid "Pinterest"
+msgstr "Pinterest"
+
+msgid "A set of meta tags used to control how the site's content is consumed by <a href='https://pinterest.com/'>Pinterest</a>."
+msgstr "Sada metaznaček, jež se používají k řízení způsobu, kterým je obsah stránky využíván platformou <a href='https://pinterest.com/'>Pinterest</a>."
+
+msgid "Id"
+msgstr "Id"
+
+msgid "The Canonical Pinterest object to pin."
+msgstr "Kanonický objekt Pinterest k ukotvení."
+
+msgid "Media"
+msgstr "Média"
+
+msgid "The URL of media which should represent the content."
+msgstr "Adresa URL média, jež představuje obsah."
+
+msgid "No hover"
+msgstr "Bez události hover"
+
+msgid "Do not show hovering Save or Search buttons, generated by the Pinterest browser extensions."
+msgstr "Nezobrazovat plovoucí popisky (hover) pro tlačítka Uložit a Hledat, které jsou generovány doplňky prohlížeče pro platformu Pinterest."
+
+msgid "No pin"
+msgstr "Bez ukotvení"
+
+msgid "Do not pin anything from this page. When selected, this option will take precedence over all options below."
+msgstr "Neukotvovat nic na této stránce. Je-li tato volba vybrána, má přednost před všemi níže uvedenými volbami"
+
+msgid "No search"
+msgstr "Bez hledání"
+
+msgid "Do not allow Pinterest visual search to happen from this page."
+msgstr "Nepovolit vizuální hledání Pinterest na této stránce."
+
+msgid "URL"
+msgstr "URL"
+
+msgid "The URL which should represent the content."
+msgstr "Adresa URL představující obsah."
+
+msgid "Enables metatags for custom routes"
+msgstr "Povoluje metaznačky pro vlastní trasy"
+
+msgid "Metatag Custom Routes (Paths)"
+msgstr "Vlastní trasy metaznaček (cesty)"
+
+msgid "Allows assigning meta tags to be used on custom routes, equivalent to custom paths."
+msgstr "Umožňuje přiřadit metaznačky, které mají být použity na vlastních trasách, což odpovídá vlastním cestám."
+
+msgid "Add meta tag for custom route"
+msgstr "Přidat metaznačku pro vlastní trasu"
+
+msgid "Add custom metatag"
+msgstr "Přidat vlastní metaznačku"
+
+msgid "Route / Path"
+msgstr "Trasa/cesta"
+
+msgid "Enter the route (path) for this new configuration, starting with a leading slash.<br />Note: this must already exist as a path in Drupal."
+msgstr "Zadejte trasu (cestu) pro tuto novou konfiguraci, začínající úvodním lomítkem.<br />Poznámka: musí již existovat jako cesta v Drupal."
+
+msgid "Submit"
+msgstr "Odeslat"
+
+msgid "The path must begin with /"
+msgstr "Cesta musí začínat znakem /"
+
+msgid "The admin routes should not have metatags."
+msgstr "Administrativní trasy by neměly mít metaznačky."
+
+msgid "The entities routes metatags must be added by fields. @entity_type - @id"
+msgstr "Metaznačky tras entit musí být přidány podle polí. @entity_type - @id"
+
+msgid "There are already metatags created for this route."
+msgstr "Pro tuto trasu již byly vytvořeny metaznačky."
+
+msgid "The path does not exist as an internal Drupal route."
+msgstr "Cesta neexistuje jako interní trasa Drupal."
+
+msgid "Created metatags for the path: @url. Internal route: @route."
+msgstr "Vytvořené metaznačky pro cestu: @url. Vnitřní trasa: @route."
+
+msgid "The metatags could not be created for the path: @url."
+msgstr "Metaznačky nebyly vytvořeny pro cestu: @url."
+
+msgid "Metatag: Twitter Cards"
+msgstr "Metaznačka: Twitter Cards"
+
+msgid "Provides support for Twitter's Card meta tags."
+msgstr "Poskytuje podporu pro metaznačky Twitter Cards."
+
+msgid "Twitter Cards: Google Play app ID"
+msgstr "Twitter Cards: ID aplikace Google Play"
+
+msgid "Twitter Cards: iPad app ID"
+msgstr "Twitter Cards: ID aplikace iPad"
+
+msgid "Twitter Cards: iPhone app ID"
+msgstr "Twitter Cards: ID aplikace iPhone"
+
+msgid "Twitter Cards: Google Play app name"
+msgstr "Twitter Cards: Název aplikace Google Play"
+
+msgid "Twitter Cards: iPad app name"
+msgstr "Twitter Cards: Název aplikace iPad"
+
+msgid "Twitter Cards: iPhone app name"
+msgstr "Twitter Cards: Název aplikace iPhone"
+
+msgid "Twitter Cards: App store country"
+msgstr "Twitter Cards: Země portálu App Store"
+
+msgid "Twitter Cards: Google Play app URL schema"
+msgstr "Twitter Cards: Schéma adresy URL aplikace Google Play"
+
+msgid "Twitter Cards: iPad app URL schema"
+msgstr "Twitter Cards: Schéma adresy URL aplikace iPad"
+
+msgid "Twitter Cards: iPhone app URL schema"
+msgstr "Twitter Cards: Schéma adresy URL aplikace iPhone"
+
+msgid "Twitter Cards: Creator's Twitter account"
+msgstr "Twitter Cards: Účet Twitter autora"
+
+msgid "Twitter Cards: Creator's Twitter account ID"
+msgstr "Twitter Cards: ID účtu Twitter autora"
+
+msgid "Twitter Cards: Data 1"
+msgstr "Twitter Cards: Data 1"
+
+msgid "Twitter Cards: Data 2"
+msgstr "Twitter Cards: Data 2"
+
+msgid "Twitter Cards: Description"
+msgstr "Twitter Cards: Popis"
+
+msgid "Twitter Cards: Do Not Track"
+msgstr "Twitter Cards: Nesledovat"
+
+msgid "Twitter Cards: 1st gallery image"
+msgstr "Twitter Cards: 1. obrázek galerie"
+
+msgid "Twitter Cards: 2nd gallery image"
+msgstr "Twitter Cards: 2. obrázek galerie"
+
+msgid "Twitter Cards: 3rd gallery image"
+msgstr "Twitter Cards: 3. obrázek galerie"
+
+msgid "Twitter Cards: 4th gallery image"
+msgstr "Twitter Cards: 4. obrázek galerie"
+
+msgid "Twitter Cards: Image URL"
+msgstr "Twitter Cards: Adresa URL obrázku"
+
+msgid "Twitter Cards: Image height"
+msgstr "Twitter Cards: Výška obrázku"
+
+msgid "Twitter Cards: Image width"
+msgstr "Twitter Cards: Šířka obrázku"
+
+msgid "Twitter Cards: Image alternative text"
+msgstr "Twitter Cards: Alternativní text obrázku"
+
+msgid "Twitter Cards: Label 1"
+msgstr "Twitter Cards: Popisek 1"
+
+msgid "Twitter Cards: Label 2"
+msgstr "Twitter Cards: Popisek 2"
+
+msgid "Twitter Cards: Page URL"
+msgstr "Twitter Cards: Adresa URL stránky"
+
+msgid "Twitter Cards: Media player URL"
+msgstr "Twitter Cards: Adresa URL přehrávače médií"
+
+msgid "Twitter Cards: Media player height"
+msgstr "Twitter Cards: Výška přehrávače médií"
+
+msgid "Twitter Cards: MP4 media stream URL"
+msgstr "Twitter Cards: Adresa URL mediálního proudu MP4"
+
+msgid "Twitter Cards: MP4 media straem MIME-type"
+msgstr "Twitter Cards: Typ MIME mediálního proudu MP4"
+
+msgid "Twitter Cards: Media player width"
+msgstr "Twitter Cards: Šířka přehrávače médií"
+
+msgid "Twitter Cards: Site's Twitter account"
+msgstr "Twitter Cards: Účet Twitter webu"
+
+msgid "Twitter Cards: Site's Twitter account ID"
+msgstr "Twitter Cards: ID účtu Twitter webu"
+
+msgid "Twitter Cards: Title"
+msgstr "Twitter Cards: Název"
+
+msgid "Twitter Cards: Type"
+msgstr "Twitter Cards: Typ"
+
+msgid "Twitter Cards"
+msgstr "Twitter Cards"
+
+msgid "A set of meta tags specially for controlling the summaries displayed when content is shared on <a href='https://twitter.com/'>Twitter</a>."
+msgstr "Sada metaznaček určených k řízení souhrnů zobrazovaných při sdílení obsahu na portálu <a href='https://twitter.com/'>Twitter</a>."
+
+msgid "Google Play app ID"
+msgstr "ID aplikace Google Play"
+
+msgid "iPad app ID"
+msgstr "ID aplikace iPad"
+
+msgid "String value, should be the numeric representation of your iPad app's ID in the App Store."
+msgstr "Řetězec, musí být číselnou reprezentací ID vaší aplikace iPad v App Store."
+
+msgid "iPhone app ID"
+msgstr "ID aplikace iPhone"
+
+msgid "String value, should be the numeric representation of your iPhone app's ID in the App Store."
+msgstr "Řetězec, musí být číselnou reprezentací ID vaší aplikace iPhone v App Store."
+
+msgid "Google Play app name"
+msgstr "Název aplikace Google Play"
+
+msgid "The name of the app in the Google Play app store."
+msgstr "Název aplikace v systému App Store Google Play."
+
+msgid "The name of the iPad app."
+msgstr "Název aplikace iPad."
+
+msgid "The name of the iPhone app."
+msgstr "Název aplikace iPhone."
+
+msgid "App store country"
+msgstr "Země portálu App Store"
+
+msgid "If your application is not available in the US App Store, you must set this value to the two-letter country code for the App Store that contains your application."
+msgstr "Není-li vaše aplikace k dispozici v US App Store, musíte zde nastavit dvoupísmenný kód země pro App Store obsahující vaši aplikaci."
+
+msgid "Google Play app's custom URL scheme"
+msgstr "Vlastní schéma adresy URL aplikace Google Play"
+
+msgid "iPad app's custom URL scheme"
+msgstr "Vlastní schéma adresy URL aplikace iPad"
+
+msgid "iPhone app's custom URL scheme"
+msgstr "Vlastní schéma adresy URL aplikace iPhone"
+
+msgid "Creator's Twitter account"
+msgstr "Účet Twitter autora"
+
+msgid "The @username for the content creator / author for this page, including the @ symbol."
+msgstr "@username autora obsahu pro tuto stránku včetně znaku @."
+
+msgid "Creator's Twitter account ID"
+msgstr "ID účtu Twitter autora"
+
+msgid "The numerical Twitter account ID for the content creator / author for this page."
+msgstr "Číselné ID účtu Twitter autora obsahu pro tuto stránku."
+
+msgid "Data 1"
+msgstr "Data 1"
+
+msgid "This field expects a string, and allows you to specify the types of data you want to offer (price, country, etc.)."
+msgstr "Do tohoto pole se zadává řetězec. Umožňuje vám určit typy dat, která chcete nabízet (cena, země atd.)."
+
+msgid "Data 2"
+msgstr "Data 2"
+
+msgid "A description that concisely summarizes the content of the page, as appropriate for presentation within a Tweet. Do not re-use the title text as the description, or use this field to describe the general services provided by the website. The string will be truncated, by Twitter, at the word to 200 characters."
+msgstr "Popis, který stručně shrnuje obsah stránky, ve tvaru vhodném k prezentaci v rámci tweetu. Jako popis nepoužívejte text názvu, ani toto pole nepoužívejte k popisu obecných služeb poskytovaných webem.Řetězec bude platformou Twitter oříznut na hranici slova na maximální délku 200."
+
+msgid "Do Not Track"
+msgstr "Nesledovat"
+
+msgid "1st gallery image"
+msgstr "1. obrázek galerie"
+
+msgid "A URL to the image representing the first photo in your gallery."
+msgstr "Adresa URL obrázku představujícího první fotografii ve vaší galerii."
+
+msgid "2nd gallery image"
+msgstr "2. obrázek galerie"
+
+msgid "A URL to the image representing the second photo in your gallery."
+msgstr "Adresa URL obrázku představujícího druhou fotografii ve vaší galerii."
+
+msgid "3rd gallery image"
+msgstr "3. obrázek galerie"
+
+msgid "A URL to the image representing the third photo in your gallery."
+msgstr "Adresa URL obrázku představujícího třetí fotografii ve vaší galerii."
+
+msgid "4th gallery image"
+msgstr "4. obrázek galerie"
+
+msgid "A URL to the image representing the fourth photo in your gallery."
+msgstr "Adresa URL obrázku představujícího čtvrtou fotografii ve vaší galerii."
+
+msgid "The URL to a unique image representing the content of the page. Do not use a generic image such as your website logo, author photo, or other image that spans multiple pages. Images larger than 120x120px will be resized and cropped square based on longest dimension. Images smaller than 60x60px will not be shown. If the 'type' is set to Photo then the image must be at least 280x150px."
+msgstr "Adresa URL jedinečného obrázku představujícího obsah stránky. Nepoužívejte generický obrázek, tj. například logo svých webových stránek, podobenku autora ani jiný obrázek, který se používá i na jiných stránkách. Obrázky větší než 120 x 120px budou zmenšeny a oříznuty na čtverec v delším rozměru. Obrázky menší než 60 x 60px se nezobrazí. Je-li pro atribut 'type' nastavena hodnota Fotografie, musí mít obrázek rozměry nejméně 280 x 150px."
+
+msgid "Image alternative text"
+msgstr "Alternativní text obrázku"
+
+msgid "The alternative text of the image being linked to. Limited to 420 characters."
+msgstr "Alternativní text propojovaného obrázku. Maximální délka: 420 znaků."
+
+msgid "The height of the image being linked to, in pixels."
+msgstr "Výška připojovaného obrázku v pixelech."
+
+msgid "The width of the image being linked to, in pixels."
+msgstr "Šířka připojovaného obrázku v pixelech."
+
+msgid "Label 1"
+msgstr "Popisek 1"
+
+msgid "This field expects a string, and you can specify values for labels such as price, items in stock, sizes, etc."
+msgstr "Do tohoto pole se zadává řetězec. Můžete zadat hodnoty pro popisky, například cena, položky skladem, rozměry atd."
+
+msgid "Label 2"
+msgstr "Popisek 2"
+
+msgid "The permalink / canonical URL of the current page."
+msgstr "Adresa URL pro trvalý odkaz/kanonický odkaz na aktuální stránku."
+
+msgid "Media player URL"
+msgstr "Adresa URL přehrávače médií"
+
+msgid "The full URL for loading a media player, specifically an iframe for an embedded video rather than the URL to a page that contains a player. Required when using the Player Card type."
+msgstr "Úplná adresa URL pro načtení přehrávače médií, konkrétně iframe pro vložené video namísto adresy URL stránky, která obsahuje přehrávač. Vyžadováno při použití typu karty hráče."
+
+msgid "Media player height"
+msgstr "Výška přehrávače médií"
+
+msgid "The height of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "Výška rámce iframe přehrávače médií v pixelech. Vyžadováno při použití typu karty hráče."
+
+msgid "MP4 media stream URL"
+msgstr "Adresa URL mediálního proudu MP4"
+
+msgid "The full URL for an MP4 video (h.264) or audio (AAC) stream, takes precedence over the other media player field."
+msgstr "Úplná adresa URL proudu videa MP4 (h.264) nebo audia (AAC). Má přednost před ostatními poli přehrávače médií."
+
+msgid "MP4 media stream MIME-type"
+msgstr "Typ MIME mediálního proudu MP4"
+
+msgid "Media player width"
+msgstr "Šířka přehrávače médií"
+
+msgid "The width of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "Šířka rámce iframe přehrávače médií v pixelech. Vyžadováno při použití typu karty hráče."
+
+msgid "Site's Twitter account"
+msgstr "Účet Twitter webu"
+
+msgid "The @username for the website, which will be displayed in the Card's footer; must include the @ symbol."
+msgstr "@username pro web, které se bude zobrazovat v zápatí karty. Musí obsahovat znak @."
+
+msgid "Site's Twitter account ID"
+msgstr "ID účtu Twitter webu"
+
+msgid "The numerical Twitter account ID for the website, which will be displayed in the Card's footer."
+msgstr "Číselné ID účtu Twitter pro web. Bude se zobrazovat v zápatí karty."
+
+msgid "The page's title, which should be concise; it will be truncated at 70 characters by Twitter. This field is required unless this the 'type' field is set to 'photo'."
+msgstr "Stručný název stránky. Platforma Twitter provádí zkrácení na 70 znaků. Toto pole je povinné, není-li v poli 'typ' nastavena hodnota 'fotografie'."
+
+msgid "- None -"
+msgstr "- Nic -"
+
+msgid "Summary Card"
+msgstr "Karta Souhrn"
+
+msgid "Summary Card with large image"
+msgstr "Karta Souhrn s velkým obrázkem"
+
+msgid "Photo Card"
+msgstr "Karta Fotografie"
+
+msgid "Gallery Card"
+msgstr "Karta Galerie"
+
+msgid "App Card"
+msgstr "Karta Aplikace"
+
+msgid "Player Card"
+msgstr "Karta Přehrávač"
+
+msgid "Product Card"
+msgstr "Karta Produkt"
+
+msgid "Twitter card type"
+msgstr "Typ karty Twitter"
+
+msgid "Notes:<ul><li>no other fields are required for a Summary card</li><li>Photo card requires the 'image' field</li><li>Media player card requires the 'title', 'description', 'media player URL', 'media player width', 'media player height' and 'image' fields,</li><li>Summary Card with Large Image card requires the 'Summary' field and the 'image' field,</li><li>Gallery Card requires all the 'Gallery Image' fields,</li><li>App Card requires the 'iPhone app ID' field, the 'iPad app ID' field and the 'Google Play app ID' field,</li><li>Product Card requires the 'description' field, the 'image' field, the 'Label 1' field, the 'Data 1' field, the 'Label 2' field and the 'Data 2' field.</li></ul>"
+msgstr "Poznámky:<ul><li>Karta Souhrn nevyžaduje žádná další pole.</li><li>Karta Fotografie vyžaduje pole 'obrázek'.</li><li>Karta Přehrávač médií vyžaduje pole 'název', 'popis', 'adresa URL přehrávače médií', 'šířka přehrávače médií', 'výška přehrávače médií' a 'obrázek'.</li><li>Karta Souhrn s velkým obrázkem vyžaduje pole 'Souhrn' a pole 'obrázek'.</li><li>Karta Galerie vyžaduje všechna pole 'Obrázek galerie'.</li><li>Karta Aplikace vyžaduje pole 'ID aplikace iPhone', pole 'ID aplikace iPad' a pole 'ID aplikace Google Play'.</li><li>Karta Produkt vyžaduje pole 'popis', pole 'obrázek', pole 'Popisek 1', pole 'Data 1', pole 'Popisek 2' a pole 'Data 2'.</li></ul>"
+
+msgid "Metatag: Verification"
+msgstr "Metaznačka: Ověření"
+
+msgid "Verifies ownership of a site for search engines and other services."
+msgstr "Ověřuje vlastnictví webu pro vyhledávače a další služby."
+
+msgid "Site validation: Alexa"
+msgstr "Ověření webu: Alexa"
+
+msgid "Site validation: Baidu"
+msgstr "Ověření webu: Baidu"
+
+msgid "Site validation: Bing"
+msgstr "Ověření webu: Bing"
+
+msgid "Site validation: Facebook"
+msgstr "Ověření webu: Facebook"
+
+msgid "Site validation: Google"
+msgstr "Ověření webu: Google"
+
+msgid "Site validation: Norton Safe Web"
+msgstr "Ověření webu: Norton Safe Web"
+
+msgid "Site validation: Pinterest"
+msgstr "Ověření webu: Pinterest"
+
+msgid "Site validation: Pocket"
+msgstr "Ověření webu: Pocket"
+
+msgid "Site validation: SIWECOS"
+msgstr "Ověření serveru: SIWECOS"
+
+msgid "Site validation: Yahoo"
+msgstr "Ověření webu: Yahoo"
+
+msgid "Site validation: Yandex"
+msgstr "Ověření webu: Yandex"
+
+msgid "Site validation: Zoom"
+msgstr "Ověření webu: Změna velikosti"
+
+msgid "Site verification"
+msgstr "Ověření webu"
+
+msgid "These meta tags are used to confirm site ownership for search engines and other services."
+msgstr "Tyto metaznačky se používají k potvrzení vlastnictví webu pro vyhledávače a další služby."
+
+msgid "Baidu"
+msgstr "Baidu"
+
+msgid "Bing"
+msgstr "Bing"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Google Site Verification"
+msgstr "Ověření serveru Google"
+
+msgid "Norton Safe Web"
+msgstr "Norton Safe Web"
+
+msgid "Pocket"
+msgstr "Pocket"
+
+msgid "SIWECOS"
+msgstr "SIWECOS"
+
+msgid "Yandex"
+msgstr "Yandex"
+
+msgid "Zoom"
+msgstr "Změna velikosti"
+
+msgid "The custom admin pages for managing Views meta tags at /admin/config/search/metatag/views have been disabled for now, hopefully they'll be back in a future release. Until then, the meta tags can be managed directly on each individual view via the \"Meta tags\" section."
+msgstr "Vlastní stránky administrace pro správu metaznaček pohledů v adresáři /admin/config/search/metatag/views jsou nyní zakázány. Doufejme, že se vrátí v budoucí verzi. Do té doby je možné metaznačky spravovat přímo pro každý jednotlivý pohled v sekci \"Metaznačky\"."
+
+msgid "Empty update script to clear the site's caches so the new token replacement functionality will work."
+msgstr "Vyprázdněte aktualizační skript a vymažte vyrovnávací paměti serveru, aby nová funkce náhrady tokenu fungovala."
+
+msgid "Metatag: Views"
+msgstr "Metaznačka: Pohledy"
+
+msgid "Provides views integration for metatags."
+msgstr "Poskytuje integraci pohledů pro metaznačky."
+
+msgid "Should replacement tokens be used from the first row"
+msgstr "Mají být náhradní tokeny použity od prvního řádku"
+
+msgid "To view a list of displays with meta tags set up, click on a view name. To view a summary of meta tags configuration for a particular display, click on the display name. If you need to set meta tags for a specific view, choose Add views meta tags. Reverting the meta tags removes the specific configuration and falls back to defaults."
+msgstr "Seznam nastavených metaznaček zobrazíte klepnutím na název pohledu. Chcete-li zobrazit souhrn konfigurace metaznaček pro určitý displej, klepněte na název displeje. Potřebujete-li nastavit metaznačky pro konkrétní pohled, vyberte volbu Přidat metaznačky pohledů. Při vrácení změn metaznaček dojde k odebrání konkrétní konfigurace a obnově výchozích nastavení."
+
+msgid ":label"
+msgstr ":label"
+
+msgid "Display"
+msgstr "Zobrazit"
+
+msgid "Operations"
+msgstr "Operace"
+
+msgid "Edit"
+msgstr "Upravit"
+
+msgid "Translate"
+msgstr "Přeložit"
+
+msgid "Revert"
+msgstr "Vrátit"
+
+msgid "@language (original)"
+msgstr "@language (původní)"
+
+msgid "Add"
+msgstr "Přidat"
+
+msgid "- Select a view -"
+msgstr "- Vyberte pohled -"
+
+msgid "View"
+msgstr "Zobrazit"
+
+msgid "Metatags for @view : @display have been saved."
+msgstr "Metaznačky pro @view : @display byly uloženy."
+
+msgid "Do you want to revert meta tags for @view_name : @display_name?"
+msgstr "Chcete vrátit metaznačky pro @view_name : @display_name do výchozího stavu?"
+
+msgid "You are about to revert the custom meta tags for the %display_name display on the %view_name view. This action cannot be undone."
+msgstr "Chystáte se vrátit vlastní metaznačky pro displej %display_name v pohledu %view_name do výchozího stavu. Tuto akci nelze vrátit zpět. "
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "Reverted meta tags for @view_name : @display_name"
+msgstr "Metaznačky pro @view_name : @display_name byly vráceny do výchozího stavu"
+
+msgid "Edit @language translation for %view: %display metatags"
+msgstr "Upravit překlad @language pro metaznačky %view: %display"
+
+msgid "Successfully updated @language translation."
+msgstr "Překlad @language byl úspěšně aktualizován."
+
+msgid "The meta tags for this display"
+msgstr "Metaznačky pro tento displej"
+
+msgid "Use replacement tokens from the first row"
+msgstr "Použít tokeny náhrady z prvního řádku"
+
+msgid "@argument title"
+msgstr "@argument nadpis"
+
+msgid "@argument input"
+msgstr "@argument vstup"
+
+msgid "Replacement patterns"
+msgstr "Nahrazovací vzory"
+
+msgid "The following tokens are available. You may use Twig syntax in this field."
+msgstr "K dispozici jsou následující tokeny. V tomto poli můžete použít syntaxi Twig."
+
+msgid "Meta tags"
+msgstr "Metaznačky"
+
+msgid "Overridden"
+msgstr "Překryto"
+
+msgid "Using defaults"
+msgstr "Používají se výchozí nastavení"
+
+msgid "Arguments"
+msgstr "Argumenty"
+
+msgid "Fields"
+msgstr "Pole"
+
+msgid "Metatag display extender"
+msgstr "Metaznačka rozšíření displeje"
+
+msgid "Metatag settings for this view."
+msgstr "Nastavení metaznaček pro tento pohled."
+
+msgid "Status"
+msgstr "Stav"
+
+msgid "Active"
+msgstr "Aktivní"
+
+msgid "Disabled"
+msgstr "Vypnuto"
+
+msgid "Inherits meta tags from: @inherits"
+msgstr "Dědí metaznačky od: @inherits"
+
+msgid "Configure the meta tags below."
+msgstr "Nakonfigurujte metaznačky níže."
+
+msgid "Undefined group '%group' on tag '%tag'"
+msgstr "Nedefinovaná skupina '%group' ve značce '%tag'"
+
+msgid ""
+"This was expected to be an array but it is not: \n"
+"%value"
+msgstr ""
+"Očekávalo se, že se jedná o pole, ale o pole se nejedná: \n"
+"%value"
+
+msgid ""
+"This could not be unserialized: \n"
+"%value"
+msgstr ""
+"Pro tuto hodnotu nebyla zrušena serializace: \n"
+"%value"
+
+msgid "Use tokens to avoid redundant meta data and search engine penalization. For example, a 'keyword' value of \"example\" will be shown on all content using this configuration, whereas using the [node:field_keywords] automatically inserts the \"keywords\" values from the current entity (node, term, etc)."
+msgstr "Pomocí tokenů se vyhněte použití redundantních metadat a penalizaci vyhledávačů. Například při použití této konfigurace bude použita hodnota 'keyword' pole \"example\", přičemž použití [node:field_keywords] automaticky vloží hodnoty \"keywords\" z aktuální entity (uzel, termín atd.)."
+
+msgid "To use tokens to image fields, the image field on that entity bundle (content type, term, etc) must have the \"Token\" display settings enabled, the image field must not be hidden, and it must be set to output as an image, e.g. using the \"Thumbnail\" field formatter. It is also recommended to use an appropriate image style that resizes the image rather than output the original image; see individual meta tag descriptions for size recommendations."
+msgstr "Chcete-li použít tokeny k polím s obrázkem, musí mít pole s obrázkem v tomto balíku entity (typ obsahu, termín atd.) povolené nastavení zobrazení \"Token\", pole s obrázkem nesmí být skryté a musí být nastaveno na výstup jako obrázek, např. pomocí formátovače pole \"Miniatura\". Doporučuje se také použít vhodný styl obrázku, který změní velikost obrázku místo výstupu původního obrazu; viz individuální popisy metaznaček pro doporučené velikosti."
+
+msgid "Yes"
+msgstr "Ano"
+
+msgid "No"
+msgstr "Ne"
+
+msgid "Label / Description"
+msgstr "Štítek/popis"
+
+msgid "Weight"
+msgstr "Váha"
+
+msgid "Secure"
+msgstr "Zabezpečený"
+
+msgid "Multiple"
+msgstr "Vícenásobná"
+
+msgid "Provided by"
+msgstr "Poskytováno"
+
+msgid "All meta tags in the \"@group\" group."
+msgstr "Všechny metaznačky ve skupině \"@group\"."
+
+msgid "Are you sure you want to delete %name?"
+msgstr "Opravdu smazat %name?"
+
+msgid "Delete"
+msgstr "Smazat"
+
+msgid "Deleted @label defaults."
+msgstr "Byla odstraněna výchozí nastavení @label."
+
+msgid "Select the type of default meta tags you would like to add."
+msgstr "Vyberte typ výchozích metaznaček, jež chcete přidat."
+
+msgid "Warning: disabling the Global default metatag will prevent any metatags from being used."
+msgstr "Varování: Zákaz globální výchozí metaznačky zabrání použití všech metaznaček."
+
+msgid "Created the %label Metatag defaults."
+msgstr "Byla vytvořena výchozí nastavení metaznačky %label."
+
+msgid "Saved the %label Metatag defaults."
+msgstr "Byla uložena výchozí nastavení metaznačky %label."
+
+msgid "Edit default meta tags for @path"
+msgstr "Upravit výchozí metaznačky pro @path"
+
+msgid "Are you sure you want to revert %name to its default values?"
+msgstr "Opravdu chcete obnovit výchozí hodnoty %name?"
+
+msgid "Reverted @label defaults."
+msgstr "Byly obnoveny výchozí hodnoty @label."
+
+msgid "Entity type / Group Mapping"
+msgstr "Typ entity/Mapování skupin"
+
+msgid "Identify which metatag groups should be available on which entity type / bundle combination. Unselected groups will not appear on the configuration form for that entity type, reducing the size of the form and increasing performance. If no groups are selected for a type, all groups will appear."
+msgstr "Určete, které skupiny metaznaček mají být dostupné pro které kombinace typu entity a balíku. Nevybrané skupiny se ve formuláři konfigurace pro daný typ entity neobjeví, čímž se sníží velikost formuláře a zvýší výkon. Pokud pro nějaký typ nejsou vybrány žádné skupiny, zobrazí se všechny skupiny."
+
+msgid "Metatag Trimming Options"
+msgstr "Volby oříznutí metaznačky"
+
+msgid "Many Meta-Tags can be trimmed on a specific length for search engine optimization.<br/>If the value is set to '0' or left empty, the whole Metatag will be untrimmed."
+msgstr "Mnoho metaznaček může být oříznuto na určité délce pro optimalizaci vyhledávačů.<br/>Je-li hodnota nastavena na '0' nebo ponechána prázdná, bude oříznutí celé metaznačky zrušeno."
+
+msgid "Because of how tokens are processed in meta tags, use of the Maxlength module may not provide an accurate representation of the actual current length of each meta tag, so it may cause more problem than it is worth. "
+msgstr "Vzhledem k tomu, jak jsou tokeny zpracovávány v metaznačkách, nemusí použití modulu Maxlength poskytovat přesnou reprezentaci skutečné aktuální délky každé metaznačky, takže může způsobit více problémů, než za co stojí. "
+
+msgid "Install the Maxlength module to enable this option."
+msgstr "Chcete-li tuto volbu povolit, nainstalujte modul Maxlength."
+
+msgid "Meta Tags:"
+msgstr "Metaznačky:"
+
+msgid "length"
+msgstr "délka"
+
+msgid "Meta Tags: Trimming Options"
+msgstr "Metaznačky: Volby oříznutí"
+
+msgid "Trim the Meta Tag after the word on the given value"
+msgstr "Oříznout metaznačku za slovem na dané hodnotě"
+
+msgid "Trim the Meta Tag on the given value"
+msgstr "Oříznout metaznačku na dané hodnotě"
+
+msgid "Trim the Meta Tag before the word on the given value"
+msgstr "Oříznout Meta značku před slovem na dané hodnotě"
+
+msgid "Metatag widget options"
+msgstr "Volby modulu widget metaznaček"
+
+msgid "Various options for the field widget used on entity forms, e.g. on content type forms."
+msgstr "Různé volby pro modul widget pole použité na formulářích entit, například na formulářích typu obsahu."
+
+msgid "Scroll maximum height"
+msgstr "Maximální výška posunu"
+
+msgid "eg 500px or 8rem"
+msgstr "například 500px nebo 8rem"
+
+msgid "To enable scrolling please enter a value and its units, e.g. 500px, 8rem, etc. Removing this value will remove the scroll."
+msgstr "Chcete-li povolit posun, zadejte prosím hodnotu a její jednotky, například 500px, 8rem, atd. Odebráním této hodnoty se odstraní posun."
+
+msgid "Empty formatter"
+msgstr "Prázdný formátovač"
+
+msgid "@label"
+msgstr "@label"
+
+msgid "This field stores code meta tags."
+msgstr "Toto pole uchovává metaznačky kódu."
+
+msgid "If checked, the field will be placed in the sidebar on entity forms."
+msgstr "Je-li políčko zaškrtnuto, bude pole umístěno v postranním panelu ve formulářích entit."
+
+msgid "Wrap the meta tags in a collapsed details container."
+msgstr "Zalamovat metaznačky ve sbaleném kontejneru podrobností."
+
+msgid "If checked, the contents of the field will be placed inside a collapsed details container."
+msgstr "Je-li tato volba zaškrtnuta, bude obsah pole umístěn uvnitř sbaleného kontejneru podrobností."
+
+msgid "Use sidebar: Yes"
+msgstr "Použít postranní panel: Ano"
+
+msgid "Use sidebar: No"
+msgstr "Použít postranní panel: Ne"
+
+msgid "Use details container: Yes"
+msgstr "Použít kontejner podrobností: Ano"
+
+msgid "Use details container: No"
+msgstr "Použít kontejner podrobností: Ne"
+
+msgid "Metatag Field Diff"
+msgstr "Rozdíl v poli metaznačky"
+
+msgid "Advanced"
+msgstr "Pokročilé"
+
+msgid "Meta tags that might not be needed by many sites."
+msgstr "Metaznačky, které na řadě webů nebudou zapotřebí."
+
+msgid "Basic tags"
+msgstr "Základní značky"
+
+msgid "Simple meta tags."
+msgstr "Jednoduché metaznačky."
+
+msgid "A brief and concise summary of the page's content, preferably 150 characters or less. Where as the description meta tag may be used by search engines to display a snippet about the page in search results, the abstract tag may be used to archive a summary about the page. This meta tag is <em>no longer</em> supported by major search engines."
+msgstr "Stručný a krátký souhrn obsahu stránky, nejlépe 150 znaků či méně. Zatímco metaznačka popisu může být používána vyhledávači k zobrazení krátkého textu o stránce ve výsledcích hledání, značku abstraktu lze použít k archivaci souhrnu o stránce. Tuto metaznačku hlavní vyhledávače nadále <em>nepodporují</em>."
+
+msgid "Define the author of a page."
+msgstr "Definujte autora stránky."
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Pragma meta tag."
+msgstr "Používá se k řízení, zda prohlížeč ukládá lokálně do mezipaměti specifickou stránku. Obvykle se nepoužívá. Měl by být použit ve spojení s metaznačkou Pragma."
+
+msgid "A link to the preferred page location or URL of the content of this page, to help eliminate duplicate content penalties from search engines."
+msgstr "Odkaz na upřednostňované umístění stránky nebo adresa URL obsahu této stránky. Pomáhá eliminovat penalizaci vyhledávačů za duplicitní obsah."
+
+msgid "A brief and concise summary of the page's content that is a maximum of 160 characters in length. The description meta tag may be used by search engines to display a snippet about the page in search results."
+msgstr "Krátký a stručný souhrn obsahu stránky, jehož délka je maximálně 160 znaků. Metaznačku popisu mohou vyhledávače používat k zobrazení krátkého textu o stránce ve výsledcích hledání."
+
+msgid "Control when the browser's internal cache of the current page should expire. The date must to be an <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a>-compliant date string that is represented in Greenwich Mean Time (GMT), e.g. 'Thu, 01 Sep 2016 00:12:56 GMT'. Set to '0' to stop the page being cached entirely."
+msgstr "Určete, kdy vyprší platnost interní mezipaměti prohlížeče aktuální stránky. Datum musí být datový řetězec kompatibilní se standardem <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a> v Greenwichském hlavním čase (GMT), např. 'Thu, 01 Sep 2016 00:12:56 GMT'. Nastavením na '0' zastavíte celé ukládání stránky do mezipaměti."
+
+msgid "Describes the name and version number of the software or publishing tool used to create the page."
+msgstr "Popisuje název a číslo verze softwaru nebo publikačního nástroje použitého k vytvoření stránky."
+
+msgid "A location's formal name."
+msgstr "Formální název umístění."
+
+msgid "Geo-spatial information in 'latitude; longitude' format, e.g. '50.167958; -97.133185'; <a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>see Wikipedia for details</a>."
+msgstr "Geografické informace ve formátu \"zeměpisná šířka; zeměpisná délka\", například \"50,167958; -97,133185\"; <a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>podrobnosti viz Wikipedia.</a>."
+
+msgid "A location's two-letter international country code, with an optional two-letter region, e.g. 'US-NH' for New Hampshire in the USA."
+msgstr "Dvoupísmenný kód země lokality s volitelným dvoupísmenným kódem oblasti, např. 'US-NH' pro New Hampshire v USA."
+
+msgid "This meta tag communicates with Google. There are currently two directives supported: 'nositelinkssearchbox' to not to show the sitelinks search box, and 'notranslate' to ask Google not to offer a translation of the page. Both options may be added, just separate them with a comma. See <a href='https://support.google.com/webmasters/answer/79812?hl=en'>meta tags that Google understands</a> for further details."
+msgstr "Tato metaznačka komunikuje s Google. V současné době jsou podporovány dvě direktivy: 'nositelinkssearchbox', aby se nezobrazovalo vyhledávací pole sitelinks, a 'notranslate', která žádá Google, aby pro danou stránku nenabízel žádný překlad. Přidat lze obě volby, stačí je oddělit čárkou. Další podrobnosti viz <a href='https://support.google.com/webmasters/answer/79812?hl=en'>metaznačky, které Google chápe</a>."
+
+msgid "Geo-spatial information in 'latitude, longitude' format, e.g. '50.167958, -97.133185'; <a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>see Wikipedia for details</a>."
+msgstr "Geografické informace ve formátu 'zeměpisná šířka; zeměpisná délka', například '50,167958, -97,133185'; <a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>podrobnosti viz Wikipedia.</a>."
+
+msgid "An image associated with this page, for use as a thumbnail in social networks and other services."
+msgstr "Obrázek přidružený k této stránce, který se používá jako miniatura na sociálních sítích a pro další služby. "
+
+msgid "A comma-separated list of keywords about the page. This meta tag is <em>no longer</em> supported by most search engines."
+msgstr "Seznam s položkami oddělenými čárkami obsahující klíčová slova o stránce. Tuto metaznačku většina vyhledávačů nadále <em>nepodporuje</em>."
+
+msgid "Multiple values may be used, separated by a comma. Note: Tokens that return multiple values will be handled automatically."
+msgstr "Lze použít více hodnot. Jednotlivé hodnoty oddělte čárkou. Poznámka: Tokeny vracející více hodnot budou obsluhovány automaticky."
+
+msgid "This will be able to extract the URL from an image field if the field is configured properly."
+msgstr "Umožní extrahovat adresu URL z pole s obrázkem, je-li pole správně nakonfigurováno."
+
+msgid "Any relative or protocol-relative URLs will be converted to absolute URLs."
+msgstr "Veškeré relativní nebo pro protokol relativní adresy URL budou převáděny na absolutní adresy URL."
+
+msgid "Any URLs which start with \"http://\" will be converted to \"https://\"."
+msgstr "Všechny adresy začínající na \"http://\" budou převedeny na \"https://\"."
+
+msgid "This will be truncated to a maximum of %max characters after any tokens are processsed."
+msgstr "Tato hodnota bude po zpracování všech tokenů oříznuta na maximální hodnotu %max znaků."
+
+msgid "News Keywords"
+msgstr "Klíčová slova novinek"
+
+msgid "Used for paginated content by providing URL with rel='next' link."
+msgstr "Používá se pro stránkovaný obsah poskytnutím adresy URL s odkazem rel='next'."
+
+msgid "Used to indicate the URL that broke the story, and can link to either an internal URL or an external source. If the full URL is not known it is acceptable to use a partial URL or just the domain name."
+msgstr "Používá se k označení adresy URL, na které byla záležitost publikována jako první. Může jít o interní adresu URL nebo o externí zdroj. Pokud úplná adresa URL není známa, lze použít částečnou adresu URL nebo pouhý název domény."
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Cache-Control meta tag."
+msgstr "Používá se k řízení, zda prohlížeč ukládá lokálně do mezipaměti specifickou stránku. Obvykle se nepoužívá. Měl by být použit ve spojení s metaznačkou Cache-Control."
+
+msgid "Used for paginated content by providing URL with rel='prev' link."
+msgstr "Používá se pro stránkovaný obsah poskytnutím adresy URL s odkazem rel='prev'."
+
+msgid "Used to rate content for audience appropriateness. This tag has little known influence on search engine rankings, but can be used by browsers, browser extensions, and apps. The <a href='https://www.metatags.org/meta_name_rating'>most common options</a> are general, mature, restricted, 14 years, safe for kids. If you follow the <a href='https://www.rtalabel.org/index.php?content=howto'>RTA Documentation</a> you should enter RTA-5042-1996-1400-1577-RTA"
+msgstr "Používá se k hodnocení vhodnosti obsahu pro příjemce. O vlivu této značky na hodnocení vyhledávačů se toho moc neví, ale mohou ji používat prohlížeče, rozšíření prohlížeče a aplikace. <a href='https://www.metatags.org/meta_name_rating'>Nejčastější volby</a> jsou všeobecné, pro dospělé, omezené, 14 let, bezpečné pro děti. Pokud postupujete podle <a href='https://www.rtalabel.org/index.php?content=howto'>Dokumentace RTA</a>, měli byste zadat RTA-5042-1996-1400-1577-RTA"
+
+msgid "No Referrer"
+msgstr "Bez odkazujícího webu "
+
+msgid "No Referrer When Downgrade"
+msgstr "Bez odkazujícího webu při downgrade "
+
+msgid "Origin"
+msgstr "Původ"
+
+msgid "Origin When Cross-Origin"
+msgstr "Původ při křížovém původu"
+
+msgid "Same Origin"
+msgstr "Stejný původ"
+
+msgid "Strict Origin"
+msgstr "Striktní původ"
+
+msgid "Strict Origin When Cross-Origin"
+msgstr "Striktní původ při křížovém původu"
+
+msgid "Unsafe URL"
+msgstr "Nebezpečná adresa URL"
+
+msgid "Indicate to search engines and other page scrapers whether or not links should be followed. See <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>the W3C specifications</a> for further details. Note: this serves the same purpose as the HTTP header by the same name."
+msgstr "Signalizuje vyhledávačům a ostatním analyzátorům webu, zda lze bezpečně používat odkazy. Další podrobnosti viz <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>specifikace W3C</a>. Poznámka: slouží ke stejnému účelu jako záhlaví HTTP se stejným názvem."
+
+msgid "The number of seconds to wait before refreshing the page. May also force redirect to another page using the format '5; url=https://example.com/', which would be triggered after five seconds."
+msgstr "Počet sekund, po které se má čekat před aktualizací stránky. Může se také vynutit přesměrování na jinou stránku pomocí formátu '5; url=https://example.com/', které by bylo spuštěno po pěti sekundách."
+
+msgid "Tell search engines when to index the page again. Very few search engines support this tag, it is more useful to use an <a href='https://www.drupal.org/project/xmlsitemap'>XML Sitemap</a> file."
+msgstr "Informuje vyhledávače při opětovném indexování stránky. Jen velmi málo vyhledávačů, které tuto značku podporují, je užitečnější použít soubor <a href='https://www.drupal.org/project/xmlsitemap'>Mapa webu XML</a>."
+
+msgid "Details about intellectual property, such as copyright or trademarks; does not automatically protect the site's content or intellectual property."
+msgstr "Podrobnosti o duševním vlastnictví, tj. o autorském právu a ochranných známkách. Nezajišťuje automatickou ochranu obsahu stránky či duševního vlastnictví."
+
+msgid "Max Snippet"
+msgstr "Maximální úsek kódu"
+
+msgid "Use a number character as a textual snippet for this search result. \"0\" equals \"nosnippet\". \"-1\" will let the search engine decide the most effective length."
+msgstr "Jako textový úsek pro tento výsledek hledání použijte číselný znak. \"0\" se rovná \"nosnippet\". \"-1\" umožní vyhledávači rozhodnout o nejefektivnější délce."
+
+msgid "Max Video Preview"
+msgstr "Maximální náhled videa"
+
+msgid "Use a maximum of number seconds as a video snippet for videos on this page in search results. \"0\" will use a static a image. \"-1\" means there is no limit."
+msgstr "Použijte maximální počet sekund jako úsek videa pro videa na této stránce ve výsledcích vyhledávání. \"0\" použije statický obrázek. \"-1\" znamená, že neexistuje žádný limit."
+
+msgid "Max Image Preview"
+msgstr "Maximální náhled obrázku"
+
+msgid "Set the maximum size of an image preview for this page in a search results."
+msgstr "Nastavte maximální velikost náhledu obrázku pro tuto stránku ve výsledcích vyhledávání."
+
+msgid "None - no image preview is to be shown."
+msgstr "Žádný - není zobrazen žádný náhled obrázku."
+
+msgid "Standard - a default image preview may be shown."
+msgstr "Standard - může být zobrazen výchozí náhled obrázku."
+
+msgid "Large - a larger image preview, up to the width of the viewport, may be shown."
+msgstr "Large - může být zobrazen větší náhled obrázku, až do šířky výřezu."
+
+msgid "Select"
+msgstr "Vybrat"
+
+msgid "Unavailable after date"
+msgstr "Nedostupná po datu"
+
+msgid "Do not show this page in search results after the specified date"
+msgstr "Nezobrazovat tuto stránku ve výsledcích hledání po zadaném datu"
+
+msgid "index - Allow search engines to index this page (assumed)."
+msgstr "index - Umožnit vyhledávačům indexovat tuto stránku (předpokládá se)."
+
+msgid "follow - Allow search engines to follow links on this page (assumed)."
+msgstr "follow - Umožnit vyhledávačům následovat odkazy na této stránce (předpokládá se)."
+
+msgid "noindex - Prevents search engines from indexing this page."
+msgstr "noindex - Umožnit vyhledávačům následovat odkazy na této stránce (předpokládá se)."
+
+msgid "nofollow - Prevents search engines from following links on this page."
+msgstr "nofollow - Zabránit vyhledávačům v následování odkazů na této stránce."
+
+msgid "noarchive - Prevents cached copies of this page from appearing in search results."
+msgstr "noarchive - Zabránit zobrazení kopií této stránky v mezipaměti ve výsledcích hledání."
+
+msgid "nosnippet - Prevents descriptions from appearing in search results, and prevents page caching."
+msgstr "nosnippet - Zabránit v zobrazení popisů ve výsledcích hledání a zabránit v ukládání stránky do mezipaměti."
+
+msgid "noimageindex - Prevent search engines from indexing images on this page."
+msgstr "noimageindex - Zabránit vyhledávačům v indexaci obrázků na této stránce."
+
+msgid "notranslate - Prevent search engines from offering to translate this page in search results."
+msgstr "notranslate - Zabránit vyhledávačům v nabízení překladu této stránky ve výsledcích hledání."
+
+msgid "Provides search engines with specific directions for what to do when this page is indexed."
+msgstr "Poskytuje vyhledávačům konkrétní pokyny k postupu při indexaci této stránky."
+
+msgid "Set cookie"
+msgstr "Nastavit soubor cookie"
+
+msgid "<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>Sets a cookie</a> on the visitor's browser. Can be in either NAME=VALUE format, or a more verbose format including the path and expiration date; see the link for full details on the syntax."
+msgstr "<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>Nastavuje soubor cookie</a> v prohlížeči návštěvníka. Může být ve formátu NÁZEV=HODNOTA, nebo v podrobnějším formátu, který zahrnuje cestu a datum vypršení platnosti. Další podrobnosti k syntaxi zobrazíte pomocí odkazu."
+
+msgid "Shortlink URL"
+msgstr "Zkrácená adresa URL"
+
+msgid "A brief URL, often created by a URL shortening service."
+msgstr "Stručná adresa URL, kterou často vytváří služba zkracování adres URL."
+
+msgid "The text to display in the title bar of a visitor's web browser when they view this page. This meta tag may also be used as the title of the page when a visitor bookmarks or favorites this page, or as the page title in a search engine result. It is common to append '[site:name]' to the end of this, so the site's name is automatically added. It is recommended that the title is no greater than 55 - 65 characters long, including spaces."
+msgstr "Text k zobrazení v pruhu titulku webového prohlížeče návštěvníka této stránky. Tuto metaznačku lze použít rovněž jako název stránky, pokud ji návštěvník zařadí do záložek nebo do oblíbených položek, nebo jako název stránky ve výsledku vyhledávače. Běžně se na konec této značky připojuje řetězec '[site:name]', který zajistí automatické přidání názvu webu. Doporučujeme pro název nepřekročit délku 55 až 65 znaků včetně mezer."
+
+msgid "Configuration type"
+msgstr "Typ konfigurace"
+
+msgid "@label of @type"
+msgstr "@label z @type"
+
+msgid "@label of @type @entity-type-label"
+msgstr "@label z @type @entity-type-label"
+
+msgid "No default for \"%tag_name\" - entity_type: %type, entity_bundle: %bundle, id: %id. See src/TypedData/Metatags.php."
+msgstr "Neexistuje žádná výchozí hodnota pro \"%tag_name\" - entity_type: %type, entity_bundle: %bundle, id: %id. Viz src/Typed/Metatags.php."
+

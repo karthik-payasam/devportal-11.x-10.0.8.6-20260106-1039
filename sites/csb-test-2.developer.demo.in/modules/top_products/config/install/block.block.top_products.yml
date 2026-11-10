@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.top_products
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - csb_theme
+id: top_products
+theme: csb_theme
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:top_products-block_1'
+settings:
+  id: 'views_block:top_products-block_1'
+  label: 'Top Products'
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+  exposed: {  }
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+
+

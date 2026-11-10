@@ -1,0 +1,143 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Field encryption"
+msgstr "Шифрование полей"
+
+msgid "Warning: changing field encryption settings may cause data corruption!<br />When changing these settings, existing fields will be (re)encrypted in batch according to the new settings. <br />Make sure you have a proper backup, and do not perform this action in an environment where the data will be changing during the batch operation, to avoid data loss."
+msgstr "Предупреждение: изменение параметров шифрования полей может привести к повреждению данных!<br />При изменении этих параметров существующие поля будут зашифрованы групповой операцией в соответствии с новыми параметрами.<br />Во избежание потери данных создайте резервную копию и не выполняете это действие в среде, где данные будут изменяться во время выполнения групповой операции."
+
+msgid "Encrypt field"
+msgstr "Зашифровать поле"
+
+msgid "Makes the field storage encrypted."
+msgstr "Шифрует память, где хранится поле."
+
+msgid "Properties"
+msgstr "Свойства"
+
+msgid "Specify the field properties to encrypt."
+msgstr "Укажите свойства поля для шифрования."
+
+msgid "Field Encrypt"
+msgstr "Шифрование поля"
+
+msgid "Extends the Field API to allow encryption of fields."
+msgstr "Расширяет API поля для поддержки шифрования полей"
+
+msgid "Encryption"
+msgstr "Шифрование"
+
+msgid "Field Encrypt settings"
+msgstr "Параметры шифрования полей"
+
+msgid "Manage field encryption settings"
+msgstr "Управление параметрами шифрования полей"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Encrypted fields overview"
+msgstr "Обзор зашифрованных полей"
+
+msgid "Administer field encryption"
+msgstr "Управление шифрованием полей"
+
+msgid "Allows fields to be individually encrypted so that their data is better protected."
+msgstr "Позволяет индивидуально шифровать поля для лучшей защиты данных."
+
+msgid "Field encrypt setting"
+msgstr "Параметр шифрования поля"
+
+msgid "Encrypt"
+msgstr "Шифрование"
+
+msgid "Property"
+msgstr "Свойство"
+
+msgid "Placeholder"
+msgstr "Заполнитель"
+
+msgid "Field Encrypt Settings"
+msgstr "Параметры шифрования полей"
+
+msgid "Encryption profile"
+msgstr "Профайл шифрования"
+
+msgid "Field types"
+msgstr "Типы полей"
+
+msgid "Properties to encrypt"
+msgstr "Свойства для шифрования"
+
+msgid "Property name"
+msgstr "Имя свойства"
+
+msgid "Batch size"
+msgstr "Размер пакета"
+
+msgid "Base field"
+msgstr "Базовое поле"
+
+msgid "Field"
+msgstr "Поле"
+
+msgid "Entity type"
+msgstr "Тип сущности"
+
+msgid "Operations"
+msgstr "Операции"
+
+msgid "There are no encrypted fields."
+msgstr "Нет зашифрованных полей."
+
+msgid "Decrypt"
+msgstr "Расшифровать"
+
+msgid "Updates to entities with existing data for this field have been queued to be processed. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the updates will be performed automatically by cron."
+msgstr "Изменения сущностей, в которых есть данные для этого поля, поставлены в очередь на обработку. Необходимо немедленно <a href=\":url\">запустить этот процесс вручную</a>. В противном случае изменения будут применены автоматически программой cron."
+
+msgid "Are you sure you want to remove encryption for field %field on %entity_type?"
+msgstr "Вы действительно хотите удалить шифрование для поля %field на %entity_type?"
+
+msgid "Remove field encryption"
+msgstr "Убрать шифрование поля"
+
+msgid "This action removes field encryption from the specified field. Existing field data will be decrypted through a batch process."
+msgstr "Это действие убирает шифрование из указанного поля. Существующие данные поля будут расшифрованы посредством групповой операции."
+
+msgid "Save configuration"
+msgstr "Сохранить конфигурацию"
+
+msgid "Default properties"
+msgstr "Свойства по умолчанию"
+
+msgid "Select which field properties will be checked by default on the field encryption settings form, per field type. Note that this does not change existing field settings, but merely sets sensible defaults."
+msgstr "Для каждого типа поля выберите, какие свойства поля будут проверяться по умолчанию в форме параметров шифрования поля. Примечание: существующие параметры поля не меняются, задаются только подходящие значения по умолчанию."
+
+msgid "@field_type properties"
+msgstr "Свойства @field_type"
+
+msgid "Specify the default properties to encrypt for this field type."
+msgstr "Укажите свойства по умолчанию, которые следует шифровать для этого типа поля."
+
+msgid "Batch update settings"
+msgstr "Параметры группового обновления"
+
+msgid "Configure behaviour of the batch field update feature. When changing field encryption settings for fields that already contain data, a batch process will be started that updates the existing field values according to the new settings."
+msgstr "Настройте поведение функции группового обновления полей. При изменении параметров шифрования для полей, которые уже содержат данные, будет запущен процесс группового обновления существующих значений полей в соответствии с новыми параметрами."
+
+msgid "Specify the number of entities to process on each field update batch execution. It is recommended to keep this number low, to avoid timeouts."
+msgstr "Укажите число сущностей, которые будут обрабатываться во время каждого группового обновления полей. Не рекомендуется делать это значение слишком большим во избежание тайм-аутов."
+

@@ -1,0 +1,1110 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Keep all Advagg settings but disable all functionality."
+msgstr "保留所有 Advagg 设置，但禁用所有功能。"
+
+msgid "Restore all Advagg functionality if disabled."
+msgstr "如果已禁用，请恢复所有 Advagg 功能。"
+
+msgid "Run the advagg cron hook. This will clear out all stale advagg aggregated files, remove aggregates that include missing files, and remove unused aggregates."
+msgstr "运行 advagg cron 挂钩。 这将清除所有旧的 advagg 聚合文件，除去包含缺失文件的聚合，并除去不使用的聚合。"
+
+msgid "Remove all generated files. Useful if you think some of the generated files got corrupted and thus need to be deleted."
+msgstr "除去所有生成的文件。 如果您认为某些生成的文件已损坏并因此需要删除，那么这很有用。"
+
+msgid "Force the creation of all new optimized files by incrementing a global counter. Current value of counter: %value. This is may be useful if a CDN has cached an something incorrectly as it will force new ones to be used even if nothing else has changed."
+msgstr "通过增加全局计数器来强制创建所有新的优化文件。 计数器的当前值：%value。 如果 CDN 未正确缓存某个内容，那么这可能很有用，因为即使未更改其他任何内容，也会强制使用新内容。"
+
+msgid "Run the advagg cron hook."
+msgstr "运行 advagg cron 挂钩。"
+
+msgid "Disable Advagg."
+msgstr "禁用 Advagg。"
+
+msgid "Enable Advagg."
+msgstr "启用 Advagg。"
+
+msgid "Remove all generated files."
+msgstr "除去所有生成的文件。"
+
+msgid "Force the creation of all new files by incrementing a global counter."
+msgstr "通过增加全局计数器来强制创建所有新文件。"
+
+msgid "All Advagg functionality is disabled."
+msgstr "已禁用所有 Advagg 功能。"
+
+msgid "All Advagg functionality is enabled."
+msgstr "已启用所有 Advagg 功能。"
+
+msgid "Global counter is now set to @new_value"
+msgstr "全局计数器现在设置为 @new_value"
+
+msgid "All AdvAgg optimized files have been deleted. %css_count CSS files and %js_count JS files have been removed."
+msgstr "已删除所有 AdvAgg 优化文件。已除去 %css_count 个 CSS 文件和 %js_count 个 JS 文件。"
+
+msgid "All stale aggregates have been deleted. %css_count CSS files and %js_count JS files have been removed."
+msgstr "已删除所有旧文件汇总。已除去 %css_count 个 CSS 文件和 %js_count 个 JS 文件。"
+
+msgid "No stale aggregates found. Nothing was deleted."
+msgstr "找不到旧聚合。 未删除任何内容。"
+
+msgid "NOTE: If you wish to bypass AdvAgg optimizations for a set amount of time, you can go to the <a href=\"@operations\">AdvAgg operations</a> page and press the <em>\"optimization bypass cookie\"</em> button."
+msgstr "注：如果您希望在设定时间内绕过 AdvAgg 优化，那么可以转至 <a href=\"@operations\">AdvAgg 操作</a> 页面，并按<em>“优化旁路 cookie”</em> 按钮。"
+
+msgid "You can also selectively bypass AdvAgg optimization by adding <code>@code</code> to the URL of any page."
+msgstr "您还可以通过将 <code>@code</code> 添加到任何页面的 URL 来选择性地绕过 AdvAgg 优化。"
+
+msgid "You do not have the <a href=\"@permission\">bypass advanced aggregation permission</a> so adding <code>@code</code> to the URL will not work at this time for you; either grant this permission to your user role or use the bypass cookie if you wish to selectively bypass AdvAgg optimizations."
+msgstr "您不具有<a href=\"@permission\">绕过高级聚合的许可权</a>，因而此时将无法向 URL 添加 <code>@code</code>；如果您希望选择性地绕过 AdvAgg 优化，请将此许可权授予您的用户角色或使用旁路 cookie。"
+
+msgid "The AdvAgg bypass cookie is currently enabled. Turn it off by going to the <a href=\"@advagg_operations\">AdvAgg Operations</a> page and clicking the <em>Toggle the \"aggregation bypass cookie\" for this browser</em> button."
+msgstr "当前已启用 AdvAgg 旁路 cookie。 通过转至 <a href=\"@advagg_operations\">AdvAgg 操作</a>页面并单击<em>为此浏览器切换“汇总旁路 cookie”</em>按钮来将其关闭。"
+
+msgid "The AdvAgg bypass cookie is currently enabled. Turn it off by <a href=\"@login\">logging in</a> with a user with the \"administer site configuration\" permissions and going to the <a herf=\"@advagg_operations\">AdvAgg Operations page</a> and clicking the <em>Toggle the \"aggregation bypass cookie\" for this browser</em> button."
+msgstr "当前已启用 AdvAgg 旁路 cookie。 通过使用具有“管理站点配置”许可权的用户<a href=\"@login\">登录</a>并转至 <a herf=\"@advagg_operations\">AdvAgg 操作</a>页面，然后单击<em>为此浏览器切换“汇总旁路 cookie”</em>按钮来将其关闭。"
+
+msgid "0 sec"
+msgstr "0 秒"
+
+msgid "AdvAgg Bypass Cookie Removed"
+msgstr "已除去 AdvAgg 旁路 cookie"
+
+msgid "AdvAgg Bypass Cookie Set for @time."
+msgstr "已设置 AdvAgg 旁路 cookie 的保留时间 @time。"
+
+msgid "1 year"
+msgid_plural "@count years"
+msgstr[0] "@count 年"
+
+msgid "1 month"
+msgid_plural "@count months"
+msgstr[0] "@count 个月"
+
+msgid "1 week"
+msgid_plural "@count weeks"
+msgstr[0] "@count 周"
+
+msgid "1 day"
+msgid_plural "@count days"
+msgstr[0] "@count 天"
+
+msgid "1 hour"
+msgid_plural "@count hours"
+msgstr[0] "@count 小时"
+
+msgid "1 min"
+msgid_plural "@count min"
+msgstr[0] "@count 分钟"
+
+msgid "1 sec"
+msgid_plural "@count sec"
+msgstr[0] "@count 秒"
+
+msgid "Advanced CSS/JS Aggregation"
+msgstr "高级 CSS/JS 聚合"
+
+msgid "Aggregates multiple CSS/JS files in a way that prevents 404 from happening when accessing a CSS or JS file."
+msgstr "以访问 CSS 或 JS 文件时防止出现 404 的方式聚合多个 CSS/JS 文件。"
+
+msgid "AdvAgg"
+msgstr "AdvAgg"
+
+msgid "Information"
+msgstr "信息"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "AdvAgg settings."
+msgstr "AdvAgg 设置。"
+
+msgid "Display AdvAgg system information."
+msgstr "显示 AdvAgg 系统信息。"
+
+msgid "Perform AdvAgg operations."
+msgstr "执行 AdvAgg 操作。"
+
+msgid "Configuration"
+msgstr "配置"
+
+msgid "Bypass advanced aggregation"
+msgstr "跳过高级汇总"
+
+msgid "User can use URL query strings to bypass AdvAgg."
+msgstr "用户可以使用 URL 查询字符串绕过 AdvAgg。"
+
+msgid "AdvAgg: Configuration"
+msgstr "AdvAgg：配置"
+
+msgid "AdvAgg: Information"
+msgstr "AdvAgg：信息"
+
+msgid "AdvAgg: Operations"
+msgstr "AdvAgg：操作"
+
+msgid "AdvAgg Bundler"
+msgstr "AdvAgg 打包机"
+
+msgid "Customize the number of aggregates to be created."
+msgstr "定制要创建的聚合的数量。"
+
+msgid "Bundler"
+msgstr "打包机"
+
+msgid "AdvAgg Bundler settings."
+msgstr "AdvAgg 打包机设置。"
+
+msgid "AdvAgg: Bundler"
+msgstr "AdvAgg：打包机"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Whether to run the bundler options."
+msgstr "是否运行打包机选项。"
+
+msgid "Settings for CSS bundling."
+msgstr "CSS 绑定的设置。"
+
+msgid "Maximum target css aggregates."
+msgstr "最大目标 CSS 聚合数。"
+
+msgid "The logic to use for bundling the CSS Files."
+msgstr "用于绑定 CSS 文件的逻辑。"
+
+msgid "Settings for JavaScript bundling."
+msgstr "JavaScript 绑定的设置。"
+
+msgid "Maximum target JavaScript aggregates."
+msgstr "最大目标 JavaScript 聚合数。"
+
+msgid "The logic to use for bundling the JS Files."
+msgstr "用于绑定 JS 文件的逻辑。"
+
+msgid "Bundler is Active"
+msgstr "打包机处于活动状态"
+
+msgid "If not checked, the bundler will not split up aggregates."
+msgstr "如果未选中，那么打包机将不会拆分聚合。"
+
+msgid "CSS Bundling options."
+msgstr "CSS 绑定选项。"
+
+msgid "Target Number Of CSS Bundles Per Page"
+msgstr "每页的目标 CSS 捆绑软件数"
+
+msgid "If 0 is selected then the bundler is disabled"
+msgstr "如果选择 0，那么将禁用打包机"
+
+msgid "Grouping logic"
+msgstr "分组逻辑"
+
+msgid "File count"
+msgstr "文件计数"
+
+msgid "File size"
+msgstr "文件大小"
+
+msgid "If file count is selected then each bundle will try to have a similar number of original files aggregated inside of it. If file size is selected then each bundle will try to have a similar file size."
+msgstr "如果选择了文件计数，那么每个捆绑软件都将尝试在其内部聚合相似数目的原始文件。 如果选择了文件大小，那么每个捆绑软件都将尝试具有相似的文件大小。"
+
+msgid "JavaScript Bundling options."
+msgstr "JavaScript 绑定选项。"
+
+msgid "Target Number Of JS Bundles Per Page"
+msgstr "每页的目标 JS 捆绑软件数"
+
+msgid "AdvAgg CDN"
+msgstr "AdvAgg CDN"
+
+msgid "Use a shared CDN for JavaScript and/or CSS libraries, Google Libraries API currently."
+msgstr "将共享 CDN 用于 JavaScript 和/或 CSS 库（目前采用 Google 库 API）。"
+
+msgid "AdvAgg CSS Minify"
+msgstr "AdvAgg CSS 合并压缩"
+
+msgid "AdvAgg CSS Minification is disabled."
+msgstr "已禁用 AdvAgg CSS 合并压缩。"
+
+msgid "Go to the <a href=\"@settings\">AdvAgg Minify CSS settings page</a> and select a minifier, or go to the <a href=\"@modules\">modules page</a> and disable the \"AdvAgg Minify CSS\" module."
+msgstr "转至 <a href=\"@settings\">AdvAgg 缩小 CSS 设置</a>页面并选择一个缩小器，或者转至<a href=\"@modules\">模块页面</a>并禁用“AdvAgg 缩小 CSS”模块。"
+
+msgid "AdvAgg Minify CSS"
+msgstr "AdvAgg 合并压缩 CSS"
+
+msgid "Minify CSS."
+msgstr "合并压缩 CSS。"
+
+msgid "CSS Minification"
+msgstr "CSS 合并压缩"
+
+msgid "AdvAgg CSS minification settings."
+msgstr "AdvAgg CSS 合并压缩设置。"
+
+msgid "AdvAgg: CSS Minification"
+msgstr "AdvAgg：CSS 合并压缩"
+
+msgid "Which minifier to use. 0 is Disabled."
+msgstr "要使用的合并压缩工具。 0 表示已禁用。"
+
+msgid "Add licensing information to aggregates for individual source files."
+msgstr "将许可信息添加到各源文件的聚合中。"
+
+msgid "The settings below will not have any effect because AdvAgg is currently in <a href=\"@devel\">development mode</a>. Once the cache settings have been set to a non-development level, CSS minification will take place."
+msgstr "以下设置将不会产生任何影响，因为 AdvAgg 当前处于<a href=\"@devel\">开发方式</a>。 一旦将高速缓存设置设定为非开发级别，就将进行 CSS 合并压缩。"
+
+msgid "Disabled"
+msgstr "已禁用"
+
+msgid "Core"
+msgstr "核心"
+
+msgid "YUI Compressor"
+msgstr "YUI 压缩器"
+
+msgid "Minification: Select a minifier"
+msgstr "合并压缩：选择合并压缩工具"
+
+msgid "Add licensing comments"
+msgstr "添加许可注释"
+
+msgid ""
+"If unchecked, the Advanced Aggregation module's licensing comments\n"
+"      will be omitted from the aggregated files. Omitting the comments will produce somewhat better scores in\n"
+"      some automated security scans but otherwise should not affect your site. These are included by default in order to better follow the spirit of the GPL by providing the source for javascript files."
+msgstr ""
+"如果未选中此选项，那么将在汇总文件中\n"
+"省略“高级汇总”模块的许可注释。 省略注释将会在某些自动安全扫描中\n"
+"产生更好的分数，但不应影响您的站点。 缺省情况下，将包含这些注释，以便能够通过提供 JavaScript 文件来源更好地遵循 GPL 的精神。"
+
+msgid "Advagg External Minification: PHP shell_exec"
+msgstr "Advagg 外部合并压缩：PHP shell_exec"
+
+msgid "PHP shell_exec is non-functional."
+msgstr "PHP shell_exec 不可用。"
+
+msgid "Check php.ini for safemode or <a href=\"@link\" target=\"_blank\">disable_functions</a>."
+msgstr "检查 php.ini 以找到 safemode 或 <a href=\"@link\" target=\"_blank\">disable_functions</a>。"
+
+msgid "Enabled"
+msgstr "已启用"
+
+msgid "AdvAgg External Minification"
+msgstr "AdvAgg 外部合并压缩"
+
+msgid "Minify Javascript and/or CSS with a command line minifier."
+msgstr "使用命令行合并压缩工具来合并压缩 JavaScript 和/或 CSS。"
+
+msgid "External Minification"
+msgstr "外部合并压缩"
+
+msgid "AdvAgg external minification settings."
+msgstr "AdvAgg 外部合并压缩设置。"
+
+msgid "AdvAgg: External Minifiers"
+msgstr "AdvAgg：外部合并压缩工具"
+
+msgid "Command line for external CSS minification."
+msgstr "用于外部 CSS 合并压缩的命令行。"
+
+msgid "Whether to use the external CSS minifier if configured."
+msgstr "是否使用外部 CSS 合并压缩工具（如果已配置）。"
+
+msgid "Command line for external JavaScript minification."
+msgstr "用于外部 JavaScript 合并压缩的命令行。"
+
+msgid "Whether to use the external JS minifier if configured."
+msgstr "是否使用外部 JS 合并压缩工具（如果已配置）。"
+
+msgid "CSS"
+msgstr "CSS"
+
+msgid "JavaScript"
+msgstr "JavaScript"
+
+msgid "Command Line"
+msgstr "命令行"
+
+msgid "{%CWD%} = \\Drupal::root(). <br /> {%IN%} = input file. <br /> {%IN_URL_ENC%} = url pointing to the input file that has been url encoded. <br /> {%OUT%} = output file. <br /><br />"
+msgstr "{%CWD%} = \\Drupal::root()。<br /> {%IN%} = 输入文件。<br /> {%IN_URL_ENC%} = 指向已进行 URL 编码的输入文件的 URL。<br /> {%OUT%} = 输出文件。<br /><br />"
+
+msgid "Example using the <a href=\"@link1\">Microsoft Ajax Minifier</a>. <p><code>@code1</code></p>"
+msgstr "使用 <a href=\"@link1\">Microsoft Ajax Minifier</a> 的示例。 <p><code>@code1</code></p>"
+
+msgid "Example using the <a href=\"@link1\">Google Closure Compiler</a>. <p><code>@code1</code></p>"
+msgstr "使用 <a href=\"@link1\">Google Closure Compiler</a> 的示例。 <p><code>@code1</code></p>"
+
+msgid "Example using curl to minify via the <a href=\"@link1\">Online Google Closure Compiler</a>. <p><code>@code1</code></p>"
+msgstr "使用 curl 通过<a href=\"@link1\">在线 Google Closure Compiler</a> 进行缩小的示例。<p><code>@code1</code></p>"
+
+msgid "Example using the <a href=\"@link1\">YUI Compressor</a>. <p><code>@code1</code></p>"
+msgstr "使用 <a href=\"@link1\">YUI Compressor</a> 的示例。<p><code>@code1</code></p>"
+
+msgid "Example using curl to minify via an online <a href=\"@link1\">CSS Minifier</a>. <p><code>@code1</code></p>"
+msgstr "使用 curl 通过在线 <a href=\"@link1\">CSS Minifier</a> 进行缩小的示例。<p><code>@code1</code></p>"
+
+msgid "Command to run"
+msgstr "要运行的命令"
+
+msgid "Enable external @type minification"
+msgstr "启用外部 @type 合并压缩"
+
+msgid "AdvAgg JS Minify"
+msgstr "AdvAgg JS 合并压缩"
+
+msgid "AdvAgg JS Minification is disabled."
+msgstr "已禁用 AdvAgg JS 合并压缩。"
+
+msgid "Go to the <a href=\"@settings\">AdvAgg Minify JavaScript settings page</a> and select a minifier, or go to the <a href=\"@modules\">modules page</a> and disable the \"AdvAgg Minify Javascript\" module."
+msgstr "转至 <a href=\"@settings\">AdvAgg 缩小 JavaScript 设置页面</a>并选择一个缩小器，或者转至<a href=\"@modules\">模块页面</a>并禁用“AdvAgg 缩小 Javascript”模块。"
+
+msgid "AdvAgg Minify JavaScript"
+msgstr "AdvAgg 合并压缩 JavaScript"
+
+msgid "Minify JavaScript with a 3rd party minifier; JSMin+, JSMin c ext, JShrink, and JSqueeze currently."
+msgstr "当前使用第三方合并压缩工具 JSMin+、JSMin c ext、JShrink 和 JSqueeze 来合并压缩 JavaScript。"
+
+msgid "JavaScript Minification"
+msgstr "JavaScript 合并压缩"
+
+msgid "AdvAgg JavaScript minification settings."
+msgstr "AdvAgg JavaScript 合并压缩设置。"
+
+msgid "AdvAgg: JS Minification"
+msgstr "AdvAgg：JS 合并压缩"
+
+msgid "Minifier to use. 0 is disabled."
+msgstr "要使用的合并压缩工具。 0 表示已禁用。"
+
+msgid "Upper bound comparison value for the minification ratio test."
+msgstr "合并压缩比率测试的上限比较值。"
+
+msgid "Lower bound comparison value for the minification ratio test."
+msgstr "合并压缩比率测试的下限比较值。"
+
+msgid "The jsmin function does not exist. Using JSqueeze."
+msgstr "JSMin 功能不存在。 请使用 JSqueze。"
+
+msgid "JSMin had a possible error minifying: @file, correcting."
+msgstr "JSMin 合并压缩 @file 时可能遇到了一个错误，正在进行更正。"
+
+msgid "JSMin had an error minifying file: @file, attempting to correct."
+msgstr "JSMin 合并压缩文件 @file 时遇到了一个错误，正在尝试进行更正。"
+
+msgid "The currently installed jsmin version does not handle multibyte characters, you may consider to upgrade the jsmin extension. Using JSqueeze fallback."
+msgstr "当前安装的 JSMin 版本不会处理多字节字符，可以考虑升级 JSMin 扩展。 请使用 JSqueeze 回退。"
+
+msgid "The settings below will not have any effect because AdvAgg is currently in <a href=\"@devel\">development mode</a>. Once the cache settings have been set to a non-development level, JS minification will take place."
+msgstr "以下设置将不会产生任何影响，因为 AdvAgg 当前处于<a href=\"@devel\">开发方式</a>。 一旦将高速缓存设置设定为非开发级别，就将进行 JS 合并压缩。"
+
+msgid "JSMin+ ~1300ms"
+msgstr "JSMin+ ~1300ms"
+
+msgid "JShrink ~1000ms"
+msgstr "JShrink ~1000ms"
+
+msgid "JSqueeze ~600ms"
+msgstr "JSqueeze ~600ms"
+
+msgid "JSMin ~2ms"
+msgstr "JSMin ~2ms"
+
+msgid "JSMin is the very fast C complied version. Recommend using it."
+msgstr "JSMin 是速度非常快的 C 编译版本。 建议使用此项。"
+
+msgid "You can use the much faster C version of JSMin (~2ms) by installing the <a href=\"@php_jsmin\">JSMin PHP Extension</a> on this server."
+msgstr "通过在此服务器上安装 <a href=\"@php_jsmin\">JSMin PHP 扩展</a>，可使用速度更快的 C 版本 JSMin (~2ms)。"
+
+msgid "AdvAgg Modifier"
+msgstr "AdvAgg 修改器"
+
+msgid "Allows one to alter the CSS and JS array."
+msgstr "允许更改 CSS 和 JS 数组。"
+
+msgid "Modifications"
+msgstr "修改"
+
+msgid "AdvAgg Modifications."
+msgstr "AdvAgg 修改。"
+
+msgid "AdvAgg: Modifications"
+msgstr "AdvAgg：修改"
+
+msgid "Default value to adjust the sorting of browser conditional CSS."
+msgstr "用于调整浏览器条件 CSS 排序的缺省值。"
+
+msgid "Default value to adjust the sorting of external CSS."
+msgstr "用于调整外部 CSS 排序的缺省值。"
+
+msgid "Default value to use JavaScript to defer CSS loading."
+msgstr "用于使用 JavaScript 延迟装入 CSS 的缺省值。"
+
+msgid "Whether to defer loading of CSS on the admin theme."
+msgstr "是否在管理主题上延迟装入 CSS。"
+
+msgid "Whether to also defer loading of external stylesheets."
+msgstr "是否同时延迟装入外部样式表。"
+
+msgid "Default value of the inclusion method for the loadCSS code."
+msgstr "loadCSS 代码的包含方法的缺省值。"
+
+msgid "Default value to turn on preprocessing for all CSS files."
+msgstr "用于为所有 CSS 文件开启预处理的缺省值。"
+
+msgid "Default value to translate the content attributes of CSS files."
+msgstr "用于转换 CSS 文件内容属性的缺省值。"
+
+msgid "Default value to adjust the sorting of external JavaScript"
+msgstr "用于调整外部 JavaScript 排序的缺省值"
+
+msgid "Default value to adjust the sorting of browser conditional JavaScript."
+msgstr "用于调整浏览器条件 JavaScript 排序的缺省值。"
+
+msgid "Default value to have async on all JS script tags."
+msgstr "用于使所有 JS 脚本标记中均具有异步标记的缺省值。"
+
+msgid "Default value to move async js to the header."
+msgstr "用于将异步 JS 移至头部的缺省值。"
+
+msgid "Default value to add the defer tag to all script tags."
+msgstr "用于将延迟标记添加到所有脚本标记的缺省值。"
+
+msgid "Default value to move all JS to the footer."
+msgstr "用于将所有 JS 移至底部的缺省值。"
+
+msgid "Default value to turn on preprocessing for all JavaScript files."
+msgstr "用于为所有 JavaScript 文件开启预处理的缺省值。"
+
+msgid "Remove console.log() calls from JavaScript files."
+msgstr "从 JavaScript 文件中除去 console.log() 调用。"
+
+msgid "Default value to use the prefetch tag for certain domains."
+msgstr "用于对特定域使用预取标记的缺省值。"
+
+msgid "Use one css/js directory for a multi-site."
+msgstr "对多站点使用一个 CSS/JS 目录。"
+
+msgid "@before"
+msgstr "@before"
+
+msgid "JS"
+msgstr "JS"
+
+msgid "Enable preprocess on all JS"
+msgstr "对所有 JS 启用预处理"
+
+msgid "Force all JavaScript to have the preprocess attribute be set to TRUE. All JavaScript files will be aggregated if enabled."
+msgstr "强制所有 JavaScript 将预处理属性设置为 TRUE。 如启用，将聚合所有 JavaScript 文件。"
+
+msgid "Remove console logging from JS files."
+msgstr "从 JS 文件中除去控制台日志记录。"
+
+msgid "Harmless under most cases, but may make debugging difficult. WARNING: experimental."
+msgstr "在大多数情况下没有影响，但可能会使调试变得困难。 警告：实验版。"
+
+msgid "Optimize JavaScript Ordering"
+msgstr "优化 JavaScript 排序"
+
+msgid "The settings in here might change the order in which the JavaScript is loaded. It will move the scripts around so that more optimal aggregates are built. In most cases enabling these checkboxes will cause no negative side effects."
+msgstr "此处的设置可能会更改 JavaScript 的装入顺序。 它将移动这些脚本，以便构建更多最佳聚合。 在大多数情况下，启用这些复选框将不会产生任何负面作用。"
+
+msgid "Move all external scripts to the top of the execution order"
+msgstr "将所有外部脚本移至执行顺序顶部"
+
+msgid "This will group all external JavaScript files to be above all other JavaScript."
+msgstr "这会对所有外部 JavaScript 文件进行分组，使其位于所有其他 JavaScript 之上。"
+
+msgid "Move all browser conditional JavaScript to the bottom of the group"
+msgstr "将所有浏览器条件 JavaScript 移至该组的底部"
+
+msgid "This will group all browser conditional JavaScript to be in the lowest group of that conditional rule."
+msgstr "这会对所有浏览器条件 JavaScript 进行分组，使其位于该条件规则最下方的组中。"
+
+msgid "Adjust javascript location and execution"
+msgstr "调整 JavaScript 位置和执行"
+
+msgid "Most of the time adjusting the settings are safe but in some rare cases adjusting these can cause serious JavaScript issues with your site."
+msgstr "大多数时间内调整设置是安全的，但在某些罕见的情况下，调整这些设置可能会导致您的站点出现严重的 JavaScript 问题。"
+
+msgid "Deferred JavaScript Execution: Add The defer Tag To All Script Tags"
+msgstr "延迟 JavaScript 执行：将延迟标记添加到所有脚本标记"
+
+msgid "All but external scripts"
+msgstr "除外部脚本外的所有脚本"
+
+msgid "All (might break things)"
+msgstr "全部（可能会导致中断）"
+
+msgid "This will delay the script execution until the HTML parser has finished. This will have a similar effect to moving all JavaScript to the footer. This might break javascript (especially inline); only use after extensive testing! <a href=\"@link\">More Info</a>"
+msgstr "这将延迟执行脚本，直至 HTML 解析器完成解析。 这与将所有 JavaScript 移至页脚具有相似的效果。 这可能会中断 JavaScript（尤其是内联）；请仅在广泛测试后使用！ <a href=\"@link\">更多信息</a>"
+
+msgid "Experimental Settings"
+msgstr "实验设置"
+
+msgid "Here there be dragons! Asynchronous JavaScript Execution: Add The async Tag To All Script Tags"
+msgstr "此处有龙！ 异步 JavaScript 执行：将异步标记添加到所有脚本标记"
+
+msgid "This will cause the script to be downloaded in the background and executed out of order. This will break most javascript as most code is not async safe; only use after extensive testing! <a href=\"@link\">More Info</a>"
+msgstr "这将导致在后台下载脚本并且无序执行。 这将中断大多数的 JavaScript，因为大多数代码都不是异步安全的；请仅在广泛测试后使用！ <a href=\"@link\">更多信息</a>"
+
+msgid "Asynchronous JavaScript Execution: Group together in the header"
+msgstr "异步执行 JavaScript：在头中分组在一起"
+
+msgid "This will move all async JavaScript code to the header in the same group."
+msgstr "这会将所有异步 JavaScript 代码均移至同一组中的头。"
+
+msgid "Enable preprocess on all CSS"
+msgstr "对所有 CSS 启用预处理"
+
+msgid "Force all CSS to have the preprocess attribute be set to TRUE. All CSS files will be aggregated if enabled."
+msgstr "强制所有 CSS 将预处理属性设置为 TRUE。 如启用，将聚合所有 CSS 文件。"
+
+msgid "You might want to increase the <a href=\"@link\">CSS Bundles Per Page</a> if this is checked."
+msgstr "如果选中此项，那么您可能希望增加<a href=\"@link\">每页的 CSS 捆绑软件数</a>。"
+
+msgid "Translate CSS content strings"
+msgstr "转换 CSS 内容字符串"
+
+msgid "Run strings inside of quotes of the content attribute through the <a href=\"@t\">t() function</a>. An alternative to this can be found in this <a href=\"@post\">blog post</a>."
+msgstr "通过 <a href=\"@t\">t() 函数</a>运行内容属性引号内的字符串。 在此<a href=\"@post\">博客帖子</a>中可以找到相应的备选项。"
+
+msgid "Optimize CSS Ordering"
+msgstr "优化 CSS 排序"
+
+msgid "The settings in here might change the order in which the CSS is loaded. It will move the CSS around so that more optimal aggregates are built. In most cases enabling these checkboxes will cause no negative side effects."
+msgstr "此处的设置可能会更改 CSS 的装入顺序。 它将移动 CSS，以便构建更多最佳聚合。 在大多数情况下，启用这些复选框将不会产生任何负面作用。"
+
+msgid "Move all external CSS to the top of the execution order"
+msgstr "将所有外部 CSS 移至执行顺序顶部"
+
+msgid "This will group all external CSS files to be above all other CSS."
+msgstr "这会对所有外部 CSS 文件进行分组，使其位于所有其他 CSS 之上。"
+
+msgid "Move all browser conditional CSS to the bottom of the group"
+msgstr "将所有浏览器条件 CSS 移至该组的底部"
+
+msgid "This will group all browser conditional CSS to be in the lowest group of that conditional rule."
+msgstr "这会对所有浏览器条件 CSS 进行分组，使其位于该条件规则最下方的组中。"
+
+msgid "Adjust CSS location and execution (Experimental)"
+msgstr "调整 CSS 位置和执行（实验版）"
+
+msgid "Deferred CSS Execution: Use JS to load CSS"
+msgstr "延迟执行 CSS：使用 JS 装入 CSS"
+
+msgid "Enabled (In head)"
+msgstr "已启用（在头中）"
+
+msgid "This will try to optimize CSS delivery by using JavaScript to load the CSS. This might break CSS on different browsers and will cause a flash of unstyled content (FOUC). Only enable after extensive testing! <a href=\"@link\">More Info</a>"
+msgstr "这将尝试通过使用 JavaScript 装入 CSS 来优化 CSS 交付。 这可能会在不同的浏览器上中断 CSS，并将导致无样式内容闪烁 (FOUC)。 请仅在广泛测试后启用！ <a href=\"@link\">更多信息</a>"
+
+msgid "Use JS to load CSS in the admin theme"
+msgstr "使用 JS 在管理主题中装入 CSS"
+
+msgid "This will optimize CSS delivery with JavaScript when viewing the admin theme."
+msgstr "这将在查看管理主题时使用 JavaScript 优化 CSS 交付。"
+
+msgid "Use JS to load external CSS"
+msgstr "使用 JS 装入外部 CSS"
+
+msgid "This will optimize CSS delivery with JavaScript for external stylesheets."
+msgstr "这将针对外部样式表使用 JavaScript 优化 CSS 交付。"
+
+msgid "How to include the JS loading code"
+msgstr "如何包含 JS 装入代码"
+
+msgid "Inline javascript loader library (If enabled this is recommended)"
+msgstr "内联 JavaScript 装入程序库（如已启用，建议使用）"
+
+msgid "Local file included in aggregate"
+msgstr "聚合中包含的本地文件"
+
+msgid "Externally load the latest from github"
+msgstr "从 github 外部装入最新内容"
+
+msgid "The <a href=\"@link\">loadCSS</a> library can be included in various ways."
+msgstr "可以通过各种方式包含 <a href=\"@link\">loadCSS</a> 库。"
+
+msgid "AdvAgg Old Internet Explorer Compatibility Enhancer"
+msgstr "AdvAgg 旧 Internet Explorer 兼容性增强器"
+
+msgid "Provides some enhanced compatibility with outdated Internet Explorer versions."
+msgstr "提供与过时 Internet Explorer 版本的增强兼容性。"
+
+msgid "AdvAgg CSS/JS Validator"
+msgstr "AdvAgg CSS/JS 验证程序"
+
+msgid "Validate the CSS and JS files used in Aggregation for syntax errors."
+msgstr "验证聚合中使用的 CSS 和 JS 文件是否存在语法错误。"
+
+msgid "AdvAgg: Asset Validation"
+msgstr "AdvAgg：资产验证"
+
+msgid "CSSLint"
+msgstr "CSSLint"
+
+msgid "W3.org CSS Validator"
+msgstr "W3.org CSS 验证程序"
+
+msgid "JSHint"
+msgstr "JSHint"
+
+msgid "Asset Validation"
+msgstr "资产验证"
+
+msgid "Validate CSS with CSSLint"
+msgstr "使用 CSSLint 验证 CSS"
+
+msgid "Validate CSS with the W3.org css validator"
+msgstr "使用 W3.org CSS 验证程序验证 CSS"
+
+msgid "Validate JavaScript with JSHint"
+msgstr "使用 JSHint 验证 JavaScript"
+
+msgid "Advanced CSS/JS Aggregation Asset Validation"
+msgstr "高级 CSS/JS 聚合资产验证"
+
+msgid "AdvAgg: CSS Validator using CSSLint"
+msgstr "AdvAgg：使用 CSSLint 的 CSS 验证程序"
+
+msgid "AdvAgg: CSS Validator using w3.org"
+msgstr "AdvAgg：使用 W3.org 的 CSS 验证程序"
+
+msgid "AdvAgg: JavaScript Validator using JSHint"
+msgstr "AdvAgg：使用 JSHint 的 JavaScript 验证程序"
+
+msgid "Default CSS Lint ignore settings."
+msgstr "缺省 CSS Lint 忽略设置。"
+
+msgid "Default JS Hint ignore settings."
+msgstr "缺省 JS Hint 忽略设置。"
+
+msgid "Browser unable to read file. @error"
+msgstr "浏览器无法读取文件。@error"
+
+msgid "Directory:"
+msgstr "目录："
+
+msgid "Check directory and all subdirectories"
+msgstr "检查目录和所有子目录"
+
+msgid "Check directory"
+msgstr "检查目录"
+
+msgid "File:"
+msgstr "文件："
+
+msgid "Files:"
+msgstr "文件："
+
+msgid "valid"
+msgstr "有效"
+
+msgid "Options:"
+msgstr "选项："
+
+msgid "Errors:"
+msgstr "错误："
+
+msgid "Warnings:"
+msgstr "警告数："
+
+msgid "Notice: The form below will submit files to the <a href=\"http://jigsaw.w3.org/css-validator/\">http://jigsaw.w3.org/css-validator/</a> service if used."
+msgstr "注意：如果使用，下面的表单将向 <a href=\"http://jigsaw.w3.org/css-validator/\">http://jigsaw.w3.org/css-validator/</a> 服务提交文件。"
+
+msgid "W3C Server did not return a 200 or request data was empty."
+msgstr "W3C Server 未返回 200 或请求数据为空。"
+
+msgid "CSS settings"
+msgstr "CSS 设置"
+
+msgid "Compress css assets with brotli compression."
+msgstr "使用 brotli 压缩方式来压缩 CSS 资产。"
+
+msgid "Combine multiple media selectors per aggregate."
+msgstr "将每个聚合的多个介质选择器组合在一起。"
+
+msgid "Fix type of added asset files."
+msgstr "修正已添加的资产文件的类型。"
+
+msgid "Do not change external to file if on same host for css."
+msgstr "如果 CSS 文件位于同一主机上，请勿将“外部”更改为“文件”。"
+
+msgid "Prefetch external domains for css/js"
+msgstr "为 CSS/JS 预取外部域"
+
+msgid "Path/Url settings"
+msgstr "路径/URL 设置"
+
+msgid "What conversions to apply."
+msgstr "要应用的转换。"
+
+msgid "Convert absolute path css/js src/url() to be protocol relative."
+msgstr "将绝对路径 css/js src/url() 转换为协议相对路径。"
+
+msgid "Convert relative paths to absolute."
+msgstr "将相对路径转换为绝对路径。"
+
+msgid "Convert absolute path css/js src/url() to use https://"
+msgstr "转换绝对路径 css/js src/url() 以使用 https://"
+
+msgid "Level of caching for AdvAgg to use."
+msgstr "AdvAgg 使用的高速缓存级别。"
+
+msgid "frequency to run the AdvAgg cron maintenance functions."
+msgstr "运行 AdvAgg cron 维护功能的频率。"
+
+msgid "Enable AdvAgg."
+msgstr "启用 AdvAgg。"
+
+msgid "Counter to force new aggregates through caches etc."
+msgstr "通过高速缓存等强制执行新聚合的计数器"
+
+msgid "Add the immutable tag to Apache cache control strings."
+msgstr "将不可变标记添加到 Apache 高速缓存控制字符串中。"
+
+msgid "JavaScript specific settings."
+msgstr "特定于 JavaScript 的设置。"
+
+msgid "Do not change external to file if on same host for js."
+msgstr "如果 JS 文件位于同一主机上，请勿将“外部”更改为“文件”。"
+
+msgid "Skip preprocess check on status page"
+msgstr "在状态页面上跳过预处理检查"
+
+msgid "Display a message when the bypass cookie is active."
+msgstr "在旁路 cookie 处于活动状态时显示消息。"
+
+msgid "Use Options +FollowSymlinks to support some hosts."
+msgstr "使用 Options +FollowSymlinks 以支持某些主机。"
+
+msgid "Use options +SymLinksIfOwnerMatch to support some hosts."
+msgstr "使用 Options +SymLinksIfOwnerMatch 以支持某些主机。"
+
+msgid "This page provides debugging information. There are no configuration options here."
+msgstr "此页面提供调试信息。 此处没有配置选项。"
+
+msgid "Hook Theme Info"
+msgstr "挂钩主题信息"
+
+msgid "Get detailed info about an optimized file"
+msgstr "获取有关优化文件的详细信息"
+
+msgid "Filename"
+msgstr "文件名"
+
+msgid "Lookup Details"
+msgstr "查找详细信息"
+
+msgid "Input an optimized filename like \"@css_file\"."
+msgstr "输入“@css_file”之类经过优化的文件名。"
+
+msgid "Please input a valid optimized filename."
+msgstr "请输入有效的优化文件名。"
+
+msgid "Optimized file information not found, confirm spelling of the path. Alternatively, that could be an outdated file."
+msgstr "找不到优化的文件信息，请确认路径的拼写。 或者，这可能是过时的文件。"
+
+msgid "This is a collection of commands to control the cache and to manage testing of this module. In general this page is useful when troubleshooting some aggregation issues. For normal operations, you do not need to do anything on this page below the Smart Cache Flush. There are no configuration options here."
+msgstr "这是一批命令，用于控制高速缓存和管理此模块的测试。 通常，此页面在对某些聚合问题进行故障诊断时非常有用。 对于正常操作，您无需在此页面上的“智能高速缓存清空”下执行任何操作。 此处没有配置选项。"
+
+msgid "Aggregation Bypass Cookie"
+msgstr "聚合旁路 cookie"
+
+msgid "This will set or remove a cookie that disables aggregation for a set period of time."
+msgstr "这将设置或除去用于在一段固定时间内禁用聚合的 cookie。"
+
+msgid "Bypass length"
+msgstr "旁路长度"
+
+msgid "6 hours"
+msgstr "6 小时"
+
+msgid "12 hours"
+msgstr "12 小时"
+
+msgid "1 day"
+msgstr "1 天"
+
+msgid "2 days"
+msgstr "2 天"
+
+msgid "1 week"
+msgstr "1 周"
+
+msgid "1 month"
+msgstr "1 个月"
+
+msgid "1 year"
+msgstr "1 年"
+
+msgid "Toggle The \"aggregation bypass cookie\" For This Browser"
+msgstr "为此浏览器切换“汇总旁路 cookie”"
+
+msgid "Cron Maintenance Tasks"
+msgstr "cron 维护任务"
+
+msgid "The following operation is ran on cron but you can run it manually here."
+msgstr "以下操作在 cron 上运行，但您可以在此处手动运行。"
+
+msgid "Clear Stale Files"
+msgstr "清除旧文件"
+
+msgid "Scan all files in the css/js optimized directories and remove outdated ones."
+msgstr "扫描 CSS/JS 优化目录中的所有文件并除去过时的文件。"
+
+msgid "Remove All Stale Files"
+msgstr "除去所有旧文件"
+
+msgid "Drastic Measures"
+msgstr "严厉措施"
+
+msgid "The options below should normally never need to be done."
+msgstr "通常从不需要完成以下选项。"
+
+msgid "Clear All Caches"
+msgstr "清除所有高速缓存"
+
+msgid "Remove all entries from the advagg cache and file information stores. Useful if you suspect a cache is not getting cleared."
+msgstr "从 advagg 高速缓存和文件信息存储库中除去所有条目。 如果您怀疑高速缓存未清除，那么这很有用。"
+
+msgid "Clear All Caches & File Information"
+msgstr "清除所有高速缓存和文件信息"
+
+msgid "Force new files"
+msgstr "强制使用新文件"
+
+msgid "Force the creation of all new optimized files by incrementing a global counter. Current value of counter: %value. This is useful if a CDN has cached a file incorrectly as it will force new ones to be used even if nothing else has changed."
+msgstr "通过增加全局计数器来强制创建所有新的优化文件。 计数器的当前值：%value。 如果 CDN 未正确缓存文件，那么这很有用，因为即使未更改其他任何内容，也会强制使用新内容。"
+
+msgid "Increment Global Counter"
+msgstr "增加全局计数器"
+
+msgid "Global counter is now set to %new_value"
+msgstr "全局计数器现在设置为 %new_value"
+
+msgid "AdvAgg Bypass Cookie Removed."
+msgstr "已除去 AdvAgg 旁路 cookie。"
+
+msgid "AdvAgg Bypass Cookie Set for %time."
+msgstr "AdvAgg 旁路 Cookie（设置为 %time）。"
+
+msgid "Development"
+msgstr "开发"
+
+msgid "Low"
+msgstr "低"
+
+msgid "Normal"
+msgstr "正常"
+
+msgid "High"
+msgstr "高"
+
+msgid "15 minutes"
+msgstr "15 分钟"
+
+msgid "30 minutes"
+msgstr "30 分钟"
+
+msgid "45 minutes"
+msgstr "45 分钟"
+
+msgid "1 hour"
+msgstr "1 小时"
+
+msgid "2 hours"
+msgstr "2 小时"
+
+msgid "4 hours"
+msgstr "4 小时"
+
+msgid "18 hours"
+msgstr "18 小时"
+
+msgid "3 days"
+msgstr "3 天"
+
+msgid "4 days"
+msgstr "4 天"
+
+msgid "5 days"
+msgstr "5 天"
+
+msgid "6 days"
+msgstr "6 天"
+
+msgid "2 week"
+msgstr "2 周"
+
+msgid "3 week"
+msgstr "3 周"
+
+msgid "6 weeks"
+msgstr "6 周"
+
+msgid "2 months"
+msgstr "2 个月"
+
+msgid "Global Options"
+msgstr "全局选项"
+
+msgid "Enable advanced aggregation"
+msgstr "启用高级聚合"
+
+msgid "Uncheck this box to temporarily disable AdvAgg functionality."
+msgstr "取消选中此框以临时禁用 AdvAgg 功能。"
+
+msgid "Use DNS Prefetch for external CSS/JS."
+msgstr "对外部 CSS/JS 使用 DNS 预取。"
+
+msgid "Start the DNS lookup for external CSS and JavaScript files as soon as possible."
+msgstr "尽快为外部 CSS 和 JavaScript 文件启动 DNS 查找。"
+
+msgid "Server Config"
+msgstr "服务器配置"
+
+msgid "Cache-Control: Immutable"
+msgstr "Cache-Control: Immutable"
+
+msgid "Your server can send <a href=\"@url1\">Cache-Control: immutable</a> header for all optimized files. This should improve performance for some users. Current <a href=\"@url2\">browser support</a>"
+msgstr "服务器可以为所有已优化的文件发送 <a href=\"@url1\">Cache-Control: Immutable</a> 头。 这应提高某些用户的性能。 当前的<a href=\"@url2\">浏览器支持</a>"
+
+msgid "Include Cache-Control: immutable in generated .htaccess files."
+msgstr "在生成的 .htaccess 文件中包含 Cache-Control: Immutable。"
+
+msgid "With the Apache server, AdvAgg can generate config to send the header for all optimized files."
+msgstr "利用 Apache 服务器，AdvAgg 可生成配置，为所有已优化的文件发送此头。"
+
+msgid "With Nginx, AdvAgg can't set the headers for optimized files in a performant manner. However, you can easily do so in your server config. See the <a href='@url'>manual for instructions</a>."
+msgstr "利用 Nginx，AdvAgg 无法以高性能方式为已优化的文件设置这些头。 但是，您可以在服务器配置中轻松执行此操作。 请参阅<a href='@url'>手册以获取指示信息</a>。"
+
+msgid "AdvAgg Cache Settings"
+msgstr "AdvAgg 高速缓存设置"
+
+msgid "No performance data yet but most use cases will probably want to use the Normal cache mode."
+msgstr "尚无性能数据，但大多数用例将可能希望使用“正常”高速缓存方式。"
+
+msgid "Compression Options"
+msgstr "压缩选项"
+
+msgid "Compressed files will automatically be served by the Apache server"
+msgstr "Apache 服务器将自动提供压缩文件"
+
+msgid "AdvAgg can't configure your Nginx server to automatically serve compressed assets. See the <a href='@url'>AdvAgg manual</a> for instructions on manually doing so."
+msgstr "AdvAgg 无法将 Nginx 服务器配置为自动提供压缩资产。 请参阅 <a href='@url'>AdvAgg 手册</a>，获取有关手动执行此操作的指示信息。"
+
+msgid "Gzip CSS assets"
+msgstr "Gzip CSS 资产"
+
+msgid "This should be enabled unless you are experiencing corrupted compressed asset files."
+msgstr "除非您遇到已损坏的压缩资产文件，否则应启用此选项。"
+
+msgid "Gzip JavaScript assets"
+msgstr "Gzip JavaScript 资产"
+
+msgid "Select to compress this asset type with brotli compression. See <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> page for more information."
+msgstr "选择此项以使用 brotli 压缩方式来压缩此资产类型。 请参阅 <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> 页面以获取更多信息。"
+
+msgid "Brotli compression is not available on your server. See <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> page for more information."
+msgstr "服务器上不提供 Brotli 压缩方式。 请参阅 <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> 页面以获取更多信息。"
+
+msgid "Brotli compress CSS assets"
+msgstr "Brotli 压缩 CSS 资产"
+
+msgid "Brotli compress JavaScript assets"
+msgstr "Brotli 压缩 JavaScript 资产"
+
+msgid "CSS Options"
+msgstr "CSS 选项"
+
+msgid "Combine CSS files by using media queries"
+msgstr "使用介质查询组合 CSS 文件"
+
+msgid "Will combine more CSS files together because different CSS media types can be used in the same file by using media queries. Use cores grouping logic needs to be unchecked in order for this to work. Also noted is that due to an issue with IE9, compatibility mode is forced off if this is enabled."
+msgstr "将更多 CSS 文件组合在一起，因为通过使用介质查询，可以在同一文件中使用不同的 CSS 介质类型。 需要取消选中使用核心分组逻辑，以使其正常运行。 另请注意，由于 IE9 问题，如果启用此选项，那么将强制关闭兼容性方式。"
+
+msgid "Fix improperly set type"
+msgstr "修正设置不当的类型"
+
+msgid "If type is external but does not start with http, https, or // change it to be type file. If type is file but it starts with http, https, or // change type to be external. Note that if this is causing issues, odds are you have a double slash when there should be a single; see <a href=\"@link\">this issue</a>"
+msgstr "如果类型是“外部”，但不是以 http、https 或 // 开头，请将其更改为“文件”类型。 如果类型为“文件”，但以 http、https 或 // 开头，请将类型更改为“外部”。 请注意，如果这导致发生问题，那么在应为单斜杠时，可能会出现双斜杠；请参阅<a href=\"@link\">此问题</a>"
+
+msgid "Do not change external to file if on same host."
+msgstr "如果在同一主机上，请勿将“外部”更改为“文件”。"
+
+msgid "If a CSS file is set as external and is on the same hosts do not convert to file."
+msgstr "如果将 CSS 文件设置为“外部”且位于同一主机上，请勿转换为“文件”。"
+
+msgid "JS Options"
+msgstr "JS 选项"
+
+msgid "If a JS file is set as external and is on the same hosts do not convert to file."
+msgstr "如果将 JS 文件设置为“外部”且位于同一主机上，请勿转换为“文件”。"
+
+msgid "Cron Options"
+msgstr "cron 选项"
+
+msgid "Unless you have a good reason to adjust these values you should leave them alone."
+msgstr "除非您有充足的理由来调整这些值，否则就不必理会。"
+
+msgid "@time ago"
+msgstr "@time 以前"
+
+msgid "never"
+msgstr "从不"
+
+msgid "The default value for this is %value. The last time advagg_cron was ran is %time."
+msgstr "此项的缺省值为 %value。 上次运行 advagg_cron 的时间为 %time。"
+
+msgid "The default value for this is %value."
+msgstr "此项的缺省值为 %value。"
+
+msgid "Obscure Options"
+msgstr "模糊选项"
+
+msgid "Some of the more obscure AdvAgg settings. Odds are you do not need to change anything in here."
+msgstr "某些更模糊的 AdvAgg 设置。 可能您无需在此处更改任何内容。"
+
+msgid "Convert absolute paths to be protocol relative paths."
+msgstr "将绝对路径转换为协议相对路径。"
+
+msgid "If the src to a CSS/JS file points starts with http:// or https://, convert it to use a protocol relative path //. Will also convert url() references inside of css files."
+msgstr "如果 CSS/JS 文件的 src 以 http:// 或 https:// 开头，请将其转换为使用协议相对路径 //。 同时还将在 CSS 文件中转换 url() 引用。"
+
+msgid "Convert relative paths to be absolute paths."
+msgstr "将相对路径转换为绝对路径。"
+
+msgid "If the src to a CSS/JS file points starts with a relative path / convert to absolute."
+msgstr "如果 CSS/JS 文件的 src 以相对路径 / 开头，请转换为绝对路径。"
+
+msgid "Convert http:// to https://."
+msgstr "将 http:// 转换为 https://。"
+
+msgid "If the src to a CSS/JS file starts with http:// convert it https://. Will also convert url() references inside of css files."
+msgstr "如果 CSS/JS 文件的 src 以 http:// 开头，请将其转换为 https://。 同时还将在 CSS 文件中转换 url() 引用。"
+
+msgid "Use \"Options +FollowSymLinks\""
+msgstr "使用“Options +FollowSymLinks”"
+
+msgid "Some shared hosts require \"<code>Options +FollowSymLinks</code>\" in the .htaccess for asset directories."
+msgstr "某些共享主机在针对资产目录的 .htaccess 中需要使用“<code>Options +FollowSymLinks</code>”。"
+
+msgid "Use \"Options +SymLinksIfOwnerMatch\""
+msgstr "使用“Options +SymLinksIfOwnerMatch”"
+
+msgid "Some shared hosts require \"<code>Options +SymLinksIfOwnerMatch</code>\" in the .htaccess for asset directories."
+msgstr "某些共享主机在针对资产目录的 .htaccess 中需要使用“<code>Options +SymLinksIfOwnerMatch</code>”。"
+

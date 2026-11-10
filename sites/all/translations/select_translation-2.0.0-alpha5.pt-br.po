@@ -1,0 +1,126 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Select translation"
+msgstr "Selecionar tradução"
+
+msgid "Select which translation of a node should be displayed"
+msgstr "Selecione qual tradução de um nó deve ser exibida"
+
+msgid "Select Translation"
+msgstr "Selecionar tradução"
+
+msgid "Provides a Views filter to select which translation of a node should be displayed."
+msgstr "Fornece um filtro Visualizações para selecionar qual tradução de um nó deve ser exibida."
+
+msgid "Multilingual"
+msgstr "Multi-idioma"
+
+msgid "The 'nid' argument must be an integer >= 1."
+msgstr "O argumento 'nid' deve ser um número inteiro >= 1."
+
+msgid "Select translation filter"
+msgstr "Selecionar filtro de tradução"
+
+msgid "Original node language fallback"
+msgstr "Fallback do idioma do nó original"
+
+msgid "Default site language fallback"
+msgstr "Fallback de idioma do site padrão"
+
+msgid "Language fallback candidates list"
+msgstr "Lista de candidatos de fallback de idioma"
+
+msgid "Custom language priority"
+msgstr "Prioridade de idioma customizado"
+
+msgid "Select translation selection mode"
+msgstr "Marque o modo de seleção de tradução"
+
+msgid "Use the current interface language; if not available use the original node language"
+msgstr "Usar o idioma da interface atual; se não estiver disponível, usar o idioma do nó original"
+
+msgid "Use the current interface language; if not available use the default site language; if not available use the original node language"
+msgstr "Usar o idioma da interface atual; se não estiver disponível, usar o idioma do site padrão; se não estiver disponível, usar o idioma do nó original"
+
+msgid "Use the language fallback candidates list provided by the language manager service"
+msgstr "Usar a lista de candidatos de fallback de idioma fornecida pelo serviço de gerenciador de idiomas"
+
+msgid "Custom language priorities"
+msgstr "Prioridades de idioma customizado"
+
+msgid "Language priorities"
+msgstr "Prioridades de idioma"
+
+msgid ""
+"<p>If the selection mode is set to \"Custom language priorities\",\n"
+"                           a comma separated list of language codes can be specified.<br/>\n"
+"                           The filter will then return the node in the first available language\n"
+"                           in that list; falling back to the original node language if no match was found.</p>\n"
+"                           Some special values are recognized:\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" will be replaced with the current interface language;</li>\n"
+"                             <li>\"<em>default</em>\" will be replaced with the default site language;</li>\n"
+"                             <li>\"<em>original</em>\" will be replaced with the original node language.</li>\n"
+"                            </ul>\n"
+"                           Example:<br/><em>en,fr,current,default,original</em><br/>\n"
+"                           This will return:\n"
+"                           <ol>\n"
+"                             <li>the version in English, if available;</li>\n"
+"                             <li>if not, then the version in French, if available;</li>\n"
+"                             <li>if not, then the version in the current interface language, if available;</li>\n"
+"                             <li>if not, then the version in the default site language, if available;</li>\n"
+"                             <li>if none are available it will return the original node version.</li>\n"
+"                          </ol>"
+msgstr ""
+"<p>Se o modo de seleção estiver configurado como \"Prioridades de idioma customizado\",\n"
+" uma lista separada por vírgula de códigos de idioma poderá ser especificada.<br/>\n"
+" O filtro retornará, então, o nó no primeiro idioma disponível\n"
+" nessa lista; efetuando fallback para o idioma do nó original, se nenhuma correspondência foi localizada.</p>\n"
+" Alguns valores especiais são reconhecidos:\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" será substituído pelo idioma da interface atual;</li>\n"
+"                             <li>\"<em>default</em>\" será substituído pelo idioma do site padrão;</li>\n"
+"                             <li>\"<em>original</em>\" será substituído pelo idioma do nó original.</li>\n"
+"                            </ul>\n"
+"Exemplo:<br/><em>en,fr,current,default,original</em><br/>\n"
+"Isso retornará:\n"
+"                           <ol>\n"
+"                             <li>a versão em inglês, se disponível;</li>\n"
+"                             <li>caso contrário, a versão em francês, se disponível;</li>\n"
+"                             <li>caso contrário, a versão no idioma de interface atual, se disponível;</li>\n"
+"                             <li>caso contrário, a versão no idioma do site padrão, se disponível;</li>\n"
+"                             <li>se nenhum estiver disponível, retornará a versão do nó original.</li>\n"
+"                          </ol>"
+
+msgid "Display default language content *only*, if the currently selected user language is the default site language."
+msgstr "Exibir o conteúdo de idioma padrão *apenas*, se o idioma do usuário selecionado atualmente for o idioma do site padrão."
+
+msgid ""
+"When you check this option, the order chosen above will be ignored when current language = site default language,\n"
+"        instead it will only show translations for the default language. "
+msgstr ""
+"Ao marcar essa opção, a ordem escolhida acima será ignorada quando o idioma atual for igual ao idioma padrão do site,\n"
+" mostrando apenas as traduções para o idioma padrão. "
+
+msgid "Return content in the site default language when a translation for the current language *does* exist, but it is unpublished."
+msgstr "Retornar conteúdo no idioma padrão do site quando uma tradução para o idioma atual *existir*, mas não estiver publicada."
+
+msgid ""
+"When you check this option, in addition to the order chosen above, content will be shown in the default site language in the event that the translation in the current language is unpublished.<br/>\n"
+"      <strong>NOTE</strong>: This option assumes that the view is already filtering out unpublished content with the <code>Published (=Yes)</code> criterion, otherwise both the published and unpublished node will be displayed."
+msgstr ""
+"Ao marcar essa opção, além da ordem escolhida acima, o conteúdo será mostrado no idioma do site padrão quando a tradução no idioma atual não está publicada.<br/>\n"
+" <strong>NOTA</strong>: essa opção supõe que a visualização já está filtrando o conteúdo não publicado com o critério <code>Published (=Yes)</code>, caso contrário, os nós publicado e não publicado serão exibidos."
+

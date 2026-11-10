@@ -1,0 +1,875 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Simple XML Sitemap settings will be added only to entity forms of entity types enabled here. Settings for specific entity bundles (e.g. <em>page</em>) can be adjusted here or on the bundle pages."
+msgstr "シンプル XML サイト・マップ設定は、ここで有効にされたエンティティー・タイプのエンティティー・フォームにのみ追加されます。 特定のエンティティー・バンドル (<em>page</em>など) の設定は、ここで調整することも、バンドル・ページで調整することもできます。"
+
+msgid "Add custom internal drupal paths to specific sitemaps."
+msgstr "特定のサイト・マップにカスタム内部drupalパスを追加します。"
+
+msgid "Specify drupal internal (relative) paths, one per line. Do not forget to prepend the paths with a '/'.<br>Optionally link priority <em>(0.0 - 1.0)</em> can be added by appending it after a space.<br> Optionally link change frequency <em>(always / hourly / daily / weekly / monthly / yearly / never)</em> can be added by appending it after a space."
+msgstr "Drupal内部(相対)パスを1行に1つずつ指定します。 パスの前に「/」を付加することを忘れないでください。<br>オプションで、リンク優先順位<em>(0.0 - 1.0)</em>をスペースの後に付加することで追加できます。<br>オプションで、リンク変更頻度<em>(always/hourly/daily/weekly/monthly/yearly/never)</em>をスペースの後に付加することで追加できます。"
+
+msgid "<strong>Examples:</strong><br><em>/ 1.0 daily</em> -> home page with the highest priority and daily change frequency<br><em>/contact</em> -> contact page with the default priority and no change frequency information"
+msgstr "<strong>例:</strong><br><em>/ 1.0 daily</em> -> 優先度が最も高い日次変更頻度のホーム・ページ<br><em>/contact</em> -> デフォルトの優先度で変更頻度情報のない連絡先ページ"
+
+msgid "Simple XML Sitemap"
+msgstr "シンプル XML サイト・マップ"
+
+msgid "Simple XML Sitemap settings"
+msgstr "シンプル XML サイト・マップ設定"
+
+msgid "Simple XML Sitemap PHP extensions"
+msgstr "シンプル XML サイト・マップ PHP 拡張"
+
+msgid "Missing PHP xmlwriter extension"
+msgstr "PHP xmlwriter 拡張が見つかりません"
+
+msgid "In order to be able to generate sitemaps, the Simple XML Sitemap module requires the <em>xmlwriter</em> PHP extension to be enabled."
+msgstr "シンプル XML サイト・マップ・モジュールでサイト・マップを生成できるようにするには、<em>xmlwriter</em> PHP 拡張が有効になっている必要があります。"
+
+msgid "You may now want to configure the new changefreq setting for the XML sitemap entities and custom links."
+msgstr "ここで、XML サイト・マップ・エンティティーおよびカスタム・リンクの新規 changefreq 設定を構成できます。"
+
+msgid "You may now want to configure your XML sitemap entities to include images."
+msgstr "ここで、イメージを含めるように XML サイト・マップ・エンティティーを構成できます。"
+
+msgid "The XML sitemaps need to be regenerated."
+msgstr "XML サイト・マップを再生成する必要があります。"
+
+msgid "The new 'Entities per queue item' setting has been set to 50 to improve generation performance. This changes the memory footprint during generation, so please make sure to test and adjust performance settings to your needs on the module's settings page."
+msgstr "新しい設定「キュー項目ごとのエンティティー数」が、生成パフォーマンスを向上させるために 50 に設定されました。これにより生成時のメモリー占有スペースが変わるため、モジュールの設定ページでパフォーマンス設定のテストとニーズに合わせた調整を必ず行ってください。"
+
+msgid "All variants belonging to the built-in \"Default hreflang\" sitemap type have been converted to entities. Custom sitemap types added via plugins will have to be recreated manually. See simple_sitemap.type.default_hreflang.yml. The sitemaps need to be regenerated now."
+msgstr "組み込みの「デフォルト hreflang」サイト・マップ・タイプに属するすべてのバリアントがエンティティーに変換されました。 プラグインを介して追加されたカスタム・サイト・マップ・タイプは、手動で再作成する必要があります。 simple_sitemap.type.default_hreflang.yml を参照してください。 ここで、サイト・マップを再生成する必要があります。"
+
+msgid "A sitemap index which lists all other sitemaps is now available and can be enabled."
+msgstr "他のすべてのサイト・マップをリストするサイト・マップ索引が使用可能になり、有効にすることができます。"
+
+msgid "Generates standard conform hreflang XML sitemaps of the site content and provides a framework for developing other sitemap types."
+msgstr "サイト・コンテンツの標準に準拠した hreflang XML サイト・マップを生成し、他のサイト・マップ・タイプを開発するためのフレームワークを提供します。"
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Add sitemap"
+msgstr "サイト・マップの追加"
+
+msgid "Add sitemap type"
+msgstr "サイト・マップ・タイプの追加"
+
+msgid "Sitemaps"
+msgstr "サイト・マップ"
+
+msgid "Inclusion"
+msgstr "組み込み"
+
+msgid "Configure, add content to and generate XML sitemaps."
+msgstr "XML サイト・マップを構成し、それにコンテンツを追加し、XML サイト・マップを生成します。"
+
+msgid "Status"
+msgstr "状態"
+
+msgid "Types"
+msgstr "タイプ"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Entities"
+msgstr "エンティティ"
+
+msgid "Custom links"
+msgstr "カスタム・リンク"
+
+msgid "Administer sitemap settings"
+msgstr "サイト・マップ設定の管理"
+
+msgid "Administer Simple XML Sitemap settings, alter inclusion settings of content and generate sitemaps on demand."
+msgstr "シンプル XML サイト・マップ設定の管理、コンテンツの組み込み設定の変更、およびサイト・マップのオンデマンド生成を行います。"
+
+msgid "Max links"
+msgstr "最大リンク数"
+
+msgid "Cron generation"
+msgstr "cron 生成"
+
+msgid "Cron generation interval"
+msgstr "cron 生成間隔"
+
+msgid "Generation duration"
+msgstr "生成期間"
+
+msgid "Entities per queue item"
+msgstr "キュー項目ごとのエンティティー数"
+
+msgid "Remove duplicates"
+msgstr "重複の削除"
+
+msgid "Skip untranslated"
+msgstr "未翻訳をスキップ"
+
+msgid "Include a stylesheet in the sitemaps for humans"
+msgstr "人間用のサイト・マップのスタイルシートを含める"
+
+msgid "Base URL"
+msgstr "ベースURL"
+
+msgid "Default variant"
+msgstr "デフォルトのバリアント"
+
+msgid "Include images of custom links"
+msgstr "カスタム・リンクのイメージを組み込む"
+
+msgid "Disable language hreflang"
+msgstr "言語 hreflang を無効にする"
+
+msgid "Hide branding"
+msgstr "ブランドの非表示"
+
+msgid "Excluded languages"
+msgstr "除外言語"
+
+msgid "Enabled entity types"
+msgstr "有効なエンティティー・タイプ"
+
+msgid "Entity bundle settings"
+msgstr "エンティティー・バンドル設定"
+
+msgid "Index"
+msgstr "インデックス"
+
+msgid "Priority"
+msgstr "優先度"
+
+msgid "Change frequency"
+msgstr "変更頻度"
+
+msgid "Include images"
+msgstr "イメージを組み込む"
+
+msgid "Path"
+msgstr "パス"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "ラベル"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "Type"
+msgstr "タイプ"
+
+msgid "Weight"
+msgstr "ウェイト"
+
+msgid "Sitemap types"
+msgstr "サイト・マップ・タイプ"
+
+msgid "Sitemap generator"
+msgstr "サイト・マップ・ジェネレーター"
+
+msgid "URL generators"
+msgstr "URL ジェネレーター"
+
+msgid "IndexNow notification enabled"
+msgstr "IndexNow 通知が有効"
+
+msgid "IndexNow notification disabled"
+msgstr "IndexNow 通知が無効になりました"
+
+msgid "Included in sitemaps: "
+msgstr "サイト・マップには以下が含まれます。 "
+
+msgid "Excluded from all sitemaps"
+msgstr "すべてのサイト・マップから除外"
+
+msgid "The sitemap settings and any per-entity overrides will be deleted for the unchecked entity types."
+msgstr "チェックされていないエンティティー・タイプについては、サイト・マップ設定およびエンティティーごとのオーバーライドが削除されます。"
+
+msgid "IndexNow notification"
+msgstr "IndexNow 通知"
+
+msgid "IndexNow notification checkbox"
+msgstr "IndexNow 通知チェック・ボックス"
+
+msgid "Simple XML Sitemap IndexNow"
+msgstr "シンプル XML サイト・マップ IndexNow"
+
+msgid "Verification key in Drupal State"
+msgstr "Drupal 状態の検証鍵"
+
+msgid "Verification key not available"
+msgstr "検証鍵が使用できません"
+
+msgid "In order to generate a verification key for the IndexNow service and choose which sitemaps are to be submitted to search engines, visit <a href=\"@url\">this</a> configuration page."
+msgstr "IndexNow サービスの検証キーを生成し、検索エンジンに送信するサイト・マップを選択するには、<a href=\"@url\">この</a>構成ページにアクセスします。"
+
+msgid "Simple XML Sitemap (Search engines)"
+msgstr "シンプル XML サイト・マップ (検索エンジン)"
+
+msgid "Submits sitemaps to search engines and notifies IndexNow compatible engines about changes to entities."
+msgstr "サイト・マップを検索エンジンに送信し、エンティティーへの変更について IndexNow 互換エンジンに通知します。"
+
+msgid "Search engines"
+msgstr "検索エンジン"
+
+msgid "Index entity on save"
+msgstr "保存時にエンティティーを索引付け"
+
+msgid "Allows optionally sending a change notice to IndexNow compatible search engines on entity form save."
+msgstr "オプションで、エンティティー・フォームの保存時に IndexNow 互換検索エンジンに変更通知を送信できます。"
+
+msgid "Search engine"
+msgstr "検索エンジン"
+
+msgid "Search engine ID"
+msgstr "検索エンジン ID"
+
+msgid "Submission URL"
+msgstr "送信 URL"
+
+msgid "IndexNow URL"
+msgstr "IndexNow URL"
+
+msgid "Sitemap variants"
+msgstr "サイト・マップ・バリアント"
+
+msgid "Sitemap variant"
+msgstr "サイト・マップ・バリアント"
+
+msgid "IndexNow bundle settings"
+msgstr "IndexNow バンドル設定"
+
+msgid "IndexNow"
+msgstr "IndexNow"
+
+msgid "Sitemap search engine submission settings"
+msgstr "サイト・マップ検索エンジンの送信設定"
+
+msgid "Sitemap submission enabled"
+msgstr "サイト・マップ送信が有効"
+
+msgid "Sitemap submission frequency"
+msgstr "サイト・マップ送信頻度"
+
+msgid "IndexNow submission enabled"
+msgstr "IndexNow 送信が有効"
+
+msgid "Selected engine for IndexNow submissions"
+msgstr "IndexNow 送信用に選択されたエンジン"
+
+msgid "IndexNow on entity save"
+msgstr "エンティティー保存時の IndexNow"
+
+msgid "Sitemap submission status"
+msgstr "サイト・マップの送信状況"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Last submitted"
+msgstr "最終送信日時"
+
+msgid "There are no @label yet."
+msgstr "@labelはまだありません。"
+
+msgid "Submission settings can be configured <a href=\"@url\">here</a>."
+msgstr "送信設定は<a href=\"@url\">ここ</a>で構成できます。"
+
+msgid "Never"
+msgstr "なし"
+
+msgid "No search engines supporting sitemap submission have been found."
+msgstr "サイト・マップ送信をサポートする検索エンジンが見つかりませんでした。"
+
+msgid "Sitemap submission is disabled."
+msgstr "サイト・マップの送信が無効になっています。"
+
+msgid "IndexNow status"
+msgstr "IndexNow 状況"
+
+msgid "The last IndexNow submission was <em>@entity</em> to @engine_label on @time"
+msgstr "最後の IndexNow 送信は、@time 上の @engine_label に対する <em>@entity</em> でした"
+
+msgid "IndexNow settings can be configured <a href=\"@url\">here</a>."
+msgstr "IndexNow 設定は、<a href=\"@url\">ここ</a>で構成できます。"
+
+msgid "No search engines supporting IndexNow have been found."
+msgstr "IndexNow をサポートする検索エンジンが見つかりませんでした。"
+
+msgid "IndexNow submission is disabled."
+msgstr "IndexNow の送信は無効になります。"
+
+msgid "Excluded"
+msgstr "Excluded"
+
+msgid "Sitemap submission settings"
+msgstr "サイト・マップ送信の設定"
+
+msgid "Submit sitemaps to search engines"
+msgstr "検索エンジンへのサイト・マップの送信"
+
+msgid "This enables/disables sitemap submission; don't forget to choose sitemaps below."
+msgstr "これにより、サイト・マップの送信が有効/無効になります。以下のサイト・マップを選択することを忘れないでください。"
+
+msgid "Submission interval"
+msgstr "送信間隔"
+
+msgid "Engines"
+msgstr "エンジン"
+
+msgid "Choose which sitemaps are to be submitted to which search engines.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "どのサイト・マップをどの検索エンジンに送信するかを選択します。<br>サイト・マップは<a href=\"@url\">ここ</a>で構成できます。"
+
+msgid "IndexNow settings"
+msgstr "IndexNow の設定"
+
+msgid "Submit changes to IndexNow capable engines"
+msgstr "IndexNow 対応エンジンへの変更の送信"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting entity forms. Changes include creating, deleting and updating of an entity.<br/>This behaviour can be overridden on entity forms. Don't forget to <a href=\"@inclusion_url\">include entities</a>."
+msgstr "エンティティー・フォームを送信した直後に、IndexNow 互換検索エンジンに変更通知を送信します。 変更には、エンティティーの作成、削除、および更新が含まれます。<br/>この動作は、エンティティー・フォームでオーバーライドできます。 <a href=\"@inclusion_url\">エンティティーを含める</a>ことを忘れないでください。"
+
+msgid "Preferred IndexNow engine"
+msgstr "優先 IndexNow エンジン"
+
+msgid "All IndexNow requests will be sent to the engine selected here. Only one engine needs to be notified, as it will notify other IndexNow compatible engines for you.<br/>For the sake of equality of opportunity, <strong>consider leaving this at <em>Random</em></strong>, so a random engine can be picked on each submission."
+msgstr "すべての IndexNow 要求は、ここで選択したエンジンに送信されます。 他の IndexNow 互換性のあるエンジンに通知するため、通知する必要があるエンジンは 1 つのみです。<br/>機会均等のために、<strong>これを<em>ランダム</em></strong>のままにしておくことを検討してください。これにより、送信ごとにランダムなエンジンを選択できます。"
+
+msgid "Random"
+msgstr "ランダム"
+
+msgid "Index on every entity save operation"
+msgstr "エンティティー保存操作ごとの索引"
+
+msgid "If checked, all entity save operations for <a href=\"@inclusion_url\">included entities</a> will trigger notification of IndexNow search engines.<br/>If unchecked, this will only be possible by adding/altering/deleting an entity through a form.<br/>This should be unchecked if there are mass operations performed on entities that are irrelevant to indexing."
+msgstr "チェック・マークが付けられている場合、<a href=\"@inclusion_url\">組み込まれたエンティティー</a>のすべてのエンティティー保存操作によって、IndexNow 検索エンジンの通知がトリガーされます。<br/>チェック・マークが付けられていない場合、フォームを通じてエンティティーを追加/変更/削除することによってのみ可能です。<br/>これは、索引付けに関係のないエンティティーに対して大量の操作が実行されている場合にチェック・マークを外してください。"
+
+msgid "Remove verification key from state"
+msgstr "検証鍵を状態から削除"
+
+msgid "Generate verification key"
+msgstr "検証鍵の生成"
+
+msgid "The IndexNow verification key is saved in <em>settings.php</em>: @key"
+msgstr "IndexNow 検証キーは、<em>settings.php</em>: @key に保存されます。"
+
+msgid "The IndexNow verification key is defined in <em>Drupal state</em>: @key"
+msgstr "IndexNow 検証キーは、<em>Drupal 状態</em>(@key) で定義されています。"
+
+msgid "The IndexNow verification key is saved in <em>Drupal state</em>. Consider defining it in <em>settings.php</em> like so:<br/>@code"
+msgstr "IndexNow 検証キーは、<em>Drupal 状態</em>で保存されます。 <em>settings.php</em> で <br/>@code のように定義することを検討してください。"
+
+msgid "The IndexNow verification key is saved in <em>settings.php</em> and can be safely removed from <em>Drupal state</em>."
+msgstr "IndexNow 検証キーは <em>settings.php</em> に保存され、<em>Drupal 状態</em>から安全に削除できます。"
+
+msgid "An IndexNow verification key needs to be generated and optionally added to <em>settings.php</em> in order for IndexNow engines to get notified about changes. This warning only applies to the production environment."
+msgstr "IndexNow エンジンが変更について通知を受けるためには、 IndexNow 検査キーを生成し、オプションで <em>settings.php</em> に追加する必要があります。 この警告は、実稼働環境にのみ適用されます。"
+
+msgid "No sitemaps have been selected for submission."
+msgstr "送信するサイト・マップが選択されていません。"
+
+msgid "Notify IndexNow search engines of changes <em>now</em>"
+msgstr "<em>今すぐ</em> IndexNow 検索エンジンに変更を通知する"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting this form."
+msgstr "このフォームを送信した直後に、IndexNow 互換検索エンジンに変更通知を送信します。"
+
+msgid "Notify IndexNow search engines of changes <em>by default</em>"
+msgstr "<em>デフォルトで</em> IndexNow 検索エンジンに変更を通知する"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting entity forms of this type.<br/>Changes include creating, deleting and updating of an entity. This setting can be overridden on the entity form."
+msgstr "このタイプのエンティティー・フォームを送信した直後に、IndexNow 互換検索エンジンに変更通知を送信します。<br/>変更には、エンティティーの作成、削除、および更新が含まれます。 この設定は、エンティティー・フォームでオーバーライドできます。"
+
+msgid "Sitemap search engine submission"
+msgstr "サイト・マップ検索エンジンの送信"
+
+msgid "In order to use the Simple XML Sitemap Views module, the Views URL generator must be <a href=\"@url\">added</a> to a sitemap type."
+msgstr "シンプル XML サイト・マップ・ビュー・モジュールを使用するには、ビュー URL ジェネレーターをサイト・マップ・タイプに<a href=\"@url\">追加</a>する必要があります。"
+
+msgid "Simple XML Sitemap (Views)"
+msgstr "シンプル XML サイト・マップ (ビュー)"
+
+msgid "Provides integration of the Simple XML Sitemap module with the Views module."
+msgstr "シンプル XML サイト・マップ・モジュールとビュー・モジュールとの統合を提供します。"
+
+msgid "Views"
+msgstr "ビュー"
+
+msgid "Variants"
+msgstr "バリアント"
+
+msgid "Indexed arguments"
+msgstr "インデックス付けされた引数"
+
+msgid "View"
+msgstr "ビュー"
+
+msgid "Display"
+msgstr "表示"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "No view displays are set to be indexed yet. <a href=\"@url\">Edit a view.</a>"
+msgstr "インデックス付けされるように設定されたビュー表示はまだありません。<a href=\"@url\">ビューを編集してください。</a>"
+
+msgid "Please configure at least one <a href=\"@sitemaps_url\">sitemap</a> to be of a <a href=\"@types_url\">type</a> that implements the views URL generator."
+msgstr "少なくとも 1 つの<a href=\"@sitemaps_url\">サイト・マップ</a>を、ビュー URL ジェネレーターを実装する<a href=\"@types_url\">タイプ</a>になるように構成してください。"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "Garbage collection in the simple_sitemap_views table"
+msgstr "simple_sitemap_views テーブル内のガーベッジ・コレクション"
+
+msgid "Views URL generator"
+msgstr "ビュー URL ジェネレーター"
+
+msgid "Generates URLs for views."
+msgstr "ビューの URL を生成します。"
+
+msgid "Index this display in sitemap <em>@variant_label</em>"
+msgstr "サイト・マップ <em>@variant_label</em> でこの表示に索引を付けます"
+
+msgid "The priority this display will have in the eyes of search engine bots."
+msgstr "検索エンジンのボットから見たこの表示の優先順位。"
+
+msgid "The frequency with which this display changes. Search engine bots may take this as an indication of how often to index it."
+msgstr "この表示の変更頻度。検索エンジンのボットが、インデックス付けする頻度の標識としてこれを使用する場合があります。"
+
+msgid "Maximum display variations"
+msgstr "最大表示バリエーション"
+
+msgid "The maximum number of link variations to be indexed for this display. If left blank, each argument will create link variations for this display. Use with caution, as a large number of argument values​can significantly increase the number of sitemap links."
+msgstr "この表示のインデックス付けされるリンク・バリエーションの最大数。ブランクのままにすると、各引数によってこの表示のリンク・バリエーションが作成されます。多数の引数値があるとサイト・マップ・リンクの数は大幅に増える可能性があるので、注意して使用してください。"
+
+msgid "Simple XML Sitemap settings for this display"
+msgstr "この表示のシンプル XML サイト・マップ設定"
+
+msgid "Included in sitemaps: @variants"
+msgstr "サイト・マップに含まれるもの: @variants"
+
+msgid "To enable indexing of an argument, you must enable indexing of all previous arguments."
+msgstr "引数のインデックス付けを有効にするには、以前のすべての引数のインデックス付けを有効にする必要があります。"
+
+msgid "Simple XML Sitemap settings for this view."
+msgstr "このビューのシンプル XML サイト・マップ設定。"
+
+msgid "Sitemap"
+msgstr "サイトマップ"
+
+msgid "Link count"
+msgstr "リンク・カウント"
+
+msgid "disabled"
+msgstr "無効"
+
+msgid "pending"
+msgstr "保留"
+
+msgid "generating"
+msgstr "生成"
+
+msgid "published on @time"
+msgstr "@time に公開"
+
+msgid "published on @time, regenerating"
+msgstr "@time に公開、再生成"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "No sitemaps have been defined yet. <a href=\"@url\">Add a new one</a>."
+msgstr "サイト・マップがまだ定義されていません。 <a href=\"@url\">新しいものを追加します</a>。"
+
+msgid "Sitemap type"
+msgstr "サイト・マップ・タイプ"
+
+msgid "No sitemap types have been defined yet. <a href=\"@url\">Add a new one</a>."
+msgstr "サイト・マップ・タイプがまだ定義されていません。 <a href=\"@url\">新しいものを追加します</a>。"
+
+msgid "sitemap"
+msgstr "sitemap"
+
+msgid "sitemaps"
+msgstr "サイト・マップ"
+
+msgid "Simple XML sitemap type"
+msgstr "単純 XML サイト・マップ・タイプ"
+
+msgid "sitemap type"
+msgstr "サイト・マップ・タイプ"
+
+msgid "sitemap types"
+msgstr "サイト・マップ・タイプ"
+
+msgid "If a custom link points to an entity, include its referenced images in the sitemap."
+msgstr "カスタム・リンクがエンティティーを指している場合、その参照イメージをサイト・マップに組み込みます。"
+
+msgid "No"
+msgstr "いいえ"
+
+msgid "Yes"
+msgstr "はい"
+
+msgid "<strong>@sitemap, line @line</strong>: The path <em>@path</em> does not exist."
+msgstr "<strong>@sitemap, line @line</strong>: パス<em>@path</em>が存在しません。"
+
+msgid "<strong>@sitemap, line @line</strong>: The path <em>@path</em> needs to start with a '/'."
+msgstr "<strong>@sitemap, line @line</strong>: パス<em>@path</em>は、「/」で始まる必要があります。"
+
+msgid "<strong>@sitemap, line @line</strong>: The priority setting <em>@priority</em> for path <em>@path</em> is incorrect. Set the priority from 0.0 to 1.0."
+msgstr "<strong>@sitemap, line @line</strong>: パス<em>@path</em>の優先順位設定<em>@priority</em>が正しくありません。 優先順位を0.0から1.0に設定してください。"
+
+msgid "<strong>@sitemap, line @line</strong>: The changefreq setting <em>@changefreq</em> for path <em>@path</em> is incorrect. The following are the correct values: <em>@changefreq_options</em>."
+msgstr "<strong>@sitemap, line @line</strong>: パス<em>@path</em>のchangefreq 設定<em>@changefreq</em>が正しくありません。 正しい値は次のとおりです: <em>@changefreq_options</em>。"
+
+msgid "Entity type"
+msgstr "エンティティタイプ"
+
+msgid "Indexed bundles"
+msgstr "索引付きバンドル"
+
+msgid "Enabled"
+msgstr "有効"
+
+msgid "No supported entity types available."
+msgstr "使用可能なサポート対象エンティティー・タイプがありません。"
+
+msgid "Configure"
+msgstr "設定"
+
+msgid "%bundle_label <span class=\"description\">(sitemaps: %sitemaps)</span>"
+msgstr "%bundle_label <span class=\"description\">(サイト・マップ: %sitemaps)</span>"
+
+msgid "Configure %label entity type"
+msgstr "%label エンティティタイプの構成"
+
+msgid "Regenerate all sitemaps after hitting <em>Save</em>"
+msgstr "<em>「保存」</em>のクリック後にすべてのサイト・マップを再生成"
+
+msgid "This setting will regenerate all sitemaps including the above changes."
+msgstr "この設定では、上記の変更を含むすべてのサイト・マップが再生成されます。"
+
+msgid "Otherwise the sitemaps will be regenerated during a future cron run."
+msgstr "それ以外の場合、サイト・マップは、将来の cron 実行時に再生成されます。"
+
+msgid "- Not specified -"
+msgstr "- 指定なし -"
+
+msgid "always"
+msgstr "常に"
+
+msgid "hourly"
+msgstr "毎時"
+
+msgid "daily"
+msgstr "日次"
+
+msgid "weekly"
+msgstr "週次"
+
+msgid "monthly"
+msgstr "月次"
+
+msgid "yearly"
+msgstr "年次"
+
+msgid "never"
+msgstr "なし"
+
+msgid "On every cron run"
+msgstr "cron の実行ごと"
+
+msgid "Regenerate the sitemaps during cron runs"
+msgstr "cron 実行時にサイト・マップを再生成する"
+
+msgid "Uncheck this if you intend to only regenerate the sitemaps manually or via drush."
+msgstr "サイト・マップの再生成を手動または Drush を通じてのみ行う場合は、このチェック・マークを外します。"
+
+msgid "Sitemap generation interval"
+msgstr "サイト・マップ生成間隔"
+
+msgid "The sitemap will be generated according to this interval."
+msgstr "サイト・マップは、この間隔に従って生成されます。"
+
+msgid "Add styling and sorting to sitemaps"
+msgstr "スタイルとソートをサイト・マップに追加"
+
+msgid "If checked, sitemaps will be displayed as tables with sortable entries and thus become much friendlier towards human visitors. Search engines will not care."
+msgstr "チェック・マークを付けた場合、サイト・マップはソート可能な項目があるテーブルとして表示されるので、人間の訪問者に対してより親しみやすくなります。検索エンジンの種類は問いません。"
+
+msgid "Remove the 'Generated by the Simple XML Sitemap Drupal module' string from the XSL output."
+msgstr "XSL 出力から「Simple XML Sitemap Drupal module により生成された」ストリングを削除します。"
+
+msgid "Language settings"
+msgstr "言語の設定"
+
+msgid "Remove hreflang markup in HTML"
+msgstr "HTML 内の hreflang マークアップの削除"
+
+msgid "Google recommends displaying hreflang definitions either in the HTML markup or in the sitemap, but not in both places.<br>If checked, hreflang definitions created by the language module will be removed from the markup reducing its size."
+msgstr "Google は、hreflang 定義を HTML マークアップまたはサイト・マップのいずれかに表示することを推奨していますが、両方の場所に表示することは推奨していません。<br>チェック・マークを付けると、言語モジュールによって作成された hreflang 定義がマークアップから削除され、そのサイズが縮小されます。"
+
+msgid "Skip non-existent translations"
+msgstr "存在しない翻訳をスキップ"
+
+msgid "If checked, entity links are generated exclusively for languages the entity has been translated to as long as the language is not excluded below.<br>Otherwise entity links are generated for every language installed on the site apart from languages excluded below.<br>Bear in mind that non-entity paths like homepage will always be generated for every non-excluded language."
+msgstr "チェック・マークを付けると、言語が下で除外されない限り、エンティティーが翻訳されている言語についてのみ、エンティティー・リンクが生成されます。<br>そうでない場合、下で除外されている言語を除き、サイトにインストールされているすべての言語のエンティティー・リンクが生成されます。<br>ホーム・ページのような非エンティティー・パスは常に、除外されていないすべての言語に対して生成される点に留意してください。"
+
+msgid "Exclude languages"
+msgstr "言語の除外"
+
+msgid "There will be no links generated for languages checked here."
+msgstr "ここでチェック・マークが付けられた言語に対してリンクは生成されません。"
+
+msgid "There are no languages other than the default language available."
+msgstr "使用可能なデフォルト言語以外の言語はありません。"
+
+msgid "Advanced settings"
+msgstr "高度な設定"
+
+msgid "Default sitemap"
+msgstr "デフォルトのサイト・マップ"
+
+msgid "This sitemap will be available under <em>/sitemap.xml</em> in addition to its default path <em>/variant-name/sitemap.xml</em>.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "このサイト・マップは、デフォルト・パス <em>/variant-name/sitemap.xml</em>に加えて、<em>/sitemap.xml</em> の下で使用できます。<br>サイト・マップは、<a href=\"@url\">ここ</a>で構成できます。"
+
+msgid "- None -"
+msgstr "- なし -"
+
+msgid "Default base URL"
+msgstr "デフォルトのベースURL"
+
+msgid "On some hosting providers it is impossible to pass parameters to cron to tell Drupal which URL to bootstrap with. In this case the base URL of sitemap links can be overridden here.<br>Example: <em>@url</em>"
+msgstr "一部のホスティング・プロバイダーでは、ブートストラップに使用する URL を Drupal に指示するパラメーターをクーロンに渡すことができません。この場合は、サイト・マップ・リンクの基本 URL をここでオーバーライドできます。<br>例: <em>@url</em>"
+
+msgid "Exclude duplicate links"
+msgstr "重複リンクを除外"
+
+msgid "Prevent per-sitemap duplicate links.<br>Unchecking this may help avoiding PHP memory errors on huge sites."
+msgstr "サイトごとの重複リンクを防止します。<br>このチェック・マークを外すと、巨大なサイトでの PHP メモリー・エラーを回避できます。"
+
+msgid "Maximum links in a sitemap"
+msgstr "サイト・マップ内の最大リンク数"
+
+msgid "The maximum number of links one sitemap can hold. If more links are generated than set here, a sitemap index will be created and the links split into several sub-sitemaps.<br>50 000 links is the maximum Google will parse per sitemap, but choosing a lower value may be needed to avoid PHP memory errors on huge sites.<br>If left blank, all links will be shown on a single sitemap."
+msgstr "1 つのサイト・マップに含めることができるリンクの最大数。ここで設定された数よりも多くのリンクが生成されると、サイト・マップのインデックスが作成され、リンクが複数のサブサイト・マップに分割されます。<br>Google がサイト・マップごとに解析する最大リンク数は 50000 ですが、場合によっては、大規模なサイトでの PHP メモリー・エラーを回避するために、それより小さい値を選択する必要があります。<br>空のままにすると、すべてのリンクが単一のサイト・マップに表示されます。"
+
+msgid "Sitemap generation max duration"
+msgstr "サイト・マップ生成の最大所要時間"
+
+msgid "The maximum duration <strong>in seconds</strong> the generation task can run during a single cron run or during one batch process iteration.<br>The higher the number, the quicker the generation process, but higher the risk of PHP timeout errors."
+msgstr "単一の cron 実行または 1 回のバッチ処理反復中に生成タスクが実行できる最大所要時間 (<strong>秒単位</strong>)。<br>数が大きくなると、生成プロセスはより高速になりますが、PHP タイムアウト・エラーのリスクも高くなります。"
+
+msgid "The number of entities to process in each queue item.<br>Increasing this number will use more memory but will result in less queries improving generation speed."
+msgstr "各キュー項目で処理するエンティティーの数。<br>この数を増やすとメモリーの使用量が増えますが、照会の数が減って生成速度が向上します。"
+
+msgid "The base URL is invalid."
+msgstr "基本 URL が無効です。"
+
+msgid "Include this sitemap during generation"
+msgstr "生成時にこのサイト・マップを含める"
+
+msgid "The sitemap ID will be part of the URL and can only contain lowercase letters, numbers, dashes and underscores."
+msgstr "サイト・マップ ID は URL の一部となり、小文字、数字、ダッシュ、および下線のみを含めることができます。"
+
+msgid "The sitemap's type defines its looks and content. Sitemaps types can be configured <a href=\"@url\">here</a>."
+msgstr "サイト・マップのタイプにより、外観とコンテンツが定義されます。 サイト・マップ・タイプは<a href=\"@url\">ここ</a>で構成できます。"
+
+msgid "Administrative description"
+msgstr "管理用の説明"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Sitemap %label has been updated."
+msgstr "サイト・マップ %label が更新されました。"
+
+msgid "Sitemap %label has been created."
+msgstr "サイト・マップ %label が作成されました。"
+
+msgid "Sitemaps of this type will be built according to the sitemap generator plugin chosen here."
+msgstr "このタイプのサイト・マップは、ここで選択したサイト・マップ・ジェネレーター・プラグインに従って作成されます。"
+
+msgid "Sitemaps of this type will be populated with URLs generated by these URL generator plugins."
+msgstr "このタイプのサイト・マップには、これらの URL ジェネレーター・プラグインによって生成された URL が取り込まれます。"
+
+msgid "Sitemap type %label has been updated."
+msgstr "サイト・マップ・タイプ %label が更新されました。"
+
+msgid "Sitemap type %label has been created."
+msgstr "サイト・マップ・タイプ %label が作成されました。"
+
+msgid "Sitemap status"
+msgstr "サイト・マップ状況"
+
+msgid "Sitemaps can be regenerated on demand here."
+msgstr "サイトマップは、オンデマンドでここで再生成できます。"
+
+msgid "Rebuild queue"
+msgstr "キューの再作成"
+
+msgid "Resume generation"
+msgstr "生成の再開"
+
+msgid "Rebuild queue & generate"
+msgstr "キューの再作成および生成"
+
+msgid "Progress of sitemap regeneration"
+msgstr "サイト・マップ再生成の進行"
+
+msgid "@indexed out of @total queue items have been processed.<br>Each sitemap is published after all of its items have been processed."
+msgstr "@indexed out of @total queue items have been processed.<br>各サイト・マップは、そのすべての項目が処理された後にパブリッシュされます。"
+
+msgid "There are no items to be indexed."
+msgstr "インデックス付けする項目がありません。"
+
+msgid "Do not index entities of type <em>@bundle</em> in sitemap <em>@sitemap</em>"
+msgstr "サイト・マップ <em>@sitemap</em> でタイプ <em>@bundle</em> のエンティティーに索引を付けない"
+
+msgid "Index entities of type <em>@bundle</em> in sitemap <em>@sitemap</em>"
+msgstr "サイト・マップ内のタイプ <em>@bundle</em> の索引エンティティー <em>@sitemap</em>"
+
+msgid "The priority entities of this type will have in the eyes of search engine bots."
+msgstr "検索エンジンのボットから見たこのエンティティー・タイプの優先順位。"
+
+msgid "The frequency with which entities of this type change. Search engine bots may take this as an indication of how often to index them."
+msgstr "このタイプのエンティティーの変更頻度。検索エンジンのボットが、インデックス付けする頻度の標識としてこれを使用する場合があります。"
+
+msgid "Determines if images referenced by entities of this type should be included in the sitemap."
+msgstr "このタイプのエンティティーによって参照されるイメージをサイト・マップに組み込むかどうかを決定します。"
+
+msgid "Settings for this entity can be overridden here."
+msgstr "ここではこのエンティティーの設定をオーバーライドできます。"
+
+msgid "Do not index this <em>@bundle</em> entity in sitemap <em>@sitemap</em>"
+msgstr "この <em>@bundle</em> エンティティーをサイト・マップ <em>@sitemap</em> で索引付けしない"
+
+msgid "Index this <em>@bundle</em> entity in sitemap <em>@sitemap</em>"
+msgstr "この <em>@bundle</em> エンティティーをサイト・マップ<em>@sitemap</em> で索引付けする"
+
+msgid "The priority this <em>@bundle</em> entity will have in the eyes of search engine bots."
+msgstr "検索エンジンのボットから見たこの <em>@bundle</em> のエンティティーの優先順位。"
+
+msgid "The frequency with which this <em>@bundle</em> entity changes. Search engine bots may take this as an indication of how often to index it."
+msgstr "この <em>@bundle</em> エンティティーの変更頻度。検索エンジンのボットが、インデックス付けする頻度の標識としてこれを使用する場合があります。"
+
+msgid "Determines if images referenced by this <em>@bundle</em> entity should be included in the sitemap."
+msgstr "この <em>@bundle</em> エンティティーによって参照されるイメージをサイト・マップに組み込むかどうかを決定します。"
+
+msgid "default"
+msgstr "デフォルト"
+
+msgid "At least one sitemap needs to be defined for a bundle to be indexable.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "バンドルをインデックス付け可能にするには、少なくとも 1 つのサイト・マップを定義する必要があります。<br>サイト・マップは<a href=\"@url\">ここ</a>で構成できます。"
+
+msgid "Do not index entities of this type in sitemap <em>@sitemap</em>"
+msgstr "このタイプのエンティティーには、サイト・マップ <em>@sitemap</em> で索引を付けないでください。"
+
+msgid "Index entities of this type in sitemap <em>@sitemap</em>"
+msgstr "このタイプの索引エンティティー (サイト・マップ) <em>@sitemap</em>"
+
+msgid "Sitemap file"
+msgstr "サイト・マップ・ファイル"
+
+msgid "Generated by the <a href=\"@url\">@module_name</a> Drupal module."
+msgstr "<a href=\"@url\">@module_name</a> Drupal モジュールにより生成されます。"
+
+msgid "Number of sitemaps in this index"
+msgstr "このインデックス内のサイト・マップの数"
+
+msgid "Sitemap URL"
+msgstr "サイト・マップ URL"
+
+msgid "Number of URLs in this sitemap"
+msgstr "このサイト・マップの URL の数"
+
+msgid "URL location"
+msgstr "URL ロケーション"
+
+msgid "Last modification date"
+msgstr "最終変更日"
+
+msgid "Translation set"
+msgstr "翻訳セット"
+
+msgid "Images"
+msgstr "イメージ"
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "Caption"
+msgstr "キャプション"
+
+msgid "Default sitemap generator"
+msgstr "デフォルトのサイト・マップ・ジェネレーター"
+
+msgid "Generates a standard conform hreflang sitemap of your content."
+msgstr "コンテンツの標準に準拠した hreflang サイト・マップを生成します。"
+
+msgid "Sitemap index generator"
+msgstr "サイト・マップ索引ジェネレーター"
+
+msgid "Generates an index of your sitemaps."
+msgstr "サイト・マップの索引を生成します。"
+
+msgid "Arbitrary URL generator"
+msgstr "任意 URL ジェネレーター"
+
+msgid "Generates URLs from data sets collected in the hook_arbitrary_links_alter hook."
+msgstr "hook_arbitrary_links_alter フックで収集されたデータ・セットから URL を生成します。"
+
+msgid "Custom URL generator"
+msgstr "カスタム URL ジェネレーター"
+
+msgid "Generates URLs set in admin/config/search/simplesitemap/custom."
+msgstr "admin/config/search/simplesitemap/custom で設定されている URL を生成します。"
+
+msgid "Menu link URL generator"
+msgstr "メニュー・リンク URL ジェネレーター"
+
+msgid "Generates menu link URLs by overriding the 'entity' URL generator."
+msgstr "「エンティティー」URL ジェネレーターをオーバーライドして、メニュー・リンク URL を生成します。"
+
+msgid "Entity URL generator"
+msgstr "エンティティー URL ジェネレーター"
+
+msgid "Generates URLs for entity bundles and bundle overrides."
+msgstr "エンティティー・バンドルおよびバンドル・オーバーライドの URL を生成します。"
+
+msgid "Sitemap URL generator"
+msgstr "サイト・マップ URL ジェネレーター"
+
+msgid "Generates sitemap URLs for a sitemap index."
+msgstr "サイト・マップ索引のサイト・マップ URL を生成します。"
+
+msgid "Generating XML sitemaps"
+msgstr "XML サイト・マップの生成"
+
+msgid "Initializing..."
+msgstr "初期化中..."
+
+msgid "Processing items from the queue.<br>Each sitemap gets published after all of its items have been processed."
+msgstr "キューからの項目を処理しています。<br>各サイト・マップは、そのすべての項目が処理された後にパブリッシュされます。"
+
+msgid "@indexed out of @total total queue items have been processed."
+msgstr "合計 @total 個のキュー項目のうち @indexed 個が処理されました。"
+

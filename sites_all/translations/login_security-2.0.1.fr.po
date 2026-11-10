@@ -1,0 +1,236 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Your last login was @stamp."
+msgstr "Votre dernière connexion a eu lieu à @stamp."
+
+msgid "Your last page access (site activity) was @stamp."
+msgstr "Votre dernier accès à la page (activité sur le site) a eu lieu à @stamp."
+
+msgid "Make sure you have reviewed the <a href=\"!README\">README file</a> for further information about how all these settings will affect your Drupal login form submissions."
+msgstr "Assurez-vous d'avoir lu le <a href=\"!README\">fichier README</a> pour savoir comment tous ces paramètres vont affecter vos soumissions de formulaire de connexion Drupal. "
+
+msgid "Suspicious activity in login form submissions is no longer detected: Currently @tracking_current_count events are being tracked, and threshold is configured for @activity_threshold maximum allowed attempts."
+msgstr "Plus aucune activité suspecte n'est détectée dans les soumissions de formulaire de connexion : @tracking_current_count événements sont actuellement suivis et le seuil est configuré pour un maximum de @activity_threshold tentatives autorisées."
+
+msgid "Banned IP address @ip due to security configuration."
+msgstr "Adresse IP @ip interdite conformément à la configuration de sécurité. "
+
+msgid "Blocked user @username due to security configuration."
+msgstr "Utilisateur @username bloqué conformément à la configuration de sécurité. "
+
+msgid "Ongoing attack detected: Suspicious activity detected in login form submissions. Too many invalid login attempts threshold reached: Currently @tracking_current_count events are tracked, and threshold is configured for @activity_threshold attempts."
+msgstr "Attaque en cours détectée : activité suspecte détectée dans des soumissions de formulaire de connexion. Le nombre maximal de tentatives de connexion non valides a été atteint : @tracking_current_count événements sont actuellement suivis et le seuil est configuré pour @activity_threshold tentatives."
+
+msgid "Login Security"
+msgstr "Login Security"
+
+msgid "Enable security options in the login flow of the site."
+msgstr "Appliquer les options de sécurité au processus de connexion du site"
+
+msgid "Login Security settings"
+msgstr "Paramètres de Login Security"
+
+msgid "Login security settings"
+msgstr "Paramètres de sécurité des connexions "
+
+msgid "Track time"
+msgstr "Durée"
+
+msgid "Maximum number of login failures before blocking a user"
+msgstr "Nombre maximal d'échecs de connexion avant le blocage de l'utilisateur"
+
+msgid "Maximum number of login failures before soft blocking a host"
+msgstr "Quantité maximale d'échecs de connexion avant le blocage modéré d'un hôte"
+
+msgid "Maximum number of login failures before blocking a host"
+msgstr "Quantité maximale d'échecs de connexion avant le blocage fort d'un hôte"
+
+msgid "Maximum number of login failures before detecting an ongoing attack"
+msgstr "Nombre maximal d'échecs de connexion avant de détecter une attaque en cours"
+
+msgid "Disable login failure error message"
+msgstr "Désactiver le message d'erreur lors de l'échec de la connexion"
+
+msgid "Notify the user about the number of remaining login attempts"
+msgstr "Notifier à l'utilisateur le nombre de tentatives de connexion restantes"
+
+msgid "Display last login timestamp"
+msgstr "Afficher la date et l'heure de dernière connexion"
+
+msgid "Display last access timestamp"
+msgstr "Affiche la date et l'heure de dernier accès"
+
+msgid "Message to be shown on each failed login attempt"
+msgstr "Message à afficher à chaque échec de connexion"
+
+msgid "Message for banned host (Soft IP ban)"
+msgstr "Message pour un hôte banni (bannissement modéré)"
+
+msgid "Message for banned host (Hard IP ban)"
+msgstr "Message pour un hôte banni (bannissement fort)"
+
+msgid "Message when user is blocked by uid"
+msgstr "Message lorsqu'un utilisateur est bloqué sur la base de son identifiant"
+
+msgid "Email subject"
+msgstr "Sujet du courriel"
+
+msgid "Email body"
+msgstr "Corps du courriel"
+
+msgid "Emails to be notified when users are blocked"
+msgstr "Envoie un courrier électronique informant que des utilisateurs sont bloqués"
+
+msgid "Emails to be notified during excess activity"
+msgstr "Envoie un courrier électronique informant d'une activité excessive"
+
+msgid "General settings"
+msgstr "Paramètres généraux"
+
+msgid "The time window to check for security violations: the time in minutes the login information is kept to compute the login attempts count. A common example could be 1440 minutes (24 hours). After that time, the attempt is deleted from the list, and will never be considered again."
+msgstr "Fenêtre de temps pour vérifier s'il y a des violations de sécurité : temps en minutes que les informations de connexion sont conservées pour calculer le nombre de tentatives de connexion. Exemple habituel : 1440 minutes (24 heures). Une fois ce temps écoulé, la tentative est supprimée de la liste et ne sera plus jamais prise en compte."
+
+msgid "minute(s)"
+msgstr "minute(s)"
+
+msgid "User"
+msgstr "Utilisateur"
+
+msgid ""
+"Enter the number of login failures a user is allowed. <br>\n"
+"        After this amount is reached, the user will be blocked, no matter the host attempting to log in. Use this option carefully on public sites, as an attacker may block your site users. <br>\n"
+"        The user blocking protection will not disappear and should be removed manually from the <a href=\":user\">user management</a> interface."
+msgstr ""
+"Entrez le nombre d'échecs de connexion autorisés pour un utilisateur. <br>\n"
+"        Une fois ce nombre atteint, l'utilisateur est bloqué, quel que soit l'hôte qui tente de se connecter. Utilisez cette option avec précaution sur les sites publics pour éviter qu'un agresseur informatique ne bloque les utilisateurs de votre site. <br>\n"
+"        La protection via le blocage des utilisateurs ne disparaît pas automatiquement et doit être retirée manuellement de l'interface de <a href=\":user\">gestion des utilisateurs</a>."
+
+msgid "failed attempts"
+msgstr "tentatives infructueuses"
+
+msgid "Soft host"
+msgstr "Hôte flexible"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this amount is reached, the host will not be able to submit the log in form again, but can still browse the site contents as an anonymous user. <br>\n"
+"        This protection is effective during the time indicated at tracking time option."
+msgstr ""
+"Entrez le nombre d'échecs de connexion autorisés pour un hôte. <br>\n"
+"        Une fois ce nombre atteint, l'hôte ne peut plus soumettre le formulaire de connexion, mais peut tout de même parcourir le contenu du site en tant qu'utilisateur anonyme. <br>\n"
+"        Cette protection est effective pendant la durée indiquée avec l'option de temps de suivi."
+
+msgid "Host"
+msgstr "Hôte"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this number is reached, the host will be blocked, no matter the username attempting to log in. <br>\n"
+"        The host blocking protection will not disappear automatically and should be removed manually from the <a href=\":access\">access rules</a> administration interface."
+msgstr ""
+"Entrez le nombre d'échecs de connexion autorisés pour un hôte. <br>\n"
+"        Une fois ce nombre atteint, l'hôte est bloqué, quel que soit le nom d'utilisateur qui tente de se connecter. <br>\n"
+"        La protection via le blocage de l'hôte ne disparaît pas automatiquement et doit être retirée manuellement de l'interface d'administration des <a href=\":access\">règles d'accès</a>."
+
+msgid "Attack detection"
+msgstr "Détection d'attaque"
+
+msgid ""
+"Enter the number of login failures before creating a warning log entry about this suspicious activity. <br>\n"
+"        If the number of invalid login events currently being tracked reach this number, and ongoing attack is detected."
+msgstr ""
+"Saisissez le nombre d'échecs de connexion avant la création d'une entrée de journal avertissant de cette activité suspecte. <br>\n"
+"        Si le nombre d'événements de connexion non valides actuellement suivis atteint ce nombre et qu'une attaque continue est détectée."
+
+msgid "Notification"
+msgstr "Notification"
+
+msgid ""
+"Prevents the display of login error messages. <br>\n"
+"        A user attempting to login will not be aware if the account exists, an invalid user name or password has been submitted, or if the account is blocked. The core messages are also hidden."
+msgstr ""
+"Empêche l'affichage de messages d'erreur de connexion. <br>\n"
+"        Un utilisateur qui tente de se connecter ne saura pas si le compte existe, si un nom d'utilisateur ou un mot de passe non valide a été soumis, ou si le compte est bloqué. Les messages de base sont également masqués."
+
+msgid ""
+"The user is notified about the number of remaining login attempts before the account gets blocked. <br>\n"
+"        Security tip: If you enable this option, try to not disclose as much of your login policies as possible in the message shown on any failed login attempt."
+msgstr ""
+"L'utilisateur est informé du nombre de tentatives de connexion restantes avant le blocage du compte. <br>\n"
+"        Conseil de sécurité : si vous activez cette option, essayez autant que faire se peut de ne pas divulguer vos stratégies de connexion dans le message qui s'affiche sur les échecs de tentative de connexion."
+
+msgid "When a user successfully logs in, a message will display the last time he logged into the site."
+msgstr "Lorsqu'un utilisateur parvient à se connecter, un message indique quand il s'est connecté au site pour la dernière fois. "
+
+msgid "When a user successfully logs in, a message will display the last site access with this account."
+msgstr "Lorsqu'un utilisateur parvient à se connecter, un message indique le dernier accès au site avec ce compte. "
+
+msgid "Email for ongoing attack detection"
+msgstr "Courrier électronique de détection d'attaque en cours"
+
+msgid "To"
+msgstr "À"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when an ongoing attack is detected. No notification will be sent if the field is blank."
+msgstr "Fournissez une liste séparée par des virgules des adresses électroniques des personnes susceptibles de recevoir un courrier électronique lorsqu'une attaque en cours est détectée. Aucune notification ne sera envoyée si la zone est vide. "
+
+msgid "Subject"
+msgstr "Objet"
+
+msgid "Body"
+msgstr "Corps"
+
+msgid "Email for blocked account"
+msgstr "Courrier électronique de compte bloqué"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when a user is blocked. No notification will be sent if the field is blank."
+msgstr "Fournissez une liste séparée par des virgules des adresses électroniques des personnes susceptibles de recevoir un courrier électronique lorsqu'un utilisateur est bloqué. Aucune notification ne sera envoyée si la zone est vide. "
+
+msgid "Failed login attempt"
+msgstr "Echec de la tentative de connexion"
+
+msgid "Enter the message string to be shown if the login fails after the form is submitted."
+msgstr "Saisissez la chaîne de message à afficher si la connexion échoue après l'envoi du formulaire."
+
+msgid "Banned host (soft IP ban)"
+msgstr "Hôte interdit (interdiction IP flexible)"
+
+msgid "Enter the soft IP ban message to be shown when a host attempts to log in too many times."
+msgstr "Saisir le message de bannissement modéré à afficher lorsqu'un hôte tente de se connecter trop de fois."
+
+msgid "Banned host (hard IP ban)"
+msgstr "Hôte interdit (interdiction IP absolue)"
+
+msgid "Enter the hard IP ban message to be shown when a host attempts to log in too many times."
+msgstr "Saisir le message de bannissement fort à afficher lorsqu'un hôte tente de se connecter trop de fois."
+
+msgid "Blocked user by uid"
+msgstr "Utilisateur bloqué par ID utilisateur"
+
+msgid "Enter the message to be shown when a user gets blocked due to enough failed login attempts."
+msgstr "Saisir le message à afficher lorsqu'un utilisateur se trouve bloqué en raison d'un nombre d'échecs de connexion trop nombreux."
+
+msgid "Tokens"
+msgstr "Jetons (tokens)"
+
+msgid "<ul><li>%date: The (formatted) date and time of the event.</li><li>%ip: The IP address tracked for this event.</li><li>%username: The username entered in the login form (sanitized).</li><li>%email: If the user exists, this will be the email address.</li><li>%uid: If the user exists, this will be the user uid.</li><li>%site: The name of the site as configured in the administration.</li><li>%uri: The base url of this Drupal site.</li><li>%edit_uri: Direct link to the user (based on the name entered) edit page.</li><li>%hard_block_attempts: Configured maximum attempts before hard blocking the IP address.</li><li>%soft_block_attempts: Configured maximum attempts before soft blocking the IP address.</li><li>%user_block_attempts: Configured maximum login attempts before blocking the user.</li><li>%user_ip_current_count: The total attempts for this user name tracked from this IP address.</li><li>%ip_current_count: The total login attempts tracked from from this IP address.</li><li>%user_current_count: The total login attempts tracked for this user name .</li><li>%tracking_time: The tracking time value: in hours.</li><li>%tracking_current_count: Total tracked events</li><li>%activity_threshold: Value of attempts to detect ongoing attack.</li></ul>"
+msgstr "<ul><li>%date : date et heure (mises en forme) de l'événement. </li><li>%ip : adresse IP suivie pour cet événement.</li><li>%username : nom d'utilisateur saisi dans le formulaire de connexion (assaini).</li><li>%email : si l'utilisateur existe, il s'agit de l'adresse électronique. </li><li>%uid : si l'utilisateur existe, il s'agit de l'ID utilisateur. </li><li>%site : nom du site tel que configuré dans l'administration.</li><li>%uri : URL de base de ce site Drupal.</li><li>%edit_uri : lien direct vers la page d'édition de l'utilisateur (basée sur le nom saisi).</li><li>%hard_block_attempts : nombre maximal de tentatives configuré avant le blocage absolu de l'adresse IP.</li><li>%soft_block_attempts : nombre maximal de tentatives configuré avant le blocage flexible de l'adresse IP.</li><li>%user_block_attempts : nombre maximal de tentatives de connexions configuré avant le blocage de l'utilisateur.</li><li>%user_ip_current_count : nombre total de tentatives pour ce nom d'utilisateur suivi à partir de cette adresse IP.</li><li>%ip_current_count : nombre total de tentatives de connexions suivies à partir de cette adresse IP.</li><li>%user_current_count : nombre total de tentatives de connexions suivies pour ce nom d'utilisateur.</li><li>%tracking_time : valeur temporelle de suivi : en heures.</li><li>%tracking_current_count : nombre total d'événements suivis</li><li>%activity_threshold : valeur des tentatives pour détecter une attaque en cours.</li></ul>"
+
+msgid "Clear event tracking information"
+msgstr "Effacer les informations de suivi d'événements"
+
+msgid "Login Security event track list is now empty. @count item(s) deleted."
+msgstr "La liste de suivi des événements liés à la sécurité des connexions est désormais vide. @count élément(s) supprimé(s). "
+

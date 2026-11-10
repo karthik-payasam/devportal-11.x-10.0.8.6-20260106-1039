@@ -1,0 +1,264 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Field encryption"
+msgstr "欄位加密"
+
+msgid "Warning: changing field encryption settings may cause data corruption!<br />When changing these settings, existing fields will be (re)encrypted in batch according to the new settings. <br />Make sure you have a proper backup, and do not perform this action in an environment where the data will be changing during the batch operation, to avoid data loss."
+msgstr "警告：變更欄位加密設定可能會導致資料毀損！<br />變更這些設定時，將會根據新的設定，成批（重新）加密現有欄位。<br />請確定您擁有適當的備份，並且不在批次作業期間將會變更資料的環境中執行此動作，以避免資料流失。"
+
+msgid "Encrypt field"
+msgstr "加密欄位"
+
+msgid "Makes the field storage encrypted."
+msgstr "對欄位儲存體進行加密。"
+
+msgid "Properties"
+msgstr "內容"
+
+msgid "Specify the field properties to encrypt."
+msgstr "指定要加密的欄位內容。"
+
+msgid "Field Encrypt"
+msgstr "欄位加密"
+
+msgid "Update to field_encrypt version 3 is not supported."
+msgstr "不支援更新至 field_encrypt 第 3 版。"
+
+msgid "In order to upgrade you need to decrypt all your data on the previous version and uninstall the module."
+msgstr "為了升級，您需要解密舊版上的所有資料，並解除安裝模組。"
+
+msgid "Field Encrypt entity hooks"
+msgstr "欄位加密實體連結鉤"
+
+msgid "Unable to dynamically create entity hooks"
+msgstr "無法動態建立實體連結鉤"
+
+msgid "In order to use Field Encrypt the following methods need to be defined:@functions"
+msgstr "若要使用「欄位加密」，需要定義下列方法：@functions"
+
+msgid "Extends the Field API to allow encryption of fields."
+msgstr "延伸「欄位 API」以容許加密欄位。"
+
+msgid "Encryption"
+msgstr "加密"
+
+msgid "Field Encrypt settings"
+msgstr "欄位加密設定"
+
+msgid "Manage field encryption settings"
+msgstr "管理欄位加密設定"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Encrypted fields overview"
+msgstr "已加密欄位概觀"
+
+msgid "Encrypted fields entity type settings"
+msgstr "加密欄位實體類型設定"
+
+msgid "Process queues"
+msgstr "處理程序佇列"
+
+msgid "Administer field encryption"
+msgstr "管理欄位加密"
+
+msgid "Allows fields to be individually encrypted so that their data is better protected."
+msgstr "容許個別地加密欄位，以便更好地保護其資料。"
+
+msgid "Field Encrypt entity type settings"
+msgstr "欄位加密實體類型設定"
+
+msgid "Process queued updates"
+msgstr "處理已排入佇列的更新項目"
+
+msgid "Field encrypt setting"
+msgstr "欄位加密設定"
+
+msgid "Encrypt"
+msgstr "加密"
+
+msgid "Property"
+msgstr "屬性"
+
+msgid "Properties placeholders"
+msgstr "內容位置保留元"
+
+msgid "Placeholder"
+msgstr "預留位置"
+
+msgid "Field Encrypt Settings"
+msgstr "欄位加密設定"
+
+msgid "Encryption profile"
+msgstr "加密設定檔"
+
+msgid "Exclude from persistent caches"
+msgstr "從持續性快取中排除"
+
+msgid "Field types"
+msgstr "欄位類型"
+
+msgid "Properties to encrypt"
+msgstr "要加密的內容"
+
+msgid "Property name"
+msgstr "內容名稱"
+
+msgid "Batch size"
+msgstr "批次大小"
+
+msgid "Entity type ID"
+msgstr "實體類型 ID"
+
+msgid "Encrypted base fields"
+msgstr "加密的基本欄位"
+
+msgid "Base field"
+msgstr "基本欄位"
+
+msgid "Base field property"
+msgstr "基本欄位內容"
+
+msgid "Encrypted data"
+msgstr "已加密的資料"
+
+msgid "Stores data from encrypted fields."
+msgstr "儲存已加密欄位中的資料。"
+
+msgid "Field"
+msgstr "欄位"
+
+msgid "Entity type"
+msgstr "實體類別"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "There are no encrypted fields."
+msgstr "沒有已加密的欄位。"
+
+msgid "Decrypt"
+msgstr "解密"
+
+msgid "Updates to @entity_type with existing data been queued to be processed. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the updates will be performed automatically by cron."
+msgstr "具有現有資料的 @entity_type 更新項目已排入佇列等待處理。 您應該立即<a href=\":url\">手動執行此程序</a>。 否則，cron 將會自動執行這些更新項目。"
+
+msgid "Updates to entities with existing data for this field have been queued to be processed. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the updates will be performed automatically by cron."
+msgstr "已將此欄位中包含現有資料之實體的更新項目排入佇列進行處理。您應該立即<a href=\":url\">手動執行此程序</a>。否則，cron 將會自動執行這些更新項目。"
+
+msgid "Are you sure you want to remove encryption for field %field on %entity_type?"
+msgstr "確定要在 %entity_type 中為欄位 %field 移除加密嗎？"
+
+msgid "Remove field encryption"
+msgstr "移除欄位加密"
+
+msgid "This action removes field encryption from the specified field. Existing field data will be decrypted through a batch process."
+msgstr "此動作會從指定的欄位移除欄位加密。現有欄位資料將透過批次程序解密。"
+
+msgid "Select a entity type to configure"
+msgstr "選取要配置的實體類型"
+
+msgid "Base fields to encrypt"
+msgstr "要加密的基本欄位"
+
+msgid "Note that encrypted fields can not be filtered on in SQL queries or joined against."
+msgstr "請注意，在 SQL 查詢中無法過濾或結合已加密欄位。"
+
+msgid "Save configuration"
+msgstr "儲存設定"
+
+msgid "@label properties"
+msgstr "@label 內容"
+
+msgid "Specify the base field properties to encrypt. If none are selected the base field will not be encrypted."
+msgstr "指定要加密的基本欄位內容。 如果未選取任何基本欄位，則不會予以加密。"
+
+msgid "Updated encryption settings for %entity_type base fields."
+msgstr "已更新 %entity_type 基本欄位的加密設定。"
+
+msgid "Update encryption profile"
+msgstr "更新加密設定檔"
+
+msgid "Usages"
+msgstr "使用情形"
+
+msgid "If the field encryption profile is changed entities can be updated to use the new encryption profile."
+msgstr "如果欄位加密設定檔已變更，則可以更新實體以使用新的加密設定檔。"
+
+msgid "Process updates"
+msgstr "處理程序更新項目"
+
+msgid "Field encryption updates"
+msgstr "欄位加密更新項目"
+
+msgid "Cannot claim an item - unable to process the batch"
+msgstr "無法要求項目 - 無法處理批次"
+
+msgid "Select the encryption profile to use for encrypting fields. New entities and revisions will always use this profile. Existing entities and revisions can be updated via <a href=\":link\">Encrypted fields entity type settings</a>"
+msgstr "選取要用於加密欄位的加密設定檔。 新的實體和修訂將一律使用此設定檔。 可以透過<a href=\":link\">加密欄位實體類型設定</a>更新現有實體及修訂"
+
+msgid "Exclude entities from persistent caches"
+msgstr "從持續快取中排除實體"
+
+msgid "This ensures unencrypted data is not exposed in the cache. However, it negatively impacts performance because it prevents caching of all entity types for which field encryption is enabled, even entity bundles that do not have any encrypted fields."
+msgstr "這可確保未加密的資料不會公開在快取中。 不過，它會對效能造成負面影響，因為它會防止快取已啟用欄位加密的所有實體類型，甚至沒有任何已加密欄位的實體組合。"
+
+msgid "Default properties"
+msgstr "預設內容"
+
+msgid "Select which field properties will be checked by default on the field encryption settings form, per field type. Note that this does not change existing field settings, but merely sets sensible defaults."
+msgstr "在欄位加密設定表單中，按欄位類型選取依預設將要檢查的欄位內容。請注意，這不會變更現有欄位設定，而僅會設定可感應的預設值。"
+
+msgid "@field_type properties"
+msgstr "@field_type 內容"
+
+msgid "Specify the default properties to encrypt for this field type."
+msgstr "指定要為此欄位類型加密的預設內容。"
+
+msgid "Batch update settings"
+msgstr "批次更新設定"
+
+msgid "Configure behaviour of the batch field update feature. When changing field encryption settings for fields that already contain data, a batch process will be started that updates the existing field values according to the new settings."
+msgstr "配置批次欄位更新特性的行為。變更已包含資料之欄位的欄位加密設定時，將會啟動根據新設定來更新現有欄位值的批次程序。"
+
+msgid "Specify the number of entities to process on each field update batch execution. It is recommended to keep this number low, to avoid timeouts."
+msgstr "指定在執行每個欄位更新批次時要處理的實體數目。建議將此數目保持較低，以避免逾時。"
+
+msgid "Are you sure you want to update the encryption profile from %from to %to for %entity_type_plural?"
+msgstr "您確定要將 %entity_type_plural 的加密設定檔從 %from 更新至 %to 嗎？"
+
+msgid "Existing entities will be updated through a batch process."
+msgstr "將透過批次處理程序更新現有實體。"
+
+msgid "Queued one %entity_type update. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the update will be performed automatically by cron."
+msgid_plural "Queued @count @entity_type updates. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the updates will be performed automatically by cron."
+msgstr[0] "Queued @count @entity_type updates. 您應該立即<a href=\":url\">手動執行此程序</a>。 或者，cron 將自動執行更新項目。"
+
+msgid "Decrypted data"
+msgstr "已解密的資料"
+
+msgid "Encrypted field storage"
+msgstr "已加密的欄位儲存體"
+
+msgid "Stores encrypted field data."
+msgstr "儲存已加密的欄位資料。"
+
+msgid "Updating @entity_type with ID @entity_id to use the latest field encryption settings"
+msgstr "更新 ID 為 @entity_id 的 @entity_type 以使用最新的欄位加密設定"
+
+msgid "Field encrypt: update encrption profile."
+msgstr "欄位加密：更新加密設定檔。"
+

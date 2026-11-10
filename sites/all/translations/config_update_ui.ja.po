@@ -1,0 +1,254 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "アバウト"
+
+msgid "The Configuration Update Reports module provides a report that allows you to see the differences between the default configuration provided by the current versions of your installed modules, themes, and install profile, and the active configuration of your site. From this report, you can also import new configuration provided by updates, and revert your active configuration to the provided default values."
+msgstr "Configuration Update Reports モジュールは、現行バージョンのインストール済みモジュール、テーマ、インストール・プロファイルによって提供されたデフォルトの構成と、ご使用のサイトのアクティブな構成の違いを確認することができるレポートを提供します。このレポートから、更新によって提供された新しい構成をインポートすることもでき、アクティブな構成を提供されたデフォルト値に戻すことができます。"
+
+msgid "Uses"
+msgstr "機能"
+
+msgid "Checking for configuration differences"
+msgstr "構成の差分を確認中"
+
+msgid "The <a href=\":report\">Updates report</a> shows you configuration that differs between your site's active configuration and the installed modules, themes, and install profile. Choose a particular configuration type (or All), or run the report for a particular module, theme, or your install profile."
+msgstr "<a href=\":report\">更新レポート</a>は、ご使用のサイトのアクティブな構成とインストール済みモジュール、テーマ、インストール・プロファイルとの間で異なる構成を示します。特定の構成タイプ (またはすべて) を選択するか、特定のモジュール、テーマ、インストール・プロファイル用のレポートを実行します。"
+
+msgid "This report shows which default configuration items provided by the current versions of your installed modules, themes, and install profile differ from the active configuration of your site. You can generate the report for all configuration of a certain type; for a particular installed module, theme, or your install profile (only modules, themes, and install profiles that actually provide configuration are listed); or for all configuration."
+msgstr "このレポートは、ご使用のサイトのアクティブな構成とは異なる、現行バージョンのインストール済みモジュール、テーマ、インストール・プロファイルによって提供されたデフォルトの構成を示します。特定のタイプのすべての構成についてのレポート、特定のインストール済みモジュール、テーマ、インストール・プロファイルについてのレポート (実際に構成を提供するモジュール、テーマ、インストール・プロファイルのみがリストされます)、またはすべての構成についてのレポートを生成できます。"
+
+msgid "Some configuration provided by modules has dependencies, and is only added to your system when all the dependencies are satisfied. This is known as <em>optional</em> configuration."
+msgstr "モジュールによって提供される一部の構成には依存関係があり、すべての依存関係が満たされた場合にのみ、システムに追加されます。これは<em>オプション</em>構成として知られています。"
+
+msgid "Differences, including missing and added configuration, can be due to either an updated module or theme providing different configuration from when you installed it, or to changes made by site administrators. This report does not differentiate between these two sources for differences, and note that an install profile can also silently override module/theme configuration. Overrides (such as those in your settings.php file) and translations are not considered when looking at differences."
+msgstr "差分 (構成の欠落や追加を含む) は、モジュールまたはテーマが更新されてインストール時と構成が変わったこと、あるいはサイト管理者が変更を行ったことが原因で発生します。このレポートではこの 2 つの差分の原因が区別されません。インストール・プロファイルによってモジュール/テーマの構成がサイレントにオーバーライドされる可能性があることにも注意してください。差分が調べられる際には、オーバーライド (settings.php ファイルでのオーバーライドなど) と翻訳が考慮されません。"
+
+msgid "Most configuration is organized into a hierarchy of settings; at a minimum, it is a one-level hierarchy where each setting has a name and a value, and the hierarchy comes in when some of the settings have multiple components."
+msgstr "ほとんどの構成は設定の階層に編成されています。最小限の階層は、各設定が名前と値で構成される 1 レベルの階層です。階層は、一部の設定に複数のコンポーネントがある場合に必要となります。"
+
+msgid "Configuration items are normalized and formatted before computing differences. The normalization step alphabetizes the components at each level of the hierarchy, and removes a few components whose differences should be ignored, such as the UUID. The formatting step shows the full hierarchy of each configuration value with :: separators for the hierarchy levels, and a : separator between the lowest-level setting name and the value, so that in a line-by-line diff you can always see which values are actually different. Green lines with + signs have been added, and yellow lines with - signs have been removed."
+msgstr "構成項目は、差分が計算される前に正規化され、フォーマット設定されます。正規化のステップでは、階層の各レベルでコンポーネントがアルファベット順に並べられ、差分を無視する必要がある一部のコンポーネント (UUID など) が除去されます。フォーマット設定のステップでは、各構成値の階層全体が表示されます。この場合、階層レベルが分離文字 :: で区切られ、最も低いレベルの設定名と値が分離文字 : で区切られるため、実際にどの値が異なっているかを行単位で確認できます。+ 記号付きの緑色の行は追加され、- 記号付きの黄色い行は削除されました。"
+
+msgid "Note that differences are considering the base configuration, without overrides from your settings.php file, or translations."
+msgstr "差分で考慮されるのは基本構成であり、settings.php ファイルからのオーバーライドや翻訳は考慮されません。"
+
+msgid "Updates report"
+msgstr "更新レポート"
+
+msgid "Configuration Update Reports"
+msgstr "構成更新レポート"
+
+msgid "Adds an updates report and revert functionality to configuration management."
+msgstr "更新レポートおよび復帰機能を構成管理に追加します。"
+
+msgid "View configuration updates report"
+msgstr "構成更新レポートを表示"
+
+msgid "Revert any configuration"
+msgstr "すべての構成を戻す"
+
+msgid "Delete any configuration"
+msgstr "すべての構成を削除"
+
+msgid "Import"
+msgstr "インポート"
+
+msgid "Differences"
+msgstr "差分"
+
+msgid "Revert"
+msgstr "戻す"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Configuration Update Reports settings"
+msgstr "構成更新レポートの設定"
+
+msgid "Ignored configuration items"
+msgstr "無視される構成項目"
+
+msgid "No added config."
+msgstr "構成が追加されていません。"
+
+msgid "No missing config."
+msgstr "欠落している構成はありません。"
+
+msgid "No inactive config."
+msgstr "非アクティブな構成はありません。"
+
+msgid "No different config"
+msgstr "異なる構成なし"
+
+msgid "Config is missing, cannot diff."
+msgstr "構成が欠落しています。差分を取れません。"
+
+msgid "The configuration item @name was reverted to its source."
+msgstr "構成項目 @name はそのソースに戻されました。"
+
+msgid "There was an error and the configuration item @name was not reverted."
+msgstr "エラーが発生し、構成項目 @name は戻されませんでした。"
+
+msgid "The configuration item @name was imported from its source."
+msgstr "構成項目 @name はそのソースからインポートされました。"
+
+msgid "There was an error and the configuration item @name was not imported."
+msgstr "エラーが発生し、構成項目 @name はインポートされませんでした。"
+
+msgid "Simple configuration"
+msgstr "簡易構成"
+
+msgid "Config difference for @type @name"
+msgstr "@type @name の構成差分"
+
+msgid "Source config"
+msgstr "ソース構成"
+
+msgid "Site config"
+msgstr "サイト構成"
+
+msgid "There are no changes."
+msgstr "変更はありません。"
+
+msgid "Revert to source"
+msgstr "ソースに戻す"
+
+msgid "Export"
+msgstr "エクスポート"
+
+msgid "Back to 'Updates report' page"
+msgstr "「更新レポート」ページに戻る"
+
+msgid "Generate new report"
+msgstr "新規レポートを生成"
+
+msgid "Report type"
+msgstr "レポート・タイプ"
+
+msgid "Report on"
+msgstr "レポート対象"
+
+msgid "Everything"
+msgstr "すべて"
+
+msgid "Full report"
+msgstr "完全レポート"
+
+msgid "Single configuration type"
+msgstr "単一構成タイプ"
+
+msgid "Single module"
+msgstr "単一モジュール"
+
+msgid "Single theme"
+msgstr "単一テーマ"
+
+msgid "Installation profile"
+msgstr "インストール・プロファイル"
+
+msgid "All configuration"
+msgstr "すべての構成"
+
+msgid "@name configuration"
+msgstr "@name 構成"
+
+msgid "@name module"
+msgstr "@name モジュール"
+
+msgid "@name theme"
+msgstr "@name テーマ"
+
+msgid "@name profile"
+msgstr "@name プロファイル"
+
+msgid "Configuration updates report for @label"
+msgstr "@label の構成更新レポート"
+
+msgid "Missing configuration items"
+msgstr "欠落している構成項目"
+
+msgid "None: all provided configuration items are in your active configuration."
+msgstr "なし: 提供されている構成項目がすべてアクティブ構成に含まれています。"
+
+msgid "Inactive optional items"
+msgstr "非アクティブなオプション項目"
+
+msgid "None: all optional configuration items are in your active configuration."
+msgstr "なし: オプションの構成項目がすべてアクティブ構成に含まれています。"
+
+msgid "Added configuration items"
+msgstr "追加された構成項目"
+
+msgid "None: all active configuration items of this type were provided by modules, themes, or install profile."
+msgstr "なし: このタイプのアクティブ構成項目はすべて、モジュール、テーマ、またはインストール・プロファイルから提供されています。"
+
+msgid "Changed configuration items"
+msgstr "変更された構成項目"
+
+msgid "None: no active configuration items differ from their current provided versions."
+msgstr "なし: 現在提供されているバージョンと異なっているアクティブ構成項目はありません。"
+
+msgid "Machine name"
+msgstr "システム内部名称"
+
+msgid "Label (if any)"
+msgstr "ラベル (存在する場合)"
+
+msgid "Type"
+msgstr "タイプ"
+
+msgid "Provider"
+msgstr "プロバイダー"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "Import from source"
+msgstr "ソースからインポート"
+
+msgid "Show differences"
+msgstr "差分の表示"
+
+msgid "Malformed config file @config_name."
+msgstr "構成ファイル @config_name の形式が正しくありません。"
+
+msgid "Are you sure you want to delete the %type config %item?"
+msgstr "%type 構成 %item を削除しますか?"
+
+msgid "This action cannot be undone. Manually deleting configuration from this page can cause problems on your site due to missing dependencies, and should only be done if there is no other way to delete a problematic piece of configuration."
+msgstr "この処理を元に戻すことはできません。このページから手動で構成を削除すると、依存関係がなくなるためサイトで問題が発生する原因になる可能性があります。構成の問題点を削除する方法が他にない場合にのみ、実施してください。"
+
+msgid "The configuration %item has been deleted."
+msgstr "構成 %item が削除されました。"
+
+msgid "Are you sure you want to import the %type config %item from its source configuration?"
+msgstr "%type 構成 %item をそのソース構成からインポートしますか?"
+
+msgid "Configuration will be added to your site. This action cannot be undone."
+msgstr "構成がサイトに追加されます。この処理を元に戻すことはできません。"
+
+msgid "The configuration %item has been imported from its source."
+msgstr "構成 %item がそのソースからインポートされました。"
+
+msgid "Are you sure you want to revert the %type config %item to its source configuration?"
+msgstr "%type 構成 %item をそのソース構成に戻しますか?"
+
+msgid "Customizations will be lost. This action cannot be undone."
+msgstr "カスタマイズ内容は失われます。この処理を元に戻すことはできません。"
+
+msgid "The configuration %item has been reverted to its source."
+msgstr "構成 %item がそのソースに戻されました。"
+

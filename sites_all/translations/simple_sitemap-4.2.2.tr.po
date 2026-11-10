@@ -1,0 +1,875 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Simple XML Sitemap settings will be added only to entity forms of entity types enabled here. Settings for specific entity bundles (e.g. <em>page</em>) can be adjusted here or on the bundle pages."
+msgstr "Basit XML Site Haritası ayarları yalnızca burada etkinleştirilen varlık tiplerindeki varlık formlarına eklenir. Belirli varlık kod paketlerine ilişkin ayarlar (örneğin, <em>sayfa</em>) burada ya da kod paketi sayfalarında ayarlanabilir."
+
+msgid "Add custom internal drupal paths to specific sitemaps."
+msgstr "Belirli site haritalarına özel iç drupal yolları ekleyin."
+
+msgid "Specify drupal internal (relative) paths, one per line. Do not forget to prepend the paths with a '/'.<br>Optionally link priority <em>(0.0 - 1.0)</em> can be added by appending it after a space.<br> Optionally link change frequency <em>(always / hourly / daily / weekly / monthly / yearly / never)</em> can be added by appending it after a space."
+msgstr "Her satıra bir adet olacak drupal iç (göreli) yollarını belirtin. Yolların başına '/' koymayı unutmayın. <br>İsteğe bağlı olarak bağlantı önceliği <em>(0.0 - 1.0)</em> bir boşluğun sonuna eklenerek eklenebilir.<br> İsteğe bağlı bağlantı değişikliği sıklığı <em>(her zaman / saatlik / günlük / haftalık / aylık / yıllık / hiçbir zaman)</em> bir boşluğun sonuna eklenerek eklenebilir."
+
+msgid "<strong>Examples:</strong><br><em>/ 1.0 daily</em> -> home page with the highest priority and daily change frequency<br><em>/contact</em> -> contact page with the default priority and no change frequency information"
+msgstr "<strong>Örnekler:</strong><br><em>/ 1.0 günlük</em> -> en yüksek önceliğe ve günlük değişiklik sıklığına sahip ana sayfa<br><em>/contact</em> -> varsayılan önceliğe ve değişiklik sıklığı bilgisine sahip iletişim sayfası"
+
+msgid "Simple XML Sitemap"
+msgstr "Basit XML Site Haritası"
+
+msgid "Simple XML Sitemap settings"
+msgstr "Basit XML Site Haritası ayarları"
+
+msgid "Simple XML Sitemap PHP extensions"
+msgstr "Basit XML Site Haritası PHP uzantıları"
+
+msgid "Missing PHP xmlwriter extension"
+msgstr "Eksik PHP xmlwriter uzantısı"
+
+msgid "In order to be able to generate sitemaps, the Simple XML Sitemap module requires the <em>xmlwriter</em> PHP extension to be enabled."
+msgstr "Site haritaları oluşturabilmek için Basit XML Site Haritası modülü, <em>xmlwriter</em> PHP uzantısının etkinleştirilmesini gerektirir."
+
+msgid "You may now want to configure the new changefreq setting for the XML sitemap entities and custom links."
+msgstr "XML site haritası varlıkları ve özel bağlantılar için yeni changefreq ayarını yapılandırmak isteyebilirsiniz."
+
+msgid "You may now want to configure your XML sitemap entities to include images."
+msgstr "Resimleri eklemek için XML site haritası varlıklarını yapılandırmak isteyebilirsiniz."
+
+msgid "The XML sitemaps need to be regenerated."
+msgstr "XML site haritalarının yeniden oluşturulması gerekir."
+
+msgid "The new 'Entities per queue item' setting has been set to 50 to improve generation performance. This changes the memory footprint during generation, so please make sure to test and adjust performance settings to your needs on the module's settings page."
+msgstr "Yeni 'kuyruk öğesi başına varlık' ayarı, oluşturma performansını iyileştirmek için 50 olarak ayarlandı. Bu, oluşturma sırasında bellek ayakizini değiştirir; bu nedenle lütfen modülün ayarlar sayfasında performans ayarlarını test edip ihtiyaçlarınıza göre uyarladığınızdan emin olun."
+
+msgid "All variants belonging to the built-in \"Default hreflang\" sitemap type have been converted to entities. Custom sitemap types added via plugins will have to be recreated manually. See simple_sitemap.type.default_hreflang.yml. The sitemaps need to be regenerated now."
+msgstr "Yerleşik \"Varsayılan hreflang\" site haritası tipine ait bütün değişkenler varlıklara dönüştürüldü. Eklentiler aracılığıyla eklenecek özel site haritası tipleri manuel olarak yeniden oluşturulmalıdır. Bkz. simple_sitemap.type.default_hreflang.yml. Site haritalarının şimdi yeniden oluşturulması gerekiyor."
+
+msgid "A sitemap index which lists all other sitemaps is now available and can be enabled."
+msgstr "Artık diğer bütün site haritalarının listesini veren bir site haritası dizini kullanılabilir ve etkinleştirilebilir."
+
+msgid "Generates standard conform hreflang XML sitemaps of the site content and provides a framework for developing other sitemap types."
+msgstr "Site içeriğinin standart uyumlu hreflang XML site haritalarını oluşturur ve diğer site haritası tiplerini geliştirmek için bir çerçeve sağlar."
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Add sitemap"
+msgstr "Site haritası ekle"
+
+msgid "Add sitemap type"
+msgstr "Site haritası tipi ekle"
+
+msgid "Sitemaps"
+msgstr "Site Haritaları"
+
+msgid "Inclusion"
+msgstr "İçerme"
+
+msgid "Configure, add content to and generate XML sitemaps."
+msgstr "XML site haritalarını yapılandırın, içerik ekleyin ve oluşturun."
+
+msgid "Status"
+msgstr "Durum"
+
+msgid "Types"
+msgstr "Tipler"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Entities"
+msgstr "Nesneler (entity)"
+
+msgid "Custom links"
+msgstr "Özel bağlantılar"
+
+msgid "Administer sitemap settings"
+msgstr "Site haritası ayarlarını yönet"
+
+msgid "Administer Simple XML Sitemap settings, alter inclusion settings of content and generate sitemaps on demand."
+msgstr "Basit XML Site Haritası ayarlarını yönetin, içerik ekleme ayarlarını değiştirin ve gereksinime göre site haritası oluşturun."
+
+msgid "Max links"
+msgstr "Maksimum bağlantı"
+
+msgid "Cron generation"
+msgstr "Dönemsel görev oluşturma"
+
+msgid "Cron generation interval"
+msgstr "Dönemsel görev oluşturma aralığı"
+
+msgid "Generation duration"
+msgstr "Oluşturma süresi"
+
+msgid "Entities per queue item"
+msgstr "Kuyruk öğesi başına varlık"
+
+msgid "Remove duplicates"
+msgstr "Tekrarlananları kaldır"
+
+msgid "Skip untranslated"
+msgstr "Çevrilmeyenleri atla"
+
+msgid "Include a stylesheet in the sitemaps for humans"
+msgstr "İnsanlar için site haritasına stil sayfası ekle"
+
+msgid "Base URL"
+msgstr "Temel URL"
+
+msgid "Default variant"
+msgstr "Varsayılan değişken"
+
+msgid "Include images of custom links"
+msgstr "Özel bağlantıların resimlerini ekle"
+
+msgid "Disable language hreflang"
+msgstr "Dil hreflang'ı devre dışı bırak"
+
+msgid "Hide branding"
+msgstr "Markalamayı gizle"
+
+msgid "Excluded languages"
+msgstr "Dışlanan diller"
+
+msgid "Enabled entity types"
+msgstr "Etkinleştirilen varlık tipleri"
+
+msgid "Entity bundle settings"
+msgstr "Varlık paketi ayarları"
+
+msgid "Index"
+msgstr "Dizin"
+
+msgid "Priority"
+msgstr "Öncelik"
+
+msgid "Change frequency"
+msgstr "Sıklığı değiştir"
+
+msgid "Include images"
+msgstr "Resimleri ekle"
+
+msgid "Path"
+msgstr "Yol"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "Etiket"
+
+msgid "Description"
+msgstr "Açıklama"
+
+msgid "Type"
+msgstr "Tip"
+
+msgid "Weight"
+msgstr "Ağırlık"
+
+msgid "Sitemap types"
+msgstr "Site haritası tipleri"
+
+msgid "Sitemap generator"
+msgstr "Site haritası oluşturucu"
+
+msgid "URL generators"
+msgstr "URL oluşturucular"
+
+msgid "IndexNow notification enabled"
+msgstr "IndexNow bildirimi etkinleştirildi"
+
+msgid "IndexNow notification disabled"
+msgstr "IndexNow bildirimi devre dışı"
+
+msgid "Included in sitemaps: "
+msgstr "Site haritalarına dahil edildi: "
+
+msgid "Excluded from all sitemaps"
+msgstr "Bütün site haritalarından çıkarıldı"
+
+msgid "The sitemap settings and any per-entity overrides will be deleted for the unchecked entity types."
+msgstr "Site haritası ayarları ve her varlık başına geçersiz kılma değeri, işaretli olmayan varlık tipleri için silinecektir."
+
+msgid "IndexNow notification"
+msgstr "IndexNow bildirimi"
+
+msgid "IndexNow notification checkbox"
+msgstr "IndexNow bildirimi onay kutusu"
+
+msgid "Simple XML Sitemap IndexNow"
+msgstr "Basit XML Site Haritası IndexNow"
+
+msgid "Verification key in Drupal State"
+msgstr "Drupal Durumunda doğrulama anahtarı"
+
+msgid "Verification key not available"
+msgstr "Doğrulama anahtarı kullanılamıyor"
+
+msgid "In order to generate a verification key for the IndexNow service and choose which sitemaps are to be submitted to search engines, visit <a href=\"@url\">this</a> configuration page."
+msgstr "IndexNow hizmeti için bir doğrulama anahtarı oluşturmak ve arama motorlarına hangi site haritalarının gönderileceğini belirlemek için <a href=\"@url\">bu</a> yapılandırma sayfasını ziyaret edin."
+
+msgid "Simple XML Sitemap (Search engines)"
+msgstr "Basit XML Site Haritası (Arama motorları)"
+
+msgid "Submits sitemaps to search engines and notifies IndexNow compatible engines about changes to entities."
+msgstr "Arama motorlarına site haritaları sunar ve varlıklardaki değişiklikleri IndexNow uyumlu motorlara bildirir."
+
+msgid "Search engines"
+msgstr "Arama motorları"
+
+msgid "Index entity on save"
+msgstr "Kayıt sonrası dizin varlığı"
+
+msgid "Allows optionally sending a change notice to IndexNow compatible search engines on entity form save."
+msgstr "İsteğe bağlı olarak, varlık formu kaydedildiğinde IndexNow uyumlu arama motorlarına bir değişiklik bildirimi göndermenizi sağlar."
+
+msgid "Search engine"
+msgstr "Arama motoru"
+
+msgid "Search engine ID"
+msgstr "Arama motoru tanıtıcısı"
+
+msgid "Submission URL"
+msgstr "Gönderim URL'si"
+
+msgid "IndexNow URL"
+msgstr "IndexNow URL'si"
+
+msgid "Sitemap variants"
+msgstr "Site haritası değişkenleri"
+
+msgid "Sitemap variant"
+msgstr "Site haritası değişkeni"
+
+msgid "IndexNow bundle settings"
+msgstr "IndexNow kod paketi ayarları"
+
+msgid "IndexNow"
+msgstr "IndexNow"
+
+msgid "Sitemap search engine submission settings"
+msgstr "Site haritası arama motoru gönderim ayarları"
+
+msgid "Sitemap submission enabled"
+msgstr "Site haritası gönderimi etkin"
+
+msgid "Sitemap submission frequency"
+msgstr "Site haritası gönderim sıklığı"
+
+msgid "IndexNow submission enabled"
+msgstr "IndexNow gönderimi etkinleştirildi"
+
+msgid "Selected engine for IndexNow submissions"
+msgstr "IndexNow gönderimleri için seçilen motor"
+
+msgid "IndexNow on entity save"
+msgstr "Varlık kaydı sonrasında IndexNow"
+
+msgid "Sitemap submission status"
+msgstr "Site haritası gönderim durumu"
+
+msgid "Name"
+msgstr "İsim"
+
+msgid "Last submitted"
+msgstr "Son gönderilme"
+
+msgid "There are no @label yet."
+msgstr "Henüz @label yok."
+
+msgid "Submission settings can be configured <a href=\"@url\">here</a>."
+msgstr "Gönderim ayarları <a href=\"@url\">buradan</a> yapılandırılabilir."
+
+msgid "Never"
+msgstr "Asla"
+
+msgid "No search engines supporting sitemap submission have been found."
+msgstr "Site haritası gönderimini destekleyen hiçbir arama motoru bulunamadı."
+
+msgid "Sitemap submission is disabled."
+msgstr "Site haritası gönderimi devre dışı bırakıldı."
+
+msgid "IndexNow status"
+msgstr "IndexNow durumu"
+
+msgid "The last IndexNow submission was <em>@entity</em> to @engine_label on @time"
+msgstr "Son IndexNow gönderimi, @time üzerinde @engine_label öğesine <em>@entity</em> yapıldı"
+
+msgid "IndexNow settings can be configured <a href=\"@url\">here</a>."
+msgstr "IndexNow ayarları <a href=\"@url\">burada</a> yapılandırılabilir."
+
+msgid "No search engines supporting IndexNow have been found."
+msgstr "IndexNow özelliğini destekleyen hiçbir arama motoru bulunamadı."
+
+msgid "IndexNow submission is disabled."
+msgstr "IndexNow gönderimi devre dışı bırakıldı."
+
+msgid "Excluded"
+msgstr "Hariç"
+
+msgid "Sitemap submission settings"
+msgstr "Site haritası gönderim ayarları"
+
+msgid "Submit sitemaps to search engines"
+msgstr "Arama motorlarına site haritaları gönder"
+
+msgid "This enables/disables sitemap submission; don't forget to choose sitemaps below."
+msgstr "Bu, site haritası gönderimini etkinleştirir/devre dışı bırakır; aşağıda site haritası seçmeyi unutmayın."
+
+msgid "Submission interval"
+msgstr "Gönderim aralığı"
+
+msgid "Engines"
+msgstr "Motorlar"
+
+msgid "Choose which sitemaps are to be submitted to which search engines.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "Hangi site haritalarının hangi arama motorlarına gönderileceğini seçin.<br>Site haritaları <a href=\"@url\">burada</a> yapılandırılabilir."
+
+msgid "IndexNow settings"
+msgstr "IndexNow ayarları"
+
+msgid "Submit changes to IndexNow capable engines"
+msgstr "Değişiklikleri IndexNow uyumlu motorlara gönder"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting entity forms. Changes include creating, deleting and updating of an entity.<br/>This behaviour can be overridden on entity forms. Don't forget to <a href=\"@inclusion_url\">include entities</a>."
+msgstr "Varlık formlarını gönderdikten hemen sonra IndexNow uyumlu arama motorlarına değişiklik bildirimi gönder. Değişiklikler arasında bir varlığın oluşturulması, silinmesi ve güncellenmesi yer alır.<br/>Bu davranış, varlık formlarında geçersiz kılınabilir. <a href=\"@inclusion_url\">Varlıkları dahil etmeyi</a> unutmayın."
+
+msgid "Preferred IndexNow engine"
+msgstr "Tercih edilen IndexNow motoru"
+
+msgid "All IndexNow requests will be sent to the engine selected here. Only one engine needs to be notified, as it will notify other IndexNow compatible engines for you.<br/>For the sake of equality of opportunity, <strong>consider leaving this at <em>Random</em></strong>, so a random engine can be picked on each submission."
+msgstr "Bütün IndexNow istekleri burada seçilen motora gönderilecektir. Yalnızca bir motora bildirim gönderilmesi gerekir çünkü bu motor diğer IndexNow uyumlu motorları sizin için bilgilendirecektir.<br/>Fırsat eşitliği için <strong>bunu <em>Rastgele</em> ayarında tutarsanız</strong>, her gönderimde rastgele bir motor seçilir."
+
+msgid "Random"
+msgstr "Rastgele"
+
+msgid "Index on every entity save operation"
+msgstr "Her varlık kaydetme işleminde dizin"
+
+msgid "If checked, all entity save operations for <a href=\"@inclusion_url\">included entities</a> will trigger notification of IndexNow search engines.<br/>If unchecked, this will only be possible by adding/altering/deleting an entity through a form.<br/>This should be unchecked if there are mass operations performed on entities that are irrelevant to indexing."
+msgstr "Bu işaretlenirse, <a href=\"@inclusion_url\">dahil edilen varlıklar</a> için bütün varlık kaydetme işlemleri IndexNow arama motorlarına bildirim gönderilmesini tetikler.<br/>İşaretlenmezse bu, yalnızca bir form aracılığıyla bir varlık ekleme/değiştirme/silme ile mümkün olacaktır.<br/>Dizinlemeyle ilgisi olmayan varlıklar üzerinde gerçekleştirilen toplu işlemler varsa bu seçeneğin işaretlenmemesi gerekir."
+
+msgid "Remove verification key from state"
+msgstr "Doğrulama anahtarını durumdan kaldır"
+
+msgid "Generate verification key"
+msgstr "Doğrulama anahtarı oluştur"
+
+msgid "The IndexNow verification key is saved in <em>settings.php</em>: @key"
+msgstr "IndexNow doğrulama anahtarı, <em>settings.php</em> içinde kaydedilir: @key"
+
+msgid "The IndexNow verification key is defined in <em>Drupal state</em>: @key"
+msgstr "IndexNow doğrulama anahtarı <em>Drupal durumu</em> içinde tanımlanmıştır: @key"
+
+msgid "The IndexNow verification key is saved in <em>Drupal state</em>. Consider defining it in <em>settings.php</em> like so:<br/>@code"
+msgstr "IndexNow doğrulama anahtarı <em>Drupal durumu</em> içinde kaydedilir. Bunu şu şekilde <em>settings.php</em> içinde tanımlamayı düşünün:<br/>@code"
+
+msgid "The IndexNow verification key is saved in <em>settings.php</em> and can be safely removed from <em>Drupal state</em>."
+msgstr "IndexNow doğrulama anahtarı, <em>settings.php</em> içinde kaydedilir ve <em>Drupal durumundan</em> güvenli bir şekilde kaldırılabilir."
+
+msgid "An IndexNow verification key needs to be generated and optionally added to <em>settings.php</em> in order for IndexNow engines to get notified about changes. This warning only applies to the production environment."
+msgstr "IndexNow doğrulama anahtarının oluşturulması ve isteğe bağlı olarak <em>settings.php</em> öğesine eklenmesi gerekir; böylece IndexNow motorları değişikliklere ilişkin bildirim alabilir. Bu uyarı yalnızca üretim ortamı için geçerlidir."
+
+msgid "No sitemaps have been selected for submission."
+msgstr "Gönderim için hiçbir site haritası seçilmedi."
+
+msgid "Notify IndexNow search engines of changes <em>now</em>"
+msgstr "IndexNow arama motorlarına değişiklikleri <em>şimdi</em> bildir"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting this form."
+msgstr "Bu formu gönderdikten hemen sonra IndexNow uyumlu arama motorlarına değişiklik bildirimi gönder."
+
+msgid "Notify IndexNow search engines of changes <em>by default</em>"
+msgstr "IndexNow arama motorlarına değişiklikleri <em>varsayılan olarak</em> bildir"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting entity forms of this type.<br/>Changes include creating, deleting and updating of an entity. This setting can be overridden on the entity form."
+msgstr "Bu tipte varlık formlarını gönderdikten hemen sonra, IndexNow uyumlu arama motorlarına değişiklik bildirimi gönder.<br/>Değişiklikler, bir varlığın oluşturulmasını, silinmesini ve güncellenmesini içerir. Bu ayar, varlık formunda geçersiz kılınabilir."
+
+msgid "Sitemap search engine submission"
+msgstr "Site haritası arama motoru gönderimi"
+
+msgid "In order to use the Simple XML Sitemap Views module, the Views URL generator must be <a href=\"@url\">added</a> to a sitemap type."
+msgstr "Basit XML Site Haritası Görünümleri modülünü kullanmak için Görünümler URL oluşturucusu, bir site haritası tipine <a href=\"@url\">eklenmelidir</a>."
+
+msgid "Simple XML Sitemap (Views)"
+msgstr "Basit XML Site Haritası (Görünümler)"
+
+msgid "Provides integration of the Simple XML Sitemap module with the Views module."
+msgstr "Görünümler modülü ile Basit XML Site Haritası modülünün bütünleştirmesini sağlar."
+
+msgid "Views"
+msgstr "Görünümler"
+
+msgid "Variants"
+msgstr "Değişkeler"
+
+msgid "Indexed arguments"
+msgstr "Dizinlenmiş bağımsız değişkenler"
+
+msgid "View"
+msgstr "Görüntüle"
+
+msgid "Display"
+msgstr "Görünüm"
+
+msgid "Operations"
+msgstr "İşlemler"
+
+msgid "No view displays are set to be indexed yet. <a href=\"@url\">Edit a view.</a>"
+msgstr "Henüz dizinlenmek üzere ayarlanmış bir görünüm görüntüsü yok. <a href=\"@url\">Bir görünümü düzenleyin.</a>"
+
+msgid "Please configure at least one <a href=\"@sitemaps_url\">sitemap</a> to be of a <a href=\"@types_url\">type</a> that implements the views URL generator."
+msgstr "Lütfen en az bir <a href=\"@sitemaps_url\">site haritasını</a>, görünüm URL oluşturucusu uygulayan bir <a href=\"@types_url\">tip</a> olarak yapılandırın."
+
+msgid "Edit"
+msgstr "Düzenle"
+
+msgid "Garbage collection in the simple_sitemap_views table"
+msgstr "Simple_sitemap_views tablosunda çöp toplama"
+
+msgid "Views URL generator"
+msgstr "Görünümler URL oluşturucu"
+
+msgid "Generates URLs for views."
+msgstr "Görünümler için URL adresleri oluşturur."
+
+msgid "Index this display in sitemap <em>@variant_label</em>"
+msgstr "Bu görüntüyü <em>@variant_label</em> site haritasında dizinle"
+
+msgid "The priority this display will have in the eyes of search engine bots."
+msgstr "Bu görüntünün arama motoru robotlarına göre sahip olacağı öncelik."
+
+msgid "The frequency with which this display changes. Search engine bots may take this as an indication of how often to index it."
+msgstr "Bu görüntünün değişiklik sıklığı. Arama motoru robotları, bunu dizinleme sıklığı göstergesi olarak algılayabilir."
+
+msgid "Maximum display variations"
+msgstr "Maksimum görüntü çeşitlemeleri"
+
+msgid "The maximum number of link variations to be indexed for this display. If left blank, each argument will create link variations for this display. Use with caution, as a large number of argument values​can significantly increase the number of sitemap links."
+msgstr "Bu görüntü için dizinlenecek maksimum bağlantı çeşitlemesi sayısı. Boş bırakılırsa, her bir bağımsız değişken bu görüntü için bağlantı çeşitlemeleri oluşturur. Çok sayıda bağımsız değişken değeri, site haritası bağlantısı sayısını büyük ölçüde artırabileceğinden dikkatli şekilde kullanın."
+
+msgid "Simple XML Sitemap settings for this display"
+msgstr "Bu görüntü için basit XML Site Haritası ayarları"
+
+msgid "Included in sitemaps: @variants"
+msgstr "Site haritalarına dahil edilen: @variants"
+
+msgid "To enable indexing of an argument, you must enable indexing of all previous arguments."
+msgstr "Bir bağımsız değişkenin dizinlemesini etkinleştirmek için, önceki tüm bağımsız değişkenlerin dizinlemesini etkinleştirmeniz gerekir."
+
+msgid "Simple XML Sitemap settings for this view."
+msgstr "Bu görünüm için basit XML Site Haritası ayarları."
+
+msgid "Sitemap"
+msgstr "Site haritası"
+
+msgid "Link count"
+msgstr "Bağlantı sayısı"
+
+msgid "disabled"
+msgstr "etkin değil"
+
+msgid "pending"
+msgstr "beklemede"
+
+msgid "generating"
+msgstr "oluşturuluyor"
+
+msgid "published on @time"
+msgstr "@time tarihinde yayımlandı"
+
+msgid "published on @time, regenerating"
+msgstr "@time tarihinde yayımlandı, yeniden oluşturuluyor"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "No sitemaps have been defined yet. <a href=\"@url\">Add a new one</a>."
+msgstr "Henüz hiçbir site haritası tanımlanmadı. <a href=\"@url\">Yeni bir tane ekleyin</a>."
+
+msgid "Sitemap type"
+msgstr "Site haritası tipi"
+
+msgid "No sitemap types have been defined yet. <a href=\"@url\">Add a new one</a>."
+msgstr "Henüz hiçbir site haritası tipi tanımlanmadı. <a href=\"@url\">Yeni bir tane ekleyin</a>."
+
+msgid "sitemap"
+msgstr "site haritası"
+
+msgid "sitemaps"
+msgstr "site haritaları"
+
+msgid "Simple XML sitemap type"
+msgstr "Basit XML site haritası tipi"
+
+msgid "sitemap type"
+msgstr "site haritası tipi"
+
+msgid "sitemap types"
+msgstr "site haritası tipleri"
+
+msgid "If a custom link points to an entity, include its referenced images in the sitemap."
+msgstr "Özel bağlantı bir varlığı gösteriyorsa, site haritasına başvurulan resimleri dahil edin."
+
+msgid "No"
+msgstr "Hayır"
+
+msgid "Yes"
+msgstr "Evet"
+
+msgid "<strong>@sitemap, line @line</strong>: The path <em>@path</em> does not exist."
+msgstr "<strong>@sitemap, @line satırı</strong>: <em>@path</em> yolu yok."
+
+msgid "<strong>@sitemap, line @line</strong>: The path <em>@path</em> needs to start with a '/'."
+msgstr "<strong>@sitemap, @line satırı</strong>: <em>@path</em> yolunun '/' ile başlaması gerekir."
+
+msgid "<strong>@sitemap, line @line</strong>: The priority setting <em>@priority</em> for path <em>@path</em> is incorrect. Set the priority from 0.0 to 1.0."
+msgstr "<strong>@sitemap, @line satırı</strong>: <em>@path</em> yolu için <em>@priority</em> öncelik ayarı yanlış. 0.0 olan önceliği 1.0 olarak ayarlayın."
+
+msgid "<strong>@sitemap, line @line</strong>: The changefreq setting <em>@changefreq</em> for path <em>@path</em> is incorrect. The following are the correct values: <em>@changefreq_options</em>."
+msgstr "<strong>@sitemap, satır @line</strong>: <em>@path</em> yolu için changefreq ayarı <em>@changefreq</em> yanlış. Şunlar doğru değerlerdir: <em>@changefreq_options</em>."
+
+msgid "Entity type"
+msgstr "Varlık tipi"
+
+msgid "Indexed bundles"
+msgstr "Dizinlenen kod paketleri"
+
+msgid "Enabled"
+msgstr "Etkin"
+
+msgid "No supported entity types available."
+msgstr "Kullanılabilir hiçbir desteklenen varlık tipi yok."
+
+msgid "Configure"
+msgstr "Yapılandır"
+
+msgid "%bundle_label <span class=\"description\">(sitemaps: %sitemaps)</span>"
+msgstr "%bundle_label <span class=\"description\">(sitemaps: %sitemaps)</span>"
+
+msgid "Configure %label entity type"
+msgstr "%label varlık tipini yapılandır"
+
+msgid "Regenerate all sitemaps after hitting <em>Save</em>"
+msgstr "<em>Kaydet</em> düğmesini tıklattıktan sonra tüm site haritalarını yeniden oluştur"
+
+msgid "This setting will regenerate all sitemaps including the above changes."
+msgstr "Bu ayar, yukarıdaki değişiklikler de dahil olmak üzere tüm site haritalarını yeniden oluşturur."
+
+msgid "Otherwise the sitemaps will be regenerated during a future cron run."
+msgstr "Aksi takdirde site haritası, gelecekteki bir dönemsel görev çalıştırmasında yeniden oluşturulur."
+
+msgid "- Not specified -"
+msgstr "- Belirtilmemiş -"
+
+msgid "always"
+msgstr "her zaman"
+
+msgid "hourly"
+msgstr "saatlik"
+
+msgid "daily"
+msgstr "günlük"
+
+msgid "weekly"
+msgstr "haftalık"
+
+msgid "monthly"
+msgstr "Aylık"
+
+msgid "yearly"
+msgstr "Yıllık"
+
+msgid "never"
+msgstr "hiçbir zaman"
+
+msgid "On every cron run"
+msgstr "Her dönemsel görev çalıştırmasında"
+
+msgid "Regenerate the sitemaps during cron runs"
+msgstr "Dönemsel görev çalıştırmaları sırasında site haritalarını yeniden oluştur"
+
+msgid "Uncheck this if you intend to only regenerate the sitemaps manually or via drush."
+msgstr "Manuel olarak ya da drush komutları sayesinde site haritalarını yeniden oluşturmak istiyorsanız bunun işaretini kaldırın."
+
+msgid "Sitemap generation interval"
+msgstr "Site haritası oluşturma aralığı"
+
+msgid "The sitemap will be generated according to this interval."
+msgstr "Bu aralığa göre site haritası oluşturulur."
+
+msgid "Add styling and sorting to sitemaps"
+msgstr "Site haritalarına stil ve sıralama ekle"
+
+msgid "If checked, sitemaps will be displayed as tables with sortable entries and thus become much friendlier towards human visitors. Search engines will not care."
+msgstr "İşaretlendiyse, site haritaları sıralanabilir girdiler içeren tablolar halinde görüntülenir ve böylece ziyaretçiler için çok daha kullanışlı olur. Arama motorları bunu dikkate almaz."
+
+msgid "Remove the 'Generated by the Simple XML Sitemap Drupal module' string from the XSL output."
+msgstr "'Basit XML Site Haritası Drupal modülü tarafından oluşturuldu' dizesini XSL çıktısından kaldırın."
+
+msgid "Language settings"
+msgstr "Dil ayarları"
+
+msgid "Remove hreflang markup in HTML"
+msgstr "HTML'de hreflang işaretlemesini kaldır"
+
+msgid "Google recommends displaying hreflang definitions either in the HTML markup or in the sitemap, but not in both places.<br>If checked, hreflang definitions created by the language module will be removed from the markup reducing its size."
+msgstr "Google hreflang tanımlarının HTML işaretlemesinde veya site haritasında görüntülenmesini, iki yerde birden görüntülenmemesini önerir.<br>İşaretlenmişse dil modülü tarafından oluşturulan hreflang tanımları, işaretlemeden kaldırılarak boyutunu küçültür."
+
+msgid "Skip non-existent translations"
+msgstr "Var olmayan çevirileri atla"
+
+msgid "If checked, entity links are generated exclusively for languages the entity has been translated to as long as the language is not excluded below.<br>Otherwise entity links are generated for every language installed on the site apart from languages excluded below.<br>Bear in mind that non-entity paths like homepage will always be generated for every non-excluded language."
+msgstr "İşaretlenmişse, dil aşağıda dışlanmadığı sürece varlık bağlantıları varlığın çevrildiği diller için özellikle oluşturulur.<br>Aksi halde aşağıda dışlanan diller dışında varlık bağlantıları sitede kurulu her dil için oluşturulur.<br>Ana sayfa gibi varlık dışındaki yolların dışlanmayan her dil için oluşturulacağını göz önünde bulundurun."
+
+msgid "Exclude languages"
+msgstr "Dilleri dışla"
+
+msgid "There will be no links generated for languages checked here."
+msgstr "Burada işaretlenen diller için oluşturulan bağlantı olmayacak."
+
+msgid "There are no languages other than the default language available."
+msgstr "Kullanılabilir varsayılan dilden başka dil yok."
+
+msgid "Advanced settings"
+msgstr "Gelişmiş ayarlar"
+
+msgid "Default sitemap"
+msgstr "Varsayılan site haritası"
+
+msgid "This sitemap will be available under <em>/sitemap.xml</em> in addition to its default path <em>/variant-name/sitemap.xml</em>.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "Bu site haritası, varsayılan <em>/variant-name/sitemap.xml</em> yoluna ek olarak <em>/sitemap.xml</em> yolunda kullanılabilecektir.<br>Site haritaları <a href=\"@url\">burada</a> yapılandırılabilir."
+
+msgid "- None -"
+msgstr "- Hiçbiri -"
+
+msgid "Default base URL"
+msgstr "Varsayılan temel URL"
+
+msgid "On some hosting providers it is impossible to pass parameters to cron to tell Drupal which URL to bootstrap with. In this case the base URL of sitemap links can be overridden here.<br>Example: <em>@url</em>"
+msgstr "Bazı barındırma sağlayıcılarında, Drupal'a hangi URL'de Bootstrap gerçekleştirileceğini söylemek için dönemsel göreve parametrelerin iletilmesi imkansızdır. Bu durumda site haritası bağlantılarının temel URL'si burada geçersiz kılınabilir.<br>Örnek: <em>@url</em>"
+
+msgid "Exclude duplicate links"
+msgstr "Yinelenen bağlantıları dışla"
+
+msgid "Prevent per-sitemap duplicate links.<br>Unchecking this may help avoiding PHP memory errors on huge sites."
+msgstr "Site haritası başına yinelenen bağlantıları önle.<br>Bu seçimin kaldırılması, büyük sitelerde PHP bellek hatalarının önlenmesine yardımcı olabilir."
+
+msgid "Maximum links in a sitemap"
+msgstr "Site haritasında maksimum bağlantı sayısı"
+
+msgid "The maximum number of links one sitemap can hold. If more links are generated than set here, a sitemap index will be created and the links split into several sub-sitemaps.<br>50 000 links is the maximum Google will parse per sitemap, but choosing a lower value may be needed to avoid PHP memory errors on huge sites.<br>If left blank, all links will be shown on a single sitemap."
+msgstr "Bir site haritasında bulunabilecek bağlantı sayısı üst sınırı. Burada ayarlanandan daha fazla bağlantı oluşturulursa, bir site haritası dizini oluşturulur ve bağlantılar birkaç alt site haritasına bölünür.<br>50 000 bağlantı, site haritası başına Google'ın ayrıştıracağı üst sınırdır, ancak daha düşük bir değer seçilmesi büyük sitelerde PHP bellek hatalarının önlenmesi için gerekebilir.<br>Boş bırakılırsa, tüm bağlantılar tek bir site haritasında gösterilir."
+
+msgid "Sitemap generation max duration"
+msgstr "Maksimum site haritası oluşturma süresi"
+
+msgid "The maximum duration <strong>in seconds</strong> the generation task can run during a single cron run or during one batch process iteration.<br>The higher the number, the quicker the generation process, but higher the risk of PHP timeout errors."
+msgstr "Oluşturma görevinin tek bir dönemsel görev çalıştırması sırasında ya da bir toplu iş süreci yinelemesi sırasında çalıştırılabileceği <strong>saniye cinsinden</strong> maksimum süre. <br>Sayı ne kadar yüksek olursa, oluşturma işlemi o kadar daha hızlı, ancak PHP zaman aşımı hataları riski de o kadar yüksek olur."
+
+msgid "The number of entities to process in each queue item.<br>Increasing this number will use more memory but will result in less queries improving generation speed."
+msgstr "Her kuyruk öğesinde işlenecek varlık sayısı. <br>Bu sayının artırılmasıyla daha çok bellek kullanılır, ancak oluşturma hızını iyileştiren daha az sorgu oluşur."
+
+msgid "The base URL is invalid."
+msgstr "Temel URL geçersiz."
+
+msgid "Include this sitemap during generation"
+msgstr "Oluşturma sırasında bu site haritasını dahil et"
+
+msgid "The sitemap ID will be part of the URL and can only contain lowercase letters, numbers, dashes and underscores."
+msgstr "Site haritası tanıtıcısı URL'nin bir parçası olur ve yalnızca küçük harf, sayı, kısa çizgi ve alt çizgi içerebilir."
+
+msgid "The sitemap's type defines its looks and content. Sitemaps types can be configured <a href=\"@url\">here</a>."
+msgstr "Site haritasının tipi görünüşünü ve içeriğini belirler. Site haritası tipleri <a href=\"@url\">burada</a> yapılandırabilir."
+
+msgid "Administrative description"
+msgstr "Yönetsel açıklama"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "Sitemap %label has been updated."
+msgstr "%label site haritası güncellendi."
+
+msgid "Sitemap %label has been created."
+msgstr "%label site haritası oluşturuldu."
+
+msgid "Sitemaps of this type will be built according to the sitemap generator plugin chosen here."
+msgstr "Bu tipteki site haritaları, burada seçilen site haritası oluşturma eklentisine göre oluşturulacaktır."
+
+msgid "Sitemaps of this type will be populated with URLs generated by these URL generator plugins."
+msgstr "Bu tipteki site haritaları, bu URL oluşturma eklentileri tarafından oluşturulan URL adresleriyle doldurulur."
+
+msgid "Sitemap type %label has been updated."
+msgstr "%label site haritası tipi güncellendi."
+
+msgid "Sitemap type %label has been created."
+msgstr "%label site haritası tipi oluşturuldu."
+
+msgid "Sitemap status"
+msgstr "Site haritası durumu"
+
+msgid "Sitemaps can be regenerated on demand here."
+msgstr "Site haritaları buradan talep üzerine yeniden oluşturulabilir."
+
+msgid "Rebuild queue"
+msgstr "Kuyruğu yeniden oluştur"
+
+msgid "Resume generation"
+msgstr "Oluşturmayı sürdür"
+
+msgid "Rebuild queue & generate"
+msgstr "Kuyruğu yeniden oluştur"
+
+msgid "Progress of sitemap regeneration"
+msgstr "Site haritası yeniden oluşturma ilerleme durumu"
+
+msgid "@indexed out of @total queue items have been processed.<br>Each sitemap is published after all of its items have been processed."
+msgstr "@total kuyruk öğesi içinden @indexed kadarı işlendi.<br>Her bir site haritası, bütün öğeleri işlendikten sonra yayımlanır."
+
+msgid "There are no items to be indexed."
+msgstr "Dizinlenecek bir öğe yok."
+
+msgid "Do not index entities of type <em>@bundle</em> in sitemap <em>@sitemap</em>"
+msgstr "<em>@sitemap</em> site haritasındaki <em>@bundle</em> tipi varlıkları dizinleme"
+
+msgid "Index entities of type <em>@bundle</em> in sitemap <em>@sitemap</em>"
+msgstr "<em>@sitemap</em> site haritasındaki <em>@bundle</em> tipi varlıkları dizinle"
+
+msgid "The priority entities of this type will have in the eyes of search engine bots."
+msgstr "Bu tipteki varlıkların arama motoru bot'larına göre sahip olacağı öncelik."
+
+msgid "The frequency with which entities of this type change. Search engine bots may take this as an indication of how often to index them."
+msgstr "Bu tipte varlıkların değiştiği sıklık. Arama motoru robotları, bunu dizinleme sıklığı göstergesi olarak algılayabilir."
+
+msgid "Determines if images referenced by entities of this type should be included in the sitemap."
+msgstr "Bu tipte varlıkların başvurduğu resimlerin site haritasına eklenip eklenmeyeceğini belirler."
+
+msgid "Settings for this entity can be overridden here."
+msgstr "Bu varlığın ayarları burada geçersiz kılınabilir."
+
+msgid "Do not index this <em>@bundle</em> entity in sitemap <em>@sitemap</em>"
+msgstr "<em>@sitemap</em> site haritasındaki bu <em>@bundle</em> varlığını dizinleme"
+
+msgid "Index this <em>@bundle</em> entity in sitemap <em>@sitemap</em>"
+msgstr "<em>@sitemap</em> site haritasındaki bu <em>@bundle</em> varlığını dizinle"
+
+msgid "The priority this <em>@bundle</em> entity will have in the eyes of search engine bots."
+msgstr "Bu <em>@bundle</em> varlığının, arama motoru bot'larına göre sahip olacağı öncelik."
+
+msgid "The frequency with which this <em>@bundle</em> entity changes. Search engine bots may take this as an indication of how often to index it."
+msgstr "Bu <em>@bundle</em> varlığının değişiklik sıklığı. Arama motoru robotları, bunu dizinleme sıklığı göstergesi olarak algılayabilir."
+
+msgid "Determines if images referenced by this <em>@bundle</em> entity should be included in the sitemap."
+msgstr "Bu <em>@bundle</em> varlığı tarafından başvurulan resimlerin site haritasına eklenip eklenmeyeceğini belirler."
+
+msgid "default"
+msgstr "öntanımlı"
+
+msgid "At least one sitemap needs to be defined for a bundle to be indexable.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "Bir kod paketinin dizinlenebilir olması için en az bir site haritası tanımlanmalıdır.<br>Site haritaları <a href=\"@url\">burada</a> yapılandırılabilir."
+
+msgid "Do not index entities of this type in sitemap <em>@sitemap</em>"
+msgstr "<em>@sitemap</em> site haritasındaki bu tip varlıkları dizinleme"
+
+msgid "Index entities of this type in sitemap <em>@sitemap</em>"
+msgstr "<em>@sitemap</em> site haritasındaki bu tip varlıkları dizinle"
+
+msgid "Sitemap file"
+msgstr "Site haritası dosyası"
+
+msgid "Generated by the <a href=\"@url\">@module_name</a> Drupal module."
+msgstr "<a href=\"@url\">@module_name</a> Drupal modülü tarafından oluşturuldu."
+
+msgid "Number of sitemaps in this index"
+msgstr "Bu dizindeki site haritası sayısı"
+
+msgid "Sitemap URL"
+msgstr "Site haritası URL"
+
+msgid "Number of URLs in this sitemap"
+msgstr "Bu site haritasındaki URL sayısı"
+
+msgid "URL location"
+msgstr "URL konumu"
+
+msgid "Last modification date"
+msgstr "Son değişiklik tarihi"
+
+msgid "Translation set"
+msgstr "Çeviri kümesi"
+
+msgid "Images"
+msgstr "Resimler"
+
+msgid "Title"
+msgstr "Başlık"
+
+msgid "Caption"
+msgstr "Başlık"
+
+msgid "Default sitemap generator"
+msgstr "Varsayılan site haritası üreteci"
+
+msgid "Generates a standard conform hreflang sitemap of your content."
+msgstr "İçeriğinizin standart uyumlu hreflang site haritasını oluşturur."
+
+msgid "Sitemap index generator"
+msgstr "Site haritası dizin oluşturucu"
+
+msgid "Generates an index of your sitemaps."
+msgstr "Site haritalarınızın dizinini oluşturur."
+
+msgid "Arbitrary URL generator"
+msgstr "Rastgele URL oluşturucu"
+
+msgid "Generates URLs from data sets collected in the hook_arbitrary_links_alter hook."
+msgstr "hook_arbitrary_links_alter hook içinde toplanan veri kümelerinden URL'ler oluşturur."
+
+msgid "Custom URL generator"
+msgstr "Özel URL oluşturucu"
+
+msgid "Generates URLs set in admin/config/search/simplesitemap/custom."
+msgstr "admin/config/search/simplesitemap/custom dizininde ayarlanan URL'ler oluşturur."
+
+msgid "Menu link URL generator"
+msgstr "Menü bağlantısı URL oluşturucu"
+
+msgid "Generates menu link URLs by overriding the 'entity' URL generator."
+msgstr "'entity' URL oluşturucusunu geçersiz kılarak menü bağlantısı URL'leri oluşturur."
+
+msgid "Entity URL generator"
+msgstr "Varlık URL'si oluşturucu"
+
+msgid "Generates URLs for entity bundles and bundle overrides."
+msgstr "Varlık paketleri ve paket geçersiz kılmaları için URL'ler oluşturur."
+
+msgid "Sitemap URL generator"
+msgstr "Site haritası URL oluşturucu"
+
+msgid "Generates sitemap URLs for a sitemap index."
+msgstr "Bir site haritası dizini için site haritası URL'lerini oluşturur."
+
+msgid "Generating XML sitemaps"
+msgstr "XML site haritaları oluşturuluyor"
+
+msgid "Initializing..."
+msgstr "Başlatılıyor..."
+
+msgid "Processing items from the queue.<br>Each sitemap gets published after all of its items have been processed."
+msgstr "Kuyruktaki öğeler işleniyor.<br>Her bir site haritası, tüm öğeleri işlendikten sonra yayımlanır."
+
+msgid "@indexed out of @total total queue items have been processed."
+msgstr "@indexed / @total kuyruk öğesi işlendi."
+

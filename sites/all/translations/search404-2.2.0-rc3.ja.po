@@ -1,0 +1,241 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "@text"
+msgstr "@text"
+
+msgid "About"
+msgstr "アバウト"
+
+msgid ""
+"Instead of showing a default \"Page not found\"\n"
+"      for a 404 error, this module performs a search on the keywords in\n"
+"      the URL and display results based on the search. You can add basic\n"
+"      settings for the 404 resulting page and other search404\n"
+"      configurations in @link page."
+msgstr ""
+"このモジュールは、404 エラーの発生時にデフォルトの「ページが見つかりません」を\n"
+"      表示する代わりに、URL に含まれているキーワードを検索して、\n"
+"      検索に基づく結果を表示します。404 の結果ページの基本設定と\n"
+"      その他の search404 構成を @link ページに追加できます。\n"
+"      "
+
+msgid "Search 404"
+msgstr "検索 404"
+
+msgid "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found."
+msgstr "404 エラーになる URL で自動的にキーワードを検索し、「ページが見つかりません」メッセージの代わりに結果を表示します。"
+
+msgid "Search"
+msgstr "検索"
+
+msgid "Search 404 settings"
+msgstr "検索 404 設定"
+
+msgid "Configure searching for keywords from URLs that result in 404 errors."
+msgstr "404 エラーになる URL からのキーワード検索を構成します。"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Page not found"
+msgstr "ページが見つかりません"
+
+msgid "The requested page could not be found."
+msgstr "リクエストされたページが見つかりません。"
+
+msgid ""
+"<ul>\n"
+"        <li>Check if your spelling is correct.</li>\n"
+"        <li>Remove quotes around phrases to search for each word individually. <em>bike shed</em> will often show more results than <em>&quot;bike shed&quot;</em>.</li>\n"
+"        <li>Consider loosening your query with <em>OR</em>. <em>bike OR shed</em> will often show more results than <em>bike shed</em>.</li>\n"
+"        </ul>"
+msgstr ""
+"<ul>\n"
+"        <li>スペルに間違いがないかどうか確認してください。</li>\n"
+"        <li>句の前後の引用符を削除して、各単語を個別に検索してください。例えば、「<em>bike shed</em>」と指定する方が「<em>&quot;bike shed&quot;</em>」と指定するよりも多くの結果を得られる可能性が高くなります。</li>\n"
+"        <li><em>OR</em> を使用して照会の条件を緩和してみてください。例えば、「<em>bike OR shed</em>」と指定する方が「<em>bike shed</em>」と指定するよりも多くの結果を得られる可能性が高くなります。</li>\n"
+"        </ul>"
+
+msgid "Your search yielded no results."
+msgstr "検索に一致する結果はありません。"
+
+msgid "The page you requested does not exist."
+msgstr "要求したページは存在していません。"
+
+msgid "The page you requested does not exist. Invalid keywords used."
+msgstr "要求したページが存在しません。無効なキーワードが使用されました。"
+
+msgid "The page you requested does not exist. For your convenience, a search was performed using the query %keys."
+msgstr "要求したページが存在しません。便宜上、照会 %keys を使用して検索が実行されました。"
+
+msgid "Searched %type for %keys."
+msgstr "%typeから%keysを検索しました。"
+
+msgid "Jump directly to the search result when there is only one result"
+msgstr "結果が 1 つだけの場合は検索結果に直接ジャンプ"
+
+msgid "Works only with Core, Apache Solr, Lucene and Xapian searches. An HTTP status of 301 or 302 will be returned for this redirect."
+msgstr "Core、Apache Solr、Lucene、および Xapian の検索でのみ使用できます。このリダイレクトに対しては HTTP ステータス 301 または 302 が返されます。"
+
+msgid "Jump directly to the first search result even when there are multiple results"
+msgstr "結果が複数の場合も最初の検索結果に直接ジャンプ"
+
+msgid "Jump directly to the first search result only on the listed paths."
+msgstr "リストされているパスでのみ最初の検索結果に直接ジャンプします。"
+
+msgid "Enter one path per line. The \"*\" character is a wildcard. Example paths are blog for the blog page and blog/* for every personal blog."
+msgstr "1 行につき 1 つのパスを入力します。\"*\" 文字はワイルドカードです。例えば、ブログ・ページのパスを指定する場合は blog、すべての個人ブログのパスを指定する場合は blog/* と入力します。"
+
+msgid "Do a Google CSE Search instead of a Drupal Search when a 404 occurs"
+msgstr "404 の発生時に Drupal 検索の代わりに Google CSE 検索を実行"
+
+msgid "Requires Google CSE and Google CSE Search modules to be enabled."
+msgstr "Google CSE モジュールおよび Google CSE 検索モジュールが有効になっている必要があります。"
+
+msgid "Do a \"Search by page\" Search instead of a Drupal Search when a 404 occurs"
+msgstr "404 の発生時に Drupal 検索の代わりに「ページによる検索」検索を実行"
+
+msgid "Requires \"Search by page\" module to be enabled."
+msgstr "「ページによる検索」モジュールが有効化になっている必要があります。"
+
+msgid "Do a \"Search\" with custom path instead of a Drupal Search when a 404 occurs"
+msgstr "404 の発生時に Drupal 検索の代わりにカスタム・パスを使用した「検索」を実行"
+
+msgid "Redirect the user to a Custom search path to be entered below. Can be used to open a view with path parameter."
+msgstr "以下で入力されるカスタム検索パスにユーザーをリダイレクトします。これを使用するとパス・パラメーターを使用してビューを開くことができます。"
+
+msgid "Custom search path"
+msgstr "カスタム検索パス"
+
+msgid "The custom search path: example: myownsearch/@keys. The token \"@keys\" will be replaced with the search keys from the URL."
+msgstr "カスタムの検索パス (例: myownsearch/@keys)。トークン \"@keys\" は URL から取得した検索キーに置き換えられます。"
+
+msgid "Use a 301 Redirect instead of 302 Redirect"
+msgstr "302 リダイレクトの代わりに 301 リダイレクトを使用"
+
+msgid "This applies when the option to jump to first result is enabled and also for search404 results pages other than for Core, Apache Solr, Lucene and Xapian."
+msgstr "最初の結果にジャンプするオプションが有効になっている場合に適用されます。Core、Apache Solr、Lucene、および Xapian 以外の 404 検索結果ページにも適用されます。"
+
+msgid "Disable auto search"
+msgstr "自動検索を無効にする"
+
+msgid "Disable automatically searching for the keywords when a page is not found and instead show the populated search form with the keywords. Useful for large sites to reduce server loads."
+msgstr "ページが見つからない場合のキーワードの自動検索を無効にし、キーワードが設定された検索フォームを代わりに表示します。大規模サイトでサーバー負荷を軽減するのに役立ちます。"
+
+msgid "Disable error message"
+msgstr "エラー・メッセージを無効にする"
+
+msgid "Disable the Drupal error message when search results are shown on a 404 page."
+msgstr "検索結果が 404 ページに表示される場合に Drupal のエラー・メッセージが生成されないようにします。"
+
+msgid "Custom error message"
+msgstr "カスタムエラーメッセージ"
+
+msgid "For example, Invalid search for @keys, Sorry the page does not exist, etc."
+msgstr "例えば、「@keysの検索が無効です」、「ページが存在しません」などです。"
+
+msgid "A custom error message instead of default Drupal message, that should be displayed when search results are shown on a 404 page, use \"@keys\" to insert the searched key value if necessary."
+msgstr "検索結果が 404 ページに表示される場合に、デフォルトの Drupal メッセージの代わりに表示されるカスタムのエラー・メッセージ。必要に応じ、\"@keys\" を使用して検索されたキー値を挿入します。"
+
+msgid "Advanced settings"
+msgstr "高度な設定"
+
+msgid "Use OR between keywords when searching"
+msgstr "検索時にキーワードの間に OR を使用する"
+
+msgid "Use a custom string between keywords when searching"
+msgstr "検索時にキーワード間でカスタム・ストリングを使用する"
+
+msgid "using a custom string (for example a hyphen) to concatenate the keywords, has no effect if OR keyword is chosen, leave this empty to concatenate by whitespace"
+msgstr "カスタム・ストリング (例えば、ハイフン) を使用してキーワードを連結すると、OR キーワードを選択しても効果はありません。空白文字で連結するには、この値を空のままにします。"
+
+msgid "Use auto-detection of keywords from search engine referer"
+msgstr "検索エンジンのリファラーからのキーワード自動検出を使用"
+
+msgid "This feature will conduct a search based on the query string got from a search engine if the URL of the search result points to a 404 page in the current website. Currently supported search engines: Google, Yahoo, Altavista, Lycos, Bing and AOL."
+msgstr "この機能は、検索結果の URL が現行 Web サイト内の 404 ページを指している場合に、検索エンジンから取得した照会ストリングに基づいて検索を実行します。現在サポートされている検索エンジンは、Google、Yahoo、Altavista、Lycos、Bing、および AOL です。"
+
+msgid "Ignore language code"
+msgstr "言語コードを無視"
+
+msgid "All enabled language codes will ignored from the search query."
+msgstr "有効な言語コードはすべて、検索照会から無視されます。"
+
+msgid "Words to ignore"
+msgstr "無視する単語"
+
+msgid "These words will be ignored from the search query. Separate words with a space, e.g.: \"and or the\"."
+msgstr "これらの単語は検索照会で無視されます。単語はスペースで区切ります (例: \"and or the\")。"
+
+msgid "Specific paths to ignore"
+msgstr "無視する特定のパス"
+
+msgid "These paths will be ignored. Site default \"Page not found\" page will be displayed. Enter one path per line. The \"*\" character is a wildcard. Example paths are blog for the blog page and blog/* for every personal blog."
+msgstr "これらのパスは無視されます。サイトのデフォルトの「ページが見つかりません」ページが表示されます。1 行につき 1 つのパスを入力します。\"*\" 文字はワイルドカードです。例えば、ブログ・ページのパスを指定する場合は blog、すべての個人ブログのパスを指定する場合は blog/* と入力します。"
+
+msgid "Extensions to ignore"
+msgstr "無視する拡張子"
+
+msgid "These extensions will be ignored from the search query, e.g.: http://www.example.com/invalid/page.php will only search for \"invalid page\". Separate extensions with a space, e.g.: \"htm html php\". Do not include leading dot."
+msgstr "これらの拡張子は検索照会で無視されます。例えば、http://www.example.com/invalid/page.php と指定すると、\"invalid page\" だけが検索されます。拡張子はスペースで区切ります (例: \"htm html php\")。先頭のドットは含めないでください。"
+
+msgid "Extensions to abort search"
+msgstr "検索を中止する拡張子"
+
+msgid "A search will not be performed for a query ending in these extensions. Separate extensions with a space, e.g.: \"gif jpg jpeg bmp png\". Do not include leading dot."
+msgstr "これらの拡張子が末尾に付く照会が指定された場合は、検索が行われません。拡張子はスペースで区切ります (例: \"gif jpg jpeg bmp png\")。先頭のドットは含めないでください。"
+
+msgid "PCRE filter"
+msgstr "PCRE フィルター"
+
+msgid "This regular expression will be applied to filter all queries. The parts of the path that match the expression will be EXCLUDED from the search. You do NOT have to enclose the regex in forward slashes when defining the PCRE. e.g.: use \"[foo]bar\" instead of \"/[foo]bar/\". On how to use a PCRE Regex please refer <a href=\"http://php.net/pcre\">PCRE pages in the PHP Manual</a>."
+msgstr "この正規表現はすべての照会をフィルタリングするために適用されます。この式に一致するパスの部分は検索から除外されます。PCRE を定義するときに正規表現をスラッシュで囲む必要はありません。例えば、\"/[foo]bar/\" ではなく \"[foo]bar\" と指定します。PCRE 正規表現の使用方法については、<a href=\"http://php.net/pcre\">PHP 解説書の PCRE に関するページ</a>を参照してください。"
+
+msgid "Custom page title"
+msgstr "カスタムのページ・タイトル"
+
+msgid "You can enter a value that will be displayed at the title of the webpage e.g. \"Page not found\"."
+msgstr "Web ページのタイトルに表示される値を入力できます (例: 「ページが見つかりません」)。"
+
+msgid "Custom page text"
+msgstr "カスタムのページ・テキスト"
+
+msgid "You can enter a custom text message that can be displayed at the top of the search results, HTML formatting can be used."
+msgstr "検索結果の先頭に表示できるカスタムのテキスト・メッセージを入力できます。HTML フォーマットを使用できます。"
+
+msgid "Add a redirection url for empty search results."
+msgstr "検索結果が空の場合のリダイレクト URL を追加します。"
+
+msgid "You can enter a valid url with a leading \"/\" to display instead of an empty result."
+msgstr "空の結果の代わりに表示する有効な URL を入力できます (先頭に \"/\" を付けてください)。"
+
+msgid "Saving this form will revert the 404 handling on the site to this module."
+msgstr "このフォームを保存すると、サイト上の 404 処理がこのモジュールに戻されます。"
+
+msgid "The redirect URL should not be a space, and should not start with a space."
+msgstr "リダイレクト URL はスペースにすることはできません。また、先頭をスペースにすることはできません。"
+
+msgid "The redirect URL should start with a slash."
+msgstr "リダイレクト URL の先頭はスラッシュでなければなりません。"
+
+msgid "Custom search path should end with search key pattern \"@keys\"."
+msgstr "カスタム検索パスの末尾は、検索キー・パターン「@keys」でなければなりません。"
+
+msgid "Custom search path should not contain special characters other than \"/?=_\"."
+msgstr "カスタム検索パスに「/?=_」以外の特殊文字を含めることはできません。"
+
+msgid "Custom search path should not start with a slash."
+msgstr "カスタム検索パスの先頭をスラッシュにすることはできません。"
+

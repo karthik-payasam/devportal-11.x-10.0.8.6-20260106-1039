@@ -1,0 +1,101 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "The Redirect domain module allows users to redirect between domains."
+msgstr "Etki alanını yeniden yönlendirme modülü, kullanıcıların etki alanları arasında yeniden yönlendirmesine olanak sağlar."
+
+msgid "Uses"
+msgstr "Kullanımlar"
+
+msgid "Manage domain redirects"
+msgstr "Etki alanı yeniden yönlendirmelerini yönet"
+
+msgid "The domain redirect is accessed through <a href=\":domainlist\">Domain Redirects</a>. The user can add the domain redirects through the domain redirect table which consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected. The module also supports the usage of a wildcard redirecting, thus many requests can be handled with one instance of domain redirect."
+msgstr "Etki alanı yeniden yönlendirmesine, <a href=\":domainlist\">Etki Alanı Yeniden Yönlendirmeleri</a> üzerinden erişilebilir. Kullanıcı, yeniden yönlendirme kaynağı olması gereken etki alanını, alt yolu ve yeniden yönlendirme hedefi olması gereken tam url hedefini içeren etki alanı yeniden yönlendirme tablosu üzerinden etki alanı yeniden yönlendirmeleri ekleyebilir. Modül bir joker karakter yeniden yönlendirmesini de destekler, böylece tek bir etki alanı yeniden yönlendirmesi örneğiyle birçok istek işlenebilir."
+
+msgid "The domain redirect table consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected."
+msgstr "Etki alanı yeniden yönlendirme tablosu, yeniden yönlendirme kaynağı olması gereken etki alanından, alt yoldan ve yeniden yönlendirme hedefi olması gereken tam url hedefinden oluşur."
+
+msgid "Example Configuration"
+msgstr "Örnek Yapılandırma"
+
+msgid "Example Redirects"
+msgstr "Örnek Yeniden Yönlendirmeler"
+
+msgid "Request: example.com/redirect => Response: redirected.com/example-path"
+msgstr "İstek: example.com/redirect => Yanıt: redirected.com/example-path"
+
+msgid "Request: foo.com/any-path => Response: bar.com"
+msgstr "İstek: foo.com/any-path => Yanıt: bar.com"
+
+msgid "Precedence"
+msgstr "Öncelik"
+
+msgid "Top-down precedence is used. This means the first matching redirect that is found will be taken. For example, assume these redirect rules:"
+msgstr "Yukarıdan aşağıya öncelik kullanılır. Bu da bulunan ilk eşleşen yönlendirmenin alınacağı anlamına gelir. Örneğin bu yeniden yönlendirme kurallarını varsayın:"
+
+msgid "foo.com/some/path => somedomain.com/path"
+msgstr "foo.com/some/path => somedomain.com/path"
+
+msgid "foo.com/* => wildcardredirect.com"
+msgstr "foo.com/* => wildcardredirect.com"
+
+msgid "foo.com/other/path => otherdomain.com/path"
+msgstr "foo.com/other/path => otherdomain.com/path"
+
+msgid "The following redirects would actually occur:"
+msgstr "Aşağıdaki yeniden yönlendirmeler gerçekleşir:"
+
+msgid "foo.com/other/path => wildcardredirect.com"
+msgstr "foo.com/other/path => wildcardredirect.com"
+
+msgid "Redirect Domain"
+msgstr "Etki Alanını Yeniden Yönlendir"
+
+msgid "Allows users to redirect between domains."
+msgstr "Kullanıcıların etki alanları arasında yeniden yönlendirme yapmasına olanak sağlar."
+
+msgid "Domain redirects"
+msgstr "Etki alanı yeniden yönlendirmeleri"
+
+msgid "Configure domain redirects."
+msgstr "Etki alanı yeniden yönlendirmelerini yapılandırın."
+
+msgid "Redirect domains"
+msgstr "Etki alanlarını yeniden yönlendir"
+
+msgid "Sub path"
+msgstr "Alt yol"
+
+msgid "Destination"
+msgstr "Hedef"
+
+msgid "From domain"
+msgstr "Kaynak etki alanı"
+
+msgid "Add another"
+msgstr "Başka ekle"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "No protocol should be included in the redirect domain."
+msgstr "Etki alanı yeniden yönlendirme işlemine bir protokol dahil edilmemelidir."
+
+msgid "The domain redirects have been saved."
+msgstr "Etki alanı yeniden yönlendirmeleri kaydedildi."
+

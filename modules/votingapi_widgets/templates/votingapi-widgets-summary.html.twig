@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Default template to format a vote summary.
+ *
+ * Copy this file in your default theme folder to create a custom themed email.
+ * If you modify this template you MUST be sure to keep the html, body, and
+ * header tags. This template should produce a fully-formed HTML document.
+ * Failure to include these will result in a malformed email and possibly
+ * errors shown to the user when sending email.
+ *
+ * To override this template for all emails sent by a given module,
+ * rename this template to votingapi-widgets-summary--[module].html.twig.
+ *
+ * Available variables:
+ * - results: Associative array of vote data. Includes the following keys:
+ *   - vote_field_count: the message identifier.
+ *   - vote_field_average: the machine name of the sending module.
+ * - vote:
+ * - field_name:
+ *
+ * @see template_preprocess_votingapi_widgets_summary()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if results.vote_field_count is same as (0) %}
+    <p>{% trans %}No votes have been submitted yet.{% endtrans %}</p>
+{% else %}
+    <p>{% trans %}
+      {{ results.vote_field_count }} vote with a rating of {{ results.vote_field_average }}
+    {% plural results.vote_field_count %}
+      {{ results.vote_field_count }} votes with an average rating of {{ results.vote_field_average }}
+    {% endtrans %}</p>
+{% endif %}

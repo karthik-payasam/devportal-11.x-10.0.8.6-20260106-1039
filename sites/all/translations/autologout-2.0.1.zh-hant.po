@@ -1,0 +1,333 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "關於"
+
+msgid "This module allows you to force site users to be logged out after a given amount of time due to inactivity after first being presented with a confirmation dialog. Your current logout threshold is %seconds seconds."
+msgstr "此模組讓您可以在網站使用者閒置達指定時間量後，強制網站使用者登出（系統會先呈現一個確認對話框）。您的現行登出臨界值為 %seconds 秒。"
+
+msgid "Your current logout threshold"
+msgstr "您的現行登出臨界值"
+
+msgid "The length of inactivity time, in seconds, before automated log out. Must be between 60 and @max_timeout seconds."
+msgstr "自動登出之前的閒置時間長度（以秒為單位）。 必須介於 60 和 @max_timeout 秒之間。"
+
+msgid "The timeout must be an integer greater than 60, and less then %max."
+msgstr "逾時必須為大於 60 且小於 %max 的整數。"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid "Autologout settings are successfully updated. Updated @users"
+msgstr "已順利更新自動登出設定。已更新 @users"
+
+msgid "Automated Logout"
+msgstr "自動登出"
+
+msgid "Adds automated timed logout."
+msgstr "新增自動計時登出"
+
+msgid "Automated logout settings"
+msgstr "自動登出設定"
+
+msgid "Configure default automated logout settings."
+msgstr "配置預設自動登出設定。"
+
+msgid "Change own logout threshold"
+msgstr "變更專屬登出臨界值"
+
+msgid "Administer Autologout"
+msgstr "管理自動登出"
+
+msgid "Enable autologout"
+msgstr "啟用自動登出"
+
+msgid "Timeout value"
+msgstr "逾時值"
+
+msgid "Max timeout value"
+msgstr "逾時值上限"
+
+msgid "Seconds to give a user to respond"
+msgstr "給使用者做出回應的秒數"
+
+msgid "Logout user regardless of activity"
+msgstr "不論活動為何，都登出使用者"
+
+msgid "Disable user-specific logout thresholds"
+msgstr "停用使用者特定的登出臨界值"
+
+msgid "Enable role timeout"
+msgstr "啟用角色逾時"
+
+msgid "Use highest role timeout value"
+msgstr "使用最高的角色逾時值"
+
+msgid "Redirect url"
+msgstr "重新導向 URL"
+
+msgid "Integer label"
+msgstr "整數標籤"
+
+msgid "Message to display"
+msgstr "要顯示的訊息"
+
+msgid "Message displayed after logging out"
+msgstr "登出後顯示的訊息"
+
+msgid "Type of the message displayed"
+msgstr "顯示的訊息類型"
+
+msgid "Modal width"
+msgstr "限制模式寬度"
+
+msgid "Enable admin logout"
+msgstr "啟用管理登出"
+
+msgid "JS timer format"
+msgstr "JS 計時器格式"
+
+msgid "JS timer load"
+msgstr "JS 計時器載入"
+
+msgid "Use alternate logout methode"
+msgstr "使用替代登出方法"
+
+msgid "Use watchdog"
+msgstr "使用監視器"
+
+msgid "Title"
+msgstr "標題"
+
+msgid "Disable buttons"
+msgstr "停用按鈕"
+
+msgid "Yes button text"
+msgstr "是按鈕文字"
+
+msgid "No button text"
+msgstr "無按鈕文字"
+
+msgid "Whitelisted IP addresses"
+msgstr "已列入白名單的 IP 位址"
+
+msgid "Role Settings"
+msgstr "角色設定"
+
+msgid "Enabled"
+msgstr "啟用"
+
+msgid "Timeout"
+msgstr "逾時"
+
+msgid "redirect_url"
+msgstr "redirect_url"
+
+msgid "@message"
+msgstr "@message"
+
+msgid "Session automatically closed for %name by autologout."
+msgstr "由自動登出程序為 %name 自動關閉階段作業。"
+
+msgid "Reset Timeout"
+msgstr "重設逾時"
+
+msgid "Enable autologout on this site."
+msgstr "在此網站上啟用自動登出。"
+
+msgid "Timeout value in seconds"
+msgstr "逾時值（以秒為單位）"
+
+msgid "The length of inactivity time, in seconds, before automated log out. Must be 60 seconds or greater. Will not be used if role timeout is activated."
+msgstr "自動登出之前的閒置時間長度（以秒為單位）。必須為 60 秒以上。在角色逾時已啟動的情況下，不予使用。"
+
+msgid "Max timeout setting"
+msgstr "逾時設定值上限"
+
+msgid "The maximum logout threshold time that can be set by users who have the permission to set user level timeouts."
+msgstr "有權設定使用者層次逾時之使用者可以設定的登出臨界值時間上限。"
+
+msgid "Timeout padding"
+msgstr "逾時填補"
+
+msgid "How many seconds to give a user to respond to the logout dialog before ending their session."
+msgstr "系統在結束使用者階段作業之前給使用者回應登出對話框的秒數。"
+
+msgid "Enable this to autologout user regardless of his activity."
+msgstr "不論使用者的活動為何，都啟用此項以自動登出使用者。"
+
+msgid "Enable this to only allow autologout thresholds to be set globally on this form and don't allow users to set their own logout threshold."
+msgstr "啟用這項設定時，只容許在此表單上廣域設定自動登出臨界值，而不容許使用者設定自己的登出臨界值。"
+
+msgid "Role Timeout"
+msgstr "角色逾時"
+
+msgid "Enable each role to have its own timeout threshold and redirect URL, a refresh may be required for changes to take effect. Any role not ticked will use the default timeout value and default redirect URL. Any role can have a timeout value of 0 which means that they will never be logged out. Roles without specified redirect URL will use the default redirect URL."
+msgstr "讓每一個角色都有自己的逾時臨界值及重新導向 URL，可能需要重新整理，才能讓變更生效。任何未勾選的角色都會使用預設逾時值和預設重新導向 URL。任何角色都可以具有為 0 的逾時值，表示他們永遠不會被登出。未指定重新導向 URL 的角色將會使用預設重新導向 URL。"
+
+msgid "Check this to use the highest timeout value instead of the lowest for users that have more than one role."
+msgstr "勾選此項時，將會針對具有多個角色的使用者，使用最高（而非最低）的逾時值。"
+
+msgid "Redirect URL at logout"
+msgstr "登出時重新導向 URL"
+
+msgid "Send users to this internal page when they are logged out."
+msgstr "使用者登出時，將使用者傳送至此內部頁面。"
+
+msgid "Do not display the logout dialog"
+msgstr "不顯示登出對話框"
+
+msgid "Enable this if you want users to logout right away and skip displaying the logout dialog."
+msgstr "如果您想要使用者立即登出並略過顯示登出對話框，請啟用此選項。"
+
+msgid "Use alternate logout method"
+msgstr "使用替代登出方法"
+
+msgid "Normally when auto logout is triggered, it is done via an AJAX service call. Sites that use an SSO provider, such as CAS, are likely to see this request fail with the error \"Origin is not allowed by Access-Control-Allow-Origin\". The alternate approach is to have the auto logout trigger a page redirect to initiate the logout process instead."
+msgstr "通常，在觸發自動登出時，它是透過 AJAX 服務呼叫來完成。使用 SSO 提供者（例如 CAS）的網站可能會看到此要求失敗，並發出錯誤「Access-Control-Allow-Origin 不容許發送者」。替代方法是讓自動登出程序觸發頁面重新導向，以改為起始登出程序。"
+
+msgid "Dialog title"
+msgstr "對話框標題"
+
+msgid "This text will be dialog box title."
+msgstr "此文字會成為對話框標題。"
+
+msgid "Message to display in the logout dialog"
+msgstr "要在登出對話框中顯示的訊息"
+
+msgid "This message must be plain text as it might appear in a JavaScript confirm dialog."
+msgstr "此訊息必須是純文字，因為它可能會出現在 JavaScript 確認對話框中。"
+
+msgid "Message to display to the user after they are logged out"
+msgstr "使用者被登出之後向其顯示的訊息"
+
+msgid "This message is displayed after the user was logged out due to inactivity. You can leave this blank to show no message to the user."
+msgstr "使用者由於閒置而登出後，畫面上會顯示此訊息。您可以讓此選項保留空白，表示不向使用者顯示任何訊息。"
+
+msgid "Type of the message to display"
+msgstr "要顯示的訊息類型"
+
+msgid "Specifies whether to display the message as status or warning."
+msgstr "指定要將訊息顯示為狀態還是警告。"
+
+msgid "Status"
+msgstr "狀態"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "This modal dialog width in pixels."
+msgstr "此限制模式的對話框寬度（像素）。"
+
+msgid "Disable Yes/No buttons for automatic logout popout."
+msgstr "停用自動登出蹦現對話框的「是/否」按鈕。"
+
+msgid "Custom confirm button text"
+msgstr "自訂確認按鈕文字"
+
+msgid "Add custom text to confirmation button."
+msgstr "新增自訂文字至確認按鈕。"
+
+msgid "Custom decline button text"
+msgstr "自訂拒絕按鈕文字"
+
+msgid "Add custom text to decline button."
+msgstr "新增自訂文字至拒絕按鈕。"
+
+msgid "Enable watchdog Automated Logout logging"
+msgstr "啟用監視器自動登出記載功能"
+
+msgid "Enable logging of automatically logged out users"
+msgstr "啟用自動登出使用者的記載功能"
+
+msgid "Enforce auto logout on admin pages"
+msgstr "在管理頁面上強制執行自動登出"
+
+msgid "If checked, then users will be automatically logged out when administering the site."
+msgstr "如果已勾選，則使用者將在管理網站時自動登出。"
+
+msgid "Whitelisted ip addresses"
+msgstr "已列入白名單的 IP 位址"
+
+msgid "Users from these IP addresses will not be logged out."
+msgstr "這些 IP 位址的使用者將不會被登出。"
+
+msgid "Autologout block time format"
+msgstr "自動登出封鎖時間格式"
+
+msgid "Change the display of the dynamic timer. Available replacement values are: %day%, %month%, %year%, %dow%, %moy%, %years%, %ydays%, %days%, %hours%, %mins%, and %secs%."
+msgstr "變更動態計時器的顯示。可用的取代值包含：%day%、%month%、%year%、%dow%、%moy%、%years%、%ydays%、%days%、%hours%、%mins%、%secs%。"
+
+msgid "Customize"
+msgstr "自訂"
+
+msgid "Role Name"
+msgstr "角色名稱"
+
+msgid "Timeout (seconds)"
+msgstr "逾時（秒）"
+
+msgid "%role role timeout must be an integer greater than 60, less then %max or 0 to disable autologout for that role."
+msgstr "%role 角色逾時必須為大於 60 且小於 %max 的整數，或者為 0（表示對該角色停用自動登出）。"
+
+msgid "%role role redirect URL at logout :redirect_url must begin with a '/'"
+msgstr "%role 角色在登出時的重新導向 URL：redirect_url 的開頭必須是 '/'"
+
+msgid "The timeout value must be an integer 60 seconds or greater."
+msgstr "逾時值必須為 60 以上的整數（秒）。"
+
+msgid "The max timeout must be an integer greater than 60."
+msgstr "逾時上限必須為大於 60 的整數。"
+
+msgid "The max timeout must be an integer lower than or equal to %limit."
+msgstr "逾時上限必須是小於或等於 %limit 的整數。"
+
+msgid "The timeout must be an integer greater than or equal to 60 and less then or equal to %max."
+msgstr "逾時值必須是整數，並且大於或等於 60，以及小於或等於 %max。"
+
+msgid "Redirect URL at logout :redirect_url must begin with a '/'"
+msgstr "登出時的重新導向 URL：redirect_url 的開頭必須是 '/'"
+
+msgid "Whitlelisted IP address list should contain only valid IP addresses, one per row"
+msgstr "已列入白名單的 IP 位址清單只應包含有效的 IP 位址，且每列一個"
+
+msgid ""
+"Autologout does not apply on the current page,\n"
+"         you will be kept logged in whilst this page remains open."
+msgstr ""
+"現行頁面不適用自動登出，\n"
+"         您將保持登入，而此頁面會保持開啟。"
+
+msgid "You will be logged out in @time if this page is not refreshed before then."
+msgstr "如果此頁面未在 @time 之前重新整理，您將在此時段後登出。"
+
+msgid "Automated logout info"
+msgstr "自動登出資訊"
+
+msgid "User"
+msgstr "使用者"
+
+msgid "Autologout user role is enabled."
+msgstr "已啟用自動登出使用者角色。"
+
+msgid "Autologout user role timeout."
+msgstr "自動登出使用者角色逾時。"
+
+msgid "Autologout user role."
+msgstr "自動登出使用者角色。"
+

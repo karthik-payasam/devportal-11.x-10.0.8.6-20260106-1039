@@ -1,0 +1,515 @@
+{#
+/**
+ * @file
+ * Default teaser theme implementation for products.
+ *
+ * @ingroup themeable
+ */
+#}
+{%- set classes = [
+  'node',
+  'node--id-' ~ node.id,
+  ('node--type-' ~ node.bundle)|clean_class,
+  view_mode ? ('node--view-mode-' ~ view_mode)|clean_class,
+  ('productNodeID-' ~ node.id)|clean_class,
+  ('productTitle-' ~ node.title[0].value)|clean_class,
+  ('productVersion-' ~ content.apic_version['#items'][0].value)|clean_class,
+  content.product_state['#items'][0].value ? ('productState-' ~ content.product_state['#items'][0].value)|clean_class
+] -%}
+{% set descClass = "d-none" %}
+
+{# <article id="node-{{ node.id }}" {{ attributes.addClass(classes) }} aria-label="{{ node.title[0].value }}">
+  <div class="apicProduct">
+    <header class="node__header--has-meta node__header apicProductHeader">
+      <div class="breadcrumb">
+        <a href="{{ path('view.products.page_1') }}">{{ 'Products'|t }}</a> /
+      </div>
+      <div class="apicProductTitle">
+        {% if content.apic_image is defined and content.apic_image|render|trim is not empty %}
+          <div class="apicProductIcon">
+            {{ content.apic_image }}
+          </div>
+        {% elseif showPlaceholders %}
+          <div class="apicProductIcon">
+            <img src="{{- placeholderUrl -}}" alt=""/>
+          </div>
+        {% endif %}
+        <div class="apicProductTitleText">
+          <h1 class="productName apicTruncate">
+                <span id="node-{{ node.id }}-title"
+                      class="field field-name-title field-formatter-string field-type-string field-label-hidden">{{- label -}}</span>
+          </h1>
+          {% if showVersions %}
+            <span class="apicProductVersion">{{- content.apic_version -}}</span>
+          {% endif %}
+          {{ content.apic_rating }}
+        </div>
+        {% if content.product_state['#items'][0].value is defined and content.product_state['#items'][0].value is not empty and content.product_state['#items'][0].value != 'published' %}
+          <div class="apicProductState">
+            {{ content.product_state['#items'][0].value }}
+          </div>
+        {% endif %}
+      </div>
+    </header>
+    <div class="SplitPane vertical">
+      {% if embedded_docs is defined and embedded_docs is not empty %}
+        <div class="Pane vertical Pane1">
+          <div class="embeddedDocPagesNav stretch">
+            <ul class="bx--side-nav__items embeddedDocNavLink embeddedDocNavLinkRoot">
+              {% for embedded_doc_page in embedded_docs %}
+                {% if embedded_doc_page.docs is defined %}
+                  <li class="bx--side-nav__menu-item tocItem docItem truncate embeddedDocNavLink {{ embedded_doc_page.name|clean_class }}">
+                    <div class="bx--side-nav__link"><span
+                          class="bx--side-nav__link-text">{{ embedded_doc_page.title }}</span></div>
+                    <ul class="embeddedDocNavLink doc-tree--list {{ embedded_doc_page.name|clean_class }}">
+                      {% for embedded_doc_page_child in embedded_doc_page.docs %}
+                        {% if embedded_doc_page_child.docs is defined %}
+                          <li class="bx--side-nav__menu-item tocItem docItem truncate embeddedDocNavLink {{ embedded_doc_page_child.name|clean_class }}">
+                            <div href="#" class="bx--side-nav__link"><span
+                                  class="bx--side-nav__link-text">{{ embedded_doc_page_child.title }}</span></div>
+                            <ul class="embeddedDocNavLink doc-tree--list {{ embedded_doc_page_child.name|clean_class }}">
+                              {% for embedded_doc_page_grandchild in embedded_doc_page_child.docs %}
+                                <li class="bx--side-nav__menu-item truncate tocItem docItem embeddedDocNavLink {{ embedded_doc_page_grandchild.name|clean_class }}">
+                                  <a href="#"
+                                     class="bx--side-nav__link {% if embedded_doc_page_grandchild.name is same as(initial_embeddeddoc) %}selected{% endif %}"
+                                     data-page="{{ embedded_doc_page_grandchild.name|clean_class }}"><span
+                                        class="bx--side-nav__link-text">{{ embedded_doc_page_grandchild.title }}</span></a>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </li>
+                        {% else %}
+                          <li class="bx--side-nav__menu-item tocItem docItem truncate embeddedDocNavLink {{ embedded_doc_page_child.name|clean_class }}">
+                            <a href="#"
+                               class="bx--side-nav__link {% if embedded_doc_page_child.name is same as(initial_embeddeddoc) %}selected{% endif %}"
+                               data-page="{{ embedded_doc_page_child.name|clean_class }}"><span
+                                  class="bx--side-nav__link-text">{{ embedded_doc_page_child.title }}</span></a>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% else %}
+                  <li class="bx--side-nav__menu-item tocItem docItem truncate embeddedDocNavLink {{ embedded_doc_page.name|clean_class }}">
+                    <a href="#"
+                       class="bx--side-nav__link {% if embedded_doc_page.name is same as(initial_embeddeddoc) %}selected{% endif %}"
+                       data-page="{{ embedded_doc_page.name|clean_class }}"><span
+                          class="bx--side-nav__link-text">{{ embedded_doc_page.title }}</span></a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+              <li class="bx--side-nav__menu-item tocItem docItem truncate embeddedDocNavLink apisandplans">
+                <a href="#"
+                   class="bx--side-nav__link {% if 'apisandplans' is same as(initial_embeddeddoc) %}selected{% endif %}"
+                   data-page="apisandplans"><span class="bx--side-nav__link-text">{{ 'APIs and Plans'|t }}</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      {% endif %}
+      <div class="mainProductContent Pane vertical Pane2">
+        {% if embedded_docs is defined and embedded_docs is not empty %}
+          {% for embedded_doc_page in embedded_docs %}
+            {% if embedded_doc_page.docs is defined %}
+              {% for embedded_doc_child_page in embedded_doc_page.docs %}
+                {% if embedded_doc_child_page.docs is defined %}
+                  {% for embedded_doc_grandchild_page in embedded_doc_child_page.docs %}
+                    <div
+                        class="node__content apicProductBody {{ embedded_doc_grandchild_page.name|clean_class }}{% if embedded_doc_grandchild_page.name is not same as(initial_embeddeddoc) %} hidden{% endif %}">
+                      {{ embedded_doc_grandchild_page.output|raw }}
+                    </div>
+                  {% endfor %}
+                {% else %}
+                  <div
+                      class="node__content apicProductBody {{ embedded_doc_child_page.name|clean_class }}{% if embedded_doc_child_page.name is not same as(initial_embeddeddoc) %} hidden{% endif %}">
+                    {{ embedded_doc_child_page.output|raw }}
+                  </div>
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              <div
+                  class="node__content apicProductBody {{ embedded_doc_page.name|clean_class }}{% if embedded_doc_page.name is not same as(initial_embeddeddoc) %} hidden{% endif %}">
+                {{ embedded_doc_page.output|raw }}
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        <div
+            class="node__content apicProductBody apisandplans {% if 'apisandplans' is not same as(initial_embeddeddoc) %}hidden{% endif %}">
+          <div class="apicProductTags">
+            {{ content.apic_tags }}
+          </div>
+          {% if content.apic_summary['#items'][0].value is defined and content.apic_summary['#items'][0].value is not empty %}
+            <div class="apicProductSummary">
+              {{ content.apic_summary }}
+            </div>
+          {% endif %}
+          {% if content.apic_description['#items'][0].value is defined and content.apic_description['#items'][0].value is not empty %}
+            <div class="apicProductDesc">
+              {{ content.apic_description }}
+            </div>
+          {% endif %}
+          <div class="apicAttachments">
+            {{ content.apic_attachments }}
+          </div>
+          {% if docpages is defined and docpages is not empty %}
+            <div class="customDocPages">
+              <div class="field--label">{{ 'Documentation'|t }}</div>
+              <div class="field--item">
+                {% for docpage in docpages %}
+                  <div class="docPage {{ docpage.title|clean_class }}">
+                    <a href="{{ docpage.url }}">{{ docpage.title }}</a>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+          {% if custom_fields is defined and custom_fields is not empty %}
+            <div class="customFields">
+              {% for custom_field in custom_fields %}
+                <div class="{{ custom_field|clean_class }}">
+                  {{ content[custom_field] }}
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+          {% if custom_extensions is defined and custom_extensions is not empty %}
+            <div class="productCustomAttributes">
+              {% for keyName, keyValue in custom_extensions %}
+                <div class="productCustomAttribute {{ keyName|clean_class }}">
+                  <span class="productCustomAttributeKey">{{ keyName }}</span>: <span class="productCustomAttributeValue">{{ keyValue }}</span>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+          <div class="field apis">
+            <h3 class="field__label label">{{ 'APIs'|t }}</h3>
+            <ul class="apicProductApiList">
+              {{ drupal_view('product_content', 'page_1', node.id) }}
+            </ul>
+          </div>
+          {% if not unenforcedOnly %}
+            {% set multipleRates = false %}
+            {% set requireApproval = false %}
+            <div class="field plans">
+              <h3 class="field__label label">{{ 'Plans'|t }}</h3>
+              <div class="subHeading">
+                {% if not userLoggedIn %}
+                  <div class="notLoggedIn">
+                    <p>
+                      {% if selfSignUpEnabled %}
+                        {% set register_path = path('user.register') %}
+                        {% set login_path = path('user.login') %}
+                        {% trans %}
+                          In order to subscribe, you must <a href="{{ register_path }}">create an account</a> or <a
+                            href="{{ login_path }}">sign in</a>.
+                        {% endtrans %}
+                      {% else %}
+                        {% set login_path = path('user.login') %}
+                        {% trans %}
+                          In order to subscribe, you must <a href="{{ login_path }}">sign in</a>.
+                        {% endtrans %}
+                      {% endif %}</p>
+                  </div>
+                {% endif %}
+              </div>
+
+              {% include "@product/plans-table.html.twig" %}
+
+            </div>
+          {% endif %}
+          {% if content.product_contact_name['#items'][0].value is defined or content.product_contact_email['#items'][0].value is defined or content.product_contact_url['#items'][0].value is defined %}
+            <div class="field contact">
+              <h3 class="field__label label productive-heading-03">{{ 'Contact information'|t }}</h3>
+
+              <div class="apicProductContactInformation">
+
+                {% if content.product_contact_name['#items'][0].value is defined %}
+                  <div class="contactName">{{ content.product_contact_name['#items'][0].value }}</div>
+                {% endif %}
+                {% if content.product_contact_email['#items'][0].value is defined %}
+                  <div class="contactEmail"><a
+                        href="mailto:{{- content.product_contact_email['#items'][0].value -}}">{{ 'email'|t }}</a>
+                  </div>
+                {% endif %}
+                {% if content.product_contact_url['#items'][0].value is defined %}
+                  <div class="contactUrl"><a href="{{- content.product_contact_url['#items'][0].value -}}"
+                                             target="_blank"
+                                             rel="noopener">{{ content.product_contact_url['#items'][0].value }}</a>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+          {% if content.product_terms_of_service['#items'][0].value is defined %}
+            <div class="field apicProductTermsOfService">
+              <h3 class="field__label label">{{ 'Terms of Service'|t }}</h3>
+              <a role="button" class="collapsed fa" data-toggle="collapse" href="#collapseTos" aria-expanded="false"
+                 aria-controls="collapseTos"></a>
+              <div class="tosContainer">
+                <div class="collapse termsOfService" id="collapseTos"
+                     aria-expanded="false">{{ content.product_terms_of_service }}</div>
+              </div>
+            </div>
+          {% endif %}
+          {% if content.product_license_url['#items'][0].value is defined %}
+            <div class="field apicProductLicense">
+              <h3 class="field__label label">{{ 'License'|t }}</h3>
+              <div class="licenseName"><a href="{{- content.product_license_url['#items'][0].value -}}"
+                                          target="_blank"
+                                          rel="noopener">{{ content.product_license_name['#items'][0].value }}</a>
+              </div>
+            </div>
+          {% endif %}
+          <div class="comments">{{ content.comment }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article> #}
+<article id="node-{{ node.id }}" role="article" aria-label="{{ node.title[0].value }}">
+   <div class="pageheading api-header-wrapper">
+      <!-- added cross cutting product condition -->
+       <h3 class="api-header-title">
+         <span>{{- label -}}</span>
+         <span class="api-header-count">{{apiCount}} APIs</span>
+         <span> </span>
+      </h3> 
+      {% if not unenforcedOnly %}
+        {% set multipleRates = false %}
+        {% set requireApproval = false %}
+        <div class="field plans">
+          <h3 class="field__label label">{{ 'Plans'|t }}</h3>
+          <div class="subHeading">
+            {% if not userLoggedIn %}
+              <div class="notLoggedIn">
+                <p>
+                  {% if selfSignUpEnabled %}
+                    {% set register_path = path('user.register') %}
+                    {% set login_path = path('user.login') %}
+                    {% trans %}
+                      In order to subscribe, you must <a href="{{ register_path }}">create an account</a> or <a
+                        href="{{ login_path }}">sign in</a>.
+                    {% endtrans %}
+                  {% else %}
+                    {% set login_path = path('user.login') %}
+                    {% trans %}
+                      In order to subscribe, you must <a href="{{ login_path }}">sign in</a>.
+                    {% endtrans %}
+                  {% endif %}</p>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+   </div>
+   <div>
+      <div class="api-desc-wrapper">
+        <p class="api-desc-details">           
+        {% if content.apic_summary['#items'][0].value is defined and content.apic_summary['#items'][0].value is not empty %}
+            {{ content.apic_summary }}
+          {% else %}
+            {{ content.apic_description }}
+          {% endif %}
+
+
+        </p>
+      </div>
+   </div>
+   <p>
+      <br>
+   </p>
+
+     <ul class="nav nav-tabs" id="product-navbar" >
+         {% for custom_field in custom_fields %}
+      {% if content[custom_field]['#title'] is defined %}
+      <li><a class="nav-link" data-toggle="tab" href="#{{ content[custom_field]["#field_name"] }}"  aria-expanded="true">{{ content[custom_field]['#title'] }}</a></li>
+     {% endif %}
+     {% endfor %}
+      <li class="active"><a class="nav-link" data-toggle="tab" href="#apilist" aria-expanded="false">API List</a></li>
+  {# Documentation tab - show only when documentation exists #}
+
+  {% set has_embedded_docs = embedded_docs is defined and embedded_docs is not empty %}
+  {% set has_docpages = docpages is defined and docpages is not empty %}
+  {% set has_attachments = content.apic_attachments is defined and content.apic_attachments|render|striptags|trim is not empty %}
+
+  {% if has_embedded_docs or has_docpages or has_attachments %}
+
+    <li>
+      <a
+        class="nav-link"
+        data-toggle="tab"
+        href="#documentation"
+        aria-expanded="false">
+        Documentations
+      </a>
+    </li>
+
+  {% endif %}
+   </ul>
+   <div class="tab-content">
+     {% for custom_field in custom_fields %}
+      {% if content[custom_field]['#title'] is defined %}
+        <div id={{ content[custom_field]["#field_name"]}} class="tab-pane fade">
+          {% if content[custom_field]["#field_name"] == "field_flow_chart" %}
+            <div>
+                <ul class="flow_chart_ul">
+                {% for key, item in content.field_flow_chart %}
+                {% if key starts with '#' %}
+                 {# Skip metadata keys like '#theme', '#title', etc. #}
+               {% else %}
+                 <li>
+                 {% if item['#type'] == 'inline_template' and item['#context'].value is defined %}
+                 {{ item['#context'].value }}
+                 {% elseif item['#theme'] == 'image_formatter' %}
+                      {{ item }} {# Let Drupal render the image properly #}
+                 {% else %}
+                      {{ item }}
+                  {% endif %}
+                </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+
+         </div>
+    
+        {% elseif content[custom_field]["#field_name"] == "field_keyfeaturesdata" %}
+            <div class="row">
+             {% for paragraph_item in content.field_keyfeaturesdata %}
+             {% set paragraph_entity = paragraph_item['#paragraph'] %}
+             {% if paragraph_entity.field_key_feature_desc.value is not empty or paragraph_entity.field_key_feature_image.entity is defined %}
+               <div class="col-md-4">
+               <div class="d-flex align-items-center field_keyfeaturemargin">
+                  {% if paragraph_entity.field_key_feature_image.entity is defined %}
+                  {% set image = paragraph_entity.field_key_feature_image.entity.fileuri|image_style('thumbnail') %}
+                   <img src="{{ image }}" alt="Key Feature Image">
+                  {% endif %}
+
+               <div class="key-feature-desc-wrapper d-flex">
+                  <p>
+                    {{ paragraph_entity.field_key_feature_desc.value }}
+
+                  </p>
+               </div>
+           </div>
+         </div>
+   
+          {% endif %}
+          {% endfor %}
+     </div>
+        {% elseif content[custom_field]["#field_name"] == "field_usecases" %}
+          <div>
+                
+          <ul>
+             {% for key, item in content.field_usecases %}
+              {% if key starts with '#' %}
+             {# Skip metadata keys like '#theme', '#title', etc. #}
+            {% else %}
+            <li>
+                 {% if item['#type'] == 'inline_template' and item['#context'].value is defined %}
+                 {{ item['#context'].value|nl2br }}
+                 {% elseif item['#theme'] == 'image_formatter' %}
+                   {{ item }} {# Let Drupal render the image properly #}
+               {% else %}
+                  {{ item }}
+             {% endif %}
+           </li>
+         {% endif %}
+             {% endfor %}
+        </ul>
+
+      </div>
+        {% endif %}
+      </div>
+     {% endif %}
+     {% endfor %}
+      <div id="apilist" class="tab-pane active">
+         <div class="card">
+            <div id="productcreativeapi">
+               <div class="card-body">
+                  <ul class="list-group">
+                  {% for api in apiList %}
+                      {% if api.node.apic_pathalias[0].value is defined and api.node.apic_pathalias[0].value is not empty %}
+                        {% set apiNode = api.node.apic_pathalias[0].value %}
+                      {% else %}
+                        {% set apiNode = api.node.id %}
+                      {% endif %}
+                      <li class="list-group-item1" id="api-559" data-redirect-url="{{ path('product.api', {'prodNode': node.id, 'apiNode': apiNode}) }}">
+                        <div class="list-group-item-div">
+                           <span>
+                              <a class="product_a" href="{{- path('product.api', {'prodNode': node.id, 'apiNode': apiNode}) -}}" rel="bookmark">
+                                {{ api.node.title[0].value }}
+                              </a>
+                           </span>
+                           <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="views-field views-field-apic-description">
+                           <div class="field-content">
+                              {% if showVersions %}
+                                <a href="{{- path('product.api', {'prodNode': node.id, 'apiNode': apiNode}) -}}" rel="bookmark">
+                                <span class="apicProductApiVersion">{{ api.node.apic_version[0].value }}</span>
+                              </a>
+                            {% endif %}
+                           </div>
+                        </div>
+                     </li> 
+                  {% endfor %}                     
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+<!-- DOCUMENTATION TAB -->
+<!-- ===================================== -->
+
+<div id="documentation" class="tab-pane fade documentation-product">
+
+ <div class="mainProductContent Pane vertical Pane2">
+        {% if embedded_docs is defined and embedded_docs is not empty %}
+          {% for embedded_doc_page in embedded_docs %}
+            {% if embedded_doc_page.docs is defined %}
+              {% for embedded_doc_child_page in embedded_doc_page.docs %}
+                {% if embedded_doc_child_page.docs is defined %}
+                  {% for embedded_doc_grandchild_page in embedded_doc_child_page.docs %}
+                    <div
+                        class="node__content apicProductBody {{ embedded_doc_grandchild_page.name|clean_class }}{% if embedded_doc_grandchild_page.name is not same as(initial_embeddeddoc) %} hidden{% endif %}">
+                      {{ embedded_doc_grandchild_page.output|raw }}
+                    </div>
+                  {% endfor %}
+                {% else %}
+                  <div
+                      class="node__content apicProductBody {{ embedded_doc_child_page.name|clean_class }}{% if embedded_doc_child_page.name is not same as(initial_embeddeddoc) %} hidden{% endif %}">
+                    {{ embedded_doc_child_page.output|raw }}
+                  </div>
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              <div
+                  class="node__content apicProductBody {{ embedded_doc_page.name|clean_class }}{% if embedded_doc_page.name is not same as(initial_embeddeddoc) %} hidden{% endif %}">
+                {{ embedded_doc_page.output|raw }}
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        <div
+            class="node__content apicProductBody apisandplans {% if 'apisandplans' is not same as(initial_embeddeddoc) %}hidden{% endif %}">
+          <div class="apicAttachments">
+            {{ content.apic_attachments }}
+          </div>
+          {% if docpages is defined and docpages is not empty %}
+            <div class="customDocPages">
+              <div class="field--item">
+                {% for docpage in docpages %}
+                  <div class="docPage {{ docpage.title|clean_class }}">
+                    <a href="{{ docpage.url }}">{{ docpage.title }}</a>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>                  
+          {% endif %}   
+        </div>
+      </div>
+
+</div>
+   </div>
+</article>

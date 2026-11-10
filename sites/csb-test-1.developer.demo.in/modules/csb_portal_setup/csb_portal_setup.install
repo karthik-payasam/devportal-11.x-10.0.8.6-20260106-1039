@@ -1,0 +1,32 @@
+
+
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function csb_portal_setup_install(): void {
+  $module_path = \Drupal::service('extension.list.module')
+    ->getPath('csb_portal_setup');
+
+  require_once DRUPAL_ROOT . '/' . $module_path . '/blocks/home.inc';
+
+  csb_why_choose_api_create_block();
+  csb_create_api_onboarding_flow_block();
+  csb_create_api_new_offering_products_block();
+  csb_create_api_hero_section_block();
+  csb_create_connect_with_us_block();
+
+  require_once DRUPAL_ROOT . '/' . $module_path . '/content/content.inc';
+  csb_create_how_it_works_page();
+  csb_create_why_partner_with_us_page();
+  csb_create_become_partner_page();
+  csb_create_security_features_information_page();
+  require_once DRUPAL_ROOT . '/' . $module_path . '/menu/menu.inc';
+  csb_create_menu_bar();
+  csb_create_sign_in_menu();
+  csb_create_footer_menu();
+
+}
+
+

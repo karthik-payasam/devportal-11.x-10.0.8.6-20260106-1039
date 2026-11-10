@@ -1,0 +1,241 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "@text"
+msgstr "@text"
+
+msgid "About"
+msgstr "Sobre"
+
+msgid ""
+"Instead of showing a default \"Page not found\"\n"
+"      for a 404 error, this module performs a search on the keywords in\n"
+"      the URL and display results based on the search. You can add basic\n"
+"      settings for the 404 resulting page and other search404\n"
+"      configurations in @link page."
+msgstr ""
+"Em vez de mostrar o padrão \"Page not found\"\n"
+"      para um erro 404, este módulo executa uma procura nas palavras-chaves na\n"
+"      URL e exibe os resultados com base na procura. É possível incluir configurações\n"
+"      básicas para a página resultante de 404 e outras search404\n"
+"      configurações na página @link."
+
+msgid "Search 404"
+msgstr "Search 404"
+
+msgid "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found."
+msgstr "Procurar automaticamente pelas palavras-chave nas URLs que resultam em erros 404 e mostrar os resultados em vez de mostrar Página não localizada. "
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Search 404 settings"
+msgstr "Configurações do Search 404"
+
+msgid "Configure searching for keywords from URLs that result in 404 errors."
+msgstr "Configurar a procura por palavras-chave a partir de URLs que resultam em erros 404."
+
+msgid "Settings"
+msgstr "Configurações"
+
+msgid "Page not found"
+msgstr "A página não foi encontrada"
+
+msgid "The requested page could not be found."
+msgstr "A página solicitada não foi encontrada."
+
+msgid ""
+"<ul>\n"
+"        <li>Check if your spelling is correct.</li>\n"
+"        <li>Remove quotes around phrases to search for each word individually. <em>bike shed</em> will often show more results than <em>&quot;bike shed&quot;</em>.</li>\n"
+"        <li>Consider loosening your query with <em>OR</em>. <em>bike OR shed</em> will often show more results than <em>bike shed</em>.</li>\n"
+"        </ul>"
+msgstr ""
+"<ul>\n"
+"        <li>Verifique se a ortografia está correta.</li>\n"
+"        <li>Remova aspas em torno das frases para procurar por cada palavra individualmente. <em>bike shed</em> geralmente mostra mais resultados do que <em>&quot;bike shed&quot;</em>.</li>\n"
+"        <li>Considere ampliar sua consulta com <em>OR</em>. <em>bike OR shed</em> geralmente mostra mais resultados do que <em>bike shed</em>.</li>\n"
+"        </ul>"
+
+msgid "Your search yielded no results."
+msgstr "Sua busca não retornou resultados."
+
+msgid "The page you requested does not exist."
+msgstr "A página requisitada não existe."
+
+msgid "The page you requested does not exist. Invalid keywords used."
+msgstr "A página que você solicitou não foi encontrada.Palavras-chave inválidas usadas."
+
+msgid "The page you requested does not exist. For your convenience, a search was performed using the query %keys."
+msgstr "A página que você solicitou não foi encontrada. Para sua conveniência, uma busca foi feita usando os temos: %keys."
+
+msgid "Searched %type for %keys."
+msgstr "Pesquisado %keys em %type."
+
+msgid "Jump directly to the search result when there is only one result"
+msgstr "Ir diretamente para o resultado da procura quando houver apenas um resultado"
+
+msgid "Works only with Core, Apache Solr, Lucene and Xapian searches. An HTTP status of 301 or 302 will be returned for this redirect."
+msgstr "Funciona apenas com as procuras Core, Apache Solr, Lucene e Xapian. Um status de HTTP de 301 ou 302 será retornado para este redirecionamento."
+
+msgid "Jump directly to the first search result even when there are multiple results"
+msgstr "Ir diretamente para o primeiro resultado da procura, mesmo quando há múltiplos resultados"
+
+msgid "Jump directly to the first search result only on the listed paths."
+msgstr "Vá diretamente para o primeiro resultado da procura apenas nos caminhos listados."
+
+msgid "Enter one path per line. The \"*\" character is a wildcard. Example paths are blog for the blog page and blog/* for every personal blog."
+msgstr "Digite uma URL por linha. O caractere \"*\" é um curinga. Os caminhos de exemplo são blogs para a página do blog e do blog/* para cada blog pessoal."
+
+msgid "Do a Google CSE Search instead of a Drupal Search when a 404 occurs"
+msgstr "Realizar uma procura CSE Google em vez de uma procura Drupal quando uma mensagem 404 ocorre"
+
+msgid "Requires Google CSE and Google CSE Search modules to be enabled."
+msgstr "Requer que os módulos Google CSE e Google CSE Search sejam ativados."
+
+msgid "Do a \"Search by page\" Search instead of a Drupal Search when a 404 occurs"
+msgstr "Realizar uma procura \"Procurar por página\" em vez de uma procura Drupal quando uma mensagem 404 ocorre"
+
+msgid "Requires \"Search by page\" module to be enabled."
+msgstr "Requer que o módulo \"Procurar por página\" seja ativado."
+
+msgid "Do a \"Search\" with custom path instead of a Drupal Search when a 404 occurs"
+msgstr "Realizar uma \"Procura\" em vez de uma procura Drupal quando uma mensagem 404 ocorre"
+
+msgid "Redirect the user to a Custom search path to be entered below. Can be used to open a view with path parameter."
+msgstr "Redirecionar o usuário para um caminho de procura customizado a ser inserido abaixo. Pode ser usado para abrir uma visualização com parâmetro de caminho."
+
+msgid "Custom search path"
+msgstr "Caminho da procura customizado"
+
+msgid "The custom search path: example: myownsearch/@keys. The token \"@keys\" will be replaced with the search keys from the URL."
+msgstr "O caminho da procura customizado: exemplo: myownsearch/@keys. O token \"@keys\" será substituído pelas chaves de procura da URL."
+
+msgid "Use a 301 Redirect instead of 302 Redirect"
+msgstr "Utilizar um redirecionamento 301 ao invés de 302"
+
+msgid "This applies when the option to jump to first result is enabled and also for search404 results pages other than for Core, Apache Solr, Lucene and Xapian."
+msgstr "Isso se aplica quando a opção para ir para o primeiro resultado é ativada e também para páginas de resultados de procura 404 diferentes do Core, Apache Solr, Lucene e Xapian."
+
+msgid "Disable auto search"
+msgstr "Desabilitar busca automática"
+
+msgid "Disable automatically searching for the keywords when a page is not found and instead show the populated search form with the keywords. Useful for large sites to reduce server loads."
+msgstr "Desativar a procura automaticamente para as palavras-chave quando uma página não é localizada e mostrar o formulário de procura preenchido com as palavras-chave. Útil para sites grandes para reduzir carregamentos do servidor."
+
+msgid "Disable error message"
+msgstr "Desabilitar mensagens de erro"
+
+msgid "Disable the Drupal error message when search results are shown on a 404 page."
+msgstr "Desabilitar mensagens de erro do Drupal quando os resultados apresentam uma página de erro 404."
+
+msgid "Custom error message"
+msgstr "Mensagem de erro personalizada"
+
+msgid "For example, Invalid search for @keys, Sorry the page does not exist, etc."
+msgstr "Por exemplo, procura inválida para @keys, a página não existe, etc."
+
+msgid "A custom error message instead of default Drupal message, that should be displayed when search results are shown on a 404 page, use \"@keys\" to insert the searched key value if necessary."
+msgstr "Uma mensagem de erro customizada em vez de uma mensagem Drupal padrão, que deve ser exibida quando os resultados da procura são mostrados em uma página 404; use \"@keys\" para inserir o valor da chave procurada, se necessário."
+
+msgid "Advanced settings"
+msgstr "Configurações avançadas"
+
+msgid "Use OR between keywords when searching"
+msgstr "Utilize OR entre as palavras-chave durante a procura"
+
+msgid "Use a custom string between keywords when searching"
+msgstr "Usar uma sequência customizada entre palavras-chave ao procurar"
+
+msgid "using a custom string (for example a hyphen) to concatenate the keywords, has no effect if OR keyword is chosen, leave this empty to concatenate by whitespace"
+msgstr "usando uma sequência customizada (por exemplo, um hífen) para concatenar as palavras-chave, não terá efeito se a palavra-chave OR for escolhida, deixe vazio para concatenar por espaço em branco"
+
+msgid "Use auto-detection of keywords from search engine referer"
+msgstr "Usar detecção automática de palavras-chave do referenciador do mecanismo de procura"
+
+msgid "This feature will conduct a search based on the query string got from a search engine if the URL of the search result points to a 404 page in the current website. Currently supported search engines: Google, Yahoo, Altavista, Lycos, Bing and AOL."
+msgstr "Esse recurso realizará uma procura com base na sequência de consulta obtida de um mecanismo de procura se a URL do resultado da procura apontar para uma página 404 no site atual. Mecanismos de procura suportados atualmente: Google, Yahoo, Altavista, Lycos, Bing e AOL."
+
+msgid "Ignore language code"
+msgstr "Ignorar código de idioma"
+
+msgid "All enabled language codes will ignored from the search query."
+msgstr "Todos os códigos de idioma ativados serão ignorados da consulta de procura."
+
+msgid "Words to ignore"
+msgstr "Palavras para ignorar"
+
+msgid "These words will be ignored from the search query. Separate words with a space, e.g.: \"and or the\"."
+msgstr "Essas palavras serão ignoradas da consulta de procura. Separe as palavras com um espaço, por exemplo: \" e ou o \"."
+
+msgid "Specific paths to ignore"
+msgstr "Caminhos específicos para ignorar"
+
+msgid "These paths will be ignored. Site default \"Page not found\" page will be displayed. Enter one path per line. The \"*\" character is a wildcard. Example paths are blog for the blog page and blog/* for every personal blog."
+msgstr "Esses caminhos serão ignorados. A página \"Página não localizada\" padrão do site será exibida. Digite uma URL por linha. O caractere \"*\" é um curinga. Os caminhos de exemplo são blogs para a página do blog e do blog/* para cada blog pessoal."
+
+msgid "Extensions to ignore"
+msgstr "Extensões para ignorar"
+
+msgid "These extensions will be ignored from the search query, e.g.: http://www.example.com/invalid/page.php will only search for \"invalid page\". Separate extensions with a space, e.g.: \"htm html php\". Do not include leading dot."
+msgstr "Essas extensões serão ignoradas da consulta de procura, por exemplo: http://www.example.com/invalid/page.php procurará apenas por \"página inválida\". Separe as extensões com um espaço, por exemplo: \" htm html php \". Não inclua um ponto à esquerda."
+
+msgid "Extensions to abort search"
+msgstr "Extensões para abortar busca"
+
+msgid "A search will not be performed for a query ending in these extensions. Separate extensions with a space, e.g.: \"gif jpg jpeg bmp png\". Do not include leading dot."
+msgstr "Uma procura não será executada para uma consulta que terminar com essas extensões. Separe as extensões com um espaço, por exemplo: \" gif jpeg png bmp jpg\". Não inclua um ponto à esquerda."
+
+msgid "PCRE filter"
+msgstr "Filtro PCRE"
+
+msgid "This regular expression will be applied to filter all queries. The parts of the path that match the expression will be EXCLUDED from the search. You do NOT have to enclose the regex in forward slashes when defining the PCRE. e.g.: use \"[foo]bar\" instead of \"/[foo]bar/\". On how to use a PCRE Regex please refer <a href=\"http://php.net/pcre\">PCRE pages in the PHP Manual</a>."
+msgstr "Essa expressão comum será aplicada para filtrar todas as consultas. As partes do caminho que correspondem à expressão serão EXCLUÍDAS da procura. NÃO é necessário colocar a expressão regular entre barras ao definir o PCRE. Por exemplo: use \"[foo]bar\" em vez de \"/[foo]bar/\". Sobre como usar uma expressão regular PCRE, consulte <a href=\"http://php.net/pcre\">Páginas do PCRE no manual PHP</a>."
+
+msgid "Custom page title"
+msgstr "Título de página personalizado"
+
+msgid "You can enter a value that will be displayed at the title of the webpage e.g. \"Page not found\"."
+msgstr "É possível inserir um valor que será exibido no título da página da web, por exemplo, \"Página não localizada\"."
+
+msgid "Custom page text"
+msgstr "Página customizada de texto"
+
+msgid "You can enter a custom text message that can be displayed at the top of the search results, HTML formatting can be used."
+msgstr "É possível inserir uma mensagem de texto customizada que possa ser exibida na parte superior dos resultados da procura e também usar a formatação HTML.  "
+
+msgid "Add a redirection url for empty search results."
+msgstr "Incluir uma URL de redirecionamento para resultados da procura vazios."
+
+msgid "You can enter a valid url with a leading \"/\" to display instead of an empty result."
+msgstr "É possível inserir uma URL válida com uma \"/\" inicial a ser exibida em vez de um resultado vazio."
+
+msgid "Saving this form will revert the 404 handling on the site to this module."
+msgstr "Salvar este formulário reverterá a manipulação de 404 no site para este módulo."
+
+msgid "The redirect URL should not be a space, and should not start with a space."
+msgstr "A URL de redirecionamento não deve ser um espaço e não deve ser iniciada com um espaço."
+
+msgid "The redirect URL should start with a slash."
+msgstr "A URL de redirecionamento deve ser iniciada com uma barra."
+
+msgid "Custom search path should end with search key pattern \"@keys\"."
+msgstr "O caminho da procura customizada deve terminar com o padrão de chave de procura \"@keys\"."
+
+msgid "Custom search path should not contain special characters other than \"/?=_\"."
+msgstr "O caminho da procura customizada não deve conter caracteres especiais diferentes de \"/?=_\"."
+
+msgid "Custom search path should not start with a slash."
+msgstr "O caminho da procura customizada não deve ser iniciado com uma barra."
+

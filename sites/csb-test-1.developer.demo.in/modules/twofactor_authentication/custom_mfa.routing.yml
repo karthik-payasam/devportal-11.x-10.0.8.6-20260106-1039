@@ -1,0 +1,7 @@
+custom_mfa.modal_form:
+  path: '/user/mfa-verify'
+  defaults:
+    _form: '\Drupal\custom_mfa\Form\MfaModalForm'
+    _title: 'MFA Verification'
+  requirements:
+    _role: 'authenticated'

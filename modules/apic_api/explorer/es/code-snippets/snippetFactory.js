@@ -1,0 +1,1 @@
+import{renderSnippet as a}from"./kafka";import{apiTypes as b}from"./constants";var c=function(c){switch(c){case b.kafka:return a;default:throw new Error("".concat(c," is not supported"))}};export{c as snippetFactory};

@@ -1,0 +1,888 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "EU Cookie Compliance Consents"
+msgstr "Souhlas se soubory cookie v EU"
+
+msgid "EU Cookie Compliance consent data from the database."
+msgstr "Data souhlasu se soubory cookie v EU z databáze."
+
+msgid "User ID"
+msgstr "ID uživatele"
+
+msgid "User ID."
+msgstr "ID uživatele."
+
+msgid "Users"
+msgstr "Uživatelé"
+
+msgid "Timestamp"
+msgstr "Časové razítko"
+
+msgid "Time of consent."
+msgstr "Doba souhlasu."
+
+msgid "IP address"
+msgstr "IP adresa"
+
+msgid "The IP address."
+msgstr "Adresa IP."
+
+msgid "Consent Type"
+msgstr "Typ souhlasu"
+
+msgid "The type of consent, such as \"banner\" for the banner and form_id for forms."
+msgstr "Typ souhlasu, např. \"banner\", pro proužek a form_id pro formuláře."
+
+msgid "Revision ID"
+msgstr "ID revize"
+
+msgid "Revision of the privacy policy at the time of consent."
+msgstr "Revize zásady ochrany osobních údajů v době souhlasu."
+
+msgid "About"
+msgstr "Popis"
+
+msgid "This module intends to deal with the EU Directive on Privacy and Electronic Communications that comes into effect on 26th May 2012. From that date, if you are not compliant or visibly working towards compliance, you run the risk of enforcement action, which can include a fine of up to half a million pounds for a serious breach."
+msgstr "Tento modul je určen k řešení náležitostí týkajících se směrnice EU o soukromí a elektronických komunikacích s platností od 26. května 2012. Nebudete-li od tohoto data danou směrnici dodržovat nebo nebudete-li na jejím dodržování viditelně pracovat, vystavujete se riziku donucovacího opatření, které může zahrnovat pokutu ve výši až půl milionu liber za vážné porušení."
+
+msgid "How it works"
+msgstr "Princip činnosti"
+
+msgid "The module displays a banner at the bottom or the top of website to make users aware of the fact that cookies are being set. The user may then give his/her consent or move to a page that provides more details. Consent is given by user pressing the agree buttons or by continuing browsing the website. Once consent is given another banner appears with a \"Thank you\" message."
+msgstr "Modul zobrazí v dolní nebo horní části webu proužek, aby uživatelé věděli, že jsou nastavovány soubory cookie. Uživatel pak může udělit svůj souhlas nebo přejít na stránku, která poskytuje více podrobností. Uživatel udělí souhlas stisknutím tlačítka souhlasu nebo pokračováním v prohlížení webu. Po udělení souhlasu se zobrazí další proužek se zprávou \"Děkujeme\"."
+
+msgid "The module provides a settings page where the banner can be customized. There are also template files for the banners that can be overridden by your theme."
+msgstr "Modul poskytuje stránku nastavení, kde lze proužek upravit. Existují také soubory šablon pro proužky, které lze přepsat vaším motivem."
+
+msgid "Installation"
+msgstr "Instalace"
+
+msgid "Unzip the files to the \"sites/all/modules\" OR \"modules\" directory and enable the module."
+msgstr "Rozbalte soubory do adresáře \"sites/all/modules\" NEBO \"modules\" a povolte modul."
+
+msgid "If desired, give the administer EU Cookie Compliance banner permissions that allow users of certain roles access the administration page. You can do so on the admin/user/permissions page."
+msgstr "V případě potřeby udělte oprávnění pro administraci proužku s výzvou k EU souhlasu s používáním souborů cookie, která umožní uživatelům určitých rolí přístup ke stránce administrace. Můžete to provést na stránce admin/user/permissions."
+
+msgid "there is also a 'display eu cookie compliance banner' permission that helps you show the banner to the roles you desire."
+msgstr "existuje také oprávnění 'zobrazit proužek s výzvou k EU souhlasu s používáním souborů cookie', které vám pomůže zobrazit proužek požadovaným rolím."
+
+msgid "You may want to create a page that would explain how your site uses cookies. Alternatively, if you have a privacy policy, you can link the banner to that page (see next step)."
+msgstr "Možná budete chtít vytvořit stránku, která by vysvětlila, jak váš web používá soubory cookie. Máte-li případně zásady ochrany osobních údajů, můžete proužek propojit s touto stránkou (viz další krok)."
+
+msgid "Go to the admin/config/system/eu-cookie-compliance page to configure and enable the banner."
+msgstr "Chcete-li tento proužek nakonfigurovat a povolit, přejděte na stránku admin/config/system/eu-cookie-compliance."
+
+msgid "If you want to customize the banner background and text color, either type in the hex values or simply install http://drupal.org/project/coloris."
+msgstr "Chcete-li přizpůsobit pozadí proužku a barvu textu, zadejte buď hexadecimální hodnoty, nebo jednoduše nainstalujte http://drupal.org/project/coloris."
+
+msgid "If you want to theme your banner override the themes in the template file."
+msgstr "Chcete-li, aby motiv vašeho proužku přepsal motivy v souboru šablony."
+
+msgid "If you want to show the message in EU countries only, install the Smart IP module: http://drupal.org/project/smart_ip and enable the option on the admin page."
+msgstr "Chcete-li zprávu zobrazit pouze v zemích EU, nainstalujte modul Smart IP http://drupal.org/project/smart_ip a povolte volbu na stránce administrace."
+
+msgid "NOTICE: The module does not audit your cookies nor does it prevent cookies from being set."
+msgstr "UPOZORNĚNÍ: Modul vaše soubory cookie neprověřuje ani nebrání v nastavení souborů cookie."
+
+msgid "For developers"
+msgstr "Pro vývojáře"
+
+msgid "If you want to conditionally set cookies in your module, there is a javascript function provided that returns TRUE if the current user has given his consent:"
+msgstr "Pokud chcete soubory cookie ve vašem modulu nastavovat podmíněně, existuje funkce skriptu Javascript, která vrátí hodnotu TRUE, pokud aktuální uživatel udělil svůj souhlas:"
+
+msgid "Could not read the EU Cookie Compliance JavaScript file that is used to handle disabled scripts. There may be a problem with your file system or the file may be missing. Try accessing the EU Cookie Compliance settings page and re-save the form."
+msgstr "Nelze přečíst soubor skriptu JavaScript shody souboru cookie EU, který se používá ke zpracování zakázaných skriptů. Je možné, že se vyskytl problém se systémem souborů, nebo že soubor chybí. Pokuste se získat přístup ke stránce nastavení shody souboru cookie EU a formulář znovu uložte."
+
+msgid "%name must be a HEX value (without leading #) or empty."
+msgstr "%name  musí být HEXADECIMÁLNÍ hodnota (bez úvodního znaku #) nebo prázdná."
+
+msgid "<h2>Thank you for accepting cookies</h2><p>You can now hide this message or find out more about cookies.</p>"
+msgstr "<h2>Děkujeme za přijetí souborů cookie</h2><p>Tuto zprávu můžete nyní skrýt, nebo se můžete dozvědět více o souborech cookie.</p>"
+
+msgid "Accept"
+msgstr "Přijmout"
+
+msgid "More info"
+msgstr "Další informace"
+
+msgid "Hide"
+msgstr "Skrýt"
+
+msgid "<h2>We use cookies on this site to enhance your user experience</h2><p>By clicking the Accept button, you agree to us doing so.</p>"
+msgstr "<h2>Soubory cookie používáme na těchto stránkách pro vylepšení vašich uživatelských zkušeností</h2><p>Klepnutím na tlačítko Přijmout, souhlasíte s tím, že tak činíme.</p>"
+
+msgid "<h2>We use cookies on this site to enhance your user experience</h2><p>By tapping the Accept button, you agree to us doing so.</p>"
+msgstr "<h2>Soubory cookie používáme na těchto stránkách pro vylepšení vašich uživatelských zkušeností</h2><p>Ťuknutím na tlačítko Přijmout souhlasíte s tím, že tak činíme.</p>"
+
+msgid "No, thanks"
+msgstr "Ne, díky"
+
+msgid "<h2>We use cookies on this site to enhance your user experience</h2><p>You have given your consent for us to set cookies.</p>"
+msgstr "<h2>Soubory cookie používáme na těchto stránkách pro vylepšení vašich uživatelských zkušeností</h2><p>Udělili jste svůj souhlas k nastavení souborů cookie.</p>"
+
+msgid "Withdraw consent"
+msgstr "Stáhnout souhlas"
+
+msgid "Privacy settings"
+msgstr "Nastavení soukromí"
+
+msgid "Save preferences"
+msgstr "Uložit předvolby"
+
+msgid "Accept all cookies"
+msgstr "Přijmout všechny cookie"
+
+msgid "EU Cookie Compliance"
+msgstr "Souhlas se soubory cookie v EU"
+
+msgid "Language @language_id: Your privacy policy link is not set or is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "Jazyk @language_id: Odkaz na zásady ochrany osobních údajů není nastaven, nebo ukazuje na úvodní stránku. Jedná se o výchozí hodnotu po instalaci, a dokud není vaše zásada ochrany osobních údajů skutečně zveřejněna na úvodní stránce, budete muset vytvořit samostatnou stránku pro zásadu ochrany osobních údajů a odkázat na tuto stránku."
+
+msgid "Privacy policy link not provided"
+msgstr "Odkaz na zásady ochrany osobních údajů nebyl poskytnut"
+
+msgid "Language @language_id: Your privacy policy link is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "Jazyk @language_id: Odkaz na zásady ochrany osobních údajů ukazuje na úvodní stránku. Jedná se o výchozí hodnotu po instalaci, a dokud není vaše zásada ochrany osobních údajů skutečně zveřejněna na úvodní stránce, budete muset vytvořit samostatnou stránku pro zásadu ochrany osobních údajů a odkázat na tuto stránku."
+
+msgid "Cookie category"
+msgstr "Kategorie souboru cookie"
+
+msgid "Cookie categories"
+msgstr "Kategorie souborů cookie"
+
+msgid "This module aims at making the website compliant with the new EU cookie regulation"
+msgstr "Cílem tohoto modulu je pomoci webu splnit novou směrnici EU o souborech cookie"
+
+msgid "User interface"
+msgstr "Uživatelské rozhraní"
+
+msgid "Add Cookie category"
+msgstr "Přidat kategorii souboru cookie"
+
+msgid "Settings"
+msgstr "Nastavení"
+
+msgid "Categories"
+msgstr "Kategorie"
+
+msgid "Cookie settings"
+msgstr "Nastavení cookie"
+
+msgid "Make your website compliant with the EU Directive on Privacy and Electronic Communications."
+msgstr "Zajistěte, aby byl váš web v souladu se směrnicí EU o soukromí a elektronických komunikacích."
+
+msgid "Configure the cookie consent popup."
+msgstr "Nakonfigurujte rozevírací nabídku souhlasu souboru cookie."
+
+msgid "Administer cookie categories."
+msgstr "Spravujte kategorie souboru cookie."
+
+msgid "Toggle the cookie consent settings tray"
+msgstr "Přepnout zásuvku nastavení souhlasu se soubory cookie"
+
+msgid "Administer EU Cookie Compliance banner"
+msgstr "Spravovat proužek s výzvou k EU souhlasu s používáním souborů cookie"
+
+msgid "Administer EU Cookie Compliance categories"
+msgstr "Spravovat kategorie odsouhlasení souborů cookie EU"
+
+msgid "Display EU Cookie Compliance banner"
+msgstr "Zobrazit proužek s výzvou k EU souhlasu s používáním souborů cookie"
+
+msgid "EU Cookie Compliance store consent"
+msgstr "Souhlas s používáním souborů cookie pro obchody v EU"
+
+msgid "Cookie category config"
+msgstr "Konfigurace kategorie souboru cookie"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "Popisek"
+
+msgid "Description"
+msgstr "Popis"
+
+msgid "Checkbox default state"
+msgstr "Výchozí stav zaškrtávacího políčka"
+
+msgid "Weight"
+msgstr "Váha"
+
+msgid "EU Cookie Compliance Settings"
+msgstr "Nastavení EU souhlasu s používáním souborů cookie"
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "Enable banner"
+msgstr "Zapnout proužek"
+
+msgid "Consent by clicking"
+msgstr "Souhlas klepnutím"
+
+msgid "Consent by scrolling"
+msgstr "Souhlas prostřednictvím posouvání"
+
+msgid "Array of EU countries"
+msgstr "Pole zemí EU"
+
+msgid "Country name."
+msgstr "Název země."
+
+msgid "Only display banner in EU countries."
+msgstr "Zobrazit proužek pouze v zemích EU."
+
+msgid "Only display banner in EU countries (Javascript based)."
+msgstr "Zobrazit proužek pouze v zemích EU (na základě skriptovacího jazyka JavaScript)."
+
+msgid "Place the banner at the top of the website"
+msgstr "Umístit proužek do horní části webu"
+
+msgid "If the banner is at the top, don't scroll the banner with the page."
+msgstr "Je-li proužek nahoře, neposouvejte ho se stránkou."
+
+msgid "Cookie information banner message"
+msgstr "Zpráva informačního proužku o souborech cookie"
+
+msgid "Cookie information banner message - mobile"
+msgstr "Zpráva informačního proužku o souborech cookie - mobilní"
+
+msgid "Template to use for \"consent by default\" method"
+msgstr "Šablona pro použití pro metodu \"Souhlas při výchozím nastavení\""
+
+msgid "Agree button message"
+msgstr "Zpráva tlačítka souhlasu"
+
+msgid "Cookie Policy button message"
+msgstr "Zpráva tlačítka zásad souborů cookie"
+
+msgid "Mobile breakpoint"
+msgstr "Mobilní zarážka"
+
+msgid "Enable \"Thank you\" banner."
+msgstr "Povolit proužek \"Děkujeme\"."
+
+msgid "Clicking hides \"Thank you\" banner."
+msgstr "Proužek \"Děkujeme\" se po klepnutí skryje."
+
+msgid "Disagree button label"
+msgstr "Popisek tlačítka Nesouhlasit"
+
+msgid "Thank you banner message"
+msgstr "Zpráva proužku Děkujeme vám"
+
+msgid "More info button label"
+msgstr "Štítek tlačítka pro další informace"
+
+msgid "Hide button label"
+msgstr "Štítek tlačítka pro skrytí"
+
+msgid "Privacy policy link"
+msgstr "Odkaz na zásady ochrany osobních údajů"
+
+msgid "Open privacy policy link in a new window."
+msgstr "Otevřít odkaz na zásady ochrany osobních údajů v novém okně."
+
+msgid "Banner height in pixels"
+msgstr "Výška proužku v pixelech"
+
+msgid "Banner width in pixels or a percentage value"
+msgstr "Šířka proužku v pixelech nebo procentuální hodnota"
+
+msgid "Banner sliding animation time in milliseconds"
+msgstr "Doba animace posouvání proužku v milisekundách"
+
+msgid "Show \"Cookie Policy\" and \"More info\" buttons"
+msgstr "Zobrazit tlačítka \"Zásady souborů cookie\" a \"Další informace\""
+
+msgid "Background color"
+msgstr "Barva pozadí"
+
+msgid "Text color"
+msgstr "Barva textu"
+
+msgid "Domain"
+msgstr "Doména"
+
+msgid "Add/Remove banner on specified domains"
+msgstr "Přidat/odebrat proužek na určených doménách"
+
+msgid "Domains list"
+msgstr "Seznam domén"
+
+msgid "Exclude paths"
+msgstr "Vyloučit cesty"
+
+msgid "Exclude admin pages."
+msgstr "Vyloučit stránky administrace."
+
+msgid "Cookie session"
+msgstr "Relace souboru cookie"
+
+msgid "Disagree set cookie session"
+msgstr "Nesouhlasit s nastavením souboru cookie relace"
+
+msgid "Cookie lifetime"
+msgstr "Doba životnosti souboru cookie"
+
+msgid "Use a different message for mobile phones"
+msgstr "Použít pro mobilní telefony jinou zprávu"
+
+msgid "Include minimal CSS, I want to style the overlay in the theme CSS"
+msgstr "Zahrnout minimální šablony stylů CSS, chci použít styl překrytí v motivu šablon stylů CSS"
+
+msgid "Include styles to support Drupal Olivero theme default CSS."
+msgstr "Zahrňte styly pro podporu výchozího CSS motivu Drupal Olivero."
+
+msgid "Do not show cookie policy when the user clicks the \"Cookie Policy\" button."
+msgstr "Nezobrazovat zásady souborů cookie, když uživatel klepne na tlačítko \"Zásady souborů cookie\"."
+
+msgid "Reload page after user clicks the \"Agree\" button."
+msgstr "Načíst stránku znovu poté, co uživatel klepne na tlačítko \"Souhlasím\"."
+
+msgid "Include/exclude specified routes for reloading"
+msgstr "Zahrnout/vyloučit určené trasy pro nové načtení"
+
+msgid "Routes list"
+msgstr "Seznam pro směrování"
+
+msgid "Cookie name"
+msgstr "Název souboru cookie"
+
+msgid "Don't show the banner for UID 1."
+msgstr "Nezobrazovat proužek pro identifikátor UID 1."
+
+msgid "Let screen readers see the banner before other links on the page"
+msgstr "Umožnit čtecím zařízením obrazovky vidět proužek před ostatními odkazy na stránce"
+
+msgid "Consent method"
+msgstr "Metoda souhlasu"
+
+msgid "Disable JavaScripts"
+msgstr "Zakázat skripty JavaScripts"
+
+msgid "Enable cookie(s) automatic-removal when consent is not explicitly given"
+msgstr "Povolit automatické odebrání souborů cookie, pokud není dán výslovný souhlas"
+
+msgid "Allowed cookies"
+msgstr "Povolené soubory cookie"
+
+msgid "Consent storage method"
+msgstr "Metoda uložení souhlasu"
+
+msgid "Withdraw consent banner message"
+msgstr "Zpráva proužku Stáhnout souhlas"
+
+msgid "Privacy settings tab label"
+msgstr "Popisek karty Nastavení ochrany soukromí"
+
+msgid "Withdraw consent action button label"
+msgstr "Popisek tlačítka akce Stáhnout souhlas"
+
+msgid "Enable floating privacy settings tab and withdraw consent banner"
+msgstr "Povolit plovoucí kartu nastavení ochrany soukromí a proužek Stáhnout souhlas"
+
+msgid "Put the withdraw consent action button on the cookie information banner"
+msgstr "Vložit tlačítko akce odebrání souhlasu na informační proužek souboru cookie"
+
+msgid "Save preferences action button label"
+msgstr "Uložit popisek tlačítka akce předvoleb"
+
+msgid "Accept all categories action button label"
+msgstr "Popisek tlačítka akce Přijmout všechny kategorie"
+
+msgid "Replace the Agree button by a Save preferences and an Accept all categories button"
+msgstr "Nahradit tlačítko Souhlasím tlačítkem Uložit předvolby a Přijmout všechny kategorie"
+
+msgid "Allow the cookie to be set for all sites on the same domain"
+msgstr "Povolit nastavení souboru cookie pro všechny servery ve stejné doméně"
+
+msgid "Enable floating privacy settings permanently"
+msgstr "Trvale povolit plovoucí nastavení ochrany soukromí"
+
+msgid "Containing element"
+msgstr "Obsahující prvek"
+
+msgid "Cookie Policy Version"
+msgstr "Verze zásady souboru cookie"
+
+msgid "Cookie value (disagreed)"
+msgstr "Hodnota cookie (neschválená)"
+
+msgid "Cookie value (agreed, show thank you banner)"
+msgstr "Hodnota cookie (schválená, ukázat děkovný proužek)"
+
+msgid "Cookie value (agreed)"
+msgstr "Hodnota cookie (schválená)"
+
+msgid "Show disagree button (DEPRECATED)"
+msgstr "Zobrazit nesouhlasené tlačítko (ZAMÍTNUTO)"
+
+msgid "Disagree button message (DEPRECATED)"
+msgstr "Zpráva nesouhlasného tlačítka (ZAMÍTNUTO)"
+
+msgid "Whitelisted cookies (DEPRECATED)"
+msgstr "Povolené soubory cookie (ZAMÍTNUTO)"
+
+msgid "Cookie categories (DEPRECATED)"
+msgstr "Kategorie souborů cookie (ZAMÍTNUTO)"
+
+msgid "Boolean value to indicate that the first consent category cannot be unchecked (DEPRECATED)"
+msgstr "Logická hodnota označující, že první kategorie souhlasu nemůže být nezaškrtnutá (ZAMÍTNUTO)"
+
+msgid "Select all categories by default (DEPRECATED)"
+msgstr "Předvoleně vybrat všechny kategorie (ZAMÍTNUTO)"
+
+msgid "Buttons have red focus outline (for accessibility)"
+msgstr "Tlačítka mají červený obrys (pro usnadnění přístupu)"
+
+msgid "Close button action"
+msgstr "Akce tlačítka Zavřít"
+
+msgid "Reject button label"
+msgstr "Popisek tlačítka Zamítnout"
+
+msgid "Enable \"Reject/deny all\" button"
+msgstr "Povolit tlačítko \"Zamítnout/odepřít vše\""
+
+msgid "Close button/box enabled"
+msgstr "Tlačítko/rámeček Zavřít povoleny"
+
+msgid "Unchecked by default"
+msgstr "Standardně nezaškrtnuto"
+
+msgid "Checked by default"
+msgstr "Standardně zaškrtnuto"
+
+msgid "Checked and disabled (user cannot clear the checkbox)"
+msgstr "Zaškrtnuto a zablokováno (uživatel nemůže vymazat zaškrtávací políčko)"
+
+msgid "Machine name"
+msgstr "Strojový název"
+
+msgid "Save configuration"
+msgstr "Uložit nastavení"
+
+msgid "I accept processing of my personal data. For more information, read the <a href=\"@url\">privacy policy</a>,"
+msgstr "Souhlasím se zpracováním svých osobních údajů. Další informace najdete v <a href=\"@url\">zásadách ochrany osobních údajů</a>,"
+
+msgid "Could not generate the EU Cookie Compliance JavaScript file that would be used for handling disabled JavaScripts. There may be a problem with your files folder."
+msgstr "Nelze generovat soubor JavaScript shody souboru cookie EU, který by měl být použit pro práci se zakázaným skripty JavaScript. Může být problém se složkou souborů."
+
+msgid "Are you sure you want to delete %name?"
+msgstr "Opravdu smazat %name?"
+
+msgid "Delete"
+msgstr "Smazat"
+
+msgid "content @type: deleted @label."
+msgstr "obsah @type: smazán @label"
+
+msgid "The name that will be shown to the website visitor."
+msgstr "Název, který bude zobrazen návštěvníkovi webu."
+
+msgid "The description that will be shown to the website visitor."
+msgstr "Popis, který bude zobrazen návštěvníkovi webu."
+
+msgid "Determines the default state of this category's selection checkbox on the cookie consent popup."
+msgstr "Určuje výchozí stav zaškrtávacího políčka výběru kategorie v rozevírací nabídce souhlasu souboru cookie."
+
+msgid "Created the %label Cookie category."
+msgstr "Byla vytvořena kategorie souboru cookie %label."
+
+msgid "Saved the %label Cookie category."
+msgstr "Byla uložena kategorie souboru cookie %label."
+
+msgid "Do not store"
+msgstr "Neukládat"
+
+msgid "Permissions"
+msgstr "Oprávnění"
+
+msgid "Display the banner for"
+msgstr "Zobrazit proužek pro"
+
+msgid "Consent for processing of personal information"
+msgstr "Souhlas se zpracováním osobních údajů"
+
+msgid "The EU General Data Protection Regulation (GDPR) (see <a href=\"https://gdpr.eu/\" target=\"_blank\">https://gdpr.eu/</a>) comes into enforcement from 25 May 2018 and introduces new requirements for web sites which handle information that can be used to identify individuals. The regulation underlines that consent must be <strong>unambiguous</strong> and involve a <strong>clear affirmative action</strong>. When evaluating how to best handle the requirements in the GDPR, remember that if you have a basic web site where the visitors don't log in, you always have the option to <strong>not process data that identifies individuals</strong>, in which case you may not need this module. Also note that GDPR applies to any electronic processing or storage of personal data that your organization may do, and simply installing a module may not be enough to become fully GDPR compliant."
+msgstr "Obecné nařízení o ochraně údajů (GDPR) EU (viz <a href=\"https://gdpr.eu/\" target=\"_blank\">https://gdpr.eu/</a>) je v platnosti od 25. května 2018 a zavádí nové požadavky na webové stránky pracující s informacemi, které mohou být použity k identifikaci osob. Regulace zdůrazňuje, že souhlas musí být <strong>jednoznačný</strong> a musí obsahovat <strong>jasnou souhlasnou akci</strong>. Při hodnocení toho, jak nejlépe zacházet s požadavky v GDPR, nezapomeňte, že pokud máte základní webovou stránku, kde se návštěvníci nepřihlašují, máte vždy možnost <strong>nezpracovávat data identifikující jednotlivce</strong>, a v tom případě byste tento modul neměli potřebovat. Všimněte si také, že se GDPR vztahuje na jakékoli elektronické zpracování nebo ukládání osobních dat, které vaše organizace může provádět, a jednoduchá instalace modulu nemusí být dost na to, aby jste byli plně kompatibilní s GDPR."
+
+msgid "Consent by default. Don't provide any option to opt out."
+msgstr "Souhlas při výchozím nastavení. Neumožnit odmítnutí."
+
+msgid "Opt-in. Don't track visitors unless they specifically give consent. (GDPR compliant)"
+msgstr "Souhlas. Nesledovat návštěvníky, pokud k tomu nedají explicitní souhlas. (V souladu s GDPR)"
+
+msgid "Opt-in with categories. Let visitors choose which cookie categories they want to opt-in for (GDPR compliant)."
+msgstr "Souhlas s kategoriemi. Nechte návštěvníky vybrat, které kategorie souborů cookie chtějí povolit (v souladu s GDPR)."
+
+msgid "Opt-out. Track visitors by default, unless they choose to opt out."
+msgstr "Odmítnutí. Standardně sledovat návštěvníky, pokud to neodmítnou."
+
+msgid "Automatic. Respect the DNT (Do not track) setting in the browser, if present. Uses opt-in when DNT is 1 or not set, and consent by default when DNT is 0."
+msgstr "Automaticky. Respektovat nastavení DNT (Do Not Track, nesledovat) v prohlížeči, pokud existuje. Používá souhlas, když je hodnota DNT 1 nebo není nastavena, a automatický souhlas, když má DNT hodnotu 0."
+
+msgid "Cookie categories are managed in the Categories tab (found at the top of this page)."
+msgstr "Kategorie souborů cookie jsou spravovány na kartě Kategorie (nachází se v horní části této stránky)."
+
+msgid "Replace the Agree button with \"Save preferences\" and \"Accept all categories\" buttons."
+msgstr "Nahradit tlačítko Souhlasím tlačítky \"Uložit předvolby\" a \"Přijmout všechny kategorie\"."
+
+msgid "\"Save preferences\" button label"
+msgstr "Štítek tlačítka \"Uložit předvolby\""
+
+msgid "\"Accept all categories\" button label"
+msgstr "Štítek tlačítka \"Přijmout všechny kategorie\""
+
+msgid "Select the popup info template for 'default by consent' option"
+msgstr "Vybrat rozevírací informační šablonu pro volbu 'výchozí podle souhlasu'"
+
+msgid "Info banner template"
+msgstr "Šablona informačního proužku"
+
+msgid ""
+"Cookie policy button in popup-buttons section and styled similarly to the Agree button,\n"
+"        as in earlier versions of this module"
+msgstr ""
+"Tlačítko Zásady souborů cookie v sekci rozevíracích tlačítek ve stylu tlačítka Souhlasím, \n"
+"        jako ve starších verzích tohoto modulu"
+
+msgid "Cookie policy button in popup-text section, styled differently than Agree button."
+msgstr "Tlačítko Zásady souborů cookie v rozevírací sekci v odlišném stylu než tlačítko Souhlasím."
+
+msgid "Disable the following JavaScripts when consent isn't given"
+msgstr "Zakázat následující skripty JavaScript, pokud není udělen souhlas"
+
+msgid "<span class='eu-cookie-compliance-word-break'>Include the full path of JavaScripts, each on a separate line. When using the opt-in or opt-out consent options, you can block certain JavaScript files from being loaded when consent isn't given. The on-site JavaScripts should be written as root relative paths <strong>without the leading slash</strong>, you can use public://path/to/file.js and private://path/to/file.js, and off-site JavaScripts should be written as complete URLs <strong>with the leading http(s)://</strong>. Note that after the user gives consent, the scripts will be executed in the order you enter here.<br /><br />Libraries and scripts that attach to Drupal.behaviors are supported. To indicate a behavior that needs to be loaded on consent, append the behavior name after the script with a | (vertical bar). If you also want to conditionally load a library, place that as the third parameter, following another | (vertical bar). <strong>Example: modules/custom/custom_module/js/custom.js|customModule|custom_module/custom_module</strong>.<br />If your script file does not attach to Drupal.attributes, you may skip the second parameter. <strong>Example: modules/custom/custom_module/js/custom.js||custom_module/custom_module</strong><br /><strong>Note that Drupal behavior name and library parameters are both optional</strong>, but may be required to achieve your objective.</span>"
+msgstr "<span class='eu-cookie-compliance-word-break'>Zahrnout úplnou cestu ke skriptům JavaScript, každou na samostatném řádku. Pokud povolíte souhlas či odmítnutí, je možné zablokovat načtení určitých souborů JavaScript, pokud není udělen souhlas. Skripty JavaScript na serveru by měly být zapsány jako relativní cesty vzhledem ke kořenovému adresáři <strong>bez počátečního lomítka</strong>, můžete použít public://path/to/file.js i private://path/to/file.js, zatímco skripty JavaScript s původem mimo server je třeba zapisovat jako úplné adresy URL <strong>s uvedením http(s)://</strong>. Nezapomeňte, že poté, co uživatel udělí souhlas, budou skripty provedeny v pořadí, ve kterém jste zde zadali.<br /><br />Knihovny a skripty, které se připojují k Drupal.behaviors, jsou podporovány. Chcete-li označit chování, které je třeba načíst se souhlasem, připojte název chování za skript s | (svislá čára). Chcete-li také podmíněně načíst knihovnu, umístěte ji jako třetí parametr za jiný | (svislá čára). <strong>Příklad: modules/custom/custom_module/js/custom.js|customModule|custom_module/custom_module</strong>.<br />Pokud se váš skriptový soubor nepřipojuje k Drupal.attributes, můžete přeskočit druhý parametr. <strong>Příklad: modules/custom/custom_module/js/custom.js||custom_module/custom_module</strong><br /><strong>Všimněte si, že parametry názvu chování a knihovny Drupal jsou volitelné</strong>, ale mohou být vyžadovány k dosažení vašeho cíle.</span>"
+
+msgid "When using the consent method \"Opt-in with categories\", you can link the script to a specific category by using the format: \"category:path/to/the/script.js\"."
+msgstr "Pokud používáte metodu souhlasu \"Souhlas s kategoriemi\", můžete skript propojit s určitou kategorií s použitím formátu: \"kategorie:cesta/to/the/script.js\"."
+
+msgid "Cookie handling"
+msgstr "Obsluha souborů cookie"
+
+msgid "Enable cookie(s) automatic-removal when consent isn't given."
+msgstr "Povolte automatické odebrání souborů cookie, když není poskytnut souhlas."
+
+msgid "Include the name of cookies, each on a separate line. When using the opt-in or opt-out consent options, this module will <strong>delete cookies from your domain that are not allowed</strong> every few seconds when consent isn't given. PHP session cookies and the cookie for this module are always allowed."
+msgstr "Zahrňte názvy souborů cookie, každý na samostatném řádku. Pokud umožníte souhlas či odmítnutí, bude tento modul <strong>odstraňovat soubory cookie, které nejsou povolené, z vaší domény</strong> každých pár sekund, pokud nedostaly souhlas. Soubory cookie relací PHP a soubor cookie pro tento modul jsou vždy povoleny."
+
+msgid "When using the consent method \"Opt-in with categories\", you can link the cookie to a specific consent category by using the format: \"category:cookie_name\".  Only when consent is given for the given category, will the cookie be allowed."
+msgstr "Pokud používáte metodu souhlasu \"Souhlas s kategoriemi\", můžete soubor cookie propojit s určitou kategorií souhlasu s použitím formátu: \"kategorie:název_souboru_cookie\". Soubor cookie bude povolen, jen když bude pro danou kategorii udělen souhlas."
+
+msgid "Cookie names can contain \"*\" characters which mean a series of any characters."
+msgstr "Názvy souborů cookie mohou obsahovat znaky \"*\", které znamenají řadu libovolných znaků."
+
+msgid "Store record of consent"
+msgstr "Uložit záznam souhlasu"
+
+msgid "Depending on your implementation of GDPR, you may have to store a record when the user consents. This module comes with a basic consent storage plugin that writes a record to the database. Note that if your site has significant traffic, the basic consent storage may become a bottleneck, as every consent action will require a write to the database. You can easily create your own module with a ConsentStorage Plugin that extends ConsentStorageBase, using BasicConsentStorage from this module as a template. If you create a highly performant consent storage plugin, please consider contributing it back to the Drupal community as a contrib module."
+msgstr "V závislosti na vaší implementaci GDPR bude možná nezbytné uložit záznam souhlasu uživatele. Tento modul je dodáván se základním modulem plug-in pro uložení souhlasu, který tento záznam zapíše do databáze. Pozor, pokud je na vašem serveru větší provoz, může se paměť základního povolení stát úzkým místem, protože bude každá akce souhlasu vyžadovat zápis do databáze. Pomocí modulu plug-in ConsentStorage, který je rozšířením ConsentStorageBase, můžete snadno vytvořit vlastní modul, který využívá BasicConsentStorage z tohoto modulu jako šablonu. Pokud vytvoříte vysoce výkonný modul plug-in pro ukládání souhlasu, zvažte možnost darovat jej komunitě Drupal jako modul typu contrib."
+
+msgid "Cookie information banner"
+msgstr "Informační proužek souboru cookie"
+
+msgid "By default by clicking any link or button on the website the visitor accepts the cookie policy. Uncheck this box if you don’t require this functionality. You may want to edit the banner message below accordingly."
+msgstr "Při výchozím nastavení přijme návštěvník zásady souborů cookie klepnutím na libovolný odkaz nebo tlačítko na webu. Pokud tuto funkci nevyžadujete, zrušte zaškrtnutí tohoto políčka. Možná budete chtít upravit níže uvedenou zprávu proužku."
+
+msgid "Use a different message for mobile phones."
+msgstr "Použijte jinou zprávu pro mobilní telefony."
+
+msgid "px"
+msgstr "px"
+
+msgid "The mobile message will be used when the window width is below or equal to the given value."
+msgstr "Zpráva pro mobilní zařízení se použije, když je šířka okna menší nebo rovna zadané hodnotě."
+
+msgid "Agree button label"
+msgstr "Štítek tlačítka pro souhlas"
+
+msgid "If this option is checked, the cookie policy button will be shown on the site. Disabling this option will hide both the \"Cookie Policy\" button on the information banner and the \"More info\" button on the \"Thank you\" banner."
+msgstr "Je-li tato volba zaškrtnuta, zobrazí se na stránce tlačítko zásad souborů cookie. Zrušením zaškrtnutí této volby skryjete tlačítko \"Zásady souborů cookie\" na informačním proužku i tlačítko \"Další informace\" na proužku \"Děkujeme\"."
+
+msgid "Cookie policy button label"
+msgstr "Štítek tlačítka zásad souborů cookie"
+
+msgid "GDPR requires that withdrawing consent for handling personal information should be as easy as giving consent. This module offers a tab button that when clicked brings up a message and a button that can be used to withdraw consent."
+msgstr "GDPR vyžaduje, aby stažení souhlasu pro manipulaci s osobními informacemi by mělo být tak snadné jako poskytnutí souhlasu. Tento modul nabízí tlačítko karty, které po klepnutí vyvolá zprávu a tlačítko, které lze použít k odvolání souhlasu."
+
+msgid "Adds a floating privacy settings tab and withdraw consent banner. This option also provides a \"Cookie settings\" button block and menu item suggestion in \"Navigation\" menu."
+msgstr "Přidá plovoucí kartu nastavení ochrany soukromí a stáhne proužek souhlasu. Tato volba také poskytuje blok tlačítka \"Nastavení souborů cookie\" a návrh položky nabídky v nabídce \"Navigace\"."
+
+msgid "Enable floating privacy settings tab after withdrawing consent"
+msgstr "Povolit plovoucí kartu nastavení soukromí po stažení souhlasu"
+
+msgid "Put the \"Withdraw consent\" button on the cookie information banner."
+msgstr "Vložit tlačítko \"Odebrat souhlas\" na informační proužek souboru cookie"
+
+msgid "Text that will be displayed in the banner that appears when the privacy settings tab is clicked."
+msgstr "Text, který se zobrazí v proužku, když se klepne na kartu nastavení ochrany soukromí."
+
+msgid "Tab button that reveals/hides the withdraw message and action button when clicked."
+msgstr "Tlačítko karty, které poklepnutí zobrazí či skryje zprávu o odvolání souhlasu a tlačítko s příslušnou akcí."
+
+msgid "Withdraw consent button label"
+msgstr "Štítek tlačítka Odebrat souhlas"
+
+msgid "This button will withdraw consent when clicked."
+msgstr "Toto tlačítko stáhne souhlas po klepnutí."
+
+msgid "Reject button and close box"
+msgstr "Odmítnout tlačítko a zavřít rámeček"
+
+msgid "Close banner"
+msgstr "Zavřít proužek"
+
+msgid "Reject all cookies"
+msgstr "Odmítnout všechny soubory cookie"
+
+msgid "Trigger Save preferences (for banner with categories)"
+msgstr "Spustit uložení předvoleb (pro proužek s kategoriemi)"
+
+msgid "The default position of the close button is in the top right corner of the banner."
+msgstr "Výchozí pozice tlačítka pro zavření je v pravém horním rohu proužku."
+
+msgid "Thank you banner"
+msgstr "Proužek Děkujeme vám"
+
+msgid "Enable \"Thank you\" banner"
+msgstr "Povolit proužek \"Děkujeme\""
+
+msgid "Clicking a link or button hides the \"Thank you\" message automatically."
+msgstr "Klepnutím na odkaz nebo tlačítko dojde k automatickému skrytí zprávy \"Děkujeme\"."
+
+msgid "\"Thank you\" banner message"
+msgstr "Zpráva proužku \"Děkujeme\""
+
+msgid "Privacy policy"
+msgstr "Zásady ochrany osobních údajů"
+
+msgid "Enter link to your privacy policy or other page that will explain cookies to your users, external links should start with http:// or https://."
+msgstr "Zadejte odkaz na vaši stránku se zásadami ochrany osobních údajů nebo na jinou stránku, která uživatelům vysvětlí použití souborů cookie, externí odkazy by měly začínat řetězcem http:// nebo https://."
+
+msgid "Privacy Policy Version"
+msgstr "Verze zásady ochrany soukromí"
+
+msgid "Change this value to make the cookie information banner reappear for all visitors. A typical usage of this field is to increase the value when the privacy policy has been changed."
+msgstr "Změňte tuto hodnotu, aby se informační proužek souboru cookie znovu objevil pro všechny návštěvníky. Typické použití tohoto pole je zvýšit hodnotu při změně zásad ochrany soukromí."
+
+msgid "Appearance"
+msgstr "Vzhled"
+
+msgid "Olivero theme is enabled, but Olivero style support is not enabled. You can enable this setting within the <a href=\"#edit-appearance\">Appearance fieldset</a> to extend the look and feel of the Olivero theme."
+msgstr "Motiv Olivero je povolen, ale podpora stylu Olivero není povolena. Toto nastavení můžete povolit v rámci <a href=\"#edit-appearance\">sady polí vzhledu</a> tak, aby se rozšířil vzhled a chování motivu Olivero."
+
+msgid "This uses opinionated styling to fit in with the Drupal Olivero theme. Enabling this will disable other appearance options."
+msgstr "Toto nastavení používá neústupný styl k přizpůsobení se motivu Drupal Olivero. Povolením této volby zakážete další volby vzhledu."
+
+msgid "Change the text color of the banner."
+msgstr "Změňte barvu textu proužku."
+
+msgid "Change the background color of the banner."
+msgstr "Změňte barvu pozadí proužku."
+
+msgid "Change the text color of the banner. Provide HEX value without the #."
+msgstr "Změňte barvu textu proužku. Zadejte HEXADECIMÁLNÍ hodnotu bez znaku #."
+
+msgid "Change the background color of the banner. Provide HEX value without the #."
+msgstr "Změňte barvu pozadí proužku. Zadejte HEXADECIMÁLNÍ hodnotu bez znaku #."
+
+msgid "Serves as the parent element to append cookie banner html to."
+msgstr "Slouží jako nadřízený prvek, k němuž se kód HTML proužku souboru cookie."
+
+msgid "Bottom"
+msgstr "Dole"
+
+msgid "Top"
+msgstr "Nahoru"
+
+msgid "Position"
+msgstr "Pozice"
+
+msgid "Include minimal CSS, I want to style the banner in the theme CSS."
+msgstr "Zahrnout minimální šablony stylů CSS, chci použít styl proužku v motivu šablon stylů CSS"
+
+msgid "This may be useful if you want the banner to share the button style of your theme. Note that you will have to configure values like the banner width, text color and background color in your CSS file."
+msgstr "To může být užitečné, pokud chcete, aby proužek sdílel styl tlačítka vašeho motivu. Pamatujte, že budete muset ve vašem souboru CSS nakonfigurovat hodnoty, jako jsou šířka proužku, barva textu a barva pozadí."
+
+msgid "Banner height"
+msgstr "Výška proužku"
+
+msgid "Enter an integer value for a desired height in pixels or leave empty for automatically adjusted height."
+msgstr "Pro požadovanou výšku v pixelech zadejte celočíselnou hodnotu nebo pro automaticky upravovanou výšku ponechte prázdné."
+
+msgid "px or %"
+msgstr "px nebo %"
+
+msgid "Set the width of the banner. This can be either an integer value or percentage of the screen width. For example: 200 or 50%."
+msgstr "Nastavit šířku proužku. Buď se může jednat o celočíselnou hodnotu, nebo procentní část šířky obrazovky. Například: 200 nebo 50%."
+
+msgid "EU countries"
+msgstr "Země EU"
+
+msgid "<p>You can limit the number of countries for which the banner is displayed. If you want to provide a list of countries other than current EU states, you may place an array in <code>$conf['eu_cookie_compliance_eu_countries']</code> in your <code>settings.php</code> file. Using the <a href=\"http://drupal.org/project/geoip\">geoip</a> module or the <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> module or the <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP function.</p>"
+msgstr "<p>Počet zemí, pro které se proužek zobrazí, můžete omezit. Pokud chcete poskytnout seznam jiných zemí než aktuálních států EU, můžete umístit pole do <code>$conf ['eu_cookie_compliance_eu_countries']</code> ve vašem souboru <code>settings.php</code>. Použití modulu <a href=\"http://drupal.org/project/geoip\">geoip</a> nebo modulu <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> nebo funkce PHP <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a>.</p>"
+
+msgid "Use JavaScript to determine if the visitor is in a country where GDPR applies. Required if caching is enabled or a caching strategy such as varnish is utilized."
+msgstr "Použijte skript JavaScript k určení, zda se návštěvník nachází v zemi, kde se používá GDPR. Volba je povinná, je-li povoleno ukládání do mezipaměti, nebo používá-li se strategie ukládání do mezipaměti, jako například varnish."
+
+msgid "I have no caching enabled or set up. Use non-JavaScript method."
+msgstr "Nemám povoleno nebo nastaveno žádné ukládání do mezipaměti. Použijte jinou metodu než skript JavaScript."
+
+msgid "Disabled. Show the banner to all visitors, also those in non-GDPR countries."
+msgstr "Zakázáno. Zobrazit proužek pro všechny návštěvníky, i ty v zemích mimo GDPR."
+
+msgid "You can choose to show the banner only to visitors from EU countries. In order to achieve this, you need to install the <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> module or install the <a href=\"http://drupal.org/project/geoip\">geoip</a> module or enable the <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP function."
+msgstr "Můžete se rozhodnout, že se bude proužek zobrazovat pouze návštěvníkům ze zemí EU. Abyste toho dosáhli, musíte nainstalovat modul <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> nebo modul <a href=\"http://drupal.org/project/geoip\">geoip</a> nebo povolit funkci PHP <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a>."
+
+msgid "Advanced"
+msgstr "Pokročilé"
+
+msgid "Use position:fixed for the banner when displayed at the top."
+msgstr "Zobrazuje-li se proužek nahoře, použijte position:fixed."
+
+msgid "Banner sliding animation time"
+msgstr "Doba animace posouvání proužku"
+
+msgid "ms"
+msgstr "ms"
+
+msgid "Enabling this will make it possible to record the fact that the user disagrees without the user having to see the privacy policy."
+msgstr "Zapnutí této volby umožní zaznamenat skutečnost, že uživatel nesouhlasí bez toho, že by uživatel musel vidět zásady ochrany osobních údajů."
+
+msgid "Include"
+msgstr "Zahrnout"
+
+msgid "Exclude"
+msgstr "Vyloučit"
+
+msgid "Specify if you want to include or exclude the listed below routes for reloading the page after agreeing cookies."
+msgstr "Uveďte, zda chcete zahrnout nebo vyloučit níže uvedené cesty pro opětovné načtení stránky po odsouhlasení souborů cookie."
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. Leave blank for reloading all pages. Leave the list empty to reload on all pages. This field does not support url aliases."
+msgstr "Určete stránky pomocí jejich cest. Zadejte jednu cestu na řádek. Znak '*' je zástupný znak. Příklady cest jsou %blog pro stránku blogu a %blog-wildcard pro každý osobní blog. Ponechte prázdné pro nové načtení všech stránek. Nechejte seznam prázdný, aby se znovu načetl na všech stránkách. Toto pole nepodporuje aliasy adres URL."
+
+msgid "Scrolling makes the visitors to accept the cookie policy. In some countries, like Italy, it is permitted."
+msgstr "Posouvání přiměje návštěvníky, aby zásady souborů cookie přijali. V některých zemích, jako je Itálie, je to povoleno."
+
+msgid "Sets the cookie name that is used to check whether the user has agreed or not. This option is useful when policies change and the user needs to agree again."
+msgstr "Nastaví název souboru cookie, který se používá ke kontrole toho, zda uživatel souhlasil či nikoli. Tato volba je užitečná, když se zásady změní a uživatel musí znovu souhlasit."
+
+msgid "The cookie value which will be set where the user has disagreed."
+msgstr "Hodnota souboru cookie, která bude nastavena tam, kde uživatel nesouhlasil."
+
+msgid "The cookie value which will be set where the user has agreed and we will show a thank-you banner."
+msgstr "Hodnota souboru cookie, která bude nastavena tam, kde uživatel souhlasil, a my zobrazíme děkovný proužek."
+
+msgid "The cookie value which will be set where the user has agreed."
+msgstr "Hodnota souboru cookie, která bude nastavena tam, kde uživatel souhlasil."
+
+msgid "Add"
+msgstr "Přidat"
+
+msgid "Remove"
+msgstr "Odstranit"
+
+msgid "Add/remove banner on specified domains"
+msgstr "Přidat/odebrat proužek na určených doménách"
+
+msgid "Specify if you want to add or remove banner on the listed below domains."
+msgstr "Určete, zda chcete přidat nebo odebrat proužek na níže uvedených doménách."
+
+msgid "Specify domains with protocol (e.g., http or https). Enter one domain per line."
+msgstr "Uveďte domény s protokolem (např. http nebo https). Na každý řádek zadejte jednu doménu."
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page."
+msgstr "Zadejte stránky použitím jejich cest. Na každý řádek zadejte jednu cestu. Znak '*' je zástupný znak. Cesta může být například %blog pro stránku blogu nebo %blog-wildcard pro každý osobní blog. %front je úvodní stránka."
+
+msgid "Note: if you enable the Withdraw feature, the Privacy settings tab will be displayed also on admin pages, but the banner will not open until you click the tab."
+msgstr "Poznámka: Pokud povolíte funkci Odvolat, zobrazí se karta Nastavení ochrany soukromí také na stránkách administrace, ale proužek se neotevře, dokud neklepnete na kartu."
+
+msgid "Don't show the banner for site administrators (including UID 1)."
+msgstr "Nezobrazovat proužek pro administrátory webu (včetně UID 1)."
+
+msgid "Note: if you enable the Withdraw feature, the Privacy settings tab will be displayed also for site administrators, but the banner will not open until you click the tab."
+msgstr "Poznámka: Pokud povolíte funkci Odvolat, zobrazí se karta Nastavení ochrany soukromí také pro administrátory webu, ale proužek se neotevře, dokud neklepnete na kartu."
+
+msgid "Let screen readers see the banner before other links on the page."
+msgstr "Umožnit čtecím zařízením obrazovky vidět proužek před ostatními odkazy na stránce."
+
+msgid "Enable this if you want to place the banner as the first HTML element on the page. This will make it possible for screen readers to close the banner without tabbing through all links on the page."
+msgstr "Tuto volbu zapněte, pokud chcete umístit proužek jako první prvek HTML na stránce. To čtecím zařízením obrazovky umožní zavřít proužek bez nutnosti procházení všech odkazů na stránce."
+
+msgid "Prompt for consent (from the same user) at every new browser session."
+msgstr "Výzva k udělení souhlasu (stejným uživatelem) v každé nové relaci prohlížeče."
+
+msgid "This sets cookie lifetime to 0, invalidating the cookie at the end of the browser session. To set a cookie lifetime greater than 0, uncheck this option. Note that some users will find this behavior highly annoying, and it's recommended to double-check with the legal advisor whether you really need this option enabled."
+msgstr "Nastaví životnost souboru cookie na hodnotu 0, čímž soubor cookie po skončení relace prohlížeče zneplatní. Chcete-li nastavit životnost souboru cookie delší než 0, zrušte zaškrtnutí této volby. Pozor, někteří uživatelé budou toto chování považovat za velmi nepříjemné a doporučuje se důkladně probrat s právním zástupcem, zda je zapnutí této volby opravdu nezbytné."
+
+msgid "Sets the domain of the cookie to a specific url. Used when you need consistency across domains. This is language independent. Note: Make sure you actually enter a domain that the browser can make use of. For example if your site is accessible at both www.domain.com and domain.com, you will not be able to hide the banner at domain.com if your value for this field is www.domain.com."
+msgstr "Nastaví doménu souboru cookie na specifickou adresu URL. Používá se, když potřebujete konzistenci mezi doménami. Nezávisí to na jazyce. Poznámka: Ujistěte se, že jste skutečně zadali doménu, kterou prohlížeč může použít. Pokud je váš web dostupný například na adrese www.domain.com a domain.com, nebudete moci skrýt proužek na adrese domain.com, pokud je vaše hodnota pro toto pole www.domain.com."
+
+msgid "Allow the cookie to be set for all sites on the same domain."
+msgstr "Povolit nastavení souboru cookie pro všechny servery ve stejné doméně."
+
+msgid "Sets the path of the cookie to '/' so that the cookie works across all sites on the domain."
+msgstr "Nastaví cestu k souboru cookie na ' /' tak, aby soubor cookie pracoval na všech serverech v doméně."
+
+msgid "Set cookie lifetime to 0 if the user clicks the \"Decline\" or the \"Withdraw consent\" button."
+msgstr "Pokud uživatel klepne na tlačítko \"Odmítnout\" nebo \"Stáhnout souhlas\", nastavte životnost souboru cookie na 0."
+
+msgid "Enable this if you want to show the consent banner at every new session until the user clicks the \"Agree\" button."
+msgstr "Povolte, pokud chcete zobrazit proužek souhlasu v každé nové relaci, dokud uživatel neklepne na tlačítko \"Souhlasím\"."
+
+msgid "How many days the system remember the user's choice."
+msgstr "Na kolik dní si systém zapamatuje volbu uživatele."
+
+msgid "days"
+msgstr "dny"
+
+msgid "@name field is required"
+msgstr "Pole @name je povinné"
+
+msgid "Invalid cookie name, please remove any special characters and try again."
+msgstr "Neplatný název souboru cookie, odeberte všechny speciální znaky a zopakujte pokus."
+
+msgid "Your privacy policy link is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "Váš odkaz na zásady ochrany osobních údajů směřuje na titulní stranu. Jedná se o výchozí hodnotu po instalaci, a pokud nejsou vaše zásady ochrany osobních údajů skutečně uveřejněny na titulní straně, budete pro zásady ochrany osobních údajů muset vytvořit samostatnou stránku a odkazovat na tuto stránku."
+
+msgid "The user role permission could not be set because the <code>config_readonly</code> module is enabled. To allow setting of user role permissions, please add <code>user.role.%name</code> to the <code>config_readonly</code> allowlist."
+msgstr "Oprávnění role uživatele nebylo nastaveno, protože je povolen modul <code>config_readonly</code>. Chcete-li povolit nastavení oprávnění role uživatele, přidejte <code>user.role. %name</code> do seznamu povolených <code>config_readonly</code>."
+
+msgid "The module weight could not be set because the <code>config_readonly</code> module is enabled. To allow setting of module weight, please add <code>core.extension</code> to the <code>config_readonly</code> allowlist."
+msgstr "Váhu modulu nelze nastavit, protože je povolen modul <code>config_readonly</code>. Chcete-li povolit nastavení váhy modulu, přidejte prosím <code>core.extension</code> do seznamu povolených <code>config_readonly</code>."
+
+msgid "Invalid protocol specified for the %name (valid protocols: %protocols)."
+msgstr "Pro %name byl zadán neplatný protokol (platné protokoly: %protocols)."
+
+msgid "Invalid %name (:message)."
+msgstr "Neplatný %name (:zpráva)."
+
+msgid "Invalid URL in %name field (:message)."
+msgstr "Neplatná adresa URL v poli %name (:zpráva)."
+
+msgid "This block requires the \"@withdraw_enabled_setting_name\" to be enabled in <a href=\"@eu_cookie_compliance_settings_url\">EU Cookie Compliance settings</a>."
+msgstr "Tento blok vyžaduje, aby byl \"@withdraw_enabled_setting_name\" povolen v <a href=\"@eu_cookie_compliance_settings_url\">Nastavení shody souboru cookie EU</a>."
+
+msgid "EU Cookie Compliance Button Block"
+msgstr "Blokování tlačítka shody souboru cookie EU"
+
+msgid "Basic storage"
+msgstr "Základní úložiště"
+

@@ -1,0 +1,137 @@
+<div class="top-product">
+  <div class="top-product__banner">
+    <div class="container">
+      <div class="top-product__banner--content d-flex flex-wrap">
+        <div class="top-product__title--wrapper">
+          <h3 class="top-product__title text-default-color">CSB BANK</h3>
+          <h6 class="top-product__subtitle">Top recommended products for you</h6>
+        </div>
+
+        <div class="paragraph paragraph--type--recommedation-set paragraph--view-mode---recommendation-set-view top-product__product--list">
+
+          {# ---- Define static image paths for 3 products ---- #}
+          {% set icons = [
+             file_url('public://inline-images/Payments.png'),
+             file_url('public://inline-images/QR-Code.png'),
+             file_url('public://inline-images/Details-Services.png')
+          ] %}
+
+          {# ---- Row 1: first two products ---- #}
+          <div class="top-product__product--list__wrapper">
+            {% for product in allProductData|slice(0, 2) %}
+              <a href="{{ product.url }}" class="top-product__product--list__item" style="display:block">
+                <img class="item__icon"
+                     src="{{ icons[loop.index0] }}"
+                     width="70"
+                     height="70"
+                     loading="lazy"
+                     typeof="Image">
+
+                <h6 class="item__title">{{ product.title }}</h6>
+
+                <p class="item--link">
+                  <em>
+                    <svg class="svg-inline--fa fa-arrow-right"
+                         aria-hidden="true"
+                         focusable="false"
+                         data-prefix="fas"
+                         data-icon="arrow-right"
+                         xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 448 512">
+                      <path fill="currentColor"
+                            d="M438.6 278.6c12.5-12.5
+                            12.5-32.8 0-45.3l-160-160
+                            c-12.5-12.5-32.8-12.5-45.3
+                            0s-12.5 32.8 0 45.3L338.8
+                            224 32 224c-17.7 0-32 14.3-32
+                            32s14.3 32 32 32l306.7
+                            0L233.4 393.4c-12.5 12.5-12.5
+                            32.8 0 45.3s32.8 12.5 45.3
+                            0l160-160z"></path>
+                    </svg>
+                  </em>
+                </p>
+              </a>
+            {% endfor %}
+          </div>
+
+          {# ---- Row 2: last product + View All ---- #}
+          <div class="top-product__product--list__wrapper">
+            {% set last_product = allProductData|slice(2, 1)|first %}
+            {% if last_product %}
+              <a href="{{ last_product.url }}" class="top-product__product--list__item" style="display:block">
+                <img class="item__icon"
+                     src="{{ icons[2] }}"
+                     width="70"
+                     height="70"
+                     loading="lazy"
+                     typeof="Image">
+
+                <h6 class="item__title">{{ last_product.title }}</h6>
+
+                <p class="item--link">
+                  <em>
+                    <svg class="svg-inline--fa fa-arrow-right"
+                         aria-hidden="true"
+                         focusable="false"
+                         data-prefix="fas"
+                         data-icon="arrow-right"
+                         xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 448 512">
+                      <path fill="currentColor"
+                            d="M438.6 278.6c12.5-12.5
+                            12.5-32.8 0-45.3l-160-160
+                            c-12.5-12.5-32.8-12.5-45.3
+                            0s-12.5 32.8 0 45.3L338.8
+                            224 32 224c-17.7 0-32 14.3-32
+                            32s14.3 32 32 32l306.7
+                            0L233.4 393.4c-12.5 12.5-12.5
+                            32.8 0 45.3s32.8 12.5 45.3
+                            0l160-160z"></path>
+                    </svg>
+                  </em>
+                </p>
+              </a>
+            {% endif %}
+
+            {# View All Card ---- #}
+            <a href="/devcustportal/portal/product" class="top-product__product--list__item" style="display:block">
+              <img class="item__icon"
+                   src="{{ file_url('public://inline-images/All-services.png') }}"
+                   alt="View All"
+                   width="70"
+                   height="70">
+
+              <h6 class="item__title">View All</h6>
+
+              <p class="item--link">
+                <em>
+                  <svg class="svg-inline--fa fa-arrow-right"
+                       aria-hidden="true"
+                       focusable="false"
+                       data-prefix="fas"
+                       data-icon="arrow-right"
+                       xmlns="http://www.w3.org/2000/svg"
+                       viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                          d="M438.6 278.6c12.5-12.5
+                          12.5-32.8 0-45.3l-160-160
+                          c-12.5-12.5-32.8-12.5-45.3
+                          0s-12.5 32.8 0 45.3L338.8
+                          224 32 224c-17.7 0-32 14.3-32
+                          32s14.3 32 32 32l306.7
+                          0L233.4 393.4c-12.5 12.5-12.5
+                          32.8 0 45.3s32.8 12.5 45.3
+                          0l160-160z"></path>
+                  </svg>
+                </em>
+              </p>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

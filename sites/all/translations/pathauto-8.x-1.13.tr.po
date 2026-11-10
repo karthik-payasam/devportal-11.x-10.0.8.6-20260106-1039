@@ -1,0 +1,579 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Joined path"
+msgstr "Katılma yolu"
+
+msgid "The array values each cleaned by Pathauto and then joined with the slash into a string that resembles an URL."
+msgstr "Dizi değerlerinin her biri Pathauto tarafından temizlendi ve sonra eğik çizgi kullanılarak URL'ye benzeyen bir dizeyle birleştirildi."
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "The Pathauto module provides a mechanism to automate the creation of <a href=\"path\">path</a> aliases. This makes URLs more readable and helps search engines index content more effectively.  For more information, see the <a href=\":online\">online documentation for Pathauto</a>."
+msgstr "Pathauto modülü, <a href=\"path\">yol</a> diğer adlarının oluşturulmasını otomatikleştirme mekanizması sağlar. Bu, URL'leri daha okunabilir hale getirir ve arama motorlarının içeriği daha etkili şekilde dizinlemesine yardımcı olur. Daha fazla bilgi için bkz. <a href=\":online\">Pathauto için çevrimiçi belgeler</a>."
+
+msgid "Uses"
+msgstr "Kullanım"
+
+msgid "Pathauto is accessed from the tabs it adds to the list of <a href=\":aliases\">URL aliases</a>."
+msgstr "Pathauto'ya, <a href=\":aliases\">URL diğer adları</a> listesine eklediği sekmelerden erişilir."
+
+msgid "Creating Pathauto Patterns"
+msgstr "Pathauto Kalıpları Oluşturma"
+
+msgid "The <a href=\":pathauto_pattern\">\"Patterns\"</a> page is used to configure automatic path aliasing.  New patterns are created here using the <a href=\":add_form\">Add Pathauto pattern</a> button which presents a form to simplify pattern creation thru the use of <a href=\"token\">available tokens</a>. The patterns page provides a list of all patterns on the site and allows you to edit and reorder them. An alias is generated for the first pattern that applies."
+msgstr "<a href=\":pathauto_pattern\">\"Kalıplar\"</a> sayfası, otomatik yol diğer adını yapılandırmak için kullanılır. Burada, <a href=\"token\">kullanılabilir belirteçler</a> kullanarak kalıp oluşturmayı kolaylaştırmak için bir form sunan <a href=\":add_form\">Pathauto kalıbı ekle</a> düğmesi kullanılarak yeni kalıplar oluşturulur. Kalıplar sayfası, sitedeki tüm kalıpların bir listesini sağlar ve bunları düzenlemenize ve yeniden sıralamanıza olanak sağlar. Geçerli olan birinci kalıp için bir diğer ad oluşturulur."
+
+msgid "Pathauto Settings"
+msgstr "Pathauto Ayarları"
+
+msgid "The <a href=\":settings\">\"Settings\"</a> page is used to customize global Pathauto settings for automated pattern creation."
+msgstr "<a href=\":settings\">\"Ayarlar\"</a> sayfası, otomatik kalıp oluşturmaya ilişkin genel Pathauto ayarlarını özelleştirmek için kullanılır."
+
+msgid "The <strong>maximum alias length</strong> and <strong>maximum component length</strong> values default to 100 and have a limit of @max from Pathauto. You should enter a value that is the length of the \"alias\" column of the path_alias database table minus the length of any strings that might get added to the end of the URL. The recommended and default value is 100."
+msgstr "<strong>Diğer ad uzunluğu üst sınırı</strong> ve <strong>bileşen uzunluğu üst sınırı</strong> değerleri varsayılan olarak 100 olur ve Pathauto'dan @max üst sınırına sahiptir. path_alias veritabanı tablosunun \"diğer ad\" sütununun uzunluğu eksi URL'nin sonuna eklenebilecek dizelerin uzunluğu değerini girmelisiniz. Önerilen ve varsayılan değer 100'dür."
+
+msgid "Bulk Generation"
+msgstr "Toplu Oluşturma"
+
+msgid "The <a href=\":pathauto_bulk\">\"Bulk Generate\"</a> page allows you to create URL aliases for items that currently have no aliases. This is typically used when installing Pathauto on a site that has existing un-aliased content that needs to be aliased in bulk."
+msgstr "<a href=\":pathauto_bulk\">\"Toplu Oluştur\"</a> sayfası, şu anda diğer adı olmayan öğeler için URL diğer adları oluşturmanıza olanak sağlar. Bu genellikle toplu olarak diğer ad verilmesi gereken diğer adsız içeriği olan bir siteye Pathauto kurulurken kullanılır."
+
+msgid "Delete Aliases"
+msgstr "Diğer Adları Sil"
+
+msgid "The <a href=\":pathauto_delete\">\"Delete Aliases\"</a> page allows you to remove URL aliases from items that have previously been assigned aliases using pathauto."
+msgstr "<a href=\":pathauto_delete\">\"Diğer Adları Sil\"</a> sayfası, önceden pathauto kullanılarak diğer ad atanmış olan öğelerden URL diğer adlarını kaldırmanıza olanak sağlar."
+
+msgid "This page provides a list of all patterns on the site and allows you to edit and reorder them."
+msgstr "Bu sayfa, sitedeki tüm kalıpların bir listesini sağlar ve bunları düzenlemenize ve yeniden sıralamanıza olanak sağlar. "
+
+msgid "You need to select a pattern type, then a pattern and filter, and a label. Additional types can be enabled on the <a href=\":settings\">Settings</a> page."
+msgstr "Bir kalıp tipi, ardından bir kalıp, süzgeç ve bir etiket seçmeniz gerekir. Ek tipler, <a href=\":settings\">Ayarlar</a> sayfasında etkinleştirilebilir."
+
+msgid "Bulk generation can be used to generate URL aliases for items that currently have no aliases. This is typically used when installing Pathauto on a site that has existing un-aliased content that needs to be aliased in bulk."
+msgstr "Şu anda diğer adı olmayan öğeler için URL diğer adları oluşturmak üzere toplu oluşturma işlemi kullanılabilir. Bu genellikle toplu olarak diğer ad verilmesi gereken diğer adsız içeriği olan bir siteye Pathauto kurulurken kullanılır."
+
+msgid "It can also be used to regenerate URL aliases for items that have an old alias and for which the Pathauto pattern has been changed."
+msgstr "Eski bir diğer adı olan ve Pathauto kalıbı değiştirilmiş olan öğeler için URL diğer adlarını yeniden oluşturmak üzere de bu kullanılabilir."
+
+msgid "Note that this will only affect items which are configured to have their URL alias automatically set. Items whose URL alias is manually set are not affected."
+msgstr "Bunun yalnızca URL diğer adı otomatik olarak ayarlanacak şekilde yapılandırılmış olan öğeleri etkileyeceğini unutmayın. URL diğer adı manuel olarak ayarlanan öğeler etkilenmez."
+
+msgid "URL alias"
+msgstr "URL takma adları"
+
+msgid "The %element-title is using the following invalid characters: @invalid-characters."
+msgstr "%element-title şu geçersiz karakterleri kullanıyor: @invalid-characters."
+
+msgid "The %element-title doesn't allow the patterns ending with whitespace."
+msgstr "%element-title, sonunda boşluk bulunan kalıplara izin vermez."
+
+msgid "Entity of type @type was not processed. It defines the following patterns: @patterns"
+msgstr "@type tipinde varlık işlenmedi. Şu kalıbı tanımlıyor: @patterns"
+
+msgid "Unrecognized entity bundle @entity:@bundle was not processed. It defines the following patterns: @patterns"
+msgstr "Tanınmayan @entity:@bundle varlık paketi işlenmedi. Şu kalıbı tanımlıyor: @patterns"
+
+msgid "Automatic alias"
+msgstr "Otomatik isimlendirme"
+
+msgid "Alias: @alias"
+msgstr "Takma ad: @alias"
+
+msgid "No alias"
+msgstr "Takma ad yok."
+
+msgid "Pathauto"
+msgstr "OtoYol"
+
+msgid "Provides a mechanism for modules to automatically generate aliases for the content they manage."
+msgstr "Eklentilerin oluşturdukları içerik için otomatik olarak URL isimleri oluşturmasını sağlar."
+
+msgid "Add Pathauto pattern"
+msgstr "Pathauto kalıbı ekle"
+
+msgid "Patterns"
+msgstr "Değiştirme şablonları"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Bulk generate"
+msgstr "Toplu oluştur"
+
+msgid "Delete aliases"
+msgstr "İsimleri sil"
+
+msgid "Administer pathauto"
+msgstr "OtoYol yönetimi"
+
+msgid "Allows a user to configure patterns for automated aliases and bulk delete URL-aliases."
+msgstr "Bir kullanıcının otomatik diğer adlar için kalıplar yapılandırmasına ve URL diğer adlarını toplu silmesine olanak sağlar."
+
+msgid "Notify of Path Changes"
+msgstr "yol değişikliklerinden haberdar et"
+
+msgid "Determines whether or not users are notified."
+msgstr "Kullanıcılara bildirim gönderilip gönderilmeyeceğini belirler."
+
+msgid "Duplicate Pathauto pattern"
+msgstr "Pathauto kalıbını yinele"
+
+msgid "Enabled entity types"
+msgstr "Etkin varlık tipleri"
+
+msgid "Tokens that are safe to use and do not need to be cleaned."
+msgstr "Kullanılması güvenli olan ve temizlenmesi gerekmeyen belirteçler."
+
+msgid "Update URL alias"
+msgstr "Yol ismini güncelle"
+
+msgid "Pathauto pattern config"
+msgstr "Pathauto kalıbı yapılandırması"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "Etiket"
+
+msgid "Pattern type"
+msgstr "Kalıp tipi"
+
+msgid "Pattern"
+msgstr "Şablon"
+
+msgid "Selection criteria"
+msgstr "Seçim ölçütleri"
+
+msgid "Selection condition"
+msgstr "Seçim koşulu"
+
+msgid "Selection logic"
+msgstr "Seçim mantığı"
+
+msgid "Weight"
+msgstr "Ağırlık"
+
+msgid "Context definitions"
+msgstr "Bağlam tanımları"
+
+msgid "Relationship"
+msgstr "İlişki"
+
+msgid "Double quotation marks"
+msgstr "Çift tırnak işareti"
+
+msgid "Single quotation marks (apostrophe)"
+msgstr "Tek tırnak (kesme) işareti"
+
+msgid "Back tick"
+msgstr "Ters onay işareti"
+
+msgid "Comma"
+msgstr "Virgül"
+
+msgid "Period"
+msgstr "Nokta"
+
+msgid "Hyphen"
+msgstr "Tire"
+
+msgid "Underscore"
+msgstr "Alt çizgi"
+
+msgid "Colon"
+msgstr "İki nokta"
+
+msgid "Semicolon"
+msgstr "Noktalı virgül"
+
+msgid "Vertical bar (pipe)"
+msgstr "Dikey çizgi"
+
+msgid "Left curly bracket"
+msgstr "Süslü sol parantez"
+
+msgid "Left square bracket"
+msgstr "Köşeli sol parantez"
+
+msgid "Right curly bracket"
+msgstr "Süslü sağ parantez"
+
+msgid "Right square bracket"
+msgstr "Köşeli sağ parantez"
+
+msgid "Plus sign"
+msgstr "Artı işareti"
+
+msgid "Equal sign"
+msgstr "Eşittir işareti"
+
+msgid "Asterisk"
+msgstr "Yıldız"
+
+msgid "Ampersand"
+msgstr "Ve işareti (&amp;)"
+
+msgid "Percent sign"
+msgstr "Yüzde işareti"
+
+msgid "Caret"
+msgstr "İnceltme (şapka) işareti"
+
+msgid "Dollar sign"
+msgstr "Dolar işareti"
+
+msgid "Number sign (pound sign, hash)"
+msgstr "Sayı işareti"
+
+msgid "At sign"
+msgstr "Salyangoz a işareti"
+
+msgid "Exclamation mark"
+msgstr "Ünlem işareti"
+
+msgid "Tilde"
+msgstr "Tilde"
+
+msgid "Left parenthesis"
+msgstr "Sol parantez"
+
+msgid "Right parenthesis"
+msgstr "Sağ parantez"
+
+msgid "Question mark"
+msgstr "Soru işareti"
+
+msgid "Less-than sign"
+msgstr "Küçüktür işareti"
+
+msgid "Greater-than sign"
+msgstr "Büyüktür işareti"
+
+msgid "Slash"
+msgstr "Bölü"
+
+msgid "Backslash"
+msgstr "Ters eğik çizgi"
+
+msgid "Ignoring alias %alias because it is the same as the internal path."
+msgstr "%alias diğer adı, iç yol ile aynı olduğundan yoksayılıyor."
+
+msgid "Created new alias %alias for %source, replacing %old_alias."
+msgstr "%old_alias değiştirilerek %source için yeni %alias diğer adı oluşturuldu."
+
+msgid "Created new alias %alias for %source."
+msgstr "%source için yeni %alias diğer adı oluşturuldu."
+
+msgid "The automatically generated alias %original_alias conflicted with an existing alias. Alias changed to %alias."
+msgstr "Otomatik olarak oluşturulan %original_alias varolan bir isim ile çakıştı. Yeni isim %alias olarak değiştirildi."
+
+msgid "Pathauto state"
+msgstr "Pathauto durumu"
+
+msgid "Whether an automated alias should be created or not."
+msgstr "Otomatik bir diğer ad oluşturulup oluşturulmayacağı."
+
+msgid "Conditions"
+msgstr "Koşullar"
+
+msgid "Duplicate"
+msgstr "Çoğalt"
+
+msgid "Uncheck this to create a custom alias below. <a href=\"@admin_link\">Configure URL alias patterns.</a>"
+msgstr "Aşağıda özel bir diğer ad oluşturmak için bunun işaretini kaldırın. <a href=\"@admin_link\">URL diğer adı kalıplarını yapılandırın.</a>"
+
+msgid "Uncheck this to create a custom alias below."
+msgstr "Aşağıda özel bir diğer ad oluşturmak için bunun işaretini kaldırın. "
+
+msgid "Generate automatic URL alias"
+msgstr "Otomatik URL diğer adı oluştur"
+
+msgid "Bulk updating URL aliases"
+msgstr "URL diğer adları toplu güncelleniyor"
+
+msgid "Bulk deleting URL aliases"
+msgstr "URL diğer adları toplu siliniyor"
+
+msgid "All of your path aliases have been deleted."
+msgstr "Tüm adres yolları silindi."
+
+msgid "All of your %label path aliases have been deleted."
+msgstr "Tüm %label yolu diğer adlarınız silindi."
+
+msgid "Choose the action to perform."
+msgstr "Gerçekleştirilecek işlemi seçin."
+
+msgid "Choose the alias type(s). Separate multiple choices with commas, e.g. \"1,2,4\", or choose \"0\" for all types."
+msgstr "Diğer ad tiplerini seçin. Birden çok seçeneği virgülle ayırın (örn. \"1,2,4\") ya da tüm tipler için \"0\" seçeneğini belirleyin."
+
+msgid "Invalid action argument \"@invalid_action\". Please use one of: @valid_actions"
+msgstr "Geçersiz işlem bağımsız değişkeni \"@invalid_action\". Lütfen şunlardan birini kullanın: @valid_actions"
+
+msgid "Invalid type argument \"@invalid_types\". Please choose from the following: @valid_types"
+msgstr "Geçersiz tip bağımsız değişkeni \"@invalid_types\". Lütfen şunlar arasından seçim yapın: @valid_types"
+
+msgid "Generate a URL alias for un-aliased paths only."
+msgstr "Yalnızca diğer adı olmayan yollar için URL diğer adı oluşturun."
+
+msgid "Update the URL alias for paths having an old URL alias."
+msgstr "Eski URL diğer adı olan yollar için URL diğer adını güncelleyin."
+
+msgid "Regenerate URL aliases for all paths."
+msgstr "Tüm yollar için URL diğer adlarını yeniden oluşturun."
+
+msgid "Pathauto pattern"
+msgstr "Pathauto kalıbı"
+
+msgid "Choose aliases to delete"
+msgstr "Silinecek diğer adları seçin"
+
+msgid "All aliases"
+msgstr "Tüm diğer adlar"
+
+msgid "Delete all aliases. Number of aliases which will be deleted: %count."
+msgstr "Tüm isimleri sil. Silinecek isim sayısı: %count."
+
+msgid "Delete aliases for all @label. Number of aliases which will be deleted: %count."
+msgstr "Tüm @label için isimleri sil. Silinecek isim sayısı: %count."
+
+msgid "Delete options"
+msgstr "Silme seçenekleri"
+
+msgid "Only delete automatically generated aliases"
+msgstr "Yalnızca otomatik olarak oluşturulan diğer adları sil"
+
+msgid "When checked, aliases which have been manually set are not affected by this mass-deletion."
+msgstr "Bu işaretlendiğinde, manuel olarak ayarlanmış olan diğer adlar bu toplu silme işleminden etkilenmez."
+
+msgid "<strong>Note:</strong> there is no confirmation. Be sure of your action before clicking the \"Delete aliases now!\" button.<br />You may want to make a backup of the database and/or the path_alias and path_alias_revision tables prior to using this feature."
+msgstr "<strong>Not:</strong> Bir onay yok. \"Şimdi diğer adları sil!\" düğmesini tıklatmadan önce işleminizden emin olun.<br />Bu özelliği kullanmadan önce veritabanının ve/veya path_alias düzeltme tablosunun yedeklemesini yapmak isteyebilirsiniz."
+
+msgid "Delete aliases now!"
+msgstr "Takma adları sil!"
+
+msgid "All of your automatically generated path aliases have been deleted."
+msgstr "Otomatik olarak oluşturduğunuz tüm yol diğer adları silindi."
+
+msgid "All of your automatically generated %label path aliases have been deleted."
+msgstr "Otomatik olarak oluşturduğunuz tüm %label yolu diğer adları silindi."
+
+msgid "An error occurred while processing @operation with arguments : @args"
+msgstr "@args bağımsız değişkenleri ile @operation işlenirken bir hata oluştu "
+
+msgid "Select the types of paths for which to generate URL aliases"
+msgstr "URL diğer adları oluşturulacak yol tiplerini seçin"
+
+msgid "Select which URL aliases to generate"
+msgstr "Hangi URL diğer adlarının oluşturulacağını seçin"
+
+msgid "Generate a URL alias for un-aliased paths only"
+msgstr "Yalnızca diğer adı olmayan yollar için URL diğer adı oluştur"
+
+msgid "<a href=\":url\">Pathauto settings</a> are set to ignore paths which already have a URL alias. You can only create URL aliases for paths having none."
+msgstr "<a href=\":url\">Pathauto ayarları</a>, önceden URL diğer adı olan yolları yoksayacak şekilde ayarlandı. Yalnızca hiçbir şey içermeyen yollar için URL diğer adları oluşturabilirsiniz."
+
+msgid "Update the URL alias for paths having an old URL alias"
+msgstr "Eski URL diğer adı olan yollar için URL diğer adını güncelle"
+
+msgid "Regenerate URL aliases for all paths"
+msgstr "Tüm yollar için URL diğer adlarını yeniden oluştur"
+
+msgid "Update"
+msgstr "Güncelle"
+
+msgid "No new URL aliases to generate."
+msgstr "Oluşturulacak yeni bir URL diğer adı yok."
+
+msgid "Generated 1 URL alias."
+msgid_plural "Generated @count URL aliases."
+msgstr[0] "1 URL diğer adı oluşturuldu."
+msgstr[1] "@count URL diğer adı oluşturuldu."
+
+msgid "Enable to add a path field and allow to define alias patterns for the given type. Disabled types already define a path field themselves or currently have a pattern."
+msgstr "Bir yol alanı eklemek ve belirtilen tipe ilişkin diğer ad kalıplarının tanımlanmasını sağlamak için etkinleştirin. Devre dışı bırakılan tipler zaten bir yol alanını tanımlar ya da şu anda bir kalıba sahiptir."
+
+msgid "Verbose"
+msgstr "Detaylı"
+
+msgid "Display alias changes (except during bulk updates)."
+msgstr "İsim değişikliklerini göster (toplu güncellemeler dışında)"
+
+msgid "Separator"
+msgstr "Ayraç"
+
+msgid "Character used to separate words in titles. This will replace any spaces and punctuation characters. Using a space or + character can cause unexpected results."
+msgstr "Başlıklardaki kelimeleri ayırmak için kullanılan kelime. Bu, tüm boşluk ve noktalama işaretlerinin yerine kullanılacaktır. Ayraç olarak boşluk veya + karakterini kullanmak beklenmeyen sonuçlara yol açabilir."
+
+msgid "Character case"
+msgstr "Büyük-küçük harf"
+
+msgid "Convert token values to lowercase."
+msgstr "Belirteç değerlerini küçük harfe dönüştürün."
+
+msgid "See <a href=\":pathauto-help\">Pathauto help</a> for details."
+msgstr "Ayrıntılar için bkz. <a href=\":pathauto-help\">Pathauto yardımı</a>."
+
+msgid "Maximum alias length"
+msgstr "Takma adın (alias) ençok uzunluğu"
+
+msgid "Maximum length of aliases to generate. 100 is the recommended length. @max is the maximum possible length."
+msgstr "Oluşturulacak diğer ad uzunluğu üst sınırı. Önerilen uzunluk 100'dür. @max, olası uzunluk üst sınırıdır."
+
+msgid "Maximum component length"
+msgstr "En fazla bileşen uzunluğu"
+
+msgid "Maximum text length of any component in the alias (e.g., [title]). 100 is the recommended length. @max is the maximum possible length."
+msgstr "Diğer addaki herhangi bir bileşenin metin uzunluğu üst sınırı (örn. [title]). Önerilen uzunluk 100'dür. @max, olası uzunluk üst sınırıdır."
+
+msgid "What should Pathauto do when updating an existing content item which already has an alias?"
+msgstr "Pathauto, zaten diğer adı olan mevcut bir içerik öğesini güncellerken ne yapmalıdır?"
+
+msgid "The <a href=\":url\">Redirect module settings</a> affect whether a redirect is created when an alias is deleted."
+msgstr "<a href=\":url\">Yeniden yönlendirme modülü ayarları</a>, diğer ad silindiğinde bir yeniden yönlendirme oluşturulup oluşturulmayacağını etkiler."
+
+msgid "Considering installing the <a href=\":url\">Redirect module</a> to get redirects when your aliases change."
+msgstr "Diğer adlarınız değiştiğinde yeniden yönlendirmeleri almak için <a href=\":url\">Yeniden yönlendirme modülünü</a> kurun."
+
+msgid "Update action"
+msgstr "Güncelleme eylemi"
+
+msgid "Do nothing. Leave the old alias intact."
+msgstr "Bir şey yapma. Eski takma ad olduğu gibi kalsın."
+
+msgid "Create a new alias. Leave the existing alias functioning."
+msgstr "Yeni bir takma ad oluştur. Eski adlandırma da işlevini sürdürsün."
+
+msgid "Create a new alias. Delete the old alias."
+msgstr "Yeni bir takma ad oluştur. Eski adlandırmayı sil."
+
+msgid "Transliterate prior to creating alias"
+msgstr "İsim oluşturmadan önce alfabeyi değiştir"
+
+msgid "When a pattern includes certain characters (such as those with accents) should Pathauto attempt to transliterate them into the US-ASCII alphabet?"
+msgstr "Bir kalıp belirli karakterleri (örn. aksanlı karakterler) içerdiğinde, Pathauto bunları US-ASCII alfabesine dönüştürmeyi denemeli midir?"
+
+msgid "Reduce strings to letters and numbers"
+msgstr "Dizeleri harflere ve rakamlara azalt"
+
+msgid "Filters the new alias to only letters and numbers found in the ASCII-96 set."
+msgstr "Yeni ismi, sadece ASCII-96 karakter kümesinde bulunan harf ve rakamları içerecek şekilde süz."
+
+msgid "Strings to Remove"
+msgstr "Kaldırılacak kelimeler"
+
+msgid "Words to strip out of the URL alias, separated by commas. Do not use this to remove punctuation."
+msgstr "Virgüllerle ayrılmış şekilde URL diğer adının çıkarılacağı sözcükler. Noktalama işaretini kaldırmak için bunu kullanmayın."
+
+msgid "Safe tokens"
+msgstr "Güvenli belirteçler"
+
+msgid "List of tokens that are safe to use in alias patterns and do not need to be cleaned. For example urls, aliases, machine names. Separated with a comma."
+msgstr "Diğer ad kalıplarında kullanılması güvenli olan ve temizlenmesi gerekmeyen belirteçlerin listesi. Örneğin, URL'ler, diğer adlar, makine adları. Virgülle ayrılmış."
+
+msgid "Punctuation"
+msgstr "Noktalama işaretleri"
+
+msgid "Remove"
+msgstr "Kaldır"
+
+msgid "Replace by separator"
+msgstr "Ayraç ile değiştir"
+
+msgid "No action (do not replace)"
+msgstr "Bir şey yapma (değiştirme)"
+
+msgid "Are you sure you want to disable the pattern %label?"
+msgstr "%label kalıbını devre dışı bırakmak istediğinizden emin misiniz?"
+
+msgid "Disable"
+msgstr "Devre dışı bırak"
+
+msgid "Disabled patterns are ignored when generating aliases."
+msgstr "Devre dışı kalıplar, diğer adlar oluşturulurken yoksayılır."
+
+msgid "Disabled pattern %label."
+msgstr "%label kalıbı devre dışı bırakıldı."
+
+msgid "Path pattern"
+msgstr "Yol kalıbı"
+
+msgid "Check to which types this pattern should be applied. Leave empty to allow any."
+msgstr "Bu kalıbın uygulanacağı tipleri işaretleyin. Herhangi birine izin vermek için boş bırakın."
+
+msgid "Languages"
+msgstr "Diller"
+
+msgid "Check to which languages this pattern should be applied. Leave empty to allow any."
+msgstr "Bu kalıbın uygulanacağı dilleri işaretleyin. Herhangi birine izin vermek için boş bırakın."
+
+msgid "A short name to help you identify this pattern in the patterns list."
+msgstr "Kalıplar listesinde bu kalıbı belirlemenize yardımcı olacak kısa bir ad."
+
+msgid "Enabled"
+msgstr "Etkin"
+
+msgid "Language"
+msgstr "Dil"
+
+msgid "Pattern %label saved."
+msgstr "%label kalıbı kaydedildi."
+
+msgid "Are you sure you want to enable the pattern %label?"
+msgstr "%label kalıbını etkinleştirmek istediğinizden emin misiniz?"
+
+msgid "Enable"
+msgstr "Etkinleştir"
+
+msgid "Enabled pattern %label."
+msgstr "%label kalıbı etkinleştirildi."
+
+msgid "Update URL alias of an entity"
+msgstr "Bir varlığın URL diğer adını güncelle"
+
+msgid "@label being aliased"
+msgstr "@label için diğer ad veriliyor"
+
+msgid "The name of the pattern's variable."
+msgstr "Kalıbın değişkeninin adı."
+
+msgid "The value of the pattern's variable."
+msgstr "Kalıbın değişkeninin değeri."
+
+msgid "Broken type"
+msgstr "Bozuk tip"
+
+msgid "Broken"
+msgstr "Bozuk"
+
+msgid "Broken/Missing"
+msgstr "Bozuk/Eksik"
+
+msgid "AliasType"
+msgstr "Diğer Ad Tipi"
+
+msgid "Updated alias for %label @id."
+msgstr "%label @id için diğer ad güncellendi."
+
+msgid "Updated 1 %label URL alias."
+msgid_plural "Updated @count %label URL aliases."
+msgstr[0] "1 %label URL diğer adı güncellendi."
+msgstr[1] "@count %label URL diğer adı güncellendi."
+
+msgid "Forum"
+msgstr "Forum"
+

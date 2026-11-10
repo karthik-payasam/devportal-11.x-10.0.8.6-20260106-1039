@@ -1,0 +1,241 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "@text"
+msgstr "@text"
+
+msgid "About"
+msgstr "关于"
+
+msgid ""
+"Instead of showing a default \"Page not found\"\n"
+"      for a 404 error, this module performs a search on the keywords in\n"
+"      the URL and display results based on the search. You can add basic\n"
+"      settings for the 404 resulting page and other search404\n"
+"      configurations in @link page."
+msgstr ""
+"代替对于 404 错误显示缺省的“找不到页面”，\n"
+"      此模块在 URL 中执行关键字搜索，\n"
+"      并显示基于搜索的结果。您可以针对\n"
+"      404 生成页面添加基本设置，并在\n"
+"      @link 页面中添加其他 search404 配置。"
+
+msgid "Search 404"
+msgstr "搜索 404"
+
+msgid "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found."
+msgstr "自动在产生 404 错误的 URL 中搜索关键字，并显示结果而非“未找到页面”。"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Search 404 settings"
+msgstr "搜索404设置"
+
+msgid "Configure searching for keywords from URLs that result in 404 errors."
+msgstr "配置在产生 404 错误的 URL 中搜索关键字。"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Page not found"
+msgstr "页面未找到"
+
+msgid "The requested page could not be found."
+msgstr "请求的页面未找到"
+
+msgid ""
+"<ul>\n"
+"        <li>Check if your spelling is correct.</li>\n"
+"        <li>Remove quotes around phrases to search for each word individually. <em>bike shed</em> will often show more results than <em>&quot;bike shed&quot;</em>.</li>\n"
+"        <li>Consider loosening your query with <em>OR</em>. <em>bike OR shed</em> will often show more results than <em>bike shed</em>.</li>\n"
+"        </ul>"
+msgstr ""
+"<ul>\n"
+"        <li>检查拼写是否正确。</li>\n"
+"        <li>除去短语两侧的引号以单独搜索每个词。<em>bike shed</em> 通常会比 <em>&quot;bike shed&quot;</em> 显示更多结果。</li>\n"
+"        <li>可考虑使用 <em>OR</em> 放宽您的查询。<em>bike OR shed</em> 通常会比 <em>bike shed</em> 显示更多结果。</li>\n"
+"        </ul>"
+
+msgid "Your search yielded no results."
+msgstr "没有符合您本次搜索的记录。"
+
+msgid "The page you requested does not exist."
+msgstr "您请求的页面不存在。"
+
+msgid "The page you requested does not exist. Invalid keywords used."
+msgstr "您请求的页面不存在。使用的关键字无效。"
+
+msgid "The page you requested does not exist. For your convenience, a search was performed using the query %keys."
+msgstr "您请求的页面不存在。方便起见，使用查询 %keys 执行搜索。"
+
+msgid "Searched %type for %keys."
+msgstr "以 %keys 搜索 %type。"
+
+msgid "Jump directly to the search result when there is only one result"
+msgstr "当仅存在一个结果时，直接跳至搜索结果"
+
+msgid "Works only with Core, Apache Solr, Lucene and Xapian searches. An HTTP status of 301 or 302 will be returned for this redirect."
+msgstr "仅对 Core、Apache Solr、Lucene 和 Xapian 搜索有效。针对此重定向，将返回 HTTP 状态 301 或 302。"
+
+msgid "Jump directly to the first search result even when there are multiple results"
+msgstr "直接跳至第一个搜索结果，即使存在多个结果"
+
+msgid "Jump directly to the first search result only on the listed paths."
+msgstr "仅直接跳至所列路径上的第一个搜索结果。"
+
+msgid "Enter one path per line. The \"*\" character is a wildcard. Example paths are blog for the blog page and blog/* for every personal blog."
+msgstr "每行输入一个路径。“*”字符是通配符。示例路径是博客页面的博客，blog/* 表示每个个人博客。"
+
+msgid "Do a Google CSE Search instead of a Drupal Search when a 404 occurs"
+msgstr "404错误时，使用Google自定义搜索引擎搜索代替Drupal搜索"
+
+msgid "Requires Google CSE and Google CSE Search modules to be enabled."
+msgstr "需要启用 Google CSE 和 Google CSE Search 模块。"
+
+msgid "Do a \"Search by page\" Search instead of a Drupal Search when a 404 occurs"
+msgstr "当发生 404 时，执行“按页面搜索”搜索而非 Drupal 搜索。"
+
+msgid "Requires \"Search by page\" module to be enabled."
+msgstr "需要启用“按页面搜索”模块。"
+
+msgid "Do a \"Search\" with custom path instead of a Drupal Search when a 404 occurs"
+msgstr "当发生 404 时，使用定制路径执行“搜索”而非 Drupal 搜索"
+
+msgid "Redirect the user to a Custom search path to be entered below. Can be used to open a view with path parameter."
+msgstr "将用户重定向至下面输入的定制搜索路径。可用于通过路径参数来打开视图。"
+
+msgid "Custom search path"
+msgstr "定制搜索路径"
+
+msgid "The custom search path: example: myownsearch/@keys. The token \"@keys\" will be replaced with the search keys from the URL."
+msgstr "定制搜索路径：示例：myownsearch/@keys。标记“@keys”将替换为 URL 中的搜索键。"
+
+msgid "Use a 301 Redirect instead of 302 Redirect"
+msgstr "使用 301 重定向而非 302 重定向"
+
+msgid "This applies when the option to jump to first result is enabled and also for search404 results pages other than for Core, Apache Solr, Lucene and Xapian."
+msgstr "当启用跳至第一个结果的选项时，这将适用，也适用于 search404 结果页面，不适用于 Core、Apache Solr、Lucene 和 Xapian。"
+
+msgid "Disable auto search"
+msgstr "禁用自动搜索"
+
+msgid "Disable automatically searching for the keywords when a page is not found and instead show the populated search form with the keywords. Useful for large sites to reduce server loads."
+msgstr "当未找到页面时将自动禁用搜索关键字，而显示使用关键字填充的搜索表单。对于较大的站点很有用，可减少服务器负载。"
+
+msgid "Disable error message"
+msgstr "禁用错误消息"
+
+msgid "Disable the Drupal error message when search results are shown on a 404 page."
+msgstr "当搜索结果显示在 404 页面上时禁用 Drupal 错误消息。"
+
+msgid "Custom error message"
+msgstr "自定义错误消息"
+
+msgid "For example, Invalid search for @keys, Sorry the page does not exist, etc."
+msgstr "例如，“@keys 搜索无效”、“抱歉，该页面不存在”等。"
+
+msgid "A custom error message instead of default Drupal message, that should be displayed when search results are shown on a 404 page, use \"@keys\" to insert the searched key value if necessary."
+msgstr "当搜索结果显示在 404 页面上时应显示的定制错误消息而非缺省 Drupal 消息将使用“@keys”插入已搜索键值（如果需要）。"
+
+msgid "Advanced settings"
+msgstr "高级设置"
+
+msgid "Use OR between keywords when searching"
+msgstr "搜索时在关键字之间使用 OR"
+
+msgid "Use a custom string between keywords when searching"
+msgstr "搜索时在关键字之间使用定制字符串"
+
+msgid "using a custom string (for example a hyphen) to concatenate the keywords, has no effect if OR keyword is chosen, leave this empty to concatenate by whitespace"
+msgstr "使用定制字符串（例如连字符）并置关键字；如果选择 OR 关键字，则不起作用；如果将此项留空，则将使用空格并置关键字"
+
+msgid "Use auto-detection of keywords from search engine referer"
+msgstr "从搜索引擎 referer 使用关键字自动检测"
+
+msgid "This feature will conduct a search based on the query string got from a search engine if the URL of the search result points to a 404 page in the current website. Currently supported search engines: Google, Yahoo, Altavista, Lycos, Bing and AOL."
+msgstr "如果搜索结果的 URL 指向当前 Web 站点中的 404 页面，此功能将根据从搜索引擎获取的查询字符串来执行搜索。当前受支持的搜索引擎：Google、Yahoo、Altavista、Lycos、Bing 和 AOL。"
+
+msgid "Ignore language code"
+msgstr "忽略语言代码"
+
+msgid "All enabled language codes will ignored from the search query."
+msgstr "搜索查询将忽略所有已启用的语言代码。"
+
+msgid "Words to ignore"
+msgstr "要忽略的词"
+
+msgid "These words will be ignored from the search query. Separate words with a space, e.g.: \"and or the\"."
+msgstr "将从搜索查询中忽略这些词。用空格分隔词，例如：“and or the”。"
+
+msgid "Specific paths to ignore"
+msgstr "要忽略的特定路径"
+
+msgid "These paths will be ignored. Site default \"Page not found\" page will be displayed. Enter one path per line. The \"*\" character is a wildcard. Example paths are blog for the blog page and blog/* for every personal blog."
+msgstr "将忽略这些路径。将显示站点缺省的“未找到页面”页面。每行输入一个路径。“*”字符是通配符。示例路径是博客页面的博客，blog/* 表示每个个人博客。"
+
+msgid "Extensions to ignore"
+msgstr "要忽略的扩展名"
+
+msgid "These extensions will be ignored from the search query, e.g.: http://www.example.com/invalid/page.php will only search for \"invalid page\". Separate extensions with a space, e.g.: \"htm html php\". Do not include leading dot."
+msgstr "将从搜索查询中忽略这些扩展名，例如：http://www.example.com/invalid/page.php 将仅搜索“invalid page”。用空格分隔扩展名，例如：“htm html php”。请勿包含前置点。"
+
+msgid "Extensions to abort search"
+msgstr "要异常中止搜索的扩展名"
+
+msgid "A search will not be performed for a query ending in these extensions. Separate extensions with a space, e.g.: \"gif jpg jpeg bmp png\". Do not include leading dot."
+msgstr "将不会对以这些扩展名结尾的查询执行搜索。用空格分隔扩展名，例如：“gif jpg jpeg bmp png”。请勿包含前置点。"
+
+msgid "PCRE filter"
+msgstr "PCRE 过滤器"
+
+msgid "This regular expression will be applied to filter all queries. The parts of the path that match the expression will be EXCLUDED from the search. You do NOT have to enclose the regex in forward slashes when defining the PCRE. e.g.: use \"[foo]bar\" instead of \"/[foo]bar/\". On how to use a PCRE Regex please refer <a href=\"http://php.net/pcre\">PCRE pages in the PHP Manual</a>."
+msgstr "该正则表达式将适用于过滤所有查询。将从搜索中排除与表达式匹配的路径部分。在定义 PCRE 时，您不必将正则表达式括在正斜杠中。例如，使用“[foo]bar”而非“/[foo]bar/”。关于如何使用 PCRE 正则表达式，请参阅 <a href=\"http://php.net/pcre\">PHP 手册中的 PCRE 页面</a>。"
+
+msgid "Custom page title"
+msgstr "自定义页面标题"
+
+msgid "You can enter a value that will be displayed at the title of the webpage e.g. \"Page not found\"."
+msgstr "您可以输入将显示在 Web 页面标题位置的值，例如“找不到页面”。"
+
+msgid "Custom page text"
+msgstr "定制页面文本"
+
+msgid "You can enter a custom text message that can be displayed at the top of the search results, HTML formatting can be used."
+msgstr "您可以输入可显示在搜索结果顶部的定制文本消息，可以使用 HTML 格式。"
+
+msgid "Add a redirection url for empty search results."
+msgstr "添加空搜索结果的重定向 URL。"
+
+msgid "You can enter a valid url with a leading \"/\" to display instead of an empty result."
+msgstr "您可以输入带前导“/”的有效 URL 以显示非空结果。"
+
+msgid "Saving this form will revert the 404 handling on the site to this module."
+msgstr "保存此表单会将站点上的 404 处理还原到此模块。"
+
+msgid "The redirect URL should not be a space, and should not start with a space."
+msgstr "重定向 URL 不应为空格，也不应以空格开头。"
+
+msgid "The redirect URL should start with a slash."
+msgstr "重定向 URL 应以斜杠开头。"
+
+msgid "Custom search path should end with search key pattern \"@keys\"."
+msgstr "定制搜索路径应以搜索键模式“@keys”结尾。"
+
+msgid "Custom search path should not contain special characters other than \"/?=_\"."
+msgstr "定制搜索路径不应包含“/?=_”以外的特殊字符。"
+
+msgid "Custom search path should not start with a slash."
+msgstr "定制搜索路径不应以斜杠开头。"
+

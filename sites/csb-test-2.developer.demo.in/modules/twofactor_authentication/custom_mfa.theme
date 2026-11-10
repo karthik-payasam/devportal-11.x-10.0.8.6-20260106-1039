@@ -1,0 +1,11 @@
+/**
+ * Implements hook_theme().
+ */
+function custom_mfa_theme($existing, $type, $theme, $path) {
+  return [
+    'custom_mfa_modal_form' => [
+      'render element' => 'form',
+      'template' => 'form--custom-mfa-modal-form',
+    ],
+  ];
+}

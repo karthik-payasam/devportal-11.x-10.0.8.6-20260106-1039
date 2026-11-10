@@ -1,0 +1,375 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "svg image from @field_name"
+msgstr "來自 @field_name 的 SVG 影像"
+
+msgid "@entity using @field"
+msgstr "@entity 使用 @field"
+
+msgid "@field_name"
+msgstr "@field_name"
+
+msgid "Relate each @entity with a @field set to the svg image."
+msgstr "將每個 @entity 與設定為 SVG 影像的 @field 關聯。"
+
+msgid "About"
+msgstr "關於"
+
+msgid ""
+"The SVG image field module allows you to create fields that contain\n"
+" svg image files and to configure svg output. See the <a href=\":field\">Field module help</a> and\n"
+"  the <a href=\":field_ui\">Field UI help</a> pages for terminology and general information on\n"
+"  entities, fields, and how to create and manage fields."
+msgstr ""
+"SVG 影像欄位模組容許您建立包含 svg 影像檔案的\n"
+" 欄位並配置 svg 輸出。請參閱<a href=\":field\">欄位模組說明</a>和\n"
+"  <a href=\":field_ui\">欄位使用者介面說明</a>頁面，瞭解有關實體、\n"
+"  欄位的術語和一般資訊，以及如何建立和管理欄位。"
+
+msgid "Uses"
+msgstr "使用"
+
+msgid "Configuring svg image fields"
+msgstr "配置 SVG 影像欄位"
+
+msgid ""
+"A few of the settings for svg image fields are defined once when you create the field and\n"
+"      cannot be changed later; these include the choice of public or private file storage and the number of images that can be stored in the field.\n"
+"       The rest of the settings can be edited later; these settings include the field label, help text, and the subdirectory in the public or private file storage\n"
+"       where the images will be stored. The editable settings can also have different values for different entity sub-types; for instance,\n"
+"       if your image field is used on both Page and Article content types, you can store the files in a\n"
+"        different subdirectory for the two content types."
+msgstr ""
+"svg 影像欄位的一些設定在建立欄位時定義一次，\n"
+"      以後無法變更；這些包括選擇公用或專用檔案儲存體以及可以儲存在欄位中的\n"
+"       影像數量。其餘設定可以稍後編輯；這些設定包括欄位標籤、說明文字以及\n"
+"       將儲存影像的公用或專用檔案儲存體中的子目錄。對於不同的實體子類型，可編輯設定\n"
+"       也可以有不同的值；例如，如果您的影像欄位同時用於頁面和文章內容類型，您可以\n"
+"        將檔案儲存在兩種內容類型的不同子目錄中。"
+
+msgid ""
+"For accessibility and search engine optimization, all images that convey meaning on web sites should have alternate text.\n"
+"       Drupal also allows entry of title text for images, but it can lead to confusion for screen reader users and its use is not recommended.\n"
+"       SVG image fields can be configured so that alternate and title text fields are enabled or disabled; if enabled, the fields can be set to be required.\n"
+"        The recommended setting is to enable and require alternate text and disable title text."
+msgstr ""
+"為了將協助工具及搜尋引擎最佳化，所有在網站上傳達意義的影像都應有替代文字。\n"
+"       Drupal 也容許輸入影像的標題文字，但這可能會讓螢幕閱讀器使用者感到混淆，因此不建議使用。\n"
+"       您可以配置 SVG 影像欄位，以啟用或停用替代及標題文字欄位；如果已啟用，則可將這些欄位設定為必要欄位。\n"
+"        建議設定是啟用替代文字並將其設為必要，但停用標題文字。"
+
+msgid ""
+"When you create an svg image field, you will need to choose whether the uploaded images will be stored in the public or\n"
+" private file directory defined in your settings.php file and shown on the <a href=\":file-system\">File system page</a>. This choice cannot be changed later.\n"
+"  You can also configure your field to store files in a subdirectory of the public or private directory; this setting can be changed later and\n"
+"  can be different for each entity sub-type using the field. For more information on file storage,\n"
+"  see the <a href=\":system-help\">System module help page</a>."
+msgstr ""
+"在建立 SVG 影像欄位時，您必須選擇上傳的影像將儲存在公用\n"
+" 還是專用檔案目錄中；此目錄定義於您的 settings.php 檔案中，並顯示在<a href=\":file-system\">檔案系統頁面</a>上。稍後無法變更此選擇。\n"
+"  您也可以配置欄位，以將檔案儲存在公用或專用目錄的子目錄中；此設定可在稍後變更，\n"
+"  並且可能隨著使用欄位的各種實體子類型而不同。如需檔案儲存體的相關資訊，\n"
+"  請參閱<a href=\":system-help\">系統模組說明頁面</a>。"
+
+msgid ""
+"The maximum file size that can be uploaded is limited by PHP settings of the server,\n"
+" but you can restrict it further by configuring a <em>Maximum upload size</em> in the field settings (this setting can be changed later).\n"
+" The maximum file size, either from PHP server settings or field configuration, is automatically displayed to users in the help text of the image field."
+msgstr ""
+"可上傳的檔案大小上限由伺服器的 PHP 設定限制，\n"
+" 但您也可以透過在欄位設定中配置<em>上傳大小上限</em>（此設定可在稍後變更），進一步予以限制。\n"
+" 檔案大小上限（來自於 PHP 伺服器設定或欄位配置）會在影像欄位的說明文字中自動向使用者顯示。"
+
+msgid ""
+"You can also configure a default image that will be used if no image is uploaded in an image field.\n"
+"       This default can be defined for all instances of the field in the field storage settings when you create a field, and the setting can be overridden\n"
+"        for each entity sub-type that uses the field."
+msgstr ""
+"您也可以配置一個預設影像，在影像欄位中未上傳任何影像時使用。\n"
+"建立欄位時，您可以在欄位儲存體設定中為所有欄位實例定義此預設值，\n"
+"並且可以為使用該欄位的每個實體子類型置換此設定。"
+
+msgid "Configuring displays and form displays"
+msgstr "配置顯示及表單顯示"
+
+msgid ""
+"On the <em>Manage display</em> page, you can choose the image formatter,\n"
+" which determines the image width and height used to display the image in each display mode and whether or not to display the image alt and title.\n"
+"  On the <em>Manage form display</em> page, you can configure the image upload widget, including setting the preview image max-width and max-height\n"
+"   shown on the entity edit form."
+msgstr ""
+"在<em>管理顯示</em>頁面上，您可以選擇影像格式製作程式，\n"
+"以決定在各種顯示模式下顯示影像時所使用的影像寬度及高度，以及是否顯示影像替代文字及標題。\n"
+"在<em>管理表單顯示</em>頁面上，您可以配置影像上傳小組件，包括設定在實體編輯表單上顯示的\n"
+"預覽影像 max-width 及 max-height。"
+
+msgid "Only files with mime type %mime-types-allowed are allowed. Mime type detected %mime-type-detected"
+msgstr "僅容許 MIME 類型為 %mime-types-allowed 的檔案。MIME 類型偵測到 %mime-type-detected"
+
+msgid "File %file-name is not valid svg"
+msgstr "檔案 %file-name 不是有效的 SVG"
+
+msgid "SVG image field"
+msgstr "SVG 影像欄位"
+
+msgid "Provides svg image field"
+msgstr "提供 SVG 影像欄位"
+
+msgid "Field types"
+msgstr "欄位類型"
+
+msgid "Image settings"
+msgstr "圖像設定"
+
+msgid "Default value"
+msgstr "預設值"
+
+msgid "Enable Alt field"
+msgstr "啟用 Alt 欄位"
+
+msgid "Alt field required"
+msgstr "需要 Alt 欄位"
+
+msgid "Enable Title field"
+msgstr "啟用標題欄位"
+
+msgid "Title field required"
+msgstr "需要標題欄位"
+
+msgid "Image field display format settings"
+msgstr "影像欄位顯示格式設定"
+
+msgid "Output SVG inline"
+msgstr "輸出行內 SVG"
+
+msgid "Apply dimensions"
+msgstr "套用維度"
+
+msgid "Width"
+msgstr "寬度"
+
+msgid "Height"
+msgstr "高度"
+
+msgid "Enable alt"
+msgstr "啟用 alt"
+
+msgid "Enable title"
+msgstr "啟用標題"
+
+msgid "Link image to"
+msgstr "連結圖片至"
+
+msgid "Force fill"
+msgstr "強制填寫"
+
+msgid "Sanitize"
+msgstr "消毒"
+
+msgid "Sanitize remote"
+msgstr "消毒遠端"
+
+msgid "Progress indicator"
+msgstr "進度列指示器"
+
+msgid "Preview max width"
+msgstr "預覽寬度上限"
+
+msgid "Preview max height"
+msgstr "預覽高度上限"
+
+msgid "SVG Image Field - Media Bundle"
+msgstr "SVG 影像欄位 - 媒體組合"
+
+msgid "Creates a media bundle to use SVG Image Field with the Media capabilities in core. NOTE: if you are planning to use this with the Media Library in core, it is recommended to install that module before this one. Will also install Acquia Site Studio Components if that is installed."
+msgstr "建立媒體組合，以在核心中使用 SVG 影像欄位與媒體功能。 附註：如果您計劃在核心中使用此媒體庫，建議在此媒體庫之前安裝該模組。 如果已安裝，則也會安裝「Acquia Site Studio 元件」。"
+
+msgid "Content"
+msgstr "內容"
+
+msgid "File"
+msgstr "檔案"
+
+msgid ""
+"Check this option if you want to manipulate the SVG image with CSS and JavaScript.\n"
+"       Notice only trusted users should use fields with this option enabled because of\n"
+"       <a href=\"@svg_security_link\">inline svg security</a>"
+msgstr ""
+"如果要使用 CSS 及 JavaScript 來操作 SVG 影像，請勾選此選項。\n"
+"       請注意，只有授信使用者才應該使用啟用此選項的欄位，因為\n"
+"       <a href=\"@svg_security_link\">行內 svg 安全</a>問題"
+
+msgid "Apply dimensions."
+msgstr "套用維度。"
+
+msgid "Image width."
+msgstr "影像寬度。"
+
+msgid "Image height."
+msgstr "影像高度。"
+
+msgid "Force the fill to currentColor"
+msgstr "強制填入 currentColor"
+
+msgid "This can allow the SVG to inherit coloring from the enclosing tag, such as a link tag."
+msgstr "這可讓 SVG 從含括標籤繼承著色，例如鏈結標籤。"
+
+msgid "Sanitize SVG code"
+msgstr "為 SVG 程式碼消毒"
+
+msgid "Sanitize the SVG XML code and prevent XSS attacks."
+msgstr "為 SVG XML 程式碼消毒，並防止 XSS 攻擊。"
+
+msgid "Sanitize: Remove remote references"
+msgstr "消毒：移除遠端參照"
+
+msgid "Remove attributes that reference remote files, this will stop HTTP leaks but will add an overhead to the sanitizer."
+msgstr "移除參照遠端檔案的屬性，這將停止 HTTP 洩漏，但會增加消毒器的額外負荷 。"
+
+msgid "Nothing"
+msgstr "沒有"
+
+msgid "Enable alt attribute."
+msgstr "啟用 alt 屬性。"
+
+msgid "Enable title attribute."
+msgstr "啟用 title 屬性。"
+
+msgid "Inline SVG"
+msgstr "行內 SVG"
+
+msgid "Image width: @width"
+msgstr "影像寬度：@width"
+
+msgid "Image height: @height"
+msgstr "影像高度：@height"
+
+msgid "Alt enabled"
+msgstr "已啟用替代文字"
+
+msgid "Title enabled"
+msgstr "已啟用標題"
+
+msgid "Inline file %file is missing or empty. Inline display will be disabled and an image tag used instead."
+msgstr "行內檔案 %file 遺漏或空白。 將停用行內顯示，並改用影像標籤。"
+
+msgid "File %file could not be displayed by image formatter because it does not exist on server."
+msgstr "影像格式製作程式無法顯示檔案 %file，因為它不存在於伺服器上。"
+
+msgid "SVG Image Field formatter"
+msgstr "SVG 影像欄位格式製作程式"
+
+msgid "SVG Image URL formatter"
+msgstr "SVG 影像 URL 格式製作程式"
+
+msgid "Alternative text"
+msgstr "替代文字"
+
+msgid "Alternative image text, for the image's 'alt' attribute."
+msgstr "替代影像文字，用於影像的 'alt' 屬性。"
+
+msgid "Title"
+msgstr "標題"
+
+msgid "Image title text, for the image's 'title' attribute."
+msgstr "影像標題文字，用於影像的 'title' 屬性。"
+
+msgid "Upload destination"
+msgstr "上載目的地"
+
+msgid "Select where the final files should be stored. Private file storage has significantly more overhead than public files, but allows restricted access to files within this field."
+msgstr "選擇最後檔案保存的位置。私有檔案儲存比公共檔案操作複雜得多，但是可以使用檔案的訪問權限控制。"
+
+msgid "If no image is uploaded, this image will be shown on display."
+msgstr "如果沒有圖片被上載，此圖片會顯示出來。"
+
+msgid "Enable <em>Alt</em> field"
+msgstr "啟用 <em>Alt</em> 欄位"
+
+msgid "The alt attribute may be used by search engines, screen readers, and when the image cannot be loaded. Enabling this field is recommended."
+msgstr "alt 屬性可由搜尋引擎、螢幕閱讀器使用，以及在影像無法載入時使用。建議啟用此欄位。"
+
+msgid "<em>Alt</em> field required"
+msgstr "需要 <em>Alt</em> 欄位"
+
+msgid "Making this field required is recommended."
+msgstr "建議將此欄位設為必要欄位。"
+
+msgid "Enable <em>Title</em> field"
+msgstr "啟用 <em>Title</em> 欄位"
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image. Enabling this field is not recommended as it can cause problems with screen readers."
+msgstr "將滑鼠游標移至影像上方時，會以 title 屬性作為工具提示。建議不要啟用此欄位，因為這可能會導致螢幕閱讀器方面的問題。"
+
+msgid "<em>Title</em> field required"
+msgstr "需要<em>標題</em>欄位"
+
+msgid "If no image is uploaded, this image will be shown on display and will override the field's default image."
+msgstr "如果未上傳任何影像，此影像將會顯示在顯示畫面上，且會置換欄位的預設影像。"
+
+msgid "Default image"
+msgstr "預設圖像"
+
+msgid "Image"
+msgstr "圖片"
+
+msgid "Image to be shown if no image is uploaded."
+msgstr "未上傳任何影像時要顯示的影像。"
+
+msgid "This text will be used by screen readers, search engines, and when the image cannot be loaded."
+msgstr "此文字將由螢幕閱讀器、搜尋引擎使用，以及在影像無法載入時使用。"
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image."
+msgstr "Title 屬性用於當使用者鼠標移動到此圖片上時的工具提示。"
+
+msgid "Svg Image"
+msgstr "SVG 影像"
+
+msgid "This field stores the ID of an image file as an integer value."
+msgstr "這個欄位把圖片檔案的 ID 作為一個整數值存儲。"
+
+msgid "Reference"
+msgstr "參照"
+
+msgid "Alt"
+msgstr "Alt"
+
+msgid "Preview image max width"
+msgstr "預覽影像寬度上限"
+
+msgid "Preview image max height"
+msgstr "預覽影像高度上限"
+
+msgid "Preview image width: @width"
+msgstr "預覽影像寬度：@width"
+
+msgid "Preview image height: @height"
+msgstr "預覽影像高度：@height"
+
+msgid "This text will be used by screen readers, search engines, or when the image cannot be loaded."
+msgstr "這些文字被應用於搜尋、螢幕閱讀器或當圖像沒法載入的時候。"
+
+msgid "The title is used as a tool tip when the user hovers the mouse over the image."
+msgstr "這是當滑鼠停留圖像上時所顯示的文字提示。"
+
+msgid "SVG image"
+msgstr "SVG 影像"
+
+msgid "SVG"
+msgstr "SVG"
+
+msgid "Provides business logic and metadata for SVG files."
+msgstr "提供 SVG 檔案的商業邏輯及 meta 資料。"
+

@@ -1,0 +1,2971 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Processed @processed of @total overridden Metatag records."
+msgstr "已处理 @processed 条（共 @total 条）已覆盖的元标记记录。"
+
+msgid "There were no overridden Metatag records."
+msgstr "不存在已覆盖的元标记记录。"
+
+msgid "Metatags"
+msgstr "元标记"
+
+msgid "Tokens related to Metatags."
+msgstr "与元标记相关的标记。"
+
+msgid "Metatag values for the current page."
+msgstr "当前页面的元标记值。"
+
+msgid "@label tokens."
+msgstr "@label 令牌。"
+
+msgid "List of @type values"
+msgstr "@type 值的列表"
+
+msgid "Tokens for lists of @type values."
+msgstr "@type 值列表的令牌。"
+
+msgid "@type type with delta @delta"
+msgstr "具有增量 @delta 的 @type 类型"
+
+msgid "Metatags (Hidden field for JSON support)"
+msgstr "元标记（JSON 支持的隐藏字段）"
+
+msgid "The meta tags for the entity."
+msgstr "实体的元标记。"
+
+msgid "About"
+msgstr "关于"
+
+msgid "This module allows a site to automatically provide structured metadata, aka \"meta tags\", about the site and individual pages."
+msgstr "此模块允许站点自动提供有关此站点和个别页面的结构化元数据（又称为“元标记”）。"
+
+msgid "In the context of search engine optimization, providing an extensive set of meta tags may help improve the site's and pages' rankings, thus may aid with achieving a more prominent display of the content within search engine results. They can also be used to tailor how content is displayed when shared on social networks. For additional information, see the <a href=\":online\">online documentation for Metatag</a>."
+msgstr "在搜索引擎优化的上下文中提供了一组广泛的元标记，这有助于提升站点和页面的排名，从而在搜索引擎结果中更突出地显示内容。这些元标记还可用于定制在社交网络上分享时如何显示内容。有关更多信息，请参阅<a href=\":online\">元标记联机文档</a>。"
+
+msgid "Intended workflow"
+msgstr "预期工作流程"
+
+msgid "The module uses <a href=\":tokens\">\"tokens\"</a> to automatically fill in values for different meta tags. Specific values may also be filled in."
+msgstr "该模块使用<a href=\":tokens\">“令牌”</a>来自动填充不同元标记的值。也可以填充特定的值。"
+
+msgid "The best way of using Metatag is as follows:"
+msgstr "使用元标记的最佳方式如下："
+
+msgid "Customize the <a href=\":defaults\">global defaults</a>, fill in the specific values and tokens that every page should have."
+msgstr "定制<a href=\":defaults\">全局缺省值</a>，填充每个页面应具有的特定值和令牌。"
+
+msgid "Override each of the <a href=\":defaults\">other defaults</a>, fill in specific values and tokens that each item should have by default. This allows e.g. for all nodes to have different values than taxonomy terms."
+msgstr "覆盖所有<a href=\":defaults\">其他缺省值</a>，填充每个项在缺省情况下应具有的特定值和令牌。例如，这允许所有节点具有与分类法术语不同的值。"
+
+msgid "<a href=\":add\">Add more default configurations</a> as necessary for different entity types and entity bundles, e.g. for different content types or different vocabularies."
+msgstr "根据需要，为不同的实体类型和实体捆绑软件（例如，不同的内容类型或不同的词汇表）<a href=\":add\">添加更多缺省配置</a>。"
+
+msgid "To override the meta tags for individual entities, e.g. for individual nodes, add the \"Metatag\" field via the field settings for that entity or bundle type."
+msgstr "要覆盖个别实体（例如，个别节点）的元标记，请通过该实体或捆绑软件类型的字段设置来添加“元标记”字段。"
+
+msgid "Configure global meta tag default values below. Meta tags may be left as the default."
+msgstr "配置下面的全局元标记缺省值。元标记可能会保留为缺省值。"
+
+msgid "Meta tag patterns are passed down from one level to the next unless they are overridden. To view a summary of the individual meta tags and the pattern for a specific configuration, click on its name below."
+msgstr "除非元标记模式被覆盖，否则它们会从一个级别传递到下一个级别。要查看各个元标记和特定配置模式的摘要，请单击下方的名称。"
+
+msgid "If the top-level configuration is not specific enough, additional default meta tag configurations can be added for a specific entity type or entity bundle, e.g. for a specific content type."
+msgstr "如果顶级配置不够具体，那么可以为特定实体类型或实体捆绑软件（例如，特定内容类型）添加额外的缺省元标记配置。"
+
+msgid "Meta tags can be further refined on a per-entity basis, e.g. for individual nodes, by adding the \"Metatag\" field to that entity type through its normal field settings pages."
+msgstr "按实体（例如，个别节点）进一步优化元标记，方法是通过实体类型的标准字段设置页面向该实体类型添加“元标记”字段。"
+
+msgid "Use the following form to override the global default meta tags for a specific entity type or entity bundle. In practical terms, this allows the meta tags to be customized for a specific content type or taxonomy vocabulary, so that its content will have different meta tags <em>default values</em> than others."
+msgstr "使用以下格式来覆盖特定实体类型或实体捆绑软件的全局缺省元标记。实际上，这允许为特定内容类型或分类法词汇表定制元标记，从而使其内容具有不同于其他项的元标记<em>缺省值</em>。"
+
+msgid "As a reminder, if the \"Metatag\" field is added to the entity type through its normal field settings, the meta tags can be further refined on a per entity basis; this allows each node to have its meta tags  customized on an individual basis."
+msgstr "值得提醒的是，如果通过实体类型的标准字段设置来向该实体类型添加“元标记”字段，那么可按实体进一步优化元标记；这允许每个节点逐个定制其元标记。"
+
+msgid "Not enabled while in maintenance mode"
+msgstr "处于维护方式时不启用"
+
+msgid "Please note that while the site is in maintenance mode none of the usual meta tags will be output."
+msgstr "请注意，当站点处于维护方式时，不会输出任何常规元标记。"
+
+msgid "Schema.org Metatag is recommended"
+msgstr "建议使用 Schema.org Metatag"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is highly recommended to add <a href=\"@jsonld\">JSON-LD</a> -formatted <a href=\"@schema\">schema.org</a> compatible data structures to the site."
+msgstr "强烈建议使用 <a href=\"@module\">Schema.org Metatag</a> 模块来将 <a href=\"@jsonld\">JSON-LD</a> 格式的 <a href=\"@schema\">schema.org</a> 兼容数据结构添加到站点。"
+
+msgid "Schema.org Metatag is installed"
+msgstr "已安装 Schema.org Metatag"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is installed."
+msgstr "已安装 <a href=\"@module\">Schema.org Metatag</a> 模块。"
+
+msgid "Token Or"
+msgstr "Token OR"
+
+msgid "The <a href=\"@module\">Token OR module</a> is suggested for when the basic content tokens are not flexible enough, e.g. to make a meta tag show the contents of one field if it is filled in or another if the first one is empty."
+msgstr "建议在基本内容令牌不够灵活时使用 <a href=\"@module\">Token OR 模块</a>，例如，使元标记显示一个字段的内容（如果填写了该字段）或另一个字段的内容（如果第一个字段为空）。"
+
+msgid "The new Metatag: Open Graph module has been enabled."
+msgstr "新的元标记：已启用 Open Grap 模块。"
+
+msgid "The sites's caches will need to be rebuild to ensure Metatag works as intended."
+msgstr "需要重建站点的缓存以确保元标记按预期工作。"
+
+msgid "Metatag"
+msgstr "元标记"
+
+msgid "Manage meta tags for all entities."
+msgstr "管理所有实体的元标记。"
+
+msgid "SEO"
+msgstr "搜索引擎优化"
+
+msgid "Add default meta tags"
+msgstr "添加缺省元标记"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Metatag plugins"
+msgstr "元标记插件"
+
+msgid "Configure Metatag defaults."
+msgstr "配置元标记缺省值。"
+
+msgid "Overview of plugins used in metatag."
+msgstr "概述了元标记中使用的插件。"
+
+msgid "Metatag defaults"
+msgstr "元标记缺省值"
+
+msgid "Administer meta tags"
+msgstr "管理元标记"
+
+msgid "Control the main settings pages and modify per-object meta tags."
+msgstr "控制主设置页面并按对象修改元标记。"
+
+msgid "Delete default meta tags"
+msgstr "删除缺省元标记"
+
+msgid "Revert default meta tags"
+msgstr "还原缺省元标记"
+
+msgid "Configure the Metatag module"
+msgstr "配置元标记模块"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Tags"
+msgstr "标签"
+
+msgid "Abstract"
+msgstr "总结"
+
+msgid "Cache control"
+msgstr "缓存控制"
+
+msgid "Canonical URL"
+msgstr "权威链接"
+
+msgid "Content Language"
+msgstr "内容语言"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Expires"
+msgstr "过期"
+
+msgid "Generator"
+msgstr "生成器"
+
+msgid "Image SRC"
+msgstr "图像 SRC"
+
+msgid "Keywords"
+msgstr "关键词"
+
+msgid "Google News Keywords"
+msgstr "Google News 关键字"
+
+msgid "Next page URL"
+msgstr "下一页 URL"
+
+msgid "Original source"
+msgstr "原始源"
+
+msgid "Pragma"
+msgstr "Pragma"
+
+msgid "Previous page URL"
+msgstr "上一页 URL"
+
+msgid "Rating"
+msgstr "评级"
+
+msgid "Referrer policy"
+msgstr "引荐者策略"
+
+msgid "Refresh"
+msgstr "刷新"
+
+msgid "Revisit After"
+msgstr "之后重新访问"
+
+msgid "Rights"
+msgstr "权限"
+
+msgid "Robots"
+msgstr "机器人"
+
+msgid "Shortlink"
+msgstr "短链接"
+
+msgid "Standout"
+msgstr "突出"
+
+msgid "Page title"
+msgstr "页面标题"
+
+msgid "ICBM"
+msgstr "ICBM"
+
+msgid "Geographical region"
+msgstr "地理区域"
+
+msgid "Geographical place name"
+msgstr "地理位置名称"
+
+msgid "Geographical position"
+msgstr "地理位置"
+
+msgid "Set Cookie"
+msgstr "设置 Cookie"
+
+msgid "Google"
+msgstr "谷歌"
+
+msgid "Author"
+msgstr "作者"
+
+msgid "Default value"
+msgstr "默认值"
+
+msgid "Advanced meta tags form"
+msgstr "高级元标记表单"
+
+msgid "Place field in sidebar"
+msgstr "将字段放置在侧边栏中"
+
+msgid "Place field in collapsed details container"
+msgstr "将字段放置在折叠的详细信息容器中"
+
+msgid "Metatag settings"
+msgstr "元标记设置"
+
+msgid "Metatag groups that apply to each entity type"
+msgstr "应用于每个实体类型的元标记组"
+
+msgid "Entity type"
+msgstr "实体类型"
+
+msgid "Bundle"
+msgstr "包"
+
+msgid "Group"
+msgstr "组"
+
+msgid "Trim method for trimmable tags."
+msgstr "可修剪标记的修剪方法。"
+
+msgid "Use Maxlength module to force these limits?"
+msgstr "使用 Maxlength 模块来强制执行这些限制？"
+
+msgid "Tag-specific maximum length"
+msgstr "特定于标记的最大长度"
+
+msgid "Tag maximum length in characters"
+msgstr "标记最大长度（以字符计）"
+
+msgid "Add max height value"
+msgstr "添加最大高度值"
+
+msgid "Provides support for applinks.org meta tags."
+msgstr "提供 applinks.org 元标记支持。"
+
+msgid "Metatag: App Links"
+msgstr "元标记：应用程序链接"
+
+msgid "Android app name"
+msgstr "Android 应用程序名称"
+
+msgid "Android app Activity Class"
+msgstr "Android 应用程序活动类"
+
+msgid "Android app package ID"
+msgstr "Android 应用程序包标识"
+
+msgid "Android app URL scheme"
+msgstr "Android 应用程序 URL 方案"
+
+msgid "iOS app URL scheme"
+msgstr "iOS 应用程序 URL 方案"
+
+msgid "iOS app store ID"
+msgstr "iOS 应用商店标识"
+
+msgid "iOS app name"
+msgstr "iOS 应用程序名称"
+
+msgid "iPad app URL scheme"
+msgstr "iPad 应用程序 URL 方案"
+
+msgid "iPad app store ID"
+msgstr "iPad 应用商店标识"
+
+msgid "iPad app name"
+msgstr "iPad 应用程序名称"
+
+msgid "iPhone app URL scheme"
+msgstr "iPhone 应用程序 URL 方案"
+
+msgid "iPhone app store ID"
+msgstr "iPhone 应用商店标识"
+
+msgid "Windows app GUID"
+msgstr "Windows 应用程序 GUID"
+
+msgid "Windows app name"
+msgstr "Windows 应用程序名称"
+
+msgid "Windows app URL scheme"
+msgstr "Windows 应用程序 URL 方案"
+
+msgid "Windows Phone app URL scheme"
+msgstr "Windows Phone 应用程序 URL 方案"
+
+msgid "Windows Phone app GUID"
+msgstr "Windows Phone 应用程序 GUID"
+
+msgid "Windows Phone app name"
+msgstr "Windows Phone 应用程序名称"
+
+msgid "Windows Universal app URL scheme"
+msgstr "Windows Universal 应用程序 URL 方案"
+
+msgid "Windows Universal app GUID"
+msgstr "Windows Universal 应用程序 GUID"
+
+msgid "Windows Universal app name"
+msgstr "Windows Universal 应用程序名称"
+
+msgid "Web URL"
+msgstr "Web URL"
+
+msgid "Should fallback"
+msgstr "应回退"
+
+msgid "App Links"
+msgstr "应用程序链接"
+
+msgid "The name of the app (suitable for display)."
+msgstr "应用程序的名称（适合于显示）。"
+
+msgid "A fully-qualified Activity class name for intent generation."
+msgstr "用于意向生成的标准活动类名。"
+
+msgid "A fully-qualified package name for intent generation. <strong>This attribute is required by the App Links specification.</strong>"
+msgstr "用于意向生成的标准软件包名称。<strong>应用程序链接规范需要此属性。</strong>"
+
+msgid "A custom scheme for the Android app."
+msgstr "Android 应用程序的定制方案。"
+
+msgid "The name of the app (suitable for display)"
+msgstr "应用程序的名称（适合于显示）"
+
+msgid "The app ID for the app store."
+msgstr "应用商店的应用程序标识。"
+
+msgid "A custom scheme for the iOS app. <strong>This attribute is required by the app Links specification.</strong>"
+msgstr "iOS 应用程序的定制方案。<strong>应用程序链接规范需要此属性。</strong>"
+
+msgid "iPhone app name"
+msgstr "iPhone 应用程序名称"
+
+msgid "The web URL; defaults to the URL for the content that contains this tag."
+msgstr "Web URL；缺省设置为包含此标记的内容的 URL。"
+
+msgid "Windows app ID"
+msgstr "Windows 应用程序标识"
+
+msgid "Windows Phone app ID"
+msgstr "Windows Phone 应用程序标识"
+
+msgid "Windows Universal app ID"
+msgstr "Windows Universal 应用程序标识"
+
+msgid "Metatag: Dublin Core"
+msgstr "元标记：Dublin Core"
+
+msgid "Provides the fifteen <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "提供来自 <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a> 的 15 个 <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> 元标记。"
+
+msgid "Dublin Core: Contributor"
+msgstr "Dublin Core：添加者"
+
+msgid "Dublin Core: Coverage"
+msgstr "Dublin Core：覆盖范围"
+
+msgid "Dublin Core: Creator"
+msgstr "Dublin Core：创建者"
+
+msgid "Dublin Core: Date"
+msgstr "Dublin Corew：日期"
+
+msgid "Dublin Core: Description"
+msgstr "Dublin Core：描述"
+
+msgid "Dublin Core: Format"
+msgstr "Dublin Core：格式"
+
+msgid "Dublin Core: Identifier"
+msgstr "Dublin Core：标识"
+
+msgid "Dublin Core: Language"
+msgstr "Dublin Core：语言"
+
+msgid "Dublin Core: Publisher"
+msgstr "Dublin Core：发布者"
+
+msgid "Dublin Core: Relation"
+msgstr "Dublin Core：关系"
+
+msgid "Dublin Core: Rights"
+msgstr "Dublin Core：权限"
+
+msgid "Dublin Core: Source"
+msgstr "Dublin Core：来源"
+
+msgid "Dublin Core: Subject"
+msgstr "Dublin Core：主题"
+
+msgid "Dublin Core: Title"
+msgstr "Dublin Core：标题"
+
+msgid "Dublin Core: Type"
+msgstr "Dublin Core：类型"
+
+msgid "Dublin Core"
+msgstr "Dublin Core"
+
+msgid "Contributor"
+msgstr "添加者"
+
+msgid "An entity responsible for making contributions to the resource. Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."
+msgstr "负责对资源作出贡献的实体。添加者示例包括个人、组织或服务。通常应使用添加者的名称来指示此实体。"
+
+msgid "Coverage"
+msgstr "覆盖范围"
+
+msgid "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."
+msgstr "资源的空间或时间主题、资源的空间适用性或者资源的相关适用范围。空间主题和空间适用性可以是指定的位置或者按地理坐标指定的位置。时间主题可以是指定的时间段、日期或日期范围。适用范围可以是指定的管理实体或应用资源的地理位置。最好使用控制性词汇表，例如，地理名称叙词表 (Thesaurus of Geographic Names) [TGN]。如果适用，在数字标识（例如，坐标系或日期范围）之前优先使用指定的位置或时间段。"
+
+msgid "Creator"
+msgstr "创建者"
+
+msgid "An entity primarily responsible for making the resource. Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."
+msgstr "主要负责生成资源的实体。创建者的示例包括个人、组织或服务。通常应使用创建者的名称来指示此实体。"
+
+msgid "Date"
+msgstr "日期"
+
+msgid "A point or period of time associated with an event in the lifecycle of the resource. Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."
+msgstr "与资源生命周期中的某个事件相关的时间点或时间段。日期可用于表示任何详细级别的时间信息。最好使用编码方案，例如，ISO 8601 的 W3CDTF 概要文件 [W3CDTF]。"
+
+msgid "An account of the resource. Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."
+msgstr "资源的说明。描述可包含但不限于以下内容：资源的摘要、目录、图形表示或自由文本说明。"
+
+msgid "Format"
+msgstr "格式"
+
+msgid "The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."
+msgstr "资源的文件格式、物理介质或规格。规格示例包括大小和持续时间。最好使用控制性词汇表，例如，互联网媒体类型列表 [MIME]。"
+
+msgid "Identifier"
+msgstr "标识符"
+
+msgid "An unambiguous reference to the resource within a given context. Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."
+msgstr "指定上下文中对资源的明确引用。最好是通过符合正式识别系统的字符串来标识资源。"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "A language of the resource. Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."
+msgstr "资源的语言。最好使用控制性词汇表，例如，RFC 4646 [RFC4646]。"
+
+msgid "Publisher"
+msgstr "发布者"
+
+msgid "An entity responsible for making the resource available. Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."
+msgstr "负责使资源可用的实体。发布者的示例包括个人、组织或服务。通常应使用发布者的名称来指示此实体。"
+
+msgid "Relation"
+msgstr "关系"
+
+msgid "A related resource. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "相关资源。最好是通过符合正式识别系统的字符串来标识相关资源。"
+
+msgid "Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."
+msgstr "有关针对资源持有的权限的信息。通常，权限信息包含与资源相关联的各种产权的相关声明，包括知识产权。"
+
+msgid "Source"
+msgstr "源"
+
+msgid "A related resource from which the described resource is derived. The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "派生自所述资源的相关资源。所述资源可全部或部分派生自相关资源。最好是通过符合正式识别系统的字符串来标识相关资源。"
+
+msgid "Subject"
+msgstr "主题"
+
+msgid "The topic of the resource. Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary. To describe the spatial or temporal topic of the resource, use the Coverage element."
+msgstr "资源的主题。通常，使用关键字、关键短语或分类代码来表示主题。最好使用控制性词汇表。要描述资源的空间或时间主题，请使用“覆盖范围”元素。"
+
+msgid "Title"
+msgstr "标题"
+
+msgid "The name given to the resource."
+msgstr "为资源指定的名称。"
+
+msgid "The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."
+msgstr "资源的性质或类型。最好使用控制性词汇表，例如，DCMI 类型词汇表 [DCMITYPE]。要描述资源的文件格式、物理介质或规格，请使用“格式”元素。"
+
+msgid "Provides forty additional meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "提供来自 <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a> 的另外 40 个元标记。"
+
+msgid "Metatag: Dublin Core Advanced"
+msgstr "元标记：Dublin Core Advanced"
+
+msgid "Dublin Core: Abstract"
+msgstr "Dublin Core：摘要"
+
+msgid "Dublin Core: Access Rights"
+msgstr "Dublin Core：访问权"
+
+msgid "Dublin Core: Accrual Method"
+msgstr "Dublin Core：增加方法"
+
+msgid "Dublin Core: Accrual Periodicity"
+msgstr "Dublin Core：增加周期"
+
+msgid "Dublin Core: Accrual Policy"
+msgstr "Dublin Core：增加策略"
+
+msgid "Dublin Core: Alternative Title"
+msgstr "Dublin Core：备用标题"
+
+msgid "Dublin Core: Audience"
+msgstr "Dublin Core：受众"
+
+msgid "Dublin Core: Date Available"
+msgstr "Dublin Core：可用日期"
+
+msgid "Dublin Core: Bibliographic Citation"
+msgstr "Dublin Core：文献引文"
+
+msgid "Dublin Core: Conforms To"
+msgstr "Dublin Core：依据的标准"
+
+msgid "Dublin Core: Date Created"
+msgstr "Dublin Core：创建日期"
+
+msgid "Dublin Core: Date Accepted"
+msgstr "Dublin Core：接受日期"
+
+msgid "Dublin Core: Date Copyrighted"
+msgstr "Dublin Core：版权获得日期"
+
+msgid "Dublin Core: Date Submitted"
+msgstr "Dublin Core：提交日期"
+
+msgid "Dublin Core: Audience Education Level"
+msgstr "Dublin Core：受众受教育程度"
+
+msgid "Dublin Core: Extent"
+msgstr "Dublin Core：范围"
+
+msgid "Dublin Core: Has Format"
+msgstr "Dublin Core：父格式"
+
+msgid "Dublin Core: Has Part"
+msgstr "Dublin Core：包含"
+
+msgid "Dublin Core: Has Version"
+msgstr "Dublin Core：父版本"
+
+msgid "Dublin Core: Instructional Method"
+msgstr "Dublin Core：教学方法"
+
+msgid "Dublin Core: Is Format Of"
+msgstr "Dublin Core：子格式"
+
+msgid "Dublin Core: Is Part Of"
+msgstr "Dublin Core：属于"
+
+msgid "Dublin Core: Is Referenced By"
+msgstr "Dublin Core：被引用"
+
+msgid "Dublin Core: Is Replaced By"
+msgstr "Dublin Core：被替换"
+
+msgid "Dublin Core: Is Required By"
+msgstr "Dublin Core：被需要"
+
+msgid "Dublin Core: Date Issued"
+msgstr "Dublin Core：发布日期"
+
+msgid "Dublin Core: Is Version Of"
+msgstr "Dublin Core：子版本"
+
+msgid "Dublin Core: License"
+msgstr "Dublin Core：许可证"
+
+msgid "Dublin Core: Mediator"
+msgstr "Dublin Core：仲裁者"
+
+msgid "Dublin Core: Medium"
+msgstr "Dublin Core：载体"
+
+msgid "Dublin Core: Date Modified"
+msgstr "Dublin Core：修改日期"
+
+msgid "Dublin Core: Provenance"
+msgstr "Dublin Core：证明"
+
+msgid "Dublin Core: References"
+msgstr "Dublin Core：引用"
+
+msgid "Dublin Core: Replaces"
+msgstr "Dublin Core：替换"
+
+msgid "Dublin Core: Requires"
+msgstr "Dublin Core：需要"
+
+msgid "Dublin Core: Rights Holder"
+msgstr "Dublin Core：权利持有者"
+
+msgid "Dublin Core: Spatial Coverage"
+msgstr "Dublin Core：空间范围"
+
+msgid "Dublin Core: Table Of Contents"
+msgstr "Dublin Core：目录"
+
+msgid "Dublin Core: Temporal Coverage"
+msgstr "Dublin Core：时间范围"
+
+msgid "Dublin Core: Date Valid"
+msgstr "Dublin Core：有效日期"
+
+msgid "Dublin Core Additional Tags"
+msgstr "Dublin Core 其他标记"
+
+msgid "These tags are not part of the Metadata Element Set but may be useful for certain scenarios."
+msgstr "这些标记不属于“元数据元素集”，但在某些场景中可能很有用。"
+
+msgid "A summary of the resource."
+msgstr "资源摘要。"
+
+msgid "Access Rights"
+msgstr "访问权"
+
+msgid "Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."
+msgstr "关于谁可以访问资源或其安全性状态指示的信息。访问权可能包含有关基于隐私、安全性或其他策略的访问权或限制的信息。"
+
+msgid "Accrual Method"
+msgstr "增加方法"
+
+msgid "The method by which items are added to a collection."
+msgstr "用于将项添加到集合的方法。"
+
+msgid "Accrual Periodicity"
+msgstr "增加周期"
+
+msgid "The frequency with which items are added to a collection."
+msgstr "将项添加到集合的频率。"
+
+msgid "Accrual Policy"
+msgstr "增加策略"
+
+msgid "The policy governing the addition of items to a collection."
+msgstr "用于管理将项添加到集合的策略。"
+
+msgid "Alternative Title"
+msgstr "备用标题"
+
+msgid "An alternative name for the resource. The distinction between titles and alternative titles is application-specific."
+msgstr "资源的备用名称。标题与备用标题之间的区别是特定于应用程序的。"
+
+msgid "Audience"
+msgstr "观众"
+
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "资源所针对或对其有用的实体类。"
+
+msgid "Date Available"
+msgstr "可用日期"
+
+msgid "Date (often a range) that the resource became or will become available."
+msgstr "资源变为可用或将变为可用的日期（通常为一个范围）。"
+
+msgid "Bibliographic Citation"
+msgstr "文献引文"
+
+msgid "A bibliographic reference for the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."
+msgstr "资源的参考书目。建议的做法是包括足够的书目详细信息以尽可能清楚地确定资源。"
+
+msgid "Conforms To"
+msgstr "依据的标准"
+
+msgid "An established standard to which the described resource conforms."
+msgstr "所描述资源符合的已建立标准。"
+
+msgid "Date Created"
+msgstr "创建日期"
+
+msgid "Date of creation of the resource."
+msgstr "资源的创建日期。"
+
+msgid "Date Accepted"
+msgstr "接受日期"
+
+msgid "Date of acceptance of the resource. Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."
+msgstr "资源的接受日期。可能与“接受日期”相关的资源示例包括论文（由大学院系接受）或文章（由杂志社接受）。"
+
+msgid "Date Copyrighted"
+msgstr "版权获得日期"
+
+msgid "Date of copyright."
+msgstr "版权日期。"
+
+msgid "Date Submitted"
+msgstr "提交日期"
+
+msgid "Date of submission of the resource. Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal)."
+msgstr "资源的提交日期。可能与“提交日期”相关的资源示例包括论文（提交到大学院系）或文章（提交到杂志社）。"
+
+msgid "Audience Education Level"
+msgstr "受众受教育程度"
+
+msgid "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."
+msgstr "所描述资源针对的实体类（根据教育或培训背景按级数定义）。"
+
+msgid "Extent"
+msgstr "范围"
+
+msgid "The size or duration of the resource."
+msgstr "资源的大小或持续时间。"
+
+msgid "Has Format"
+msgstr "父格式"
+
+msgid "A related resource that is substantially the same as the pre-existing described resource, but in another format."
+msgstr "与先前存在的所描述资源大致相同的相关资源，但采用其他格式。"
+
+msgid "Has Part"
+msgstr "包含"
+
+msgid "A related resource that is included either physically or logically in the described resource."
+msgstr "在所描述资源中以物理或逻辑方式包含的相关资源。"
+
+msgid "Has Version"
+msgstr "父版本"
+
+msgid "A related resource that is a version, edition, or adaptation of the described resource."
+msgstr "作为所描述资源的版本、修订版或改编版本的相关资源。"
+
+msgid "Instructional Method"
+msgstr "教学方法"
+
+msgid "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support. Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured. Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."
+msgstr "所描述资源旨在支持的、用于增长知识、见解和技能的过程。教学方法通常包括用于提供教学材料或进行教学活动的方法、学习者与学习者以及学习者与教学者交互的模式，以及用于评测学习小组和个人学习水平的机制。教学方法包括通过评估和反馈从计划和实施中获取的教学和学习过程的所有方面。"
+
+msgid "Is Format Of"
+msgstr "子格式"
+
+msgid "A related resource that is substantially the same as the described resource, but in another format."
+msgstr "与所描述资源大致相同的相关资源，但采用其他格式。"
+
+msgid "Is Part Of"
+msgstr "属于"
+
+msgid "A related resource in which the described resource is physically or logically included."
+msgstr "在物理上或逻辑上包含所描述资源的相关资源。"
+
+msgid "Is Referenced By"
+msgstr "被引用"
+
+msgid "A related resource that references, cites, or otherwise points to the described resource."
+msgstr "参考、引用或以其他方式指向所描述资源的相关资源。"
+
+msgid "Is Replaced By"
+msgstr "被替换"
+
+msgid "A related resource that supplants, displaces, or supersedes the described resource."
+msgstr "将取代所描述资源的相关资源。"
+
+msgid "Is Required By"
+msgstr "被需要"
+
+msgid "A related resource that requires the described resource to support its function, delivery, or coherence."
+msgstr "需要所描述资源来支持其功能、交付或一致性的相关资源。"
+
+msgid "Is Version Of"
+msgstr "子版本"
+
+msgid "A related resource of which the described resource is a version, edition, or adaptation. Changes in version imply substantive changes in content rather than differences in format."
+msgstr "以所描述资源作为其版本、修订版或改编版本的相关资源。版本中的更改表示内容的实质性更改，而不是格式方面的差异。"
+
+msgid "Date Issued"
+msgstr "发布日期"
+
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "资源的正式发布（例如，出版）日期。"
+
+msgid "License"
+msgstr "许可信息"
+
+msgid "A legal document giving official permission to do something with the resource."
+msgstr "这是一份合法文档，用于提供对资源执行某些操作的正式许可权。"
+
+msgid "Mediator"
+msgstr "仲裁者"
+
+msgid "An entity that mediates access to the resource and for whom the resource is intended or useful. In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."
+msgstr "用于仲裁资源访问的实体，以及资源所针对或对其有用的实体。在教育背景中，仲裁者可以是父母、教师、教学助理或监护人。"
+
+msgid "Medium"
+msgstr "中等"
+
+msgid "The material or physical carrier of the resource."
+msgstr "资源的实际载体。"
+
+msgid "Date Modified"
+msgstr "修改日期"
+
+msgid "Date on which the resource was changed."
+msgstr "资源的更改日期。"
+
+msgid "Provenance"
+msgstr "证明"
+
+msgid "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation. The statement may include a description of any changes successive custodians made to the resource."
+msgstr "自资源创建以来对其真实性、完整性和解释非常重要的资源所有权和管理权任何更改的声明。此类声明可能包括连续管理者对资源所做的任何更改的描述。"
+
+msgid "References"
+msgstr "引用"
+
+msgid "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+msgstr "参考、引用或以其他方式指向所描述资源的相关资源。"
+
+msgid "Replaces"
+msgstr "替换"
+
+msgid "A related resource that is supplanted, displaced, or superseded by the described resource."
+msgstr "由所描述资源取代的相关资源。"
+
+msgid "Requires"
+msgstr "需要"
+
+msgid "A related resource that is required by the described resource to support its function, delivery, or coherence."
+msgstr "所描述资源支持其功能、交付或一致性所需的相关资源。"
+
+msgid "Rights Holder"
+msgstr "权利持有者"
+
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "拥有或管理资源权利的个人或组织。"
+
+msgid "Spatial Coverage"
+msgstr "空间范围"
+
+msgid "Spatial characteristics of the resource."
+msgstr "资源的空间特征。"
+
+msgid "Table Of Contents"
+msgstr "目录"
+
+msgid "A list of subunits of the resource."
+msgstr "资源的子单元列表。"
+
+msgid "Temporal Coverage"
+msgstr "时间范围"
+
+msgid "Temporal characteristics of the resource."
+msgstr "资源的时间特征。"
+
+msgid "Date Valid"
+msgstr "有效日期"
+
+msgid "Date (often a range) of validity of a resource."
+msgstr "资源的有效日期（通常为一个范围）。"
+
+msgid "Metatag Extended Permissions"
+msgstr "元标记扩展许可权"
+
+msgid "Adds individual permissions for each meta tag, allowing for fine-grained access to the meta tags. Note: this may lead to performance issues on the permissions admin page, please see the included README.txt file for details."
+msgstr "为每个元标记添加个人许可权，允许对元标记进行细粒度访问。 注意：这可能会导致权限管理页面出现性能问题，请参阅随附的 README.txt 文件了解详细信息。"
+
+msgid "Access %tag in %group"
+msgstr "访问 %group 中的 %tag"
+
+msgid "Metatag: Facebook"
+msgstr "元标记：Facebook"
+
+msgid "A set of meta tags specially for controlling advanced functionality with Facebook."
+msgstr "一组专门用于控制 Facebook 高级功能的元标记。"
+
+msgid "Facebook Admins"
+msgstr "Facebook 管理"
+
+msgid "Facebook App ID"
+msgstr "Facebook 应用程序标识"
+
+msgid "Facebook Pages"
+msgstr "Facebook 页面"
+
+msgid "facebook"
+msgstr "facebook"
+
+msgid "A comma-separated list of Facebook user IDs of people who are considered administrators or moderators of this page."
+msgstr "视为此页面的管理员或审核者的人员的 Facebook 用户标识的逗号分隔列表。"
+
+msgid "Facebook Application ID"
+msgstr "Facebook 应用程序标识"
+
+msgid "A comma-separated list of Facebook Platform Application IDs applicable for this site."
+msgstr "适用于此站点的 Facebook 平台应用程序标识的逗号分隔列表。"
+
+msgid "Facebook Instant Articles claim URL token."
+msgstr "Facebook 即时文章声明 URL 令牌。"
+
+msgid "Provides support for many different favicons."
+msgstr "提供多种不同的收藏图标支持。"
+
+msgid "Metatag: Favicons"
+msgstr "元标记：收藏图标"
+
+msgid "Default shortcut icon"
+msgstr "缺省快捷方式图标"
+
+msgid "Icon: SVG"
+msgstr "图标：SVG"
+
+msgid "href"
+msgstr "href"
+
+msgid "Color"
+msgstr "颜色"
+
+msgid "Icon: 16px x 16px"
+msgstr "图标：16 像素 x 16 像素"
+
+msgid "Icon: 32px x 32px"
+msgstr "图标：32 像素 x 32 像素"
+
+msgid "Icon: 96px x 96px"
+msgstr "图标：96 像素 x 96 像素"
+
+msgid "Icon: 192px x 192px"
+msgstr "图标：192 像素 x 192 像素"
+
+msgid "Apple touch icon: 60px x 60px"
+msgstr "Apple 触摸图标：60 像素 x 60 像素"
+
+msgid "Apple touch icon: 72px x 72px"
+msgstr "Apple 触摸图标：72 像素 x 72 像素"
+
+msgid "Apple touch icon: 76px x 76px"
+msgstr "Apple 触摸图标：76 像素 x 76 像素"
+
+msgid "Apple touch icon: 114px x 114px"
+msgstr "Apple 触摸图标：114 像素 x 114 像素"
+
+msgid "Apple touch icon: 120px x 120px"
+msgstr "Apple 触摸图标：120 像素 x 120 像素"
+
+msgid "Apple touch icon: 144px x 144px"
+msgstr "Apple 触摸图标：144 像素 x 144 像素"
+
+msgid "Apple touch icon: 152px x 152px"
+msgstr "Apple 触摸图标：152 像素 x 152 像素"
+
+msgid "Apple touch icon: 180px x 180px"
+msgstr "Apple 触摸图标：180 像素 x 180 像素"
+
+msgid "Apple touch icon (precomposed): 57px x 57px"
+msgstr "Apple 触摸图标（预先构成）：57 像素 x 57 像素"
+
+msgid "Apple touch icon (precomposed): 72px x 72px"
+msgstr "Apple 触摸图标（预先构成）：72 像素 x 72 像素"
+
+msgid "Apple touch icon (precomposed): 76px x 76px"
+msgstr "Apple 触摸图标（预先构成）：76 像素 x 76 像素"
+
+msgid "Apple touch icon (precomposed): 114px x 114px"
+msgstr "Apple 触摸图标（预先构成）：114 像素 x 114 像素"
+
+msgid "Apple touch icon (precomposed): 120px x 120px"
+msgstr "Apple 触摸图标（预先构成）：120 像素 x 120 像素"
+
+msgid "Apple touch icon (precomposed): 144px x 144px"
+msgstr "Apple 触摸图标（预先构成）：144 像素 x 144 像素"
+
+msgid "Apple touch icon (precomposed): 152px x 152px"
+msgstr "Apple 触摸图标（预先构成）：152 像素 x 152 像素"
+
+msgid "Apple touch icon (precomposed): 180px x 180px"
+msgstr "Apple 触摸图标（预先构成）：180 像素 x 180 像素"
+
+msgid "Favicons & touch icons"
+msgstr "收藏图标和触摸图标"
+
+msgid "A PNG image that is 60px wide by 60px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "宽 60 像素 x 高 60 像素的 PNG 图像。用于非视网膜屏 iPhone、iPod Touch 和 Android 2.1+ 设备。"
+
+msgid "A PNG image that is 114px wide by 114px high. Used with iPhone with @2x display running iOS <= 6."
+msgstr "宽 114 像素 x 高 114 像素的 PNG 图像。用于运行低于或等于 iOS 6 的版本且具有 @2x 显示屏的 iPhone。"
+
+msgid "A PNG image that is 120px wide by 120px high. Used with iPhone with @2x display running iOS >= 7."
+msgstr "宽 120 像素 x 高 120 像素的 PNG 图像。用于运行高于或等于 iOS 7 的版本且具有 @2x 显示屏的 iPhone。"
+
+msgid "A PNG image that is 144px wide by 144px high. Used with iPad with @2x display running iOS <= 6."
+msgstr "宽 144 像素 x 高 144 像素的 PNG 图像。用于运行低于或等于 iOS 6 的版本且具有 @2x 显示屏的 iPad。"
+
+msgid "A PNG image that is 152px wide by 152px high. Used with iPad with @2x display running iOS >= 7."
+msgstr "宽 152 像素 x 高 152 像素的 PNG 图像。用于运行高于或等于 iOS 7 的版本且具有 @2x 显示屏的 iPad。"
+
+msgid "A PNG image that is 180px wide by 180px high. Used with iPhone 6 Plus with @3x display."
+msgstr "宽 180 像素 x 高 180 像素的 PNG 图像。用于具有 @3x 显示屏的 iPhone 6 Plus。"
+
+msgid "A PNG image that is 72px wide by 72px high. Used with the iPad mini and the first- and second-generation iPad (@1x display) on iOS <= 6."
+msgstr "宽 72 像素 x 高 72 像素的 PNG 图像。用于 iPad mini 以及运行低于或等于 iOS 6 的版本的第一代和第二代 iPad（@1x 显示屏）。"
+
+msgid "A PNG image that is 76px wide by 76px high. Used with the iPad mini and the second-generation iPad (@1x display) on iOS >= 7."
+msgstr "宽 76 像素 x 高 76 像素的 PNG 图像。用于 iPad mini 以及运行高于或等于 iOS 7 的版本的第二代 iPad（@1x 显示屏）。"
+
+msgid "A PNG image that is 57px wide by 57px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "宽 57 像素 x 高 57 像素的 PNG 图像。用于非视网膜屏 iPhone、iPod Touch 和 Android 2.1+ 设备。"
+
+msgid "A PNG image that is 16px wide by 16px high."
+msgstr "宽 16 像素 x 高 16 像素的 PNG 图像。"
+
+msgid "A PNG image that is 192px wide by 192px high."
+msgstr "宽 192 像素 x 高 192 像素的 PNG 图像。"
+
+msgid "A PNG image that is 32px wide by 32px high."
+msgstr "宽 32 像素 x 高 32 像素的 PNG 图像。"
+
+msgid "A PNG image that is 96px wide by 96px high."
+msgstr "宽 96 像素 x 高 96 像素的 PNG 图像。"
+
+msgid "Mask icon color"
+msgstr "掩码图标颜色"
+
+msgid "Color attribute for SVG (mask) icon in hexadecimal format, e.g. '#0000ff'. Setting it will break HTML validation. If not set macOS Safari ignores the Mask Icon entirely, making the Icon: SVG completely useless."
+msgstr "十六进制格式的 SVG（掩码）图标的颜色属性，例如，'#0000ff'。 设置它将破坏 HTML 验证。 如果未设置，macOS Safari 将完全忽略掩码图标，使图标 SVG 完全无用。"
+
+msgid "Mask icon (SVG)"
+msgstr "掩码图标 (SVG)"
+
+msgid "A grayscale scalable vector graphic (SVG) file."
+msgstr "灰度可伸缩向量图形 (SVG) 文件。"
+
+msgid "Default icon"
+msgstr "缺省图标"
+
+msgid "The traditional favicon, must be either a GIF, ICO, JPG/JPEG or PNG image."
+msgstr "传统收藏图标必须为 GIF、ICO、JPG/JPEG 或 PNG 图像。"
+
+msgid "Provides support for meta tags used for Google Custom Search Engine."
+msgstr "支持用于 Google 定制搜索引擎的元标记。"
+
+msgid "Metatag: Google Custom Search Engine (CSE)"
+msgstr "元标记：Google 定制搜索引擎 (CSE)"
+
+msgid "Thumbnail"
+msgstr "缩略图"
+
+msgid "Department"
+msgstr "部门"
+
+msgid "Content audience"
+msgstr "内容受众"
+
+msgid "Document status"
+msgstr "文档状态"
+
+msgid "google_rating"
+msgstr "google_rating"
+
+msgid "Google Custom Search Engine (CSE)"
+msgstr "Google 定制搜索引擎 (CSE)"
+
+msgid "Meta tags used to control the mobile browser experience. Some of these meta tags have been replaced by newer mobile browsers. These meta tags usually only need to be set globally, rather than per-page."
+msgstr "用于控制移动浏览器体验的元标记。较新版本的移动浏览器已替换其中部分元标记。通常只需全局设置这些元标记，而无需逐个页面进行设置。"
+
+msgid "Department tag."
+msgstr "部门标记。"
+
+msgid "Content rating"
+msgstr "内容评级"
+
+msgid "Works only with numeric values."
+msgstr "仅使用数字值。"
+
+msgid "Use a url of a valid image."
+msgstr "使用有效图像的 URL。"
+
+msgid "Metatag: Google Plus"
+msgstr "元标记：Google Plus"
+
+msgid "Provides support for Google's Plus meta tags. Deprecated, will be removed in Metatag 2.0.0."
+msgstr "支持 Google Plus 元标记。 不推荐，在 Metatag 2.0.0 中会将其移除。"
+
+msgid "Google Plus: name"
+msgstr "Google Plus：名称"
+
+msgid "Google Plus: image"
+msgstr "Google Plus：图像"
+
+msgid "Google Plus: description"
+msgstr "Google Plus：描述"
+
+msgid "Publisher URL"
+msgstr "发布者 URL"
+
+msgid "Google Plus"
+msgstr "Google Plus"
+
+msgid "DEPRECATED, use Advanced-Author instead."
+msgstr "不推荐，请改为使用 Advanced-Author。"
+
+msgid "Content description less than 200 characters."
+msgstr "内容描述的长度小于 200 个字符。"
+
+msgid "Image"
+msgstr "图像"
+
+msgid "The URL of an image which should represent the content. For best results use an image that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Supports PNG, JPEG and GIF formats."
+msgstr "应表示内容的图像的 URL。为获得最佳效果，请使用大小至少为 1200 x 630 像素的图像，但推荐的最小大小为 600 x 316 像素。支持 PNG、JPEG 和 GIF 格式。"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Content title."
+msgstr "内容标题。"
+
+msgid "Used by some search engines to confirm publication of the content on a page. Should be the full URL for the publication's Google+ profile page."
+msgstr "供某些搜索引擎用于确认页面上内容的发布。这应是出版物的 Google+ 个人档案页面的完整 URL。"
+
+msgid "Provides support for the hreflang meta tag with some extra logic to simplify it."
+msgstr "支持具有额外简化逻辑的 hreflang 元标记。"
+
+msgid "Metatag: Hreflang"
+msgstr "元标记：Hreflang"
+
+msgid "Default locale (x-default)"
+msgstr "缺省语言环境 (x-default)"
+
+msgid "Href per language"
+msgstr "每种语言的 Href"
+
+msgid "URL for a version of this page in %langcode"
+msgstr "此页面的版本的 URL，采用 %langcode"
+
+msgid "Alternative language links (hreflang)"
+msgstr "备用语言链接 (hreflang)"
+
+msgid "These meta tags are designed to point visitors to versions of the current page in other languages."
+msgstr "这些元标记旨在将访问者指向当前页面的其他语言版本。"
+
+msgid "Hreflang per language"
+msgstr "每种语言的 Hreflang"
+
+msgid "This plugin will be cloned from these settings for each enabled language."
+msgstr "将从每种已启用语言的这些设置克隆此插件。"
+
+msgid "This should point to the version of the page that is for the main or primary locale, e.g. the original version of an article that is translated into other languages."
+msgstr "这应指向页面的主要语言环境版本，例如，翻译为其他语言的文章的原始版本。"
+
+msgid "Provides support for meta tags used to control the mobile browser experience."
+msgstr "支持用于控制移动浏览器体验的元标记。"
+
+msgid "Metatag: Mobile & UI Adjustments"
+msgstr "元标记：移动和 UI 调整"
+
+msgid "Handheld URL"
+msgstr "手持 URL"
+
+msgid "Android Mobile: Android App Link Alternative"
+msgstr "Android 移动：备用 Android 应用程序链接"
+
+msgid "Android Mobile: Manifest"
+msgstr "Android 移动：清单"
+
+msgid "Apple Mobile: iTunes App"
+msgstr "Apple 移动：iTunes 应用程序"
+
+msgid "Apple Mobile: Web App Capable"
+msgstr "Apple 移动：Web 应用程序功能"
+
+msgid "Apple Mobile: Web App Status bar color"
+msgstr "Apple 移动：Web 应用程序状态栏颜色"
+
+msgid "Apple Mobile: Web App Title"
+msgstr "Apple 移动：Web 应用程序标题"
+
+msgid "Application name"
+msgstr "应用程序名"
+
+msgid "Mobile: Cleartype"
+msgstr "移动：Cleartype"
+
+msgid "Apple Mobile: Format Detection"
+msgstr "Apple 移动：格式检测"
+
+msgid "Mobile: Handheld-Friendly"
+msgstr "移动：手持友好型"
+
+msgid "Apple Mobile: iOS App Link Alternative"
+msgstr "Apple 移动：备用 iOS 应用程序链接"
+
+msgid "Mobile: Mobile Optimized"
+msgstr "移动：已移动优化"
+
+msgid "MSApplication - Allow domain API calls"
+msgstr "MSApplication - 允许域 API 调用"
+
+msgid "MSApplication - Allow domain meta tags"
+msgstr "MSApplication - 允许域元标记"
+
+msgid "MSApplication - Badge"
+msgstr "MSApplication - 徽章"
+
+msgid "MSApplication - Config"
+msgstr "MSApplication - 配置"
+
+msgid "MSApplication - Nav button color"
+msgstr "MSApplication - 导航按钮颜色"
+
+msgid "MSApplication - Notification"
+msgstr "MSApplication - 通知"
+
+msgid "MSApplication - Square logo, 150px x 150px"
+msgstr "MSApplication - 方形徽标，150 像素 x 150 像素"
+
+msgid "MSApplication - Square logo, 310px x 310px"
+msgstr "MSApplication - 方形徽标，310 像素 x 310 像素"
+
+msgid "MSApplication - Square logo, 70px x 70px"
+msgstr "MSApplication - 方形徽标，70 像素 x 70 像素"
+
+msgid "MSApplication - Start URL"
+msgstr "MSApplication - 起始 URL"
+
+msgid "MSApplication - Task"
+msgstr "MSApplication - 任务"
+
+msgid "MSApplication - Task separator"
+msgstr "MSApplication - 任务分隔符"
+
+msgid "MSApplication - Tile color"
+msgstr "MSApplication - 磁贴颜色"
+
+msgid "MSApplication - Tile image"
+msgstr "MSApplication - 磁贴图像"
+
+msgid "MSApplication - Tooltip"
+msgstr "MSApplication - 工具提示"
+
+msgid "MSApplication - Wide logo, 310px x 150px"
+msgstr "MSApplication - 宽徽标，310 像素 x 150 像素"
+
+msgid "MSApplication - Window"
+msgstr "MSApplication - 窗口"
+
+msgid "Mobile: Theme Color"
+msgstr "手机：主题颜色"
+
+msgid "Mobile: Viewport"
+msgstr "手机：视区"
+
+msgid "Mobile: Web Manifest"
+msgstr "移动：Web 清单"
+
+msgid "X-UA-Compatible"
+msgstr "兼容 X-UA"
+
+msgid "Android"
+msgstr "Android"
+
+msgid "Custom meta tags used by the Android OS, browser, etc."
+msgstr "Android 操作系统和浏览器等使用的定制元标记"
+
+msgid "Apple & iOS"
+msgstr "Apple 和 iOS"
+
+msgid "Custom meta tags used by Apple's software, iOS, Safari, etc."
+msgstr "Apple 软件、iOS 和 Safari 等使用的定制元标记"
+
+msgid "Mobile & UI Adjustments"
+msgstr "移动和 UI 调整"
+
+msgid "Windows & Windows Mobile"
+msgstr "Windows 和 Windows 移动"
+
+msgid "Custom meta tags used by the Windows and Windows Mobile OSes, IE browser, etc."
+msgstr "Windows 和 Windows 移动操作系统、IE 浏览器等使用的定制元标记"
+
+msgid "Provides an absolute URL to a specially formatted version of the current page designed for 'feature phones', mobile phones that do not support modern browser standards. See the <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>official Google Mobile SEO Guide</a> for details on how the page should be formatted."
+msgstr "提供针对“功能手机”（不支持现代浏览器标准的手机）设计的当前页面的特殊格式版本的绝对 URL。请参阅 <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>Google Mobile SEO 官方指南</a>以获取有关应如何格式化页面的详细信息。"
+
+msgid "Android app link alternative"
+msgstr "备用 Android 应用程序链接"
+
+msgid "A custom string for deeplinking to an Android mobile app. Should be in the format 'package_name/host_path', e.g. 'com.example.android/example/hello-screen'. The 'android-app://' prefix will be included automatically."
+msgstr "用于深度链接到 Android 移动应用程序的定制字符串。格式应该为“package_name/host_path”，例如，“com.example.android/example/hello-screen”。将自动包含“android-app://”前缀。"
+
+msgid "iTunes App details"
+msgstr "iTunes 应用程序详细信息"
+
+msgid "This informs iOS devices to display a banner to a specific app. If used, it must provide the 'app-id' value, the 'affiliate-data' and 'app-argument' values are optional."
+msgstr "这通知 iOS 设备显示特定应用程序的条幅。如果使用此选项，那么必须提供“app-id”值，而“affiliate-data”和“app-argument”值为可选项。"
+
+msgid "Web app capable?"
+msgstr "Web 应用程序功能？"
+
+msgid "If set to 'yes', the application will run in full-screen mode; the default behavior is to use Safari to display web content."
+msgstr "如果此选项设置为“yes”，那么应用程序将以全屏方式运行；缺省行为是使用 Safari 来显示 Web 内容。"
+
+msgid "Status bar color"
+msgstr "状态栏颜色"
+
+msgid "Requires the 'Web app capable' meta tag to be set to 'yes'. May be set to 'default', 'black', or 'black-translucent'."
+msgstr "需要将“Web 应用程序功能”元标记设置为“yes”。它可设置为“default”、“black”或“black-translucent”。"
+
+msgid "Apple Web App Title"
+msgstr "Apple Web 应用程序标题"
+
+msgid "Overrides the long site title when using the Apple Add to Home Screen."
+msgstr "在使用 Apple 的“添加到主屏”时覆盖长站点标题。"
+
+msgid "The default name displayed with the pinned sites tile (or icon). Set the content attribute to the desired name."
+msgstr "随置顶站点磁贴（或图标）一起显示的缺省名称。将内容属性设置为期望的名称。"
+
+msgid "Cleartype"
+msgstr "Cleartype"
+
+msgid "A legacy meta tag for older versions of Internet Explorer on Windows, use the value 'on' to enable it; this tag is ignored by all other browsers."
+msgstr "Windows 上较低版本的 Internet Explorer 的旧元标记使用值“on”进行启用；所有其他浏览器将忽略此标记。"
+
+msgid "Format detection"
+msgstr "格式检测"
+
+msgid "If set to 'telephone=no' the page will not be checked for phone numbers, which would be presented."
+msgstr "如果此选项设置为“telephone=no”，那么不会在此页面中查找将显示的电话号码。"
+
+msgid "Handheld-Friendly"
+msgstr "手持友好型"
+
+msgid "Some older mobile browsers will expect this meta tag to be set to 'true' to indicate that the site has been designed with mobile browsers in mind."
+msgstr "某些较低版本的移动浏览器期望将此元标记设置为“true”以指示使用移动浏览器设计站点。"
+
+msgid "iOS app link alternative"
+msgstr "备用 iOS 应用程序链接"
+
+msgid "A custom string for deeplinking to an iOS mobile app. Should be in the format 'itunes_id/scheme/host_path', e.g. 123456/example/hello-screen'. The 'ios-app://' prefix will be included automatically."
+msgstr "用于深度链接到 iOS 移动应用程序的定制字符串。格式应该为“itunes_id/scheme/host_path”，例如，123456/example/hello-screen。将自动包含“ios-app://”前缀。"
+
+msgid "Mobile Optimized"
+msgstr "已移动优化"
+
+msgid "Using the value 'width' tells certain mobile Internet Explorer browsers to display as-is, without being resized. Alternatively a numerical width may be used to indicate the desired page width the page should be rendered in: '240' is the suggested default, '176' for older browsers or '480' for newer devices with high DPI screens."
+msgstr "使用值“width”可告知某些移动 Internet Explorer 浏览器按原样显示，而不调整大小。或者，可使用数字宽度来指示呈现页面所使用的期望页面宽度：“240”是建议的缺省值，“176”用于较低版本的浏览器，或者“480”用于具有高 DPI 屏幕的较新版本的设备。"
+
+msgid "Allows tasks to be defined on child domains of the fully qualified domain name associated with the pinned site. Should be either 'true' or 'false'."
+msgstr "允许在其标准域名与置顶站点相关联的子域上定义任务。它应该为“true”或“false”。"
+
+msgid "A semi-colon -separated string that must contain the 'polling-uri=' value with the full URL to a <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>Badge Schema XML file</a>. May also contain 'frequency=' value set to either 30, 60, 360, 720 or 1440 (default) which specifies (in minutes) how often the URL should be polled."
+msgstr "分号分隔的字符串，其必须包含“polling-uri=”值以及指向 <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>Badge Schema XML文件</a>的完整 URL。其还可包含能够设置为 30、60、360、720 或 1440（缺省值）的“frequency=”值，该值指定 URL 的轮询频率（分钟）。"
+
+msgid "Should contain the full URL to a <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>Browser configuration schema</a> file that further controls tile customizations."
+msgstr "应包含指向 <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>Browser configuration schema</a> 文件（进一步控制磁贴定制）的完整 URL。"
+
+msgid "Controls the color of the Back and Forward buttons in the pinned site browser window."
+msgstr "控制置顶站点浏览器窗口中“后退”和“前进”按钮的颜色。"
+
+msgid "A semi-colon -separated string containing 'polling-uri=' (required), 'polling-uri2=', 'polling-uri3=', 'polling-uri4=' and 'polling-uri5=' to indicate the URLs for notifications. May also contain a 'frequency=' value to specify how often (in minutes) the URLs will be polled; limited to 30, 60, 360, 720 or 1440 (default). May also contain the value 'cycle=' to control the notifications cycle."
+msgstr "分号分隔的字符串，其中包含“polling-uri=”（必需）、“polling-uri2=”、“polling-uri3=”、“polling-uri4=”和“polling-uri5=”以指示通知的 URL。其还可包含“frequency=”值以指定 URL 的轮询频率（以分钟为单位）；限制为 30、60、360、720 或 1440（缺省值）。其还可包含值“cycle=”以控制通知周期。"
+
+msgid "The URL to a logo file that is 150px by 150px."
+msgstr "150 像素 x 150 像素的徽标文件的 URL。"
+
+msgid "The URL to a logo file that is 310px by 310px."
+msgstr "310 像素 x 310 像素的徽标文件的 URL。"
+
+msgid "The URL to a logo file that is 70px by 70px."
+msgstr "70 像素 x 70 像素的徽标文件的 URL。"
+
+msgid "The URL to the root page of the site."
+msgstr "站点根页的 URL。"
+
+msgid "A semi-colon -separated string defining the 'jump' list task. Should contain the 'name=' value to specify the task's name, the 'action-uri=' value to set the URL to load when the jump list is clicked, the 'icon-uri=' value to set the URL to an icon file to be displayed, and 'window-type=' set to either 'tab' (default), 'self' or 'window' to control how the link opens in the browser."
+msgstr "用于定义“jump”列表任务的分号分隔的字符串。其应包含“name=”值以指定任务名称，包含“action-uri=”值以设置要在单击跳转列表时加载的 URL，包含“icon-uri=”值以设置要显示的图标文件的 URL，以及包含“window-type=”以设置“tab”（缺省值）、“self”或“window”来控制在浏览器中打开链接的方式。"
+
+msgid "The HTML color to use as the background color for the live tile."
+msgstr "要用作活动磁贴的背景色的 HTML 颜色。"
+
+msgid "The URL to an image to use as the background for the live tile."
+msgstr "要用作活动磁贴的背景的图像的 URL。"
+
+msgid "Controls the text shown in the tooltip for the pinned site's shortcut."
+msgstr "控制在置顶站点快捷方式的工具提示中显示的文本。"
+
+msgid "The URL to a logo file that is 310px by 150px."
+msgstr "310 像素 x 150 像素的徽标文件的 URL。"
+
+msgid "A semi-colon -separated value that controls the dimensions of the initial window. Should contain the values 'width=' and 'height=' to control the width and height respectively."
+msgstr "控制初始窗口尺寸的分号分隔的值。其应包含值“width=”和“height=”以分别控制宽度和高度。"
+
+msgid "Theme Color"
+msgstr "主题颜色"
+
+msgid "A color in hexadecimal format, e.g. '#0000ff' for blue; must include the '#' symbol. Used by some browsers to control the background color of the toolbar, the color used with an icon, etc."
+msgstr "十六进制格式的颜色，例如，“#0000ff”表示蓝色；必须包含“#”符号。供某些浏览器用于控制工具栏的背景色以及用于图标的颜色等"
+
+msgid "Viewport"
+msgstr "视区"
+
+msgid "Used by most contemporary browsers to control the display for mobile browsers. Please read a guide on responsive web design for details of what values to use."
+msgstr "供目前的大多数浏览器用来控制移动浏览器的显示。请阅读有关响应式 Web 设计的指南，以获取有关要使用的值的详细信息。"
+
+msgid "Web Manifest"
+msgstr "Web 清单"
+
+msgid "A URL to a manifest.json file that describes the application. The <a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>JSON-based manifest</a> provides developers with a centralized place to put metadata associated with a web application."
+msgstr "用于描述应用程序的 manifest.json 文件的 URL。<a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>基于 JSON 的清单</a>为开发人员提供一个集中位置来放置与 Web 应用程序相关联的元数据。"
+
+msgid "Indicates to IE which rendering engine should be used for the current page."
+msgstr "向 IE 指示用于显示当前页面的呈现引擎。"
+
+msgid "Metatag: Open Graph"
+msgstr "元标记：Open Graph"
+
+msgid "Provides support for Open Graph Protocol meta tags."
+msgstr "支持 Open Graph Protocol 元标记。"
+
+msgid "Article author"
+msgstr "文章作者"
+
+msgid "Article expiration time"
+msgstr "文章到期时间"
+
+msgid "Article modified time"
+msgstr "文章修改时间"
+
+msgid "Article published time"
+msgstr "文章发布时间"
+
+msgid "Article publisher"
+msgstr "文章发布者"
+
+msgid "Article section"
+msgstr "文章章节"
+
+msgid "Article tag(s)"
+msgstr "文章标记"
+
+msgid "Book Author"
+msgstr "书籍作者"
+
+msgid "Book ISBN"
+msgstr "书籍 ISBN"
+
+msgid "Book Release Date"
+msgstr "书籍发行日期"
+
+msgid "Book Tags"
+msgstr "书籍标记"
+
+msgid "Audio URL"
+msgstr "音频 URL"
+
+msgid "Audio secure URL"
+msgstr "音频安全 URL"
+
+msgid "Audio type"
+msgstr "音频类型"
+
+msgid "Open Graph: Country name"
+msgstr "Open Graph：国家或地区名称"
+
+msgid "Open Graph: Description"
+msgstr "Open Graph：描述"
+
+msgid "Open Graph: Determiner"
+msgstr "Open Graph：限定词"
+
+msgid "Open Graph: Email"
+msgstr "Open Graph：电子邮件"
+
+msgid "Open Graph: Fax number"
+msgstr "Open Graph：传真号码"
+
+msgid "Open Graph: Image"
+msgstr "Open Graph：图像"
+
+msgid "Open Graph: Image alt"
+msgstr "Open Graph：图像 alt"
+
+msgid "Open Graph: Image height"
+msgstr "Open Graph：图像高度"
+
+msgid "Open Graph: Image secure URL"
+msgstr "Open Graph：图像安全 URL"
+
+msgid "Open Graph: Image type"
+msgstr "Open Graph：图像类型"
+
+msgid "Open Graph: Image URL"
+msgstr "Open Graph：图像 URL"
+
+msgid "Open Graph: Image width"
+msgstr "Open Graph：图像宽度"
+
+msgid "Open Graph: Latitude"
+msgstr "Open Graph：纬度"
+
+msgid "Open Graph: Locale"
+msgstr "Open Graph：语言环境"
+
+msgid "Open Graph: Alternative locale"
+msgstr "Open Graph：备用语言环境"
+
+msgid "Open Graph: Locality"
+msgstr "Open Graph：位置"
+
+msgid "Open Graph: Longitude"
+msgstr "Open Graph：经度"
+
+msgid "Open Graph: Phone number"
+msgstr "Open Graph：电话号码"
+
+msgid "Open Graph: Postal code"
+msgstr "Open Graph：邮政编码"
+
+msgid "Open Graph: Region"
+msgstr "Open Graph：区域"
+
+msgid "Open Graph: See also"
+msgstr "Open Graph：另见"
+
+msgid "Open Graph: Site name"
+msgstr "Open Graph：站点名称"
+
+msgid "Open Graph: Street address"
+msgstr "Open Graph：街道地址"
+
+msgid "Open Graph: Title"
+msgstr "Open Graph：标题"
+
+msgid "Open Graph: Type"
+msgstr "Open Graph：类型"
+
+msgid "Open Graph: Updated time"
+msgstr "Open Graph：更新时间"
+
+msgid "Open Graph: URL"
+msgstr "Open Graph：URL"
+
+msgid "Open Graph: Video URL"
+msgstr "Open Graph：视频 URL"
+
+msgid "Open Graph: Video duration"
+msgstr "Open Graph：视频持续时间"
+
+msgid "Open Graph: Video height"
+msgstr "Open Graph：视频高度"
+
+msgid "Open Graph: Video Secure URL"
+msgstr "Open Graph：视频安全 URL"
+
+msgid "Open Graph: Video type"
+msgstr "Open Graph：视频类型"
+
+msgid "Open Graph: Video width"
+msgstr "Open Graph：视频宽度"
+
+msgid "First name"
+msgstr "名字"
+
+msgid "Gender"
+msgstr "性别"
+
+msgid "Last name"
+msgstr "姓氏"
+
+msgid "Username"
+msgstr "用户名"
+
+msgid "Actor(s)"
+msgstr "参与者"
+
+msgid "Actor's role"
+msgstr "参与者角色"
+
+msgid "Director(s)"
+msgstr "主管"
+
+msgid "Release date"
+msgstr "发布日期"
+
+msgid "Series"
+msgstr "系列"
+
+msgid "Tag words"
+msgstr "标签词"
+
+msgid "Scriptwriter(s)"
+msgstr "脚本作者"
+
+msgid "Open Graph"
+msgstr "Open Graph"
+
+msgid "The <a href='https://ogp.me/'>Open Graph meta tags</a> are used to control how Facebook, Pinterest, LinkedIn and other social networking sites interpret the site's content.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "<a href='https://ogp.me/'>Open Graph 元标记</a>用于控制 Facebook、Pinterest、LinkedIn 和其他社交网站解释站点内容的方式。<br><br>通过 Facebook <a href='https://developers.facebook.com/tools/debug/'>共享调试器</a>，您可以预览将内容共享到 Facebook 时的外观，并使用 Open Graph 标记调试任何问题。"
+
+msgid "Links an article to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "指向作者 Facebook 个人档案文章的链接应该是指向作者个人档案页面的 URL 或其 Facebook 个人档案标识。"
+
+msgid "Article expiration date & time"
+msgstr "文章到期日期和时间"
+
+msgid "The date this content will expire, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "此内容的到期日期和（可选）时间值。需要采用 <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> 格式。"
+
+msgid "Article modification date & time"
+msgstr "文章修改日期和时间"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "上次修改此内容的日期和（可选）时间值。需要采用 <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> 格式。"
+
+msgid "Article publication date & time"
+msgstr "文章发布日期和时间"
+
+msgid "The date this content was published on, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "发布此内容的日期和（可选）时间值。需要采用 <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> 格式。"
+
+msgid "Links an article to a publisher's Facebook page."
+msgstr "将文章链接到发布者的 Facebook 页面。"
+
+msgid "The primary section of this website the content belongs to."
+msgstr "内容所属的此 Web 站点的主要部分。"
+
+msgid "Appropriate keywords for this content."
+msgstr "此内容的相应关键字。"
+
+msgid "Book author"
+msgstr "书籍作者"
+
+msgid "Links a book to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "将书籍链接到作者 Facebook 个人档案的链接应该是作者个人档案页面的 URL 或其 Facebook 个人档案标识。"
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "The Book's ISBN"
+msgstr "该书籍的 ISBN"
+
+msgid "Release Date"
+msgstr "发行日期"
+
+msgid "The date the book was released."
+msgstr "该书籍的发行日期。"
+
+msgid "Book tag(s)"
+msgstr "书籍标记"
+
+msgid "The URL to an audio file that complements this object."
+msgstr "用于补充此对象的音频文件的 URL。"
+
+msgid "The secure URL to an audio file that complements this object. All 'http://' URLs will automatically be converted to 'https://'."
+msgstr "用于补充此对象的音频文件的安全 URL。所有“http://”URL 将自动转换为“https://”。"
+
+msgid "The MIME type of the audio file. Examples include 'application/mp3' for an MP3 file."
+msgstr "音频文件的 MIME 类型。示例包括用于 MP3 文件的“application/mp3”。"
+
+msgid "Country name"
+msgstr "国家名称"
+
+msgid "A one to two sentence description of the content."
+msgstr "一句或两句话的内容描述。"
+
+msgid "Determiner"
+msgstr "限定词"
+
+msgid "The word that appears before the content's title in a sentence. The default ignores this value, the 'Automatic' value should be sufficient if this is actually needed."
+msgstr "句子中内容标题之前显示的词语。缺省情况下将忽略此值，“Automatic”值应足够（如果实际需要）。"
+
+msgid "Email address"
+msgstr "电子邮件地址"
+
+msgid "Fax number"
+msgstr "传真号码"
+
+msgid "The URL of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats. Should not be used if og:image:url is used. Note: if multiple images are added many services (e.g. Facebook) will default to the largest image, not specifically the first one."
+msgstr "应表示内容的图像的 URL。图像大小必须至少为 200 x 200 像素；600 x 316 像素是建议的最小大小；要获得最佳效果，请使用至少 1200 x 630 像素的图像大小。支持 PNG、JPEG 和 GIF 格式。如果使用 og:image:url，那么不应使用此项。注：如果添加了多个图像，那么许多服务（例如 Facebook）缺省设置为最大的图像（而非第一个图像）。"
+
+msgid "Image 'alt'"
+msgstr "图像“alt”"
+
+msgid "A description of what is in the image, not a caption. If the page specifies an og:image it should specify og:image:alt."
+msgstr "对象描述采用图像格式，而不是文字说明。如果页面指定 og:image，那么应指定 og:image:alt。"
+
+msgid "Image height"
+msgstr "图片高度"
+
+msgid "The height of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "以上图像的高度。注：如果同时提供不安全图像和安全图像，那么它们的大小应该相同。"
+
+msgid "Image Secure URL"
+msgstr "图像安全 URL"
+
+msgid "The secure URL (HTTPS) of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats."
+msgstr "用于表示内容的图像的安全 URL (HTTPS)。图像大小必须至少为 200 x 200 像素；600 x 316 像素是建议的最小大小；要获得最佳效果，请使用至少 1200 x 630 像素的图像大小。支持 PNG、JPEG 和 GIF 格式。"
+
+msgid "Image type"
+msgstr "图片名称"
+
+msgid "The type of image referenced above. Should be either 'image/gif' for a GIF image, 'image/jpeg' for a JPG/JPEG image, or 'image/png' for a PNG image. Note: there should be one value for each image, and having more than there are images may cause problems."
+msgstr "以上引用的图像的类型。应该为“image/gif”（针对 GIF 图像）、“image/jpeg”（针对 JPG/JPEG 图像）或“image/png”（针对 PNG 图像）。注：每个图像应该有一个值；如果超过图像数量，那么可能导致问题。"
+
+msgid "Image URL"
+msgstr "图像网址（URL）"
+
+msgid "A alternative version of og:image and has exactly the same requirements; only one needs to be used."
+msgstr "替代版本的 og:image 具有完全相同的需求；只需要使用一个。"
+
+msgid "Image width"
+msgstr "图片宽度"
+
+msgid "The width of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "以上图像的宽度。注：如果同时提供不安全图像和安全图像，那么它们的大小应该相同。"
+
+msgid "Latitude"
+msgstr "纬度"
+
+msgid "Locale"
+msgstr "本地化"
+
+msgid "The locale these tags are marked up in, must be in the format language_TERRITORY. Default is 'en_US'."
+msgstr "用于标记这些标记的语言环境的格式必须为 language_TERRITORY。缺省值为“en_US”。"
+
+msgid "Alternative locales"
+msgstr "备用语言环境"
+
+msgid "Other locales this content is available in, must be in the format language_TERRITORY, e.g. 'fr_FR'."
+msgstr "此内容可用的其他语言环境的格式必须为 language_TERRITORY，例如，“fr_FR”。"
+
+msgid "Locality"
+msgstr "地方"
+
+msgid "Longitude"
+msgstr "经度"
+
+msgid "Phone number"
+msgstr "手机号码"
+
+msgid "Postal/ZIP code"
+msgstr "邮政编码"
+
+msgid "Region"
+msgstr "区域"
+
+msgid "See also"
+msgstr "另见"
+
+msgid "URLs to related content"
+msgstr "相关内容的 URL"
+
+msgid "Site name"
+msgstr "站点名称"
+
+msgid "A human-readable name for the site, e.g., <em>IMDb</em>."
+msgstr "站点的人类可读名称，例如，<em>IMDb</em>。"
+
+msgid "Street address"
+msgstr "街道地址"
+
+msgid "The title of the content, e.g., <em>The Rock</em>."
+msgstr "内容的标题，例如，<em>The Rock</em>。"
+
+msgid "Content type"
+msgstr "内容类型"
+
+msgid "The type of the content, e.g., <em>movie</em>."
+msgstr "内容的类型，例如，<em>movie</em>。"
+
+msgid "Content modification date & time"
+msgstr "内容修改日期和时间"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format. Can be the same as the 'Article modification date' tag."
+msgstr "上次修改此内容的日期和（可选）时间值。需要采用 <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> 格式。可以与“文章修改日期”标记相同。"
+
+msgid "Page URL"
+msgstr "页面的URL"
+
+msgid "Preferred page location or URL to help eliminate duplicate content for search engines, e.g., <em>https://www.imdb.com/title/tt0117500/</em>."
+msgstr "可帮助消除搜索引擎重复内容的首选页面位置或 URL，例如，<em>https://www.imdb.com/title/tt0117500/</em>。"
+
+msgid "Video URL"
+msgstr "视频网址"
+
+msgid "The URL of an video which should represent the content. For best results use a source that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Object types supported include video.episode, video.movie, video.other, and video.tv_show."
+msgstr "用于表示内容的视频的 URL。为获得最佳效果，请使用大小至少为 1200 x 630 像素的源，但推荐的最小大小为 600 x 316 像素。支持的对象类型包括 video.episode、video.movie、video.other 和 video.tv_show。"
+
+msgid "Video duration (seconds)"
+msgstr "视频持续时间（秒）"
+
+msgid "The length of the video in seconds"
+msgstr "视频时长（秒）"
+
+msgid "Video height"
+msgstr "视频高度"
+
+msgid "The height of the above video(s). Note: if both the unsecured and secured videos are provided, they should both be the same size."
+msgstr "以上视频的高度。注：如果同时提供不安全视频和安全视频，那么它们的大小应该相同。"
+
+msgid "Video Secure URL"
+msgstr "视频安全 URL"
+
+msgid "The secure URL (HTTPS) of an video which should represent the content."
+msgstr "用于表示内容的视频的安全 URL (HTTPS)。"
+
+msgid "Video type"
+msgstr "视频类型"
+
+msgid "The type of video referenced above. Should be either  video.episode, video.movie, video.other, and video.tv_show. Note: there should be one value for each video, and having more than there are videos may cause problems."
+msgstr "以上引用的视频的类型。应该为 video.episode、video.movie、video.other 和 video.tv_show。注：每个视频应该有一个值；如果超过视频数量，那么可能导致问题。"
+
+msgid "Video width"
+msgstr "视频宽度"
+
+msgid "The first name of the person who's Profile page this is."
+msgstr "这是个人档案页面上此人的名字。"
+
+msgid "Any of Facebook's gender values should be allowed, the initial two being 'male' and 'female'."
+msgstr "应允许 Facebook 上的任何性别值，最初的两个值分别为“男性”和“女性”。"
+
+msgid "The person's last name."
+msgstr "此人姓氏。"
+
+msgid "A pseudonym / alias of this person."
+msgstr "此人的化名/别名。"
+
+msgid "Links to the Facebook profiles for actor(s) that appear in the video."
+msgstr "链接到视频中出现的参与者的 Facebook 个人档案。"
+
+msgid "The roles of the actor(s)."
+msgstr "参与者的角色。"
+
+msgid "Links to the Facebook profiles for director(s) that worked on the video."
+msgstr "链接到处理该视频的主管的 Facebook 个人档案"
+
+msgid "The date the video was released."
+msgstr "视频的发布日期。"
+
+msgid "The TV show this series belongs to."
+msgstr "该系列所属的 TV 节目。"
+
+msgid "Tag words associated with this video."
+msgstr "与此视频相关联的标签词。"
+
+msgid "Links to the Facebook profiles for scriptwriter(s) for the video."
+msgstr "链接到视频脚本作者的 Facebook 个人档案。"
+
+msgid "Provides additional Open Graph Protocol meta tags for describing products."
+msgstr "提供用于描述产品的其他 Open Graph Protocol 元标记。"
+
+msgid "Metatag: Open Graph Products"
+msgstr "元标记：Open Graph 产品"
+
+msgid "Open Graph Product: Price availability"
+msgstr "Open Graph 产品：价格可用性"
+
+msgid "Open Graph Product: Product condition"
+msgstr "Open Graph 产品：产品条件"
+
+msgid "Open Graph Product: Price amount"
+msgstr "Open Graph 产品：价格总额"
+
+msgid "Open Graph Product: Price currency"
+msgstr "Open Graph 产品：价格货币"
+
+msgid "Open Graph Product: Retailer Item ID"
+msgstr "Open Graph 产品：零售商商品标识"
+
+msgid "Open Graph - Products"
+msgstr "Open Graph - 产品"
+
+msgid "These <a href='https://ogp.me/'>Open Graph meta tags</a> are for describing products.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "这些 <a href='https://ogp.me/'>Open Graph 元标记</a>用于描述产品。<br><br>通过 Facebook <a href='https://developers.facebook.com/tools/debug/'>共享调试器</a>，您可以预览将内容共享到 Facebook 时的外观，并使用 Open Graph 标记调试任何问题。"
+
+msgid "Product availability"
+msgstr "产品可用性"
+
+msgid "The availability of the product."
+msgstr "该产品的可用性。"
+
+msgid "Product condition"
+msgstr "产品条件"
+
+msgid "The condition of the product."
+msgstr "该产品的条件。"
+
+msgid "Product price amount"
+msgstr "产品价格总额"
+
+msgid "The price amount of the product."
+msgstr "产品的价格总额。"
+
+msgid "Product price currency"
+msgstr "产品价格货币"
+
+msgid "The price currency of the product."
+msgstr "产品的价格货币。"
+
+msgid "Retailer Item ID"
+msgstr "零售商商品标识"
+
+msgid "The ID of the product as provided by the retailer."
+msgstr "由零售商提供的商品的标识。"
+
+msgid "Metatag: Page Manager"
+msgstr "元标记：页面管理器"
+
+msgid "Provides metatag support for Page Manager variants."
+msgstr "为页面管理器变体提供元标记支持。"
+
+msgid "Metatag: Pinterest"
+msgstr "元标记：Pinterest"
+
+msgid "Provides support for Pinterest's custom meta tags."
+msgstr "提供 Pinterest 定制元标记支持。"
+
+msgid "Pinterest: Description"
+msgstr "Pinterest：描述"
+
+msgid "Pinterest: ID"
+msgstr "Pinterest：标识"
+
+msgid "Pinterest: Media"
+msgstr "Pinterest：媒体"
+
+msgid "Pinterest: No hover"
+msgstr "Pinterest：无悬停"
+
+msgid "Pinterest: No pin"
+msgstr "Pinterest：无置顶"
+
+msgid "Pinterest: No search"
+msgstr "Pinterest：无搜索"
+
+msgid "Pinterest: URL"
+msgstr "Pinterest：URL"
+
+msgid "Pinterest"
+msgstr "Pinterest"
+
+msgid "A set of meta tags used to control how the site's content is consumed by <a href='https://pinterest.com/'>Pinterest</a>."
+msgstr "一组元标记，用于控制 <a href='https://pinterest.com/'>Pinterest</a> 如何使用站点内容。"
+
+msgid "Id"
+msgstr "用户身份"
+
+msgid "The Canonical Pinterest object to pin."
+msgstr "要置顶的标准 Pinterest 对象。"
+
+msgid "Media"
+msgstr "媒体"
+
+msgid "The URL of media which should represent the content."
+msgstr "用于表示内容的媒体的 URL。"
+
+msgid "No hover"
+msgstr "无悬停"
+
+msgid "Do not show hovering Save or Search buttons, generated by the Pinterest browser extensions."
+msgstr "不显示由 Pinterest 浏览器扩展生成的悬浮式“保存”或“搜索”按钮。"
+
+msgid "No pin"
+msgstr "无置顶"
+
+msgid "Do not pin anything from this page. When selected, this option will take precedence over all options below."
+msgstr "不将此页面上的任何内容置顶。选中此选项后，此选项将优先于下面的所有选项。"
+
+msgid "No search"
+msgstr "无搜索"
+
+msgid "Do not allow Pinterest visual search to happen from this page."
+msgstr "不允许从该页面执行 Pinterest 可视化搜索。"
+
+msgid "URL"
+msgstr "网址"
+
+msgid "The URL which should represent the content."
+msgstr "用于表示内容的 URL。"
+
+msgid "Enables metatags for custom routes"
+msgstr "为定制路径启用元标记"
+
+msgid "Metatag Custom Routes (Paths)"
+msgstr "元标记定制路径（路径）"
+
+msgid "Allows assigning meta tags to be used on custom routes, equivalent to custom paths."
+msgstr "允许在定制路由上分配元标记，这相当于定制路径。"
+
+msgid "Add meta tag for custom route"
+msgstr "为定制路径添加元标记"
+
+msgid "Add custom metatag"
+msgstr "添加定制元标记"
+
+msgid "Route / Path"
+msgstr "路径"
+
+msgid "Enter the route (path) for this new configuration, starting with a leading slash.<br />Note: this must already exist as a path in Drupal."
+msgstr "输入此新配置的路径（以前导斜杠开头）。<br />注：此路径必须作为 Drupal 中的路径存在。"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "The path must begin with /"
+msgstr "该路径必须以 / 开头"
+
+msgid "The admin routes should not have metatags."
+msgstr "管理路径不应包含元标记。"
+
+msgid "The entities routes metatags must be added by fields. @entity_type - @id"
+msgstr "必须通过字段添加实体路径元标记。@entity_type - @id"
+
+msgid "There are already metatags created for this route."
+msgstr "已经为此路径创建了元标记。"
+
+msgid "The path does not exist as an internal Drupal route."
+msgstr "该路径不作为内部 Drupal 路径存在。"
+
+msgid "Created metatags for the path: @url. Internal route: @route."
+msgstr "已为路径 @url 创建了元标记。 内部路径：@route。"
+
+msgid "The metatags could not be created for the path: @url."
+msgstr "无法为路径 @url 创建元标记。"
+
+msgid "Metatag: Twitter Cards"
+msgstr "元标记：Twitter Cards"
+
+msgid "Provides support for Twitter's Card meta tags."
+msgstr "支持 Twitter 卡片元标记。"
+
+msgid "Twitter Cards: Google Play app ID"
+msgstr "Twitter Cards：Google Play 应用程序标识"
+
+msgid "Twitter Cards: iPad app ID"
+msgstr "Twitter Cards：iPad 应用程序标识"
+
+msgid "Twitter Cards: iPhone app ID"
+msgstr "Twitter Cards：iPhone 应用程序标识"
+
+msgid "Twitter Cards: Google Play app name"
+msgstr "Twitter Cards：Google Play 应用程序名称"
+
+msgid "Twitter Cards: iPad app name"
+msgstr "Twitter Cards：iPad 应用程序名称"
+
+msgid "Twitter Cards: iPhone app name"
+msgstr "Twitter Cards：iPhone 应用程序名称"
+
+msgid "Twitter Cards: App store country"
+msgstr "Twitter Cards：应用商店国家或地区"
+
+msgid "Twitter Cards: Google Play app URL schema"
+msgstr "Twitter Cards：Google Play 应用程序 URL 模式"
+
+msgid "Twitter Cards: iPad app URL schema"
+msgstr "Twitter Cards：iPad 应用程序 URL 模式"
+
+msgid "Twitter Cards: iPhone app URL schema"
+msgstr "Twitter Cards：iPhone 应用程序 URL 模式"
+
+msgid "Twitter Cards: Creator's Twitter account"
+msgstr "Twitter Cards：创建者的 Twitter 帐户"
+
+msgid "Twitter Cards: Creator's Twitter account ID"
+msgstr "Twitter Cards：创建者的 Twitter 帐户标识"
+
+msgid "Twitter Cards: Data 1"
+msgstr "Twitter Cards：数据 1"
+
+msgid "Twitter Cards: Data 2"
+msgstr "Twitter Cards：数据 2"
+
+msgid "Twitter Cards: Description"
+msgstr "Twitter Cards：描述"
+
+msgid "Twitter Cards: Do Not Track"
+msgstr "Twitter Cards：不跟踪"
+
+msgid "Twitter Cards: 1st gallery image"
+msgstr "Twitter Cards：第 1 个图库图像"
+
+msgid "Twitter Cards: 2nd gallery image"
+msgstr "Twitter Cards：第 2 个图库图像"
+
+msgid "Twitter Cards: 3rd gallery image"
+msgstr "Twitter Cards：第 3 个图库图像"
+
+msgid "Twitter Cards: 4th gallery image"
+msgstr "Twitter Cards：第 4 个图库图像"
+
+msgid "Twitter Cards: Image URL"
+msgstr "Twitter Cards：图像 URL"
+
+msgid "Twitter Cards: Image height"
+msgstr "Twitter Cards：图像高度"
+
+msgid "Twitter Cards: Image width"
+msgstr "Twitter Cards：图像宽度"
+
+msgid "Twitter Cards: Image alternative text"
+msgstr "Twitter Cards：图像备用文本"
+
+msgid "Twitter Cards: Label 1"
+msgstr "Twitter Cards：标签 1"
+
+msgid "Twitter Cards: Label 2"
+msgstr "Twitter Cards：标签 2"
+
+msgid "Twitter Cards: Page URL"
+msgstr "Twitter Cards：页面 URL"
+
+msgid "Twitter Cards: Media player URL"
+msgstr "Twitter Cards：媒体播放器 URL"
+
+msgid "Twitter Cards: Media player height"
+msgstr "Twitter Cards：媒体播放器高度"
+
+msgid "Twitter Cards: MP4 media stream URL"
+msgstr "Twitter Cards：MP4 媒体流 URL"
+
+msgid "Twitter Cards: MP4 media straem MIME-type"
+msgstr "Twitter Cards：MP4 媒体流 MIME 类型"
+
+msgid "Twitter Cards: Media player width"
+msgstr "Twitter Cards：媒体播放器宽度"
+
+msgid "Twitter Cards: Site's Twitter account"
+msgstr "Twitter Cards：站点的 Twitter 帐户"
+
+msgid "Twitter Cards: Site's Twitter account ID"
+msgstr "Twitter Cards：站点的 Twitter 帐户标识"
+
+msgid "Twitter Cards: Title"
+msgstr "Twitter Cards：标题"
+
+msgid "Twitter Cards: Type"
+msgstr "Twitter Cards：类型"
+
+msgid "Twitter Cards"
+msgstr "Twitter Cards"
+
+msgid "A set of meta tags specially for controlling the summaries displayed when content is shared on <a href='https://twitter.com/'>Twitter</a>."
+msgstr "一组专门用于控制在 <a href='https://twitter.com/'>Twitter</a> 上分享内容时显示的摘要的元标记。"
+
+msgid "Google Play app ID"
+msgstr "Google Play 应用程序标识"
+
+msgid "iPad app ID"
+msgstr "iPad 应用程序标识"
+
+msgid "String value, should be the numeric representation of your iPad app's ID in the App Store."
+msgstr "字符串值，应该是应用商店中 iPad 应用程序标识的数字表示。"
+
+msgid "iPhone app ID"
+msgstr "iPhone 应用程序标识"
+
+msgid "String value, should be the numeric representation of your iPhone app's ID in the App Store."
+msgstr "字符串值，应该是应用商店中 iPhone 应用程序标识的数字表示。"
+
+msgid "Google Play app name"
+msgstr "Google Play 应用程序名称"
+
+msgid "The name of the app in the Google Play app store."
+msgstr "Google Play 应用商店中应用程序的名称。"
+
+msgid "The name of the iPad app."
+msgstr "iPad 应用程序的名称。"
+
+msgid "The name of the iPhone app."
+msgstr "iPhone 应用程序的名称。"
+
+msgid "App store country"
+msgstr "应用商店国家或地区"
+
+msgid "If your application is not available in the US App Store, you must set this value to the two-letter country code for the App Store that contains your application."
+msgstr "如果您的应用程序在美国应用商店中不可用，那么必须将此值设置为包含该应用程序的应用商店的两字母国家或地区代码。"
+
+msgid "Google Play app's custom URL scheme"
+msgstr "Google Play 应用程序定制 URL 方案"
+
+msgid "iPad app's custom URL scheme"
+msgstr "iPad 应用程序定制 URL 方案"
+
+msgid "iPhone app's custom URL scheme"
+msgstr "iPhone 应用程序定制 URL 方案"
+
+msgid "Creator's Twitter account"
+msgstr "创建者的 Twitter 帐户"
+
+msgid "The @username for the content creator / author for this page, including the @ symbol."
+msgstr "此页面的内容创建者/作者的 @username，包括 @ 符号。"
+
+msgid "Creator's Twitter account ID"
+msgstr "创建者的 Twitter 帐户标识"
+
+msgid "The numerical Twitter account ID for the content creator / author for this page."
+msgstr "此页面的内容创建者/作者的数字 Twitter 帐户标识。"
+
+msgid "Data 1"
+msgstr "数据 1"
+
+msgid "This field expects a string, and allows you to specify the types of data you want to offer (price, country, etc.)."
+msgstr "此字段期望为字符串，并且允许指定想要提供的数据类型（价格、国家或地区等）。"
+
+msgid "Data 2"
+msgstr "数据 2"
+
+msgid "A description that concisely summarizes the content of the page, as appropriate for presentation within a Tweet. Do not re-use the title text as the description, or use this field to describe the general services provided by the website. The string will be truncated, by Twitter, at the word to 200 characters."
+msgstr "简要概述页面内容且适合在 Tweet 中显示的描述。请勿将标题文本复用为描述，或者使用此字段来描述该 Web 站点提供的常规服务。Twitter 会将该字符串截断为 200 个字符。"
+
+msgid "Do Not Track"
+msgstr "不跟踪"
+
+msgid "1st gallery image"
+msgstr "第 1 个图库图像"
+
+msgid "A URL to the image representing the first photo in your gallery."
+msgstr "表示图库中第一张照片的图像的 URL。"
+
+msgid "2nd gallery image"
+msgstr "第 2 个图库图像"
+
+msgid "A URL to the image representing the second photo in your gallery."
+msgstr "表示图库中第二张照片的图像的 URL。"
+
+msgid "3rd gallery image"
+msgstr "第 3 个图库图像"
+
+msgid "A URL to the image representing the third photo in your gallery."
+msgstr "表示图库中第三张照片的图像的 URL。"
+
+msgid "4th gallery image"
+msgstr "第 4 个图库图像"
+
+msgid "A URL to the image representing the fourth photo in your gallery."
+msgstr "表示图库中第四张照片的图像的 URL。"
+
+msgid "The URL to a unique image representing the content of the page. Do not use a generic image such as your website logo, author photo, or other image that spans multiple pages. Images larger than 120x120px will be resized and cropped square based on longest dimension. Images smaller than 60x60px will not be shown. If the 'type' is set to Photo then the image must be at least 280x150px."
+msgstr "表示页面内容的唯一图像的 URL。请勿使用通用图像，例如，Web 站点徽标、作者照片或跨多个页面共享的其他图像。超过 120 像素 x 120 像素的图像将调整大小且基于最大规格进行方形裁切。将不显示小于 60 像素 x 60 像素的图像。如果将“类型”设置为“照片”，那么图像必须至少为 280 像素 x 150 像素。"
+
+msgid "Image alternative text"
+msgstr "图片描述文本"
+
+msgid "The alternative text of the image being linked to. Limited to 420 characters."
+msgstr "要链接到的图像的备用文本。限制为 420 个字符。"
+
+msgid "The height of the image being linked to, in pixels."
+msgstr "要链接到的图像的高度（以像素为单位）。"
+
+msgid "The width of the image being linked to, in pixels."
+msgstr "正在被链接的图像宽度，单位为像素。"
+
+msgid "Label 1"
+msgstr "标签 1"
+
+msgid "This field expects a string, and you can specify values for labels such as price, items in stock, sizes, etc."
+msgstr "此字段期望为字符串，您可以指定标签的值，例如，价格、库存商品和大小等"
+
+msgid "Label 2"
+msgstr "标签\t2"
+
+msgid "The permalink / canonical URL of the current page."
+msgstr "当前页面的永久链接/权威链接。"
+
+msgid "Media player URL"
+msgstr "媒体播放器 URL"
+
+msgid "The full URL for loading a media player, specifically an iframe for an embedded video rather than the URL to a page that contains a player. Required when using the Player Card type."
+msgstr "用于装入媒体播放器的完整 URL，特别是嵌入式视频的 iframe，而不是包含播放器的页面的 URL。 使用“播放器卡”类型时必需。"
+
+msgid "Media player height"
+msgstr "媒体播放器高度"
+
+msgid "The height of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "媒体播放器信息帧的高度（以像素为单位）。 使用“播放器卡”类型时必需。"
+
+msgid "MP4 media stream URL"
+msgstr "MP4 媒体流 URL"
+
+msgid "The full URL for an MP4 video (h.264) or audio (AAC) stream, takes precedence over the other media player field."
+msgstr "MP4 视频 (h.264) 或音频 (AAC) 流的完整 URL 优先于其他媒体播放器字段。"
+
+msgid "MP4 media stream MIME-type"
+msgstr "MP4 媒体流 MIME 类型"
+
+msgid "Media player width"
+msgstr "媒体播放器宽度"
+
+msgid "The width of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "媒体播放器信息帧的宽度（以像素为单位）。 使用“播放器卡”类型时必需。"
+
+msgid "Site's Twitter account"
+msgstr "网站的推特账号"
+
+msgid "The @username for the website, which will be displayed in the Card's footer; must include the @ symbol."
+msgstr "Web 站点的 @username，将在卡片页脚中显示；必须包含 @ 符号。"
+
+msgid "Site's Twitter account ID"
+msgstr "站点的 Twitter 帐户标识"
+
+msgid "The numerical Twitter account ID for the website, which will be displayed in the Card's footer."
+msgstr "Web 站点的数字 Twitter 帐户标识，将在卡片页脚中显示。"
+
+msgid "The page's title, which should be concise; it will be truncated at 70 characters by Twitter. This field is required unless this the 'type' field is set to 'photo'."
+msgstr "页面标题，它应一目了然；Twitter 会将其截断为 70 个字符。除非将“类型”字段设置为“照片”，否则此字段是必填字段。"
+
+msgid "- None -"
+msgstr "- 无 -"
+
+msgid "Summary Card"
+msgstr "摘要卡片"
+
+msgid "Summary Card with large image"
+msgstr "包含大图像的摘要卡片"
+
+msgid "Photo Card"
+msgstr "照片卡片"
+
+msgid "Gallery Card"
+msgstr "图库卡片"
+
+msgid "App Card"
+msgstr "应用程序卡片"
+
+msgid "Player Card"
+msgstr "播放器卡片"
+
+msgid "Product Card"
+msgstr "产品卡片"
+
+msgid "Twitter card type"
+msgstr "Twitter 卡片类型"
+
+msgid "Notes:<ul><li>no other fields are required for a Summary card</li><li>Photo card requires the 'image' field</li><li>Media player card requires the 'title', 'description', 'media player URL', 'media player width', 'media player height' and 'image' fields,</li><li>Summary Card with Large Image card requires the 'Summary' field and the 'image' field,</li><li>Gallery Card requires all the 'Gallery Image' fields,</li><li>App Card requires the 'iPhone app ID' field, the 'iPad app ID' field and the 'Google Play app ID' field,</li><li>Product Card requires the 'description' field, the 'image' field, the 'Label 1' field, the 'Data 1' field, the 'Label 2' field and the 'Data 2' field.</li></ul>"
+msgstr "注意：<ul><li>摘要卡片无需任何其他字段。</li><li>照片卡片需要“图像”字段</li><li>媒体播放器卡片需要“标题”、“描述”、“媒体播放器 URL”、“媒体播放器宽度”、“媒体播放器高度”和“图像”字段；</li><li>“包含大图像的摘要卡片”卡片需要“摘要”字段和“图像”字段；</li><li>“图库卡片”需要所有“图库图像”字段；</li><li>“应用程序卡片”需要“iPhone 应用程序标识”字段、“iPad 应用程序标识”字段和“Google Play 应用程序标识”字段；</li><li>“产品卡片”需要“描述”字段、“图像”字段、“标签 1”字段、“数据 1”字段、“标签 2”字段和“数据 2”字段。</li></ul>"
+
+msgid "Metatag: Verification"
+msgstr "元标记：验证"
+
+msgid "Verifies ownership of a site for search engines and other services."
+msgstr "验证搜索引擎和其他服务的站点所有权。"
+
+msgid "Site validation: Alexa"
+msgstr "站点验证：Alexa"
+
+msgid "Site validation: Baidu"
+msgstr "站点验证：Baidu"
+
+msgid "Site validation: Bing"
+msgstr "站点验证：Bing"
+
+msgid "Site validation: Facebook"
+msgstr "站点验证：Facebook"
+
+msgid "Site validation: Google"
+msgstr "站点验证：Google"
+
+msgid "Site validation: Norton Safe Web"
+msgstr "站点验证：Norton Safe Web"
+
+msgid "Site validation: Pinterest"
+msgstr "站点验证：Pinterest"
+
+msgid "Site validation: Pocket"
+msgstr "站点验证：Pocket"
+
+msgid "Site validation: SIWECOS"
+msgstr "站点验证：SIWECOS"
+
+msgid "Site validation: Yahoo"
+msgstr "站点验证：Yahoo"
+
+msgid "Site validation: Yandex"
+msgstr "站点验证：Yandex"
+
+msgid "Site validation: Zoom"
+msgstr "站点验证：缩放"
+
+msgid "Site verification"
+msgstr "站点验证"
+
+msgid "These meta tags are used to confirm site ownership for search engines and other services."
+msgstr "这些元标记用于确认搜索引擎和其他服务的站点所有权。"
+
+msgid "Baidu"
+msgstr "Baidu"
+
+msgid "Bing"
+msgstr "微软Bing"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Google Site Verification"
+msgstr "Google 站点验证"
+
+msgid "Norton Safe Web"
+msgstr "Norton Safe Web"
+
+msgid "Pocket"
+msgstr "Pocket"
+
+msgid "SIWECOS"
+msgstr "SIWECOS"
+
+msgid "Yandex"
+msgstr "Yandex"
+
+msgid "Zoom"
+msgstr "缩放"
+
+msgid "The custom admin pages for managing Views meta tags at /admin/config/search/metatag/views have been disabled for now, hopefully they'll be back in a future release. Until then, the meta tags can be managed directly on each individual view via the \"Meta tags\" section."
+msgstr "用于管理位于 /admin/config/search/metatag/views 的“视图”元标记的定制管理页面现已被禁用，希望在未来的发行版中恢复这些页面。届时，可以通过“元标记”部分在每个单独视图上直接管理元标记。"
+
+msgid "Empty update script to clear the site's caches so the new token replacement functionality will work."
+msgstr "清空更新脚本以清除站点的缓存，以便新的令牌替换功能起作用。"
+
+msgid "Metatag: Views"
+msgstr "元标记：视图"
+
+msgid "Provides views integration for metatags."
+msgstr "针对元标记提供视图集成。"
+
+msgid "Should replacement tokens be used from the first row"
+msgstr "应使用来自第一行的替换标记"
+
+msgid "To view a list of displays with meta tags set up, click on a view name. To view a summary of meta tags configuration for a particular display, click on the display name. If you need to set meta tags for a specific view, choose Add views meta tags. Reverting the meta tags removes the specific configuration and falls back to defaults."
+msgstr "要查看设置了元标记的显示列表，请单击视图名称。要查看特定显示的元标记配置摘要，请单击显示名称。如果需要为特定视图设置元标记，请选择“添加视图元标记”。还原元标记将移除特定配置并还原为缺省值。"
+
+msgid ":label"
+msgstr ":label"
+
+msgid "Display"
+msgstr "显示"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Translate"
+msgstr "翻译"
+
+msgid "Revert"
+msgstr "恢复"
+
+msgid "@language (original)"
+msgstr "@language（源）"
+
+msgid "Add"
+msgstr "添加"
+
+msgid "- Select a view -"
+msgstr "- 选择视图 -"
+
+msgid "View"
+msgstr "查看"
+
+msgid "Metatags for @view : @display have been saved."
+msgstr "@view 的元标记：已保存 @display。"
+
+msgid "Do you want to revert meta tags for @view_name : @display_name?"
+msgstr "是否要还原 @view_name 上 @display_name 的元标记？"
+
+msgid "You are about to revert the custom meta tags for the %display_name display on the %view_name view. This action cannot be undone."
+msgstr "您即将还原 %view_name 视图上 %display_name 显示的定制元标记。此操作无法撤销。"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Reverted meta tags for @view_name : @display_name"
+msgstr "已还原 @view_name 上 @display_name 的元标记"
+
+msgid "Edit @language translation for %view: %display metatags"
+msgstr "编辑 %view 的@language翻译：%display 元标记"
+
+msgid "Successfully updated @language translation."
+msgstr "已成功更新@language翻译。"
+
+msgid "The meta tags for this display"
+msgstr "此显示的元标记"
+
+msgid "Use replacement tokens from the first row"
+msgstr "使用第一行里的占位符"
+
+msgid "@argument title"
+msgstr "@argument标题"
+
+msgid "@argument input"
+msgstr "@argument输入"
+
+msgid "Replacement patterns"
+msgstr "替换匹配模式"
+
+msgid "The following tokens are available. You may use Twig syntax in this field."
+msgstr "提供了以下标记。您可以在此字段中使用 Twig 语法。"
+
+msgid "Meta tags"
+msgstr "元标签"
+
+msgid "Overridden"
+msgstr "覆写"
+
+msgid "Using defaults"
+msgstr "使用默认"
+
+msgid "Arguments"
+msgstr "参数"
+
+msgid "Fields"
+msgstr "字段"
+
+msgid "Metatag display extender"
+msgstr "元标记显示扩展器"
+
+msgid "Metatag settings for this view."
+msgstr "此视图的元标记设置。"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Active"
+msgstr "有效"
+
+msgid "Disabled"
+msgstr "禁用"
+
+msgid "Inherits meta tags from: @inherits"
+msgstr "从 @inherits 继承元标记"
+
+msgid "Configure the meta tags below."
+msgstr "配置以下元标记。"
+
+msgid "Undefined group '%group' on tag '%tag'"
+msgstr "标记“%tag”上的未定义组“%group”"
+
+msgid ""
+"This was expected to be an array but it is not: \n"
+"%value"
+msgstr ""
+"这应该是一个数组，但实际并不是：\n"
+"%value"
+
+msgid ""
+"This could not be unserialized: \n"
+"%value"
+msgstr ""
+"无法对其进行反序列化：\n"
+"%value"
+
+msgid "Use tokens to avoid redundant meta data and search engine penalization. For example, a 'keyword' value of \"example\" will be shown on all content using this configuration, whereas using the [node:field_keywords] automatically inserts the \"keywords\" values from the current entity (node, term, etc)."
+msgstr "使用令牌避免冗余元数据和搜索引擎处罚。例如，“关键字”值“示例”将显示在使用此配置的所有内容上，而使用 [node:field_keywords] 会自动插入来自当前实体（节点、术语等）的“关键字”值。"
+
+msgid "To use tokens to image fields, the image field on that entity bundle (content type, term, etc) must have the \"Token\" display settings enabled, the image field must not be hidden, and it must be set to output as an image, e.g. using the \"Thumbnail\" field formatter. It is also recommended to use an appropriate image style that resizes the image rather than output the original image; see individual meta tag descriptions for size recommendations."
+msgstr "要将令牌用于图像字段，该实体捆绑软件（内容类型、术语等）上的图像字段必须启用“令牌”显示设置，不能隐藏图像字段，并且必须将其设置为“输出为图像”，例如使用“缩略图”字段格式化程序。同时建议使用适当的图像样式来调整图像的大小，而不是输出原始图像；请参阅个别元标记描述以获取大小建议。"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid "Label / Description"
+msgstr "标签/描述"
+
+msgid "Weight"
+msgstr "权重"
+
+msgid "Secure"
+msgstr "安全"
+
+msgid "Multiple"
+msgstr "多个"
+
+msgid "Provided by"
+msgstr "提供者"
+
+msgid "All meta tags in the \"@group\" group."
+msgstr "“@group”组中的所有元标记。"
+
+msgid "Are you sure you want to delete %name?"
+msgstr "你确定要删除  %name ?"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Deleted @label defaults."
+msgstr "已删除 @label 缺省值。"
+
+msgid "Select the type of default meta tags you would like to add."
+msgstr "选择要添加的缺省元标记类型。"
+
+msgid "Warning: disabling the Global default metatag will prevent any metatags from being used."
+msgstr "警告：禁用全局缺省元标记将阻止使用任何元标记。"
+
+msgid "Created the %label Metatag defaults."
+msgstr "已创建 %label 元标记缺省值。"
+
+msgid "Saved the %label Metatag defaults."
+msgstr "已保存 %label 元标记缺省值。"
+
+msgid "Edit default meta tags for @path"
+msgstr "编辑 @path 的缺省元标记"
+
+msgid "Are you sure you want to revert %name to its default values?"
+msgstr "是否确定要将 %name 还原为其缺省值？"
+
+msgid "Reverted @label defaults."
+msgstr "已还原 @label 缺省值。"
+
+msgid "Entity type / Group Mapping"
+msgstr "实体类型/组映射"
+
+msgid "Identify which metatag groups should be available on which entity type / bundle combination. Unselected groups will not appear on the configuration form for that entity type, reducing the size of the form and increasing performance. If no groups are selected for a type, all groups will appear."
+msgstr "标识哪些元标记组应可用于哪些实体类型/捆绑软件组合。未选中的组将不会出现在此实体类型的配置表单上，因而减少了表单大小并提高了性能。如果没有为某种类型选择任何组，那么将显示所有组。"
+
+msgid "Metatag Trimming Options"
+msgstr "元标记删除选项"
+
+msgid "Many Meta-Tags can be trimmed on a specific length for search engine optimization.<br/>If the value is set to '0' or left empty, the whole Metatag will be untrimmed."
+msgstr "许多元标签可以修剪为特定长度以进行搜索引擎优化。<br/>如果该值设置为“0”或留空，则整个元标记不会被修剪。"
+
+msgid "Because of how tokens are processed in meta tags, use of the Maxlength module may not provide an accurate representation of the actual current length of each meta tag, so it may cause more problem than it is worth. "
+msgstr "由于在元标记中处理令牌的方式，使用 Maxlength 模块可能无法准确表示每个元标记的实际当前长度，因此它所导致的问题可能要高于其价值。 "
+
+msgid "Install the Maxlength module to enable this option."
+msgstr "安装 Maxlength 模块以启用此选项。"
+
+msgid "Meta Tags:"
+msgstr "元标记："
+
+msgid "length"
+msgstr "长度"
+
+msgid "Meta Tags: Trimming Options"
+msgstr "元标记：修剪选项"
+
+msgid "Trim the Meta Tag after the word on the given value"
+msgstr "在给定值上的单词之后修剪元标记"
+
+msgid "Trim the Meta Tag on the given value"
+msgstr "在给定值上删除元标记"
+
+msgid "Trim the Meta Tag before the word on the given value"
+msgstr "在给定值上的单词之前修剪元标记"
+
+msgid "Metatag widget options"
+msgstr "元标记窗口小部件选项"
+
+msgid "Various options for the field widget used on entity forms, e.g. on content type forms."
+msgstr "实体表单（例如，内容类型表单）上使用的字段窗口小部件的各种选项。"
+
+msgid "Scroll maximum height"
+msgstr "最大滚动高度"
+
+msgid "eg 500px or 8rem"
+msgstr "例如，500px 或 8rem"
+
+msgid "To enable scrolling please enter a value and its units, e.g. 500px, 8rem, etc. Removing this value will remove the scroll."
+msgstr "要启用滚动，请输入值及其单位，例如 500px、8rem 等。 移除此值将移除滚动。"
+
+msgid "Empty formatter"
+msgstr "空格式化程序"
+
+msgid "@label"
+msgstr "@label"
+
+msgid "This field stores code meta tags."
+msgstr "此字段存储代码元标记。"
+
+msgid "If checked, the field will be placed in the sidebar on entity forms."
+msgstr "如果选中此项，那么该字段将放置在实体表单的侧边栏中。"
+
+msgid "Wrap the meta tags in a collapsed details container."
+msgstr "将元标记包装在折叠的详细信息容器中。"
+
+msgid "If checked, the contents of the field will be placed inside a collapsed details container."
+msgstr "如果选中，该字段的内容将被放置在折叠的详细信息容器中。"
+
+msgid "Use sidebar: Yes"
+msgstr "使用侧边栏：是"
+
+msgid "Use sidebar: No"
+msgstr "使用侧边栏：否"
+
+msgid "Use details container: Yes"
+msgstr "使用详细信息容器：是"
+
+msgid "Use details container: No"
+msgstr "使用详细信息容器：否"
+
+msgid "Metatag Field Diff"
+msgstr "元标记字段差异"
+
+msgid "Advanced"
+msgstr "高级"
+
+msgid "Meta tags that might not be needed by many sites."
+msgstr "许多站点可能不需要的元标记。"
+
+msgid "Basic tags"
+msgstr "基本标记"
+
+msgid "Simple meta tags."
+msgstr "简单元标记。"
+
+msgid "A brief and concise summary of the page's content, preferably 150 characters or less. Where as the description meta tag may be used by search engines to display a snippet about the page in search results, the abstract tag may be used to archive a summary about the page. This meta tag is <em>no longer</em> supported by major search engines."
+msgstr "页面内容的简明摘要，最好不超过 150 个字符。其中，搜索引擎可使用描述元标记在搜索结果中显示有关页面的片段，并可使用摘要标记归档有关页面的摘要。主要搜索引擎已<em>不再</em>支持此元标记。"
+
+msgid "Define the author of a page."
+msgstr "定义页面的作者。"
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Pragma meta tag."
+msgstr "用于控制浏览器是否在本地缓存特定页面。不经常使用。应与 Pragma 元标记结合使用。"
+
+msgid "A link to the preferred page location or URL of the content of this page, to help eliminate duplicate content penalties from search engines."
+msgstr "指向首选页面位置的链接或此页面内容的 URL，用于消除搜索引擎中的重复内容处罚。"
+
+msgid "A brief and concise summary of the page's content that is a maximum of 160 characters in length. The description meta tag may be used by search engines to display a snippet about the page in search results."
+msgstr "页面内容的简明摘要，最多包含 160 个字符。搜索引擎可使用描述元标记在搜索结果中显示有关页面的片段。"
+
+msgid "Control when the browser's internal cache of the current page should expire. The date must to be an <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a>-compliant date string that is represented in Greenwich Mean Time (GMT), e.g. 'Thu, 01 Sep 2016 00:12:56 GMT'. Set to '0' to stop the page being cached entirely."
+msgstr "控制当前页面的浏览器内部缓存的到期时间。此日期必须是符合 <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a> 的日期字符串，以格林威治标准时间表示，例如，“Thu, 01 Sep 2016 00:12:56 GMT”。设置为“0”可完全停止缓存页面。"
+
+msgid "Describes the name and version number of the software or publishing tool used to create the page."
+msgstr "描述用于创建页面的软件或发布工具的名称和版本号。"
+
+msgid "A location's formal name."
+msgstr "位置的正式名称。"
+
+msgid "Geo-spatial information in 'latitude; longitude' format, e.g. '50.167958; -97.133185'; <a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>see Wikipedia for details</a>."
+msgstr "以“纬度; 经度”格式表示的地理空间信息，如“50.167958; -97.133185”；<a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>请参阅维基百科以获取详细信息</a>。"
+
+msgid "A location's two-letter international country code, with an optional two-letter region, e.g. 'US-NH' for New Hampshire in the USA."
+msgstr "位置的双字母国际国家或地区代码，带有可选的双字母区域，例如“US-NH”代表美国的新罕布什尔。"
+
+msgid "This meta tag communicates with Google. There are currently two directives supported: 'nositelinkssearchbox' to not to show the sitelinks search box, and 'notranslate' to ask Google not to offer a translation of the page. Both options may be added, just separate them with a comma. See <a href='https://support.google.com/webmasters/answer/79812?hl=en'>meta tags that Google understands</a> for further details."
+msgstr "此元标记与 Google 进行通信。当前还支持两条伪指令：“nositelinkssearchbox”：不显示站点链接搜索框；“notranslate”：要求 Google 不提供页面的翻译。可同时添加这两个选项，仅需用逗号将其隔开。请参阅 <a href='https://support.google.com/webmasters/answer/79812?hl=en'>meta tags that Google understands</a> 以获取进一步详细信息。"
+
+msgid "Geo-spatial information in 'latitude, longitude' format, e.g. '50.167958, -97.133185'; <a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>see Wikipedia for details</a>."
+msgstr "以“纬度, 经度”格式表示的地理空间信息，如“50.167958, -97.133185”；<a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>请参阅维基百科以获取详细信息</a>。"
+
+msgid "An image associated with this page, for use as a thumbnail in social networks and other services."
+msgstr "与此页面相关联的图像，用作社交网络和其他服务中的缩略图。"
+
+msgid "A comma-separated list of keywords about the page. This meta tag is <em>no longer</em> supported by most search engines."
+msgstr "有关页面的关键字的逗号分隔列表。大多数搜索引擎已<em>不再</em>支持此元标记。"
+
+msgid "Multiple values may be used, separated by a comma. Note: Tokens that return multiple values will be handled automatically."
+msgstr "可以使用多个值（用逗号分隔）。注：将自动处理返回多个值的令牌。"
+
+msgid "This will be able to extract the URL from an image field if the field is configured properly."
+msgstr "如果正确配置该字段，那么可以从图像字段中抽取 URL。"
+
+msgid "Any relative or protocol-relative URLs will be converted to absolute URLs."
+msgstr "任何相对 URL 或协议相对 URL 都会转换为绝对 URL。"
+
+msgid "Any URLs which start with \"http://\" will be converted to \"https://\"."
+msgstr "以“http://”开头的任何 URL 都将转换为“https://”。"
+
+msgid "This will be truncated to a maximum of %max characters after any tokens are processsed."
+msgstr "在处理任何令牌后，这将截断为最大 %max 个字符。"
+
+msgid "News Keywords"
+msgstr "新闻关键字"
+
+msgid "Used for paginated content by providing URL with rel='next' link."
+msgstr "通过向 URL 提供 rel='next' 链接来用于分页内容。"
+
+msgid "Used to indicate the URL that broke the story, and can link to either an internal URL or an external source. If the full URL is not known it is acceptable to use a partial URL or just the domain name."
+msgstr "用于指示新闻事件披露 URL，并且可以链接到内部 URL 或外部源。如果不知道完整的 URL，那么可以使用部分 URL 或仅使用域名。"
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Cache-Control meta tag."
+msgstr "用于控制浏览器是否在本地缓存特定页面。不经常使用。应与 Cache-Control 元标记结合使用。"
+
+msgid "Used for paginated content by providing URL with rel='prev' link."
+msgstr "通过向 URL 提供 rel='prev' 链接来用于分页内容。"
+
+msgid "Used to rate content for audience appropriateness. This tag has little known influence on search engine rankings, but can be used by browsers, browser extensions, and apps. The <a href='https://www.metatags.org/meta_name_rating'>most common options</a> are general, mature, restricted, 14 years, safe for kids. If you follow the <a href='https://www.rtalabel.org/index.php?content=howto'>RTA Documentation</a> you should enter RTA-5042-1996-1400-1577-RTA"
+msgstr "用于评估内容是否适合受众。此标记对于搜索引擎排名的已知影响很小，但是可供浏览器、浏览器扩展和应用程序使用。<a href='https://www.metatags.org/meta_name_rating'>最常用选项</a>为 general、mature、restricted、14 years 和 safe for kids。如果您遵循 <a href='https://www.rtalabel.org/index.php?content=howto'>RTA 文档</a>，那么应该输入 RTA-5042-1996-1400-1577-RTA"
+
+msgid "No Referrer"
+msgstr "无引荐者"
+
+msgid "No Referrer When Downgrade"
+msgstr "降级时没有引荐者"
+
+msgid "Origin"
+msgstr "源"
+
+msgid "Origin When Cross-Origin"
+msgstr "跨域时的源"
+
+msgid "Same Origin"
+msgstr "同源"
+
+msgid "Strict Origin"
+msgstr "严格源"
+
+msgid "Strict Origin When Cross-Origin"
+msgstr "跨源时采用严格源"
+
+msgid "Unsafe URL"
+msgstr "URL 不安全"
+
+msgid "Indicate to search engines and other page scrapers whether or not links should be followed. See <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>the W3C specifications</a> for further details. Note: this serves the same purpose as the HTTP header by the same name."
+msgstr "指示搜索引擎和其他页面提取器是否打开链接。 请参阅 <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>W3C 规范</a>以获取更多详细信息。 注：这与同名的 HTTP 头具有相同的用途。"
+
+msgid "The number of seconds to wait before refreshing the page. May also force redirect to another page using the format '5; url=https://example.com/', which would be triggered after five seconds."
+msgstr "刷新页面前等待的秒数。也可以使用格式“5; url=https://example.com/”（将在 5 秒后触发）来强制重定向到其他页面。"
+
+msgid "Tell search engines when to index the page again. Very few search engines support this tag, it is more useful to use an <a href='https://www.drupal.org/project/xmlsitemap'>XML Sitemap</a> file."
+msgstr "告诉搜索引擎何时再次对页面建立索引。只有少数搜索引擎支持此标记，使用 <a href='https://www.drupal.org/project/xmlsitemap'>XML 站点地图</a>文件更有用。"
+
+msgid "Details about intellectual property, such as copyright or trademarks; does not automatically protect the site's content or intellectual property."
+msgstr "有关知识产权的详细信息（如版权或商标）；不会自动保护站点的内容或知识产权。"
+
+msgid "Max Snippet"
+msgstr "最大片段数"
+
+msgid "Use a number character as a textual snippet for this search result. \"0\" equals \"nosnippet\". \"-1\" will let the search engine decide the most effective length."
+msgstr "使用数字字符作为此搜索结果的文本片段。 “0”等于“nosnippet”。“-1”将支持搜索引擎决定最有效的长度。"
+
+msgid "Max Video Preview"
+msgstr "视频预览最大值"
+
+msgid "Use a maximum of number seconds as a video snippet for videos on this page in search results. \"0\" will use a static a image. \"-1\" means there is no limit."
+msgstr "在搜索结果中，将作为视频片段的最大秒数用于此页面上的视频。 “0”将使用静态图像。“-1”表示没有限制。"
+
+msgid "Max Image Preview"
+msgstr "图像预览最大值"
+
+msgid "Set the maximum size of an image preview for this page in a search results."
+msgstr "在搜索结果中设置此页面的图像预览的最大大小。"
+
+msgid "None - no image preview is to be shown."
+msgstr "无 - 不显示图像预览。"
+
+msgid "Standard - a default image preview may be shown."
+msgstr "标准 - 可显示缺省图像预览。"
+
+msgid "Large - a larger image preview, up to the width of the viewport, may be shown."
+msgstr "大 - 可显示更大的图像预览，直至视区的宽度。"
+
+msgid "Select"
+msgstr "选择"
+
+msgid "Unavailable after date"
+msgstr "在以下日期之后不可用："
+
+msgid "Do not show this page in search results after the specified date"
+msgstr "指定日期之后在搜索结果中不显示此页面"
+
+msgid "index - Allow search engines to index this page (assumed)."
+msgstr "index - 允许搜索引擎对此页面建立索引（假定）。"
+
+msgid "follow - Allow search engines to follow links on this page (assumed)."
+msgstr "follow - 允许搜索引擎打开此页面上的链接（假定）。"
+
+msgid "noindex - Prevents search engines from indexing this page."
+msgstr "noindex - 阻止搜索引擎对此页面建立索引。"
+
+msgid "nofollow - Prevents search engines from following links on this page."
+msgstr "nofollow - 阻止搜索引擎打开此页面上的链接。"
+
+msgid "noarchive - Prevents cached copies of this page from appearing in search results."
+msgstr "noarchive - 阻止在搜索结果中显示此页面的缓存副本。"
+
+msgid "nosnippet - Prevents descriptions from appearing in search results, and prevents page caching."
+msgstr "nosnippet - 阻止在搜索结果中显示描述，并阻止缓存页面。"
+
+msgid "noimageindex - Prevent search engines from indexing images on this page."
+msgstr "noimageindex - 阻止搜索引擎对此页面上的图像建立索引。"
+
+msgid "notranslate - Prevent search engines from offering to translate this page in search results."
+msgstr "notranslate - 阻止搜索引擎在搜索结果中提供此页面的译文。"
+
+msgid "Provides search engines with specific directions for what to do when this page is indexed."
+msgstr "向搜索引擎提供有关在对此页面建立索引时要执行的操作的具体指示。"
+
+msgid "Set cookie"
+msgstr "设置 Cookie"
+
+msgid "<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>Sets a cookie</a> on the visitor's browser. Can be in either NAME=VALUE format, or a more verbose format including the path and expiration date; see the link for full details on the syntax."
+msgstr "在访问者的浏览器上<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>设置 Cookie</a>。可以采用 NAME=VALUE 格式或更详细的格式（包括路径和到期日期）；请参阅链接以获取有关语法的完整详细信息。"
+
+msgid "Shortlink URL"
+msgstr "短链接 URL"
+
+msgid "A brief URL, often created by a URL shortening service."
+msgstr "一种简短的 URL，通常由 URL 缩短服务创建。"
+
+msgid "The text to display in the title bar of a visitor's web browser when they view this page. This meta tag may also be used as the title of the page when a visitor bookmarks or favorites this page, or as the page title in a search engine result. It is common to append '[site:name]' to the end of this, so the site's name is automatically added. It is recommended that the title is no greater than 55 - 65 characters long, including spaces."
+msgstr "访问者查看此页面时在其 Web 浏览器的标题栏中要显示的文本。该元标记也可用作在访问者将页面加入书签或收藏夹时的页面标题，或用作搜索引擎结果中的页面标题。通常会在该标题末尾附加“[site：name]”，因此会自动添加站点的名称。建议标题长度不要超过 55 - 65 个字符（包含空格）。"
+
+msgid "Configuration type"
+msgstr "配置类型"
+
+msgid "@label of @type"
+msgstr "@type 类型的 @label"
+
+msgid "@label of @type @entity-type-label"
+msgstr "@type @entity-type-label 类型的 @label"
+
+msgid "No default for \"%tag_name\" - entity_type: %type, entity_bundle: %bundle, id: %id. See src/TypedData/Metatags.php."
+msgstr "“%tag_name”没有缺省值 - entity_type：%type，entity_bundle：%bundle，id：%id。 请参阅 src/TypedData/Metatags.php。"
+

@@ -1,0 +1,236 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Your last login was @stamp."
+msgstr "最終ログインは @stamp でした。"
+
+msgid "Your last page access (site activity) was @stamp."
+msgstr "最終ページ・アクセス (サイト・アクティビティー) は @stamp でした。"
+
+msgid "Make sure you have reviewed the <a href=\"!README\">README file</a> for further information about how all these settings will affect your Drupal login form submissions."
+msgstr "これらすべての設定が Drupal ログイン・フォームの送信に与える影響について、必ず <a href=\"!README\">README ファイル</a>で詳しい情報を確認してください。"
+
+msgid "Suspicious activity in login form submissions is no longer detected: Currently @tracking_current_count events are being tracked, and threshold is configured for @activity_threshold maximum allowed attempts."
+msgstr "ログイン・フォーム送信の疑わしいアクティビティーは検出されなくなりました。現在、@tracking_current_count イベントが追跡されており、許容される最大試行回数のしきい値が @activity_threshold に構成されています。"
+
+msgid "Banned IP address @ip due to security configuration."
+msgstr "セキュリティー構成により、IP アドレス @ip を禁止しました。"
+
+msgid "Blocked user @username due to security configuration."
+msgstr "セキュリティー構成により、ユーザー @username をブロックしました。"
+
+msgid "Ongoing attack detected: Suspicious activity detected in login form submissions. Too many invalid login attempts threshold reached: Currently @tracking_current_count events are tracked, and threshold is configured for @activity_threshold attempts."
+msgstr "進行中の攻撃が検出されました: ログイン・フォームの送信で疑わしいアクティビティーが検出されました。 無効なログイン試行回数のしきい値に達しました。現在、@tracking_current_count イベントが追跡され、@activity_threshold の試行に対してしきい値が構成されています。"
+
+msgid "Login Security"
+msgstr "ログイン・セキュリティー"
+
+msgid "Enable security options in the login flow of the site."
+msgstr "サイトのログイン・フローでセキュリティー・オプションを有効にします。"
+
+msgid "Login Security settings"
+msgstr "ログイン・セキュリティー設定"
+
+msgid "Login security settings"
+msgstr "ログイン・セキュリティーの設定"
+
+msgid "Track time"
+msgstr "追跡時間"
+
+msgid "Maximum number of login failures before blocking a user"
+msgstr "ユーザーをブロックするまでのログイン失敗の最大数"
+
+msgid "Maximum number of login failures before soft blocking a host"
+msgstr "ホストをソフト・ブロックするまでのログイン失敗の最大数"
+
+msgid "Maximum number of login failures before blocking a host"
+msgstr "ホストをブロックするまでのログイン失敗の最大数"
+
+msgid "Maximum number of login failures before detecting an ongoing attack"
+msgstr "進行中の攻撃を検出するまでのログイン失敗の最大数"
+
+msgid "Disable login failure error message"
+msgstr "ログイン失敗のエラー・メッセージを無効にする (Disable login failure error message)"
+
+msgid "Notify the user about the number of remaining login attempts"
+msgstr "残りのログイン試行回数をユーザーに通知する (Notify the user about the number of remaining login attempts)"
+
+msgid "Display last login timestamp"
+msgstr "最終ログイン時刻のタイム・スタンプを表示する (Display last login timestamp)"
+
+msgid "Display last access timestamp"
+msgstr "最終アクセス時刻のタイム・スタンプを表示する (Display last access timestamp)"
+
+msgid "Message to be shown on each failed login attempt"
+msgstr "ログイン試行が失敗するたびに表示されるメッセージ"
+
+msgid "Message for banned host (Soft IP ban)"
+msgstr "禁止されたホストに関するメッセージ (ソフト IP 禁止)"
+
+msgid "Message for banned host (Hard IP ban)"
+msgstr "禁止されたホストに関するメッセージ (ハード IP 禁止)"
+
+msgid "Message when user is blocked by uid"
+msgstr "ユーザーが UID によってブロックされた場合のメッセージ"
+
+msgid "Email subject"
+msgstr "件名"
+
+msgid "Email body"
+msgstr "E メール本文"
+
+msgid "Emails to be notified when users are blocked"
+msgstr "ユーザーがブロックされたときに通知する E メール"
+
+msgid "Emails to be notified during excess activity"
+msgstr "超過アクティビティーの発生時に通知する E メール"
+
+msgid "General settings"
+msgstr "全般の設定"
+
+msgid "The time window to check for security violations: the time in minutes the login information is kept to compute the login attempts count. A common example could be 1440 minutes (24 hours). After that time, the attempt is deleted from the list, and will never be considered again."
+msgstr "セキュリティー違反を検査する時間枠: ログイン試行回数を計算するためにログイン情報が保持される時間 (分単位)。 一般的な例は 1440 分 (24 時間) です。 その時間が経過すると、その試行はリストから削除され、再度考慮されることはありません。"
+
+msgid "minute(s)"
+msgstr "分間"
+
+msgid "User"
+msgstr "ユーザー"
+
+msgid ""
+"Enter the number of login failures a user is allowed. <br>\n"
+"        After this amount is reached, the user will be blocked, no matter the host attempting to log in. Use this option carefully on public sites, as an attacker may block your site users. <br>\n"
+"        The user blocking protection will not disappear and should be removed manually from the <a href=\":user\">user management</a> interface."
+msgstr ""
+"ユーザーが実行できるログイン失敗の回数を入力します。<br>\n"
+"        この回数に到達すると、ログインしようとしているホストに関係なく、そのユーザーはブロックされます。公開サイトでは攻撃者がサイトのユーザーをブロックする可能性があるため、このオプションは慎重に使用してください。<br>\n"
+"        ユーザー・ブロック保護の表示が解消されることはないため、<a href=\":user\">ユーザー管理</a>インターフェースから手動で削除する必要があります。"
+
+msgid "failed attempts"
+msgstr "失敗した試行"
+
+msgid "Soft host"
+msgstr "ソフト・ホスト"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this amount is reached, the host will not be able to submit the log in form again, but can still browse the site contents as an anonymous user. <br>\n"
+"        This protection is effective during the time indicated at tracking time option."
+msgstr ""
+"ホストが許可されているログイン失敗の回数を入力します。<br>\n"
+"        この回数に到達すると、そのホストはログイン・フォームを再送信できなくなりますが、匿名ユーザーとしてサイトのコンテンツを参照することはできます。<br>\n"
+"        この保護は、追跡時間オプションで指定された時間だけ有効です。"
+
+msgid "Host"
+msgstr "ホスト"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this number is reached, the host will be blocked, no matter the username attempting to log in. <br>\n"
+"        The host blocking protection will not disappear automatically and should be removed manually from the <a href=\":access\">access rules</a> administration interface."
+msgstr ""
+"ホストが許可されているログイン失敗の回数を入力します。<br>\n"
+"        この回数に到達すると、ログインしようとしているユーザー名に関係なく、そのホストはブロックされます。<br>\n"
+"        ホスト・ブロック保護の表示が自動的に解消されることはないため、<a href=\":access\">アクセス・ルール</a>管理インターフェースから手動で削除する必要があります。"
+
+msgid "Attack detection"
+msgstr "攻撃検出"
+
+msgid ""
+"Enter the number of login failures before creating a warning log entry about this suspicious activity. <br>\n"
+"        If the number of invalid login events currently being tracked reach this number, and ongoing attack is detected."
+msgstr ""
+"不審なアクティビティーに関する警告ログ項目の作成が開始されるログイン失敗の回数を入力します。<br>\n"
+"        現在追跡対象となっている無効なログイン・イベントの回数がこの数値に到達し、進行中の攻撃が検出された場合は、警告ログ項目が作成されます。"
+
+msgid "Notification"
+msgstr "通知"
+
+msgid ""
+"Prevents the display of login error messages. <br>\n"
+"        A user attempting to login will not be aware if the account exists, an invalid user name or password has been submitted, or if the account is blocked. The core messages are also hidden."
+msgstr ""
+"ログイン・エラー・メッセージが表示されなくなります。<br>\n"
+"        ログインを試行しているユーザーが、アカウントが存在するかどうか、無効なユーザー名またはパスワードが送信されたかどうか、アカウントがブロックされているかどうかを認識することはありません。コア・メッセージも表示されません。"
+
+msgid ""
+"The user is notified about the number of remaining login attempts before the account gets blocked. <br>\n"
+"        Security tip: If you enable this option, try to not disclose as much of your login policies as possible in the message shown on any failed login attempt."
+msgstr ""
+"アカウントがブロックされるまでの残りのログイン試行回数がユーザーに通知されます。<br>\n"
+"        セキュリティーのヒント: このオプションを有効にする場合は、ログイン試行の失敗時に表示するメッセージで、詳しいログイン・ポリシーをできるだけ公開しないようにしてください。"
+
+msgid "When a user successfully logs in, a message will display the last time he logged into the site."
+msgstr "ユーザーが正常にログインした場合に、そのサイトへのユーザーの最終ログイン時刻がメッセージに表示されます。"
+
+msgid "When a user successfully logs in, a message will display the last site access with this account."
+msgstr "ユーザーが正常にログインした場合に、このアカウントを使用した最終サイト・アクセスがメッセージに表示されます。"
+
+msgid "Email for ongoing attack detection"
+msgstr "進行中の攻撃の検出に関する E メール"
+
+msgid "To"
+msgstr "宛先"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when an ongoing attack is detected. No notification will be sent if the field is blank."
+msgstr "進行中の攻撃が検出されたときに E メール・メッセージを受信する必要があるユーザーの E メールのコンマ区切りリスト。フィールドがブランクの場合、通知は送信されません。"
+
+msgid "Subject"
+msgstr "件名"
+
+msgid "Body"
+msgstr "本文"
+
+msgid "Email for blocked account"
+msgstr "ブロックされたアカウントに関する E メール"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when a user is blocked. No notification will be sent if the field is blank."
+msgstr "ユーザーがブロックされたときに E メール・メッセージを受信する必要があるユーザーの E メールのコンマ区切りリスト。フィールドがブランクの場合、通知は送信されません。"
+
+msgid "Failed login attempt"
+msgstr "ログイン試行の失敗"
+
+msgid "Enter the message string to be shown if the login fails after the form is submitted."
+msgstr "フォームの送信後にログインが失敗した場合に表示するメッセージ・ストリングを入力します。"
+
+msgid "Banned host (soft IP ban)"
+msgstr "禁止されたホスト (ソフト IP 禁止)"
+
+msgid "Enter the soft IP ban message to be shown when a host attempts to log in too many times."
+msgstr "ホストのログイン試行回数が多すぎる場合に表示されるソフト IP 禁止メッセージを入力します。"
+
+msgid "Banned host (hard IP ban)"
+msgstr "禁止されたホスト (ハード IP 禁止)"
+
+msgid "Enter the hard IP ban message to be shown when a host attempts to log in too many times."
+msgstr "ホストのログイン試行回数が多すぎる場合に表示されるハード IP 禁止メッセージを入力します。"
+
+msgid "Blocked user by uid"
+msgstr "uid 別のブロックされたユーザー"
+
+msgid "Enter the message to be shown when a user gets blocked due to enough failed login attempts."
+msgstr "ログイン試行回数が上限に到達したためにユーザーがブロックされた場合に表示されるメッセージを入力します。"
+
+msgid "Tokens"
+msgstr "トークン"
+
+msgid "<ul><li>%date: The (formatted) date and time of the event.</li><li>%ip: The IP address tracked for this event.</li><li>%username: The username entered in the login form (sanitized).</li><li>%email: If the user exists, this will be the email address.</li><li>%uid: If the user exists, this will be the user uid.</li><li>%site: The name of the site as configured in the administration.</li><li>%uri: The base url of this Drupal site.</li><li>%edit_uri: Direct link to the user (based on the name entered) edit page.</li><li>%hard_block_attempts: Configured maximum attempts before hard blocking the IP address.</li><li>%soft_block_attempts: Configured maximum attempts before soft blocking the IP address.</li><li>%user_block_attempts: Configured maximum login attempts before blocking the user.</li><li>%user_ip_current_count: The total attempts for this user name tracked from this IP address.</li><li>%ip_current_count: The total login attempts tracked from from this IP address.</li><li>%user_current_count: The total login attempts tracked for this user name .</li><li>%tracking_time: The tracking time value: in hours.</li><li>%tracking_current_count: Total tracked events</li><li>%activity_threshold: Value of attempts to detect ongoing attack.</li></ul>"
+msgstr "<ul><li>%date: イベントの (フォーマット済みの) 日時。</li><li>%ip: このイベントで追跡された IP アドレス。</li><li>%username: ログイン・フォームに入力されたユーザー名 (サニタイズ済み)。</li><li>%email: ユーザーが存在する場合は、これが E メール・アドレスになります。</li><li>%uid: ユーザーが存在する場合は、これがユーザー ID になります。</li><li>%site: 管理で構成されたサイトの名前。</li><li>%uri: この Drupal サイトの基本 URL。</li><li>%edit_uri: ユーザー (入力された名前に基づく) の編集ページへの直接リンク。</li><li>%hard_block_attempts: IP アドレスのハード・ブロックが開始される構成済みの最大試行回数。</li><li>%soft_block_attempts: IP アドレスのソフト・ブロックが開始される構成済みの最大試行回数。</li><li>%user_block_attempts: ユーザーのブロックが開始される構成済みの最大ログイン試行回数。</li><li>%user_ip_current_count: この IP アドレスから追跡されたこのユーザー名の合計試行回数。</li><li>%ip_current_count: この IP アドレスから追跡された合計ログイン試行回数。</li><li>%user_current_count: このユーザー名について追跡された合計ログイン試行回数。</li><li>%tracking_time: 追跡時間の値 (時間単位)。</li><li>%tracking_current_count: 追跡イベントの合計数。</li><li>%activity_threshold: 進行中の攻撃を検出するための試行の値。</li></ul>"
+
+msgid "Clear event tracking information"
+msgstr "イベント追跡情報のクリア"
+
+msgid "Login Security event track list is now empty. @count item(s) deleted."
+msgstr "ログイン・セキュリティーのイベント追跡リストが空になりました。@count 個の項目が削除されました。"
+

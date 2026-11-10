@@ -1,0 +1,126 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Select translation"
+msgstr "Select translation"
+
+msgid "Select which translation of a node should be displayed"
+msgstr "ノードのどの翻訳を表示するかを選択します"
+
+msgid "Select Translation"
+msgstr "翻訳を選択する"
+
+msgid "Provides a Views filter to select which translation of a node should be displayed."
+msgstr "表示するノードの翻訳を選択するためのビュー・フィルターを提供します。"
+
+msgid "Multilingual"
+msgstr "多言語"
+
+msgid "The 'nid' argument must be an integer >= 1."
+msgstr "「nid」引数は、1 以上の整数でなければなりません。"
+
+msgid "Select translation filter"
+msgstr "Select translation フィルター"
+
+msgid "Original node language fallback"
+msgstr "オリジナルのノード言語へのフォールバック"
+
+msgid "Default site language fallback"
+msgstr "デフォルトのサイト言語へのフォールバック"
+
+msgid "Language fallback candidates list"
+msgstr "言語フォールバック候補リスト"
+
+msgid "Custom language priority"
+msgstr "カスタムの言語優先順位"
+
+msgid "Select translation selection mode"
+msgstr "Select translation 選択モード"
+
+msgid "Use the current interface language; if not available use the original node language"
+msgstr "現在のインターフェース言語を使用します。使用不可の場合は、オリジナルのノード言語を使用します。"
+
+msgid "Use the current interface language; if not available use the default site language; if not available use the original node language"
+msgstr "現在のインターフェース言語を使用します。使用不可の場合は、デフォルトのサイト言語を使用します。デフォルトのサイト言語も使用不可の場合は、オリジナルのノード言語を使用します。"
+
+msgid "Use the language fallback candidates list provided by the language manager service"
+msgstr "言語マネージャー・サービスによって提供される言語フォールバック候補リストを使用する"
+
+msgid "Custom language priorities"
+msgstr "カスタムの言語優先順位"
+
+msgid "Language priorities"
+msgstr "言語の優先順位"
+
+msgid ""
+"<p>If the selection mode is set to \"Custom language priorities\",\n"
+"                           a comma separated list of language codes can be specified.<br/>\n"
+"                           The filter will then return the node in the first available language\n"
+"                           in that list; falling back to the original node language if no match was found.</p>\n"
+"                           Some special values are recognized:\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" will be replaced with the current interface language;</li>\n"
+"                             <li>\"<em>default</em>\" will be replaced with the default site language;</li>\n"
+"                             <li>\"<em>original</em>\" will be replaced with the original node language.</li>\n"
+"                            </ul>\n"
+"                           Example:<br/><em>en,fr,current,default,original</em><br/>\n"
+"                           This will return:\n"
+"                           <ol>\n"
+"                             <li>the version in English, if available;</li>\n"
+"                             <li>if not, then the version in French, if available;</li>\n"
+"                             <li>if not, then the version in the current interface language, if available;</li>\n"
+"                             <li>if not, then the version in the default site language, if available;</li>\n"
+"                             <li>if none are available it will return the original node version.</li>\n"
+"                          </ol>"
+msgstr ""
+"<p>選択モードが「カスタムの言語優先順位」に設定されている場合、\n"
+"          言語コードのコンマ区切りのリストを指定できます。<br/>\n"
+"                           フィルターにより、リスト内で最初に使用可能な言語でノードが\n"
+"                           返され、一致するものが見つからない場合は、オリジナルのノード言語にフォールバックします。</p>\n"
+"                           以下の特殊値が認識されます。\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\": 現在のインターフェース言語に置き換えられます。</li>\n"
+"                             <li>\"<em>default</em>\": デフォルトのサイト言語に置き換えられます。</li>\n"
+"                             <li>\"<em>original</em>\": オリジナルのノード言語に置き換えられます。</li>\n"
+"                            </ul>\n"
+"                           例: <br/><em>en,fr,current,default,original</em><br/>\n"
+"                           これにより、以下のバージョンが返されます。\n"
+"                           <ol>\n"
+"                             <li>英語のバージョン (使用可能な場合)。</li>\n"
+"                             <li>英語のバージョンが使用不可の場合は、フランス語のバージョン (使用可能な場合)</li>\n"
+"                             <li>フランス語のバージョンが使用不可の場合は、現在のインターフェース言語のバージョン (使用可能な場合)</li>\n"
+"                             <li>現在のインターフェース言語のバージョンが使用不可の場合は、デフォルトのサイト言語のバージョン (使用可能な場合)</li>\n"
+"                             <li>デフォルトのサイト言語のバージョンも使用不可の場合は、オリジナルのノード言語のバージョンが返されます。</li>\n"
+"                          </ol>"
+
+msgid "Display default language content *only*, if the currently selected user language is the default site language."
+msgstr "現在選択されているユーザー言語がデフォルトのサイト言語の場合、デフォルト言語のコンテンツ*のみ*表示します。"
+
+msgid ""
+"When you check this option, the order chosen above will be ignored when current language = site default language,\n"
+"        instead it will only show translations for the default language. "
+msgstr ""
+"このオプションにチェックマークを付けると、現在の言語がサイトのデフォルト言語の場合に、上記で選択した順序は無視されます。\n"
+"        代わりに、デフォルト言語での翻訳のみ表示されます。"
+
+msgid "Return content in the site default language when a translation for the current language *does* exist, but it is unpublished."
+msgstr "現在の言語の翻訳が*存在する*場合、サイトのデフォルト言語のコンテンツが返されますが、非公開になります。"
+
+msgid ""
+"When you check this option, in addition to the order chosen above, content will be shown in the default site language in the event that the translation in the current language is unpublished.<br/>\n"
+"      <strong>NOTE</strong>: This option assumes that the view is already filtering out unpublished content with the <code>Published (=Yes)</code> criterion, otherwise both the published and unpublished node will be displayed."
+msgstr ""
+"このオプションにチェック・マークを付けると、上記で選択した順序に加えて、現在の言語での翻訳が非公開の場合に、デフォルトのサイト言語でコンテンツが表示されます。<br/>\n"
+"      <strong>注</strong>: このオプションは、ビューで <code>Published (=Yes)</code> 基準を使用して、非公開のコンテンツを既にフィルターで除外していることを前提としています。そうでない場合、公開ノードと非公開のノードの両方が表示されます。"
+

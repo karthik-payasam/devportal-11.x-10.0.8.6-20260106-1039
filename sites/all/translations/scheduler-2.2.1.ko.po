@@ -1,0 +1,1003 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Publish on date"
+msgstr "공개 날짜"
+
+msgid "The date the %type will be published."
+msgstr "%type이(가) 공개될 날짜입니다."
+
+msgid "Unpublish on date"
+msgstr "비공개 날짜"
+
+msgid "The date the %type will be unpublished."
+msgstr "%type이(가) 공개 취소될 날짜입니다."
+
+msgid "About"
+msgstr "소개"
+
+msgid "The Scheduler module provides the functionality for automatic publishing and unpublishing of entities, such and nodes and media items, at specified future dates."
+msgstr "스케줄러 모듈은 지정된 미래 날짜에 엔티티(예: 노드 및 매체 항목)의 자동 공개 및 공개 취소 기능을 제공합니다."
+
+msgid "You can read more in the <a href=\"@readme\">readme</a> file or our <a href=\"@project\">project page on Drupal.org</a>."
+msgstr "<a href=\"@readme\">readme</a> 파일 또는 <a href=\"@project\">Drupal.org 프로젝트 페이지</a>에서 더 많이 읽을 수 있습니다."
+
+msgid "When you have set up Drupal's standard crontab job cron.php then Scheduler will be executed during each cron run. However, if you would like finer granularity to scheduler, but don't want to run Drupal's cron more often then you can use the lightweight cron handler provided by Scheduler. This is an independent cron job which only runs the scheduler process and does not execute any cron tasks defined by Drupal core or any other modules."
+msgstr "Drupal의 표준 crontab 작업 cron.php를 설정하면 스케줄러는 각 cron 실행 동안에 실행됩니다. 그러나 스케줄러를 세부 조정하고 싶지만 Drupal의 cron을 더 자주 실행하고 싶지는 않은 경우에는 스케줄러에서 제공하는 경량 cron 핸들러를 사용할 수 있습니다. 이는 스케줄러 프로세스만을 실행하는 독립 cron 작업이고 Drupal 코어 또는 다른 모듈이 정의하는 cron 태스크를 실행하지 않습니다. "
+
+msgid "Scheduler's cron is at /scheduler/cron/{access-key} and a sample crontab entry to run scheduler every minute might look like:"
+msgstr "스케줄러의 cron은 /scheduler/cron/{access-key}에 있고 스케줄러를 매분마다 실행하기 위한 샘플 crontab 항목은 다음과 같은 모양입니다. "
+
+msgid "or"
+msgstr "또는"
+
+msgid "Scheduling options"
+msgstr "발행 일정 설정"
+
+msgid "Enter a date. The time part is optional."
+msgstr "날짜를 입력하십시오. 시간 파트는 선택사항입니다. "
+
+msgid "The default time is @default_time."
+msgstr "기본 시간은 @default_time입니다. "
+
+msgid "Enter a date and time."
+msgstr "날짜와 시간을 입력하십시오. "
+
+msgid "Leave the date blank for no scheduled publishing."
+msgstr "스케줄되지 않은 공개의 경우 날짜를 공백으로 두십시오. "
+
+msgid "Leave the date blank for no scheduled unpublishing."
+msgstr "스케줄되지 않은 비공개의 경우 날짜를 공백으로 두십시오. "
+
+msgid "The widget for field %field is incorrectly set to %wrong. This should be changed to %correct by an admin user via the <a href=\"@link\">Field UI form display</a> :not_available"
+msgstr "필드 %field에 대한 위젯이 %wrong(으)로 잘못 설정되었습니다. 관리자 사용자가 <a href=\"@link\">필드 UI 양식 표시</a>를 통해 %correct(으)로 변경해야 합니다:not_available"
+
+msgid "not available"
+msgstr "사용할 수 없음"
+
+msgid "Scheduler"
+msgstr "발행 일정"
+
+msgid "Publishing"
+msgstr "공개"
+
+msgid "Enable scheduled publishing for %type @plural"
+msgstr "%type에 대해 스케줄된 공개 사용 가능 @plural"
+
+msgid "Change %type creation time to match the scheduled publish time"
+msgstr "스케줄된 공개 시간과 일치하도록 %type 작성 시간 변경"
+
+msgid "The entity type does not support the change of creation time."
+msgstr "엔티티 유형은 작성 시간 변경을 지원하지 않습니다."
+
+msgid "Require scheduled publishing"
+msgstr "스케줄된 공개 필요"
+
+msgid "Create a new revision on publishing"
+msgstr "공개 시에 새 개정판 작성"
+
+msgid "Advanced options"
+msgstr "고급 선택사항"
+
+msgid "Action to be taken for publication dates in the past"
+msgstr "과거의 공개 날짜에 대해 취할 조치"
+
+msgid "Display an error message - do not allow dates in the past"
+msgstr "오류 메시지 표시 - 과거의 날짜를 허용하지 마십시오. "
+
+msgid "Publish the %type @singular immediately after saving"
+msgstr "저장 후 즉시 %type @singular 공개"
+
+msgid "Schedule the %type @singular for publication on the next cron run"
+msgstr "다음 cron 실행 시 공개를 위해 %type @singular 예약"
+
+msgid "Change %type creation time to match the published time, for dates before the %type was created"
+msgstr "%type 작성 전 날짜에 대해 공개된 시간과 일치하도록 %type 작성 시간 변경"
+
+msgid "The created time will only be altered when the scheduled publishing time is earlier than the existing creation time"
+msgstr "작성된 시간은 스케줄된 공개 시간이 기존 작성 시간 이전인 경우에만 변경됩니다."
+
+msgid "Unpublishing"
+msgstr "비공개"
+
+msgid "Enable scheduled unpublishing for %type @plural"
+msgstr "%type @plural에 대해 스케줄된 공개 취소 사용"
+
+msgid "Require scheduled unpublishing"
+msgstr "스케줄된 비공개 필요"
+
+msgid "Create a new revision on unpublishing"
+msgstr "비공개 시에 새 개정판 작성 "
+
+msgid "@type edit page"
+msgstr "@type 편집 페이지"
+
+msgid "Display scheduling date input fields in"
+msgstr "스케줄링 날짜 입력 필드 표시"
+
+msgid "Vertical tab"
+msgstr "세로 탭"
+
+msgid "Separate fieldset"
+msgstr "개별 필드 세트"
+
+msgid "Use this option to specify how the scheduler fields are displayed when editing %type @plural"
+msgstr "%type @plural을(를) 편집할 때 스케줄러 필드가 표시되는 방법을 지정하려면 이 옵션을 사용하십시오."
+
+msgid "Expand fieldset or vertical tab"
+msgstr "필드 세트 또는 세로 탭 펼치기"
+
+msgid "Expand only when a scheduled date exists or when a date is required"
+msgstr "스케줄된 날짜가 존재하거나 날짜가 필수인 경우에만 펼치십시오. "
+
+msgid "Always open the fieldset or vertical tab"
+msgstr "필드 세트 또는 세로 탭 항상 열기"
+
+msgid "Show message"
+msgstr "메시지 표시"
+
+msgid "Show a confirmation message when a scheduled %type @singular is saved"
+msgstr "스케줄된 %type @singular이(가) 저장될 때 확인 메시지 표시"
+
+msgid "Scheduler settings"
+msgstr "스케줄러 설정"
+
+msgid "Enabled for publishing"
+msgstr "공개에 사용 가능"
+
+msgid "Enabled for unpublishing"
+msgstr "비공개에 사용 가능"
+
+msgid "None"
+msgstr "없음"
+
+msgid "Now"
+msgstr "현재"
+
+msgid "How far into the future should the items be scheduled?"
+msgstr "항목은 얼마나 어느 정도의 미래 날짜까지 스케줄됩니까?"
+
+msgid "Scheduled dates will be set randomly within the selected time span."
+msgstr "스케줄된 날짜는 선택한 시간 범위 내에서 무작위로 설정됩니다."
+
+msgid "Publishing date for Scheduler"
+msgstr "스케줄러의 공개 날짜"
+
+msgid "Enter a percentage for randomly selecting Scheduler-enabled entities to be given a publish-on date. Enter 0 for none, 100 for all. The date and time will be random within the range starting at entity creation date, up to a time in the future matching the same span as selected above."
+msgstr "스케줄러 사용 엔티티를 무작위로 선택하여 공개 날짜를 지정하는 백분율을 입력하십시오. 없으면 0을, 전체는 100을 입력하십시오. 날짜와 시간은 엔티티 작성 날짜부터 위에서 선택한 것과 동일한 기간과 일치하는 미래의 시간까지의 범위 내에서 무작위로 지정됩니다."
+
+msgid "Unpublishing date for Scheduler"
+msgstr "스케줄러의 비공개 날짜"
+
+msgid "Enter a percentage for randomly selecting Scheduler-enabled entities to be given an unpublish-on date. Enter 0 for none, 100 for all. The date and time will be random within the range starting at the later of entity creation date and publish-on date, up to a time in the future matching the same span as selected above."
+msgstr "스케줄되지 않은 날짜가 지정될 스케줄러 사용 가능 엔티티를 무작위로 선택하는 백분율을 입력하십시오. 없으면 0을, 전체는 100을 입력하십시오. 날짜와 시간은 엔터티 생성 날짜와 게시 날짜 중 최근 날짜에서 시작하여 위에서 선택한 것과 동일한 기간과 일치하는 미래의 시간까지 범위 내에서 무작위로 지정됩니다."
+
+msgid "There is a problem with @entity '@type' - The translatable settings for status field '%status' and Scheduler field '%scheduler_field' should match, either both on or both off"
+msgstr "@entity '@type'에 문제점이 있습니다. 상태 필드 '%status'와 스케줄러 필드 '%scheduler_field'의 번역 가능한 설정이 둘 다 켜져 있거나 둘 다 꺼져 있어야 합니다."
+
+msgid "Publish on"
+msgstr "발행 시작 일시"
+
+msgid "Unpublish on"
+msgstr "발행 종료 일시"
+
+msgid "Media Field Data"
+msgstr "미디어 필드 데이터"
+
+msgid "Relationship to access the Media fields that are not on Media Revision."
+msgstr "미디어 개정에 없는 미디어 필드에 액세스하기 위한 관계입니다."
+
+msgid "Media Field"
+msgstr "미디어 필드"
+
+msgid "%title is scheduled to be published @publish_time and unpublished @unpublish_time."
+msgstr "%title이(가) @publish_time에 공개되고 @unpublish_time에 공개 취소되도록 스케줄되었습니다."
+
+msgid "%title is scheduled to be published @publish_time."
+msgstr "%title이(가) @publish_time에 공개되도록 스케줄되었습니다."
+
+msgid "%title is scheduled to be unpublished @unpublish_time."
+msgstr "%title이(가) @unpublish_time에 공개 취소되도록 스케줄되었습니다."
+
+msgid "Scheduler Dates"
+msgstr "스케줄러 날짜"
+
+msgid "Fieldset containing Scheduler Publish-on and Unpublish-on date input fields"
+msgstr "스케줄러 공개 및 비공개 날짜 입력 필드를 포함하는 필드 세트"
+
+msgid "Scheduler: publish on"
+msgstr "스케줄러: 공개"
+
+msgid "The date when the Scheduler module will publish the content."
+msgstr "스케줄러 모듈이 컨텐츠를 공개하는 날짜입니다."
+
+msgid "Scheduler: unpublish on"
+msgstr "스케줄러: 비공개"
+
+msgid "The date when the Scheduler module will unpublish the content."
+msgstr "스케줄러 모듈이 컨텐츠를 공개 취소하는 날짜입니다."
+
+msgid "Scheduler settings cannot be migrated due to RequirementsException: %message, %requirements, line %line in %file"
+msgstr "RequirementsException로 인해 스케줄러 설정을 마이그레이션할 수 없음: %file의 %message, %requirements, 라인 %line"
+
+msgid "Function %function has not been executed. Implementations of hook_scheduler_api() should be replaced by Scheduler event listeners."
+msgstr "%function 함수가 실행되지 않았습니다. hook_scheduler_api()의 구현은 스케줄러 이벤트 리스너로 대체되어야 합니다."
+
+msgid "Local task route %route contains duplicates in addition to Scheduler. %data"
+msgstr "로컬 태스크 라우트 %route에 스케줄러 외에 중복이 포함되어 있습니다. %data"
+
+msgid "currently in daylight saving mode"
+msgstr "현재 일광 절약 모드에 있음"
+
+msgid "not in daylight saving mode"
+msgstr "일광 절약 모드에 없음"
+
+msgid "In most cases the server time should match Coordinated Universal Time (UTC) / Greenwich Mean Time (GMT)."
+msgstr "대부분의 경우 서버 시간은 협정 세계시(UTC)/그리니치 표준시(GMT)와 일치해야 합니다. "
+
+msgid "Default timezone: %date_default_timezone (%date_default_code), offset from UTC/GMT by %date_default_offset hours. This timezone can be <a href=\"@admin_regional_settings\">changed by admin users</a> with the appropriate access."
+msgstr "기본 시간대: %date_default_timezone (%date_default_code), %date_default_offset 시간만큼 UTC/GMT에서 오프셋. 이 시간대는 적합한 액세스가 있는 <a href=\"@admin_regional_settings\">관리 사용자에 의해 변경</a>될 수 있습니다. "
+
+msgid "Local time: %localtime (%daylight_saving). You can change this via your <a href=\"@account_edit\">user account</a>."
+msgstr "로컬 시간: %localtime (%daylight_saving). <a href=\"@account_edit\">사용자 계정</a>을 통해 이를 변경할 수 있습니다. "
+
+msgid "Note: The user timezone has not been stored, so defaulting to the website timezone."
+msgstr "참고: 사용자 시간대가 저장되지 않았으므로 기본적으로 웹 사이트 시간대로 설정됩니다. "
+
+msgid "Your local time is %localtime (%daylight_saving). This is not configurable by you."
+msgstr "로컬 시간이 %localtime (%daylight_saving)입니다. 이는 사용자가 구성할 수 없습니다. "
+
+msgid "Scheduler Time Check"
+msgstr "스케줄러 시간 검사"
+
+msgid "Server time: @utc"
+msgstr "서버 시간: @utc"
+
+msgid "The date and time format has been reset."
+msgstr "날짜 및 시간 형식이 재설정되었습니다. "
+
+msgid "Default set on for new option \"Show a message after updating content\""
+msgstr "새 옵션 \"컨텐츠 업데이트 후 메시지 표시\"에 대해 설정된 기본값"
+
+msgid "The \"Scheduled\" tab is now a \"Scheduled content\" sub-task under the \"Content\" tab"
+msgstr "이제 \"스케줄됨\" 탭이 \"컨텐츠\" 탭 아래의 \"스케줄된 컨텐츠\" 하위 태스크입니다."
+
+msgid "Added Scheduler date fields to the following entity types: %updated."
+msgstr "다음 엔티티 유형에 스케줄러 날짜 필드를 추가했습니다: %updated."
+
+msgid "No database fields had to be added."
+msgstr "데이터베이스 필드를 추가할 필요가 없습니다."
+
+msgid "Updated views: %updated."
+msgstr "업데이트된 보기: %updated."
+
+msgid "No views require updating."
+msgstr "업데이트가 필요한 보기가 없습니다."
+
+msgid "Nothing requires updating for Taxonomy Terms."
+msgstr "분류 조건에 대한 업데이트가 필요하지 않습니다."
+
+msgid "No reaction rules required updating with entity context."
+msgstr "엔티티 컨텍스트로 업데이트하는 데 필요한 반응 규칙이 없습니다."
+
+msgid "%updated."
+msgstr "%updated."
+
+msgid "No update required."
+msgstr "업데이트가 필요하지 않습니다."
+
+msgid "1 reaction rule updated with entity context"
+msgid_plural "@count reaction rules updated with entity context"
+msgstr[0] "@count 반응 규칙이 엔티티 컨텍스트로 업데이트됨"
+
+msgid "Publish and unpublish content and entities automatically on specified dates and times."
+msgstr "지정된 날짜 및 시간에 컨텐츠 및 엔티티를 자동으로 공개 및 공개 취소합니다."
+
+msgid "Configure settings for scheduled publishing and unpublishing."
+msgstr "스케줄된 공개 및 비공개의 설정을 구성합니다. "
+
+msgid "Settings"
+msgstr "설정"
+
+msgid "Lightweight cron"
+msgstr "경량 cron"
+
+msgid "Administer scheduler"
+msgstr "스케줄러 관리"
+
+msgid "Configure scheduler - set default times, lightweight cron."
+msgstr "스케줄러 - 기본 시간 설정, 경량 cron을 구성합니다."
+
+msgid "Allow date-only input with time taken from default time setting"
+msgstr "기본 시간 설정에서 가져온 시간이 있는 날짜만 있는 입력을 허용"
+
+msgid "Full date and time format"
+msgstr "전체 날짜 및 시간 형식"
+
+msgid "The set of PHP date letters allowed in the Scheduler date format"
+msgstr "스케줄러 날짜 형식에 허용된 PHP 날짜 문자의 세트"
+
+msgid "Date part of the full format"
+msgstr "전체 형식의 날짜 파트"
+
+msgid "Default value for entity type setting expand_fieldset"
+msgstr "expand_fieldset 엔티티 유형 설정의 기본값"
+
+msgid "Default value for entity type setting fields_display_mode"
+msgstr "fields_display_mode 엔티티 유형 설정의 기본값"
+
+msgid "Default value for entity type setting publish_enable"
+msgstr "publish_enable 엔티티 유형 설정의 기본값"
+
+msgid "Default value for entity type setting publish_past_date"
+msgstr "publish_past_date 엔티티 유형 설정의 기본값"
+
+msgid "Default value for entity type setting publish_past_date_created"
+msgstr "publish_past_date_created 엔티티 유형 설정의 기본값"
+
+msgid "Default value for entity type setting publish_required"
+msgstr "publish_required 엔티티 유형 설정의 기본값"
+
+msgid "Default value for entity type setting publish_revision"
+msgstr "publish_revision 엔티티 유형 설정의 기본값"
+
+msgid "Default value for entity type setting publish_touch"
+msgstr "publish_touch 엔티티 유형 설정의 기본값"
+
+msgid "Default value for entity type setting show_message_after_update"
+msgstr "show_message_after_update 엔티티 유형 설정의 기본값"
+
+msgid "Default Scheduling Time. This is used with the option to allow date only"
+msgstr "기본 스케줄링 시간. 이는 날짜만을 허용하는 옵션과 함께 사용됩니다. "
+
+msgid "Default value for entity type setting unpublish_enable"
+msgstr "unpublish_enable 엔티티 유형 설정의 기본값"
+
+msgid "Default value for entity type setting unpublish_required"
+msgstr "unpublish_required 엔티티 유형 설정의 기본값"
+
+msgid "Default value for entity type setting unpublish_revision"
+msgstr "unpublish_revision 엔티티 유형 설정의 기본값"
+
+msgid "Hide the seconds on the input control when entering a time"
+msgstr "시간 입력 시 입력 제어의 시간(초) 숨기기"
+
+msgid "Lightweight cron access key"
+msgstr "경량 cron 액세스 키"
+
+msgid "Log every Scheduler lightweight cron activation and completion message"
+msgstr "모든 스케줄러 경량 cron 활성화 및 완료 메시지 로그"
+
+msgid "The set of PHP time letters allowed in the Scheduler time format"
+msgstr "스케줄러 시간 형식에 허용된 PHP 시간 문자 세트"
+
+msgid "Time part of the full format"
+msgstr "전체 형식의 시간 파트"
+
+msgid "Scheduler entity type settings"
+msgstr "스케줄러 엔티티 유형 설정"
+
+msgid "Conditions under which to expand the date input fieldset or vertical tab (\"when_required\" or \"always\")"
+msgstr "날짜 입력 필드 세트 또는 세로 탭(\"when_required\" 또는 \"always\")을 확장하는 조건"
+
+msgid "The way the scheduling fields are displayed in the edit form (\"vertical_tab\" or \"fieldset\")"
+msgstr "스케줄링 필드가 편집 양식으로 표시되는 방식(\"vertical_tab\" 또는 \"fieldset\")"
+
+msgid "Enable scheduled publishing"
+msgstr "스케줄된 공개 사용"
+
+msgid "Action to be taken for publication dates in the past (\"error\", \"publish\" or \"schedule\")"
+msgstr "과거의 공개 날짜에 대해 수행할 조치(\"error\", \"publish\" 또는 \"schedule\")"
+
+msgid "Change entity creation date for past dates to avoid \"changed\" being earlier than \"created\""
+msgstr "과거 날짜의 엔티티 생성 날짜를 변경하여 \"changed\"이 \"created\"보다 빠르지 않도록 하십시오."
+
+msgid "Change entity creation time to match the scheduled publish time"
+msgstr "스케줄된 공개 시간과 일치하도록 엔티티 작성 시간 변경"
+
+msgid "Show a message after updating an entity which is scheduled"
+msgstr "스케줄된 엔티티를 업데이트한 후 메시지 표시"
+
+msgid "Enable scheduled unpublishing"
+msgstr "스케줄된 비공개 사용"
+
+msgid "State Change configuration"
+msgstr "상태 변경 구성"
+
+msgid "Scheduled for publishing"
+msgstr "공개 스케줄됨"
+
+msgid "Scheduled for unpublishing"
+msgstr "비공개 스케줄됨"
+
+msgid "Not scheduled"
+msgstr "스케줄되지 않음"
+
+msgid "Publishing enabled"
+msgstr "공개 사용 가능"
+
+msgid "Unpublishing enabled"
+msgstr "비공개 사용 가능"
+
+msgid "Node form scheduler"
+msgstr "노드 양식 스케줄러"
+
+msgid "Scheduler date options on the Node form."
+msgstr "노드 양식에서 스케줄러 날짜 옵션. "
+
+msgid "Form"
+msgstr "양식"
+
+msgid "Scheduler options"
+msgstr "스케줄러 옵션"
+
+msgid "Send e-mail when content is published by Scheduler"
+msgstr "컨텐츠가 스케줄러에 의해 공개될 때 이메일 전송"
+
+msgid "'[node:title]' has been published on [site:name]"
+msgstr "'[node:title]'이 [site:name]에 공개되었습니다. "
+
+msgid ""
+"Dear [node:author:name],\r\n"
+"Your [node:type] '[node:title]' has been published on [site:name].\r\n"
+"The link is [node:url]\r\n"
+""
+msgstr ""
+"친애하는 [node:author:name],\r\n"
+"귀하의 [node:type] '[node:title]'이 [site:name]에 공개되었습니다. \r\n"
+"링크는 [node:url]입니다\r\n"
+""
+
+msgid "Send e-mail when content is unpublished by Scheduler"
+msgstr "컨텐츠가 스케줄러에 의해 비공개될 때 이메일 전송"
+
+msgid "'[node:title]' has been unpublished on [site:name]"
+msgstr "'[node:title]'이 [site:name]에 비공개되었습니다. "
+
+msgid ""
+"Dear [node:author:name],\r\n"
+"Your [node:type] '[node:title]' has been unpublished on [site:name].\r\n"
+"The link is [node:url]\r\n"
+""
+msgstr ""
+"친애하는 [node:author:name],\r\n"
+"귀하의 [node:type] '[node:title]'이 [site:name]에 비공개되었습니다. \r\n"
+"링크는 [node:url]입니다\r\n"
+""
+
+msgid "Node"
+msgstr "노드"
+
+msgid "The node for publishing via Scheduler."
+msgstr "스케줄러를 통해 공개하기 위한 노드입니다. "
+
+msgid "Publish-on Date"
+msgstr "공개 날짜"
+
+msgid "The publishing date to be used by Scheduler."
+msgstr "스케줄러에서 사용할 공개 날짜입니다. "
+
+msgid "Set scheduled publishing date"
+msgstr "스케줄된 공개 날짜 설정"
+
+msgid "The node for unpublishing via Scheduler."
+msgstr " 스케줄러를 통해 비공개할 노드입니다. "
+
+msgid "Unpublish-on Date"
+msgstr "비공개 날짜"
+
+msgid "The unpublishing date to be used by Scheduler."
+msgstr "스케줄러에서 사용할 비공개 날짜입니다. "
+
+msgid "Set scheduled unpublishing date"
+msgstr "스케줄된 비공개 날짜 설정"
+
+msgid "The scheduled node"
+msgstr "스케줄된 노드"
+
+msgid "The node scheduled for publishing via Scheduler."
+msgstr "스케줄러를 통해 공개하기 위해 스케줄된 노드입니다. "
+
+msgid "Remove scheduled publishing date"
+msgstr "스케줄된 공개 날짜 제거"
+
+msgid "The node scheduled for unpublishing via Scheduler."
+msgstr "스케줄러를 통해 비공개하기 위해 스케줄된 노드입니다. "
+
+msgid "Remove scheduled unpublishing date"
+msgstr "스케줄된 비공개 날짜 제거"
+
+msgid "Scheduler Rules Integration"
+msgstr "스케줄러 규칙 통합"
+
+msgid "Scheduler sub-module providing conditions, actions and events for use with the Rules module."
+msgstr "규칙 모듈과 함께 사용하기 위해 조건, 조치 및 이벤트를 제공하는 스케줄러 서브 모듈입니다. "
+
+msgid "The object representing the scheduled @entity_type"
+msgstr "스케줄된 @entity_type을 나타내는 오브젝트"
+
+msgid "After saving a new @entity_type that is scheduled for publishing"
+msgstr "공개가 스케줄된 새 @entity_type을(를) 저장한 후"
+
+msgid "After saving a new @entity_type that is scheduled for unpublishing"
+msgstr "공개 취소가 스케줄된 새 @entity_type 저장 후"
+
+msgid "After updating a @entity_type that is scheduled for publishing"
+msgstr "공개가 스케줄된 @entity_type을(를) 업데이트한 후"
+
+msgid "After updating a @entity_type that is scheduled for unpublishing"
+msgstr "공개 취소가 스케줄된 @entity_type 업데이트 후"
+
+msgid "After Scheduler has published a @entity_type"
+msgstr "스케줄러가 @entity_type을(를) 공개한 후"
+
+msgid "After Scheduler has unpublished a @entity_type"
+msgstr "스케줄러가 @entity_type을(를) 공개 취소한 후"
+
+msgid "@entity_type_label type is enabled for scheduled publishing"
+msgstr "@entity_type_label 유형이 스케줄된 공개에 사용 가능함"
+
+msgid "@entity_type_label"
+msgstr "@entity_type_label"
+
+msgid "The @entity_type_singular to check for the type being enabled for scheduled publishing."
+msgstr "스케줄된 공개에 사용할 수 있는 유형을 확인하는 @entity_type_singular입니다."
+
+msgid "@entity_type_label type is enabled for scheduled unpublishing"
+msgstr "@entity_type_label 유형이 스케줄된 공개 취소에 사용 가능함"
+
+msgid "The @entity_type_singular to check for the type being enabled for scheduled unpublishing."
+msgstr "스케줄된 공개 취소에 사용하도록 설정된 유형인지 확인하기 위한 @entity_type_singular입니다."
+
+msgid "@entity_type_label is scheduled for publishing"
+msgstr "@entity_type_label이(가) 공개를 위해 스케줄됩니다."
+
+msgid "The @entity_type_singular to check for having a scheduled publishing date."
+msgstr "스케줄된 공개 날짜가 있는지 확인하는 @entity_type_singular입니다."
+
+msgid "@entity_type_label is scheduled for unpublishing"
+msgstr "@entity_type_label이(가) 공개 취소를 위해 스케줄됩니다."
+
+msgid "The @entity_type_singular to check for having a scheduled unpublishing date."
+msgstr "스케줄되지 않은 공개 취소 날짜가 있는지 확인하는 @entity_type_singular입니다."
+
+msgid "Node type is enabled for scheduled publishing"
+msgstr "노드 유형이 스케줄된 공개에 사용 가능함"
+
+msgid "Content (Scheduler)"
+msgstr "컨텐츠(스케줄러)"
+
+msgid "The node to check for the type being enabled for scheduled publishing."
+msgstr "스케줄된 공개에 사용할 수 있는 유형을 확인하는 노드입니다."
+
+msgid "Node is scheduled for publishing"
+msgstr "노드에서 공개가 스케줄되어 있음"
+
+msgid "The node to check for having a scheduled publishing date."
+msgstr "스케줄된 공개 날짜를 확인하기 위한 노드입니다."
+
+msgid "Node is scheduled for unpublishing"
+msgstr "노드에서 비공개가 스케줄되어 있습니다. "
+
+msgid "The node to check for having a scheduled unpublishing date."
+msgstr "스케줄되지 않은 공개 취소 날짜를 확인하기 위한 노드입니다."
+
+msgid "Node type is enabled for scheduled unpublishing"
+msgstr "노드 유형이 스케줄된 비공개에 사용 가능함"
+
+msgid "The node to check for the type being enabled for scheduled unpublishing."
+msgstr "스케줄된 공개 취소를 위해 활성화된 유형을 확인하기 위한 노드입니다."
+
+msgid "scheduled publishing"
+msgstr "스케줄된 공개"
+
+msgid "scheduled unpublishing"
+msgstr "스케줄된 공개 취소"
+
+msgid "@bundle_label is enabled for @activity"
+msgstr "@activity에 대해 @bundle_label을(를) 사용 가능합니다."
+
+msgid "@type settings"
+msgstr "@type 설정"
+
+msgid "Action %action is not valid because @activity is not enabled for %type @group. Add the condition %condition to your Reaction Rule, or enable @activity via the <a href=\"@url\">%type</a> settings."
+msgstr "%type @group에 대해 @activity이(가) 사용 가능하지 않으므로 조치 %action가 유효하지 않습니다. %condition을(를) 반응 규칙에 추가하거나 <a href=\"@url\">%type</a> 설정을 통해 @activity을(를) 사용하십시오."
+
+msgid "Action %action is not valid because @activity is not enabled for %type @group. Add the condition %condition to your Reaction Rule, or enable @activity via the %type settings."
+msgstr "%type @group에 대해 @activity이(가) 사용 가능하지 않으므로 조치 %action가 유효하지 않습니다. 반응 규칙에 조건 %condition을(를) 추가하거나 %type 설정을 통해 @activity을(를) 사용하십시오."
+
+msgid "Set date for publishing a @entity_type_singular"
+msgstr "@entity_type_singular 게시 날짜 설정"
+
+msgid "@entity_type_label for scheduling"
+msgstr "스케줄링을 위한 @entity_type_label"
+
+msgid "The @entity_type_singular which is to have a scheduled publishing date set"
+msgstr "스케줄된 공개 날짜 세트를 가질 @entity_type_singular"
+
+msgid "Date for publishing"
+msgstr "공개 날짜"
+
+msgid "The date when Scheduler will publish the @entity_type_singular"
+msgstr "스케줄러가 @entity_type_singular을(를) 공개하는 날짜"
+
+msgid "Set date for unpublishing a @entity_type_singular"
+msgstr "@entity_type_singular을(를) 공개 취소할 날짜 설정"
+
+msgid "The @entity_type_singular which is to have a scheduled unpublishing date set"
+msgstr "스케줄되지 않은 공개 날짜를 설정할 @entity_type_singular"
+
+msgid "Date for unpublishing"
+msgstr "공개 취소 날짜"
+
+msgid "The date when Scheduler will unpublish the @entity_type_singular"
+msgstr "스케줄러가 @entity_type_singular을(를) 공개 취소할 날짜"
+
+msgid "Remove date for publishing a @entity_type_singular"
+msgstr "@entity_type_singular 공개 날짜 제거"
+
+msgid "The @entity_type_singular from which to remove the scheduled publishing date"
+msgstr "스케줄된 공개 날짜를 제거할 @entity_type_singular"
+
+msgid "Remove date for unpublishing a @entity_type_singular"
+msgstr "@entity_type_singular을(를) 공개 취소하기 위한 날짜 제거"
+
+msgid "The @entity_type_singular from which to remove the scheduled unpublishing date"
+msgstr "스케줄되지 않은 공개 날짜를 제거할 @entity_type_singular"
+
+msgid "Publish a @entity_type_singular immediately"
+msgstr "@entity_type_singular 즉시 공개"
+
+msgid "@entity_type_label for publishing"
+msgstr "공개할 @entity_type_label"
+
+msgid "The @entity_type_singular to be published now"
+msgstr "지금 공개할 @entity_type_singular"
+
+msgid "Unpublish a @entity_type_singular immediately"
+msgstr "@entity_type_singular 을 즉시 공개 취소"
+
+msgid "@entity_type_label for unpublishing"
+msgstr "공개 취소할 @entity_type_label"
+
+msgid "The @entity_type_singular to be unpublished now"
+msgstr "지금 공개 취소할 @entity_type_singular"
+
+msgid "Publish a content item immediately"
+msgstr "컨텐츠 항목을 즉시 공개"
+
+msgid "The node to be published now"
+msgstr "지금 공개할 노드"
+
+msgid "Remove date for publishing a content item"
+msgstr "컨텐츠 항목 공개를 위한 날짜 제거"
+
+msgid "The node from which to remove the scheduled publishing date"
+msgstr "스케줄된 공개 날짜를 제거하기 위한 노드"
+
+msgid "Remove date for unpublishing a content item"
+msgstr "컨텐츠 항목 공개 취소를 위한 날짜 제거"
+
+msgid "The node from which to remove the scheduled unpublishing date"
+msgstr "스케줄된 비공개 날짜를 제거하기 위한 노드"
+
+msgid "Set date for publishing a content item"
+msgstr "컨텐츠 항목 공개를 위한 날짜 설정"
+
+msgid "Node for scheduling"
+msgstr "스케줄하기 위한 노드"
+
+msgid "The node which is to have a scheduled publishing date set"
+msgstr "스케줄된 공개 날짜가 설정된 노드"
+
+msgid "The date for publishing"
+msgstr "공개하기 위한 날짜"
+
+msgid "The date when Scheduler will publish the node"
+msgstr "스케줄러에서 노드를 공개할 날짜"
+
+msgid "Set date for unpublishing a content item"
+msgstr "컨텐츠 항목 공개 취소 날짜 설정"
+
+msgid "The node which is to have a scheduled unpublishing date set"
+msgstr "스케줄된 비공개 날짜가 설정된 노드"
+
+msgid "The date for unpublishing"
+msgstr "비공개하기 위한 날짜"
+
+msgid "The date when Scheduler will unpublish the node"
+msgstr "스케줄러에서 노드를 비공개할 날짜"
+
+msgid "Unpublish a content item immediately"
+msgstr "컨텐츠 항목을 즉시 공개 취소"
+
+msgid "The node to be unpublished now"
+msgstr "지금 비공개할 노드"
+
+msgid "The previous creation date was @old_creation_date, now updated to match the publishing date."
+msgstr "이전 작성 날짜는 @old_creation_date이고, 이제 공개 날짜와 일치하도록 업데이트되었습니다."
+
+msgid "Published by Scheduler. The scheduled publishing date was @publish_on."
+msgstr "스케줄러에 의해 공개되었습니다. 스케줄된 공개 날짜는 @publish_on입니다."
+
+msgid "View @type"
+msgstr "@type 보기"
+
+msgid "@label settings"
+msgstr "@label 설정"
+
+msgid "Unpublished by Scheduler. The scheduled unpublishing date was @unpublish_on."
+msgstr "스케줄러에 의해 공개 취소되었습니다. 스케줄된 공개 취소 날짜는 @unpublish_on입니다."
+
+msgid "Config Update for actions"
+msgstr "조작을 위한 구성 업데이트"
+
+msgid "Enable Config Update Reports"
+msgstr "구성 업데이트 보고서 사용"
+
+msgid "Action '%action_id' is missing. Use <a href=':url'>Config Update</a> to import the missing action."
+msgstr "'%action_id' 조치가 누락되었습니다. <a href=':url'>구성 업데이트</a>를 사용하여 누락된 조치를 가져오십시오."
+
+msgid "settings"
+msgstr "설정"
+
+msgid "Field '%field' specified by typeFieldName in the Scheduler plugin %id is not found in entity type %entity"
+msgstr "스케줄러 플러그인 %id에서 typeFieldName으로 지정된 '%field' 필드를 엔티티 유형 %entity에서 찾을 수 없습니다."
+
+msgid "Unknown entity types (@unknown)"
+msgstr "알 수 없는 엔티티 유형(@unknown)"
+
+msgid "Scheduler fields removed from @entityType"
+msgstr "스케줄러 필드가 @entityType에서 제거됨"
+
+msgid "Settings removed from @bundle"
+msgstr "@bundle에서 설정이 제거됨"
+
+msgid "Scheduler issue 3320341"
+msgstr "스케줄러 문제 3320341"
+
+msgid ""
+"The Scheduler fields are now hidden by default and automatically changed to be displayed when an entity\n"
+"      bundle is enabled for scheduling. If you have previously manually hidden scheduler fields for enabled\n"
+"      entity types then these fields will now be displayed. You will need to manually hide them again or\n"
+"      implement hook_scheduler_hide_publish_date() or hook_scheduler_TYPE_hide_publish_date() and the\n"
+"      equivalent for unpublish_date. See @issue for details."
+msgstr ""
+"이제 스케줄러 필드는 기본적으로 숨겨져 있으며 스케줄에 대해 엔티티 번들이 사용 가능할 때 표시되도록\n"
+" 자동으로 변경됩니다. 사용 가능한 엔티티 유형에 대해 이전에 수동으로 숨겨진 스케줄러 필드가 있는 경우\n"
+" 이 필드가 표시됩니다. 수동으로 다시 숨기거나 hook_scheduler_hide_publish_date() 또는\n"
+" hook_scheduler_TYPE_hide_publish_date() 및 unpublish_date 동급을\n"
+" 구현해야 합니다. 자세한 내용은 @issue를 참조하십시오."
+
+msgid "Publish On field displayed for: @list"
+msgstr "다음에 대해 표시되는 공개 필드: @list"
+
+msgid "Unpublish On field displayed for: @list"
+msgstr "다음에 대해 표시되는 공개 취소 필드: @list"
+
+msgid "Publish On field hidden for: @list"
+msgstr "다음에 대해 숨겨진 공개 필드: @list"
+
+msgid "Unpublish On field hidden for: @list"
+msgstr "다음에 대해 숨겨진 공개 취소 필드: @list"
+
+msgid "%view view updated."
+msgstr "%view 뷰가 업데이트되었습니다."
+
+msgid "%view view loaded from source."
+msgstr "소스에서 로드된 %view 보기입니다."
+
+msgid "%field field removed from %entityType entity type"
+msgstr "%field 필드가 %entityType 엔티티 유형에서 제거됨"
+
+msgid "Scheduler settings removed from %entity %bundle"
+msgstr "스케줄러 세팅이 %entity %bundle에서 제거됨"
+
+msgid "@type: scheduled \"publish\" processing of %title completed by @sucessful_hooks."
+msgstr "@type: @sucessful_hooks에 의해 완료된 %title의 \"공개\" 처리가 스케줄되었습니다."
+
+msgid "@type: scheduled publishing of %title."
+msgstr "@type: %title. 의 스케줄된 공개"
+
+msgid "@type: scheduled \"unpublish\" processing of %title completed by @sucessful_hooks."
+msgstr "@type: @sucessful_hooks에 의해 완료된 %title의 \"공개 취소\" 처리가 스케줄되었습니다."
+
+msgid "@type: scheduled unpublishing of %title."
+msgstr "@type: %title. 의 스케줄된 비공개"
+
+msgid "Lightweight cron run activated by @trigger."
+msgstr "경량 cron 실행이 @trigger에 의해 활성화되었습니다."
+
+msgid "Lightweight cron run completed."
+msgstr "경량 cron 실행 완료. "
+
+msgid "%entity entity type updated with %publish_on and %unpublish_on fields."
+msgstr "%entity 엔티티 유형이 %publish_on 및 %unpublish_on 필드로 업데이트되었습니다."
+
+msgid "No source file for %full_name in either %install_folder or %optional_folder folders"
+msgstr "%full_name에 대해 %install_folder 또는 %optional_folder 폴더에 소스 파일이 없습니다."
+
+msgid "Publishing failed for %title. @failed_hooks returned a failure code."
+msgstr "%title에 대해 공개에 실패했습니다. @failed_hooks이(가) 실패 코드를 리턴했습니다."
+
+msgid "Unpublishing failed for %title. @failed_hooks returned a failure code."
+msgstr "%title에 대해 공개 취소에 실패했습니다. @failed_hooks이(가) 실패 코드를 리턴했습니다."
+
+msgid "Action '%action_id' is missing. Use Config Update to import the missing action."
+msgstr "'%action_id' 조치가 누락되었습니다. 구성 업데이트를 사용하여 누락된 조치를 가져오십시오."
+
+msgid "Entity id @id is not a @type entity. Processing skipped."
+msgstr "엔티티 ID @id은(는) @type 엔티티가 아닙니다. 처리를 건너뛰었습니다."
+
+msgid "Schedule publishing and unpublishing of %label"
+msgstr "%label 공개 및 공개 취소 스케줄"
+
+msgid "Allows users to set a start and end time for %singular_label publication."
+msgstr "사용자가 %singular_label 공개의 시작 및 종료 시간을 설정할 수 있도록 합니다."
+
+msgid "View scheduled %label"
+msgstr "스케줄된 %label 보기"
+
+msgid "Allows users to see a list of all %plural_label that are scheduled."
+msgstr "사용자가 스케줄된 모든 %plural_label의 목록을 볼 수 있도록 합니다."
+
+msgid "Scheduler lightweight cron completed."
+msgstr "스케줄러 경량 cron이 완료되었습니다."
+
+msgid "nothing to update"
+msgstr "업데이트 사항 없음"
+
+msgid "Scheduler entity update - @updated"
+msgstr "스케줄러 엔티티 업데이트 - @updated"
+
+msgid "nothing to do"
+msgstr "수행할 작업 없음"
+
+msgid "Scheduler entity revert - @reverted"
+msgstr "스케줄러 엔티티 되돌리기 - @reverted"
+
+msgid "Most of the Scheduler options are set independently for each entity type and bundle. These can be accessed from the <a href=\"@link\">admin structure</a> page or directly by using the drop-button"
+msgstr "대부분의 스케줄러 옵션은 각 엔티티 유형 및 번들에 대해 독립적으로 설정됩니다. <a href=\"@link\">관리 구조</a> 페이지에서 또는 드롭 단추를 사용하여 직접 액세스할 수 있습니다."
+
+msgid "Entity Types"
+msgstr "엔티티 유형"
+
+msgid "no entity types defined"
+msgstr "정의된 엔티티 유형 없음"
+
+msgid "publishing"
+msgstr "공개"
+
+msgid "unpublishing"
+msgstr "공개 취소"
+
+msgid "The settings below are common to all entity types."
+msgstr "아래 설정은 모든 엔티티 유형에 공통입니다."
+
+msgid "Date only"
+msgstr "날짜만"
+
+msgid "Allow users to enter only a date and provide a default time."
+msgstr "사용자가 날짜만을 입력하고 기본시간을 제공하도록 허용합니다. "
+
+msgid "When only a date is entered the time will default to a specified value, but the user can change this if required."
+msgstr "날짜만이 입력되면 시간은 기본적으로 지정된 값으로 설정되지만 사용자는 필요한 경우 이를 변경할 수 있습니다. "
+
+msgid "Default time"
+msgstr "기본 시간"
+
+msgid "Provide a default time in @format format that will be used if the user does not enter a value."
+msgstr "사용자가 값을 입력하지 않는 경우 사용할 기본 시간을 @format 형식으로 제공하십시오."
+
+msgid "Time settings"
+msgstr "시간 설정"
+
+msgid "Hide the seconds."
+msgstr "시간(초)을 숨깁니다."
+
+msgid "When entering a time, only show hours and minutes in the input field."
+msgstr "시간을 입력할 때 입력 필드에 시간 및 분만 표시합니다."
+
+msgid "The default time should be in the format @format"
+msgstr "기본 시간은 @format 형식이어야 합니다."
+
+msgid "No %bundle_id entity types returned by %module module for use in %plugin_label"
+msgstr "%plugin_label에서 사용하기 위해 %module 모듈에서 리턴된 %bundle_id 엔티티 유형이 없습니다."
+
+msgid "Lightweight cron settings"
+msgstr "경량 cron 설정"
+
+msgid "Log every activation and completion message."
+msgstr "모든 활성 및 완료 메시지를 로그합니다. "
+
+msgid "When this option is checked, Scheduler will write an entry to the log every time the lightweight cron process is started and completed. This is useful during set up and testing, but can result in a large number of log entries. Any actions performed during the lightweight cron run will always be logged regardless of this setting."
+msgstr "이 옵션이 선택되면 스케줄러는 경량 cron 프로세스가 시작되고 완료될 때마다 항목을 로그에 씁니다. 이는 설정 및 테스트 동안에 유용하지만 로그 항목의 수가 너무 많아지는 결과가 나올 수 있습니다. 경량 cron 실행 동안에 수행된 모든 조치는 이 설정과 관계 없이 항상 로그됩니다. "
+
+msgid "Similar to Drupal's cron key this acts as a security token to prevent unauthorised calls to scheduler/cron. The key should be passed as scheduler/cron/{access key}"
+msgstr "Drupal의 cron 키와 유사하게 이는 스케줄러/cron에 무단 호출을 방지하기 위해 보안 토큰으로서 작동합니다. 키는 스케줄러/cron/{access key}로서 전달되어야 합니다. "
+
+msgid "Generate new random key"
+msgstr "새 랜덤 키 생성"
+
+msgid "You can test Scheduler's lightweight cron process interactively"
+msgstr "스케줄러의 경량 cron 프로세스를 대화식으로 테스트할 수 있습니다. "
+
+msgid "Run Scheduler's lightweight cron now"
+msgstr "스케줄러의 경량 cron을 지금 실행"
+
+msgid "Lightweight cron run completed. See the <a href=\"@url\">log</a> for details."
+msgstr "경량 cron 실행 완료. 세부사항은 <a href=\"@url\">로그</a>를 참조하십시오. "
+
+msgid "Scheduled content"
+msgstr "스케줄된 컨텐츠"
+
+msgid "Overview"
+msgstr "개요"
+
+msgid "Scheduled media"
+msgstr "스케줄된 미디어"
+
+msgid "Scheduled products"
+msgstr "스케줄된 제품"
+
+msgid "Scheduled terms"
+msgstr "스케줄된 조건"
+
+msgid "Leave blank for no date."
+msgstr "날짜가 없으면 공백으로 두십시오."
+
+msgid "Datetime Timestamp for Scheduler"
+msgstr "스케줄러의 날짜 시간 시간소인"
+
+msgid "An optional datetime field. Does not fill in the current datetime if left blank. Defined by Scheduler module."
+msgstr "선택적 날짜 시간 필드. 비어 있는 경우 현재 날짜 시간을 채우지 않습니다. 스케줄러 모듈에 의해 정의됩니다."
+
+msgid "Commerce Product Scheduler Plugin"
+msgstr "상업 제품 스케줄러 플러그인"
+
+msgid "Provides support for scheduling Commerce Product entities"
+msgstr "상업 제품 엔티티 스케줄링에 대한 지원을 제공합니다."
+
+msgid "Media Scheduler Plugin"
+msgstr "미디어 스케줄러 플러그인"
+
+msgid "Provides support for scheduling media entities"
+msgstr "미디어 엔티티 스케줄링에 대한 지원을 제공합니다."
+
+msgid "Node Scheduler Plugin"
+msgstr "노드 스케줄러 플러그인"
+
+msgid "Provides support for scheduling node entities"
+msgstr "스케줄링 노드 엔티티에 대한 지원을 제공합니다."
+
+msgid "Taxonomy Term Scheduler Plugin"
+msgstr "분류 조건 스케줄러 플러그인"
+
+msgid "Provides support for scheduling Taxonomy Term entities"
+msgstr "분류 조건 엔티티 스케줄링에 대한 지원을 제공합니다."
+
+msgctxt "Validation"
+msgid "Scheduler publish on"
+msgstr "스케줄러 공개"
+
+msgctxt "Validation"
+msgid "Scheduler unpublish on"
+msgstr "스케줄러 비공개"
+
+msgid "Scheduled content access. REDUNDANT, DO NOT USE THIS."
+msgstr "스케줄된 컨텐츠 액세스입니다. 중복되므로 사용하지 마십시오."
+
+msgid "NOT USED"
+msgstr "사용되지 않음"
+

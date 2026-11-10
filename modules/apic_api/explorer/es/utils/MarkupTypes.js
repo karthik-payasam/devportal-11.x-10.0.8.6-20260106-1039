@@ -1,0 +1,1 @@
+var a={markdown:"markdown",commonmark:"commonmark"};export default a;

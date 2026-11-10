@@ -1,0 +1,485 @@
+<?php
+
+/********************************************************* {COPYRIGHT-TOP} ***
+ * Licensed Materials - Property of IBM
+ * 5725-L30, 5725-Z22
+ *
+ * (C) Copyright IBM Corporation 2018, 2025
+ *
+ * All Rights Reserved.
+ * US Government Users Restricted Rights - Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ ********************************************************** {COPYRIGHT-END} **/
+
+/**
+ * @file
+ * Provides the product integration with APIC.
+ */
+
+use Drupal\apic_api\Api;
+use Drupal\Component\Utility\Html;
+use Drupal\file\Entity\File;
+use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
+use Drupal\product\Product;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+
+/* Permissions that can be granted */
+
+const EDIT_ANY_PRODUCT_CONTENT_GRANT = 1;
+const PUBLIC_PRODUCT_GRANT = 2;
+const AUTHENTICATED_PRODUCT_GRANT = 3;
+const SUBSCRIBED_TO_PRODUCT_GRANT = 4;
+const ORG_PRODUCT_GRANT = 5;
+const TAG_PRODUCT_GRANT = 6;
+const HIDDEN_PRODUCT_GRANT = 7;
+
+/* Return the permission strings so that they can be displayed in the ACL log
+ *
+ * @param gid
+ * @return string
+ */
+function product_permission_value($gid): string {
+  switch ($gid) {
+    case EDIT_ANY_PRODUCT_CONTENT_GRANT:
+      return 'EDIT_ANY_PRODUCT_CONTENT_GRANT';
+    case PUBLIC_PRODUCT_GRANT:
+      return 'PUBLIC_PRODUCT_GRANT';
+    case AUTHENTICATED_PRODUCT_GRANT:
+      return 'AUTHENTICATED_PRODUCT_GRANT';
+    case SUBSCRIBED_TO_PRODUCT_GRANT:
+      return 'SUBSCRIBED_TO_PRODUCT_GRANT';
+    case ORG_PRODUCT_GRANT:
+      return 'ORG_PRODUCT_GRANT';
+    case TAG_PRODUCT_GRANT:
+      return 'TAG_PRODUCT_GRANT';
+    case HIDDEN_PRODUCT_GRANT:
+      return 'HIDDEN_PRODUCT_GRANT';
+    default:
+      return 'Permission Value Not Known';
+  }
+}
+
+/**
+ * @param $variables
+ *
+ * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+ * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+ */
+function product_preprocess_node(&$variables) {
+  if ($variables['node']->getType() === 'product') {
+    ibm_apim_entry_trace(__FUNCTION__, NULL);
+
+    $keySvg = file_get_contents(\Drupal::service('extension.list.module')->getPath('product') . '/images/key.svg');
+    $lockedSvg = file_get_contents(\Drupal::service('extension.list.module')->getPath('product') . '/images/locked.svg');
+    $closeSvg = file_get_contents(\Drupal::service('extension.list.module')->getPath('product') . '/images/close.svg');
+    $checkmarkSvg = file_get_contents(\Drupal::service('extension.list.module')->getPath('product') . '/images/checkmark.svg');
+    $variables['key_svg'] = $keySvg;
+    $variables['locked_svg'] = $lockedSvg;
+    $variables['close_svg'] = $closeSvg;
+    $variables['checkmark_svg'] = $checkmarkSvg;
+
+    // get global settings first
+    $config = \Drupal::config('ibm_apim.settings');
+    $planService = \Drupal::service('ibm_apim.product_plan');
+    $ibmApimShowPlaceholderImages = (bool) $config->get('show_placeholder_images');
+    if ($ibmApimShowPlaceholderImages === NULL) {
+      $ibmApimShowPlaceholderImages = TRUE;
+    }
+    $variables['showPlaceholders'] = $ibmApimShowPlaceholderImages;
+    if ($ibmApimShowPlaceholderImages) {
+      $placeholderUrl = Product::getPlaceholderImageURL($variables['node']->getTitle());
+      $variables['placeholderUrl'] = $placeholderUrl;
+    }
+    else {
+      $variables['placeholderUrl'] = NULL;
+    }
+    $ibmApimShowVersions = (bool) $config->get('show_versions');
+    if ($ibmApimShowVersions === NULL) {
+      $ibmApimShowVersions = TRUE;
+    }
+    $variables['showVersions'] = $ibmApimShowVersions;
+
+    $selfSignUpEnabled = (bool) \Drupal::state()->get('ibm_apim.selfSignUpEnabled');
+    if ($selfSignUpEnabled === NULL) {
+      $selfSignUpEnabled = TRUE;
+    }
+    $variables['selfSignUpEnabled'] = $selfSignUpEnabled;
+
+    // get API count
+    $variables['apiCount'] = 0;
+    $apiNids = [];
+    $productApis = [];
+
+    foreach ($variables['node']->product_apis->getValue() as $arrayValue) {
+      $productApis[] = unserialize($arrayValue['value'], ['allowed_classes' => FALSE]);
+    }
+    if ($productApis !== NULL && is_array($productApis)) {
+      $variables['apiCount'] = count($productApis);
+    }
+    if ($variables['apiCount'] > 0) {
+      // pre-process the list of APIs in the product
+      $apiNames = [];
+      $apiRefs = [];
+      foreach ($productApis as $key => $productApi) {
+        $apiNames[] = $productApi['name'];
+        $apiRefs[$key] = Html::getClass($productApi['name']);
+      } // end for
+      $query = \Drupal::entityQuery('node');
+      $query->condition('type', 'api');
+      $query->condition('status', 1);
+      $query->condition('apic_ref.value', $apiNames, 'IN');
+      $results = $query->accessCheck()->execute();
+      if ($results !== NULL && !empty($results)) {
+        $apiNids = array_values($results);
+      }
+      $apiList = [];
+      // safety net to avoid blowing OOM - don't load APIs if there are more than 100
+      $apiCount = count($apiNids);
+      $enforcedCount = 0;
+      foreach (array_chunk($apiNids, 50) as $chunk) {
+        $apis = Node::loadMultiple($chunk);
+        $lang_code = \Drupal::languageManager()->getCurrentLanguage()->getId();
+        foreach ($apis as $key => $api) {
+          // ensure use the translated version of api nodes
+          $hasTranslation = $api->hasTranslation($lang_code);
+          if ($hasTranslation === TRUE) {
+            $api = $api->getTranslation($lang_code);
+            $apis[$key] = $api;
+          }
+          $fid = $api->apic_image->getValue();
+          $apiImageUrl = NULL;
+          if ($fid !== NULL && !empty($fid) && isset($fid[0]['target_id'])) {
+            $file = File::load($fid[0]['target_id']);
+            if ($file !== NULL) {
+              $apiImageUrl = $file->createFileUrl();
+            }
+          }
+
+          $placeholderUrl = NULL;
+          if ($ibmApimShowPlaceholderImages) {
+            $placeholderUrl = Api::getPlaceholderImageURL($api->getTitle());
+          }
+          $swagger = NULL;
+          if (isset($api->api_swagger->value)) {
+            $swagger = unserialize($api->api_swagger->value, ['allowed_classes' => FALSE]);
+            if (isset($swagger['x-ibm-configuration']) && is_array($swagger['x-ibm-configuration']) && !empty($swagger['x-ibm-configuration']) && $swagger['x-ibm-configuration']['enforced'] === TRUE) {
+              $enforcedCount++;
+            }
+          }
+          $listEntry = [
+            'node' => $api,
+            'icon' => $apiImageUrl,
+            'placeholderUrl' => $placeholderUrl,
+            'swagger' => $swagger,
+          ];
+          $apiList[] = $listEntry;
+        } // end for
+      }
+      $variables['apiList'] = $apiList;
+      $variables['unenforcedOnly'] = $enforcedCount === 0;
+      $variables['enforcedOnly'] = $enforcedCount === $apiCount;
+      if ($variables['view_mode'] === 'full' || $variables['view_mode'] === 'subscribewizard') {
+        $haveAccess = Product::checkAccess($variables['node']);
+        if (!$haveAccess) {
+          throw new AccessDeniedHttpException();
+        }
+
+        // pre-process the list of plans in the product
+        $planArray = [];
+        $productPlans = [];
+        foreach ($variables['node']->product_plans->getValue() as $arrayValue) {
+          $productPlans[] = unserialize($arrayValue['value'], ['allowed_classes' => FALSE]);
+        }
+        $billing = FALSE;
+        $billingEnabled = (bool) \Drupal::service('ibm_apim.billing')->isEnabled();
+        if ($productPlans !== NULL && is_array($productPlans) && count($productPlans) > 0) {
+          $productData = yaml_parse($variables['node']->product_data->value);
+          foreach ($productPlans as $plan) {
+            // check the plan name is actually set - this can be missing if it only consisted of DBCS chars in apim
+            // its not valid though and there is an apim bug to get it fixed. We cannot continue without a plan name though!
+            if ($plan['name'] !== NULL && !empty(trim($plan['name']))) {
+              $planId = $variables['node']->apic_url->value . ':' . $plan['name'];
+              $planArray[$planId] = $planService->process($planId, $plan, $apiList, $productData['apis']);
+              if (isset($plan['deploymentState'])) {
+                $planArray[$planId]['deploymentState'] = $plan['deploymentState'];
+              }
+              if (isset($plan['supersedes'])) {
+                $planArray[$planId]['supersedes'] = $plan['supersedes'];
+              }
+              if (isset($plan['superseded-by'])) {
+                $planArray[$planId]['superseded-by'] = $plan['superseded-by'];
+              }
+              if ($billingEnabled && isset($plan['billing'])) {
+                // billing enabled and plans with billing info, so enable display of prices for this product
+                $billing = TRUE;
+              }
+              if ($billingEnabled) {
+                // get price
+                $parseValue = $plan['billing'] ?? [];
+
+                $billingInfo = $planService->parseBilling($parseValue);
+
+                $planArray[$planId]['billing']['billingText'] = $billingInfo['billingText'];
+                $planArray[$planId]['billing']['trialPeriodText'] = $billingInfo['trialPeriodText'];
+              }
+            }
+            else {
+              \Drupal::messenger()->addError(t('Invalid plan found with empty plan name. Contact your system administrator'));
+            }
+          } // end for
+        }
+        $variables['plans'] = $productPlans;
+        $variables['planList'] = $planArray;
+
+        $variables['billing'] = $billing;
+        $variables['subscribable'] = product_check_product_subscribe($variables['node']);
+        $variables['userLoggedIn'] = \Drupal::currentUser()->isAuthenticated();
+
+        $userUtils = \Drupal::service('ibm_apim.user_utils');
+        $variables['userHasSubManage'] = $userUtils->checkHasPermission('subscription:manage');
+
+        $docPages = Product::getLinkedPages($variables['node']->id());
+        $variables['docpages'] = $docPages;
+        $variables['#attached']['library'][] = 'apic_app/subscribe';
+        $moduleHandler = \Drupal::service('module_handler');
+        $variables['case_study'] = $moduleHandler->moduleExists('case_study');
+        $variables['product_recommendations'] = $config->get('product_recommendations.enabled');
+        $moduleHandler = \Drupal::service('module_handler');
+        // this is needed for the fontawesome symbols in the plan table
+        if ($moduleHandler->moduleExists('social_media_links')) {
+          $variables['#attached']['library'][] = 'social_media_links/fontawesome.component';
+        }
+      }
+    }
+
+    // embedded docs
+    if ($variables['view_mode'] === 'full') {
+      $customDocs = [];
+      $productData = yaml_parse($variables['node']->product_data->value);
+      if (isset($productData['x-embedded-doc']) && is_array($productData['x-embedded-doc']) && !empty($productData['x-embedded-doc'])) {
+        $variables['embedded_docs'] = Product::processEmbeddedDocs($productData['x-embedded-doc']);
+        $customDocs = $productData['x-embedded-doc'];
+      }
+      $variables['initial_embeddeddoc'] = Product::findInitialEmbeddedDoc($customDocs);
+
+      // custom extensions
+      $customExtensions = [];
+      foreach (array_keys($productData['info']) as $key) {
+        if ($key !== 'x-ibm-languages' && strpos($key, 'x-') === 0) {
+          $keyName = substr($key, strlen('x-'));
+          $customExtensions[$keyName] = $productData['info'][$key];
+        }
+      }
+      $variables['custom_extensions'] = $customExtensions;
+    }
+
+    // custom fields
+    $view_mode = $variables['view_mode'];
+    if ($view_mode === 'full') {
+      $view_mode = 'default';
+    }
+    $fieldList = [];
+    $entityView = \Drupal::entityTypeManager()->getStorage('entity_view_display')->load('node.product.' . $view_mode);
+    if ($entityView !== NULL) {
+      $fieldList = array_keys($entityView->getComponents());
+    }
+    $coreFields = [
+      'title',
+      'vid',
+      'status',
+      'nid',
+      'revision_log',
+      'created',
+      'links',
+      'uid',
+      'comment',
+    ];
+    $ibmFields = Product::getIBMFields();
+    $merged = array_merge($coreFields, $ibmFields);
+    $diff = array_diff($fieldList, $merged);
+    $variables['custom_fields'] = $diff;
+    $variables['#attached']['library'][] = 'ibm_apim/core';
+    $variables['#attached']['library'][] = 'product/basic';
+    ibm_apim_exit_trace(__FUNCTION__, NULL);
+  }
+}
+
+
+
+/**
+ * Check if we have access to subscribe to the specified product Node
+ *
+ * @param $node
+ *
+ * @return bool
+ */
+function product_check_product_subscribe($node): bool {
+  ibm_apim_entry_trace(__FUNCTION__, NULL);
+  $returnValue = FALSE;
+  if ($node !== NULL) {
+
+    // Special case for subscription wizard - if you are not logged in, clicking "subscribe" on the product
+    // will take you through the login / create account process so just allow all unauthenticated through
+    if (\Drupal::currentUser()->isAnonymous()) {
+      // even for anonymous we need to block subscribing to deprecated products
+      $state = $node->product_state->value;
+      // if subscribe disabled then no one has access
+      $subscribeEnabled = (bool) $node->product_subscribe_enabled->value;
+      if ($state === NULL || empty($state) || (mb_strtolower($state) !== 'deprecated' && $subscribeEnabled === TRUE)) {
+        $returnValue = TRUE;
+      }
+    }
+    else {
+      $loggedIn = !\Drupal::currentUser()->isAnonymous();
+      // if not a developer return false
+      $userUtils = \Drupal::service('ibm_apim.user_utils');
+      if ($userUtils->checkHasPermission('subscription:manage')) {
+        // if deprecated then no one has access
+        $state = $node->product_state->value;
+        if ($state === NULL || empty($state) || mb_strtolower($state) !== 'deprecated') {
+          // if subscribe disabled then no one has access
+          $subscribeEnabled = (bool) $node->product_subscribe_enabled->value;
+          if ($subscribeEnabled === TRUE) {
+            // now check specific access
+
+            $myOrg = $userUtils->getCurrentConsumerOrg();
+            $visibility = [[]];
+            foreach ($node->product_visibility->getValue() as $arrayValue) {
+              $visibility[] = unserialize($arrayValue['value'], ['allowed_classes' => FALSE]);
+            }
+            $visibility = array_merge(...$visibility);
+            if ($visibility !== NULL && $visibility['subscribe']['type'] !== NULL) {
+              if (mb_strtolower($visibility['subscribe']['type']) === 'public') {
+                $returnValue = TRUE;
+              }
+              elseif ($loggedIn && mb_strtolower($visibility['subscribe']['type']) === 'authenticated') {
+                $returnValue = TRUE;
+              }
+              elseif ($myOrg['url'] !== NULL && mb_strtolower($visibility['subscribe']['type']) === 'custom') {
+                if (isset($visibility['subscribe']['org_urls'])) {
+                  foreach ($visibility['subscribe']['org_urls'] as $customOrg) {
+                    if ($customOrg === $myOrg['url']) {
+                      $returnValue = TRUE;
+                    }
+                  }
+                }
+                if ($returnValue === FALSE) {
+                  $corgService = \Drupal::service('ibm_apim.consumerorg');
+                  $consumerOrg = $corgService->get($myOrg['url']);
+                  if (isset($consumerOrg)) {
+                    $tags = $consumerOrg->getTags();
+                    if ($tags !== NULL && is_array($tags) && count($tags) > 0 && isset($visibility['subscribe']['group_urls'])) {
+                      foreach ($visibility['subscribe']['group_urls'] as $customTag) {
+                        if ($customTag !== NULL && !empty($customTag) && in_array($customTag, $tags, TRUE)) {
+                          $returnValue = TRUE;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  ibm_apim_exit_trace(__FUNCTION__, $returnValue);
+  return $returnValue;
+}
+
+/**
+ * We need our module to run last for the user register form so we can remove any other fields
+ * other modules might have added - such as the forum notifications.
+ *
+ * @param $implementations
+ * @param $hook
+ */
+function product_module_implements_alter(&$implementations, $hook) {
+  if (($hook === 'form_alter' || $hook === 'menu_links_discovered_alter') && isset($implementations['product'])) {
+    $group = $implementations['product'];
+    unset($implementations['product']);
+    $implementations['product'] = $group;
+  }
+}
+
+// This hook is called automatically via Drupal's hook_node_delete
+function product_node_delete(NodeInterface $node) {
+  $nodeType = $node->getType();
+  if (isset($nodeType) && $nodeType === "product") {
+    // delete the product's icon
+    if (isset($node->apic_image->entity)) {
+      $fid = $node->apic_image->getValue();
+      $iconFile = \Drupal::entityTypeManager()->getStorage('file')->load($fid[0]['target_id']);
+      if (isset($iconFile)) {
+        \Drupal::logger('product')->notice('deleting product icon ' . $iconFile->getFileUri());
+        $iconFile->delete();
+      }
+    }
+
+    // delete the product's attachments
+    $attachments = $node->apic_attachments->getValue();
+    if ($attachments !== NULL) {
+      foreach ($attachments as $key => $existingAttachment) {
+        $file = \Drupal::entityTypeManager()->getStorage('file')->load($existingAttachment['target_id']);
+        if (isset($file)) {
+          \Drupal::logger('product')->notice('deleting product attachment ' . $file->getFileUri());
+          $file->delete();
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Need to use our custom content type templates
+ *
+ * @param $variables
+ * @param $hook
+ * @param $info
+ */
+function product_preprocess(&$variables, $hook, &$info) {
+  if ($hook === 'node') {
+    $contentTypeToShow = $variables['node']->bundle();
+    if ($contentTypeToShow === 'product') {
+      ibm_apim_entry_trace(__FUNCTION__, NULL);
+      //Load the view mode names.
+      $allViewModes = \Drupal::service('entity_display.repository')->getViewModes('node');
+      //View mode for this request.
+      $viewModeToUse = $variables['view_mode'];
+      //Is the view mode defined for nodes?
+      if (array_key_exists($viewModeToUse, $allViewModes)) {
+        //Is there a template file for the view modes in the module?
+        if ($viewModeToUse === 'full') {
+          $templateFileName = 'node--' . $contentTypeToShow;
+        }
+        else {
+          $templateFileName = 'node--' . $contentTypeToShow . '--' . $viewModeToUse;
+        }
+
+        $themeName = \Drupal::theme()->getActiveTheme()->getName();
+        $themePath = \Drupal::theme()->getActiveTheme()->getPath();
+        if (file_exists($themePath . '/templates/node/' . $templateFileName . '.html.twig')) {
+          $info['theme path'] = \Drupal::service('extension.list.theme')->getPath($themeName);
+          $info['path'] = \Drupal::service('extension.list.theme')->getPath($themeName) . '/templates/node';
+          $info['template'] = $templateFileName;
+        }
+        elseif (file_exists($themePath . '/templates/' . $templateFileName . '.html.twig')) {
+          $info['theme path'] = \Drupal::service('extension.list.theme')->getPath($themeName);
+          $info['path'] = \Drupal::service('extension.list.theme')->getPath($themeName) . '/templates';
+          $info['template'] = $templateFileName;
+        }
+        else {
+          $templateFilePath = \Drupal::service('extension.list.module')->getPath('product') . '/templates/' . $templateFileName . '.html.twig';
+          if (file_exists($templateFilePath)) {
+            $info['theme path'] = \Drupal::service('extension.list.module')->getPath('product');
+            $info['path'] = \Drupal::service('extension.list.module')->getPath('product') . '/templates';
+            $info['template'] = $templateFileName;
+          }
+        }
+      }
+      ibm_apim_exit_trace(__FUNCTION__, NULL);
+    }
+  }
+}

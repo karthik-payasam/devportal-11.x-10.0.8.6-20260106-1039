@@ -1,0 +1,875 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Simple XML Sitemap settings will be added only to entity forms of entity types enabled here. Settings for specific entity bundles (e.g. <em>page</em>) can be adjusted here or on the bundle pages."
+msgstr "简单的 XML 站点地图设置将仅添加到此处启用的实体类型的实体表单中。 可以在此处或在捆绑包页面上调整特定实体捆绑包（例如 <em>page</em>）的设置。"
+
+msgid "Add custom internal drupal paths to specific sitemaps."
+msgstr "将定制内部 drupal 路径添加到特定站点地图。"
+
+msgid "Specify drupal internal (relative) paths, one per line. Do not forget to prepend the paths with a '/'.<br>Optionally link priority <em>(0.0 - 1.0)</em> can be added by appending it after a space.<br> Optionally link change frequency <em>(always / hourly / daily / weekly / monthly / yearly / never)</em> can be added by appending it after a space."
+msgstr "指定 drupal 内部（相对）路径，每行一个。 请不要忘记在路径前加上 \"/\"。<br>（可选）可以通过在空格后附加来添加链接优先级 <em>(0.0 - 1.0)</em>。<br>（可选）可以通过在空格后附加来添加链接变更频率<em>（始终/每小时/每日/每周/每月/每年/从不）</em>。"
+
+msgid "<strong>Examples:</strong><br><em>/ 1.0 daily</em> -> home page with the highest priority and daily change frequency<br><em>/contact</em> -> contact page with the default priority and no change frequency information"
+msgstr "<strong>示例：</strong><br><em>/ 1.0 daily</em> -> 具有最高优先级和每日变更频率的主页<br><em>/contact</em> -> 具有缺省优先级且无变更频率信息的联系人页面"
+
+msgid "Simple XML Sitemap"
+msgstr "简单的 XML 站点地图"
+
+msgid "Simple XML Sitemap settings"
+msgstr "简单的 XML 站点地图设置"
+
+msgid "Simple XML Sitemap PHP extensions"
+msgstr "简单的 XML 站点地图 PHP 扩展"
+
+msgid "Missing PHP xmlwriter extension"
+msgstr "缺少 PHP xmlwriter 扩展"
+
+msgid "In order to be able to generate sitemaps, the Simple XML Sitemap module requires the <em>xmlwriter</em> PHP extension to be enabled."
+msgstr "为了能够生成站点地图，简单的 XML 站点地图模块需要启用 <em>xmlwriter</em> PHP 扩展。"
+
+msgid "You may now want to configure the new changefreq setting for the XML sitemap entities and custom links."
+msgstr "现在，您可能想要为 XML 站点地图实体和定制链接配置新的 changefreq 设置。"
+
+msgid "You may now want to configure your XML sitemap entities to include images."
+msgstr "现在，您可能想要配置 XML 站点地图实体以包含图像。"
+
+msgid "The XML sitemaps need to be regenerated."
+msgstr "需要重新生成 XML 站点地图。"
+
+msgid "The new 'Entities per queue item' setting has been set to 50 to improve generation performance. This changes the memory footprint during generation, so please make sure to test and adjust performance settings to your needs on the module's settings page."
+msgstr "新的“每个队列项的实体数”设置已设为 50，这可以提高生成性能。这会在生成期间更改内存占用量，因此请确保在模块的设置页面上测试并调整性能设置以满足您的需要。"
+
+msgid "All variants belonging to the built-in \"Default hreflang\" sitemap type have been converted to entities. Custom sitemap types added via plugins will have to be recreated manually. See simple_sitemap.type.default_hreflang.yml. The sitemaps need to be regenerated now."
+msgstr "属于内置“Default hreflang”站点地图类型的所有变体都已转换为实体。 必须手动重新创建通过插件添加的定制站点地图类型。 请参阅 simple_sitemap.type.default_hreflang.yml。 现在需要重新生成站点地图。"
+
+msgid "A sitemap index which lists all other sitemaps is now available and can be enabled."
+msgstr "列出所有其他站点地图的站点地图索引现在可用，并且可以启用此索引。"
+
+msgid "Generates standard conform hreflang XML sitemaps of the site content and provides a framework for developing other sitemap types."
+msgstr "为站点内容生成符合标准的 hreflang XML 站点地图，并提供框架以开发其他站点地图类型。"
+
+msgid "SEO"
+msgstr "搜索引擎优化"
+
+msgid "Add sitemap"
+msgstr "添加站点地图"
+
+msgid "Add sitemap type"
+msgstr "添加站点地图类型"
+
+msgid "Sitemaps"
+msgstr "站点地图"
+
+msgid "Inclusion"
+msgstr "包含"
+
+msgid "Configure, add content to and generate XML sitemaps."
+msgstr "配置、添加内容和生成 XML 站点地图。"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Types"
+msgstr "类型"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Entities"
+msgstr "实体"
+
+msgid "Custom links"
+msgstr "自定义链接"
+
+msgid "Administer sitemap settings"
+msgstr "管理站点地图设置"
+
+msgid "Administer Simple XML Sitemap settings, alter inclusion settings of content and generate sitemaps on demand."
+msgstr "管理简单的 XML 站点地图设置，根据需要更改内容的包含设置并生成站点地图。"
+
+msgid "Max links"
+msgstr "最大链接数"
+
+msgid "Cron generation"
+msgstr "Cron 生成"
+
+msgid "Cron generation interval"
+msgstr "Cron 生成时间间隔"
+
+msgid "Generation duration"
+msgstr "生成持续时间"
+
+msgid "Entities per queue item"
+msgstr "每个队列项的实体数"
+
+msgid "Remove duplicates"
+msgstr "除去重复项"
+
+msgid "Skip untranslated"
+msgstr "跳过未翻译的内容"
+
+msgid "Include a stylesheet in the sitemaps for humans"
+msgstr "在人员的站点地图中包含样式表"
+
+msgid "Base URL"
+msgstr "基URL"
+
+msgid "Default variant"
+msgstr "缺省变体"
+
+msgid "Include images of custom links"
+msgstr "包含定制链接的图像"
+
+msgid "Disable language hreflang"
+msgstr "禁用语言 hreflang"
+
+msgid "Hide branding"
+msgstr "隐藏标记"
+
+msgid "Excluded languages"
+msgstr "排除的语言"
+
+msgid "Enabled entity types"
+msgstr "已启用的实体类型"
+
+msgid "Entity bundle settings"
+msgstr "实体捆绑设置"
+
+msgid "Index"
+msgstr "索引"
+
+msgid "Priority"
+msgstr "优先"
+
+msgid "Change frequency"
+msgstr "更改频率"
+
+msgid "Include images"
+msgstr "包含图像"
+
+msgid "Path"
+msgstr "路径"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "标签"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Weight"
+msgstr "权重"
+
+msgid "Sitemap types"
+msgstr "站点地图类型"
+
+msgid "Sitemap generator"
+msgstr "站点地图生成器"
+
+msgid "URL generators"
+msgstr "URL 生成器"
+
+msgid "IndexNow notification enabled"
+msgstr "已启用 IndexNow 通知"
+
+msgid "IndexNow notification disabled"
+msgstr "已禁用 IndexNow 通知"
+
+msgid "Included in sitemaps: "
+msgstr "包含在站点地图中： "
+
+msgid "Excluded from all sitemaps"
+msgstr "从所有站点地图中排除"
+
+msgid "The sitemap settings and any per-entity overrides will be deleted for the unchecked entity types."
+msgstr "将删除那些未选中的实体类型的站点地图设置和任何“按实体”覆盖。"
+
+msgid "IndexNow notification"
+msgstr "IndexNow 通知"
+
+msgid "IndexNow notification checkbox"
+msgstr "IndexNow 通知复选框"
+
+msgid "Simple XML Sitemap IndexNow"
+msgstr "简单 XML 站点地图 IndexNow"
+
+msgid "Verification key in Drupal State"
+msgstr "Drupal 状态中的验证密钥"
+
+msgid "Verification key not available"
+msgstr "验证密钥不可用"
+
+msgid "In order to generate a verification key for the IndexNow service and choose which sitemaps are to be submitted to search engines, visit <a href=\"@url\">this</a> configuration page."
+msgstr "要为 IndexNow 服务生成验证密钥并选择要提交到搜索引擎的站点地图，请访问<a href=\"@url\">此</a>配置页面。"
+
+msgid "Simple XML Sitemap (Search engines)"
+msgstr "简单的 XML 站点地图（搜索引擎）"
+
+msgid "Submits sitemaps to search engines and notifies IndexNow compatible engines about changes to entities."
+msgstr "将站点地图提交到搜索引擎，并向 IndexNow 兼容引擎通知有关实体更改的信息。"
+
+msgid "Search engines"
+msgstr "搜索引擎"
+
+msgid "Index entity on save"
+msgstr "在保存时对实体建立索引"
+
+msgid "Allows optionally sending a change notice to IndexNow compatible search engines on entity form save."
+msgstr "允许选择性地在实体表单保存时向兼容 IndexNow 的搜索引擎发送更改通知。"
+
+msgid "Search engine"
+msgstr "搜索引擎"
+
+msgid "Search engine ID"
+msgstr "搜索引擎标识"
+
+msgid "Submission URL"
+msgstr "提交链接"
+
+msgid "IndexNow URL"
+msgstr "IndexNow URL"
+
+msgid "Sitemap variants"
+msgstr "站点地图变体"
+
+msgid "Sitemap variant"
+msgstr "站点地图变体"
+
+msgid "IndexNow bundle settings"
+msgstr "IndexNow 捆绑包设置"
+
+msgid "IndexNow"
+msgstr "IndexNow"
+
+msgid "Sitemap search engine submission settings"
+msgstr "站点地图搜索引擎提交设置"
+
+msgid "Sitemap submission enabled"
+msgstr "已启用站点地图提交"
+
+msgid "Sitemap submission frequency"
+msgstr "站点地图提交频率"
+
+msgid "IndexNow submission enabled"
+msgstr "已启用 IndexNow 提交"
+
+msgid "Selected engine for IndexNow submissions"
+msgstr "用于 IndexNow 提交的选定引擎"
+
+msgid "IndexNow on entity save"
+msgstr "保存实体时的 IndexNow"
+
+msgid "Sitemap submission status"
+msgstr "站点地图提交状态"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Last submitted"
+msgstr "上次提交"
+
+msgid "There are no @label yet."
+msgstr "还没有 @label 。"
+
+msgid "Submission settings can be configured <a href=\"@url\">here</a>."
+msgstr "可以在<a href=\"@url\">此处</a>配置提交设置。"
+
+msgid "Never"
+msgstr "永不"
+
+msgid "No search engines supporting sitemap submission have been found."
+msgstr "找不到支持站点地图提交的搜索引擎。"
+
+msgid "Sitemap submission is disabled."
+msgstr "已禁用站点地图提交。"
+
+msgid "IndexNow status"
+msgstr "IndexNow 状态"
+
+msgid "The last IndexNow submission was <em>@entity</em> to @engine_label on @time"
+msgstr "上次 IndexNow 提交是 <em>@entity</em> 于 @time 对 @engine_label 执行的操作"
+
+msgid "IndexNow settings can be configured <a href=\"@url\">here</a>."
+msgstr "可以在<a href=\"@url\">此处</a>配置 IndexNow 设置。"
+
+msgid "No search engines supporting IndexNow have been found."
+msgstr "找不到支持 IndexNow 的搜索引擎。"
+
+msgid "IndexNow submission is disabled."
+msgstr "已禁用 IndexNow 提交。"
+
+msgid "Excluded"
+msgstr "不包括的"
+
+msgid "Sitemap submission settings"
+msgstr "站点地图提交设置"
+
+msgid "Submit sitemaps to search engines"
+msgstr "向搜索引擎提交站点地图"
+
+msgid "This enables/disables sitemap submission; don't forget to choose sitemaps below."
+msgstr "这将启用/禁用站点地图提交；请不要忘记选择下面的站点地图。"
+
+msgid "Submission interval"
+msgstr "提交时间间隔"
+
+msgid "Engines"
+msgstr "引擎"
+
+msgid "Choose which sitemaps are to be submitted to which search engines.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "选择要将哪些站点地图提交到哪些搜索引擎。<br>可以在<a href=\"@url\">此处</a>配置站点地图。"
+
+msgid "IndexNow settings"
+msgstr "IndexNow 设置"
+
+msgid "Submit changes to IndexNow capable engines"
+msgstr "向支持 IndexNow 的引擎提交更改"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting entity forms. Changes include creating, deleting and updating of an entity.<br/>This behaviour can be overridden on entity forms. Don't forget to <a href=\"@inclusion_url\">include entities</a>."
+msgstr "提交实体表单后，立即向兼容 IndexNow 的搜索引擎发送更改通知。 更改包括创建、删除和更新实体。<br/>可以在实体表单上覆盖此行为。 请不要忘记<a href=\"@inclusion_url\">包含实体</a>。"
+
+msgid "Preferred IndexNow engine"
+msgstr "首选 IndexNow 引擎"
+
+msgid "All IndexNow requests will be sent to the engine selected here. Only one engine needs to be notified, as it will notify other IndexNow compatible engines for you.<br/>For the sake of equality of opportunity, <strong>consider leaving this at <em>Random</em></strong>, so a random engine can be picked on each submission."
+msgstr "所有 IndexNow 请求都将发送到此处选择的引擎。 只需要通知一个引擎，因为它将为您通知其他 IndexNow 兼容引擎。<br/>为了实现机会均等，<strong>请考虑将其保留为<em>随机</em></strong>，以便在每次提交时都可以随机选取一个引擎。"
+
+msgid "Random"
+msgstr "随机"
+
+msgid "Index on every entity save operation"
+msgstr "在每个实体保存操作时建立索引"
+
+msgid "If checked, all entity save operations for <a href=\"@inclusion_url\">included entities</a> will trigger notification of IndexNow search engines.<br/>If unchecked, this will only be possible by adding/altering/deleting an entity through a form.<br/>This should be unchecked if there are mass operations performed on entities that are irrelevant to indexing."
+msgstr "如果选中此选项，那么<a href=\"@inclusion_url\">包含的实体</a>的所有实体保存操作都将触发 IndexNow 搜索引擎的通知。<br/>如果未选中此选项，那么只有通过表单添加/更改/删除实体才能执行此操作。<br/>如果对与建立索引无关的实体执行了大量操作，那么应取消选中此选项。"
+
+msgid "Remove verification key from state"
+msgstr "从状态中移除验证密钥"
+
+msgid "Generate verification key"
+msgstr "生成验证密钥"
+
+msgid "The IndexNow verification key is saved in <em>settings.php</em>: @key"
+msgstr "IndexNow 验证密钥保存在 <em>settings.php</em> 中：@key"
+
+msgid "The IndexNow verification key is defined in <em>Drupal state</em>: @key"
+msgstr "在 <em>Drupal 状态</em>中定义了 IndexNow 验证密钥：@key"
+
+msgid "The IndexNow verification key is saved in <em>Drupal state</em>. Consider defining it in <em>settings.php</em> like so:<br/>@code"
+msgstr "IndexNow 验证密钥保存到 <em>Drupal 状态</em>中。 请考虑在 <em>settings.php</em> 中定义该密钥，如下所示：<br/>@code"
+
+msgid "The IndexNow verification key is saved in <em>settings.php</em> and can be safely removed from <em>Drupal state</em>."
+msgstr "IndexNow 验证密钥保存在 <em>settings.php</em> 中，并且您可以安全地从 <em>Drupal 状态</em>中将其移除。"
+
+msgid "An IndexNow verification key needs to be generated and optionally added to <em>settings.php</em> in order for IndexNow engines to get notified about changes. This warning only applies to the production environment."
+msgstr "需要生成 IndexNow 验证密钥，并且可以选择将其添加到 <em>settings.php</em> 中，以便 IndexNow 引擎收到有关更改的通知。 此警告仅适用于生产环境。"
+
+msgid "No sitemaps have been selected for submission."
+msgstr "尚未选择要提交的站点地图。"
+
+msgid "Notify IndexNow search engines of changes <em>now</em>"
+msgstr "立即将更改通知给 IndexNow 搜索引擎<em></em>"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting this form."
+msgstr "提交此表单后，立即向兼容 IndexNow 的搜索引擎发送更改通知。"
+
+msgid "Notify IndexNow search engines of changes <em>by default</em>"
+msgstr "缺省情况下，将更改通知给 IndexNow 搜索引擎<em></em>"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting entity forms of this type.<br/>Changes include creating, deleting and updating of an entity. This setting can be overridden on the entity form."
+msgstr "在提交此类型的实体表单后，立即向兼容 IndexNow 的搜索引擎发送更改通知。<br/>更改包括创建、删除和更新实体。 可以在实体表单上覆盖此设置。"
+
+msgid "Sitemap search engine submission"
+msgstr "站点地图搜索引擎提交"
+
+msgid "In order to use the Simple XML Sitemap Views module, the Views URL generator must be <a href=\"@url\">added</a> to a sitemap type."
+msgstr "要使用“简单 XML 站点地图视图”模块，必须将视图 URL 生成器<a href=\"@url\">添加</a>到站点地图类型。"
+
+msgid "Simple XML Sitemap (Views)"
+msgstr "简单的 XML 站点地图（视图）"
+
+msgid "Provides integration of the Simple XML Sitemap module with the Views module."
+msgstr "提供“简单的 XML 站点地图”模块与“视图”模块的集成。"
+
+msgid "Views"
+msgstr "视图"
+
+msgid "Variants"
+msgstr "变体"
+
+msgid "Indexed arguments"
+msgstr "已建立索引的自变量"
+
+msgid "View"
+msgstr "查看"
+
+msgid "Display"
+msgstr "显示"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "No view displays are set to be indexed yet. <a href=\"@url\">Edit a view.</a>"
+msgstr "尚未将任何视图显示设置为建立索引。<a href=\"@url\">编辑视图。</a>"
+
+msgid "Please configure at least one <a href=\"@sitemaps_url\">sitemap</a> to be of a <a href=\"@types_url\">type</a> that implements the views URL generator."
+msgstr "请将至少一个<a href=\"@sitemaps_url\">站点地图</a>配置为用于实施视图 URL 生成器的<a href=\"@types_url\">类型</a>。"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Garbage collection in the simple_sitemap_views table"
+msgstr "simple_sitemap_views 表中的垃圾回收"
+
+msgid "Views URL generator"
+msgstr "视图 URL 生成器"
+
+msgid "Generates URLs for views."
+msgstr "生成视图的 URL。"
+
+msgid "Index this display in sitemap <em>@variant_label</em>"
+msgstr "对站点地图 <em>@variant_label</em> 中的此显示建立索引"
+
+msgid "The priority this display will have in the eyes of search engine bots."
+msgstr "此显示的优先级将受搜索引擎 bot 监视。"
+
+msgid "The frequency with which this display changes. Search engine bots may take this as an indication of how often to index it."
+msgstr "此显示的更改频率。搜索引擎 Bot 可能将此项视为建立索引的频率的指示。"
+
+msgid "Maximum display variations"
+msgstr "最大显示变体数"
+
+msgid "The maximum number of link variations to be indexed for this display. If left blank, each argument will create link variations for this display. Use with caution, as a large number of argument values​can significantly increase the number of sitemap links."
+msgstr "要为此显示建立索引的最大链接变体数。如果保留为空，那么每个自变量都将为此显示创建链接变体。请小心使用，因为大量自变量值可能显著提高站点地图链接的数量。"
+
+msgid "Simple XML Sitemap settings for this display"
+msgstr "此显示的简单的 XML 站点地图设置"
+
+msgid "Included in sitemaps: @variants"
+msgstr "包含在站点地图中：@variants"
+
+msgid "To enable indexing of an argument, you must enable indexing of all previous arguments."
+msgstr "要对自变量建立索引，就必须对所有先前自变量建立索引。"
+
+msgid "Simple XML Sitemap settings for this view."
+msgstr "此视图的简单的 XML 站点地图设置。"
+
+msgid "Sitemap"
+msgstr "网站地图"
+
+msgid "Link count"
+msgstr "链接计数"
+
+msgid "disabled"
+msgstr "禁用"
+
+msgid "pending"
+msgstr "待定"
+
+msgid "generating"
+msgstr "生成"
+
+msgid "published on @time"
+msgstr "发布日期：@time"
+
+msgid "published on @time, regenerating"
+msgstr "发布日期：@time，正在重新生成"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "No sitemaps have been defined yet. <a href=\"@url\">Add a new one</a>."
+msgstr "尚未定义站点地图。 <a href=\"@url\">添加新样式</a>。"
+
+msgid "Sitemap type"
+msgstr "站点地图类型"
+
+msgid "No sitemap types have been defined yet. <a href=\"@url\">Add a new one</a>."
+msgstr "尚未定义站点地图类型。 <a href=\"@url\">添加新样式</a>。"
+
+msgid "sitemap"
+msgstr "站点地图"
+
+msgid "sitemaps"
+msgstr "站点地图"
+
+msgid "Simple XML sitemap type"
+msgstr "简单 XML 站点地图类型"
+
+msgid "sitemap type"
+msgstr "站点地图类型"
+
+msgid "sitemap types"
+msgstr "站点地图类型"
+
+msgid "If a custom link points to an entity, include its referenced images in the sitemap."
+msgstr "如果定制链接指向实体，请在站点地图中包含其引用的图像。"
+
+msgid "No"
+msgstr "否"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "<strong>@sitemap, line @line</strong>: The path <em>@path</em> does not exist."
+msgstr "<strong>@sitemap，行 @line</strong>：路径 <em>@path</em> 不存在。"
+
+msgid "<strong>@sitemap, line @line</strong>: The path <em>@path</em> needs to start with a '/'."
+msgstr "<strong>@sitemap，行 @line</strong>：路径 <em>@path</em> 需要以“/”开头。"
+
+msgid "<strong>@sitemap, line @line</strong>: The priority setting <em>@priority</em> for path <em>@path</em> is incorrect. Set the priority from 0.0 to 1.0."
+msgstr "<strong>@sitemap，行 @line</strong>：路径 <em>@path</em> 的优先级设置 <em>@priority</em> 不正确。 将优先级从 0.0 设置为 1.0。"
+
+msgid "<strong>@sitemap, line @line</strong>: The changefreq setting <em>@changefreq</em> for path <em>@path</em> is incorrect. The following are the correct values: <em>@changefreq_options</em>."
+msgstr "<strong>@sitemap，行 @line</strong>：路径 <em>@path</em> 的变更频率设置 <em>@changefreq</em> 不正确。 下面是正确的值：<em>@changefreq_options</em>。"
+
+msgid "Entity type"
+msgstr "实体类型"
+
+msgid "Indexed bundles"
+msgstr "索引捆绑包"
+
+msgid "Enabled"
+msgstr "启用"
+
+msgid "No supported entity types available."
+msgstr "没有可用的受支持实体类型。"
+
+msgid "Configure"
+msgstr "配置"
+
+msgid "%bundle_label <span class=\"description\">(sitemaps: %sitemaps)</span>"
+msgstr "%bundle_label <span class=\"description\">（站点地图：%sitemaps）</span>"
+
+msgid "Configure %label entity type"
+msgstr "配置 %label 实体类型"
+
+msgid "Regenerate all sitemaps after hitting <em>Save</em>"
+msgstr "点击<em>保存</em>后重新生成所有站点地图"
+
+msgid "This setting will regenerate all sitemaps including the above changes."
+msgstr "该设置将重新生成包含上述更改在内的所有站点地图。"
+
+msgid "Otherwise the sitemaps will be regenerated during a future cron run."
+msgstr "否则，将在未来运行 Cron 期间重新生成站点地图。"
+
+msgid "- Not specified -"
+msgstr "- 未指定 -"
+
+msgid "always"
+msgstr "始终"
+
+msgid "hourly"
+msgstr "每小时"
+
+msgid "daily"
+msgstr "每天"
+
+msgid "weekly"
+msgstr "每周"
+
+msgid "monthly"
+msgstr "每月"
+
+msgid "yearly"
+msgstr "每年"
+
+msgid "never"
+msgstr "从未"
+
+msgid "On every cron run"
+msgstr "每次 cron 运行时"
+
+msgid "Regenerate the sitemaps during cron runs"
+msgstr "在 Cron 运行期间重新生成站点地图"
+
+msgid "Uncheck this if you intend to only regenerate the sitemaps manually or via drush."
+msgstr "如果您打算仅手动或通过 drush 重新生成站点地图，请取消选中该项。"
+
+msgid "Sitemap generation interval"
+msgstr "站点地图生成时间间隔"
+
+msgid "The sitemap will be generated according to this interval."
+msgstr "将根据此时间间隔生成站点地图。"
+
+msgid "Add styling and sorting to sitemaps"
+msgstr "向站点地图添加样式并进行排序"
+
+msgid "If checked, sitemaps will be displayed as tables with sortable entries and thus become much friendlier towards human visitors. Search engines will not care."
+msgstr "如果选中，那么站点地图将显示为包含可排序条目的表，因此对人类访问者变得更加友好。搜索引擎将不受影响。"
+
+msgid "Remove the 'Generated by the Simple XML Sitemap Drupal module' string from the XSL output."
+msgstr "从 XSL 输出中移除“由简单 XML 站点地图 Drupal 模块生成”字符串。"
+
+msgid "Language settings"
+msgstr "语言设置"
+
+msgid "Remove hreflang markup in HTML"
+msgstr "除去 HTML 中的 hreflang 标记"
+
+msgid "Google recommends displaying hreflang definitions either in the HTML markup or in the sitemap, but not in both places.<br>If checked, hreflang definitions created by the language module will be removed from the markup reducing its size."
+msgstr "Google 建议在 HTML 标记或站点地图中显示 hreflang 定义，但是非两个位置。<br>如果选中，那么将通过减小其大小，从标记中除去语言模块所创建的 hreflang 定义。"
+
+msgid "Skip non-existent translations"
+msgstr "跳过不存在的翻译"
+
+msgid "If checked, entity links are generated exclusively for languages the entity has been translated to as long as the language is not excluded below.<br>Otherwise entity links are generated for every language installed on the site apart from languages excluded below.<br>Bear in mind that non-entity paths like homepage will always be generated for every non-excluded language."
+msgstr "如果选中此选项，那么将专门为实体已翻译成的语言生成实体链接（前提是未在下方排除此语言）。<br>否则，将针对站点上安装的每种语言（下方排除的语言除外）生成实体链接。<br>请记住，将始终针对每种未排除的语言生成非实体路径（例如，主页）。"
+
+msgid "Exclude languages"
+msgstr "排除语言"
+
+msgid "There will be no links generated for languages checked here."
+msgstr "将不针对此处所选的语言生成任何链接。"
+
+msgid "There are no languages other than the default language available."
+msgstr "除缺省语言外，没有其他语言可用。"
+
+msgid "Advanced settings"
+msgstr "高级设置"
+
+msgid "Default sitemap"
+msgstr "缺省站点地图"
+
+msgid "This sitemap will be available under <em>/sitemap.xml</em> in addition to its default path <em>/variant-name/sitemap.xml</em>.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "除了缺省路径 <em>/variant-name/sitemap.xml</em> 外，<em>/sitemap.xml</em> 下也提供了此站点地图。<br>可以在<a href=\"@url\">此处</a>配置站点地图。"
+
+msgid "- None -"
+msgstr "- 无 -"
+
+msgid "Default base URL"
+msgstr "缺省基本 URL"
+
+msgid "On some hosting providers it is impossible to pass parameters to cron to tell Drupal which URL to bootstrap with. In this case the base URL of sitemap links can be overridden here.<br>Example: <em>@url</em>"
+msgstr "对于某些托管提供程序，不可能将参数传递到 cron 以告知 Drupal 通过哪个 URL 引导。在这种情况下，可以在此处覆盖站点地图链接的基本 URL。<br>示例：<em>@url</em>"
+
+msgid "Exclude duplicate links"
+msgstr "排除重复链接"
+
+msgid "Prevent per-sitemap duplicate links.<br>Unchecking this may help avoiding PHP memory errors on huge sites."
+msgstr "防止每个站点地图的重复链接。<br>取消选中此选项可能有助于避免大型站点上发生 PHP 内存错误。"
+
+msgid "Maximum links in a sitemap"
+msgstr "站点地图中的最大链接数"
+
+msgid "The maximum number of links one sitemap can hold. If more links are generated than set here, a sitemap index will be created and the links split into several sub-sitemaps.<br>50 000 links is the maximum Google will parse per sitemap, but choosing a lower value may be needed to avoid PHP memory errors on huge sites.<br>If left blank, all links will be shown on a single sitemap."
+msgstr "一个站点地图可以持有的最大链接数。如果生成的链接数超过此处的设置，将创建站点地图索引并且链接拆分成若干个子站点地图。<br>50 000 个链接是 Google 将为每个站点地图解析的最大值，但是可能需要选择较小的值以避免在大型站点上发生 PHP 内存错误。<br>如果留空，将在单个站点地图上显示所有链接。"
+
+msgid "Sitemap generation max duration"
+msgstr "站点地图生成最大持续时间"
+
+msgid "The maximum duration <strong>in seconds</strong> the generation task can run during a single cron run or during one batch process iteration.<br>The higher the number, the quicker the generation process, but higher the risk of PHP timeout errors."
+msgstr "在单个 cron 运行或一个批处理迭代期间生成任务可运行的最长持续时间<strong>（以秒为单位）</strong>。<br>数字越高，生成过程越快，但是 PHP 超时错误的风险也就越高。"
+
+msgid "The number of entities to process in each queue item.<br>Increasing this number will use more memory but will result in less queries improving generation speed."
+msgstr "每个队列项中要处理的实体数。<br>增加此数字将使用更多内存，但是查询数量会减少，因此提高了生成速度。"
+
+msgid "The base URL is invalid."
+msgstr "基本 URL 无效。"
+
+msgid "Include this sitemap during generation"
+msgstr "在生成期间包含此站点地图"
+
+msgid "The sitemap ID will be part of the URL and can only contain lowercase letters, numbers, dashes and underscores."
+msgstr "站点地图标识将是 URL 的一部分，并且只能包含小写字母、数字、短划线和下划线。"
+
+msgid "The sitemap's type defines its looks and content. Sitemaps types can be configured <a href=\"@url\">here</a>."
+msgstr "站点地图的类型将定义其外观和内容。 可以在<a href=\"@url\">此处</a>配置站点地图类型。"
+
+msgid "Administrative description"
+msgstr "管理描述"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Sitemap %label has been updated."
+msgstr "已更新站点地图 %label。"
+
+msgid "Sitemap %label has been created."
+msgstr "已创建站点地图 %label。"
+
+msgid "Sitemaps of this type will be built according to the sitemap generator plugin chosen here."
+msgstr "将根据此处选择的站点地图生成器插件来构建此类型的站点地图。"
+
+msgid "Sitemaps of this type will be populated with URLs generated by these URL generator plugins."
+msgstr "将使用这些 URL 生成器插件生成的 URL 来填充此类型的站点地图。"
+
+msgid "Sitemap type %label has been updated."
+msgstr "已更新站点地图类型 %label。"
+
+msgid "Sitemap type %label has been created."
+msgstr "已创建站点地图类型 %label。"
+
+msgid "Sitemap status"
+msgstr "站点地图状态"
+
+msgid "Sitemaps can be regenerated on demand here."
+msgstr "可在此处按需求重新生成站点地图。"
+
+msgid "Rebuild queue"
+msgstr "重新构建队列"
+
+msgid "Resume generation"
+msgstr "恢复生成"
+
+msgid "Rebuild queue & generate"
+msgstr "重新构建队列和生成"
+
+msgid "Progress of sitemap regeneration"
+msgstr "重新生成站点地图的进度"
+
+msgid "@indexed out of @total queue items have been processed.<br>Each sitemap is published after all of its items have been processed."
+msgstr "已处理 @indexed 个（共 @total 个）队列项。<br>在处理每个站点地图的所有项后才会发布该站点地图。"
+
+msgid "There are no items to be indexed."
+msgstr "没有要建立索引的项。"
+
+msgid "Do not index entities of type <em>@bundle</em> in sitemap <em>@sitemap</em>"
+msgstr "请不要对站点地图 <em>@sitemap</em> 中类型为 <em>@bundle</em> 的实体建立索引"
+
+msgid "Index entities of type <em>@bundle</em> in sitemap <em>@sitemap</em>"
+msgstr "对站点地图 <em>@sitemap</em> 中类型为 <em>@bundle</em> 的实体建立索引"
+
+msgid "The priority entities of this type will have in the eyes of search engine bots."
+msgstr "该类型的优先级实体将受搜索引擎 bot 监视。"
+
+msgid "The frequency with which entities of this type change. Search engine bots may take this as an indication of how often to index them."
+msgstr "此类型的实体的更改频率。搜索引擎 Bot 可能将此项视为建立索引的频率的指示。"
+
+msgid "Determines if images referenced by entities of this type should be included in the sitemap."
+msgstr "确定是否应将此类型实体所引用的图像包含在站点地图中。"
+
+msgid "Settings for this entity can be overridden here."
+msgstr "此处可以覆盖该实体的设置。"
+
+msgid "Do not index this <em>@bundle</em> entity in sitemap <em>@sitemap</em>"
+msgstr "请不要对站点地图 <em>@sitemap</em> 中的此 <em>@bundle</em> 实体建立索引"
+
+msgid "Index this <em>@bundle</em> entity in sitemap <em>@sitemap</em>"
+msgstr "对站点地图 <em>@sitemap</em> 中的此 <em>@bundle</em> 实体建立索引"
+
+msgid "The priority this <em>@bundle</em> entity will have in the eyes of search engine bots."
+msgstr "该 <em>@bundle</em> 实体优先级将受搜索引擎 bot 监视。"
+
+msgid "The frequency with which this <em>@bundle</em> entity changes. Search engine bots may take this as an indication of how often to index it."
+msgstr "此 <em>@bundle</em> 实体的更改频率。搜索引擎 Bot 可能将此项视为建立索引的频率的指示。"
+
+msgid "Determines if images referenced by this <em>@bundle</em> entity should be included in the sitemap."
+msgstr "确定是否应将此 <em>@bundle</em> 实体所引用的图像包含在站点地图中。"
+
+msgid "default"
+msgstr "默认"
+
+msgid "At least one sitemap needs to be defined for a bundle to be indexable.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "需要定义至少一个站点地图，才能使捆绑包可建立索引。<br>可在<a href=\"@url\">此处</a>配置站点地图。"
+
+msgid "Do not index entities of this type in sitemap <em>@sitemap</em>"
+msgstr "请不要对站点地图 <em>@sitemap</em> 中此类型的实体建立索引"
+
+msgid "Index entities of this type in sitemap <em>@sitemap</em>"
+msgstr "在站点地图 <em>@sitemap</em> 中对此类型的实体建立索引"
+
+msgid "Sitemap file"
+msgstr "站点地图文件"
+
+msgid "Generated by the <a href=\"@url\">@module_name</a> Drupal module."
+msgstr "由 <a href=\"@url\">@module_name</a> Drupal 模块生成。"
+
+msgid "Number of sitemaps in this index"
+msgstr "这个索引中的网站地图数量"
+
+msgid "Sitemap URL"
+msgstr "站点地图的URL"
+
+msgid "Number of URLs in this sitemap"
+msgstr "这个网站地图中的URL数量"
+
+msgid "URL location"
+msgstr "URL 位置"
+
+msgid "Last modification date"
+msgstr "上传修改日期"
+
+msgid "Translation set"
+msgstr "翻译集"
+
+msgid "Images"
+msgstr "图像"
+
+msgid "Title"
+msgstr "标题"
+
+msgid "Caption"
+msgstr "标题"
+
+msgid "Default sitemap generator"
+msgstr "缺省站点地图生成器"
+
+msgid "Generates a standard conform hreflang sitemap of your content."
+msgstr "为您的内容生成符合标准的 hreflang 站点地图。"
+
+msgid "Sitemap index generator"
+msgstr "站点地图索引生成器"
+
+msgid "Generates an index of your sitemaps."
+msgstr "生成站点地图的索引。"
+
+msgid "Arbitrary URL generator"
+msgstr "任意 URL 生成器"
+
+msgid "Generates URLs from data sets collected in the hook_arbitrary_links_alter hook."
+msgstr "使用在 hook_arbitrary_links_alter 挂钩中收集的数据集生成 URL。"
+
+msgid "Custom URL generator"
+msgstr "定制 URL 生成器"
+
+msgid "Generates URLs set in admin/config/search/simplesitemap/custom."
+msgstr "生成 admin/config/search/simplesitemap/custom 中设置的 URL。"
+
+msgid "Menu link URL generator"
+msgstr "菜单链接 URL 生成器"
+
+msgid "Generates menu link URLs by overriding the 'entity' URL generator."
+msgstr "通过覆盖“实体”URL 生成器，生成菜单链接 URL。"
+
+msgid "Entity URL generator"
+msgstr "实体 URL 生成器"
+
+msgid "Generates URLs for entity bundles and bundle overrides."
+msgstr "生成用于实体束和束覆盖的 URL。"
+
+msgid "Sitemap URL generator"
+msgstr "站点地图 URL 生成器"
+
+msgid "Generates sitemap URLs for a sitemap index."
+msgstr "为站点地图索引生成站点地图 URL。"
+
+msgid "Generating XML sitemaps"
+msgstr "正在生成 XML 站点地图"
+
+msgid "Initializing..."
+msgstr "正在初始化..."
+
+msgid "Processing items from the queue.<br>Each sitemap gets published after all of its items have been processed."
+msgstr "正在处理队列中的项。<br>在处理每个站点地图的所有项后才会发布该站点地图。"
+
+msgid "@indexed out of @total total queue items have been processed."
+msgstr "已处理 @indexed 个（共 @total 个）队列项。"
+

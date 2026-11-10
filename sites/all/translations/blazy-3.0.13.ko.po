@@ -1,0 +1,861 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Blazy"
+msgstr "Blazy"
+
+msgid "Displays a preview of a File using Blazy, if applicable."
+msgstr "적용 가능한 경우 Blazy를 사용하는 파일의 미리보기를 표시합니다. "
+
+msgid "Displays a preview of a Media using Blazy, if applicable."
+msgstr "적용 가능한 경우 Blazy를 사용하는 매체의 미리보기를 표시합니다. "
+
+msgid "Display the results in a Blazy grid."
+msgstr "Blazy 눈금으로 결과를 표시합니다. "
+
+msgid "Works best with Views field containing Blazy."
+msgstr "Blazy를 포함하는 보기 필드에서 가장 잘 작동합니다. "
+
+msgid "Blazy requires Media core module"
+msgstr "Blazy에는 매체 코어 모듈이 필요합니다."
+
+msgid "Blazy now requires core Media module, which is currently not installed. By continuing the update the module will be installed."
+msgstr "Blazy에는 현재 설치되지 않은 코어 매체 모듈이 필요합니다. 업데이트를 계속하면 모듈이 설치됩니다."
+
+msgid "Blazy 3.x replaces sub-modules theme_ITEM() contents with theme_blazy(). Keep \"Use theme_blazy()\" enabled at <a href=\":url\">Blazy UI</a> to pass blazy:3.x."
+msgstr ""
+
+msgid "Enabled: Use theme_blazy()"
+msgstr ""
+
+msgid "Not enabled: Use theme_blazy()"
+msgstr ""
+
+msgid "Blazy has installed core \"Media\" module."
+msgstr "Blazy가 코어 \"매체\" 모듈을 설치했습니다."
+
+msgid "Provides basic Blazy integration for lazy loading and multi-serving images."
+msgstr "지연 로드 및 멀티 서비스 이미지를 위한 기본 Blazy 통합을 제공합니다. "
+
+msgid "Blazy UI"
+msgstr "Blazy UI"
+
+msgid "Provides Blazy configuration UI."
+msgstr "Blazy 구성 UI를 제공합니다. "
+
+msgid "Manage Blazy UI."
+msgstr "Blazy UI를 관리합니다. "
+
+msgid "Administer the Blazy module"
+msgstr "Blazy 모듈 관리"
+
+msgid "The DOMPurify library is installed to sanitize lightbox captions. Be sure to clear cache for library discoveries. [<a href=\":ui\">Blazy UI help</a>]"
+msgstr ""
+
+msgid "<strong>Warning!</strong> The <a href=\":url\">DOMPurify</a> library is not installed. It is necessary for HTML in lightbox captions. Without it, they are only sanitized server-side, or builtin. [<a href=\":ui\">Blazy UI help</a>]."
+msgstr ""
+
+msgid "The SVG Sanitizer library is installed to sanitize inline SVG. [<a href=\":ui\">Blazy UI help</a>]"
+msgstr ""
+
+msgid "<strong>Warning!</strong> The <a href=\":url\">SVG Sanitizer</a> library is not installed. This library is necessary if you want to use SVG inline. Without it, the world would be ended. [<a href=\":ui\">Blazy UI help</a>]."
+msgstr ""
+
+msgid "Admin CSS"
+msgstr "CSS 관리"
+
+msgid "Uncheck to disable blazy related admin compact form styling, only if not compatible with your admin theme."
+msgstr "사용자의 관리 테마와 호환 가능하지 않은 경우에만 Blazy 관련 관리 압축 양식 스타일을 사용하지 않으려면 선택 취소하십시오. "
+
+msgid "Use theme_blazy()"
+msgstr ""
+
+msgid "Check to use theme_blazy() specific for sub-modules theme_ITEM() (theme_slick_slide(), theme_splide_slide(), theme_gridstack_box(), etc.) contents with images/media along with their captions. This will be forced at blazy:3.x. You can help starting the migrations by enabling this to spot problems. If any issues, please disable and report for fixes, <a href=\":url\">read more</a>."
+msgstr ""
+
+msgid "Use oEmbed"
+msgstr ""
+
+msgid "Check to use oEmbed when available. Only relevant for VEF compatibility which already managed their embed codes. Irrelevant for core which already uses oEmbed. If checked, VEF embed will be converted into oEmbed if the provider is available, otherwise left as is. Be informed! Using oEmbed may require having App ID and secret credentials for some providers even for simple oEmbed read such as Instagram or Facebook, not Youtube, etc."
+msgstr ""
+
+msgid "Lazy load HTML (Experimental)"
+msgstr ""
+
+msgid "When theme_blazy() does not understand a media output, it will print it as HTML as is. This HTML is normally a paragraph size. Check this to lazy load such HTML content (normally heavy third party contents, like oembed Instagram, Pinterest, etc.), no AJAX, otherwise printed as is. A new feature since 2.17, not battle-tested. Potential issues are with the attached libraries, and other various Blazy features. Please disable and report if any issues."
+msgstr ""
+
+msgid "Use encoding for HTML (Experimental)"
+msgstr ""
+
+msgid "If checked, and the lightbox supports this feature, the lightbox HTML (normally local audio/video, Picture/Responsive image, oembed Instagram, etc.) will be encoded. Also applies to CSS background. A minor byte saving. Please disable if any issues."
+msgstr ""
+
+msgid "No JavaScript"
+msgstr "Javascript 없음"
+
+msgid "Lazyload"
+msgstr "느린 로드"
+
+msgid "Basic polyfills (ie9-ie11)"
+msgstr "기본 폴리필(ie9-ie11)"
+
+msgid "classList polyfill (ie9-ie11)"
+msgstr "classList 폴리필(ie9-ie11)"
+
+msgid "Promise polyfill (ie11)"
+msgstr "Promise 폴리필(ie11)"
+
+msgid "requestAnimationFrame polyfill (ie9)"
+msgstr "requestAnimationFrame 폴리필(ie9)"
+
+msgid "webp fallback (ie9-ie11, old Safari)"
+msgstr "webp 폴백(ie9-ie11, 이전 Safari)"
+
+msgid "Enable to not load them if you don't support IEs and other oldies, or have polyfills at your theme globally. File sizes approximately in minified gzip. The plus (+) sign refers to dependencies like <code>dblazy.js (~4KB)</code>, etc. A few can be removed via this form. For illustration, Colorbox which is called very lightweight is 4.8KB + jQuery (31KB) = 35.8KB. Blazy never loads all its JavaScript at once, instead conditionally and carefully loads ones as required. Mostly based on your options including these ones. <ul><li><b>Lazyload</b>: remove libraries and loader/ initializer scripts (<code>blazy.js (original: 2.2KB, fork: 1.6KB+), blazy.load.js (1KB+), bio.js (1.7KB+)</code>.) for non-js Native lazy. <br><b>Note!</b> While the above is always valid, a <code>blazy/compat (<1KB + bio.js)</code> and or <code>blazy/dblazy</code> in the least is conditionally loaded as required if any js-dependent options are enabled: <ul><li>Image effect animation or Blur.</li><li>Dynamic multi-breakpoint aka Fluid aspect ratio (excluding fixed ones).</li><li>Dynamic multi-breakpoint (Responsive|Picture based), or static CSS background.</li><li>Local video.</li><li>Loading priority: defer.</li><li>Sub-module requirements. Slick, Splide, Ultimenu, Jumper, etc. might require <code>blazy/dblazy</code>, not a lazyload script, just common jQuery replacement methods for vanilla ones.</li></ul></li><li><b>Polyfills</b>: Only loaded (total 3.6KB) if the above conditions are met, and left unchecked. <b>Basic polyfills</b>: <code>Object.assign, closest, forEach, matches, startsWith, CustomEvent</code>. <b>webp falback</b>: FWIW, IE9, not tested against old Safari, works fine with core/picturefill w/o this fallback. For other polyfills, due to questionabe licenses, include them into your theme as needed such as <a href=':io'>IntersectionObserver</a>, etc. <br><b>Warning!</b> The polyfills may be deprecated and removed when <a href=':cash'>Cash DOM</a> module is available, and will be replaced by Cash accordingly.</li></ul>As of 2022/1, Native only supports IMG and IFRAME, the exceptions above cover BLUR, DIV, VIDEO, ratio FLUID, LOADING: defer, etc. Other JavaScript (Media Player, Lightbox, Non-css Masonry (Flexbox or Nativegrid), etc.) can already be disabled via Formatters since 1.x. jQuery (31KB) is only loaded for Colorbox (4.8KB) + blazy.colorbox.js (1.2KB+) and admin UIs. Details in blazy/js directory. <a href=':url'>Read more</a>."
+msgstr "IE 및 기타 이전 버전을 지원하지 않거나 글로벌 테마에 폴리필이 있는 경우 로드하지 않도록 설정하십시오. 파일 크기는 대략 최소화된 gzip입니다. 더하기(+) 부호는 <code>dblazy.js(~4KB)</code> 등의 종속성을 나타냅니다. 일부는 이 양식을 통해 제거할 수 있습니다. 예를 들어, 매우 경량이라고 하는 Colorbox는 4.8KB + jQuery(31KB) = 35.8KB입니다. Blazy는 절대 JavaScript를 한 번에 모두 로드하지 않고, 필요에 따라 조건부로 신중하게 로드합니다. 주로 이러한 옵션을 포함한 사용자 옵션을 기반으로 합니다. <ul><li><b>Lazyload</b>: 비JS Native Lazy에 대한 라이브러리 및 로더/초기자 스크립트(<code>blazy.js(원본: 2.2KB, 분기: 1.6KB+), blazy.load.js(1KB+), bio.js(1.7KB+)</code>)를 제거하십시오. <br><b>참고!</b> 위의 내용이 항상 유효하지만, js-dependent 옵션이 사용으로 설정된 경우에는 필요에 따라 최소한 조건부로 <code>blazy/compat(<1KB +bio.js)</code> 및/또는 <code>blazy/dblazy</code>가 로드됩니다. <ul><li>이미지 효과 애니메이션 또는 Blur 처리.</li><li>유체 가로 세로 비율이라고 하는 동적 다중 중단점(고정점 제외).</li><li>동적 다중 중단점(반응형|그림 기반) 또는 정적 CSS 배경.</li><li>로컬 비디오.</li><li>로딩 우선순위: 지연.</li><li>서브 모듈 요구사항. Slick, Splide, Ultimenu, Jumper 등은 lazyload 스크립트가 아닌 <code>blazy/dblazy</code>가 필요할 수 있으며, 바닐라를 위한 일반 jQuery 대체 메소드입니다.</li></ul></li><li><b>폴리필</b>: 위의 조건이 충족되는 경우에만 로드되며(총 3.6KB) 선택하지 않은 상태로 두십시오. <b>기본 폴리필</b>: <code>Object.assign, closest, forEach, matches, startsWith, CustomEvent</code>. <b>webp falback</b>: 기존 Safari에 대해서 테스트되지 않은 FWIW, IE9는 이 폴백 없이 코어/picturefill에서 잘 작동합니다. 다른 폴리필의 경우, 라이센스가 확실하지 않으므로 <a href=':io'>IntersectionObserver</a> 등과 같이 필요에 따라 테마에 포함시키십시오. <br><b>경고!</b> <a href=':cash'>Cash DOM</a> 모듈이 사용 가능한 경우 폴리필은 더 이상 사용되지 않고 제거되며 Cash로 적절하게 대체됩니다.</li></ul>2022/1 현재, Native는 IMG 및 IFRAME만 지원하며, 위의 예외는 BLUR, DIV, VIDEO, ratio FLUID, LOADING: defer 등을 포함합니다. 기타 JavaScript(Media Player, Lightbox, Non-css Masonry (Flexbox 또는 Nativegrid) 등) 1.x 이후 포맷터를 통해 이미 사용 불가능할 수 있습니다. jQuery(31KB)는 Colorbox(4.8KB) + blazy.colorbox.js(1.2KB+) 및 관리 UI에 대해서만 로드됩니다. blazy/js 디렉토리의 세부사항. <a href=':url'>자세히 보기</a>."
+
+msgid "Add noscript"
+msgstr "noscript 추가"
+
+msgid "Enable noscript if you want to support <a href=\":url\">non-javascript users</a>."
+msgstr "<a href=\":url\">비javascript 사용자</a>를 지원하려면 noscript를 사용으로 설정하십시오."
+
+msgid "Support Responsive image"
+msgstr "응답 이미지 지원"
+
+msgid "(Deprecated in blazy:2.5, and is removed in blazy:3.x for module exists check. It was a user consent option due to not being fully integrated till likely blazy:2.4+ so to disable easily without breaking things). Old description: Check to support lazyloading for the core Responsive image module. Be sure to use blazy-related formatters."
+msgstr ""
+
+msgid "Responsive image 1px placeholder"
+msgstr "반응식 이미지 1px 플레이스홀더"
+
+msgid "By default a 1px Data URI image is the placeholder for lazyloaded (Responsive) image. Useful to perform a lot better. Uncheck to disable, and use Drupal-managed smallest/fallback image style instead. Be sure to add proper dimensions or at least min-height/min-width via CSS accordingly to avoid layout reflow, or choose an Aspect ratio via Blazy formatters. <br>Since <b>2.10</b>, disabling this will no longer result in downloading fallback image (double downloads). Thus, allows you to have non <code>empty image</code> for fallback at Responsive image style UI without extra HTTP requests, while using <code>empty image</code> (enforced now) for the SRC. Basically marrying those options. not negating each other anymore."
+msgstr "기본적으로 1px 데이터 URI 이미지는 lazyloaded(반응형) 이미지의 플레이스홀더입니다. 아주 많이 수행하기에 유용합니다. 사용 안함으로 설정하고 대신 Drupal 관리 초소형/대체 이미지 스타일을 사용하려면 선택 취소하십시오. 레이아웃 재배치를 피하려면 CSS를 통해 적절한 치수 또는 그에 따라 min-height/min-width 이상을 추가하십시오. 또는 Blazy 포맷터를 통해 가로 세로 비율을 선택하십시오. <br><b>2.10</b> 이후, 이를 사용 불가능하게 하면 더 이상 폴백 이미지를 다운로드(이중 다운로드)하지 않습니다. 따라서, SRC에 대해 <code>비어 있는 이미지</code>(지금은 강제 실행됨)를 사용하는 동안 추가 HTTP 요청 없이 반응형 이미지 스타일 UI에서 폴백에 대해 <code>비어 있는 이미지</code>가 없도록 할 수 있습니다. 기본적으로 이 옵션을 결합합니다. 더 이상 서로를 부정하지 않습니다."
+
+msgid "Add is-b-visible class"
+msgstr ""
+
+msgid "Add <code>is-b-visible</code> CSS class when entering the viewport. Only enable if any real use for animating anything, otherwise disable it. If enabled, IO is not destroyed so to keep watching the class changes."
+msgstr ""
+
+msgid "Remove field/ view wrapper classes"
+msgstr ""
+
+msgid "Remove useful classes for DOM diets when you can get rid of Field, Block, Views, etc. wrappers so you have context for styling. Other required classes: lightbox, grid, etc. are intact if so-configured."
+msgstr ""
+
+msgid "Remove deprecated classes"
+msgstr ""
+
+msgid "Remove some legacy Foundation CSS grid classes to avoid conflict with core block, e.g: block-nativegrid for b-nativegrid, etc. CHECK if not using those classes, or to avoid themers using them. Leave it UNCHECKED if using them till you update them. See <a href=':url'>Notable changes</a> for details. Be sure to clear cache!"
+msgstr ""
+
+msgid "Placeholder"
+msgstr "자리 표시자"
+
+msgid "Only useful if continuously using Views rewrite results, see <a href=':url2'>#2908861</a>. Inputting this means having trouble with `data:image` placeholder being stripped out by Views sanitization procedures causing 404. Will override global 1px `data:image` placeholder, including core Responsive image 1px `data:image` with this so to avoid 404, and independent from the previous `Responsive image 1px placeholder` option. Must be URL, e.g.: /blank.gif or /blank.svg. Be warned: unlike .svg, browsers have display issues with 1px .gif, see <a href=':url1'>#2795415</a>. Alternatively use <code>hook_blazy_settings_alter()</code> for more fine-grained control. Leave it empty to use default inline SVG or Data URI to avoid extra HTTP requests. If you have 100 images on a page, you will save hammering your server with 100 extra HTTP requests by leaving it empty. The <b>blank.svg</b> content sample if not using blank.gif: <br><code>&lt;svg xmlns='https://www.w3.org/2000/svg' viewBox='0 0 100 100'/&gt;</code><br>Save it at Drupal web root as <code>blank.svg</code>, and reference it as <code>/blank.svg</code> in the Placeholder field."
+msgstr ""
+
+msgid "Extensions without image styles"
+msgstr "이미지 스타일이 없는 확장"
+
+msgid "Extensions that should not use (Responsive) image style, space delimited without dot, e.g.: <code>gif apng</code> <br>Normally animated images. No way to distinguish animated from static gif, it is all or nothing. This means no thumbnail, no blur, nor features which makes use image style. Default to svg."
+msgstr "(응답)이미지 스타일을 사용하지 않아야 하는 확장 프로그램, 점없이 공백으로 구분됨(예: <code>gif apng</code>) <br>일반적으로 애니메이션된 이미지입니다. 애니메이션과 정적 gif를 구분할 수 있는 방법은 없습니다. 즉, 작은 그림, 블러, 이미지 스타일을 사용하는 기능이 없습니다. 기본값은 svg입니다."
+
+msgid "Image effect"
+msgstr "이미지 효과"
+
+msgid "Choose the image effect. Will use Thumbnail style option at Blazy formatters for the placeholder with fallback to core Thumbnail style. For best results: use similar aspect ratio for both Thumbnail and Image styles; adjust Offset and or threshold; the smaller the better. Use <code>hook_blazy_image_effects_alter()</code> to add more effects -- curtain, fractal, slice, whatever. <b>Limitations</b>: Best with a proper Aspect ratio option as otherwise collapsed image. Be sure to add one. If not, add regular CSS <code>min-height</code> for each mediaquery. The Placeholder option is still respected. It is permanently cached, be sure to clear cache if your or a module's provided additional altered data do not appear here. <ul><li>To avoid complications, it will be disabled when being unlazy: no JS, iframe only, sandboxed, etc. since it requires lazy load as a trigger.</li></ul>"
+msgstr ""
+
+msgid "Use client-side blur"
+msgstr "클라이언트 측 Blur 사용"
+
+msgid "Uncheck to preserve old behaviors data URI printed on the page server-side. Check to enable Blur client-side. <br><b>Pros:</b> Client-side doesn't add ugly data URI to the page till required, and automatically cleared when done, meaning lighter page weight at initial and end, and at the next pages if any stored data found (meaning cacheable unlike server-side), but not during runtime animation. It leverages lazy load mechanism. <br><b>Cons:</b> Client-side does a HTTP request initially. Can use localStorage option below to cache them."
+msgstr "페이지 서버 측에 인쇄된 이전 동작 데이터 URI를 보존하려면 선택을 취소하십시오. Blur 클라이언트 측을 사용으로 설정하려면  선택하십시오. <br><b>장점:</b> 클라이언트 측은 필요할 때까지 페이지에 잘못된 데이터 URI를 추가하지 않고 완료 시 자동으로 지워지며 이는 처음과 끝에서 페이지 가중치가 더 가벼워짐을 의미합니다. 저장된 데이터가 발견되면(서버 측과는 달리 캐시 가능함을 의미함) 런타임 애니메이션 중이 아닌 다음 페이지에서 지워집니다. 지연 로드 메커니즘을 활용합니다. <br><b>단점:</b> 클라이언트 측이 처음에 HTTP 요청을 수행합니다. 아래 localStorage 옵션을 사용하여 캐싱할 수 있습니다."
+
+msgid "Store blur in localStorage"
+msgstr "localStorage에 Blur 저장"
+
+msgid "Check to cache Blur data URI in localStorage to save HTTP requests on the next requests. Uncheck if using localStorage for more custom important stuffs. Core localStorage providers vary 0.05KB - 150KB, to a tentative amount of 739.07 KB. This option will obviously hit the limit anytime (says 40KB x 100 images = 4000KB), can be larger given non-optimized or large Blur image style. However, configurable at <b>Thumbnail style</b> option, or Responsive image style fallback. That is why the smaller, file size and dimension, the more efficient. Will auto-clear, and recycle, when the quota (2-10MB) is exceeded."
+msgstr "다음 요청에 대한 HTTP 요청을 저장하려면 localStorage에서 Blur 데이터 URI를 캐싱하도록 선택하십시오. 더 많은 중요한 사용자 정의 항목에 localStorage를 사용하는 경우 선택을 취소하십시오. 코어 localStorage 제공자는 0.05KB - 150KB로 잠정적인 양 739.07KB까지 다양합니다. 이 옵션은 언제든지 한계에 도달하게 되며(40KB x 100개 이미지 = 4000KB라고 함) 최적화되지 않았거나 큰 Blur 이미지 스타일인 경우 더 클 수 있습니다. 그러나 <b>썸네일 스타일</b> 옵션 또는 반응형 이미지 스타일 폴백으로 구성할 수 있습니다. 파일 크기와 치수가 작을수록 더 효율적인 이유입니다. 할당량(2-10MB)이 초과되면 자동으로 지워지고 재순환됩니다."
+
+msgid "Blur min-width"
+msgstr "Blur 최소 너비"
+
+msgid "Only enable Blur if the image style (not window) width is bigger than this value. Useful to disable it for mobile to avoid potential unverified OOM (Out of Memory) issues, or non-fancy listing thumbnails, says 767."
+msgstr ""
+
+msgid "Blazy settings"
+msgstr "Blazy 설정"
+
+msgid "The following settings are related to old bLazy library."
+msgstr "다음 설정은 이전 bLazy 라이브러리와 관련이 있습니다."
+
+msgid "Load invisible"
+msgstr "비표시 로드"
+
+msgid "Check if you want to load invisible (hidden) elements. If any issues with tabs, accordions, or anything hidden, enable this."
+msgstr "보이지 않는(숨겨진) 요소를 로드하려는 경우 선택하십시오. 탭, 아코디언 또는 숨겨진 항목에 문제가 있는 경우 이를 사용으로 설정하십시오."
+
+msgid "Offset"
+msgstr "건너뛰기"
+
+msgid "The offset controls how early you want the elements to be loaded before they're visible. Default is <strong>100</strong>, so 100px before an element is visible it'll start loading."
+msgstr "오프셋은 요소가 볼 수 있기 전에 얼마나 빨리 로드되기 원하는지를 제어합니다. 기본값은 <strong>100</strong>이므로, 요소 앞의 100px가 로드를 시작할 때 보입니다. "
+
+msgid "Save viewport offset delay"
+msgstr "뷰포트 오프셋 지연 저장"
+
+msgid "Delay for how often it should call the saveViewportOffset function on resize. Default is <strong>50</strong>ms."
+msgstr "크기 조정 시에 saveViewportOffset 기능을 호출하는 빈도에 대한 지연입니다. 기본값은 <strong>50</strong>ms입니다. "
+
+msgid "Set validate delay"
+msgstr "유효성 검증 지연 설정"
+
+msgid "Delay for how often it should call the validate function on scroll/resize. Default is <strong>25</strong>ms."
+msgstr "화면 이동/크기 조정 시에 유효성 검증 기능을 호출하는 빈도에 대한 지연입니다. 기본값은 <strong>25</strong>ms입니다."
+
+msgid "Scrolling container"
+msgstr "화면 이동 컨테이너"
+
+msgid "If you put Blazy within a scrolling container, provide valid comma separated CSS selectors, except <code>#drupal-modal, .is-b-scroll</code>, e.g.: <code>#my-scrolling-container, .another-scrolling-container</code>. Known scrolling containers are <code>#drupal-modal</code> like seen at Media library, parallax containers with fixed height replacing default browser scrollbar. A scrolling modal with an iframe like Entity Browser has no issue since the scrolling container is the entire DOM. Must know <code>.blazy</code> parent container, or itself, which has CSS rules containing <code>overflow</code> with values anything but <code>hidden</code> such as <code>auto or scroll</code>. Press <code>F12</code> at any browser to inspect elements. IO does not need it, old bLazy does. Default to known <code>#drupal-modal, .is-b-scroll</code>. The <code>.is-b-scroll</code> is for modules which cannot reach this UI without extra legs. Symptons: eternal blue loader while should be loaded."
+msgstr "Blazy를 화면 이동 컨테이너 내에 배치하는 경우 <code>#drupal-modal, .is-b-scroll</code>을 제외한 올바른 쉼표로 구분된 CSS 선택기를 제공하십시오(예: <code>#my-scrolling-container, .another-scrolling-container</code>). 알려진 화면 이동 컨테이너는 매체 라이브러리에 표시되는 것과 같이 기본 브라우저 화면 이동 막대를 대체하는 고정된 높이의 시차 컨테이너인 <code>#drupal-modal</code>입니다. 화면 이동 컨테이너는 전체 DOM이므로 엔티티 브라우저와 같은 iframe이 있는 화면 이동 모달에는 문제가 없습니다. <code>auto or scroll</code>과 같은 <code>hidden</code>이 아닌 값의 <code>overflow</code>를 포함하는 CSS 규칙이 있는 <code>.blazy</code> 상위 컨테이너 또는 그 자체를 알아야 합니다. 요소를 검사하려면 브라우저에서 <code>F12</code>를 누르십시오. IO에는 필요하지 않지만 이전 bLazy에는 필요합니다. 기본값은 알려진 <code>#drupal-modal, .is-b-scroll</code>입니다. <code>.is-b-scroll</code>은 추가 레그 없이 이 UI에 연결할 수 없는 모듈의 경우입니다. 증상: 로드되어야 하는 동안 영원한 파란색 로더가 표시됩니다."
+
+msgid "Intersection Observer API (IO) settings"
+msgstr "Intersection Observer(IO) API 설정"
+
+msgid "Will fallback gracefully with Native support for old browsers using old bLazy fork, unless unloaded. Works absurdly fine at IE9. None essential features like Blur, etc. which require additional polyfills (dataset, etc.) not included above may not, and fail silently instead. <br>The following settings are related to <a href=\":url\">IntersectionObserver API</a>."
+msgstr "언로드되지 않는 한 이전 bLazy 분기를 사용하는 이전 브라우저에 대한 기본 지원으로 정상적으로 폴백됩니다. IE9에서 매우 잘 작동합니다. 위에 포함되지 않은 추가 폴리필(데이터 세트 등)이 필요한 블러 등의 필수적이지 않은 기능은 작동하지 않을 수 있으며 대신 자동으로 실패할 수 있습니다. <br><a href=\":url\">IntersectionObserver API</a>와 관련되어 있습니다."
+
+msgid "Unload bLazy"
+msgstr "Blazy 로드 해제"
+
+msgid "Check if you are happy with IO, and don't support IEs. This will not load the forked bLazy library. Forked bLazy is just ~1KB gzip. Clear caches!"
+msgstr "IO에 만족하고 IE를 지원하지 않는지 확인합니다. 분기된 bLazy 라이브러리는 로드하지 않습니다. 분기된 bLazy는 ~1KB gzip입니다. 캐시를 지우십시오!"
+
+msgid "rootMargin"
+msgstr "rootMargin"
+
+msgid "Margin around the root. Can have values similar to the CSS margin property, e.g. <code>10px 20px 30px 40px</code> (top, right, bottom, left). The values can be percentages. This set of values serves to grow or shrink each side of the root element's bounding box before computing intersections. Defaults to all zeros."
+msgstr "루트 근처의 여백입니다. CSS 여백 특성과 비슷한 값을 가질 수 있습니다(예: <code>10px 20px 30px 40px</code>(맨 위, 오른쪽, 맨 아래, 왼쪽)). 값은 백분율일 수 있습니다. 이 값 세트가 교차를 계산하기 전에 루트 요소의 경계 상자의 각 측면을 늘리거나 축소합니다. 기본값은 모두 0입니다."
+
+msgid "threshold"
+msgstr "임계값"
+
+msgid "Either a single number or an array of numbers which indicate at what percentage of the target's visibility the observer's callback should be executed. If you only want to detect when visibility passes the 50% mark, you can use a value of 0.5. If you want the callback to run every time visibility passes another 25%, you would specify the array [<code>0, 0.25, 0.5, 0.75, 1</code>] (without brackets). The default is 0 (meaning as soon as even one pixel is visible, the callback will be run). A value of 1.0 means that the threshold isn't considered passed until every pixel is visible."
+msgstr "관찰자의 콜백이 실행되어야 하는 대상 가시성의 백분율을 나타내는 단일 숫자 또는 숫자 배열입니다. 가시성이 50% 표시를 지나는 시점을 발견하기만 원하는 경우에는 0.5의 값을 사용할 수 있습니다. 가시성이 또 다른 25%를 지날 때마다 콜백이 실행하기 원하는 경우 배열 [<code>0, 0.25, 0.5, 0.75, 1</code>]을(대괄호 없이) 지정합니다. 기본값은 0입니다(단 하나의 픽셀이 보이자 마자 콜백이 실행됨을 의미). 1.0의 값은 모든 픽셀이 보일 때까지 임계값을 지난 것으로 간주되지 않음을 의미합니다."
+
+msgid "Disconnect"
+msgstr "연결 끊기"
+
+msgid "Check if you want to disconnect IO once all images loaded. If you keep seeing eternal blue loader while an image should be already loaded, this means it is not working yet in all cases. Just uncheck this."
+msgstr "모든 이미지가 로드된 후에는 IO 연결을 끊으려는 경우 선택하십시오. 이미지가 이미 로드되는 동안 영원한 파란색 로더가 계속 보이는 경우, 이것은 모든 경우에 아직 작동 중이 아님을 의미합니다. 그냥 이것을 선택 취소하십시오."
+
+msgid "Extra settings"
+msgstr "추가 설정"
+
+msgid "Be sure to <a href=\":clear_cache\">clear the cache</a> if trouble to see the updated settings."
+msgstr "업데이트된 설정을 보기 어려운 경우 반드시 <a href=\":clear_cache\">캐시를 지우십시오</a>."
+
+msgid "Lazy load HTML"
+msgstr ""
+
+msgid "nojs"
+msgstr "nojs"
+
+msgid "One pixel placeholder"
+msgstr "1픽셀 플레이스홀더"
+
+msgid "Use encoding for lightbox HTML"
+msgstr ""
+
+msgid "IO"
+msgstr "IO"
+
+msgid "Extras"
+msgstr "기타"
+
+msgid "Blazy image base display format settings"
+msgstr "Blazy 이미지 기본 표시 형식 설정"
+
+msgid "Captions"
+msgstr "캡션"
+
+msgid "Caption"
+msgstr "캡션"
+
+msgid "Optionset"
+msgstr "옵션 세트"
+
+msgid "Blazy image display format settings"
+msgstr "Blazy 이미지 표시 형식 설정"
+
+msgid "Blazy entity display format settings"
+msgstr ""
+
+msgid "Blazy media display format settings"
+msgstr "Blazy 매체 표시 형식 설정"
+
+msgid "Blazy oembed display format settings"
+msgstr "Blazy oEmbed 표시 형식 설정"
+
+msgid "Blazy text display format settings"
+msgstr "Blazy 텍스트 표시 형식 설정"
+
+msgid "Blazy third party display format settings"
+msgstr "Blazy 써드파티 표시 형식 설정"
+
+msgid "Blazy filter"
+msgstr "Blazy 필터"
+
+msgid "Media switcher"
+msgstr "매체 스위처"
+
+msgid "(Responsive) image style"
+msgstr "(응답) 이미지 스타일"
+
+msgid "Lightbox (Responsive) image style"
+msgstr "Lightbox (응답) 이미지 스타일"
+
+msgid "Lightbox media style"
+msgstr ""
+
+msgid "Lightbox caption"
+msgstr "Lightbox 캡션"
+
+msgid "HTML tags"
+msgstr "HTML 태그"
+
+msgid "tag"
+msgstr "태그"
+
+msgid "Trust data URI"
+msgstr "신뢰 데이터 URI"
+
+msgid "Blazy File/SVG display format settings"
+msgstr ""
+
+msgid "Blazy Title format settings"
+msgstr ""
+
+msgid "Delimiter"
+msgstr ""
+
+msgid "Tag"
+msgstr "태그"
+
+msgid "Add Linebreak"
+msgstr ""
+
+msgid "Blazy image with VEF display format settings"
+msgstr "VEF 표시 형식 설정을 갖는 Blazy 이미지"
+
+msgid "Lightbox image style"
+msgstr "Lightbox 이미지 스타일"
+
+msgid "Lightbox video style"
+msgstr "Lightbox 비디오 스타일"
+
+msgid "Image style"
+msgstr "이미지 스타일"
+
+msgid "Media switch"
+msgstr "매체 스위치"
+
+msgid "Aspect ratio"
+msgstr "가로 세로 비율"
+
+msgid "Thumbnail style"
+msgstr "작은 그림 스타일"
+
+msgid "View mode"
+msgstr "화면 모드"
+
+msgid "Blazy Grid"
+msgstr "Blazy 눈금"
+
+msgid "blazy.done is deprecated in 2.17, use with colon blazy:done to allow namespacing instead."
+msgstr ""
+
+msgid "Stop and close the video"
+msgstr ""
+
+msgid "Load and play the video"
+msgstr ""
+
+msgid "<h5>No SVG file extensions, use @provider Image instead.</h5>"
+msgstr ""
+
+msgid "Configure"
+msgstr "구성하기"
+
+msgid "Duplicate"
+msgstr "중복"
+
+msgid "The optionsets order has been updated."
+msgstr "옵션 세트 순서가 업데이트되었습니다."
+
+msgid "Image to iFrame"
+msgstr "이미지 대 iFrame"
+
+msgid "Displays lazyloaded images, or iframes, for VEF/ ME."
+msgstr "지연 로드된 이미지 또는 VEF/ ME의 경우 iframe을 표시합니다. "
+
+msgid "Blazy VEF (deprecated)"
+msgstr ""
+
+msgid "Image rendered by its formatter"
+msgstr "해당 포맷터에 의해 렌더링되는 이미지"
+
+msgid "<b>Image rendered</b> requires <b>Image</b> option filled out and is useful if the formatter offers awesomeness that Blazy does not have but still wants Blazy for a Grid, etc. Be sure the enabled fields here are not hidden/ disabled at its view mode."
+msgstr ""
+
+msgid "Check fields to be treated as captions, even if not caption texts."
+msgstr "캡션 텍스트가 아닌 경우에도 캡션으로 취급될 필드를 선택하십시오. "
+
+msgid "The formatter/renderer is managed by <strong>@plugin_id</strong> formatter. Meaning original formatter ignored."
+msgstr ""
+
+msgid "Image Title"
+msgstr "이미지 제목"
+
+msgid "Image Alt"
+msgstr "이미지 Alt"
+
+msgid "Create a dedicated List (text - max number 1) field related to the caption placement to have unique layout per slide with the following supported keys: top, right, bottom, left, center, center-top, etc. Be sure its formatter is Key."
+msgstr "캡션 배치와 관련된 전용 목록(텍스트 - max number 1) 필드를 작성하여 top, right, bottom, left, center, center-top 등의 지원되는 키를 갖는 슬라이드당 고유한 배치를 가지십시오. 해당 포맷터가 키인지 확인하십시오. "
+
+msgid "The formatter/renderer is managed by the child formatter."
+msgstr "포맷터/렌더러가 하위 포맷터에 의해 관리됩니다."
+
+msgid "Recursive rendering detected when rendering entity @entity_type @entity_id. Aborting rendering."
+msgstr "엔티티 @entity_type @entity_id를 렌더링할 때 회귀 렌더링이 발견되었습니다. 렌더링을 중단하는 중입니다. "
+
+msgid "Display style"
+msgstr "표시 스타일"
+
+msgid "- None -"
+msgstr "- 없음 -"
+
+msgid "Skin"
+msgstr "스킨"
+
+msgid "Use CSS background"
+msgstr "CSS 배경 사용"
+
+msgid "Layout"
+msgstr "레이아웃"
+
+msgid "Caption fields"
+msgstr "캡션 필드"
+
+msgid "Group individual items as block grid?"
+msgstr ""
+
+msgid "Grid large"
+msgstr "큰 눈금"
+
+msgid "Grid medium"
+msgstr "중간 눈금"
+
+msgid "Grid small"
+msgstr "작은 눈금"
+
+msgid "Visible items"
+msgstr "표시되는 항목"
+
+msgid "Preserve keys"
+msgstr "키 유지"
+
+msgid "Preload"
+msgstr "사전 로드"
+
+msgid "Loading priority"
+msgstr "로드 우선순위"
+
+msgid "lazy"
+msgstr "지연"
+
+msgid "Image linked to content"
+msgstr "컨텐츠에 링크된 이미지"
+
+msgid "Image linked by Link field"
+msgstr ""
+
+msgid "Main stage"
+msgstr "기본 스테이지"
+
+msgid "Fields"
+msgstr "필드"
+
+msgid "<strong>Tips!</strong> Reload the page, or save first, only when changing formatters. Some form items may not be loaded after AJAX."
+msgstr ""
+
+msgid "Image to @lightbox"
+msgstr "이미지 대 @lightbox"
+
+msgid "Lightbox custom caption"
+msgstr "Lightbox 사용자 정의 캡션"
+
+msgid "Tokens"
+msgstr "토큰"
+
+msgid "@title"
+msgstr "@title"
+
+msgid "SVG"
+msgstr ""
+
+msgid "Vanilla @namespace"
+msgstr "Vanilla @namespace"
+
+msgid "Thumbnail image"
+msgstr "작은 그림 이미지"
+
+msgid "Overlay media"
+msgstr "오버레이 매체"
+
+msgid "Title"
+msgstr "제목"
+
+msgid "Link"
+msgstr "링크"
+
+msgid "Item class"
+msgstr "항목 클래스"
+
+msgid "Cache"
+msgstr "캐쉬"
+
+msgid "Ditch all the logic to cached bare HTML. <ol><li><strong>Permanent</strong>: cached contents will persist (be displayed) till the next cron runs.</li><li><strong>Any number</strong>: expired by the selected expiration time, and fresh contents are fetched till the next cache rebuilt.</li></ol>A working cron job is required to clear stale cache. At any rate, cached contents will be refreshed regardless of the expiration time after the cron hits. <br />Leave it empty to disable caching.<br /><strong>Warning!</strong> Be sure no useless/ sensitive data such as Edit links as they are rendered as is regardless permissions. No permissions are changed, just ugly. Only enable it when all is done, otherwise cached options will be displayed while changing them."
+msgstr "모든 로직을 캐시된 단순 HTML로 버립니다. <ol><li><strong>영구적</strong>: 캐시된 컨텐츠는 다음 cron이 실행할 때까지 지속(표시)됩니다. </li><li><strong>임의 숫자</strong>: 선택된 만기 시간에 만기하고, 다음 캐시가 다시 빌드될 때까지 새로운 컨텐츠가 페치됩니다. </li></ol>작업하는 cron 작업은 시간이 경과된(stale) 캐시를 지워야 합니다. Cron 히트 후 만기 시간과 상관없이 임의의 비율로 캐시된 컨텐츠가 새로 고쳐집니다. <br />캐싱을 사용하지 않으려면 공백으로 두십시오. <br /><strong>경고!</strong> 편집 링크 같이 유용하고/ 민감한 데이터는 렌더링될 때 권한과 상관없이 있는 그대로 렌더링됩니다. 권한은 변경되지 않으며, 단지 적절하지 않을 뿐입니다. 모든 것이 완료될 때만 사용으로 설정하십시오. 그렇지 않으면 캐시된 옵션이 변경되는 중에 표시됩니다. "
+
+msgid "Enable any of the following fields as captions. These fields are treated and wrapped as captions."
+msgstr "다음의 모든 필드를 캡션으로 사용 가능하게 하십시오. 이들 필드는 캡션으로 취급되고 줄 바꾸기됩니다. "
+
+msgid "Overlay is displayed over the main stage. Can be plain image, sliders, etc."
+msgstr ""
+
+msgid "Also disable Views cache (<strong>Advanced &gt; Caching</strong>) temporarily _only if trouble to see updated settings."
+msgstr "또한 업데이트된 설정을 보기 어려운 경우에만 보기 캐시(<strong>고급 &gt; 캐싱</strong>)를 임시로 사용 안함으로 설정하십시오. "
+
+msgid "Be sure to CHECK \"Use field template\" under its formatter if using Slick field formatter."
+msgstr "슬릭 필드 포맷터를 사용하는 경우 반드시 포맷터 아래에서 \"필드 템플리트 사용\"을 선택하십시오. "
+
+msgid "Be sure to make them visible at their relevant Manage display if View Mode option is provided."
+msgstr ""
+
+msgid "If provided, individual item will have this class, e.g.: to have different background with transparent images. Be sure its formatter is Key or Label. Accepted field types: list text, string (e.g.: node title), term/entity reference label."
+msgstr "제공되는 경우 개별 항목은 예를 들어 투명한 이미지를 갖는 다른 배경을 갖기 위해 이 클래스를 갖습니다. 그의 포맷터는 키 또는 레이블입니다. 허용되는 필드 유형: 목록 텍스트, 문자열(예: 노드 제목), 용어/엔티티 참조 레이블. "
+
+msgid "<strong>Supported types</strong>: Link or plain Text containing URL. Link to content: Read more, View Case Study, etc. If an entity, be sure its formatter is linkable strings like ID or Label. <strong>Two behaviors</strong>: <ol><li>If <strong>Media switcher &gt; Image linked by Link field</strong> is selected, it will be gone to serve as a wrapping link of the image, only if its formatter/ output is plain text URL.</li><li>As opposed to <strong>Caption fields</strong>, it will be positioned and wrapped with a dedicated class: <strong>@namespace__link</strong>.</li></ol>"
+msgstr ""
+
+msgid "Enable the optionset UI module to manage the optionsets."
+msgstr "옵션 세트 UI 모듈이 옵션 세트를 관리할 수 있게 합니다. "
+
+msgid "Leave empty to not use thumbnail/ pager."
+msgstr ""
+
+msgid "<strong>Supported types</strong>: basic Image title, and fields like a dedicated field Title, Link, etc. If an entity, be sure its formatter is strings like ID or Label. As opposed to <strong>Caption fields</strong>, it will be positioned and wrapped with H2 (overriden by <code>hook_blazy_item_alter() with blazies.item.title_tag</code>) and a dedicated class: <strong>@module__title</strong>."
+msgstr ""
+
+msgid "<strong>Check</strong>:<ul><li>To render individual item as is as without extra logic.</li><li>To disable 99% @module features, and most of the mentioned options here, such as layouts, et al.</li><li>When the @module features can not satisfy the need.</li><li>Things may be broken! You are on your own.</li></ul><strong>Uncheck</strong>:<ul><li>To get consistent markups and its advanced features -- relevant for the provided options as @module needs to know what to style/work with.</li></ul>"
+msgstr "<strong>다음을 선택하십시오</strong>. <ul><li>추가 로직 없이 개별 항목을 있는 그대로 렌더링합니다. </li><li>99% @module 기능 및 레이아웃 같이 여기에서 언급되는 대부분의 옵션을 사용 안합니다. </li><li>@module 기능이 요구를 충족할 수 없을 때. </li><li>무엇인가가 중단될 수 있습니다! 마음대로 하십시오. </li></ul><strong>다음을 선택 취소하십시오</strong>. <ul><li>일관성있는 마크업 및 그의 고급 기능을 얻습니다. @module은 스타일링/작업할 대상을 알아야 하기 때문에 제공되는 옵션과 관련됩니다. </li></ul>"
+
+msgid "Responsive image"
+msgstr "응답 이미지"
+
+msgid "Responsive image style for the main stage image is more reasonable for large images. Works with multi-serving IMG, or PICTURE element. Leave empty to disable. <a href=\":url\" target=\"_blank\">Manage responsive image styles</a>."
+msgstr "기본 스테이지 이미지에 대한 응답 이미지 스타일이 큰 이미지에 더 합리적입니다. 다중 서비스 IMG 또는 PICTURE 요소에 대해 작업합니다. 사용하지 않으려면 공백으로 두십시오. <a href=\":url\" target=\"_blank\">응답 이미지 스타일을 관리하십시오</a>."
+
+msgid "<a href=\":url2\">Enable lazyloading Responsive image</a>."
+msgstr ""
+
+msgid "@title: <strong>@setting</strong>"
+msgstr "@title: <strong>@setting</strong>"
+
+msgid "Are you sure you want to delete the %name optionset %label?"
+msgstr "%name optionset %label을 삭제하시겠습니까?"
+
+msgid "Delete"
+msgstr "삭제하기"
+
+msgid "The %name optionset %label has been deleted."
+msgstr "%name optionset %label이 삭제되었습니다."
+
+msgid "Deleted optionset %oid (%label)"
+msgstr "%oid(%label) 옵션 세트가 삭제됨"
+
+msgid "<em>Duplicate %name optionset</em>: @label"
+msgstr "<em>%name 옵션 세트 복제</em>: @label"
+
+msgid "<em>Edit %name optionset</em>: @label"
+msgstr "<em>%name 옵션 세트 편집</em>: @label"
+
+msgid "@config_prefix %label has been updated."
+msgstr "@config_prefix %label이(가) 업데이트되었습니다."
+
+msgid "@config_prefix %label has been added."
+msgstr "@config_prefix %label이(가) 추가되었습니다."
+
+msgid "Alt"
+msgstr "Alt"
+
+msgid "No caching"
+msgstr "캐싱 없음"
+
+msgid "Permanent"
+msgstr "영구"
+
+msgid "Automatic"
+msgstr "자동"
+
+msgid "Alt text"
+msgstr "Alt 텍스트"
+
+msgid "Title text"
+msgstr "제목 텍스트"
+
+msgid "Alt and Title"
+msgstr "Alt 및 제목"
+
+msgid "Title and Alt"
+msgstr "제목 및 Alt"
+
+msgid "Content title"
+msgstr "내용 제목"
+
+msgid "Custom"
+msgstr "사용자 정의"
+
+msgid "Required to grab the fields, or to have custom entity display as fallback display. If it has fields, be sure the selected \"View mode\" is enabled, and the enabled fields here are not hidden there."
+msgstr "필드를 잡거나 사용자 정의 엔티티가 대체 화면으로 표시되게 하려면 필요합니다. 필드를 갖는 경우 반드시 선택된 \"보기 모드\"가 사용 가능하고 여기에서 사용 가능한 필드가 거기에서는 숨겨지지 않는지 확인하십시오. "
+
+msgid "Manage view modes on the <a href=\":view_modes\">View modes page</a>."
+msgstr "<a href=\":view_modes\">보기 모드 페이지</a>에서 보기 모드를 관리하십시오. "
+
+msgid "Preload to optimize the loading of late-discovered resources. Normally large or hero images below the fold. By preloading a resource, you tell the browser to fetch it sooner than the browser would otherwise discover it before Native lazy or lazyloader JavaScript kicks in, or starts its own preload or decoding. The browser caches preloaded resources so they are available immediately when needed. Nothing is loaded or executed at preloading stage. <br>Just a friendly heads up: do not overuse this option, because not everything are critical, <a href=':url'>read more</a>."
+msgstr "사전 로드는 늦게 감지되는 리소스의 로드를 최적화합니다. 일반적으로 대형 이미지 또는 hero 이미지는 fold 아래에 있습니다. 리소스를 사전에 로드하면 Native lazy 또는 lazyloader JavaScript가 시작되거나 자체 사전 로드 또는 디코딩을 시작하기 전에 브라우저에서 리소스를 발견하는 것보다 더 빨리 리소스를 가져오도록 브라우저에 지시합니다. 브라우저는 필요할 때 즉시 사용할 수 있도록 사전 로드된 리소스를 캐싱합니다. 사전 로드 단계에서는 아무 것도 로드되거나 실행되지 않습니다. <br>주의: 모든 것이 중요한 것은 아니므로 이 옵션을 과도하게 사용하지 마십시오. <a href=':url'>자세히 알아보기</a>."
+
+msgid "Decide the `loading` attribute affected by the above fold aka onscreen critical contents aka <a href=':lcp'>LCP</a>. <ul><li>`lazy`, the default: defers loading below fold or offscreen images and iframes until users scroll near them.</li><li>`auto`: browser determines whether or not to lazily load. Only if uncertain about the above fold boundaries given different devices. </li><li>`eager`: loads right away. Similar effect like without `loading`, included for completeness. Good for above fold.</li><li>`defer`: trigger native lazy after the first row is loaded. Will disable global `No JavaScript: lazy` option on this particular field, <a href=':defer'>read more</a>.</li><li>`unlazy`: explicitly removes loading attribute enforced by core. Also removes old `data-[SRC|SRCSET|LAZY]` if `No JavaScript` is disabled. Best for the above fold.</li><li>`slider`, if applicable: will `unlazy` the first visible, and leave the rest lazyloaded. Best for sliders (one visible at a time), not carousels (multiple visible slides at once).</li></ul><b>Note</b>: lazy loading images/ iframes for the above fold is anti-pattern, avoid, <a href=':more'>read more</a>, even <a href=':webdev'>more</a>."
+msgstr ""
+
+msgid "The content image style. This will be treated as the fallback image to override the global option <a href=\":url\">Responsive image 1px placeholder</a>, which is normally smaller, if Responsive image are provided. Shortly, leave it empty to make Responsive image fallback respected. Otherwise this is the only image displayed. This image style is also used to provide dimensions not only for image/iframe but also any media entity like local video, where no images are even associated with, to have the designated dimensions in tandem with aspect ratio as otherwise no UI to customize for."
+msgstr "컨텐츠 이미지 스타일입니다.이는 응답 이미지가 제공되는 경우 일반적으로 더 작은 글로벌 옵션 <a href=\":url\">응답 이미지 1px 플레이스홀더</a>를 대체하는 폴백 이미지로 취급됩니다. 응답 이미지 각각을 폴백 이미지가 되도록 하려면 잠시 비워 두십시오. 그렇지 않으면 이는 표시되는 유일한 이미지입니다. 사용자 정의할 수 있는 다른 UI가 없으므로 이 이미지 스타일은 지정된 치수를 가로 세로 비율과 함께 보유하도록 이미지/iframe뿐만 아니라 이미지가 연관되어 있지 않은 로컬 비디오와 같은 매체 엔티티에 대한 치수를 제공하는 데 사용됩니다."
+
+msgid "Clear cache if lightboxes do not appear here due to being permanently cached. <ol><li>Link to content/ by Link field: for aggregated small media contents -- slicks, splides, grids, etc.</li><li>Image to iframe: video is hidden below image until toggled, otherwise iframe is always displayed, and draggable fails. Aspect ratio applies.</li><li>(Quasi-)lightboxes: Colorbox, ElevateZoomPlus, Intense, Photobox, PhotoSwipe, Magnific Popup, Slick Lightbox, Splidebox, Zooming, etc. Depends on the enabled supported modules, or has known integration with Blazy. See docs or <em>/admin/help/blazy_ui</em> for details.</li></ol> Add <em>Thumbnail style</em> if using Photobox, Slick, or others which may need it. Try selecting \"<strong>- None -</strong>\" first before changing if trouble with this complex form states."
+msgstr ""
+
+msgid "Supports both Responsive and regular images."
+msgstr "응답 및 일반 이미지를 모두 지원합니다."
+
+msgid "Allows different lightbox video dimensions. Or can be used to have a swipable video if <a href=\":photoswipe\">Blazy PhotoSwipe</a>, or <a href=\":slick\">Slick Lightbox</a>, or <a href=\":splidebox\">Splidebox</a> installed."
+msgstr ""
+
+msgid "Automatic will search for Alt text first, then Title text. Try selecting <strong>- None -</strong> first when changing if trouble with form states."
+msgstr "자동은 Alt 텍스트를 먼저 검색한 후 제목 텍스트를 검색합니다. 양식 상태에 문제가 있는 경우 변경할 때 먼저 <strong>- None -</strong>을 선택하십시오. "
+
+msgid "Multi-value rich text field will be mapped to each image by its delta."
+msgstr "다중 값 서식있는 텍스트 필드가 그의 델타에 의해 각 이미지에 맵핑됩니다. "
+
+msgid "Aspect ratio to get consistently responsive images and iframes. Coupled with Image style. And to fix layout reflow, excessive height issues, whitespace below images, collapsed container, no-js users, etc. <a href=\":dimensions\" target=\"_blank\">Image styles and video dimensions</a> must <a href=\":follow\" target=\"_blank\">follow the aspect ratio</a>. If not, images will be distorted. <a href=\":link\" target=\"_blank\">Learn more</a>. <ul><li><b>Fixed ratio:</b> all images use the same aspect ratio mobile up. Use it to avoid JS works, or if it fails Responsive image. </li><li><b>Fluid:</b> aka dynamic, dimensions are calculated. First specific for non-responsive images, using PHP for pure CSS if any matching the fixed ones (1:1, 2:3, etc.), <a href=\":ratio\">read more</a>. If none found, JS works are attempted to fix it.</li><li><b>Leave empty:</b> to DIY (such as using CSS mediaquery), or when working with gapless grids like GridStack, or Blazy Native Grid.</li></ul>"
+msgstr ""
+
+msgid "Usages: <ol><li>Placeholder replacement for image effects (blur, etc.)</li><li>Photobox/PhotoSwipe thumbnail</li><li>Custom works with thumbnails.</li></ol> Be sure to have similar aspect ratio for the best blur effect. Leave empty to not use thumbnails."
+msgstr ""
+
+msgid "<strong>Required for</strong>: <ul><li>image attribute translation,</li><li>lightboxes as image triggers,</li><li>(remote|local) video high-res or poster image.</li><li>thumbnail/ slider navigation association, etc.</li></ul>Main background/stage/poster image field with the only supported field types: <b>Image</b> or <b>Media</b> containing an Image field. Add a new Image field to this entity, if not the Image bundle. Reuse the exact same image field (normally <strong>field_media_image</strong>) across various entitiy types (Image, Remote video, Local audio/video, etc.) within this particular entity (says, Media). This exact same field is also used for bundle <b>Image</b> to have a mix of videos and images if this entity is Media. Leaving it empty will fallback to the video provider thumbnails, and may cause issues due to failing requirements above."
+msgstr ""
+
+msgid "Empty the value first if trouble with changing form states. The amount of block grid columns (1 - 12, or empty) for large monitors 64.063em  (1025px) up."
+msgstr ""
+
+msgid "<br /><strong>Requires</strong>:<ol><li>Any grid-related Display style,</li><li>Visible items,</li><li>Skin Grid for starter,</li><li>A reasonable amount of contents.</li></ol>"
+msgstr ""
+
+msgid "Only accepts uniform columns (1 - 12, or empty) for medium devices 40.063em - 64em (641px - 1024px) up, even for Native Grid due to being pure CSS without JS."
+msgstr "JS가 없는 순수 CSS이므로 네이티브 그리드의 경우에도 중간 장치 40.063em - 64em(641px-1024px)의 경우 단일 열(1 - 12, 아니면 비어 있음)만 허용합니다."
+
+msgid "Only accepts uniform columns (1 - 2, or empty) for small devices 0 - 40em (640px) up due to small real estate, even for Native Grid due to being pure CSS without JS. Below this value, always one column."
+msgstr ""
+
+msgid "How many items per display at a time."
+msgstr "한 번에 화면당 항목의 수입니다. "
+
+msgid "If checked, keys will be preserved. Default is FALSE which will reindex the grid chunk numerically."
+msgstr "선택되면 키가 유지됩니다. 기본값은 눈금 덩어리를 숫자적으로 다시 색인화하는 FALSE입니다. "
+
+msgid "Depends on the <strong>Display style</strong>."
+msgstr ""
+
+msgid "<br>Specific for <b>Native Grid</b>, two recipes: <ol><li><b>One-dimensional</b>: Input a single numeric column grid, acting as Masonry. <em>Best with</em>: scaled images.</li><li><b>Two-dimensional</b>: Input a space separated value with <code>WIDTHxHEIGHT</code> pair based on the amount of columns/ rows, at max 12, e.g.: <br><code>4x4 4x3 2x2 2x4 2x2 2x3 2x3 4x2 4x2</code> <br>This will resemble GridStack optionset <b>Tagore</b>. Any single value e.g.: <code>4x4</code> will repeat uniformly like one-dimensional. <br><em>Best with</em>: <ul><li><b>Use CSS background</b> ON.</li><li>Exact item amount or better more designated grids than lacking. Use a little math with the exact item amount to have gapless grids.</li><li>Disabled image aspect ratio to use grid ratio instead.</li></ul></li></ol>This requires any grid-related <b>Display style</b>. Unless required, leave empty to DIY, or to not build grids."
+msgstr ""
+
+msgid "Check this to turn the image into CSS background. This opens up the goodness of CSS, such as background cover, fixed attachment, etc. <br /><strong>Important!</strong> Requires an Aspect ratio, otherwise collapsed containers. Unless explicitly removed such as for GridStack which manages its own problem, or a min-height is added manually to <strong>.b-bg</strong> selector."
+msgstr "이미지를 CSS 배경으로 만들려면 이것을 선택하십시오. 배경 커버, 고정된 첨부 등과 같은 CSS의 선행이 열립니다. <br /><strong>중요!</strong> 가로 세로 비율이 필요합니다. 그렇지 않으면 컨테이너를 접습니다. 자체 문제점을 관리하는 GridStack과 같이 명시적으로 제거된 경우가 아니면 최소 높이가 <strong>.b-bg</strong> 선택기에 수동으로 추가됩니다."
+
+msgid "Requires a skin. The builtin layouts affects the entire items uniformly. Leave empty to DIY."
+msgstr "스킨이 필요합니다. 기본 제공 레이아웃이 전체 항목에 균등하게 영향을 줍니다. DIY하려면 공백으로 두십시오. "
+
+msgid "Skins allow various layouts with just CSS. Some options below depend on a skin. Leave empty to DIY. Or use the provided hook_info() and implement the skin interface to register ones."
+msgstr "스킨은 CSS만을 갖는 다양한 레이아웃을 허용합니다. 아래의 일부 옵션은 스킨에 종속됩니다. DIY하려면 공백으로 두십시오. 또는 제공된 hook_info()를 사용하고 스킨 인터페이스를 구현하여 하나를 등록하십시오. "
+
+msgid "Unless otherwise specified, the styles require <strong>Grid</strong>. Difference: <ul><li><strong>Columns</strong> is best with irregular image sizes (scale width, empty height), affects the natural order of grid items, top-bottom, not left-right.</li><li><strong>Foundation</strong> with regular cropped ones, left-right.</li><li><strong>Flex Masonry</strong> (@deprecated due to an epic failure) uses Flexbox, supports (ir)-regular, left-right flow, requires aspect ratio fluid to layout correctly.</li><li><strong>Native Grid</strong> supports both one and two dimensional grid.</li></ul> Unless required, leave empty to use default formatter, or style. Save for <b>Grid Foundation</b>, the rest are experimental!"
+msgstr ""
+
+msgid "If checked, SVG is not embedded in the IMG tag. Be sure to disable CSS background option. Only enable for CSS and JavaScript manipulations, and trusted users, due to <a href=\":url1\">inline SVG security</a>. Required <a href=\":url2\">SVG Sanitizer</a>."
+msgstr ""
+
+msgid "Sanitize the SVG XML code to prevent XSS attacks. Required <a href=\":url\">SVG Sanitizer</a>."
+msgstr ""
+
+msgid "Remove attributes that reference remote files, this will stop HTTP leaks but will add an overhead to the sanitizer."
+msgstr ""
+
+msgid "Force the fill to currentColor to allow the SVG inherit coloring from the enclosing tag, such as a link tag."
+msgstr ""
+
+msgid "Unlike images, SVG has no ALT and TITLE attributes, except for SVG Image Field, or core file Description field. This option will hide captions, and put them into image attributes instead. Relevant if Inline option is disabled aka using IMG tag. Be sure to enable them under the Caption fields."
+msgstr ""
+
+msgid "Input one of SVG dimension sources: <code>none, image_style, or WIDTHxHEIGHT</code>. To disable, input: <strong>none</strong>, and will also disable Aspect ratio option. The <strong>image_style</strong> ansich will use the provided Image style, useful to get consistent heights within carousels, or rigid grids. The <strong>WIDTHxHEIGHT</strong>, e.g.: 800x400, for custom defined dimensions. Default or fallback to extract from SVG attributes, unless <strong>none</strong> is set. Only width and height are supported. Affected by Aspect ratio option."
+msgstr ""
+
+msgid "Preview"
+msgstr "미리보기"
+
+msgid "Thumbnail"
+msgstr "썸네일"
+
+msgid "Image convert failed using the %toolkit toolkit on %path (%mimetype)"
+msgstr "%toolkit 툴킷을 %path (%mimetype)에서 사용하는 이미지 변환에 실패"
+
+msgid "Blazy File/SVG"
+msgstr ""
+
+msgid "Description"
+msgstr "설명"
+
+msgid "Blazy Image"
+msgstr ""
+
+msgid "Blazy Media"
+msgstr ""
+
+msgid "Blazy OEmbed"
+msgstr ""
+
+msgid "When provided the text will be separated by this delimiter. Use comma to have multiple delimiters."
+msgstr ""
+
+msgid "Blazy Title will format delimited plain text or string as HTML title with a sub-title."
+msgstr ""
+
+msgid "Sub-title tag"
+msgstr ""
+
+msgid "The tag for the second/ last split as sub-title. Only one tag can exist."
+msgstr ""
+
+msgid "Add line break"
+msgstr ""
+
+msgid "Use CSS <code>display:block</code> on the Sub-title tag to have multiple lines for better display, or enable this to add the ugly line break."
+msgstr ""
+
+msgid "Delimiter: <strong>@delimiter</strong> <br />Sub-title tag: <strong>@tag</strong> <br />Linebreak: <strong>@break</strong>"
+msgstr ""
+
+msgid "Yes"
+msgstr "예"
+
+msgid "No"
+msgstr "아니오"
+
+msgid "Blazy Title"
+msgstr ""
+
+msgid ""
+"<b>Blazy</b>: <ul><li>With HTML: <code>[blazy]..[item]IMG[/item]..[/blazy]</code></li><li>With self-closing using data entity, <code>data=ENTITY_TYPE:ID:FIELD_NAME:FIELD_IMAGE</code>:<br><code>[blazy data=\"node:44:field_media\" /]</code>. <code>FIELD_IMAGE</code> is optional for video poster, or hires, normally <code>field_media_image</code>.<li>Grid format:\n"
+"      <code>STYLE:SMALL-MEDIUM-LARGE</code>, where <code>STYLE</code> is one of <code>column grid\n"
+"      flex nativegrid</code>.<br>\n"
+"      <code>[blazy grid=\"column:2-3-4\" data=\"node:44:field_media\" /]</code><br>\n"
+"      <code>[blazy grid=\"nativegrid:2-3-4\"]...[/blazy]</code><br>\n"
+"      <code>[blazy grid=\"nativegrid:2-3-4x4 4x3 2x2 2x4 2x2 2x3 2x3 4x2 4x2\"]...[/blazy]\n"
+"      </code><br>Only nativegrid can have number or dimension string (4x4...). The rest number only.</li><li>The attributes grid, data, settings can be combined into one [blazy].</li><li>To disable, add <code>data-unblazy</code>, e.g.: <code>&lt;img data-unblazy</code> or <code>&lt;iframe data-unblazy</code>. Add width and height for SVG, and non-uploaded images without image styles.</li></ul>"
+msgstr ""
+
+msgid "Enable HTML tags"
+msgstr "HTML 태그 사용"
+
+msgid "Image"
+msgstr "이미지"
+
+msgid "Video iframe"
+msgstr "비디오 iframe"
+
+msgid "To disable Blazy per individual item, add attribute <code>data-unblazy</code>."
+msgstr "개별 항목마다 Blazy를 사용 안함으로 설정하려면 <code>data-unblazy</code> 속성을 추가하십시오."
+
+msgid "<b>Warning!</b> Blazy Filter is useless and broken when you enable <b>Media embed</b> or <b>Display embedded entities</b>. You can disable Blazy Filter in favor of Blazy formatter embedded inside <b>Media embed</b> or <b>Display embedded entities</b> instead. However it might be useful for User Generated Contents (UGC) where Entity/Media Embed are likely more for privileged users, authors, editors, admins, alike. Or when Entity/Media Embed is disabled. Or when editors prefer pasting embed codes from video providers rather than creating media entities. Or want the new shortcodes for embedding known entity, grid, Native Grid, etc."
+msgstr "<b>경고!</b> <b>매체 임베드</b> 또는 <b>임베드된 엔티티 표시</b>를 사용으로 설정하면 Blazy 필터가 적용되지 않고 손상됩니다. 대신 <b>매체 임베드</b> 또는 <b>임베드된 엔티티 표시</b> 내부에 임베드된 Blazy 포맷터를 위해 Blazy 필터를 사용 안함으로 설정할 수 있습니다. 그러나 엔티티/매체 임베드가 권한이 있는 사용자, 작성자, 편집자, 관리자 등에게 더 적합한 사용자 생성 컨텐츠(UGC)에 유용할 수 있습니다. 또는 엔티티/매체 임베드가 사용 안함으로 설정되었거나 편집자가 매체 엔티티를 작성하는 대신 비디오 제공자의 임베드 코드를 붙여넣는 것을 선호하는 경우입니다. 또는 알려진 엔티티, 그리드, 네이티브 그리드 등을 임베드하는 새로운 단축 코드를 원하는 경우입니다."
+
+msgid "Enable to support the use of data URI. Leave it unchecked if unsure, or never use data URI. <b>Warning! It has security implications given to untrusted users.</b>"
+msgstr ""
+
+msgid "Recommended placement after Align / Caption images. Not tested against, nor dependent on, Shortcode module. Be sure to place Blazy filter before any other Shortcode if installed."
+msgstr "맞춤/캡션 이미지 뒤에 배치하도록 권장합니다. Shortcode 모듈에 대해 테스트하지도 않고 이에 종속하지도 않습니다. 설치된 경우 다른 Shortcode 앞에 Blazy 필터를 배치하십시오."
+
+msgid "Lazyload inline images, or video iframes using Blazy."
+msgstr "Blazy를 사용하여 인라인 이미지 또는 비디오 iframe을 지연 로드하십시오."
+
+msgid "Image to iframe"
+msgstr "이미지 대 iframe"
+
+msgid "<ul><li><b>Image to iframe</b> will play video when toggled.</li><li><b>Image to lightbox</b> (Colorbox, Photobox, PhotoSwipe, Slick Lightbox, Zooming, Intense, etc.) will display media in lightbox.</li></ul>Both can stand alone or grouped as a gallery. To build a gallery, use the grid shortcodes."
+msgstr "<ul><li><b>iframe 이미지</b>는 토글할 때 비디오를 재생합니다.</li><li><b>lightbox 이미지</b>(Colorbox, Photobox, PhotoSwipe, Slick Lightbox, Zooming, Intense 등)는 lightbox에 미디어를 표시합니다.</li></ul>둘 다 단독으로 사용하거나 갤러리로 그룹화할 수 있습니다. 갤러리를 빌드하려면 그리드 단축 코드를 사용하십시오."
+
+msgid "Fallback (Responsive) image style when <code>[data-image-style]</code> or <code>[data-responsive-image-style]</code> attributes are not present, see https://drupal.org/node/2061377."
+msgstr "<code>[data-image-style]</code> 또는 <code>[data-responsive-image-style]</code> 속성이 없는 경우의 폴백(응답) 이미지 스타일은 https://drupal.org/node/2061377을 참조하십시오."
+
+msgid "Caption filter"
+msgstr "캡션 필터"
+
+msgid "Automatic will search for Alt text first, then Title text. <br>Image styles only work for uploaded images, not hand-coded ones. Caption filter will use <code>data-caption</code> normally managed by Caption filter, will not work for shortcode without [item] element."
+msgstr ""
+
+msgid "Will fallback to this view mode, else entity label."
+msgstr "이 보기 모드, 그 밖에 엔티티 레이블로 대체합니다. "
+
+msgid "Preview image for the @bundle \"@label\" - @alt."
+msgstr ""
+
+msgid "Preview image for the @bundle \"@label\"."
+msgstr ""
+
+msgid "Load and play video."
+msgstr "비디오를 로드하고 재생합니다."
+
+msgid "Stop and close video."
+msgstr "비디오를 중지하고 닫습니다."
+
+msgid "Load and play the video \"@label\"."
+msgstr "\"@label\" 비디오를 로드하여 재생합니다."
+
+msgid "Stop and close the video \"@label\"."
+msgstr "\"@label\" 비디오를 중지하고 닫습니다."
+

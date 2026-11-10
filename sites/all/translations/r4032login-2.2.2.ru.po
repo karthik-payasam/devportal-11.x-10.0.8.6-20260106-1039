@@ -1,0 +1,104 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Redirect 403 to User Login"
+msgstr "Перенаправить со страницы 403 на страницу входа пользователя в систему"
+
+msgid "Redirect anonymous users from 403 Access Denied pages to the /user/login page."
+msgstr "Перенаправить анонимных пользователей со страниц 403 Доступ запрещен на страницу /user/login."
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Redirect 403 to User Login (r4032login) settings"
+msgstr "Параметры перенаправления со страницы 403 на страницу входа пользователя в систему (r4032login)"
+
+msgid "Display access denied message on login page"
+msgstr "Показать сообщение Доступ запрещен на странице входа в систему"
+
+msgid "User login 'access denied' message"
+msgstr "Сообщение 'Доступ запрещен' на странице входа в систему"
+
+msgid "User login 'access denied' message type"
+msgstr "Тип сообщения 'Доступ запрещен' на странице входа в систему"
+
+msgid "Redirect authenticated users to"
+msgstr "Перенаправить идентифицированных пользователей на"
+
+msgid "/user/login"
+msgstr "/user/login"
+
+msgid "HTTP redirect code"
+msgstr "Код перенаправления HTTP"
+
+msgid "Custom final destination parameter"
+msgstr "Пользовательский конечный параметр целевого объекта"
+
+msgid "Redirect user to the page they tried to access after login"
+msgstr "Перенаправить пользователя на страницу при попытке доступа после входа в систему"
+
+msgid "Language code"
+msgstr "Код языка"
+
+msgid "Destination parameter override"
+msgstr "Переопределение целевого параметра"
+
+msgid "The parameter to use when setting the return destination once login has succeeded. By default Drupal uses 'destination', but overriding this may be necessary if using an external login system such as CAS, Shibboleth or OAuth."
+msgstr "Параметр для настройки целевого объекта возвращения после успешного входа в систему. По умолчанию Drupal использует 'destination', но перенаправление может потребоваться при использовании внешних систем входа, таких как CAS, Shibboleth или OAuth."
+
+msgid "Displays an access denied message on the user login page."
+msgstr "Отображает сообщение Доступ запрещен на странице входа в систему."
+
+msgid "The message type displayed to users who are denied access to the page."
+msgstr "Тип сообщения, отображаемого для пользователей, которым запрещен доступ к странице."
+
+msgid "Error"
+msgstr "Ошибка"
+
+msgid "Warning"
+msgstr "Предупреждение"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "The user login form path '%path' is either invalid or a logged out user does not have access to it."
+msgstr "Путь к форме входа пользователя в систему '%path' либо недопустим, либо пользователь вышел из системы и не обладает правами доступа к нему."
+
+msgid "If an authenticated user tries to access a page they can not, redirect them to the given page. Use &lt;front&gt; for the front page, leave blank for a default access denied page."
+msgstr "Если идентифицированный пользователь пытается обратиться к странице, доступа к которой у него нет, перенаправьте его на указанную страницу. Для лицевой страницы используйте &lt;front&gt;, для стандартной страницы запрещения доступа оставьте поле пустым."
+
+msgid "The redirect authenticated users path '%path' is either invalid or you do not have access to it."
+msgstr "Путь для перенаправления идентифицированных пользователей '%path' либо недопустим, либо у вас нет прав доступа к нему."
+
+msgid "The redirect code to send by default. 301 and 302 responses may be cached by browsers and proxies, so 307 is normally the correct choice."
+msgstr "Код перенаправления для отправки по умолчанию. Ответы 301 и 302 могут кэшироваться браузерами и прокси-серверами, поэтому правильным выбором будет 307."
+
+msgid "307 Temporary Redirect"
+msgstr "307 - Временно перемещено"
+
+msgid "302 Found"
+msgstr "302 Найдено"
+
+msgid "301 Moved Permanently"
+msgstr "301 Перемещёно Окончательно"
+
+msgid "Skip redirect for matching pages"
+msgstr "Пропустить перенаправление для совпадающих страниц"
+
+msgid "Pages"
+msgstr "Страницы"
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page."
+msgstr "Вводите путь к каждой странице в отдельной строке. При указании пути можно использовать маску *. Например, если ввести <em>blog</em>, то действие будет распространяться только на страницу блогов, если ввести <em>blog/*</em>, то действие будет распространяться на все страницы имеющие в пути слово <em>blog</em> (страница блогов и все записи в персональных блогах). Для указания первой страницы, используйте запись %front."
+

@@ -1,0 +1,254 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "O produktu"
+
+msgid "The Configuration Update Reports module provides a report that allows you to see the differences between the default configuration provided by the current versions of your installed modules, themes, and install profile, and the active configuration of your site. From this report, you can also import new configuration provided by updates, and revert your active configuration to the provided default values."
+msgstr "Modul Sestavy aktualizace konfigurací poskytuje sestavu, která umožňuje zobrazit rozdíly mezi výchozí konfigurací, jež je součástí aktuálních verzí vašich instalovaných modulů, motivů a instalačních profilů, a aktivní konfigurací vašeho webu. Z této sestavy můžete rovněž importovat nové konfigurace poskytované aktualizacemi a ve svých aktivních konfiguracích obnovovat výchozí hodnoty."
+
+msgid "Uses"
+msgstr "Používá"
+
+msgid "Checking for configuration differences"
+msgstr "Kontrola rozdílů mezi konfiguracemi "
+
+msgid "The <a href=\":report\">Updates report</a> shows you configuration that differs between your site's active configuration and the installed modules, themes, and install profile. Choose a particular configuration type (or All), or run the report for a particular module, theme, or your install profile."
+msgstr "<a href=\":report\">Sestava aktualizací</a> zobrazuje konfiguraci, která se odlišuje od aktivní konfigurace vašeho webu a instalovaných modulů, motivů a instalačních profilů. Vyberte konkrétní typ konfigurace (nebo Vše) nebo spusťte sestavu pro konkrétní modul, motiv nebo svůj instalační profil."
+
+msgid "This report shows which default configuration items provided by the current versions of your installed modules, themes, and install profile differ from the active configuration of your site. You can generate the report for all configuration of a certain type; for a particular installed module, theme, or your install profile (only modules, themes, and install profiles that actually provide configuration are listed); or for all configuration."
+msgstr "Tato sestava ukazuje, které výchozí položky konfigurace poskytované aktuálními verzemi vašich instalovaných modulů, motivů a instalačních profilů se odlišují od aktivní konfigurace vašeho webu. Sestavu můžete vygenerovat pro všechny konfigurace určitého typu, pro konkrétní nainstalovaný modul, motiv či váš instalační profil (uvedeny jsou pouze moduly, motivy a instalační profily, které skutečně poskytují konfiguraci) nebo pro všechny konfigurace."
+
+msgid "Some configuration provided by modules has dependencies, and is only added to your system when all the dependencies are satisfied. This is known as <em>optional</em> configuration."
+msgstr "Některé konfigurace poskytované moduly vykazují závislosti a přidávají se do vašeho systému pouze v případě, že jsou všechny závislosti splněny. Toto se označuje termínem <em>volitelná</em> konfigurace."
+
+msgid "Differences, including missing and added configuration, can be due to either an updated module or theme providing different configuration from when you installed it, or to changes made by site administrators. This report does not differentiate between these two sources for differences, and note that an install profile can also silently override module/theme configuration. Overrides (such as those in your settings.php file) and translations are not considered when looking at differences."
+msgstr "Rozdíly včetně chybějících a přidaných konfigurací vznikají v důsledku aktualizace modulu nebo motivu, která poskytuje odlišnou konfiguraci od konfigurace platné v momentu instalace nebo v důsledku změn provedených správcem serveru. Tato sestava neodlišuje mezi těmito dvěma zdroji rozdílů. Mějte na zřeteli, že instalační profil může rovněž tiše potlačovat konfiguraci modulů/motivů. Při hledání rozdílů se nezohledňují potlačení (např. potlačení uvedená ve vašem souboru settings.php) ani překlady."
+
+msgid "Most configuration is organized into a hierarchy of settings; at a minimum, it is a one-level hierarchy where each setting has a name and a value, and the hierarchy comes in when some of the settings have multiple components."
+msgstr "Většina konfigurací je rozčleněna do hierarchie nastavení. Existuje přinejmenším jednoúrovňová hierarchie, v jejímž rámci má každé nastavení svůj název a hodnotu. Další úroveň hierarchie vzniká v situaci, kdy má některé z nastavení více komponent."
+
+msgid "Configuration items are normalized and formatted before computing differences. The normalization step alphabetizes the components at each level of the hierarchy, and removes a few components whose differences should be ignored, such as the UUID. The formatting step shows the full hierarchy of each configuration value with :: separators for the hierarchy levels, and a : separator between the lowest-level setting name and the value, so that in a line-by-line diff you can always see which values are actually different. Green lines with + signs have been added, and yellow lines with - signs have been removed."
+msgstr "Před výpočtem rozdílů se provádí normalizace a formátování položek konfigurace. Krok normalizace alfabetizuje komponenty na jednotlivých úrovních hierarchie a odebírá určité komponenty, jejichž rozdíly lze ignorovat, např. UUID. Krok formátování zobrazuje úplnou hierarchii každé konfigurační hodnoty s oddělovači :: pro úrovně hierarchie a oddělovačem : mezi názvem a hodnotou nastavení nejnižší úrovně, takže v řádkovém zobrazení rozdílů vždy vidíte, které hodnoty jsou skutečně odlišné. Zelené řádky se znakem + byly přidány a žluté řádky se znakem - byly odebrány. "
+
+msgid "Note that differences are considering the base configuration, without overrides from your settings.php file, or translations."
+msgstr "Mějte na zřeteli, že rozdíly zohledňují základní konfiguraci bez potlačení z vašeho souboru settings.php a bez překladů."
+
+msgid "Updates report"
+msgstr "Sestava aktualizací"
+
+msgid "Configuration Update Reports"
+msgstr "Sestavy aktualizace konfigurací"
+
+msgid "Adds an updates report and revert functionality to configuration management."
+msgstr "Přidá sestavu aktualizací a vrátí funkci zpět do správy konfigurací."
+
+msgid "View configuration updates report"
+msgstr "Zobrazit sestavu aktualizací konfigurace"
+
+msgid "Revert any configuration"
+msgstr "Vrací zpět každou konfiguraci"
+
+msgid "Delete any configuration"
+msgstr "Odstranit libovolnou konfiguraci"
+
+msgid "Import"
+msgstr "Importovat"
+
+msgid "Differences"
+msgstr "Rozdíly"
+
+msgid "Revert"
+msgstr "Vrátit zpět"
+
+msgid "Delete"
+msgstr "Odstranit"
+
+msgid "Configuration Update Reports settings"
+msgstr "Nastavení sestav aktualizace konfigurace"
+
+msgid "Ignored configuration items"
+msgstr "Ignorované konfigurační položky"
+
+msgid "No added config."
+msgstr "Není přidána žádná konfigurace."
+
+msgid "No missing config."
+msgstr "Nechybí žádná konfigurace."
+
+msgid "No inactive config."
+msgstr "Neexistuje žádná neaktivní konfigurace."
+
+msgid "No different config"
+msgstr "Neexistuje žádná odlišná konfigurace"
+
+msgid "Config is missing, cannot diff."
+msgstr "Chybí konfigurace, nelze stanovit rozdíly."
+
+msgid "The configuration item @name was reverted to its source."
+msgstr "Položka konfigurace @name byla vrácena zpět na svůj zdroj."
+
+msgid "There was an error and the configuration item @name was not reverted."
+msgstr "Došlo k chybě a položku konfigurace @name se nezdařilo vrátit zpět."
+
+msgid "The configuration item @name was imported from its source."
+msgstr "Položka konfigurace @name byla importována ze svého zdroje."
+
+msgid "There was an error and the configuration item @name was not imported."
+msgstr "Došlo k chybě a položka konfigurace @name nebyla importována."
+
+msgid "Simple configuration"
+msgstr "Jednoduchá konfigurace"
+
+msgid "Config difference for @type @name"
+msgstr "Rozdíl konfigurace pro @type @name"
+
+msgid "Source config"
+msgstr "Zdrojová konfigurace "
+
+msgid "Site config"
+msgstr "Konfigurace webu"
+
+msgid "There are no changes."
+msgstr "Neexistují žádné změny."
+
+msgid "Revert to source"
+msgstr "Vrátit zpět ke zdroji"
+
+msgid "Export"
+msgstr "Exportovat"
+
+msgid "Back to 'Updates report' page"
+msgstr "Zpět na stránku 'Sestava aktualizací'"
+
+msgid "Generate new report"
+msgstr "Vygenerovat novou sestavu"
+
+msgid "Report type"
+msgstr "Typ sestavy"
+
+msgid "Report on"
+msgstr "Sestava pro"
+
+msgid "Everything"
+msgstr "Vše"
+
+msgid "Full report"
+msgstr "Úplná sestava"
+
+msgid "Single configuration type"
+msgstr "Typ jednoduché konfigurace"
+
+msgid "Single module"
+msgstr "Jediný modul"
+
+msgid "Single theme"
+msgstr "Jediný motiv"
+
+msgid "Installation profile"
+msgstr "Instalační profil"
+
+msgid "All configuration"
+msgstr "Celá konfigurace"
+
+msgid "@name configuration"
+msgstr "Konfigurace @name"
+
+msgid "@name module"
+msgstr "Modul @name"
+
+msgid "@name theme"
+msgstr "Motiv @name"
+
+msgid "@name profile"
+msgstr "Profil @name"
+
+msgid "Configuration updates report for @label"
+msgstr "Sestava aktualizací konfigurace pro @label"
+
+msgid "Missing configuration items"
+msgstr "Chybějící položky konfigurace"
+
+msgid "None: all provided configuration items are in your active configuration."
+msgstr "Nic: všechny zadané položky konfigurace jsou ve vaší aktivní konfiguraci."
+
+msgid "Inactive optional items"
+msgstr "Neaktivní volitelné položky"
+
+msgid "None: all optional configuration items are in your active configuration."
+msgstr "Nic: všechny volitelné položky konfigurace jsou ve vaší aktivní konfiguraci."
+
+msgid "Added configuration items"
+msgstr "Přidané položky konfigurace"
+
+msgid "None: all active configuration items of this type were provided by modules, themes, or install profile."
+msgstr "Nic: všechny aktivní položky konfigurace tohoto typu byly poskytnuty moduly, motivy nebo instalačním profilem."
+
+msgid "Changed configuration items"
+msgstr "Změněné položky konfigurace"
+
+msgid "None: no active configuration items differ from their current provided versions."
+msgstr "Nic: žádné aktivní položky konfigurace se neodlišují od svých aktuálně poskytnutých verzí."
+
+msgid "Machine name"
+msgstr "Název počítače"
+
+msgid "Label (if any)"
+msgstr "Popisek (je-li použit)"
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "Provider"
+msgstr "Poskytovatel"
+
+msgid "Operations"
+msgstr "Operace"
+
+msgid "Import from source"
+msgstr "Importovat ze zdroje"
+
+msgid "Show differences"
+msgstr "Zobrazit rozdíly"
+
+msgid "Malformed config file @config_name."
+msgstr "Chybný konfigurační soubor @config_name."
+
+msgid "Are you sure you want to delete the %type config %item?"
+msgstr "Opravdu chcete odstranit konfiguraci %type %item?"
+
+msgid "This action cannot be undone. Manually deleting configuration from this page can cause problems on your site due to missing dependencies, and should only be done if there is no other way to delete a problematic piece of configuration."
+msgstr "Tuto akci nelze vrátit zpět. Ruční odstranění konfigurace na této stránce může způsobit problémy na vašem serveru kvůli chybějícím závislostem a mělo by být provedeno pouze v případě, že neexistuje jiný způsob, jak odstranit problematickou část konfigurace. "
+
+msgid "The configuration %item has been deleted."
+msgstr "Konfigurace %item byla odstraněna."
+
+msgid "Are you sure you want to import the %type config %item from its source configuration?"
+msgstr "Opravdu chcete importovat konfiguraci %type %item z její zdrojové konfigurace?"
+
+msgid "Configuration will be added to your site. This action cannot be undone."
+msgstr "Konfigurace bude přidána na váš web. Tuto akci nelze vrátit zpět. "
+
+msgid "The configuration %item has been imported from its source."
+msgstr "Konfigurace %item byla naimportována ze svého zdroje."
+
+msgid "Are you sure you want to revert the %type config %item to its source configuration?"
+msgstr "Opravdu chcete vrátit zpět konfiguraci %type %item do své zdrojové konfigurace?"
+
+msgid "Customizations will be lost. This action cannot be undone."
+msgstr "Dojde ke ztrátě přizpůsobení. Tuto akci nelze vrátit zpět. "
+
+msgid "The configuration %item has been reverted to its source."
+msgstr "Konfigurace %item byla vrácena zpět do svého zdroje."
+

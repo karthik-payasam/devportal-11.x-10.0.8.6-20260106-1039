@@ -1,0 +1,1 @@
+var a={name:"localeOption",lookup:function(a){var b;return a&&a.locale&&(b=a.locale),b}};export default a;

@@ -1,0 +1,1 @@
+import a from"react";import{useTranslation as b}from"react-i18next";function c(){var c=b(),d=c.t;return a.createElement("div",{className:"noApisMessage","data-testid":"no-apis"},a.createElement("h3",null,d("no_apis")))}export default c;

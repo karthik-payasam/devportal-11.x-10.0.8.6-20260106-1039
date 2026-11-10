@@ -1,0 +1,76 @@
+{{ attach_library('sidebarleft/sidebarleft') }}
+
+<div class="sidebarleft-wrapper">
+
+  <div class="tab-buttons">
+
+    <a href="/devcustportal/csb-portal/product" class="tab-btn">
+      Products
+    </a>
+
+    <a href="/devcustportal/csb-portal/api" class="tab-btn">
+      APIs
+    </a>
+
+  </div>
+
+
+  <div class="all-main-menu">
+
+    <a class="menu-toggle">
+      <div>Product API</div>
+    </a>
+
+
+    <ul class="all-submenu submenu">
+
+      {% for product in allProductData %}
+
+        <li class="product-item product-{{ product.nid }}">
+
+          <a class="product-toggle">
+
+            <div class="title-overflow">
+              {{ product.title }}
+            </div>
+
+            <div class="toggle-icon"></div>
+
+          </a>
+
+
+          <ul class="all thirdSubmenu sidebarleft-hide">
+
+            {% if product.apis %}
+
+              {% for api in product.apis %}
+
+                <li>
+
+                  <a href="{{ api.url }}">
+                    {{ api.title }}
+                  </a>
+
+                </li>
+
+              {% endfor %}
+
+            {% else %}
+
+              <li>
+                <em>No APIs available</em>
+              </li>
+
+            {% endif %}
+
+          </ul>
+
+        </li>
+
+      {% endfor %}
+
+    </ul>
+
+  </div>
+
+</div>

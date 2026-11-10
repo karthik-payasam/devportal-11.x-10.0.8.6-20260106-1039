@@ -1,0 +1,532 @@
+changes:
+  6.3.0:
+  - update version 6.2.6 -> 6.3.0
+  6.2.5:
+  - velox/devportal#8913 - CIO SonarQube
+  6.2.4:
+  - Remove card field from payment method create request (#349)
+  6.2.3:
+  - change portal-ci-v10-0 to portal-ci-v10-0-8
+  6.2.2:
+  - add env.GIT_COMMIT_SUMMARY
+  6.2.1:
+  - Update .whitesource (#347)
+  6.2.0:
+  - update version 6.1.13 -> 6.2.0
+  6.1.12:
+  - velox/devportal#8738 - Copyright 2024
+  6.1.11:
+  - updated error message to match other error messages
+  - tightening form validation to not allow url inputs
+  6.1.10:
+  - Remove addtoany (#340) (#341)
+  6.1.9:
+  - Always return a consumerorg (#337) (#338)
+  6.1.8:
+  - Add form captcha points (#334)
+  6.1.7:
+  - Add custom fields to getByNid (#333)
+  6.1.6:
+  - Use image captcha on feedback form (#330)
+  6.1.5:
+  - apimesh/devportal#8193 - add SonarQube integration
+  6.1.4: null
+  6.1.3:
+  - apimesh -> velox
+  6.1.2:
+  - remove html escape because data already encoded
+  6.1.1:
+  - Update consumerorg.info.yml
+  6.0.3-6.1.0:
+  - update version 6.0.3 -> 6.0.3-6.1.0
+  6.0.2:
+  - Fix consumer org change event (#320) (#322)
+  6.0.1:
+  - fix ci channel
+  8.x-5.3.11:
+  - Handle 202 response for create consumerorg request (#317)
+  8.x-5.3.10:
+  - Use un-dep honeypot method (#315)
+  8.x-5.3.9:
+  - Mass merge for Drupal 10 Changes (#314)
+  8.x-5.3.8:
+  - Always create consumerorgs with admin author (#311)
+  8.x-5.3.7:
+  - Add delete consumerorg event + error fix (#309)
+  8.x-5.3.6:
+  - Added uidToIgnore param to service->delete (#305)
+  - Reassign content on user delete (#302)
+  8.x-5.3.5:
+  - Changes for saving non-custom field metadata in apim (#301)
+  8.x-5.3.4:
+  - Allow users to remove themselves from an org (#294)
+  8.x-5.3.3:
+  - Only assign role if a valid role is provided (#288) (#289)
+  8.x-5.3.2: null
+  8.x-5.3.1:
+  - Merge pull request
+  8.x-5.3.0:
+  - update version 8.x-5.2.2 -> 8.x-5.3.0
+  8.x-5.2.1:
+  - Merge pull request
+  8.x-5.2.0:
+  - update version 8.x-5.1.3 -> 8.x-5.2.0
+  8.x-5.1.2:
+  - Set default apic_rating (#282)
+  8.x-5.1.1:
+  - Delete members without org on consumerorg_delete (#278) (#279)
+  8.x-5.1.0:
+  - update version 8.x-5.0.7 -> 8.x-5.1.0
+  8.x-5.0.6:
+  - Fixed billing template (#275)
+  8.x-5.0.5:
+  - Fix for non json decodeable custom field data (#271)
+  8.x-5.0.4:
+  - update copyright
+  8.x-5.0.3:
+  - Remove Corg from user on member del (#267)
+  8.x-5.0.2:
+  - ignore the url_redirects field from redirect
+  8.x-5.0.1:
+  - Added custom field tests (#261) (#263)
+  8.x-5.0.0:
+  - update slack channel to $CICHAN
+  8.x-4.0.84:
+  - Update Jenkinsfile
+  8.x-4.0.83:
+  - use getDisplayName in forms
+  8.x-4.0.82:
+  - upgrade phpunit
+  8.x-4.0.81: null
+  8.x-4.0.80:
+  - Added monetisation test (#257)
+  8.x-4.0.79:
+  - Update .whitesource
+  - Add .whitesource configuration file
+  8.x-4.0.78:
+  - check encryption profile name is set before using it
+  8.x-4.0.77:
+  - Create new member from member_update
+  8.x-4.0.76: null
+  8.x-4.0.75:
+  - ensure metadata is set
+  - fix unit test
+  - moved custom field code
+  - address type custom field for consumerorgs
+  8.x-4.0.74:
+  - Special cased address type custom field
+  8.x-4.0.73:
+  - deprecated functions - consumerorg
+  8.x-4.0.72: null
+  8.x-4.0.71: null
+  8.x-4.0.70:
+  - include invitation email address in eventlogs
+  8.x-4.0.69:
+  - custom fields not displaying
+  8.x-4.0.68:
+  - git -> gitci
+  8.x-4.0.67:
+  - Jenkinsfile refactor fixes
+  - refactor Jenkinsfile for the new portal.groovy
+  8.x-4.0.66:
+  - move devel settings to their own config object
+  8.x-4.0.65:
+  - Use the member's id as array-key
+  8.x-4.0.64:
+  - Use the member's email as array-key
+  8.x-4.0.63:
+  - member timestamps are int not string
+  - allow default payment method to be null
+  8.x-4.0.62: null
+  8.x-4.0.61: null
+  8.x-4.0.60: null
+  8.x-4.0.59:
+  - Delete codeStyleConfig.xml
+  - delete Project.xml
+  - Delete .idea file
+  - only show add billing button if none
+  8.x-4.0.58: null
+  8.x-4.0.57:
+  - wrong url
+  - wrong url
+  8.x-4.0.56:
+  - fix payment method type error
+  8.x-4.0.55:
+  - fix payment method type error
+  8.x-4.0.54:
+  - Switch to catching Throwable
+  8.x-4.0.53:
+  - remove drush 10 entries in composer.json files
+  8.x-4.0.52:
+  - use id to select current one not title
+  8.x-4.0.51: null
+  8.x-4.0.50:
+  - tidy up a bit
+  - remove dt and fix composer
+  8.x-4.0.49:
+  - fix function calls
+  8.x-4.0.48:
+  - convert to drush 10 commands
+  8.x-4.0.47:
+  - needs to be org_url not consumer_org_url
+  8.x-4.0.46:
+  - protect against running double strtotime
+  8.x-4.0.45:
+  - we were double strtotime the timestamps === bang
+  8.x-4.0.44:
+  - need to check not empty
+  8.x-4.0.43:
+  - get current consumer org not correct
+  - get current consumer org not correct
+  8.x-4.0.42:
+  - fix get default payment method
+  8.x-4.0.41:
+  - fix billing id
+  8.x-4.0.40:
+  - has to be entity id not table name
+  8.x-4.0.39:
+  - ensure timestamps are set for members
+  8.x-4.0.38:
+  - fix upgrade error
+  8.x-4.0.37:
+  - missing strtotime
+  8.x-4.0.36:
+  - set timestamps for members
+  8.x-4.0.35:
+  - slight tweak to eventlog entities for consumer orgs
+  8.x-4.0.34:
+  - dont show notifications link to admin
+  8.x-4.0.33: null
+  8.x-4.0.32:
+  - do create and update event logs all the time (#235)
+  - do create and update event logs all the time
+  8.x-4.0.31:
+  - Index consumer org url column
+  8.x-4.0.30:
+  - use ID to load the payment method schema
+  8.x-4.0.29:
+  - use chunking
+  8.x-4.0.28:
+  - Services (#231)
+  8.x-4.0.27:
+  - there might not be any roles
+  8.x-4.0.26:
+  - use "IBM API Developer Portal" instead of API Connect
+  8.x-4.0.25:
+  - Invitetests (#230)
+  8.x-4.0.24: null
+  8.x-4.0.23:
+  - only show invitation button if enabled
+  8.x-4.0.22:
+  - array not object
+  8.x-4.0.21: null
+  8.x-4.0.20:
+  - fix missing '
+  8.x-4.0.19:
+  - event service has moved
+  - handle NPE
+  - use dependency injection
+  - use dependency injection
+  - wire up more payment methods
+  - wire up more events
+  8.x-4.0.18:
+  - Notitab (#228)
+  8.x-4.0.17:
+  - payment methods needs to be array not objects
+  8.x-4.0.16: null
+  8.x-4.0.15:
+  - fix object parsing
+  8.x-4.0.14:
+  - fix up the activity feed tabs for org and app
+  8.x-4.0.13:
+  - wire up the myorg activity feed page
+  8.x-4.0.12:
+  - Codesmells (#225)
+  8.x-4.0.11:
+  - use our own entity update manager
+  8.x-4.0.10: null
+  8.x-4.0.9:
+  - entity_reference module is now empty and not needed
+  8.x-4.0.8:
+  - use void
+  8.x-4.0.7:
+  - deprecated function
+  8.x-4.0.6: null
+  8.x-4.0.5:
+  - long corg name handling (#222)
+  8.x-4.0.4: null
+  8.x-4.0.3:
+  - Createdat (#221)
+  8.x-4.0.2:
+  - Fix duplicate user exception
+  8.x-4.0.1: null
+  8.x-3.0.104: null
+  8.x-3.0.103:
+  - divisibleby is deprecated
+  - Add drupal core compatibility info
+  8.x-3.0.102:
+  - Add tokens
+  8.x-3.0.101:
+  - Copyright statements for 2021
+  8.x-3.0.100:
+  - drush commands to get individual nodes
+  8.x-3.0.99:
+  - ensure custom fields are actual fields
+  8.x-3.0.98: null
+  8.x-3.0.97:
+  - Readding the account update (#214)
+  8.x-3.0.96:
+  - Removed test breaking code (#212)
+  8.x-3.0.95:
+  - try and get the tests to pass
+  - Update user properly from consumerorg webhooks
+  - Update user from member_update
+  8.x-3.0.94: null
+  8.x-3.0.93:
+  - use correct uuid in delete url
+  8.x-3.0.92:
+  - translate role names too
+  8.x-3.0.91: null
+  8.x-3.0.90: null
+  8.x-3.0.89: null
+  8.x-3.0.88: null
+  8.x-3.0.87:
+  - add AUTO_INCREMENT
+  - add AUTO_INCREMENT
+  - make integer unsigned
+  - make sure payment method entity installed
+  8.x-3.0.86: null
+  8.x-3.0.85:
+  - need to check if the table exists before doing the next bit too
+  - only truncate table if it exists
+  8.x-3.0.84:
+  - oops missing translations for new config
+  8.x-3.0.83:
+  - different upgrade code needed
+  8.x-3.0.82:
+  - Integerid (#208)
+  8.x-3.0.81:
+  - fix aria label id for consumerorgs
+  8.x-3.0.80: null
+  8.x-3.0.79:
+  - need to set corg too
+  - dont allow people to invite if only have one role
+  8.x-3.0.78: null
+  8.x-3.0.77:
+  - ensure fields dont overflow payment methods
+  - ensure fields dont overflow payment methods
+  8.x-3.0.76:
+  - only display fields supposed to
+  8.x-3.0.75:
+  - bug in payment method creation
+  8.x-3.0.74:
+  - need to set payment methods on the org
+  8.x-3.0.73:
+  - logic failure adding ref to the corg
+  8.x-3.0.72:
+  - Payment title (#206)
+  8.x-3.0.71:
+  - Fixed multistep form and form errors (#205)
+  8.x-3.0.70:
+  - use the carbon X overflow icon
+  8.x-3.0.69: null
+  8.x-3.0.68:
+  - clear cache on success
+  - need to accept 201 response too
+  8.x-3.0.67: null
+  8.x-3.0.66:
+  - fix display of a single integration
+  - dont allow 2 of the same integration
+  8.x-3.0.65: null
+  8.x-3.0.64:
+  - use title not name
+  - use title not name
+  8.x-3.0.63: null
+  8.x-3.0.62:
+  - get the multi-step form working properly
+  - fix button class
+  8.x-3.0.61: null
+  8.x-3.0.60:
+  - support multiple billing providers
+  - support multiple billing providers
+  8.x-3.0.59:
+  - Update user custom fields from consumerorg webhooks/snapshots (#199)
+  8.x-3.0.58:
+  - missing cancel buttons
+  8.x-3.0.57:
+  - Stop using placeholder payment id (#201)
+  8.x-3.0.56:
+  - Fixed saving payment method name and added todo (#200)
+  8.x-3.0.55:
+  - use SVG from ibm_apim
+  8.x-3.0.54:
+  - no content blocks for views
+  8.x-3.0.53:
+  - styling for payment methods
+  8.x-3.0.52: null
+  8.x-3.0.51:
+  - Fix payment method created and removed name from config (#197)
+  8.x-3.0.50:
+  - monetization schema change
+  - add payment method icons
+  8.x-3.0.49:
+  - add payment method styling
+  8.x-3.0.48:
+  - billing page no payment methods styling
+  8.x-3.0.47:
+  - minor tweak for my org page
+  8.x-3.0.46:
+  - fix test case
+  - myorg page styling
+  8.x-3.0.45:
+  - Submit -> Save
+  8.x-3.0.44:
+  - remove glyph icons
+  8.x-3.0.43:
+  - first pass of styling for the billing tab
+  8.x-3.0.42:
+  - typo fixes
+  8.x-3.0.41:
+  - carbon x header changes (#196)
+  8.x-3.0.40:
+  - changes in apim endpoint
+  8.x-3.0.39:
+  - require a name for payment methods
+  8.x-3.0.38: null
+  8.x-3.0.37: null
+  8.x-3.0.36:
+  - wrong hook names
+  - get the billing stuff working
+  8.x-3.0.35:
+  - remove ajax for now - just use a simple redirect link
+  8.x-3.0.34:
+  - fix tabs on billing page
+  8.x-3.0.33:
+  - make messages translatable
+  8.x-3.0.32: null
+  8.x-3.0.31:
+  - Small fix for default payment method (#193)
+  - Added support for default payment methods and changed a field type (#192)
+  8.x-3.0.30:
+  - Payment method create form displaying in modal (#191)
+  8.x-3.0.29: null
+  8.x-3.0.28:
+  - twig errors
+  - add tests for billing
+  - clear cache when change role
+  8.x-3.0.27: null
+  8.x-3.0.26:
+  - fix templates mk2
+  - fix templates
+  - Get consumerorg metadata before sending custom fields (#188)
+  - add hook to allow additional tabs
+  8.x-3.0.25:
+  - restructure the payment method forms to handle different submodules
+  8.x-3.0.24:
+  - missing copyright statements
+  8.x-3.0.23:
+  - field name was too long!
+  - wrong field ID
+  - syntax error
+  - move the template for billing to the consumerorg module
+  - add storage fields for default payment methods
+  - add impl for deleting payment methods
+  8.x-3.0.22:
+  - add form for deleting payment methods
+  8.x-3.0.21:
+  - fix up the request schema for creating a payment method
+  8.x-3.0.20:
+  - Store customs (#187)
+  8.x-3.0.19:
+  - add default create payment method impl
+  8.x-3.0.18:
+  - render multi-pass form
+  8.x-3.0.17:
+  - fill out payment methods
+  8.x-3.0.16:
+  - put billing tab in place
+  8.x-3.0.15:
+  - remove Rules support from our code
+  8.x-3.0.14:
+  - payment_method access control
+  8.x-3.0.13:
+  - encrypt payment methods at rest (#185)
+  8.x-3.0.12: null
+  8.x-3.0.11: null
+  8.x-3.0.10:
+  - Paymententity (#184)
+  - update payment method entity (#183)
+  8.x-3.0.9:
+  - Allow multiple groups for a corg (#180)
+  8.x-3.0.8:
+  - Added a method for removing tags (#178)
+  8.x-3.0.7: null
+  8.x-3.0.6:
+  - handle captcha not being enabled
+  - add upgrade code to add the captchas
+  8.x-3.0.5:
+  - add captcha support into the invitation form tests
+  8.x-3.0.4:
+  - add honeypot and captcha to invite user form
+  8.x-3.0.3:
+  - comment out unreliable test
+  - make captcha optional
+  - add honeypot for the resend invitation form
+  - add captcha for the resend invitation form
+  8.x-3.0.2:
+  - Accessibility fixes (#176)
+  8.x-3.0.1: null
+  8.x-2.0.14:
+  - update hook documentation
+  - update data passed to delete hooks
+  - add pre and post delete hooks
+  8.x-2.0.13:
+  - copyright date
+  8.x-2.0.12:
+  - remove fall through case for account
+  - use ApicUserStorage service to check members
+  - Update Jenkinsfile
+  - bug 5082
+  8.x-2.0.11:
+  - tiny perf optimisation to delete invitation (#165)
+  8.x-2.0.10:
+  - when delete user also delete their memberships
+  - when delete user also delete their memberships
+  8.x-2.0.9:
+  - Deletes consumer orgs apps when consumer org is deleted
+  8.x-2.0.8: null
+  8.x-2.0.7:
+  - ChangeLogs flipped upside down!
+  8.x-2.0.6: null
+  8.x-2.0.5: null
+  8.x-2.0.4:
+  - use envelope glyph icon
+  - need to ensure org data set correctly
+  - if delete cOrg need to select next one
+  8.x-2.0.3:
+  - force reload of current org permissions after changing owner
+  8.x-2.0.2:
+  - add newly created orgs to the org menu
+  8.x-2.0.1:
+  - Bump Major version in master to differentiate from the service stream
+  8.x-1.2.94:
+  - link to org level analytics missing
+  8.x-1.2.93:
+  - need to update the user when remove them from org
+  8.x-1.2.92:
+  - set sessions permissions on myorg create
+  8.x-1.2.91:
+  - delete resend code since it wont work
+  8.x-1.2.90:
+  - little more defensive
+  - invalidate org menu cache when remove user from org
+  - invalidate org menu cache when remove user from org
+  - removeFullyQualifiedUrls on org create response
+  8.x-1.2.89:
+  - add ability to resend owner invites too and filter out those aleady accepted
+  8.x-1.2.88: null
+  8.x-1.2.87:
+  - add drush command to be able to resend all invitations
+  8.x-1.2.86:
+  - Merge pull request
+  - Logging all the changes between the two successful builds. All the commits since the last successful build are fetched and stored in the ChangeLog.yml file. Commits are also filtered before logging them. Commits that start with 'INT' or 'bump version' are omitted.

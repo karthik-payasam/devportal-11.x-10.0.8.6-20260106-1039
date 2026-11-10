@@ -1,0 +1,457 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Vote Result \"@result_function\" for @plural_label"
+msgstr "Stemresultaat \"@result_function\" voor @plural_label"
+
+msgid "This includes vote result \"@result_function\" for the @plural_label"
+msgstr "Dit is inclusief resultaat \"@result_function\" voor de @plural_label"
+
+msgid "Vote Result \"@result_function\" for @plural_label: @vote_type_label"
+msgstr "Stemresultaat \"@result_function\" voor @plural_label: @vote_type_label"
+
+msgid "This includes vote result \"@result_function\" for the @plural_label voted with @vote_type"
+msgstr "Dit is inclusief resultaat \"@result_function\" voor de @plural_label waarop is gestemd met @vote_type"
+
+msgid "About"
+msgstr "Over"
+
+msgid "VotingAPI helps developers who want to use a standardized API and schema for storing, retrieving and tabulating votes for Drupal content."
+msgstr "VotingAPI is handig voor ontwikkelaars die op zoek zijn naar een standaardiseerde API en een gestandaardiseerd schema voor opslaan, ophalen en tabelleren van stemmen voor Drupal-content."
+
+msgid "Please view the %url page for more details."
+msgstr "Zie de pagina %url voor meer details."
+
+msgid "Voting API"
+msgstr "Stem-API"
+
+msgid "Uses"
+msgstr "Toepassingen"
+
+msgid "General"
+msgstr "Algemeen"
+
+msgid "VotingAPI uses a flexible, easy-to-use framework for rating, voting, moderation, and consensus-gathering modules in Drupal. Module developers use it to focus on their ideas (say, providing a \"rate this thread\" widget at the bottom of each forum post) without worrying about the grunt work of storing votes, preventing ballot-stuffing, calculating the results, and so on."
+msgstr "VotingAPI maakt gebruik van een flexibel, eenvoudig te gebruiken framework voor modules voor beoordeling, stemming, moderatie en consensusverzameling in Drupal. Moduleontwikkelaars gebruiken deze functie om zich te concentreren op hun ideeën (bijvoorbeeld het leveren van een widget \"Deze thread beoordelen\" onderaan elke forumpost) zonder zich druk te maken over het gedoe van het opslaan van stemmen, het voorkomen van stemfraude, het berekenen van de resultaten, enzovoort."
+
+msgid "Basic Concepts and Features"
+msgstr "Basisconcepten en -functies"
+
+msgid "VotingAPI does NOT directly expose any voting mechanisms to end users. It is a framework designed to make life easier for other developers, and to standardize voting data for consumption by other modules (like Views)."
+msgstr "VotingAPI stelt geen stemmechanismen rechtstreeks bloot aan eindgebruikers. Het is een framework ontworpen om het leven voor andere ontwikkelaars gemakkelijker te maken en om stemgegevens te standaardiseren voor consumptie door andere modules (zoals Views)."
+
+msgid "Two kinds of records are stored: individual votes by each user on each piece of content, and cached \"result\" records. The cached records aggregate calculated values like the average vote for a piece of content, how many people voted on it, etc. Each time a user votes, the cached result records are automatically recalculated. This means that no \"on-the-fly\" calculations have to be done when displaying content ratings."
+msgstr "Er worden twee soorten records opgeslagen: afzonderlijke stemmen voor elke gebruiker over elk stuk content en \"result\"-records in de cache. In de in de cache opgeslagen records worden berekende waarden zoals het gemiddelde aantal stemmen voor een stuk content berekend, hoeveel mensen er over hebben gestemd, etc. Telkens als er een gebruiker heeft gestemd, worden de resultaten van de resultaten in de cache automatisch opnieuw berekend. Dit betekent dat er geen \"on-the-fly\"-berekeningen hoeven te worden uitgevoerd bij het afbeelden van contentbeoordelingen."
+
+msgid "Provides a voting API that other modules can make use of."
+msgstr "Een stem-API die door andere modules kan worden gebruikt."
+
+msgid "Voting"
+msgstr "Stemmen"
+
+msgid "Add vote type"
+msgstr "Stemtype toevoegenm"
+
+msgid "Voting API Settings"
+msgstr "Instellingen Stem-API"
+
+msgid "Vote Types"
+msgstr "Stemtypen"
+
+msgid "Configure Voting API."
+msgstr "Stem-API wordt geconfigureerd."
+
+msgid "Manage Vote Types."
+msgstr "Stemtypen beheren."
+
+msgid "Settings"
+msgstr "Instellingen"
+
+msgid "Edit"
+msgstr "Bewerken"
+
+msgid "List"
+msgstr "Lijst"
+
+msgid "Administer Voting API"
+msgstr "Stem-API beheren"
+
+msgid "Allow access to configure Voting API."
+msgstr "Toegang verlenen om Stem-API te configureren."
+
+msgid "Administer Vote Types"
+msgstr "Stemtypen besturen"
+
+msgid "Allow access to create/edit vote types."
+msgstr "Toegang verlenen om stemtypen te maken/bewerken."
+
+msgid "Delete Votes"
+msgstr "Stemmen wissen"
+
+msgid "Allow access to delete any vote."
+msgstr "Toegang verlenen om stemmen te wissen."
+
+msgid "Voting API settings"
+msgstr "Instellingen Stem-API"
+
+msgid "Delete"
+msgstr "Wissen"
+
+msgid "VotingApi settings"
+msgstr "Instellingen VotingApi settings"
+
+msgid "Anonymous vote rollover"
+msgstr "Anonieme stem-rollover"
+
+msgid "Registered user vote rollover"
+msgstr "Beoordelingen van geregistreerde gebruikers meenemen"
+
+msgid "Vote tallying"
+msgstr "Stemtelling"
+
+msgid "Delete everywhere"
+msgstr "Overal wissen"
+
+msgid "Vote Type"
+msgstr "Stemtype"
+
+msgid "Machine-readable name"
+msgstr "Systeemnaam"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "Type of vote value (percentage, points, etc.)"
+msgstr "Type stemwaarde (percentage, punten, etc.)"
+
+msgid "Description"
+msgstr "Beschrijving"
+
+msgid "Voting API widget field settings."
+msgstr "Veldinstellingen voor VotingAPI-widget"
+
+msgid "Vote plugin"
+msgstr "Stemplugin"
+
+msgid "Vote type"
+msgstr "Stemtype"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Result function"
+msgstr "Resultaatfunctie"
+
+msgid "Widget format"
+msgstr "Widgetindeling"
+
+msgid "Default value"
+msgstr "Standaardwaarde"
+
+msgid "VotingAPI tokens"
+msgstr "VotingAPI-tokens"
+
+msgid "Dynamic Tokens for VotingAPI."
+msgstr "Dynamische tokens voor VotingAPI."
+
+msgid "Vote count"
+msgstr "Aantal stemmen"
+
+msgid "Number of votes."
+msgstr "Aantal stemmen."
+
+msgid "Average Result"
+msgstr "Gemiddeld resultaat"
+
+msgid "Average result of votes."
+msgstr "Gemiddeld resultaat van stemmen."
+
+msgid "Best Vote"
+msgstr "Beste stem"
+
+msgid "Best Vote cast."
+msgstr "Beste uitgebrachte stem."
+
+msgid "Worst Vote"
+msgstr "Slechtste stem"
+
+msgid "Worst Vote cast."
+msgstr "Slechtste uitgebrachte stem."
+
+msgid "This module enables tokens for all entity types that has <kbd>voting_api_field</kbd>."
+msgstr "Deze module schakelt tokens in voor alle entiteittypen met <kbd>voting_api_field</kbd>."
+
+msgid "Usage"
+msgstr "Gebruik"
+
+msgid "Tokens are dynamic and you have to pass <emph>vote_type</emph> as the last parameter. Module defines four tokens:"
+msgstr "Tokens zijn dynamisch en u moet <emph>vote_type</emph> doorgeven als laatste parameter. De module definieert vier tokens:"
+
+msgid "<ul><li>Vote count :: <code>[votingapi_ENTITY_TYPE_token:vote_count:VOTE_TYPE]</code></li>"
+msgstr "<ul><li>Aantal stemmen :: <code>[votingapi_ENTITY_TYPE_token:vote_count:VOTE_TYPE]</code></li>"
+
+msgid "<li>Vote average :: <code>[votingapi_ENTITY_TYPE_token:vote_average:VOTE_TYPE]</code></li>"
+msgstr "<li>Stemgemiddelde :: <code>[votingapi_ENTITY_TYPE_token:vote_average:VOTE_TYPE]</code></li>"
+
+msgid "<li>Best vote :: <code>[votingapi_ENTITY_TYPE_token:best_vote:VOTE_TYPE]</code></li>"
+msgstr "<li>Beste stem :: <code>[votingapi_ENTITY_TYPE_token:best_vote:VOTE_TYPE]</code></li>"
+
+msgid "<li>Worst vote :: <code>[votingapi_ENTITY_TYPE_token:worst_vote:VOTE_TYPE]</code></li>"
+msgstr "<li>Slechtste stem :: <code>[votingapi_ENTITY_TYPE_token:worst_vote:VOTE_TYPE]</code></li>"
+
+msgid "Voting API Tokens"
+msgstr "API-tokens voor stemmen"
+
+msgid "Token support for Voting API"
+msgstr "Tokenondersteuning voor stemmen-API"
+
+msgid "Edit %label vote type"
+msgstr "Stemtype %label bewerken"
+
+msgid "The human-readable name of this vote type. This text will be displayed as part of the list on the <em>Add vote type</em> page. This name must be unique."
+msgstr "De voor mensen leesbare naam naam van dit stemtype. Deze tekst wordt weergegeven in de lijst op de pagina <em>Stemtype toevoegen</em>. Deze naam moet uniek zijn."
+
+msgid "A unique machine-readable name for this vote type. It must only contain lowercase letters, numbers, and underscores."
+msgstr "Een machinenaam voor dit stemtype. Moet uitsluitend bestaan uit kleine letters, cijfers en liggende streepjes."
+
+msgid "Value type"
+msgstr "Type waarde"
+
+msgid "The type of value for this vote (percentage, points, etc.)"
+msgstr "Het type waarde voor deze stem (percentage, punten, etc.)"
+
+msgid "Describe this vote type. The text will be displayed on administrative pages."
+msgstr "Geef een beschrijving van het stemtype. De tekst wordt afgebeeld op besturingspagina's."
+
+msgid "Save vote type"
+msgstr "Stemtype opslaan"
+
+msgid "Delete vote type"
+msgstr "Stemtype wissen"
+
+msgid "The vote type %name has been updated."
+msgstr "Het stemtype %name is bijgewerkt."
+
+msgid "The vote type %name has been added."
+msgstr "Het stemtype %name is toegevoegd."
+
+msgid "View"
+msgstr "Bekijken"
+
+msgid "Added vote type %name."
+msgstr "Stemtype %name is toegevoegd."
+
+msgid "Id"
+msgstr "ID"
+
+msgid "Label"
+msgstr "Label"
+
+msgid "No vote types available. <a href=\"@link\">Add vote type</a>."
+msgstr "Geen stemtypen beschikbaar. <a href=\"@link\">Voeg een stemtype toe</a>."
+
+msgid "Generated @vtype votes for @etype entities."
+msgstr "@vtype stemmen voor @etype-entiteiten zijn gegenereerd."
+
+msgid "Rebuilt voting results for @type votes."
+msgstr "Herbouwde stemresultaten voor @type-stemmen."
+
+msgid "Rebuilt voting results for @type id: @entity_id."
+msgstr "Herbouwde stemresultaten voor @type ID: @entity_id."
+
+msgid "Delete @type voting data?"
+msgstr "Stemgegevens van @type wissen?"
+
+msgid "Flushed vote data for @type entities."
+msgstr "Stemgegevens verwijderd voor @type-entiteiten."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "The vote ID."
+msgstr "Het stem-ID."
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "The vote UUID."
+msgstr "Het stem-UUID."
+
+msgid "Type"
+msgstr "Type"
+
+msgid "The vote type."
+msgstr "Het stemtype."
+
+msgid "Entity Type"
+msgstr "Entiteitstype"
+
+msgid "The type from the voted entity."
+msgstr "Het type van de entiteit waarop gestemd is."
+
+msgid "Voted entity"
+msgstr "Entiteit waarop gestemd is"
+
+msgid "The ID from the voted entity"
+msgstr "Het ID van de entiteit waarop gestemd is"
+
+msgid "Value"
+msgstr "Waarde"
+
+msgid "The numeric value of the vote."
+msgstr "De numerieke waarde van de stem."
+
+msgid "Value Type"
+msgstr "Type waarde"
+
+msgid "Authored by"
+msgstr "Opgesteld door"
+
+msgid "The user who submitted the vote."
+msgstr "De gebruiker die de stem heeft uitgebracht."
+
+msgid "Created"
+msgstr "Gemaakt"
+
+msgid "The time that the entity was created."
+msgstr "De tijd waarop de entiteit is gemaakt."
+
+msgid "Vote Source"
+msgstr "Bron van stem"
+
+msgid "The IP address hash from the user who submitted the vote."
+msgstr "Het hash van het IP-adres van de gebruiker die de stem heeft uitgebracht."
+
+msgid "Vote"
+msgstr "Stem"
+
+msgid "Votes"
+msgstr "Stemmen"
+
+msgid "vote"
+msgstr "stem"
+
+msgid "votes"
+msgstr "stemmen"
+
+msgid "The vote result ID."
+msgstr "Het ID van het stemresultaat."
+
+msgid "Function"
+msgstr "Functie"
+
+msgid "Function to apply to the numbers."
+msgstr "Functie die op de aantallen moet worden toegepast."
+
+msgid "Vote result"
+msgstr "Stemresultaat"
+
+msgid "Vote results"
+msgstr "Stemresultaten"
+
+msgid "vote result"
+msgstr "stemresultaat"
+
+msgid "vote results"
+msgstr "stemresultaten"
+
+msgid "Vote Result"
+msgstr "Stemresultaat."
+
+msgid "The Vote Result ID."
+msgstr "Het ID van het stemresultaat."
+
+msgid "Vote types"
+msgstr "Stemtypen"
+
+msgid "vote type"
+msgstr "stemtype"
+
+msgid "vote types"
+msgstr "stemtypen"
+
+msgid "The Vote ID."
+msgstr "Het Stem-ID."
+
+msgid "The amount of time that must pass before two anonymous votes from the same computer are considered unique. Setting this to 'never' will eliminate most double-voting, but will make it impossible for multiple anonymous on the same computer (like internet cafe customers) from casting votes."
+msgstr "De tijd die moet verstrijken voordat twee anonieme stemmen van dezelfde computer als uniek worden beschouwd. Als u dit instelt op 'nooit', worden de meeste dubbele stemmen geëlimineerd, maar wordt het onmogelijk om meerdere anonieme gebruikers op dezelfde computer (zoals  internetcaféklanten) te laten stemmen."
+
+msgid "The amount of time that must pass before two registered user votes from the same user ID are considered unique. Setting this to 'never' will eliminate most double-voting for registered users."
+msgstr "De tijd die moet verstrijken tussen twee geregistreerde beoordelingen van dezelfde gebruikers-ID om als uniek aangemerkt te worden. Als u dit instelt op 'nooit', wordt de meeste dubbele stemmen voor geregistreerde gebruikers geëlimineerd."
+
+msgid "Calculation schedule"
+msgstr "Berekeningsschema"
+
+msgid "On high-traffic sites, administrators can use this setting to postpone the calculation of vote results."
+msgstr "Op sites met druk verkeer kunnen beheerders deze instelling gebruiken om de berekening van stemresultaten uit te stellen."
+
+msgid "Tally results whenever a vote is cast"
+msgstr "Resultaten tellen wanneer er een stem wordt uitgebracht"
+
+msgid "Tally results at cron-time"
+msgstr "Resultaten tellen tijdens cron"
+
+msgid "Do not tally results automatically: I am using a module that manages its own vote results."
+msgstr "Resultaten niet automatisch tellen: Ik gebruik een module die de eigen stemresultaten beheert."
+
+msgid "Allow deleting votes to someone else's entity when owner user of this votes is deleting."
+msgstr "Wissen van de stemmen van iemand anders toestaan als de eigenaar van die stemmen wordt gewist."
+
+msgid "Are you sure you want to delete the vote?"
+msgstr "Weet u zeker dat u de stemming wilt wissen?"
+
+msgid "The vote by %user on @entity-type %label has been deleted."
+msgstr "De stemming van %user op @entity-type %label is gewist."
+
+msgid "You are about to delete a vote by %user on @entity-type %label. This action cannot be undone."
+msgstr "U staat op het punt een stem te verwijderen van %user op @entity-type %label. Dit kan niet meer ongedaan worden gemaakt."
+
+msgid "%type is used by 1 piece of content on your site. You can not remove this vote type until you have removed that vote."
+msgid_plural "%type is used by @count pieces of content on your site. You may not remove %type until you have removed all of the %type votes."
+msgstr[0] "%type wordt door 1 stuk content op uw site gebruikt. U kunt dit stemtype pas verwijderen nadat u die stem hebt verwijderd."
+msgstr[1] "%type wordt op uw site gebruikt door @count stukken content. U kunt %type pas verwijderen nadat u alle stemmen van het type %type hebt verwijderd."
+
+msgid "Average"
+msgstr "Gemiddeld"
+
+msgid "The average vote value."
+msgstr "De gemiddelde stemwaarde."
+
+msgid "Count"
+msgstr "Aantal"
+
+msgid "The number of votes cast."
+msgstr "Het aantal uitgebrachte stemmen."
+
+msgid "Sum"
+msgstr "Som"
+
+msgid "The total of all vote values."
+msgstr "Het totaal van alle stemwaarden."
+
+msgid "Vote ID"
+msgstr "Stem-ID"
+
+msgid "Entity ID"
+msgstr "Entiteit-ID"
+
+msgid "Tag"
+msgstr "Tag"
+
+msgid "User ID"
+msgstr "Gebruikers-ID"
+
+msgid "Timestamp"
+msgstr "Tijdsaanduiding"
+

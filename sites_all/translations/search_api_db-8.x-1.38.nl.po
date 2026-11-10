@@ -1,0 +1,137 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Fulltext field database columns updated."
+msgstr "Databasekolommen voor zoeken in volledige tekst bijgewerkt."
+
+msgid "Primary keys added to all denormalized index tables."
+msgstr "Primaire sleutels toegevoegd aan alle gedenormaliseerde indextabellen."
+
+msgid "Database Search"
+msgstr "Database Search"
+
+msgid "Offers an implementation of the Search API that uses database tables for indexing content."
+msgstr "Vormt een implementatie van de Search API die content indexeert met behulp van databasetabellen."
+
+msgid "Search"
+msgstr "Zoeken"
+
+msgid "Search API DB settings"
+msgstr "DB-instellingen Search API"
+
+msgid "Name of the database we are connecting to"
+msgstr "Naam van de database waarmee verbinding wordt gemaakt"
+
+msgid "Minimum length of indexed words"
+msgstr "Minimumlengte van geïndexeerde woorden"
+
+msgid "The matching mode – \"words\", \"prefix\" or \"partial\""
+msgstr "De overeenkomende modus - \"woorden\", \"prefix\" of \"gedeeltelijke\""
+
+msgid "Autocomplete configuration"
+msgstr "Configuratie automatische aanvulling"
+
+msgid "Suggest suffix"
+msgstr "Suffix voorstellen"
+
+msgid "Suggest words"
+msgstr "Woorden voorstellen"
+
+msgid "Maximum occurrences of a term until autocomplete suggestions ignores it"
+msgstr "Maximum aantal keren dat een term voor mag komen alvorens genegeerd te worden voor suggesties van auto-aanvulling"
+
+msgid "Database Search Defaults"
+msgstr "Database Search Defaults"
+
+msgid "Enable this module for a best-practice default setup of Search API with the Database backend. After installation it is recommended to uninstall this module again for performance reasons. The provided configuration will not be removed."
+msgstr "Schakel deze module is voor best-practice standaardsetup van Search API met het Database-backend. Uit prestatieoverwegingen is het verstandig om deze module na afloop van de installatie weer te verwijderen. De geleverde configuraties worden dan niet verwijderd."
+
+msgid "Database"
+msgstr "Database"
+
+msgid "Select the database key and target to use for storing indexing information in. Cannot be changed after creation."
+msgstr "Selecteer de databasesleutel en het doel voor de opslag van indexeringsgegevens. Na te zijn gemaakt, kan dit niet meer worden gewijzigd."
+
+msgid "Minimum word length"
+msgstr "Minimum woordlengte"
+
+msgid "The minimum number of characters a word must consist of to be indexed"
+msgstr "Het minimumaantal tekens waaruit een woord moet bestaan om in aanmerking te komen voor indexering"
+
+msgid "Partial matching"
+msgstr "Gedeeltelijke matching"
+
+msgid "Match whole words only"
+msgstr "Alleen matching van hele woorden"
+
+msgid "Match on parts of a word"
+msgstr "Matching van delen van een woord"
+
+msgid "Match words starting with given keywords"
+msgstr "Matching van woorden die beginnen met een bepaald trefwoord"
+
+msgid "Autocomplete settings"
+msgstr "Instellingen voor automatisch aanvullen"
+
+msgid "These settings allow you to configure how suggestions are computed when autocompletion is used. If you are seeing many inappropriate suggestions you might want to deactivate the corresponding suggestion type. You can also deactivate one method to speed up the generation of suggestions."
+msgstr "Met deze instellingen geeft u op hoe suggesties moeten worden berekend wanneer auto-aanvulling wordt gebruikt. Als u veel onbruikbare suggesties ziet, is het verstandig om het desbetreffende suggestietype te deactiveren. Het is ook mogelijk om het genereren van suggesties te versnellen door een methode te deactiveren."
+
+msgid "Suggest word endings"
+msgstr "Woordeindes voorstellen"
+
+msgid "Suggest endings for the currently entered word."
+msgstr "Suggesties geven voor het einde van het woord dat op dat moment wordt ingevoerd."
+
+msgid "Suggest additional words"
+msgstr "Extra woorden voorstellen"
+
+msgid "Suggest additional words the user might want to search for."
+msgstr "Suggesties doen voor extra woorden waarop de gebruiker wellicht zou willen zoeken."
+
+msgid "None selected yet"
+msgstr "Nog geen geselecteerd"
+
+msgid "none"
+msgstr "geen"
+
+msgid "Autocomplete suggestions"
+msgstr "Auto-aanvullingssuggesties"
+
+msgid "No valid search keys were present in the query."
+msgstr "Er staan geen geldige zoeksleutels in de query."
+
+msgid "Unknown sort order @order. Assuming \"@default\"."
+msgstr "Onbekende sorteervolgorde @order. Uitgaande van \"@default\"."
+
+msgid "Unknown facet field @field."
+msgstr "Onbekend facetveld @field."
+
+msgid "Facets on location fields are currently not supported."
+msgstr "Facetten op locatievelden worden momenteel niet ondersteund."
+
+msgid "Unknown field @field: please check (and re-save) the index's fields settings."
+msgstr "Onbekend veld @field: controleer de veldinstellingen van de index (en sla ze opnieuw op)."
+
+msgid "An overlong word (more than 50 characters) was encountered while indexing: %word.<br />Since database search servers currently cannot index words of more than 50 characters, the word was truncated for indexing. If this should not be a single word, please make sure the \"Tokenizer\" processor is enabled and configured correctly for index %index."
+msgstr "Er is een lang woord (meer dan 50 tekens) aangetroffen tijdens het indexeren: %word.<br />Omdat de zoekservers van de database momenteel geen woorden van meer dan 50 tekens kunnen indexeren, is het woord afgekapt voor het indexeren. Als dit geen enkel woord mag zijn, controleer dan of de \"Tokenizer\"-processor is ingeschakeld en correct geconfigureerd voor index %index."
+
+msgid "An overlong value (more than 255 characters) was encountered while indexing: %value.<br />Database search servers currently cannot index such values correctly – the value was therefore trimmed to the allowed length."
+msgstr "Er is een overlange waarde (meer dan 255 tekens) aangetroffen tijdens het indexeren: %value.<br />Database-zoekservers kunnen deze waarden momenteel niet correct indexeren-de waarde is daarom ingekort tot de toegestane lengte."
+
+msgid "Error while adding facets: only \"item_id\" field should be used, used are: @fields."
+msgstr "Fout bij het toevoegen van facetten: alleen \"item_id\" moet worden gebruikt, gebruikt zijn: @fields."
+
+msgid "Indexes items in the database. Supports several advanced features, but should not be used for large sites."
+msgstr "Hiermee worden items in de database geïndexeerd. Ondersteunt diverse geavanceerde functies, maar kan beter niet worden gebruikt voor grote sites."
+

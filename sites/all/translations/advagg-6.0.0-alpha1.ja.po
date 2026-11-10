@@ -1,0 +1,1110 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Keep all Advagg settings but disable all functionality."
+msgstr "AdvAgg のすべての設定は保持しますが、機能はすべて無効にします。"
+
+msgid "Restore all Advagg functionality if disabled."
+msgstr "無効になっている場合に、すべての AdvAgg 機能を復元します。"
+
+msgid "Run the advagg cron hook. This will clear out all stale advagg aggregated files, remove aggregates that include missing files, and remove unused aggregates."
+msgstr "Advagg cron フックを実行します。 これにより、失効しているすべての AdvAgg 集約ファイルが消去され、欠落ファイルを含む集約が削除され、使用されていない集約が削除されます。"
+
+msgid "Remove all generated files. Useful if you think some of the generated files got corrupted and thus need to be deleted."
+msgstr "生成されたすべてのファイルを削除します。 生成されたファイルの一部が破損して、削除する必要があると思われる場合に有用です。"
+
+msgid "Force the creation of all new optimized files by incrementing a global counter. Current value of counter: %value. This is may be useful if a CDN has cached an something incorrectly as it will force new ones to be used even if nothing else has changed."
+msgstr "グローバル・カウンターを増やすことで、まったく新しい最適化ファイルが強制的に作成されるようにします。 カウンターの現行値: %value。 この機能は、CDN で何らかの内容が誤ってキャッシュされた場合に有用です。これを使用することで、他に変更された部分がない場合でも新しいファイルが強制的に使用されるためです。"
+
+msgid "Run the advagg cron hook."
+msgstr "Advagg cron フックを実行します。"
+
+msgid "Disable Advagg."
+msgstr "Advaggを無効にします。"
+
+msgid "Enable Advagg."
+msgstr "Advaggを有効にします。"
+
+msgid "Remove all generated files."
+msgstr "生成されたすべてのファイルを削除します。"
+
+msgid "Force the creation of all new files by incrementing a global counter."
+msgstr "グローバル・カウンターを増やすことで、まったく新しい最適化ファイルが強制的に作成されます。"
+
+msgid "All Advagg functionality is disabled."
+msgstr "Advagg のすべての機能が無効になっています。"
+
+msgid "All Advagg functionality is enabled."
+msgstr "Advagg のすべての機能が有効になっています。"
+
+msgid "Global counter is now set to @new_value"
+msgstr "グローバル・カウンターは現在 @new_value に設定されています"
+
+msgid "All AdvAgg optimized files have been deleted. %css_count CSS files and %js_count JS files have been removed."
+msgstr "すべてのAdvAgg最適化ファイルが削除されました。%css_count 個のCSSファイルと %js_count 個のJSファイルが削除されました。"
+
+msgid "All stale aggregates have been deleted. %css_count CSS files and %js_count JS files have been removed."
+msgstr "すべての失効した集約が削除されました。%css_count 個のCSS ファイルと %js_count 個のJSファイルが削除されました。"
+
+msgid "No stale aggregates found. Nothing was deleted."
+msgstr "失効した集約が見つかりません。 何も削除されませんでした。"
+
+msgid "NOTE: If you wish to bypass AdvAgg optimizations for a set amount of time, you can go to the <a href=\"@operations\">AdvAgg operations</a> page and press the <em>\"optimization bypass cookie\"</em> button."
+msgstr "注: 時間を設定してその間AdvAggの最適化をバイパスする場合は、「<a href=\"@operations\">AdvAggの操作</a>」ページに移動し、<em>「最適化バイパスCookie」</em>ボタンを押します。"
+
+msgid "You can also selectively bypass AdvAgg optimization by adding <code>@code</code> to the URL of any page."
+msgstr "どのページについてもその URL に <code>@code</code> を追加することで、AdvAgg の最適化を選択的にバイパスすることもできます。"
+
+msgid "You do not have the <a href=\"@permission\">bypass advanced aggregation permission</a> so adding <code>@code</code> to the URL will not work at this time for you; either grant this permission to your user role or use the bypass cookie if you wish to selectively bypass AdvAgg optimizations."
+msgstr "<a href=\"@permission\">Advanced Aggregation のバイパス権限</a>がないため、現在は <code>@code</code> を URL に追加しても機能しません。AdvAgg の最適化を選択的にバイパスする必要がある場合は、この権限を自分のユーザー・ロールに付与するか、バイパス Cookie を使用してください。"
+
+msgid "The AdvAgg bypass cookie is currently enabled. Turn it off by going to the <a href=\"@advagg_operations\">AdvAgg Operations</a> page and clicking the <em>Toggle the \"aggregation bypass cookie\" for this browser</em> button."
+msgstr "AdvAgg バイパス Cookie が現在有効になっています。 「<a href=\"@advagg_operations\">AdvAggの操作</a>」ページに移動し、<em>「このブラウザーの「集約バイパスCookie」を切り替える」</em> ボタンをクリックして、この設定をオフにしてください。"
+
+msgid "The AdvAgg bypass cookie is currently enabled. Turn it off by <a href=\"@login\">logging in</a> with a user with the \"administer site configuration\" permissions and going to the <a herf=\"@advagg_operations\">AdvAgg Operations page</a> and clicking the <em>Toggle the \"aggregation bypass cookie\" for this browser</em> button."
+msgstr "AdvAgg バイパス Cookie が現在有効になっています。 「サイト構成の管理」権限を持つユーザーで<a href=\"@login\">ログイン</a>し、「<a herf=\"@advagg_operations\">AdvAggの操作ページ</a>」に移動して、<em>「このブラウザーの「集約バイパスCookie」を切り替える」</em>ボタンをクリックし、この設定をオフにしてください。"
+
+msgid "0 sec"
+msgstr "0秒"
+
+msgid "AdvAgg Bypass Cookie Removed"
+msgstr "AdvAgg バイパス Cookie が削除されました"
+
+msgid "AdvAgg Bypass Cookie Set for @time."
+msgstr "AdvAgg バイパス Cookie が @time に設定されました。"
+
+msgid "1 year"
+msgid_plural "@count years"
+msgstr[0] "@count 年"
+
+msgid "1 month"
+msgid_plural "@count months"
+msgstr[0] "@count カ月"
+
+msgid "1 week"
+msgid_plural "@count weeks"
+msgstr[0] "@count 週間"
+
+msgid "1 day"
+msgid_plural "@count days"
+msgstr[0] "@count 日"
+
+msgid "1 hour"
+msgid_plural "@count hours"
+msgstr[0] "@count 時間"
+
+msgid "1 min"
+msgid_plural "@count min"
+msgstr[0] "@count 分"
+
+msgid "1 sec"
+msgid_plural "@count sec"
+msgstr[0] "@count 秒"
+
+msgid "Advanced CSS/JS Aggregation"
+msgstr "Advanced CSS/JS Aggregation"
+
+msgid "Aggregates multiple CSS/JS files in a way that prevents 404 from happening when accessing a CSS or JS file."
+msgstr "CSS ファイルまたは JS ファイルにアクセスするときに 404 が発生しない方法で、複数の CSS/JS ファイルを集約します。"
+
+msgid "AdvAgg"
+msgstr "AdvAgg"
+
+msgid "Information"
+msgstr "情報"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "AdvAgg settings."
+msgstr "AdvAggの設定。"
+
+msgid "Display AdvAgg system information."
+msgstr "AdvAgg システム情報を表示します。"
+
+msgid "Perform AdvAgg operations."
+msgstr "AdvAgg の操作を実行します。"
+
+msgid "Configuration"
+msgstr "構成"
+
+msgid "Bypass advanced aggregation"
+msgstr "拡張集約をバイパス"
+
+msgid "User can use URL query strings to bypass AdvAgg."
+msgstr "ユーザーは URL 照会ストリングを使用して AdvAgg をバイパスできます。"
+
+msgid "AdvAgg: Configuration"
+msgstr "AdvAgg: 構成"
+
+msgid "AdvAgg: Information"
+msgstr "AdvAgg: 情報"
+
+msgid "AdvAgg: Operations"
+msgstr "AdvAgg: 操作"
+
+msgid "AdvAgg Bundler"
+msgstr "AdvAgg Bundler"
+
+msgid "Customize the number of aggregates to be created."
+msgstr "作成する集約の数をカスタマイズします。"
+
+msgid "Bundler"
+msgstr "バンドラー"
+
+msgid "AdvAgg Bundler settings."
+msgstr "AdvAgg Bundler の設定。"
+
+msgid "AdvAgg: Bundler"
+msgstr "AdvAgg: バンドラー"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Whether to run the bundler options."
+msgstr "バンドラー・オプションを実行するかどうか。"
+
+msgid "Settings for CSS bundling."
+msgstr "CSS バンドリングの設定。"
+
+msgid "Maximum target css aggregates."
+msgstr "ターゲット CSS 集約の最大数。"
+
+msgid "The logic to use for bundling the CSS Files."
+msgstr "CSS ファイルのバンドリングに使用するロジック。"
+
+msgid "Settings for JavaScript bundling."
+msgstr "JavaScript バンドリングの設定"
+
+msgid "Maximum target JavaScript aggregates."
+msgstr "ターゲット JavaScript 集約の最大数。"
+
+msgid "The logic to use for bundling the JS Files."
+msgstr "JS ファイルのバンドリングに使用するロジック。"
+
+msgid "Bundler is Active"
+msgstr "バンドラーはアクティブです"
+
+msgid "If not checked, the bundler will not split up aggregates."
+msgstr "チェック・マークを付けない場合、バンドラーは集約を分割しません。"
+
+msgid "CSS Bundling options."
+msgstr "CSS バンドリング・オプション。"
+
+msgid "Target Number Of CSS Bundles Per Page"
+msgstr "ページ当たりの CSS バンドルのターゲット数"
+
+msgid "If 0 is selected then the bundler is disabled"
+msgstr "0 を選択すると、バンドラーは無効になります"
+
+msgid "Grouping logic"
+msgstr "グループ化ロジック"
+
+msgid "File count"
+msgstr "ファイル・カウント"
+
+msgid "File size"
+msgstr "ファイル・サイズ"
+
+msgid "If file count is selected then each bundle will try to have a similar number of original files aggregated inside of it. If file size is selected then each bundle will try to have a similar file size."
+msgstr "ファイル・カウントが選択された場合、各バンドルでは、その内部に類似した数のオリジナル・ファイルを集約しようと試みられます。 ファイル・サイズが選択された場合、各バンドルでは、類似したファイル・サイズを設定しようと試みられます。"
+
+msgid "JavaScript Bundling options."
+msgstr "JavaScript バンドリング・オプション。"
+
+msgid "Target Number Of JS Bundles Per Page"
+msgstr "ページ当たりの JS バンドルのターゲット数"
+
+msgid "AdvAgg CDN"
+msgstr "AdvAgg CDN"
+
+msgid "Use a shared CDN for JavaScript and/or CSS libraries, Google Libraries API currently."
+msgstr "JavaScript ライブラリーまたは CSS ライブラリー (あるいはこの両方) に共有 CDN を使用します。現在は Google Libraries API です。"
+
+msgid "AdvAgg CSS Minify"
+msgstr "AdvAgg CSS Minify"
+
+msgid "AdvAgg CSS Minification is disabled."
+msgstr "AdvAgg の CSS ミニファイは無効です。"
+
+msgid "Go to the <a href=\"@settings\">AdvAgg Minify CSS settings page</a> and select a minifier, or go to the <a href=\"@modules\">modules page</a> and disable the \"AdvAgg Minify CSS\" module."
+msgstr "「<a href=\"@settings\">AdvAgg Minify CSS」の設定ページ</a>に移動してミニファイヤーを選択するか、<a href=\"@modules\">「モジュール」ページ</a>に移動して「AdvAgg Minify CSS」モジュールを無効にします。"
+
+msgid "AdvAgg Minify CSS"
+msgstr "AdvAgg Minify CSS"
+
+msgid "Minify CSS."
+msgstr "CSS をミニファイします。"
+
+msgid "CSS Minification"
+msgstr "CSS ミニファイ"
+
+msgid "AdvAgg CSS minification settings."
+msgstr "AdvAgg CSS ミニファイの設定。"
+
+msgid "AdvAgg: CSS Minification"
+msgstr "AdvAgg: CSS ミニファイ"
+
+msgid "Which minifier to use. 0 is Disabled."
+msgstr "使用するミニファイヤー。 0 は「無効」を表します。"
+
+msgid "Add licensing information to aggregates for individual source files."
+msgstr "個々のソース・ファイルの集約にライセンス情報を追加します。"
+
+msgid "The settings below will not have any effect because AdvAgg is currently in <a href=\"@devel\">development mode</a>. Once the cache settings have been set to a non-development level, CSS minification will take place."
+msgstr "AdvAgg は現在<a href=\"@devel\">開発モード</a>であるため、以下の設定は機能しません。 キャッシュ設定が非開発レベルに設定された後に、CSS ミニファイが行われます。"
+
+msgid "Disabled"
+msgstr "無効"
+
+msgid "Core"
+msgstr "コア"
+
+msgid "YUI Compressor"
+msgstr "YUI Compressor"
+
+msgid "Minification: Select a minifier"
+msgstr "ミニファイ: ミニファイヤーを選択します"
+
+msgid "Add licensing comments"
+msgstr "ライセンス・コメントを追加"
+
+msgid ""
+"If unchecked, the Advanced Aggregation module's licensing comments\n"
+"      will be omitted from the aggregated files. Omitting the comments will produce somewhat better scores in\n"
+"      some automated security scans but otherwise should not affect your site. These are included by default in order to better follow the spirit of the GPL by providing the source for javascript files."
+msgstr ""
+"チェック・マークを外すと、集約ファイルではAdvanced Aggregationモジュールの\n"
+"      ライセンス・コメントが省略されます。 コメントを省略することで一部の自動化セキュリティー・スキャンでのスコアが\n"
+"      多少向上しますが、それ以外にはサイトへの影響はありません。 ライセンス・コメントはデフォルトで組み込まれており、JavaScript ファイルのソースを提供することで GPL の理念への準拠性を向上します。"
+
+msgid "Advagg External Minification: PHP shell_exec"
+msgstr "Advagg External Minification: PHP shell_exec"
+
+msgid "PHP shell_exec is non-functional."
+msgstr "PHP shell_exec は機能していません。"
+
+msgid "Check php.ini for safemode or <a href=\"@link\" target=\"_blank\">disable_functions</a>."
+msgstr "php.ini を調べて、safemode または <a href=\"@link\" target=\"_blank\">disable_functions</a> を探します。"
+
+msgid "Enabled"
+msgstr "有効"
+
+msgid "AdvAgg External Minification"
+msgstr "AdvAgg External Minification"
+
+msgid "Minify Javascript and/or CSS with a command line minifier."
+msgstr "コマンド・ライン・ミニファイヤーを使用して Javascript または CSS (あるいはその両方) をミニファイします。"
+
+msgid "External Minification"
+msgstr "External Minification"
+
+msgid "AdvAgg external minification settings."
+msgstr "Advagg External Minification の設定。"
+
+msgid "AdvAgg: External Minifiers"
+msgstr "AdvAgg: 外部ミニファイヤー"
+
+msgid "Command line for external CSS minification."
+msgstr "外部 CSS ミニファイ用のコマンド・ライン。"
+
+msgid "Whether to use the external CSS minifier if configured."
+msgstr "外部 CSS ミニファイヤーが構成されている場合に、それを使用するかどうか。"
+
+msgid "Command line for external JavaScript minification."
+msgstr "外部 JavaScript ミニファイ用のコマンド・ライン。"
+
+msgid "Whether to use the external JS minifier if configured."
+msgstr "外部 JS ミニファイヤーが構成されている場合に、それを使用するかどうか。"
+
+msgid "CSS"
+msgstr "CSS"
+
+msgid "JavaScript"
+msgstr "JavaScript"
+
+msgid "Command Line"
+msgstr "コマンド・ライン"
+
+msgid "{%CWD%} = \\Drupal::root(). <br /> {%IN%} = input file. <br /> {%IN_URL_ENC%} = url pointing to the input file that has been url encoded. <br /> {%OUT%} = output file. <br /><br />"
+msgstr "{%CWD%} = \\Drupal::root()。<br /> {%IN%} = 入力ファイル。<br /> {%IN_URL_ENC%} = URLエンコードされた入力ファイルを指す。<br /> {%OUT%} = 出力ファイル。<br /><br />"
+
+msgid "Example using the <a href=\"@link1\">Microsoft Ajax Minifier</a>. <p><code>@code1</code></p>"
+msgstr "<a href=\"@link1\">Microsoft Ajax Minifier</a>使用の例。<p><code>@code1</code></p>"
+
+msgid "Example using the <a href=\"@link1\">Google Closure Compiler</a>. <p><code>@code1</code></p>"
+msgstr "<a href=\"@link1\">Google Closure Compiler</a>使用の例。<p><code>@code1</code></p>"
+
+msgid "Example using curl to minify via the <a href=\"@link1\">Online Google Closure Compiler</a>. <p><code>@code1</code></p>"
+msgstr "curlを使用して<a href=\"@link1\">オンラインのGoogle Closure Compiler</a>によってミニファイする例。<p><code>@code1</code></p>"
+
+msgid "Example using the <a href=\"@link1\">YUI Compressor</a>. <p><code>@code1</code></p>"
+msgstr "<a href=\"@link1\">YUI Compressor</a>使用の例。<p><code>@code1</code></p>"
+
+msgid "Example using curl to minify via an online <a href=\"@link1\">CSS Minifier</a>. <p><code>@code1</code></p>"
+msgstr "curlを使用してオンラインの<a href=\"@link1\">CSS Minifier</a>によってミニファイする例。<p><code>@code1</code></p>"
+
+msgid "Command to run"
+msgstr "実行するコマンド"
+
+msgid "Enable external @type minification"
+msgstr "外部 @type ミニファイを有効化"
+
+msgid "AdvAgg JS Minify"
+msgstr "AdvAgg JS Minify"
+
+msgid "AdvAgg JS Minification is disabled."
+msgstr "AdvAgg の JS ミニファイが無効です。"
+
+msgid "Go to the <a href=\"@settings\">AdvAgg Minify JavaScript settings page</a> and select a minifier, or go to the <a href=\"@modules\">modules page</a> and disable the \"AdvAgg Minify Javascript\" module."
+msgstr "「<a href=\"@settings\">AdvAgg Minify JavaScript」の設定ページ</a>に移動してミニファイヤーを選択するか、<a href=\"@modules\">「モジュール」ページ</a>に移動して「AdvAgg Minify Javascript」モジュールを無効にします。"
+
+msgid "AdvAgg Minify JavaScript"
+msgstr "AdvAgg Minify JavaScript"
+
+msgid "Minify JavaScript with a 3rd party minifier; JSMin+, JSMin c ext, JShrink, and JSqueeze currently."
+msgstr "サード・パーティーのミニファイヤー (現在は、JSMin+、JSMin c ext、JShrink、および JSqueeze) を使用して JavaScript をミニファイします。"
+
+msgid "JavaScript Minification"
+msgstr "JavaScript ミニファイ"
+
+msgid "AdvAgg JavaScript minification settings."
+msgstr "AdvAgg の JavaScript ミニファイの設定。"
+
+msgid "AdvAgg: JS Minification"
+msgstr "AdvAgg: JS ミニファイ"
+
+msgid "Minifier to use. 0 is disabled."
+msgstr "使用するミニファイヤー。 0 は「無効」を表します。"
+
+msgid "Upper bound comparison value for the minification ratio test."
+msgstr "ミニファイ率テストの上限比較値。"
+
+msgid "Lower bound comparison value for the minification ratio test."
+msgstr "ミニファイ率テストの下限比較値。"
+
+msgid "The jsmin function does not exist. Using JSqueeze."
+msgstr "JSMin 関数は存在しません。 JSqueeze を使用しています。"
+
+msgid "JSMin had a possible error minifying: @file, correcting."
+msgstr "JSMin で @file のミニファイ中にエラーが発生した可能性があります。修正しています。"
+
+msgid "JSMin had an error minifying file: @file, attempting to correct."
+msgstr "JSMin でファイル @file のミニファイ中にエラーが発生しました。修正を試みています。"
+
+msgid "The currently installed jsmin version does not handle multibyte characters, you may consider to upgrade the jsmin extension. Using JSqueeze fallback."
+msgstr "現在インストールされている JSMin のバージョンではマルチバイト文字は処理されません。JSMin 拡張機能へのアップグレードを検討してください。 JSqueeze フォールバックを使用しています。"
+
+msgid "The settings below will not have any effect because AdvAgg is currently in <a href=\"@devel\">development mode</a>. Once the cache settings have been set to a non-development level, JS minification will take place."
+msgstr "AdvAgg は現在<a href=\"@devel\">開発モード</a>であるため、以下の設定は機能しません。 キャッシュ設定が非開発レベルに設定された後に、JS ミニファイが行われます。"
+
+msgid "JSMin+ ~1300ms"
+msgstr "JSMin+ 約 1300ms"
+
+msgid "JShrink ~1000ms"
+msgstr "JShrink 約 1000ms"
+
+msgid "JSqueeze ~600ms"
+msgstr "JSqueeze 約 600ms"
+
+msgid "JSMin ~2ms"
+msgstr "JSMin 約 2ms"
+
+msgid "JSMin is the very fast C complied version. Recommend using it."
+msgstr "JSMin は非常に高速な C コンパイル・バージョンです。 この使用をお勧めします。"
+
+msgid "You can use the much faster C version of JSMin (~2ms) by installing the <a href=\"@php_jsmin\">JSMin PHP Extension</a> on this server."
+msgstr "このサーバーに <a href=\"@php_jsmin\">JSMin PHP Extension</a> をインストールすると、非常に高速な C バージョンの JSMin (~2ms) を使用できます。"
+
+msgid "AdvAgg Modifier"
+msgstr "AdvAgg Modifier"
+
+msgid "Allows one to alter the CSS and JS array."
+msgstr "CSS と JS の配列を変更できます。"
+
+msgid "Modifications"
+msgstr "変更"
+
+msgid "AdvAgg Modifications."
+msgstr "AdvAgg の変更。"
+
+msgid "AdvAgg: Modifications"
+msgstr "AdvAgg: 変更"
+
+msgid "Default value to adjust the sorting of browser conditional CSS."
+msgstr "ブラウザーの条件付き CSS のソートを調整するデフォルト値。"
+
+msgid "Default value to adjust the sorting of external CSS."
+msgstr "外部 CSS のソートを調整するデフォルト値。"
+
+msgid "Default value to use JavaScript to defer CSS loading."
+msgstr "JavaScript を使用して CSS のロードを延期するデフォルト値。"
+
+msgid "Whether to defer loading of CSS on the admin theme."
+msgstr "管理テーマで CSS のロードを延期するかどうか。"
+
+msgid "Whether to also defer loading of external stylesheets."
+msgstr "外部スタイルシートのロードも延期するかどうか。"
+
+msgid "Default value of the inclusion method for the loadCSS code."
+msgstr "loadCSS コードの組み込み方式のデフォルト値。"
+
+msgid "Default value to turn on preprocessing for all CSS files."
+msgstr "すべての CSS ファイルのプリプロセッシングをオンにするデフォルト値。"
+
+msgid "Default value to translate the content attributes of CSS files."
+msgstr "CSS ファイルのコンテンツ属性を変換するデフォルト値。"
+
+msgid "Default value to adjust the sorting of external JavaScript"
+msgstr "外部 JavaScript のソートを調整するデフォルト値"
+
+msgid "Default value to adjust the sorting of browser conditional JavaScript."
+msgstr "ブラウザーの条件付き JavaScript のソートを調整するデフォルト値。"
+
+msgid "Default value to have async on all JS script tags."
+msgstr "すべての JS スクリプト・タグで非同期を設定するデフォルト値。"
+
+msgid "Default value to move async js to the header."
+msgstr "async js をヘッダーに移動するデフォルト値。"
+
+msgid "Default value to add the defer tag to all script tags."
+msgstr "すべてのスクリプト・タグに defer タグを追加するデフォルト値。"
+
+msgid "Default value to move all JS to the footer."
+msgstr "すべての JS をフッターに移動するデフォルト値。"
+
+msgid "Default value to turn on preprocessing for all JavaScript files."
+msgstr "すべての JavaScript ファイルのプリプロセッシングをオンにするデフォルト値。"
+
+msgid "Remove console.log() calls from JavaScript files."
+msgstr "JavaScript ファイルから console.log() 呼び出しを削除します。"
+
+msgid "Default value to use the prefetch tag for certain domains."
+msgstr "特定のドメインにプリフェッチ・タグを使用するデフォルト値。"
+
+msgid "Use one css/js directory for a multi-site."
+msgstr "マルチサイトに対して 1 つの css/js ディレクトリーを使用します。"
+
+msgid "@before"
+msgstr "@before"
+
+msgid "JS"
+msgstr "JS"
+
+msgid "Enable preprocess on all JS"
+msgstr "すべての JS でプリプロセスを有効にする"
+
+msgid "Force all JavaScript to have the preprocess attribute be set to TRUE. All JavaScript files will be aggregated if enabled."
+msgstr "すべての JavaScript で強制的にプリプロセス属性を TRUE に設定します。 有効にすると、すべての JavaScript ファイルが集約されます。"
+
+msgid "Remove console logging from JS files."
+msgstr "JS ファイルからコンソール・ロギングを削除します。"
+
+msgid "Harmless under most cases, but may make debugging difficult. WARNING: experimental."
+msgstr "ほとんどの状況下では無害ですが、デバッグが難しくなる場合があります。 警告: 試験用。"
+
+msgid "Optimize JavaScript Ordering"
+msgstr "JavaScript の順序付けの最適化"
+
+msgid "The settings in here might change the order in which the JavaScript is loaded. It will move the scripts around so that more optimal aggregates are built. In most cases enabling these checkboxes will cause no negative side effects."
+msgstr "これらの設定によって、JavaScript のロード順序が変わる場合があります。 これにより、スクリプトがさまざまな位置に移動され、より最適な集約が作成されるようになります。 ほとんどの場合、これらのチェック・ボックスを有効にしても有害な副作用は生じません。"
+
+msgid "Move all external scripts to the top of the execution order"
+msgstr "すべての外部スクリプトを実行順序の先頭に移動"
+
+msgid "This will group all external JavaScript files to be above all other JavaScript."
+msgstr "これにより、すべての外部 JavaScript ファイルが他の JavaScript より上でグループ化されます。"
+
+msgid "Move all browser conditional JavaScript to the bottom of the group"
+msgstr "すべてのブラウザーの条件付き JavaScript をグループの末尾に移動"
+
+msgid "This will group all browser conditional JavaScript to be in the lowest group of that conditional rule."
+msgstr "これにより、すべてのブラウザーの条件付き JavaScript がその条件付きルールの一番下のグループにまとめられます。"
+
+msgid "Adjust javascript location and execution"
+msgstr "JavaScript の場所と実行の調整"
+
+msgid "Most of the time adjusting the settings are safe but in some rare cases adjusting these can cause serious JavaScript issues with your site."
+msgstr "これらの設定を調整してもほとんどの場合は安全性に問題はありませんが、まれに、これらを調整することでサイトで重大な JavaScript の問題が発生する場合があります。"
+
+msgid "Deferred JavaScript Execution: Add The defer Tag To All Script Tags"
+msgstr "JavaScript の実行の延期: すべてのスクリプト・タグに defer タグを追加"
+
+msgid "All but external scripts"
+msgstr "外部スクリプト以外のすべて"
+
+msgid "All (might break things)"
+msgstr "すべて (実行が中断される可能性あり)"
+
+msgid "This will delay the script execution until the HTML parser has finished. This will have a similar effect to moving all JavaScript to the footer. This might break javascript (especially inline); only use after extensive testing! <a href=\"@link\">More Info</a>"
+msgstr "これを使用すると、HTML パーサーが終了するまでスクリプトの実行が延期されます。 この場合、すべての JavaScript をフッターに移動した場合と同様の結果が生じます。 これにより、JavaScript (特にインライン) が中断される可能性があります。使用は大規模なテストの後のみにしてください! <a href=\"@link\">詳細情報</a>"
+
+msgid "Experimental Settings"
+msgstr "試験的な設定"
+
+msgid "Here there be dragons! Asynchronous JavaScript Execution: Add The async Tag To All Script Tags"
+msgstr "問題が起こる可能性があります! JavaScript の非同期実行: すべてのスクリプト・タグに非同期タグを追加"
+
+msgid "This will cause the script to be downloaded in the background and executed out of order. This will break most javascript as most code is not async safe; only use after extensive testing! <a href=\"@link\">More Info</a>"
+msgstr "これを使用すると、スクリプトがバックグラウンドでダウンロードされ、順不同で実行されます。 コードの大半は非同期に対応していないため、これによりほとんどの JavaScript が中断します。使用は大規模なテストの後のみにしてください! <a href=\"@link\">詳細情報</a>"
+
+msgid "Asynchronous JavaScript Execution: Group together in the header"
+msgstr "非同期 JavaScript の実行: ヘッダー内にグループ化"
+
+msgid "This will move all async JavaScript code to the header in the same group."
+msgstr "これを使用すると、すべての非同期 JavaScript コードが同じグループ内のヘッダーに移動されます。"
+
+msgid "Enable preprocess on all CSS"
+msgstr "すべての CSS でプリプロセスを有効にする"
+
+msgid "Force all CSS to have the preprocess attribute be set to TRUE. All CSS files will be aggregated if enabled."
+msgstr "すべての CSS で強制的にプリプロセス属性を TRUE に設定します。 有効にすると、すべての CSS ファイルが集約されます。"
+
+msgid "You might want to increase the <a href=\"@link\">CSS Bundles Per Page</a> if this is checked."
+msgstr "これにチェック・マークを付けた場合は、<a href=\"@link\">ページ当たりの CSS バンドル数</a>を増やすことが必要になる場合があります。"
+
+msgid "Translate CSS content strings"
+msgstr "CSS コンテンツ・ストリングの変換"
+
+msgid "Run strings inside of quotes of the content attribute through the <a href=\"@t\">t() function</a>. An alternative to this can be found in this <a href=\"@post\">blog post</a>."
+msgstr "コンテンツ属性の引用符の中のストリングを <a href=\"@t\">t() 関数</a> を使用して実行します。 これに代わる方法については、こちらの<a href=\"@post\">ブログ投稿</a>を参照してください。"
+
+msgid "Optimize CSS Ordering"
+msgstr "CSS の順序付けの最適化"
+
+msgid "The settings in here might change the order in which the CSS is loaded. It will move the CSS around so that more optimal aggregates are built. In most cases enabling these checkboxes will cause no negative side effects."
+msgstr "これらの設定によって、CSS のロード順序が変わる場合があります。 これにより、CSS がさまざまな位置に移動され、より最適な集約が作成されるようになります。 ほとんどの場合、これらのチェック・ボックスを有効にしても有害な副作用は生じません。"
+
+msgid "Move all external CSS to the top of the execution order"
+msgstr "すべての外部 CSS を実行順序の先頭に移動"
+
+msgid "This will group all external CSS files to be above all other CSS."
+msgstr "これにより、すべての外部 CSS ファイルが他の CSS より上でグループ化されます。"
+
+msgid "Move all browser conditional CSS to the bottom of the group"
+msgstr "すべてのブラウザーの条件付き CSS をグループの末尾に移動"
+
+msgid "This will group all browser conditional CSS to be in the lowest group of that conditional rule."
+msgstr "これにより、すべてのブラウザーの条件付き CSS がその条件付きルールの一番下のグループにまとめられます。"
+
+msgid "Adjust CSS location and execution (Experimental)"
+msgstr "CSS の場所と実行の調整 (試験用)"
+
+msgid "Deferred CSS Execution: Use JS to load CSS"
+msgstr "CSS の実行の延期: JS を使用して CSS をロード"
+
+msgid "Enabled (In head)"
+msgstr "有効 (ヘッド内)"
+
+msgid "This will try to optimize CSS delivery by using JavaScript to load the CSS. This might break CSS on different browsers and will cause a flash of unstyled content (FOUC). Only enable after extensive testing! <a href=\"@link\">More Info</a>"
+msgstr "これを使用すると、CSS のロードに JavaScript を使用することで、CSS の配信の最適化が試みられます。 これにより、さまざまなブラウザーで CSS が中断される可能性があり、flash of unstyled content (FOUC) という表示の不備が発生します。 これを有効にするのは、大規模なテストの後のみにしてください! <a href=\"@link\">詳細情報</a>"
+
+msgid "Use JS to load CSS in the admin theme"
+msgstr "管理テーマで JS を使用して CSS をロード"
+
+msgid "This will optimize CSS delivery with JavaScript when viewing the admin theme."
+msgstr "これを使用すると、管理テーマを表示する際に JavaScript を使用した CSS の配信が最適化されます。"
+
+msgid "Use JS to load external CSS"
+msgstr "JS を使用して外部 CSS をロード"
+
+msgid "This will optimize CSS delivery with JavaScript for external stylesheets."
+msgstr "これを使用すると、外部スタイルシートで JavaScript を使用した CSS の配信が最適化されます。"
+
+msgid "How to include the JS loading code"
+msgstr "JS ロード・コードの組み込み方法"
+
+msgid "Inline javascript loader library (If enabled this is recommended)"
+msgstr "インライン JavaScript ローダー・ライブラリー (有効であれば、これが推奨されます)"
+
+msgid "Local file included in aggregate"
+msgstr "集約に含まれるローカル・ファイル"
+
+msgid "Externally load the latest from github"
+msgstr "外部で github から最新のものをロード"
+
+msgid "The <a href=\"@link\">loadCSS</a> library can be included in various ways."
+msgstr "<a href=\"@link\">loadCSS</a> ライブラリーはさまざまな方法で組み込めます。"
+
+msgid "AdvAgg Old Internet Explorer Compatibility Enhancer"
+msgstr "AdvAgg Old Internet Explorer Compatibility Enhancer"
+
+msgid "Provides some enhanced compatibility with outdated Internet Explorer versions."
+msgstr "旧バージョンの Internet Explorer との互換性の機能を拡張します。"
+
+msgid "AdvAgg CSS/JS Validator"
+msgstr "AdvAgg CSS/JS Validator"
+
+msgid "Validate the CSS and JS files used in Aggregation for syntax errors."
+msgstr "集約内で使用されている CSS ファイルと JS ファイルを検証し、構文エラーがないか確認します。"
+
+msgid "AdvAgg: Asset Validation"
+msgstr "AdvAgg: 資産の検証"
+
+msgid "CSSLint"
+msgstr "CSSLint"
+
+msgid "W3.org CSS Validator"
+msgstr "W3.org CSS バリデーター"
+
+msgid "JSHint"
+msgstr "JSHint"
+
+msgid "Asset Validation"
+msgstr "資産の検証"
+
+msgid "Validate CSS with CSSLint"
+msgstr "CSSLint によって CSS を検証"
+
+msgid "Validate CSS with the W3.org css validator"
+msgstr "W3.org CSS バリデーターによって CSS を検証"
+
+msgid "Validate JavaScript with JSHint"
+msgstr "JSHint によって JavaScript を検証"
+
+msgid "Advanced CSS/JS Aggregation Asset Validation"
+msgstr "Advanced CSS/JS Aggregation の資産の検証"
+
+msgid "AdvAgg: CSS Validator using CSSLint"
+msgstr "AdvAgg: CSSLint を使用する CSS バリデーター"
+
+msgid "AdvAgg: CSS Validator using w3.org"
+msgstr "AdvAgg: w3.org を使用する CSS バリデーター"
+
+msgid "AdvAgg: JavaScript Validator using JSHint"
+msgstr "AdvAgg: JSHint を使用する JavaScript バリデーター"
+
+msgid "Default CSS Lint ignore settings."
+msgstr "デフォルトの CSS Lint の ignore 設定。"
+
+msgid "Default JS Hint ignore settings."
+msgstr "デフォルトの JS Hint の ignore 設定。"
+
+msgid "Browser unable to read file. @error"
+msgstr "ブラウザーでファイルを読み取ることができません。@error"
+
+msgid "Directory:"
+msgstr "ディレクトリー:"
+
+msgid "Check directory and all subdirectories"
+msgstr "ディレクトリーとすべてのサブディレクトリーを確認"
+
+msgid "Check directory"
+msgstr "ディレクトリーを確認"
+
+msgid "File:"
+msgstr "ファイル："
+
+msgid "Files:"
+msgstr "ファイル:"
+
+msgid "valid"
+msgstr "有効"
+
+msgid "Options:"
+msgstr "オプション:"
+
+msgid "Errors:"
+msgstr "エラー:"
+
+msgid "Warnings:"
+msgstr "警告:"
+
+msgid "Notice: The form below will submit files to the <a href=\"http://jigsaw.w3.org/css-validator/\">http://jigsaw.w3.org/css-validator/</a> service if used."
+msgstr "注意: 以下のフォームでは、 <a href=\"http://jigsaw.w3.org/css-validator/\">http://jigsaw.w3.org/css-validator/</a> サービス (使用されている場合) にファイルが送信されます。"
+
+msgid "W3C Server did not return a 200 or request data was empty."
+msgstr "W3C サーバーから 200 が返されなかったか、要求データが空でした。"
+
+msgid "CSS settings"
+msgstr "CSSの設定"
+
+msgid "Compress css assets with brotli compression."
+msgstr "Brotli 圧縮を使用して CSS 資産を圧縮します。"
+
+msgid "Combine multiple media selectors per aggregate."
+msgstr "集約ごとに複数のメディア・セレクターを結合します。"
+
+msgid "Fix type of added asset files."
+msgstr "追加された資産ファイルのタイプを修正。"
+
+msgid "Do not change external to file if on same host for css."
+msgstr "同じホスト上にある場合に external を file に変更しません (CSS の場合)。"
+
+msgid "Prefetch external domains for css/js"
+msgstr "CSS/JS の外部ドメインをプリフェッチ"
+
+msgid "Path/Url settings"
+msgstr "パス/URLの設定"
+
+msgid "What conversions to apply."
+msgstr "適用する変換。"
+
+msgid "Convert absolute path css/js src/url() to be protocol relative."
+msgstr "絶対パス CSS/JS src/url() をプロトコル相対パスに変換します。"
+
+msgid "Convert relative paths to absolute."
+msgstr "相対パスを絶対パスに変換します。"
+
+msgid "Convert absolute path css/js src/url() to use https://"
+msgstr "絶対パス CSS/JS src/url() を変換して、https:// を使用します"
+
+msgid "Level of caching for AdvAgg to use."
+msgstr "使用する AdvAgg のキャッシュ・レベル。"
+
+msgid "frequency to run the AdvAgg cron maintenance functions."
+msgstr "AdvAgg cron 保守機能を実行する頻度。"
+
+msgid "Enable AdvAgg."
+msgstr "AdvAggを有効にします。"
+
+msgid "Counter to force new aggregates through caches etc."
+msgstr "キャッシュなどを使用して新規の集約を強制するカウンター"
+
+msgid "Add the immutable tag to Apache cache control strings."
+msgstr "Apache キャッシュ制御ストリングに immutable タグを追加します。"
+
+msgid "JavaScript specific settings."
+msgstr "JavaScript 固有の設定。"
+
+msgid "Do not change external to file if on same host for js."
+msgstr "同じホスト上にある場合に external を file に変更しません (JS の場合)。"
+
+msgid "Skip preprocess check on status page"
+msgstr "状況ページでプリプロセス・チェックをスキップ"
+
+msgid "Display a message when the bypass cookie is active."
+msgstr "バイパス Cookie がアクティブな場合にメッセージを表示します。"
+
+msgid "Use Options +FollowSymlinks to support some hosts."
+msgstr "オプション +FollowSymlinks を使用して、いくつかのホストをサポートします。"
+
+msgid "Use options +SymLinksIfOwnerMatch to support some hosts."
+msgstr "オプション +SymLinksIfOwnerMatch を使用して、いくつかのホストをサポートします。"
+
+msgid "This page provides debugging information. There are no configuration options here."
+msgstr "このページにはデバッグ情報が記載されています。 ここには構成オプションは記載されていません。"
+
+msgid "Hook Theme Info"
+msgstr "フック・テーマ情報"
+
+msgid "Get detailed info about an optimized file"
+msgstr "最適化されたファイルに関する詳細情報を取得"
+
+msgid "Filename"
+msgstr "ファイル名"
+
+msgid "Lookup Details"
+msgstr "詳細の検索"
+
+msgid "Input an optimized filename like \"@css_file\"."
+msgstr "最適化されたファイルの名前 (「@css_file」など) を入力します。"
+
+msgid "Please input a valid optimized filename."
+msgstr "最適化されたファイルの有効な名前を入力してください。"
+
+msgid "Optimized file information not found, confirm spelling of the path. Alternatively, that could be an outdated file."
+msgstr "最適化されたファイルの情報が見つかりません。パスのスペルを確認してください。 また、そのファイルが古くなった可能性もあります。"
+
+msgid "This is a collection of commands to control the cache and to manage testing of this module. In general this page is useful when troubleshooting some aggregation issues. For normal operations, you do not need to do anything on this page below the Smart Cache Flush. There are no configuration options here."
+msgstr "これは、キャッシュを制御し、テストを管理する、このモジュールのコマンドの集合です。 一般に、このページは集約の問題のトラブルシューティング時に役立ちます。 通常の操作では、このページの「スマート・キャッシュ・フラッシュ」の下では何も行う必要がありません。 ここには構成オプションは記載されていません。"
+
+msgid "Aggregation Bypass Cookie"
+msgstr "集約バイパス Cookie"
+
+msgid "This will set or remove a cookie that disables aggregation for a set period of time."
+msgstr "これは、期間を設定して集約を無効にする Cookie を設定または削除します。"
+
+msgid "Bypass length"
+msgstr "バイパス長"
+
+msgid "6 hours"
+msgstr "6 時間"
+
+msgid "12 hours"
+msgstr "12 時間"
+
+msgid "1 day"
+msgstr "1 日"
+
+msgid "2 days"
+msgstr "2日"
+
+msgid "1 week"
+msgstr "1 週"
+
+msgid "1 month"
+msgstr "1 カ月間"
+
+msgid "1 year"
+msgstr "1 年間"
+
+msgid "Toggle The \"aggregation bypass cookie\" For This Browser"
+msgstr "このブラウザーの「集約バイパスCookie」を切り替える"
+
+msgid "Cron Maintenance Tasks"
+msgstr "cron 保守タスク"
+
+msgid "The following operation is ran on cron but you can run it manually here."
+msgstr "次の操作は cron で実行されますが、ここでは手動で実行できます。"
+
+msgid "Clear Stale Files"
+msgstr "失効したファイルをクリア"
+
+msgid "Scan all files in the css/js optimized directories and remove outdated ones."
+msgstr "最適化された CSS/JS のディレクトリー内のすべてのファイルをスキャンし、古くなったファイルを削除します。"
+
+msgid "Remove All Stale Files"
+msgstr "失効したすべてのファイルを削除"
+
+msgid "Drastic Measures"
+msgstr "抜本的な解決策"
+
+msgid "The options below should normally never need to be done."
+msgstr "通常は、以下のオプションを実施する必要はありません。"
+
+msgid "Clear All Caches"
+msgstr "キャッシュをすべてクリア"
+
+msgid "Remove all entries from the advagg cache and file information stores. Useful if you suspect a cache is not getting cleared."
+msgstr "AdvAgg キャッシュとファイル情報ストアからすべての項目を削除します。 これは、キャッシュがクリアされていない可能性があるときに役立ちます。"
+
+msgid "Clear All Caches & File Information"
+msgstr "キャッシュとファイル情報をすべてクリア"
+
+msgid "Force new files"
+msgstr "新規ファイルを強制"
+
+msgid "Force the creation of all new optimized files by incrementing a global counter. Current value of counter: %value. This is useful if a CDN has cached a file incorrectly as it will force new ones to be used even if nothing else has changed."
+msgstr "グローバル・カウンターを増やすことで、まったく新しい最適化ファイルが強制的に作成されるようにします。 カウンターの現行値: %value。 この機能を使用することで、他に変更された部分がない場合でも新しいファイルが強制的に使用されるため、CDN でファイルが誤ってキャッシュされた場合に有用です。"
+
+msgid "Increment Global Counter"
+msgstr "グローバル・カウンターの増分"
+
+msgid "Global counter is now set to %new_value"
+msgstr "グローバル・カウンターは現在 %new_value に設定されています"
+
+msgid "AdvAgg Bypass Cookie Removed."
+msgstr "AdvAgg バイパス Cookie が削除されました。"
+
+msgid "AdvAgg Bypass Cookie Set for %time."
+msgstr "AdvAggバイパスCookieが %time に設定されました。"
+
+msgid "Development"
+msgstr "開発"
+
+msgid "Low"
+msgstr "低"
+
+msgid "Normal"
+msgstr "通常"
+
+msgid "High"
+msgstr "高"
+
+msgid "15 minutes"
+msgstr "15 分間"
+
+msgid "30 minutes"
+msgstr "30 分間"
+
+msgid "45 minutes"
+msgstr "45分"
+
+msgid "1 hour"
+msgstr "1 時間"
+
+msgid "2 hours"
+msgstr "2 時間"
+
+msgid "4 hours"
+msgstr "4 時間"
+
+msgid "18 hours"
+msgstr "18 時間"
+
+msgid "3 days"
+msgstr "3 日"
+
+msgid "4 days"
+msgstr "4日"
+
+msgid "5 days"
+msgstr "5日"
+
+msgid "6 days"
+msgstr "6日"
+
+msgid "2 week"
+msgstr "2週間"
+
+msgid "3 week"
+msgstr "3週間"
+
+msgid "6 weeks"
+msgstr "6週間"
+
+msgid "2 months"
+msgstr "2 カ月間"
+
+msgid "Global Options"
+msgstr "Global Options"
+
+msgid "Enable advanced aggregation"
+msgstr "Advanced Aggregation を有効化"
+
+msgid "Uncheck this box to temporarily disable AdvAgg functionality."
+msgstr "AdvAgg 機能を一時的に無効にするには、このボックスのチェック・マークを外します。"
+
+msgid "Use DNS Prefetch for external CSS/JS."
+msgstr "外部 CSS/JS に DNS プリフェッチを使用します。"
+
+msgid "Start the DNS lookup for external CSS and JavaScript files as soon as possible."
+msgstr "外部 CSS ファイルと JavaScript ファイルの DNS ルックアップをできるだけ早く開始します。"
+
+msgid "Server Config"
+msgstr "サーバー構成"
+
+msgid "Cache-Control: Immutable"
+msgstr "Cache-Control: Immutable"
+
+msgid "Your server can send <a href=\"@url1\">Cache-Control: immutable</a> header for all optimized files. This should improve performance for some users. Current <a href=\"@url2\">browser support</a>"
+msgstr "最適化されたすべてのファイルに対してサーバーから <a href=\"@url1\">Cache-Control: immutable</a> ヘッダーを送信できます。 これにより、一部のユーザーのパフォーマンスが向上します。 現在の<a href=\"@url2\">ブラウザー・サポート</a>"
+
+msgid "Include Cache-Control: immutable in generated .htaccess files."
+msgstr "生成された .htaccess ファイルに Cache-Control: immutable を組み込みます。"
+
+msgid "With the Apache server, AdvAgg can generate config to send the header for all optimized files."
+msgstr "Apache サーバーでは、AdvAgg で、最適化されたすべてのファイルに対してヘッダーを送信する config を生成できます。"
+
+msgid "With Nginx, AdvAgg can't set the headers for optimized files in a performant manner. However, you can easily do so in your server config. See the <a href='@url'>manual for instructions</a>."
+msgstr "Nginx の場合、AdvAgg で、最適化されたファイルに対してパフォーマンスの良い方法でヘッダーを設定することはできません。 ただし、サーバーの config ではこの操作を簡単に実行できます。 <a href='@url'>手順のマニュアル</a>を参照してください。"
+
+msgid "AdvAgg Cache Settings"
+msgstr "AdvAgg のキャッシュ設定"
+
+msgid "No performance data yet but most use cases will probably want to use the Normal cache mode."
+msgstr "まだパフォーマンス・データはありませんが、ほとんどのユース・ケースでは「通常」キャッシュ・モードを使用する必要があると考えられます。"
+
+msgid "Compression Options"
+msgstr "圧縮オプション"
+
+msgid "Compressed files will automatically be served by the Apache server"
+msgstr "Apache サーバーによって圧縮ファイルが自動的に提供されます"
+
+msgid "AdvAgg can't configure your Nginx server to automatically serve compressed assets. See the <a href='@url'>AdvAgg manual</a> for instructions on manually doing so."
+msgstr "AdvAgg では、圧縮された資産が自動的に提供されるよう Nginx サーバーを構成することはできません。 この操作を手動で行う手順については、<a href='@url'>AdvAgg のマニュアル</a>を参照してください。"
+
+msgid "Gzip CSS assets"
+msgstr "CSS 資産を gzip"
+
+msgid "This should be enabled unless you are experiencing corrupted compressed asset files."
+msgstr "圧縮された資産ファイルの破損が発生していない限り、これは有効に設定する必要があります。"
+
+msgid "Gzip JavaScript assets"
+msgstr "JavaScript 資産を gzip"
+
+msgid "Select to compress this asset type with brotli compression. See <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> page for more information."
+msgstr "この資産タイプを Brotli 圧縮を使用して圧縮するように選択してください。 詳しくは、<a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> のページを参照してください。"
+
+msgid "Brotli compression is not available on your server. See <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> page for more information."
+msgstr "ご使用のサーバーでは Brotli 圧縮を使用できません。 詳しくは、<a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> のページを参照してください。"
+
+msgid "Brotli compress CSS assets"
+msgstr "CSS 資産を Brotli 圧縮"
+
+msgid "Brotli compress JavaScript assets"
+msgstr "JavaScript 資産を Brotli 圧縮"
+
+msgid "CSS Options"
+msgstr "CSSオプション"
+
+msgid "Combine CSS files by using media queries"
+msgstr "メディア照会を使用して CSS ファイルを結合"
+
+msgid "Will combine more CSS files together because different CSS media types can be used in the same file by using media queries. Use cores grouping logic needs to be unchecked in order for this to work. Also noted is that due to an issue with IE9, compatibility mode is forced off if this is enabled."
+msgstr "メディア照会を使用することで、同じファイル内で複数の異なる CSS メディア・タイプを使用できるため、より多くの CSS ファイルが結合されます。 これが機能するには、「コア・グループ化ロジックを使用」のチェック・マークを外す必要があります。 また、IE9 に関連する問題があるため、この設定を有効にすると互換モードが強制的にオフになります。"
+
+msgid "Fix improperly set type"
+msgstr "不適切に設定されたタイプを修正"
+
+msgid "If type is external but does not start with http, https, or // change it to be type file. If type is file but it starts with http, https, or // change type to be external. Note that if this is causing issues, odds are you have a double slash when there should be a single; see <a href=\"@link\">this issue</a>"
+msgstr "タイプは external ですが、先頭が http、https、// のいずれでもない場合は、タイプを file に変更してください。 タイプが file でも、先頭が http、https、または // のいずれかで始まる場合は、タイプを external に変更してください。 これによって問題が発生する場合、シングルスラッシュを使用すべきところにダブルスラッシュを使用している可能性があります。<a href=\"@link\">この問題</a>を参照してください。"
+
+msgid "Do not change external to file if on same host."
+msgstr "同じホスト上にある場合に external を file に変更しません。"
+
+msgid "If a CSS file is set as external and is on the same hosts do not convert to file."
+msgstr "CSS ファイルが external として設定されていて、同じホスト上にある場合に、タイプを file に変換しません。"
+
+msgid "JS Options"
+msgstr "JSオプション"
+
+msgid "If a JS file is set as external and is on the same hosts do not convert to file."
+msgstr "JS ファイルが external に設定されていて、同じホスト上にある場合に、タイプを file に変換しません。"
+
+msgid "Cron Options"
+msgstr "cronオプション"
+
+msgid "Unless you have a good reason to adjust these values you should leave them alone."
+msgstr "これらの値を調整する妥当な理由がない限り、値はそのままにしておきます。"
+
+msgid "@time ago"
+msgstr "@time 前"
+
+msgid "never"
+msgstr "何もしない"
+
+msgid "The default value for this is %value. The last time advagg_cron was ran is %time."
+msgstr "このデフォルト値は %value です。 前回advagg_cronが実行されたのは %time です。"
+
+msgid "The default value for this is %value."
+msgstr "このデフォルト値は %value です。"
+
+msgid "Obscure Options"
+msgstr "隠しオプション"
+
+msgid "Some of the more obscure AdvAgg settings. Odds are you do not need to change anything in here."
+msgstr "AdvAgg 設定の中には、覆い隠されているものがあります。 そこに含まれる設定は、変更が不要なものと考えられます。"
+
+msgid "Convert absolute paths to be protocol relative paths."
+msgstr "絶対パスをプロトコル相対パスに変換します。"
+
+msgid "If the src to a CSS/JS file points starts with http:// or https://, convert it to use a protocol relative path //. Will also convert url() references inside of css files."
+msgstr "CSS/JS ファイルが指しているソースが http:// または https:// で始まる場合は、プロトコル相対パス // を使用するように変換します。 CSS ファイル内の url() 参照も変換します。"
+
+msgid "Convert relative paths to be absolute paths."
+msgstr "相対パスを絶対パスに変換します。"
+
+msgid "If the src to a CSS/JS file points starts with a relative path / convert to absolute."
+msgstr "CSS/JS ファイルが指しているソースが相対パス / で始まる場合は、絶対パスに変換します。"
+
+msgid "Convert http:// to https://."
+msgstr "http:// を https:// に変換。"
+
+msgid "If the src to a CSS/JS file starts with http:// convert it https://. Will also convert url() references inside of css files."
+msgstr "CSS/JS ファイルのソースが http:// で始まる場合は、https:// に変換します。 CSS ファイル内の url() 参照も変換します。"
+
+msgid "Use \"Options +FollowSymLinks\""
+msgstr "「Options +FollowSymLinks」を使用"
+
+msgid "Some shared hosts require \"<code>Options +FollowSymLinks</code>\" in the .htaccess for asset directories."
+msgstr "一部の共有ホストでは、資産ディレクトリーの.htaccessで「<code>Options +FollowSymLinks</code>」を設定する必要があります。"
+
+msgid "Use \"Options +SymLinksIfOwnerMatch\""
+msgstr "「Options +SymLinksIfOwnerMatch」を使用"
+
+msgid "Some shared hosts require \"<code>Options +SymLinksIfOwnerMatch</code>\" in the .htaccess for asset directories."
+msgstr "一部の共有ホストでは、資産ディレクトリーの.htaccessで「<code>Options +SymLinksIfOwnerMatch</code>」を設定する必要があります。"
+

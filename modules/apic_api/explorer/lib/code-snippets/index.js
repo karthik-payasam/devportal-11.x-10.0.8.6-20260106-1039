@@ -1,0 +1,1 @@
+"use strict";var a=require("./snippetFactory");Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"snippetFactory",{enumerable:!0,get:function(){return a.snippetFactory}});

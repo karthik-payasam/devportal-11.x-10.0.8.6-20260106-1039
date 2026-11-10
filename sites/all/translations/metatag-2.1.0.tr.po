@@ -1,0 +1,2971 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Processed @processed of @total overridden Metatag records."
+msgstr "@total geçersiz kılınan Meta Etiket kaydından @processed tanesi işlendi."
+
+msgid "There were no overridden Metatag records."
+msgstr "Geçersiz kılınmış bir Meta Etiket kaydı yok."
+
+msgid "Metatags"
+msgstr "Meta Etiketler"
+
+msgid "Tokens related to Metatags."
+msgstr "Meta etiketlerle ilgili belirteçler."
+
+msgid "Metatag values for the current page."
+msgstr "Geçerli sayfa için meta etiket değerleri."
+
+msgid "@label tokens."
+msgstr "@label belirteçleri."
+
+msgid "List of @type values"
+msgstr "@type değerleri listesi"
+
+msgid "Tokens for lists of @type values."
+msgstr "@type değerleri listeleri için belirteçler."
+
+msgid "@type type with delta @delta"
+msgstr "@delta ile @type tipi"
+
+msgid "Metatags (Hidden field for JSON support)"
+msgstr "Meta etiketler (JSON desteği için gizli alan)"
+
+msgid "The meta tags for the entity."
+msgstr "Varlık için meta etiketleri."
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "This module allows a site to automatically provide structured metadata, aka \"meta tags\", about the site and individual pages."
+msgstr "Bu modül, bir sitenin otomatik olarak site ve tek tek sayfalar hakkında yapılandırılmış meta veriler (diğer adıyla \"meta etiketler\") sağlamasına olanak sağlar."
+
+msgid "In the context of search engine optimization, providing an extensive set of meta tags may help improve the site's and pages' rankings, thus may aid with achieving a more prominent display of the content within search engine results. They can also be used to tailor how content is displayed when shared on social networks. For additional information, see the <a href=\":online\">online documentation for Metatag</a>."
+msgstr "Arama motoru optimizasyonu bağlamında kapsamlı bir meta etiket kümesi sağlanması, sitenin ve sayfaların derecelendirmelerinin artırılmasına ve böylece arama motoru sonuçları içindeki içeriğin daha belirgin bir görüntüsünün elde edilmesine yardımcı olabilir. Bunlar sosyal ağlarda paylaşıldığında içeriğin nasıl görüntüleneceğini uyarlamak için de kullanılabilir. Ek bilgi için bkz. <a href=\":online\">Meta etiket için çevrimiçi belgeler</a>."
+
+msgid "Intended workflow"
+msgstr "Amaçlanan iş akışı"
+
+msgid "The module uses <a href=\":tokens\">\"tokens\"</a> to automatically fill in values for different meta tags. Specific values may also be filled in."
+msgstr "Modül, farklı meta etiketlere yönelik değerleri otomatik olarak doldurmak için <a href=\":tokens\">\"belirteçleri\"</a> kullanır. Belirli değerler de doldurulabilir."
+
+msgid "The best way of using Metatag is as follows:"
+msgstr "Meta Etiket kullanmanın en iyi yolu şudur:"
+
+msgid "Customize the <a href=\":defaults\">global defaults</a>, fill in the specific values and tokens that every page should have."
+msgstr "<a href=\":defaults\">Genel varsayılanları</a> özelleştirin, her sayfanın içermesi gereken belirli değerleri ve belirteçleri doldurun."
+
+msgid "Override each of the <a href=\":defaults\">other defaults</a>, fill in specific values and tokens that each item should have by default. This allows e.g. for all nodes to have different values than taxonomy terms."
+msgstr "<a href=\":defaults\">Diğer varsayılanların</a> her birini geçersiz kılın, her öğenin varsayılan olarak içermesi gereken belirli değerleri ve belirteçleri doldurun. Bu, örneğin, tüm değerlerin taksonomi terimlerinden farklı değerler içermesine olanak sağlar."
+
+msgid "<a href=\":add\">Add more default configurations</a> as necessary for different entity types and entity bundles, e.g. for different content types or different vocabularies."
+msgstr "Farklı varlık tipleri ve varlık paketleri için (örneğin, farklı içerik tipleri ya da farklı sözlükler için) gerektikçe <a href=\":add\">daha fazla varsayılan yapılandırma ekleyin</a>."
+
+msgid "To override the meta tags for individual entities, e.g. for individual nodes, add the \"Metatag\" field via the field settings for that entity or bundle type."
+msgstr "Tek tek varlıklara ilişkin (örn. tek tek düğümlere ilişkin) meta etiketleri geçersiz kılmak için söz konusu varlık ya da paket tipi için alan ayarları aracılığıyla \"Meta Etiket\" alanını ekleyin."
+
+msgid "Configure global meta tag default values below. Meta tags may be left as the default."
+msgstr "Aşağıda genel meta etiket varsayılan değerlerini yapılandırın. Meta etiketler varsayılan değeriyle bırakılabilir."
+
+msgid "Meta tag patterns are passed down from one level to the next unless they are overridden. To view a summary of the individual meta tags and the pattern for a specific configuration, click on its name below."
+msgstr "Meta etiket kalıpları, geçersiz kılınmadığı sürece bir düzeyden bir sonraki düzeye iletilir. Tek tek meta etiketlerin bir özetini ve belirli bir yapılandırmanın kalıbını görüntülemek için aşağıda adını tıklatın."
+
+msgid "If the top-level configuration is not specific enough, additional default meta tag configurations can be added for a specific entity type or entity bundle, e.g. for a specific content type."
+msgstr "Üst düzey yapılandırma yeterince belirli değilse, belirli bir varlık tipi ya da varlık paketi için (örn. belirli bir içerik tipi için) ek varsayılan meta etiket yapılandırmaları eklenebilir."
+
+msgid "Meta tags can be further refined on a per-entity basis, e.g. for individual nodes, by adding the \"Metatag\" field to that entity type through its normal field settings pages."
+msgstr "Normal alan ayarları sayfaları aracılığıyla söz konusu varlık tipine \"Meta Etiket\" alanı eklenerek varlık başına (örn. tek tek düğümler için) meta etiketler daha da ayrıntılandırılabilir."
+
+msgid "Use the following form to override the global default meta tags for a specific entity type or entity bundle. In practical terms, this allows the meta tags to be customized for a specific content type or taxonomy vocabulary, so that its content will have different meta tags <em>default values</em> than others."
+msgstr "Belirli bir varlık tipi ya da varlık paketine ilişkin genel varsayılan meta etiketleri geçersiz kılmak için aşağıdaki formu kullanın. Pratikte bu, meta etiketlerin, içeriği diğerlerinden farklı meta etiket <em>varsayılan değerleri</em> içerecek şekilde belirli bir içerik tipi ya da taksonomi sözlüğü için özelleştirilmesine olanak sağlar."
+
+msgid "As a reminder, if the \"Metatag\" field is added to the entity type through its normal field settings, the meta tags can be further refined on a per entity basis; this allows each node to have its meta tags  customized on an individual basis."
+msgstr "Anımsatıcı olarak, normal alan ayarları aracılığıyla varlık tipine \"Meta Etiket\" alanı eklenirse, meta etiketler varlık başına daha fazla ayrıntılandırılabilir; bu, her bir düğümün meta verilerinin tek tek özelleştirilmesine olanak sağlar."
+
+msgid "Not enabled while in maintenance mode"
+msgstr "Bakım kipinde etkinleştirilmedi"
+
+msgid "Please note that while the site is in maintenance mode none of the usual meta tags will be output."
+msgstr "Lütfen site bakım kipindeyken olağan meta etiketlerinin hiçbirinin çıkmayacağını göz önünde bulundurun."
+
+msgid "Schema.org Metatag is recommended"
+msgstr "Schema.org Metatag önerilir"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is highly recommended to add <a href=\"@jsonld\">JSON-LD</a> -formatted <a href=\"@schema\">schema.org</a> compatible data structures to the site."
+msgstr "<a href=\"@module\">Schema.org Metatag</a> modülü, <a href=\"@jsonld\">JSON-LD</a> biçiminde <a href=\"@schema\">schema.org</a> uyumlu veri yapılarının siteye eklenmesi için önerilir."
+
+msgid "Schema.org Metatag is installed"
+msgstr "Schema.org Metatag kurulu"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is installed."
+msgstr "<a href=\"@module\">Schema.org Metatag</a> modülü kuruldu."
+
+msgid "Token Or"
+msgstr "Belirteç Veya"
+
+msgid "The <a href=\"@module\">Token OR module</a> is suggested for when the basic content tokens are not flexible enough, e.g. to make a meta tag show the contents of one field if it is filled in or another if the first one is empty."
+msgstr "<a href=\"@module\">Belirteç VEYA modül</a>, örneğin bir meta etiketin bir alan doldurulmuşsa içeriğini veya ilki boşsa başka bir alanın içeriğini göstermesini sağlamak için temel içerik belirteçlerinin yeterince esnek olmadığı durumlarda önerilir."
+
+msgid "The new Metatag: Open Graph module has been enabled."
+msgstr "Yeni Meta Etiket: Açık Grafik modülü etkinleştirildi."
+
+msgid "The sites's caches will need to be rebuild to ensure Metatag works as intended."
+msgstr "Metatag'in beklendiği gibi çalışmasını sağlamak için sitenin önbelleklerinin yeniden oluşturulması gerekecek."
+
+msgid "Metatag"
+msgstr "Meta Etiket"
+
+msgid "Manage meta tags for all entities."
+msgstr "Tüm varlıklar için meta etiketleri yönetin."
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Add default meta tags"
+msgstr "Varsayılan meta etiketler ekle"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Metatag plugins"
+msgstr "Metatag eklentileri"
+
+msgid "Configure Metatag defaults."
+msgstr "Meta Etiket varsayılanlarını yapılandırın."
+
+msgid "Overview of plugins used in metatag."
+msgstr "Metatag'de kullanılan eklentilere genel bakış."
+
+msgid "Metatag defaults"
+msgstr "Meta etiket varsayılanları"
+
+msgid "Administer meta tags"
+msgstr "Meta etiketleri yönet"
+
+msgid "Control the main settings pages and modify per-object meta tags."
+msgstr "Ana ayarlar sayfalarını denetleyin ve nesne başına meta etiketleri değiştirin."
+
+msgid "Delete default meta tags"
+msgstr "Varsayılan meta etiketleri sil"
+
+msgid "Revert default meta tags"
+msgstr "Varsayılan meta etiketleri geri al"
+
+msgid "Configure the Metatag module"
+msgstr "Meta Etiket modülünü yapılandır"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Type"
+msgstr "Tip"
+
+msgid "Tags"
+msgstr "Etiketler"
+
+msgid "Abstract"
+msgstr "Özet"
+
+msgid "Cache control"
+msgstr "Önbellek denetimi"
+
+msgid "Canonical URL"
+msgstr "Kurallı URL"
+
+msgid "Content Language"
+msgstr "İçerik Dili"
+
+msgid "Description"
+msgstr "Açıklama"
+
+msgid "Expires"
+msgstr "Geçerlik tarihi"
+
+msgid "Generator"
+msgstr "Jeneratör"
+
+msgid "Image SRC"
+msgstr "Görüntü SRC"
+
+msgid "Keywords"
+msgstr "Anahtar kelimeler"
+
+msgid "Google News Keywords"
+msgstr "Google Haberler Anahtar Sözcükleri"
+
+msgid "Next page URL"
+msgstr "Sonraki sayfa URL'si"
+
+msgid "Original source"
+msgstr "Özgün kaynak"
+
+msgid "Pragma"
+msgstr "Pragma"
+
+msgid "Previous page URL"
+msgstr "Önceki sayfa URL'si"
+
+msgid "Rating"
+msgstr "Derecelendirme"
+
+msgid "Referrer policy"
+msgstr "Başvuran ilkesi"
+
+msgid "Refresh"
+msgstr "Tazele"
+
+msgid "Revisit After"
+msgstr "Şu Kadar Süre Sonra Yeniden Ziyaret Edin"
+
+msgid "Rights"
+msgstr "Haklar"
+
+msgid "Robots"
+msgstr "Robotlar"
+
+msgid "Shortlink"
+msgstr "Kısa bağlantı"
+
+msgid "Standout"
+msgstr "Öne Çıkan"
+
+msgid "Page title"
+msgstr "Sayfa başlığı"
+
+msgid "ICBM"
+msgstr "ICBM"
+
+msgid "Geographical region"
+msgstr "Coğrafi bölge"
+
+msgid "Geographical place name"
+msgstr "Coğrafi yer adı"
+
+msgid "Geographical position"
+msgstr "Coğrafi konum"
+
+msgid "Set Cookie"
+msgstr "Tanımlama Bilgisi Ayarla"
+
+msgid "Google"
+msgstr "Google"
+
+msgid "Author"
+msgstr "Yazar"
+
+msgid "Default value"
+msgstr "Varsayılan değer"
+
+msgid "Advanced meta tags form"
+msgstr "Gelişmiş meta etiketler formu"
+
+msgid "Place field in sidebar"
+msgstr "Alanı kenar çubuğuna yerleştir"
+
+msgid "Place field in collapsed details container"
+msgstr "Alanı daraltılmış ayrıntı taşıyıcısına yerleştir"
+
+msgid "Metatag settings"
+msgstr "Meta etiket ayarları"
+
+msgid "Metatag groups that apply to each entity type"
+msgstr "Her bir varlık tipi için geçerli olan meta etiket grupları"
+
+msgid "Entity type"
+msgstr "Varlık tipi"
+
+msgid "Bundle"
+msgstr "Paket (bundle)"
+
+msgid "Group"
+msgstr "Grup"
+
+msgid "Trim method for trimmable tags."
+msgstr "Kırpılabilir etiketler için kırpma yöntemi."
+
+msgid "Use Maxlength module to force these limits?"
+msgstr "Bu sınırları zorlamak için Maxlength modülü kullanılsın mı?"
+
+msgid "Tag-specific maximum length"
+msgstr "Etikete özgü uzunluk üst sınırı"
+
+msgid "Tag maximum length in characters"
+msgstr "Etiket uzunluğu üst sınırı karakter olarak"
+
+msgid "Add max height value"
+msgstr "Yükseklik üst sınırı değeri ekle"
+
+msgid "Provides support for applinks.org meta tags."
+msgstr "applinks.org meta etiketleri için destek sağlar."
+
+msgid "Metatag: App Links"
+msgstr "Meta Etiket: Uygulama Bağlantıları"
+
+msgid "Android app name"
+msgstr "Android uygulama adı"
+
+msgid "Android app Activity Class"
+msgstr "Android uygulaması Etkinlik Sınıfı"
+
+msgid "Android app package ID"
+msgstr "Android uygulaması paket tanıtıcısı"
+
+msgid "Android app URL scheme"
+msgstr "Android uygulaması URL şeması"
+
+msgid "iOS app URL scheme"
+msgstr "iOS uygulaması URL şeması"
+
+msgid "iOS app store ID"
+msgstr "iOS uygulama mağazası tanıtıcısı"
+
+msgid "iOS app name"
+msgstr "iOS uygulama adı"
+
+msgid "iPad app URL scheme"
+msgstr "iPad uygulaması URL şeması"
+
+msgid "iPad app store ID"
+msgstr "iPad uygulama mağazası tanıtıcısı"
+
+msgid "iPad app name"
+msgstr "iPad uygulama adı"
+
+msgid "iPhone app URL scheme"
+msgstr "iPhone uygulaması URL şeması"
+
+msgid "iPhone app store ID"
+msgstr "iPhone uygulama mağazası tanıtıcısı"
+
+msgid "Windows app GUID"
+msgstr "Windows uygulama GUID'si"
+
+msgid "Windows app name"
+msgstr "Windows uygulama adı"
+
+msgid "Windows app URL scheme"
+msgstr "Windows uygulaması URL şeması"
+
+msgid "Windows Phone app URL scheme"
+msgstr "Windows Phone uygulaması URL şeması"
+
+msgid "Windows Phone app GUID"
+msgstr "Windows Phone uygulama GUID'si"
+
+msgid "Windows Phone app name"
+msgstr "Windows Phone uygulama adı"
+
+msgid "Windows Universal app URL scheme"
+msgstr "Windows Universal uygulaması URL şeması"
+
+msgid "Windows Universal app GUID"
+msgstr "Windows Universal uygulama GUID'si"
+
+msgid "Windows Universal app name"
+msgstr "Windows Universal uygulama adı"
+
+msgid "Web URL"
+msgstr "Web URL'si"
+
+msgid "Should fallback"
+msgstr "Yedeklenmeli"
+
+msgid "App Links"
+msgstr "Uygulama Bağlantıları"
+
+msgid "The name of the app (suitable for display)."
+msgstr "Uygulamanın adı (görüntülemek için uygundur)."
+
+msgid "A fully-qualified Activity class name for intent generation."
+msgstr "Amaç oluşturma için tam nitelikli Etkinlik sınıfı adı."
+
+msgid "A fully-qualified package name for intent generation. <strong>This attribute is required by the App Links specification.</strong>"
+msgstr "Amaç oluşturma için tam nitelikli paket adı.<strong>Uygulama Bağlantıları belirtimi bu özniteliği gerektirir.</strong>"
+
+msgid "A custom scheme for the Android app."
+msgstr "Android uygulaması için özel bir şema."
+
+msgid "The name of the app (suitable for display)"
+msgstr "Uygulamanın adı (görüntülemek için uygundur)"
+
+msgid "The app ID for the app store."
+msgstr "Uygulama mağazasının uygulama tanıtıcısı."
+
+msgid "A custom scheme for the iOS app. <strong>This attribute is required by the app Links specification.</strong>"
+msgstr "iOS uygulaması için özel bir şema. <strong>Uygulama Bağlantıları belirtimi bu özniteliği gerektirir.</strong>"
+
+msgid "iPhone app name"
+msgstr "iPhone uygulama adı"
+
+msgid "The web URL; defaults to the URL for the content that contains this tag."
+msgstr "Web URL'si; varsayılan olarak bu etiketi içeren içeriğin URL'sini alır."
+
+msgid "Windows app ID"
+msgstr "Windows uygulama tanıtıcısı"
+
+msgid "Windows Phone app ID"
+msgstr "Windows Phone uygulama tanıtıcısı"
+
+msgid "Windows Universal app ID"
+msgstr "Windows Universal uygulama tanıtıcısı"
+
+msgid "Metatag: Dublin Core"
+msgstr "Meta Etiket: Dublin Core"
+
+msgid "Provides the fifteen <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "<a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>'tan on beş <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> meta etiketi sağlar."
+
+msgid "Dublin Core: Contributor"
+msgstr "Dublin Core: Katkıda Bulunan"
+
+msgid "Dublin Core: Coverage"
+msgstr "Dublin Core: Kapsam"
+
+msgid "Dublin Core: Creator"
+msgstr "Dublin Core: Oluşturan"
+
+msgid "Dublin Core: Date"
+msgstr "Dublin Core: Tarih"
+
+msgid "Dublin Core: Description"
+msgstr "Dublin Core: Açıklama"
+
+msgid "Dublin Core: Format"
+msgstr "Dublin Core: Biçim"
+
+msgid "Dublin Core: Identifier"
+msgstr "Dublin Core: Tanıtıcı"
+
+msgid "Dublin Core: Language"
+msgstr "Dublin Core: Dil"
+
+msgid "Dublin Core: Publisher"
+msgstr "Dublin Core: Yayınlayan"
+
+msgid "Dublin Core: Relation"
+msgstr "Dublin Core: İlişki"
+
+msgid "Dublin Core: Rights"
+msgstr "Dublin Core: Haklar"
+
+msgid "Dublin Core: Source"
+msgstr "Dublin Core: Kaynak"
+
+msgid "Dublin Core: Subject"
+msgstr "Dublin Core: Konu"
+
+msgid "Dublin Core: Title"
+msgstr "Dublin Core: Başlık"
+
+msgid "Dublin Core: Type"
+msgstr "Dublin Core: Tip"
+
+msgid "Dublin Core"
+msgstr "Dublin Core"
+
+msgid "Contributor"
+msgstr "Katkıda Bulunan"
+
+msgid "An entity responsible for making contributions to the resource. Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."
+msgstr "Kaynağa katkıda bulunmaktan sorumlu olan bir varlık. Katkıda Bulunana örnek olarak bir kişi, kuruluş ya da hizmet verilebilir. Genellikle Katkıda Bulunanın adı, varlığı belirtmek için kullanılmalıdır."
+
+msgid "Coverage"
+msgstr "Kapsam"
+
+msgid "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."
+msgstr "Kaynağın uzamsal ya da geçici konusu, kaynağın uzamsal geçerliliği veya kaynağın ilişkili olduğu adli yetki bölgesi. Uzamsal konu ve uzamsal geçerlilik, coğrafi koordinatları tarafından belirtilen bir adlandırılmış yer ya da konum olabilir. Geçici konu, adlandırılmış bir dönem, tarih ya da tarih aralığı olabilir. Adli yetki bölgesi, kaynağın geçerli olduğu adlandırılmış bir yönetim varlığı ya da coğrafi yer olabilir. Önerilen en iyi uygulama, Coğrafi Adların Eşanlamlılar Sözlüğü gibi denetimli bir sözlüğün kullanılmasıdır. Uygunsa, koordinat kümeleri ya da tarih aralıkları gibi sayısal tanıtıcılar yerine adlandırılmış yerler veya süreler kullanılabilir."
+
+msgid "Creator"
+msgstr "Oluşturan"
+
+msgid "An entity primarily responsible for making the resource. Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."
+msgstr "Birincil olarak kaynağı oluşturmaktan sorumlu olan varlık. Oluşturana örnek olarak bir kişi, kuruluş ya da hizmet verilebilir. Genellikle Oluşturanın adı, varlığı belirtmek için kullanılmalıdır."
+
+msgid "Date"
+msgstr "Tarih"
+
+msgid "A point or period of time associated with an event in the lifecycle of the resource. Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."
+msgstr "Kaynağın yaşam döngüsünde bir olayla ilişkilendirilmiş an ya da süre. Tarih, herhangi bir ayrıntı düzeyinde geçici bilgileri ifade etmek için kullanılabilir. Önerilen en iyi uygulama, ISO 8601 [W3CDTF] W3CDTF profili gibi bir kodlama şemasının kullanılmasıdır."
+
+msgid "An account of the resource. Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."
+msgstr "Kaynağın hesabı. Açıklama, bunlarla sınırlı olmamak koşuluyla bir özet, içindekiler tablosu, grafiksel temsil ya da kaynağın serbest metin hesabını içerebilir."
+
+msgid "Format"
+msgstr "Biçim"
+
+msgid "The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."
+msgstr "Kaynağın dosya biçimi, fiziksel ortamı ya da boyutları. Boyutlara örnek olarak boyut ve süre verilebilir. Önerilen en iyi uygulama, Internet Ortam Tipleri [MIME] listesi gibi denetimli bir sözlüğün kullanılmasıdır. "
+
+msgid "Identifier"
+msgstr "Tanımlayıcı"
+
+msgid "An unambiguous reference to the resource within a given context. Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."
+msgstr "Belirli bir bağlamda kaynağa verilen belirsiz bir başvuru. Önerilen en iyi uygulama, resmi bir tanımlama sistemine uygun bir dize aracılığıyla kaynağın belirlenmesidir."
+
+msgid "Language"
+msgstr "Dil"
+
+msgid "A language of the resource. Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."
+msgstr "Kaynağın dili. Önerilen en iyi uygulama, RFC 4646 [RFC4646] gibi denetimli bir sözlüğün kullanılmasıdır. "
+
+msgid "Publisher"
+msgstr "Yayıncı"
+
+msgid "An entity responsible for making the resource available. Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."
+msgstr "Kaynağı kullanılabilir duruma getirmekten sorumlu olan varlık. Yayınlayana örnek olarak bir kişi, kuruluş ya da hizmet verilebilir. Genellikle Yayınlayanın adı, varlığı belirtmek için kullanılmalıdır."
+
+msgid "Relation"
+msgstr "İlişki"
+
+msgid "A related resource. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "İlgili bir kaynak. Önerilen en iyi uygulama, resmi bir tanımlama sistemine uygun bir dize aracılığıyla ilgili kaynağın belirlenmesidir."
+
+msgid "Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."
+msgstr "Kaynakta tutulan haklarla ilgili bilgiler. Genellikle hak bilgileri arasında fikri mülkiyet hakları da dahil olmak üzere, kaynakla ilişkilendirilmiş çeşitli mülkiyet haklarıyla ilgili bir bildirim yer alır."
+
+msgid "Source"
+msgstr "Kaynak"
+
+msgid "A related resource from which the described resource is derived. The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "Açıklanan kaynağın türetildiği bir ilgili kaynak. Açıklanan kaynak, bütün olarak ya da kısmen ilgili kaynaktan türetilebilir. Önerilen en iyi uygulama, resmi bir tanımlama sistemine uygun bir dize aracılığıyla ilgili kaynağın belirlenmesidir."
+
+msgid "Subject"
+msgstr "Konu"
+
+msgid "The topic of the resource. Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary. To describe the spatial or temporal topic of the resource, use the Coverage element."
+msgstr "Kaynağın konusu. Genellikle konu; anahtar sözcükler, anahtar ifadeler ya da sınıflandırma kodları kullanılarak temsil edilir. Önerilen en iyi uygulama, denetimli bir sözlüğün kullanılmasıdır. Kaynağın uzamsal ya da geçici konusunu açıklamak için Kapsam öğesini kullanın."
+
+msgid "Title"
+msgstr "Başlık"
+
+msgid "The name given to the resource."
+msgstr "Kaynağa verilen ad."
+
+msgid "The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."
+msgstr "Kaynağın doğası ya da türü. Önerilen en iyi uygulama, DCMI Tipi Sözlük [DCMITYPE] gibi denetimli bir sözlüğün kullanılmasıdır. Kaynağın dosya biçimini, fiziksel ortamını ya da boyutlarını açıklamak için Biçim öğesini kullanın. "
+
+msgid "Provides forty additional meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "<a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>'tan 40 adet ek meta etiket sağlar."
+
+msgid "Metatag: Dublin Core Advanced"
+msgstr "Meta Etiket: Dublin Core Advanced"
+
+msgid "Dublin Core: Abstract"
+msgstr "Dublin Core: Özet"
+
+msgid "Dublin Core: Access Rights"
+msgstr "Dublin Core: Erişim Hakları"
+
+msgid "Dublin Core: Accrual Method"
+msgstr "Dublin Core: Tahakkuk Yöntemi"
+
+msgid "Dublin Core: Accrual Periodicity"
+msgstr "Dublin Core: Tahakkuk Sıklığı"
+
+msgid "Dublin Core: Accrual Policy"
+msgstr "Dublin Core: Tahakkuk İlkesi"
+
+msgid "Dublin Core: Alternative Title"
+msgstr "Dublin Core: Alternatif Başlık"
+
+msgid "Dublin Core: Audience"
+msgstr "Dublin Core: Hedef Kitle"
+
+msgid "Dublin Core: Date Available"
+msgstr "Dublin Core: Uygun Tarih"
+
+msgid "Dublin Core: Bibliographic Citation"
+msgstr "Dublin Core: Bibliyografya"
+
+msgid "Dublin Core: Conforms To"
+msgstr "Dublin Core: Uygunluk"
+
+msgid "Dublin Core: Date Created"
+msgstr "Dublin Core: Oluşturulduğu Tarih"
+
+msgid "Dublin Core: Date Accepted"
+msgstr "Dublin Core: Kabul Edildiği Tarih"
+
+msgid "Dublin Core: Date Copyrighted"
+msgstr "Dublin Core: Telif Tarihi"
+
+msgid "Dublin Core: Date Submitted"
+msgstr "Dublin Core: Gönderildiği Tarih"
+
+msgid "Dublin Core: Audience Education Level"
+msgstr "Dublin Core: Hedef Kitle Eğitim Düzeyi"
+
+msgid "Dublin Core: Extent"
+msgstr "Dublin Core: Kapsam"
+
+msgid "Dublin Core: Has Format"
+msgstr "Dublin Core: Biçimi Var"
+
+msgid "Dublin Core: Has Part"
+msgstr "Dublin Core: Parçası Var"
+
+msgid "Dublin Core: Has Version"
+msgstr "Dublin Core: Sürümü Var"
+
+msgid "Dublin Core: Instructional Method"
+msgstr "Dublin Core: Yönerge Yöntemi"
+
+msgid "Dublin Core: Is Format Of"
+msgstr "Dublin Core: Bir Biçimi"
+
+msgid "Dublin Core: Is Part Of"
+msgstr "Dublin Core: Bir Parçası"
+
+msgid "Dublin Core: Is Referenced By"
+msgstr "Dublin Core: Başvuran"
+
+msgid "Dublin Core: Is Replaced By"
+msgstr "Dublin Core: Yerini Alan"
+
+msgid "Dublin Core: Is Required By"
+msgstr "Dublin Core: İsteyen"
+
+msgid "Dublin Core: Date Issued"
+msgstr "Dublin Core: Yayın Tarihi"
+
+msgid "Dublin Core: Is Version Of"
+msgstr "Dublin Core: Sürümü"
+
+msgid "Dublin Core: License"
+msgstr "Dublin Core: Lisans"
+
+msgid "Dublin Core: Mediator"
+msgstr "Dublin Core: Aracı"
+
+msgid "Dublin Core: Medium"
+msgstr "Dublin Core: Ortam"
+
+msgid "Dublin Core: Date Modified"
+msgstr "Dublin Core: Değiştirildiği Tarih"
+
+msgid "Dublin Core: Provenance"
+msgstr "Dublin Core: Kaynak"
+
+msgid "Dublin Core: References"
+msgstr "Dublin Core: Başvurular"
+
+msgid "Dublin Core: Replaces"
+msgstr "Dublin Core: Yerini Alır"
+
+msgid "Dublin Core: Requires"
+msgstr "Dublin Core: Gerektirir"
+
+msgid "Dublin Core: Rights Holder"
+msgstr "Dublin Core: Hak Sahibi"
+
+msgid "Dublin Core: Spatial Coverage"
+msgstr "Dublin Core: Uzamsal Kapsam"
+
+msgid "Dublin Core: Table Of Contents"
+msgstr "Dublin Core: İçindekiler"
+
+msgid "Dublin Core: Temporal Coverage"
+msgstr "Dublin Core: Geçici Kapsam"
+
+msgid "Dublin Core: Date Valid"
+msgstr "Dublin Core: Geçerlilik Tarihi"
+
+msgid "Dublin Core Additional Tags"
+msgstr "Dublin Core Ek Etiketleri"
+
+msgid "These tags are not part of the Metadata Element Set but may be useful for certain scenarios."
+msgstr "Bu etiketler, Meta Veri Öğe Kümesinin parçası değildir, ancak belirli senaryolar için kullanışlı olabilir."
+
+msgid "A summary of the resource."
+msgstr "Kaynak özeti."
+
+msgid "Access Rights"
+msgstr "Erişim Hakları"
+
+msgid "Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."
+msgstr "Kaynağa kimlerin erişebildiği veya güvenlik durumunun göstergesi hakkında bilgi. Erişim Hakları gizlilik, güvenlik ya da diğer ilkelere göre erişim veya kısıtlamalarla ilgili bilgileri içerebilir."
+
+msgid "Accrual Method"
+msgstr "Tahakkuk Yöntemi"
+
+msgid "The method by which items are added to a collection."
+msgstr "Öğelerin bir kaynak grubuna eklenme yöntemi."
+
+msgid "Accrual Periodicity"
+msgstr "Tahakkuk Sıklığı"
+
+msgid "The frequency with which items are added to a collection."
+msgstr "Öğelerin bir kaynak grubuna eklenme sıklığı."
+
+msgid "Accrual Policy"
+msgstr "Tahakkuk İlkesi"
+
+msgid "The policy governing the addition of items to a collection."
+msgstr "Öğelerin bir kaynak grubuna eklenmesini düzenleyen ilke."
+
+msgid "Alternative Title"
+msgstr "Alternatif Başlık"
+
+msgid "An alternative name for the resource. The distinction between titles and alternative titles is application-specific."
+msgstr "Kaynak için alternatif bir ad. Unvanlar ve alternatif başlıklar arasındaki ayrım uygulamaya özgüdür."
+
+msgid "Audience"
+msgstr "Hedef Kitle"
+
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "Kaynağın amaçlandığı ya da yararlı olduğu bir varlık sınıfı."
+
+msgid "Date Available"
+msgstr "Uygun Tarih"
+
+msgid "Date (often a range) that the resource became or will become available."
+msgstr "Kaynağın kullanılabilir olduğu ya da olacağı tarih (genellikle bir aralık)."
+
+msgid "Bibliographic Citation"
+msgstr "Bibliyografya"
+
+msgid "A bibliographic reference for the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."
+msgstr "Kaynak için bir bibliyografya başvurusu. Kaynağı mümkün olduğu kadar belirli bir biçimde tanımlayacak yeterlilikte kaynakça ayrıntısı eklenmesi önerilir."
+
+msgid "Conforms To"
+msgstr "Buna Uygun"
+
+msgid "An established standard to which the described resource conforms."
+msgstr "Açıklanan kaynağın uyduğu standart."
+
+msgid "Date Created"
+msgstr "Oluşturulduğu Tarih"
+
+msgid "Date of creation of the resource."
+msgstr "Kaynağın oluşturulduğu tarih."
+
+msgid "Date Accepted"
+msgstr "Kabul Edildiği Tarih"
+
+msgid "Date of acceptance of the resource. Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."
+msgstr "Kaynağın kabul edildiği tarih. Kabul Edildiği Tarih ile ilgili olabilecek kaynak örnekleri bir tez (bir üniversite bölümü tarafından kabul edilen) ya da bir makale (bir dergi tarafından kabul edilen) olabilir."
+
+msgid "Date Copyrighted"
+msgstr "Telif Hakkı Tarihi"
+
+msgid "Date of copyright."
+msgstr "Telif hakkının tarihi."
+
+msgid "Date Submitted"
+msgstr "Gönderildiği Tarih"
+
+msgid "Date of submission of the resource. Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal)."
+msgstr "Kaynağın gönderim tarihi. Gönderildiği Tarih ile ilgili olabilecek kaynak örnekleri bir tez (bir üniversite bölümü tarafından gönderilen) ya da bir makale (bir dergi tarafından gönderilen) olabilir."
+
+msgid "Audience Education Level"
+msgstr "Hedef Kitle Eğitim Düzeyi"
+
+msgid "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."
+msgstr "Açıklanan kaynağın hedeflediği eğitim veya öğretim bağlamında ilerleme bakımından tanımlanan varlık sınıfı."
+
+msgid "Extent"
+msgstr "Kapsam"
+
+msgid "The size or duration of the resource."
+msgstr "Kaynağın boyutu ya da süresi."
+
+msgid "Has Format"
+msgstr "Biçimi Var"
+
+msgid "A related resource that is substantially the same as the pre-existing described resource, but in another format."
+msgstr "Önceden var olan, açıklanan kaynağın aynısı, ancak başka bir biçimde olan ilgili bir kaynak."
+
+msgid "Has Part"
+msgstr "Parçası Var"
+
+msgid "A related resource that is included either physically or logically in the described resource."
+msgstr "Açıklanan kaynakta fiziksel ya da mantıksal olarak bulunan ilgili bir kaynak."
+
+msgid "Has Version"
+msgstr "Sürümü Var"
+
+msgid "A related resource that is a version, edition, or adaptation of the described resource."
+msgstr "Açıklanan kaynağın bir sürümü, baskısı veya uyarlaması olan ilgili bir kaynak."
+
+msgid "Instructional Method"
+msgstr "Eğitsel Yöntem"
+
+msgid "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support. Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured. Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."
+msgstr "Açıklanan kaynağın destekleyecek şekilde tasarlandığı, bilgiyi ve tutumları oluşturan bir süreç. Eğitsel Yöntem, genellikle eğitim malzemelerinin sunumu veya eğitsel faaliyetlerin yürütülmesi, öğrenciler arasındaki kalıplar ve öğrenci-eğitmen etkileşimleri, öğrenimin grup ve kişi düzeyinde ölçüldüğü mekanizmaları içerir. Eğitsel yöntemler, planlama ve uygulamadan değerlendirme ve geribildirime kadar eğitim ve öğrenim süreçlerinin her yönünü kapsar."
+
+msgid "Is Format Of"
+msgstr "Bir Biçimi"
+
+msgid "A related resource that is substantially the same as the described resource, but in another format."
+msgstr "Açıklanan kaynağın önemli ölçüde aynısı, ancak başka bir biçimi olan ilgili bir kaynak."
+
+msgid "Is Part Of"
+msgstr "Bir Parçası"
+
+msgid "A related resource in which the described resource is physically or logically included."
+msgstr "Açıklanan kaynağın fiziksel ya da mantıksal olarak dahil edildiği ilgili kaynak."
+
+msgid "Is Referenced By"
+msgstr "Başvuran"
+
+msgid "A related resource that references, cites, or otherwise points to the described resource."
+msgstr "Açıklanan kaynağına başvuran, gönderme yapan veya başka bir şekilde gösteren ilgili bir kaynak."
+
+msgid "Is Replaced By"
+msgstr "Değiştiren"
+
+msgid "A related resource that supplants, displaces, or supersedes the described resource."
+msgstr "Açıklanan kaynağın yerini alan, çıkaran veya iptal eden ilgili bir kaynak."
+
+msgid "Is Required By"
+msgstr "Gerektiren"
+
+msgid "A related resource that requires the described resource to support its function, delivery, or coherence."
+msgstr "Açıklanan kaynağın işlevi, teslimi ve tutarlılığını desteklemesini gerektiren ilgili bir kaynak."
+
+msgid "Is Version Of"
+msgstr "Bunun Sürümü"
+
+msgid "A related resource of which the described resource is a version, edition, or adaptation. Changes in version imply substantive changes in content rather than differences in format."
+msgstr "Açıklanan kaynağın sürümü, basımı veya uyarlaması olduğu ilgili bir kaynak. Sürümdeki değişiklikler biçimde farklılıklar yerine içerikteki önemli değişiklikleri gösterir."
+
+msgid "Date Issued"
+msgstr "Verildiği Tarih"
+
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "Kaynağın resmi veriliş (yayın gibi) tarihi."
+
+msgid "License"
+msgstr "Lisans"
+
+msgid "A legal document giving official permission to do something with the resource."
+msgstr "Kaynakla bir şey yapmak için resmi izin veren yasal bir belge."
+
+msgid "Mediator"
+msgstr "Uzlaştırıcı"
+
+msgid "An entity that mediates access to the resource and for whom the resource is intended or useful. In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."
+msgstr "Kaynağa erişimi düzenleyen ve kaynağın hedeflediği veya kullanışlı olduğu bir varlık. Eğitsel bağlamda bir arabulucu ebeveyn, öğretmen, öğretim görevlisi veya bakıcı olabilir."
+
+msgid "Medium"
+msgstr "Orta"
+
+msgid "The material or physical carrier of the resource."
+msgstr "Kaynağın materyal veya fiziksel taşıyıcısı."
+
+msgid "Date Modified"
+msgstr "Değiştirildiği Tarih"
+
+msgid "Date on which the resource was changed."
+msgstr "Kaynağın değiştirildiği tarih."
+
+msgid "Provenance"
+msgstr "Köken"
+
+msgid "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation. The statement may include a description of any changes successive custodians made to the resource."
+msgstr "Özgünlüğü, bütünlüğü ve yorumlanması için önemli olan, oluşturulduğundan bu yana kaynağın sahipliği ve gözetiminde yapılan değişikliklerin belirtimi. Belirtim, sonraki sorumluların kaynakta yaptığı değişikliklerin bir açıklamasını içerebilir."
+
+msgid "References"
+msgstr "Başvurular"
+
+msgid "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+msgstr "Açıklanan kaynak tarafından başvurulan, gönderme yapılan veya başka bir şekilde gösterilen ilgili bir kaynak."
+
+msgid "Replaces"
+msgstr "Yerini alır"
+
+msgid "A related resource that is supplanted, displaced, or superseded by the described resource."
+msgstr "Açıklanan kaynak tarafından iptal edilen, yeri alınan veya yerine geçilen ilgili bir kaynak."
+
+msgid "Requires"
+msgstr "Gereklidir"
+
+msgid "A related resource that is required by the described resource to support its function, delivery, or coherence."
+msgstr "Açıklanan kaynağın işlevini, teslimatını ya da tutarlılığını desteklemek için gereken ilgili bir kaynak."
+
+msgid "Rights Holder"
+msgstr "Hak Sahibi"
+
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "Kaynak üzerindeki haklara sahip veya hakları yöneten kişi ya da kuruluş."
+
+msgid "Spatial Coverage"
+msgstr "Konum Kapsamı"
+
+msgid "Spatial characteristics of the resource."
+msgstr "Kaynağın uzamsal özellikleri."
+
+msgid "Table Of Contents"
+msgstr "İçindekiler"
+
+msgid "A list of subunits of the resource."
+msgstr "Kaynağın alt birimlerinin listesi."
+
+msgid "Temporal Coverage"
+msgstr "Zaman Kapsamı"
+
+msgid "Temporal characteristics of the resource."
+msgstr "Kaynağın zamansal özellikleri."
+
+msgid "Date Valid"
+msgstr "Geçerlilik Tarihi"
+
+msgid "Date (often a range) of validity of a resource."
+msgstr "Bir kaynağın geçerlilik tarihi (genellikle bir aralık)."
+
+msgid "Metatag Extended Permissions"
+msgstr "Meta etiket Genişletilmiş İzinleri"
+
+msgid "Adds individual permissions for each meta tag, allowing for fine-grained access to the meta tags. Note: this may lead to performance issues on the permissions admin page, please see the included README.txt file for details."
+msgstr "Meta etiketlere ayrıntılı erişime izin veren, her meta etiket için tek tek izinler ekler. Not: Bu, izinler admin sayfasında performans sorunlarına yol açabilir, ayrıntılar için lütfen içeride README.txt dosyasına bakın."
+
+msgid "Access %tag in %group"
+msgstr "%group içinde %tag etiketine erişim"
+
+msgid "Metatag: Facebook"
+msgstr "Meta Etiket: Facebook"
+
+msgid "A set of meta tags specially for controlling advanced functionality with Facebook."
+msgstr "Özel olarak Facebook ile gelişmiş işlevselliği denetlemeye ilişkin bir meta etiket kümesi."
+
+msgid "Facebook Admins"
+msgstr "Facebook Yöneticileri"
+
+msgid "Facebook App ID"
+msgstr "Facebook Uygulama Tanıtıcısı"
+
+msgid "Facebook Pages"
+msgstr "Facebook Sayfaları"
+
+msgid "facebook"
+msgstr "facebook"
+
+msgid "A comma-separated list of Facebook user IDs of people who are considered administrators or moderators of this page."
+msgstr "Bu sayfanın denetimcisi ya da sistem yöneticisi olarak değerlendirilen kişilerin Facebook kullanıcı kimliklerinin virgülle ayrılmış listesi."
+
+msgid "Facebook Application ID"
+msgstr "Facebook Uygulama Tanıtıcısı"
+
+msgid "A comma-separated list of Facebook Platform Application IDs applicable for this site."
+msgstr "Bu site için geçerli olan Facebook Platformu Uygulama Tanıtıcılarının virgülle ayrılmış listesi."
+
+msgid "Facebook Instant Articles claim URL token."
+msgstr "Facebook Instant Articles talep URL belirteci."
+
+msgid "Provides support for many different favicons."
+msgstr "Birçok farklı sık kullanılan simgesi için destek sağlar."
+
+msgid "Metatag: Favicons"
+msgstr "Metatag: Favicons"
+
+msgid "Default shortcut icon"
+msgstr "Varsayılan kısayol simgesi"
+
+msgid "Icon: SVG"
+msgstr "Simge: SVG"
+
+msgid "href"
+msgstr "href"
+
+msgid "Color"
+msgstr "Renk"
+
+msgid "Icon: 16px x 16px"
+msgstr "Simge: 16 piksel x 16 piksel"
+
+msgid "Icon: 32px x 32px"
+msgstr "Simge: 32 piksel x 32 piksel"
+
+msgid "Icon: 96px x 96px"
+msgstr "Simge: 96 piksel x 96 piksel"
+
+msgid "Icon: 192px x 192px"
+msgstr "Simge: 192 piksel x 192 piksel"
+
+msgid "Apple touch icon: 60px x 60px"
+msgstr "Apple touch simgesi: 60 piksel x 60 piksel"
+
+msgid "Apple touch icon: 72px x 72px"
+msgstr "Apple touch simgesi: 72 piksel x 72 piksel"
+
+msgid "Apple touch icon: 76px x 76px"
+msgstr "Apple touch simgesi: 76 piksel x 76 piksel"
+
+msgid "Apple touch icon: 114px x 114px"
+msgstr "Apple touch simgesi: 114 piksel x 114 piksel"
+
+msgid "Apple touch icon: 120px x 120px"
+msgstr "Apple touch simgesi: 120 piksel x 120 piksel"
+
+msgid "Apple touch icon: 144px x 144px"
+msgstr "Apple touch simgesi: 144 piksel x 144 piksel"
+
+msgid "Apple touch icon: 152px x 152px"
+msgstr "Apple touch simgesi: 152 piksel x 152 piksel"
+
+msgid "Apple touch icon: 180px x 180px"
+msgstr "Apple touch simgesi: 180 piksel x 180 piksel"
+
+msgid "Apple touch icon (precomposed): 57px x 57px"
+msgstr "Apple touch simgesi (önceden oluşturulmuş): 57 piksel x 57 piksel"
+
+msgid "Apple touch icon (precomposed): 72px x 72px"
+msgstr "Apple touch simgesi (önceden oluşturulmuş): 72 piksel x 72 piksel"
+
+msgid "Apple touch icon (precomposed): 76px x 76px"
+msgstr "Apple touch simgesi (önceden oluşturulmuş): 76 piksel x 76 piksel"
+
+msgid "Apple touch icon (precomposed): 114px x 114px"
+msgstr "Apple touch simgesi (önceden oluşturulmuş): 114 piksel x 114 piksel"
+
+msgid "Apple touch icon (precomposed): 120px x 120px"
+msgstr "Apple touch simgesi (önceden oluşturulmuş): 120 piksel x 120 piksel"
+
+msgid "Apple touch icon (precomposed): 144px x 144px"
+msgstr "Apple touch simgesi (önceden oluşturulmuş): 144 piksel x 144 piksel"
+
+msgid "Apple touch icon (precomposed): 152px x 152px"
+msgstr "Apple touch simgesi (önceden oluşturulmuş): 152 piksel x 152 piksel"
+
+msgid "Apple touch icon (precomposed): 180px x 180px"
+msgstr "Apple touch simgesi (önceden oluşturulmuş): 180 piksel x 180 piksel"
+
+msgid "Favicons & touch icons"
+msgstr "Sık kullanılan simgeleri ve touch simgeleri"
+
+msgid "A PNG image that is 60px wide by 60px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "60 piksel genişlik x 60 piksel yükseklik değerine sahip bir PNG uzantılı resim. Retina olmayan iPhone, iPod Touch ve Android 2.1+ aygıtlarla kullanılır."
+
+msgid "A PNG image that is 114px wide by 114px high. Used with iPhone with @2x display running iOS <= 6."
+msgstr "114 piksel genişlik x 114 piksel yükseklik değerine sahip bir PNG uzantılı resim. iOS <= 6 çalıştıran @2x ekranlı iPhone ile kullanılır."
+
+msgid "A PNG image that is 120px wide by 120px high. Used with iPhone with @2x display running iOS >= 7."
+msgstr "120 piksel genişlik x 120 piksel yükseklik değerine sahip bir PNG uzantılı resim. iOS >= 7 çalıştıran @2x ekranlı iPhone ile kullanılır."
+
+msgid "A PNG image that is 144px wide by 144px high. Used with iPad with @2x display running iOS <= 6."
+msgstr "144 piksel genişlik x 144 piksel yükseklik değerine sahip bir PNG uzantılı resim. iOS <= 6 çalıştıran @2x ekranlı iPad ile kullanılır."
+
+msgid "A PNG image that is 152px wide by 152px high. Used with iPad with @2x display running iOS >= 7."
+msgstr "152 piksel genişlik x 152 piksel yükseklik değerine sahip bir PNG uzantılı resim. iOS >= 7 çalıştıran @2x ekranlı iPad ile kullanılır."
+
+msgid "A PNG image that is 180px wide by 180px high. Used with iPhone 6 Plus with @3x display."
+msgstr "180 piksel genişlik x 180 piksel yükseklik değerine sahip bir PNG uzantılı resim. @3x ekranlı iPhone 6 Plus ile kullanılır."
+
+msgid "A PNG image that is 72px wide by 72px high. Used with the iPad mini and the first- and second-generation iPad (@1x display) on iOS <= 6."
+msgstr "72 piksel genişlik x 72 piksel yükseklik değerine sahip bir PNG uzantılı resim. iOS <= 6 sistemli birinci ve ikinci nesil iPad (@1x ekran) ve iPad mini ile kullanılır."
+
+msgid "A PNG image that is 76px wide by 76px high. Used with the iPad mini and the second-generation iPad (@1x display) on iOS >= 7."
+msgstr "76 piksel genişlik x 76 piksel yükseklik değerine sahip bir PNG uzantılı resim. iOS >= 7 sistemli ikinci nesil iPad (@1x ekran) ve iPad mini ile kullanılır."
+
+msgid "A PNG image that is 57px wide by 57px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "57 piksel genişlik x 57 piksel yükseklik değerine sahip bir PNG uzantılı resim. Retina olmayan iPhone, iPod Touch ve Android 2.1+ aygıtlarla kullanılır."
+
+msgid "A PNG image that is 16px wide by 16px high."
+msgstr "16 piksel genişlik x 16 piksel yükseklik değerine sahip bir PNG uzantılı resim. "
+
+msgid "A PNG image that is 192px wide by 192px high."
+msgstr "192 piksel genişlik x 192 piksel yükseklik değerine sahip bir PNG uzantılı resim. "
+
+msgid "A PNG image that is 32px wide by 32px high."
+msgstr "32 piksel genişlik x 32 piksel yükseklik değerine sahip bir PNG uzantılı resim. "
+
+msgid "A PNG image that is 96px wide by 96px high."
+msgstr "96 piksel genişlik x 96 piksel yükseklik değerine sahip bir PNG uzantılı resim. "
+
+msgid "Mask icon color"
+msgstr "Maske simgesi rengi"
+
+msgid "Color attribute for SVG (mask) icon in hexadecimal format, e.g. '#0000ff'. Setting it will break HTML validation. If not set macOS Safari ignores the Mask Icon entirely, making the Icon: SVG completely useless."
+msgstr "Onaltılı biçimde SVG (maske) simgesi için renk özniteliği, örn. '#0000ff'. Bu ayar, HTML geçerlilik denetimini bozar. Ayarlanmazsa macOS Safari, Maske Simgesini tamamen yoksayar, Simge: SVG tamamen kullanılmaz hale gelir."
+
+msgid "Mask icon (SVG)"
+msgstr "Maske simgesi (SVG)"
+
+msgid "A grayscale scalable vector graphic (SVG) file."
+msgstr "Gri tonlamalı ölçeklenebilir vektör grafik (SVG) dosyası."
+
+msgid "Default icon"
+msgstr "Varsayılan simge"
+
+msgid "The traditional favicon, must be either a GIF, ICO, JPG/JPEG or PNG image."
+msgstr "Geleneksel sık kullanılan simgesi, GIF, ICO, JPG/JPEG ya da PNG uzantılı resim olmalıdır."
+
+msgid "Provides support for meta tags used for Google Custom Search Engine."
+msgstr "Google Özel Arama Motoru için kullanılan meta etiket desteği sağlar."
+
+msgid "Metatag: Google Custom Search Engine (CSE)"
+msgstr "Meta Etiket: Google Özel Arama Motoru (CSE)"
+
+msgid "Thumbnail"
+msgstr "Küçük resim"
+
+msgid "Department"
+msgstr "Departman"
+
+msgid "Content audience"
+msgstr "İçerik hedef kitlesi"
+
+msgid "Document status"
+msgstr "Belge durumu"
+
+msgid "google_rating"
+msgstr "google_rating"
+
+msgid "Google Custom Search Engine (CSE)"
+msgstr "Google Özel Arama Motoru (CSE)"
+
+msgid "Meta tags used to control the mobile browser experience. Some of these meta tags have been replaced by newer mobile browsers. These meta tags usually only need to be set globally, rather than per-page."
+msgstr "Mobil tarayıcı deneyimini denetlemek için kullanılan meta etiketler. Bu meta etiketlerin bazıları, daha yeni mobil tarayıcılarla değiştirilmiştir. Bu meta etiketlerin genellikle sayfa başına değil, yalnızca genel olarak ayarlanması gerekir."
+
+msgid "Department tag."
+msgstr "Departman etiketi."
+
+msgid "Content rating"
+msgstr "İçerik derecelendirmesi"
+
+msgid "Works only with numeric values."
+msgstr "Yalnızca sayısal değerlerle çalışır."
+
+msgid "Use a url of a valid image."
+msgstr "Geçerli bir resmin URL'sini kullanın."
+
+msgid "Metatag: Google Plus"
+msgstr "Meta Etiket: Google Plus"
+
+msgid "Provides support for Google's Plus meta tags. Deprecated, will be removed in Metatag 2.0.0."
+msgstr "Google Plus meta etiketleri için destek sağlar. Kullanımdan kaldırıldı, Metatag 2.0.0'da kaldırılacak."
+
+msgid "Google Plus: name"
+msgstr "Google Plus: ad"
+
+msgid "Google Plus: image"
+msgstr "Google Plus: görüntü"
+
+msgid "Google Plus: description"
+msgstr "Google Plus: açıklama"
+
+msgid "Publisher URL"
+msgstr "Yayınlayan URL'si"
+
+msgid "Google Plus"
+msgstr "Google Plus"
+
+msgid "DEPRECATED, use Advanced-Author instead."
+msgstr "KULLANIMDAN KALDIRILDI, onun yerine İleri Düzey-Yazar kullanın."
+
+msgid "Content description less than 200 characters."
+msgstr "200 karakterden kısa içerik açıklaması."
+
+msgid "Image"
+msgstr "Görsel"
+
+msgid "The URL of an image which should represent the content. For best results use an image that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Supports PNG, JPEG and GIF formats."
+msgstr "İçeriği temsil etmesi gereken bir resmin URL'si. En iyi sonuç için en 1200 x 630 piksel boyutunda olan bir resim kullanın, ancak en az 600 x 316 piksel önerilir. PNG, JPEG ve GIF biçimlerini destekler."
+
+msgid "Name"
+msgstr "İsim"
+
+msgid "Content title."
+msgstr "İçerik başlığı."
+
+msgid "Used by some search engines to confirm publication of the content on a page. Should be the full URL for the publication's Google+ profile page."
+msgstr "Bazı arama motorları tarafından bir sayfada içeriğin yayınını onaylamak için kullanılır. Yayının Google+ profil sayfasının tam URL'si olmalıdır."
+
+msgid "Provides support for the hreflang meta tag with some extra logic to simplify it."
+msgstr "hreflang meta etiketini kolaylaştırmaya ilişkin ek mantık ile birlikte hreflang meta etiketi için destek sağlar."
+
+msgid "Metatag: Hreflang"
+msgstr "Metatag: Hreflang"
+
+msgid "Default locale (x-default)"
+msgstr "Varsayılan yerel ayar (x-varsayılan)"
+
+msgid "Href per language"
+msgstr "Dil başına href"
+
+msgid "URL for a version of this page in %langcode"
+msgstr "%langcode dilinde bu sayfanın bir sürümünün URL adresi"
+
+msgid "Alternative language links (hreflang)"
+msgstr "Alternatif dil bağlantıları (hreflang)"
+
+msgid "These meta tags are designed to point visitors to versions of the current page in other languages."
+msgstr "Bu meta etiketler, ziyaretçileri geçerli sayfanın diğer dillerdeki sürümlerine yönlendirmek için tasarlanmıştır."
+
+msgid "Hreflang per language"
+msgstr "Dil başına hreflang"
+
+msgid "This plugin will be cloned from these settings for each enabled language."
+msgstr "Bu eklenti, her etkin dil için bu ayarlardan kopyalanacak."
+
+msgid "This should point to the version of the page that is for the main or primary locale, e.g. the original version of an article that is translated into other languages."
+msgstr "Bu, ana ya da birincil yerel ayar için olan sayfa sürümünü (örn. başka dillere çevrilmiş bir makalenin özgün sürümü) işaret etmelidir."
+
+msgid "Provides support for meta tags used to control the mobile browser experience."
+msgstr "Mobil tarayıcı deneyimini denetlemek için kullanılan meta etiketlere ilişkin destek sağlar. "
+
+msgid "Metatag: Mobile & UI Adjustments"
+msgstr "Meta Etiket: Mobil ve Kullanıcı Arabirimi Ayarlamaları"
+
+msgid "Handheld URL"
+msgstr "Handheld URL"
+
+msgid "Android Mobile: Android App Link Alternative"
+msgstr "Android Mobile: Android Uygulama Bağlantısı Alternatifi"
+
+msgid "Android Mobile: Manifest"
+msgstr "Android Mobile: Bildirge"
+
+msgid "Apple Mobile: iTunes App"
+msgstr "Apple Mobile: iTunes Uygulaması"
+
+msgid "Apple Mobile: Web App Capable"
+msgstr "Apple Mobile: Web Uygulaması Özellikli"
+
+msgid "Apple Mobile: Web App Status bar color"
+msgstr "Apple Mobile: Web Uygulaması Durum çubuğu rengi"
+
+msgid "Apple Mobile: Web App Title"
+msgstr "Apple Mobile: Web Uygulaması Başlığı"
+
+msgid "Application name"
+msgstr "Uygulama adı"
+
+msgid "Mobile: Cleartype"
+msgstr "Mobile: Cleartype"
+
+msgid "Apple Mobile: Format Detection"
+msgstr "Apple Mobile: Biçim Algılama"
+
+msgid "Mobile: Handheld-Friendly"
+msgstr "Mobile: El Tipi Cihazda Kullanılabilir"
+
+msgid "Apple Mobile: iOS App Link Alternative"
+msgstr "Apple Mobile: iOS Uygulama Bağlantısı Alternatifi"
+
+msgid "Mobile: Mobile Optimized"
+msgstr "Mobile: Mobil için Optimize Edilmiş"
+
+msgid "MSApplication - Allow domain API calls"
+msgstr "MSApplication - Etki alanı API çağrılarına izin ver"
+
+msgid "MSApplication - Allow domain meta tags"
+msgstr "MSApplication - Etki alanı meta etiketlerine izin ver"
+
+msgid "MSApplication - Badge"
+msgstr "MSApplication - Kimlik Kartı"
+
+msgid "MSApplication - Config"
+msgstr "MSApplication - Yapılandırma"
+
+msgid "MSApplication - Nav button color"
+msgstr "MSApplication - Gezinti düğmesi rengi"
+
+msgid "MSApplication - Notification"
+msgstr "MSApplication - Bildirim"
+
+msgid "MSApplication - Square logo, 150px x 150px"
+msgstr "MSApplication - Kare logo, 150 piksel x 150 piksel"
+
+msgid "MSApplication - Square logo, 310px x 310px"
+msgstr "MSApplication - Kare logo, 310 piksel x 310 piksel"
+
+msgid "MSApplication - Square logo, 70px x 70px"
+msgstr "MSApplication - Kare logo, 70 piksel x 70 piksel"
+
+msgid "MSApplication - Start URL"
+msgstr "MSApplication - Başlangıç URL'si"
+
+msgid "MSApplication - Task"
+msgstr "MSApplication - Görev"
+
+msgid "MSApplication - Task separator"
+msgstr "MSApplication - Görev ayırıcı"
+
+msgid "MSApplication - Tile color"
+msgstr "MSApplication - Kutucuk rengi"
+
+msgid "MSApplication - Tile image"
+msgstr "MSApplication - Kutucuk görüntüsü"
+
+msgid "MSApplication - Tooltip"
+msgstr "MSApplication - Araç ipucu"
+
+msgid "MSApplication - Wide logo, 310px x 150px"
+msgstr "MSApplication - Geniş logo, 310 piksel x 150 piksel"
+
+msgid "MSApplication - Window"
+msgstr "MSApplication - Pencere"
+
+msgid "Mobile: Theme Color"
+msgstr "Mobile: Tema Rengi"
+
+msgid "Mobile: Viewport"
+msgstr "Mobile: Görünüm Penceresi"
+
+msgid "Mobile: Web Manifest"
+msgstr "Mobil: Web Bildirgesi"
+
+msgid "X-UA-Compatible"
+msgstr "X-UA-Uyumlu"
+
+msgid "Android"
+msgstr "Android"
+
+msgid "Custom meta tags used by the Android OS, browser, etc."
+msgstr "Android OS, tarayıcı vb. tarafından kullanılan özel meta etiketler."
+
+msgid "Apple & iOS"
+msgstr "Apple ve iOS"
+
+msgid "Custom meta tags used by Apple's software, iOS, Safari, etc."
+msgstr "Apple'ın yazılımı, iOS, Safari vb. tarafından kullanılan özel meta etiketler."
+
+msgid "Mobile & UI Adjustments"
+msgstr "Mobil ve Kullanıcı Arabirimi Ayarlamaları"
+
+msgid "Windows & Windows Mobile"
+msgstr "Windows ve Windows Mobile"
+
+msgid "Custom meta tags used by the Windows and Windows Mobile OSes, IE browser, etc."
+msgstr "Windows ve Windows Mobile OSes, IE tarayıcısı vb. tarafından kullanılan özel meta etiketler."
+
+msgid "Provides an absolute URL to a specially formatted version of the current page designed for 'feature phones', mobile phones that do not support modern browser standards. See the <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>official Google Mobile SEO Guide</a> for details on how the page should be formatted."
+msgstr "Modern tarayıcı standartlarını desteklemeyen mobil telefonlar için 'özel telefonlar' için tasarlanmış geçerli sayfanın özel biçimli versiyonunun tam URL'sini sağlar. Sayfanın nasıl biçimlendirilmesi gerektiğine ilişkin ayrıntılar için <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>resmi Google Mobile SEO Kılavuzu'na</a> bakın."
+
+msgid "Android app link alternative"
+msgstr "Android uygulama bağlantısı alternatifi"
+
+msgid "A custom string for deeplinking to an Android mobile app. Should be in the format 'package_name/host_path', e.g. 'com.example.android/example/hello-screen'. The 'android-app://' prefix will be included automatically."
+msgstr "Bir Android mobil uygulamasına ayrıntılı bağlantı sağlayan özel bir dize. 'package_name/host_path' biçiminde olmalıdır; örn. 'com.example.android/example/hello-screen'. 'android-app://' öneki otomatik olarak eklenir."
+
+msgid "iTunes App details"
+msgstr "iTunes Uygulama ayrıntıları"
+
+msgid "This informs iOS devices to display a banner to a specific app. If used, it must provide the 'app-id' value, the 'affiliate-data' and 'app-argument' values are optional."
+msgstr "Bu, iOS aygıtlarına, belirli bir uygulamaya yönelik ana başlığı görüntülemesini bildirir. Kullanılması durumunda, 'app-id' değerini sağlamalıdır; 'affiliate-data' ve 'app-argument' değerleri isteğe bağlıdır."
+
+msgid "Web app capable?"
+msgstr "Web uygulaması özellikli mi?"
+
+msgid "If set to 'yes', the application will run in full-screen mode; the default behavior is to use Safari to display web content."
+msgstr "'Evet' olarak ayarlanırsa uygulama tam ekran kipinde çalışır; varsayılan davranış, web içeriğini görüntülemek için Safari'nin kullanılmasıdır."
+
+msgid "Status bar color"
+msgstr "Durum çubuğu rengi"
+
+msgid "Requires the 'Web app capable' meta tag to be set to 'yes'. May be set to 'default', 'black', or 'black-translucent'."
+msgstr "'Web uygulaması özellikli' meta etiketinin 'evet' olarak ayarlanmasını gerektirir. 'Varsayılan', 'siyah' ya da 'siyah-yarı saydam' olarak ayarlanabilir."
+
+msgid "Apple Web App Title"
+msgstr "Apple Web Uygulaması Başlığı"
+
+msgid "Overrides the long site title when using the Apple Add to Home Screen."
+msgstr "Apple Ana Sayfaya Ekle Ekranı kullanılırken uzun site başlığını geçersiz kılar."
+
+msgid "The default name displayed with the pinned sites tile (or icon). Set the content attribute to the desired name."
+msgstr "Sabitlenmiş siteler kutucuğu (ya da simgesi) ile birlikte varsayılan ad görüntülenir. İçerik özniteliğini istediğiniz ada ayarlayın."
+
+msgid "Cleartype"
+msgstr "Cleartype"
+
+msgid "A legacy meta tag for older versions of Internet Explorer on Windows, use the value 'on' to enable it; this tag is ignored by all other browsers."
+msgstr "Windows'ta eski Internet Explorer sürümleri için eski meta etiket, bunu etkinleştirmek için 'açık' değerini kullanın; bu etiket diğer tüm tarayıcılar tarafından yoksayılır."
+
+msgid "Format detection"
+msgstr "Biçim algılama"
+
+msgid "If set to 'telephone=no' the page will not be checked for phone numbers, which would be presented."
+msgstr "'telephone=no' olarak ayarlanırsa sayfada mevcut olabilecek telefon numaraları denetlenmez."
+
+msgid "Handheld-Friendly"
+msgstr "El Tipi Cihazda Kullanılabilir"
+
+msgid "Some older mobile browsers will expect this meta tag to be set to 'true' to indicate that the site has been designed with mobile browsers in mind."
+msgstr "Bazı eski mobil tarayıcılar, sitenin mobil tarayıcılar dikkate alınarak tasarlandığını belirtmek için bu meta etiketin 'true' olarak ayarlanmasını bekler."
+
+msgid "iOS app link alternative"
+msgstr "iOS uygulama bağlantısı alternatifi"
+
+msgid "A custom string for deeplinking to an iOS mobile app. Should be in the format 'itunes_id/scheme/host_path', e.g. 123456/example/hello-screen'. The 'ios-app://' prefix will be included automatically."
+msgstr "Bir iOS mobil uygulamasına ayrıntılı bağlantı vermek için özel bir dize. 'itunes_id/scheme/host_path' biçiminde olmalıdır, örn. 123456/example/hello-screen'. 'ios-app://' öneki otomatik olarak eklenir."
+
+msgid "Mobile Optimized"
+msgstr "Mobil için Optimize Edilmiş"
+
+msgid "Using the value 'width' tells certain mobile Internet Explorer browsers to display as-is, without being resized. Alternatively a numerical width may be used to indicate the desired page width the page should be rendered in: '240' is the suggested default, '176' for older browsers or '480' for newer devices with high DPI screens."
+msgstr "'Genişlik' değeri kullanıldığında, belirli mobil Internet Explorer tarayıcılarına yeniden boyutlandırılmadan olduğu gibi görüntülenmesi bildirilir. Alternatif olarak, sayfanın görüntüsünün oluşturulması istenen sayfa genişliğini belirtmek için bir sayısal genişlik kullanılabilir: önerilen varsayılan değer '240', eski tarayıcılar için '176' ya da yüksek DPI ekranlara sahip yeni aygıtlar için '480'dir."
+
+msgid "Allows tasks to be defined on child domains of the fully qualified domain name associated with the pinned site. Should be either 'true' or 'false'."
+msgstr "Sabitlenmiş siteyle ilişkili tam nitelikli etki alanı adının alt etki alanlarında görevler tanımlanmasına olanak sağlar. 'True' ya da 'false' olmalıdır."
+
+msgid "A semi-colon -separated string that must contain the 'polling-uri=' value with the full URL to a <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>Badge Schema XML file</a>. May also contain 'frequency=' value set to either 30, 60, 360, 720 or 1440 (default) which specifies (in minutes) how often the URL should be polled."
+msgstr "<a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>Kimlik Kartı Şeması XML dosyasının</a> tam URL'si ile 'polling-uri=' değerini içermesi gereken, noktalı virgülle ayrılmış bir dize. URL'nin dakika cinsinden ne sıklıkla yoklanması gerektiğini belirten, 30, 60, 360, 720 ya da 1440 (varsayılan) olarak ayarlanmış 'frequency=' değerini de içerebilir."
+
+msgid "Should contain the full URL to a <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>Browser configuration schema</a> file that further controls tile customizations."
+msgstr "Kutucuk özelleştirmelerini daha ayrıntılı şekilde denetleyen bir <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>Tarayıcı yapılandırma şeması</a> dosyasının tam URL'sini içermelidir."
+
+msgid "Controls the color of the Back and Forward buttons in the pinned site browser window."
+msgstr "Sabitlenmiş site tarayıcısı penceresinde Geri ve İleri düğmelerinin rengini denetler."
+
+msgid "A semi-colon -separated string containing 'polling-uri=' (required), 'polling-uri2=', 'polling-uri3=', 'polling-uri4=' and 'polling-uri5=' to indicate the URLs for notifications. May also contain a 'frequency=' value to specify how often (in minutes) the URLs will be polled; limited to 30, 60, 360, 720 or 1440 (default). May also contain the value 'cycle=' to control the notifications cycle."
+msgstr "Bildirimlere ilişkin URL'leri belirtmek için 'polling-uri=' (zorunlu), 'polling-uri2=', 'polling-uri3=', 'polling-uri4=' ve 'polling-uri5=' içeren, noktalı virgülle ayrılmış bir dize. URL'lerin dakika cinsinden ne sıklıkla yoklanacağını belirtmek için bir 'frequency=' değerini de içerebilir; 30, 60, 360, 720 ya da 1440 (varsayılan) ile sınırlıdır. Bildirim döngüsünü denetlemek için 'cycle=' değerini de içerebilir."
+
+msgid "The URL to a logo file that is 150px by 150px."
+msgstr "150 piksel x 150 piksel boyutunda olan bir logo dosyasının URL'si."
+
+msgid "The URL to a logo file that is 310px by 310px."
+msgstr "310 piksel x 310 piksel boyutunda olan bir logo dosyasının URL'si."
+
+msgid "The URL to a logo file that is 70px by 70px."
+msgstr "70 piksel x 70 piksel boyutunda olan bir logo dosyasının URL'si."
+
+msgid "The URL to the root page of the site."
+msgstr "Sitenin kök sayfasının URL'si."
+
+msgid "A semi-colon -separated string defining the 'jump' list task. Should contain the 'name=' value to specify the task's name, the 'action-uri=' value to set the URL to load when the jump list is clicked, the 'icon-uri=' value to set the URL to an icon file to be displayed, and 'window-type=' set to either 'tab' (default), 'self' or 'window' to control how the link opens in the browser."
+msgstr "'jump' listesi görevini tanımlayan noktalı virgülle ayrılmış bir dize. Görevin adını belirtmek için 'name=' değerini, atlama listesi tıklatıldığında yüklenecek URL'yi ayarlamak için 'action-uri=' değerini, URL'yi, görüntülenecek bir simge dosyasına ayarlamak için 'icon-uri=' değerini ve bağlantının tarayıcıda nasıl açılacağını denetlemek için 'sekme' (varsayılan), 'kendisi' veya 'pencere' olarak ayarlanmış şekilde 'window-type=' değerini içermelidir."
+
+msgid "The HTML color to use as the background color for the live tile."
+msgstr "Canlı kutucuğun arka plan rengi olarak kullanılacak HTML rengi."
+
+msgid "The URL to an image to use as the background for the live tile."
+msgstr "Canlı kutucuk için arka plan olarak kullanılacak bir resmin URL'si."
+
+msgid "Controls the text shown in the tooltip for the pinned site's shortcut."
+msgstr "Sabitlenmiş sitenin kısayolu için araç ipucunda gösterilen metni denetler."
+
+msgid "The URL to a logo file that is 310px by 150px."
+msgstr "310 piksel x 150 piksel boyutunda olan bir logo dosyasının URL'si."
+
+msgid "A semi-colon -separated value that controls the dimensions of the initial window. Should contain the values 'width=' and 'height=' to control the width and height respectively."
+msgstr "Başlangıç penceresinin boyutlarını denetleyen, noktalı virgülle ayrılmış bir değer. Genişlik ve yüksekliği denetlemek için sırayla 'width=' ve 'height=' değerlerini içermelidir."
+
+msgid "Theme Color"
+msgstr "Tema Rengi"
+
+msgid "A color in hexadecimal format, e.g. '#0000ff' for blue; must include the '#' symbol. Used by some browsers to control the background color of the toolbar, the color used with an icon, etc."
+msgstr "On altılı biçimde bir renk; örn. mavi için '#0000ff'; '#' simgesini içermelidir. Bazı tarayıcılar tarafından, araç çubuğunun arka plan rengini, bir simgeyle birlikte kullanılan rengi vb.'yi denetlemek için kullanılır."
+
+msgid "Viewport"
+msgstr "Görünüm penceresi"
+
+msgid "Used by most contemporary browsers to control the display for mobile browsers. Please read a guide on responsive web design for details of what values to use."
+msgstr "Çoğu güncel tarayıcı tarafından mobil tarayıcıların görüntüsünü denetlemek için kullanılır. Lütfen hangi değerlerin kullanılacağına ilişkin duyarlı web tasarımıyla ilgili bir kılavuzu okuyun."
+
+msgid "Web Manifest"
+msgstr "Web Bildirgesi"
+
+msgid "A URL to a manifest.json file that describes the application. The <a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>JSON-based manifest</a> provides developers with a centralized place to put metadata associated with a web application."
+msgstr "Uygulamayı açıklayan bir manifest.json dosyasının URL'si. <a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>JSON tabanlı bildirge</a>, geliştiricilere bir web uygulamasıyla ilişkili meta verilerin koyulacağı merkezi bir yer sağlar."
+
+msgid "Indicates to IE which rendering engine should be used for the current page."
+msgstr "IE'ye, geçerli sayfa için hangi görüntü oluşturma motorunun kullanılacağını belirtir."
+
+msgid "Metatag: Open Graph"
+msgstr "Meta Etiket: Açık Grafik"
+
+msgid "Provides support for Open Graph Protocol meta tags."
+msgstr "Açık Grafik İletişim Kuralı meta etiketleri için destek sağlar."
+
+msgid "Article author"
+msgstr "Makalenin yazarı"
+
+msgid "Article expiration time"
+msgstr "Makale süre bitim tarihi"
+
+msgid "Article modified time"
+msgstr "Makale değiştirilme zamanı"
+
+msgid "Article published time"
+msgstr "Makale yayınlanma zamanı"
+
+msgid "Article publisher"
+msgstr "Makale yayınlayan"
+
+msgid "Article section"
+msgstr "Makale bölümü"
+
+msgid "Article tag(s)"
+msgstr "Makale etiketleri"
+
+msgid "Book Author"
+msgstr "Kitap Yazarı"
+
+msgid "Book ISBN"
+msgstr "Kitap ISBN'si"
+
+msgid "Book Release Date"
+msgstr "Kitap Yayın Tarihi"
+
+msgid "Book Tags"
+msgstr "Kitap Etiketleri"
+
+msgid "Audio URL"
+msgstr "Ses URL'si"
+
+msgid "Audio secure URL"
+msgstr "Ses güvenli URL'si"
+
+msgid "Audio type"
+msgstr "Ses tipi"
+
+msgid "Open Graph: Country name"
+msgstr "Açık Grafik: Ülke adı"
+
+msgid "Open Graph: Description"
+msgstr "Açık Grafik: Açıklama"
+
+msgid "Open Graph: Determiner"
+msgstr "Açık Grafik: Belirleyici"
+
+msgid "Open Graph: Email"
+msgstr "Açık Grafik: E-posta"
+
+msgid "Open Graph: Fax number"
+msgstr "Açık Grafik: Faks numarası"
+
+msgid "Open Graph: Image"
+msgstr "Açık Grafik: Resim"
+
+msgid "Open Graph: Image alt"
+msgstr "Açık Grafik: Image alt"
+
+msgid "Open Graph: Image height"
+msgstr "Açık Grafik: Resim yüksekliği"
+
+msgid "Open Graph: Image secure URL"
+msgstr "Açık Grafik: Resim güvenli URL'si"
+
+msgid "Open Graph: Image type"
+msgstr "Açık Grafik: Resim tipi"
+
+msgid "Open Graph: Image URL"
+msgstr "Açık Grafik: Resim URL'si"
+
+msgid "Open Graph: Image width"
+msgstr "Açık Grafik: Resim genişliği"
+
+msgid "Open Graph: Latitude"
+msgstr "Açık Grafik: Enlem"
+
+msgid "Open Graph: Locale"
+msgstr "Açık Grafik: Yerel Ayar"
+
+msgid "Open Graph: Alternative locale"
+msgstr "Açık Grafik: Alternatif yerel ayar"
+
+msgid "Open Graph: Locality"
+msgstr "Açık Grafik: Bölge"
+
+msgid "Open Graph: Longitude"
+msgstr "Açık Grafik: Boylam"
+
+msgid "Open Graph: Phone number"
+msgstr "Açık Grafik: Telefon numarası"
+
+msgid "Open Graph: Postal code"
+msgstr "Açık Grafik: Posta kodu"
+
+msgid "Open Graph: Region"
+msgstr "Açık Grafik: Bölge"
+
+msgid "Open Graph: See also"
+msgstr "Açık Grafik: Ayrıca bkz."
+
+msgid "Open Graph: Site name"
+msgstr "Açık Grafik: Site adı"
+
+msgid "Open Graph: Street address"
+msgstr "Açık Grafik: Sokak adresi"
+
+msgid "Open Graph: Title"
+msgstr "Açık Grafik: Başlık"
+
+msgid "Open Graph: Type"
+msgstr "Açık Grafik: Tip"
+
+msgid "Open Graph: Updated time"
+msgstr "Açık Grafik: Güncellenme zamanı"
+
+msgid "Open Graph: URL"
+msgstr "Açık Grafik: URL"
+
+msgid "Open Graph: Video URL"
+msgstr "Açık Grafik: Video URL'si"
+
+msgid "Open Graph: Video duration"
+msgstr "Açık Grafik: Video süresi"
+
+msgid "Open Graph: Video height"
+msgstr "Açık Grafik: Video yüksekliği"
+
+msgid "Open Graph: Video Secure URL"
+msgstr "Açık Grafik: Video Güvenli URL'si"
+
+msgid "Open Graph: Video type"
+msgstr "Açık Grafik: Video tipi"
+
+msgid "Open Graph: Video width"
+msgstr "Açık Grafik: Video genişliği"
+
+msgid "First name"
+msgstr "Ad"
+
+msgid "Gender"
+msgstr "Cinsiyet"
+
+msgid "Last name"
+msgstr "Soyad"
+
+msgid "Username"
+msgstr "Kullanıcı adı"
+
+msgid "Actor(s)"
+msgstr "Oyuncu(lar)"
+
+msgid "Actor's role"
+msgstr "Oyuncuların rolü"
+
+msgid "Director(s)"
+msgstr "Yönetmen(ler)"
+
+msgid "Release date"
+msgstr "Yayın tarihi"
+
+msgid "Series"
+msgstr "Dizi"
+
+msgid "Tag words"
+msgstr "Etiket sözcükleri"
+
+msgid "Scriptwriter(s)"
+msgstr "Senaryo yazar(lar)ı"
+
+msgid "Open Graph"
+msgstr "Açık Grafik"
+
+msgid "The <a href='https://ogp.me/'>Open Graph meta tags</a> are used to control how Facebook, Pinterest, LinkedIn and other social networking sites interpret the site's content.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "<a href='https://ogp.me/'>Açık Grafik meta etiketleri</a>; Facebook, Pinterest, LinkedIn ve diğer sosyal ağ sitelerinin site içeriğini nasıl yorumladığını denetlemek için kullanılır.<br><br>Facebook <a href='https://developers.facebook.com/tools/debug/'>Paylaşım Hata Ayıklayıcısı</a>, Facebook'ta paylaştığınızda içeriğinizin nasıl görüneceğini önizlemenizi ve Open Graph etiketleriyle sorunları gidermenizi sağlar."
+
+msgid "Links an article to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "Bir makaleyi, bir yazarın Facebook profiline bağlar; yazarın profil sayfasının URL'si ya da Facebook profili tanıtıcısı olmalıdır."
+
+msgid "Article expiration date & time"
+msgstr "Makale süre bitim tarihi ve saati"
+
+msgid "The date this content will expire, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "İsteğe bağlı bir saat değeriyle birlikte, bu içeriğin süresinin dolacağı tarih. <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> biçiminde olması gerekir."
+
+msgid "Article modification date & time"
+msgstr "Makale değişiklik tarihi ve saati"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "İsteğe bağlı bir saat değeriyle birlikte, bu içeriğin en son değiştirildiği tarih. <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> biçiminde olması gerekir."
+
+msgid "Article publication date & time"
+msgstr "Makale yayınlama tarihi ve saati"
+
+msgid "The date this content was published on, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "İsteğe bağlı bir saat değeriyle birlikte, bu içeriğin yayınlandığı tarih. <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> biçiminde olması gerekir."
+
+msgid "Links an article to a publisher's Facebook page."
+msgstr "Bir makaleyi, bir yayınlayanın Facebook sayfasına bağlantılandırır."
+
+msgid "The primary section of this website the content belongs to."
+msgstr "İçeriğin ait olduğu bu web sitesinin birincil bölümü."
+
+msgid "Appropriate keywords for this content."
+msgstr "Bu içerik için uygun anahtar sözcükler."
+
+msgid "Book author"
+msgstr "Kitap yazarı"
+
+msgid "Links a book to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "Bir kitabı yazarın Facebook profiline bağlar; yazarın profil sayfasının URL'si ya da Facebook profili tanıtıcısı olmalıdır."
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "The Book's ISBN"
+msgstr "Kitabın ISBN'si"
+
+msgid "Release Date"
+msgstr "Yayın Tarihi"
+
+msgid "The date the book was released."
+msgstr "Kitabın yayınlandığı tarih."
+
+msgid "Book tag(s)"
+msgstr "Kitap etiketi/etiketleri"
+
+msgid "The URL to an audio file that complements this object."
+msgstr "Bu nesneyi tamamlayan bir ses dosyasının URL'si."
+
+msgid "The secure URL to an audio file that complements this object. All 'http://' URLs will automatically be converted to 'https://'."
+msgstr "Bu nesneyi tamamlayan bir ses dosyasının güvenli URL'si. Tüm 'http://' URL'leri otomatik olarak 'https://' öğesine dönüştürülür."
+
+msgid "The MIME type of the audio file. Examples include 'application/mp3' for an MP3 file."
+msgstr "Ses dosyasının MIME tipi. Bir MP3 dosyası için örnek olarak 'application/mp3' verilebilir."
+
+msgid "Country name"
+msgstr "Ülke adı"
+
+msgid "A one to two sentence description of the content."
+msgstr "İçeriğin bir iki cümlelik açıklaması."
+
+msgid "Determiner"
+msgstr "Belirleyici"
+
+msgid "The word that appears before the content's title in a sentence. The default ignores this value, the 'Automatic' value should be sufficient if this is actually needed."
+msgstr "Bir cümlede içeriğin başlığından önce görüntülenen sözcük. Varsayılan ayar bu değeri yoksayar, gerçekten gerekiyorsa 'Otomatik' değeri yeterli olmalıdır."
+
+msgid "Email address"
+msgstr "E-posta adresi"
+
+msgid "Fax number"
+msgstr "Faks numarası"
+
+msgid "The URL of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats. Should not be used if og:image:url is used. Note: if multiple images are added many services (e.g. Facebook) will default to the largest image, not specifically the first one."
+msgstr "İçeriği temsil etmesi gereken bir resmin URL'si. Resim en az 200 x 200 boyutunda olmalıdır; 600 x 316 piksel önerilen minimum boyuttur ve en iyi sonuçlar için en az 1200 x 630 piksel boyutunu kullanın. PNG, JPEG ve GIF biçimlerini destekler. og:image:url kullanılıyorsa, bu kullanılmamalıdır. Not: Birden çok resim eklenirse birçok hizmet (Facebook gibi) özellikle ilk olan değil, en büyük resmi varsayılan olarak alır."
+
+msgid "Image 'alt'"
+msgstr "Image 'alt'"
+
+msgid "A description of what is in the image, not a caption. If the page specifies an og:image it should specify og:image:alt."
+msgstr "Başlık değil, resimde yer alanların açıklaması. Sayfa bir og:image belirtiyorsa, og:image:alt öğesini belirtmelidir."
+
+msgid "Image height"
+msgstr "Resim yüksekliği"
+
+msgid "The height of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "Yukarıdaki resimlerin yüksekliği. Not: Hem güvenli olmayan hem de güvenli resimler sağlanırsa, bunlar aynı boyutta olmalıdır."
+
+msgid "Image Secure URL"
+msgstr "Resim Güvenli URL'si"
+
+msgid "The secure URL (HTTPS) of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats."
+msgstr "İçeriği temsil etmesi gereken bir resim güvenli URL'si (HTTPS). Resim en az 200 x 200 boyutunda olmalıdır; 600 x 316 piksel önerilen minimum boyuttur ve en iyi sonuçlar için en az 1200 x 630 piksel boyutunu kullanın. PNG, JPEG ve GIF biçimlerini destekler."
+
+msgid "Image type"
+msgstr "Resim tipi"
+
+msgid "The type of image referenced above. Should be either 'image/gif' for a GIF image, 'image/jpeg' for a JPG/JPEG image, or 'image/png' for a PNG image. Note: there should be one value for each image, and having more than there are images may cause problems."
+msgstr "Yukarıda başvurulan resmin tipi. GIF uzantılı resim için 'image/gif', JPG/JPEG uzantılı resim için 'image/jpeg' ya da PNG uzantılı resim için 'image/png' olmalıdır. Not: Her resim için bir değer olmalıdır ve birden fazla resim olması sorunlara neden olabilir."
+
+msgid "Image URL"
+msgstr "Görüntü URL'si"
+
+msgid "A alternative version of og:image and has exactly the same requirements; only one needs to be used."
+msgstr "Alternatif bir og:image sürümü olup tam olarak aynı gereksinimlere sahiptir; yalnızca birinin kullanılması gerekir."
+
+msgid "Image width"
+msgstr "Resim genişliği"
+
+msgid "The width of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "Yukarıdaki resimlerin genişliği. Not: Hem güvenli olmayan hem de güvenli resimler sağlanırsa, bunlar aynı boyutta olmalıdır."
+
+msgid "Latitude"
+msgstr "Enlem"
+
+msgid "Locale"
+msgstr "Yerelleştirme"
+
+msgid "The locale these tags are marked up in, must be in the format language_TERRITORY. Default is 'en_US'."
+msgstr "Bu etiketlerin biçimlendirildiği yerel ayardır ve language_TERRITORY biçiminde olmalıdır. Varsayılan 'en_US' ayarıdır."
+
+msgid "Alternative locales"
+msgstr "Alternatif yerel ayar"
+
+msgid "Other locales this content is available in, must be in the format language_TERRITORY, e.g. 'fr_FR'."
+msgstr "Bu içeriğin mevcut olduğu diğer yerel ayardır ve language_TERRITORY biçiminde olmalıdır, örn. 'fr_FR'."
+
+msgid "Locality"
+msgstr "İlçe"
+
+msgid "Longitude"
+msgstr "Boylam"
+
+msgid "Phone number"
+msgstr "Telefon numarası"
+
+msgid "Postal/ZIP code"
+msgstr "Posta kodu"
+
+msgid "Region"
+msgstr "Bölge"
+
+msgid "See also"
+msgstr "Ayrıca bkz."
+
+msgid "URLs to related content"
+msgstr "İlgili içeriğin URL'leri"
+
+msgid "Site name"
+msgstr "Site adı"
+
+msgid "A human-readable name for the site, e.g., <em>IMDb</em>."
+msgstr "Sitenin insan tarafından okunabilir adı; örn. <em>IMDb</em>."
+
+msgid "Street address"
+msgstr "Adres"
+
+msgid "The title of the content, e.g., <em>The Rock</em>."
+msgstr "İçeriğin başlığı; örn. <em>The Rock</em>."
+
+msgid "Content type"
+msgstr "İçerik türü"
+
+msgid "The type of the content, e.g., <em>movie</em>."
+msgstr "İçeriğin tipi, örn. <em>film</em>."
+
+msgid "Content modification date & time"
+msgstr "İçerik değişiklik tarihi ve saati"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format. Can be the same as the 'Article modification date' tag."
+msgstr "İsteğe bağlı bir saat değeriyle birlikte, bu içeriğin en son değiştirildiği tarih. <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> biçiminde olması gerekir. 'Makale değişiklik tarihi' etiketiyle aynı olabilir."
+
+msgid "Page URL"
+msgstr "Sayfa URL'si"
+
+msgid "Preferred page location or URL to help eliminate duplicate content for search engines, e.g., <em>https://www.imdb.com/title/tt0117500/</em>."
+msgstr "Arama motorlarına yönelik yinelenen içeriğin ortadan kaldırılmasına yardımcı olacak tercih edilen sayfa konumu ya da URL'si; örn. <em>https://www.imdb.com/title/tt0117500/</em>."
+
+msgid "Video URL"
+msgstr "Video URL adresi"
+
+msgid "The URL of an video which should represent the content. For best results use a source that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Object types supported include video.episode, video.movie, video.other, and video.tv_show."
+msgstr "İçeriği temsil etmesi gereken bir videonun URL'si. En iyi sonuç için en 1200 x 630 piksel boyutunda olan bir kaynak kullanın, ancak en az 600 x 316 piksel önerilir. Desteklenen nesne tipleri arasında video.episode, video.movie, video.other ve video.tv_show yer alır."
+
+msgid "Video duration (seconds)"
+msgstr "Video süresi (saniye)"
+
+msgid "The length of the video in seconds"
+msgstr "Videonun saniye cinsinden uzunluğu"
+
+msgid "Video height"
+msgstr "Video yüksekliği"
+
+msgid "The height of the above video(s). Note: if both the unsecured and secured videos are provided, they should both be the same size."
+msgstr "Yukarıdaki videoların yüksekliği. Not: Hem güvenli olmayan hem de güvenli videolar sağlanırsa, bunlar aynı boyutta olmalıdır."
+
+msgid "Video Secure URL"
+msgstr "Video Güvenli URL'si"
+
+msgid "The secure URL (HTTPS) of an video which should represent the content."
+msgstr "İçeriği temsil etmesi gereken bir videonun güvenli URL'si (HTTPS)."
+
+msgid "Video type"
+msgstr "Video tipi"
+
+msgid "The type of video referenced above. Should be either  video.episode, video.movie, video.other, and video.tv_show. Note: there should be one value for each video, and having more than there are videos may cause problems."
+msgstr "Yukarıda başvurulan videonun tipi. video.episode, video.movie, video.other ve video.tv_show olmalıdır. Not: Her video için bir değer olmalıdır ve birden fazla video olması sorunlara neden olabilir."
+
+msgid "Video width"
+msgstr "Video genişliği"
+
+msgid "The first name of the person who's Profile page this is."
+msgstr "Profil sayfası olan kişinin ilk adı."
+
+msgid "Any of Facebook's gender values should be allowed, the initial two being 'male' and 'female'."
+msgstr "İlk ikisi 'erkek' ve 'kadın' olmak üzere Facebook'un cinsiyet değerlerine izin verilmelidir."
+
+msgid "The person's last name."
+msgstr "Kişinin soyadı."
+
+msgid "A pseudonym / alias of this person."
+msgstr "Bu kişinin takma adı ya da diğer adı."
+
+msgid "Links to the Facebook profiles for actor(s) that appear in the video."
+msgstr "Videoda görüntülenen oyuncuların Facebook profillerine bağlantılar."
+
+msgid "The roles of the actor(s)."
+msgstr "Oyuncuların rolleri."
+
+msgid "Links to the Facebook profiles for director(s) that worked on the video."
+msgstr "Videoda çalışan yönetmenlerin için Facebook profillerine bağlantılar."
+
+msgid "The date the video was released."
+msgstr "Videonun yayınlandığı tarih."
+
+msgid "The TV show this series belongs to."
+msgstr "Bu dizin ait olduğu TV programı."
+
+msgid "Tag words associated with this video."
+msgstr "Bu video ile ilişkili etiket sözcükleri."
+
+msgid "Links to the Facebook profiles for scriptwriter(s) for the video."
+msgstr "Videonun senaryo yazarlarının Facebook profillerine bağlantılar."
+
+msgid "Provides additional Open Graph Protocol meta tags for describing products."
+msgstr "Ürünleri açıklamak için ek Açık Grafik İletişim Kuralı meta etiketleri sağlar."
+
+msgid "Metatag: Open Graph Products"
+msgstr "Meta Etiket: Açık Grafik Ürünleri"
+
+msgid "Open Graph Product: Price availability"
+msgstr "Open Graph Ürünü: Fiyat"
+
+msgid "Open Graph Product: Product condition"
+msgstr "Open Graph Ürünü: Ürün durumu"
+
+msgid "Open Graph Product: Price amount"
+msgstr "Açık Grafik Ürünü: Fiyat tutarı"
+
+msgid "Open Graph Product: Price currency"
+msgstr "Açık Grafik Ürünü: Fiyatın para birimi"
+
+msgid "Open Graph Product: Retailer Item ID"
+msgstr "Open Graph Ürünü: Satıcı Öğe Tanıtıcısı"
+
+msgid "Open Graph - Products"
+msgstr "Açık Grafik - Ürünler"
+
+msgid "These <a href='https://ogp.me/'>Open Graph meta tags</a> are for describing products.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "Bu <a href='https://ogp.me/'>Open Graph meta etiketleri</a> ürünlerin açıklanması içindir.<br><br>Facebook <a href='https://developers.facebook.com/tools/debug/'>Paylaşım Hata Ayıklayıcısı</a>, Facebook'ta paylaştığınızda içeriğinizin nasıl görüneceğini önizlemenizi ve Open Graph etiketleriyle sorunları gidermenizi sağlar."
+
+msgid "Product availability"
+msgstr "Ürün kullanılabilirliği"
+
+msgid "The availability of the product."
+msgstr "Ürünün kullanılabilirliği."
+
+msgid "Product condition"
+msgstr "Ürün koşulu"
+
+msgid "The condition of the product."
+msgstr "Ürünün durumu."
+
+msgid "Product price amount"
+msgstr "Ürün fiyatı tutarı"
+
+msgid "The price amount of the product."
+msgstr "Ürünün fiyat tutarı."
+
+msgid "Product price currency"
+msgstr "Ürün fiyatı para birimi"
+
+msgid "The price currency of the product."
+msgstr "Ürünün fiyatı para birimi."
+
+msgid "Retailer Item ID"
+msgstr "Satıcı Öğe Tanıtıcısı"
+
+msgid "The ID of the product as provided by the retailer."
+msgstr "Satıcı tarafından sağlandığı şekliyle ürünün tanıtıcısı."
+
+msgid "Metatag: Page Manager"
+msgstr "Meta Etiket: Sayfa Yöneticisi"
+
+msgid "Provides metatag support for Page Manager variants."
+msgstr "Sayfa Yöneticisi değişkenleri için meta etiket desteği sağlar."
+
+msgid "Metatag: Pinterest"
+msgstr "Metatag: Pinterest"
+
+msgid "Provides support for Pinterest's custom meta tags."
+msgstr "Pinterest'in özel meta etiketleri için destek sağlar."
+
+msgid "Pinterest: Description"
+msgstr "Pinterest: Açıklama"
+
+msgid "Pinterest: ID"
+msgstr "Pinterest: Tanıtıcı"
+
+msgid "Pinterest: Media"
+msgstr "Pinterest: Ortam"
+
+msgid "Pinterest: No hover"
+msgstr "Pinterest: İmleç yok"
+
+msgid "Pinterest: No pin"
+msgstr "Pinterest: Sabitleme yok"
+
+msgid "Pinterest: No search"
+msgstr "Pinterest: Arama yok"
+
+msgid "Pinterest: URL"
+msgstr "Pinterest: URL"
+
+msgid "Pinterest"
+msgstr "Pinterest"
+
+msgid "A set of meta tags used to control how the site's content is consumed by <a href='https://pinterest.com/'>Pinterest</a>."
+msgstr "Site içeriğinin <a href='https://pinterest.com/'>Pinterest</a> tarafından nasıl kullanıldığını denetlemek için kullanılan meta etiketler kümesi."
+
+msgid "Id"
+msgstr "Tanıtıcı"
+
+msgid "The Canonical Pinterest object to pin."
+msgstr "Sabitlenecek Kurallı Pinterest nesnesi."
+
+msgid "Media"
+msgstr "Medya"
+
+msgid "The URL of media which should represent the content."
+msgstr "İçeriği temsil etmesi gereken ortam URL adresi."
+
+msgid "No hover"
+msgstr "İmleç yok"
+
+msgid "Do not show hovering Save or Search buttons, generated by the Pinterest browser extensions."
+msgstr "Pinterest tarayıcı uzantılarının oluşturduğu Kaydet ya da Ara düğmeleri bağlantı vurgusunu gösterme."
+
+msgid "No pin"
+msgstr "Sabitleme yok"
+
+msgid "Do not pin anything from this page. When selected, this option will take precedence over all options below."
+msgstr "Bu sayfadan hiçbir öğe sabitlenmez. Seçildiğinde bu, aşağıdaki tüm seçeneklerin önüne geçer."
+
+msgid "No search"
+msgstr "Arama yok"
+
+msgid "Do not allow Pinterest visual search to happen from this page."
+msgstr "Pinterest görsel aramasının bu sayfadan olmasına izin verme."
+
+msgid "URL"
+msgstr "URL"
+
+msgid "The URL which should represent the content."
+msgstr "İçeriği temsil etmesi gereken URL adresi."
+
+msgid "Enables metatags for custom routes"
+msgstr "Özel rotalar için meta etiketleri etkinleştirir"
+
+msgid "Metatag Custom Routes (Paths)"
+msgstr "Meta Etiket Özel Rotaları (Yollar)"
+
+msgid "Allows assigning meta tags to be used on custom routes, equivalent to custom paths."
+msgstr "Özel yollara eşdeğer, özel rotalarda kullanılacak meta etiketlerin atanmasına izin verir."
+
+msgid "Add meta tag for custom route"
+msgstr "Özel rota için meta etiket ekle"
+
+msgid "Add custom metatag"
+msgstr "Özel meta etiket ekle"
+
+msgid "Route / Path"
+msgstr "Rota / Yol"
+
+msgid "Enter the route (path) for this new configuration, starting with a leading slash.<br />Note: this must already exist as a path in Drupal."
+msgstr "Öne eğik çizgiyle başlayarak, bu yeni yapılandırmanın rotasını (yol) girin.<br />Not: Bu, Drupal'da bir yol olarak önceden var olmalıdır."
+
+msgid "Submit"
+msgstr "Gönder"
+
+msgid "The path must begin with /"
+msgstr "Yol / ile başlamalıdır"
+
+msgid "The admin routes should not have metatags."
+msgstr "Yönetim rotalarının meta etiketleri bulunmamalıdır."
+
+msgid "The entities routes metatags must be added by fields. @entity_type - @id"
+msgstr "Varlık rotaları meta etiketleri alanlar tarafından eklenmelidir. @entity_type - @id"
+
+msgid "There are already metatags created for this route."
+msgstr "Bu rota için önceden oluşturulmuş meta etiketler var."
+
+msgid "The path does not exist as an internal Drupal route."
+msgstr "Yol, bir iç Drupal rotası olarak yok."
+
+msgid "Created metatags for the path: @url. Internal route: @route."
+msgstr "Yol için meta etiketler oluşturuldu: @url. İç rota: @route."
+
+msgid "The metatags could not be created for the path: @url."
+msgstr "Yol için meta etiketler oluşturulamadı: @url."
+
+msgid "Metatag: Twitter Cards"
+msgstr "Meta Etiket: Twitter Kartları"
+
+msgid "Provides support for Twitter's Card meta tags."
+msgstr "Twitter'ın Kart meta etiketleri için destek sağlar."
+
+msgid "Twitter Cards: Google Play app ID"
+msgstr "Twitter Kartları: Google Play uygulama tanıtıcısı"
+
+msgid "Twitter Cards: iPad app ID"
+msgstr "Twitter Kartları: iPad uygulama tanıtıcısı"
+
+msgid "Twitter Cards: iPhone app ID"
+msgstr "Twitter Kartları: iPhone uygulama tanıtıcısı"
+
+msgid "Twitter Cards: Google Play app name"
+msgstr "Twitter Kartları: Google Play uygulama adı"
+
+msgid "Twitter Cards: iPad app name"
+msgstr "Twitter Kartları: iPad uygulama adı"
+
+msgid "Twitter Cards: iPhone app name"
+msgstr "Twitter Kartları: iPhone uygulama adı"
+
+msgid "Twitter Cards: App store country"
+msgstr "Twitter Kartları: Uygulama mağazası ülkesi"
+
+msgid "Twitter Cards: Google Play app URL schema"
+msgstr "Twitter Kartları: Google Play uygulama URL'si şeması"
+
+msgid "Twitter Cards: iPad app URL schema"
+msgstr "Twitter Kartları: iPad uygulama URL'si şeması"
+
+msgid "Twitter Cards: iPhone app URL schema"
+msgstr "Twitter Kartları: iPhone uygulama URL'si şeması"
+
+msgid "Twitter Cards: Creator's Twitter account"
+msgstr "Twitter Kartları: Oluşturanın Twitter hesabı"
+
+msgid "Twitter Cards: Creator's Twitter account ID"
+msgstr "Twitter Kartları: Oluşturanın Twitter hesabı tanıtıcısı"
+
+msgid "Twitter Cards: Data 1"
+msgstr "Twitter Kartları: Veri 1"
+
+msgid "Twitter Cards: Data 2"
+msgstr "Twitter Kartları: Veri 2"
+
+msgid "Twitter Cards: Description"
+msgstr "Twitter Kartları: Açıklama"
+
+msgid "Twitter Cards: Do Not Track"
+msgstr "Twitter Kartları: İzleme"
+
+msgid "Twitter Cards: 1st gallery image"
+msgstr "Twitter Kartları: 1. galeri görüntüsü"
+
+msgid "Twitter Cards: 2nd gallery image"
+msgstr "Twitter Kartları: 2. galeri görüntüsü"
+
+msgid "Twitter Cards: 3rd gallery image"
+msgstr "Twitter Kartları: 3. galeri görüntüsü"
+
+msgid "Twitter Cards: 4th gallery image"
+msgstr "Twitter Kartları: 4. galeri görüntüsü"
+
+msgid "Twitter Cards: Image URL"
+msgstr "Twitter Kartları: Resim URL'si"
+
+msgid "Twitter Cards: Image height"
+msgstr "Twitter Kartları: Resim yüksekliği"
+
+msgid "Twitter Cards: Image width"
+msgstr "Twitter Kartları: Resim genişliği"
+
+msgid "Twitter Cards: Image alternative text"
+msgstr "Twitter Kartları: Resim alternatif metni"
+
+msgid "Twitter Cards: Label 1"
+msgstr "Twitter Kartları: Etiket 1"
+
+msgid "Twitter Cards: Label 2"
+msgstr "Twitter Kartları: Etiket 2"
+
+msgid "Twitter Cards: Page URL"
+msgstr "Twitter Kartları: Sayfa URL'si"
+
+msgid "Twitter Cards: Media player URL"
+msgstr "Twitter Kartları: Ortam yürütücü URL'si"
+
+msgid "Twitter Cards: Media player height"
+msgstr "Twitter Kartları: Ortam yürütücü yüksekliği"
+
+msgid "Twitter Cards: MP4 media stream URL"
+msgstr "Twitter Kartları: MP4 ortam akışı URL'si"
+
+msgid "Twitter Cards: MP4 media straem MIME-type"
+msgstr "Twitter Kartları: MP4 ortam akışı MIME tipi"
+
+msgid "Twitter Cards: Media player width"
+msgstr "Twitter Kartları: Ortam yürütücü genişliği"
+
+msgid "Twitter Cards: Site's Twitter account"
+msgstr "Twitter Kartları: Sitenin Twitter hesabı"
+
+msgid "Twitter Cards: Site's Twitter account ID"
+msgstr "Twitter Kartları: Sitenin Twitter hesabı tanıtıcısı"
+
+msgid "Twitter Cards: Title"
+msgstr "Twitter Kartları: Başlık"
+
+msgid "Twitter Cards: Type"
+msgstr "Twitter Kartları: Tip"
+
+msgid "Twitter Cards"
+msgstr "Twitter Kartları"
+
+msgid "A set of meta tags specially for controlling the summaries displayed when content is shared on <a href='https://twitter.com/'>Twitter</a>."
+msgstr "<a href='https://twitter.com/'>Twitter</a>'da içerik paylaşıldığında görüntülenen özetleri denetlemeye ilişkin bir meta etiket kümesi."
+
+msgid "Google Play app ID"
+msgstr "Google Play uygulama tanıtıcısı"
+
+msgid "iPad app ID"
+msgstr "iPad uygulama tanıtıcısı"
+
+msgid "String value, should be the numeric representation of your iPad app's ID in the App Store."
+msgstr "Dize değeridir ve Uygulama Mağazasında iPad uygulamanızın tanıtıcısının sayısal temsili olmalıdır."
+
+msgid "iPhone app ID"
+msgstr "iPhone uygulama tanıtıcısı"
+
+msgid "String value, should be the numeric representation of your iPhone app's ID in the App Store."
+msgstr "Dize değeridir ve Uygulama Mağazasında iPhone uygulamanızın tanıtıcısının sayısal temsili olmalıdır."
+
+msgid "Google Play app name"
+msgstr "Google Play uygulama adı"
+
+msgid "The name of the app in the Google Play app store."
+msgstr "Google Play uygulama mağazasında uygulamanın adı."
+
+msgid "The name of the iPad app."
+msgstr "iPad uygulamasının adı."
+
+msgid "The name of the iPhone app."
+msgstr "iPhone uygulamasının adı."
+
+msgid "App store country"
+msgstr "Uygulama mağazası ülkesi"
+
+msgid "If your application is not available in the US App Store, you must set this value to the two-letter country code for the App Store that contains your application."
+msgstr "Uygulamanız ABD Uygulama Mağazasında mevcut değilse, bu değeri uygulamanızı içeren Uygulama Mağazasının iki harfli ülke koduna ayarlamanız gerekir."
+
+msgid "Google Play app's custom URL scheme"
+msgstr "Google Play uygulamasının özel URL şeması"
+
+msgid "iPad app's custom URL scheme"
+msgstr "iPad uygulamasının özel URL şeması"
+
+msgid "iPhone app's custom URL scheme"
+msgstr "iPhone uygulamasının özel URL şeması"
+
+msgid "Creator's Twitter account"
+msgstr "Oluşturanın Twitter hesabı"
+
+msgid "The @username for the content creator / author for this page, including the @ symbol."
+msgstr "Bu sayfanın içerik oluşturucusu / yazarı için @ simgesiyle birlikte @kullanıcı adı."
+
+msgid "Creator's Twitter account ID"
+msgstr "Oluşturanın Twitter hesabı tanıtıcısı"
+
+msgid "The numerical Twitter account ID for the content creator / author for this page."
+msgstr "Bu sayfanın içerik oluşturucusu / yazarı için sayısal Twitter hesabı tanıtıcısı."
+
+msgid "Data 1"
+msgstr "Veri 1"
+
+msgid "This field expects a string, and allows you to specify the types of data you want to offer (price, country, etc.)."
+msgstr "Bu alan bir dize gerektirir ve sunmak istediğiniz veri tiplerini (fiyat, ülke vb.) belirtmenize olanak sağlar.."
+
+msgid "Data 2"
+msgstr "Veri 2"
+
+msgid "A description that concisely summarizes the content of the page, as appropriate for presentation within a Tweet. Do not re-use the title text as the description, or use this field to describe the general services provided by the website. The string will be truncated, by Twitter, at the word to 200 characters."
+msgstr "Tweet içindeki sunum için uygun olduğu şekilde sayfanın içeriğini net şekilde özetleyen bir açıklama. Başlık metnini açıklama olarak yeniden kullanmayın ya da web sitesi tarafından sağlanan genel hizmetleri açıklamak için bu alanı kullanmayın. Dize, Twitter tarafından 200 karaktere kadar kısaltılır."
+
+msgid "Do Not Track"
+msgstr "İzleme"
+
+msgid "1st gallery image"
+msgstr "1. galeri görüntüsü"
+
+msgid "A URL to the image representing the first photo in your gallery."
+msgstr "Galerinizdeki ilk fotoğrafı temsil eden resmin URL'si."
+
+msgid "2nd gallery image"
+msgstr "2. galeri görüntüsü"
+
+msgid "A URL to the image representing the second photo in your gallery."
+msgstr "Galerinizdeki ikinci fotoğrafı temsil eden resmin URL'si."
+
+msgid "3rd gallery image"
+msgstr "3. galeri görüntüsü"
+
+msgid "A URL to the image representing the third photo in your gallery."
+msgstr "Galerinizdeki üçüncü fotoğrafı temsil eden resmin URL'si."
+
+msgid "4th gallery image"
+msgstr "4. galeri görüntüsü"
+
+msgid "A URL to the image representing the fourth photo in your gallery."
+msgstr "Galerinizdeki dördüncü fotoğrafı temsil eden resmin URL'si."
+
+msgid "The URL to a unique image representing the content of the page. Do not use a generic image such as your website logo, author photo, or other image that spans multiple pages. Images larger than 120x120px will be resized and cropped square based on longest dimension. Images smaller than 60x60px will not be shown. If the 'type' is set to Photo then the image must be at least 280x150px."
+msgstr "Sayfanın içeriğini temsil eden benzersiz bir resmin URL'si. Web sitesi logonuz, yazar fotoğrafınız ya da birden çok sayfaya yayılan diğer resimler gibi genel bir resim kullanmayın. 120 x 120 pikselden büyük resimler yeniden boyutlandırılır ve en uzun boyutuna göre kare kırpılır. 60 x 60 pikselden küçük resimler gösterilmez. 'Tip', Fotoğraf olarak ayarlanırsa görüntü en az 280x150 piksel olmalıdır."
+
+msgid "Image alternative text"
+msgstr "Resim alternatif metni"
+
+msgid "The alternative text of the image being linked to. Limited to 420 characters."
+msgstr "Bağlanılmakta olan resim için alternatif metin. 420 karakterle sınırlıdır."
+
+msgid "The height of the image being linked to, in pixels."
+msgstr "Bağlanılmakta olan resmin piksel cinsinden yüksekliği."
+
+msgid "The width of the image being linked to, in pixels."
+msgstr "Bağlanılmakta olan resmin piksel cinsinden genişliği."
+
+msgid "Label 1"
+msgstr "Etiket 1"
+
+msgid "This field expects a string, and you can specify values for labels such as price, items in stock, sizes, etc."
+msgstr "Bu alan bir dize gerektirir ve fiyat, stoktaki ürünler, boyutlar vb. gibi etiketler için değer belirtebilirsiniz."
+
+msgid "Label 2"
+msgstr "Etiket 2"
+
+msgid "The permalink / canonical URL of the current page."
+msgstr "Geçerli sayfanın kalıcı bağlantısı / kurallı URL'si."
+
+msgid "Media player URL"
+msgstr "Ortam yürütücü URL'si"
+
+msgid "The full URL for loading a media player, specifically an iframe for an embedded video rather than the URL to a page that contains a player. Required when using the Player Card type."
+msgstr "Bir ortam oynatıcıyı yüklemek için tam URL, özellikle de bir oynatıcı içeren bir sayfanın URL'si yerine yerleşik bir video için iframe. Oyuncu Kartı tipi kullanılırken gereklidir."
+
+msgid "Media player height"
+msgstr "Ortam yürütücü yüksekliği"
+
+msgid "The height of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "Ortam yürütücü iFrame'inin piksel cinsinden yüksekliği. Oyuncu Kartı tipi kullanılırken gereklidir."
+
+msgid "MP4 media stream URL"
+msgstr "MP4 ortam akışı URL'si"
+
+msgid "The full URL for an MP4 video (h.264) or audio (AAC) stream, takes precedence over the other media player field."
+msgstr "MP4 video (h.264) ya da ses (AAC) akışının tam URL'si olup diğer ortam yürütücü alanından önceliklidir."
+
+msgid "MP4 media stream MIME-type"
+msgstr "MP4 ortam akışı MIME tipi"
+
+msgid "Media player width"
+msgstr "Ortam yürütücü genişliği"
+
+msgid "The width of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "Ortam yürütücü iFrame'inin piksel cinsinden genişliği. Oyuncu Kartı tipi kullanılırken gereklidir."
+
+msgid "Site's Twitter account"
+msgstr "Sitenin Twitter hesabı"
+
+msgid "The @username for the website, which will be displayed in the Card's footer; must include the @ symbol."
+msgstr "Kartın altbilgisinde görüntülenecek, web sitesi için @kullanıcı adıdır ve @ simgesini içermelidir."
+
+msgid "Site's Twitter account ID"
+msgstr "Sitenin Twitter hesabı tanıtıcısı"
+
+msgid "The numerical Twitter account ID for the website, which will be displayed in the Card's footer."
+msgstr "Kartın altbilgisinde görüntülenecek, web sitesi için sayısal Twitter hesabı tanıtıcısı."
+
+msgid "The page's title, which should be concise; it will be truncated at 70 characters by Twitter. This field is required unless this the 'type' field is set to 'photo'."
+msgstr "Net olması gereken sayfa başlığıdır ve Twitter tarafından 70 karaktere kısaltılır. 'Tip' alanı 'fotoğraf' olarak ayarlanmadıysa bu alana bilgi girilmesi zorunludur."
+
+msgid "- None -"
+msgstr "- Hiçbiri -"
+
+msgid "Summary Card"
+msgstr "Özet Kartı"
+
+msgid "Summary Card with large image"
+msgstr "Büyük resimli Özet Kartı"
+
+msgid "Photo Card"
+msgstr "Fotoğraf Kartı"
+
+msgid "Gallery Card"
+msgstr "Galeri Kartı"
+
+msgid "App Card"
+msgstr "Uygulama Kartı"
+
+msgid "Player Card"
+msgstr "Yürütücü Kartı"
+
+msgid "Product Card"
+msgstr "Ürün Kartı"
+
+msgid "Twitter card type"
+msgstr "Twitter kartı tipi"
+
+msgid "Notes:<ul><li>no other fields are required for a Summary card</li><li>Photo card requires the 'image' field</li><li>Media player card requires the 'title', 'description', 'media player URL', 'media player width', 'media player height' and 'image' fields,</li><li>Summary Card with Large Image card requires the 'Summary' field and the 'image' field,</li><li>Gallery Card requires all the 'Gallery Image' fields,</li><li>App Card requires the 'iPhone app ID' field, the 'iPad app ID' field and the 'Google Play app ID' field,</li><li>Product Card requires the 'description' field, the 'image' field, the 'Label 1' field, the 'Data 1' field, the 'Label 2' field and the 'Data 2' field.</li></ul>"
+msgstr "Notlar:<ul><li>Özet kartı için başka bir alan gerekmez</li><li>Fotoğraf kartı, 'resim' alanını gerektirir</li><li>Ortam yürütücü kartı; 'başlık', 'açıklama', 'ortam yürütücü URL'si', 'ortam yürütücü genişliği', 'ortam yürütücü yüksekliği' ve 'resim' alanlarını gerektirir.</li><li>Büyük Resim kartı içeren Özet Kartı, 'Özet' alanını ve 'resim' alanını gerektirir.</li><li>Galeri Kartı, tüm 'Galeri Görüntüsü' alanlarını gerektirir.</li><li>Uygulama Kartı, 'iPhone uygulama tanıtıcısı' alanını, 'iPad uygulama tanıtıcısı' alanını ve 'Google Play uygulama tanıtıcısı' alanını gerektirir.</li><li>Ürün Kartı, 'açıklama' alanını, 'resim' alanını, 'Etiket 1' alanını, 'Veri 1' alanını, 'Etiket 2' alanını ve 'Veri 2' alanını gerektirir.</li></ul>"
+
+msgid "Metatag: Verification"
+msgstr "Meta Etiket: Doğrulama"
+
+msgid "Verifies ownership of a site for search engines and other services."
+msgstr "Arama motorları ve diğer hizmetler için bir sitenin sahipliğini doğrular."
+
+msgid "Site validation: Alexa"
+msgstr "Site doğrulaması: Alexa"
+
+msgid "Site validation: Baidu"
+msgstr "Site doğrulaması: Baidu"
+
+msgid "Site validation: Bing"
+msgstr "Site doğrulaması: Bing"
+
+msgid "Site validation: Facebook"
+msgstr "Site doğrulaması: Facebook"
+
+msgid "Site validation: Google"
+msgstr "Site doğrulaması: Google"
+
+msgid "Site validation: Norton Safe Web"
+msgstr "Site doğrulaması: Norton Safe Web"
+
+msgid "Site validation: Pinterest"
+msgstr "Site doğrulaması: Pinterest"
+
+msgid "Site validation: Pocket"
+msgstr "Site doğrulaması: Pocket"
+
+msgid "Site validation: SIWECOS"
+msgstr "Site geçerlilik denetimi: SIWECOS"
+
+msgid "Site validation: Yahoo"
+msgstr "Site doğrulaması: Yahoo"
+
+msgid "Site validation: Yandex"
+msgstr "Site doğrulaması: Yandex"
+
+msgid "Site validation: Zoom"
+msgstr "Site doğrulaması: Yakınlaştır"
+
+msgid "Site verification"
+msgstr "Site doğrulaması"
+
+msgid "These meta tags are used to confirm site ownership for search engines and other services."
+msgstr "Bu meta etiketler, arama motorlarına ve diğer hizmetlere ilişkin site sahipliğini onaylamak için kullanılır."
+
+msgid "Baidu"
+msgstr "Baidu"
+
+msgid "Bing"
+msgstr "Bing"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Google Site Verification"
+msgstr "Google Site Doğrulaması"
+
+msgid "Norton Safe Web"
+msgstr "Norton Safe Web"
+
+msgid "Pocket"
+msgstr "Pocket"
+
+msgid "SIWECOS"
+msgstr "SIWECOS"
+
+msgid "Yandex"
+msgstr "Yandex"
+
+msgid "Zoom"
+msgstr "Yakınlaştır"
+
+msgid "The custom admin pages for managing Views meta tags at /admin/config/search/metatag/views have been disabled for now, hopefully they'll be back in a future release. Until then, the meta tags can be managed directly on each individual view via the \"Meta tags\" section."
+msgstr "/admin/config/search/metatag/views yolunda Görünümler meta etiketlerinin yönetimi için özel yönetim sayfaları şimdilik devre dışı bırakıldı, sonraki bir sürümde geri dönmesini umuyoruz. O zamana kadar meta etiketler, \"Meta etiketler\" bölümü aracılığıyla her bir görünümde doğrudan yönetilebilir."
+
+msgid "Empty update script to clear the site's caches so the new token replacement functionality will work."
+msgstr "Yeni belirteç değiştirme işlevinin çalışabilmesi için sitenin önbelleklerini temizlemek için boş güncelleme komut dosyası."
+
+msgid "Metatag: Views"
+msgstr "Meta Etiket: Görünümler"
+
+msgid "Provides views integration for metatags."
+msgstr "Meta etiketler için görünümlerin bütünleştirilmesini sağlar."
+
+msgid "Should replacement tokens be used from the first row"
+msgstr "İlk satırdaki değiştirme belirteçlerinin mi kullanılacağını belirler"
+
+msgid "To view a list of displays with meta tags set up, click on a view name. To view a summary of meta tags configuration for a particular display, click on the display name. If you need to set meta tags for a specific view, choose Add views meta tags. Reverting the meta tags removes the specific configuration and falls back to defaults."
+msgstr "Meta etiket ayarlarına sahip görüntülerin bir listesini görüntülemek için bir görünüm adını tıklatın. Belirli bir görüntüye ilişkin meta etiket yapılandırmasının özetini görüntülemek için görüntü adını tıklatın. Belirli bir görünüm için meta etiketleri ayarlamanız gerekirse Görünüm ekle meta etiketlerini seçin. Meta etiketler geri alındığında, belirli yapılandırma kaldırılır ve varsayılan değerlere geri dönülür."
+
+msgid ":label"
+msgstr ":label"
+
+msgid "Display"
+msgstr "Görünüm"
+
+msgid "Operations"
+msgstr "İşlemler"
+
+msgid "Edit"
+msgstr "Düzenle"
+
+msgid "Translate"
+msgstr "Çevir"
+
+msgid "Revert"
+msgstr "Geri al"
+
+msgid "@language (original)"
+msgstr "@language (özgün)"
+
+msgid "Add"
+msgstr "Ekle"
+
+msgid "- Select a view -"
+msgstr "- Bir görünüm seçin -"
+
+msgid "View"
+msgstr "Görüntüle"
+
+msgid "Metatags for @view : @display have been saved."
+msgstr "@view için meta etiketler: @display kaydedildi."
+
+msgid "Do you want to revert meta tags for @view_name : @display_name?"
+msgstr "@view_name için meta etiketleri geri almak istiyor musunuz: @display_name?"
+
+msgid "You are about to revert the custom meta tags for the %display_name display on the %view_name view. This action cannot be undone."
+msgstr "%view_name görünümündeki %display_name için özel meta etiketleri geri almak üzeresiniz. Bu işlem geri alınamaz."
+
+msgid "Cancel"
+msgstr "İptal"
+
+msgid "Reverted meta tags for @view_name : @display_name"
+msgstr "@view_name : @display_name için meta etiketler geri alındı"
+
+msgid "Edit @language translation for %view: %display metatags"
+msgstr "%view için @language çevirisini düzenle: %display meta etiketleri"
+
+msgid "Successfully updated @language translation."
+msgstr "@language çeviri başarıyla güncellendi."
+
+msgid "The meta tags for this display"
+msgstr "Bu görüntü için meta etiketler"
+
+msgid "Use replacement tokens from the first row"
+msgstr "İlk satırdaki değiştirme belirteçlerini kullan"
+
+msgid "@argument title"
+msgstr "@argument başlığı"
+
+msgid "@argument input"
+msgstr "@argument girdisi"
+
+msgid "Replacement patterns"
+msgstr "Değiştirme şablonları"
+
+msgid "The following tokens are available. You may use Twig syntax in this field."
+msgstr "Aşağıdaki belirteçler kullanılabilir. Bu alanda Twig söz dizimini kullanabilirsiniz."
+
+msgid "Meta tags"
+msgstr "Meta etiketleri"
+
+msgid "Overridden"
+msgstr "Varsayılan değişmiş"
+
+msgid "Using defaults"
+msgstr "Öntanımlıları kullanıyor"
+
+msgid "Arguments"
+msgstr "Değişkenler"
+
+msgid "Fields"
+msgstr "Alanlar"
+
+msgid "Metatag display extender"
+msgstr "Meta etiket görüntü genişleticisi"
+
+msgid "Metatag settings for this view."
+msgstr "Bu görünüm için meta etiket ayarları."
+
+msgid "Status"
+msgstr "Durum"
+
+msgid "Active"
+msgstr "Etkin"
+
+msgid "Disabled"
+msgstr "Etkin değil"
+
+msgid "Inherits meta tags from: @inherits"
+msgstr "@inherits içinden meta etiketleri devralır"
+
+msgid "Configure the meta tags below."
+msgstr "Aşağıda meta etiketleri yapılandırın."
+
+msgid "Undefined group '%group' on tag '%tag'"
+msgstr "'%tag' etiketinde '%group' tanımsız grubu"
+
+msgid ""
+"This was expected to be an array but it is not: \n"
+"%value"
+msgstr ""
+"Bunun bir dizi olması bekleniyordu, ancak değil: \n"
+"%value"
+
+msgid ""
+"This could not be unserialized: \n"
+"%value"
+msgstr ""
+"Bu diziselleştirme geri alınamadı: \n"
+"%value"
+
+msgid "Use tokens to avoid redundant meta data and search engine penalization. For example, a 'keyword' value of \"example\" will be shown on all content using this configuration, whereas using the [node:field_keywords] automatically inserts the \"keywords\" values from the current entity (node, term, etc)."
+msgstr "Yedekli meta verileri ve arama motoru cezalandırmasını önlemek için belirteçleri kullanın. Örneğin, \"örnek\" 'anahtar sözcük' değeri, bu yapılandırmayı kullanan tüm içeriklerde gösterilirken, [node:field_keywords] kullanıldığında geçerli varlıktan (düğüm, terim vb.) \"anahtar sözcükler\" değerleri otomatik olarak eklenir."
+
+msgid "To use tokens to image fields, the image field on that entity bundle (content type, term, etc) must have the \"Token\" display settings enabled, the image field must not be hidden, and it must be set to output as an image, e.g. using the \"Thumbnail\" field formatter. It is also recommended to use an appropriate image style that resizes the image rather than output the original image; see individual meta tag descriptions for size recommendations."
+msgstr "Resim alanları belirteçleri kullanmak için bu varlık paketindeki resim alanında (içerik tipi, terim, vb.) \"Belirteç\" görüntü ayarları etkinleştirilmiş olmalıdır, resim alanı gizlenmemelidir ve \"Küçük resim\" alan biçimlendirici kullanılarak resim olarak çıkış şeklinde ayarlanmalıdır. Orijinal resim yerine resmi yeniden boyutlandıran uygun bir resim stilinin kullanılması da önerilir; boyut önerileri için tek tek meta etiket açıklamalarına bakın."
+
+msgid "Yes"
+msgstr "Evet"
+
+msgid "No"
+msgstr "Hayır"
+
+msgid "Label / Description"
+msgstr "Etiket / Açıklama"
+
+msgid "Weight"
+msgstr "Ağırlık"
+
+msgid "Secure"
+msgstr "Güvenli"
+
+msgid "Multiple"
+msgstr "Çoklu"
+
+msgid "Provided by"
+msgstr "Sağlayan"
+
+msgid "All meta tags in the \"@group\" group."
+msgstr "\"@group\" grubundaki tüm meta etiketler."
+
+msgid "Are you sure you want to delete %name?"
+msgstr "%name kişisini silmek istediğinize emin misiniz?"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Deleted @label defaults."
+msgstr "@label varsayılanları silindi."
+
+msgid "Select the type of default meta tags you would like to add."
+msgstr "Eklemek istediğiniz varsayılan meta etiketlerin tipini seçin."
+
+msgid "Warning: disabling the Global default metatag will prevent any metatags from being used."
+msgstr "Uyarı: Genel varsayılan meta etiket devre dışı bırakıldığında, meta etiketlerin kullanılması engellenir."
+
+msgid "Created the %label Metatag defaults."
+msgstr "%label Meta Etiket varsayılanları oluşturuldu."
+
+msgid "Saved the %label Metatag defaults."
+msgstr "%label Meta Etiket varsayılanları kaydedildi."
+
+msgid "Edit default meta tags for @path"
+msgstr "@path için varsayılan meta etiketlerini düzenle"
+
+msgid "Are you sure you want to revert %name to its default values?"
+msgstr "%name öğesini varsayılan değerlerine geri döndürmek istediğinizden emin misiniz?"
+
+msgid "Reverted @label defaults."
+msgstr "@label varsayılanları geri döndürüldü."
+
+msgid "Entity type / Group Mapping"
+msgstr "Varlık tipi / Grup Eşlemesi"
+
+msgid "Identify which metatag groups should be available on which entity type / bundle combination. Unselected groups will not appear on the configuration form for that entity type, reducing the size of the form and increasing performance. If no groups are selected for a type, all groups will appear."
+msgstr "Her bir varlık tipi / paket birleşiminde hangi meta etiket gruplarının kullanılabilir olacağını tanımlayın. Seçimi kaldırılan gruplar, o varlık tipi için yapılandırma formunda görüntülenmez ve böylece formun boyutunu azaltır ve performansı artırır. Bir tip için herhangi bir grup seçilmezse tüm gruplar görüntülenir."
+
+msgid "Metatag Trimming Options"
+msgstr "Meta Etiket Kırpma Seçenekleri"
+
+msgid "Many Meta-Tags can be trimmed on a specific length for search engine optimization.<br/>If the value is set to '0' or left empty, the whole Metatag will be untrimmed."
+msgstr "Birçok Meta-Tag arama motoru optimizasyonu için belirli bir uzunlukta kesilebilir.<br/>Değer '0' olarak ayarlanırsa Metatag'in tamamı kesilmez."
+
+msgid "Because of how tokens are processed in meta tags, use of the Maxlength module may not provide an accurate representation of the actual current length of each meta tag, so it may cause more problem than it is worth. "
+msgstr "Belirteçlerin meta etiketlerde işlenme şekli nedeniyle, Maxlength modülünün kullanımı her meta etiketin gerçek geçerli uzunluğunun doğru bir gösterimini sağlamayabilir, bu nedenle değerinden daha fazla soruna neden olabilir. "
+
+msgid "Install the Maxlength module to enable this option."
+msgstr "Bu seçeneği etkinleştirmek için Maxlength modülünü kurun."
+
+msgid "Meta Tags:"
+msgstr "Meta Etiketler:"
+
+msgid "length"
+msgstr "uzunluk"
+
+msgid "Meta Tags: Trimming Options"
+msgstr "Meta Etiketler: Kesme Seçenekleri"
+
+msgid "Trim the Meta Tag after the word on the given value"
+msgstr "Verili değerdeki sözcükten sonra Meta Etiketini kırp"
+
+msgid "Trim the Meta Tag on the given value"
+msgstr "Belirtilen değerdeki Meta Etiketi kırp"
+
+msgid "Trim the Meta Tag before the word on the given value"
+msgstr "Verili değerdeki sözcükten önce Meta Etiketi kırp"
+
+msgid "Metatag widget options"
+msgstr "Meta etiket gereci seçenekleri"
+
+msgid "Various options for the field widget used on entity forms, e.g. on content type forms."
+msgstr "İçerik tipi formları gibi varlık formlarında kullanılan alan gereci için çeşitli seçenekler."
+
+msgid "Scroll maximum height"
+msgstr "Kaydırma yüksekliği üst sınırı"
+
+msgid "eg 500px or 8rem"
+msgstr "örn. 500pk ya da 8rem"
+
+msgid "To enable scrolling please enter a value and its units, e.g. 500px, 8rem, etc. Removing this value will remove the scroll."
+msgstr "Kaydırma özelliğini etkinleştirmek için lütfen bir değer ve birimleri girin; örneğin, 500pk, 8rem, vb. Bu değer kaldırıldığında kaydırma kaldırılır."
+
+msgid "Empty formatter"
+msgstr "Boş biçimleyici"
+
+msgid "@label"
+msgstr "@label"
+
+msgid "This field stores code meta tags."
+msgstr "Bu alanda, kod meta etiketleri depolanır."
+
+msgid "If checked, the field will be placed in the sidebar on entity forms."
+msgstr "İşaretlenirse alan, varlık formlarındaki kenar çubuğuna yerleştirilir."
+
+msgid "Wrap the meta tags in a collapsed details container."
+msgstr "Meta etiketleri daraltılmış bir ayrıntı taşıyıcısında sarın."
+
+msgid "If checked, the contents of the field will be placed inside a collapsed details container."
+msgstr "İşaretliyse, alanın içeriği daraltılmış bir ayrıntı taşıyıcısının içine yerleştirilir."
+
+msgid "Use sidebar: Yes"
+msgstr "Kenar çubuğunu kullan: Evet"
+
+msgid "Use sidebar: No"
+msgstr "Kenar çubuğunu kullan: Hayır"
+
+msgid "Use details container: Yes"
+msgstr "Ayrıntı kapsayıcısını kullan: Evet"
+
+msgid "Use details container: No"
+msgstr "Ayrıntı kapsayıcısını kullan: Hayır"
+
+msgid "Metatag Field Diff"
+msgstr "Meta Etiket Alanı Farkı"
+
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+msgid "Meta tags that might not be needed by many sites."
+msgstr "Birçok sitenin gerektirmeyebileceği meta etiketler."
+
+msgid "Basic tags"
+msgstr "Temel etiketler"
+
+msgid "Simple meta tags."
+msgstr "Basit meta etiketler."
+
+msgid "A brief and concise summary of the page's content, preferably 150 characters or less. Where as the description meta tag may be used by search engines to display a snippet about the page in search results, the abstract tag may be used to archive a summary about the page. This meta tag is <em>no longer</em> supported by major search engines."
+msgstr "Sayfa içeriğinin kısa ve net bir özeti olup tercihen 150 ya da daha az karakterden oluşur. Açıklama meta etiketi, arama motorları tarafından arama sonuçlarında sayfayla ilgili bir kod parçacığını görüntülemek için kullanılabilse de; özet etiketi, sayfayla ilgili bir özeti arşivlemek için kullanılabilir. Bu meta etiket artık başlıca arama motorları tarafından <em>desteklenmemektedir</em>."
+
+msgid "Define the author of a page."
+msgstr "Bir sayfanın yazarını tanımlayın."
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Pragma meta tag."
+msgstr "Bir tarayıcının belirli bir sayfayı yerel olarak önbelleğe alıp olmadığını denetlemek için kullanılır. Yaygın olarak kullanılmaz. Pragma meta etiketiyle birlikte kullanılmalıdır."
+
+msgid "A link to the preferred page location or URL of the content of this page, to help eliminate duplicate content penalties from search engines."
+msgstr "Arama motorlarının yinelenen içerik cezalarının ortadan kaldırılmasına yardımcı olmak için bu sayfa içeriğinin URL'si ya da tercih edilen sayfa konumunun bağlantısı."
+
+msgid "A brief and concise summary of the page's content that is a maximum of 160 characters in length. The description meta tag may be used by search engines to display a snippet about the page in search results."
+msgstr "Maksimum 160 karakter uzunluğunda, bir sayfa içeriğinin kısa ve net bir özeti. Açıklama meta etiketi, arama motorları tarafından arama sonuçlarında sayfayla ilgili bir kod parçacığını görüntülemek için kullanılabilir."
+
+msgid "Control when the browser's internal cache of the current page should expire. The date must to be an <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a>-compliant date string that is represented in Greenwich Mean Time (GMT), e.g. 'Thu, 01 Sep 2016 00:12:56 GMT'. Set to '0' to stop the page being cached entirely."
+msgstr "Geçerli sayfanın tarayıcı iç önbelleğinin süresinin ne zaman dolacağını denetleyin. Tarih <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a>Greenwich Mean Time (GMT) ile uyumlu bir tarih dizesi biçiminde olmalıdır, örn. 'Perşembe, 01 Eyl 2016 00:12:56 GMT'. Sayfanın tümüyle önbelleğe alınmasını durdurmak için '0' olarak ayarlayın."
+
+msgid "Describes the name and version number of the software or publishing tool used to create the page."
+msgstr "Sayfayı oluşturmak için kullanılan yayınlama aracının ya da yazılımın adını ve sürüm numarasını açıklar."
+
+msgid "A location's formal name."
+msgstr "Konumun resmi adı."
+
+msgid "Geo-spatial information in 'latitude; longitude' format, e.g. '50.167958; -97.133185'; <a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>see Wikipedia for details</a>."
+msgstr "'Enlem; boylam' biçiminde coğrafi uzamsal bilgiler, örn. '50.167958; -97.133185'; <a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>ayrıntılar için Wikipedia'ya bakın</a>."
+
+msgid "A location's two-letter international country code, with an optional two-letter region, e.g. 'US-NH' for New Hampshire in the USA."
+msgstr "İsteğe bağlı iki harfli bölge ile birlikte bir konumun iki harfli uluslararası ülke kodu; örn. ABD'de New Hampshire için 'US-NH'."
+
+msgid "This meta tag communicates with Google. There are currently two directives supported: 'nositelinkssearchbox' to not to show the sitelinks search box, and 'notranslate' to ask Google not to offer a translation of the page. Both options may be added, just separate them with a comma. See <a href='https://support.google.com/webmasters/answer/79812?hl=en'>meta tags that Google understands</a> for further details."
+msgstr "Bu meta etiket Google ile iletişim kurar. Şu anda desteklenen iki yönerge vardır: site bağlantıları arama kutusunu göstermemek için 'nositelinkssearchbox' ve Google'dan sayfanın bir çevirisini sunmamasını istemek için 'notranslate'. Her iki seçenek eklenebilir; bunları virgülle ayırmanız yeterlidir. Daha fazla ayrıntı için bkz. <a href='https://support.google.com/webmasters/answer/79812?hl=en'>Google'ın anladığı meta etiketler</a>."
+
+msgid "Geo-spatial information in 'latitude, longitude' format, e.g. '50.167958, -97.133185'; <a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>see Wikipedia for details</a>."
+msgstr "'Enlem, boylam' biçiminde coğrafi uzamsal bilgiler, örn. '50.167958, -97.133185'; <a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>ayrıntılar için Wikipedia'ya bakın</a>."
+
+msgid "An image associated with this page, for use as a thumbnail in social networks and other services."
+msgstr "Sosyal ağlarda ve diğer hizmetlerde küçük resim olarak kullanılmak üzere, bu sayfayla ilişkilendirilmiş bir resim."
+
+msgid "A comma-separated list of keywords about the page. This meta tag is <em>no longer</em> supported by most search engines."
+msgstr "Sayfayla ilgili anahtar sözcüklerin virgülle ayrılmış bir listesi. Bu meta etiket artık çoğu arama motorları tarafından <em>desteklenmemektedir</em>."
+
+msgid "Multiple values may be used, separated by a comma. Note: Tokens that return multiple values will be handled automatically."
+msgstr "Virgülle ayrılmış olarak birden çok değer kullanılabilir. Not: Birden çok değer döndüren belirteçler otomatik olarak işlenir."
+
+msgid "This will be able to extract the URL from an image field if the field is configured properly."
+msgstr "Alan düzgün yapılandırılırsa bir resim alanından URL'yi çıkarabilir."
+
+msgid "Any relative or protocol-relative URLs will be converted to absolute URLs."
+msgstr "Göreli veya iletişim kuralı göreli URL'ler mutlak URL adreslerine dönüştürülür."
+
+msgid "Any URLs which start with \"http://\" will be converted to \"https://\"."
+msgstr "\"http://\" ile başlayan URL'ler \"https://\" biçimine dönüştürülür."
+
+msgid "This will be truncated to a maximum of %max characters after any tokens are processsed."
+msgstr "Bu, herhangi bir belirteç tamamlandıktan sonra en çok %max karakter olacak şekilde kesilecektir."
+
+msgid "News Keywords"
+msgstr "Haber Anahtar Sözcükleri"
+
+msgid "Used for paginated content by providing URL with rel='next' link."
+msgstr "rel='next' bağlantısıyla URL sağlayarak sayfalandırılan içerik için kullanılır."
+
+msgid "Used to indicate the URL that broke the story, and can link to either an internal URL or an external source. If the full URL is not known it is acceptable to use a partial URL or just the domain name."
+msgstr "Hikayeyi bozan URL'yi belirtmek için kullanılır ve bir iç URL'ye ya da dış kaynağa bağlantılandırılabilir. Tam URL bilinmiyorsa, kısmi bir URL ya da yalnızca etki alanı adı kullanılması kabul edilebilir."
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Cache-Control meta tag."
+msgstr "Bir tarayıcının belirli bir sayfayı yerel olarak önbelleğe alıp olmadığını denetlemek için kullanılır. Yaygın olarak kullanılmaz. Cache-Control meta etiketiyle birlikte kullanılmalıdır."
+
+msgid "Used for paginated content by providing URL with rel='prev' link."
+msgstr "rel='prev' bağlantısıyla URL sağlayarak sayfalandırılan içerik için kullanılır."
+
+msgid "Used to rate content for audience appropriateness. This tag has little known influence on search engine rankings, but can be used by browsers, browser extensions, and apps. The <a href='https://www.metatags.org/meta_name_rating'>most common options</a> are general, mature, restricted, 14 years, safe for kids. If you follow the <a href='https://www.rtalabel.org/index.php?content=howto'>RTA Documentation</a> you should enter RTA-5042-1996-1400-1577-RTA"
+msgstr "Hedef kitle uygunluğu açısından içeriği derecelendirmek için kullanılır. Bu etiketin, arama motoru üzerinde bilinen çok az etkisi vardır, ancak tarayıcılar, tarayıcı uzantıları ve uygulamalar tarafından kullanılabilir. <a href='https://www.metatags.org/meta_name_rating'>En yaygın seçenekler</a> genel, olgun, kısıtlı, 14 yıl ve çocuklar için güvenli seçenekleridir. <a href='https://www.rtalabel.org/index.php?content=howto'>RTA Belgeleri</a>'ni izlerseniz RTA-5042-1996-1400-1577-RTA girmeniz gerekir"
+
+msgid "No Referrer"
+msgstr "Başvuran Yok"
+
+msgid "No Referrer When Downgrade"
+msgstr "Sürüm Düşürme Olduğunda Başvuran Yok"
+
+msgid "Origin"
+msgstr "Kaynak"
+
+msgid "Origin When Cross-Origin"
+msgstr "Kaynaklar Arası Olduğunda Kaynak"
+
+msgid "Same Origin"
+msgstr "Aynı Köken"
+
+msgid "Strict Origin"
+msgstr "Kesin Köken"
+
+msgid "Strict Origin When Cross-Origin"
+msgstr "Kaynaklar Arası Olduğunda Kesin Köken"
+
+msgid "Unsafe URL"
+msgstr "Güvenli olmayan URL"
+
+msgid "Indicate to search engines and other page scrapers whether or not links should be followed. See <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>the W3C specifications</a> for further details. Note: this serves the same purpose as the HTTP header by the same name."
+msgstr "Arama motorlarına ve diğer sayfa sıyırıcılarına bağlantıların izlenip izlenmeyeceğini belirtin. Daha fazla ayrıntı için bkz. <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>W3C belirtimleri</a>. Not: Bu, aynı ada sahip HTTP üstbilgisiyle aynı amaca hizmet eder."
+
+msgid "The number of seconds to wait before refreshing the page. May also force redirect to another page using the format '5; url=https://example.com/', which would be triggered after five seconds."
+msgstr "Sayfanın yenilenmesinden önce beklenecek saniye. 5 saniye sonra tetiklenecek '5; url=https://example.com/' biçimini kullanan başka bir sayfaya yeniden yönlendirmeyi de zorlayabilir."
+
+msgid "Tell search engines when to index the page again. Very few search engines support this tag, it is more useful to use an <a href='https://www.drupal.org/project/xmlsitemap'>XML Sitemap</a> file."
+msgstr "Arama motorlarına sayfayı yeniden ne zaman dizinleyeceğini söyleyin. Çok az sayıda arama motoru bu etiketi destekler, bir <a href='https://www.drupal.org/project/xmlsitemap'>XML Sitemap</a> dosyası kullanmak daha yararlıdır."
+
+msgid "Details about intellectual property, such as copyright or trademarks; does not automatically protect the site's content or intellectual property."
+msgstr "Telif hakkı ya da ticari marka gibi fikri mülkiyetle ilgili ayrıntılardır ve sitenin içeriğini veya fikri mülkiyetini otomatik olarak korumaz."
+
+msgid "Max Snippet"
+msgstr "Kod Parçacığı Üst Sınırı"
+
+msgid "Use a number character as a textual snippet for this search result. \"0\" equals \"nosnippet\". \"-1\" will let the search engine decide the most effective length."
+msgstr "Bu arama sonucu için metin parçacığı olarak bir sayı karakteri kullanın. \"0\" eşittir \"nosnippet\". \"-1\", arama motorunun en etkili uzunluğa karar vermesine izin verir."
+
+msgid "Max Video Preview"
+msgstr "Maksimum Video Önizlemesi"
+
+msgid "Use a maximum of number seconds as a video snippet for videos on this page in search results. \"0\" will use a static a image. \"-1\" means there is no limit."
+msgstr "Arama sonuçlarında bu sayfadaki videolar için video parçacığı olarak maksimum saniye sayısını kullanın. \"0\" durağan bir görüntü kullanacak. \"-1\", sınır olmadığı anlamına gelir."
+
+msgid "Max Image Preview"
+msgstr "Maksimum Resim Önizlemesi"
+
+msgid "Set the maximum size of an image preview for this page in a search results."
+msgstr "Arama sonuçlarında bu sayfa için bir resim önizlemesinin maksimum boyutunu ayarlayın."
+
+msgid "None - no image preview is to be shown."
+msgstr "Yok - resim önizlemesi gösterilmez."
+
+msgid "Standard - a default image preview may be shown."
+msgstr "Standart - varsayılan bir resim önizlemesi gösterilebilir."
+
+msgid "Large - a larger image preview, up to the width of the viewport, may be shown."
+msgstr "Büyük - görüş alanı genişliğine kadar olan daha büyük bir resim önizlemesi gösterilebilir."
+
+msgid "Select"
+msgstr "Seç"
+
+msgid "Unavailable after date"
+msgstr "Uygun olduğu son tarih"
+
+msgid "Do not show this page in search results after the specified date"
+msgstr "Belirtilen tarihten sonra arama sonuçlarında bu sayfayı gösterme"
+
+msgid "index - Allow search engines to index this page (assumed)."
+msgstr "index - Arama motorlarının bu sayfayı dizinlemesine izin verin (varsayılan)."
+
+msgid "follow - Allow search engines to follow links on this page (assumed)."
+msgstr "follow - Arama motorlarının bu sayfadaki bağlantıları izlemesine izin verin (varsayılan)."
+
+msgid "noindex - Prevents search engines from indexing this page."
+msgstr "noindex - Arama motorlarının bu sayfayı dizinlemesini önler."
+
+msgid "nofollow - Prevents search engines from following links on this page."
+msgstr "nofollow - Bu sayfada aşağıdaki bağlantılardan arama motorlarını önler."
+
+msgid "noarchive - Prevents cached copies of this page from appearing in search results."
+msgstr "noarchive - Bu sayfanın önbelleğe alınan kopyalarının arama sonuçlarında görüntülenmesini önler."
+
+msgid "nosnippet - Prevents descriptions from appearing in search results, and prevents page caching."
+msgstr "nosnippet - Açıklamaların arama sonuçlarında görüntülenmesini ve sayfa önbelleğe almayı önler."
+
+msgid "noimageindex - Prevent search engines from indexing images on this page."
+msgstr "noimageindex - Arama motorlarının bu sayfada resimleri dizinlemesini önler."
+
+msgid "notranslate - Prevent search engines from offering to translate this page in search results."
+msgstr "notranslate - Arama sonuçlarının, arama sonuçlarında bu sayfanın çevirisini sunmasını önleyin."
+
+msgid "Provides search engines with specific directions for what to do when this page is indexed."
+msgstr "Arama motorlarına, bu sayfa dizinlendiğinde ne yapılacağına ilişkin belirli yönergeler sağlar."
+
+msgid "Set cookie"
+msgstr "Tanımlama bilgisi ayarla"
+
+msgid "<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>Sets a cookie</a> on the visitor's browser. Can be in either NAME=VALUE format, or a more verbose format including the path and expiration date; see the link for full details on the syntax."
+msgstr "Bir ziyaretçinin tarayıcısında <a href='https://www.metatags.org/meta_http_equiv_set_cookie'>bir tanımlama bilgisi ayarlar</a>. NAME=VALUE biçiminde ya da yol ve son kullanım tarihi içeren daha ayrıntılı bir biçimde olabilir; sözdizimiyle ilgili ayrıntıların tamamı için bağlantıya bakın."
+
+msgid "Shortlink URL"
+msgstr "Kısa Bağlantı URL'si"
+
+msgid "A brief URL, often created by a URL shortening service."
+msgstr "Çoğu zaman URL kısaltma hizmeti tarafından oluşturulan kısa bir URL."
+
+msgid "The text to display in the title bar of a visitor's web browser when they view this page. This meta tag may also be used as the title of the page when a visitor bookmarks or favorites this page, or as the page title in a search engine result. It is common to append '[site:name]' to the end of this, so the site's name is automatically added. It is recommended that the title is no greater than 55 - 65 characters long, including spaces."
+msgstr "Ziyaretçi bu sayfayı görüntülediğinde ziyaretçinin web tarayıcısının başlık çubuğunda görüntülenecek metin. Bu meta etiket, bir ziyaretçi bu sayfaya yer işareti eklediğinde ya da bu sayfayı sık kullanılanlara eklediğinde sayfanın başlığı olarak veya arama motoru sonucunda sayfa başlığı olarak da kullanılabilir. Genellikle bunun sonuna '[site:name]' eklenir; böylece sitenin adı otomatik olarak eklenir. Başlığın boşluklar da dahil olmak üzere 55 - 65 karakterden uzun olmaması önerilir."
+
+msgid "Configuration type"
+msgstr "Yapılandırma tipi"
+
+msgid "@label of @type"
+msgstr "@type @label"
+
+msgid "@label of @type @entity-type-label"
+msgstr "@type @entity-type-label @label"
+
+msgid "No default for \"%tag_name\" - entity_type: %type, entity_bundle: %bundle, id: %id. See src/TypedData/Metatags.php."
+msgstr "\"%tag_name\" - entity_type: %type, entity_bundle için varsayılan yok: %bundle, id: %id. Bkz. src/TypedData/Metatags.php."
+

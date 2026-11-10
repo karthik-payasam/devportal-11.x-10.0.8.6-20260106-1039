@@ -1,0 +1,260 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Field encryption"
+msgstr "Chiffrement de zone"
+
+msgid "Warning: changing field encryption settings may cause data corruption!<br />When changing these settings, existing fields will be (re)encrypted in batch according to the new settings. <br />Make sure you have a proper backup, and do not perform this action in an environment where the data will be changing during the batch operation, to avoid data loss."
+msgstr "Avertissement : la modification des paramètres de chiffrement de zone peut provoquer une altération des données !<br />Lorsque vous modifiez ces paramètres, les zones existantes sont (re)chiffrées par lots en fonction des nouveaux paramètres. <br />Assurez-vous que vous disposez d'une sauvegarde correcte et n'effectuez pas cette action dans un environnement où les données seront modifiées lors de l'opération de traitement par lots, afin d'éviter une perte de données."
+
+msgid "Encrypt field"
+msgstr "Chiffrer une zone"
+
+msgid "Makes the field storage encrypted."
+msgstr "Chiffre le stockage de la zone."
+
+msgid "Properties"
+msgstr "Propriétés"
+
+msgid "Specify the field properties to encrypt."
+msgstr "Indiquez les propriétés de la zone à chiffrer."
+
+msgid "Field Encrypt"
+msgstr "Chiffrement de zone"
+
+msgid "Update to field_encrypt version 3 is not supported."
+msgstr "La mise à jour de field_encrypt version 3 n'est pas prise en charge."
+
+msgid "In order to upgrade you need to decrypt all your data on the previous version and uninstall the module."
+msgstr "Pour mettre à niveau vous devez déchiffrer toutes vos données sur la version précédente et désinstaller le module."
+
+msgid "Field Encrypt entity hooks"
+msgstr "Points d'ancrage d'entité de chiffrement de zone"
+
+msgid "Unable to dynamically create entity hooks"
+msgstr "Impossible de créer dynamiquement des points d'ancrage d'entité"
+
+msgid "In order to use Field Encrypt the following methods need to be defined:@functions"
+msgstr "Pour utiliser le Chiffrement des champs, vous devez définir les méthodes suivantes :@functions"
+
+msgid "Extends the Field API to allow encryption of fields."
+msgstr "Etend l'API de zone afin d'autoriser le chiffrement des zones."
+
+msgid "Encryption"
+msgstr "Chiffrement"
+
+msgid "Field Encrypt settings"
+msgstr "Paramètres de chiffrement de zone"
+
+msgid "Manage field encryption settings"
+msgstr "Gérer les paramètres de chiffrement de zone"
+
+msgid "Settings"
+msgstr "Paramètres"
+
+msgid "Encrypted fields overview"
+msgstr "Présentation des zones chiffrées"
+
+msgid "Encrypted fields entity type settings"
+msgstr "Paramètres du type d'entité des zones chiffrées"
+
+msgid "Process queues"
+msgstr "Files d'attente processus"
+
+msgid "Administer field encryption"
+msgstr "Administrer le chiffrement de zone"
+
+msgid "Allows fields to be individually encrypted so that their data is better protected."
+msgstr "Permet aux zones d'être chiffrées individuellement afin que leurs données soient mieux protégées."
+
+msgid "Field Encrypt entity type settings"
+msgstr "Paramètres du type d'entité Encrypt de zone"
+
+msgid "Process queued updates"
+msgstr "Processus mis à jour en file d'attente"
+
+msgid "Field encrypt setting"
+msgstr "Paramètre de chiffrement de zone"
+
+msgid "Encrypt"
+msgstr "Chiffrement"
+
+msgid "Property"
+msgstr "Propriété"
+
+msgid "Properties placeholders"
+msgstr "Marque de réservation de propriétés"
+
+msgid "Placeholder"
+msgstr "Placeholder"
+
+msgid "Field Encrypt Settings"
+msgstr "Paramètres de chiffrement de zone"
+
+msgid "Encryption profile"
+msgstr "Profil de chiffrement"
+
+msgid "Exclude from persistent caches"
+msgstr "Exclure des caches permanents"
+
+msgid "Field types"
+msgstr "Types de champs"
+
+msgid "Properties to encrypt"
+msgstr "Propriétés à chiffrer"
+
+msgid "Property name"
+msgstr "Nom de propriété"
+
+msgid "Batch size"
+msgstr "Taille du lot"
+
+msgid "Entity type ID"
+msgstr "ID de type d'entité"
+
+msgid "Encrypted base fields"
+msgstr "Zones de base chiffrées"
+
+msgid "Base field"
+msgstr "Champ de base"
+
+msgid "Base field property"
+msgstr "Propriété de zone de base"
+
+msgid "Encrypted data"
+msgstr "Données chiffrées"
+
+msgid "Stores data from encrypted fields."
+msgstr "Stocke les données à partir des zones chiffrées."
+
+msgid "Field"
+msgstr "Champ"
+
+msgid "Entity type"
+msgstr "Type d'entité"
+
+msgid "Operations"
+msgstr "Actions"
+
+msgid "There are no encrypted fields."
+msgstr "Aucune zone chiffrée n'est disponible."
+
+msgid "Decrypt"
+msgstr "Déchiffrement"
+
+msgid "Updates to @entity_type with existing data been queued to be processed. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the updates will be performed automatically by cron."
+msgstr "Les mises à jour de @entity_type avec les données existantes ont été mises en file d'attente à traiter. Vous devez immédiatement <a href=\":url\">exécuter ce processus manuellement</a>. Sinon, les mises à jour seront automatiquement effectuées par cron."
+
+msgid "Updates to entities with existing data for this field have been queued to be processed. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the updates will be performed automatically by cron."
+msgstr "Les mises à jour des entités à l'aide des données existantes pour cette zone ont été placées en file d'attente en vue de leur traitement. Vous devez immédiatement <a href=\":url\">exécuter ce processus manuellement</a>. Sinon, les mises à jour seront automatiquement effectuées par cron."
+
+msgid "Are you sure you want to remove encryption for field %field on %entity_type?"
+msgstr "Voulez-vous vraiment supprimer le chiffrement pour la zone %field sur %entity_type ?"
+
+msgid "Remove field encryption"
+msgstr "Supprimer le chiffrement de zone"
+
+msgid "This action removes field encryption from the specified field. Existing field data will be decrypted through a batch process."
+msgstr "Cette action supprime le chiffrement de la zone indiquée. Les données de zone existantes seront déchiffrées via un traitement par lots."
+
+msgid "Select a entity type to configure"
+msgstr "Sélectionnez un type d'entité à configurer"
+
+msgid "Base fields to encrypt"
+msgstr "Champs de base à chiffrer"
+
+msgid "Note that encrypted fields can not be filtered on in SQL queries or joined against."
+msgstr "Notez que les zones chiffrées ne peuvent pas être filtrées dans les requêtes SQL ou associées."
+
+msgid "Save configuration"
+msgstr "Enregistrer la configuration"
+
+msgid "@label properties"
+msgstr "Propriétés @label"
+
+msgid "Specify the base field properties to encrypt. If none are selected the base field will not be encrypted."
+msgstr "Indiquez les propriétés de la zone de base à chiffrer. Si aucun n'est sélectionné, la zone de base ne sera pas chiffrée."
+
+msgid "Updated encryption settings for %entity_type base fields."
+msgstr "Paramètres de chiffrement mis à jour pour les zones de base de type ntity_type %e."
+
+msgid "Update encryption profile"
+msgstr "Mise à jour d'un profil"
+
+msgid "Usages"
+msgstr "Utilisations"
+
+msgid "If the field encryption profile is changed entities can be updated to use the new encryption profile."
+msgstr "Si le profil de chiffrement de zone est modifié, les entités peuvent être mises à jour pour utiliser le nouveau profil de chiffrement."
+
+msgid "Process updates"
+msgstr "Mises à jour du processus"
+
+msgid "Field encryption updates"
+msgstr "Mises à jour du chiffrement"
+
+msgid "Cannot claim an item - unable to process the batch"
+msgstr "Impossible de réclamer un élément - impossible de traiter le lot"
+
+msgid "Select the encryption profile to use for encrypting fields. New entities and revisions will always use this profile. Existing entities and revisions can be updated via <a href=\":link\">Encrypted fields entity type settings</a>"
+msgstr "Sélectionnez le profil de chiffrement à utiliser pour les zones de chiffrement. Les nouvelles entités et révisions utiliseront toujours ce profil. Les entités et révisions existantes peuvent être mises à jour via <a href=\":link\">Paramètres du type d'entité des zones chiffrées</a>"
+
+msgid "Exclude entities from persistent caches"
+msgstr "Exclure les entités des caches persistantes"
+
+msgid "This ensures unencrypted data is not exposed in the cache. However, it negatively impacts performance because it prevents caching of all entity types for which field encryption is enabled, even entity bundles that do not have any encrypted fields."
+msgstr "Ainsi, les données non chiffrées ne sont pas exposées dans le cache. Cependant, cette opération a un impact négatif sur les performances car elle empêche la mise en cache de tous les types d'entité pour lesquels le chiffrement de zone est activé, même les bundles d'entité qui ne comportent pas de zones chiffrées."
+
+msgid "Default properties"
+msgstr "Propriétés par défaut"
+
+msgid "Select which field properties will be checked by default on the field encryption settings form, per field type. Note that this does not change existing field settings, but merely sets sensible defaults."
+msgstr "Sélectionnez les propriétés de zone qui seront cochées par défaut sur le formulaire de chiffrement de zone, par type de zone. Notez que cette opération ne modifie pas les paramètres de zone existants, mais définit simplement les valeurs par défaut sensibles."
+
+msgid "@field_type properties"
+msgstr "Propriétés de @field_type"
+
+msgid "Specify the default properties to encrypt for this field type."
+msgstr "Indiquez les propriétés par défaut à chiffrer pour ce type de zone."
+
+msgid "Batch update settings"
+msgstr "Paramètres de mise à jour par lots"
+
+msgid "Configure behaviour of the batch field update feature. When changing field encryption settings for fields that already contain data, a batch process will be started that updates the existing field values according to the new settings."
+msgstr "Configurez le comportement de la fonction de mise à jour de zone par lots. Lors de la modification des paramètres de chiffrement de zone pour des zones qui contiennent déjà des données, un traitement par lots qui met à jour les valeurs de zone existantes en fonction des nouveaux paramètres démarre."
+
+msgid "Specify the number of entities to process on each field update batch execution. It is recommended to keep this number low, to avoid timeouts."
+msgstr "Indiquez le nombre d'entités à traiter sur chaque exécution par lots de mise à jour de zone. Il est recommandé que ce nombre reste faible pour éviter les dépassements de délai. "
+
+msgid "Are you sure you want to update the encryption profile from %from to %to for %entity_type_plural?"
+msgstr "Voulez-vous vraiment mettre à jour le profil de chiffrement de %fà %to pour %entity_type_plural?"
+
+msgid "Existing entities will be updated through a batch process."
+msgstr "Les entités existantes seront mises à jour via un processus de traitement par lots."
+
+msgid "Decrypted data"
+msgstr "Données déchiffrées"
+
+msgid "Encrypted field storage"
+msgstr "Stockage de zone chiffré"
+
+msgid "Stores encrypted field data."
+msgstr "Stocke les données de zone chiffrées."
+
+msgid "Updating @entity_type with ID @entity_id to use the latest field encryption settings"
+msgstr "Mise à jour de @entity_type avec l'ID @entity_id pour utiliser les derniers paramètres de chiffrement de zone"
+
+msgid "Field encrypt: update encrption profile."
+msgstr "Chiffrage de zone : profil encrption de mise à jour."
+

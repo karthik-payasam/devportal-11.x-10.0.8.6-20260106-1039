@@ -1,0 +1,74 @@
+<?php
+
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_theme().
+ */
+function custom_mfa_theme($existing, $type, $theme, $path) {
+  return [
+    'custom_mfa_form' => [
+      'render element' => 'form',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function custom_mfa_user_login($account) {
+  $session = \Drupal::request()->getSession();
+  $session->set('mfa_verified', FALSE);
+}
+
+/**
+ * Implements hook_page_top().
+ */
+function custom_mfa_page_top(array &$page_top) {
+  $account = \Drupal::currentUser();
+
+  if ($account->isAuthenticated()) {
+    $request = \Drupal::request();
+    $session = $request->getSession();
+    $mfa_verified = $session->get('mfa_verified', FALSE);
+
+    if (!$mfa_verified) {
+      $current_path = $request->getPathInfo();
+
+      $allowed_paths = [
+        '/user/mfa-verify',
+        '/user/logout',
+      ];
+
+      $is_allowed = FALSE;
+      foreach ($allowed_paths as $path) {
+        if (strpos($current_path, $path) === 0) {
+          $is_allowed = TRUE;
+          break;
+        }
+      }
+
+      if (strpos($current_path, '/ajax') === 0) {
+        $is_allowed = TRUE;
+      }
+
+      if (!$is_allowed) {
+        $url = Url::fromRoute('custom_mfa.modal_form')->toString();
+        $response = new RedirectResponse($url);
+        $response->send();
+        exit();
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_mail().
+ */
+function custom_mfa_mail($key, &$message, $params) {
+  if ($key === 'mfa_otp') {
+    $message['subject'] = t('Your Login Security Code');
+    $message['body'][] = $params['message'];
+  }
+}

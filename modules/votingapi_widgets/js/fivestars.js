@@ -1,0 +1,49 @@
+/**
+ * @file
+ * Attaches fivestar rating.
+ */
+
+(function ($, Drupal, once) {
+  Drupal.behaviors.fiveStarRating = {
+    attach(context, settings) {
+      $('body')
+        .find('.fivestar')
+        .each(function () {
+          const $this = $(this);
+          const $select = $this.find('select');
+          let value = Math.round($select.data('result-value'));
+          const voteOwnValue = $select.data('vote-value');
+          const isEdit = $select.data('is-edit');
+          const showOwnVote = $select.data('show-own-vote');
+          if (isEdit) {
+            value = $select[0].value;
+          }
+          if (!value) {
+            value = -1;
+          }
+          const options = {
+            theme:
+              $select.data('style') === 'default'
+                ? 'css-stars'
+                : $select.data('style'),
+            initialRating: showOwnVote ? voteOwnValue || -1 : value,
+            allowEmpty: true,
+            emptyValue: '',
+            readonly: !!$select.attr('disabled'),
+            onSelect(value, text) {
+              if (isEdit) {
+                return;
+              }
+              $this.find('select').barrating('readonly', true);
+              $this.find('[type=submit]').trigger('click');
+              $this.find('a').addClass('disabled');
+              $this.find('.vote-result').html();
+            },
+          };
+
+          setTimeout(function(){ $(once('processed', 'select', this)).barrating('show', options); }.bind(this), 500);
+          $this.find('[type=submit]').hide();
+        });
+    },
+  };
+})(jQuery, Drupal, once);

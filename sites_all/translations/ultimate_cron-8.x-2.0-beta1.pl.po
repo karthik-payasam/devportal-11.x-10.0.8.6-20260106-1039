@@ -1,0 +1,826 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Launched by drush"
+msgstr "Uruchomione przez narzędzie Drush"
+
+msgid "This command will list cron jobs"
+msgstr "Ta komenda wyświetli listę zadań cron"
+
+msgid "This command will run a cron job"
+msgstr "Ta komenda uruchomi zadanie cron"
+
+msgid "This command will enable a cron job"
+msgstr "Ta komenda włączy zadanie cron"
+
+msgid "This command will disable a cron job"
+msgstr "Ta komenda wyłączy zadanie cron"
+
+msgid "This command will unlock a cron job"
+msgstr "Ta komenda odblokuje zadanie cron"
+
+msgid "Name"
+msgstr "Nazwa"
+
+msgid "Title"
+msgstr "Tytuł"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Module"
+msgstr "Moduł"
+
+msgid "Scheduled"
+msgstr "Zaplanowany"
+
+msgid "Started"
+msgstr "Rozpoczęto"
+
+msgid "Duration"
+msgstr "Czas trwania"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Legend: D = Disabled, R = Running, B = Behind schedule"
+msgstr "Legenda: D = wyłączone, R = uruchomione, B = opóźnione względem harmonogramu"
+
+msgid "No job specified?"
+msgstr "Nie podano zadania?"
+
+msgid "@name not found"
+msgstr "Nie znaleziono zadania @name."
+
+msgid "User"
+msgstr "Użytkownik"
+
+msgid "Initial message"
+msgstr "Komunikat początkowy"
+
+msgid "Message"
+msgstr "Wiadomość"
+
+msgid "Cron is running."
+msgstr "Zadanie cron jest uruchomione."
+
+msgid "Cron is not running."
+msgstr "Zadanie cron nie jest uruchomione."
+
+msgid "@name enabled"
+msgstr "Włączono zadanie @name."
+
+msgid "@name disabled"
+msgstr "Wyłączono zadanie @name."
+
+msgid "@name is not running"
+msgstr "Zadanie @name nie jest uruchomione."
+
+msgid "Cron job @name unlocked"
+msgstr "Odblokowano zadanie cron @name."
+
+msgid "Could not unlock cron job @name"
+msgstr "Nie można odblokować zadania cron @name."
+
+msgid "@name manually unlocked by user @username (@uid)"
+msgstr "Zadanie @name zostało ręcznie odblokowane przez użytkownika @username (@uid)."
+
+msgid "Ultimate Cron Monitoring"
+msgstr "Monitorowanie rozszerzenia Ultimate Cron"
+
+msgid "Thresholds"
+msgstr "Progi"
+
+msgid "Thresholds for reporting critical alerts to Nagios."
+msgstr "Progi na potrzeby raportowania alertów krytycznych do programu Nagios."
+
+msgid "Running jobs count"
+msgstr "Liczba uruchomionych zadań"
+
+msgid "Issue a critical alert when more than this number of jobs are running. Default is 50."
+msgstr "Wyślij alert krytyczny, jeśli liczba uruchomionych zadań przekracza tę wartość. Wartością domyślną jest 50."
+
+msgid "Failed jobs count"
+msgstr "Liczba zadań zakończonych niepowodzeniem"
+
+msgid "Issue a critical alert when more than this number of jobs failed their last run. Default is 10."
+msgstr "Wyślij alert krytyczny, jeśli liczba zadań, których ostatnie uruchomienie zakończyło się niepowodzeniem, przekracza tę wartość. Wartością domyślną jest 10. "
+
+msgid "Long running jobs"
+msgstr "Zadania długotrwałe"
+
+msgid "Issue a critical alert when more than this number of jobs are running longer than usual. Default is 0."
+msgstr "Wyślij alert krytyczny, jeśli liczba zadań wykonywanych dłużej niż zwykle, przekracza tę wartość. Wartością domyślną jest 0."
+
+msgid "Check number of currently running jobs"
+msgstr "Sprawdź liczbę obecnie uruchomionych zadań"
+
+msgid "Check the number of jobs that failed last run"
+msgstr "Sprawdź liczbę zadań, których ostatnie uruchomienie zakończyło się niepowodzeniem"
+
+msgid "Check the number of jobs that are running longer than usual"
+msgstr "Sprawdź liczbę zadań, które są wykonywane dłużej niż zwykle"
+
+msgid "@jobs currently running - it is more than @threshold"
+msgstr "Liczba aktualnie uruchomionych zadań (@jobs) przekracza próg @threshold."
+
+msgid "@jobs currently running"
+msgstr "Liczba aktualnie uruchomionych zadań: @jobs"
+
+msgid "@jobs failed their last run - it is more than @threshold"
+msgstr "Liczba zadań, których ostatnie uruchomienie zakończyło się niepowodzeniem (@jobs), przekracza próg @threshold."
+
+msgid "@jobs failed their last run"
+msgstr "Liczba zadań, których ostatnie uruchomienie zakończyło się niepowodzeniem: @jobs"
+
+msgid "@jobs jobs are running longer than usual - it is more than @threshold"
+msgstr "Liczba zadań, które są wykonywane dłużej niż zwykle (@jobs), przekracza próg @threshold."
+
+msgid "@jobs jobs are running longer than usual"
+msgstr "Liczba zadań, które są wykonywane dłużej niż zwykle: @jobs"
+
+msgid "Never"
+msgstr "Nigdy"
+
+msgid "Some jobs are behind their schedule. Please check if <a href=\":system_cron_url\">Cron</a> is running properly."
+msgstr "Niektóre zadania są opóźnione względem harmonogramu. Należy sprawdzić, czy program <a href=\":system_cron_url\">Cron</a> działa poprawnie."
+
+msgid "Cron is running properly."
+msgstr "Program Cron działa poprawnie."
+
+msgid "@count job is behind schedule"
+msgid_plural "@count jobs are behind schedule"
+msgstr[0] "@count zadanie jest opóźnione względem harmonogramu"
+msgstr[1] "Istnieje następująca liczba zadań opóźnionych względem harmonogramu: @count"
+
+msgid "Ultimate Cron"
+msgstr "Ultimate Cron"
+
+msgid "Cron"
+msgstr "Cron"
+
+msgid "Discover jobs"
+msgstr "Wykryj zadania"
+
+msgid "Manage automatic site maintainenance tasks."
+msgstr "Zarządzaj automatycznymi zadaniami konserwacji serwisu."
+
+msgid "Cron Jobs"
+msgstr "Zadania cron"
+
+msgid "Run cron"
+msgstr "Uruchom cron"
+
+msgid "Cron settings"
+msgstr "Ustawienia demona cron"
+
+msgid "Queue"
+msgstr "Kolejka"
+
+msgid "Launcher"
+msgstr "Program uruchamiający"
+
+msgid "Logger"
+msgstr "Program rejestrujący"
+
+msgid "Scheduler"
+msgstr "Planista"
+
+msgid "Administer Ultimate Cron"
+msgstr "Administruj rozszerzeniem Ultimate Cron"
+
+msgid "Lets you configure everything in Ultimate Cron"
+msgstr "Umożliwia konfigurowanie wszystkiego w rozszerzeniu Ultimate Cron"
+
+msgid "View cron jobs"
+msgstr "Wyświetl zadania cron"
+
+msgid "Lets you view cron jobs and their logs"
+msgstr "Umożliwia wyświetlanie zadań cron i ich dzienników"
+
+msgid "Run cron jobs"
+msgstr "Uruchom zadania cron"
+
+msgid "Lets you run cron jobs"
+msgstr "Umożliwia uruchamianie zadań cron"
+
+msgid "Manage Cron settings"
+msgstr "Zarządzaj ustawieniami programu Cron"
+
+msgid "General Cron Settings"
+msgstr "Ogólne ustawienia programu Cron"
+
+msgid "Launcher settings"
+msgstr "Ustawienia programu uruchamiającego"
+
+msgid "Logger settings"
+msgstr "Ustawienia programu rejestrującego"
+
+msgid "Scheduler settings"
+msgstr "Opcje planowania"
+
+msgid "Cron jobs"
+msgstr "Zadania cron"
+
+msgid "Edit job"
+msgstr "Edytuj zadanie"
+
+msgid "Run Cron job"
+msgstr "Uruchom zadanie cron"
+
+msgid "Delete job"
+msgstr "Usuń zadanie"
+
+msgid "Disable cron job"
+msgstr "Wyłącz zadanie cron"
+
+msgid "Enable cron job"
+msgstr "Włącz zadanie cron"
+
+msgid "Cron jobs logs"
+msgstr "Dzienniki zadań cron"
+
+msgid "Unlock Cron job"
+msgstr "Odblokuj zadanie cron"
+
+msgid "Ultimate cron settings"
+msgstr "Ustawienia rozszerzenia Ultimate Cron"
+
+msgid "Bypass transactional connection"
+msgstr "Pomiń połączenie transakcyjne"
+
+msgid "Queue settings"
+msgstr "Ustawienia kolejki"
+
+msgid "Toggle queing jobs"
+msgstr "Przełącz zadania w kolejce"
+
+msgid "Timeouts"
+msgstr "Limity czasu"
+
+msgid "Time to claim item"
+msgstr "Czas na zajęcie pozycji"
+
+msgid "Time to process item"
+msgstr "Czas na przetworzenie pozycji"
+
+msgid "Delays"
+msgstr "Opóźnienia"
+
+msgid "Time to idle when finished with item"
+msgstr "Czas bezczynności po zakończeniu pracy z pozycją"
+
+msgid "Toggles throttling of queues"
+msgstr "Przełącza przytłumianie kolejek"
+
+msgid "Number of threads for queues"
+msgstr "Liczba wątków dla kolejek"
+
+msgid "Number of items needed for a queue"
+msgstr "Liczba pozycji wymaganych na potrzeby kolejki"
+
+msgid "Which thread to use"
+msgstr "Wątek do użycia"
+
+msgid "Maximum number of threads"
+msgstr "Maksymalna liczba wątków"
+
+msgid "Time to lock job"
+msgstr "Czas blokowania zadania"
+
+msgid "Maximum time for the job to run"
+msgstr "Maksymalny czas wykonywania zadania"
+
+msgid "Cache"
+msgstr "Pamięć podręczna"
+
+msgid "The cache bin to use"
+msgstr "Pojemnik pamięci podręcznej do użycia"
+
+msgid "Time until cache expires"
+msgstr "Czas do utraty ważności pamięci podręcznej"
+
+msgid "Database"
+msgstr "Baza danych"
+
+msgid "The method used for log retention"
+msgstr "Metoda używana do przechowywania dziennika"
+
+msgid "Time until expiration"
+msgstr "Czas do utraty ważności"
+
+msgid "Maximum number of logs to keep"
+msgstr "Maksymalna liczba przechowywanych dzienników"
+
+msgid "Schedulr"
+msgstr "Program planujący"
+
+msgid "Crontab"
+msgstr "Tabela crontab"
+
+msgid "Stop between job runs"
+msgstr "Zatrzymaj między uruchomieniami zadania"
+
+msgid "Array with rules"
+msgstr "Tablica z regułami"
+
+msgid "Formatted rule"
+msgstr "Sformatowana reguła"
+
+msgid "Simple"
+msgstr "Prosto"
+
+msgid "Rule for Simple scheduler"
+msgstr "Reguła dla prostego programu planującego"
+
+msgid "Cron Job"
+msgstr "Zadanie cron"
+
+msgid "Machine-readable name"
+msgstr "Nazwa wewnętrzna"
+
+msgid "Weight"
+msgstr "Waga"
+
+msgid "Module Name"
+msgstr "Nazwa modułu"
+
+msgid "Callback"
+msgstr "Wywołanie zwrotne"
+
+msgid "Scheduler ID"
+msgstr "Identyfikator programu planującego"
+
+msgid "Launcher ID"
+msgstr "Identyfikator programu uruchamiającego"
+
+msgid "Logger ID"
+msgstr "Identyfikator programu rejestrującego"
+
+msgid "Scheduler configuration"
+msgstr "Konfiguracja programu planującego"
+
+msgid "Scheduler rules"
+msgstr "Reguły programu planującego"
+
+msgid "Scheduling rule"
+msgstr "Reguła planowania"
+
+msgid "Timeout (s) after job run"
+msgstr "Limit czasu (s) po uruchomieniu zadania"
+
+msgid "Timeout settings"
+msgstr "Ustawienia limitu czasu"
+
+msgid "Lock timeout"
+msgstr "Limit czasu blokady"
+
+msgid "Max execution time"
+msgstr "Maksymalny czas wykonywania"
+
+msgid "Max threads"
+msgstr "Maksymalna liczba wątków"
+
+msgid "Thread"
+msgstr "Wątek"
+
+msgid "Method"
+msgstr "Metoda"
+
+msgid "Expiration"
+msgstr "Wygaśnięcie"
+
+msgid "Retain X amount of logs"
+msgstr "Liczba dzienników do zachowania"
+
+msgid "Cache bin to use for storing logs"
+msgstr "Pojemnik pamięci podręcznej, który ma być używany do przechowywania dzienników"
+
+msgid "Timeout (s) before cache entry expires"
+msgstr "Limit czasu (s) przed utratą ważności przez pozycję pamięci podręcznej"
+
+msgid "Queue: @title"
+msgstr "Kolejka: @title"
+
+msgid "Store the maximum possible comments per thread"
+msgstr "Przechowuj maksymalną możliwą liczbę komentarzy na wątek"
+
+msgid "Remove expired log messages and flood control events"
+msgstr "Usuń wygasłe komunikaty dziennika i zdarzenia ochrony przed zapełnieniem"
+
+msgid "Purges deleted Field API data"
+msgstr "Czyści usunięte dane interfejsu API pola"
+
+msgid "Deletes temporary files"
+msgstr "Usuwa pliki tymczasowe"
+
+msgid "Deletes history"
+msgstr "Usuwa historię"
+
+msgid "Updates indexable active search pages"
+msgstr "Aktualizuje indeksowalne strony aktywnego wyszukiwania"
+
+msgid "Cleanup (caches, batch, flood, temp-files, etc.)"
+msgstr "Wyczyść (pamięci podręczne, zadanie wsadowe, wypełnienie, pliki tymczasowe itp.) "
+
+msgid "Update indexes"
+msgstr "Aktualizuj indeksy"
+
+msgid "Updates search rankings for nodes"
+msgstr "Aktualizuje rankingi wyszukiwania dla węzłów"
+
+msgid "Refresh feeds"
+msgstr "Odśwież kanały"
+
+msgid "Runs internal cleanup operations"
+msgstr "Uruchamia wewnętrzne operacje czyszczenia"
+
+msgid "Reset counts and clean up"
+msgstr "Zresetuj liczniki i wyczyść"
+
+msgid "Update tracker index"
+msgstr "Aktualizuj indeks programu śledzącego"
+
+msgid "Default cron handler"
+msgstr "Domyślna procedura obsługi zadań cron"
+
+msgid "Last Run"
+msgstr "Ostatnie uruchomienie"
+
+msgid "Job is behind schedule!"
+msgstr "Zadanie jest opóźnione względem harmonogramu."
+
+msgid "Missing"
+msgstr "Brakujące"
+
+msgid "Disabled"
+msgstr "Wyłączone"
+
+msgid "Run"
+msgstr "Uruchom"
+
+msgid "Unlock"
+msgstr "Odblokuj"
+
+msgid "Logs"
+msgstr "Dzienniki"
+
+msgid "Default (@default)"
+msgstr "Domyślny (@default)"
+
+msgid "(Blank = @default)."
+msgstr "(Puste = @default)."
+
+msgid "Queue: @name"
+msgstr "Kolejka: @name"
+
+msgid "Enable cron queue processing"
+msgstr "Włącz przetwarzanie kolejki zadań cron"
+
+msgid "If enabled, cron queues will be processed by this plugin. If another cron queue plugin is installed, it may be necessary/beneficial to disable this plugin."
+msgstr "Włączenie tej opcji powoduje, że kolejki zadań cron będą przetwarzane przez tę wtyczkę. Jeśli jest zainstalowana inna wtyczka kolejki zadań cron, może być konieczne lub korzystne wyłączenie tej wtyczki. "
+
+msgid "Queue lease time"
+msgstr "Czas dzierżawy kolejki"
+
+msgid "Seconds to claim a cron queue item."
+msgstr "Liczba sekund na zajęcie pozycji kolejki zadań cron."
+
+msgid "Time"
+msgstr "Czas"
+
+msgid "Time in seconds to process items during a cron run."
+msgstr "Czas (w sekundach) przetwarzania pozycji podczas wykonywania zadania cron. "
+
+msgid "Empty delay"
+msgstr "Opóźnienie w razie pustej kolejki"
+
+msgid "Seconds to delay processing of queue if queue is empty (0 = end job)."
+msgstr "Opóźnienie (w sekundach) przetwarzania kolejki, jeśli kolejka jest pusta (wartość 0 oznacza zakończenie zadania)."
+
+msgid "Item delay"
+msgstr "Opóźnienie przetwarzania pozycji"
+
+msgid "Seconds to wait between processing each item in a queue."
+msgstr "Czas oczekiwania (w sekundach) między przetwarzaniem poszczególnych pozycji w kolejce."
+
+msgid "Throttle"
+msgstr "Zapobieganie przeciążeniu"
+
+msgid "Throttle queues using multiple threads."
+msgstr "Przytłum kolejki przy użyciu wielu wątków."
+
+msgid "Throttling"
+msgstr "Przytłumianie"
+
+msgid "Threads"
+msgstr "Wątki"
+
+msgid "Number of threads to use for queues."
+msgstr "Liczba wątków do użycia dla kolejek."
+
+msgid "Threshold"
+msgstr "Próg"
+
+msgid "Number of items in queue required to activate the next cron job."
+msgstr "Liczba pozycji w kolejce wymaganych do aktywowania następnego zadania cron. "
+
+msgid "disabled"
+msgstr "wyłączone"
+
+msgid "enabled"
+msgstr "włączone"
+
+msgid "Processed @items items from queue @queue"
+msgstr "Przetworzono @items poz. z kolejki @queue"
+
+msgid "kill signal recieved"
+msgstr "Odebrano sygnał zakończenia (kill)"
+
+msgid "Queue item @item_id from queue @queue failed with message @message"
+msgstr "Pozycja @item_id z kolejki @queue zakończyła się niepowodzeniem. Komunikat: @message"
+
+msgid "Kill signal received for job @job_id"
+msgstr "Odebrano sygnał zakończenia (kill) zadania @job_id"
+
+msgid "Running all cronjobs is not supported by Ultimate Cron's cron:run - please use Drupal Core's core:cron command!"
+msgstr "Uruchomienie wszystkich zadań cron nie jest obsługiwane przez komendę cron:run modułu Ultimate Cron. Użyj komendy cron:run z modułu Drupal Corn!"
+
+msgid "Launched manually"
+msgstr "Uruchomiono ręcznie"
+
+msgid "Cron job @job_label (@module) was successfully run."
+msgstr "Zadanie cron @job_label (@module) zostało pomyślnie uruchomione. "
+
+msgid "Completed discovery for new cron jobs."
+msgstr "Zakończono wykrywanie nowych zadań cron."
+
+msgid "Severity"
+msgstr "Priorytet"
+
+msgid "Start Time"
+msgstr "Czas rozpoczęcia"
+
+msgid "End Time"
+msgstr "Czas zakończenia"
+
+msgid "No log information available."
+msgstr "Brak dostępnych informacji z dziennika. "
+
+msgid "Logs for %label"
+msgstr "Dzienniki zadania %label"
+
+msgid "Cron job @name unlocked successfully."
+msgstr "Zadanie cron @name zostało odblokowane pomyślnie."
+
+msgid "Could not get lock for job @name"
+msgstr "Nie można nałożyć blokady na zadanie @name"
+
+msgid "Do you really want to disable @cronjob_id cron job?"
+msgstr "Czy na pewno wyłączyć zadanie cron @cronjob_id?"
+
+msgid "This cron job will no longer be executed."
+msgstr "To zadanie cron nie będzie już wykonywane."
+
+msgid "Disable"
+msgstr "Wyłącz"
+
+msgid "Disabled cron job %cronjob."
+msgstr "Wyłączono zadanie cron %cronjob."
+
+msgid "Do you really want to enable @cronjob_id cron job?"
+msgstr "Czy na pewno włączyć zadanie cron @cronjob_id?"
+
+msgid "This cron job will be executed again."
+msgstr "To zadanie cron zostanie wykonane ponownie."
+
+msgid "Enable"
+msgstr "Włącz"
+
+msgid "Enabled cron job %cronjob."
+msgstr "Włączono zadanie cron %cronjob."
+
+msgid "This will appear in the administrative interface to easily identify it."
+msgstr "Pojawi się w interfejsie administracyjnym w celu łatwej identyfikacji."
+
+msgid "Enabled"
+msgstr "Włączone"
+
+msgid "This checkbox enables the cron job. Disabled Cron jobs are not run."
+msgstr "To pole wyboru umożliwia włączenie zadania cron. Wyłączone zadania cron nie są uruchamiane."
+
+msgid "@title (Default)"
+msgstr "@title (domyślne)"
+
+msgid "Select which @plugin to use for this job."
+msgstr "Wybierz wtyczkę @plugin, która ma być używana do tego zadania."
+
+msgid "Select"
+msgstr "Wybierz"
+
+msgid "job %label has been updated."
+msgstr "Zadanie %label zostało zaktualizowane."
+
+msgid "nodejs"
+msgstr "Node.js"
+
+msgid "Enable nodejs integration (Live reload on jobs page. Requires the nodejs module to be installed and configured)."
+msgstr "Włącz integrację środowiska Node.js. Przeładowywanie na żywo na stronie zadań. Wymaga zainstalowania i skonfigurowania modułu Node.js."
+
+msgid "Override cron queue processing"
+msgstr "Przesłoń przetwarzanie kolejki zadań cron"
+
+msgid "If enabled, queue workers are exposed as cron jobs and can be configured separately. When disabled, the standard queue processing is used. <strong>This feature is currently experimental, do not enable unless you need it.</strong>"
+msgstr "Jeśli ta opcja jest włączona, procesy robocze kolejek są ujawniane jako zadania cron i mogą być konfigurowane oddzielnie. Gdy ta opcja jest wyłączona, jest używane standardowe przetwarzanie kolejki. <strong>Ta opcja ma obecnie charakter eksperymentalny. Nie należy jej włączać, jeśli nie jest potrzebna.</strong>"
+
+msgid "Launching options"
+msgstr "Opcje uruchamiania"
+
+msgid "Job lock timeout"
+msgstr "Limit czasu blokady zadania"
+
+msgid "Number of seconds to keep lock on job."
+msgstr "Czas utrzymywania blokady zadania (w sekundach)."
+
+msgid "Maximum execution time"
+msgstr "Maksymalny czas wykonywania"
+
+msgid "Maximum execution time for a cron run in seconds."
+msgstr "Maksymalny czas wykonywania zadania cron (w sekundach)."
+
+msgid "Maximum number of launcher threads"
+msgstr "Maksymalna liczba wątków programu uruchamiającego"
+
+msgid "The maximum number of launch threads that can be running at any given time."
+msgstr "Maksymalna liczba wątków uruchamiania, które mogą działać w danym czasie."
+
+msgid "Run in thread"
+msgstr "Wątek na potrzeby uruchamiania"
+
+msgid "Which thread to run jobs in."
+msgstr "Wątek, w którym mają zostać uruchomione zadania. "
+
+msgid "<strong>Any</strong>: Just use any available thread"
+msgstr "<strong>Dowolny</strong>: można użyć dowolnego dostępnego wątku."
+
+msgid "<strong>Fixed</strong>: Only run in one specific thread. The maximum number of threads is spread across the jobs."
+msgstr "<strong>Stały</strong>: zadania należy uruchamiać tylko w jednym konkretnym wątku. Maksymalna liczba wątków jest rozdzielana na wszystkie zadania. "
+
+msgid "<strong>1-?</strong>: Only run when a specific thread is invoked. This setting only has an effect when cron is run through cron.php with an argument ?thread=N or through Drush with --options=thread=N."
+msgstr "<strong>1-?</strong>: można uruchamiać tylko wtedy, gdy jest wywoływany konkretny wątek. To ustawienie ma zastosowanie tylko wtedy, gdy zadanie cron jest uruchamiane za pośrednictwem pliku cron.php z argumentem ?thread=N lub za pośrednictwem narzędzia Drush z argumentem --options=thread=N."
+
+msgid "Cache bin"
+msgstr "Pojemnik pamięci podręcznej"
+
+msgid "Select which cache bin to use for storing logs."
+msgstr "Wybierz pojemnik pamięci podręcznej, który ma być używany do przechowywania dzienników. "
+
+msgid "Cache timeout"
+msgstr "Czas ważności pamięci podręcznej"
+
+msgid "Seconds before cache entry expires (0 = never, -1 = on next general cache wipe)."
+msgstr "Czas (w sekundach), który musi upłynąć, zanim pozycja pamięci podręcznej utraci ważność (0 = nigdy, -1 = przy następnym czyszczeniu pamięci podręcznej). "
+
+msgid "Remove logs older than a specified age"
+msgstr "Usuwaj dzienniki starsze niż podany wiek."
+
+msgid "Retain only a specific amount of log entries"
+msgstr "Zachowuj tylko konkretną liczbę pozycji dziennika"
+
+msgid "Log entry cleanup method"
+msgstr "Metoda czyszczenia pozycji dziennika"
+
+msgid "Select which method to use for cleaning up logs."
+msgstr "Wybierz metodę, która ma być używana do czyszczenia dzienników. "
+
+msgid "Log entry expiration"
+msgstr "Utrata ważności pozycji dziennika"
+
+msgid "Remove log entries older than X seconds."
+msgstr "Usuń pozycje dziennika, których wiek przekracza podaną liczbę sekund. "
+
+msgid "Retain logs"
+msgstr "Zachowaj dzienniki"
+
+msgid "Retain X amount of log entries."
+msgstr "Zachowaj podaną liczbę pozycji dziennika. "
+
+msgid "Catch up"
+msgstr "Czas na nadrobienie zaległości"
+
+msgid "Don't run job after X seconds of rule."
+msgstr "Nie uruchamiaj zadania po podanej liczbie sekund reguły. "
+
+msgid "Rules"
+msgstr "Reguły"
+
+msgid "Semi-colon separated list of crontab rules."
+msgstr "Rozdzielana średnikami lista reguł tabeli crontab. "
+
+msgid "Rules help"
+msgstr "Pomoc do modułu Rules"
+
+msgid "Run cron every"
+msgstr "Czas między kolejnymi uruchomieniami demona cron"
+
+msgid "Select the interval you wish cron to run on."
+msgstr "Wybierz przedział czasu, w którym ma być uruchamiane zadanie cron. "
+
+msgid "running"
+msgstr "działające"
+
+msgid "unfinished but not locked?"
+msgstr "niezakończone, ale niezablokowane?"
+
+msgid "Cleaned up @count expired locks"
+msgstr "Wyczyszczono następującą liczbę wygasłych blokad: @count."
+
+msgid "N/A"
+msgstr "niedostępne"
+
+msgid "anonymous"
+msgstr "anonimowe"
+
+msgid "by"
+msgstr "dodany przez"
+
+msgid "Registered at @datetime"
+msgstr "Zarejestrowano: @datetime"
+
+msgid "no info"
+msgstr "brak informacji"
+
+msgid "-- Any -- "
+msgstr "-- Dowolny -- "
+
+msgid "-- Fixed -- "
+msgstr "-- Stały -- "
+
+msgid "Which thread to run in when invoking with ?thread=N. Note: This setting only has an effect when cron is run through cron.php with an argument ?thread=N or through Drush with --options=thread=N."
+msgstr "Wątek, który ma zostać uruchomiony w przypadku wywołania przy użyciu argumentu ?thread=N. Uwaga: To ustawienie ma zastosowanie tylko wtedy, gdy zadanie cron jest uruchamiane za pośrednictwem pliku cron.php z argumentem ?thread=N lub za pośrednictwem narzędzia Drush z argumentem --options=thread=N."
+
+msgid "%title must be greater than 0"
+msgstr "Wartość %title musi być większa niż 0."
+
+msgid "Launched in thread @current_thread"
+msgstr "Uruchomiono w wątku @current_thread."
+
+msgid "Invalid thread available for starting launch thread"
+msgstr "Niepoprawny wątek dostępny na potrzeby rozpoczynania wątku uruchamiania."
+
+msgid "Thread @thread is already running"
+msgstr "Wątek @thread jest już uruchomiony."
+
+msgid "No free threads available for launching jobs"
+msgstr "Brak wolnych wątków do uruchamiania zadań."
+
+msgid "Serial"
+msgstr "Numer seryjny"
+
+msgid "Launches scheduled jobs in the same thread and runs them consecutively."
+msgstr "Uruchamia zaplanowane zadania w tym samym wątku i uruchamia je po kolei."
+
+msgid "Stores the last log entry (and only the last) in the cache."
+msgstr "Zapisuje ostatnią pozycję dziennika (i tylko ostatnią) w pamięci podręcznej."
+
+msgid "Lock #@original_lid was already closed and logged. Creating a new log entry #@lid"
+msgstr "Blokada #@original_lid została już zamknięta i zarejestrowana. Tworzenie nowej pozycji dziennika #@lid."
+
+msgid "@count_entries log entries removed for @jobs_count jobs"
+msgstr "Usunięto @count_entries poz. dziennika w przypadku @jobs_count zadań."
+
+msgid "Invalid cleanup method: @method"
+msgstr "Niepoprawna metoda czyszczenia: @method"
+
+msgid "Stores logs in the database."
+msgstr "Zapisuje dzienniki w bazie danych."
+
+msgid "Next scheduled run at @datetime"
+msgstr "Następne zaplanowane uruchomienie: @datetime"
+
+msgid "Comma separated list of crontab rules."
+msgstr "Rozdzielana przecinkami lista reguł tabeli crontab. "
+
+msgid "Rule is invalid"
+msgstr "Reguła jest niepoprawna "
+
+msgid "Use crontab rules for scheduling jobs."
+msgstr "Użyj reguł tabeli crontab do planowania zadań. "
+
+msgid "Every @interval"
+msgstr "Co @interval"
+
+msgid "Provides a set of predefined intervals for scheduling."
+msgstr "Udostępnia zestaw predefiniowanych odstępów czasu na potrzeby planowania. "
+

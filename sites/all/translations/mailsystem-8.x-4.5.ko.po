@@ -1,0 +1,152 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "소개"
+
+msgid "<a href=\":mailsystem\">Mail System</a> Provides an Administrative UI and Developers API for managing the used mail backend/plugin.</a>"
+msgstr "<a href=\":mailsystem\">메일 시스템</a> 사용된 메일 백엔드/플러그인을 관리하기 위한 관리 UI 및 개발자 API를 제공합니다.</a>"
+
+msgid "Uses"
+msgstr "사용"
+
+msgid "Allows to use different backends for formatting and sending e-mails by default, per module and per mail key. Additionally, a theme can be configured that is used for sent mails."
+msgstr "기본적으로 모듈 및 메일 키별로 이메일을 형식화하고 발송하는 데 다른 백엔드를 사용할 수 있습니다. 또한 발송된 이메일에 사용되는 테마를 구성할 수 있습니다."
+
+msgid "Mail"
+msgstr "메일"
+
+msgid "Mail System"
+msgstr "메일 시스템"
+
+msgid "Provides a user interface for per-module and site-wide mail_system selection."
+msgstr "단위 모듈과 전체 사이트 mail_system 선택을 위한 사용자 인터페이스를 제공한다."
+
+msgid "Global Mail System configuration."
+msgstr "글로벌 메일 시스템 구성"
+
+msgid "Administer Mail System"
+msgstr "메일 시스템 관리"
+
+msgid "Select the default, per-module, and per-mailing MailSystemInterface to use for formatting and sending email messages."
+msgstr "이메일 메시지 형식화 및 전송에 사용할 기본, 사전 모듈, 사전 메일링 MailSystemInterface를 선택합니다. "
+
+msgid "Configure the Mail System"
+msgstr "메일 시스템 구성"
+
+msgid "Mail System settings"
+msgstr "메일 시스템 설정"
+
+msgid "Selected theme"
+msgstr "선택한 테마"
+
+msgid "Default settings"
+msgstr "기본 설정"
+
+msgid "The sender of an email"
+msgstr "이메일 송신자"
+
+msgid "The formatter used for emails"
+msgstr "이메일에 사용된 포맷터"
+
+msgid "List of modules"
+msgstr "모듈 목록"
+
+msgid "List of keys for a given module"
+msgstr "제공된 모듈에 대한 키 목록"
+
+msgid "Per module/key setting."
+msgstr "모듈당/키 설정"
+
+msgid "Default Mail System"
+msgstr "기본 메일 시스템"
+
+msgid "Formatter"
+msgstr "포맷터"
+
+msgid "Select the standard plugin for formatting an email before sending it. This plugin implements <a href=\":interface\">@interface</a> and in special the <a href=\":format\">@format</a> function."
+msgstr "보내기 전에 이메일을 형식화할 표준 플러그인을 선택합니다. 이 플러그인은 <a href=\":interface\">@interface</a> 및 특히 <a href=\":format\">@format</a> 기능을 구현합니다. "
+
+msgid "Sender"
+msgstr "송신자"
+
+msgid "Select the standard plugin for sending an email after formatting it. This plugin implements <a href=\":interface\">@interface</a> and in special the <a href=\":mail\">@mail</a> function."
+msgstr "형식화한 후에 이메일을 보낼 표준 플러그인을 선택합니다. 이 플러그인은 <a href=\":interface\">@interface</a> 및 특히 <a href=\":mail\">@mail</a> 기능을 구현합니다. "
+
+msgid "Theme to render the emails"
+msgstr "이메일 렌더링 테마"
+
+msgid "Select the theme that will be used to render emails which are configured for this. This can be either the current theme, the default theme, the domain theme or any active theme."
+msgstr "구성된 이메일을 렌더링하는 데 사용할 테마를 선택합니다. 현재 테마, 기본 테마, 도메인 테마 또는 활성 테마 중 하나일 수 있습니다. "
+
+msgid "Module-specific configuration"
+msgstr "모듈 특정 구성"
+
+msgid "Module"
+msgstr "모듈"
+
+msgid "- Select -"
+msgstr "- 선택 -"
+
+msgid "Key"
+msgstr "키"
+
+msgid "The key is used to identify specific mails if the module sends more than one. Leave empty to use the configuration for all mails sent by the selected module."
+msgstr "키는 모듈이 둘 이상을 전송할 때 특정 메일을 식별하는 데 사용됩니다. 선택한 모듈에서 보내는 모든 메일의 구성을 사용하려면 빈 상태로 두십시오."
+
+msgid "Formatter plugin"
+msgstr "포맷터 플러그인"
+
+msgid "- Default -"
+msgstr "- 기본값 -"
+
+msgid "Sender plugin"
+msgstr "송신자 플러그인"
+
+msgid "Add"
+msgstr "추가"
+
+msgid "Remove"
+msgstr "제거"
+
+msgid "No specific configuration yet."
+msgstr "특정 구성이 아직 없습니다. "
+
+msgid "All"
+msgstr "전체"
+
+msgid "The module is required."
+msgstr "모듈이 필요합니다. "
+
+msgid "An entry for this combination exists already. Use the form below to update or remove it."
+msgstr "이 조합에 대한 항목이 이미 있습니다. 아래 양식을 사용하여 업데이트하거나 제거합니다. "
+
+msgid "At least a formatter or sender is required."
+msgstr "하나 이상의 포맷터 또는 송신자가 필요합니다. "
+
+msgid "The configuration has been added."
+msgstr "구성이 추가되었습니다. "
+
+msgid "Current"
+msgstr "현재"
+
+msgid "Default"
+msgstr "기본값"
+
+msgid "Domain Theme"
+msgstr "도메인 테마"
+
+msgid "Unknown Plugin"
+msgstr "알 수 없는 플러그인"
+

@@ -1,0 +1,375 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "svg image from @field_name"
+msgstr "来自 @field_name 的 svg 图像"
+
+msgid "@entity using @field"
+msgstr "@entity 使用 @field"
+
+msgid "@field_name"
+msgstr "@field_name"
+
+msgid "Relate each @entity with a @field set to the svg image."
+msgstr "将设置了 @field 的每个 @entity 与 svg 图像相关联。"
+
+msgid "About"
+msgstr "关于"
+
+msgid ""
+"The SVG image field module allows you to create fields that contain\n"
+" svg image files and to configure svg output. See the <a href=\":field\">Field module help</a> and\n"
+"  the <a href=\":field_ui\">Field UI help</a> pages for terminology and general information on\n"
+"  entities, fields, and how to create and manage fields."
+msgstr ""
+"SVG 图像字段模块允许您创建一些包含\n"
+" svg 图像文件的字段并配置 svg 输出。请参阅<a href=\":field\">字段模块帮助</a>和\n"
+"  <a href=\":field_ui\">字段 UI 帮助</a>页面，以获取有关实体和字段以及如何创建和管理字段的\n"
+"  术语和常规信息。"
+
+msgid "Uses"
+msgstr "使用"
+
+msgid "Configuring svg image fields"
+msgstr "配置 svg 图像字段"
+
+msgid ""
+"A few of the settings for svg image fields are defined once when you create the field and\n"
+"      cannot be changed later; these include the choice of public or private file storage and the number of images that can be stored in the field.\n"
+"       The rest of the settings can be edited later; these settings include the field label, help text, and the subdirectory in the public or private file storage\n"
+"       where the images will be stored. The editable settings can also have different values for different entity sub-types; for instance,\n"
+"       if your image field is used on both Page and Article content types, you can store the files in a\n"
+"        different subdirectory for the two content types."
+msgstr ""
+"SVG 图像字段的有些设置仅在创建字段时定义一次，\n"
+"      此后无法进行更改；这些设置包括所选的公共或私有文件存储器以及字段中可存储的图像数量。\n"
+"       其余设置可在以后进行编辑；这些设置包括字段标签、帮助文本以及用于存储图像的\n"
+"       公共或私有文件存储器中的子目录。可编辑的设置针对不同的实体子类型还可能具有不同的值；例如，\n"
+"       如果在“页面”和“文章”内容类型上都使用了图像字段，\n"
+"        那么可以将这些文件同时存储到这两种内容类型的相应子目录中。"
+
+msgid ""
+"For accessibility and search engine optimization, all images that convey meaning on web sites should have alternate text.\n"
+"       Drupal also allows entry of title text for images, but it can lead to confusion for screen reader users and its use is not recommended.\n"
+"       SVG image fields can be configured so that alternate and title text fields are enabled or disabled; if enabled, the fields can be set to be required.\n"
+"        The recommended setting is to enable and require alternate text and disable title text."
+msgstr ""
+"为便于访问并优化搜索引擎，Web 站点上用于表达含义的所有图像都应具有备用文本。\n"
+"       Drupal 还允许为图像输入标题文本，但这可能会导致屏幕朗读器用户发生混淆，因此不建议使用。\n"
+"       可通过配置 SVG 图像字段来启用或禁用备用文本和标题文本字段；如果启用了这些字段，这些字段可设置为必填字段。\n"
+"        建议的设置如下：启用备用文本并需要输入备用文本，但禁用标题文本。"
+
+msgid ""
+"When you create an svg image field, you will need to choose whether the uploaded images will be stored in the public or\n"
+" private file directory defined in your settings.php file and shown on the <a href=\":file-system\">File system page</a>. This choice cannot be changed later.\n"
+"  You can also configure your field to store files in a subdirectory of the public or private directory; this setting can be changed later and\n"
+"  can be different for each entity sub-type using the field. For more information on file storage,\n"
+"  see the <a href=\":system-help\">System module help page</a>."
+msgstr ""
+"创建 svg 图像字段时，您需要选择将已上载的图像存储在公共还是私有文件目录中，\n"
+" 此目录在 settings.php 文件中定义并显示在<a href=\":file-system\">文件系统页面</a>上。以后无法更改此选择。\n"
+"  您还可以配置字段以将文件存储在公共或私有目录的子目录中；此设置以后可进行更改，\n"
+"  对于使用此字段的每种实体子类型，此设置可能有所不同。有关文件存储器的更多信息，\n"
+"  请参阅<a href=\":system-help\">系统模块帮助页面</a>。"
+
+msgid ""
+"The maximum file size that can be uploaded is limited by PHP settings of the server,\n"
+" but you can restrict it further by configuring a <em>Maximum upload size</em> in the field settings (this setting can be changed later).\n"
+" The maximum file size, either from PHP server settings or field configuration, is automatically displayed to users in the help text of the image field."
+msgstr ""
+"可上载的最大文件大小受服务器的 PHP 设置的限制，\n"
+" 但您可以通过在字段设置中配置<em>最大上载大小</em>来对其进行进一步的限制（此设置以后可进行更改）。\n"
+" 在图像字段的帮助文本中，会向用户自动显示 PHP 服务器设置或字段配置中的最大文件大小。"
+
+msgid ""
+"You can also configure a default image that will be used if no image is uploaded in an image field.\n"
+"       This default can be defined for all instances of the field in the field storage settings when you create a field, and the setting can be overridden\n"
+"        for each entity sub-type that uses the field."
+msgstr ""
+"您还可以配置在图像字段中不上传任何图像时将使用的缺省图像。\n"
+"创建字段时，可在字段存储设置中为此字段的所有实例定义此缺省图像；\n"
+"对于使用此字段的每种实体子类型，都可覆盖此设置。"
+
+msgid "Configuring displays and form displays"
+msgstr "配置显示和表单显示"
+
+msgid ""
+"On the <em>Manage display</em> page, you can choose the image formatter,\n"
+" which determines the image width and height used to display the image in each display mode and whether or not to display the image alt and title.\n"
+"  On the <em>Manage form display</em> page, you can configure the image upload widget, including setting the preview image max-width and max-height\n"
+"   shown on the entity edit form."
+msgstr ""
+"在<em>管理显示</em>页面上，您可以选择图像格式化程序，\n"
+"以确定用于在每个显示方式下显示图像的图像宽度和高度以及是否显示图像备用和标题。\n"
+"在<em>管理表单显示</em>页面上，您可以配置图像上传窗口小部件，包括设置实体编辑表单上显示的预览图像 max-width 和 max-height。\n"
+"。"
+
+msgid "Only files with mime type %mime-types-allowed are allowed. Mime type detected %mime-type-detected"
+msgstr "仅允许 MIME 类型为 %mime-types-allowed 的文件。MIME 类型检测到 %mime-type-detected"
+
+msgid "File %file-name is not valid svg"
+msgstr "文件 %file-name 不是有效的 svg"
+
+msgid "SVG image field"
+msgstr "SVG 图像字段"
+
+msgid "Provides svg image field"
+msgstr "提供 svg 图像字段"
+
+msgid "Field types"
+msgstr "字段类型"
+
+msgid "Image settings"
+msgstr "图像设置"
+
+msgid "Default value"
+msgstr "默认值"
+
+msgid "Enable Alt field"
+msgstr "启用“备用”字段"
+
+msgid "Alt field required"
+msgstr "“备用”字段为必填字段"
+
+msgid "Enable Title field"
+msgstr "启用“标题”字段"
+
+msgid "Title field required"
+msgstr "“标题”字段为必填字段"
+
+msgid "Image field display format settings"
+msgstr "图像字段显示格式设置"
+
+msgid "Output SVG inline"
+msgstr "输出 SVG 内联"
+
+msgid "Apply dimensions"
+msgstr "应用尺寸"
+
+msgid "Width"
+msgstr "宽度"
+
+msgid "Height"
+msgstr "高度"
+
+msgid "Enable alt"
+msgstr "启用备用"
+
+msgid "Enable title"
+msgstr "启用标题"
+
+msgid "Link image to"
+msgstr "图像链接到"
+
+msgid "Force fill"
+msgstr "强制填充"
+
+msgid "Sanitize"
+msgstr "清理"
+
+msgid "Sanitize remote"
+msgstr "远程清理"
+
+msgid "Progress indicator"
+msgstr "进度指示器"
+
+msgid "Preview max width"
+msgstr "预览最大宽度"
+
+msgid "Preview max height"
+msgstr "预览最大高度"
+
+msgid "SVG Image Field - Media Bundle"
+msgstr "SVG 图像字段 - 媒体捆绑软件"
+
+msgid "Creates a media bundle to use SVG Image Field with the Media capabilities in core. NOTE: if you are planning to use this with the Media Library in core, it is recommended to install that module before this one. Will also install Acquia Site Studio Components if that is installed."
+msgstr "创建介质束以将 SVG 图像字段与核心中的介质功能配合使用。 注：如果您计划将此模块与核心中的介质库一起使用，那么建议在此模块之前安装该模块。 如果已安装，那么还将安装 Acquia Site Studio 组件。"
+
+msgid "Content"
+msgstr "内容"
+
+msgid "File"
+msgstr "文件"
+
+msgid ""
+"Check this option if you want to manipulate the SVG image with CSS and JavaScript.\n"
+"       Notice only trusted users should use fields with this option enabled because of\n"
+"       <a href=\"@svg_security_link\">inline svg security</a>"
+msgstr ""
+"如果想要使用 CSS 和 JavaScript 来处理 SVG 图像，请选中此选项。\n"
+"       请注意，由于\n"
+"       <a href=\"@svg_security_link\">内联 svg 安全性</a>，只有可信用户才能使用启用了此选项的字段"
+
+msgid "Apply dimensions."
+msgstr "应用尺寸。"
+
+msgid "Image width."
+msgstr "图像宽度。"
+
+msgid "Image height."
+msgstr "图像高度。"
+
+msgid "Force the fill to currentColor"
+msgstr "强制填充 currentColor"
+
+msgid "This can allow the SVG to inherit coloring from the enclosing tag, such as a link tag."
+msgstr "这允许 SVG 从外层标记（例如链接标记）继承颜色设置。"
+
+msgid "Sanitize SVG code"
+msgstr "清理 SVG 代码"
+
+msgid "Sanitize the SVG XML code and prevent XSS attacks."
+msgstr "清理 SVG XML 代码并防止 XSS 攻击。"
+
+msgid "Sanitize: Remove remote references"
+msgstr "清理：除去远程引用"
+
+msgid "Remove attributes that reference remote files, this will stop HTTP leaks but will add an overhead to the sanitizer."
+msgstr "除去引用远程文件的属性，这将停止 HTTP 泄漏，但会增加清理程序的开销。"
+
+msgid "Nothing"
+msgstr "没东西"
+
+msgid "Enable alt attribute."
+msgstr "启用备用属性。"
+
+msgid "Enable title attribute."
+msgstr "启用标题属性。"
+
+msgid "Inline SVG"
+msgstr "内联 SVG"
+
+msgid "Image width: @width"
+msgstr "图像宽度：@width"
+
+msgid "Image height: @height"
+msgstr "图像高度：@height"
+
+msgid "Alt enabled"
+msgstr "已启用备用"
+
+msgid "Title enabled"
+msgstr "已启用标题"
+
+msgid "Inline file %file is missing or empty. Inline display will be disabled and an image tag used instead."
+msgstr "内联文件 %file 缺失或为空。 将禁用内联显示，改为使用图像标记。"
+
+msgid "File %file could not be displayed by image formatter because it does not exist on server."
+msgstr "图像格式化程序无法显示文件 %file，因为它在服务器上不存在。"
+
+msgid "SVG Image Field formatter"
+msgstr "SVG 图像字段格式化程序"
+
+msgid "SVG Image URL formatter"
+msgstr "SVG 图像 URL 格式化程序"
+
+msgid "Alternative text"
+msgstr "替换文本"
+
+msgid "Alternative image text, for the image's 'alt' attribute."
+msgstr "用于图像“备用”属性的备用图像文本。"
+
+msgid "Title"
+msgstr "标题"
+
+msgid "Image title text, for the image's 'title' attribute."
+msgstr "用于图像“标题”属性的图像标题文本。"
+
+msgid "Upload destination"
+msgstr "上传目标"
+
+msgid "Select where the final files should be stored. Private file storage has significantly more overhead than public files, but allows restricted access to files within this field."
+msgstr "选择最后文件保存的位置。私有文件存储比公共文件操作复杂得多，但是可以使用文件的访问权限控制。"
+
+msgid "If no image is uploaded, this image will be shown on display."
+msgstr "若无上传的图像，会显示此图像。"
+
+msgid "Enable <em>Alt</em> field"
+msgstr "启用<em>Alt</em>字段"
+
+msgid "The alt attribute may be used by search engines, screen readers, and when the image cannot be loaded. Enabling this field is recommended."
+msgstr "“备用”属性可供搜索引擎和屏幕朗读器使用以及在无法装入图像时使用。建议启用此字段。"
+
+msgid "<em>Alt</em> field required"
+msgstr "<em>备用</em>字段为必填字段"
+
+msgid "Making this field required is recommended."
+msgstr "建议将此字段设置为必填字段。"
+
+msgid "Enable <em>Title</em> field"
+msgstr "启用<em>Title</em>字段"
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image. Enabling this field is not recommended as it can cause problems with screen readers."
+msgstr "将鼠标指针悬停在图像上时，“标题”属性用作工具提示。建议不要启用此字段，因为它可能导致屏幕朗读器出现问题。"
+
+msgid "<em>Title</em> field required"
+msgstr "<em>标题</em> 字段必填"
+
+msgid "If no image is uploaded, this image will be shown on display and will override the field's default image."
+msgstr "如果没有图片被上传，此图片会显示出来。"
+
+msgid "Default image"
+msgstr "默认图片"
+
+msgid "Image"
+msgstr "图像"
+
+msgid "Image to be shown if no image is uploaded."
+msgstr "未上传任何图像时要显示的图像。"
+
+msgid "This text will be used by screen readers, search engines, and when the image cannot be loaded."
+msgstr "此文本将供屏幕朗读器和搜索引擎使用以及在无法装入图像时使用。"
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image."
+msgstr "Title属性用于当用户鼠标移动到此图片上时的工具提示。"
+
+msgid "Svg Image"
+msgstr "Svg 图像"
+
+msgid "This field stores the ID of an image file as an integer value."
+msgstr "此字段以整型值保存图像文件ID。"
+
+msgid "Reference"
+msgstr "引用"
+
+msgid "Alt"
+msgstr "替换"
+
+msgid "Preview image max width"
+msgstr "预览图像最大宽度"
+
+msgid "Preview image max height"
+msgstr "预览图像最大高度"
+
+msgid "Preview image width: @width"
+msgstr "预览图像宽度：@width"
+
+msgid "Preview image height: @height"
+msgstr "预览图像高度：@height"
+
+msgid "This text will be used by screen readers, search engines, or when the image cannot be loaded."
+msgstr "此文本将用于屏幕阅读机、搜索引擎或当图片不能载入时显示。"
+
+msgid "The title is used as a tool tip when the user hovers the mouse over the image."
+msgstr "Title用于当用户鼠标移动到此图片上时的工具提示。"
+
+msgid "SVG image"
+msgstr "SVG 图像"
+
+msgid "SVG"
+msgstr "SVG"
+
+msgid "Provides business logic and metadata for SVG files."
+msgstr "为 SVG 文件提供业务逻辑和元数据。"
+

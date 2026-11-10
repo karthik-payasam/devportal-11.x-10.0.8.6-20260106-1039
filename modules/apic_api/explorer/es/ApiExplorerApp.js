@@ -1,0 +1,1 @@
+import a from"react";import b from"./ApiExplorer.js";function c(c){var d=c.options,e=c.apis,f=c.encodedApis,g=c.apps,h=c.docs;return a.createElement(b,{options:d,apis:e,encodedApis:f,apps:g,docs:h})}export default c;

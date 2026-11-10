@@ -1,0 +1,44 @@
+.graphql-twig-errors {
+  padding: 1em;
+  list-style: none;
+  color: #a10000;
+  border: 1px solid #d80000;
+  background: #ffdbe3;
+}
+
+.graphql-twig-errors li:not(:first-child) {
+  margin-top: 1em;
+}
+
+.graphql-twig-debug-wrapper {
+  position: relative;
+}
+
+.graphql-twig-debug-wrapper form {
+  margin: 0!important;
+  padding: 0!important;
+}
+
+input[type="submit"].graphql-twig-debug-button {
+  position: absolute;
+  z-index: 99;
+  width: 26px;
+  height: 26px;
+  text-indent: -999em;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background: url("graphql.png") white center center no-repeat;
+  background-size: 20px 20px;
+}
+
+.graphql-twig-debug-wrapper .graphql-twig-debug-button {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: none;
+}
+
+.graphql-twig-debug-wrapper:hover > form > .graphql-twig-debug-button,
+.graphql-twig-debug-parent:hover > .graphql-twig-debug-child .graphql-twig-debug-button {
+  display: block;
+}

@@ -1,0 +1,33 @@
+default:
+  suites:
+    default:
+      paths:
+        - $DRUPAL_TI_DRUPAL_DIR/$DRUPAL_TI_MODULES_PATH/$DRUPAL_TI_MODULE_NAME/features
+      contexts:
+        - Drupal\apictest\Context\IBMPortalContext :
+            siteDirectory: "$DRUPAL_TI_DRUPAL_DIR/sites/default"
+            modulesDirectory: "modules/contrib"
+            useMockServices: TRUE
+            dumpHtmlToScreen: TRUE
+            userRegistry: lur
+        - Drupal\apictest\Context\ApplicationContext
+        - Drupal\apictest\Context\ProductContext
+        - Drupal\apictest\Context\ApiContext
+        - Drupal\apictest\Context\ConsumerOrgContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+  extensions:
+    Behat\MinkExtension:
+      browserkit_http:
+        http_client_parameters:
+          verify_peer: false
+          verify_host: false
+          timeout: 120
+          max_duration: 120
+      default_session: browserkit_http
+      base_url: "$DRUPAL_TI_WEBSERVER_URL:$DRUPAL_TI_WEBSERVER_PORT/"
+    Drupal\DrupalExtension:
+      api_driver: "drupal"
+      drupal:
+        drupal_root: "$DRUPAL_TI_DRUPAL_DIR"

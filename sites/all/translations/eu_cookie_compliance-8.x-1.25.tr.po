@@ -1,0 +1,888 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "EU Cookie Compliance Consents"
+msgstr "AB Tanımlama Bilgisi Uyumu İzinleri"
+
+msgid "EU Cookie Compliance consent data from the database."
+msgstr "Veritabanından AB Tanımlama Bilgisi Uyumu izin verileri."
+
+msgid "User ID"
+msgstr "Kullanıcı ID"
+
+msgid "User ID."
+msgstr "Kullanıcı kimliği."
+
+msgid "Users"
+msgstr "Kullanıcılar"
+
+msgid "Timestamp"
+msgstr "Zaman damgası"
+
+msgid "Time of consent."
+msgstr "İzin saati."
+
+msgid "IP address"
+msgstr "IP adresi"
+
+msgid "The IP address."
+msgstr "IP adresi."
+
+msgid "Consent Type"
+msgstr "İzin Tipi"
+
+msgid "The type of consent, such as \"banner\" for the banner and form_id for forms."
+msgstr "Büyük başlık için \"banner\" ve formlar için form_id gibi izin tipi."
+
+msgid "Revision ID"
+msgstr "Sürüm ID"
+
+msgid "Revision of the privacy policy at the time of consent."
+msgstr "İzin sırasında güvenlik ilkesinin gözden geçirilmesi."
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "This module intends to deal with the EU Directive on Privacy and Electronic Communications that comes into effect on 26th May 2012. From that date, if you are not compliant or visibly working towards compliance, you run the risk of enforcement action, which can include a fine of up to half a million pounds for a serious breach."
+msgstr "Bu modül, 26 Mayıs 2012'de geçerli olan AB Gizlilik ve Elektronik İletişim Direktifi ile ilgili olarak tasarlanmıştır. Bu tarihten itibaren, mevzuata uyumlu değilseniz ya da uyumluluk için görünür şekilde çalışmıyorsanız, ciddi bir ihlal için yarım milyon pound'a kadar ceza da dahil olmak üzere haciz riskiyle karşı karşıya kalabilirsiniz."
+
+msgid "How it works"
+msgstr "Nasıl çalışır"
+
+msgid "The module displays a banner at the bottom or the top of website to make users aware of the fact that cookies are being set. The user may then give his/her consent or move to a page that provides more details. Consent is given by user pressing the agree buttons or by continuing browsing the website. Once consent is given another banner appears with a \"Thank you\" message."
+msgstr "Modül, kullanıcılara tanımlama bilgilerinin ayarlandığını bildirmek için web sitesinin alt ya da üst kısmında bir büyük başlık görüntüler. Daha sonra kullanıcı izin verebilir ya da daha fazla ayrıntı sağlayan bir sayfaya gidebilir. Kullanıcının kabul ediyorum düğmelerine basmasıyla ya da web sitesine göz atmaya devam etmesiyle izin verilir. İzin verildikten sonra, \"Teşekkür ederiz\" iletisiyle birlikte başka bir büyük başlık görüntülenir."
+
+msgid "The module provides a settings page where the banner can be customized. There are also template files for the banners that can be overridden by your theme."
+msgstr "Modül, büyük başlığın özelleştirilebileceği bir ayarlar sayfası sağlar. Temanız tarafından geçersiz kılınabilen büyük başlıklar için de şablon dosyaları vardır."
+
+msgid "Installation"
+msgstr "Kuruluş"
+
+msgid "Unzip the files to the \"sites/all/modules\" OR \"modules\" directory and enable the module."
+msgstr "Dosyaları \"sites/all/modules\" YA DA \"modules\" dizinine çıkarın ve modülü etkinleştirin."
+
+msgid "If desired, give the administer EU Cookie Compliance banner permissions that allow users of certain roles access the administration page. You can do so on the admin/user/permissions page."
+msgstr "İsterseniz, belirli rollere sahip kullanıcıların yönetim sayfasına erişmesine izin veren AB Tanımlama Bilgisi Uyumluluğu büyük başlığını yönetme izni verin. admin/user/permissions sayfasında bunu yapabilirsiniz."
+
+msgid "there is also a 'display eu cookie compliance banner' permission that helps you show the banner to the roles you desire."
+msgstr "İstediğiniz roller için büyük başlığı göstermenize yardımcı olan bir 'AB tanımlama bilgisi uyumluluğu büyük başlığını görüntüleme' izni de vardır."
+
+msgid "You may want to create a page that would explain how your site uses cookies. Alternatively, if you have a privacy policy, you can link the banner to that page (see next step)."
+msgstr "Sitenizin tanımlama bilgilerini nasıl kullanacağını açıklayan bir sayfa oluşturmak isteyebilirsiniz. Alternatif olarak, bir gizlilik ilkeniz varsa, büyük başlığı bu sayfayla da bağlantılandırabilirsiniz (sonraki adıma bakın)."
+
+msgid "Go to the admin/config/system/eu-cookie-compliance page to configure and enable the banner."
+msgstr "Büyük başlığı yapılandırmak ve etkinleştirmek için admin/config/system/eu-cookie-compliance sayfasına gidin."
+
+msgid "If you want to customize the banner background and text color, either type in the hex values or simply install http://drupal.org/project/coloris."
+msgstr "Ana başlık arka planını ve metin rengini özelleştirmek istiyorsanız, onaltılı değerleri yazın ya da http://drupal.org/project/coloris uygulamasını kurun."
+
+msgid "If you want to theme your banner override the themes in the template file."
+msgstr "Büyük başlığınıza tema uygulamak istiyorsanız şablon dosyasındaki temaları geçersiz kılın."
+
+msgid "If you want to show the message in EU countries only, install the Smart IP module: http://drupal.org/project/smart_ip and enable the option on the admin page."
+msgstr "Yalnızca AB ülkelerinde iletileri göstermek istiyorsanız, Akıllı IP modülünü (http://drupal.org/project/smart_ip) kurun ve yönetim sayfasında seçeneği etkinleştirin."
+
+msgid "NOTICE: The module does not audit your cookies nor does it prevent cookies from being set."
+msgstr "BİLDİRİM: Modül, tanımlama bilgilerinizi denetlemez ya da tanımlama bilgilerinin ayarlanmasını engellemez."
+
+msgid "For developers"
+msgstr "Geliştiriciler için"
+
+msgid "If you want to conditionally set cookies in your module, there is a javascript function provided that returns TRUE if the current user has given his consent:"
+msgstr "Modülünüzdeki tanımlama bilgilerini koşullu olarak ayarlamak istiyorsanız, geçerli kullanıcının izin vermesi durumunda TRUE döndüren bir javascript işlevi sağlanır:"
+
+msgid "Could not read the EU Cookie Compliance JavaScript file that is used to handle disabled scripts. There may be a problem with your file system or the file may be missing. Try accessing the EU Cookie Compliance settings page and re-save the form."
+msgstr "Geçersiz kılınan komut dosyalarını işlemek için kullanılan AB Tanımlama Bilgisi Uyumluluğu JavaScript dosyası okunamadı. Dosya sisteminizde bir sorun olabilir ya da dosya eksik olabilir. AB Tanımlama Bilgisi Uyumluluğu ayarları sayfasına erişmeyi deneyin ve formu yeniden kaydedin."
+
+msgid "%name must be a HEX value (without leading #) or empty."
+msgstr "%name bir HEX değeri (başta # olmadan) ya da boş olmalıdır."
+
+msgid "<h2>Thank you for accepting cookies</h2><p>You can now hide this message or find out more about cookies.</p>"
+msgstr "<h2>Tanımlama bilgilerini kabul ettiğiniz için teşekkür ederiz</h2><p>Artık bu iletiyi gizleyebilir ya da tanımlama bilgileri hakkında daha fazla bilgi bulabilirsiniz.</p>"
+
+msgid "Accept"
+msgstr "Kabul Et"
+
+msgid "More info"
+msgstr "Daha fazla bilgi"
+
+msgid "Hide"
+msgstr "Gizle"
+
+msgid "<h2>We use cookies on this site to enhance your user experience</h2><p>By clicking the Accept button, you agree to us doing so.</p>"
+msgstr "<h2>Kullanıcı deneyiminizi geliştirmek için bu sitede tanımlama bilgileri kullanırız</h2><p>Kabul Et düğmesini tıklatarak, bu işlemi gerçekleştirmemizi kabul edersiniz.</p>"
+
+msgid "<h2>We use cookies on this site to enhance your user experience</h2><p>By tapping the Accept button, you agree to us doing so.</p>"
+msgstr "<h2>Kullanıcı deneyiminizi geliştirmek için bu sitede tanımlama bilgileri kullanırız</h2><p>Kabul Et düğmesine dokunarak, bu işlemi gerçekleştirmemizi kabul edersiniz.</p>"
+
+msgid "No, thanks"
+msgstr "Hayır, teşekkürler"
+
+msgid "<h2>We use cookies on this site to enhance your user experience</h2><p>You have given your consent for us to set cookies.</p>"
+msgstr "<h2>Kullanıcı deneyiminizi geliştirmek için bu sitede tanımlama bilgileri kullanırız</h2><p>Tanımlama bilgilerini ayarlayabilmek için bize izin verdiniz.</p>"
+
+msgid "Withdraw consent"
+msgstr "İzni geri al"
+
+msgid "Privacy settings"
+msgstr "Gizlilik ayarları"
+
+msgid "Save preferences"
+msgstr "Tercihleri kaydet"
+
+msgid "Accept all cookies"
+msgstr "Tüm tanımlama bilgilerini kabul et"
+
+msgid "EU Cookie Compliance"
+msgstr "AB Tanımlama Bilgisi Uyumluluğu"
+
+msgid "Language @language_id: Your privacy policy link is not set or is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "@language_id dili: Gizlilik politikası bağlantınız ayarlanmadı veya ön sayfayı gösteriyor. Bu, kurulumdan sonraki varsayılan değerdir ve gizlilik ilkeniz gerçekten ön sayfada yayınlanmazsa, gizlilik ilkesi için ayrı bir sayfa ya da o sayfanın bir bağlantısını oluşturmanız gerekir."
+
+msgid "Privacy policy link not provided"
+msgstr "Gizlilik ilkesi bağlantısı sağlanmadı"
+
+msgid "Language @language_id: Your privacy policy link is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "Dil @language_id: Gizlilik ilkesi bağlantınız ön sayfaya işaret ediyor. Bu, kurulumdan sonraki varsayılan değerdir ve gizlilik ilkeniz gerçekten ön sayfada yayınlanmazsa, gizlilik ilkesi için ayrı bir sayfa ya da o sayfanın bir bağlantısını oluşturmanız gerekir."
+
+msgid "Cookie category"
+msgstr "Tanımlama bilgisi kategorisi"
+
+msgid "Cookie categories"
+msgstr "Tanımlama bilgisi kategorileri"
+
+msgid "This module aims at making the website compliant with the new EU cookie regulation"
+msgstr "Bu modül, web sitelerinin yeni AB tanımlama bilgisi mevzuatıyla uyumlu hale getirilmesini hedefler."
+
+msgid "User interface"
+msgstr "Kullanıcı arayüzü"
+
+msgid "Add Cookie category"
+msgstr "Tanımlama Bilgisi kategorisi ekle"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Categories"
+msgstr "Kategoriler"
+
+msgid "Cookie settings"
+msgstr "Tanımlama bilgisi ayarları"
+
+msgid "Make your website compliant with the EU Directive on Privacy and Electronic Communications."
+msgstr "Web sitenizi AB Gizlilik ve Elektronik İletişim Direktifiyle uyumlu hale getirin."
+
+msgid "Configure the cookie consent popup."
+msgstr "Tanımlama bilgisi onay açılır penceresini yapılandırın."
+
+msgid "Administer cookie categories."
+msgstr "Tanımlama bilgisi kategorilerini yönetin."
+
+msgid "Toggle the cookie consent settings tray"
+msgstr "Tanımlama bilgisi onay ayarları tepsisini aç/kapat"
+
+msgid "Administer EU Cookie Compliance banner"
+msgstr "AB Tanımlama Bilgisi Uyumluluğu büyük başlığını yönet"
+
+msgid "Administer EU Cookie Compliance categories"
+msgstr "AB Tanımlama Bilgisi Uyumluluğu kategorilerini yönet"
+
+msgid "Display EU Cookie Compliance banner"
+msgstr "AB Tanımlama Bilgisi Uyumluluğu büyük başlığını görüntüle"
+
+msgid "EU Cookie Compliance store consent"
+msgstr "AB Tanımlama Bilgisi Uyumluluk mağazası izni"
+
+msgid "Cookie category config"
+msgstr "Tanımlama bilgisi kategorisi yapılandırması"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "Etiket"
+
+msgid "Description"
+msgstr "Açıklama"
+
+msgid "Checkbox default state"
+msgstr "Onay kutusu varsayılan durumu"
+
+msgid "Weight"
+msgstr "Ağırlık"
+
+msgid "EU Cookie Compliance Settings"
+msgstr "AB Tanımlama Bilgisi Uyumluluk Ayarları"
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "Enable banner"
+msgstr "Büyük başlığı etkinleştir"
+
+msgid "Consent by clicking"
+msgstr "Tıklatarak kabul edin"
+
+msgid "Consent by scrolling"
+msgstr "Kaydırarak izin ver"
+
+msgid "Array of EU countries"
+msgstr "AB ülkeleri dizisi"
+
+msgid "Country name."
+msgstr "Ülke adı."
+
+msgid "Only display banner in EU countries."
+msgstr "Yalnızca AB ülkelerinde büyük başlığı görüntüleyin."
+
+msgid "Only display banner in EU countries (Javascript based)."
+msgstr "Yalnızca AB ülkelerinde büyük başlığı görüntüleyin (Javascript tabanlı)."
+
+msgid "Place the banner at the top of the website"
+msgstr "Büyük başlığı web sitesinin üstüne yerleştir"
+
+msgid "If the banner is at the top, don't scroll the banner with the page."
+msgstr "Büyük başlık en üstteyse sayfa ile büyük başlığı kaydırmayın"
+
+msgid "Cookie information banner message"
+msgstr "Tanımlama bilgisi büyük başlık iletisi"
+
+msgid "Cookie information banner message - mobile"
+msgstr "Tanımlama bilgisi büyük başlık iletisi - mobil"
+
+msgid "Template to use for \"consent by default\" method"
+msgstr "\"Varsayılan olarak izin ver\" yöntemi tarafından kullanılacak şablon"
+
+msgid "Agree button message"
+msgstr "Kabul et düğmesi iletisi"
+
+msgid "Cookie Policy button message"
+msgstr "Tanımlama Bilgisi İlkesi düğme iletisi"
+
+msgid "Mobile breakpoint"
+msgstr "Mobil kesme noktası"
+
+msgid "Enable \"Thank you\" banner."
+msgstr "\"Teşekkürler\" büyük başlığını etkinleştirin."
+
+msgid "Clicking hides \"Thank you\" banner."
+msgstr "Tıklatıldığında \"Teşekkür ederiz\" büyük başlığı gizlenir."
+
+msgid "Disagree button label"
+msgstr "Kabul Etmiyorum düğme etiketi"
+
+msgid "Thank you banner message"
+msgstr "Teşekkür ederiz büyük başlık iletisi"
+
+msgid "More info button label"
+msgstr "Ek bilgi düğme etiketi"
+
+msgid "Hide button label"
+msgstr "Gizle düğme etiketi"
+
+msgid "Privacy policy link"
+msgstr "Gizlilik ilkesi bağlantısı"
+
+msgid "Open privacy policy link in a new window."
+msgstr "Gizlilik ilkesi bağlantısını yeni bir pencerede açın."
+
+msgid "Banner height in pixels"
+msgstr "Piksel cinsinden büyük başlık yüksekliği"
+
+msgid "Banner width in pixels or a percentage value"
+msgstr "Piksel ya da yüzde değeri cinsinden büyük başlık genişliği"
+
+msgid "Banner sliding animation time in milliseconds"
+msgstr "Milisaniye cinsinden büyük başlık kaydırma animasyonu"
+
+msgid "Show \"Cookie Policy\" and \"More info\" buttons"
+msgstr "\"Tanımlama Bilgisi İlkesi\" ve \"Ek bilgi\" düğmesini göster"
+
+msgid "Background color"
+msgstr "Arkaplan rengi"
+
+msgid "Text color"
+msgstr "Yazı rengi"
+
+msgid "Domain"
+msgstr "Etki alanı"
+
+msgid "Add/Remove banner on specified domains"
+msgstr "Belirtilen etki alanlarında büyük başlık ekle/kaldır"
+
+msgid "Domains list"
+msgstr "Etki alanı listesi"
+
+msgid "Exclude paths"
+msgstr "Yolları dışla"
+
+msgid "Exclude admin pages."
+msgstr "Yönetim sayfalarını dışlayın."
+
+msgid "Cookie session"
+msgstr "Tanımlama bilgisi oturumu"
+
+msgid "Disagree set cookie session"
+msgstr "Reddetme tanımlama bilgisi oturumu"
+
+msgid "Cookie lifetime"
+msgstr "Tanımlama bilgisi yaşam süresi"
+
+msgid "Use a different message for mobile phones"
+msgstr "Cep telefonları için farklı bir ileti kullan"
+
+msgid "Include minimal CSS, I want to style the overlay in the theme CSS"
+msgstr "En küçük CSS ekle, tema CSS'sinde yer paylaşımına stil uygulamak istiyorum"
+
+msgid "Include styles to support Drupal Olivero theme default CSS."
+msgstr "Drupal Olivero theme varsayılan CSS'yi desteklemek için stiller ekleyin."
+
+msgid "Do not show cookie policy when the user clicks the \"Cookie Policy\" button."
+msgstr "Kullanıcı \"Tanımlama Bilgisi İlkesi\" düğmesini tıklattığında tanımlama bilgisi ilkesini gösterme."
+
+msgid "Reload page after user clicks the \"Agree\" button."
+msgstr "Kullanıcı \"Kabul Ediyorum\" düğmesini tıklattıktan sonra sayfayı yeniden yükleyin."
+
+msgid "Include/exclude specified routes for reloading"
+msgstr "Yeniden yükleme için belirtilen rotaları dahil et/dışla"
+
+msgid "Routes list"
+msgstr "Rota listesi"
+
+msgid "Cookie name"
+msgstr "Tanımlama bilgisi adı"
+
+msgid "Don't show the banner for UID 1."
+msgstr "UID 1 için büyük başlığı gösterme."
+
+msgid "Let screen readers see the banner before other links on the page"
+msgstr "Ekran okuyucuları, sayfadaki diğer bağlantılardan önce büyük başlığı görsün"
+
+msgid "Consent method"
+msgstr "İzin yöntemi"
+
+msgid "Disable JavaScripts"
+msgstr "JavaScripts'i devre dışı bırak"
+
+msgid "Enable cookie(s) automatic-removal when consent is not explicitly given"
+msgstr "Açık izin verilmezse, tanımlama bilgilerinin otomatik kaldırılmasını etkinleştir"
+
+msgid "Allowed cookies"
+msgstr "Tanımlama bilgileri"
+
+msgid "Consent storage method"
+msgstr "İçerik depolama yöntemi"
+
+msgid "Withdraw consent banner message"
+msgstr "İzni geri al büyük başlık iletisi"
+
+msgid "Privacy settings tab label"
+msgstr "Gizlilik ayarları sekmesi etiketi"
+
+msgid "Withdraw consent action button label"
+msgstr "İzni geri al işlem düğmesi etiketi"
+
+msgid "Enable floating privacy settings tab and withdraw consent banner"
+msgstr "Kayan gizlilik ayarlarını etkinleştir sekmesi ve izni geri al büyük başlığı"
+
+msgid "Put the withdraw consent action button on the cookie information banner"
+msgstr "Tanımlama bilgisi büyük başlığına izni geri çek eylem düğmesini yerleştirin"
+
+msgid "Save preferences action button label"
+msgstr "Tercihleri kaydet eylem düğmesi etiketi"
+
+msgid "Accept all categories action button label"
+msgstr "Tüm kategorileri kabul et eylem düğmesi etiketi"
+
+msgid "Replace the Agree button by a Save preferences and an Accept all categories button"
+msgstr "Kabul Et düğmesini, Tercihleri kaydet ve Tüm Kategorileri kabul et düğmesiyle değiştirin"
+
+msgid "Allow the cookie to be set for all sites on the same domain"
+msgstr "Aynı etki alanındaki tüm siteler için tanımlama bilgisinin ayarlanmasına izin ver"
+
+msgid "Enable floating privacy settings permanently"
+msgstr "Kayan gizlilik ayarlarını kalıcı olarak etkinleştir"
+
+msgid "Containing element"
+msgstr "Bulunduran öğe"
+
+msgid "Cookie Policy Version"
+msgstr "Tanımlama Bilgisi İlkesi Sürümü"
+
+msgid "Cookie value (disagreed)"
+msgstr "Tanımlama bilgisi değeri (kabul edilen)"
+
+msgid "Cookie value (agreed, show thank you banner)"
+msgstr "Tanımlama bilgisi değeri (kabul edildi, teşekkürler büyük başlığını göster)"
+
+msgid "Cookie value (agreed)"
+msgstr "Tanımlama bilgisi değeri (kabul edildi)"
+
+msgid "Show disagree button (DEPRECATED)"
+msgstr "Katılmıyorum düğmesini göster (KULLANIMDAN KALDIRILDI)"
+
+msgid "Disagree button message (DEPRECATED)"
+msgstr "Katılmıyorum düğmesi iletisi (KULLANIMDAN KALDIRILDI)"
+
+msgid "Whitelisted cookies (DEPRECATED)"
+msgstr "Beyaz listeye alınmış tanımlama bilgileri (KULLANIMDAN KALDIRILDI)"
+
+msgid "Cookie categories (DEPRECATED)"
+msgstr "Tanımlama bilgisi kategorileri (kullanımdan KULLANIMDAN KALDIRILDI)"
+
+msgid "Boolean value to indicate that the first consent category cannot be unchecked (DEPRECATED)"
+msgstr "İlk onay kategorinin işareti kaldırılamadığını belirten Boole değeri (KULLANIMDAN KALDIRILDI)"
+
+msgid "Select all categories by default (DEPRECATED)"
+msgstr "Varsayılan olarak tüm kategorileri seç (KULLANIMDAN KALDIRILDI)"
+
+msgid "Buttons have red focus outline (for accessibility)"
+msgstr "Düğmelerin kırmızı odak çerçevesi vardır (erişilebilirlik için)"
+
+msgid "Close button action"
+msgstr "Kapat düğmesi işlemi"
+
+msgid "Reject button label"
+msgstr "Reddet düğmesi etiketi"
+
+msgid "Enable \"Reject/deny all\" button"
+msgstr "\"Tümünü reddet\" düğmesini etkinleştir"
+
+msgid "Close button/box enabled"
+msgstr "Kapat düğmesi/kutusu etkinleştirildi"
+
+msgid "Unchecked by default"
+msgstr "Varsayılan olarak işaretlenmiş"
+
+msgid "Checked by default"
+msgstr "Varsayılan olarak işaretlenmemiş"
+
+msgid "Checked and disabled (user cannot clear the checkbox)"
+msgstr "İşaretlenmiş ve devre dışı bırakılmış (kullanıcı onay kutusunu temizleyemiyor)"
+
+msgid "Machine name"
+msgstr "Makine adı"
+
+msgid "Save configuration"
+msgstr "Yapılandırmayı kaydet"
+
+msgid "I accept processing of my personal data. For more information, read the <a href=\"@url\">privacy policy</a>,"
+msgstr "Kişisel verilerimin işlenmesini kabul ediyorum. Daha fazla bilgi için <a href= \"@url\" >gizlilik ilkesine</a> bakın."
+
+msgid "Could not generate the EU Cookie Compliance JavaScript file that would be used for handling disabled JavaScripts. There may be a problem with your files folder."
+msgstr "Geçersiz kılınan JavaScript komut dosyalarını işlemek için kullanılacak AB Tanımlama Bilgisi Uyumluluğu JavaScript dosyası oluşturulamadı. Dosyalar klasörünüzde bir sorun olabilir."
+
+msgid "Are you sure you want to delete %name?"
+msgstr "%name kişisini silmek istediğinize emin misiniz?"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "content @type: deleted @label."
+msgstr "içerik @type: silindi @label."
+
+msgid "The name that will be shown to the website visitor."
+msgstr "Web sitesi ziyaretçisine gösterilecek ad."
+
+msgid "The description that will be shown to the website visitor."
+msgstr "Web sitesi ziyaretçisine gösterilecek açıklama."
+
+msgid "Determines the default state of this category's selection checkbox on the cookie consent popup."
+msgstr "Tanımlama bilgisi açılır onay kutusunda bu kategorinin seçim kutusunun varsayılan durumunu belirler."
+
+msgid "Created the %label Cookie category."
+msgstr "%label ^% Tanımlama Bilgisi kategorisi oluşturuldu."
+
+msgid "Saved the %label Cookie category."
+msgstr "%label ^% Cookie kategorisi kaydedildi."
+
+msgid "Do not store"
+msgstr "Depolama!"
+
+msgid "Permissions"
+msgstr "İzinler"
+
+msgid "Display the banner for"
+msgstr "Şunun için büyük başlığı görüntüle"
+
+msgid "Consent for processing of personal information"
+msgstr "Kişisel bilgileri işleme izni"
+
+msgid "The EU General Data Protection Regulation (GDPR) (see <a href=\"https://gdpr.eu/\" target=\"_blank\">https://gdpr.eu/</a>) comes into enforcement from 25 May 2018 and introduces new requirements for web sites which handle information that can be used to identify individuals. The regulation underlines that consent must be <strong>unambiguous</strong> and involve a <strong>clear affirmative action</strong>. When evaluating how to best handle the requirements in the GDPR, remember that if you have a basic web site where the visitors don't log in, you always have the option to <strong>not process data that identifies individuals</strong>, in which case you may not need this module. Also note that GDPR applies to any electronic processing or storage of personal data that your organization may do, and simply installing a module may not be enough to become fully GDPR compliant."
+msgstr "AB Genel Veri Koruma Yönetmeliği (GDPR) (bkz. <a href=\"https://gdpr.eu/\" target=\"_blank\">https://gdpr.eu/</a>) 25 Mayıs 2018 tarihinden itibaren yürürlüğe girmiştir ve kişileri tanımlamak için kullanılabilecek bilgileri ele alan web sitelerine ilişkin yeni gereklilikleri tanıtır. Yönetmelik, iznin <strong>net</strong> olması ve <strong>net bir doğrulayıcı işlemi</strong> kapsaması gerektiğinin altını çizer. GDPR'deki gereksinimlerin en iyi şekilde nasıl işleneceğini değerlendirirken, ziyaretçilerin oturum açmadığı temel bir web siteniz varsa, her zaman <strong>bireyleri belirleyen verileri işlememe</strong> seçeneğiniz vardır. Bu durumda, bu modüle ihtiyacınız olmayabilir. Ayrıca GDPR'nin, kuruluşunuzun gerçekleştirebileceği tüm kişisel verileri elektronik işleme ve depolama işlemleri için geçerli olduğunu ve yalnızca bir modülün kurulmasının tamamen GDPR uyumlu olmak için yeterli olmayabileceğini de lütfen unutmayın."
+
+msgid "Consent by default. Don't provide any option to opt out."
+msgstr "Varsayılan olarak izin verin. Herhangi bir çıkma seçeneği sağlamayın."
+
+msgid "Opt-in. Don't track visitors unless they specifically give consent. (GDPR compliant)"
+msgstr "Kabul etme. Özellikle izin vermedikleri sürece ziyaretçileri izlemeyin. (GDPR uyumlu)"
+
+msgid "Opt-in with categories. Let visitors choose which cookie categories they want to opt-in for (GDPR compliant)."
+msgstr "Kategorilerle kabul edin. Ziyaretçilerin, hangi tanımlama bilgisi kategorilerini kabul etmek istediklerini seçmelerine izin verin (GDPR uyumlu)."
+
+msgid "Opt-out. Track visitors by default, unless they choose to opt out."
+msgstr "Geri çevirme. Geri çevirmeyi seçmedikleri sürece varsayılan olarak ziyaretçileri izleyin."
+
+msgid "Automatic. Respect the DNT (Do not track) setting in the browser, if present. Uses opt-in when DNT is 1 or not set, and consent by default when DNT is 0."
+msgstr "Otomatik. Varsa, tarayıcıdaki DNT (İzleme) ayarına uyun. DNT 1 olduğunda ya da ayarlanmadığında kabul et seçeneğini kullanır ve DNT 0 olduğunda varsayılan olarak izin verir."
+
+msgid "Cookie categories are managed in the Categories tab (found at the top of this page)."
+msgstr "Tanımlama bilgisi kategorileri Kategoriler sekmesinde yönetilir (bu sayfanın üst kısmında bulunur)."
+
+msgid "Replace the Agree button with \"Save preferences\" and \"Accept all categories\" buttons."
+msgstr "Kabul Et düğmesini, \"Tercihleri kaydet\" ve \"Tüm kategorileri kabul et\" düğmeleriyle değiştirin."
+
+msgid "\"Save preferences\" button label"
+msgstr "\"Tercihleri kaydet\" düğme etiketi"
+
+msgid "\"Accept all categories\" button label"
+msgstr "\"Tüm kategorileri kabul et\" düğme etiketi"
+
+msgid "Select the popup info template for 'default by consent' option"
+msgstr "'Varsayılan olarak onay yoluyla' seçeneği için açılır bilgi şablonunu seçin"
+
+msgid "Info banner template"
+msgstr "Bilgi ana başlık şablonu"
+
+msgid ""
+"Cookie policy button in popup-buttons section and styled similarly to the Agree button,\n"
+"        as in earlier versions of this module"
+msgstr ""
+"Bu modülün önceki sürümlerinde olduğu gibi, Kabul Ediyorum düğmesine benzer stile sahip olan, \n"
+"        açılır düğmeler bölümündeki tanımlama bilgisi ilkesi düğmesi"
+
+msgid "Cookie policy button in popup-text section, styled differently than Agree button."
+msgstr "Kabul Ediyorum düğmesinden farklı stile sahip, açılır metin bölümündeki tanımlama bilgisi ilkesi düğmesi."
+
+msgid "Disable the following JavaScripts when consent isn't given"
+msgstr "İzin verilmediğinde aşağıdaki JavaScripts'i devre dışı bırakın"
+
+msgid "<span class='eu-cookie-compliance-word-break'>Include the full path of JavaScripts, each on a separate line. When using the opt-in or opt-out consent options, you can block certain JavaScript files from being loaded when consent isn't given. The on-site JavaScripts should be written as root relative paths <strong>without the leading slash</strong>, you can use public://path/to/file.js and private://path/to/file.js, and off-site JavaScripts should be written as complete URLs <strong>with the leading http(s)://</strong>. Note that after the user gives consent, the scripts will be executed in the order you enter here.<br /><br />Libraries and scripts that attach to Drupal.behaviors are supported. To indicate a behavior that needs to be loaded on consent, append the behavior name after the script with a | (vertical bar). If you also want to conditionally load a library, place that as the third parameter, following another | (vertical bar). <strong>Example: modules/custom/custom_module/js/custom.js|customModule|custom_module/custom_module</strong>.<br />If your script file does not attach to Drupal.attributes, you may skip the second parameter. <strong>Example: modules/custom/custom_module/js/custom.js||custom_module/custom_module</strong><br /><strong>Note that Drupal behavior name and library parameters are both optional</strong>, but may be required to achieve your objective.</span>"
+msgstr "<span class='eu-cookie-compliance-word-break'>Her biri ayrı bir satırda olacak şekilde JavaScripts'in tam yolunu ekleyin. Kabul etme ya da geri çevirme izin seçeneklerini kullanırken, izin verilmediğinde belirli JavaScript dosyalarının yüklenmesini engelleyebilirsiniz. Yerinde JavaScript'ler, <strong>baştaki eğik çizgi olmadan</strong> kök göreli yolları olarak yazılmalı (public://path/to/file.js ve private://path/to/file.js yolunu kullanabilirsiniz), yerinde olmayan JavaScript'ler, <strong>baştaki http(s):// ile birlikte</strong> tam URL'ler olarak yazılmalıdır. Kullanıcı izin verdikten sonra komut dosyalarının buraya girdiğiniz sırayla yürütüleceğini unutmayın.<br /><br />Drupal.behaviors öğesine eklenen kitaplıklar ve komut dosyaları desteklenir. İzinle yüklenmesi gereken bir davranışı belirtmek için, komut dosyasından sonra bir | (dikey çubuk) ile davranış adını ekleyin. Koşullu olarak bir kitaplığı yüklemek istiyorsanız da bunu başka bir | (dikey çubuk) karakterinden sonra üçüncü parametre olarak yerleştirin. <strong>Örnek: modules/custom/custom_module/js/custom.js|customModule|custom_module/custom_module</strong>.<br />Komut dosyanız, Drupal.attributes öğesine eklenmezse, ikinci parametreyi atlayabilirsiniz. <strong>Örnek: modules/custom/custom_module/js/custom.js||custom_module/custom_module</strong><br /><strong>Drupal davranış adının ve kitaplık parametrelerinin isteğe bağlı olduğunu</strong>, ancak hedefinizi gerçekleştirmek için bunların gerekli olabileceğini unutmayın.</span>"
+
+msgid "When using the consent method \"Opt-in with categories\", you can link the script to a specific category by using the format: \"category:path/to/the/script.js\"."
+msgstr "\"Kategorilerle kabul edin\" izin yöntemini kullanırken, \"category:path/to/the/script.js\" biçimini kullanarak komut dosyasını belirli bir kategoriyle bağlantılandırabilirsiniz."
+
+msgid "Cookie handling"
+msgstr "Tanımlama bilgisi işleme"
+
+msgid "Enable cookie(s) automatic-removal when consent isn't given."
+msgstr "İzin verilmezse, tanımlama bilgilerinin otomatik olarak kaldırılmasını etkinleştirin."
+
+msgid "Include the name of cookies, each on a separate line. When using the opt-in or opt-out consent options, this module will <strong>delete cookies from your domain that are not allowed</strong> every few seconds when consent isn't given. PHP session cookies and the cookie for this module are always allowed."
+msgstr "Her biri ayrı bir satırda olacak şekilde tanımlama bilgilerinin adını ekleyin. Kabul etme ya da geri çevirme izin seçeneklerini kullanırken bu modül, izin verilmediğinde her birkaç saniyede bir <strong>izin verilmeyen tanımlama bilgilerini etki alanınızdan siler</strong>. PHP oturumu tanımlama bilgilerine ve bu modülün tanımlama bilgilerine her zaman izin verilir."
+
+msgid "When using the consent method \"Opt-in with categories\", you can link the cookie to a specific consent category by using the format: \"category:cookie_name\".  Only when consent is given for the given category, will the cookie be allowed."
+msgstr "\"Kategorilerle kabul et\" izin yöntemini kullanırken, \"category:cookie_name\" biçimini kullanarak tanımlama bilgisini belirli bir izin kategorisiyle bağlantılandırabilirsiniz.  Yalnızca belirtilen kategori için izin verildiğinde tanımlama bilgisine izin verilir."
+
+msgid "Cookie names can contain \"*\" characters which mean a series of any characters."
+msgstr "Tanımlama bilgisi adları, bir karakter dizisi anlamına gelen \"*\" karakterlerini içerebilir."
+
+msgid "Store record of consent"
+msgstr "İzin kaydını depolayın"
+
+msgid "Depending on your implementation of GDPR, you may have to store a record when the user consents. This module comes with a basic consent storage plugin that writes a record to the database. Note that if your site has significant traffic, the basic consent storage may become a bottleneck, as every consent action will require a write to the database. You can easily create your own module with a ConsentStorage Plugin that extends ConsentStorageBase, using BasicConsentStorage from this module as a template. If you create a highly performant consent storage plugin, please consider contributing it back to the Drupal community as a contrib module."
+msgstr "GDPR uygulamanıza bağlı olarak, kullanıcı izin verdiğinde bir kaydı depolamanız gerekebilir. Bu modül, veritabanına bir kayıt yazan temel bir izin depolama eklentisiyle birlikte gelir. Sitenizde çok yoğun bir trafik varsa, her izin işlemi, veritabanına bir yazma işlemi gerektireceğinden, temel izin depolama alanının bir darboğaz oluşturabileceğini unutmayın. Şablon olarak bu modüldeki BasicConsentStorage öğesini kullanarak, ConsentStorageBase öğesini genişleten bir ConsentStorage Eklentisi ile kolayca kendi modülünüzü oluşturabilirsiniz. Yüksek performanslı bir izin depolama eklentisi oluşturursanız lütfen bunu contrib modülü olarak Drupal topluluğuna geri ekleyin."
+
+msgid "Cookie information banner"
+msgstr "Tanımlama bilgisi büyük başlığı"
+
+msgid "By default by clicking any link or button on the website the visitor accepts the cookie policy. Uncheck this box if you don’t require this functionality. You may want to edit the banner message below accordingly."
+msgstr "Varsayılan olarak ziyaretçi, web sitesinde bir bağlantıyı ya da düğmeyi tıklatarak tanımlama bilgisi ilkesini kabul eder. Bu işlev gerekmiyorsa bu kutunun işaretini kaldırın. Aşağıdaki büyük başlık iletisini uygun şekilde düzenlemek isteyebilirsiniz."
+
+msgid "Use a different message for mobile phones."
+msgstr "Cep telefonları için farklı bir ileti kullanın."
+
+msgid "px"
+msgstr "p"
+
+msgid "The mobile message will be used when the window width is below or equal to the given value."
+msgstr "Pencere genişliği, belirtilen değere eşit ya da bu değerden küçük olduğunda mobil ileti kullanılacak."
+
+msgid "Agree button label"
+msgstr "Kabul ediyorum düğme etiketi"
+
+msgid "If this option is checked, the cookie policy button will be shown on the site. Disabling this option will hide both the \"Cookie Policy\" button on the information banner and the \"More info\" button on the \"Thank you\" banner."
+msgstr "Bu seçenek işaretlenirse, tanımlama bilgisi ilkesi düğmesi sitede gösterilir. Bu seçenek devre dışı bırakıldığında, bilgi büyük başlığında \"Tanımlama Bilgisi İlkesi\" düğmesi ve \"Teşekkürler\" büyük başlığında \"Ek bilgi\" düğmesi gizlenir."
+
+msgid "Cookie policy button label"
+msgstr "Tanımlama bilgisi ilkesi düğme etiketi"
+
+msgid "GDPR requires that withdrawing consent for handling personal information should be as easy as giving consent. This module offers a tab button that when clicked brings up a message and a button that can be used to withdraw consent."
+msgstr "GDPR, kişisel bilgileri işlemek için izni geri almanın izin verme kadar kolay olmasını gerektirir. Bu modül, tıklatıldığında bir iletiyi ve izni geri almak için kullanılabilen bir düğmeyi getiren bir sekme düğmesi sunar."
+
+msgid "Adds a floating privacy settings tab and withdraw consent banner. This option also provides a \"Cookie settings\" button block and menu item suggestion in \"Navigation\" menu."
+msgstr "Bir kayan gizlilik ayarları sekmesi ve onayı geri al başlığı ekler. Bu seçenek, \"Tanımlama bilgisi ayarları\" düğme bloğu ve \"Gezinme\" menüsünde menü öğesi önerisi sağlar."
+
+msgid "Enable floating privacy settings tab after withdrawing consent"
+msgstr "İzin geri çekildikten sonra kayan gizlilik ayarları sekmesini etkinleştir"
+
+msgid "Put the \"Withdraw consent\" button on the cookie information banner."
+msgstr "Tanımlama bilgisi büyük başlığına \"İzni geri çek\" düğmesini yerleştirin."
+
+msgid "Text that will be displayed in the banner that appears when the privacy settings tab is clicked."
+msgstr "Gizlilik ayarları sekmesi tıklatıldığında görüntülenen büyük başlıkta görüntülenecek metin."
+
+msgid "Tab button that reveals/hides the withdraw message and action button when clicked."
+msgstr "Tıklatıldığında geri al iletisini ve işlem düğmesini gösteren/gizleyen sekme düğmesi."
+
+msgid "Withdraw consent button label"
+msgstr "İzni geri çek düğme etiketi"
+
+msgid "This button will withdraw consent when clicked."
+msgstr "Bu düğme tıklatıldığında izni geri alır."
+
+msgid "Reject button and close box"
+msgstr "Reddet düğmesi ve kapat kutusu"
+
+msgid "Close banner"
+msgstr "Başlığı kapat"
+
+msgid "Reject all cookies"
+msgstr "Tüm tanımlama bilgilerini reddet"
+
+msgid "Trigger Save preferences (for banner with categories)"
+msgstr "Tercihleri Kaydet'i tetikle (kategoriler içeren büyük başlık için)"
+
+msgid "The default position of the close button is in the top right corner of the banner."
+msgstr "Kapat düğmesinin varsayılan konumu, büyük başlığın sağ üst köşesinde yer alır."
+
+msgid "Thank you banner"
+msgstr "Teşekkürler büyük başlığı"
+
+msgid "Enable \"Thank you\" banner"
+msgstr "\"Teşekkürler\" büyük başlığını etkinleştirin"
+
+msgid "Clicking a link or button hides the \"Thank you\" message automatically."
+msgstr "Bir bağlantı ya da düğme tıklatıldığında, \"Teşekkürler\" iletisi otomatik olarak gizlenir."
+
+msgid "\"Thank you\" banner message"
+msgstr "\"Teşekkürler\" büyük başlık iletisi"
+
+msgid "Privacy policy"
+msgstr "Gizlilik ilkesi"
+
+msgid "Enter link to your privacy policy or other page that will explain cookies to your users, external links should start with http:// or https://."
+msgstr "Gizlilik ilkenizin ya da kullanıcılarınıza tanımlama bilgilerini açıklayacak diğer sayfanın bağlantısını girin; dış bağlantılar http:// veya https:// ile başlamalıdır."
+
+msgid "Privacy Policy Version"
+msgstr "Gizlilik İlkesi Sürümü"
+
+msgid "Change this value to make the cookie information banner reappear for all visitors. A typical usage of this field is to increase the value when the privacy policy has been changed."
+msgstr "Bu değeri, tüm ziyaretçiler için tanımlama bilgisi büyük başlığında yeniden görüntülenecek şekilde değiştirin. Bu alanın tipik bir kullanımı, gizlilik ilkesi değiştirildiğinde değerin artırılmasıdır."
+
+msgid "Appearance"
+msgstr "Görünüm"
+
+msgid "Olivero theme is enabled, but Olivero style support is not enabled. You can enable this setting within the <a href=\"#edit-appearance\">Appearance fieldset</a> to extend the look and feel of the Olivero theme."
+msgstr "Olivero teması etkinleştirildi, ancak Olivero stili desteği etkinleştirilmedi. Bu ayarı, Olivero temasının görünümünü genişletmek için <a href=\"#edit-appearance\">Görünüm alanı kümesi</a> içinde etkinleştirebilirsiniz."
+
+msgid "This uses opinionated styling to fit in with the Drupal Olivero theme. Enabling this will disable other appearance options."
+msgstr "Bu, Drupal Olivero temasına uymak için değişmez stillendirmeyi kullanır. Bunun etkinleştirilmesi diğer görünüm seçeneklerini devre dışı bırakır."
+
+msgid "Change the text color of the banner."
+msgstr "Büyük başlığın metin rengini değiştirin."
+
+msgid "Change the background color of the banner."
+msgstr "Büyük başlığın arka plan rengini değiştirin."
+
+msgid "Change the text color of the banner. Provide HEX value without the #."
+msgstr "Büyük başlığın metin rengini değiştirin. HEX değerini # olmadan sağlayın."
+
+msgid "Change the background color of the banner. Provide HEX value without the #."
+msgstr "Büyük başlığın arka plan rengini değiştirin. HEX değerini # olmadan sağlayın."
+
+msgid "Serves as the parent element to append cookie banner html to."
+msgstr "Tanımlama bilgisi büyük başlık html'nin ekleneceği üst öğe olarak işlev görür."
+
+msgid "Bottom"
+msgstr "Alt"
+
+msgid "Top"
+msgstr "En üst"
+
+msgid "Position"
+msgstr "Konum"
+
+msgid "Include minimal CSS, I want to style the banner in the theme CSS."
+msgstr "En küçük CSS ekle, tema CSS'sinde büyük başlığa stil uygulamak istiyorum."
+
+msgid "This may be useful if you want the banner to share the button style of your theme. Note that you will have to configure values like the banner width, text color and background color in your CSS file."
+msgstr "Büyük başlığın, temanızın düğme stilini paylaşmasını istiyorsanız bu kullanışlı olabilir. CSS dosyanızda büyük başlık genişliği, metin rengi ve arka plan rengi gibi değerleri yapılandırmanız gerekeceğini unutmayın."
+
+msgid "Banner height"
+msgstr "Büyük başlık yüksekliği"
+
+msgid "Enter an integer value for a desired height in pixels or leave empty for automatically adjusted height."
+msgstr "Piksel cinsinden istenen yükseklik için bir tamsayı değeri girin ya da otomatik olarak ayarlanan yükseklik için boş bırakın."
+
+msgid "px or %"
+msgstr "piksel ya da yüzde"
+
+msgid "Set the width of the banner. This can be either an integer value or percentage of the screen width. For example: 200 or 50%."
+msgstr "Büyük başlığın genişliğini ayarlayın. Bu, ekran genişliğinin tamsayı değeri ya da yüzdesi olabilir. Örneğin: 200 ya da 50%."
+
+msgid "EU countries"
+msgstr "AB ülkeleri "
+
+msgid "<p>You can limit the number of countries for which the banner is displayed. If you want to provide a list of countries other than current EU states, you may place an array in <code>$conf['eu_cookie_compliance_eu_countries']</code> in your <code>settings.php</code> file. Using the <a href=\"http://drupal.org/project/geoip\">geoip</a> module or the <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> module or the <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP function.</p>"
+msgstr "<p>Büyük başlığı görüntülediğiniz ülke sayısını sınırlayabilirsiniz. Geçerli AB ülkeleri dışındaki ülkelerin listesini sağlamak istiyorsanız, <code>settings.php</code> dosyanızda <code>$conf['eu_cookie_compliance_eu_countries']</code> içine bir dizi yerleştirebilirsiniz. <a href=\"http://drupal.org/project/geoip\">geoip</a> modülünü ya da <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> modülünü ya da <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP işlevini kullanarak.</p>"
+
+msgid "Use JavaScript to determine if the visitor is in a country where GDPR applies. Required if caching is enabled or a caching strategy such as varnish is utilized."
+msgstr "Ziyaretçinin GDPR'nin geçerli olduğu bir ülkede olup olmadığını belirlemek için JavaScript kullanın. Önbelleğe alma etkinleştirilmişse ya da varnish gibi bir önbelleğe alma stratejisi kullanılıyorsa gereklidir."
+
+msgid "I have no caching enabled or set up. Use non-JavaScript method."
+msgstr "Önbelleğe alma etkinleştirilmedi ya da ayarlanmadı. JavaScript dışı yöntemi kullanın."
+
+msgid "Disabled. Show the banner to all visitors, also those in non-GDPR countries."
+msgstr "Geçersiz kılındı. GDPR olmayan ülkelerde bulunanlar da dahil tüm ziyaretçilere başlığı göster."
+
+msgid "You can choose to show the banner only to visitors from EU countries. In order to achieve this, you need to install the <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> module or install the <a href=\"http://drupal.org/project/geoip\">geoip</a> module or enable the <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP function."
+msgstr "Büyük başlığı yalnızca AB ülkelerinden gelen ziyaretçilere göstermeyi seçebilirsiniz. Bunu başarmak için <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> modülünü veya <a href=\"http://drupal.org/project/geoip\">geoip</a> modülünü kurmanız ya da <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP işlevini etkinleştirmeniz gerekir."
+
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+msgid "Use position:fixed for the banner when displayed at the top."
+msgstr "En üstte görüntülendiğinde büyük başlık için position:fixed öğesini kullanın."
+
+msgid "Banner sliding animation time"
+msgstr "Büyük başlık kaydırma animasyonu süresi"
+
+msgid "ms"
+msgstr "ms"
+
+msgid "Enabling this will make it possible to record the fact that the user disagrees without the user having to see the privacy policy."
+msgstr "Bu etkinleştirildiğinde, kullanıcının gizlilik ilkesini görmesi gerekmeden gizlilik ilkesini kabul etmemesi kaydedilebilir."
+
+msgid "Include"
+msgstr "Dahil et"
+
+msgid "Exclude"
+msgstr "Çıkar"
+
+msgid "Specify if you want to include or exclude the listed below routes for reloading the page after agreeing cookies."
+msgstr "Tanımlama bilgilerini kabul ettikten sonra sayfayı yeniden yüklemek için, aşağıda listelenen rotaları dahil etmek ya da dışlamak istediğinizi belirtin."
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. Leave blank for reloading all pages. Leave the list empty to reload on all pages. This field does not support url aliases."
+msgstr "Sayfaların yollarını kullanarak sayfaları belirtin. Her satıra tek bir yol girin. '*' karakteri joker karakterdir. Örnek yollar, blog sayfası için %blog ve her kişisel blog için %blog-wildcard şeklindedir. Tüm sayfaları yeniden yüklemek için boş bırakın. Tüm sayfalarda yeniden yüklemek için listeyi boş bırakın. Bu alan, URL diğer adlarını desteklemiyor."
+
+msgid "Scrolling makes the visitors to accept the cookie policy. In some countries, like Italy, it is permitted."
+msgstr "Kaydırma, ziyaretçilerin tanımlama bilgisi ilkesini kabul etmesini sağlar. İtalya gibi bazı ülkelerde buna izin verilir."
+
+msgid "Sets the cookie name that is used to check whether the user has agreed or not. This option is useful when policies change and the user needs to agree again."
+msgstr "Kullanıcının kabul edip etmediğini denetlemek için kullanılan tanımlama bilgisi adını ayarlar. İlkeler değiştiğinde ve kullanıcının yeniden kabul etmesi gerektiğinde bu seçenek kullanışlıdır."
+
+msgid "The cookie value which will be set where the user has disagreed."
+msgstr "Kullanıcının kabul ettiği yere ayarlanacak tanımlama bilgisi değeri."
+
+msgid "The cookie value which will be set where the user has agreed and we will show a thank-you banner."
+msgstr "Kullanıcının kabul ettiği yere ayarlanacak olan tanımlama bilgisi değeri ve biz bir teşekkür manşeti göstereceğiz."
+
+msgid "The cookie value which will be set where the user has agreed."
+msgstr "Kullanıcının kabul ettiği yerde ayarlanacak tanımlama bilgisi değeri."
+
+msgid "Add"
+msgstr "Ekle"
+
+msgid "Remove"
+msgstr "Kaldır"
+
+msgid "Add/remove banner on specified domains"
+msgstr "Belirtilen etki alanlarında büyük başlık ekle/kaldır"
+
+msgid "Specify if you want to add or remove banner on the listed below domains."
+msgstr "Aşağıda listelenen etki alanlarında büyük başlık eklemek ya da kaldırmak istediğinizi belirtin."
+
+msgid "Specify domains with protocol (e.g., http or https). Enter one domain per line."
+msgstr "Protokol (http ya da https) ile etki alanlarını belirtin. Her satır için bir etki alanı girin."
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page."
+msgstr "Sayfaları yollarıyla belirtin. Her satıra birer yol girin. Yıldız (\"*\") joker karakterdir. Örnek yollar: blog sayfası için %blog ve her kişisel blog için %blog-joker karakter. %front, ön sayfadır."
+
+msgid "Note: if you enable the Withdraw feature, the Privacy settings tab will be displayed also on admin pages, but the banner will not open until you click the tab."
+msgstr "Not: Withdraw özelliğini etkinleştirdiğinizde, yönetici sayfalarında Gizlilik ayarları sekmesi de görüntülenir, ancak sekme tıklatılıncaya kadar büyük başlık açılmayacaktır."
+
+msgid "Don't show the banner for site administrators (including UID 1)."
+msgstr "Site denetimcileri (UID 1 de içinde olmak üzere) için büyük başlık gösterilmez."
+
+msgid "Note: if you enable the Withdraw feature, the Privacy settings tab will be displayed also for site administrators, but the banner will not open until you click the tab."
+msgstr "Not: Withdraw özelliğini etkinleştirdiğinizde, site yöneticileri için Gizlilik ayarları sekmesi de görüntülenir; ancak, sekme tıklatılıncaya kadar büyük başlık açılmaz."
+
+msgid "Let screen readers see the banner before other links on the page."
+msgstr "Ekran okuyucuları, sayfadaki diğer bağlantılardan önce büyük başlığı görsün."
+
+msgid "Enable this if you want to place the banner as the first HTML element on the page. This will make it possible for screen readers to close the banner without tabbing through all links on the page."
+msgstr "Büyük başlığı, sayfadaki ilk HTML öğesi olarak yerleştirmek istiyorsanız bunu etkinleştirin. Böylece ekran okuyucuların sayfadaki tüm bağlantılarda sekmeyle ilerlemeden büyük başlığı kapatması mümkün kılınır."
+
+msgid "Prompt for consent (from the same user) at every new browser session."
+msgstr "Her yeni tarayıcı oturumunda izin iste (aynı kullanıcıdan)."
+
+msgid "This sets cookie lifetime to 0, invalidating the cookie at the end of the browser session. To set a cookie lifetime greater than 0, uncheck this option. Note that some users will find this behavior highly annoying, and it's recommended to double-check with the legal advisor whether you really need this option enabled."
+msgstr "Bu, tanımlama bilgisi ömrünü 0 olarak ayarlayarak tarayıcı oturumunun sonunda tanımlama bilgisini geçersiz kılar. 0'dan büyük bir tanımlama bilgisi ömrü ayarlamak için bu seçeneğin işaretini kaldırın. Bazı kullanıcıların bu davranışı oldukça can sıkıcı bulacağını ve bu seçeneği gerçekten etkinleştirmeniz gerekip gerekmediği konusunda hukuk danışmanıyla bir kez daha görüşmenizin önerildiğini unutmayın."
+
+msgid "Sets the domain of the cookie to a specific url. Used when you need consistency across domains. This is language independent. Note: Make sure you actually enter a domain that the browser can make use of. For example if your site is accessible at both www.domain.com and domain.com, you will not be able to hide the banner at domain.com if your value for this field is www.domain.com."
+msgstr "Tanımlama bilgisinin etki alanını belirli bir url olarak ayarlar. Etki alanları genelinde tutarlılık gerektiğinde kullanılır. Dilden bağımsızdır. Not: Gerçekten tarayıcının kullanabileceği bir etki alanı girdiğinizden emin olun. Örneğin, hem www.domain.com hem de domain.com adresinden sitenize erişilebiliyorsa, bu alan için değeriniz www.domain.com olduğunda domain.com adresinde büyük başlığı gizleyemezsiniz."
+
+msgid "Allow the cookie to be set for all sites on the same domain."
+msgstr "Aynı etki alanındaki tüm siteler için tanımlama bilgisinin ayarlanmasına izin ver."
+
+msgid "Sets the path of the cookie to '/' so that the cookie works across all sites on the domain."
+msgstr "Tanımlama bilgisinin etki alanındaki tüm sitelerde çalışması için tanımlama bilgisinin yolunu '/' olarak ayarlar."
+
+msgid "Set cookie lifetime to 0 if the user clicks the \"Decline\" or the \"Withdraw consent\" button."
+msgstr "Kullanıcı \"Reddet\" ya da \"İzni geri çek\" düğmesini tıklatırsa, tanımlama bilgisi ömrünü 0 olarak ayarlayın."
+
+msgid "Enable this if you want to show the consent banner at every new session until the user clicks the \"Agree\" button."
+msgstr "Kullanıcı \"Kabul Et\" düğmesini tıklatıncaya kadar her yeni oturumda onay büyük başlığını göstermek istiyorsanız bu seçeneği etkinleştirin."
+
+msgid "How many days the system remember the user's choice."
+msgstr "Sistemin, kullanıcının seçimini kaç gün boyunca hatırlayacağı."
+
+msgid "days"
+msgstr "gün"
+
+msgid "@name field is required"
+msgstr "@name alanı zorunludur"
+
+msgid "Invalid cookie name, please remove any special characters and try again."
+msgstr "Tanımlama bilgisi adı geçersiz, lütfen özel karakterleri kaldırın ve yeniden deneyin."
+
+msgid "Your privacy policy link is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "Gizlilik ilkesi bağlantınız, ön sayfayı gösteriyor. Bu, kurulumdan sonraki varsayılan değerdir ve gizlilik ilkeniz gerçekten ön sayfada yayınlanmazsa, gizlilik ilkesi için ayrı bir sayfa ya da o sayfanın bir bağlantısını oluşturmanız gerekir."
+
+msgid "The user role permission could not be set because the <code>config_readonly</code> module is enabled. To allow setting of user role permissions, please add <code>user.role.%name</code> to the <code>config_readonly</code> allowlist."
+msgstr "<code>config_readonly</code> modülü etkinleştirildiği için kullanıcı rolü izni ayarlanamadı. Kullanıcı rolü izinlerinin ayarlanmasına izin vermek için, lütfen <code>config_readonly</code> izin listesine <code>user.role.%name</code> öğesini ekleyin."
+
+msgid "The module weight could not be set because the <code>config_readonly</code> module is enabled. To allow setting of module weight, please add <code>core.extension</code> to the <code>config_readonly</code> allowlist."
+msgstr "Modül ağırlığı ayarlanamadı, çünkü <code>config_readonly</code> modülü etkin. Modül ağırlığının ayarlanmasına izin vermek için, lütfen <code>config_readonly</code> izin listesine <code>core.extension</code> öğesini ekleyin."
+
+msgid "Invalid protocol specified for the %name (valid protocols: %protocols)."
+msgstr "%name için geçersiz protokol belirtildi (geçerli protokoller: %protocols)."
+
+msgid "Invalid %name (:message)."
+msgstr "Geçersiz %name (:message)."
+
+msgid "Invalid URL in %name field (:message)."
+msgstr "%name alanında geçersiz URL (:message)."
+
+msgid "This block requires the \"@withdraw_enabled_setting_name\" to be enabled in <a href=\"@eu_cookie_compliance_settings_url\">EU Cookie Compliance settings</a>."
+msgstr "Bu blok, <a href=\"@eu_cookie_compliance_settings_url\">AB Tanımlama Bilgileri Uyumluluğu ayarlarında</a> \"@withdraw_enabled_setting_name\" özelliğinin etkinleştirilmesini gerektirir."
+
+msgid "EU Cookie Compliance Button Block"
+msgstr "AB Tanımlama Bilgisi Uyumluluk Düğmesi Bloğu"
+
+msgid "Basic storage"
+msgstr "Temel depolama"
+

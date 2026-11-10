@@ -1,0 +1,260 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Field encryption"
+msgstr "フィールド暗号化"
+
+msgid "Warning: changing field encryption settings may cause data corruption!<br />When changing these settings, existing fields will be (re)encrypted in batch according to the new settings. <br />Make sure you have a proper backup, and do not perform this action in an environment where the data will be changing during the batch operation, to avoid data loss."
+msgstr "警告: フィールド暗号化設定を変更すると、データ破損が発生する可能性があります。<br />これらの設定を変更した場合、新規設定に従って、既存のフィールドがバッチで (再) 暗号化されます。<br />必ず、適切にバックアップを取り、データ損失を回避するために、バッチ操作中にデータが変更される環境ではこのアクションを実行しないでください。"
+
+msgid "Encrypt field"
+msgstr "フィールドの暗号化"
+
+msgid "Makes the field storage encrypted."
+msgstr "フィールド・ストレージを暗号化します。"
+
+msgid "Properties"
+msgstr "プロパティー"
+
+msgid "Specify the field properties to encrypt."
+msgstr "暗号化するフィールド・プロパティーを指定します。"
+
+msgid "Field Encrypt"
+msgstr "フィールド暗号化"
+
+msgid "Update to field_encrypt version 3 is not supported."
+msgstr "field_encrypt バージョン 3 への更新はサポートされていません。"
+
+msgid "In order to upgrade you need to decrypt all your data on the previous version and uninstall the module."
+msgstr "アップグレードするには、前のバージョンのすべてのデータを復号化し、モジュールをアンインストールする必要があります。"
+
+msgid "Field Encrypt entity hooks"
+msgstr "フィールド暗号化エンティティフック"
+
+msgid "Unable to dynamically create entity hooks"
+msgstr "エンティティフックを動的に作成できません"
+
+msgid "In order to use Field Encrypt the following methods need to be defined:@functions"
+msgstr "フィールド暗号化を使用するには、以下のメソッドを定義する必要があります。@functions"
+
+msgid "Extends the Field API to allow encryption of fields."
+msgstr "フィールドの暗号化を許可するためフィールド API を拡張します。"
+
+msgid "Encryption"
+msgstr "暗号化"
+
+msgid "Field Encrypt settings"
+msgstr "フィールド暗号化設定"
+
+msgid "Manage field encryption settings"
+msgstr "フィールド暗号化設定の管理"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Encrypted fields overview"
+msgstr "暗号化フィールドの概要"
+
+msgid "Encrypted fields entity type settings"
+msgstr "暗号化フィールドのエンティティー・タイプ設定"
+
+msgid "Process queues"
+msgstr "プロセス・キュー"
+
+msgid "Administer field encryption"
+msgstr "フィールド暗号化の管理"
+
+msgid "Allows fields to be individually encrypted so that their data is better protected."
+msgstr "データの保護性が向上するようにフィールドを個別に暗号化できるようにします。"
+
+msgid "Field Encrypt entity type settings"
+msgstr "Field Encrypt エンティティー・タイプの設定"
+
+msgid "Process queued updates"
+msgstr "キューに入れられた更新の処理"
+
+msgid "Field encrypt setting"
+msgstr "フィールド暗号化設定"
+
+msgid "Encrypt"
+msgstr "暗号化"
+
+msgid "Property"
+msgstr "プロパティー"
+
+msgid "Properties placeholders"
+msgstr "プロパティー・プレースホルダー"
+
+msgid "Placeholder"
+msgstr "プレースホルダー"
+
+msgid "Field Encrypt Settings"
+msgstr "フィールド暗号化設定"
+
+msgid "Encryption profile"
+msgstr "暗号化プロファイル"
+
+msgid "Exclude from persistent caches"
+msgstr "永続キャッシュから除外"
+
+msgid "Field types"
+msgstr "フィールドタイプ"
+
+msgid "Properties to encrypt"
+msgstr "暗号化するプロパティー"
+
+msgid "Property name"
+msgstr "プロパティー名"
+
+msgid "Batch size"
+msgstr "バッチ・サイズ"
+
+msgid "Entity type ID"
+msgstr "エンティティー・タイプ ID"
+
+msgid "Encrypted base fields"
+msgstr "暗号化された基本フィールド"
+
+msgid "Base field"
+msgstr "ベースフィールド"
+
+msgid "Base field property"
+msgstr "ベース・フィールド・プロパティー"
+
+msgid "Encrypted data"
+msgstr "暗号化データ"
+
+msgid "Stores data from encrypted fields."
+msgstr "暗号化されたフィールドからのデータを保管します。"
+
+msgid "Field"
+msgstr "フィールド"
+
+msgid "Entity type"
+msgstr "エンティティタイプ"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "There are no encrypted fields."
+msgstr "暗号化フィールドはありません。"
+
+msgid "Decrypt"
+msgstr "暗号化解除"
+
+msgid "Updates to @entity_type with existing data been queued to be processed. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the updates will be performed automatically by cron."
+msgstr "既存のデータを使用した @entity_type の更新は、処理のためにキューに入れられました。 即時に <a href=\":url\">このプロセスを手動で実行する</a>必要があります。 あるいは、cron によって更新が自動的に実行されます。"
+
+msgid "Updates to entities with existing data for this field have been queued to be processed. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the updates will be performed automatically by cron."
+msgstr "このフィールドの既存データでのエンティティーに対する更新が処理のためにキューに入れられました。即時に<a href=\":url\">このプロセスを手動で実行</a>する必要があります。そうしない場合、更新は cron によって自動的に実行されます。"
+
+msgid "Are you sure you want to remove encryption for field %field on %entity_type?"
+msgstr "%entity_type のフィールド %field の暗号化を解除しますか?"
+
+msgid "Remove field encryption"
+msgstr "フィールド暗号化の解除"
+
+msgid "This action removes field encryption from the specified field. Existing field data will be decrypted through a batch process."
+msgstr "このアクションにより、指定されたフィールドのフィールド暗号化が解除されます。既存のフィールド・データは、バッチ・プロセスで暗号化解除されます。"
+
+msgid "Select a entity type to configure"
+msgstr "構成するエンティティー・タイプを選択する"
+
+msgid "Base fields to encrypt"
+msgstr "暗号化する基本フィールド"
+
+msgid "Note that encrypted fields can not be filtered on in SQL queries or joined against."
+msgstr "暗号化されたフィールドは、SQLクエリでフィルタリングしたり、結合したりできないことに注意してください。"
+
+msgid "Save configuration"
+msgstr "構成を保存"
+
+msgid "@label properties"
+msgstr "@label のプロパティー"
+
+msgid "Specify the base field properties to encrypt. If none are selected the base field will not be encrypted."
+msgstr "暗号化する基本フィールド・プロパティーを指定します。 何も選択されていない場合、基本フィールドは暗号化されません。"
+
+msgid "Updated encryption settings for %entity_type base fields."
+msgstr "%entity_type 基本フィールドの暗号化設定が更新されました。"
+
+msgid "Update encryption profile"
+msgstr "暗号化プロファイルを更新する"
+
+msgid "Usages"
+msgstr "使用方法"
+
+msgid "If the field encryption profile is changed entities can be updated to use the new encryption profile."
+msgstr "フィールド暗号化プロファイルが変更された場合、新しい暗号化プロファイルを使用するようにエンティティーを更新できます。"
+
+msgid "Process updates"
+msgstr "更新の処理"
+
+msgid "Field encryption updates"
+msgstr "フィールド暗号化の更新"
+
+msgid "Cannot claim an item - unable to process the batch"
+msgstr "項目を要求できません - バッチを処理できません"
+
+msgid "Select the encryption profile to use for encrypting fields. New entities and revisions will always use this profile. Existing entities and revisions can be updated via <a href=\":link\">Encrypted fields entity type settings</a>"
+msgstr "フィールドの暗号化に使用する暗号化プロファイルを選択します。 新しいエンティティーおよびリビジョンは、常にこのプロファイルを使用します。 既存のエンティティーおよび改訂は、<a href=\":link\">暗号化フィールドのエンティティー・タイプ設定</a>を介して更新できます。"
+
+msgid "Exclude entities from persistent caches"
+msgstr "永続キャッシュからのエンティティーを除外する"
+
+msgid "This ensures unencrypted data is not exposed in the cache. However, it negatively impacts performance because it prevents caching of all entity types for which field encryption is enabled, even entity bundles that do not have any encrypted fields."
+msgstr "これにより、暗号化されていないデータがキャッシュに公開されないようにすることができます。 ただし、フィールド暗号化が有効になっているすべてのエンティティー・タイプ (暗号化されたフィールドを持たないエンティティー・バンドルも含む) のキャッシングを防止するため、パフォーマンスに悪影響を及ぼします。"
+
+msgid "Default properties"
+msgstr "デフォルト・プロパティー"
+
+msgid "Select which field properties will be checked by default on the field encryption settings form, per field type. Note that this does not change existing field settings, but merely sets sensible defaults."
+msgstr "フィールド・タイプごとに、フィールド暗号化設定フォームにおいてデフォルトでどのフィールド・プロパティーにチェック・マークが付けられるのかを選択します。なお、これによって既存のフィールド設定は変更されず、機能としてのデフォルトが設定されるだけです。"
+
+msgid "@field_type properties"
+msgstr "@field_type プロパティー"
+
+msgid "Specify the default properties to encrypt for this field type."
+msgstr "このフィールド・タイプで暗号化するデフォルト・プロパティーを指定します。"
+
+msgid "Batch update settings"
+msgstr "バッチ更新設定"
+
+msgid "Configure behaviour of the batch field update feature. When changing field encryption settings for fields that already contain data, a batch process will be started that updates the existing field values according to the new settings."
+msgstr "バッチ・フィールド更新機能の動作を構成します。データが既に含まれているフィールドのフィールド暗号化設定を変更した場合、新規設定に従って既存のフィールド値を更新するバッチ処理が開始されます。"
+
+msgid "Specify the number of entities to process on each field update batch execution. It is recommended to keep this number low, to avoid timeouts."
+msgstr "フィールド更新バッチの実行ごとに処理するエンティティーの数を指定します。タイムアウトが発生しないようにするため、この数は小さいままにすることをお勧めします。"
+
+msgid "Are you sure you want to update the encryption profile from %from to %to for %entity_type_plural?"
+msgstr "%entity_type_plural のために暗号化プロファイルを %from から %to に更新しますか?"
+
+msgid "Existing entities will be updated through a batch process."
+msgstr "既存のエンティティーはバッチ処理によって更新されます。"
+
+msgid "Decrypted data"
+msgstr "暗号化解除されたデータ"
+
+msgid "Encrypted field storage"
+msgstr "暗号化されたフィールド・ストレージ"
+
+msgid "Stores encrypted field data."
+msgstr "暗号化フィールド・データを保管します。"
+
+msgid "Updating @entity_type with ID @entity_id to use the latest field encryption settings"
+msgstr "最新のフィールド暗号化設定を使用するための ID @entity_id の @entity_type の更新"
+
+msgid "Field encrypt: update encrption profile."
+msgstr "フィールド暗号化: 暗号化プロファイルを更新します。"
+

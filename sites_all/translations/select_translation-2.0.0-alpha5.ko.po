@@ -1,0 +1,126 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Select translation"
+msgstr "번역 선택"
+
+msgid "Select which translation of a node should be displayed"
+msgstr "표시될 노드의 번역 선택"
+
+msgid "Select Translation"
+msgstr "번역 선택"
+
+msgid "Provides a Views filter to select which translation of a node should be displayed."
+msgstr "표시해야 하는 노드 번역을 선택하기 위한 보기 필터를 제공합니다."
+
+msgid "Multilingual"
+msgstr "다국어"
+
+msgid "The 'nid' argument must be an integer >= 1."
+msgstr "'nid' 인수는 1 이상의 정수여야 합니다."
+
+msgid "Select translation filter"
+msgstr "번역 필터 선택"
+
+msgid "Original node language fallback"
+msgstr "원래 노드 언어 대체"
+
+msgid "Default site language fallback"
+msgstr "기본 사이트 언어 대체"
+
+msgid "Language fallback candidates list"
+msgstr "언어 대체 후보 목록"
+
+msgid "Custom language priority"
+msgstr "사용자 정의 언어 우선순위"
+
+msgid "Select translation selection mode"
+msgstr "번역 선택 모드 선택"
+
+msgid "Use the current interface language; if not available use the original node language"
+msgstr "현재 인터페이스 언어를 사용합니다. 사용할 수 없는 경우 원래 노드 언어를 사용합니다."
+
+msgid "Use the current interface language; if not available use the default site language; if not available use the original node language"
+msgstr "현재 인터페이스 언어를 사용합니다. 사용할 수 없는 경우 기본 사이트 언어를 사용합니다. 사용할 수 없는 경우 원래 노드 언어를 사용합니다."
+
+msgid "Use the language fallback candidates list provided by the language manager service"
+msgstr "언어 관리자 서비스에서 제공하는 언어 대체 후보 목록 사용"
+
+msgid "Custom language priorities"
+msgstr "사용자 정의 언어 우선순위"
+
+msgid "Language priorities"
+msgstr "언어 우선순위"
+
+msgid ""
+"<p>If the selection mode is set to \"Custom language priorities\",\n"
+"                           a comma separated list of language codes can be specified.<br/>\n"
+"                           The filter will then return the node in the first available language\n"
+"                           in that list; falling back to the original node language if no match was found.</p>\n"
+"                           Some special values are recognized:\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" will be replaced with the current interface language;</li>\n"
+"                             <li>\"<em>default</em>\" will be replaced with the default site language;</li>\n"
+"                             <li>\"<em>original</em>\" will be replaced with the original node language.</li>\n"
+"                            </ul>\n"
+"                           Example:<br/><em>en,fr,current,default,original</em><br/>\n"
+"                           This will return:\n"
+"                           <ol>\n"
+"                             <li>the version in English, if available;</li>\n"
+"                             <li>if not, then the version in French, if available;</li>\n"
+"                             <li>if not, then the version in the current interface language, if available;</li>\n"
+"                             <li>if not, then the version in the default site language, if available;</li>\n"
+"                             <li>if none are available it will return the original node version.</li>\n"
+"                          </ol>"
+msgstr ""
+"<p>선택 모드가 \"사용자 정의 언어 우선순위\"로 설정되는 경우,\n"
+"                           언어 코드의 쉼표로 구분된 목록을 지정할 수 있습니다.<br/>\n"
+"                           필터는 해당 목록에 있는 첫 번째 사용 가능한 언어로 노드를\n"
+"                           리턴합니다. 일치를 찾을 수 없으면 원래 노드 언어로 되돌아갑니다.</p>\n"
+"                           몇 가지 특수한 값이 인식됩니다.\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\"는 현재 인터페이스 언어로 대체됩니다.</li>\n"
+"                             <li>\"<em>default</em>\"는 기본 사이트 언어로 대체됩니다.</li>\n"
+"                             <li>\"<em>original</em>\"은 원래 노드 언어로 대체됩니다.</li>\n"
+"                            </ul>\n"
+"                           예:<br/><em>en,fr,current,default,original</em><br/>\n"
+"                           이것은 다음을 리턴합니다.\n"
+"                           <ol>\n"
+"                             <li>영어로 된 버전(사용 가능한 경우);</li>\n"
+"                             <li>그렇지 않으면, 프랑스어로 된 버전(사용 가능한 경우);</li>\n"
+"                             <li>그렇지 않으면, 현재 인터페이스 언어로 된 버전(사용 가능한 경우);</li>\n"
+"                             <li>그렇지 않으면, 기본 사이트 언어로 된 버전(사용 가능한 경우);</li>\n"
+"                             <li>사용 가능한 버전이 없으면 원래 노드 버전을 리턴합니다.</li>\n"
+"                          </ol>"
+
+msgid "Display default language content *only*, if the currently selected user language is the default site language."
+msgstr "현재 선택된 사용자 언어가 기본 사이트 언어인 경우 기본 언어 컨텐츠*만* 표시합니다."
+
+msgid ""
+"When you check this option, the order chosen above will be ignored when current language = site default language,\n"
+"        instead it will only show translations for the default language. "
+msgstr ""
+"이 옵션을 선택할 때, 현재 언어가 사이트 기본 언어이면 위에 선택된 순서는 무시됩니다.\n"
+"        대신 기본 언어에 대한 번역만 표시합니다. "
+
+msgid "Return content in the site default language when a translation for the current language *does* exist, but it is unpublished."
+msgstr "현재 언어에 대한 번역이 존재하지만 공개되지 않은 경우 컨텐츠를 사이트 기본 언어로 리턴합니다."
+
+msgid ""
+"When you check this option, in addition to the order chosen above, content will be shown in the default site language in the event that the translation in the current language is unpublished.<br/>\n"
+"      <strong>NOTE</strong>: This option assumes that the view is already filtering out unpublished content with the <code>Published (=Yes)</code> criterion, otherwise both the published and unpublished node will be displayed."
+msgstr ""
+"이 옵션을 선택하면 위에 선택된 순서 외에 컨텐츠는 현재 언어로 된 번역이 미공개된 이벤트에서 기본 사이트 언어로 표시됩니다.<br/>\n"
+"      <strong>참고</strong>: 이 옵션은 보기가 이미 <code>Published (=Yes)</code> 기준으로 미공개된 컨텐츠를 필터링하고 있다고 가정합니다. 그렇지 않으면 공개 및 미공개 노드가 둘 다 표시됩니다."
+

@@ -1,0 +1,457 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Vote Result \"@result_function\" for @plural_label"
+msgstr "Risultato del voto \"@result_function\" per @plural_label"
+
+msgid "This includes vote result \"@result_function\" for the @plural_label"
+msgstr "Include il risultato del voto \"@result_function\" per @plural_label"
+
+msgid "Vote Result \"@result_function\" for @plural_label: @vote_type_label"
+msgstr "Risultato del voto \"@result_function\" per or @plural_label: @vote_type_label"
+
+msgid "This includes vote result \"@result_function\" for the @plural_label voted with @vote_type"
+msgstr "Include il risultato del voto \"@result_function\" per @plural_label votato con @vote_type"
+
+msgid "About"
+msgstr "Informazioni"
+
+msgid "VotingAPI helps developers who want to use a standardized API and schema for storing, retrieving and tabulating votes for Drupal content."
+msgstr "VotingAPI consente agli sviluppatori che desiderano utilizzare uno schema ed un'API standardizzati di memorizzare, richiamare e visualizzare in formato tabella i voti per il contenuto Drupal."
+
+msgid "Please view the %url page for more details."
+msgstr "Visualizzare la pagina %url per ulteriori dettagli."
+
+msgid "Voting API"
+msgstr "API di votazione"
+
+msgid "Uses"
+msgstr "Usa"
+
+msgid "General"
+msgstr "Generale"
+
+msgid "VotingAPI uses a flexible, easy-to-use framework for rating, voting, moderation, and consensus-gathering modules in Drupal. Module developers use it to focus on their ideas (say, providing a \"rate this thread\" widget at the bottom of each forum post) without worrying about the grunt work of storing votes, preventing ballot-stuffing, calculating the results, and so on."
+msgstr "VotingAPI utilizza un framework flessibile, facile da utilizzare per i moduli di valutazione, votazione, moderazione e raccolta di consenso in Drupal. Gli sviluppatori del modulo lo utilizzano per focalizzare le idee (fornendo un widget \"valuta questo thread\" alla fine di ogni post del forum) senza preoccuparsi di memorizzare i voti, evitando di contare i voti, di calcolare i risultati e così via."
+
+msgid "Basic Concepts and Features"
+msgstr "Concetti e funzioni di base"
+
+msgid "VotingAPI does NOT directly expose any voting mechanisms to end users. It is a framework designed to make life easier for other developers, and to standardize voting data for consumption by other modules (like Views)."
+msgstr "VotingAPI NON presenta direttamente nessun meccanismo di voto agli utenti finali. Si tratta di un framework progettato per semplificare la vita ad altri sviluppatori e per standardizzare i dati di voto per l'utilizzo da parte di altri moduli (come Viste)."
+
+msgid "Two kinds of records are stored: individual votes by each user on each piece of content, and cached \"result\" records. The cached records aggregate calculated values like the average vote for a piece of content, how many people voted on it, etc. Each time a user votes, the cached result records are automatically recalculated. This means that no \"on-the-fly\" calculations have to be done when displaying content ratings."
+msgstr "Vengono memorizzati due tipi di record: singoli voti di ogni utente in ogni parte di contenuto e record memorizzati nella cache \"risultato\" . I record memorizzati nella cache aggregano i valori calcolati come il voto medio per qualsiasi contenuto, quante persone hanno votato, ecc. Ogni volta che un utente vota, i record del risultato memorizzati nella cache, vengono automaticamente ricalcolati. Ciò significa che non deve essere effettuato nessun calcolo  \"in tempo reale\" quando si visualizzano le valutazioni del contenuto."
+
+msgid "Provides a voting API that other modules can make use of."
+msgstr "Fornisce un'API di votazione che può essere utilizzata da altri moduli."
+
+msgid "Voting"
+msgstr "Votazione"
+
+msgid "Add vote type"
+msgstr "Aggiungi tipo di voto"
+
+msgid "Voting API Settings"
+msgstr "Impostazioni API di votazione"
+
+msgid "Vote Types"
+msgstr "Tipi di voto"
+
+msgid "Configure Voting API."
+msgstr "Configurare API di votazione."
+
+msgid "Manage Vote Types."
+msgstr "Gestisci i tipi di voto."
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Edit"
+msgstr "Modifica"
+
+msgid "List"
+msgstr "Elenco"
+
+msgid "Administer Voting API"
+msgstr "Amministra API di votazione"
+
+msgid "Allow access to configure Voting API."
+msgstr "Consente l'accesso alla configurazione dell'API di votazione."
+
+msgid "Administer Vote Types"
+msgstr "Amministra tipi di voto"
+
+msgid "Allow access to create/edit vote types."
+msgstr "Consente l'accesso alla creazione/modifica dei tipi di voto."
+
+msgid "Delete Votes"
+msgstr "Cancella voti"
+
+msgid "Allow access to delete any vote."
+msgstr "Consenti l'accesso per eliminare qualsiasi voto."
+
+msgid "Voting API settings"
+msgstr "Impostazioni API di votazione"
+
+msgid "Delete"
+msgstr "Elimina"
+
+msgid "VotingApi settings"
+msgstr "Impostazioni API di votazione"
+
+msgid "Anonymous vote rollover"
+msgstr "Rollover voto anonimo "
+
+msgid "Registered user vote rollover"
+msgstr "Rollover voto utente registrato "
+
+msgid "Vote tallying"
+msgstr "Conteggio dei voti"
+
+msgid "Delete everywhere"
+msgstr "Elimina ovunque"
+
+msgid "Vote Type"
+msgstr "Tipo di voto"
+
+msgid "Machine-readable name"
+msgstr "Nome ad uso interno"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Type of vote value (percentage, points, etc.)"
+msgstr "Tipo di valore del voto (percentuale, punti, ecc.)"
+
+msgid "Description"
+msgstr "Descrizione"
+
+msgid "Voting API widget field settings."
+msgstr "Impostazioni del campo del widget API di votazione."
+
+msgid "Vote plugin"
+msgstr "Plugin voto"
+
+msgid "Vote type"
+msgstr "Tipo di voto"
+
+msgid "Status"
+msgstr "Stato"
+
+msgid "Result function"
+msgstr "Funzione risultato"
+
+msgid "Widget format"
+msgstr "Formato widget"
+
+msgid "Default value"
+msgstr "Valore predefinito"
+
+msgid "VotingAPI tokens"
+msgstr "Token VotingAPI"
+
+msgid "Dynamic Tokens for VotingAPI."
+msgstr "Token dinamici per VotingAPI."
+
+msgid "Vote count"
+msgstr "Conteggio voti"
+
+msgid "Number of votes."
+msgstr "Numero di voti"
+
+msgid "Average Result"
+msgstr "Risultato medio"
+
+msgid "Average result of votes."
+msgstr "Risultato medio dei voti."
+
+msgid "Best Vote"
+msgstr "Miglior voto"
+
+msgid "Best Vote cast."
+msgstr "Miglior voto"
+
+msgid "Worst Vote"
+msgstr "Peggior voto"
+
+msgid "Worst Vote cast."
+msgstr "Peggior voto"
+
+msgid "This module enables tokens for all entity types that has <kbd>voting_api_field</kbd>."
+msgstr "Questo modulo abilita i token per tutti i tipi di entità che hanno  <kbd>voting_api_field</kbd>."
+
+msgid "Usage"
+msgstr "Utilizzo"
+
+msgid "Tokens are dynamic and you have to pass <emph>vote_type</emph> as the last parameter. Module defines four tokens:"
+msgstr "I token sono dinamici ed è necessario passare <emph>vote_type</emph> come ultimo parametro. Il modulo definisce quattro token:"
+
+msgid "<ul><li>Vote count :: <code>[votingapi_ENTITY_TYPE_token:vote_count:VOTE_TYPE]</code></li>"
+msgstr "<ul><li>Conteggio voti:: <code>[votingapi_ENTITY_TYPE_token:vote_count:VOTE_TYPE]</code></li>"
+
+msgid "<li>Vote average :: <code>[votingapi_ENTITY_TYPE_token:vote_average:VOTE_TYPE]</code></li>"
+msgstr "<li>Media voti :: <code>[votingapi_ENTITY_TYPE_token:vote_average:VOTE_TYPE]</code></li>"
+
+msgid "<li>Best vote :: <code>[votingapi_ENTITY_TYPE_token:best_vote:VOTE_TYPE]</code></li>"
+msgstr "<li>Miglior voto :: <code>[votingapi_ENTITY_TYPE_token:best_vote:VOTE_TYPE]</code></li>"
+
+msgid "<li>Worst vote :: <code>[votingapi_ENTITY_TYPE_token:worst_vote:VOTE_TYPE]</code></li>"
+msgstr "<li>Peggior voto :: <code>[votingapi_ENTITY_TYPE_token:worst_vote:VOTE_TYPE]</code></li>"
+
+msgid "Voting API Tokens"
+msgstr "Token API di voto"
+
+msgid "Token support for Voting API"
+msgstr "Supporto token per l'API di voto"
+
+msgid "Edit %label vote type"
+msgstr "Modifica tipo di voto %label"
+
+msgid "The human-readable name of this vote type. This text will be displayed as part of the list on the <em>Add vote type</em> page. This name must be unique."
+msgstr "Il nome leggibile di questo tipo di voto. Questo testo verrà visualizzato come parte dell'elenco nella pagina <em>Aggiungi tipo di voto</em>. Questo nome deve essere univoco."
+
+msgid "A unique machine-readable name for this vote type. It must only contain lowercase letters, numbers, and underscores."
+msgstr "Un nome univoco leggibile dalla macchina per questo tipo di voto. Deve contenere solo lettere minuscole, numeri e caratteri di sottolineatura."
+
+msgid "Value type"
+msgstr "Tipo di valore"
+
+msgid "The type of value for this vote (percentage, points, etc.)"
+msgstr "Il tipo di valore per questo voto (percentuale, punti, ecc.)"
+
+msgid "Describe this vote type. The text will be displayed on administrative pages."
+msgstr "Descrive questo tipo di voto. Il testo verrà visualizzato nelle pagine amministrative."
+
+msgid "Save vote type"
+msgstr "Salva tipo di voto"
+
+msgid "Delete vote type"
+msgstr "Elimina tipo di voto"
+
+msgid "The vote type %name has been updated."
+msgstr "Il tipo di voto %name è stato aggiornato."
+
+msgid "The vote type %name has been added."
+msgstr "Il tipo di voto %name è stato aggiunto."
+
+msgid "View"
+msgstr "Visualizza"
+
+msgid "Added vote type %name."
+msgstr "Tipo di voto aggiunto %name."
+
+msgid "Id"
+msgstr "ID"
+
+msgid "Label"
+msgstr "Etichetta"
+
+msgid "No vote types available. <a href=\"@link\">Add vote type</a>."
+msgstr "Nessun tipo di voto disponibile. <a href=\"@link\">Aggiungere il tipo di voto</a>."
+
+msgid "Generated @vtype votes for @etype entities."
+msgstr "Generati i voti @vtype per le entità @etype."
+
+msgid "Rebuilt voting results for @type votes."
+msgstr "Risultati della votazione rigenerati per i voti @type."
+
+msgid "Rebuilt voting results for @type id: @entity_id."
+msgstr "Ricreati i risultati di voto per id @type: @entity_id."
+
+msgid "Delete @type voting data?"
+msgstr "Eliminare i dati della votazione @type?"
+
+msgid "Flushed vote data for @type entities."
+msgstr "Dati del voto eliminati per le entità @type."
+
+msgid "ID"
+msgstr "ID"
+
+msgid "The vote ID."
+msgstr "L'ID del voto."
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "The vote UUID."
+msgstr "L'UUID del voto."
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "The vote type."
+msgstr "Il tipo di voto."
+
+msgid "Entity Type"
+msgstr "Tipo di entità"
+
+msgid "The type from the voted entity."
+msgstr "Il tipo dall'entità votata."
+
+msgid "Voted entity"
+msgstr "Entità votata"
+
+msgid "The ID from the voted entity"
+msgstr "L'ID dall'entità votata"
+
+msgid "Value"
+msgstr "Valore"
+
+msgid "The numeric value of the vote."
+msgstr "Il valore numerico del voto."
+
+msgid "Value Type"
+msgstr "Tipo di valore"
+
+msgid "Authored by"
+msgstr "Creato da"
+
+msgid "The user who submitted the vote."
+msgstr "L'utente che ha inoltrato il voto."
+
+msgid "Created"
+msgstr "Creato"
+
+msgid "The time that the entity was created."
+msgstr "L'ora di creazione dell'entità."
+
+msgid "Vote Source"
+msgstr "Origine voto"
+
+msgid "The IP address hash from the user who submitted the vote."
+msgstr "L'hash dell'indirizzo IP dell'utente che ha inviato il voto."
+
+msgid "Vote"
+msgstr "Voto"
+
+msgid "Votes"
+msgstr "Voti"
+
+msgid "vote"
+msgstr "voto"
+
+msgid "votes"
+msgstr "voti"
+
+msgid "The vote result ID."
+msgstr "L'ID del risultato del voto."
+
+msgid "Function"
+msgstr "Funzione"
+
+msgid "Function to apply to the numbers."
+msgstr "Funzione da applicare ai numeri."
+
+msgid "Vote result"
+msgstr "Risultato del voto"
+
+msgid "Vote results"
+msgstr "Risultati del voto"
+
+msgid "vote result"
+msgstr "risultato del voto"
+
+msgid "vote results"
+msgstr "risultati del voto"
+
+msgid "Vote Result"
+msgstr "Risultato del voto"
+
+msgid "The Vote Result ID."
+msgstr "ID del risultato del voto."
+
+msgid "Vote types"
+msgstr "Tipi di voto"
+
+msgid "vote type"
+msgstr "tipo di voto"
+
+msgid "vote types"
+msgstr "tipi di voto"
+
+msgid "The Vote ID."
+msgstr "L'ID del voto."
+
+msgid "The amount of time that must pass before two anonymous votes from the same computer are considered unique. Setting this to 'never' will eliminate most double-voting, but will make it impossible for multiple anonymous on the same computer (like internet cafe customers) from casting votes."
+msgstr "L'intervallo di tempo che deve trascorrere prima che due voti anonimi inviati dallo stesso computer siano considerati univoci. Impostando questa opzione su 'Mai', la maggior parte dei voti doppi viene eliminata, ma l'invio del voto da parte di più utenti anonimi sullo stesso computer (ad esempio, i clienti di un internet cafe) non sarà possibile."
+
+msgid "The amount of time that must pass before two registered user votes from the same user ID are considered unique. Setting this to 'never' will eliminate most double-voting for registered users."
+msgstr "L'intervallo di tempo che deve trascorrere prima che i voti di due utenti registrati dallo stesso ID utente siano considerati univoci. Impostando questa opzione su 'Mai', la maggior parte dei doppi voti per gli utenti registrati verrà eliminata."
+
+msgid "Calculation schedule"
+msgstr "Pianificazione del calcolo"
+
+msgid "On high-traffic sites, administrators can use this setting to postpone the calculation of vote results."
+msgstr "Su siti con traffico elevato, gli amministratori possono utilizzare questa impostazione per ritardare il calcolo dei risultati del voto."
+
+msgid "Tally results whenever a vote is cast"
+msgstr "Conteggia i risultati ogni volta che viene espresso un voto"
+
+msgid "Tally results at cron-time"
+msgstr "Conteggia i risultati al momento del cron"
+
+msgid "Do not tally results automatically: I am using a module that manages its own vote results."
+msgstr "Non conteggiare i risultati automaticamente: utilizzo un modulo che gestisce i propri risultati del voto."
+
+msgid "Allow deleting votes to someone else's entity when owner user of this votes is deleting."
+msgstr "Consentire l'eliminazione dei voti all'entità di qualcun altro quando l'utente proprietario di questo voto sta eliminando."
+
+msgid "Are you sure you want to delete the vote?"
+msgstr "Si è certi di voler eliminare il voto?"
+
+msgid "The vote by %user on @entity-type %label has been deleted."
+msgstr "Il voto di %user su @entity-type %label è stato eliminato."
+
+msgid "You are about to delete a vote by %user on @entity-type %label. This action cannot be undone."
+msgstr "Si sta per eliminare un voto per %user su @entity-type %label. L'operazione non può essere annullata."
+
+msgid "%type is used by 1 piece of content on your site. You can not remove this vote type until you have removed that vote."
+msgid_plural "%type is used by @count pieces of content on your site. You may not remove %type until you have removed all of the %type votes."
+msgstr[0] "%type viene utilizzato da una parte di contenuto sul sito. Non è possibile rimuovere questo tipo di voto fino a quando non è stato rimosso quel voto."
+msgstr[1] "%type viene utilizzato da @count parti di contenuto sul sito. Non è possibile rimuovere %type fino a quando non si sono rimossi tutti i voti di %type ."
+
+msgid "Average"
+msgstr "Media"
+
+msgid "The average vote value."
+msgstr "Il valore del voto medio. "
+
+msgid "Count"
+msgstr "Numero"
+
+msgid "The number of votes cast."
+msgstr "Il numero di voti espressi. "
+
+msgid "Sum"
+msgstr "Somma"
+
+msgid "The total of all vote values."
+msgstr "Il totale di tutti i valori del voto."
+
+msgid "Vote ID"
+msgstr "ID voto"
+
+msgid "Entity ID"
+msgstr "ID entità"
+
+msgid "Tag"
+msgstr "Tag"
+
+msgid "User ID"
+msgstr "ID utente"
+
+msgid "Timestamp"
+msgstr "Data/Ora"
+

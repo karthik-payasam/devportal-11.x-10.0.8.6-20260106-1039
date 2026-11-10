@@ -1,0 +1,137 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Fulltext field database columns updated."
+msgstr "Fulltext alanı veritabanı sütunları güncellendi."
+
+msgid "Primary keys added to all denormalized index tables."
+msgstr "Normalleştirilmekten çıkarılmış tüm dizin tabloolarına eklenmiş birincil anahtarlar."
+
+msgid "Database Search"
+msgstr "Veritabanı Araması"
+
+msgid "Offers an implementation of the Search API that uses database tables for indexing content."
+msgstr "İçerik dizinleme için veritabanı tablolarını kullanan bir Arama API'si uygulaması sunar."
+
+msgid "Search"
+msgstr "Ara"
+
+msgid "Search API DB settings"
+msgstr "Arama API'si Veritabanı ayarları"
+
+msgid "Name of the database we are connecting to"
+msgstr "Bağlandığımız veritabanının adı"
+
+msgid "Minimum length of indexed words"
+msgstr "Dizinlenen sözcüklerin minimum uzunluğu"
+
+msgid "The matching mode – \"words\", \"prefix\" or \"partial\""
+msgstr "Eşleşen kip – \"sözcükler\", \"önek\" veya \"kısmi\""
+
+msgid "Autocomplete configuration"
+msgstr "Otomatik tamamlama yapılandırması"
+
+msgid "Suggest suffix"
+msgstr "Sonek öner"
+
+msgid "Suggest words"
+msgstr "Sözcük öner"
+
+msgid "Maximum occurrences of a term until autocomplete suggestions ignores it"
+msgstr "Otomatik tamamlama önerileri tarafından yoksayılıncaya kadar bir terim maksimum tekrar saıyısı"
+
+msgid "Database Search Defaults"
+msgstr "Veritabanı Araması Varsayılanları"
+
+msgid "Enable this module for a best-practice default setup of Search API with the Database backend. After installation it is recommended to uninstall this module again for performance reasons. The provided configuration will not be removed."
+msgstr "Veritabanı arka ucuyla Arama API'nizin önerilen varsayılan kurulumu için bu modülü etkinleştirin. Kurulumdan sonra performans nedenleriyle bu modülün yeniden kaldırılması önerilir. Sağlanan yapılandırma kaldırılmaz."
+
+msgid "Database"
+msgstr "Database"
+
+msgid "Select the database key and target to use for storing indexing information in. Cannot be changed after creation."
+msgstr "İçinde dizinleme bilgilerinin depolanması için kullanılacak veritabanı anahtarı ve hedefini seçin. Oluşturulduktan sonra değiştirilemez."
+
+msgid "Minimum word length"
+msgstr "Minimum sözcük uzunluğu"
+
+msgid "The minimum number of characters a word must consist of to be indexed"
+msgstr "Bir sözcüğün dizinlenmesi için içermesi gereken minimum karakter sayısı"
+
+msgid "Partial matching"
+msgstr "Kısmi eşleştirme"
+
+msgid "Match whole words only"
+msgstr "Yalnızca tam sözcükleri eşleştir"
+
+msgid "Match on parts of a word"
+msgstr "Bir sözcüğün bölümlerinde eşleştir"
+
+msgid "Match words starting with given keywords"
+msgstr "Belirtilen anahtar sözcüklerle başlayan sözcükleri eşleştir"
+
+msgid "Autocomplete settings"
+msgstr "Otomatik tamamlama ayarları"
+
+msgid "These settings allow you to configure how suggestions are computed when autocompletion is used. If you are seeing many inappropriate suggestions you might want to deactivate the corresponding suggestion type. You can also deactivate one method to speed up the generation of suggestions."
+msgstr "Bu ayarlar, otomatik tamamlama kullanıldığında önerilerin nasıl hesaplandığını yapılandırmanızı sağlar. Çok sayıda uygun olmayan öneri görüyorsanız ilgili öneri tipini devre dışı bırakmak isteyebilirsiniz. Önerilerin oluşturulmasını hızlandırmak için de bir yöntemi devre dışı bırakabilirsiniz."
+
+msgid "Suggest word endings"
+msgstr "Sözcük sonları öner"
+
+msgid "Suggest endings for the currently entered word."
+msgstr "Girilen sözcük için sözcük sonları önerir."
+
+msgid "Suggest additional words"
+msgstr "Ek sözcükler öner"
+
+msgid "Suggest additional words the user might want to search for."
+msgstr "Kullanıcının aramak isteyebileceği ek sözcükler önerir."
+
+msgid "None selected yet"
+msgstr "Henüz seçilmedi"
+
+msgid "none"
+msgstr "yok"
+
+msgid "Autocomplete suggestions"
+msgstr "Otomatik tamamlama önerileri"
+
+msgid "No valid search keys were present in the query."
+msgstr "Sorguda geçerli arama anahtarı yoktu."
+
+msgid "Unknown sort order @order. Assuming \"@default\"."
+msgstr "Bilinmeyen sıralama düzeni @order. \"@default\" varsayılıyor."
+
+msgid "Unknown facet field @field."
+msgstr "Bilinmeyen kategori alanı @field."
+
+msgid "Facets on location fields are currently not supported."
+msgstr "Konum alanlarındaki kategoriler şu anda desteklenmiyor."
+
+msgid "Unknown field @field: please check (and re-save) the index's fields settings."
+msgstr "Bilinmeyen alan @field: lütfen dizinin alan ayarlarını kontrol edin ve (yeniden kaydedin)."
+
+msgid "An overlong word (more than 50 characters) was encountered while indexing: %word.<br />Since database search servers currently cannot index words of more than 50 characters, the word was truncated for indexing. If this should not be a single word, please make sure the \"Tokenizer\" processor is enabled and configured correctly for index %index."
+msgstr "Dizin oluşturma sırasında çok uzun bir sözcükle (50'den fazla karakter) karşılaşıldı: %word.<br />Veritabanı arama sunucuları şu anda 50 karakterden uzun olan sözcükleri dizinleyemediğinden, dizinleme için sözcük kesildi. Bu tek bir sözcük olmayacaksa lütfen \"Tokenizer\" işlemcisinin etkinleştirilmiş ve %index dizini için doğru şekilde yapılandırıldığından emin olun."
+
+msgid "An overlong value (more than 255 characters) was encountered while indexing: %value.<br />Database search servers currently cannot index such values correctly – the value was therefore trimmed to the allowed length."
+msgstr "Dizineme sırasında çok uzun bir değerle (255 karakterden fazla) karşılaşıldı: %value.<br />Veritabanı arama sunucuları şu anda bu tür değerleri doğru olarak dizinleyemediğinden değer, izin verilen uzunluğa göre kısaltıldı."
+
+msgid "Error while adding facets: only \"item_id\" field should be used, used are: @fields."
+msgstr "Kategoriler eklenirken hata oluştu: yalnızca \"item_id\" alanı kullanılmalı, kullanılan: @fields."
+
+msgid "Indexes items in the database. Supports several advanced features, but should not be used for large sites."
+msgstr "Veritabanındaki öğeleri dizinler. Bazı gelişmiş özellikleri destekler, ancak büyük siteler için kullanılmamalıdır."
+

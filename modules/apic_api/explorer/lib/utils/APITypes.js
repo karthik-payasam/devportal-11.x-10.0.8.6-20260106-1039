@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.APITypes=void 0,exports.getAPIType=b;var a=exports.APITypes={graphql:"GraphQL",wsdl:"SOAP",rest:"REST",asyncapi:"AsyncAPI"};function b(b){if(b.asyncapi)return a.asyncapi;var c=b["x-ibm-configuration"]&&b["x-ibm-configuration"].type;return c?a[c]?a[c]:c:a.rest}

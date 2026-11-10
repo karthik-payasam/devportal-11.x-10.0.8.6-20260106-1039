@@ -1,0 +1,176 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Warmer"
+msgstr "워머"
+
+msgid "Module that provides infrastructure for common cache warming/pre-fetching techniques."
+msgstr "공통 캐시 워밍/프리페칭 기술을 위한 인프라를 제공하는 모듈입니다."
+
+msgid "Cache warming"
+msgstr "캐시 워밍"
+
+msgid "Configure cache warming behaviors to improve application performance."
+msgstr "애플리케이션 성능 향상을 위한 캐시 워밍 동작을 구성합니다."
+
+msgid "Warm caches"
+msgstr "캐시 워밍"
+
+msgid "Settings"
+msgstr "설정"
+
+msgid "Configure cache warmers"
+msgstr "캐시 워머 구성"
+
+msgid "Warmer Settings"
+msgstr "워머 설정"
+
+msgid "Warmers"
+msgstr "워머"
+
+msgid "CDN Warmer"
+msgstr "CDN 워머"
+
+msgid "Executes HTTP requests to warm the edge caches. It is useful without a CDN as well, as it will also warm Varnish and Page Cache."
+msgstr "에지 캐시를 워밍하기 위해 HTTP 요청을 실행합니다. 이는 바니시 및 페이지 캐시도 워밍하므로 CDN 없이도 유용합니다."
+
+msgid "URLs"
+msgstr "URL"
+
+msgid "Enter the list of URLs. One on each line. Examples: https://example.org/foo/bar, /foo/bar."
+msgstr "URL 목록을 입력하십시오. 한 줄에 하나씩 입력하십시오. 예: https://example.org/foo/bar, /foo/bar."
+
+msgid "Headers"
+msgstr "헤더"
+
+msgid "Specific headers to use when making HTTP requests. Format: <code>Header-Name: value1; value2</code>"
+msgstr "HTTP 요청 작성 시 사용할 특정 헤더입니다. 형식: <code>머리글 이름: 값 1; 값 2</code>"
+
+msgid "Enable SSL verification"
+msgstr "SSL 확인 사용"
+
+msgid "Enable SSL verification. Recommended to keep it checked for security reasons."
+msgstr "SSL 확인을 사용합니다. 보안상의 이유로 이를 항상 선택하도록 권장합니다."
+
+msgid "Maximum number of concurrent Requests."
+msgstr "최대 동시 요청 수입니다."
+
+msgid "The maximum number of concurrent requests."
+msgstr "최대 동시 요청 수입니다."
+
+msgid "CDN"
+msgstr "CDN"
+
+msgid "minPriority should be a float between 0 and 1."
+msgstr "minPriority는 0-1 사이의 실수여야 합니다."
+
+msgid "Sitemaps"
+msgstr "사이트맵"
+
+msgid "Enter the list of sitemap URLs. One on each line. Examples: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+msgstr "사이트맵 URL 목록을 입력하십시오. 한 줄에 하나씩 입력하십시오. 예: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+
+msgid "Minimum Priority"
+msgstr "최소 우선순위"
+
+msgid "URLs with a lower priority than the configured will not be warmed. A float value between 0 and 1."
+msgstr "구성된 우선순위보다 낮은 우선순위의 URL은 워밍되지 않습니다. 0-1 사이의 실수 값입니다."
+
+msgid "This defines the maximum number of concurrent requests."
+msgstr "최대 동시 요청 수를 정의합니다."
+
+msgid "There was an error parsing the Sitemap in %location. Please check the watchdog logs for more information."
+msgstr "%location에서 사이트 맵을 구문 분석하는 중에 오류가 발생했습니다. 자세한 정보는 watchdog 로그를 확인하십시오."
+
+msgid "CDN via Sitemap"
+msgstr "사이트맵을 통한 CDN"
+
+msgid "Collects the URLs to warm from the sitemap. Then uses the CDN warmer for those."
+msgstr "사이트맵에서 워밍할 URL을 수집합니다. 그런 다음 해당 URL에 CDN 워머를 사용합니다."
+
+msgid "All headers must have a colon. Follow the format: <code>the-name: the-value</code>"
+msgstr "모든 헤더에는 콜론이 있어야 합니다. <code>the-name: the-value</code> 형식을 따르십시오."
+
+msgid "Entity Warmer"
+msgstr "엔티티 워머"
+
+msgid "Warms the entity cache for the configured entity types."
+msgstr "구성된 엔티티 유형에 대한 엔티티 캐시를 워밍합니다."
+
+msgid "Entity Types"
+msgstr "엔티티 유형"
+
+msgid "Enable the entity types to warm asynchronously."
+msgstr "엔티티 유형을 비동기적으로 워밍하도록 설정합니다."
+
+msgid "Entity"
+msgstr "엔티티"
+
+msgid "Loads entities from the selected entity types & bundles to warm the entity cache."
+msgstr "엔티티 캐시를 웜시키기 위해 선택된 엔티티 유형 및 번들의 엔티티를 로드합니다."
+
+msgid "@total items enqueued for cache warming."
+msgstr "캐시 워밍을 위해 @total개의 항목을 큐에 넣었습니다."
+
+msgid "If you need your items into cache right away you can run \"drush queue-run warmer\"."
+msgstr "즉시 캐시에 항목이 필요한 경우 \"drush 큐 실행 워머\"를 실행할 수 있습니다."
+
+msgid "Warming caches in @count batches from the \"warmer\" queue."
+msgstr "\"워머\" 큐에서 @count 일괄처리로 캐시를 워밍합니다."
+
+msgid "Warmer plugin(s) not found: !names."
+msgstr "워머 플러그인을 찾을 수 없음: !names."
+
+msgid "This page allows you to enqueue cache warming operations manually. This will put the cache warming operations in a queue. If you want to actually execute them right away you can force processing the queue. A good way to do that is by installing the <a href=\":url\">Queue UI</a> module or using Drush. This module will provide a UI to process an entire queue."
+msgstr "이 페이지에서는 캐시 워밍 조작을 수동으로 큐에 넣을 수 있습니다. 이는 캐시 워밍 조작을 큐에 넣습니다. 실제로 이를 즉시 실행하려는 경우 큐를 강제로 처리할 수 있습니다. 이를 수행하는 좋은 방법은 <a href=\":url\">Queue UI</a> 모듈을 설치하거나 Drush를 사용하는 것입니다. 이 모듈은 전체 큐를 처리하기 위한 UI를 제공합니다."
+
+msgid "Description"
+msgstr "설명"
+
+msgid "No warmers available. Enable the Entity Warmer submodule, or try installing extending modules like JSON:API Boost."
+msgstr "사용 가능한 워머가 없습니다. 엔티티 워머 서브모듈을 사용하거나, JSON:API 부스트와 같은 확장 모듈을 설치하십시오."
+
+msgid "Warm Caches"
+msgstr "캐시 워밍"
+
+msgid "List of queues"
+msgstr "큐 목록"
+
+msgid "Configure the cache warming behaviors. Each cache warmer is a plugin that may contain specific settings. They are all configured here."
+msgstr "캐시 워밍 동작을 구성합니다. 각 캐시 워머는 특정 설정을 포함할 수 있는 플러그인입니다. 이는 모두 여기서 구성됩니다."
+
+msgid "Settings saved for plugin(s): %names"
+msgstr "플러그인에 대해 저장된 설정: %name"
+
+msgid "Frequency should be a positive number."
+msgstr "빈도는 양수여야 합니다."
+
+msgid "Batch size should be a number greater than 1."
+msgstr "일괄처리 크기는 1보다 큰 수여야 합니다."
+
+msgid "Frequency"
+msgstr "빈도"
+
+msgid "Only re-enqueue warming operations after at least this many seconds have passed."
+msgstr "적어도 몇 초가 지난 후에만 워밍 조작을 다시 큐에 넣으십시오."
+
+msgid "Batch Size"
+msgstr "일괄처리 크기"
+
+msgid "Number of items to enqueue and process in a single go."
+msgstr "단일 이동에서 큐에 넣고 처리할 항목 수입니다."
+
+msgid "Cache warmer"
+msgstr "캐시 워머"
+

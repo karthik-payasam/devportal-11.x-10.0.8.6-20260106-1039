@@ -1,0 +1,131 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "No destination directory provided."
+msgstr "Bir hedef dizin sağlanmadı."
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "Helper module to quickly import a list of terms with parent structure."
+msgstr "Üst yapıya sahip terimler listesini hızla içe aktarmak için Yardımcı modülü."
+
+msgid "Term CSV Export/Import"
+msgstr "Terim CSV Dışa/İçe Aktarma"
+
+msgid "Import and Export Taxonomy terms as csv."
+msgstr "Taksonomi terimlerini csv olarak İçe ve Dışa Aktarın."
+
+msgid "Taxonomy"
+msgstr "Sınıflandırma"
+
+msgid "Import and Export Taxonomy Terms as CSV"
+msgstr "Taksonomi Terimlerini CSV Olarak İçe ve Dışa Aktar"
+
+msgid "Term CSV Import"
+msgstr "Terim CSV İçe Aktarma"
+
+msgid "Term CSV Export"
+msgstr "Terim CSV Dışa Aktarma"
+
+msgid "Administer CSV Term Import"
+msgstr "CSV Terim İçe Aktarmayı Yönet"
+
+msgid "Allows a user to import taxonomy terms."
+msgstr "Bir kullanıcının taksonomi terimlerini içe aktarmasına olanak sağlar."
+
+msgid "CSV Term Import"
+msgstr "CSV Terim İçe Aktarma"
+
+msgid "CSV Term Export"
+msgstr "CSV Terim Dışa Aktarma"
+
+msgid "The header keys were not included in the import."
+msgstr "Üstbilgi anahtarları, içe aktarmaya dahil edilmedi."
+
+msgid "Line with \"@part\" could not be parsed. Incorrect number of values: @count."
+msgstr "\"@part\" içeren satır ayrıştırılamadı. Değer sayısı yanlış: @count."
+
+msgid "The term @name has multiple matches. Ignoring."
+msgstr "@name terimi birden çok eşleşme içeriyor. Yoksayılıyor."
+
+msgid "The term with id @id already exists and preserve existing terms is checked. No modification has been made."
+msgstr "@id tanıtıcılı terim zaten var ve var olan terimleri koruma seçeneği işaretli. Herhangi bir değişiklik yapılmadı."
+
+msgid "The Term ID already exists."
+msgstr "Terim tanıtıcısı zaten var."
+
+msgid "More than 1 terms are named @name. Cannot distinguish by name. Try using id export/import."
+msgstr "1'den fazla terim, @name olarak adlandırılmış. Ada göre ayırt edilemiyor. Tanıtıcı dışa/içe aktarımını kullanmayı deneyin."
+
+msgid "The field data <em>@data</em> is not formatted correctly. Please use the export function."
+msgstr "<em>@data</em> alan verileri düzgün şekilde biçimlendirilmemiş. Lütfen dışa aktarma işlevini kullanın."
+
+msgid "The field data <em>@data</em> could not be imported. Please add the appropriate fields to the vocabulary you are importing into."
+msgstr "<em>@data</em> alan verileri içe aktarılamadı. Lütfen içine aktarmakta olduğunuz sözlüğe uygun alanları ekleyin."
+
+msgid "Imported @count terms."
+msgstr "@count terim içe aktarıldı."
+
+msgid "Include Term Ids in export."
+msgstr "Dışa aktarmaya Terim Tanıtıcılarını dahil edin."
+
+msgid "Include Term Headers in export."
+msgstr "Dışa aktarmaya Terim Üstbilgilerini dahil edin."
+
+msgid "Include extra fields in export."
+msgstr "Dışa aktarmaya ek alanları dahil edin."
+
+msgid "Note that fields are stringified using <a href=\"http://www.php.net/http_build_query\">http_build_query</a>"
+msgstr "Alanların <a href=\"http://www.php.net/http_build_query\">http_build_query</a> kullanılarak dizgi haline getirildiğini unutmayın"
+
+msgid "Export"
+msgstr "Dışarı aktar"
+
+msgid "CSV Data"
+msgstr "CSV Verileri"
+
+msgid "The formatted term data"
+msgstr "Biçimlendirilmiş terim verileri"
+
+msgid "Input"
+msgstr "Giriş"
+
+msgid "<p><strong>See CSV Export for an example.</strong></p><p>Enter in the form of: <pre>\"name,status,description,format,weight,parent_name,[any_additional_fields];</pre><pre>name,status,description,format,weight,parent_name[;parent_name1;parent_name2;...],[any_additional_fields]\"</pre> or <pre>\"tid,uuid,name,status,revision_id,description,format,weight,parent_name[;parent_name1;parent_name2;...],parent_tid[;parent_tid1;parent_tid2;...],[any_additional_fields];</pre><pre>tid,uuid,name,status,revision_id,description,format,weight,parent_name,parent_tid,[any_additional_fields]\"</pre> Note that <em>[any_additional_fields]</em> are optional and are stringified using <a href=\"http://www.php.net/http_build_query\">http_build_query</a>.</p><p>If you need to export from Drupal 7, you can import and modify the view d7exportview.txt found at the root directory of this project</p>"
+msgstr "<p><strong>Örnek için CSV Dışa Aktarma bölümüne bakın.</strong></p><p>Şu biçimde girin: <pre>\"ad,durum,açıklama,biçim,ağırlık,üst_ad,[tüm_ek_alanlar];</pre><pre>ad,durum,açıklama,biçim,ağırlık,üst_ad[;üst_ad1;üst_ad2;...],[varsa_ek_alanlar]\"</pre> ya da <pre>\"tid,uuid,ad,durum,düzeltme_tanıtıcısı,açıklama,biçim,ağırlık,üst_ad[;üst_ad1;üst_ad2;...],üst_öğe_tid[;üst_öğe_tid1;üst_öğe_tid2;...],[varsa_ek_alanlar];</pre><pre>tid,uuid,ad,durum,düzeltme_tanıtıcısı,açıklama,biçim,ağırlık,üst_ad,üst_tid,[tüm_ek_alanlar]\"</pre> <em>[varsa_ek_alanlar]</em> öğesinin isteğe bağlı olduğunu ve <a href=\"http://www.php.net/http_build_query\">http_oluşturma_sorgusu</a> kullanılarak dizgi haline getirildiğini unutmayın.</p><p>Drupal 7'den dışa aktarmanız gerekirse, bu projenin kök dizininde bulunan d7exportview.txt görünümünü içe aktarabilir ve değiştirebilirsiniz.</p>"
+
+msgid "Preserve Vocabularies on existing terms."
+msgstr "Var olan terimlere ilişkin Sözlükleri koruyun."
+
+msgid "Preserve existing terms. This will prevent a term id collision if importing from another install."
+msgstr "Var olan terimleri koruyun. Bu, başka bir kuruluştan içe aktarma işlemi sırasında bir terim tanıtıcısı çakışmasını önler."
+
+msgid "Next"
+msgstr "Sonraki"
+
+msgid "Name"
+msgstr "İsim"
+
+msgid "Create New Vocabulary"
+msgstr "Yeni Sözlük Oluştur"
+
+msgid "Create Vocabulary"
+msgstr "Sözlük Oluştur"
+
+msgid "Are you sure you want to copy @count_terms terms into the vocabulary @vocabulary@preserve_vocabularies?"
+msgstr "@count_terms terimi, @vocabulary@preserve_vocabularies sözlüğüne kopyalamak istediğinizden emin misiniz?"
+
+msgid "Import"
+msgstr "İçeri aktar"
+

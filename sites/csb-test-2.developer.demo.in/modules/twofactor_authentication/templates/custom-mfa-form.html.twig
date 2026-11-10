@@ -1,0 +1,55 @@
+<div class="mfa-backdrop">
+  <div class="mfa-initiate-auth">
+    <div class="mail-mfa-auth-form">
+      {# System status and error messages render here inside the form array #}
+      <div class="ajax-otp-msg__wrapper">
+        {{ form.status_messages }}
+      </div>
+
+      <div class="mfa-creds">
+        <div class="as-copy">
+          <h4>MFA</h4>
+        </div>
+        <div class="custom-form-element">
+          <div class="mfa-otp__msg">
+            <h5>{{ form['#otp_generated'] ? 'Please Enter OTP' : 'Generate OTP' }}</h5>
+          </div>
+        </div>
+
+        <div class="custom-form-element">
+          <div class="mfa-email__msg">
+            <p class="label">
+              An OTP {{ form['#otp_generated'] ? 'has been' : 'will be' }} sent to {{ form['#masked_email'] }}
+            </p>
+          </div>
+        </div>
+
+        <div class="custom-form-element">
+          {{ form.otp_code }}
+        </div>
+      </div>
+
+      {# Render Drupal hidden system fields #}
+      {{ form.form_build_id }}
+      {{ form.form_token }}
+      {{ form.form_id }}
+
+      <div class="btn-wrapper">
+        <div class="generate-otp__wrapper">
+          {{ form.actions.generate }}
+        </div>
+        <div class="proceed-otp__wrapper">
+          {{ form.actions.submit }}
+        </div>
+        <div id="cancel-otp__wrapper">
+          <div class="custom-form-element">
+            {{ form.actions.cancel }}
+          </div>
+        </div>
+      </div>
+
+      {# Exclude already rendered elements safely #}
+      {{ form|without('status_messages', 'otp_code', 'actions', 'form_build_id', 'form_token', 'form_id') }}
+    </div>
+  </div>
+</div>

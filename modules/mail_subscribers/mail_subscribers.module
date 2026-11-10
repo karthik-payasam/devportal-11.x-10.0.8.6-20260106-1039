@@ -1,0 +1,157 @@
+<?php
+/********************************************************* {COPYRIGHT-TOP} ***
+ * Licensed Materials - Property of IBM
+ * 5725-L30, 5725-Z22
+ *
+ * (C) Copyright IBM Corporation 2018, 2024
+ *
+ * All Rights Reserved.
+ * US Government Users Restricted Rights - Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ ********************************************************** {COPYRIGHT-END} **/
+
+use Drupal\Core\Database\Database;
+use Drupal\Core\Render\Markup;
+use Drupal\Core\Url;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+/**
+ * Theme the replacement tokens.
+ *
+ * @param $fields
+ *   Keyed array with tokens as keys and description as values.
+ *
+ * @return mixed A themed table with all tokens.
+ *
+ * @todo: Add help for other tokens
+ */
+function mail_subscribers_token_help($fields) {
+  $header = [t('Token'), t('Replacement value')];
+  $rows = [];
+  foreach ($fields as $field => $title) {
+    $rows[] = ['[' . sprintf('mail-subscribers:%s', $field) . ']', $title];
+  }
+  $table = [
+    '#type' => 'table',
+    '#header' => $header,
+    '#rows' => $rows,
+  ];
+  return \Drupal::service('renderer')->render($table);
+}
+
+/**
+ * Implements hook_preprocess_breadcrumb().
+ *
+ * @param $variables
+ */
+function mail_subscribers_preprocess_breadcrumb(&$variables) {
+  if (\Drupal::routeMatch()->getRouteName() === 'mail_subscribers.startWizard') {
+    $variables['breadcrumb']['admin'] = [
+      'text' => t('Administration'),
+      'url' => Url::fromRoute('system.admin')->toString(),
+    ];
+    $variables['breadcrumb']['people'] = [
+      'text' => t('People'),
+      'url' => Url::fromRoute('entity.user.collection')->toString(),
+    ];
+    $variables['#cache']['contexts'][] = 'url.path';
+  }
+}
+
+/**
+ * Preparing and sending a message (coming from a batch job).
+ *
+ * @param $message
+ * @param $context
+ *
+ * @throws \Exception
+ */
+function mail_subscribers_batch_deliver($message, &$context) {
+  \Drupal::moduleHandler()->loadInclude('mail_subscribers', 'helpers.inc');
+  _mail_subscribers_prepare_mail($message);
+  $result = mail_subscribers_deliver($message);
+
+  if ($result['result'] === TRUE) {
+    if ((boolean) \Drupal::config('mail_subscribers.settings')->get('debug')) {
+      \Drupal::logger('mail_subscribers')->notice('Message sent to %mail.', ['%mail' => $message['to_mail']]);
+    }
+  }
+  else {
+    $context['results'][] = t('Failed sending message to %mail - spooling it.',
+      ['%mail' => $message['to_mail']]);
+    // Queue the message to the spool table.
+    $options = ['target' => 'default'];
+    Database::getConnection($options['target'])
+      ->insert('mail_subscribers_spool', $options)
+      ->fields($message)
+      ->execute();
+  }
+}
+
+/**
+ * Displays status after sending messages as a batch job.
+ *
+ * @param $success
+ * @param $results
+ * @param $operations
+ *
+ * @return \Symfony\Component\HttpFoundation\RedirectResponse|NULL
+ */
+function mail_subscribers_batch_deliver_finished($success, $results, $operations): ?RedirectResponse {
+  if ($success) {
+    foreach ($results as $result) {
+      \Drupal::messenger()->addMessage($result);
+    }
+    $objectType = \Drupal::service('tempstore.private')->get('mail_subscribers')->get('objectType');
+
+    // Redirect to summary page of wizard
+    return new RedirectResponse(
+      Url::fromRoute('mail_subscribers.' . $objectType . '_wizard.step', ['step' => 'summary'])->toString()
+    );
+  }
+  else {
+    return NULL;
+  }
+}
+
+/**
+ * Need to use our custom content type templates for FAQ
+ *
+ * @param $variables
+ * @param $hook
+ * @param $info
+ */
+function mail_subscribers_preprocess(&$variables, $hook, &$info) {
+  if ($hook === 'form') {
+    $templateFileName = NULL;
+
+    if (strpos($variables['element']['#form_id'], 'mail_subscribers') === 0) {
+      $templateFileName = 'form-' . str_replace('_', '-', $variables['element']['#form_id']);
+    }
+
+    if ($templateFileName !== NULL) {
+      ibm_apim_entry_trace(__FUNCTION__, 'form');
+
+      $templateFilePath = \Drupal::service('extension.list.module')->getPath('mail_subscribers') . '/templates/' . $templateFileName . '.html.twig';
+
+      if (file_exists($templateFilePath)) {
+        $info['theme path'] = \Drupal::service('extension.list.module')->getPath('mail_subscribers');
+        $info['path'] = \Drupal::service('extension.list.module')->getPath('mail_subscribers') . '/templates';
+        $info['template'] = $templateFileName;
+      }
+
+      ibm_apim_exit_trace(__FUNCTION__, 'form');
+    }
+  }
+
+}
+
+/**
+ * @param array $suggestions
+ * @param array $variables
+ */
+function mail_subscribers_theme_suggestions_ctools_wizard_trail_alter(array &$suggestions, array $variables) {
+  if ($variables['wizard']->getMachineName() === 'MailSubscribersWizard') {
+    $suggestions = ['mail_subscribers_ctools_wizard_trail'];
+  }
+}

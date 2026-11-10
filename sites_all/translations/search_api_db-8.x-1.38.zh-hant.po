@@ -1,0 +1,141 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Fulltext field database columns updated."
+msgstr "已更新全文欄位資料庫直欄。"
+
+msgid "Primary keys added to all denormalized index tables."
+msgstr "主要索引鍵已新增至所有反正規化索引表格。"
+
+msgid "Updated 1 server."
+msgid_plural "Updated @count servers."
+msgstr[0] "已更新 @count 部伺服器。"
+
+msgid "Database Search"
+msgstr "資料庫搜尋"
+
+msgid "Offers an implementation of the Search API that uses database tables for indexing content."
+msgstr "提供一個使用資料庫表格編製內容索引的「搜尋 API」實作。"
+
+msgid "Search"
+msgstr "搜尋"
+
+msgid "Search API DB settings"
+msgstr "搜尋 API 資料庫設定"
+
+msgid "Name of the database we are connecting to"
+msgstr "我們連接的目標資料庫名稱"
+
+msgid "Minimum length of indexed words"
+msgstr "已編製索引之字詞的最小長度"
+
+msgid "The matching mode – \"words\", \"prefix\" or \"partial\""
+msgstr "比對模式 - \"words\"、\"prefix\" 或 \"partial\""
+
+msgid "Autocomplete configuration"
+msgstr "自動完成配置"
+
+msgid "Suggest suffix"
+msgstr "建議字尾"
+
+msgid "Suggest words"
+msgstr "建議字詞"
+
+msgid "Maximum occurrences of a term until autocomplete suggestions ignores it"
+msgstr "一個詞彙在被自動完成建議忽略之前的出現次數上限"
+
+msgid "Database Search Defaults"
+msgstr "資料庫搜尋預設值"
+
+msgid "Enable this module for a best-practice default setup of Search API with the Database backend. After installation it is recommended to uninstall this module again for performance reasons. The provided configuration will not be removed."
+msgstr "啟用此模組，是以「資料庫」後端進行「搜尋 API」預設安裝的最佳作法。 安裝之後，基於效能考量，建議您再次解除安裝此模組。 將不會移除提供的配置。"
+
+msgid "Database"
+msgstr "Database"
+
+msgid "Select the database key and target to use for storing indexing information in. Cannot be changed after creation."
+msgstr "選取資料庫索引鍵，以及用來儲存索引資訊的目標。 建立後即無法變更。"
+
+msgid "Minimum word length"
+msgstr "字詞最小長度"
+
+msgid "The minimum number of characters a word must consist of to be indexed"
+msgstr "一個字詞要編製索引所須包含的字元數下限"
+
+msgid "Partial matching"
+msgstr "部分符合"
+
+msgid "Match whole words only"
+msgstr "僅符合完整單字"
+
+msgid "Match on parts of a word"
+msgstr "符合單字的部分"
+
+msgid "Match words starting with given keywords"
+msgstr "符合以給定關鍵字開頭的單字"
+
+msgid "Autocomplete settings"
+msgstr "自動完成設定"
+
+msgid "These settings allow you to configure how suggestions are computed when autocompletion is used. If you are seeing many inappropriate suggestions you might want to deactivate the corresponding suggestion type. You can also deactivate one method to speed up the generation of suggestions."
+msgstr "這些設定讓您可以配置在使用自動完成時計算建議的方式。 如果您看到許多不適當的建議，您可以停用對應的建議類型。 您也可以停用某個方法，以加快產生建議的速度。"
+
+msgid "Suggest word endings"
+msgstr "建議字尾"
+
+msgid "Suggest endings for the currently entered word."
+msgstr "針對目前輸入的字詞建議字尾。"
+
+msgid "Suggest additional words"
+msgstr "建議其他字詞"
+
+msgid "Suggest additional words the user might want to search for."
+msgstr "建議使用者可能想要搜尋的其他字詞。"
+
+msgid "None selected yet"
+msgstr "尚未選取任何項目"
+
+msgid "none"
+msgstr "無"
+
+msgid "Autocomplete suggestions"
+msgstr "自動完成建議"
+
+msgid "No valid search keys were present in the query."
+msgstr "查詢中沒有有效的搜尋關鍵字。"
+
+msgid "Unknown sort order @order. Assuming \"@default\"."
+msgstr "排序 @order 不明。 採用 \"@default\"。"
+
+msgid "Unknown facet field @field."
+msgstr "資料類型欄位 @field 不明。"
+
+msgid "Facets on location fields are currently not supported."
+msgstr "目前不支援位置欄位上的資料類型。"
+
+msgid "Unknown field @field: please check (and re-save) the index's fields settings."
+msgstr "欄位 @field 不明：請檢查（並重新儲存）索引的欄位設定。"
+
+msgid "An overlong word (more than 50 characters) was encountered while indexing: %word.<br />Since database search servers currently cannot index words of more than 50 characters, the word was truncated for indexing. If this should not be a single word, please make sure the \"Tokenizer\" processor is enabled and configured correctly for index %index."
+msgstr "編製索引時發現超長單字（超過 50 個字元）：%word。<br />由於資料庫搜尋伺服器目前無法為超過 50 個字元的單字編製索引，因此該單字已被截斷以進行編製索引。 如果這不應該是單一單字，請確定已針對索引 %index 啟用並正確配置「記號器」處理器。"
+
+msgid "An overlong value (more than 255 characters) was encountered while indexing: %value.<br />Database search servers currently cannot index such values correctly – the value was therefore trimmed to the allowed length."
+msgstr "編製索引時發現超長值（超過 255 個字元）：%value。<br />資料庫搜尋伺服器目前無法正確編製這類值的索引 - 因此該值已修整為容許的長度。"
+
+msgid "Error while adding facets: only \"item_id\" field should be used, used are: @fields."
+msgstr "新增資料類型時發生錯誤：只應該使用 \"item_id\" 欄位，使用的欄位為：@fields。"
+
+msgid "Indexes items in the database. Supports several advanced features, but should not be used for large sites."
+msgstr "為資料庫中的項目編製索引。 支援數種進階功能，但不應該在大型網站上使用。"
+

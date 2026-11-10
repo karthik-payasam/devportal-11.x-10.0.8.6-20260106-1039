@@ -1,0 +1,861 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Blazy"
+msgstr "Blazy"
+
+msgid "Displays a preview of a File using Blazy, if applicable."
+msgstr "使用 Blazy 來顯示檔案預覽（如果適用的話）。"
+
+msgid "Displays a preview of a Media using Blazy, if applicable."
+msgstr "使用 Blazy 來顯示媒體預覽（如果適用的話）。"
+
+msgid "Display the results in a Blazy grid."
+msgstr "在 Blazy 網格中顯示結果。"
+
+msgid "Works best with Views field containing Blazy."
+msgstr "搭配包含 Blazy 的「視圖」欄位使用時效果最好。"
+
+msgid "Blazy requires Media core module"
+msgstr "Blazy 需要媒體核心模組"
+
+msgid "Blazy now requires core Media module, which is currently not installed. By continuing the update the module will be installed."
+msgstr "Blazy 現在需要核心媒體模組，目前尚未安裝。如果繼續更新，將會安裝更新模組。"
+
+msgid "Blazy 3.x replaces sub-modules theme_ITEM() contents with theme_blazy(). Keep \"Use theme_blazy()\" enabled at <a href=\":url\">Blazy UI</a> to pass blazy:3.x."
+msgstr ""
+
+msgid "Enabled: Use theme_blazy()"
+msgstr ""
+
+msgid "Not enabled: Use theme_blazy()"
+msgstr ""
+
+msgid "Blazy has installed core \"Media\" module."
+msgstr "Blazy 已安裝核心「媒體」模組。"
+
+msgid "Provides basic Blazy integration for lazy loading and multi-serving images."
+msgstr "提供基本的 Blazy 整合，以進行影像的延遲載入及多重處理。"
+
+msgid "Blazy UI"
+msgstr "Blazy 使用者介面"
+
+msgid "Provides Blazy configuration UI."
+msgstr "提供 Blazy 配置使用者介面。"
+
+msgid "Manage Blazy UI."
+msgstr "管理 Blazy 使用者介面。"
+
+msgid "Administer the Blazy module"
+msgstr "管理 Blazy 模組"
+
+msgid "The DOMPurify library is installed to sanitize lightbox captions. Be sure to clear cache for library discoveries. [<a href=\":ui\">Blazy UI help</a>]"
+msgstr ""
+
+msgid "<strong>Warning!</strong> The <a href=\":url\">DOMPurify</a> library is not installed. It is necessary for HTML in lightbox captions. Without it, they are only sanitized server-side, or builtin. [<a href=\":ui\">Blazy UI help</a>]."
+msgstr ""
+
+msgid "The SVG Sanitizer library is installed to sanitize inline SVG. [<a href=\":ui\">Blazy UI help</a>]"
+msgstr ""
+
+msgid "<strong>Warning!</strong> The <a href=\":url\">SVG Sanitizer</a> library is not installed. This library is necessary if you want to use SVG inline. Without it, the world would be ended. [<a href=\":ui\">Blazy UI help</a>]."
+msgstr ""
+
+msgid "Admin CSS"
+msgstr "管理 CSS"
+
+msgid "Uncheck to disable blazy related admin compact form styling, only if not compatible with your admin theme."
+msgstr "只有在與您的管理佈景主題不相容時，才取消勾選以停用 Blazy 相關的管理精簡形式樣式設定。"
+
+msgid "Use theme_blazy()"
+msgstr ""
+
+msgid "Check to use theme_blazy() specific for sub-modules theme_ITEM() (theme_slick_slide(), theme_splide_slide(), theme_gridstack_box(), etc.) contents with images/media along with their captions. This will be forced at blazy:3.x. You can help starting the migrations by enabling this to spot problems. If any issues, please disable and report for fixes, <a href=\":url\">read more</a>."
+msgstr ""
+
+msgid "Use oEmbed"
+msgstr ""
+
+msgid "Check to use oEmbed when available. Only relevant for VEF compatibility which already managed their embed codes. Irrelevant for core which already uses oEmbed. If checked, VEF embed will be converted into oEmbed if the provider is available, otherwise left as is. Be informed! Using oEmbed may require having App ID and secret credentials for some providers even for simple oEmbed read such as Instagram or Facebook, not Youtube, etc."
+msgstr ""
+
+msgid "Lazy load HTML (Experimental)"
+msgstr ""
+
+msgid "When theme_blazy() does not understand a media output, it will print it as HTML as is. This HTML is normally a paragraph size. Check this to lazy load such HTML content (normally heavy third party contents, like oembed Instagram, Pinterest, etc.), no AJAX, otherwise printed as is. A new feature since 2.17, not battle-tested. Potential issues are with the attached libraries, and other various Blazy features. Please disable and report if any issues."
+msgstr ""
+
+msgid "Use encoding for HTML (Experimental)"
+msgstr ""
+
+msgid "If checked, and the lightbox supports this feature, the lightbox HTML (normally local audio/video, Picture/Responsive image, oembed Instagram, etc.) will be encoded. Also applies to CSS background. A minor byte saving. Please disable if any issues."
+msgstr ""
+
+msgid "No JavaScript"
+msgstr "無 JavaScript"
+
+msgid "Lazyload"
+msgstr "延遲載入"
+
+msgid "Basic polyfills (ie9-ie11)"
+msgstr "Basic polyfills (ie9-ie11)"
+
+msgid "classList polyfill (ie9-ie11)"
+msgstr "classList polyfill (ie9-ie11)"
+
+msgid "Promise polyfill (ie11)"
+msgstr "Promise polyfill (ie11)"
+
+msgid "requestAnimationFrame polyfill (ie9)"
+msgstr "requestAnimationFrame polyfill (ie9)"
+
+msgid "webp fallback (ie9-ie11, old Safari)"
+msgstr "webp fallback（ie9-ie11，舊稱 Safari）"
+
+msgid "Enable to not load them if you don't support IEs and other oldies, or have polyfills at your theme globally. File sizes approximately in minified gzip. The plus (+) sign refers to dependencies like <code>dblazy.js (~4KB)</code>, etc. A few can be removed via this form. For illustration, Colorbox which is called very lightweight is 4.8KB + jQuery (31KB) = 35.8KB. Blazy never loads all its JavaScript at once, instead conditionally and carefully loads ones as required. Mostly based on your options including these ones. <ul><li><b>Lazyload</b>: remove libraries and loader/ initializer scripts (<code>blazy.js (original: 2.2KB, fork: 1.6KB+), blazy.load.js (1KB+), bio.js (1.7KB+)</code>.) for non-js Native lazy. <br><b>Note!</b> While the above is always valid, a <code>blazy/compat (<1KB + bio.js)</code> and or <code>blazy/dblazy</code> in the least is conditionally loaded as required if any js-dependent options are enabled: <ul><li>Image effect animation or Blur.</li><li>Dynamic multi-breakpoint aka Fluid aspect ratio (excluding fixed ones).</li><li>Dynamic multi-breakpoint (Responsive|Picture based), or static CSS background.</li><li>Local video.</li><li>Loading priority: defer.</li><li>Sub-module requirements. Slick, Splide, Ultimenu, Jumper, etc. might require <code>blazy/dblazy</code>, not a lazyload script, just common jQuery replacement methods for vanilla ones.</li></ul></li><li><b>Polyfills</b>: Only loaded (total 3.6KB) if the above conditions are met, and left unchecked. <b>Basic polyfills</b>: <code>Object.assign, closest, forEach, matches, startsWith, CustomEvent</code>. <b>webp falback</b>: FWIW, IE9, not tested against old Safari, works fine with core/picturefill w/o this fallback. For other polyfills, due to questionabe licenses, include them into your theme as needed such as <a href=':io'>IntersectionObserver</a>, etc. <br><b>Warning!</b> The polyfills may be deprecated and removed when <a href=':cash'>Cash DOM</a> module is available, and will be replaced by Cash accordingly.</li></ul>As of 2022/1, Native only supports IMG and IFRAME, the exceptions above cover BLUR, DIV, VIDEO, ratio FLUID, LOADING: defer, etc. Other JavaScript (Media Player, Lightbox, Non-css Masonry (Flexbox or Nativegrid), etc.) can already be disabled via Formatters since 1.x. jQuery (31KB) is only loaded for Colorbox (4.8KB) + blazy.colorbox.js (1.2KB+) and admin UIs. Details in blazy/js directory. <a href=':url'>Read more</a>."
+msgstr "如果您不支援 IE 及其他舊版，或在全球的佈景主題中具有 polyfills，請啟用不載入它們。 檔案大小大約以壓縮 gzip 表示。 加號 (+) 是指 <code>dblazy.js (~4KB)</code> 之類的相依關係。 可以透過此表單移除一些。 舉例來說，稱為非常輕量型的 Colorbox 是 4.8KB + jQuery (31KB) = 35.8KB。 Blazy 從未一次載入其所有 JavaScript，而是根據需要有條件且小心地載入。 主要根據您的選項，包括這些選項。 <ul><li><b>Lazyload</b>：移除程式庫及載入器/起始設定程式 Script（<code>blazy.js（原始：2.2KB，分岔：1.6KB+）、blazy.load.js (1KB+)、bio.js (1.7KB+)</code>。），適用於非 js Native lazy。 <br><b>附註！</b> 雖然上述一律有效，但如果啟用任何 js-dependent 選項，則會根據需要有條件地載入 <code>blazy/compat (<1KB + bio.js)</code> 及/或 <code>blazy/dblazy</code>：<ul><li>影像效果動畫或 Blur。</li><li>動態多重岔斷點（又稱為 Fluid 長寬比）（不包括固定長寬比）。</li><li>動態多重岔斷點（回應式 | 圖片型）或靜態 CSS 背景。</li><li>本端視訊。</li><li>載入優先順序：延遲。</li><li>子模組需求。 Slick、Splide、Ultimenu、Jumper 等可能需要 <code>blazy/dblazy</code>，而不是 lazyload Script，只是普通方法的一般 jQuery 替代方法。</li></ul></li><li><b>Polyfills</b>：只有在符合上述條件且保持不勾選時，才會載入（總計 3.6KB）。 <b>Basic polyfills</b>：<code>Object.assign、closest、forEach、matches、startsWith、CustomEvent</code>。 <b>webp falback</b>：FWIW、IE9（未針對舊 Safari 進行測試），可搭配使用核心/picturefill 而無需此撤回。 對於其他 polyfills，由於 questionabe 授權，請視需要將它們併入您的佈景主題中，例如 <a href=':io'>IntersectionObserver</a> 等。 <br><b>警告！</b> 當 <a href=':cash'>Cash DOM</a> 模組可用時，可能會淘汰並移除 polyfills，並將相應地取代為 Cash。</li></ul>截至 2022/1，Native 僅支援 IMG 和 IFRAME，上述例外涵蓋 BLUR、DIV、VIDEO、RATIO FLUID、LOADING: defer 等。 其他 JavaScript（Media Player、Lightbox、Non-css Masonry（Flexbox 或 Nativegrid）等） 從 1.x 開始，已透過「格式製作程式」停用。 jQuery (31KB) 僅針對 Colorbox (4.8KB) + blazy.colorbox.js (1.2KB+) 及管理使用者介面載入。 Blazy/js 目錄中的詳細資料。 <a href=':url'>進一步閱讀</a>。"
+
+msgid "Add noscript"
+msgstr "新增 noscript"
+
+msgid "Enable noscript if you want to support <a href=\":url\">non-javascript users</a>."
+msgstr "如果您想要支援<a href=\":url\">非 javascript 使用者</a>，請啟用 noscript。"
+
+msgid "Support Responsive image"
+msgstr "支援回應式影像"
+
+msgid "(Deprecated in blazy:2.5, and is removed in blazy:3.x for module exists check. It was a user consent option due to not being fully integrated till likely blazy:2.4+ so to disable easily without breaking things). Old description: Check to support lazyloading for the core Responsive image module. Be sure to use blazy-related formatters."
+msgstr ""
+
+msgid "Responsive image 1px placeholder"
+msgstr "回應式影像一個像素位置保留元"
+
+msgid "By default a 1px Data URI image is the placeholder for lazyloaded (Responsive) image. Useful to perform a lot better. Uncheck to disable, and use Drupal-managed smallest/fallback image style instead. Be sure to add proper dimensions or at least min-height/min-width via CSS accordingly to avoid layout reflow, or choose an Aspect ratio via Blazy formatters. <br>Since <b>2.10</b>, disabling this will no longer result in downloading fallback image (double downloads). Thus, allows you to have non <code>empty image</code> for fallback at Responsive image style UI without extra HTTP requests, while using <code>empty image</code> (enforced now) for the SRC. Basically marrying those options. not negating each other anymore."
+msgstr "依預設，1px 資料 URI 影像是延遲載入（回應式）影像的位置保留元。 對於進一步提升效能很有幫助。 取消勾選以停用，並改用 Drupal 管理的最小/備用影像樣式。 請務必透過 CSS 相應地新增適當的尺寸，或至少新增最小高度/最小寬度，以避免佈置重排，或是透過 Blazy 格式製作程式選擇長寬比。 <br>從 <b>2.10</b> 開始，停用它將不再導致下載撤回影像（雙重下載）。 因此，容許您在回應式影像樣式使用者介面中使用非<code>空白影像</code>進行撤回，而不需要額外的 HTTP 要求，同時對 SRC 使用<code>空白影像</code>（立即施行）。 基本上是把這些選擇結合起來。 不再互相否定了。"
+
+msgid "Add is-b-visible class"
+msgstr ""
+
+msgid "Add <code>is-b-visible</code> CSS class when entering the viewport. Only enable if any real use for animating anything, otherwise disable it. If enabled, IO is not destroyed so to keep watching the class changes."
+msgstr ""
+
+msgid "Remove field/ view wrapper classes"
+msgstr ""
+
+msgid "Remove useful classes for DOM diets when you can get rid of Field, Block, Views, etc. wrappers so you have context for styling. Other required classes: lightbox, grid, etc. are intact if so-configured."
+msgstr ""
+
+msgid "Remove deprecated classes"
+msgstr ""
+
+msgid "Remove some legacy Foundation CSS grid classes to avoid conflict with core block, e.g: block-nativegrid for b-nativegrid, etc. CHECK if not using those classes, or to avoid themers using them. Leave it UNCHECKED if using them till you update them. See <a href=':url'>Notable changes</a> for details. Be sure to clear cache!"
+msgstr ""
+
+msgid "Placeholder"
+msgstr "預留位置"
+
+msgid "Only useful if continuously using Views rewrite results, see <a href=':url2'>#2908861</a>. Inputting this means having trouble with `data:image` placeholder being stripped out by Views sanitization procedures causing 404. Will override global 1px `data:image` placeholder, including core Responsive image 1px `data:image` with this so to avoid 404, and independent from the previous `Responsive image 1px placeholder` option. Must be URL, e.g.: /blank.gif or /blank.svg. Be warned: unlike .svg, browsers have display issues with 1px .gif, see <a href=':url1'>#2795415</a>. Alternatively use <code>hook_blazy_settings_alter()</code> for more fine-grained control. Leave it empty to use default inline SVG or Data URI to avoid extra HTTP requests. If you have 100 images on a page, you will save hammering your server with 100 extra HTTP requests by leaving it empty. The <b>blank.svg</b> content sample if not using blank.gif: <br><code>&lt;svg xmlns='https://www.w3.org/2000/svg' viewBox='0 0 100 100'/&gt;</code><br>Save it at Drupal web root as <code>blank.svg</code>, and reference it as <code>/blank.svg</code> in the Placeholder field."
+msgstr ""
+
+msgid "Extensions without image styles"
+msgstr "不含影像樣式的延伸"
+
+msgid "Extensions that should not use (Responsive) image style, space delimited without dot, e.g.: <code>gif apng</code> <br>Normally animated images. No way to distinguish animated from static gif, it is all or nothing. This means no thumbnail, no blur, nor features which makes use image style. Default to svg."
+msgstr "這些延伸不應使用（回應）影像樣式，以不帶點的空格區隔，例如：<code>gif apng</code> <br>通常是動畫影像。無法識別動畫和靜態 gif，要么全有要么全無。這表示無縮圖、無模糊，也表示沒有特性使用影像樣式。預設為 svg。"
+
+msgid "Image effect"
+msgstr "影像效果"
+
+msgid "Choose the image effect. Will use Thumbnail style option at Blazy formatters for the placeholder with fallback to core Thumbnail style. For best results: use similar aspect ratio for both Thumbnail and Image styles; adjust Offset and or threshold; the smaller the better. Use <code>hook_blazy_image_effects_alter()</code> to add more effects -- curtain, fractal, slice, whatever. <b>Limitations</b>: Best with a proper Aspect ratio option as otherwise collapsed image. Be sure to add one. If not, add regular CSS <code>min-height</code> for each mediaquery. The Placeholder option is still respected. It is permanently cached, be sure to clear cache if your or a module's provided additional altered data do not appear here. <ul><li>To avoid complications, it will be disabled when being unlazy: no JS, iframe only, sandboxed, etc. since it requires lazy load as a trigger.</li></ul>"
+msgstr ""
+
+msgid "Use client-side blur"
+msgstr "使用用戶端 Blur"
+
+msgid "Uncheck to preserve old behaviors data URI printed on the page server-side. Check to enable Blur client-side. <br><b>Pros:</b> Client-side doesn't add ugly data URI to the page till required, and automatically cleared when done, meaning lighter page weight at initial and end, and at the next pages if any stored data found (meaning cacheable unlike server-side), but not during runtime animation. It leverages lazy load mechanism. <br><b>Cons:</b> Client-side does a HTTP request initially. Can use localStorage option below to cache them."
+msgstr "取消勾選以保留在頁面伺服器端列印的舊行為資料 URI。 勾選以啟用 Blur 用戶端。 <br><b>Pros：</b>用戶端不會將醜陋的資料 URI 新增至頁面直到有需要，並在完成時自動清除，這表示在起始和結束時，以及在後續頁面上，如果找到任何已儲存的資料（表示可快取不同於伺服器端），但不是在執行時期動畫期間，頁面加權較輕。 它會運用延遲載入機制。 <br><b>Cons：</b>用戶端一開始會執行 HTTP 要求。 可以使用下面的 localStorage 選項來快取它們。"
+
+msgid "Store blur in localStorage"
+msgstr "在 localStorage 中儲存 Blur"
+
+msgid "Check to cache Blur data URI in localStorage to save HTTP requests on the next requests. Uncheck if using localStorage for more custom important stuffs. Core localStorage providers vary 0.05KB - 150KB, to a tentative amount of 739.07 KB. This option will obviously hit the limit anytime (says 40KB x 100 images = 4000KB), can be larger given non-optimized or large Blur image style. However, configurable at <b>Thumbnail style</b> option, or Responsive image style fallback. That is why the smaller, file size and dimension, the more efficient. Will auto-clear, and recycle, when the quota (2-10MB) is exceeded."
+msgstr "勾選以在 localStorage 中快取 Blur 資料 URI，以在接下來的要求上儲存 HTTP 要求。 如果將 localStorage 用於更重要的自訂項目，則取消勾選。 核心 localStorage 提供者會將 0.05KB - 150KB 改變至暫時數量為 739.07 KB。 此選項明顯會隨時達到限制（例如 40KB x 100 個影像 = 4000KB），在給定非最佳化或大型 Blur 影像樣式時可能更大。 不過，可在<b>縮圖樣式</b>選項或回應式影像樣式撤回中配置。 這就是為什麼檔案大小和維度越小，效率越高的原因。 當超出配額 (2-10MB) 時，將自動清除並回收。"
+
+msgid "Blur min-width"
+msgstr "Blur 最小寬度"
+
+msgid "Only enable Blur if the image style (not window) width is bigger than this value. Useful to disable it for mobile to avoid potential unverified OOM (Out of Memory) issues, or non-fancy listing thumbnails, says 767."
+msgstr ""
+
+msgid "Blazy settings"
+msgstr "Blazy 設定"
+
+msgid "The following settings are related to old bLazy library."
+msgstr "下列設定與舊的 bLazy 程式庫相關。"
+
+msgid "Load invisible"
+msgstr "載入隱藏"
+
+msgid "Check if you want to load invisible (hidden) elements. If any issues with tabs, accordions, or anything hidden, enable this."
+msgstr "如果您要載入不可見（隱藏）的元素，請勾選。 如果標籤、折疊項目或任何隱藏項目有任何問題，請啟用此項。"
+
+msgid "Offset"
+msgstr "位移"
+
+msgid "The offset controls how early you want the elements to be loaded before they're visible. Default is <strong>100</strong>, so 100px before an element is visible it'll start loading."
+msgstr "此偏移控制您希望在元素可見之前多久提前載入元素。預設值為 <strong>100</strong>，因此元素將在可見之前的 100px 開始載入。"
+
+msgid "Save viewport offset delay"
+msgstr "儲存檢視區偏移延遲"
+
+msgid "Delay for how often it should call the saveViewportOffset function on resize. Default is <strong>50</strong>ms."
+msgstr "調整大小時呼叫 saveViewportOffset 函數頻率的延遲。預設值為 <strong>50</strong> 毫秒。"
+
+msgid "Set validate delay"
+msgstr "設定驗證延遲"
+
+msgid "Delay for how often it should call the validate function on scroll/resize. Default is <strong>25</strong>ms."
+msgstr "捲動/調整大小時呼叫 validate 函數頻率的延遲。預設值為 <strong>25</strong> 毫秒。"
+
+msgid "Scrolling container"
+msgstr "捲動儲存器"
+
+msgid "If you put Blazy within a scrolling container, provide valid comma separated CSS selectors, except <code>#drupal-modal, .is-b-scroll</code>, e.g.: <code>#my-scrolling-container, .another-scrolling-container</code>. Known scrolling containers are <code>#drupal-modal</code> like seen at Media library, parallax containers with fixed height replacing default browser scrollbar. A scrolling modal with an iframe like Entity Browser has no issue since the scrolling container is the entire DOM. Must know <code>.blazy</code> parent container, or itself, which has CSS rules containing <code>overflow</code> with values anything but <code>hidden</code> such as <code>auto or scroll</code>. Press <code>F12</code> at any browser to inspect elements. IO does not need it, old bLazy does. Default to known <code>#drupal-modal, .is-b-scroll</code>. The <code>.is-b-scroll</code> is for modules which cannot reach this UI without extra legs. Symptons: eternal blue loader while should be loaded."
+msgstr "如果您將 Blazy 放在捲動儲存器內，請提供有效的逗點區隔 CSS 選取器，但 <code>#drupal-modal, .is-b-scroll</code> 除外，例如：<code>#my-scrolling-container, .another-scrolling-container</code>。已知的捲動儲存器是 <code>#drupal-modal</code>（如同您在媒體庫中所見），具有固定高度的視差儲存器取代了預設瀏覽器捲軸。因為捲動儲存器是整個 DOM，因此具有類似「實體瀏覽器」的資訊訊框的捲動模態框沒有出現任何問題。您必須清楚 <code>.blazy</code> 母項儲存器或其本身，它具有 CSS 規則，這些規則含有 <code>overflow</code>，具有除了 <code>hidden</code> 以外的任何值（例如 <code>auto 或 scroll</code>）。在任何瀏覽器中按下 <code>F12</code> 鍵來檢查元素。IO 不需要執行此動作，而舊的 BLazy 則需要。預設設定為已知的 <code>#drupal-modal, .is-b-scroll</code>。<code>.is-b-scroll</code> 適用於在沒有附加措施的情況下無法呼叫到這個使用者介面的模組。症狀：在載入時使用了「永恆之藍」(Eternal Blue) 載入器。"
+
+msgid "Intersection Observer API (IO) settings"
+msgstr "Intersection Observer API (IO) 設定"
+
+msgid "Will fallback gracefully with Native support for old browsers using old bLazy fork, unless unloaded. Works absurdly fine at IE9. None essential features like Blur, etc. which require additional polyfills (dataset, etc.) not included above may not, and fail silently instead. <br>The following settings are related to <a href=\":url\">IntersectionObserver API</a>."
+msgstr "除非已卸載，否則將使用舊的 bLazy fork，以舊瀏覽器的 Native 支援溫和撤回。 在 IE9 中正常運作。 需要額外 polyfill（資料集等）的無基本特性，例如 Blur 等， 以上可能不包括，而是無聲自動失敗。 <br>下列設定與 <a href=\":url\">IntersectionObserver API</a> 相關。"
+
+msgid "Unload bLazy"
+msgstr "卸載 Blazy"
+
+msgid "Check if you are happy with IO, and don't support IEs. This will not load the forked bLazy library. Forked bLazy is just ~1KB gzip. Clear caches!"
+msgstr "請檢查您是否滿意 IO，且不支援 IE。 這將不會載入分出的 bLazy 程式庫。 分出的 bLazy 只是 ~1KB gzip。 請清除快取！"
+
+msgid "rootMargin"
+msgstr "rootMargin"
+
+msgid "Margin around the root. Can have values similar to the CSS margin property, e.g. <code>10px 20px 30px 40px</code> (top, right, bottom, left). The values can be percentages. This set of values serves to grow or shrink each side of the root element's bounding box before computing intersections. Defaults to all zeros."
+msgstr "根目錄周圍的頁邊距。可以具有類似於 CSS 頁邊距內容的值，例如，<code>10px 20px 30px 40px</code>（頂部、右側、底部、左側）。這些值可以是百分比。這組值用來在計算交集之前，擴展或收縮根元素外框的每一邊。預設值是全部為零。"
+
+msgid "threshold"
+msgstr "臨界值"
+
+msgid "Either a single number or an array of numbers which indicate at what percentage of the target's visibility the observer's callback should be executed. If you only want to detect when visibility passes the 50% mark, you can use a value of 0.5. If you want the callback to run every time visibility passes another 25%, you would specify the array [<code>0, 0.25, 0.5, 0.75, 1</code>] (without brackets). The default is 0 (meaning as soon as even one pixel is visible, the callback will be run). A value of 1.0 means that the threshold isn't considered passed until every pixel is visible."
+msgstr "單一數字或數字陣列，指出應執行觀察程式回呼的目標可見性百分比。如果您只想偵測可見性何時通過 50 % 標記，則可以使用值 0.5。如果您希望每次可見性通過另一個 25% 時都執行此回呼，則可以指定陣列 [<code>0, 0.25, 0.5, 0.75, 1</code>]（沒有方括弧）。預設值為 0（表示只要一個像素可見，即執行回呼）。值 1.0 表示在每個圖素都可見之後，才會視為已通過臨界值。"
+
+msgid "Disconnect"
+msgstr "中斷連線"
+
+msgid "Check if you want to disconnect IO once all images loaded. If you keep seeing eternal blue loader while an image should be already loaded, this means it is not working yet in all cases. Just uncheck this."
+msgstr "如果您要在載入所有影像之後中斷 IO 連線，請勾選。如果您在應該已載入影像時，仍看到永久藍色載入器，則表示它尚無法在所有情況下運作。只需取消勾選此項。"
+
+msgid "Extra settings"
+msgstr "額外設定"
+
+msgid "Be sure to <a href=\":clear_cache\">clear the cache</a> if trouble to see the updated settings."
+msgstr "如果無法查看已更新的設定，請務必<a href=\":clear_cache\">清除快取</a>。"
+
+msgid "Lazy load HTML"
+msgstr ""
+
+msgid "nojs"
+msgstr "nojs"
+
+msgid "One pixel placeholder"
+msgstr "一個像素位置保留元"
+
+msgid "Use encoding for lightbox HTML"
+msgstr ""
+
+msgid "IO"
+msgstr "IO"
+
+msgid "Extras"
+msgstr "Extras"
+
+msgid "Blazy image base display format settings"
+msgstr "Blazy 影像基本顯示格式設定"
+
+msgid "Captions"
+msgstr "標題"
+
+msgid "Caption"
+msgstr "標題"
+
+msgid "Optionset"
+msgstr "選項集"
+
+msgid "Blazy image display format settings"
+msgstr "Blazy 影像顯示格式設定"
+
+msgid "Blazy entity display format settings"
+msgstr ""
+
+msgid "Blazy media display format settings"
+msgstr "Blazy 影像顯示格式設定"
+
+msgid "Blazy oembed display format settings"
+msgstr "Blazy oEmbed 顯示格式設定"
+
+msgid "Blazy text display format settings"
+msgstr "Blazy 文字顯示格式設定"
+
+msgid "Blazy third party display format settings"
+msgstr "Blazy 協力廠商顯示格式設定"
+
+msgid "Blazy filter"
+msgstr "Blazy 過濾器"
+
+msgid "Media switcher"
+msgstr "媒體切換器"
+
+msgid "(Responsive) image style"
+msgstr "（回應式）影像樣式"
+
+msgid "Lightbox (Responsive) image style"
+msgstr "Lightbox（回應式）影像樣式"
+
+msgid "Lightbox media style"
+msgstr ""
+
+msgid "Lightbox caption"
+msgstr "Lightbox 標題"
+
+msgid "HTML tags"
+msgstr "HTML 標籤"
+
+msgid "tag"
+msgstr "標籤"
+
+msgid "Trust data URI"
+msgstr "信任資料 URI"
+
+msgid "Blazy File/SVG display format settings"
+msgstr ""
+
+msgid "Blazy Title format settings"
+msgstr ""
+
+msgid "Delimiter"
+msgstr ""
+
+msgid "Tag"
+msgstr "標籤"
+
+msgid "Add Linebreak"
+msgstr ""
+
+msgid "Blazy image with VEF display format settings"
+msgstr "使用 VEF 顯示格式設定的 Blazy 影像"
+
+msgid "Lightbox image style"
+msgstr "Lightbox 影像樣式"
+
+msgid "Lightbox video style"
+msgstr "Lightbox 視訊樣式"
+
+msgid "Image style"
+msgstr "圖像樣式"
+
+msgid "Media switch"
+msgstr "媒體切換"
+
+msgid "Aspect ratio"
+msgstr "長寬比"
+
+msgid "Thumbnail style"
+msgstr "縮圖樣式"
+
+msgid "View mode"
+msgstr "檢視模式"
+
+msgid "Blazy Grid"
+msgstr "Blazy 網格"
+
+msgid "blazy.done is deprecated in 2.17, use with colon blazy:done to allow namespacing instead."
+msgstr ""
+
+msgid "Stop and close the video"
+msgstr ""
+
+msgid "Load and play the video"
+msgstr ""
+
+msgid "<h5>No SVG file extensions, use @provider Image instead.</h5>"
+msgstr ""
+
+msgid "Configure"
+msgstr "設置"
+
+msgid "Duplicate"
+msgstr "重製"
+
+msgid "The optionsets order has been updated."
+msgstr "選項集順序已更新。"
+
+msgid "Image to iFrame"
+msgstr "影像至資訊訊框"
+
+msgid "Displays lazyloaded images, or iframes, for VEF/ ME."
+msgstr "為 VEF/ ME 顯示延遲載入的影像或資訊訊框。"
+
+msgid "Blazy VEF (deprecated)"
+msgstr ""
+
+msgid "Image rendered by its formatter"
+msgstr "其格式製作程式所呈現的影像"
+
+msgid "<b>Image rendered</b> requires <b>Image</b> option filled out and is useful if the formatter offers awesomeness that Blazy does not have but still wants Blazy for a Grid, etc. Be sure the enabled fields here are not hidden/ disabled at its view mode."
+msgstr ""
+
+msgid "Check fields to be treated as captions, even if not caption texts."
+msgstr "勾選要作為標題進行處理的欄位，即使不是標題文字。"
+
+msgid "The formatter/renderer is managed by <strong>@plugin_id</strong> formatter. Meaning original formatter ignored."
+msgstr ""
+
+msgid "Image Title"
+msgstr "影像標題"
+
+msgid "Image Alt"
+msgstr "影像替代文字"
+
+msgid "Create a dedicated List (text - max number 1) field related to the caption placement to have unique layout per slide with the following supported keys: top, right, bottom, left, center, center-top, etc. Be sure its formatter is Key."
+msgstr "建立與標題放置相關的專用清單（文字 - 數目上限 1）欄位，讓每個投影片具有唯一佈置，而且具有下列支援的索引鍵：上、右、下、左、中心、中上等。請確定其格式製作程式為「索引鍵」。"
+
+msgid "The formatter/renderer is managed by the child formatter."
+msgstr "格式製作程式/展現器是由子項格式製作程式管理。"
+
+msgid "Recursive rendering detected when rendering entity @entity_type @entity_id. Aborting rendering."
+msgstr "呈現實體 @entity_type @entity_id 時，偵測到遞迴呈現。正在中斷呈現。"
+
+msgid "Display style"
+msgstr "顯示樣式"
+
+msgid "- None -"
+msgstr "- 無 -"
+
+msgid "Skin"
+msgstr "面板"
+
+msgid "Use CSS background"
+msgstr "使用 CSS 背景"
+
+msgid "Layout"
+msgstr "佈局"
+
+msgid "Caption fields"
+msgstr "標題欄位"
+
+msgid "Group individual items as block grid?"
+msgstr ""
+
+msgid "Grid large"
+msgstr "網格（大型）"
+
+msgid "Grid medium"
+msgstr "網格（中型）"
+
+msgid "Grid small"
+msgstr "網格（小型）"
+
+msgid "Visible items"
+msgstr "可見項目"
+
+msgid "Preserve keys"
+msgstr "保留索引鍵"
+
+msgid "Preload"
+msgstr "預載"
+
+msgid "Loading priority"
+msgstr "載入優先順序"
+
+msgid "lazy"
+msgstr "lazy"
+
+msgid "Image linked to content"
+msgstr "連結到內容的圖像"
+
+msgid "Image linked by Link field"
+msgstr ""
+
+msgid "Main stage"
+msgstr "主要階段"
+
+msgid "Fields"
+msgstr "欄位"
+
+msgid "<strong>Tips!</strong> Reload the page, or save first, only when changing formatters. Some form items may not be loaded after AJAX."
+msgstr ""
+
+msgid "Image to @lightbox"
+msgstr "影像至 @lightbox"
+
+msgid "Lightbox custom caption"
+msgstr "Lightbox 自訂標題"
+
+msgid "Tokens"
+msgstr "記號"
+
+msgid "@title"
+msgstr "@title"
+
+msgid "SVG"
+msgstr "SVG"
+
+msgid "Vanilla @namespace"
+msgstr "Vanilla @namespace"
+
+msgid "Thumbnail image"
+msgstr "縮圖影像"
+
+msgid "Overlay media"
+msgstr "套版媒體"
+
+msgid "Title"
+msgstr "標題"
+
+msgid "Link"
+msgstr "連結"
+
+msgid "Item class"
+msgstr "項目類別"
+
+msgid "Cache"
+msgstr "快取"
+
+msgid "Ditch all the logic to cached bare HTML. <ol><li><strong>Permanent</strong>: cached contents will persist (be displayed) till the next cron runs.</li><li><strong>Any number</strong>: expired by the selected expiration time, and fresh contents are fetched till the next cache rebuilt.</li></ol>A working cron job is required to clear stale cache. At any rate, cached contents will be refreshed regardless of the expiration time after the cron hits. <br />Leave it empty to disable caching.<br /><strong>Warning!</strong> Be sure no useless/ sensitive data such as Edit links as they are rendered as is regardless permissions. No permissions are changed, just ugly. Only enable it when all is done, otherwise cached options will be displayed while changing them."
+msgstr "丟棄快取單純 HTML 的所有邏輯。<ol><li><strong>永久</strong>：快取內容將持續保存（顯示），直到執行下一個 Cron。</li><li><strong>任何數目</strong>：在選取的有效期限後過期，並且提取全新的內容，直到下一次重建快取。</li></ol>需要有運作中的 Cron 工作，才能清除陳舊的快取。無論如何，系統都會重新整理快取內容，而不論 Cron 命中後的有效期限為何。<br />讓它保留空白，表示停用快取。<br /><strong>警告！</strong>請確定不具有無用/機密資料（例如編輯鏈結），因為它們會依現狀呈現，而不論權限為何。未變更任何權限，只是有點醜。只有在全部完成後才啟用它，否則會在變更時會顯示快取的選項。"
+
+msgid "Enable any of the following fields as captions. These fields are treated and wrapped as captions."
+msgstr "啟用下列任何欄位作為標題。這些欄位是作為標題進行處理及包裝。"
+
+msgid "Overlay is displayed over the main stage. Can be plain image, sliders, etc."
+msgstr ""
+
+msgid "Also disable Views cache (<strong>Advanced &gt; Caching</strong>) temporarily _only if trouble to see updated settings."
+msgstr "此外，只有在查看已更新的設定發生問題時，才暫時停用視圖快取（<strong>進階 &gt; 快取</strong>）。"
+
+msgid "Be sure to CHECK \"Use field template\" under its formatter if using Slick field formatter."
+msgstr "如果使用靈巧的欄位格式製作程式，請務必勾選其格式製作程式下的「使用欄位範本」。"
+
+msgid "Be sure to make them visible at their relevant Manage display if View Mode option is provided."
+msgstr ""
+
+msgid "If provided, individual item will have this class, e.g.: to have different background with transparent images. Be sure its formatter is Key or Label. Accepted field types: list text, string (e.g.: node title), term/entity reference label."
+msgstr "如果提供的話，則個別項目將具有此類別，例如：具有包含透明影像的其他背景。請確定其格式製作程式為「索引鍵」或「標籤」。接受的欄位類型：清單文字、字串（例如：節點標題）、術語/實體參照標籤。"
+
+msgid "<strong>Supported types</strong>: Link or plain Text containing URL. Link to content: Read more, View Case Study, etc. If an entity, be sure its formatter is linkable strings like ID or Label. <strong>Two behaviors</strong>: <ol><li>If <strong>Media switcher &gt; Image linked by Link field</strong> is selected, it will be gone to serve as a wrapping link of the image, only if its formatter/ output is plain text URL.</li><li>As opposed to <strong>Caption fields</strong>, it will be positioned and wrapped with a dedicated class: <strong>@namespace__link</strong>.</li></ol>"
+msgstr ""
+
+msgid "Enable the optionset UI module to manage the optionsets."
+msgstr "讓選項集使用者介面能管理選項集。"
+
+msgid "Leave empty to not use thumbnail/ pager."
+msgstr ""
+
+msgid "<strong>Supported types</strong>: basic Image title, and fields like a dedicated field Title, Link, etc. If an entity, be sure its formatter is strings like ID or Label. As opposed to <strong>Caption fields</strong>, it will be positioned and wrapped with H2 (overriden by <code>hook_blazy_item_alter() with blazies.item.title_tag</code>) and a dedicated class: <strong>@module__title</strong>."
+msgstr ""
+
+msgid "<strong>Check</strong>:<ul><li>To render individual item as is as without extra logic.</li><li>To disable 99% @module features, and most of the mentioned options here, such as layouts, et al.</li><li>When the @module features can not satisfy the need.</li><li>Things may be broken! You are on your own.</li></ul><strong>Uncheck</strong>:<ul><li>To get consistent markups and its advanced features -- relevant for the provided options as @module needs to know what to style/work with.</li></ul>"
+msgstr "<strong>勾選</strong>：<ul><li>依現狀呈現個別項目，沒有額外的邏輯。</li><li>停用 99% 的 @module 功能，以及這裡所述的大部分選項，例如佈置等。</li><li>@module 功能無法滿足需要時。</li><li>形勢有點糟糕，您只能靠您自己了！</li></ul><strong>取消勾選</strong>：<ul><li>取得一致標記及其進階功能 -- 對於提供的選項很重要，因為 @module 需要瞭解要設定樣式/使用的內容。</li></ul>"
+
+msgid "Responsive image"
+msgstr "回應式影像"
+
+msgid "Responsive image style for the main stage image is more reasonable for large images. Works with multi-serving IMG, or PICTURE element. Leave empty to disable. <a href=\":url\" target=\"_blank\">Manage responsive image styles</a>."
+msgstr "對於大型影像而言，主要階段影像的回應式影像樣式更合理。適用於多重處理 IMG 或者 PICTURE 元素。保留空白，表示要停用。<a href=\":url\" target=\"_blank\">管理回應式影像樣式</a>。"
+
+msgid "<a href=\":url2\">Enable lazyloading Responsive image</a>."
+msgstr ""
+
+msgid "@title: <strong>@setting</strong>"
+msgstr "@title：<strong>@setting</strong>"
+
+msgid "Are you sure you want to delete the %name optionset %label?"
+msgstr "您確定要刪除 %name 選項集 %label 嗎？"
+
+msgid "Delete"
+msgstr "刪除"
+
+msgid "The %name optionset %label has been deleted."
+msgstr "已刪除 %name 選項集 %label。"
+
+msgid "Deleted optionset %oid (%label)"
+msgstr "已刪除選項集 %oid (%label)"
+
+msgid "<em>Duplicate %name optionset</em>: @label"
+msgstr "<em>複製 %name 選項集</em>：@label"
+
+msgid "<em>Edit %name optionset</em>: @label"
+msgstr "<em>編輯 %name 選項集</em>：@label"
+
+msgid "@config_prefix %label has been updated."
+msgstr "已更新 @config_prefix %label。"
+
+msgid "@config_prefix %label has been added."
+msgstr "已新增 @config_prefix %label。"
+
+msgid "Alt"
+msgstr "Alt"
+
+msgid "No caching"
+msgstr "沒有快取"
+
+msgid "Permanent"
+msgstr "永久"
+
+msgid "Automatic"
+msgstr "自動化"
+
+msgid "Alt text"
+msgstr "Alt 文字"
+
+msgid "Title text"
+msgstr "標題文字"
+
+msgid "Alt and Title"
+msgstr "Alt 和標題"
+
+msgid "Title and Alt"
+msgstr "標題和 Alt"
+
+msgid "Content title"
+msgstr "內容標題"
+
+msgid "Custom"
+msgstr "自訂"
+
+msgid "Required to grab the fields, or to have custom entity display as fallback display. If it has fields, be sure the selected \"View mode\" is enabled, and the enabled fields here are not hidden there."
+msgstr "必要項目，用來抓取欄位，或者將自訂實體顯示用作撤回顯示。如果它有欄位，請確定已啟用選取的「檢視模式」，而且這裡啟用的欄位在那裡並未隱藏。"
+
+msgid "Manage view modes on the <a href=\":view_modes\">View modes page</a>."
+msgstr "在<a href=\":view_modes\">「檢視模式」頁面</a>上，管理檢視模式。"
+
+msgid "Preload to optimize the loading of late-discovered resources. Normally large or hero images below the fold. By preloading a resource, you tell the browser to fetch it sooner than the browser would otherwise discover it before Native lazy or lazyloader JavaScript kicks in, or starts its own preload or decoding. The browser caches preloaded resources so they are available immediately when needed. Nothing is loaded or executed at preloading stage. <br>Just a friendly heads up: do not overuse this option, because not everything are critical, <a href=':url'>read more</a>."
+msgstr "預載以最佳化延遲探索資源的載入。 通常是摺疊下方的大型或英雄影像。 透過預先載入資源，您可以告知瀏覽器提取它的時間早於瀏覽器在 Native lazy 或 lazyloader JavaScript 開始或啟動自己的預載或解碼之前探索它的時間。 瀏覽器會快取預載的資源，以便在需要時立即可用。 在預載階段未載入或執行任何項目。 <br>只是友善的提醒：請勿過度使用此選項，因為並非一切都很重要，<a href=':url'>閱讀更多</a>。"
+
+msgid "Decide the `loading` attribute affected by the above fold aka onscreen critical contents aka <a href=':lcp'>LCP</a>. <ul><li>`lazy`, the default: defers loading below fold or offscreen images and iframes until users scroll near them.</li><li>`auto`: browser determines whether or not to lazily load. Only if uncertain about the above fold boundaries given different devices. </li><li>`eager`: loads right away. Similar effect like without `loading`, included for completeness. Good for above fold.</li><li>`defer`: trigger native lazy after the first row is loaded. Will disable global `No JavaScript: lazy` option on this particular field, <a href=':defer'>read more</a>.</li><li>`unlazy`: explicitly removes loading attribute enforced by core. Also removes old `data-[SRC|SRCSET|LAZY]` if `No JavaScript` is disabled. Best for the above fold.</li><li>`slider`, if applicable: will `unlazy` the first visible, and leave the rest lazyloaded. Best for sliders (one visible at a time), not carousels (multiple visible slides at once).</li></ul><b>Note</b>: lazy loading images/ iframes for the above fold is anti-pattern, avoid, <a href=':more'>read more</a>, even <a href=':webdev'>more</a>."
+msgstr ""
+
+msgid "The content image style. This will be treated as the fallback image to override the global option <a href=\":url\">Responsive image 1px placeholder</a>, which is normally smaller, if Responsive image are provided. Shortly, leave it empty to make Responsive image fallback respected. Otherwise this is the only image displayed. This image style is also used to provide dimensions not only for image/iframe but also any media entity like local video, where no images are even associated with, to have the designated dimensions in tandem with aspect ratio as otherwise no UI to customize for."
+msgstr "內容影像樣式。如果提供了回應式影像，則此項會視為置換<a href=\":url\">回應式影像 1px 位置保留元</a>廣域選項（通常較小）的備用影像。 不久後，將它保留空白，以遵循回應式影像備用。 否則，只會顯示此影像。 這個影像樣式不單可提供影像/資訊訊框的尺寸，甚至是沒有相關聯影像的任何媒體實體（例如本端視訊）也會提供其尺寸，如此一來，指定的尺寸就可以與長寬比搭配使用（除非無使用者介面可供自訂）。"
+
+msgid "Clear cache if lightboxes do not appear here due to being permanently cached. <ol><li>Link to content/ by Link field: for aggregated small media contents -- slicks, splides, grids, etc.</li><li>Image to iframe: video is hidden below image until toggled, otherwise iframe is always displayed, and draggable fails. Aspect ratio applies.</li><li>(Quasi-)lightboxes: Colorbox, ElevateZoomPlus, Intense, Photobox, PhotoSwipe, Magnific Popup, Slick Lightbox, Splidebox, Zooming, etc. Depends on the enabled supported modules, or has known integration with Blazy. See docs or <em>/admin/help/blazy_ui</em> for details.</li></ol> Add <em>Thumbnail style</em> if using Photobox, Slick, or others which may need it. Try selecting \"<strong>- None -</strong>\" first before changing if trouble with this complex form states."
+msgstr ""
+
+msgid "Supports both Responsive and regular images."
+msgstr "支援回應式及一般影像。"
+
+msgid "Allows different lightbox video dimensions. Or can be used to have a swipable video if <a href=\":photoswipe\">Blazy PhotoSwipe</a>, or <a href=\":slick\">Slick Lightbox</a>, or <a href=\":splidebox\">Splidebox</a> installed."
+msgstr ""
+
+msgid "Automatic will search for Alt text first, then Title text. Try selecting <strong>- None -</strong> first when changing if trouble with form states."
+msgstr "「自動」將先搜尋 Alt 文字，然後再搜尋「標題」文字。如果變更表單狀態時發生問題，請在變更之前先嘗試選取 <strong>- 無 -</strong>。"
+
+msgid "Multi-value rich text field will be mapped to each image by its delta."
+msgstr "多值 Rich Text 欄位將依其差異對映至每一個影像。"
+
+msgid "Aspect ratio to get consistently responsive images and iframes. Coupled with Image style. And to fix layout reflow, excessive height issues, whitespace below images, collapsed container, no-js users, etc. <a href=\":dimensions\" target=\"_blank\">Image styles and video dimensions</a> must <a href=\":follow\" target=\"_blank\">follow the aspect ratio</a>. If not, images will be distorted. <a href=\":link\" target=\"_blank\">Learn more</a>. <ul><li><b>Fixed ratio:</b> all images use the same aspect ratio mobile up. Use it to avoid JS works, or if it fails Responsive image. </li><li><b>Fluid:</b> aka dynamic, dimensions are calculated. First specific for non-responsive images, using PHP for pure CSS if any matching the fixed ones (1:1, 2:3, etc.), <a href=\":ratio\">read more</a>. If none found, JS works are attempted to fix it.</li><li><b>Leave empty:</b> to DIY (such as using CSS mediaquery), or when working with gapless grids like GridStack, or Blazy Native Grid.</li></ul>"
+msgstr ""
+
+msgid "Usages: <ol><li>Placeholder replacement for image effects (blur, etc.)</li><li>Photobox/PhotoSwipe thumbnail</li><li>Custom works with thumbnails.</li></ol> Be sure to have similar aspect ratio for the best blur effect. Leave empty to not use thumbnails."
+msgstr ""
+
+msgid "<strong>Required for</strong>: <ul><li>image attribute translation,</li><li>lightboxes as image triggers,</li><li>(remote|local) video high-res or poster image.</li><li>thumbnail/ slider navigation association, etc.</li></ul>Main background/stage/poster image field with the only supported field types: <b>Image</b> or <b>Media</b> containing an Image field. Add a new Image field to this entity, if not the Image bundle. Reuse the exact same image field (normally <strong>field_media_image</strong>) across various entitiy types (Image, Remote video, Local audio/video, etc.) within this particular entity (says, Media). This exact same field is also used for bundle <b>Image</b> to have a mix of videos and images if this entity is Media. Leaving it empty will fallback to the video provider thumbnails, and may cause issues due to failing requirements above."
+msgstr ""
+
+msgid "Empty the value first if trouble with changing form states. The amount of block grid columns (1 - 12, or empty) for large monitors 64.063em  (1025px) up."
+msgstr ""
+
+msgid "<br /><strong>Requires</strong>:<ol><li>Any grid-related Display style,</li><li>Visible items,</li><li>Skin Grid for starter,</li><li>A reasonable amount of contents.</li></ol>"
+msgstr ""
+
+msgid "Only accepts uniform columns (1 - 12, or empty) for medium devices 40.063em - 64em (641px - 1024px) up, even for Native Grid due to being pure CSS without JS."
+msgstr "僅接受多達 40.063em - 64em (641px - 1024px) 之媒體裝置的統一直欄（1 - 12 或空的），即使是「原生網格」也一樣，因為它是不含 JS 的純 CSS。"
+
+msgid "Only accepts uniform columns (1 - 2, or empty) for small devices 0 - 40em (640px) up due to small real estate, even for Native Grid due to being pure CSS without JS. Below this value, always one column."
+msgstr ""
+
+msgid "How many items per display at a time."
+msgstr "每次顯示的項目數。"
+
+msgid "If checked, keys will be preserved. Default is FALSE which will reindex the grid chunk numerically."
+msgstr "如果已勾選，則將保留索引鍵。預設值為 FALSE，這將以數字方式重新編制網格區塊的索引。"
+
+msgid "Depends on the <strong>Display style</strong>."
+msgstr ""
+
+msgid "<br>Specific for <b>Native Grid</b>, two recipes: <ol><li><b>One-dimensional</b>: Input a single numeric column grid, acting as Masonry. <em>Best with</em>: scaled images.</li><li><b>Two-dimensional</b>: Input a space separated value with <code>WIDTHxHEIGHT</code> pair based on the amount of columns/ rows, at max 12, e.g.: <br><code>4x4 4x3 2x2 2x4 2x2 2x3 2x3 4x2 4x2</code> <br>This will resemble GridStack optionset <b>Tagore</b>. Any single value e.g.: <code>4x4</code> will repeat uniformly like one-dimensional. <br><em>Best with</em>: <ul><li><b>Use CSS background</b> ON.</li><li>Exact item amount or better more designated grids than lacking. Use a little math with the exact item amount to have gapless grids.</li><li>Disabled image aspect ratio to use grid ratio instead.</li></ul></li></ol>This requires any grid-related <b>Display style</b>. Unless required, leave empty to DIY, or to not build grids."
+msgstr ""
+
+msgid "Check this to turn the image into CSS background. This opens up the goodness of CSS, such as background cover, fixed attachment, etc. <br /><strong>Important!</strong> Requires an Aspect ratio, otherwise collapsed containers. Unless explicitly removed such as for GridStack which manages its own problem, or a min-height is added manually to <strong>.b-bg</strong> selector."
+msgstr "勾選此選項，以將影像轉變為 CSS 背景。 這會開啟 CSS 的優點，例如背景覆蓋、固定附件等。 <br /><strong>重要事項！</strong> 需要長寬比，否則會造成儲存器收合。 除非針對管理自己問題的  GridStack（舉例來說）明確移除，否則將最小高度手動新增至 <strong>.b-bg</strong> 選取器。"
+
+msgid "Requires a skin. The builtin layouts affects the entire items uniformly. Leave empty to DIY."
+msgstr "需要外觀。內建佈置會全面影響所有項目。保留空白，表示要 DIY。"
+
+msgid "Skins allow various layouts with just CSS. Some options below depend on a skin. Leave empty to DIY. Or use the provided hook_info() and implement the skin interface to register ones."
+msgstr "「外觀」容許只利用 CSS 來建立各種佈置。下面部分選項取決於外觀。保留空白，表示要 DIY。或者，使用提供的 hook_info() 並實作外觀介面來登錄外觀。"
+
+msgid "Unless otherwise specified, the styles require <strong>Grid</strong>. Difference: <ul><li><strong>Columns</strong> is best with irregular image sizes (scale width, empty height), affects the natural order of grid items, top-bottom, not left-right.</li><li><strong>Foundation</strong> with regular cropped ones, left-right.</li><li><strong>Flex Masonry</strong> (@deprecated due to an epic failure) uses Flexbox, supports (ir)-regular, left-right flow, requires aspect ratio fluid to layout correctly.</li><li><strong>Native Grid</strong> supports both one and two dimensional grid.</li></ul> Unless required, leave empty to use default formatter, or style. Save for <b>Grid Foundation</b>, the rest are experimental!"
+msgstr ""
+
+msgid "If checked, SVG is not embedded in the IMG tag. Be sure to disable CSS background option. Only enable for CSS and JavaScript manipulations, and trusted users, due to <a href=\":url1\">inline SVG security</a>. Required <a href=\":url2\">SVG Sanitizer</a>."
+msgstr ""
+
+msgid "Sanitize the SVG XML code to prevent XSS attacks. Required <a href=\":url\">SVG Sanitizer</a>."
+msgstr ""
+
+msgid "Remove attributes that reference remote files, this will stop HTTP leaks but will add an overhead to the sanitizer."
+msgstr ""
+
+msgid "Force the fill to currentColor to allow the SVG inherit coloring from the enclosing tag, such as a link tag."
+msgstr ""
+
+msgid "Unlike images, SVG has no ALT and TITLE attributes, except for SVG Image Field, or core file Description field. This option will hide captions, and put them into image attributes instead. Relevant if Inline option is disabled aka using IMG tag. Be sure to enable them under the Caption fields."
+msgstr ""
+
+msgid "Input one of SVG dimension sources: <code>none, image_style, or WIDTHxHEIGHT</code>. To disable, input: <strong>none</strong>, and will also disable Aspect ratio option. The <strong>image_style</strong> ansich will use the provided Image style, useful to get consistent heights within carousels, or rigid grids. The <strong>WIDTHxHEIGHT</strong>, e.g.: 800x400, for custom defined dimensions. Default or fallback to extract from SVG attributes, unless <strong>none</strong> is set. Only width and height are supported. Affected by Aspect ratio option."
+msgstr ""
+
+msgid "Preview"
+msgstr "預覽"
+
+msgid "Thumbnail"
+msgstr "縮圖"
+
+msgid "Image convert failed using the %toolkit toolkit on %path (%mimetype)"
+msgstr ""
+
+msgid "Blazy File/SVG"
+msgstr ""
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Blazy Image"
+msgstr ""
+
+msgid "Blazy Media"
+msgstr ""
+
+msgid "Blazy OEmbed"
+msgstr ""
+
+msgid "When provided the text will be separated by this delimiter. Use comma to have multiple delimiters."
+msgstr ""
+
+msgid "Blazy Title will format delimited plain text or string as HTML title with a sub-title."
+msgstr ""
+
+msgid "Sub-title tag"
+msgstr ""
+
+msgid "The tag for the second/ last split as sub-title. Only one tag can exist."
+msgstr ""
+
+msgid "Add line break"
+msgstr ""
+
+msgid "Use CSS <code>display:block</code> on the Sub-title tag to have multiple lines for better display, or enable this to add the ugly line break."
+msgstr ""
+
+msgid "Delimiter: <strong>@delimiter</strong> <br />Sub-title tag: <strong>@tag</strong> <br />Linebreak: <strong>@break</strong>"
+msgstr ""
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid "Blazy Title"
+msgstr ""
+
+msgid ""
+"<b>Blazy</b>: <ul><li>With HTML: <code>[blazy]..[item]IMG[/item]..[/blazy]</code></li><li>With self-closing using data entity, <code>data=ENTITY_TYPE:ID:FIELD_NAME:FIELD_IMAGE</code>:<br><code>[blazy data=\"node:44:field_media\" /]</code>. <code>FIELD_IMAGE</code> is optional for video poster, or hires, normally <code>field_media_image</code>.<li>Grid format:\n"
+"      <code>STYLE:SMALL-MEDIUM-LARGE</code>, where <code>STYLE</code> is one of <code>column grid\n"
+"      flex nativegrid</code>.<br>\n"
+"      <code>[blazy grid=\"column:2-3-4\" data=\"node:44:field_media\" /]</code><br>\n"
+"      <code>[blazy grid=\"nativegrid:2-3-4\"]...[/blazy]</code><br>\n"
+"      <code>[blazy grid=\"nativegrid:2-3-4x4 4x3 2x2 2x4 2x2 2x3 2x3 4x2 4x2\"]...[/blazy]\n"
+"      </code><br>Only nativegrid can have number or dimension string (4x4...). The rest number only.</li><li>The attributes grid, data, settings can be combined into one [blazy].</li><li>To disable, add <code>data-unblazy</code>, e.g.: <code>&lt;img data-unblazy</code> or <code>&lt;iframe data-unblazy</code>. Add width and height for SVG, and non-uploaded images without image styles.</li></ul>"
+msgstr ""
+
+msgid "Enable HTML tags"
+msgstr "啟用 HTML 標籤"
+
+msgid "Image"
+msgstr "圖片"
+
+msgid "Video iframe"
+msgstr "視訊資訊訊框"
+
+msgid "To disable Blazy per individual item, add attribute <code>data-unblazy</code>."
+msgstr "若要停用每個個別項目的 Blazy，請新增 <code>data-unblazy</code>　屬性。"
+
+msgid "<b>Warning!</b> Blazy Filter is useless and broken when you enable <b>Media embed</b> or <b>Display embedded entities</b>. You can disable Blazy Filter in favor of Blazy formatter embedded inside <b>Media embed</b> or <b>Display embedded entities</b> instead. However it might be useful for User Generated Contents (UGC) where Entity/Media Embed are likely more for privileged users, authors, editors, admins, alike. Or when Entity/Media Embed is disabled. Or when editors prefer pasting embed codes from video providers rather than creating media entities. Or want the new shortcodes for embedding known entity, grid, Native Grid, etc."
+msgstr "<b>警告！</b> 當您啟用<b>媒體內嵌</b>或<b>顯示內嵌實體</b>時，「Blazy 過濾器」是無用且中斷的。 您可以停用「Blazy 過濾器」，而改用內嵌在<b>媒體內嵌</b>或<b>顯示內嵌實體</b>的 Blazy 格式製作程式。 不過，它對於「使用者產生的內容 (UGC)」可能很有用，在此情況下，對於特許使用者、作者、編輯者、管理者，「實體/媒體內嵌」可能很相像。 或在「實體/媒體內嵌」停用時。 或者，當編輯者偏好貼上來自視訊提供者的內嵌程式碼，而不是建立媒體實體時。 或者需要新的簡短代碼來內嵌已知實體、網格、原生網格等。"
+
+msgid "Enable to support the use of data URI. Leave it unchecked if unsure, or never use data URI. <b>Warning! It has security implications given to untrusted users.</b>"
+msgstr ""
+
+msgid "Recommended placement after Align / Caption images. Not tested against, nor dependent on, Shortcode module. Be sure to place Blazy filter before any other Shortcode if installed."
+msgstr "在「對齊/標題」影像之後的建議放置。 不會針對「簡碼」模組進行測試，也不會依賴「簡碼」模組。 如果已安裝，請務必將 Blazy 過濾器放在任何其他「簡碼」之前。"
+
+msgid "Lazyload inline images, or video iframes using Blazy."
+msgstr "使用 Blazy 來延遲載入行內影像或視訊資訊訊框。"
+
+msgid "Image to iframe"
+msgstr "影像至資訊訊框"
+
+msgid "<ul><li><b>Image to iframe</b> will play video when toggled.</li><li><b>Image to lightbox</b> (Colorbox, Photobox, PhotoSwipe, Slick Lightbox, Zooming, Intense, etc.) will display media in lightbox.</li></ul>Both can stand alone or grouped as a gallery. To build a gallery, use the grid shortcodes."
+msgstr "<ul><li><b>影像至資訊訊框</b>將在切換時播放視訊。</li><li><b>影像至燈箱</b>（Colorbox、Photobox、PhotoSwipe、Slick Lightbox、Zooming、Intense 等） 將在燈箱中顯示媒體。</li></ul>兩者都可以獨立或分組為展示區。 若要建置展示區，請使用網格 shortcode。"
+
+msgid "Fallback (Responsive) image style when <code>[data-image-style]</code> or <code>[data-responsive-image-style]</code> attributes are not present, see https://drupal.org/node/2061377."
+msgstr "當 <code>[data-image-style]</code> 或 <code>[data-responsive-image-style]</code> 屬性不存在時，則為備用（回應式）影像樣式，請參閱 https://drupal.org/node/2061377。"
+
+msgid "Caption filter"
+msgstr "標題過濾器"
+
+msgid "Automatic will search for Alt text first, then Title text. <br>Image styles only work for uploaded images, not hand-coded ones. Caption filter will use <code>data-caption</code> normally managed by Caption filter, will not work for shortcode without [item] element."
+msgstr ""
+
+msgid "Will fallback to this view mode, else entity label."
+msgstr "將撤回至此檢視模式，否則為實體標籤。"
+
+msgid "Preview image for the @bundle \"@label\" - @alt."
+msgstr ""
+
+msgid "Preview image for the @bundle \"@label\"."
+msgstr ""
+
+msgid "Load and play video."
+msgstr "載入並播放視訊。"
+
+msgid "Stop and close video."
+msgstr "停止並關閉視訊。"
+
+msgid "Load and play the video \"@label\"."
+msgstr "載入並播放視訊 \"@label\"。"
+
+msgid "Stop and close the video \"@label\"."
+msgstr "停止並關閉視訊 \"@label\"。"
+

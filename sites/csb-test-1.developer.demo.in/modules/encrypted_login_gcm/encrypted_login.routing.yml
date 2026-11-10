@@ -1,0 +1,6 @@
+encrypted_login.get_aes_key:
+  path: '/encrypted_login/getPublicKey'
+  defaults:
+    _controller: '\Drupal\encrypted_login\Controller\EncryptedLoginController::getPublicKey'
+  requirements:
+    _permission: 'access content'

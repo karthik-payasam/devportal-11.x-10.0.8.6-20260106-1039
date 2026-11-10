@@ -1,0 +1,20 @@
+services:
+  plugin.manager.voting_api_widget.processor:
+    class: \Drupal\votingapi_widgets\Plugin\VotingApiWidgetManager
+    parent: default_plugin_manager
+  Drupal\votingapi_widgets\Plugin\VotingApiWidgetManager: '@plugin.manager.voting_api_widget.processor'
+
+  voting_api.lazy_loader:
+    class: \Drupal\votingapi_widgets\VotingApiLazyLoader
+    autowire: true
+  Drupal\votingapi_widgets\VotingApiLazyLoader: '@voting_api.lazy_loader'
+
+  Drupal\votingapi_widgets\Hook\VotingApiWidgetsEntityHooks:
+    class: \Drupal\votingapi_widgets\Hook\VotingApiWidgetsEntityHooks
+    autowire: true
+  Drupal\votingapi_widgets\Hook\VotingApiWidgetsFormHooks:
+    class: \Drupal\votingapi_widgets\Hook\VotingApiWidgetsFormHooks
+    autowire: true
+  Drupal\votingapi_widgets\Hook\VotingApiWidgetsHelpHooks:
+    class: \Drupal\votingapi_widgets\Hook\VotingApiWidgetsHelpHooks
+    autowire: true

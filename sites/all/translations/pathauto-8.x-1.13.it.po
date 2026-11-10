@@ -1,0 +1,579 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Joined path"
+msgstr "Percorso congiunto"
+
+msgid "The array values each cleaned by Pathauto and then joined with the slash into a string that resembles an URL."
+msgstr "I valori dell'array ripuliti singolarmente da Pathauto e poi riuniti con lo slash in una stringa che assomiglia a un URL."
+
+msgid "About"
+msgstr "Informazioni"
+
+msgid "The Pathauto module provides a mechanism to automate the creation of <a href=\"path\">path</a> aliases. This makes URLs more readable and helps search engines index content more effectively.  For more information, see the <a href=\":online\">online documentation for Pathauto</a>."
+msgstr "Il modulo Pathauto fornisce un meccanismo per rendere automatica la creazione di alias del <a href=\"path\">percorso</a>. Questo rende gli URL più leggibili e consente ai motori di ricerca di indicizzare il contenuto in modo più efficace. Per ulteriori informazioni, consultare la <a href=\":online\">documentazione online relative a Pathauto</a>. "
+
+msgid "Uses"
+msgstr "Usa"
+
+msgid "Pathauto is accessed from the tabs it adds to the list of <a href=\":aliases\">URL aliases</a>."
+msgstr "È possibile accedere a Pathauto dalle schede aggiunte all'elenco di <a href=\":aliases\">Alias URL</a>. "
+
+msgid "Creating Pathauto Patterns"
+msgstr "Creazione di pattern Pathauto"
+
+msgid "The <a href=\":pathauto_pattern\">\"Patterns\"</a> page is used to configure automatic path aliasing.  New patterns are created here using the <a href=\":add_form\">Add Pathauto pattern</a> button which presents a form to simplify pattern creation thru the use of <a href=\"token\">available tokens</a>. The patterns page provides a list of all patterns on the site and allows you to edit and reorder them. An alias is generated for the first pattern that applies."
+msgstr "La pagina The <a href=\":pathauto_pattern\">\"Pattern\"</a> viene utilizzata per configurare l'aliasing del percorso automatico. I nuovi pattern vengono creati in questo punto utilizzando il pulsante <a href=\":add_form\">Aggiungi pattern Pathauto</a> che visualizza un form che rende più semplice la creazione dei pattern mediante l'utilizzo dei <a href=\"token\">token disponibili</a>. La pagina Pattern fornisce un elenco di tutti i pattern sul sito e consente di modificarli e riordinarli. Viene generato un alias per il primo pattern che si applica. "
+
+msgid "Pathauto Settings"
+msgstr "Impostazioni di Pathauto"
+
+msgid "The <a href=\":settings\">\"Settings\"</a> page is used to customize global Pathauto settings for automated pattern creation."
+msgstr "La pagina <a href=\":settings\">\"Impostazioni\"</a> viene utilizzata per personalizzare le impostazioni globali di Pathauto per la creazione automatizzata dei pattern. "
+
+msgid "The <strong>maximum alias length</strong> and <strong>maximum component length</strong> values default to 100 and have a limit of @max from Pathauto. You should enter a value that is the length of the \"alias\" column of the path_alias database table minus the length of any strings that might get added to the end of the URL. The recommended and default value is 100."
+msgstr "I valori <strong>Lunghezza massima degli alias</strong> e <strong>Lunghezza massima componente</strong> sono impostati su 100 per impostazione predefinita ed hanno il limite @max da Pathauto. È necessario immettere un valore che sia la lunghezza della colonna \"alias\" della tabella del database path_alias meno la lunghezza di eventuali stringhe che potrebbero essere aggiunte alla fine dell'URL. Il valore predefinito e consigliato è 100."
+
+msgid "Bulk Generation"
+msgstr "Creazione in massa"
+
+msgid "The <a href=\":pathauto_bulk\">\"Bulk Generate\"</a> page allows you to create URL aliases for items that currently have no aliases. This is typically used when installing Pathauto on a site that has existing un-aliased content that needs to be aliased in bulk."
+msgstr "La pagina <a href=\":pathauto_bulk\">\"Creazione in massa\"</a> consente di creare alias URL per gli elementi che attualmente non dispongono di alias. Viene generalmente utilizzata quando Pathauto viene installato su un sito con contenuto esistente privo di alias a cui è necessario assegnare un alias in massa. "
+
+msgid "Delete Aliases"
+msgstr "Elimina alias "
+
+msgid "The <a href=\":pathauto_delete\">\"Delete Aliases\"</a> page allows you to remove URL aliases from items that have previously been assigned aliases using pathauto."
+msgstr "La pagina <a href=\":pathauto_delete\">\"Elimina alias\"</a> consente di rimuovere gli alias URL dagli elementi a cui sono stati precedentemente assegnati degli alias utilizzando pathauto. "
+
+msgid "This page provides a list of all patterns on the site and allows you to edit and reorder them."
+msgstr "Questa pagina fornisce un elenco dei pattern sul sito e consente di modificarli e riordinarli. "
+
+msgid "You need to select a pattern type, then a pattern and filter, and a label. Additional types can be enabled on the <a href=\":settings\">Settings</a> page."
+msgstr "È necessario selezionare un tipo di pattern, quindi un pattern ed un filtro, ed un'etichetta. Nella pagina <a href=\":settings\">Impostazioni</a> è possibile abilitare ulteriori tipi. "
+
+msgid "Bulk generation can be used to generate URL aliases for items that currently have no aliases. This is typically used when installing Pathauto on a site that has existing un-aliased content that needs to be aliased in bulk."
+msgstr "La creazione in massa può essere utilizzata per generare alias URL per gli elementi che attualmente non dispongono di alias. Viene generalmente utilizzata quando Pathauto viene installato su un sito con contenuto esistente privo di alias a cui è necessario assegnare un alias in massa. "
+
+msgid "It can also be used to regenerate URL aliases for items that have an old alias and for which the Pathauto pattern has been changed."
+msgstr "Può essere utilizzata anche per rigenerare gli alias URL per elementi che dispongono di un alias e per cui il pattern Pathauto è stato modificato. "
+
+msgid "Note that this will only affect items which are configured to have their URL alias automatically set. Items whose URL alias is manually set are not affected."
+msgstr "Notare che questa funzione ha effetto solo per gli elementi configurati in modo che i relativi alias URL vengano impostati automaticamente. Gli elementi i cui alias URL vengono impostati manualmente non sono interessati. "
+
+msgid "URL alias"
+msgstr "Alias URL"
+
+msgid "The %element-title is using the following invalid characters: @invalid-characters."
+msgstr "%element-title utilizza i seguenti caratteri non validi: @invalid-characters."
+
+msgid "The %element-title doesn't allow the patterns ending with whitespace."
+msgstr "%element-title non consente pattern che terminano con spazi. "
+
+msgid "Entity of type @type was not processed. It defines the following patterns: @patterns"
+msgstr "L'entità di tipo @type non è stata elaborata. Definisce i seguenti pattern: @patterns"
+
+msgid "Unrecognized entity bundle @entity:@bundle was not processed. It defines the following patterns: @patterns"
+msgstr "Il bundle dell'entità non riconosciuta @entity:@bundle non è stato elaborato. Definisce i seguenti pattern: @patterns"
+
+msgid "Automatic alias"
+msgstr "Alias automatico"
+
+msgid "Alias: @alias"
+msgstr "Alias: @alias"
+
+msgid "No alias"
+msgstr "Nessun alias"
+
+msgid "Pathauto"
+msgstr "Pathauto"
+
+msgid "Provides a mechanism for modules to automatically generate aliases for the content they manage."
+msgstr "Fornisce un meccanismo affinché i moduli generino automaticamente degli alias per i tipi di contenuto che gestiscono."
+
+msgid "Add Pathauto pattern"
+msgstr "Aggiungi pattern Pathauto"
+
+msgid "Patterns"
+msgstr "Pattern"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Bulk generate"
+msgstr "Creazione in massa"
+
+msgid "Delete aliases"
+msgstr "Elimina alias"
+
+msgid "Administer pathauto"
+msgstr "Amministra pathauto"
+
+msgid "Allows a user to configure patterns for automated aliases and bulk delete URL-aliases."
+msgstr "Permette ad un utente la configurazione di schemi per alias automatici e rimozione di massa di alias URL."
+
+msgid "Notify of Path Changes"
+msgstr "Notifica di cambiamenti di percorso"
+
+msgid "Determines whether or not users are notified."
+msgstr "Determina se gli utenti sono avvisati."
+
+msgid "Duplicate Pathauto pattern"
+msgstr "Duplicare pattern Pathauto"
+
+msgid "Enabled entity types"
+msgstr "Tipi di entità abilitati"
+
+msgid "Tokens that are safe to use and do not need to be cleaned."
+msgstr "Token che sono sicuri da usare e non hanno bisogno di essere puliti."
+
+msgid "Update URL alias"
+msgstr "Aggiorna alias URL"
+
+msgid "Pathauto pattern config"
+msgstr "Configurazione pattern Pathauto"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "Etichetta"
+
+msgid "Pattern type"
+msgstr "Tipo di pattern"
+
+msgid "Pattern"
+msgstr "Modello"
+
+msgid "Selection criteria"
+msgstr "Criteri di selezione "
+
+msgid "Selection condition"
+msgstr "Condizione di selezione"
+
+msgid "Selection logic"
+msgstr "Logica di selezione"
+
+msgid "Weight"
+msgstr "Peso"
+
+msgid "Context definitions"
+msgstr "Definizioni del contesto"
+
+msgid "Relationship"
+msgstr "Relazione"
+
+msgid "Double quotation marks"
+msgstr "Virgolette doppie"
+
+msgid "Single quotation marks (apostrophe)"
+msgstr "Virgolette singole (apostrofo)"
+
+msgid "Back tick"
+msgstr "Apostrofo inverso"
+
+msgid "Comma"
+msgstr "Virgola"
+
+msgid "Period"
+msgstr "Punto"
+
+msgid "Hyphen"
+msgstr "Trattino"
+
+msgid "Underscore"
+msgstr "Trattino basso"
+
+msgid "Colon"
+msgstr "Due punti"
+
+msgid "Semicolon"
+msgstr "Punto e virgola"
+
+msgid "Vertical bar (pipe)"
+msgstr "Barra verticale (pipe)"
+
+msgid "Left curly bracket"
+msgstr "Parentesi graffa sinistra"
+
+msgid "Left square bracket"
+msgstr "Parentesi quadra sinistra"
+
+msgid "Right curly bracket"
+msgstr "Parentesi graffa destra"
+
+msgid "Right square bracket"
+msgstr "Parentesi quadra destra"
+
+msgid "Plus sign"
+msgstr "Simbolo \"Più\""
+
+msgid "Equal sign"
+msgstr "Simbolo \"Uguale\""
+
+msgid "Asterisk"
+msgstr "Asterisco"
+
+msgid "Ampersand"
+msgstr "E commerciale"
+
+msgid "Percent sign"
+msgstr "Simbolo di \"Percentuale\""
+
+msgid "Caret"
+msgstr "Segno di omissione"
+
+msgid "Dollar sign"
+msgstr "Simbolo dollaro"
+
+msgid "Number sign (pound sign, hash)"
+msgstr "Cancelletto"
+
+msgid "At sign"
+msgstr "Chiocciola"
+
+msgid "Exclamation mark"
+msgstr "Punto esclamativo"
+
+msgid "Tilde"
+msgstr "Tilde"
+
+msgid "Left parenthesis"
+msgstr "Parentesi sinistra"
+
+msgid "Right parenthesis"
+msgstr "Parentesi destra"
+
+msgid "Question mark"
+msgstr "Punto interrogativo"
+
+msgid "Less-than sign"
+msgstr "Simbolo di \"Minore\""
+
+msgid "Greater-than sign"
+msgstr "SImbolo di \"Maggiore\""
+
+msgid "Slash"
+msgstr "Slash"
+
+msgid "Backslash"
+msgstr "Backslash"
+
+msgid "Ignoring alias %alias because it is the same as the internal path."
+msgstr "Ignorato l'alias %alias in quanto coincide con un percorso interno."
+
+msgid "Created new alias %alias for %source, replacing %old_alias."
+msgstr "Creato un nuovo alias %alias per %source, rimpiazzando %old_alias."
+
+msgid "Created new alias %alias for %source."
+msgstr "Creato un nuovo alias %alias per %source."
+
+msgid "The automatically generated alias %original_alias conflicted with an existing alias. Alias changed to %alias."
+msgstr "L'alias %original_alias, generato automaticamente, è in conflitto con un alias esistente. L'alias è stato modificato in %alias."
+
+msgid "Pathauto state"
+msgstr "Stato Pathauto"
+
+msgid "Whether an automated alias should be created or not."
+msgstr "Indica se è possibile creare o meno un alias automatizzato. "
+
+msgid "Conditions"
+msgstr "Condizioni"
+
+msgid "Duplicate"
+msgstr "Duplicata"
+
+msgid "Uncheck this to create a custom alias below. <a href=\"@admin_link\">Configure URL alias patterns.</a>"
+msgstr "Deseleziona per definire un alias personalizzato. <a href=\"@admin_link\">Configurare i pattern dell'alias URL</a>. "
+
+msgid "Uncheck this to create a custom alias below."
+msgstr "Deseleziona per definire un alias personalizzato."
+
+msgid "Generate automatic URL alias"
+msgstr "Genera un alias automatico per l'URL"
+
+msgid "Bulk updating URL aliases"
+msgstr "Aggiorna tutti gli alias URL"
+
+msgid "Bulk deleting URL aliases"
+msgstr "Eliminazione in massa degli alias URL"
+
+msgid "All of your path aliases have been deleted."
+msgstr "Tutti i percorsi alias sono stati eliminati."
+
+msgid "All of your %label path aliases have been deleted."
+msgstr "Tutti gli alias del percorso %label sono stati eliminati. "
+
+msgid "Choose the action to perform."
+msgstr "Scegliere l'azione da eseguire."
+
+msgid "Choose the alias type(s). Separate multiple choices with commas, e.g. \"1,2,4\", or choose \"0\" for all types."
+msgstr "Scegliere il tipo (i tipi) di alias. Separare le scelte multiple con una virgola (ad esempio \"1,2,4\"), o scegliere \"0\" per tutti i tipi."
+
+msgid "Invalid action argument \"@invalid_action\". Please use one of: @valid_actions"
+msgstr "Argomento dell'azione non valido \"@invalid_action\". Utilizzare uno di: @valid_actions"
+
+msgid "Invalid type argument \"@invalid_types\". Please choose from the following: @valid_types"
+msgstr "Argomento del tipo non valido \"@invalid_types\". Scegliere tra i seguenti: @valid_types"
+
+msgid "Generate a URL alias for un-aliased paths only."
+msgstr "Generare un alias URL solo per i percorsi senza alias."
+
+msgid "Update the URL alias for paths having an old URL alias."
+msgstr "Aggiorna l'alias URL per i percorsi che dispongono di un alias URL precedente."
+
+msgid "Regenerate URL aliases for all paths."
+msgstr "Rigenera gli alias URL per tutti i percorsi."
+
+msgid "Pathauto pattern"
+msgstr "Pattern Pathauto"
+
+msgid "Choose aliases to delete"
+msgstr "Seleziona gli alias da eliminare"
+
+msgid "All aliases"
+msgstr "Tutti gli alias"
+
+msgid "Delete all aliases. Number of aliases which will be deleted: %count."
+msgstr "Elimina tutti gli alias. Numero di alias che saranno eliminati: %count."
+
+msgid "Delete aliases for all @label. Number of aliases which will be deleted: %count."
+msgstr "Eliminare gli alias per tutte le voci @label. Il numero degli alias che saranno eliminati è: %count."
+
+msgid "Delete options"
+msgstr "Opzioni di eliminazione "
+
+msgid "Only delete automatically generated aliases"
+msgstr "Elimina solo gli alias generati automaticamente "
+
+msgid "When checked, aliases which have been manually set are not affected by this mass-deletion."
+msgstr "Quando questa opzione è selezionata, gli alias impostati manualmente non vengono interessati da questa eliminazione in massa. "
+
+msgid "<strong>Note:</strong> there is no confirmation. Be sure of your action before clicking the \"Delete aliases now!\" button.<br />You may want to make a backup of the database and/or the path_alias and path_alias_revision tables prior to using this feature."
+msgstr "<strong>Nota:</strong> non ci sono conferme. Assicurarsi della propria azione prima di fare clic su \"Elimina gli alias ora\" . <br />È possibile effettuare un backup del database e/o delle tabelle path_alias e path_alias_revision prima di utilizzare questa funzione."
+
+msgid "Delete aliases now!"
+msgstr "Elimina alias ora!"
+
+msgid "All of your automatically generated path aliases have been deleted."
+msgstr "Tutti gli alias del percorso generati automaticamente sono stati eliminati. "
+
+msgid "All of your automatically generated %label path aliases have been deleted."
+msgstr "Tutti gli alias del percorso %label generati automaticamente sono stati eliminati. "
+
+msgid "An error occurred while processing @operation with arguments : @args"
+msgstr "Si è verificato un errore durante l'esecuzione di @operation con argomenti: @args"
+
+msgid "Select the types of paths for which to generate URL aliases"
+msgstr "Selezionare i tipi di percorso per cui generare gli alias URL "
+
+msgid "Select which URL aliases to generate"
+msgstr "Selezionare gli alias URL da generare "
+
+msgid "Generate a URL alias for un-aliased paths only"
+msgstr "Genera un alias URL solo per i percorsi senza alias"
+
+msgid "<a href=\":url\">Pathauto settings</a> are set to ignore paths which already have a URL alias. You can only create URL aliases for paths having none."
+msgstr "Le <a href=\":url\">impostazioni di Pathauto</a> vengono impostate per ignorare i percorsi che già dispongono di un alias URL. È possibile creare alias URL solo per i percorsi che non dispongono già di un alias URL. "
+
+msgid "Update the URL alias for paths having an old URL alias"
+msgstr "Aggiorna alias URL per i percorsi che dispongono di un alias URL precedente "
+
+msgid "Regenerate URL aliases for all paths"
+msgstr "Rigenera alias URL per tutti i percorsi "
+
+msgid "Update"
+msgstr "Aggiorna"
+
+msgid "No new URL aliases to generate."
+msgstr "Nessun nuovo URL alias da generare."
+
+msgid "Generated 1 URL alias."
+msgid_plural "Generated @count URL aliases."
+msgstr[0] "Generato 1 URL alias."
+msgstr[1] "Generati @count URL alias."
+
+msgid "Enable to add a path field and allow to define alias patterns for the given type. Disabled types already define a path field themselves or currently have a pattern."
+msgstr "Abilitare per aggiungere un campo percorso e consentire di definire pattern alias per il tipo fornito. I tipi disabilitati definiscono sempre un campo percorso o dispongono di un pattern. "
+
+msgid "Verbose"
+msgstr "Prolisso"
+
+msgid "Display alias changes (except during bulk updates)."
+msgstr "Visualizza le modifiche degli alias (a eccezione degli aggiornamenti di massa)."
+
+msgid "Separator"
+msgstr "Separatore"
+
+msgid "Character used to separate words in titles. This will replace any spaces and punctuation characters. Using a space or + character can cause unexpected results."
+msgstr "Carattere usato per separare le parole nei titoli. Sostituirà qualsiasi spazio e carattere di punteggiatura. L'utilizzo di uno spazio o del carattere + può creare risultati non voluti."
+
+msgid "Character case"
+msgstr "Carattere MAIUSCOLO/minuscolo"
+
+msgid "Convert token values to lowercase."
+msgstr "Converti valori token in minuscolo."
+
+msgid "See <a href=\":pathauto-help\">Pathauto help</a> for details."
+msgstr "Consultare la <a href=\":pathauto-help\">guida di Pathauto</a> per i dettagli. "
+
+msgid "Maximum alias length"
+msgstr "Lunghezza massima degli alias"
+
+msgid "Maximum length of aliases to generate. 100 is the recommended length. @max is the maximum possible length."
+msgstr "Lunghezza massima degli alias da generare. 100 è la lunghezza consigliata. @max è la lunghezza massima possibile. "
+
+msgid "Maximum component length"
+msgstr "Lunghezza massima componente"
+
+msgid "Maximum text length of any component in the alias (e.g., [title]). 100 is the recommended length. @max is the maximum possible length."
+msgstr "Lunghezza massima del testo di qualsiasi componente nell'alias (ad esempio, [title]). 100 è la lunghezza consigliata. @max è la lunghezza massima possibile. "
+
+msgid "What should Pathauto do when updating an existing content item which already has an alias?"
+msgstr "Cosa dovrebbe fare Pathauto quando viene aggiornato del contenuto che ha già un alias?"
+
+msgid "The <a href=\":url\">Redirect module settings</a> affect whether a redirect is created when an alias is deleted."
+msgstr "Le <a href=\":url\">impostazioni del modulo Reindirizza</a> vengono applicate se viene creato un reindirizzamento quando un alias viene eliminato. "
+
+msgid "Considering installing the <a href=\":url\">Redirect module</a> to get redirects when your aliases change."
+msgstr "Considerare l'installazione del <a href=\":url\">modulo Reindirizza</a> per ottenere reindirizzamenti quando gli alias vengono modificati. "
+
+msgid "Update action"
+msgstr "Aggiorna azione"
+
+msgid "Do nothing. Leave the old alias intact."
+msgstr "Non fare nulla. Lascia intatti gli alias vecchi."
+
+msgid "Create a new alias. Leave the existing alias functioning."
+msgstr "Crea nuovi alias. Gli alias esistenti restano funzionanti."
+
+msgid "Create a new alias. Delete the old alias."
+msgstr "Crea nuovi alias. Elimina quelli vecchi."
+
+msgid "Transliterate prior to creating alias"
+msgstr "Traslitterare prima di creare nuovi alias"
+
+msgid "When a pattern includes certain characters (such as those with accents) should Pathauto attempt to transliterate them into the US-ASCII alphabet?"
+msgstr "Quando un pattern contiene alcuni caratteri (come i caratteri accentati), Pathauto deve provare ad effettuare la conversione in alfabeto US-ASCII? "
+
+msgid "Reduce strings to letters and numbers"
+msgstr "Riduci stringhe a lettere e numeri"
+
+msgid "Filters the new alias to only letters and numbers found in the ASCII-96 set."
+msgstr "Filtra i nuovi alias solo per lettere e numeri che si trovano nella serie ASCII-96."
+
+msgid "Strings to Remove"
+msgstr "Stringhe da rimuovere"
+
+msgid "Words to strip out of the URL alias, separated by commas. Do not use this to remove punctuation."
+msgstr "Parole da rimuovere dall'alias URL separate da virgole. Non utilizzare per rimuovere punteggiatura."
+
+msgid "Safe tokens"
+msgstr "Token sicuri"
+
+msgid "List of tokens that are safe to use in alias patterns and do not need to be cleaned. For example urls, aliases, machine names. Separated with a comma."
+msgstr "Elenco di token che sono sicuri da usare negli schemi alias e non devono essere puliti. Ad esempio url, alias, nomi di macchine. Separato da una virgola."
+
+msgid "Punctuation"
+msgstr "Punteggiatura"
+
+msgid "Remove"
+msgstr "Elimina"
+
+msgid "Replace by separator"
+msgstr "Sostituisci con un separatore"
+
+msgid "No action (do not replace)"
+msgstr "Nessuna azione (non sostituire)"
+
+msgid "Are you sure you want to disable the pattern %label?"
+msgstr "Si è sicuri di voler disabilitare il pattern %label?"
+
+msgid "Disable"
+msgstr "Disattiva"
+
+msgid "Disabled patterns are ignored when generating aliases."
+msgstr "I pattern disabilitati vengono ignorati durante la generazione degli alias. "
+
+msgid "Disabled pattern %label."
+msgstr "Pattern disabilitato %label. "
+
+msgid "Path pattern"
+msgstr "Modello percorso"
+
+msgid "Check to which types this pattern should be applied. Leave empty to allow any."
+msgstr "Selezionare i tipi a cui deve essere applicato questo pattern. Lasciare vuoto per selezionare tutti i valori. "
+
+msgid "Languages"
+msgstr "Lingue"
+
+msgid "Check to which languages this pattern should be applied. Leave empty to allow any."
+msgstr "Selezionare le lingue a cui deve essere applicato questo pattern. Lasciare vuoto per selezionare tutti i valori. "
+
+msgid "A short name to help you identify this pattern in the patterns list."
+msgstr "Un nome breve per identificare questo pattern nell'elenco di pattern. "
+
+msgid "Enabled"
+msgstr "Attivato"
+
+msgid "Language"
+msgstr "Lingua"
+
+msgid "Pattern %label saved."
+msgstr "Modello %label salvato."
+
+msgid "Are you sure you want to enable the pattern %label?"
+msgstr "Si è sicuri di voler abilitare il pattern %label?"
+
+msgid "Enable"
+msgstr "Abilita"
+
+msgid "Enabled pattern %label."
+msgstr "Pattern abilitato %label."
+
+msgid "Update URL alias of an entity"
+msgstr "Aggiorna alias URL di un'entità"
+
+msgid "@label being aliased"
+msgstr "@label in fase di assegnazione alias"
+
+msgid "The name of the pattern's variable."
+msgstr "Il nome della variabile del modello."
+
+msgid "The value of the pattern's variable."
+msgstr "Il valore della variabile del modello."
+
+msgid "Broken type"
+msgstr "Tipo interrotto"
+
+msgid "Broken"
+msgstr "Corrotto"
+
+msgid "Broken/Missing"
+msgstr "Rotto/Mancante"
+
+msgid "AliasType"
+msgstr "AliasType"
+
+msgid "Updated alias for %label @id."
+msgstr "Alias aggiornato per %label @id."
+
+msgid "Updated 1 %label URL alias."
+msgid_plural "Updated @count %label URL aliases."
+msgstr[0] "1 alias URL %label aggiornato."
+msgstr[1] "@count alias URL %label aggiornati. "
+
+msgid "Forum"
+msgstr "Forum"
+

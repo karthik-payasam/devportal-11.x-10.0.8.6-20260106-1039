@@ -1,0 +1,552 @@
+<?php
+
+/********************************************************* {COPYRIGHT-TOP} ***
+ * Licensed Materials - Property of IBM
+ * 5725-L30, 5725-Z22
+ *
+ * (C) Copyright IBM Corporation 2018, 2025
+ *
+ * All Rights Reserved.
+ * US Government Users Restricted Rights - Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ ********************************************************** {COPYRIGHT-END} **/
+
+/**
+ * @file
+ *
+ * IBM API Connect Integration
+ *
+ * Adds the API node content type to Drupal for representing APIs from IBM APIC
+ */
+
+use Drupal\apic_api\Api;
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Link;
+use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
+use Drupal\product\Product;
+use Drupal\user\Entity\User;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+
+/* Permissions that can be granted
+ * Note that we also use permissions defined in product.module
+ */
+const EDIT_ANY_API_CONTENT_GRANT = 1;
+
+/* Return the permission strings so that they can be displayed in the ACL log
+ * Most of these come from the product module
+ *
+ * @param gid
+ * @return string
+ */
+function api_permission_value($gid): string {
+  switch ($gid) {
+    case EDIT_ANY_API_CONTENT_GRANT:
+      return 'EDIT_ANY_API_CONTENT_GRANT';
+    case PUBLIC_PRODUCT_GRANT:
+      return 'PUBLIC_PRODUCT_GRANT';
+    case AUTHENTICATED_PRODUCT_GRANT:
+      return 'AUTHENTICATED_PRODUCT_GRANT';
+    case SUBSCRIBED_TO_PRODUCT_GRANT:
+      return 'SUBSCRIBED_TO_PRODUCT_GRANT';
+    case ORG_PRODUCT_GRANT:
+      return 'ORG_PRODUCT_GRANT';
+    case TAG_PRODUCT_GRANT:
+      return 'TAG_PRODUCT_GRANT';
+    default:
+      return 'Permission Value Not Known';
+  }
+}
+
+/**
+ * @param $variables
+ *
+ * @return void
+ * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+ * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException|\Drupal\Core\Entity\EntityMalformedException
+ */
+function apic_api_preprocess_node(&$variables): void {
+  if ($variables['node']->getType() === 'api') {
+    ibm_apim_entry_trace(__FUNCTION__, NULL);
+
+    // get global settings first
+    $config = \Drupal::config('ibm_apim.settings');
+    $ibmApimShowPlaceholderImages = (boolean) $config->get('show_placeholder_images');
+    $renderApiSchemaView = (boolean) $config->get('render_api_schema_view');
+    $api_max_depth = $config->get('api_max_depth');
+    if ($api_max_depth === NULL || !is_int($api_max_depth) || $api_max_depth < 2 || $api_max_depth > 25) {
+      $api_max_depth = 9;
+    }
+    $variables['apiMaxDepth'] = $api_max_depth;
+    $variables['#cache']['max-age'] = 0;
+    if ($ibmApimShowPlaceholderImages === NULL) {
+      $ibmApimShowPlaceholderImages = TRUE;
+    }
+    $variables['showPlaceholders'] = $ibmApimShowPlaceholderImages;
+    if ($ibmApimShowPlaceholderImages) {
+      $variables['placeholderUrl'] = Api::getPlaceholderImageURL($variables['node']->getTitle());
+    }
+    else {
+      $variables['placeholderUrl'] = NULL;
+    }
+    $ibmApimShowVersions = (boolean) $config->get('show_versions');
+    if ($ibmApimShowVersions === NULL) {
+      $ibmApimShowVersions = TRUE;
+    }
+    $variables['showVersions'] = $ibmApimShowVersions;
+
+    // custom fields
+    $viewMode = $variables['view_mode'];
+    if ($viewMode === 'full') {
+      $viewMode = 'default';
+    }
+    $diff = [];
+    $entityView = \Drupal::entityTypeManager()->getStorage('entity_view_display')->load('node.api.' . $viewMode);
+    if ($entityView !== NULL) {
+      $components = $entityView->getComponents();
+      $fieldList = array_keys($components);
+      $coreFields = [
+        'title',
+        'vid',
+        'status',
+        'nid',
+        'revision_log',
+        'created',
+        'links',
+        'uid',
+        'comment',
+      ];
+      $ibmFields = Api::getIBMFields();
+      $merged = array_merge($coreFields, $ibmFields);
+      $diff = array_diff($fieldList, $merged);
+    }
+    $variables['custom_fields'] = $diff;
+
+    $swagger = unserialize($variables['node']->api_swagger->value, ['allowed_classes' => FALSE]);
+    $enforced = TRUE;
+    if (isset($swagger['x-ibm-configuration']) && is_array($swagger['x-ibm-configuration']) && !empty($swagger['x-ibm-configuration']) && array_key_exists('enforced', $swagger['x-ibm-configuration'])) {
+      $enforced = $swagger['x-ibm-configuration']['enforced'];
+    }
+    if ($enforced !== TRUE && $enforced !== FALSE) {
+      $enforced = TRUE;
+    }
+    $variables['enforced'] = $enforced;
+
+    if ($variables['view_mode'] === 'full') {
+      $haveAccess = Api::checkAccess($variables['node']);
+      if (!$haveAccess) {
+        throw new AccessDeniedHttpException();
+      }
+
+      $showCorsWarnings = (boolean) $config->get('show_cors_warnings');
+      $removeIBMKeys = (boolean) $config->get('remove_IBM_keys');
+      $soapSwaggerDownload = (boolean) $config->get('soap_swagger_download');
+      $soapCodeSnippets = (boolean) $config->get('soap_codesnippets');
+      $optimiseOauthUX = (boolean) $config->get('optimise_oauth_ux');
+      $showMTLSHeader = (boolean) $config->get('show_mtls_header');
+      $certificateStripNewlines = (boolean) $config->get('certificate_strip_newlines');
+      $certificateStripPrefix = (boolean) $config->get('certificate_strip_prefix');
+      $codeSnippetLangs = [];
+      $routerType = $config->get('router_type', 'hash');
+      $exampleArrayItems = (int) $config->get('example_array_items') ?: 3;
+      $codeSnippets = $config->get('codesnippets');
+      $firstEnabled = NULL;
+      foreach ($codeSnippets as $lang => $enabled) {
+        if ($enabled) {
+          $codeSnippetLangs[] = $lang;
+          if ($firstEnabled === NULL) {
+            $firstEnabled = $lang;
+          }
+        }
+      }
+      $enableApiTest = (boolean) $config->get('enable_api_test');
+      $enableApiValidation = (boolean) $config->get('validate_apis');
+      $applications = [];
+      $defaultCodeSnippetLang = NULL;
+      $currentUser = \Drupal::currentUser();
+      if (!$currentUser->isAnonymous()) {
+        $currentUser = User::load($currentUser->id());
+      }
+      if (isset($currentUser->codesnippet->value) && $currentUser->isAuthenticated()) {
+        $defaultCodeSnippetLang = $currentUser->codesnippet->value;
+      }
+
+      $currentRoute = \Drupal::routeMatch()->getRouteName();
+      if ($currentRoute !== NULL && ($currentRoute === 'entity.node.canonical' || $currentRoute === 'apic_api.view')) {
+        $apiNid = $variables['node']->id();
+        $prodNids = Product::getProductsContainingAPI($apiNid);
+        if ($prodNids !== NULL && count($prodNids) === 1) {
+          $prodNid = reset($prodNids);
+          $path = Url::fromRoute('product.api', ['prodNode' => $prodNid, 'apiNode' => $apiNid])
+            ->setAbsolute()
+            ->toString();
+        }
+        else {
+          $path = Url::fromRoute('product.select', ['apiNode' => $apiNid])->setAbsolute()->toString();
+        }
+        $response = new RedirectResponse($path);
+        \Drupal::service('http_middleware.ibm_apim_redirect')->setRedirectResponse($response);
+        return;
+      }
+
+      // if user's default lang not set or is not one of the enabled ones then default to first enabled
+      if ($defaultCodeSnippetLang === NULL || empty($defaultCodeSnippetLang) || !in_array($defaultCodeSnippetLang, $codeSnippetLangs, FALSE)) {
+        $defaultCodeSnippetLang = $firstEnabled;
+      }
+      if (!$currentUser->isAnonymous() && (int) $currentUser->id() !== 1 && \Drupal::service('module_handler')->moduleExists('apic_app')) {
+        $selectedProductNid = \Drupal::routeMatch()->getRawParameter('prodNode');
+        // for x-pathalias then need to get the NID
+        if (isset($selectedProductNid) && (int) $selectedProductNid === 0) {
+          $pathQuery = Drupal::entityQuery('node');
+          $pathQuery->condition('type', 'product');
+          $pathQuery->condition('status', 1);
+          $pathQuery->condition('apic_pathalias.value', $selectedProductNid);
+          $pathNids = $pathQuery->accessCheck()->execute();
+          if (count($pathNids) > 0) {
+            $selectedProductNid = reset($pathNids);
+          }
+        }
+        $apps = \Drupal::service('apic_app.application')->listApplications();
+
+        $plans = [];
+        if (isset($selectedProductNid)) {
+          $selectedProduct = Node::load($selectedProductNid);
+          if ($selectedProduct !== NULL) {
+            $plans = Product::getPlansThatContainApi($selectedProduct, $variables['node']->apic_ref->value);
+          }
+        }
+
+        foreach ($apps as $app) {
+          $application = Node::load($app);
+          $credentials = [];
+          if ($application !== NULL) {
+            $appCredentials = $application->application_credentials_refs->referencedEntities();
+            if ($appCredentials !== NULL && is_array($appCredentials)) {
+              foreach ($appCredentials as $cred) {
+                $credentials[] = [
+                  'client_id' => $cred->client_id(),
+                  'name' => $cred->name(),
+                  'title' => $cred->title(),
+                  'description' => $cred->summary(),
+                ];
+              }
+              $redirectUris = [];
+              foreach ($application->application_redirect_endpoints->getValue() as $arrayValue) {
+                $redirectUris[] = $arrayValue['value'];
+              }
+
+              $subscribed = FALSE;
+              foreach (array_keys($plans) as $planName) {
+                if (\Drupal::service('apic_app.application')->isApplicationSubscribed($application, $selectedProductNid, $planName)) {
+                  $subscribed = TRUE;
+                  break;
+                }
+              }
+
+              $applications[] = [
+                'title' => $application->getTitle(),
+                'name' => $application->application_name->value,
+                'summary' => $application->apic_summary->value,
+                'redirectUri' => $redirectUris,
+                'credentials' => $credentials,
+                'subscribed' => $subscribed,
+              ];
+            }
+          }
+        }
+      }
+
+      $customImage = $variables['node']->apic_image;
+      $customImageString = NULL;
+      if ($customImage !== NULL && !empty($customImage)) {
+        $entity = $variables['node']->apic_image->entity;
+        if ($entity !== NULL) {
+          $customImageString = $entity->getFileUri();
+        }
+      }
+      if ($customImageString !== NULL && !empty($customImageString)) {
+        $apiImageUrl = $customImageString;
+      }
+      elseif ($ibmApimShowPlaceholderImages) {
+        $apiImageUrl = Api::getPlaceholderImageURL($variables['node']->getTitle());
+      }
+      else {
+        $apiImageUrl = NULL;
+      }
+      // get all of the custom fields and render them as per their view settings
+      $infoSectionEntries = [];
+      $renderer = \Drupal::service('renderer');
+      $viewBuilder = \Drupal::entityTypeManager()->getViewBuilder('node');
+      if (isset($variables['custom_fields']) && !empty($variables['custom_fields'])) {
+        foreach ($variables['custom_fields'] as $customField) {
+          if ($customField !== NULL && !empty($customField) && $entityView !== NULL) {
+            $component = $entityView->getComponent($customField);
+            if (isset($variables['node']->{$customField}, $variables['node']->{$customField}->value) && !empty($variables['node']->{$customField}->value)) {
+              $field = $variables['node']->{$customField};
+              $fieldRenderable = $viewBuilder->viewField($field, $component);
+              if ($fieldRenderable !== NULL && !empty($fieldRenderable)) {
+                $html = $renderer->renderPlain($fieldRenderable);
+                $fieldConfig = \Drupal::entityTypeManager()
+                  ->getStorage('field_config')
+                  ->load('node.api.' . $customField);
+                if ($fieldConfig !== NULL) {
+                  $infoSectionEntries[] = [
+                    'class' => $fieldConfig->get('label'),
+                    'html' => $html,
+                    'location' => 'OVERVIEW',
+                  ];
+                }
+              }
+            }
+          }
+        }
+      }
+      // add tags and other core drupal fields
+      foreach ([
+                 'apic_attachments',
+                 'apic_tags',
+                 'links',
+               ] as $fieldName) {
+        $apicComponent = $entityView->getComponent($fieldName);
+        if (isset($variables['node']->{$fieldName}) && $field = $variables['node']->{$fieldName}) {
+          $fieldRenderable = $viewBuilder->viewField($field, $apicComponent);
+          if (!empty($fieldRenderable) && count($fieldRenderable)) {
+            $html = $renderer->renderPlain($fieldRenderable);
+            $fieldConfig = \Drupal::entityTypeManager()->getStorage('field_config')->load('node.api.' . $fieldName);
+            $location = 'OVERVIEW';
+            $infoSectionEntries[] = [
+              'class' => $fieldConfig->get('label') . ' ' . $fieldName,
+              'html' => $html,
+              'location' => $location,
+            ];
+          }
+        }
+      }
+      // forum link
+      $moduleHandler = \Drupal::service('module_handler');
+      if ($moduleHandler->moduleExists('forum')) {
+        $config = \Drupal::config('ibm_apim.settings');
+        $forumLinksEnabled = (boolean) $config->get('autocreate_apiforum');
+        if ($forumLinksEnabled === TRUE) {
+          $cleanForumName = \Drupal::service('ibm_apim.taxonomy')
+            ->sanitise_api_name(html_entity_decode($variables['node']->getTitle(), ENT_QUOTES));
+          $forumID = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadByProperties([
+            "name" => $cleanForumName,
+            "vid" => 'forums',
+          ]);
+          if (!empty($forumID)) {
+            reset($forumID);
+            $firstKey = key($forumID);
+            $link = Link::fromTextAndUrl(t('Discuss this API in the forum'), Url::fromRoute('forum.page', ['taxonomy_term' => $forumID[$firstKey]->tid->value]));
+            $html = '<label class="forumLabel">' . t('Support') . '</label><div class="forumLink">' . $link->toString() . '</div>';
+            $infoSectionEntries[] = [
+              'class' => 'forum',
+              'html' => $html,
+              'location' => 'OVERVIEW',
+            ];
+          }
+        }
+      }
+
+      $docPages = Api::getLinkedPages($variables['node']->id());
+      $variables['docpages'] = $docPages;
+
+      $utils = \Drupal::service('ibm_apim.utils');
+      $options = [
+        'absolute' => TRUE,
+      ];
+      $apiTypeDocs = [
+        'asyncapi' => Url::fromUri('internal:/asyncapi', $options)->toString(),
+        'kafka' => Url::fromUri('internal:/asyncapi-kafka', $options)->toString(),
+        'mq' => Url::fromUri('internal:/asyncapi-mq', $options)->toString(),
+      ];
+
+      $variables['#attached']['library'][] = 'apic_api/explorer';
+      $variables['#attached']['drupalSettings']['api']['explorer']['apis'] = [unserialize($variables['node']->api_swagger->value, ['allowed_classes' => FALSE])];
+      $encodedSwagger = $variables['node']->api_encodedswagger->value;
+      if ($encodedSwagger !== NULL && !empty($encodedSwagger)) {
+        $variables['#attached']['drupalSettings']['api']['explorer']['encodedApis'] = [$encodedSwagger];
+      }
+      $variables['#attached']['drupalSettings']['api']['explorer']['apps'] = $applications;
+      $variables['#attached']['drupalSettings']['api']['explorer']['options'] = [
+        'apiTypeDocs' => $apiTypeDocs,
+        'showApiVersion' => $ibmApimShowVersions,
+        'showCorsWarnings' => $showCorsWarnings,
+        'removeIBMKeys' => $removeIBMKeys,
+        'showSoapSwaggerDownload' => $soapSwaggerDownload,
+        'optimiseOauthUX' => $optimiseOauthUX,
+        'showMTLSHeader' => $showMTLSHeader,
+        'certificateStripPrefix' => $certificateStripPrefix,
+        'certificateStripNewlines' => $certificateStripNewlines,
+        'showSoapCodeSnippets' => $soapCodeSnippets,
+        'languages' => $codeSnippetLangs,
+        'defaultLanguage' => $defaultCodeSnippetLang,
+        'tryIt' => $enableApiTest,
+        'validateSwagger' => $enableApiValidation,
+        'apiMaxDepth' => $variables['apiMaxDepth'],
+        'onReady' => 'portalExplorerReady',
+        'wsdlRetrieverURL' => Url::fromRoute('apic_api.retrievewsdl', [
+          'api' => $variables['node']->apic_ref->value,
+          'endpoint' => 'REPLACE_THIS_VALUE',
+        ])->setAbsolute()->toString(),
+        'explorerDir' => base_path() . \Drupal::service('extension.list.module')->getPath('apic_api') . '/explorer/app/',
+        'locale' => $utils->convert_lang_name(\Drupal::languageManager()->getCurrentLanguage()->getId()),
+        'loggedIn' => !$currentUser->isAnonymous(),
+        'loginLink' => Url::fromRoute('user.login', ['redirectto' => Url::fromRoute('<current>')->getInternalPath()])->toString(),
+        'isApicPortal' => TRUE,
+        'apicPortalUserId' => $currentUser->id(),
+        'apicPortalNewAppLink' => Url::fromRoute('apic_app.create', ['redirectto' => Url::fromRoute('<current>')->getInternalPath()])
+          ->toString(),
+        'routerType' => $routerType,
+        'exampleArrayItems' => $exampleArrayItems,
+      ];
+      if ($infoSectionEntries !== NULL && !empty($infoSectionEntries)) {
+        $variables['#attached']['drupalSettings']['api']['explorer']['options']['infoSectionEntries'] = [$infoSectionEntries];
+      }
+      if ($docPages !== NULL && !empty($docPages)) {
+        $variables['#attached']['drupalSettings']['api']['explorer']['options']['documentationEntries'] = [$docPages];
+      }
+      if ($apiImageUrl !== NULL && $apiImageUrl !== '') {
+        $variables['#attached']['drupalSettings']['api']['explorer']['options']['apiImageUrl'] = $apiImageUrl;
+      }
+      if ($renderApiSchemaView === TRUE) {
+        $variables['#attached']['drupalSettings']['api']['explorer']['options']['renderSchemaView'] = TRUE;
+      }
+    }
+    elseif ($variables['view_mode'] === 'embedded') {
+      $prodNode = \Drupal::routeMatch()->getRawParameter('prodNode');
+      // for x-pathalias then ok to keep using the alias, dont need the NID here
+      if (isset($prodNode)) {
+        $variables['prodNode'] = $prodNode;
+      }
+    }
+    ibm_apim_exit_trace(__FUNCTION__, NULL);
+  }
+}
+
+/**
+ * We need our module to run last for the user register form so we can remove any other fields
+ * other modules might have added - such as the forum notifications.
+ *
+ * @param $implementations
+ * @param $hook
+ */
+function apic_api_module_implements_alter(&$implementations, $hook) {
+  if (($hook === 'form_alter' || $hook === 'menu_links_discovered_alter' || $hook === 'library_info_alter') && isset($implementations['api'])) {
+    $group = $implementations['api'];
+    unset($implementations['api']);
+    $implementations['api'] = $group;
+  }
+}
+
+/**
+ * @param array $build
+ * @param \Drupal\node\NodeInterface $node
+ * @param $display
+ * @param $viewMode
+ */
+function apic_api_node_view(array &$build, NodeInterface $node, $display, $viewMode) {
+  if ($node->getType() === 'api') {
+    if ($viewMode === 'full') {
+      $currentUser = \Drupal::currentUser();
+      if (!$currentUser->isAnonymous() && (int) $currentUser->id() !== 1) {
+        // cache this api per devorg
+        $userUtils = \Drupal::service('ibm_apim.user_utils');
+        $org = $userUtils->getCurrentConsumerOrg();
+        $tags = ['consumerorg:' . Html::cleanCssIdentifier($org['url'])];
+        $build['#cache']['tags'] = array_merge($build['#cache']['tags'], $tags);
+      }
+    }
+    elseif ($viewMode === 'embedded') {
+      // cache this api based on the prodNode in the URL
+      if (isset($build['#cache']['contexts'])) {
+        $build['#cache']['contexts'] = array_merge($build['#cache']['contexts'], ['url']);
+      }
+      else {
+        $build['#cache']['contexts'] = ['url'];
+      }
+    }
+  }
+}
+
+// This hook is called automatically via Drupal's hook_node_delete
+function apic_api_node_delete(NodeInterface $node) {
+  $nodeType = $node->getType();
+  if (isset($nodeType) && $nodeType === "api") {
+    // delete the api's icon
+    if (isset($node->apic_image->entity)) {
+      $fid = $node->apic_image->getValue();
+      $iconFile = \Drupal::entityTypeManager()->getStorage('file')->load($fid[0]['target_id']);
+      if (isset($iconFile)) {
+        \Drupal::logger('api')->notice('deleting api icon ' . $iconFile->getFileUri());
+        $iconFile->delete();
+      }
+    }
+
+    // delete the api's attachments
+    $attachments = $node->apic_attachments->getValue();
+    if ($attachments !== NULL) {
+      foreach ($attachments as $key => $existingAttachment) {
+        $file = \Drupal::entityTypeManager()->getStorage('file')->load($existingAttachment['target_id']);
+        if (isset($file)) {
+          \Drupal::logger('api')->notice('deleting api attachment ' . $file->getFileUri());
+          $file->delete();
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Need to use our custom content type templates
+ *
+ * @param $variables
+ * @param $hook
+ * @param $info
+ */
+function apic_api_preprocess(&$variables, $hook, &$info) {
+  if ($hook === 'node') {
+    $contentTypeToShow = $variables['node']->bundle();
+    if ($contentTypeToShow === 'api') {
+      ibm_apim_entry_trace(__FUNCTION__, NULL);
+      //Load the view mode names.
+      $allViewModes = \Drupal::service('entity_display.repository')->getViewModes('node');
+      //View mode for this request.
+      $viewModeToUse = $variables['view_mode'];
+      //Is the view mode defined for nodes?
+      if (array_key_exists($viewModeToUse, $allViewModes)) {
+        //Is there a template file for the view modes in the module?
+        if ($viewModeToUse === 'full') {
+          $templateFileName = 'node--' . $contentTypeToShow;
+        }
+        else {
+          $templateFileName = 'node--' . $contentTypeToShow . '--' . $viewModeToUse;
+        }
+        $themeName = \Drupal::theme()->getActiveTheme()->getName();
+        $themePath = \Drupal::theme()->getActiveTheme()->getPath();
+        if (file_exists($themePath . '/templates/node/' . $templateFileName . '.html.twig')) {
+          $info['theme path'] = \Drupal::service('extension.list.theme')->getPath($themeName);
+          $info['path'] = \Drupal::service('extension.list.theme')->getPath($themeName) . '/templates/node';
+          $info['template'] = $templateFileName;
+        }
+        elseif (file_exists($themePath . '/templates/' . $templateFileName . '.html.twig')) {
+          $info['theme path'] = \Drupal::service('extension.list.theme')->getPath($themeName);
+          $info['path'] = \Drupal::service('extension.list.theme')->getPath($themeName) . '/templates';
+          $info['template'] = $templateFileName;
+        }
+        else {
+          $templateFilePath = \Drupal::service('extension.list.module')
+              ->getPath('apic_api') . '/templates/' . $templateFileName . '.html.twig';
+          if (file_exists($templateFilePath)) {
+            $info['theme path'] = \Drupal::service('extension.list.module')->getPath('apic_api');
+            $info['path'] = \Drupal::service('extension.list.module')->getPath('apic_api') . '/templates';
+            $info['template'] = $templateFileName;
+          }
+        }
+      }
+      ibm_apim_exit_trace(__FUNCTION__, NULL);
+    }
+  }
+}

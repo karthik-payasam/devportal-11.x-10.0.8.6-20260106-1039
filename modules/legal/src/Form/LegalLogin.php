@@ -1,0 +1,436 @@
+<?php
+
+namespace Drupal\legal\Form;
+
+use Drupal\Component\Datetime\TimeInterface;
+use Drupal\Component\Utility\Crypt;
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Cache\CacheBackendInterface;
+use Drupal\Core\Database\Connection;
+use Drupal\Core\Form\FormBase;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Language\LanguageManagerInterface;
+use Drupal\Core\PageCache\ResponsePolicy\KillSwitch;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Url;
+use Drupal\legal\Entity\Accepted;
+use Drupal\user\UserFloodControlInterface;
+use Drupal\user\UserInterface;
+use Drupal\user\UserStorageInterface;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+use Symfony\Component\HttpFoundation\RequestStack;
+
+/**
+ * After login display new T&Cs to user and require that they are agreed to.
+ *
+ * User has been logged out before arriving at this page,
+ * and is logged back in if they accept T&Cs.
+ */
+class LegalLogin extends FormBase {
+
+  /**
+   * Database connection.
+   *
+   * @var \Drupal\Core\Database\Connection
+   */
+  protected $database;
+
+  /**
+   * Language handling.
+   *
+   * @var \Drupal\Core\Language\LanguageManagerInterface
+   */
+  protected $languageManager;
+
+  /**
+   * The account the shortcut set is for.
+   *
+   * @var \Drupal\user\UserInterface
+   */
+  protected $user;
+
+  /**
+   * The current request stack.
+   *
+   * @var \Symfony\Component\HttpFoundation\Request
+   */
+  protected $request;
+
+  /**
+   * The time service.
+   *
+   * @var \Drupal\Component\Datetime\TimeInterface
+   */
+  protected $time;
+
+  /**
+   * The cache backend.
+   *
+   * @var \Drupal\Core\Cache\CacheBackendInterface
+   */
+  protected $cache;
+
+  /**
+   * Page cache kill switch.
+   *
+   * @var \Drupal\Core\PageCache\ResponsePolicy\KillSwitch
+   */
+  protected $pageCacheKillSwitch;
+
+  /**
+   * The user flood control service.
+   *
+   * @var \Drupal\user\UserFloodControlInterface
+   */
+  protected $flood;
+
+  /**
+   * User storage handler.
+   *
+   * @var \Drupal\user\UserStorageInterface
+   */
+  protected $userStorage;
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getFormId() {
+    return 'legal_login';
+  }
+
+  /**
+   * Constructs a new LegalLogin object.
+   *
+   * @param \Drupal\Core\Database\Connection $database
+   *   The database connection.
+   * @param \Drupal\Core\Language\LanguageManagerInterface $language_manager
+   *   The language manager.
+   * @param \Symfony\Component\HttpFoundation\RequestStack $request_stack
+   *   The request stack service.
+   * @param \Drupal\Core\Cache\CacheBackendInterface $cache
+   *   The cache backend.
+   * @param \Drupal\Core\PageCache\ResponsePolicy\KillSwitch $page_cache_kill_switch
+   *   The page cache kill switch service.
+   * @param \Drupal\user\UserFloodControlInterface $user_flood_control
+   *   The user flood control service.
+   * @param \Drupal\user\UserStorageInterface $user_storage
+   *   The user storage handler.
+   * @param \Drupal\Component\Datetime\TimeInterface $time
+   *   The time service.
+   */
+  public function __construct(Connection $database, LanguageManagerInterface $language_manager, RequestStack $request_stack, CacheBackendInterface $cache, KillSwitch $page_cache_kill_switch, UserFloodControlInterface $user_flood_control, UserStorageInterface $user_storage, ?TimeInterface $time = NULL) {
+    $this->database = $database;
+    $this->languageManager = $language_manager;
+    $this->request = $request_stack->getCurrentRequest();
+    $this->cache = $cache;
+    $this->pageCacheKillSwitch = $page_cache_kill_switch;
+    $this->flood = $user_flood_control;
+    $this->userStorage = $user_storage;
+    $this->time = $time;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function create(ContainerInterface $container) {
+    return new static(
+      $container->get('database'),
+      $container->get('language_manager'),
+      $container->get('request_stack'),
+      $container->get('cache.menu'),
+      $container->get('page_cache_kill_switch'),
+      $container->get('user.flood_control'),
+      $container->get('entity_type.manager')->getStorage('user'),
+      $container->get('datetime.time'),
+    );
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function buildForm(array $form, FormStateInterface $form_state) {
+
+    $config   = $this->config('legal.settings');
+    $language = $this->languageManager->getCurrentLanguage();
+
+    $id_hash = $this->request->cookies->get('Drupal_visitor_legal_hash');
+    $uid     = $this->request->cookies->get('Drupal_visitor_legal_id');
+    $token   = $this->request->query->get('token');
+
+    if (!is_numeric($uid)) {
+      $this->setValidationError($form_state);
+    }
+
+    // Assert that the user ID is valid.
+    $user = $this->userStorage->load($uid);
+
+    if (!$user instanceof UserInterface) {
+      return;
+    }
+
+    // Get last accepted version for this account.
+    $legal_account = legal_get_accept($uid);
+
+    // If no version accepted, get version with current language revision.
+    if (empty($legal_account['version'])) {
+      $conditions = legal_get_conditions($language->getId());
+      // No conditions set yet.
+      if (empty($conditions['conditions'])) {
+        return;
+      }
+    }
+    else {
+      // Get version / revision of last accepted language.
+      $conditions = legal_get_conditions($legal_account['language']);
+      // No conditions set yet.
+      if (empty($conditions['conditions'])) {
+        return;
+      }
+      // Check latest version of T&C has been accepted.
+      $accepted = legal_version_check($uid, $conditions['version'], $conditions['revision'], $legal_account);
+
+      if ($accepted) {
+
+        if ($config->get('accept_every_login') == 0) {
+          return;
+        }
+        else {
+          $newly_accepted = $this->request->getSession()->get('legal_login', FALSE);
+
+          if ($newly_accepted) {
+            return;
+          }
+        }
+
+      }
+    }
+
+    legal_display_fields($form, $conditions, 'login');
+
+    $form['uid'] = [
+      '#type'  => 'value',
+      '#value' => $uid,
+    ];
+
+    $form['token'] = [
+      '#type'  => 'value',
+      '#value' => $token,
+    ];
+
+    $form['hash'] = [
+      '#type'  => 'value',
+      '#value' => $id_hash,
+    ];
+
+    $form['tc_id'] = [
+      '#type'  => 'value',
+      '#value' => $conditions['tc_id'],
+    ];
+
+    $form['version'] = [
+      '#type'  => 'value',
+      '#value' => $conditions['version'],
+    ];
+
+    $form['revision'] = [
+      '#type'  => 'value',
+      '#value' => $conditions['revision'],
+    ];
+
+    $form['language'] = [
+      '#type'  => 'value',
+      '#value' => $conditions['language'],
+    ];
+
+    $form = legal_display_changes($form, $uid);
+
+    $form['save'] = [
+      '#type'   => 'submit',
+      '#value'  => $this->t('Confirm'),
+      '#weight' => 100,
+    ];
+
+    // Prevent this page from being cached.
+    $this->pageCacheKillSwitch->trigger();
+
+    return $form;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function validateForm(array &$form, FormStateInterface $form_state) {
+
+    $token = $form_state->getValue('token');
+
+    $uid = $form_state->getValue('uid');
+
+    if (!is_numeric($uid)) {
+      $this->setValidationError($form_state);
+    }
+
+    $account = $this->userStorage->load($uid);
+
+    if (!$account instanceof UserInterface) {
+      $this->setValidationError($form_state);
+    }
+
+    $this->user = $account;
+
+    $last_login = $account->get('login')->value;
+    $password   = $account->get('pass')->value;
+    $data       = $last_login . $uid . $password;
+
+    $hash = Crypt::hmacBase64($data, $token);
+
+    if ($hash != $form_state->getValue('hash')) {
+      $this->setValidationError($form_state);
+    }
+  }
+
+  /**
+   * Triggers a validation error and calls exit().
+   *
+   * @param \Drupal\Core\Form\FormStateInterface $form_state
+   *   The form state.
+   */
+  protected function setValidationError(FormStateInterface $form_state): void {
+    $form_state->setErrorByName('legal_accept', $this->t('User ID cannot be identified.'));
+    legal_deny_with_redirect();
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function submitForm(array &$form, FormStateInterface $form_state) {
+
+    user_cookie_delete('legal_hash');
+    user_cookie_delete('legal_id');
+
+    $values = $form_state->getValues();
+    $user   = $this->user;
+    $config = $this->config('legal.settings');
+    $query  = $this->request->query;
+
+    // Set redirect action for form submission.
+    $destination_path = $query->get('destination');
+    if ($destination_path) {
+
+      // Make sure redirect destination starts with a slash.
+      if (strpos($destination_path, '/') !== 0) {
+        $destination_path = '/' . $destination_path;
+      }
+
+      // Use an existing destination if set.
+      $redirect = Url::fromUserInput($destination_path);
+
+      // Password reset actions.
+      $pass_reset_token = $query->get('pass-reset-token');
+      if ($pass_reset_token) {
+        // Store password reset token in session for
+        // \Drupal\user\AccountForm::form.
+        $name = 'pass_reset_' . $user->id();
+        $this->request->getSession()->set($name, $pass_reset_token);
+
+        // Clear any flood events for this user.
+        $this->flood->clear('user.password_request_user', $user->id());
+
+        // Set message reminding user to reset password.
+        $message = $this->t('You have just used your one-time login link. It is no
+        longer necessary to use this link to log in. It is recommended that you
+        set your password.');
+        $this->messenger()->addMessage($message);
+      }
+    }
+    elseif ($config->get('login_redirect_url')) {
+      // Redirect set in Legal configuration.
+      $redirect = Url::fromUserInput($config->get('login_redirect_url'));
+    }
+    else {
+      // Default redirect to the user's account page.
+      $params   = ['user' => $values['uid']];
+      $redirect = Url::fromRoute('entity.user.canonical', $params);
+    }
+
+    $form_state->setRedirectUrl(Url::fromRoute('<front>'));
+
+    // Option to require user to accept T&Cs on every login.
+    if ($config->get('accept_every_login') == '1') {
+
+      // Set flag that user has accepted T&Cs again.
+      $request = $this->requestStack->getCurrentRequest();
+      $session = $request->getSession();
+      $session->set('legal_login', TRUE);
+
+      // Get last accepted version for this account.
+      $legal_account    = legal_get_accept($values['uid']);
+      $already_accepted = legal_version_check($values['uid'], $values['version'], $values['revision'], $legal_account);
+
+      // If already accepted just update the time.
+      if ($already_accepted) {
+        $accepted = Accepted::load($legal_account['legal_id']);
+        $accepted->set("accepted", time());
+        $accepted->save();
+      }
+      else {
+        legal_save_accept($values['version'], $values['revision'], $values['language'], $values['uid']);
+      }
+    }
+    else {
+      legal_save_accept($values['version'], $values['revision'], $values['language'], $values['uid']);
+    }
+
+    $this->logger('legal')
+      ->notice('%name accepted T&C version %tc_id.', [
+        '%name'  => $user->get('name')->getString(),
+        '%tc_id' => $values['tc_id'],
+      ]);
+
+
+    \Drupal::service('messenger')->addMessage($this->t('You have accepted the Terms & Conditions and can now login.'));
+    // User has new permissions, so we clear their menu cache.
+    $this->cache->delete($values['uid']);
+
+  }
+
+  /**
+   * Access control callback.
+   *
+   * Check that access cookie and hash have been set.
+   *
+   * @param \Drupal\Core\Session\AccountInterface $account
+   *   Run access checks for this account.
+   */
+  public function access(AccountInterface $account) {
+
+    $token = $this->request->query->get('token');
+    $uid   = $this->request->cookies->get('Drupal_visitor_legal_id');
+    $hash  = $this->request->cookies->get('Drupal_visitor_legal_hash');
+
+    // Check we have all the data and there are no shenanigans.
+    if (!$token || !is_numeric($uid) || !$hash) {
+      return AccessResult::forbidden();
+    }
+
+    $visitor = $this->userStorage->load($uid);
+
+    if (!$visitor instanceof UserInterface) {
+      return AccessResult::forbidden();
+    }
+
+    $last_login = $visitor->get('login')->value;
+
+    if (empty($last_login)) {
+      return AccessResult::forbidden();
+    }
+
+    // Limit how long $id_hash can be used to 1 hour.
+    // Timestamp and $id_hash are used to generate the authentication token.
+    if (($this->time->getRequestTime() - $last_login) > 3600) {
+      return AccessResult::forbidden();
+    }
+
+    return AccessResult::allowed();
+  }
+
+}

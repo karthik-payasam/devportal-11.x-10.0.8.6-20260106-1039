@@ -1,0 +1,35 @@
+<?php
+
+declare(strict_types=1);
+
+use Drupal\node\Entity\Node;
+use Drupal\file\Entity\File;
+use Drupal\Core\Template\Attribute;
+
+/**
+ * @file
+ * Preprocess for views-style--top-products--top-products.html.twig.
+ */
+function template_preprocess_views_style_top_products_top_products(array &$variables): void {
+  $view = $variables['view'];
+  $options = $view->style_plugin->options;
+
+  $variables['default_row_class'] = $options['default_row_class'];
+  $variables['allProductData'] = [];
+
+  foreach ($variables['rows'] as $id => $row) {
+    $node = $view->result[$id]->_entity ?? NULL;
+
+    if ($node instanceof Node && $node->bundle() === 'product') {
+      $productTitle = $node->getTitle();
+      // Product link.
+      $custom_url = '/product/' . $node->id();
+
+      $variables['allProductData'][] = [
+        'nid'   => $node->id(),
+        'title' => $productTitle,
+        'url'   => $custom_url,
+      ];
+    }
+  }
+}

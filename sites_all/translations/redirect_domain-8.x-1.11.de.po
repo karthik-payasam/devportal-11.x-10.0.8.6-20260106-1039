@@ -1,0 +1,101 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "Produktinfo"
+
+msgid "The Redirect domain module allows users to redirect between domains."
+msgstr "Das Modul 'Domänenumleitung' ermöglicht es Benutzern, zwischen Domänen umzuleiten."
+
+msgid "Uses"
+msgstr "Verwendungen"
+
+msgid "Manage domain redirects"
+msgstr "Domänenumleitungen verwalten"
+
+msgid "The domain redirect is accessed through <a href=\":domainlist\">Domain Redirects</a>. The user can add the domain redirects through the domain redirect table which consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected. The module also supports the usage of a wildcard redirecting, thus many requests can be handled with one instance of domain redirect."
+msgstr "Der Zugriff auf die Domänenumleitung erfolgt über <a href=\":domainlist\">Domänenumleitungen</a>. Der Benutzer kann die Domänenumleitung über die Domänenumleitungstabelle hinzufügen, die aus der Domäne, von der aus umgeleitet werden muss, dem untergeordneten Pfad und dem vollständigen URL-Ziel besteht, zu dem umgeleitet wird. Das Modul unterstützt außerdem die Verwendung einer Platzhalterumleitung, sodass viele Anforderungen mit einer Instanz der Domänenumleitung verarbeitet werden können."
+
+msgid "The domain redirect table consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected."
+msgstr "Die Domänenumleitungstabelle besteht aus der Domäne, von der aus umgeleitet werden muss, dem untergeordneten Pfad und dem vollständigen URL-Ziel, zu dem umgeleitet wird."
+
+msgid "Example Configuration"
+msgstr "Beispielkonfiguration"
+
+msgid "Example Redirects"
+msgstr "Beispielumleitungen"
+
+msgid "Request: example.com/redirect => Response: redirected.com/example-path"
+msgstr "Anforderung: example.com/redirect => Antwort: redirected.com/example-path"
+
+msgid "Request: foo.com/any-path => Response: bar.com"
+msgstr "Anforderung: foo.com/any-path => Antwort: bar.com"
+
+msgid "Precedence"
+msgstr "Vorrangstellung"
+
+msgid "Top-down precedence is used. This means the first matching redirect that is found will be taken. For example, assume these redirect rules:"
+msgstr "Eine Top-down-Vorrangstellung wird verwendet. Das heißt, dass die erste gefundene übereinstimmende Umleitung verwendet wird. Gehen Sie z. B. von den folgenden Umleitungsregeln aus:"
+
+msgid "foo.com/some/path => somedomain.com/path"
+msgstr "foo.com/some/path => somedomain.com/path"
+
+msgid "foo.com/* => wildcardredirect.com"
+msgstr "foo.com/* => wildcardredirect.com"
+
+msgid "foo.com/other/path => otherdomain.com/path"
+msgstr "foo.com/other/path => otherdomain.com/path"
+
+msgid "The following redirects would actually occur:"
+msgstr "Die folgenden Umleitungen würden tatsächlich auftreten:"
+
+msgid "foo.com/other/path => wildcardredirect.com"
+msgstr "foo.com/other/path => wildcardredirect.com"
+
+msgid "Redirect Domain"
+msgstr "Domäne umleiten"
+
+msgid "Allows users to redirect between domains."
+msgstr "Ermöglicht Benutzern das Umleiten zwischen Domänen."
+
+msgid "Domain redirects"
+msgstr "Domänenumleitungen"
+
+msgid "Configure domain redirects."
+msgstr "Konfigurieren Sie Domänenumleitungen."
+
+msgid "Redirect domains"
+msgstr "Domänen umleiten"
+
+msgid "Sub path"
+msgstr "Unterpfad"
+
+msgid "Destination"
+msgstr "Ziel"
+
+msgid "From domain"
+msgstr "Von Domäne"
+
+msgid "Add another"
+msgstr "Weitere hinzufügen"
+
+msgid "Save"
+msgstr "Speichern"
+
+msgid "No protocol should be included in the redirect domain."
+msgstr "In die Umleitungsdomäne sollte kein Protokoll eingeschlossen werden."
+
+msgid "The domain redirects have been saved."
+msgstr "Die Domänenumleitungen wurden gespeichert."
+

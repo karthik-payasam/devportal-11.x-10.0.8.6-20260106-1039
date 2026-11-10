@@ -1,0 +1,350 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "svg image from @field_name"
+msgstr "SVG-Bild aus @field_name"
+
+msgid "@entity using @field"
+msgstr "Entität @entity, die das Feld @field verwendet"
+
+msgid "@field_name"
+msgstr "@field_name"
+
+msgid "Relate each @entity with a @field set to the svg image."
+msgstr "Setzen Sie jede @entity mit einem festgelegten @field mit dem SVG-Bild in Beziehung."
+
+msgid "About"
+msgstr "Über"
+
+msgid ""
+"The SVG image field module allows you to create fields that contain\n"
+" svg image files and to configure svg output. See the <a href=\":field\">Field module help</a> and\n"
+"  the <a href=\":field_ui\">Field UI help</a> pages for terminology and general information on\n"
+"  entities, fields, and how to create and manage fields."
+msgstr "Mit dem SVG-Bildfeldmodul können Sie Felder erstellen, die Folgendes enthalten svg-Bilddateien und zur Konfiguration svg-Ausgabe. Siehe <a href=\":field\">Feldmodul-Hilfe</a> und  die <a href=\":field_ui\">Field UI-Hilfeseiten</a> für Terminologie und allgemeine Informationen zu  Entitäten, Felder und Informationen zum Erstellen und Verwalten von Feldern."
+
+msgid "Uses"
+msgstr "Verwendungszwecke"
+
+msgid "Configuring svg image fields"
+msgstr "SVG-Bildfelder konfigurieren"
+
+msgid ""
+"A few of the settings for svg image fields are defined once when you create the field and\n"
+"      cannot be changed later; these include the choice of public or private file storage and the number of images that can be stored in the field.\n"
+"       The rest of the settings can be edited later; these settings include the field label, help text, and the subdirectory in the public or private file storage\n"
+"       where the images will be stored. The editable settings can also have different values for different entity sub-types; for instance,\n"
+"       if your image field is used on both Page and Article content types, you can store the files in a\n"
+"        different subdirectory for the two content types."
+msgstr "Einige der Einstellungen für svg-Bildfelder werden einmalig beim Erstellen des Feldes definiert und      können später nicht geändert werden. Diese umfassen die Wahl des öffentlichen oder privaten Dateispeichers und die Anzahl der Bilder, die im Feld gespeichert werden können.       Der Rest der Einstellungen kann später bearbeitet werden; zu diesen Einstellungen gehören die Feldbezeichnung, der Hilfetext und das Unterverzeichnis in der öffentlichen oder privaten Dateiablage,       wo die Bilder gespeichert werden. Die bearbeitbaren Einstellungen können auch unterschiedliche Werte für verschiedene Entitätsuntertypen haben; zum Beispiel,       wenn Ihr Bildfeld sowohl auf Seiten- als auch auf Artikelinhaltstypen verwendet wird, können Sie die Dateien in        einem anderen Unterverzeichnis für die beiden Inhaltstypen speichern."
+
+msgid ""
+"For accessibility and search engine optimization, all images that convey meaning on web sites should have alternate text.\n"
+"       Drupal also allows entry of title text for images, but it can lead to confusion for screen reader users and its use is not recommended.\n"
+"       SVG image fields can be configured so that alternate and title text fields are enabled or disabled; if enabled, the fields can be set to be required.\n"
+"        The recommended setting is to enable and require alternate text and disable title text."
+msgstr "Aus Gründen der Zugänglichkeit und der Suchmaschinenoptimierung sollten alle Bilder, die auf Websites eine Bedeutung vermitteln, mit einem alternativen Text versehen werden.       Drupal erlaubt auch die Eingabe von Titeltext für Bilder, aber das kann zu Verwirrung bei Screenreader-Benutzern führen, und seine Verwendung wird nicht empfohlen.       SVG-Bildfelder können so konfiguriert werden, dass die Felder für alternative und Titeltextfelder aktiviert oder deaktiviert sind. Wenn diese Option aktiviert ist, können die Felder so festgelegt werden, dass sie erforderlich sind.        Die empfohlene Einstellung ist, Alternativtext zu aktivieren und als 'Erforderlich' zu definieren und Titeltext zu inaktivieren."
+
+msgid ""
+"When you create an svg image field, you will need to choose whether the uploaded images will be stored in the public or\n"
+" private file directory defined in your settings.php file and shown on the <a href=\":file-system\">File system page</a>. This choice cannot be changed later.\n"
+"  You can also configure your field to store files in a subdirectory of the public or private directory; this setting can be changed later and\n"
+"  can be different for each entity sub-type using the field. For more information on file storage,\n"
+"  see the <a href=\":system-help\">System module help page</a>."
+msgstr "Wenn Sie ein svg-Bildfeld erstellen, müssen Sie wählen, ob die hochgeladenen Bilder in einem öffentlichen oder privaten Dateiverzeichnis gespeichert werden sollen, das in Ihrer settings.php-Datei definiert und auf der <a href=\":file-system\">Dateisystem-Seite</a> angezeigt wird. Diese Option kann später nicht geändert werden.  Sie können Ihr Feld auch so konfigurieren, dass Dateien in einem Unterverzeichnis des öffentlichen oder privaten Verzeichnisses gespeichert werden; diese Einstellung kann später geändert werden und  kann für jeden Entitätsuntertyp, der das Feld verwendet, unterschiedlich sein. Weitere Informationen zum Dateispeicher finden Sie unter  <a href=\":system-help\">Hilfeseite des Systemmoduls</a>."
+
+msgid ""
+"The maximum file size that can be uploaded is limited by PHP settings of the server,\n"
+" but you can restrict it further by configuring a <em>Maximum upload size</em> in the field settings (this setting can be changed later).\n"
+" The maximum file size, either from PHP server settings or field configuration, is automatically displayed to users in the help text of the image field."
+msgstr "Die maximale Dateigröße, die hochgeladen werden kann, ist durch PHP-Einstellungen des Servers begrenzt, Sie können sie jedoch weiter einschränken, indem Sie eine <em>Maximale Uploadgröße</em> in den Feldeinstellungen konfigurieren (diese Einstellung kann später geändert werden). Die maximale Dateigröße, entweder aus den PHP-Server-Einstellungen oder aus der Feldkonfiguration, wird Benutzern im Hilfetext zum Bildfeld automatisch angezeigt."
+
+msgid ""
+"You can also configure a default image that will be used if no image is uploaded in an image field.\n"
+"       This default can be defined for all instances of the field in the field storage settings when you create a field, and the setting can be overridden\n"
+"        for each entity sub-type that uses the field."
+msgstr ""
+"Sie können auch ein Standardbild konfigurieren, das verwendet wird, wenn in einem Bildfeld kein Bild hochgeladen worden ist.\n"
+" Dieses Standardbild kann für alle Instanzen des Felds in den Feldspeichereinstellungen definiert werden, wenn Sie ein Feld erstellen. Die Einstellung kann\n"
+" für jeden Entitätsuntertyp überschrieben werden, der das Feld verwendet."
+
+msgid "Configuring displays and form displays"
+msgstr "Anzeigen und Formularanzeigen konfigurieren"
+
+msgid ""
+"On the <em>Manage display</em> page, you can choose the image formatter,\n"
+" which determines the image width and height used to display the image in each display mode and whether or not to display the image alt and title.\n"
+"  On the <em>Manage form display</em> page, you can configure the image upload widget, including setting the preview image max-width and max-height\n"
+"   shown on the entity edit form."
+msgstr ""
+"Auf der Seite <em>Anzeige verwalten</em> können Sie den Bildformatierer auswählen,\n"
+" der die Bildbreite und -höhe bestimmt, die zum Anzeigen des Bilds in jedem Anzeigemodus verwendet wird. Außerdem können Sie auswählen, ob der Alternativtext und der Titel des Bildes angezeigt werden sollen.\n"
+" Auf der Seite <em>Formularanzeige verwalten</em> können Sie das Bilduploadwidget konfigurieren, einschließlich der maximalen Breite und Höhe des Vorschaubildes,\n"
+" die im Entitätsbearbeitungsformular angezeigt werden."
+
+msgid "Only files with mime type %mime-types-allowed are allowed. Mime type detected %mime-type-detected"
+msgstr "Nur Dateien mit dem MIME-Typ %mime-types-allowed sind zulässig. Erkannter MIME-Typ: %mime-type-detected"
+
+msgid "File %file-name is not valid svg"
+msgstr "Die Datei %file-name ist keine gültige SVG-Datei."
+
+msgid "SVG image field"
+msgstr "SVG-Bildfeld"
+
+msgid "Provides svg image field"
+msgstr "Gibt das SVG-Bildfeld an."
+
+msgid "Field types"
+msgstr "Feldtypen"
+
+msgid "Image settings"
+msgstr "Bildeinstellungen"
+
+msgid "Default value"
+msgstr "Standardwert"
+
+msgid "Enable Alt field"
+msgstr "Alt-Feld aktivieren"
+
+msgid "Alt field required"
+msgstr "Alt-Feld erforderlich"
+
+msgid "Enable Title field"
+msgstr "Titel-Feld aktivieren"
+
+msgid "Title field required"
+msgstr "Titel-Feld erforderlich"
+
+msgid "Image field display format settings"
+msgstr "Anzeigeformateinstellungen von Bildern"
+
+msgid "Output SVG inline"
+msgstr "SVG inline anzeigen"
+
+msgid "Apply dimensions"
+msgstr "Dimensionen anwenden"
+
+msgid "Width"
+msgstr "Breite"
+
+msgid "Height"
+msgstr "Höhe"
+
+msgid "Enable alt"
+msgstr "Alt-Text aktivieren"
+
+msgid "Enable title"
+msgstr "Titel aktivieren"
+
+msgid "Link image to"
+msgstr "Bild verlinken mit"
+
+msgid "Force fill"
+msgstr "Füllung erzwingen"
+
+msgid "Sanitize"
+msgstr "Sanitisieren"
+
+msgid "Sanitize remote"
+msgstr "Ferne bereinigen"
+
+msgid "Progress indicator"
+msgstr "Fortschrittsanzeige"
+
+msgid "Preview max width"
+msgstr "Maximale Breite der Vorschau"
+
+msgid "Preview max height"
+msgstr "Maximale Höhe der Vorschau"
+
+msgid "SVG Image Field - Media Bundle"
+msgstr "SVG-Bildfeld-Medienpaket"
+
+msgid "Creates a media bundle to use SVG Image Field with the Media capabilities in core. NOTE: if you are planning to use this with the Media Library in core, it is recommended to install that module before this one. Will also install Acquia Site Studio Components if that is installed."
+msgstr "Erstellt ein Medienpaket, um das SVG-Bildfeld mit den Medienfunktionen im Kern zu verwenden. ANMERKUNG: Wenn Sie vorhaben, dies mit der Medienbibliothek im Kern zu verwenden, wird empfohlen, dieses Modul vor diesem zu installieren. Wenn dies installiert ist, werden auch Acquia Site Studio-Komponente installiert."
+
+msgid "Content"
+msgstr "Inhalt"
+
+msgid "File"
+msgstr "Datei"
+
+msgid ""
+"Check this option if you want to manipulate the SVG image with CSS and JavaScript.\n"
+"       Notice only trusted users should use fields with this option enabled because of\n"
+"       <a href=\"@svg_security_link\">inline svg security</a>"
+msgstr "Aktivieren Sie diese Option, wenn Sie das SVG-Bild mit CSS und JavaScript bearbeiten möchten.       Beachten Sie, dass nur vertrauenswürdige Benutzer Felder verwenden sollten, die diese Option aktiviert haben, wegen       I<a href=\"@svg_security_link\">nline-svg-Sicherheit</a>"
+
+msgid "Apply dimensions."
+msgstr "Dimensionen anwenden."
+
+msgid "Image width."
+msgstr "Bildbreite."
+
+msgid "Image height."
+msgstr "Bildhöhe."
+
+msgid "Force the fill to currentColor"
+msgstr "Erzwingt die Füllung mit currentColor"
+
+msgid "This can allow the SVG to inherit coloring from the enclosing tag, such as a link tag."
+msgstr "Dadurch kann das SVG die Farbgebung vom umschließenden Tag erben, z. B. von einem Link-Tag."
+
+msgid "Sanitize SVG code"
+msgstr "SVG-Code bereinigen"
+
+msgid "Sanitize the SVG XML code and prevent XSS attacks."
+msgstr "Bereinigen Sie den SVG-XML-Code und verhindern Sie XSS-Angriffe."
+
+msgid "Sanitize: Remove remote references"
+msgstr "Bereinigen: Remote-Verweise entfernen"
+
+msgid "Remove attributes that reference remote files, this will stop HTTP leaks but will add an overhead to the sanitizer."
+msgstr "Entfernen Sie Attribute, die auf entfernte Dateien verweisen. Dies verhindert HTTP-Lecks, bedeutet aber einen zusätzlichen Systemaufwand für den Sanitizer."
+
+msgid "Nothing"
+msgstr "Nichts"
+
+msgid "Enable alt attribute."
+msgstr "Alt-Attribut aktivieren."
+
+msgid "Enable title attribute."
+msgstr "Title-Attribut aktivieren."
+
+msgid "Inline SVG"
+msgstr "Inline-SVG"
+
+msgid "Image width: @width"
+msgstr "Bildbreite: @width"
+
+msgid "Image height: @height"
+msgstr "Bildhöhe: @height"
+
+msgid "Alt enabled"
+msgstr "Alt-Attribut aktiviert"
+
+msgid "Title enabled"
+msgstr "Title-Attribut aktiviert"
+
+msgid "Inline file %file is missing or empty. Inline display will be disabled and an image tag used instead."
+msgstr "Die Inlinedatei %file fehlt oder ist leer. Die integrierte Anzeige wird inaktiviert und stattdessen ein Image-Tag verwendet."
+
+msgid "File %file could not be displayed by image formatter because it does not exist on server."
+msgstr "Datei %file konnte vom Bildformatierungsprogramm nicht angezeigt werden, weil sie auf dem Server nicht vorhanden ist."
+
+msgid "SVG Image Field formatter"
+msgstr "Formatierungsprogramm für SVG-Bildfeld"
+
+msgid "SVG Image URL formatter"
+msgstr "SVG-Bild-URL-Formatierer"
+
+msgid "Alternative text"
+msgstr "Alternativer Text"
+
+msgid "Alternative image text, for the image's 'alt' attribute."
+msgstr "Ein beschreibender Text des Bildinhalts, der für das 'alt'-Attribut verwendet wird."
+
+msgid "Title"
+msgstr "Titel"
+
+msgid "Image title text, for the image's 'title' attribute."
+msgstr "Der Titeltext des Bildes. Dieser wird für das 'title'-Atribut des Bildes verwendet."
+
+msgid "Upload destination"
+msgstr "Upload-Ziel"
+
+msgid "Select where the final files should be stored. Private file storage has significantly more overhead than public files, but allows restricted access to files within this field."
+msgstr "Wählen Sie aus, wo die Dateien abgelegt werden sollen. Der Private Dateispeicher erfordert bedeutend mehr Performance als der Öffentliche Dateispeicher, bietet jedoch einen geschützten Zugang zu Dateien in diesem Feld."
+
+msgid "If no image is uploaded, this image will be shown on display."
+msgstr "Wenn kein Bild hochgeladen wurde, wird dieses Bild angezeigt."
+
+msgid "Enable <em>Alt</em> field"
+msgstr "<em>Alt</em>-Feld verwenden"
+
+msgid "The alt attribute may be used by search engines, screen readers, and when the image cannot be loaded. Enabling this field is recommended."
+msgstr "Das Alt-Attribut kann von Suchmaschinen und Screenreadern verwendet werden und wenn das Bild nicht geladen werden kann. Das Aktivieren dieses Felds ist empfohlen."
+
+msgid "<em>Alt</em> field required"
+msgstr "<em>Alt</em>-Feld ist erforderlich"
+
+msgid "Making this field required is recommended."
+msgstr "Es wird empfohlen, dieses Feld als Pflichtfeld zu setzen."
+
+msgid "Enable <em>Title</em> field"
+msgstr "<em>Titel</em>-Feld einschalten"
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image. Enabling this field is not recommended as it can cause problems with screen readers."
+msgstr "Das Titel-Attribut wird als Tooltip angezeigt, wenn sich der Mauszeiger über dem Bild befindet. Das Aktivieren dieses Felds ist nicht empfohlen, da es Probleme mit Screenreadern verursachen kann."
+
+msgid "<em>Title</em> field required"
+msgstr "<em>Titel</em>-Feld erforderlich"
+
+msgid "If no image is uploaded, this image will be shown on display and will override the field's default image."
+msgstr "Wenn kein Bild hochgeladen wurde, wird dieses Bild angezeigt und übersteuert das Standardbild des Feldes."
+
+msgid "Default image"
+msgstr "Standardbild"
+
+msgid "Image"
+msgstr "Bild"
+
+msgid "Image to be shown if no image is uploaded."
+msgstr "Bild, das angezeigt wird, wenn kein Bild hochgeladen wurde."
+
+msgid "This text will be used by screen readers, search engines, and when the image cannot be loaded."
+msgstr "Dieser Text wird von Screen Readern und Suchmaschinen   bzw. wenn das Bild nicht geladen werden kann, verwendet, um den Bildinhalt zu erfassen und zu beschreiben."
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image."
+msgstr "Das Titel-Attribut wird als Tooltip angezeigt, wenn sich der Mauszeiger über dem Bild befindet."
+
+msgid "Svg Image"
+msgstr "SVG-Bild"
+
+msgid "This field stores the ID of an image file as an integer value."
+msgstr "Dieses Feld speichert die ID einer Bilddatei als Integer-Wert."
+
+msgid "Reference"
+msgstr "Referenz"
+
+msgid "Alt"
+msgstr "Alt"
+
+msgid "Preview image max width"
+msgstr "Maximale Breite des Vorschaubildes"
+
+msgid "Preview image max height"
+msgstr "Maximale Höhe des Vorschaubildes"
+
+msgid "Preview image width: @width"
+msgstr "Breite des Vorschaubildes: @width"
+
+msgid "Preview image height: @height"
+msgstr "Höhe des Vorschaubildes: @height"
+
+msgid "This text will be used by screen readers, search engines, or when the image cannot be loaded."
+msgstr "Dieser Text wird von Screenreadern, Suchmaschinen oder dann verwendet, wenn das Bild nicht geladen werden kann."
+
+msgid "The title is used as a tool tip when the user hovers the mouse over the image."
+msgstr "Der Titel erscheint als Tooltip, wenn der Benutzer den Mauszeiger über das Bild bewegt."
+
+msgid "SVG image"
+msgstr "SVG-Bild"
+
+msgid "SVG"
+msgstr "SVG"
+
+msgid "Provides business logic and metadata for SVG files."
+msgstr "Stellt Geschäftslogik und Metadaten für SVG-Dateien bereit."
+

@@ -1,0 +1,123 @@
+<?php
+
+namespace Drupal\custom_mfa\Form;
+
+use Drupal\Core\Form\FormBase;
+use Drupal\Core\Form\FormStateInterface;
+
+class MfaModalForm extends FormBase {
+
+  public function getFormId() {
+    return 'custom_mfa_modal_form';
+  }
+
+  public function buildForm(array $form, FormStateInterface $form_state) {
+    $user = \Drupal::currentUser();
+    $email = $user->getEmail();
+    
+    // Mask email for security UI display
+    $parts = explode('@', $email);
+    $masked_email = substr($parts[0], 0, 3) . str_repeat('*', 10) . '@' . substr($parts[1], 0, 3) . '**.com';
+
+    // Track whether an OTP has been generated in the current form state or session
+    $session = \Drupal::request()->getSession();
+    $otp_generated = $form_state->get('otp_generated') || !empty($session->get('mfa_code'));
+
+    $form['#attached']['library'][] = 'core/drupal.dialog.ajax';
+
+    $form['header'] = [
+      '#markup' => '<div style="text-align:center;"><h2 style="color:#800033; margin-bottom:5px;">MFA</h2><h3>Generate OTP</h3><p>Click "Generate OTP" to send a code to ' . $masked_email . '</p></div>',
+    ];
+
+    $form['otp_code'] = [
+      '#type' => 'textfield',
+      '#placeholder' => 'Enter OTP',
+      '#attributes' => [
+        'style' => 'text-align:center; font-size:18px; width:200px; margin: 15px auto; display:block;',
+        'maxlength' => 6,
+      ],
+    ];
+
+    $form['actions'] = ['#type' => 'actions', '#attributes' => ['style' => 'text-align:center;']];
+
+    // Button label changes from "Generate OTP" to "Resend OTP" once code is requested
+    $generate_label = $otp_generated ? $this->t('Resend OTP') : $this->t('Generate OTP');
+
+    $form['actions']['generate'] = [
+      '#type' => 'submit',
+      '#value' => $generate_label,
+      '#submit' => ['::resendOtp'],
+      '#limit_validation_errors' => [],
+      '#attributes' => ['style' => 'background-color:#800033; color:#fff; border:none; padding:10px 15px; margin:3px;'],
+    ];
+
+    // "Proceed" button is disabled until OTP is generated
+    $form['actions']['submit'] = [
+      '#type' => 'submit',
+      '#value' => $this->t('Proceed'),
+      '#disabled' => !$otp_generated,
+      '#attributes' => [
+        'style' => !$otp_generated 
+          ? 'background-color:#cccccc; color:#666666; border:none; padding:10px 15px; margin:3px; cursor:not-allowed;' 
+          : 'background-color:#800033; color:#fff; border:none; padding:10px 15px; margin:3px;',
+      ],
+    ];
+
+    $form['actions']['cancel'] = [
+      '#type' => 'submit',
+      '#value' => $this->t('Cancel and Logout'),
+      '#submit' => ['::cancelAndLogout'],
+      '#limit_validation_errors' => [],
+      '#attributes' => ['style' => 'background-color:#6c757d; color:#fff; border:none; padding:10px 15px; margin:3px;'],
+    ];
+
+    return $form;
+  }
+
+  public function validateForm(array &$form, FormStateInterface $form_state) {
+    $trigger = $form_state->getTriggeringElement()['#parents'][0] ?? '';
+    if ($trigger === 'submit') {
+      $session = \Drupal::request()->getSession();
+      $stored_otp = $session->get('mfa_code');
+      $user_otp = trim($form_state->getValue('otp_code'));
+
+      if (empty($stored_otp)) {
+        $form_state->setErrorByName('otp_code', $this->t('Please generate an OTP code first.'));
+      }
+      elseif ($user_otp != $stored_otp || empty($user_otp)) {
+        $form_state->setErrorByName('otp_code', $this->t('Invalid OTP code. Please check your email or request a new code.'));
+      }
+    }
+  }
+
+  public function submitForm(array &$form, FormStateInterface $form_state) {
+    $session = \Drupal::request()->getSession();
+    $session->set('mfa_verified', TRUE);
+    $session->remove('mfa_code');
+    
+    \Drupal::messenger()->addStatus($this->t('Authentication successful.'));
+    $form_state->setRedirect('<front>');
+  }
+
+  public function resendOtp(array &$form, FormStateInterface $form_state) {
+    $session = \Drupal::request()->getSession();
+    $otp = rand(100000, 999999);
+    $session->set('mfa_code', $otp);
+
+    $user = \Drupal::currentUser();
+    $mailManager = \Drupal::service('plugin.manager.mail');
+    $params['message'] = "Your OTP is: " . $otp;
+    $mailManager->mail('custom_mfa', 'mfa_otp', $user->getEmail(), $user->getPreferredLangcode(), $params, NULL, TRUE);
+
+    // Mark OTP as generated to switch button text and enable Proceed
+    $form_state->set('otp_generated', TRUE);
+
+    \Drupal::messenger()->addStatus($this->t('An OTP has been sent to your email.'));
+    $form_state->setRebuild();
+  }
+
+  public function cancelAndLogout(array &$form, FormStateInterface $form_state) {
+    user_logout();
+    $form_state->setRedirect('user.login');
+  }
+}

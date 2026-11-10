@@ -1,0 +1,176 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Warmer"
+msgstr "ウォーマー"
+
+msgid "Module that provides infrastructure for common cache warming/pre-fetching techniques."
+msgstr "共通のキャッシュ・ウォーミング/プリフェッチ手法のためのインフラストラクチャーを提供するモジュール。"
+
+msgid "Cache warming"
+msgstr "キャッシュ・ウォーミング"
+
+msgid "Configure cache warming behaviors to improve application performance."
+msgstr "アプリケーションのパフォーマンスを向上させるキャッシュ・ウォーミングの動作を構成します。"
+
+msgid "Warm caches"
+msgstr "ウォーム・キャッシュ"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Configure cache warmers"
+msgstr "キャッシュ・ウォーマーの構成"
+
+msgid "Warmer Settings"
+msgstr "ウォーマーの設定"
+
+msgid "Warmers"
+msgstr "ウォーマー"
+
+msgid "CDN Warmer"
+msgstr "CDN ウォーマー"
+
+msgid "Executes HTTP requests to warm the edge caches. It is useful without a CDN as well, as it will also warm Varnish and Page Cache."
+msgstr "エッジ・キャッシュをウォーミングする HTTP 要求を実行します。 これは、CDN がなくても、Varnish やページ・キャッシュをウォーミングするため、便利です。"
+
+msgid "URLs"
+msgstr "URL"
+
+msgid "Enter the list of URLs. One on each line. Examples: https://example.org/foo/bar, /foo/bar."
+msgstr "URL のリストを入力します。 1 行に 1 つずつ入力します。 例: https://example.org/foo/bar, /foo/bar"
+
+msgid "Headers"
+msgstr "ヘッダー"
+
+msgid "Specific headers to use when making HTTP requests. Format: <code>Header-Name: value1; value2</code>"
+msgstr "HTTP 要求を行うときに使用する特定のヘッダー。 フォーマット: <code>ヘッダー名: 値 1; 値 2</code>"
+
+msgid "Enable SSL verification"
+msgstr "SSL 検証の有効化"
+
+msgid "Enable SSL verification. Recommended to keep it checked for security reasons."
+msgstr "SSL 検証の有効化。 セキュリティー上の理由から、チェックを付けたままにしておくことを推奨します。"
+
+msgid "Maximum number of concurrent Requests."
+msgstr "同時要求の最大数。"
+
+msgid "The maximum number of concurrent requests."
+msgstr "同時要求の最大数です。"
+
+msgid "CDN"
+msgstr "CDN"
+
+msgid "minPriority should be a float between 0 and 1."
+msgstr "minPriority は 0 から 1 の間の浮動小数点にする必要があります。"
+
+msgid "Sitemaps"
+msgstr "サイト・マップ"
+
+msgid "Enter the list of sitemap URLs. One on each line. Examples: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+msgstr "サイト・マップ URL のリストを入力します。 1 行に 1 つずつ入力します。 例: https://example.org/sitemap.xml, /drupal-sitemap.xml。"
+
+msgid "Minimum Priority"
+msgstr "最小優先順位"
+
+msgid "URLs with a lower priority than the configured will not be warmed. A float value between 0 and 1."
+msgstr "構成済みのものより優先順位が低い URL はウォーミングされません。 浮動小数点値は 0 から 1 の間です。"
+
+msgid "This defines the maximum number of concurrent requests."
+msgstr "これにより、同時要求の最大数が定義されます。"
+
+msgid "There was an error parsing the Sitemap in %location. Please check the watchdog logs for more information."
+msgstr "%location のサイトマップを解析しているときにエラーが発生しました。 詳細については、ウォッチドッグ・ログを確認してください。"
+
+msgid "CDN via Sitemap"
+msgstr "サイト・マップ経由の CDN"
+
+msgid "Collects the URLs to warm from the sitemap. Then uses the CDN warmer for those."
+msgstr "サイト・マップからウォーミングする URL を収集します。 次にそれらに CDN ウォーマーを使用します。"
+
+msgid "All headers must have a colon. Follow the format: <code>the-name: the-value</code>"
+msgstr "すべてのヘッダーにはコロンが必要です。 次の形式に従ってください: <code>名前: 値</code>"
+
+msgid "Entity Warmer"
+msgstr "エンティティー・ウォーマー"
+
+msgid "Warms the entity cache for the configured entity types."
+msgstr "構成済みエンティティー・タイプのエンティティー・キャッシュをウォーミングします。"
+
+msgid "Entity Types"
+msgstr "エンティティー・タイプ"
+
+msgid "Enable the entity types to warm asynchronously."
+msgstr "エンティティー・タイプを非同期にウォーミングできるようにします。"
+
+msgid "Entity"
+msgstr "エンティティー"
+
+msgid "Loads entities from the selected entity types & bundles to warm the entity cache."
+msgstr "選択したエンティティー・タイプおよびバンドルからエンティティーをロードし、エンティティー・キャッシュにデータを追加します。"
+
+msgid "@total items enqueued for cache warming."
+msgstr "キャッシュ・ウォーミング用にキューに入れられた @total 項目。"
+
+msgid "If you need your items into cache right away you can run \"drush queue-run warmer\"."
+msgstr "項目をすぐにキャッシュに入れる必要がある場合は、「drush queue-run warmer」を実行できます。"
+
+msgid "Warming caches in @count batches from the \"warmer\" queue."
+msgstr "「ウォーマー」キューから @count 個のバッチのキャッシュをウォーミングします。"
+
+msgid "Warmer plugin(s) not found: !names."
+msgstr "ウォーマー・プラグインが見つかりませんでした: !names。"
+
+msgid "This page allows you to enqueue cache warming operations manually. This will put the cache warming operations in a queue. If you want to actually execute them right away you can force processing the queue. A good way to do that is by installing the <a href=\":url\">Queue UI</a> module or using Drush. This module will provide a UI to process an entire queue."
+msgstr "このページでは、キャッシュ・ウォーミング操作を手動でエンキューできます。 これにより、キャッシュ・ウォーミング操作がキューに入れられます。 実際にそれらをすぐに実行したい場合は、キューを強制的に処理できます。 そのためには、<a href=\":url\">Queue UI</a> モジュールをインストールするか、Drush を使用することをお勧めします。 このモジュールは、キュー全体を処理するための UI を提供します。"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "No warmers available. Enable the Entity Warmer submodule, or try installing extending modules like JSON:API Boost."
+msgstr "使用可能なウォーマーがありません。 Entity Warmer サブモジュールを有効にするか、JSON:API ランキング調整などの拡張モジュールをインストールしてみてください。"
+
+msgid "Warm Caches"
+msgstr "ウォーム・キャッシュ"
+
+msgid "List of queues"
+msgstr "キューのリスト"
+
+msgid "Configure the cache warming behaviors. Each cache warmer is a plugin that may contain specific settings. They are all configured here."
+msgstr "キャッシュ・ウォーミングの動作を構成します。 各キャッシュ・ウォーマーは、特定の設定が含まれる場合があるプラグインです。 それらはすべてここで構成されます。"
+
+msgid "Settings saved for plugin(s): %names"
+msgstr "プラグイン %names の設定が保存されました"
+
+msgid "Frequency should be a positive number."
+msgstr "頻度は正数である必要があります。"
+
+msgid "Batch size should be a number greater than 1."
+msgstr "バッチ・サイズは 1 より大きい数である必要があります。"
+
+msgid "Frequency"
+msgstr "頻度"
+
+msgid "Only re-enqueue warming operations after at least this many seconds have passed."
+msgstr "少なくともこの秒数が経過した後にのみ、ウォーミング操作を再度エンキューします。"
+
+msgid "Batch Size"
+msgstr "バッチ・サイズ"
+
+msgid "Number of items to enqueue and process in a single go."
+msgstr "単一の実行でエンキューおよび処理する項目の数。"
+
+msgid "Cache warmer"
+msgstr "キャッシュ・ウォーマー"
+

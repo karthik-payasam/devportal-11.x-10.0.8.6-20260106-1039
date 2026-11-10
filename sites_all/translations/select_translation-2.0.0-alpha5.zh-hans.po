@@ -1,0 +1,126 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Select translation"
+msgstr "选择翻译"
+
+msgid "Select which translation of a node should be displayed"
+msgstr "选择应显示哪种节点翻译"
+
+msgid "Select Translation"
+msgstr "选择翻译"
+
+msgid "Provides a Views filter to select which translation of a node should be displayed."
+msgstr "提供视图过滤器以选择应显示节点的哪个翻译。"
+
+msgid "Multilingual"
+msgstr "多语言"
+
+msgid "The 'nid' argument must be an integer >= 1."
+msgstr "“nid”自变量必须为大于或等于 1 的整数。"
+
+msgid "Select translation filter"
+msgstr "选择翻译过滤器"
+
+msgid "Original node language fallback"
+msgstr "原始节点语言回退"
+
+msgid "Default site language fallback"
+msgstr "缺省站点语言回退"
+
+msgid "Language fallback candidates list"
+msgstr "语言回退候选项列表"
+
+msgid "Custom language priority"
+msgstr "定制语言优先级"
+
+msgid "Select translation selection mode"
+msgstr "选择翻译选择方式"
+
+msgid "Use the current interface language; if not available use the original node language"
+msgstr "使用当前界面语言；如果不可用，请使用原始节点语言"
+
+msgid "Use the current interface language; if not available use the default site language; if not available use the original node language"
+msgstr "使用当前界面语言；如果不可用，请使用缺省站点语言；如果不可用，请使用原始节点语言"
+
+msgid "Use the language fallback candidates list provided by the language manager service"
+msgstr "使用语言管理器服务提供的语言回退候选项列表"
+
+msgid "Custom language priorities"
+msgstr "定制语言优先级"
+
+msgid "Language priorities"
+msgstr "语言优先级"
+
+msgid ""
+"<p>If the selection mode is set to \"Custom language priorities\",\n"
+"                           a comma separated list of language codes can be specified.<br/>\n"
+"                           The filter will then return the node in the first available language\n"
+"                           in that list; falling back to the original node language if no match was found.</p>\n"
+"                           Some special values are recognized:\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" will be replaced with the current interface language;</li>\n"
+"                             <li>\"<em>default</em>\" will be replaced with the default site language;</li>\n"
+"                             <li>\"<em>original</em>\" will be replaced with the original node language.</li>\n"
+"                            </ul>\n"
+"                           Example:<br/><em>en,fr,current,default,original</em><br/>\n"
+"                           This will return:\n"
+"                           <ol>\n"
+"                             <li>the version in English, if available;</li>\n"
+"                             <li>if not, then the version in French, if available;</li>\n"
+"                             <li>if not, then the version in the current interface language, if available;</li>\n"
+"                             <li>if not, then the version in the default site language, if available;</li>\n"
+"                             <li>if none are available it will return the original node version.</li>\n"
+"                          </ol>"
+msgstr ""
+"<p>如果选择方式设置为“定制语言优先级”，\n"
+"那么可以指定以逗号分隔的语言代码列表。<br/>\n"
+"然后，过滤器将向节点返回该列表中的第一个可用语言；\n"
+"如果找不到匹配项，则回退到原始节点语言。</p>\n"
+"已识别某些特殊值：\n"
+"                           <ul>\n"
+"                             <li>“<em>current</em>”将替换为当前界面语言；</li>\n"
+"                             <li>“<em>default</em>”将替换为缺省站点语言；</li>\n"
+"                             <li>“<em>original</em>”将替换为原始节点语言。</li>\n"
+"                            </ul>\n"
+"示例：<br/><em>en,fr,current,default,original</em><br/>\n"
+"这将返回：\n"
+"                           <ol>\n"
+"                             <li>英语版本（如果可用）；</li>\n"
+"                             <li>如果不可用，则返回法语版本（如果可用）；</li>\n"
+"                             <li>否则，返回当前界面语言版本（如果可用）；</li>\n"
+"                             <li>否则，返回缺省站点语言版本（如果可用）；</li>\n"
+"                             <li>如果没有任何可用版本，将返回原始节点版本。</li>\n"
+"                          </ol>"
+
+msgid "Display default language content *only*, if the currently selected user language is the default site language."
+msgstr "如果当前选择的用户语言是缺省站点语言，那么*仅*显示缺省语言内容。"
+
+msgid ""
+"When you check this option, the order chosen above will be ignored when current language = site default language,\n"
+"        instead it will only show translations for the default language. "
+msgstr ""
+"选中此选项时，当当前语言为站点缺省语言时，将忽略以上所选顺序，\n"
+"仅显示缺省语言的翻译。"
+
+msgid "Return content in the site default language when a translation for the current language *does* exist, but it is unpublished."
+msgstr "当*存在*当前语言的翻译但未发布时，返回站点缺省语言的内容。"
+
+msgid ""
+"When you check this option, in addition to the order chosen above, content will be shown in the default site language in the event that the translation in the current language is unpublished.<br/>\n"
+"      <strong>NOTE</strong>: This option assumes that the view is already filtering out unpublished content with the <code>Published (=Yes)</code> criterion, otherwise both the published and unpublished node will be displayed."
+msgstr ""
+"如果选中此选项，除了上面选择的顺序外，在未发布当前语言的翻译的情况下，内容将以缺省站点语言显示。<br/>\n"
+"      <strong>注</strong>：此选项假定视图已使用 <code>Published (=Yes)</code> 条件过滤掉未发布的内容，否则将显示已发布和未发布的节点。"
+

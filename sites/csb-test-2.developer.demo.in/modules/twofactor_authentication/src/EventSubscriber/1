@@ -1,0 +1,71 @@
+<?php
+
+namespace Drupal\custom_mfa\EventSubscriber;
+
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\HttpKernel\Event\RequestEvent;
+use Symfony\Component\HttpKernel\KernelEvents;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Url;
+
+class MfaRedirectSubscriber implements EventSubscriberInterface {
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function getSubscribedEvents() {
+    $events[KernelEvents::REQUEST][] = ['checkMfaStatus', 30];
+    return $events;
+  }
+
+  /**
+   * Redirects unverified users to the MFA verification page.
+   */
+  public function checkMfaStatus(RequestEvent $event) {
+    // Only check on the main request.
+    if (!$event->isMainRequest()) {
+      return;
+    }
+
+    $account = \Drupal::currentUser();
+    
+    // If user is logged in, check MFA status.
+    if ($account->isAuthenticated()) {
+      $request = $event->getRequest();
+      $session = $request->getSession();
+      $mfa_verified = $session->get('mfa_verified', FALSE);
+
+      if (!$mfa_verified) {
+        $current_path = $request->getPathInfo();
+        
+        // Define paths that should remain accessible during verification
+        $allowed_paths = [
+          '/user/mfa-verify',
+          '/user/logout',
+        ];
+
+        // Check if the current path starts with any allowed paths
+        $is_allowed = false;
+        foreach ($allowed_paths as $path) {
+          if (strpos($current_path, $path) === 0) {
+            $is_allowed = true;
+            break;
+          }
+        }
+
+        // Also allow Drupal AJAX callbacks so form submission/resending works seamlessly
+        if (strpos($current_path, '/ajax') === 0) {
+          $is_allowed = true;
+        }
+
+        if (!$is_allowed) {
+          // Force redirect back to MFA verification page and stop execution
+          $url = Url::fromRoute('custom_mfa.modal_form')->toString();
+          $response = new RedirectResponse($url);
+          $event->setResponse($response);
+        }
+      }
+    }
+  }
+
+}

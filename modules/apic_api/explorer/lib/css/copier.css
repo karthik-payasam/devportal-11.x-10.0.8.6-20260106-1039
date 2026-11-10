@@ -1,0 +1,52 @@
+/********************************************************* {COPYRIGHT-TOP} ***
+ * Licensed Materials - Property of IBM
+ *
+ * (C) Copyright IBM Corporation 2021, 2025
+ *
+ * All Rights Reserved.
+ * US Government Users Restricted Rights - Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ ********************************************************** {COPYRIGHT-END} **/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.apiconnect-copier {
+  position: relative;
+  display: none;
+}
+
+*:hover > .apiconnect-copier {
+  display: block;
+}
+
+.apiconnect-copier .copyNotifier {
+  display: none;
+  position: absolute;
+  right: 35px;
+  top: 5px;
+  border: 1px solid #dfe6eb;
+  background: white;
+  padding: 2px 5px;
+}
+
+.apiconnect-copier .copyNotifier.notify {
+  display: inherit;
+  animation: fadeIn 1s;
+}
+
+.apiconnect-copier .copy-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 1rem;
+  width: 1rem;
+  vertical-align: middle;
+  margin-left: 5px;
+  cursor: pointer;
+}

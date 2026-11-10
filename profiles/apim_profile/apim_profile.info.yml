@@ -1,0 +1,147 @@
+name: "IBM API Developer Portal"
+type: profile
+description: "Provides modules to access the content in an API Manager node and a skeleton site which application developers can use to browse APIs."
+core_version_requirement: ^8 || ^9 || ^10 || ^11
+version: VERSION
+
+# Optional: Declare your installation profile as a distribution
+# This will make the installer auto-select this installation profile.
+# The distribution_name property is used in the installer and other places as
+# a label for the software being installed.
+distribution:
+  name: "IBM API Developer Portal"
+
+# Required modules
+install:
+  - node
+  - history
+  - block
+  - page_cache
+  - filter
+  - block_content
+  - dynamic_page_cache
+  - breakpoint
+  - config
+  - comment
+  - datetime
+  - contextual
+  - contact
+  - help
+  - image
+  - options
+  - inline_form_errors
+  - path
+  - taxonomy
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - editor
+  - automated_cron
+  - ban
+  - menu_ui
+  - forum
+  - blog
+  - big_pipe
+  - apic_letter_avatar
+  - avatars
+  - link
+  - field_group
+  - menu_link_content
+  - update
+  - page_manager
+  - page_manager_ui
+  - content_translation
+  - language
+  - locale
+  - user
+  - telephone
+  - votingapi_widgets
+  - cshs
+  - search404
+  - panels
+  - change_pwd_page
+  - libraries
+  - responsive_image
+  - config_update
+  - password_policy
+  - password_policy_length
+  - password_policy_character_types
+  - password_policy_username
+  - password_policy_consecutive
+  - views_bootstrap
+  - taxonomy_menu
+  - social_media_links
+  - health_check
+  - editor_advanced_link
+  - linkit
+  - select_or_other
+  - crop
+  - focal_point
+  - dropzonejs
+  - honeypot
+  - twig_tweak
+  - masonry
+  - masonry_views
+  - views_ajax_history
+  - contact_block
+  - config_translation
+  - better_exposed_filters
+  - search_api
+  - search_api_db
+  - search_api_autocomplete
+  - views_autocomplete_filters
+  - robotstxt
+  - flood_control
+  - key
+  - encrypt
+  - real_aes
+  - mimemail
+  - password_strength
+  - csp
+  - perimeter
+  - account_field_split
+  - noopener_filter
+  - session_based_temp_store
+  - select_translation
+  - term_csv_export_import
+  - ibm_apim
+  - ibm_log_stdout
+  - ibm_apic_mail
+  - ibm_apic_flood_control_ui
+  - ibm_event_log
+  - auth_apic
+  - consumerorg
+  - apic_app
+  - apic_api
+  - product
+  - themegenerator
+  - drushadmin
+  - drush_language
+  - unlimited_number
+  - restrict_by_ip
+  - ckeditor5
+  - media
+  - content_synchronizer
+  - fontawesome
+  - jquery_ui_resizable
+  - navigation
+  - navigation_top_bar
+  - jquery_ui
+  - jquery_ui_draggable
+  - jquery_ui_accordion
+  - jquery_ui_droppable
+  - bootstrap_layouts
+  - jquery_ui_effects
+  - maxlength
+  - expand_collapse_formatter
+  - file_upload_secure_validator
+
+themes:
+  - olivero
+  - claro
+  - stable9
+  - connect_theme

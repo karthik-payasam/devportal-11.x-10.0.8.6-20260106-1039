@@ -1,0 +1,1003 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Publish on date"
+msgstr "發佈日期"
+
+msgid "The date the %type will be published."
+msgstr "將發佈 %type 的日期。"
+
+msgid "Unpublish on date"
+msgstr "取消發佈日期"
+
+msgid "The date the %type will be unpublished."
+msgstr "將取消發佈 %type 的日期。"
+
+msgid "About"
+msgstr "關於"
+
+msgid "The Scheduler module provides the functionality for automatic publishing and unpublishing of entities, such and nodes and media items, at specified future dates."
+msgstr "「排程器」模組提供在指定未來日期自動發佈及取消發佈實體（例如節點及媒體項目）的功能。"
+
+msgid "You can read more in the <a href=\"@readme\">readme</a> file or our <a href=\"@project\">project page on Drupal.org</a>."
+msgstr "您可以在 <a href=\"@readme\">readme</a> 檔或我們 <a href=\"@project\">Drupal.org 上的專案頁面</a>中閱讀更多資訊。"
+
+msgid "When you have set up Drupal's standard crontab job cron.php then Scheduler will be executed during each cron run. However, if you would like finer granularity to scheduler, but don't want to run Drupal's cron more often then you can use the lightweight cron handler provided by Scheduler. This is an independent cron job which only runs the scheduler process and does not execute any cron tasks defined by Drupal core or any other modules."
+msgstr "當您已設定 Drupal 的標準 Crontab 工作 cron.php 時，後續即會在每一次 Cron 執行期間執行排程器。不過，如果您想要讓排程器有更細微的精度，但不想更頻繁地執行 Drupal Cron，您可以使用排程器所提供的輕量型 Cron 處理程式。這是一種獨立的 Cron 工作，只會執行排程器程序，而不會執行 Drupal 核心或任何其他模組所定義的任何 Cron 作業。"
+
+msgid "Scheduler's cron is at /scheduler/cron/{access-key} and a sample crontab entry to run scheduler every minute might look like:"
+msgstr "排程器的 Cron 位於 /scheduler/cron/{access-key}，每分鐘執行排程器的範例 Crontab 項目看起來可能像這樣："
+
+msgid "or"
+msgstr "或"
+
+msgid "Scheduling options"
+msgstr "定時選項"
+
+msgid "Enter a date. The time part is optional."
+msgstr "請輸入一個日期。時間部分是選用的。"
+
+msgid "The default time is @default_time."
+msgstr "預設時間為 @default_time。"
+
+msgid "Enter a date and time."
+msgstr "請輸入日期和時間。"
+
+msgid "Leave the date blank for no scheduled publishing."
+msgstr "讓日期保留空白，表示沒有排定的發佈。"
+
+msgid "Leave the date blank for no scheduled unpublishing."
+msgstr "讓日期保留空白，表示沒有排定的取消發佈。"
+
+msgid "The widget for field %field is incorrectly set to %wrong. This should be changed to %correct by an admin user via the <a href=\"@link\">Field UI form display</a> :not_available"
+msgstr "欄位 %field 的小組件不正確地設為 %wrong。 這應該由管理使用者透過<a href=\"@link\">欄位使用者介面表單顯示畫面</a>變更為 %correct：not_available"
+
+msgid "not available"
+msgstr "無法使用"
+
+msgid "Scheduler"
+msgstr "排程器"
+
+msgid "Publishing"
+msgstr "發佈"
+
+msgid "Enable scheduled publishing for %type @plural"
+msgstr "啟用 %type @plural 的排程發佈"
+
+msgid "Change %type creation time to match the scheduled publish time"
+msgstr "變更 %type 建立時間以符合排定的發佈時間"
+
+msgid "The entity type does not support the change of creation time."
+msgstr "實體類型不支援變更建立時間。"
+
+msgid "Require scheduled publishing"
+msgstr "需要排定的發佈"
+
+msgid "Create a new revision on publishing"
+msgstr "建立發佈的新修訂版"
+
+msgid "Advanced options"
+msgstr "進階選項"
+
+msgid "Action to be taken for publication dates in the past"
+msgstr "針對過去的發佈日期所要執行的動作"
+
+msgid "Display an error message - do not allow dates in the past"
+msgstr "顯示錯誤訊息 - 不容許過去的日期"
+
+msgid "Publish the %type @singular immediately after saving"
+msgstr "儲存之後立即發佈 %type @singular"
+
+msgid "Schedule the %type @singular for publication on the next cron run"
+msgstr "排程 %type @singular 以在下一次 cron 執行時發佈"
+
+msgid "Change %type creation time to match the published time, for dates before the %type was created"
+msgstr "針對建立 %type 之前的日期，變更 %type 建立時間以符合發佈時間"
+
+msgid "The created time will only be altered when the scheduled publishing time is earlier than the existing creation time"
+msgstr "只有在排定的發佈時間早於現有的建立時間時，才會變更建立時間"
+
+msgid "Unpublishing"
+msgstr "取消發佈"
+
+msgid "Enable scheduled unpublishing for %type @plural"
+msgstr "啟用 %type @plural 的排定取消發佈"
+
+msgid "Require scheduled unpublishing"
+msgstr "需要排定的取消發佈"
+
+msgid "Create a new revision on unpublishing"
+msgstr "建立取消發佈的新修訂版"
+
+msgid "@type edit page"
+msgstr "@type 編輯頁面"
+
+msgid "Display scheduling date input fields in"
+msgstr "在以下項目中顯示排程日期輸入欄位"
+
+msgid "Vertical tab"
+msgstr "垂直索引"
+
+msgid "Separate fieldset"
+msgstr "個別欄位集"
+
+msgid "Use this option to specify how the scheduler fields are displayed when editing %type @plural"
+msgstr "使用此選項來指定在編輯 %type @plural 時如何顯示排程器欄位"
+
+msgid "Expand fieldset or vertical tab"
+msgstr "展開欄位集或垂直欄標"
+
+msgid "Expand only when a scheduled date exists or when a date is required"
+msgstr "僅在排定日期存在或需要日期時展開"
+
+msgid "Always open the fieldset or vertical tab"
+msgstr "一律開啟欄位集或垂直欄標"
+
+msgid "Show message"
+msgstr "顯示訊息"
+
+msgid "Show a confirmation message when a scheduled %type @singular is saved"
+msgstr "儲存排程的 %type @singular 時顯示確認訊息"
+
+msgid "Scheduler settings"
+msgstr "排程器設定"
+
+msgid "Enabled for publishing"
+msgstr "已為發佈啟用"
+
+msgid "Enabled for unpublishing"
+msgstr "已為取消發佈啟用"
+
+msgid "None"
+msgstr "無"
+
+msgid "Now"
+msgstr "現在"
+
+msgid "How far into the future should the items be scheduled?"
+msgstr "這些項目應該排定在未來多久？"
+
+msgid "Scheduled dates will be set randomly within the selected time span."
+msgstr "排程日期將在選取的時間範圍內隨機設定。"
+
+msgid "Publishing date for Scheduler"
+msgstr "排程器的發佈日期"
+
+msgid "Enter a percentage for randomly selecting Scheduler-enabled entities to be given a publish-on date. Enter 0 for none, 100 for all. The date and time will be random within the range starting at entity creation date, up to a time in the future matching the same span as selected above."
+msgstr "輸入百分比，以隨機選取要提供發佈日期的啟用排程器實體。 輸入 0 表示無，100 表示全部。 日期和時間將在從實體建立日期開始的範圍內隨機，直到符合上面所選取之相同跨距的未來時間為止。"
+
+msgid "Unpublishing date for Scheduler"
+msgstr "排程器的取消發佈日期"
+
+msgid "Enter a percentage for randomly selecting Scheduler-enabled entities to be given an unpublish-on date. Enter 0 for none, 100 for all. The date and time will be random within the range starting at the later of entity creation date and publish-on date, up to a time in the future matching the same span as selected above."
+msgstr "輸入百分比，以隨機選取要提供取消發佈日期的啟用排程器實體。 輸入 0 表示無，100 表示全部。 日期和時間將在從實體建立日期和發佈日期的較晚日期開始的範圍內隨機，直到符合上述所選取之相同跨距的未來時間為止。"
+
+msgid "There is a problem with @entity '@type' - The translatable settings for status field '%status' and Scheduler field '%scheduler_field' should match, either both on or both off"
+msgstr "@entity '@type' 有問題 - 狀態欄位 '%status' 及排程器欄位 '%scheduler_field' 的可翻譯設定應該相符（同時開啟或關閉）"
+
+msgid "Publish on"
+msgstr "定時發表"
+
+msgid "Unpublish on"
+msgstr "定時取消發表"
+
+msgid "Media Field Data"
+msgstr "媒體欄位資料"
+
+msgid "Relationship to access the Media fields that are not on Media Revision."
+msgstr "用於存取不在「媒體修訂」上的「媒體」欄位的關係。"
+
+msgid "Media Field"
+msgstr "媒體欄位"
+
+msgid "%title is scheduled to be published @publish_time and unpublished @unpublish_time."
+msgstr "%title 排定在 @publish_time 發佈，以及在 @unpublish_time 取消發佈。"
+
+msgid "%title is scheduled to be published @publish_time."
+msgstr "%title 排定在 @publish_time 發佈。"
+
+msgid "%title is scheduled to be unpublished @unpublish_time."
+msgstr "%title 排定在 @unpublish_time 取消發佈。"
+
+msgid "Scheduler Dates"
+msgstr "排程器日期"
+
+msgid "Fieldset containing Scheduler Publish-on and Unpublish-on date input fields"
+msgstr "包含排程器發佈和取消發佈日期輸入欄位的欄位集"
+
+msgid "Scheduler: publish on"
+msgstr "排程器：發佈於"
+
+msgid "The date when the Scheduler module will publish the content."
+msgstr "「排程器」模組將發佈內容的日期。"
+
+msgid "Scheduler: unpublish on"
+msgstr "排程器：取消發佈於"
+
+msgid "The date when the Scheduler module will unpublish the content."
+msgstr "「排程器」模組將取消發佈內容的日期。"
+
+msgid "Scheduler settings cannot be migrated due to RequirementsException: %message, %requirements, line %line in %file"
+msgstr "無法移轉排程器設定，因為 RequirementsException：%message，%requirements，%file 中的第 %line 行"
+
+msgid "Function %function has not been executed. Implementations of hook_scheduler_api() should be replaced by Scheduler event listeners."
+msgstr "尚未執行函數 %function。 排程器事件接聽器應該取代 hook_scheduler_api () 的實作。"
+
+msgid "Local task route %route contains duplicates in addition to Scheduler. %data"
+msgstr "除了排程器之外，本端作業路徑 %route 還包含重複項。%data"
+
+msgid "currently in daylight saving mode"
+msgstr "目前處於日光節約時間模式"
+
+msgid "not in daylight saving mode"
+msgstr "不在日光節約時間模式"
+
+msgid "In most cases the server time should match Coordinated Universal Time (UTC) / Greenwich Mean Time (GMT)."
+msgstr "在大部分的情況下，伺服器時間都應該符合「世界標準時間 (UTC)/格林威治標準時間 (GMT)」。"
+
+msgid "Default timezone: %date_default_timezone (%date_default_code), offset from UTC/GMT by %date_default_offset hours. This timezone can be <a href=\"@admin_regional_settings\">changed by admin users</a> with the appropriate access."
+msgstr "預設時區：%date_default_timezone (%date_default_code)，偏移 UTC/GMT by %date_default_offset 個小時。此時區可透過適當的存取<a href=\"@admin_regional_settings\">由管理使用者變更</a>。"
+
+msgid "Local time: %localtime (%daylight_saving). You can change this via your <a href=\"@account_edit\">user account</a>."
+msgstr "當地時間：%localtime (%daylight_saving)。您可以透過自己的<a href=\"@account_edit\">使用者帳戶</a>來變更此時間。"
+
+msgid "Note: The user timezone has not been stored, so defaulting to the website timezone."
+msgstr "附註：使用者時區尚未儲存，因此將預設為網站時區。"
+
+msgid "Your local time is %localtime (%daylight_saving). This is not configurable by you."
+msgstr "您的當地時間是 %localtime (%daylight_saving)。您無法進行配置。"
+
+msgid "Scheduler Time Check"
+msgstr "排程器時間檢查"
+
+msgid "Server time: @utc"
+msgstr "伺服器時間：@utc"
+
+msgid "The date and time format has been reset."
+msgstr "日期和時間格式已重設。"
+
+msgid "Default set on for new option \"Show a message after updating content\""
+msgstr "設定給新選項「更新內容之後顯示訊息」的預設值"
+
+msgid "The \"Scheduled\" tab is now a \"Scheduled content\" sub-task under the \"Content\" tab"
+msgstr "「已排程」標籤現在是「內容」標籤下的「已排程內容」子作業"
+
+msgid "Added Scheduler date fields to the following entity types: %updated."
+msgstr "已將排程器日期欄位新增至下列實體類型：%updated。"
+
+msgid "No database fields had to be added."
+msgstr "無需新增任何資料庫欄位。"
+
+msgid "Updated views: %updated."
+msgstr "已更新視圖：%updated。"
+
+msgid "No views require updating."
+msgstr "沒有視圖需要更新。"
+
+msgid "Nothing requires updating for Taxonomy Terms."
+msgstr "「分類架構術語」不需要更新。"
+
+msgid "No reaction rules required updating with entity context."
+msgstr "不需要使用實體環境定義更新反應規則。"
+
+msgid "%updated."
+msgstr "%updated。"
+
+msgid "No update required."
+msgstr "不需要更新。"
+
+msgid "1 reaction rule updated with entity context"
+msgid_plural "@count reaction rules updated with entity context"
+msgstr[0] "已使用實體環境定義更新 @count 反應規則"
+
+msgid "Publish and unpublish content and entities automatically on specified dates and times."
+msgstr "在指定的日期和時間自動發佈及取消發佈內容和實體。"
+
+msgid "Configure settings for scheduled publishing and unpublishing."
+msgstr "配置排定發佈和取消發佈的設定。"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Lightweight cron"
+msgstr "輕量型 Cron"
+
+msgid "Administer scheduler"
+msgstr "管理排程器"
+
+msgid "Configure scheduler - set default times, lightweight cron."
+msgstr "配置排程器 - 設定預設時間，輕量型 Cron。"
+
+msgid "Allow date-only input with time taken from default time setting"
+msgstr "容許從預設時間設定擷取時間的僅限日期輸入"
+
+msgid "Full date and time format"
+msgstr "完整日期和時間格式"
+
+msgid "The set of PHP date letters allowed in the Scheduler date format"
+msgstr "排程器日期格式中容許的 PHP 日期字母集"
+
+msgid "Date part of the full format"
+msgstr "完整格式的日期部分"
+
+msgid "Default value for entity type setting expand_fieldset"
+msgstr "實體類型設定 expand_fieldset 的預設值"
+
+msgid "Default value for entity type setting fields_display_mode"
+msgstr "實體類型設定 fields_display_mode 的預設值"
+
+msgid "Default value for entity type setting publish_enable"
+msgstr "實體類型設定 publish_enable 的預設值"
+
+msgid "Default value for entity type setting publish_past_date"
+msgstr "實體類型設定 publish_past_date 的預設值"
+
+msgid "Default value for entity type setting publish_past_date_created"
+msgstr "實體類型設定 publish_past_date_created 的預設值"
+
+msgid "Default value for entity type setting publish_required"
+msgstr "實體類型設定 publish_required 的預設值"
+
+msgid "Default value for entity type setting publish_revision"
+msgstr "實體類型設定 publish_revision 的預設值"
+
+msgid "Default value for entity type setting publish_touch"
+msgstr "實體類型設定 publish_touch 的預設值"
+
+msgid "Default value for entity type setting show_message_after_update"
+msgstr "實體類型設定 show_message_after_update 的預設值"
+
+msgid "Default Scheduling Time. This is used with the option to allow date only"
+msgstr "預設排程時間。此選項可與僅容許日期的選項搭配使用"
+
+msgid "Default value for entity type setting unpublish_enable"
+msgstr "實體類型設定 unpublish_enable 的預設值"
+
+msgid "Default value for entity type setting unpublish_required"
+msgstr "實體類型設定 unpublish_required 的預設值"
+
+msgid "Default value for entity type setting unpublish_revision"
+msgstr "實體類型設定 unpublish_revision 的預設值"
+
+msgid "Hide the seconds on the input control when entering a time"
+msgstr "輸入時間時，隱藏輸入控制項上的秒數"
+
+msgid "Lightweight cron access key"
+msgstr "輕量型 Cron 存取金鑰"
+
+msgid "Log every Scheduler lightweight cron activation and completion message"
+msgstr "記載每個排程器輕量型 Cron 啟動和完成訊息"
+
+msgid "The set of PHP time letters allowed in the Scheduler time format"
+msgstr "排程器時間格式中容許的 PHP 時間字母集"
+
+msgid "Time part of the full format"
+msgstr "完整格式的時間部分"
+
+msgid "Scheduler entity type settings"
+msgstr "排程器實體類型設定"
+
+msgid "Conditions under which to expand the date input fieldset or vertical tab (\"when_required\" or \"always\")"
+msgstr "展開日期輸入欄位集或垂直標籤（\"when_required\" 或 \"always\"）的條件"
+
+msgid "The way the scheduling fields are displayed in the edit form (\"vertical_tab\" or \"fieldset\")"
+msgstr "排程欄位在編輯表單中的顯示方式（\"vertical_tab\" 或 \"fieldset\"）"
+
+msgid "Enable scheduled publishing"
+msgstr "啟用排定的發佈"
+
+msgid "Action to be taken for publication dates in the past (\"error\", \"publish\" or \"schedule\")"
+msgstr "針對過去的發佈日期採取的動作（\"error\"、\"publish\" 或 \"schedule\"）"
+
+msgid "Change entity creation date for past dates to avoid \"changed\" being earlier than \"created\""
+msgstr "變更過去日期的實體建立日期，以避免「變更時間」早於「建立時間」"
+
+msgid "Change entity creation time to match the scheduled publish time"
+msgstr "變更實體建立時間，以符合排定的發佈時間"
+
+msgid "Show a message after updating an entity which is scheduled"
+msgstr "更新排定的實體之後顯示訊息"
+
+msgid "Enable scheduled unpublishing"
+msgstr "啟用排定的取消發佈"
+
+msgid "State Change configuration"
+msgstr "狀態變更配置"
+
+msgid "Scheduled for publishing"
+msgstr "已排程進行發佈"
+
+msgid "Scheduled for unpublishing"
+msgstr "已排定要取消發佈"
+
+msgid "Not scheduled"
+msgstr "未排定"
+
+msgid "Publishing enabled"
+msgstr "已啟用發佈"
+
+msgid "Unpublishing enabled"
+msgstr "已啟用取消發佈"
+
+msgid "Node form scheduler"
+msgstr "節點表單排程器"
+
+msgid "Scheduler date options on the Node form."
+msgstr "「節點」表單上的排程器日期選項。"
+
+msgid "Form"
+msgstr "表單"
+
+msgid "Scheduler options"
+msgstr "排程器選項"
+
+msgid "Send e-mail when content is published by Scheduler"
+msgstr "當排程器發佈內容時傳送電子郵件"
+
+msgid "'[node:title]' has been published on [site:name]"
+msgstr "'[node:title]' 已在 [site:name] 上發佈"
+
+msgid ""
+"Dear [node:author:name],\r\n"
+"Your [node:type] '[node:title]' has been published on [site:name].\r\n"
+"The link is [node:url]\r\n"
+""
+msgstr ""
+"親愛的 [node:author:name] 您好，\r\n"
+"您的 [node:type] '[node:title]' 已在 [site:name] 上發佈。\r\n"
+"鏈結為 [node:url]\r\n"
+""
+
+msgid "Send e-mail when content is unpublished by Scheduler"
+msgstr "當排程器取消發佈內容時傳送電子郵件"
+
+msgid "'[node:title]' has been unpublished on [site:name]"
+msgstr "'[node:title]' 已在 [site:name] 上取消發佈"
+
+msgid ""
+"Dear [node:author:name],\r\n"
+"Your [node:type] '[node:title]' has been unpublished on [site:name].\r\n"
+"The link is [node:url]\r\n"
+""
+msgstr ""
+"親愛的 [node:author:name] 您好，\r\n"
+"您的 [node:type] '[node:title]' 已在 [site:name] 上取消發佈。\r\n"
+"鏈結為 [node:url]\r\n"
+""
+
+msgid "Node"
+msgstr "節點"
+
+msgid "The node for publishing via Scheduler."
+msgstr "用於透過排程器發佈的節點。"
+
+msgid "Publish-on Date"
+msgstr "發佈日期"
+
+msgid "The publishing date to be used by Scheduler."
+msgstr "排程器所使用的發佈日期。"
+
+msgid "Set scheduled publishing date"
+msgstr "設定排定發佈日期"
+
+msgid "The node for unpublishing via Scheduler."
+msgstr "用於透過排程器取消發佈的節點。"
+
+msgid "Unpublish-on Date"
+msgstr "取消發佈日期"
+
+msgid "The unpublishing date to be used by Scheduler."
+msgstr "排程器所使用的取消發佈日期。"
+
+msgid "Set scheduled unpublishing date"
+msgstr "設定排定取消發佈日期"
+
+msgid "The scheduled node"
+msgstr "排定的節點"
+
+msgid "The node scheduled for publishing via Scheduler."
+msgstr "透過排程器排定要發佈的節點。"
+
+msgid "Remove scheduled publishing date"
+msgstr "移除排定發佈日期"
+
+msgid "The node scheduled for unpublishing via Scheduler."
+msgstr "透過排程器排定要取消發佈的節點。"
+
+msgid "Remove scheduled unpublishing date"
+msgstr "移除排定取消發佈日期"
+
+msgid "Scheduler Rules Integration"
+msgstr "排程器規則整合"
+
+msgid "Scheduler sub-module providing conditions, actions and events for use with the Rules module."
+msgstr "提供與「規則」模組搭配使用的條件、動作和事件的排程器子模組。"
+
+msgid "The object representing the scheduled @entity_type"
+msgstr "代表排程 @entity_type 的物件"
+
+msgid "After saving a new @entity_type that is scheduled for publishing"
+msgstr "儲存排定要發佈的新 @entity_type 之後"
+
+msgid "After saving a new @entity_type that is scheduled for unpublishing"
+msgstr "儲存排定要取消發佈的新 @entity_type 之後"
+
+msgid "After updating a @entity_type that is scheduled for publishing"
+msgstr "更新排定要發佈的 @entity_type 之後"
+
+msgid "After updating a @entity_type that is scheduled for unpublishing"
+msgstr "更新排定要取消發佈的 @entity_type 之後"
+
+msgid "After Scheduler has published a @entity_type"
+msgstr "排程器發佈 @entity_type 之後"
+
+msgid "After Scheduler has unpublished a @entity_type"
+msgstr "排程器取消發佈 @entity_type 之後"
+
+msgid "@entity_type_label type is enabled for scheduled publishing"
+msgstr "@entity_type_label 類型已啟用排程發佈"
+
+msgid "@entity_type_label"
+msgstr "@entity_type_label"
+
+msgid "The @entity_type_singular to check for the type being enabled for scheduled publishing."
+msgstr "@entity_type_singular，用於檢查針對排程發佈所啟用的類型。"
+
+msgid "@entity_type_label type is enabled for scheduled unpublishing"
+msgstr "@entity_type_label 類型已啟用排定取消發佈"
+
+msgid "The @entity_type_singular to check for the type being enabled for scheduled unpublishing."
+msgstr "@entity_type_singular，用於檢查針對排定取消發佈所啟用的類型。"
+
+msgid "@entity_type_label is scheduled for publishing"
+msgstr "@entity_type_label 已排定發佈"
+
+msgid "The @entity_type_singular to check for having a scheduled publishing date."
+msgstr "要檢查是否具有排定發佈日期的 @entity_type_singular。"
+
+msgid "@entity_type_label is scheduled for unpublishing"
+msgstr "@entity_type_label 已排定取消發佈"
+
+msgid "The @entity_type_singular to check for having a scheduled unpublishing date."
+msgstr "@entity_type_singular，以檢查是否有排定的取消發佈日期。"
+
+msgid "Node type is enabled for scheduled publishing"
+msgstr "已針對排定發佈啟用節點類型"
+
+msgid "Content (Scheduler)"
+msgstr "內容（排程器）"
+
+msgid "The node to check for the type being enabled for scheduled publishing."
+msgstr "要檢查是否已針對排程發佈啟用類型的節點。"
+
+msgid "Node is scheduled for publishing"
+msgstr "已排定節點進行發佈"
+
+msgid "The node to check for having a scheduled publishing date."
+msgstr "要檢查是否具有排定發佈日期的節點。"
+
+msgid "Node is scheduled for unpublishing"
+msgstr "已排定節點進行取消發佈"
+
+msgid "The node to check for having a scheduled unpublishing date."
+msgstr "要檢查是否有排定取消發佈日期的節點。"
+
+msgid "Node type is enabled for scheduled unpublishing"
+msgstr "已針對排定取消發佈啟用節點類型"
+
+msgid "The node to check for the type being enabled for scheduled unpublishing."
+msgstr "要檢查是否已針對排定取消發佈啟用類型的節點。"
+
+msgid "scheduled publishing"
+msgstr "排程發佈"
+
+msgid "scheduled unpublishing"
+msgstr "排定取消發佈"
+
+msgid "@bundle_label is enabled for @activity"
+msgstr "@bundle_label 已針對 @activity 啟用"
+
+msgid "@type settings"
+msgstr "@type 設定"
+
+msgid "Action %action is not valid because @activity is not enabled for %type @group. Add the condition %condition to your Reaction Rule, or enable @activity via the <a href=\"@url\">%type</a> settings."
+msgstr "動作 %action 無效，因為 @activity 未針對 %type @group 啟用。 將條件 %condition 新增至您的「反應規則」，或透過 <a href=\"@url\">%type</a> 設定啟用 @activity。"
+
+msgid "Action %action is not valid because @activity is not enabled for %type @group. Add the condition %condition to your Reaction Rule, or enable @activity via the %type settings."
+msgstr "動作 %action 無效，因為 @activity 未針對 %type @group 啟用。 將條件 %condition 新增至您的「反應規則」，或透過 %type 設定啟用 @activity。"
+
+msgid "Set date for publishing a @entity_type_singular"
+msgstr "設定發佈 @entity_type_singular 的日期"
+
+msgid "@entity_type_label for scheduling"
+msgstr "@entity_type_label 用於排程"
+
+msgid "The @entity_type_singular which is to have a scheduled publishing date set"
+msgstr "要設定排定發佈日期的 @entity_type_singular"
+
+msgid "Date for publishing"
+msgstr "發佈日期"
+
+msgid "The date when Scheduler will publish the @entity_type_singular"
+msgstr "排程器將發佈 @entity_type_singular 的日期"
+
+msgid "Set date for unpublishing a @entity_type_singular"
+msgstr "設定取消發佈 @entity_type_singular 的日期"
+
+msgid "The @entity_type_singular which is to have a scheduled unpublishing date set"
+msgstr "要設定排定取消發佈日期的 @entity_type_singular"
+
+msgid "Date for unpublishing"
+msgstr "取消發佈日期"
+
+msgid "The date when Scheduler will unpublish the @entity_type_singular"
+msgstr "排程器將取消發佈 @entity_type_singular 的日期"
+
+msgid "Remove date for publishing a @entity_type_singular"
+msgstr "移除發佈 @entity_type_singular 的日期"
+
+msgid "The @entity_type_singular from which to remove the scheduled publishing date"
+msgstr "從中移除排定發佈日期的 @entity_type_singular"
+
+msgid "Remove date for unpublishing a @entity_type_singular"
+msgstr "移除取消發佈 @entity_type_singular 的日期"
+
+msgid "The @entity_type_singular from which to remove the scheduled unpublishing date"
+msgstr "從中移除排定取消發佈日期的 @entity_type_singular"
+
+msgid "Publish a @entity_type_singular immediately"
+msgstr "立即發佈 @entity_type_singular"
+
+msgid "@entity_type_label for publishing"
+msgstr "@entity_type_label 用於發佈"
+
+msgid "The @entity_type_singular to be published now"
+msgstr "要立即發佈的 @entity_type_singular"
+
+msgid "Unpublish a @entity_type_singular immediately"
+msgstr "立即取消發佈 @entity_type_singular"
+
+msgid "@entity_type_label for unpublishing"
+msgstr "@entity_type_label 用於取消發佈"
+
+msgid "The @entity_type_singular to be unpublished now"
+msgstr "要立即取消發佈的 @entity_type_singular"
+
+msgid "Publish a content item immediately"
+msgstr "立即發佈內容項目"
+
+msgid "The node to be published now"
+msgstr "現在要發佈的節點"
+
+msgid "Remove date for publishing a content item"
+msgstr "移除發佈內容項目的日期"
+
+msgid "The node from which to remove the scheduled publishing date"
+msgstr "要移除排定發佈日期的節點"
+
+msgid "Remove date for unpublishing a content item"
+msgstr "移除取消發佈內容項目的日期"
+
+msgid "The node from which to remove the scheduled unpublishing date"
+msgstr "要移除排定取消發佈日期的節點"
+
+msgid "Set date for publishing a content item"
+msgstr "設定發佈內容項目的日期"
+
+msgid "Node for scheduling"
+msgstr "要排定的節點"
+
+msgid "The node which is to have a scheduled publishing date set"
+msgstr "要設定排定發佈日期的節點"
+
+msgid "The date for publishing"
+msgstr "發佈的日期"
+
+msgid "The date when Scheduler will publish the node"
+msgstr "排程器將發佈節點的日期"
+
+msgid "Set date for unpublishing a content item"
+msgstr "設定取消發佈內容項目的日期"
+
+msgid "The node which is to have a scheduled unpublishing date set"
+msgstr "要設定排定取消發佈日期的節點"
+
+msgid "The date for unpublishing"
+msgstr "取消發佈的日期"
+
+msgid "The date when Scheduler will unpublish the node"
+msgstr "排程器將取消發佈節點的日期"
+
+msgid "Unpublish a content item immediately"
+msgstr "立即取消發佈內容項目"
+
+msgid "The node to be unpublished now"
+msgstr "現在要取消發佈的節點"
+
+msgid "The previous creation date was @old_creation_date, now updated to match the publishing date."
+msgstr "前一個建立日期為 @old_creation_date，現在已更新為符合發佈日期。"
+
+msgid "Published by Scheduler. The scheduled publishing date was @publish_on."
+msgstr "已由排程器發佈。排定的發佈日期為 @publish_on。"
+
+msgid "View @type"
+msgstr "檢視 @type"
+
+msgid "@label settings"
+msgstr "@label 設定"
+
+msgid "Unpublished by Scheduler. The scheduled unpublishing date was @unpublish_on."
+msgstr "已由排程器取消發佈。排定的取消發佈日期為 @unpublish_on。"
+
+msgid "Config Update for actions"
+msgstr "動作的配置更新"
+
+msgid "Enable Config Update Reports"
+msgstr "啟用配置更新報告"
+
+msgid "Action '%action_id' is missing. Use <a href=':url'>Config Update</a> to import the missing action."
+msgstr "遺漏動作 '%action_id'。 使用<a href=':url'>配置更新</a>來匯入遺漏的動作。"
+
+msgid "settings"
+msgstr "設定"
+
+msgid "Field '%field' specified by typeFieldName in the Scheduler plugin %id is not found in entity type %entity"
+msgstr "在實體類型 %entity 中找不到排程器外掛程式 %id 中 typeFieldName 指定的欄位 '%field'"
+
+msgid "Unknown entity types (@unknown)"
+msgstr "不明實體類型 (@unknown)"
+
+msgid "Scheduler fields removed from @entityType"
+msgstr "已從 @entityType 移除排程器欄位"
+
+msgid "Settings removed from @bundle"
+msgstr "已從 @bundle 移除設定"
+
+msgid "Scheduler issue 3320341"
+msgstr "排程器問題 3320341"
+
+msgid ""
+"The Scheduler fields are now hidden by default and automatically changed to be displayed when an entity\n"
+"      bundle is enabled for scheduling. If you have previously manually hidden scheduler fields for enabled\n"
+"      entity types then these fields will now be displayed. You will need to manually hide them again or\n"
+"      implement hook_scheduler_hide_publish_date() or hook_scheduler_TYPE_hide_publish_date() and the\n"
+"      equivalent for unpublish_date. See @issue for details."
+msgstr ""
+"現在依預設會隱藏「排程器」欄位，並自動變更為在啟用實體\n"
+"組合進行排程時顯示。 如果您先前已針對已啟用的實體類型手動隱藏排程器\n"
+"欄位，則現在會顯示這些欄位。 您需要再次手動隱藏它們，或\n"
+"實作 hook_scheduler_hide_publish_date () 或 hook_scheduler_TYPE_hide_publish_date () 及 unpublish_date 的\n"
+"對等項目。 如需詳細資料，請參閱 @issue。"
+
+msgid "Publish On field displayed for: @list"
+msgstr "針對 @list 顯示的「發佈於」欄位"
+
+msgid "Unpublish On field displayed for: @list"
+msgstr "針對 @list 顯示的「取消發佈日期」欄位"
+
+msgid "Publish On field hidden for: @list"
+msgstr "針對 @list 隱藏的「發佈日期」欄位"
+
+msgid "Unpublish On field hidden for: @list"
+msgstr "針對 @list 隱藏的「取消發佈日期」欄位"
+
+msgid "%view view updated."
+msgstr "已更新 %view 視圖。"
+
+msgid "%view view loaded from source."
+msgstr "已從來源載入 %view 視圖。"
+
+msgid "%field field removed from %entityType entity type"
+msgstr "%field 欄位已從 %entityType 實體類型中移除"
+
+msgid "Scheduler settings removed from %entity %bundle"
+msgstr "已從 %entity %bundle 中移除排程器設定"
+
+msgid "@type: scheduled \"publish\" processing of %title completed by @sucessful_hooks."
+msgstr "@type：@sucessful_hooks 已完成 %title 的排程「發佈」處理。"
+
+msgid "@type: scheduled publishing of %title."
+msgstr "@type：%title 的排定發佈。"
+
+msgid "@type: scheduled \"unpublish\" processing of %title completed by @sucessful_hooks."
+msgstr "@type：@sucessful_hooks 已完成 %title 的排程「取消發佈」處理。"
+
+msgid "@type: scheduled unpublishing of %title."
+msgstr "@type：%title 的排定取消發佈。"
+
+msgid "Lightweight cron run activated by @trigger."
+msgstr "已由 @trigger 啟動輕量型 Cron 執行。"
+
+msgid "Lightweight cron run completed."
+msgstr "輕量型 Cron 執行已完成。"
+
+msgid "%entity entity type updated with %publish_on and %unpublish_on fields."
+msgstr "%entity 實體類型已使用 %publish_on 和 %unpublish_on 欄位更新。"
+
+msgid "No source file for %full_name in either %install_folder or %optional_folder folders"
+msgstr "%install_folder 或 %optional_folder 資料夾中沒有 %full_name 的原始檔"
+
+msgid "Publishing failed for %title. @failed_hooks returned a failure code."
+msgstr "%title 的發佈失敗。@failed_hooks 傳回失敗碼。"
+
+msgid "Unpublishing failed for %title. @failed_hooks returned a failure code."
+msgstr "%title 的取消發佈失敗。@failed_hooks 傳回失敗碼。"
+
+msgid "Action '%action_id' is missing. Use Config Update to import the missing action."
+msgstr "遺漏動作 '%action_id'。 請使用「配置更新」來匯入遺漏的動作。"
+
+msgid "Entity id @id is not a @type entity. Processing skipped."
+msgstr "實體 ID @id 不是 @type 實體。 已跳過處理。"
+
+msgid "Schedule publishing and unpublishing of %label"
+msgstr "排定發佈及取消發佈 %label"
+
+msgid "Allows users to set a start and end time for %singular_label publication."
+msgstr "容許使用者設定 %singular_label 發佈的開始和結束時間。"
+
+msgid "View scheduled %label"
+msgstr "檢視排程標籤 (%L)"
+
+msgid "Allows users to see a list of all %plural_label that are scheduled."
+msgstr "容許使用者查看所有已排程 %plural_label 的清單。"
+
+msgid "Scheduler lightweight cron completed."
+msgstr "已完成排程器的輕量型 Cron。"
+
+msgid "nothing to update"
+msgstr "沒有要更新的項目"
+
+msgid "Scheduler entity update - @updated"
+msgstr "排程器實體更新 - @updated"
+
+msgid "nothing to do"
+msgstr "不執行任何作業"
+
+msgid "Scheduler entity revert - @reverted"
+msgstr "排程器實體回復 - @reverted"
+
+msgid "Most of the Scheduler options are set independently for each entity type and bundle. These can be accessed from the <a href=\"@link\">admin structure</a> page or directly by using the drop-button"
+msgstr "大部分「排程器」選項都是針對每一個實體類型及組合獨立設定。 這些可以從<a href=\"@link\">管理結構</a>頁面存取，或直接使用下拉按鈕來存取"
+
+msgid "Entity Types"
+msgstr "實體類型"
+
+msgid "no entity types defined"
+msgstr "未定義實體類型"
+
+msgid "publishing"
+msgstr "正在發佈"
+
+msgid "unpublishing"
+msgstr "正在取消發佈"
+
+msgid "The settings below are common to all entity types."
+msgstr "下列設定適用於所有實體類型。"
+
+msgid "Date only"
+msgstr "只有日期"
+
+msgid "Allow users to enter only a date and provide a default time."
+msgstr "讓使用者可以僅輸入日期並提供預設時間。"
+
+msgid "When only a date is entered the time will default to a specified value, but the user can change this if required."
+msgstr "僅輸入日期時，時間會預設為指定的值，但使用者可視需要予以變更。"
+
+msgid "Default time"
+msgstr "預設時間"
+
+msgid "Provide a default time in @format format that will be used if the user does not enter a value."
+msgstr "提供採用 @format 格式的預設時間，如果使用者未輸入值，就會使用該預設時間。"
+
+msgid "Time settings"
+msgstr "時間設定"
+
+msgid "Hide the seconds."
+msgstr "隱藏秒數。"
+
+msgid "When entering a time, only show hours and minutes in the input field."
+msgstr "輸入時間時，只在輸入欄位中顯示小時和分鐘。"
+
+msgid "The default time should be in the format @format"
+msgstr "預設時間應該是採用 @format 格式"
+
+msgid "No %bundle_id entity types returned by %module module for use in %plugin_label"
+msgstr "%module 模組未傳回要在 %plugin_label 中使用的 %bundle_id 實體類型"
+
+msgid "Lightweight cron settings"
+msgstr "輕量型 Cron 設定"
+
+msgid "Log every activation and completion message."
+msgstr "記載每個啟動和完成訊息。"
+
+msgid "When this option is checked, Scheduler will write an entry to the log every time the lightweight cron process is started and completed. This is useful during set up and testing, but can result in a large number of log entries. Any actions performed during the lightweight cron run will always be logged regardless of this setting."
+msgstr "若已勾選此選項，排程器將會在輕量型 Cron 程序每次啟動和完成時，在日誌中寫入一個項目。這在設定與測試期間會很有幫助，但也可能會產生大量的日誌登錄。不論此設定為何，一律會記載在輕量型 Cron 執行期間執行的所有動作。"
+
+msgid "Similar to Drupal's cron key this acts as a security token to prevent unauthorised calls to scheduler/cron. The key should be passed as scheduler/cron/{access key}"
+msgstr "與 Drupal 的 Cron 金鑰類似，此項目可用來作為防止未經授權呼叫排程器/Cron 的安全記號。此金鑰應該以排程器/Cron/{access key} 的形式傳遞"
+
+msgid "Generate new random key"
+msgstr "產生新的隨機金鑰"
+
+msgid "You can test Scheduler's lightweight cron process interactively"
+msgstr "您可以透過互動方式測試排程器的輕量型 Cron 程序"
+
+msgid "Run Scheduler's lightweight cron now"
+msgstr "立即執行排程器的輕量型 Cron"
+
+msgid "Lightweight cron run completed. See the <a href=\"@url\">log</a> for details."
+msgstr "輕量型 Cron 執行已完成。如需詳細資訊，請參閱<a href=\"@url\">日誌</a>。"
+
+msgid "Scheduled content"
+msgstr "已排程內容"
+
+msgid "Overview"
+msgstr "概覽"
+
+msgid "Scheduled media"
+msgstr "排定的媒體"
+
+msgid "Scheduled products"
+msgstr "排定的產品"
+
+msgid "Scheduled terms"
+msgstr "排程術語"
+
+msgid "Leave blank for no date."
+msgstr "保留空白，表示沒有日期。"
+
+msgid "Datetime Timestamp for Scheduler"
+msgstr "排程器的日期時間戳記"
+
+msgid "An optional datetime field. Does not fill in the current datetime if left blank. Defined by Scheduler module."
+msgstr "選用的日期時間欄位。 如果保留空白，則不要填寫現行日期時間。 由「排程器」模組定義。"
+
+msgid "Commerce Product Scheduler Plugin"
+msgstr "商務產品排程器外掛程式"
+
+msgid "Provides support for scheduling Commerce Product entities"
+msgstr "提供排程「商務產品」實體的支援"
+
+msgid "Media Scheduler Plugin"
+msgstr "媒體排程器外掛程式"
+
+msgid "Provides support for scheduling media entities"
+msgstr "提供排程媒體實體的支援"
+
+msgid "Node Scheduler Plugin"
+msgstr "節點排程器外掛程式"
+
+msgid "Provides support for scheduling node entities"
+msgstr "提供排程節點實體的支援"
+
+msgid "Taxonomy Term Scheduler Plugin"
+msgstr "分類架構術語排程器外掛程式"
+
+msgid "Provides support for scheduling Taxonomy Term entities"
+msgstr "提供排程分類架構術語實體的支援"
+
+msgctxt "Validation"
+msgid "Scheduler publish on"
+msgstr "排程器發佈於"
+
+msgctxt "Validation"
+msgid "Scheduler unpublish on"
+msgstr "排程器取消發佈於"
+
+msgid "Scheduled content access. REDUNDANT, DO NOT USE THIS."
+msgstr "排程內容存取。 備援，請勿使用此項目。"
+
+msgid "NOT USED"
+msgstr "未使用"
+

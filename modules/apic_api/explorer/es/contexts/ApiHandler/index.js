@@ -1,0 +1,1 @@
+import a,{useContext as b}from"react";var c=a.createContext({});function d(b){var d=b.children,e=b.api,f=b.handler,g=b.loading,h=b.error;return a.createElement(c.Provider,{value:{api:e,apiHandler:f,loading:g,error:h}},d)}var e=function(){return b(c)};export default d;export{e as useApi,c as ApiContext};

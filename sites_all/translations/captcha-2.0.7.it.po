@@ -1,0 +1,754 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "The answer you entered for the CAPTCHA was not correct."
+msgstr "La risposta inserita per il  CAPTCHA non era corretta."
+
+msgid "About"
+msgstr "Informazioni"
+
+msgid "\"CAPTCHA\" is an acronym for \"Completely Automated Public Turing test to tell Computers and Humans Apart\". It is typically a challenge-response test to determine whether the user is human. The CAPTCHA module is a tool to fight automated submission by malicious users (spamming) of for example comments forms, user registration forms, guestbook forms, etc. You can extend the desired forms with an additional challenge, which should be easy for a human to solve correctly, but hard enough to keep automated scripts and spam bots out."
+msgstr "\"CAPTCHA\" è l'acronimo di \"Completely Automated Public Turing test to tell Computers and Humans Apart\". Tipicamente si tratta di test domanda-risposta volti a stabilire se l'utente è un umano. Il modulo 'CAPTCHA' è uno strumento per combattere l'invio automatizzato da parte di utenti malevoli (spam), ad esempio, del form dei commenti, del form di registrazione degli utenti, del form del guestbook etc. I form protetti verranno estesi con una sfida aggiuntiva, che normalmente è di semplice risoluzione per un umano ma sufficientemente difficile da fermare gli script automatizzati e i bot usati dagli spammer."
+
+msgid "Note that the CAPTCHA module interacts with page caching (see <a href=\":performancesettings\">performance settings</a>). Because the challenge should be unique for each generated form, the caching of the page it appears on is prevented. Make sure that these forms do not appear on too many pages or you will lose much caching efficiency. For example, if you put a CAPTCHA on the user login block, which typically appears on each page for anonymous visitors, caching will practically be disabled. The comment submission forms are another example. In this case you should set the <em>Location of comment submission form</em> to <em>Display on separate page</em> in the comment settings of the relevant <a href=\":contenttypes\">content types</a> for better caching efficiency."
+msgstr "Il modulo CAPTCHA interagisce con il caching della pagina (vedere <a href=\":performancesettings\">impostazioni delle prestazioni</a>). Poiché il riquadro deve essere univoco per ciascun form generato, è necessario impedire il caching della pagina in cui appare. Verificare che questi form non vengano visualizzati in troppe pagine altrimenti l'efficacia del caching ne risentirà. Ad esempio, se si inserisce un CAPTCHA nel blocco di accesso dell'utente, che generalmente appare in ogni pagina per i visitatori anonymous, il caching sarà praticamente disabilitato. I form per l'inoltro dei commenti rappresentano un altro esempio. In questo caso è necessario impostare l'opzione <em>Posizione del form di inserimento commenti</em> su <em>Visualizza su pagina separata</em> nelle impostazioni dei <a href=\":contenttypes\">tipi di contenuto</a> per una migliore efficienza del caching."
+
+msgid "CAPTCHA is a trademark of Carnegie Mellon University."
+msgstr "CAPTCHA è un marchio registrato di Carnegie Mellon University."
+
+msgid "A CAPTCHA can be added to virtually any Drupal form, through adding an affiliated <em>CAPTCHA Point</em>. Some default <em>CAPTCHA Points</em> are already provided in the <em>CAPTCHA Point</em> section, but arbitrary forms can be easily added and managed."
+msgstr "Un CAPTCHA può essere aggiunto virtualmente a qualsiasi modulo Drupal, tramite l'aggiunta di un <em>CAPTCHA Point</em> affiliato. Alcuni <em>CAPTCHA Point</em> predefiniti sono già forniti nella sezione <em>CAPTCHA Point</em>, ma formati arbitrari possono essere facilmente aggiunti e gestiti."
+
+msgid "Users with the <em>Skip CAPTCHA</em> <a href=\":perm\">permission</a> won't be offered a challenge. Be sure to grant this permission to the trusted users (e.g. site administrators). If you want to test a protected form, be sure to do it as a user without the <em>Skip CAPTCHA</em> permission (e.g. as anonymous user)."
+msgstr "Agli utenti con l'<a href=\":perm\">autorizzazione</a> <em>Salta il CAPTCHA</em> non verrà presentato il riquadro. Assicurarsi di concedere questa autorizzazione agli utenti attendibili (ad esempio gli amministratori del sito). Se si desidera verificare il form protetto, assicurarsi di farlo come utente senza l'autorizzazione <em>Salta il CAPTCHA</em> (ad es. come utente anonymous)."
+
+msgid "Note that the CAPTCHA module disables <a href=\":performancesettings\">page caching</a> of pages that include a CAPTCHA challenge."
+msgstr "Il modulo CAPTCHA disabilita il <a href=\":performancesettings\">caching</a> delle pagine che contengono il riquadro CAPTCHA."
+
+msgid "CAPTCHA"
+msgstr "CAPTCHA"
+
+msgid "CAPTCHA: challenge \"@type\" enabled"
+msgstr "CAPTCHA: abilitata la sfida \"@type\""
+
+msgid "CAPTCHA: challenge \"@type\" disabled"
+msgstr "CAPTCHA: riquadro \"@type\" disabilitato"
+
+msgid "Users without the \"skip CAPTCHA\" permission will see a CAPTCHA here (<a href=\"@settings\">general CAPTCHA settings</a>)."
+msgstr "Gli utenti senza l'autorizzazione \"skip CAPTCHA\" vedranno un CAPTCHA qui (impostazioni <a href=\"@settings\">generali CAPTCHA</a>)."
+
+msgid "CAPTCHA disabled, Untrusted users won't see the captcha (<a href=\"@settings\">general CAPTCHA settings</a>)."
+msgstr "CAPTCHA disabilitato, gli utenti non attendibili non visualizzeranno il captcha (<a href=\"@settings\">impostazioni CAPTCHA generali</a>)."
+
+msgid "Enabled challenge"
+msgstr "Sfida abilitata"
+
+msgid "change"
+msgstr "cambia"
+
+msgid "CAPTCHA: no challenge enabled"
+msgstr "CAPTCHA: nessuna sfida abilitata"
+
+msgid "Place a CAPTCHA here for untrusted users."
+msgstr "Posizionare un CAPTCHA in questo punto per gli utenti non fidati."
+
+msgid "Most CAPTCHA methods will disable the caching of pages that contain a CAPTCHA element. Check the different implementations to know more about how it affects caching."
+msgstr "La maggior parte dei metodi CAPTCHA disabiliterà la memorizzazione nella cache delle pagine che contengono un elemento CAPTCHA. Controllare le diverse implementazioni per sapere di più su come influenza la memorizzazione nella cache. "
+
+msgid "Captcha is currently disabled via settings.php."
+msgstr "Captcha attualmente disabilitato tramite settings.php."
+
+msgid "CAPTCHA configuration error: Contact the site administrator."
+msgstr "Errore di configurazione del CAPTCHA: Contattare l'amministratore del sito."
+
+msgid "CAPTCHA validation error: unknown CAPTCHA session ID. Contact the site administrator if this problem persists."
+msgstr "Errore di validazione CAPTCHA: identificativo di sessione CAPTCHA sconosciuto. Contattare l'amministratore del sito se il problema persiste."
+
+msgid "Math question"
+msgstr "Quiz matematico"
+
+msgid "Solve this simple math problem and enter the result. E.g. for 1+3, enter 4."
+msgstr "Risolvere questo semplice problema matematico e inserire il risultato. Ad esempio per 1+3, inserire 4."
+
+msgid "@x + @y ="
+msgstr "@x + @y ="
+
+msgid "Test one two three"
+msgstr "Test uno due tre"
+
+msgid "CAPTCHA session reuse attack detected on @form_id <br/>Posted CAPTCHA token: @posted_captcha_token <br/>Expected captcha token: @expected_captcha_token"
+msgstr "Rilevato attacco di riutilizzo sessione CAPTCHA su on @form_id <br/>Token CAPTCHA pubblicato: @posted_captcha_token <br/>Token captcha previsto: @expected_captcha_token"
+
+msgid "%form_id post blocked by CAPTCHA module: challenge %challenge (by module %module)."
+msgstr "Post di %form_id bloccato dal modulo del CAPTCHA: Sfida %challenge (da parte del modulo %module)."
+
+msgid "%form_id post blocked by CAPTCHA module: challenge %challenge (by module %module), user answered \"@response\", but the solution was \"@solution\"."
+msgstr "Invio di %form_id bloccato dal modulo CAPTCHA: sfida %challenge (del modulo %module), l'utente ha risposto  \"@response\", ma la soluzione era \"@solution\"."
+
+msgid "CAPTCHA validation error: unknown CAPTCHA session ID (%csid)."
+msgstr "Errore di validazione CAPTCHA: identificativo di sessione CAPTCHA sconosciuto (%csid)."
+
+msgid "CAPTCHA configuration error: cacheable CAPTCHA type %challenge did not provide a validation function."
+msgstr "Errore di configurazione CAPTCHA: Il tipo di CAPTCHA memorizzabile nella cache %challenge non ha fornito una funzione di convalida."
+
+msgid "Already 1 blocked form submission"
+msgid_plural "Already @count blocked form submissions"
+msgstr[0] "1 invio di form bloccato finora"
+msgstr[1] "@count invii di form bloccati finora"
+
+msgid "Provides the CAPTCHA API for adding challenges to arbitrary forms."
+msgstr "Fornisce l'API CAPTCHA per l'aggiunta di riquadri ai form arbitrari."
+
+msgid "Spam control"
+msgstr "Controllo spam"
+
+msgid "Add Captcha Point"
+msgstr "Aggiungi CAPTCHA Point"
+
+msgid "CAPTCHA settings"
+msgstr "Impostazioni CAPTCHA"
+
+msgid "CAPTCHA examples"
+msgstr "Esempi CAPTCHA"
+
+msgid "Administer CAPTCHA settings"
+msgstr "Amministra le impostazioni CAPTCHA"
+
+msgid "Overview of the available CAPTCHA challenge types with examples'"
+msgstr "Panoramica dei tipi di verifica CAPTCHA disponibili con esempi'"
+
+msgid "CAPTCHA Settings"
+msgstr "Impostazioni CAPTCHA"
+
+msgid "CAPTCHA Examples"
+msgstr "Esempi CAPTCHA"
+
+msgid "Captcha Points"
+msgstr "Punti Captcha"
+
+msgid "Skip CAPTCHA"
+msgstr "Salta il CAPTCHA"
+
+msgid "Users with this permission will not be offered a CAPTCHA."
+msgstr "Agli utenti che hanno questo permesso non sarà richiesto di rispondere a un CAPTCHA."
+
+msgid "CAPTCHA configuration"
+msgstr "Configurazioni CAPTCHA"
+
+msgid "Add CAPTCHA point"
+msgstr "Aggiungi punto CAPTCHA"
+
+msgid "Edit CAPTCHA point"
+msgstr "Modifica punto CAPTCHA"
+
+msgid "Disable CAPTCHA point"
+msgstr "Disabilita punto CAPTCHA"
+
+msgid "Enable CAPTCHA point"
+msgstr "Abilita punto CAPTCHA"
+
+msgid "Delete CAPTCHA point"
+msgstr "Elimina punto CAPTCHA"
+
+msgid "CAPTCHA point"
+msgstr "Punto CAPTCHA"
+
+msgid "Form ID"
+msgstr "ID del form"
+
+msgid "Captcha Type"
+msgstr "Tipo di Captcha"
+
+msgid "Label"
+msgstr "Etichetta"
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "Add captcha to all forms."
+msgstr "Aggiungere captcha a tutti i moduli."
+
+msgid "Additionally add captcha to admin forms."
+msgstr "Aggiungere inoltre captcha ai moduli di amministrazione."
+
+msgid "The default challenge for captcha."
+msgstr "Il riquadro predefinito del captcha."
+
+msgid "The default captcha description."
+msgstr "La descrizione del captcha predefinito."
+
+msgid "The default captcha title."
+msgstr "Il titolo captcha predefinito."
+
+msgid "Add CAPTCHA administration links to forms"
+msgstr "Aggiungere link amministrativi di CAPTCHA ai form"
+
+msgid "Additionally add administration links on admin pages"
+msgstr "Aggiungi inoltre i link di amministrazione nelle pagine di amministrazione"
+
+msgid "IP addresses list"
+msgstr "Elenco di indirizzi IP"
+
+msgid "The error message when a user has entered an incorrect CAPTCHA answer."
+msgstr "Messaggio di errore visualizzato quando un utente ha inserito una risposta CAPTCHA errata."
+
+msgid "Default CAPTCHA validation"
+msgstr "Validazione CAPTCHA predefinita"
+
+msgid "CAPTCHA Persistence"
+msgstr "Persistenza CAPTCHA"
+
+msgid "Enable statistics"
+msgstr "Abilita le statistiche"
+
+msgid "Log wrong responses"
+msgstr "Traccia le risposte errate nel log"
+
+msgid "The image CAPTCHA is a popular challenge where a random textual code is obfuscated in an image. The image is generated on the fly for each request, which is rather CPU intensive for the server. Be careful with the size and computation related settings."
+msgstr "Il CAPTCHA con immagine è una verifica piuttosto diffusa, in cui un codice testuale casuale è offuscato all'interno di una immagine. L'immagine è generata al volo per ogni richiesta, generando un carico che può essere anche intenso per la CPU del server. Prestare attenzione alle impostazioni relative al calcolo e alle dimensioni."
+
+msgid "Image CAPTCHA"
+msgstr "CAPTCHA con immagine"
+
+msgid "What code is in the image?"
+msgstr "Cosa c'è scritto nell'immagine?"
+
+msgid "Enter the characters shown in the image."
+msgstr "Inserire i caratteri mostrati nell'immagine."
+
+msgid "Encountered an illegal byte while splitting an utf8 string in characters."
+msgstr "Incontrato un byte non permesso durante la divisione in caratteri di un testo utf8."
+
+msgid "Provides an image based CAPTCHA."
+msgstr "Fornisce un CAPTCHA basato su un'immagine."
+
+msgid "Image Captcha"
+msgstr "Captcha con immagine"
+
+msgid "Configure Image Captcha Settings."
+msgstr "Configura impostazioni Captcha con immagine."
+
+msgid "Image Captcha settings"
+msgstr "Impostazioni immagine Captcha"
+
+msgid "Font preview map cache"
+msgstr "Cache mappa anteprima carattere"
+
+msgid "Uri"
+msgstr "URI"
+
+msgid "Filename"
+msgstr "Nome file"
+
+msgid "Name"
+msgstr "Nome"
+
+msgid "Fonts"
+msgstr "Caratteri"
+
+msgid "Font filepath"
+msgstr "Percorso file del carattere"
+
+msgid "Font Size in Image Captcha"
+msgstr "Dimensione del carattere nel Captcha dell'immagine"
+
+msgid "Spacing between characters"
+msgstr "Spaziatura tra i caratteri"
+
+msgid "String with allowed characters"
+msgstr "Stringa con i caratteri consentiti"
+
+msgid "Captcha code length"
+msgstr "Lunghezza codice Captcha"
+
+msgid "Right to left support"
+msgstr "Supporto da destra a sinistra"
+
+msgid "Hexadecimal background color code"
+msgstr "Codice colore di sfondo esadecimale"
+
+msgid "Hexadecimal foreground color code"
+msgstr "Codice colore di primo piano esadecimale"
+
+msgid "Background color randomness"
+msgstr "Casualità colore di sfondo"
+
+msgid "File format"
+msgstr "Formato del file"
+
+msgid "Distortion amplitude"
+msgstr "Ampiezza distorsione"
+
+msgid "Bilinear interpolation"
+msgstr "Interpolazione bilineare"
+
+msgid "Dot noise"
+msgstr "Disturbo punto"
+
+msgid "Line noise"
+msgstr "Disturbo riga"
+
+msgid "Noise level"
+msgstr "Livello del disturbo"
+
+msgid "Generation of image CAPTCHA failed. Check your image CAPTCHA configuration and especially the used font."
+msgstr "La generazione dell'immanine CAPTCHA non è riuscita. Controllare la configurazione di 'CAPTCHA con immagine', con particolare attenzione al carattere utilizzato."
+
+msgid "Error has occurred. Please contact to site administrator."
+msgstr "Si è verificato un errore. Rivolgersi all'amministratore del sito."
+
+msgid "The Image CAPTCHA module can not generate images because your PHP setup does not support it (no <a href=\"!gdlib\" target=\"_blank\">GD library</a> with JPEG support)."
+msgstr "Il modulo dell'immagine CAPTCHA non può generare immagini perché la configurazione PHP non lo supporta (nessuna <a href=\"!gdlib\" target=\"_blank\">libreria GD</a> con supporto JPEG)."
+
+msgid "Example"
+msgstr "Esempio"
+
+msgid "Presolved image CAPTCHA example, generated with the current settings."
+msgstr "Esempio di CAPTCHA con immagine, generato con le impostazioni attuali."
+
+msgid "Code settings"
+msgstr "Impostazioni codice"
+
+msgid "Characters to use in the code"
+msgstr "Caratteri da utilizzare per generare il codice"
+
+msgid "Code length"
+msgstr "Lunghezza del codice"
+
+msgid "The code length influences the size of the image. Note that larger values make the image generation more CPU intensive."
+msgstr "La lunghezza del codice influenza la dimensione dell'immagine. Da tenere in considerazione che l'uso di valori maggiori può aumentare il carico di lavoro della CPU."
+
+msgid "RTL support"
+msgstr "Supporto RTL"
+
+msgid "Enable this option to render the code from right to left for right to left languages."
+msgstr "Abilitare questa opzione per stampare il codice da destra a sinistra, per le lingue scritte da destra verso sinistra."
+
+msgid "Color and image settings"
+msgstr "Impostazioni immagine e colori"
+
+msgid "Configuration of the background, text colors and file format of the image CAPTCHA."
+msgstr "Configurazione dei colori di sfondo e del testo, e del formato richeisto per l'immagine CAPTCHA."
+
+msgid "Background color"
+msgstr "Colore dello sfondo"
+
+msgid "Enter the hexadecimal code for the background color (e.g. #FFF or #FFCE90). When using the PNG file format with transparent background, it is recommended to set this close to the underlying background color."
+msgstr "Inserire il codice esadecimale del colore di sfondo (es: #FFF oppure #FFCE90). Se si usa il formato PNG con sfondo trasparente, si raccomanda di impostarlo allo stesso colore dello sfondo sottostante."
+
+msgid "Text color"
+msgstr "Colore del testo"
+
+msgid "Enter the hexadecimal code for the text color (e.g. #000 or #004283)."
+msgstr "Inserire il codice esadecimale per il colore del testo (es: #000 oppure #004283)."
+
+msgid "Additional variation of text color"
+msgstr "Variazione aggiuntiva del colore del testo"
+
+msgid "No variation"
+msgstr "Nessuna variazione"
+
+msgid "Little variation"
+msgstr "Variazione lieve"
+
+msgid "Medium variation"
+msgstr "Variazione media"
+
+msgid "High variation"
+msgstr "Variazione elevata"
+
+msgid "Very high variation"
+msgstr "Variazione molto elevata"
+
+msgid "The different characters will have randomized colors in the specified range around the text color."
+msgstr "I vari caratteri avranno un colore casuale all'interno di un intervallo di variazione che comprende il colore scelto."
+
+msgid "Select the file format for the image. JPEG usually results in smaller files, PNG allows transparency."
+msgstr "Selezionare il formato file per l'immagine. JPEG di solito genera file più piccoli, PNG consente la trasparenza."
+
+msgid "JPEG"
+msgstr "JPEG"
+
+msgid "PNG"
+msgstr "PNG"
+
+msgid "PNG with transparent background"
+msgstr "PNG con sfondo trasparente"
+
+msgid "Distortion and noise"
+msgstr "Distorsione e disturbo"
+
+msgid "With these settings you can control the degree of obfuscation by distortion and added noise. Do not exaggerate the obfuscation and assure that the code in the image is reasonably readable. For example, do not combine high levels of distortion and noise."
+msgstr "Con queste impostazioni è possibile controllare il grado di offuscamento dato dalla distorsione e dal disturbo aggiunto. Non esagerare con l'offuscamento e assicurarsi che il codice nell'immagine sia ragionevolmente leggibile. Per esempio, non combinare elevati livelli di distorsione e disturbo."
+
+msgid "Distortion level"
+msgstr "Livello di distorsione"
+
+msgid "@level - no distortion"
+msgstr "@level - nessuna distorsione"
+
+msgid "@level - low"
+msgstr "@level - basso"
+
+msgid "@level - medium"
+msgstr "@level - medio"
+
+msgid "@level - high"
+msgstr "@level - alto"
+
+msgid "Set the degree of wave distortion in the image."
+msgstr "Impostare il grado di distorsione tramite onde nell'immagine."
+
+msgid "Smooth distortion"
+msgstr "Distorsione dolce"
+
+msgid "This option enables bilinear interpolation of the distortion which makes the image look smoother, but it is more CPU intensive."
+msgstr "Questa opzione abilita l'interpolazione bilineare della distorsione che rende l'immagine più levigata, ma genera un carico di lavoro maggiore per la CPU."
+
+msgid "Add salt and pepper noise"
+msgstr "Aggiungere un disturbo sale e pepe"
+
+msgid "This option adds randomly colored point noise."
+msgstr "Questa opzione aggiunge punti colorati di disturbo in maniera casuale."
+
+msgid "Add line noise"
+msgstr "Aggiungere linea di disturbo"
+
+msgid "This option enables lines randomly drawn on top of the text code."
+msgstr "Questa opzione consente di tracciare linee in modo casuale sopra al testo del codice."
+
+msgid "low"
+msgstr "basso"
+
+msgid "medium"
+msgstr "medio"
+
+msgid "high"
+msgstr "alto"
+
+msgid "severe"
+msgstr "forte"
+
+msgid "Text Content"
+msgstr "Contenuto testo"
+
+msgid "Customize image CAPTCHA text content."
+msgstr "Personalizzazione del contenuto di testo CAPTCHA dell'immagine."
+
+msgid "Refresh button text."
+msgstr "Testo del pulsante Aggiorna."
+
+msgid "Customize the refresh button text."
+msgstr "Personalizzare il testo del pulsante di aggiornamento."
+
+msgid "The list of characters to use should not contain spaces."
+msgstr "L'elenco dei caratteri da utilizzare non deve contenere spazi."
+
+msgid "You need to select at least one font."
+msgstr "Scegliere almeno un tipo di carattere."
+
+msgid "The built-in font only supports Latin2 characters. Only use \"a\" to \"z\" and numbers."
+msgstr "Il carattere incorporato supporta soltanto l'insieme di simboli Latin2. Usare solo lettere da \"a\" a \"z\" e numeri."
+
+msgid "The following fonts are not readable: %fonts."
+msgstr "I file dei caratteri elencati di seguito non sono leggibili: %fonts."
+
+msgid "Background color is not a valid hexadecimal color value."
+msgstr "Il colore di sfondo inserito non è un codice esadecimale valido."
+
+msgid "Text color is not a valid hexadecimal color value."
+msgstr "Il colore del testo inserito non è un codice esadecimale valido."
+
+msgid "Font settings"
+msgstr "Impostazioni caratteri"
+
+msgid "No TrueType support"
+msgstr "Supporto TrueType non disponibile"
+
+msgid "The Image CAPTCHA module can not use TrueType fonts because your PHP setup does not support it. You can only use a PHP built-in bitmap font of fixed size."
+msgstr "Il modulo CAPTCHA con immagine non può usare i caratteri TrueType perché l'ambiente PHP in uso non lo supporta. È disponibile soltanto il carattere bitmap incorporato in PHP, a dimensione fissa."
+
+msgid "Font preview of @font (@file)"
+msgstr "Anteprima del carattere @font (@file)"
+
+msgid "Preview of built-in font"
+msgstr "Anteprima del carattere incorporato."
+
+msgid "PHP built-in font: <img src=\"@font_preview_url\" alt=\"@title\" title=\"@title\">"
+msgstr "Tipo di carattere integrato PHP: <img src=\"@font_preview_url\" alt=\"@title\" title=\"@title\">"
+
+msgid "Select the fonts to use for the text in the image CAPTCHA. Apart from the provided defaults, you can also use your own TrueType fonts (filename extension .ttf) by putting them in %fonts_library_general or %fonts_library_specific."
+msgstr "Scegliere il carattere da usare nel testo del CAPTCHA con immagine. Oltre ai caratteri predefiniti, è possibile usare altri caratteri TrueType (i cui file solitamente hanno un'estensione .ttf) copiandoli nella cartella %fonts_library_general oppure %fonts_library_specific."
+
+msgid "Font size"
+msgstr "Dimensione del carattere"
+
+msgid "tiny"
+msgstr "minima"
+
+msgid "small"
+msgstr "piccola"
+
+msgid "normal"
+msgstr "normale"
+
+msgid "large"
+msgstr "grande"
+
+msgid "extra large"
+msgstr "molto grande"
+
+msgid "The font size influences the size of the image. Note that larger values make the image generation more CPU intensive."
+msgstr "La dimensione del carattere influenza la dimensione dell'immagine. Considerare che dimensioni maggiori aumentano il carico di lavoro della CPU."
+
+msgid "Character spacing"
+msgstr "Distanza tra i caratteri"
+
+msgid "Define the average spacing between characters. Note that larger values make the image generation more CPU intensive."
+msgstr "Definire la spaziatura media tra i caratteri. Si noti che i valori più grandi rendono la generazione dell'immagine più impegnativa per la CPU."
+
+msgid "tight"
+msgstr "stretto"
+
+msgid "wide"
+msgstr "largo"
+
+msgid "extra wide"
+msgstr "extra largo"
+
+msgid "Get new captcha!"
+msgstr "Ottieni nuovo captcha"
+
+msgid "Missing required form ID on route @route"
+msgstr "ID modulo richiesto mancante nell'instradamento @route"
+
+msgid "Generate new CAPTCHA image"
+msgstr "Genera nuova immagine CAPTCHA"
+
+msgid "CAPTCHA problem: unexpected result from hook_captcha() of module %module when trying to retrieve challenge type %type for form %form_id."
+msgstr "Problema con CAPTCHA: l'implementazione di hook_captcha() del modulo %module ha restituito un valore inaspettato durante il recupero delle informazioni della sfida %type da usare nel form %form_id."
+
+msgid "Captcha Point"
+msgstr "Punto Captcha"
+
+msgid "Captcha Point form ID"
+msgstr "ID form Punto Captcha"
+
+msgid "Captcha Point challenge type"
+msgstr "Tipo di riquadro Punto Captcha"
+
+msgid "Status"
+msgstr "Stato"
+
+msgid "Enabled"
+msgstr "Attivato"
+
+msgid "Disabled"
+msgstr "Disattivato"
+
+msgid "This page gives an overview of all available challenge types, generated with their current settings."
+msgstr "Questa pagina fornisce una panoramica di tutti i tipi di sfide disponibili, generate con le impostazioni attuali."
+
+msgid "Challenge %challenge by module %module"
+msgstr "Sfida %challenge del modulo %module"
+
+msgid "10 more examples of this challenge."
+msgstr "Altri 10 esempi di questa sfida."
+
+msgid "Are you sure you want to delete %name?"
+msgstr "Si vuole davvero cancellare %name?"
+
+msgid "Delete"
+msgstr "Elimina"
+
+msgid "Captcha point %label has been deleted."
+msgstr "Il Punto Captcha %label è stato eliminato."
+
+msgid "Are you sure you want to disable the Captcha?"
+msgstr "Si è certi di voler disabilitare il Captcha?"
+
+msgid "This will disable the captcha."
+msgstr "Questa operazione disabiliterà il captcha."
+
+msgid "Disable"
+msgstr "Disattiva"
+
+msgid "Captcha point %label has been disabled."
+msgstr "Il Punto Captcha %label è stato disabilitato."
+
+msgid "Are you sure you want to enable the Captcha?"
+msgstr "Si è certi di voler abilitare il Captcha?"
+
+msgid "This will enable the captcha."
+msgstr "Questa operazione abiliterà il captcha."
+
+msgid "Enable"
+msgstr "Abilita"
+
+msgid "Captcha point %label has been enabled."
+msgstr "Il Punto Captcha %label è stato abilitato."
+
+msgid "Also works with the base form ID."
+msgstr "Funziona anche con l'ID del modulo base. "
+
+msgid "Challenge type"
+msgstr "Tipo di sfida"
+
+msgid "The CAPTCHA type to use for this form."
+msgstr "Il tipo di CAPTCHA da usare per questo form."
+
+msgid "Captcha Point for %form_id form was created."
+msgstr "Il Punto Captcha del form %form_id è stato creato."
+
+msgid "Captcha Point for %form_id form was updated."
+msgstr "Il Punto Captcha del form %form_id è stato aggiornato."
+
+msgid "Default challenge type"
+msgstr "Tipo di sfida predefinito."
+
+msgid "Select the default <em>CAPTCHA Point</em> challenge type. This can be overridden for each <em>CAPTCHA Point</em> individually."
+msgstr "Selezionare il tipo di verifica <em>CAPTCHA Point</em> predefinito. Può essere sovrascritto per ogni <em>CAPTCHA Point</em> singolarmente."
+
+msgid "Add CAPTCHA challenges on all forms"
+msgstr "Aggiungi domande di verifica CAPTCHA su tutti i moduli"
+
+msgid "Adds CAPTCHA to all Drupal forms, regardless of the Captcha Points list. Note, that the captcha point <em>default challenge</em> will be used as the challenge type for the created CAPTCHA challenges."
+msgstr "Aggiunge CAPTCHA a tutti i moduli Drupal, indipendentemente dall'elenco di Captcha Point. Tienere presente che il Captcha Point <em>verifica predefinita</em> verrà utilizzato come tipo di verifica per le verifiche CAPTCHA create."
+
+msgid "Additionally add CAPTCHA challenges on admin forms"
+msgstr "Aggiungi inoltre le verifiche CAPTCHA nei moduli di amministrazione"
+
+msgid "Add CAPTCHA administration information to forms"
+msgstr "Aggiungi le informazioni di amministrazione CAPTCHA ai moduli"
+
+msgid "This option makes it easy to manage CAPTCHA settings on forms. When enabled, users with the <em>administer CAPTCHA settings</em> permission will see a fieldset with CAPTCHA administration links and informations on all forms, except on administrative pages."
+msgstr "Questa opzione rende semplice gestire le impostazioni CAPTCHA nei moduli. Quando questa opzione è abilitata, gli utenti con l'autorizzazione <em>amministra impostazioni CAPTCHA</em> visualizzano una serie di campi con i link e le informazioni di amministrazione CAPTCHA su tutti i moduli, tranne che sulle pagine di amministrazione."
+
+msgid "Additionally add administration informations on admin pages"
+msgstr "Aggiungi inoltre informazioni di amministrazione sulle pagine di amministrazione"
+
+msgid "Typically this isn't needed. In some situations, e.g. in the case of demo sites, it can be useful to allow CAPTCHAs on administrative pages."
+msgstr "In genere questo non è necessario. In alcuni casi, ad esempio nel caso di siti di dimostrazione, può essere utile consentire l'utilizzo di CAPTCHA nelle pagine di gestione."
+
+msgid "Whitelisted IP Addresses"
+msgstr "Indirizzi IP di whitelist"
+
+msgid "Enter the IP addresses or IP address ranges you wish to whitelist. All CAPTCHA challenges will be skipped for these IP addresses."
+msgstr "Immettere gli indirizzi IP o gli intervalli di indirizzi IP che si desidera inserire nell'elenco consentiti. Tutte le verifiche CAPTCHA verranno ignorate per questi indirizzi IP."
+
+msgid "Enter one IP-address per row in the format XXX.XXX.XXX.XXX. Alternatively you can also define IP-address ranges per row in the format XXX.XXX.XXX.YYY-XXX.XXX.XXX.ZZZ. No spaces allowed. Your current IP address is %ip_address."
+msgstr "Immettere un indirizzo IP per riga nel formato XXX.XXX.XXX.XXX. In alternativa, è anche possibile definire intervalli di indirizzi IP per riga nel formato XXX.XXX.XXX.YYY-XXX.XXX.XXX.ZZZ. Gli spazi non sono consentiti. L'indirizzo IP corrente è %ip_address."
+
+msgid "CAPTCHA placement caching"
+msgstr "Cache della posizione dei CAPTCHA"
+
+msgid "For efficiency, the positions of the CAPTCHA elements in each of the configured forms are cached. Most of the time, the structure of a form does not change and it would be a waste to recalculate the positions every time. Occasionally however, the form structure can change (e.g. during site building) and clearing the CAPTCHA placement cache can be required to fix the CAPTCHA placement."
+msgstr "Per efficienza, la posizione degli elementi CAPTCHA in ognuno dei form configurati è mantenuta in cache. Per la maggior parte del tempo, la struttura del form non cambia e sarebbe uno spreco di risorse ricalcolare la posizione ogni volta. Occasionalmente comunque la struttura del form può cambiare (es. durante la costruzione del sito) e può essere necessario ripulire la cache di posizionamento dei CAPTCHA per risolvere problemi di posizionamento."
+
+msgid "Clear the CAPTCHA placement cache"
+msgstr "Pulisci la cache di posizionamento CAPTCHA"
+
+msgid "Challenge title"
+msgstr "Titolo della verifica"
+
+msgid "Configure the title for the CAPTCHA form. Leave empty to show no title. Default: \"@title_default\""
+msgstr "Configurare il titolo per il modulo CAPTCHA. Lasciare vuoto per non mostrare alcun titolo. Valore predefinito: \"@title_default\""
+
+msgid "Challenge description"
+msgstr "Descrizione della sfida"
+
+msgid "Configurable description of the CAPTCHA. Leave empty to show no description. Default: \"@description_default\""
+msgstr "Descrizione di CAPTCHA configurabile. Lasciare vuoto per non visualizzare alcuna descrizione. Valore predefinito: \"@description_default\""
+
+msgid "This question is for testing whether or not you are a human visitor and to prevent automated spam submissions."
+msgstr "Questa domanda è un test per verificare che tu sia un visitatore umano e per impedire inserimenti  di spam automatici."
+
+msgid "Wrong CAPTCHA response error message"
+msgstr "Messaggio di errore per CAPTCHA errato"
+
+msgid "Configurable error message that the user gets when it enters an incorrect CAPTCHA answer."
+msgstr "Messaggio di errore configurabile che l'utente riceve quando immette una risposta CAPTCHA errata."
+
+msgid "Define how the response should be processed by default. Note that the modules that provide the actual challenges can override or ignore this."
+msgstr "Definisce la modalità predefinita di elaborazione della risposta. Notare che i moduli che forniscono le varie sfide possono ignorare o cambiare questa impostazione."
+
+msgid "Case sensitive validation: the response has to exactly match the solution."
+msgstr "Validazione conforme a maiuscole e minuscole: la risposta deve corrispondere esattamente al codice originale."
+
+msgid "Case insensitive validation: lowercase/uppercase errors are ignored."
+msgstr "Validazione indipendente da maiuscole e minuscole: le differenze maiuscolo/minuscolo verranno ignorate."
+
+msgid "Persistence"
+msgstr "Persistenza"
+
+msgid "Always add a challenge."
+msgstr "Aggiungi sempre una sfida."
+
+msgid "Omit challenges in a multi-step/preview workflow once the user successfully responds to a challenge."
+msgstr "Tralascia le sfide in un processo multi-pagina/preview dopo che l'utente ha risposto correttamente a una verifica."
+
+msgid "Omit challenges on a form type once the user successfully responds to a challenge on a form of that type."
+msgstr "Tralascia le sfide per un determinato tipo di form dopo che l'utente ha risposto correttamente a una sfida su un form di quel tipo."
+
+msgid "Omit challenges on all forms once the user successfully responds to any challenge on the site."
+msgstr "Tralascia le sfide per tutti i form dopo che l'utente ha risposto correttamente a una qualsiasi sfida sul sito."
+
+msgid "Define if challenges should be omitted during the rest of a session once the user successfully responds to a challenge."
+msgstr "Determina se le verifiche CAPTCHA devono essere tralasciate per il resto della sessione, dopo che l'utente risponde correttamente ad una sfida."
+
+msgid "Keep CAPTCHA related counters in the <a href=\":statusreport\">status report</a>. Note that this comes with a performance penalty as updating the counters results in clearing the variable cache."
+msgstr "Conservare i contatori relativi ai CAPTCHA nel <a href=\":statusreport\">report di stato</a>. Questa opzione determina un calo delle prestazioni, poiché l'aggiornamento dei contatori comporta la cancellazione della cache della variabile."
+
+msgid "Report information about wrong responses to the log."
+msgstr "Segnala informazioni relative alle risposte sbagliate nel log."
+
+msgid "Report information about wrong responses to the <a href=\":dblog\">log</a>."
+msgstr "Segnala informazioni relative alle risposte sbagliate nel <a href=\":dblog\">log</a>."
+
+msgid "Save configuration"
+msgstr "Salva configurazione"
+
+msgid "IP address %ip_address is not valid."
+msgstr "L'indirizzo IP %ip_address non è valido."
+
+msgid "Lower IP address %ip_address in range %ip_range is not valid."
+msgstr "L'indirizzo IP inferiore %ip_address nell'intervallo %ip_range non è valido."
+
+msgid "Upper IP address %ip_address in range %ip_range is not valid."
+msgstr "L'indirizzo IP superiore %ip_address nell'intervallo %ip_range non è valido."
+
+msgid "Lower and upper IP addresses should be different. Please correct range %ip_range."
+msgstr "Gli indirizzi IP inferiore e superiore devono essere diversi. Correggere l'intervallo %ip_range."
+
+msgid "Lower IP can't be greater than upper IP addresses in range. Please correct range %ip_range."
+msgstr "L'IP inferiore non può essere maggiore degli indirizzi IP superiori nell'intervallo. Correggere l'intervallo %ip_range."
+
+msgid "The CAPTCHA settings have been saved."
+msgstr "Le impostazioni CAPTCHA sono state salvate"
+
+msgid "Cleared the CAPTCHA placement cache."
+msgstr "Cache di posizionamento CAPTCHA svuotata."
+
+msgid "The name of the form"
+msgstr "Il nome del modulo"
+
+msgid "The captcha point providing module."
+msgstr "Il modulo di fornitura del punto captcha."
+
+msgid "The captcha type."
+msgstr "Il tipo di captcha."
+
+msgid "@type (from module @module)"
+msgstr "@type (dal modulo @module)"
+

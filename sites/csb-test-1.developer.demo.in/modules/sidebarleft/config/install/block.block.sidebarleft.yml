@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sidebarleft
+  module:
+    - system
+    - views
+  theme:
+    - csb_theme
+id: sidebarleft
+theme: csb_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:sidebarleft-block_1'
+settings:
+  id: 'views_block:sidebarleft-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+  exposed: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/product\r\n/product/*\r\n/api"
+

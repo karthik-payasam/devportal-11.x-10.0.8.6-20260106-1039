@@ -1,0 +1,141 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Fulltext field database columns updated."
+msgstr "已更新全文本字段数据库列。"
+
+msgid "Primary keys added to all denormalized index tables."
+msgstr "添加到所有非规格化索引表的主键。"
+
+msgid "Updated 1 server."
+msgid_plural "Updated @count servers."
+msgstr[0] "已更新 @count 台服务器。"
+
+msgid "Database Search"
+msgstr "数据库搜索"
+
+msgid "Offers an implementation of the Search API that uses database tables for indexing content."
+msgstr "提供使用数据库表来对内容建立索引的搜索 API 实现。"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Search API DB settings"
+msgstr "搜索 API 数据库设置"
+
+msgid "Name of the database we are connecting to"
+msgstr "要连接到的数据库的名称"
+
+msgid "Minimum length of indexed words"
+msgstr "已建立索引的词的最小长度"
+
+msgid "The matching mode – \"words\", \"prefix\" or \"partial\""
+msgstr "匹配方式 –“words”、“prefix”或“partial”"
+
+msgid "Autocomplete configuration"
+msgstr "自动补全配置"
+
+msgid "Suggest suffix"
+msgstr "建议的后缀"
+
+msgid "Suggest words"
+msgstr "建议的词"
+
+msgid "Maximum occurrences of a term until autocomplete suggestions ignores it"
+msgstr "在自动完成建议忽略之前术语的最大出现次数"
+
+msgid "Database Search Defaults"
+msgstr "数据库搜索缺省值"
+
+msgid "Enable this module for a best-practice default setup of Search API with the Database backend. After installation it is recommended to uninstall this module again for performance reasons. The provided configuration will not be removed."
+msgstr "针对具有数据库后端的搜索 API 的最佳实践缺省设置启用此模块。 安装后，由于性能原因，建议再次卸载此模块。 这不会移除所提供的配置。"
+
+msgid "Database"
+msgstr "数据库"
+
+msgid "Select the database key and target to use for storing indexing information in. Cannot be changed after creation."
+msgstr "选择要用于存储索引信息的数据库键和目标。 创建后无法进行更改。"
+
+msgid "Minimum word length"
+msgstr "最小词长度"
+
+msgid "The minimum number of characters a word must consist of to be indexed"
+msgstr "要建立索引的词必须包含的最小字符数。"
+
+msgid "Partial matching"
+msgstr "部分匹配"
+
+msgid "Match whole words only"
+msgstr "仅全字匹配"
+
+msgid "Match on parts of a word"
+msgstr "匹配词的一部分"
+
+msgid "Match words starting with given keywords"
+msgstr "匹配以给定关键字开头的词"
+
+msgid "Autocomplete settings"
+msgstr "自动完成设置"
+
+msgid "These settings allow you to configure how suggestions are computed when autocompletion is used. If you are seeing many inappropriate suggestions you might want to deactivate the corresponding suggestion type. You can also deactivate one method to speed up the generation of suggestions."
+msgstr "这些设置允许配置在使用自动完成功能时如何计算建议。 如果您看到大量不适合的建议，那么可能想要取消激活对应的建议类型。 您还可以取消激活一种方法以加速生成建议。"
+
+msgid "Suggest word endings"
+msgstr "建议词尾"
+
+msgid "Suggest endings for the currently entered word."
+msgstr "为当前输入词建议词尾。"
+
+msgid "Suggest additional words"
+msgstr "建议其他词"
+
+msgid "Suggest additional words the user might want to search for."
+msgstr "建议用户可能想要搜索的其他词。"
+
+msgid "None selected yet"
+msgstr "尚未选择任何内容"
+
+msgid "none"
+msgstr "无"
+
+msgid "Autocomplete suggestions"
+msgstr "自动完成建议"
+
+msgid "No valid search keys were present in the query."
+msgstr "查询中未提供任何有效搜索关键字。"
+
+msgid "Unknown sort order @order. Assuming \"@default\"."
+msgstr "未知的排序顺序 @order。 采用“@default”。"
+
+msgid "Unknown facet field @field."
+msgstr "未知的构面字段 @field。"
+
+msgid "Facets on location fields are currently not supported."
+msgstr "当前不支持位置字段上的构面。"
+
+msgid "Unknown field @field: please check (and re-save) the index's fields settings."
+msgstr "未知字段 @field：请检查（并重新保存）索引字段设置。"
+
+msgid "An overlong word (more than 50 characters) was encountered while indexing: %word.<br />Since database search servers currently cannot index words of more than 50 characters, the word was truncated for indexing. If this should not be a single word, please make sure the \"Tokenizer\" processor is enabled and configured correctly for index %index."
+msgstr "建立索引时遇到了超长词（超过 50 个字符）：%word。<br />由于数据库搜索服务器当前无法对超过 50 个字符的词建立索引，因此截断了该词以对其建立索引。 如果这不应该是单个词，请确保为索引 %index 启用并正确配置了“Tokenizer”处理器。"
+
+msgid "An overlong value (more than 255 characters) was encountered while indexing: %value.<br />Database search servers currently cannot index such values correctly – the value was therefore trimmed to the allowed length."
+msgstr "建立索引时遇到了超长值（超过 255 个字符）：%value。<br />数据库搜索服务器当前无法正确对此类值建立索引 - 因此将该值截断为允许的长度。"
+
+msgid "Error while adding facets: only \"item_id\" field should be used, used are: @fields."
+msgstr "添加构面时出错：应仅使用“item_id”字段，而实际使用的是：@fields。"
+
+msgid "Indexes items in the database. Supports several advanced features, but should not be used for large sites."
+msgstr "对数据库中的项建立索引。 支持多个高级功能，但不应将其用于大型站点。"
+

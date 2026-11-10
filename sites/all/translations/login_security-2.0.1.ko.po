@@ -1,0 +1,236 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Your last login was @stamp."
+msgstr "마지막 로그인은 @stamp입니다. "
+
+msgid "Your last page access (site activity) was @stamp."
+msgstr "마지막 페이지 액세스(사이트 활동)는 @stamp입니다. "
+
+msgid "Make sure you have reviewed the <a href=\"!README\">README file</a> for further information about how all these settings will affect your Drupal login form submissions."
+msgstr "이 모든 설정이 Drupal 로그인 양식 제출에 영향을 주는 방식에 대한 추가 정보를 위해 <a href=\"!README\">README 파일</a>을 검토했는지 확인하십시오."
+
+msgid "Suspicious activity in login form submissions is no longer detected: Currently @tracking_current_count events are being tracked, and threshold is configured for @activity_threshold maximum allowed attempts."
+msgstr "로그인 양식 제출에서 의심스러운 활동이 더 이상 감지되지 않습니다. 현재 @tracking_current_count 이벤트가 추적되고 있으며 허용되는 최대 @activity_threshold 수에 대해 임계값이 구성되어 있습니다."
+
+msgid "Banned IP address @ip due to security configuration."
+msgstr "보안 구성으로 인해 차단된 IP 주소 @ip입니다. "
+
+msgid "Blocked user @username due to security configuration."
+msgstr "보안 구성으로 인해 차단된 사용자 @username입니다. "
+
+msgid "Ongoing attack detected: Suspicious activity detected in login form submissions. Too many invalid login attempts threshold reached: Currently @tracking_current_count events are tracked, and threshold is configured for @activity_threshold attempts."
+msgstr "진행 중인 공격 발견: 로그인 양식 제출에서 수상한 활동이 발견되었습니다. 너무 많은 올바르지 않은 로그인 시도 임계값에 도달함: 현재 @tracking_current_count개 이벤트가 추적되었으며, @activity_threshold 시도에 대한 임계값이 구성되었습니다."
+
+msgid "Login Security"
+msgstr "로그인 보안"
+
+msgid "Enable security options in the login flow of the site."
+msgstr "사이트의 로그인 플로우에서 보안 옵션을 사용합니다. "
+
+msgid "Login Security settings"
+msgstr "로그인 보안 설정"
+
+msgid "Login security settings"
+msgstr "로그인 보안 설정"
+
+msgid "Track time"
+msgstr "추적 시간"
+
+msgid "Maximum number of login failures before blocking a user"
+msgstr "사용자를 차단하기 전 최대 로그인 실패 수"
+
+msgid "Maximum number of login failures before soft blocking a host"
+msgstr "호스트를 소프트 차단하기 전 최대 로그인 실패 수"
+
+msgid "Maximum number of login failures before blocking a host"
+msgstr "호스트를 차단하기 전 최대 로그인 실패 수"
+
+msgid "Maximum number of login failures before detecting an ongoing attack"
+msgstr "진행 중인 공격을 발견하기 전 최대 로그인 실패 수 "
+
+msgid "Disable login failure error message"
+msgstr "로그인 실패 오류 메시지 표시 안함"
+
+msgid "Notify the user about the number of remaining login attempts"
+msgstr "사용자에게 남아있는 로그인 시도 횟수에 대해 알림 "
+
+msgid "Display last login timestamp"
+msgstr "마지막 로그인 시간소인 표시"
+
+msgid "Display last access timestamp"
+msgstr "마지막 액세스 시간소인 표시"
+
+msgid "Message to be shown on each failed login attempt"
+msgstr "각 실패한 로그인 시도에 표시할 메시지"
+
+msgid "Message for banned host (Soft IP ban)"
+msgstr "차단된 호스트에 대한 메시지(소프트 IP 차단)"
+
+msgid "Message for banned host (Hard IP ban)"
+msgstr "차단된 호스트에 대한 메시지(하드 IP 차단)"
+
+msgid "Message when user is blocked by uid"
+msgstr "uid로 사용자를 차단할 때 메시지"
+
+msgid "Email subject"
+msgstr "이메일 제목"
+
+msgid "Email body"
+msgstr "이메일 본문"
+
+msgid "Emails to be notified when users are blocked"
+msgstr "사용자가 차단될 때 알릴 이메일"
+
+msgid "Emails to be notified during excess activity"
+msgstr "과도한 활동 중 알릴 이메일"
+
+msgid "General settings"
+msgstr "일반 설정"
+
+msgid "The time window to check for security violations: the time in minutes the login information is kept to compute the login attempts count. A common example could be 1440 minutes (24 hours). After that time, the attempt is deleted from the list, and will never be considered again."
+msgstr "보안 위반을 확인하는 시간 창: 로그인 정보가 로그인 시도 횟수를 계산하기 위해 보존되는 시간(분)입니다. 일반적인 예는 1440분(24시간)이 될 수 있습니다. 이 시간 후에 시도는 목록에서 삭제되며 다시 고려되지 않습니다."
+
+msgid "minute(s)"
+msgstr "분"
+
+msgid "User"
+msgstr "사용자"
+
+msgid ""
+"Enter the number of login failures a user is allowed. <br>\n"
+"        After this amount is reached, the user will be blocked, no matter the host attempting to log in. Use this option carefully on public sites, as an attacker may block your site users. <br>\n"
+"        The user blocking protection will not disappear and should be removed manually from the <a href=\":user\">user management</a> interface."
+msgstr ""
+"사용자에게 허용된 로그인 실패 횟수를 입력합니다. <br>\n"
+"        이 크기에 도달하면 로그인한 호스트에 상관없이 사용자가 차단됩니다. 공격자가 사이트 사용자를 차단할 수 있으므로 공용 사이트에서는 이 옵션을 신중하게 사용하십시오. <br>\n"
+"        사용자 차단 보호는 사라지지 않으며, <a href=\":user\">사용자 관리</a> 인터페이스에서 수동으로 제거해야 합니다."
+
+msgid "failed attempts"
+msgstr "실패한 시도"
+
+msgid "Soft host"
+msgstr "소프트 호스트"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this amount is reached, the host will not be able to submit the log in form again, but can still browse the site contents as an anonymous user. <br>\n"
+"        This protection is effective during the time indicated at tracking time option."
+msgstr ""
+"호스트에 허용된 로그인 실패 횟수를 입력합니다. <br>\n"
+"        이 크기에 도달하면 호스트가 로그인 양식을 다시 제출할 수 없지만, 익명 사용자로 사이트 컨텐츠를 계속 볼 수는 있습니다. <br>\n"
+"        이 보호는 추적 시간 옵션에 표시된 시간 동안 유효합니다."
+
+msgid "Host"
+msgstr "호스트"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this number is reached, the host will be blocked, no matter the username attempting to log in. <br>\n"
+"        The host blocking protection will not disappear automatically and should be removed manually from the <a href=\":access\">access rules</a> administration interface."
+msgstr ""
+"호스트에 허용된 로그인 실패 횟수를 입력합니다. <br>\n"
+"        이 횟수에 도달하면 로그인한 사용자 이름에 상관없이 호스트가 차단됩니다. <br>\n"
+"        호스트 차단 보호는 사라지지 않으며, <a href=\":access\">액세스 규칙</a> 관리 인터페이스에서 수동으로 제거해야 합니다."
+
+msgid "Attack detection"
+msgstr "공격 발견"
+
+msgid ""
+"Enter the number of login failures before creating a warning log entry about this suspicious activity. <br>\n"
+"        If the number of invalid login events currently being tracked reach this number, and ongoing attack is detected."
+msgstr ""
+"이 수상한 활동에 대한 경고 로그 항목을 작성하기 전에 로그인 실패 횟수를 입력합니다. <br>\n"
+"        현재 추적 중인 올바르지 않은 로그인 이벤트 수가 이 숫자에 도달하면 진행 중인 공격이 발견됩니다."
+
+msgid "Notification"
+msgstr "알림"
+
+msgid ""
+"Prevents the display of login error messages. <br>\n"
+"        A user attempting to login will not be aware if the account exists, an invalid user name or password has been submitted, or if the account is blocked. The core messages are also hidden."
+msgstr ""
+"로그인 오류 메시지를 표시하지 않습니다.<br>\n"
+"        로그인하려는 사용자는 계정이 있는지, 올바르지 않은 사용자 이름이나 비밀번호를 제출했는지 또는 계정이 차단되었는지 알지 못합니다. 코어 메시지도 숨겨집니다."
+
+msgid ""
+"The user is notified about the number of remaining login attempts before the account gets blocked. <br>\n"
+"        Security tip: If you enable this option, try to not disclose as much of your login policies as possible in the message shown on any failed login attempt."
+msgstr ""
+"계정이 차단되기 전에 남은 로그인 시도 횟수를 사용자에게 알립니다. <br>\n"
+"        보안 팁: 이 옵션을 사용하면 실패한 로그인 시도에 표시된 메시지에 가능한 한 많은 로그인 정책을 공개하지 않도록 하십시오."
+
+msgid "When a user successfully logs in, a message will display the last time he logged into the site."
+msgstr "사용자가 성공적으로 로그인하면 마지막으로 사이트에 로그인한 메시지가 표시됩니다."
+
+msgid "When a user successfully logs in, a message will display the last site access with this account."
+msgstr "사용자가 성공적으로 로그인하면 이 계정으로 마지막 사이트 액세스가 메시지에 표시됩니다."
+
+msgid "Email for ongoing attack detection"
+msgstr "진행 중인 공격 발견을 위한 이메일"
+
+msgid "To"
+msgstr "받는 이"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when an ongoing attack is detected. No notification will be sent if the field is blank."
+msgstr "진행 중인 공격이 발견될 때 이메일 메시지를 수신해야 하는 사람에 대한 쉼표로 구분된 이메일 목록을 제공합니다. 필드가 공백인 경우 알림을 보내지 않습니다."
+
+msgid "Subject"
+msgstr "제목"
+
+msgid "Body"
+msgstr "본문"
+
+msgid "Email for blocked account"
+msgstr "차단된 계정의 이메일"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when a user is blocked. No notification will be sent if the field is blank."
+msgstr "사용자가 차단되었을 때 이메일 메시지를 받는 사람에 대한 쉼표로 구분된 이메일 목록을 제공합니다. 필드가 공백인 경우 알림을 보내지 않습니다."
+
+msgid "Failed login attempt"
+msgstr "실패한 로그인 시도"
+
+msgid "Enter the message string to be shown if the login fails after the form is submitted."
+msgstr "양식을 제출한 후 로그인에 실패하면 표시할 메시지 문자열을 입력합니다."
+
+msgid "Banned host (soft IP ban)"
+msgstr "차단된 호스트(소프트 IP 차단)"
+
+msgid "Enter the soft IP ban message to be shown when a host attempts to log in too many times."
+msgstr "호스트가 너무 많이 로그인을 시도한 경우 표시할 소프트 IP 차단 메시지를 입력합니다. "
+
+msgid "Banned host (hard IP ban)"
+msgstr "차단된 호스트(하드 IP 차단)"
+
+msgid "Enter the hard IP ban message to be shown when a host attempts to log in too many times."
+msgstr "호스트가 너무 많이 로그인을 시도한 경우 표시할 하드 IP 차단 메시지를 입력합니다. "
+
+msgid "Blocked user by uid"
+msgstr "UID로 차단된 사용자"
+
+msgid "Enter the message to be shown when a user gets blocked due to enough failed login attempts."
+msgstr "많은 로그인 시도 실패로 인해 사용자가 차단된 경우 표시할 메시지를 입력합니다. "
+
+msgid "Tokens"
+msgstr "토큰"
+
+msgid "<ul><li>%date: The (formatted) date and time of the event.</li><li>%ip: The IP address tracked for this event.</li><li>%username: The username entered in the login form (sanitized).</li><li>%email: If the user exists, this will be the email address.</li><li>%uid: If the user exists, this will be the user uid.</li><li>%site: The name of the site as configured in the administration.</li><li>%uri: The base url of this Drupal site.</li><li>%edit_uri: Direct link to the user (based on the name entered) edit page.</li><li>%hard_block_attempts: Configured maximum attempts before hard blocking the IP address.</li><li>%soft_block_attempts: Configured maximum attempts before soft blocking the IP address.</li><li>%user_block_attempts: Configured maximum login attempts before blocking the user.</li><li>%user_ip_current_count: The total attempts for this user name tracked from this IP address.</li><li>%ip_current_count: The total login attempts tracked from from this IP address.</li><li>%user_current_count: The total login attempts tracked for this user name .</li><li>%tracking_time: The tracking time value: in hours.</li><li>%tracking_current_count: Total tracked events</li><li>%activity_threshold: Value of attempts to detect ongoing attack.</li></ul>"
+msgstr "<ul><li>%date: 이벤트의 (형식화 된) 날짜 및 시간입니다.</li><li>%ip: 이 이벤트에 대해 추적된 IP 주소입니다.</li><li>%username: 로그인 양식에 입력된 사용자 이름입니다(무결 처리됨).</li><li>%email: 사용자가 존재하면 이메일 주소가 됩니다.</li><li>%uid: 사용자가 존재하면 사용자 UID가 됩니다.</li><li>%site: 관리에 구성된 사이트 이름입니다.</li><li>%uri: 이 Drupal 사이트의 기본 URL입니다.</li><li>%edit_uri: 사용자(입력한 이름에 기반하여) 편집 페이지에 대한 직접 링크입니다.</li><li>%hard_block_attempts: IP 주소를 하드 차단하기 전에 구성된 최대 시도 횟수입니다.</li><li>%soft_block_attempts: IP 주소를 소프트 차단하기 전에 구성된 최대 시도 횟수입니다.</li><li>%user_block_attempts: 사용자를 차단하기 전에 구성된 최대 로그인 시도 횟수입니다.</li><li>%user_ip_current_count: 이 IP 주소에서 추적된 이 사용자 이름에 대한 총 시도 횟수입니다.</li><li>%ip_current_count: 이 IP 주소에서 추적된 총 로그인 시도 횟수입니다.</li><li>%user_current_count: 이 사용자 이름에 대해 추적된 총 로그인 시도 횟수입니다.</li><li>%tracking_time: 추적 시간 값: 시간 단위.</li><li>%tracking_current_count: 추적된 총 이벤트 수</li><li>%activity_threshold: 진행 중인 공격을 발견하는 시도 값입니다.</li></ul>"
+
+msgid "Clear event tracking information"
+msgstr "이벤트 추적 정보 지우기"
+
+msgid "Login Security event track list is now empty. @count item(s) deleted."
+msgstr "이제 로그인 보안 이벤트 추적 목록이 비어 있습니다. @count개 항목이 삭제됩니다. "
+

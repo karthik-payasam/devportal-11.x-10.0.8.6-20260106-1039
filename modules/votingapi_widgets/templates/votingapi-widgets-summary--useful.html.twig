@@ -1,0 +1,20 @@
+{#
+/**
+ * @file
+ * Template to format a vote summary for the "useful" widget.
+ *
+ * @see votingapi-widgets-summary.twig.html
+ * @see template_preprocess_votingapi_widgets_summary()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if results.vote_field_count is same as (0) %}
+    <p>{% trans %}No votes have been submitted yet.{% endtrans %}</p>
+{% else %}
+    <p>{% trans %}
+      {{ results.vote_field_count }} vote with a rating of {{ results.vote_field_average }}
+    {% plural results.vote_field_count %}
+      {{ results.vote_field_count }} votes with an average rating of {{ results.vote_field_average }}
+    {% endtrans %}</p>
+{% endif %}

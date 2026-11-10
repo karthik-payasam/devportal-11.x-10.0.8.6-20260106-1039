@@ -1,0 +1,80 @@
+/**
+ * Toolbar module styling.
+ */
+
+$toolbar-width: 240px;
+
+body.toolbar-fixed {
+
+  // Fix z-index.
+  .toolbar-oriented .toolbar-bar {
+    z-index: ($zindex-navbar-fixed + 1);
+  }
+
+  .navbar-fixed-top {
+    top: 39px;
+  }
+
+  // Horizontal.
+  &.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
+    top: 79px;
+  }
+
+  // Vertical Open.
+  &.toolbar-vertical.toolbar-tray-open {
+
+    .navbar-fixed-top {
+      left: $toolbar-width;
+    }
+
+    &.toolbar-fixed {
+      margin-left: $toolbar-width;
+
+      .toolbar-tray {
+        padding-bottom: 40px;
+        &, > .toolbar-lining:before {
+          width: $toolbar-width;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+.toolbar-loading .apicStickyHeader {
+  left: 265px;
+}
+
+[data-admin-toolbar="collapsed"] .toolbar-loading .apicStickyHeader {
+  left: 72px;
+}
+
+@media screen and (min-width: 642px) and (max-width: 1024px) {
+  header.apicStickyHeader {
+    z-index: 500;
+  }
+
+  .admin-toolbar-control-bar {
+    top: 48px;
+  }
+
+  [data-admin-toolbar="collapsed"] .toolbar-loading .apicStickyHeader {
+    left: 0;
+  }
+}
+
+[data-admin-toolbar="expanded"] .admin-toolbar {
+  z-index: 100000;
+}
+
+// Remove flicking.
+body.toolbar-loading {
+
+  margin-top: 0;
+
+  &.toolbar {
+    margin-bottom: ($grid-gutter-width / 2);
+  }
+}

@@ -1,0 +1,1 @@
+import a from"handlebars";export default a.compile("// package.json\n\n{\n  \"dependencies\": {\n    {{#if schema.isAvro}}\n    \"avro-js\": \"^1.11.0\",\n    {{/if}}\n    \"kafkajs\": \"^1.15.0\",\n  }\n}\n");

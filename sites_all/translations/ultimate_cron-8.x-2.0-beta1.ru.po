@@ -1,0 +1,827 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Launched by drush"
+msgstr "Запускается с помощью drush"
+
+msgid "This command will list cron jobs"
+msgstr "Эта команда отображает список заданий cron"
+
+msgid "This command will run a cron job"
+msgstr "Эта команда запускает задание cron"
+
+msgid "This command will enable a cron job"
+msgstr "Эта команда включает задание cron"
+
+msgid "This command will disable a cron job"
+msgstr "Эта команда выключает задание cron"
+
+msgid "This command will unlock a cron job"
+msgstr "Эта команда разблокирует задание cron"
+
+msgid "Name"
+msgstr "Название"
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Module"
+msgstr "Модуль"
+
+msgid "Scheduled"
+msgstr "Запланировано"
+
+msgid "Started"
+msgstr "Начало"
+
+msgid "Duration"
+msgstr "Продолжительность"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Legend: D = Disabled, R = Running, B = Behind schedule"
+msgstr "Условные обозначения: D = включено, R = выполняется, B = отстает от расписания"
+
+msgid "No job specified?"
+msgstr "Задание не указано? "
+
+msgid "@name not found"
+msgstr "@name не найдено"
+
+msgid "User"
+msgstr "Пользователь"
+
+msgid "Initial message"
+msgstr "Исходное сообщение"
+
+msgid "Message"
+msgstr "Сообщение"
+
+msgid "Cron is running."
+msgstr "Cron работает."
+
+msgid "Cron is not running."
+msgstr "Cron не работает."
+
+msgid "@name enabled"
+msgstr "@name включено"
+
+msgid "@name disabled"
+msgstr "@name выключено"
+
+msgid "@name is not running"
+msgstr "@name не выполняется "
+
+msgid "Cron job @name unlocked"
+msgstr "Задание cron @name разблокировано"
+
+msgid "Could not unlock cron job @name"
+msgstr "Не удалось разблокировать задание cron @name"
+
+msgid "@name manually unlocked by user @username (@uid)"
+msgstr "@name вручную разблокировано пользователем @username (@uid)"
+
+msgid "Ultimate Cron Monitoring"
+msgstr "Мониторинг Ultimate Cron"
+
+msgid "Thresholds"
+msgstr "Предельные значения"
+
+msgid "Thresholds for reporting critical alerts to Nagios."
+msgstr "Пороговые значения для отправки уведомлений о критических предупреждениях в Nagios."
+
+msgid "Running jobs count"
+msgstr "Число активных заданий"
+
+msgid "Issue a critical alert when more than this number of jobs are running. Default is 50."
+msgstr "В случае превышения указанного числа активных заданий выдается критическое предупреждение. Значение по умолчанию - 50."
+
+msgid "Failed jobs count"
+msgstr "Число заданий с ошибками"
+
+msgid "Issue a critical alert when more than this number of jobs failed their last run. Default is 10."
+msgstr "В случае превышения указанного числа заданий с ошибками выдается критическое предупреждение. Значение по умолчанию - 10."
+
+msgid "Long running jobs"
+msgstr "Долго выполняемые задания"
+
+msgid "Issue a critical alert when more than this number of jobs are running longer than usual. Default is 0."
+msgstr "В случае превышения указанного числа долго выполняемых заданий выдается критическое предупреждение. Значение по умолчанию - 0."
+
+msgid "Check number of currently running jobs"
+msgstr "Проверить число активных заданий"
+
+msgid "Check the number of jobs that failed last run"
+msgstr "Проверить число последних заданий с ошибками"
+
+msgid "Check the number of jobs that are running longer than usual"
+msgstr "Проверить число долго выполняемых заданий"
+
+msgid "@jobs currently running - it is more than @threshold"
+msgstr "Число активных заданий: @jobs (больше порогового значения @threshold) "
+
+msgid "@jobs currently running"
+msgstr "Число активных заданий: @jobs"
+
+msgid "@jobs failed their last run - it is more than @threshold"
+msgstr "Число заданий с ошибками: @jobs (больше порогового значения @threshold)"
+
+msgid "@jobs failed their last run"
+msgstr "Число заданий с ошибками: @jobs"
+
+msgid "@jobs jobs are running longer than usual - it is more than @threshold"
+msgstr "Число долго выполняемых заданий: @jobs (больше порогового значения @threshold)"
+
+msgid "@jobs jobs are running longer than usual"
+msgstr "Число долго выполняемых заданий: @jobs "
+
+msgid "Never"
+msgstr "Никогда"
+
+msgid "Some jobs are behind their schedule. Please check if <a href=\":system_cron_url\">Cron</a> is running properly."
+msgstr "Отдельные задания отстают от расписания. Убедитесь, что <a href=\":system_cron_url\">Cron</a> выполняется правильным образом. "
+
+msgid "Cron is running properly."
+msgstr "Cron выполняется правильным образом."
+
+msgid "@count job is behind schedule"
+msgid_plural "@count jobs are behind schedule"
+msgstr[0] "Число отстающих от расписания заданий: @count"
+msgstr[1] "Число отстающих от расписания заданий: @count"
+msgstr[2] "Число отстающих от расписания заданий: @count"
+
+msgid "Ultimate Cron"
+msgstr "Ultimate Cron"
+
+msgid "Cron"
+msgstr "Cron"
+
+msgid "Discover jobs"
+msgstr "Найти задания"
+
+msgid "Manage automatic site maintainenance tasks."
+msgstr "Управление задачами автоматического обслуживания сайта. "
+
+msgid "Cron Jobs"
+msgstr "Задания cron"
+
+msgid "Run cron"
+msgstr "Запустить cron"
+
+msgid "Cron settings"
+msgstr "Настройки cron"
+
+msgid "Queue"
+msgstr "Очередь"
+
+msgid "Launcher"
+msgstr "Агент запуска"
+
+msgid "Logger"
+msgstr "Агент протоколов"
+
+msgid "Scheduler"
+msgstr "Планировщик"
+
+msgid "Administer Ultimate Cron"
+msgstr "Администрирование Ultimate Cron"
+
+msgid "Lets you configure everything in Ultimate Cron"
+msgstr "Позволяет настроить Ultimate Cron"
+
+msgid "View cron jobs"
+msgstr "Просмотреть задания cron"
+
+msgid "Lets you view cron jobs and their logs"
+msgstr "Позволяет просмотреть задания cron вместе с протоколами"
+
+msgid "Run cron jobs"
+msgstr "Запустить задания cron"
+
+msgid "Lets you run cron jobs"
+msgstr "Позволяет запустить задания cron"
+
+msgid "Manage Cron settings"
+msgstr "Управление параметрами Cron"
+
+msgid "General Cron Settings"
+msgstr "Общие параметры Cron"
+
+msgid "Launcher settings"
+msgstr "Параметры агента запуска"
+
+msgid "Logger settings"
+msgstr "Параметры агента протоколов"
+
+msgid "Scheduler settings"
+msgstr "Параметры планировщика"
+
+msgid "Cron jobs"
+msgstr "Задания cron"
+
+msgid "Edit job"
+msgstr "Изменить задание"
+
+msgid "Run Cron job"
+msgstr "Запустить задание Cron"
+
+msgid "Delete job"
+msgstr "Удалить задание"
+
+msgid "Disable cron job"
+msgstr "Выключить задание cron"
+
+msgid "Enable cron job"
+msgstr "Включить задание cron"
+
+msgid "Cron jobs logs"
+msgstr "Протоколы заданий cron"
+
+msgid "Unlock Cron job"
+msgstr "Разблокировать задание Cron"
+
+msgid "Ultimate cron settings"
+msgstr "Параметры Ultimate Cron"
+
+msgid "Bypass transactional connection"
+msgstr "Обходить соединение с поддержкой транзакций"
+
+msgid "Queue settings"
+msgstr "Параметры очереди"
+
+msgid "Toggle queing jobs"
+msgstr "Переключить задания в очереди"
+
+msgid "Timeouts"
+msgstr "Тайм-ауты"
+
+msgid "Time to claim item"
+msgstr "Время затребования элемента"
+
+msgid "Time to process item"
+msgstr "Время обработки элемента"
+
+msgid "Delays"
+msgstr "Задержки"
+
+msgid "Time to idle when finished with item"
+msgstr "Время простоя после завершения обработки элемента"
+
+msgid "Toggles throttling of queues"
+msgstr "Переключает регулировку очередей"
+
+msgid "Number of threads for queues"
+msgstr "Число нитей для очередей"
+
+msgid "Number of items needed for a queue"
+msgstr "Число элементов, необходимых для очереди"
+
+msgid "Which thread to use"
+msgstr "Применяемая нить"
+
+msgid "Maximum number of threads"
+msgstr "Максимальное число нитей"
+
+msgid "Time to lock job"
+msgstr "Время блокировки задания"
+
+msgid "Maximum time for the job to run"
+msgstr "Максимальное время выполнения задания"
+
+msgid "Cache"
+msgstr "Кэш"
+
+msgid "The cache bin to use"
+msgstr "Сегмент кэша для применения "
+
+msgid "Time until cache expires"
+msgstr "Срок действия кэша"
+
+msgid "Database"
+msgstr "База данных"
+
+msgid "The method used for log retention"
+msgstr "Метод хранения протоколов"
+
+msgid "Time until expiration"
+msgstr "Время до истечения срока"
+
+msgid "Maximum number of logs to keep"
+msgstr "Максимальное число сохраняемых протоколов"
+
+msgid "Schedulr"
+msgstr "Schedulr"
+
+msgid "Crontab"
+msgstr "Crontab"
+
+msgid "Stop between job runs"
+msgstr "Останавливаться между запусками заданий"
+
+msgid "Array with rules"
+msgstr "Массив с правилами"
+
+msgid "Formatted rule"
+msgstr "Отформатированное правило"
+
+msgid "Simple"
+msgstr "Простой"
+
+msgid "Rule for Simple scheduler"
+msgstr "Правило для простого планировщика"
+
+msgid "Cron Job"
+msgstr "Задание cron"
+
+msgid "Machine-readable name"
+msgstr "Машинное имя"
+
+msgid "Weight"
+msgstr "Вес"
+
+msgid "Module Name"
+msgstr "Имя модуля"
+
+msgid "Callback"
+msgstr "Обратный вызов"
+
+msgid "Scheduler ID"
+msgstr "ИД планировщика"
+
+msgid "Launcher ID"
+msgstr "ИД агента запуска"
+
+msgid "Logger ID"
+msgstr "ИД агента протоколов"
+
+msgid "Scheduler configuration"
+msgstr "Конфигурация планировщика"
+
+msgid "Scheduler rules"
+msgstr "Правила планировщика"
+
+msgid "Scheduling rule"
+msgstr "Правило планирования"
+
+msgid "Timeout (s) after job run"
+msgstr "Тайм-аут (с) после запуска задания"
+
+msgid "Timeout settings"
+msgstr "Параметры тайм-аута"
+
+msgid "Lock timeout"
+msgstr "Тайм-аут блокировки"
+
+msgid "Max execution time"
+msgstr "Максимальное время выполнения"
+
+msgid "Max threads"
+msgstr "Максимальное число нитей"
+
+msgid "Thread"
+msgstr "Тема обсуждения"
+
+msgid "Method"
+msgstr "Метод"
+
+msgid "Expiration"
+msgstr "Срок действия"
+
+msgid "Retain X amount of logs"
+msgstr "Сохранять X протоколов"
+
+msgid "Cache bin to use for storing logs"
+msgstr "Сегмент кэша для хранения протоколов"
+
+msgid "Timeout (s) before cache entry expires"
+msgstr "Тайм-аут (с) перед истечением срока действия записи кэша"
+
+msgid "Queue: @title"
+msgstr "Очередь: @title"
+
+msgid "Store the maximum possible comments per thread"
+msgstr "Хранить максимально возможное число комментариев для каждой нити"
+
+msgid "Remove expired log messages and flood control events"
+msgstr "Удалить просроченные сообщения протокола и незначительные события управления"
+
+msgid "Purges deleted Field API data"
+msgstr "Очищает удаленные данные API Field"
+
+msgid "Deletes temporary files"
+msgstr "Удаляет временные файлы"
+
+msgid "Deletes history"
+msgstr "Удаляет хронологию"
+
+msgid "Updates indexable active search pages"
+msgstr "Обновляет индексируемые активные страницы поиска"
+
+msgid "Cleanup (caches, batch, flood, temp-files, etc.)"
+msgstr "Очистить (кэши, пакетные задания, таблицу flood, временные файлы и т. д.)"
+
+msgid "Update indexes"
+msgstr "Обновить индексы"
+
+msgid "Updates search rankings for nodes"
+msgstr "Обновляет оценки поиска для узлов"
+
+msgid "Refresh feeds"
+msgstr "Обновить ленты "
+
+msgid "Runs internal cleanup operations"
+msgstr "Выполняет операции внутренней очистки"
+
+msgid "Reset counts and clean up"
+msgstr "Сбросить счетчики и выполнить очистку"
+
+msgid "Update tracker index"
+msgstr "Обновить индекс агента отслеживания"
+
+msgid "Default cron handler"
+msgstr "Обработчик cron по умолчанию"
+
+msgid "Last Run"
+msgstr "Последний запуск"
+
+msgid "Job is behind schedule!"
+msgstr "Задание отстает от расписания!"
+
+msgid "Missing"
+msgstr "Отсутствует"
+
+msgid "Disabled"
+msgstr "Отключено"
+
+msgid "Run"
+msgstr "Запустить"
+
+msgid "Unlock"
+msgstr "Разблокировать"
+
+msgid "Logs"
+msgstr "Системные журналы"
+
+msgid "Default (@default)"
+msgstr "По умолчанию (@default)"
+
+msgid "(Blank = @default)."
+msgstr "(Пустое значение = @default)."
+
+msgid "Queue: @name"
+msgstr "Очередь: @name"
+
+msgid "Enable cron queue processing"
+msgstr "Включить обработку очередей cron"
+
+msgid "If enabled, cron queues will be processed by this plugin. If another cron queue plugin is installed, it may be necessary/beneficial to disable this plugin."
+msgstr "Если этот параметр включен, то этот модуль будет обрабатывать очереди cron. Если установлен другой модуль очередей cron, то может потребоваться выключить этот модуль."
+
+msgid "Queue lease time"
+msgstr "Время выделения очереди"
+
+msgid "Seconds to claim a cron queue item."
+msgstr "Время затребования элемента очереди cron (в секундах). "
+
+msgid "Time"
+msgstr "Время"
+
+msgid "Time in seconds to process items during a cron run."
+msgstr "Время обработки элементов в ходе выполнения cron (в секундах). "
+
+msgid "Empty delay"
+msgstr "Задержка обработки пустой очереди"
+
+msgid "Seconds to delay processing of queue if queue is empty (0 = end job)."
+msgstr "Задержка (в секундах) перед обработкой пустой очереди (0 = завершить задание). "
+
+msgid "Item delay"
+msgstr "Задержка элемента"
+
+msgid "Seconds to wait between processing each item in a queue."
+msgstr "Время ожидания перед обработкой каждого элемента в очереди. "
+
+msgid "Throttle"
+msgstr "Регулятор"
+
+msgid "Throttle queues using multiple threads."
+msgstr "Регулировка очередей с помощью нескольких нитей. "
+
+msgid "Throttling"
+msgstr "Регулировка"
+
+msgid "Threads"
+msgstr "Нити"
+
+msgid "Number of threads to use for queues."
+msgstr "Число нитей для очередей. "
+
+msgid "Threshold"
+msgstr "Пороговое значение"
+
+msgid "Number of items in queue required to activate the next cron job."
+msgstr "Число элементов в очереди для активации следующего задания cron. "
+
+msgid "disabled"
+msgstr "отключено"
+
+msgid "enabled"
+msgstr "включено"
+
+msgid "Processed @items items from queue @queue"
+msgstr "Обработано @items элементов для очереди @queue"
+
+msgid "kill signal recieved"
+msgstr "получен сигнал уничтожения"
+
+msgid "Queue item @item_id from queue @queue failed with message @message"
+msgstr "Ошибка элемента @item_id из очереди @queue, сообщение: @message"
+
+msgid "Kill signal received for job @job_id"
+msgstr "Получен сигнал уничтожения для задания @job_id"
+
+msgid "Running all cronjobs is not supported by Ultimate Cron's cron:run - please use Drupal Core's core:cron command!"
+msgstr "Запуск всех заданий cronjob не поддерживается в cron:run из Ultimate Cron - используйте команду core:cron из Drupal Core."
+
+msgid "Launched manually"
+msgstr "Запущено вручную"
+
+msgid "Cron job @job_label (@module) was successfully run."
+msgstr "Задание cron @job_label (@module) успешно запущено. "
+
+msgid "Completed discovery for new cron jobs."
+msgstr "Завершен поиск новых заданий cron. "
+
+msgid "Severity"
+msgstr "Важность"
+
+msgid "Start Time"
+msgstr "Время начала"
+
+msgid "End Time"
+msgstr "Время окончания"
+
+msgid "No log information available."
+msgstr "Нет информации о протоколах. "
+
+msgid "Logs for %label"
+msgstr "Протоколы для %label"
+
+msgid "Cron job @name unlocked successfully."
+msgstr "Задание Cron с именем @name успешно разблокировано."
+
+msgid "Could not get lock for job @name"
+msgstr "Не удалось получить блокировку для задания @name"
+
+msgid "Do you really want to disable @cronjob_id cron job?"
+msgstr "Вы действительно хотите выключить задание cron @cronjob_id? "
+
+msgid "This cron job will no longer be executed."
+msgstr "Это задание cron больше не будет выполняться. "
+
+msgid "Disable"
+msgstr "Отключить"
+
+msgid "Disabled cron job %cronjob."
+msgstr "Выключено задание cron %cronjob."
+
+msgid "Do you really want to enable @cronjob_id cron job?"
+msgstr "Вы действительно хотите включить задание cron @cronjob_id?"
+
+msgid "This cron job will be executed again."
+msgstr "Это задание cron будет выполнено снова. "
+
+msgid "Enable"
+msgstr "Включить"
+
+msgid "Enabled cron job %cronjob."
+msgstr "Включено задание cron %cronjob."
+
+msgid "This will appear in the administrative interface to easily identify it."
+msgstr "Это будет отображаться в интерфейсе администратора, чтобы легко идентифицировать."
+
+msgid "Enabled"
+msgstr "Включено"
+
+msgid "This checkbox enables the cron job. Disabled Cron jobs are not run."
+msgstr "Этот переключатель позволяет включить задание cron. Выключенные задания cron не выполняются. "
+
+msgid "@title (Default)"
+msgstr "@title (по умолчанию)"
+
+msgid "Select which @plugin to use for this job."
+msgstr "Выберите @plugin для задания. "
+
+msgid "Select"
+msgstr "Выбрать"
+
+msgid "job %label has been updated."
+msgstr "задание %label обновлено. "
+
+msgid "nodejs"
+msgstr "nodejs"
+
+msgid "Enable nodejs integration (Live reload on jobs page. Requires the nodejs module to be installed and configured)."
+msgstr "Включите интеграцию nodejs (Динамическое обновление страницы заданий. Должен быть установлен и настроен модуль nodejs). "
+
+msgid "Override cron queue processing"
+msgstr "Переопределить обработку очередей cron"
+
+msgid "If enabled, queue workers are exposed as cron jobs and can be configured separately. When disabled, the standard queue processing is used. <strong>This feature is currently experimental, do not enable unless you need it.</strong>"
+msgstr "Если этот параметр включен, то обработчики очередей можно настроить отдельно в виде заданий cron. Если этот параметр выключен, то применяется стандартная обработка очередей. <strong>Это экспериментальная функция, которую рекомендуется включать только в случае необходимости. </strong>"
+
+msgid "Launching options"
+msgstr "Параметры запуска"
+
+msgid "Job lock timeout"
+msgstr "Тайм-аут блокировки задания"
+
+msgid "Number of seconds to keep lock on job."
+msgstr "Время блокировки задания (в секундах). "
+
+msgid "Maximum execution time"
+msgstr "Максимальное время выполнения"
+
+msgid "Maximum execution time for a cron run in seconds."
+msgstr "Максимальное время выполнения задания cron (в секундах). "
+
+msgid "Maximum number of launcher threads"
+msgstr "Максимальное число нитей агента запуска"
+
+msgid "The maximum number of launch threads that can be running at any given time."
+msgstr "Максимальное число одновременно выполняемых нитей. "
+
+msgid "Run in thread"
+msgstr "Запустить в нити"
+
+msgid "Which thread to run jobs in."
+msgstr "Нить для запуска заданий. "
+
+msgid "<strong>Any</strong>: Just use any available thread"
+msgstr "<strong>Любая</strong>: использовать любую доступную нить. "
+
+msgid "<strong>Fixed</strong>: Only run in one specific thread. The maximum number of threads is spread across the jobs."
+msgstr "<strong>Фиксированная</strong>: запускать только в конкретной нити. Максимальное число нитей распределяется между заданиями. "
+
+msgid "<strong>1-?</strong>: Only run when a specific thread is invoked. This setting only has an effect when cron is run through cron.php with an argument ?thread=N or through Drush with --options=thread=N."
+msgstr "<strong>1-?</strong>: запускать только при вызове конкретной нити. Этот параметр учитывается только в случае запуска cron с помощью cron.php с аргументом ?thread=N или с помощью Drush с аргументом --options=thread=N."
+
+msgid "Cache bin"
+msgstr "Сегмент кэша"
+
+msgid "Select which cache bin to use for storing logs."
+msgstr "Выберите сегмент кэша для хранения протоколов. "
+
+msgid "Cache timeout"
+msgstr "Тайм-аут кэша"
+
+msgid "Seconds before cache entry expires (0 = never, -1 = on next general cache wipe)."
+msgstr "Срок действия записи кэша в секундах (0 = не ограничен, -1 = удаление в ходе очередной очистки кэша). "
+
+msgid "Remove logs older than a specified age"
+msgstr "Удалить протоколы, срок хранения которых превышает указанное значение"
+
+msgid "Retain only a specific amount of log entries"
+msgstr "Сохранять только указанное число записей протоколов"
+
+msgid "Log entry cleanup method"
+msgstr "Метод очистки записей протоколов"
+
+msgid "Select which method to use for cleaning up logs."
+msgstr "Выберите метод очистки протоколов. "
+
+msgid "Log entry expiration"
+msgstr "Истечение срока действия записей протоколов"
+
+msgid "Remove log entries older than X seconds."
+msgstr "Удалить записи протоколов, срок хранения которых превышает X секунд. "
+
+msgid "Retain logs"
+msgstr "Хранить протоколы"
+
+msgid "Retain X amount of log entries."
+msgstr "Хранить X записей протоколов. "
+
+msgid "Catch up"
+msgstr "Обработать"
+
+msgid "Don't run job after X seconds of rule."
+msgstr "Не выполнять задание после X секунд правила. "
+
+msgid "Rules"
+msgstr "Правила"
+
+msgid "Semi-colon separated list of crontab rules."
+msgstr "Список правил crontab (в качестве разделителя применяется точка с запятой). "
+
+msgid "Rules help"
+msgstr "Справка по правилам"
+
+msgid "Run cron every"
+msgstr "Запускать cron каждые"
+
+msgid "Select the interval you wish cron to run on."
+msgstr "Выберите интервал для запуска cron. "
+
+msgid "running"
+msgstr "выполняется"
+
+msgid "unfinished but not locked?"
+msgstr "не завершено, но блокировано? "
+
+msgid "Cleaned up @count expired locks"
+msgstr "Очищено просроченных блокировок: @count"
+
+msgid "N/A"
+msgstr "Н/Д"
+
+msgid "anonymous"
+msgstr "аноним"
+
+msgid "by"
+msgstr "автор"
+
+msgid "Registered at @datetime"
+msgstr "Зарегистрировано: @datetime"
+
+msgid "no info"
+msgstr "нет информации"
+
+msgid "-- Any -- "
+msgstr "-- Любая -- "
+
+msgid "-- Fixed -- "
+msgstr "-- Фиксированная -- "
+
+msgid "Which thread to run in when invoking with ?thread=N. Note: This setting only has an effect when cron is run through cron.php with an argument ?thread=N or through Drush with --options=thread=N."
+msgstr "Нить, применяемая в случае вызова с аргументом ?thread=N. Примечание: этот параметр учитывается только в случае запуска cron с помощью cron.php с аргументом ?thread=N или с помощью Drush с аргументом --options=thread=N."
+
+msgid "%title must be greater than 0"
+msgstr "Значение %title должно быть больше 0"
+
+msgid "Launched in thread @current_thread"
+msgstr "Запущено в нити @current_thread"
+
+msgid "Invalid thread available for starting launch thread"
+msgstr "Недопустимая нить доступна для начальной нити "
+
+msgid "Thread @thread is already running"
+msgstr "Нить @thread уже запущена"
+
+msgid "No free threads available for launching jobs"
+msgstr "Нет свободных нитей для запуска заданий"
+
+msgid "Serial"
+msgstr "Последовательность"
+
+msgid "Launches scheduled jobs in the same thread and runs them consecutively."
+msgstr "Запускает запланированные задания в одной нити и последовательно выполняет их. "
+
+msgid "Stores the last log entry (and only the last) in the cache."
+msgstr "Сохраняет последнюю запись протокола (только последнюю) в кэше. "
+
+msgid "Lock #@original_lid was already closed and logged. Creating a new log entry #@lid"
+msgstr "Блокировка #@original_lid уже закрыта и зарегистрирована в протоколе. Создание новой записи протокола #@lid"
+
+msgid "@count_entries log entries removed for @jobs_count jobs"
+msgstr "Удалено записей протоколов: @count_entries, число заданий: @jobs_count"
+
+msgid "Invalid cleanup method: @method"
+msgstr "Недопустимый метод очистки: @method"
+
+msgid "Stores logs in the database."
+msgstr "Хранит протоколы в базе данных. "
+
+msgid "Next scheduled run at @datetime"
+msgstr "Следующий зарегистрированный запуск: @datetime"
+
+msgid "Comma separated list of crontab rules."
+msgstr "Список правил crontab (в качестве разделителя применяется запятая)."
+
+msgid "Rule is invalid"
+msgstr "Недопустимое правило"
+
+msgid "Use crontab rules for scheduling jobs."
+msgstr "Использовать правила crontab для планирования заданий. "
+
+msgid "Every @interval"
+msgstr "Каждые @interval"
+
+msgid "Provides a set of predefined intervals for scheduling."
+msgstr "Предлагает набор предопределенных интервалов для планирования. "
+

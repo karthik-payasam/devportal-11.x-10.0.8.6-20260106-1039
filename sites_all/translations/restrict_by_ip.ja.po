@@ -1,0 +1,125 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Restrict by IP settings"
+msgstr "IP による制限の設定"
+
+msgid "Enter IP Address Ranges in CIDR Notation separated with semi-colons, with no trailing semi-colon. E.G. 10.20.30.0/24;192.168.199.1/32;1.0.0.0/8<br />For more information on CIDR notation <a href=\"http://www.brassy.net/2007/mar/cidr_basic_subnetting\" target=\"_blank\">click here</a>.<br /><strong>Leave field empty to disable IP restrictions for this user.</strong>"
+msgstr "セミコロン区切りで、末尾にセミコロンを付けない CIDR 表記で IP アドレス範囲を入力します。例: 10.20.30.0/24;192.168.199.1/32;1.0.0.0/8<br />CIDR 表記について詳しくは、<a href=\"http://www.brassy.net/2007/mar/cidr_basic_subnetting\" target=\"_blank\">ここをクリック</a>してください。<br /><strong>このユーザーに対して IP 制限を無効にするには、フィールドを空のままにします。</strong>"
+
+msgid "Restrict By IP"
+msgstr "IP による制限"
+
+msgid "Enables limiting user login and role access to specific IP Addresses."
+msgstr "特定の IP アドレスへのユーザー・ログインおよびロール・アクセス権限を制限できるようにします。"
+
+msgid "Access control"
+msgstr "アクセスコントロール"
+
+msgid "Restrict by IP"
+msgstr "IP による制限"
+
+msgid "General settings for Restrict by IP module."
+msgstr "IP による制限モジュールの基本設定。"
+
+msgid "General Settings"
+msgstr "基本設定"
+
+msgid "Restrict login by IP"
+msgstr "IP によるログインの制限"
+
+msgid "Global Restrictions"
+msgstr "グローバルな制限"
+
+msgid "User restrictions"
+msgstr "ユーザーの限定"
+
+msgid "Restrict role by IP"
+msgstr "IP によるロールの制限"
+
+msgid "Administer restrict by ip"
+msgstr "IP による制限の管理"
+
+msgid "Create, edit and delete rules for restricted IP login."
+msgstr "制限付きの IP ログインに関するルールを作成、編集、および削除します。"
+
+msgid "Server header to check for user IP address"
+msgstr "ユーザーの IP アドレスをチェックするためのサーバー・ヘッダー"
+
+msgid "Page user is redirected to when login is denied"
+msgstr "ログインが拒否された場合にユーザーがリダイレクトされるページ"
+
+msgid "Global IP address login restrictions"
+msgstr "グローバルな IP アドレス・ログイン制限"
+
+msgid "User level IP address login restrictions"
+msgstr "ユーザー・レベルの IP アドレス・ログイン制限"
+
+msgid "Role level IP address grant restrictions"
+msgstr "ロール・レベルの IP アドレス認可制限"
+
+msgid "Dependencies"
+msgstr "依存関係"
+
+msgid "Login denied from @ip for %name."
+msgstr "%name による @ip からのログインが拒否されました。"
+
+msgid "Header to check"
+msgstr "チェックするヘッダー"
+
+msgid "This is the HTTP request header that contains the client IP Address. It is sometimes re-written by reverse proxies and Content Distribution Networks."
+msgstr "クライアント IP アドレスを含む HTTP 要求ヘッダーです。リバース・プロキシーおよびコンテンツ配信ネットワークによって書き換えられることがあります。"
+
+msgid "Your current IP address is %ipaddress. If this is wrong, make sure you have the correct header configured in general settings."
+msgstr "あなたの現在の IP アドレスは %ipaddress です。これが間違っている場合は、基本設定で正しいヘッダーが構成されているかどうか確認してください。"
+
+msgid "Login denied error page"
+msgstr "ログイン拒否エラー・ページ"
+
+msgid "This the address of the page to which the user will be redirected if they are not allowed to login. If you don't set this the user will not know why they couldn't login."
+msgstr "ユーザーがログインを許可されなかった場合にリダイレクトされるページのアドレスです。これを設定しない場合、ユーザーはログインできなかった理由を知ることができません。"
+
+msgid "Restrict global login to allowed IP range"
+msgstr "グローバル・ログインを許可された IP 範囲に制限"
+
+msgid "To restrict login for ALL users, enter global IP Address Ranges in CIDR Notation separated with semi-colons, with no trailing semi-colon. E.G. 10.20.30.0/24;192.168.199.1/32;1.0.0.0/8<br />For more information on CIDR notation click <a href=\"http://www.brassy.net/2007/mar/cidr_basic_subnetting\">here</a>.<br />Leave field blank to disable IP restrictions for user login."
+msgstr "すべてのユーザーによるログインを制限するには、CIDR 表記のグローバル IP アドレス範囲をセミコロン区切りで入力します (末尾にはセミコロンを付けない)。例: 10.20.30.0/24;192.168.199.1/32;1.0.0.0/8<br />CIDR 表記について詳しくは、<a href=\"http://www.brassy.net/2007/mar/cidr_basic_subnetting\">ここ</a>をクリックしてください。<br />ユーザー・ログインの IP 制限を無効にするには、フィールドを空のままにします。"
+
+msgid "No roles configured. <a href=\"@add-role\">Add a role</a>."
+msgstr "ロールが構成されていません。<a href=\"@add-role\">ロールを追加</a>してください。"
+
+msgid "@role-label role IP range"
+msgstr "@role-label ロールの IP 範囲"
+
+msgid "Add new user allowed IP range"
+msgstr "新規ユーザーに許可される IP 範囲の追加"
+
+msgid "Username"
+msgstr "ユーザー名"
+
+msgid "Allowed IP range"
+msgstr "許可するIPの範囲"
+
+msgid "Enter IP Address Ranges in CIDR Notation separated with semi-colons, with no trailing semi-colon. E.G. 10.20.30.0/24;192.168.199.1/32;1.0.0.0/8<br />For more information on CIDR notation click <a href=\"http://www.brassy.net/2007/mar/cidr_basic_subnetting\">here</a>."
+msgstr "セミコロン区切りで、末尾にセミコロンを付けない CIDR 表記で IP アドレス範囲を入力します。例: 10.20.30.0/24;192.168.199.1/32;1.0.0.0/8<br />CIDR 表記について詳しくは、<a href=\"http://www.brassy.net/2007/mar/cidr_basic_subnetting\">ここ</a>をクリックしてください。"
+
+msgid "@name user IP range"
+msgstr "@name ユーザーの IP 範囲"
+
+msgid "Enter IP Address Ranges in CIDR Notation separated with semi-colons, with no trailing semi-colon. E.G. 10.20.30.0/24;192.168.199.1/32;1.0.0.0/8<br />For more information on CIDR notation click <a href=\"http://www.brassy.net/2007/mar/cidr_basic_subnetting\">here</a>.<br />Leave field blank to disable IP restrictions for @name."
+msgstr "セミコロン区切りで、末尾にセミコロンを付けない CIDR 表記で IP アドレス範囲を入力します。例: 10.20.30.0/24;192.168.199.1/32;1.0.0.0/8<br />CIDR 表記について詳しくは、<a href=\"http://www.brassy.net/2007/mar/cidr_basic_subnetting\">ここ</a>をクリックしてください。<br />@name に対する IP 制限を無効にするには、フィールドを空のままにします。"
+
+msgid "Restriction for that user already exist."
+msgstr "そのユーザーに対する制限は既に存在します。"
+

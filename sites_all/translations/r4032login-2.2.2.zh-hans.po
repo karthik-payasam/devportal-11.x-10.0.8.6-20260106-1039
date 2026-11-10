@@ -1,0 +1,188 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Redirect 403 to User Login"
+msgstr "重定向403页面至用户登录页面"
+
+msgid "Redirect anonymous users from 403 Access Denied pages to the /user/login page."
+msgstr "将匿名用户从“403 已拒绝访问”页面重定向到 /user/login 页面。"
+
+msgid "r4032login"
+msgstr "r4032login"
+
+msgid "Configure r4032login."
+msgstr "配置 r4032login。"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Anonymous behavior"
+msgstr "匿名行为"
+
+msgid "Authenticated behavior"
+msgstr "已认证的行为"
+
+msgid "Administer r4032login"
+msgstr "管理 r4032login"
+
+msgid "Allows a user to configure r4032login."
+msgstr "允许用户配置 r4032login。"
+
+msgid "r4032login settings"
+msgstr "r4032login 设置"
+
+msgid "r4032login anonymous behavior"
+msgstr "r4032login 匿名行为"
+
+msgid "r4032login authenticated behavior"
+msgstr "r4032login 已认证的行为"
+
+msgid "Redirect 403 to User Login (r4032login) settings"
+msgstr "将 403 重定向到用户登录 (r4032login) 设置"
+
+msgid "Display access denied message on login page"
+msgstr "在登录页面上显示已拒绝访问消息"
+
+msgid "User login 'access denied' message"
+msgstr "用户登录“已拒绝访问”消息"
+
+msgid "User login 'access denied' message type"
+msgstr "用户登录“已拒绝访问”消息类型"
+
+msgid "Redirect authenticated users to"
+msgstr "将已认证的用户重定向至"
+
+msgid "Throw authenticated users a 404 error"
+msgstr "向已认证的用户抛出 404 错误"
+
+msgid "Display access denied message on authenticated landing page"
+msgstr "在已认证的登录页面上显示“访问被拒绝”消息"
+
+msgid "Authenticated user 'access denied' message"
+msgstr "已认证的用户“访问被拒绝”消息"
+
+msgid "Authenticated user 'access denied' message type"
+msgstr "已认证的用户“访问被拒绝”消息类型"
+
+msgid "/user/login"
+msgstr "/user/login"
+
+msgid "HTTP redirect code"
+msgstr "HTTP 重定向代码"
+
+msgid "Add noindex header"
+msgstr "添加 noindex 头"
+
+msgid "Custom final destination parameter"
+msgstr "定制最终目标参数"
+
+msgid "Listed pages for which to redirect or not"
+msgstr "要重定向或不重定向的所列页面"
+
+msgid "Allow to negate the redirect pages condition"
+msgstr "允许对重定向页面条件进行求反"
+
+msgid "Redirect user to the page they tried to access after login"
+msgstr "在登录后将用户重定向到其尝试访问的页面"
+
+msgid "Language code"
+msgstr "语言代码"
+
+msgid "Redirect anonymous users to"
+msgstr "将匿名用户重定向到"
+
+msgid "If anonymous user tries to access a page they can not, redirect them to the given page. Include the leading slash, i.e.: /user/login."
+msgstr "如果匿名用户尝试访问他们无法访问的页面，请将其重定向到给定的页面。 包含前置斜杠，例如：/user/login。"
+
+msgid "Redirect anonymous users to the page they tried to access after login"
+msgstr "在登录后将匿名用户重定向到他们尝试访问的页面"
+
+msgid "Destination parameter override"
+msgstr "目标参数覆盖"
+
+msgid "The parameter to use when setting the return destination once login has succeeded. By default Drupal uses 'destination', but overriding this may be necessary if using an external login system such as CAS, Shibboleth or OAuth."
+msgstr "在设置登录成功后的返回目标时使用的参数。缺省情况下，Drupal 使用“destination”，但是如果使用外部登录系统，例如，CAS、Shibboleth 或 OAuth，可能需要覆盖此项。"
+
+msgid "Displays an access denied message on the user login page."
+msgstr "在用户登录页面上显示已拒绝访问消息。"
+
+msgid "The message text displayed to anonymous users who are denied access to the page."
+msgstr "向被拒绝访问页面的匿名用户显示的消息文本。"
+
+msgid "The message type displayed to users who are denied access to the page."
+msgstr "向被拒绝访问页面的用户显示的消息类型。"
+
+msgid "Error"
+msgstr "错误"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "The user login form path '%path' is either invalid or a logged out user does not have access to it."
+msgstr "用户登录表单路径“%path”无效或者已注销的用户没有访问权。"
+
+msgid "If an authenticated user tries to access a page they can not, redirect them to the given page. Use &lt;front&gt; for the front page, leave blank for a default access denied page."
+msgstr "如果已认证的用户尝试访问其无法访问的页面，将他们重定向至给定页面。对于首页，使用 &lt;front&gt;，对于缺省已拒绝访问的页面，保留为空。"
+
+msgid "Or throw authenticated users a 404 error"
+msgstr "或者向已认证的用户抛出 404 错误"
+
+msgid "If an authenticated user tries to access a page they can not, throws a 404 error (not found). Note that this will cancel the redirect option if set above."
+msgstr "如果已认证的用户尝试访问他们无法访问的页面，那么将抛出 404 错误（“找不到”错误）。 请注意，这将取消重定向选项（如果上面已设置）。"
+
+msgid "The message text displayed to authenticated users who are denied access to the page."
+msgstr "向被拒绝访问页面的已认证用户显示的消息文本。"
+
+msgid "The message type displayed to authenticated users who are denied access to the page."
+msgstr "向被拒绝访问页面的已认证用户显示的消息类型。"
+
+msgid "The redirect authenticated users path '%path' is either invalid or you do not have access to it."
+msgstr "重定向已认证用户路径“%path”无效或者您没有访问权。"
+
+msgid "The redirect code to send by default. 301 and 302 responses may be cached by browsers and proxies, so 307 is normally the correct choice."
+msgstr "缺省情况下发送的重定向代码。浏览器和代理可能会缓存 301 和 302 响应，因此 307 通常是正确的选择。"
+
+msgid "307 Temporary Redirect"
+msgstr "307临时重定向"
+
+msgid "302 Found"
+msgstr "302临时重定向"
+
+msgid "301 Moved Permanently"
+msgstr "301永久移动"
+
+msgid "Add <code>X-Robots-Tag: noindex</code> header"
+msgstr "添加 <code>X-Robots-Tag: noindex</code> 头"
+
+msgid "Should a noindex tag be added to the response header? This tells search engines not to index the page."
+msgstr "是否应向响应头添加 noindex 标记？ 这告诉搜索引擎不要对该页面建立索引。"
+
+msgid "Skip redirect for matching pages"
+msgstr "跳过重定向以匹配页面"
+
+msgid "Skip redirect for listed pages"
+msgstr "跳过所列页面的重定向"
+
+msgid "Allow redirect for listed pages"
+msgstr "允许所列页面的重定向"
+
+msgid "Pages"
+msgstr "页面"
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page."
+msgstr "通过页面路径指定页面。每行一个路径。'*' 为通配符。比如%blog可用作博客页面，%blog-wildcard可用作每个用户的个人博客，%front为首页。"
+

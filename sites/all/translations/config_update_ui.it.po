@@ -1,0 +1,254 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "Informazioni"
+
+msgid "The Configuration Update Reports module provides a report that allows you to see the differences between the default configuration provided by the current versions of your installed modules, themes, and install profile, and the active configuration of your site. From this report, you can also import new configuration provided by updates, and revert your active configuration to the provided default values."
+msgstr "Il modulo Report aggiornamento configurazione fornisce un report che consente di visualizzare le differenze tra la configurazione predefinita, fornita dall'attuale versione dei moduli installati, dei temi, e del profilo d'installazione, e la configurazione attiva del sito. Da questo report, è possibile anche importare una nuova configurazione fornita da aggiornamenti, e ripristinare la configurazione attiva con i valori predefiniti forniti. "
+
+msgid "Uses"
+msgstr "Usa"
+
+msgid "Checking for configuration differences"
+msgstr "Controllo delle differenze di configurazione"
+
+msgid "The <a href=\":report\">Updates report</a> shows you configuration that differs between your site's active configuration and the installed modules, themes, and install profile. Choose a particular configuration type (or All), or run the report for a particular module, theme, or your install profile."
+msgstr "Il <a href=\":report\">report Aggiornamenti</a> riporta le configurazioni che differiscono tra la configurazione attiva del sito ed i moduli installati, i temi e il profilo d'installazione. Scegliere un tipo di configurazione specifico (o Tutti), o eseguire il report per un determinato modulo, tema, o per il proprio profilo di installazione. "
+
+msgid "This report shows which default configuration items provided by the current versions of your installed modules, themes, and install profile differ from the active configuration of your site. You can generate the report for all configuration of a certain type; for a particular installed module, theme, or your install profile (only modules, themes, and install profiles that actually provide configuration are listed); or for all configuration."
+msgstr "Questo report mostra quali elementi di configurazione predefiniti, fornita dall'attuale versione dei moduli installati, dei temi, e del profilo d'installazione, differiscono dalla configurazione attiva del sito. È possibile generare il report per tutte le configurazioni di un certo tipo; per un particolare modulo installato, tema, o il profilo d'installazione (vengono elencati solo i moduli, i temi ed i profili d'installazione effettivamente installati); o per tutte le configurazioni."
+
+msgid "Some configuration provided by modules has dependencies, and is only added to your system when all the dependencies are satisfied. This is known as <em>optional</em> configuration."
+msgstr "Alcune configurazioni fornite dai moduli hanno dipendenze, e vengono aggiunte al sistema solo quando tutte le dipendenze sono soddisfatte. Queste configurazioni sono note come <em>facoltative</em>. "
+
+msgid "Differences, including missing and added configuration, can be due to either an updated module or theme providing different configuration from when you installed it, or to changes made by site administrators. This report does not differentiate between these two sources for differences, and note that an install profile can also silently override module/theme configuration. Overrides (such as those in your settings.php file) and translations are not considered when looking at differences."
+msgstr "Le differenze, incluse le configurazioni mancanti ed aggiunte, possono essere dovute ad un modulo o ad un tema aggiornato che contiene configurazioni diverse da quelle di quando è stato installato, oppure a modifiche effettuate dagli amministratori del sito. Questo report non distingue tra queste due fonti di differenze, ed inoltre è anche possibile che un profilo di installazione sovrascriva la configurazione di un modulo o di un tema in modo silente. Le sostituzioni (quali quelle nel file settings.php) e le traduzioni non vengono considerate al momento della ricerca delle differenze. "
+
+msgid "Most configuration is organized into a hierarchy of settings; at a minimum, it is a one-level hierarchy where each setting has a name and a value, and the hierarchy comes in when some of the settings have multiple components."
+msgstr "La maggior parte delle configurazioni sono organizzate con una gerarchia di impostazioni, come minimo, con una gerarchia ad un unico livello, dove ogni impostazione ha un nome ed un valore, e la gerarchia acquista rilevanza nel momento in cui alcune impostazioni hanno più componenti. "
+
+msgid "Configuration items are normalized and formatted before computing differences. The normalization step alphabetizes the components at each level of the hierarchy, and removes a few components whose differences should be ignored, such as the UUID. The formatting step shows the full hierarchy of each configuration value with :: separators for the hierarchy levels, and a : separator between the lowest-level setting name and the value, so that in a line-by-line diff you can always see which values are actually different. Green lines with + signs have been added, and yellow lines with - signs have been removed."
+msgstr "Gli elementi di configurazione vengono normalizzati e formattati prima di calcolare le differenze. Il passo di normalizzazione ordina alfabeticamente i componenti in ciascun livello della gerarchia, e rimuove alcuni componenti le cui differenze possono essere ignorate, come gli UUID. Il passo di formattazione mostra la gerarchia completa di ciascun valore di configurazione con :: come separatori per i livelli della gerarchia, ed un separatore : tra il nome dell'impostazione a livello più basso ed il valore, in modo che la diff a livello di riga possa sempre vedere quali valori sono diversi. Le righe verdi con il segno + sono quelle aggiunte, mentre le righe gialle con il segno - sono quelle rimosse. "
+
+msgid "Note that differences are considering the base configuration, without overrides from your settings.php file, or translations."
+msgstr "Le differenze sono quelle rispetto alla configurazione di base, e non vengono considerate le sostituzioni nel file settings.php o le traduzioni. "
+
+msgid "Updates report"
+msgstr "Report Aggiornamenti"
+
+msgid "Configuration Update Reports"
+msgstr "Report aggiornamento configurazione"
+
+msgid "Adds an updates report and revert functionality to configuration management."
+msgstr "Aggiunge un report degli aggiornamenti e ripristina la funzionalità alla gestione della configurazione."
+
+msgid "View configuration updates report"
+msgstr "Visualizza Report aggiornamenti configurazione"
+
+msgid "Revert any configuration"
+msgstr "Ripristina tutte le configurazioni"
+
+msgid "Delete any configuration"
+msgstr "Elimina tutte le configurazioni"
+
+msgid "Import"
+msgstr "Importa"
+
+msgid "Differences"
+msgstr "Differenze"
+
+msgid "Revert"
+msgstr "Ripristina"
+
+msgid "Delete"
+msgstr "Elimina"
+
+msgid "Configuration Update Reports settings"
+msgstr "Impostazioni report di aggiornamento configurazione"
+
+msgid "Ignored configuration items"
+msgstr "Elementi di configurazione ignorati"
+
+msgid "No added config."
+msgstr "Nessuna configurazione aggiunta"
+
+msgid "No missing config."
+msgstr "Nessuna configurazione mancante."
+
+msgid "No inactive config."
+msgstr "Nessuna configurazione inattiva."
+
+msgid "No different config"
+msgstr "Nessuna configurazione diversa"
+
+msgid "Config is missing, cannot diff."
+msgstr "Config mancante, non può diff."
+
+msgid "The configuration item @name was reverted to its source."
+msgstr "L'elemento di configurazione @name è stato ripristinato al relativo valore originale. "
+
+msgid "There was an error and the configuration item @name was not reverted."
+msgstr "Si è verificato un errore e l'elemento di configurazione @name non è stato ripristinato. "
+
+msgid "The configuration item @name was imported from its source."
+msgstr "L'elemento di configurazione @name è stato importato dalla relativa origine. "
+
+msgid "There was an error and the configuration item @name was not imported."
+msgstr "Si è verificato un errore e l'elemento di configurazione @name non è stato importato. "
+
+msgid "Simple configuration"
+msgstr "Configurazione semplice"
+
+msgid "Config difference for @type @name"
+msgstr "Differenze di configurazione di @type @name"
+
+msgid "Source config"
+msgstr "Configurazione origine"
+
+msgid "Site config"
+msgstr "Configurazione sito"
+
+msgid "There are no changes."
+msgstr "Non ci sono modifiche."
+
+msgid "Revert to source"
+msgstr "Ripristina il valore originale"
+
+msgid "Export"
+msgstr "Esporta"
+
+msgid "Back to 'Updates report' page"
+msgstr "Torna alla pagina 'Report aggiornamenti'"
+
+msgid "Generate new report"
+msgstr "Genera nuovo report"
+
+msgid "Report type"
+msgstr "Tipo di report"
+
+msgid "Report on"
+msgstr "Crea report su"
+
+msgid "Everything"
+msgstr "Tutto"
+
+msgid "Full report"
+msgstr "Report completo"
+
+msgid "Single configuration type"
+msgstr "Tipo di configurazione singola"
+
+msgid "Single module"
+msgstr "Modulo singolo"
+
+msgid "Single theme"
+msgstr "Tema singolo"
+
+msgid "Installation profile"
+msgstr "Profilo di installazione"
+
+msgid "All configuration"
+msgstr "Tutte le configurazioni"
+
+msgid "@name configuration"
+msgstr "Configurazione @name"
+
+msgid "@name module"
+msgstr "Modulo @name"
+
+msgid "@name theme"
+msgstr "Tema @name"
+
+msgid "@name profile"
+msgstr "Profilo @name"
+
+msgid "Configuration updates report for @label"
+msgstr "Report aggiornamenti configurazione di @label"
+
+msgid "Missing configuration items"
+msgstr "Elementi di configurazione mancanti"
+
+msgid "None: all provided configuration items are in your active configuration."
+msgstr "Nessuno: tutti gli elementi di configurazione forniti si trovano nella configurazione attiva. "
+
+msgid "Inactive optional items"
+msgstr "Elementi facoltativi non attivi"
+
+msgid "None: all optional configuration items are in your active configuration."
+msgstr "Nessuno: tutti gli elementi di configurazione facoltativi si trovano nella configurazione attiva. "
+
+msgid "Added configuration items"
+msgstr "Elementi di configurazione aggiunti"
+
+msgid "None: all active configuration items of this type were provided by modules, themes, or install profile."
+msgstr "Nessuno: tutti gli elementi della configurazione attiva di questo tipo sono stati forniti dai moduli, dai temi o dal profilo d'installazione. "
+
+msgid "Changed configuration items"
+msgstr "Elementi di configurazione modificati"
+
+msgid "None: no active configuration items differ from their current provided versions."
+msgstr "Nessuno: nessun elemento della configurazione attiva differisce dalle attuali versioni fornite. "
+
+msgid "Machine name"
+msgstr "Nome ad uso interno"
+
+msgid "Label (if any)"
+msgstr "Etichetta (se presente)"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Provider"
+msgstr "Fonte esterna"
+
+msgid "Operations"
+msgstr "Operazioni"
+
+msgid "Import from source"
+msgstr "Importa dall'origine"
+
+msgid "Show differences"
+msgstr "Mostra differenze"
+
+msgid "Malformed config file @config_name."
+msgstr "File di configurazione @config_name con formato errato."
+
+msgid "Are you sure you want to delete the %type config %item?"
+msgstr "Si è sicuri di voler eliminare l'elemento %item dalla configurazione %type? "
+
+msgid "This action cannot be undone. Manually deleting configuration from this page can cause problems on your site due to missing dependencies, and should only be done if there is no other way to delete a problematic piece of configuration."
+msgstr "L'operazione non è reversibile. L'eliminazione manuale della configurazione da questa pagina potrebbe causare problemi sul sito a causa delle dipendenze che verrebbero a mancare, e deve essere effettuata solo se non c'è altro modo per eliminare un frammento problematico di configurazione. "
+
+msgid "The configuration %item has been deleted."
+msgstr "La configurazione %item è stata eliminata."
+
+msgid "Are you sure you want to import the %type config %item from its source configuration?"
+msgstr "Si desidera importare %item della configurazione %type dalla configurazione di origine?"
+
+msgid "Configuration will be added to your site. This action cannot be undone."
+msgstr "La configurazione verrà aggiunta al sito. L'operazione non può essere annullata."
+
+msgid "The configuration %item has been imported from its source."
+msgstr "La configurazione %item è stata importata dalla relativa origine."
+
+msgid "Are you sure you want to revert the %type config %item to its source configuration?"
+msgstr "Si è sicuri di voler ripristinare l'elemento %item della configurazione %type alla relativa configurazione di origine? "
+
+msgid "Customizations will be lost. This action cannot be undone."
+msgstr "Le personalizzazioni andranno perse. L'operazione non è reversibile."
+
+msgid "The configuration %item has been reverted to its source."
+msgstr "La configurazione %item è stata ripristinata alla relativa versione origine."
+

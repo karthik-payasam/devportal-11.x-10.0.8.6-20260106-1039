@@ -1,0 +1,126 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Select translation"
+msgstr "Conversie selecteren"
+
+msgid "Select which translation of a node should be displayed"
+msgstr "Selecteer welke conversie van een knooppunt getoond moet worden"
+
+msgid "Select Translation"
+msgstr "Conversie selecteren"
+
+msgid "Provides a Views filter to select which translation of a node should be displayed."
+msgstr "Biedt een weergavefilter om te selecteren welke vertaling van een knooppunt moet worden weergegeven."
+
+msgid "Multilingual"
+msgstr "Meertalig"
+
+msgid "The 'nid' argument must be an integer >= 1."
+msgstr "Het argument 'nid' moet een geheel getal >= 1 zijn."
+
+msgid "Select translation filter"
+msgstr "Conversiefilter selecteren"
+
+msgid "Original node language fallback"
+msgstr "Taal herstellen naar die van oorspronkelijk knooppunt"
+
+msgid "Default site language fallback"
+msgstr "Taal herstellen naar die van standaardsite"
+
+msgid "Language fallback candidates list"
+msgstr "Lijst van kandidaten voor taaluitval"
+
+msgid "Custom language priority"
+msgstr "Aangepaste prioriteit voor taal"
+
+msgid "Select translation selection mode"
+msgstr "Selecteer de selectiemodus voor de conversie"
+
+msgid "Use the current interface language; if not available use the original node language"
+msgstr "De huidige interfacetaal gebruiken; als deze niet beschikbaar is, gebruik dan de taal van het oorspronkelijke knooppunt"
+
+msgid "Use the current interface language; if not available use the default site language; if not available use the original node language"
+msgstr "Gebruik de huidige interfacetaal; als deze niet beschikbaar is, gebruik dan de standaardtaal voor de site; als deze niet beschikbaar is, gebruikt u de taal van het oorspronkelijke knooppunt"
+
+msgid "Use the language fallback candidates list provided by the language manager service"
+msgstr "De door de taalbeheerservice verstrekte lijst van taalterugvalkandidaten gebruiken"
+
+msgid "Custom language priorities"
+msgstr "Aangepaste prioriteit voor talen"
+
+msgid "Language priorities"
+msgstr "Taalprioriteiten"
+
+msgid ""
+"<p>If the selection mode is set to \"Custom language priorities\",\n"
+"                           a comma separated list of language codes can be specified.<br/>\n"
+"                           The filter will then return the node in the first available language\n"
+"                           in that list; falling back to the original node language if no match was found.</p>\n"
+"                           Some special values are recognized:\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" will be replaced with the current interface language;</li>\n"
+"                             <li>\"<em>default</em>\" will be replaced with the default site language;</li>\n"
+"                             <li>\"<em>original</em>\" will be replaced with the original node language.</li>\n"
+"                            </ul>\n"
+"                           Example:<br/><em>en,fr,current,default,original</em><br/>\n"
+"                           This will return:\n"
+"                           <ol>\n"
+"                             <li>the version in English, if available;</li>\n"
+"                             <li>if not, then the version in French, if available;</li>\n"
+"                             <li>if not, then the version in the current interface language, if available;</li>\n"
+"                             <li>if not, then the version in the default site language, if available;</li>\n"
+"                             <li>if none are available it will return the original node version.</li>\n"
+"                          </ol>"
+msgstr ""
+"<p>Als de selectiemodus is ingesteld op \" Aangepaste prioriteit voor talen \",\n"
+" kan een door komma's gescheiden lijst van taalcodes worden opgegeven.<br/>\n"
+" Het filter retourneert vervolgens het knooppunt in de eerste beschikbare taal \n"
+" in de lijst; de taal van het oorspronkelijke knooppunt wordt gebruikt als er geen overeenkomst is gevonden.</p>\n"
+" Er wordt een aantal speciale waarden herkend: \n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" wordt vervangen door de huidige interfacetaal.</li>\n"
+"                             <li>\"<em>default</em>\" wordt vervangen door de standaard interfacetaal van de site.</li>\n"
+"                             <li>\"<em>original</em>\" wordt vervangen door de oorspronkelijke knooppunttaal.</li>\n"
+"                            </ul>\n"
+"                           Voorbeeld:<br/><em>en,fr,current,default,original</em><br/>\n"
+"                           Hiermee wordt:\n"
+"                           <ol>\n"
+"                             <li>de versie in het Engels afgebeeld, indien beschikbaar;</li>\n"
+"                             <li>zo niet wordt de Franse versie afgebeeld, indien beschikbaar;</li>\n"
+"                             <li>zo niet wordt de versie in de huidige taal van de interface afgebeeld, indien beschikbaar;</li>\n"
+"                             <li>zo niet wordt de versie in de standaardtaal van de site afgebeeld, indien beschikbaar;</li>\n"
+"                             <li>als geen van alle beschikbaar is, wordt de versie van het oorspronkelijke knooppunt geretourneerd.</li>\n"
+"                          </ol>"
+
+msgid "Display default language content *only*, if the currently selected user language is the default site language."
+msgstr "Standaardtaal *alleen* afbeelden als de huidige geselecteerde taal de standaardtaal van de site is."
+
+msgid ""
+"When you check this option, the order chosen above will be ignored when current language = site default language,\n"
+"        instead it will only show translations for the default language. "
+msgstr ""
+"Als u deze optie inschakelt, wordt de bovenstaande volgorde genegeerd als de huidige taal de standaardtaal van de site is; \n"
+" in plaats daarvan worden alleen vertalingen voor de standaardtaal afgebeeld. "
+
+msgid "Return content in the site default language when a translation for the current language *does* exist, but it is unpublished."
+msgstr "Content retourneren in de standaardtaal van de site als een vertaling voor de huidige taal *wel* bestaat, maar nog niet gepubliceerd is."
+
+msgid ""
+"When you check this option, in addition to the order chosen above, content will be shown in the default site language in the event that the translation in the current language is unpublished.<br/>\n"
+"      <strong>NOTE</strong>: This option assumes that the view is already filtering out unpublished content with the <code>Published (=Yes)</code> criterion, otherwise both the published and unpublished node will be displayed."
+msgstr ""
+"Als u deze optie inschakelt, wordt, naast de hierboven gekozen volgorde, de content in de standaardtaal voor de site afgebeeld als de vertaling in de huidige taal niet is gepubliceerd.<br/>\n"
+" <strong>OPMERKING</strong>: Deze optie gaat ervan uit dat de view al niet gepubliceerde content uitfiltert met het criterium <code>Gepubliceerd (=Ja)</code> , anders wordt zowel het gepubliceerde als niet-gepubliceerde knooppunt weergegeven."
+

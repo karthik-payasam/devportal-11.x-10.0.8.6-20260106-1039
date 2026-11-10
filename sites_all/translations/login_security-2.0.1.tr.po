@@ -1,0 +1,236 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Your last login was @stamp."
+msgstr "En son @stamp de siteye giriş yaptınız."
+
+msgid "Your last page access (site activity) was @stamp."
+msgstr "Son erişiminiz (sitede yaptığınız en son işlem) @stamp tarihindeydi."
+
+msgid "Make sure you have reviewed the <a href=\"!README\">README file</a> for further information about how all these settings will affect your Drupal login form submissions."
+msgstr "Tüm bu ayarların Drupal oturum açma formu gönderilerinizi nasıl etkilediği hakkında daha fazla bilgi için <a href=\"!README\">BENİOKU dosyasını</a> incelediğinizden emin olun."
+
+msgid "Suspicious activity in login form submissions is no longer detected: Currently @tracking_current_count events are being tracked, and threshold is configured for @activity_threshold maximum allowed attempts."
+msgstr "Artık oturum açma formu gönderimlerinde şüpheli etkinlik algılanmıyor: Şu anda @tracking_current_count olayları izleniyor ve @activity_threshold izin verilen maksimum deneme sayısı için eşik yapılandırıldı."
+
+msgid "Banned IP address @ip due to security configuration."
+msgstr "Güvenlik yapılandırması nedeniyle yasaklanan IP adresi @ip."
+
+msgid "Blocked user @username due to security configuration."
+msgstr "Güvenlik yapılandırması nedeniyle engellenen kullanıcı @username."
+
+msgid "Ongoing attack detected: Suspicious activity detected in login form submissions. Too many invalid login attempts threshold reached: Currently @tracking_current_count events are tracked, and threshold is configured for @activity_threshold attempts."
+msgstr "Devam eden saldırı saptandı: Oturum açma formu gönderilerinde şüpheli etkinlik saptandı. Çok fazla geçersiz oturum açma denemesi eşiğine ulaşıldı: Şu anda @tracking_current_count olayları izleniyor ve @activity_threshold denemeleri için eşik yapılandırıldı."
+
+msgid "Login Security"
+msgstr "Oturum Açma Güvenliği"
+
+msgid "Enable security options in the login flow of the site."
+msgstr "Sitenin aşağıdaki oturum açma akışında güvenlik seçeneklerini etkinleştirin."
+
+msgid "Login Security settings"
+msgstr "Oturum Açma Güvenliği ayarları"
+
+msgid "Login security settings"
+msgstr "Oturum açma güvenliği ayarları"
+
+msgid "Track time"
+msgstr "İzleme süresi"
+
+msgid "Maximum number of login failures before blocking a user"
+msgstr "Kullanıcı engellenmeden önce maksimum hatalı oturum açma denemesi"
+
+msgid "Maximum number of login failures before soft blocking a host"
+msgstr "Anasistemin yazılımının engellenmesinden önce maksimum hatalı oturum açma denemesi"
+
+msgid "Maximum number of login failures before blocking a host"
+msgstr "Anasistemin engellenmesinden önce maksimum oturum açma denemesi"
+
+msgid "Maximum number of login failures before detecting an ongoing attack"
+msgstr "Devam eden bir saldırının belirlenmesinden önce maksimum oturum açma denemesi"
+
+msgid "Disable login failure error message"
+msgstr "Oturum açma hata iletisini devre dışı bırak"
+
+msgid "Notify the user about the number of remaining login attempts"
+msgstr "Kalan oturum açma deneme sayısı hakkında kullanıcıyı bilgilendir"
+
+msgid "Display last login timestamp"
+msgstr "En son oturum açma zaman damgasını görüntüle"
+
+msgid "Display last access timestamp"
+msgstr "Son erişim zaman damgasını görüntüle"
+
+msgid "Message to be shown on each failed login attempt"
+msgstr "Her başarısız oturum açma denemesinde gösterilecek ileti"
+
+msgid "Message for banned host (Soft IP ban)"
+msgstr "Engellenen anasistem için ileti (Esnek IP yasaklama)"
+
+msgid "Message for banned host (Hard IP ban)"
+msgstr "Engellenen anasistem için ileti (Sabit IP engeli)"
+
+msgid "Message when user is blocked by uid"
+msgstr "Kullanıcı uid ile engellendiğinde ileti"
+
+msgid "Email subject"
+msgstr "E-posta konusu"
+
+msgid "Email body"
+msgstr "E-posta metni"
+
+msgid "Emails to be notified when users are blocked"
+msgstr "Kullanıcılar engellendiğinde bildirim gönderilecek e-postalar"
+
+msgid "Emails to be notified during excess activity"
+msgstr "Aşırı etkinlik sırasında bildirim gönderilecek e-postalar"
+
+msgid "General settings"
+msgstr "Genel ayarlar"
+
+msgid "The time window to check for security violations: the time in minutes the login information is kept to compute the login attempts count. A common example could be 1440 minutes (24 hours). After that time, the attempt is deleted from the list, and will never be considered again."
+msgstr "Güvenlik ihlalleri denetimi için zaman aralığı: oturum açma denemelerini hesaplamak için oturum açma bilgilerinin tutulma süresi (dakika olarak). Yaygın bir örnek olarak 1440 dakika (24 saat) verilebilir. Bu süre sonunda deneme, listeden silinir ve bir daha değerlendirilmez."
+
+msgid "minute(s)"
+msgstr "dakika"
+
+msgid "User"
+msgstr "Kullanıcı"
+
+msgid ""
+"Enter the number of login failures a user is allowed. <br>\n"
+"        After this amount is reached, the user will be blocked, no matter the host attempting to log in. Use this option carefully on public sites, as an attacker may block your site users. <br>\n"
+"        The user blocking protection will not disappear and should be removed manually from the <a href=\":user\">user management</a> interface."
+msgstr ""
+"Bir kullanıcı için izin verilen başarısız oturum açma sayısını girin. <br>\n"
+"        Bu sayıya ulaşıldıktan sonra, oturum açılmaya çalışılan anasistemden bağımsız olarak kullanıcı engellenir. Bir saldırgan, site kullanıcılarınızı engelleyebileceğinden genel sitelerde bu seçeneği dikkatli bir şekilde kullanın. <br>\n"
+"        Kullanıcıyı engelleyen koruma kaybolmaz ve <a href=\":user\">kullanıcı yönetimi</a> arabiriminden manuel olarak kaldırılması gerekir."
+
+msgid "failed attempts"
+msgstr "başarısız denemeler"
+
+msgid "Soft host"
+msgstr "Geçici anasistem"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this amount is reached, the host will not be able to submit the log in form again, but can still browse the site contents as an anonymous user. <br>\n"
+"        This protection is effective during the time indicated at tracking time option."
+msgstr ""
+"Bir anasistem için izin verilen başarısız oturum açma sayısını girin. <br>\n"
+"        Bu sayıya ulaşıldıktan sonra anasistem yeniden oturum açma formunu gönderemez, ancak yine de anonim bir kullanıcı olarak site içeriğine göz atılabilir. <br>\n"
+"        Bu koruma, takip edilen süre seçeneğinde belirtilen süre boyunca koruma etkindir."
+
+msgid "Host"
+msgstr "Sunucu"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this number is reached, the host will be blocked, no matter the username attempting to log in. <br>\n"
+"        The host blocking protection will not disappear automatically and should be removed manually from the <a href=\":access\">access rules</a> administration interface."
+msgstr ""
+"Bir anasistem için izin verilen başarısız oturum açma sayısını girin. <br>\n"
+"        Bu sayıya ulaşıldıktan sonra oturum açmaya çalışan kullanıcı adından bağımsız olarak anasistem engellenir. <br>\n"
+"        Anasistemi engelleyen koruma otomatik olarak kaybolmaz ve <a href=\":access\">erişim kuralları</a> yönetim arabiriminden manuel olarak kaldırılmalıdır."
+
+msgid "Attack detection"
+msgstr "Saldırı saptama"
+
+msgid ""
+"Enter the number of login failures before creating a warning log entry about this suspicious activity. <br>\n"
+"        If the number of invalid login events currently being tracked reach this number, and ongoing attack is detected."
+msgstr ""
+"Bu şüpheli etkinlik hakkında bir uyarı günlüğü girdisi oluşturmadan önce hatalı oturum açma sayısını girin. <br>\n"
+"        Takip edilmekte olan geçersiz oturum açma olayları sayısı, buradaki sayıya ulaşırsa ve sürekli saldırı saptanırsa."
+
+msgid "Notification"
+msgstr "Bildirim"
+
+msgid ""
+"Prevents the display of login error messages. <br>\n"
+"        A user attempting to login will not be aware if the account exists, an invalid user name or password has been submitted, or if the account is blocked. The core messages are also hidden."
+msgstr ""
+"Oturum açma hatası iletilerinin görüntülenmesini önler.<br>\n"
+"        Hesap varsa, geçersiz bir kullanıcı adı veya parola gönderilmişse ya da hesap engellenmişse oturum açmayı deneyen bir kullanıcı bu durumun farkında olmaz. Temel iletiler de gizlenir. "
+
+msgid ""
+"The user is notified about the number of remaining login attempts before the account gets blocked. <br>\n"
+"        Security tip: If you enable this option, try to not disclose as much of your login policies as possible in the message shown on any failed login attempt."
+msgstr ""
+"Kullanıcı, hesap engellenmeden önceki kalan oturum açma deneme sayısıyla ilgili bilgilendirilir. <br>\n"
+"        Güvenlik ipucu: Bu seçeneği etkinleştirirseniz, bir başarısız oturum açma denemesinde iletide oturum açma kurallarınızı mümkün olduğu kadar açıklamamaya çalışın."
+
+msgid "When a user successfully logs in, a message will display the last time he logged into the site."
+msgstr "Bir kullanıcı başarıyla oturum açtığında bir ileti sitede en son oturum açılan zamanı görüntüler."
+
+msgid "When a user successfully logs in, a message will display the last site access with this account."
+msgstr "Bir kullanıcı başarıyla oturum açtığında, bir ileti bu hesapla en son site erişimini görüntüler."
+
+msgid "Email for ongoing attack detection"
+msgstr "Devam eden saldırı saptaması için e-posta"
+
+msgid "To"
+msgstr "Kime"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when an ongoing attack is detected. No notification will be sent if the field is blank."
+msgstr "Devam eden bir saldırı saptandığında bir e-posta iletisi alması gereken kişiler için virgülle ayrılmış e-posta adresleri listesi sağlayın. Alan boşsa bildirim gönderilmez."
+
+msgid "Subject"
+msgstr "Konu"
+
+msgid "Body"
+msgstr "Gövde"
+
+msgid "Email for blocked account"
+msgstr "Engellenen hesap için e-posta"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when a user is blocked. No notification will be sent if the field is blank."
+msgstr "Bir kullanıcı engellendiğinde bir e-posta iletisi alacak kişilerin e-posta adreslerinin virgülle ayrılmış listesini sağlayın. Alan boşsa bildirim gönderilmez."
+
+msgid "Failed login attempt"
+msgstr "Başarısız oturum açma denemesi"
+
+msgid "Enter the message string to be shown if the login fails after the form is submitted."
+msgstr "Form gönderildikten sonra oturum açma başarısız olursa gösterilecek ileti dizesini girin."
+
+msgid "Banned host (soft IP ban)"
+msgstr "Yasaklı anasistem (geçici IP yasağı)"
+
+msgid "Enter the soft IP ban message to be shown when a host attempts to log in too many times."
+msgstr "Bir anasistem çok fazla kez oturum açmayı denediğinde gösterilecek esnek IP engelleme iletisini girin."
+
+msgid "Banned host (hard IP ban)"
+msgstr "Yasaklı anasistem (kalıcı IP yasağı)"
+
+msgid "Enter the hard IP ban message to be shown when a host attempts to log in too many times."
+msgstr "Bir anasistem çok fazla kez oturum açmayı denediğinde gösterilecek sabit IP engelleme iletisini girin."
+
+msgid "Blocked user by uid"
+msgstr "Uid değerine göre engellenen kullanıcı"
+
+msgid "Enter the message to be shown when a user gets blocked due to enough failed login attempts."
+msgstr "Yeterli sayıda başarısız oturum açma denemesi nedeniyle bir kullanıcı engellendiğinde gösterilecek iletiyi girin."
+
+msgid "Tokens"
+msgstr "tokens"
+
+msgid "<ul><li>%date: The (formatted) date and time of the event.</li><li>%ip: The IP address tracked for this event.</li><li>%username: The username entered in the login form (sanitized).</li><li>%email: If the user exists, this will be the email address.</li><li>%uid: If the user exists, this will be the user uid.</li><li>%site: The name of the site as configured in the administration.</li><li>%uri: The base url of this Drupal site.</li><li>%edit_uri: Direct link to the user (based on the name entered) edit page.</li><li>%hard_block_attempts: Configured maximum attempts before hard blocking the IP address.</li><li>%soft_block_attempts: Configured maximum attempts before soft blocking the IP address.</li><li>%user_block_attempts: Configured maximum login attempts before blocking the user.</li><li>%user_ip_current_count: The total attempts for this user name tracked from this IP address.</li><li>%ip_current_count: The total login attempts tracked from from this IP address.</li><li>%user_current_count: The total login attempts tracked for this user name .</li><li>%tracking_time: The tracking time value: in hours.</li><li>%tracking_current_count: Total tracked events</li><li>%activity_threshold: Value of attempts to detect ongoing attack.</li></ul>"
+msgstr "<ul><li>%date: Olayın (biçimlendirilmiş) tarih ve saati.</li><li>%ip: Bu olay için izlenen IP adresi.</li><li>%username: Oturum açma formuna (temizlenmiş) girilen kullanıcı adı.</li><li>%email: Kullanıcı varsa bu, e-posta adresi olur.</li><li>%uid: Kullanıcı varsa bu, kullanıcı uid değeri olur.</li><li>%site: Yönetimde yapılandırıldığı şekliyle sitenin adı.</li><li>%uri: Bu Drupal sitesinin temel url'si.</li><li>%edit_uri: Kullanıcı (girilen ada göre) düzenleme sayfasına doğrudan bağlantı.</li><li>%hard_block_attempts: IP adresini kalıcı olarak engellemeden önceki yapılandırılan maksimum deneme sayısı.</li><li>%soft_block_attempts: IP adresini geçici olarak engellemeden önceki yapılandırılan maksimum deneme sayısı.</li><li>%user_block_attempts:  Kullanıcı engellenmeden önce yapılandırılan maksimum oturum açma denemesi.</li><li>%user_ip_current_count: Bu IP adresinden izlenen kullanıcı adı için toplam deneme sayısı.</li><li>%ip_current_count: Bu IP adresinden izlenen toplam oturum açma denemesi.</li><li>%user_current_count: Bu kullanıcı adı için izlenen toplam oturum açma denemesi.</li><li>%tracking_time: İzleme süresi değeri: saat cinsinden.</li><li>%tracking_current_count: Toplam izlenen olay</li><li>%activity_threshold: Devam eden saldırıyı saptama denemesinin değeri.</li></ul>"
+
+msgid "Clear event tracking information"
+msgstr "Olay izleme bilgilerini temizle"
+
+msgid "Login Security event track list is now empty. @count item(s) deleted."
+msgstr "Oturum Açma Güvenliği olay izleme listesi şu anda boş. @count öğe silindi."
+

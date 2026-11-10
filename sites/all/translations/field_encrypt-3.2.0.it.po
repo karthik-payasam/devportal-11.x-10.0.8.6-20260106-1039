@@ -1,0 +1,275 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Field encryption"
+msgstr "Codifica di un campo"
+
+msgid "Warning: changing field encryption settings may cause data corruption!<br />When changing these settings, existing fields will be (re)encrypted in batch according to the new settings. <br />Make sure you have a proper backup, and do not perform this action in an environment where the data will be changing during the batch operation, to avoid data loss."
+msgstr "Avvertenza: la modifica delle impostazioni di codifica del campo può causare il danneggiamento dei dati.<br />Quando di cambiano queste impostazioni, i campi esistenti saranno nuovamente codificati in batch in base alle nuove impostazioni. <br />Assicurati di disporre di un backup corretto, e di non eseguire questa azione in un ambiente in cui i dati saranno modificati durante l'operazione batch, per evitare la perdita di dati."
+
+msgid "Encrypt field"
+msgstr "Codifica campo"
+
+msgid "Makes the field storage encrypted."
+msgstr "Codifica lo storage del campo."
+
+msgid "Properties"
+msgstr "Proprietà"
+
+msgid "Specify the field properties to encrypt."
+msgstr "Specificare le proprietà del campo da codificare."
+
+msgid "Field Encrypt"
+msgstr "Codifica campo"
+
+msgid "Update to field_encrypt version 3 is not supported."
+msgstr "L'aggiornamento a field_encrypt versione 3 non è supportato."
+
+msgid "In order to upgrade you need to decrypt all your data on the previous version and uninstall the module."
+msgstr "Per effettuare l'upgrade è necessario decrittografare tutti i dati nella versione precedente e disinstallare il modulo."
+
+msgid "Field Encrypt entity hooks"
+msgstr "Hook entità di Crittografia campo"
+
+msgid "Unable to dynamically create entity hooks"
+msgstr "Impossibile creare gli hook entità in modo dinamico"
+
+msgid "In order to use Field Encrypt the following methods need to be defined:@functions"
+msgstr "Per utilizzare Crittografia campo, è necessario definire i seguenti metodi: @functions"
+
+msgid "Extends the Field API to allow encryption of fields."
+msgstr "Estende l'API del campo per consentire la crittografia dei campi."
+
+msgid "Encryption"
+msgstr "Codifica"
+
+msgid "Field Encrypt settings"
+msgstr "Impostazioni di codifica del campo."
+
+msgid "Manage field encryption settings"
+msgstr "Gestisci impostazioni di codifica campo"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Encrypted fields overview"
+msgstr "Panoramica dei campi codificati"
+
+msgid "Encrypted fields entity type settings"
+msgstr "Impostazioni del tipo di entità dei campi crittografati"
+
+msgid "Process queues"
+msgstr "Elabora code"
+
+msgid "Administer field encryption"
+msgstr "Gestisci codifica dei campi"
+
+msgid "Allows fields to be individually encrypted so that their data is better protected."
+msgstr "Consente ai campi di essere codificati singolarmente in modo che i dati siano protetti meglio."
+
+msgid "Field Encrypt entity type settings"
+msgstr "Impostazioni del tipo di entità di Crittografia campo"
+
+msgid "Process queued updates"
+msgstr "Elabora aggiornamenti accodati"
+
+msgid "Field encrypt setting"
+msgstr "Impostazioni di codifica del campo"
+
+msgid "Encrypt"
+msgstr "Codifica"
+
+msgid "Property"
+msgstr "Proprietà"
+
+msgid "Properties placeholders"
+msgstr "Segnaposti proprietà"
+
+msgid "Placeholder"
+msgstr "Segnalibro"
+
+msgid "Field Encrypt Settings"
+msgstr "Impostazioni di codifica del campo."
+
+msgid "Encryption profile"
+msgstr "Profilo di codifica"
+
+msgid "Exclude from persistent caches"
+msgstr "Escludi dalle cache persistenti"
+
+msgid "Field types"
+msgstr "Tipi di campo"
+
+msgid "Properties to encrypt"
+msgstr "Proprietà da codificare"
+
+msgid "Property name"
+msgstr "Nome proprietà"
+
+msgid "Batch size"
+msgstr "Dimensione batch"
+
+msgid "Entity type ID"
+msgstr "ID tipo di entità"
+
+msgid "Encrypted base fields"
+msgstr "Campi di base crittografati"
+
+msgid "Base field"
+msgstr "Campo base"
+
+msgid "Base field property"
+msgstr "Proprietà campo di base"
+
+msgid "Encrypted data"
+msgstr "Dati crittografati"
+
+msgid "Stores data from encrypted fields."
+msgstr "Memorizza i dati dai campi crittografati."
+
+msgid "Field"
+msgstr "Campo"
+
+msgid "Entity type"
+msgstr "Tipo di entità"
+
+msgid "Operations"
+msgstr "Operazioni"
+
+msgid "There are no encrypted fields."
+msgstr "Non vi sono campi codificati."
+
+msgid "Decrypt"
+msgstr "Decodifica"
+
+msgid "Updates to @entity_type with existing data been queued to be processed. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the updates will be performed automatically by cron."
+msgstr "Gli aggiornamenti a @entity_type con i dati esistenti sono stati accodati per l'elaborazione. È necessario <a href=\":url\">eseguire immediatamente questo processo manualmente</a>. In alternativa, gli aggiornamenti saranno eseguiti automaticamente da cron."
+
+msgid "Updates to entities with existing data for this field have been queued to be processed. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the updates will be performed automatically by cron."
+msgstr "Gli aggiornamenti alle entità con dati esistenti di questo campo sono stati accodati per essere elaborati. È necessario <a href=\":url\">eseguire immediatamente questo processo manualmente</a>. In alternativa, gli aggiornamenti saranno eseguiti automaticamente da cron."
+
+msgid "Are you sure you want to remove encryption for field %field on %entity_type?"
+msgstr "Si è sicuri di voler rimuovere la codifica dal campo %field in %entity_type?"
+
+msgid "Remove field encryption"
+msgstr "Rimuovi codifica campo"
+
+msgid "This action removes field encryption from the specified field. Existing field data will be decrypted through a batch process."
+msgstr "Questa azione rimuove la codifica dal campo specificato. I dati esistenti del campo verranno decodificati attraverso un processo batch."
+
+msgid "Select a entity type to configure"
+msgstr "Selezionare un tipo di entità da configurare"
+
+msgid "Base fields to encrypt"
+msgstr "Campi di base da crittografare"
+
+msgid "Note that encrypted fields can not be filtered on in SQL queries or joined against."
+msgstr "Tenere presente che non è possibile applicare filtri o unioni sui campi crittografati nelle query SQL."
+
+msgid "Save configuration"
+msgstr "Salva configurazione"
+
+msgid "@label properties"
+msgstr "Proprietà @label"
+
+msgid "Specify the base field properties to encrypt. If none are selected the base field will not be encrypted."
+msgstr "Specificare le proprietà del campo di base da crittografare. Se non viene effettuata alcuna selezione, il campo di base non verrà crittografato."
+
+msgid "Updated encryption settings for %entity_type base fields."
+msgstr "Impostazioni di crittografia aggiornate per i campi di base %entity_type."
+
+msgid "Update encryption profile"
+msgstr "Aggiorna profilo di crittografia"
+
+msgid "Usages"
+msgstr "Utilizzi"
+
+msgid "If the field encryption profile is changed entities can be updated to use the new encryption profile."
+msgstr "Se il profilo di crittografia del campo viene modificato, è possibile aggiornare le entità in modo che utilizzino il nuovo profilo di crittografia."
+
+msgid "Process updates"
+msgstr "Elabora aggiornamenti"
+
+msgid "Field encryption updates"
+msgstr "Aggiornamenti alla crittografia del campo"
+
+msgid "Cannot claim an item - unable to process the batch"
+msgstr "Impossibile richiedere un campo - impossibile elaborare il batch"
+
+msgid "There is one entity queued for updating to use the latest field encryption settings."
+msgid_plural "There are @count entities queued for updating to use the latest field encryption settings."
+msgstr[0] "È presente un'entità accodata per l'aggiornamento per utilizzare le impostazioni di crittografia del campo più recenti."
+msgstr[1] "Sono presenti @count entità accodate per l'aggiornamento per utilizzare le impostazioni di crittografia del campo più recenti."
+
+msgid "One entity updated."
+msgid_plural "@count entities updated."
+msgstr[0] "Un'entità aggiornata."
+msgstr[1] "@count entità aggiornate."
+
+msgid "Select the encryption profile to use for encrypting fields. New entities and revisions will always use this profile. Existing entities and revisions can be updated via <a href=\":link\">Encrypted fields entity type settings</a>"
+msgstr "Selezionare il profilo di crittografia da utilizzare per la crittografia dei campi. Le nuove entità e revisioni utilizzeranno sempre questo profilo. Le entità e revisioni esistenti possono essere aggiornate tramite le <a href=\":link\">impostazioni del tipo di entità dei campi crittografati</a>"
+
+msgid "Exclude entities from persistent caches"
+msgstr "Escludere le entità dalle cache persistenti"
+
+msgid "This ensures unencrypted data is not exposed in the cache. However, it negatively impacts performance because it prevents caching of all entity types for which field encryption is enabled, even entity bundles that do not have any encrypted fields."
+msgstr "Questo garantisce che i dati non crittografati non siano esposti nella cache. Tuttavia, ha effetti negativi sulle prestazioni perché impedisce la memorizzazione nella cache di tutti i tipi di entità per cui è abilitata la crittografia dei campi, anche i bundle di entità che non dispongono di campi crittografati."
+
+msgid "Default properties"
+msgstr "Proprietà predefinite"
+
+msgid "Select which field properties will be checked by default on the field encryption settings form, per field type. Note that this does not change existing field settings, but merely sets sensible defaults."
+msgstr "Selezionare quali proprietà campo saranno controllate per impostazione predefinita nel form delle impostazioni di codifica del campo, per tipo di campo. Ciò non cambia le impostazioni esistenti campo, ma imposta solo valori predefiniti sensibili."
+
+msgid "@field_type properties"
+msgstr "Proprietà @field_type"
+
+msgid "Specify the default properties to encrypt for this field type."
+msgstr "Specifica le proprietà predefinite da codificare per questo tipo di campo."
+
+msgid "Batch update settings"
+msgstr "Le impostazioni di aggiornamento batch"
+
+msgid "Configure behaviour of the batch field update feature. When changing field encryption settings for fields that already contain data, a batch process will be started that updates the existing field values according to the new settings."
+msgstr "Configura il comportamento della funzione di aggiornamento del campo in batch. Quando si modificano le impostazioni di codifica dei campi che contengono dati, viene avviato un processo batch che aggiorna i valori dei campi esistenti in base alle nuove impostazioni."
+
+msgid "Specify the number of entities to process on each field update batch execution. It is recommended to keep this number low, to avoid timeouts."
+msgstr "Specificare il numero di entità da elaborare in ciascuna esecuzione del batch di aggiornamento del campo. Si consiglia di mantenere questo numero basso, per evitare timeout."
+
+msgid "Are you sure you want to update the encryption profile from %from to %to for %entity_type_plural?"
+msgstr "Si è sicuri di voler aggiornare il profilo di crittografia da %from a %to per %entity_type_plural?"
+
+msgid "Existing entities will be updated through a batch process."
+msgstr "Le entità esistenti verranno aggiornate tramite un processo batch."
+
+msgid "Queued one %entity_type update. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the update will be performed automatically by cron."
+msgid_plural "Queued @count @entity_type updates. You should immediately <a href=\":url\">run this process manually</a>. Alternatively, the updates will be performed automatically by cron."
+msgstr[0] "Un aggiornamento per %entity_type accodato. È necessario <a href=\":url\">eseguire immediatamente questo processo manualmente</a>. Altrimenti, l'aggiornamento verrà eseguito automaticamente da cron."
+msgstr[1] "@count aggiornamenti per @entity_type accodati. È necessario <a href=\":url\">eseguire immediatamente questo processo manualmente</a>. Altrimenti, gli aggiornamenti verranno eseguiti automaticamente da cron."
+
+msgid "Decrypted data"
+msgstr "Dati decrittografati"
+
+msgid "Encrypted field storage"
+msgstr "Archiviazione del campo crittografato"
+
+msgid "Stores encrypted field data."
+msgstr "Archivia i dati del campo crittografato."
+
+msgid "Updating @entity_type with ID @entity_id to use the latest field encryption settings"
+msgstr "Aggiornamento di @entity_type con ID @entity_id per utilizzare le impostazioni di crittografia del campo più recenti"
+
+msgid "Field encrypt: update encrption profile."
+msgstr "Crittografia del campo: aggiorna profilo di crittografia."
+

@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Default theme implementation to webform confirmation.
+ *
+ * Available variables:
+ * - progress: Progress bar.
+ * - message: Confirmation message.
+ * - back_url: URL to the previous webform submission.
+ *
+ * @see template_preprocess_webform_confirmation()
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('webform/webform.confirmation') }}
+
+{% if progress %}
+  {{ progress }}
+{% endif %}
+<div class="webform-api-partner-consumer-confirmation-wrapper">
+     <div class="webform-api-partner-consumer-confirmation-box">
+             <div class="webform-api-partner-consumer-confirmation-icon">
+                   <i class="fa-solid fa-circle-check"></i>
+             </div>
+            <div class="webform-api-partner-consumer-confirmation-title">
+                  🎉 Submission Successful!
+            </div>
+             {% if message %}
+            <div class="webform-api-partner-consumer-confirmation-message">
+               {{ message }}
+            </div>
+             {% endif %} 
+            <div class="webform-api-partner-consumer-confirmation-info">
+                  <i class="fa-solid fa-info-circle"></i>
+                   You will receive an email confirmation shortly.  
+                   <br /> For any modifications to an existing API, please create a new API submission instead of editing the old one
+             </div>
+            <div class="webform-api-partner-consumer-confirmation-actions">
+                  <a href="{{ back_url }}" rel="prev"{{ back_attributes }} class="back"> <i class="fa-solid fa-arrow-left"></i>{{ back_label }}</a>
+                 <a href="/devcustportal/csb-portal/" 
+                    class="dashboard">
+                   <i class="fa-solid fa-gauge"></i> Go to Dashboard
+                </a>
+            </div>
+</div>
+</div>
+
+

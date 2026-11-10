@@ -1,0 +1,254 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "关于"
+
+msgid "The Configuration Update Reports module provides a report that allows you to see the differences between the default configuration provided by the current versions of your installed modules, themes, and install profile, and the active configuration of your site. From this report, you can also import new configuration provided by updates, and revert your active configuration to the provided default values."
+msgstr "“配置更新报告”模块提供一个报告，可用于查看当前版本的已安装模块、主题和安装概要文件所提供的缺省配置与站点的活动配置之间的差异。通过此报告，您还可以导入更新所提供的新配置，并将活动配置还原为所提供的缺省值。"
+
+msgid "Uses"
+msgstr "用法"
+
+msgid "Checking for configuration differences"
+msgstr "检查配置差异"
+
+msgid "The <a href=\":report\">Updates report</a> shows you configuration that differs between your site's active configuration and the installed modules, themes, and install profile. Choose a particular configuration type (or All), or run the report for a particular module, theme, or your install profile."
+msgstr "<a href=\":report\">更新报告</a>显示站点的活动配置与已安装模块、主题和安装概要文件之间不同的配置。选择特定配置类型（或“全部”），或者针对特定模块、主题或安装概要文件运行该报告。"
+
+msgid "This report shows which default configuration items provided by the current versions of your installed modules, themes, and install profile differ from the active configuration of your site. You can generate the report for all configuration of a certain type; for a particular installed module, theme, or your install profile (only modules, themes, and install profiles that actually provide configuration are listed); or for all configuration."
+msgstr "此报告显示当前版本的已安装模块、主题和安装概要文件所提供的、与站点的活动配置有所不同的缺省配置项。您可以针对特定类型的所有配置、对某个特定的已安装模块、主题或安装概要文件（仅列出实际提供配置的模块、主题和安装概要文件）或对所有配置生成该报告。"
+
+msgid "Some configuration provided by modules has dependencies, and is only added to your system when all the dependencies are satisfied. This is known as <em>optional</em> configuration."
+msgstr "模块提供的某些配置存在依赖关系，只有在满足所有依赖关系时才会添加到系统中。这称为<em>可选</em>配置。"
+
+msgid "Differences, including missing and added configuration, can be due to either an updated module or theme providing different configuration from when you installed it, or to changes made by site administrators. This report does not differentiate between these two sources for differences, and note that an install profile can also silently override module/theme configuration. Overrides (such as those in your settings.php file) and translations are not considered when looking at differences."
+msgstr "存在差异（包括缺失的配置和添加的配置）的原因可能是更新的模块或主题提供了与安装时不同的配置，或者站点管理员进行过更改。此报告不区分这两种差异来源，请注意安装概要文件也可能会静默覆盖模块/主题配置。在查找差异时，不考虑覆盖（例如，settings.php 文件中的覆盖）和翻译项。"
+
+msgid "Most configuration is organized into a hierarchy of settings; at a minimum, it is a one-level hierarchy where each setting has a name and a value, and the hierarchy comes in when some of the settings have multiple components."
+msgstr "大多数配置按设置层次结构进行组织；这种层次结构必须至少是单层层次结构，其中每个设置都有一个名称和一个值；当某些设置具有多个组件时就会产生层次结构。"
+
+msgid "Configuration items are normalized and formatted before computing differences. The normalization step alphabetizes the components at each level of the hierarchy, and removes a few components whose differences should be ignored, such as the UUID. The formatting step shows the full hierarchy of each configuration value with :: separators for the hierarchy levels, and a : separator between the lowest-level setting name and the value, so that in a line-by-line diff you can always see which values are actually different. Green lines with + signs have been added, and yellow lines with - signs have been removed."
+msgstr "在计算差异之前，会对配置项进行规范化和格式化。规范化步骤在层次结构的每一层按字母顺序对组件进行排序，并移除一些应忽略其差异的组件（例如，UUID）。格式化步骤显示每个配置值的完整层次结构（以 :: 作为层次结构级别的分隔符），并且最低级设置名称和值之间有一个 : 分隔符，因此您总能在逐行差异中查看实际存在差异的值。添加了带有 + 号的绿色行，并且移除了带有 - 号的黄色行。"
+
+msgid "Note that differences are considering the base configuration, without overrides from your settings.php file, or translations."
+msgstr "请注意，差异将考虑基本配置，但不考虑 settings.php 文件中的覆盖或翻译项。"
+
+msgid "Updates report"
+msgstr "更新报告"
+
+msgid "Configuration Update Reports"
+msgstr "配置更新报告"
+
+msgid "Adds an updates report and revert functionality to configuration management."
+msgstr "为配置管理添加了更新报告和还原功能。"
+
+msgid "View configuration updates report"
+msgstr "查看配置更新报告"
+
+msgid "Revert any configuration"
+msgstr "还原任何配置"
+
+msgid "Delete any configuration"
+msgstr "删除任何配置"
+
+msgid "Import"
+msgstr "引入"
+
+msgid "Differences"
+msgstr "差异"
+
+msgid "Revert"
+msgstr "恢复"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Configuration Update Reports settings"
+msgstr "配置更新报告设置"
+
+msgid "Ignored configuration items"
+msgstr "已忽略的配置项"
+
+msgid "No added config."
+msgstr "未添加配置。"
+
+msgid "No missing config."
+msgstr "无缺失配置。"
+
+msgid "No inactive config."
+msgstr "无不活动的配置。"
+
+msgid "No different config"
+msgstr "无其他配置"
+
+msgid "Config is missing, cannot diff."
+msgstr "配置缺失，无法区分。"
+
+msgid "The configuration item @name was reverted to its source."
+msgstr "配置项“@name”已还原到其源。"
+
+msgid "There was an error and the configuration item @name was not reverted."
+msgstr "发生错误，未还原配置项“@name”。"
+
+msgid "The configuration item @name was imported from its source."
+msgstr "已从源导入配置项“@name”。"
+
+msgid "There was an error and the configuration item @name was not imported."
+msgstr "发生错误，未导入配置项“@name”。"
+
+msgid "Simple configuration"
+msgstr "简单配置"
+
+msgid "Config difference for @type @name"
+msgstr "@type @name 的配置差异"
+
+msgid "Source config"
+msgstr "源配置"
+
+msgid "Site config"
+msgstr "站点配置"
+
+msgid "There are no changes."
+msgstr "未做任何更改。"
+
+msgid "Revert to source"
+msgstr "还原到源"
+
+msgid "Export"
+msgstr "导出"
+
+msgid "Back to 'Updates report' page"
+msgstr "返回到“更新报告”页面"
+
+msgid "Generate new report"
+msgstr "生成新报告"
+
+msgid "Report type"
+msgstr "报告类型"
+
+msgid "Report on"
+msgstr "报告对象"
+
+msgid "Everything"
+msgstr "全部"
+
+msgid "Full report"
+msgstr "完整报告"
+
+msgid "Single configuration type"
+msgstr "单一配置类型"
+
+msgid "Single module"
+msgstr "单个模块"
+
+msgid "Single theme"
+msgstr "单个主题"
+
+msgid "Installation profile"
+msgstr "安装概要文件"
+
+msgid "All configuration"
+msgstr "所有配置"
+
+msgid "@name configuration"
+msgstr "@name 配置"
+
+msgid "@name module"
+msgstr "@name 模块"
+
+msgid "@name theme"
+msgstr "@name 主题"
+
+msgid "@name profile"
+msgstr "@name 概要文件"
+
+msgid "Configuration updates report for @label"
+msgstr "@label 的配置更新报告"
+
+msgid "Missing configuration items"
+msgstr "缺少配置项"
+
+msgid "None: all provided configuration items are in your active configuration."
+msgstr "注：提供的所有配置项均位于活动配置中。"
+
+msgid "Inactive optional items"
+msgstr "不活动的可选项"
+
+msgid "None: all optional configuration items are in your active configuration."
+msgstr "注：所有可选配置项均位于活动配置中。"
+
+msgid "Added configuration items"
+msgstr "添加的配置项"
+
+msgid "None: all active configuration items of this type were provided by modules, themes, or install profile."
+msgstr "无：模块、主题或安装概要文件已提供此类型的所有活动配置项。"
+
+msgid "Changed configuration items"
+msgstr "更改的配置项"
+
+msgid "None: no active configuration items differ from their current provided versions."
+msgstr "无：活动配置项与提供的当前版本之间无任何差异。"
+
+msgid "Machine name"
+msgstr "机器名"
+
+msgid "Label (if any)"
+msgstr "标签（如果有）"
+
+msgid "Type"
+msgstr "类 "
+
+msgid "Provider"
+msgstr "提供程序"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "Import from source"
+msgstr "从源导入"
+
+msgid "Show differences"
+msgstr "显示差异"
+
+msgid "Malformed config file @config_name."
+msgstr "配置文件 @config_name 格式不正确。"
+
+msgid "Are you sure you want to delete the %type config %item?"
+msgstr "是否确定要删除 %type config %item？"
+
+msgid "This action cannot be undone. Manually deleting configuration from this page can cause problems on your site due to missing dependencies, and should only be done if there is no other way to delete a problematic piece of configuration."
+msgstr "此操作无法撤销。手动删除此页面的配置可能导致站点因缺少依赖项而出现问题，因此，只应在其他方式无法删除存在问题的配置项时才执行此操作。"
+
+msgid "The configuration %item has been deleted."
+msgstr "已删除配置 %item。"
+
+msgid "Are you sure you want to import the %type config %item from its source configuration?"
+msgstr "确定要从其源配置导入 %type config %item 吗？"
+
+msgid "Configuration will be added to your site. This action cannot be undone."
+msgstr "将向您的站点添加配置。此操作无法撤销。"
+
+msgid "The configuration %item has been imported from its source."
+msgstr "已从源导入配置 %item。"
+
+msgid "Are you sure you want to revert the %type config %item to its source configuration?"
+msgstr "是否确定要将 %type 配置 %item 还原为其源配置？"
+
+msgid "Customizations will be lost. This action cannot be undone."
+msgstr "定制将丢失。此操作无法撤销。"
+
+msgid "The configuration %item has been reverted to its source."
+msgstr "配置 %item 已还原为其源。"
+

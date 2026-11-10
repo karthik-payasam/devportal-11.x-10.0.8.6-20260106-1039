@@ -1,0 +1,576 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Invalid number of redirects."
+msgstr "リダイレクトの数が無効です。"
+
+msgid "How many URL redirects would you like to generate?"
+msgstr "URL リダイレクトをいくつ生成しますか?"
+
+msgid "Delete all URL redirects before generating new URL redirects."
+msgstr "すべての URL リダイレクトを削除してから、新しい URL リダイレクトを生成します。"
+
+msgid "Generate"
+msgstr "生成する"
+
+msgid "Deleted URL redirect @rid."
+msgstr "削除された URL リダイレクト @rid。"
+
+msgid "An error occurred while processing @operation with arguments : @args"
+msgstr "引数の @operation を処理中にエラーが発生しました: @args"
+
+msgid "One URL redirect created."
+msgid_plural "@count URL redirects created."
+msgstr[0] "@count 個の URL リダイレクトが作成されました。"
+
+msgid "About"
+msgstr "アバウト"
+
+msgid "The Redirect module allows users to redirect from old URLs to new URLs.   For more information, see the <a href=\":online\">online documentation for Redirect</a>."
+msgstr "Redirect モジュールは、ユーザーが古い URL から新しい URL にリダイレクトできるようにします。詳しくは、<a href=\":online\">Redirect に関するオンライン資料</a>を参照してください。"
+
+msgid "Uses"
+msgstr "機能"
+
+msgid "Redirect is accessed from three tabs that help you manage <a href=\":list\">URL Redirects</a>."
+msgstr "Redirect は、<a href=\":list\">URL Redirects</a> の管理に役立つ 3 つのタブからアクセスされます。"
+
+msgid "Manage URL Redirects"
+msgstr "URL Redirects の管理"
+
+msgid "The <a href=\":redirect\">\"URL Redirects\"</a> page is used to setup and manage URL Redirects.  New redirects are created here using the <a href=\":add_form\">Add redirect</a> button which presents a form to simplify the creation of redirects . The URL redirects page provides a list of all redirects on the site and allows you to edit them."
+msgstr "<a href=\":redirect\">「URL Redirects」</a>ページは、URL Redirects のセットアップと管理に使用されます。新規リダイレクトは、リダイレクトを容易に作成するためのフォームを表示する<a href=\":add_form\">「リダイレクトの追加」</a>ボタンを使用してこのページに作成されます。URL リダイレクト・ページには、サイト上のすべてのリダイレクトのリストが表示され、ユーザーはこのページを使用してそれらのリダイレクトを編集できます。"
+
+msgid "Fix 404 pages"
+msgstr "404 ページを修正"
+
+msgid "<a href=\":fix_404\">\"Fix 404 pages\"</a> lists all paths that have resulted in 404 errors and do not yet have any redirects assigned to them. This 404 (or Not Found) error message is an HTTP standard response code indicating that the client was able to communicate with a given server, but the server could not find what was requested."
+msgstr "<a href=\":fix_404\">「404 ページを修正」</a>には、404 エラーが発生したが、まだリダイレクトが割り当てられていないすべてのパスがリストされます。この 404 (Not Found (見つかりません)) のエラー・メッセージは、クライアントは所定のサーバーと通信できたが、要求されたものをサーバーが見つけられなかったことを示す HTTP 標準応答コードです。"
+
+msgid "404 (or Not Found) error message is an HTTP standard response code indicating that the client was able to communicate with a given server, but the server could not find what was requested. Please install the <a href=\":extend\">Redirect 404</a> submodule to be able to log all paths that have resulted in 404 errors."
+msgstr "404 (Not Found (見つかりません)) のエラー・メッセージは、クライアントは所定のサーバーと通信できたが、要求されたものをサーバーが見つけられなかったことを示す HTTP 標準応答コードです。<a href=\":extend\">Redirect 404</a> サブモジュールをインストールして、404 エラーが発生したすべてのパスをログに記録できるようにしてください。"
+
+msgid "Configure Global Redirects"
+msgstr "グローバル・リダイレクトの構成"
+
+msgid "The <a href=\":settings\">\"Settings\"</a> page presents you with a number of means to adjust redirect settings."
+msgstr "<a href=\":settings\">「設定」</a>ページには、リダイレクト設定を調整するための複数の方法が表示されます。"
+
+msgid "Add URL redirect from this page to another location"
+msgstr "このページから別の場所に URL リダイレクトを追加します"
+
+msgid "300 Multiple Choices"
+msgstr "300 Multiple Choices (多肢選択)"
+
+msgid "301 Moved Permanently"
+msgstr "301 永続的に移動"
+
+msgid "302 Found"
+msgstr "302 検出"
+
+msgid "303 See Other"
+msgstr "303 See Other (他を参照)"
+
+msgid "304 Not Modified"
+msgstr "304 Not Modified (未変更)"
+
+msgid "305 Use Proxy"
+msgstr "305 Use Proxy (プロキシーを使用)"
+
+msgid "307 Temporary Redirect"
+msgstr "307 Temporary Redirect (一時的リダイレクト)"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "All languages"
+msgstr "すべての言語"
+
+msgid "A redirect set for a specific language will always be used when requesting this page in that language, and takes precedence over redirects set for <em>All languages</em>."
+msgstr "特定の言語のリダイレクト・セットは、その言語でこのページを要求するときに常に使用され、<em>すべての言語</em> のリダイレクト・セットよりも優先されます。"
+
+msgid "URL redirects"
+msgstr "URL リダイレクト"
+
+msgid "Redirect module form elements"
+msgstr "Redirect モジュールのフォーム・エレメント"
+
+msgid "From"
+msgstr "送信元"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "No URL redirects available."
+msgstr "使用可能な URL リダイレクトがありません。"
+
+msgid "Note: links open in the current window."
+msgstr "注: リンクは現行ウィンドウで開きます。"
+
+msgid "Add URL redirect"
+msgstr "URLリダイレクトを追加する"
+
+msgid "Redirect"
+msgstr "リダイレクト"
+
+msgid "Allows users to redirect from old URLs to new URLs."
+msgstr "ユーザーが古い URL から新しい URL にリダイレクトできるようにします。"
+
+msgid "Add redirect"
+msgstr "リダイレクトを追加"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Redirect users from one URL to another."
+msgstr "あるURLから別のURLへユーザーをリダイレクトします。"
+
+msgid "Configure behavior for URL redirects."
+msgstr "URL リダイレクトの動作を構成します。"
+
+msgid "URL Redirects"
+msgstr "URLリダイレクト"
+
+msgid "Administer individual URL redirections"
+msgstr "個々の URL リダイレクトの管理"
+
+msgid "Administer global URL redirection settings"
+msgstr "グローバルな URL リダイレクト設定の管理"
+
+msgid "Edit URL redirect"
+msgstr "URL リダイレクトの編集"
+
+msgid "Delete URL redirect"
+msgstr "URLリダイレクトを削除"
+
+msgid "Redirect settings"
+msgstr "リダイレクトの設定"
+
+msgid "Automatically create redirects when URL aliases are changed."
+msgstr "URL 別名が変更されたときに自動的にリダイレクトを作成します。"
+
+msgid "Default redirect status"
+msgstr "デフォルトのリダイレクト状況"
+
+msgid "Retain query string through redirect."
+msgstr "リダイレクトで照会ストリングを保持します。"
+
+msgid "Display a warning message to users when they are redirected."
+msgstr "リダイレクト時にユーザーに警告メッセージを表示します。"
+
+msgid "Allow redirections on admin paths."
+msgstr "管理パスでリダイレクトを許可します。"
+
+msgid "Menu Access Checking"
+msgstr "メニュー・アクセス検査"
+
+msgid "Enforce clean and canonical URLs."
+msgstr "クリーンな正規 URL を強制します。"
+
+msgid "Delete redirect configuration"
+msgstr "リダイレクト構成を削除"
+
+msgid "Redirect type"
+msgstr "リダイレクト・タイプ"
+
+msgid "Output machine name"
+msgstr "システム内部名称を出力"
+
+msgid "Redirect Source formatter"
+msgstr "ソース・フォーマッター・リダイレクト"
+
+msgid "Redirect bulk form"
+msgstr "バルク・フォーム・リダイレクト"
+
+msgid "Redirect 404"
+msgstr "Redirect 404"
+
+msgid "Overview for 404 error paths with no redirect assigned yet."
+msgstr "リダイレクトがまだ割り当てられていない 404 エラーのパスの概要。"
+
+msgid "Path"
+msgstr "パス"
+
+msgid "The path of the request."
+msgstr "要求のパス。"
+
+msgid "The language of this request."
+msgstr "この要求の言語。"
+
+msgid "Count"
+msgstr "カウント"
+
+msgid "The number of requests with that path and language."
+msgstr "そのパスと言語を使用する要求の数。"
+
+msgid "Daily count"
+msgstr "日次カウント"
+
+msgid "The number of requests with that path and language in a day."
+msgstr "1 日にそのパスと言語を使用する要求の数。"
+
+msgid "Timestamp"
+msgstr "タイムスタンプ"
+
+msgid "The timestamp of the last request with that path and language."
+msgstr "そのパスと言語を使用する最後の要求のタイム・スタンプ。"
+
+msgid "Resolved"
+msgstr "解決済み"
+
+msgid "Whether or not this path has a redirect assigned."
+msgstr "このパスにリダイレクトが割り当てられているかどうか。"
+
+msgid "Provide operation buttons to handle the 404 path."
+msgstr "404 パスの処理を行う操作ボタンを提供します。"
+
+msgid "404 error database logs to keep"
+msgstr "保持する 404 エラー・データベース・ログ"
+
+msgid "All"
+msgstr "すべて"
+
+msgid "The maximum number of 404 error logs to keep in the database log. Requires a <a href=\":cron\">cron maintenance task</a>."
+msgstr "データベース・ログに保持する 404 エラー・ログの最大数。<a href=\":cron\">クローン保守タスク</a>が必要です。"
+
+msgid "Clear all 404 log entries"
+msgstr "すべての 404 ログ・エントリーをクリアする"
+
+msgid "Pages to ignore"
+msgstr "無視するページ"
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. An example path is %user-wildcard for every user page. %front is the front page."
+msgstr "パスでページを指定します。1行に1つのパスを入力してください。'*' の文字はワイルドカードです。%user-wildcard とした場合はすべてのユーザーページが対象となります。%front はフロントページを表します。"
+
+msgid "Clear ignored 404 log entries when saving this form"
+msgstr "このフォームの保存時に無視された404ログ・エントリーをクリア"
+
+msgid "Suppress 'page not found' log messages"
+msgstr "「ページが見つかりません」のログ・メッセージを抑制します"
+
+msgid "Prevents logging 'page not found' events. Can be safely enabled when redirect_404 module is used, which stores them separately, nothing else relies on those messages."
+msgstr "「ページが見つかりません」のイベントがログに記録されないようにします。redirect_404 モジュールが使用され (これらのイベントが別個に保管されます)、このメッセージを使用しているものが他にないときに安全に有効化できます。"
+
+msgid "Logs 404 errors and allows users to create redirects for often requested but missing pages."
+msgstr "404 エラーをログに記録し、頻繁に要求されるが見つからないページに対してユーザーがリダイレクトを作成できるようにします。"
+
+msgid "Fix 404 pages with URL redirects"
+msgstr "URL リダイレクトを使用して 404 ページを修正します"
+
+msgid "Add redirects for 404 pages."
+msgstr "404 ページ用のリダイレクトを追加します。"
+
+msgid "Ignore 404 requests"
+msgstr "404要求を無視"
+
+msgid "This allows users without the Administer redirect settings to ignore specific 404 requests, without the ability to customize the 404 exclude patterns."
+msgstr "これにより、「リダイレクトの管理」を持たないユーザーは、404除外パターンをカスタマイズすることなく、特定の404要求を無視できます。"
+
+msgid "404 error database logging settings."
+msgstr "404 エラーのデータベース・ロギング設定"
+
+msgid "404 error database logs to keep."
+msgstr "保持する 404 エラー・データベース・ログ。"
+
+msgid "Whether to log 'page not found' messages to the standard log or not."
+msgstr "「ページが見つかりません」のメッセージを標準ログに記録するかどうか。"
+
+msgid "Redirect 404 operations"
+msgstr "Redirect 404 の操作"
+
+msgid "Resolved the path %path in the database."
+msgstr "データベース内のパス%pathを解決しました。"
+
+msgid "Resolved the path %path in the database. Please check the ignored list and save the settings."
+msgstr "データベース内のパス %path を解決しました。無視されたリストを確認して、設定を保存してください。"
+
+msgid "Filter 404s"
+msgstr "404 のフィルタリング"
+
+msgid "Filter"
+msgstr "フィルター"
+
+msgid "Reset"
+msgstr "リセット"
+
+msgid "Last accessed"
+msgstr "最終アクセス"
+
+msgid "Undefined @langcode"
+msgstr "未定義の @langcode"
+
+msgid "There are no 404 errors to fix."
+msgstr "修正すべき 404 エラーがありません。"
+
+msgid "Ignore"
+msgstr "無視"
+
+msgid "The Redirect domain module allows users to redirect between domains."
+msgstr "Redirect Domain モジュールは、ユーザーがドメイン間でリダイレクトできるようにします。"
+
+msgid "Manage domain redirects"
+msgstr "ドメインのリダイレクトの管理"
+
+msgid "The domain redirect is accessed through <a href=\":domainlist\">Domain Redirects</a>. The user can add the domain redirects through the domain redirect table which consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected. The module also supports the usage of a wildcard redirecting, thus many requests can be handled with one instance of domain redirect."
+msgstr "ドメインのリダイレクトは、<a href=\":domainlist\">Domain Redirects</a> を介してアクセスされます。ユーザーは、ドメイン・リダイレクト・テーブルを使用してドメインのリダイレクトを追加できます。このテーブルは、リダイレクト元のドメイン、サブパス、およびリダイレクトの宛先の完全な URL から構成されています。このモジュールは、ワイルドカード・リダイレクトの使用もサポートしているため、多くの要求をドメイン・リダイレクトの 1 つのインスタンスで処理できます。"
+
+msgid "The domain redirect table consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected."
+msgstr "ドメイン・リダイレクト・テーブルは、リダイレクト元のドメイン、サブパス、およびリダイレクトの宛先の完全な URL から構成されています。"
+
+msgid "Example Configuration"
+msgstr "構成の例"
+
+msgid "Example Redirects"
+msgstr "リダイレクトの例"
+
+msgid "Request: example.com/redirect => Response: redirected.com/example-path"
+msgstr "要求: example.com/redirect => 応答: redirected.com/example-path"
+
+msgid "Request: foo.com/any-path => Response: bar.com"
+msgstr "要求: foo.com/any-path => 応答: bar.com"
+
+msgid "Precedence"
+msgstr "優先順位"
+
+msgid "Top-down precedence is used. This means the first matching redirect that is found will be taken. For example, assume these redirect rules:"
+msgstr "トップダウン優先順位が使用されます。つまり、最初に検出された一致するリダイレクトが使用されます。例えば、以下のようなリダイレクト・ルールがあるとします。"
+
+msgid "foo.com/some/path => somedomain.com/path"
+msgstr "foo.com/some/path => somedomain.com/path"
+
+msgid "foo.com/* => wildcardredirect.com"
+msgstr "foo.com/* => wildcardredirect.com"
+
+msgid "foo.com/other/path => otherdomain.com/path"
+msgstr "foo.com/other/path => otherdomain.com/path"
+
+msgid "The following redirects would actually occur:"
+msgstr "実際には、以下のようなリダイレクトが行われます。"
+
+msgid "foo.com/other/path => wildcardredirect.com"
+msgstr "foo.com/other/path => wildcardredirect.com"
+
+msgid "Redirect Domain"
+msgstr "リダイレクト・ドメイン"
+
+msgid "Allows users to redirect between domains."
+msgstr "ユーザーがドメイン間でリダイレクトできるようにします。"
+
+msgid "Domain redirects"
+msgstr "ドメインのリダイレクト"
+
+msgid "Configure domain redirects."
+msgstr "ドメイン・リダイレクトを構成します。"
+
+msgid "Redirect domains"
+msgstr "リダイレクト・ドメイン"
+
+msgid "Sub path"
+msgstr "サブパス"
+
+msgid "Destination"
+msgstr "行き先"
+
+msgid "From domain"
+msgstr "リダイレクト元ドメイン"
+
+msgid "Add another"
+msgstr "もう 1 つ追加"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "No protocol should be included in the redirect domain."
+msgstr "プロトコルをリダイレクト・ドメインに含めてはなりません。"
+
+msgid "The domain redirects have been saved."
+msgstr "ドメインのリダイレクトが保存されました。"
+
+msgid "Redirect ID"
+msgstr "リダイレクトID"
+
+msgid "The redirect ID."
+msgstr "リダイレクト ID。"
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "The record UUID."
+msgstr "レコード UUID。"
+
+msgid "Hash"
+msgstr "ハッシュ"
+
+msgid "The redirect hash."
+msgstr "リダイレクト・ハッシュ。"
+
+msgid "Type"
+msgstr "タイプ"
+
+msgid "The redirect type."
+msgstr "リダイレクト・タイプ。"
+
+msgid "User ID"
+msgstr "ユーザーID"
+
+msgid "The user ID of the node author."
+msgstr "ノード投稿者のユーザーID。"
+
+msgid "Enter an internal Drupal path or path alias to redirect (e.g. %example1 or %example2). Fragment anchors (e.g. %anchor) are <strong>not</strong> allowed."
+msgstr "リダイレクトする内部 Drupal パスまたはパスの別名 (例えば、%example1 や %example2) を入力してください。フラグメント・アンカー (例えば、%anchor) は許可<strong>されていません</strong>。"
+
+msgid "To"
+msgstr "宛先"
+
+msgid "The redirect language."
+msgstr "リダイレクト言語。"
+
+msgid "Status code"
+msgstr "状態コード"
+
+msgid "The redirect status code."
+msgstr "リダイレクト状況コード。"
+
+msgid "Created"
+msgstr "作成"
+
+msgid "The date when the redirect was created."
+msgstr "リダイレクトが作成された日付。"
+
+msgid "Redirect loop identified at %path for redirect %rid"
+msgstr "%path でリダイレクト %rid のリダイレクト・ループが識別されました"
+
+msgid "Are you sure you want to delete the URL redirect from %source to %redirect?"
+msgstr "本当に%sourceから%redirectへのURLリダイレクトを削除してもよろしいですか？"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "The redirect %redirect has been deleted."
+msgstr "リダイレクト %redirect が削除されました。"
+
+msgid "Deleted @count redirects."
+msgstr "@count 個のリダイレクトを削除しました。"
+
+msgid "Are you sure you want to delete this redirect?"
+msgid_plural "Are you sure you want to delete these redirects?"
+msgstr[0] "これらのリダイレクトを削除しますか?  "
+
+msgid "Deleted 1 redirect."
+msgid_plural "Deleted @count redirects."
+msgstr[0] "@count 個のリダイレクトを削除しました。"
+
+msgid "Invalid redirect URL %url provided."
+msgstr "無効なリダイレクト URL %url が指定されました。"
+
+msgid "- All languages -"
+msgstr "- すべての言語 -"
+
+msgid "Redirect status"
+msgstr "リダイレクトステータス"
+
+msgid "You can find more information about HTTP redirect status codes at <a href=\"@status-codes\">@status-codes</a>."
+msgstr "リダイレクトコードに関する詳しい情報はこちらをご覧ください。<a href=\"@status-codes\">@status-codes</a>"
+
+msgid "It is not allowed to create a redirect from the front page."
+msgstr "フロントページからリダイレクトを作成することはできません。"
+
+msgid "The anchor fragments are not allowed."
+msgstr "アンカー・フラグメントは許可されていません。"
+
+msgid "The url to redirect from should not start with a forward slash (/)."
+msgstr "リダイレクト元の URL はスラッシュ (/) から始めることはできません。"
+
+msgid "You are attempting to redirect the page to itself. This will result in an infinite loop."
+msgstr "ページをそのページ自体にリダイレクトしようとしています。これにより無限ループが発生します。"
+
+msgid "The source path %source is already being redirected. Do you want to <a href=\"@edit-page\">edit the existing redirect</a>?"
+msgstr "ソース・パス %source は既にリダイレクト中です。<a href=\"@edit-page\">既存のリダイレクトを編集</a>しますか?"
+
+msgid "The redirect has been saved."
+msgstr "リダイレクトが保存されました。"
+
+msgid "For example, given a redirect from %source to %redirect, if a user visits %sourcequery they would be redirected to %redirectquery. The query strings in the redirection will always take precedence over the current query string."
+msgstr "例えば、%source から %redirect にリダイレクトする場合、ユーザーは %sourcequery にアクセスすると、%redirectquery にリダイレクトされます。リダイレクトの照会ストリングは、現在の照会ストリングよりも常に優先されます。"
+
+msgid "Global redirects"
+msgstr "グローバル・リダイレクト"
+
+msgid "(formerly Global Redirect features)"
+msgstr "(以前のグローバル・リダイレクト機能)"
+
+msgid "Enabling this will automatically redirect to the canonical URL of any page. That includes redirecting to an alias if existing, removing trailing slashes, ensure the language prefix is set and similar clean-up."
+msgstr "この機能を有効にすると、任意のページの正規 URL に自動的にリダイレクトされます。これには、別名 (存在する場合) へのリダイレクト、末尾のスラッシュの削除、言語プレフィックスが設定されていることの確認、および同様のクリーンアップが含まれます。"
+
+msgid "Ignore redirections on admin paths."
+msgstr "管理パスでリダイレクトを無視します。"
+
+msgid "Check access to the redirected page"
+msgstr "リダイレクトされたページへのアクセスを確認します"
+
+msgid "This helps to stop redirection on protected pages and avoids giving away <em>secret</em> URL's. <strong>By default this feature is disabled to avoid any unexpected behavior</strong>"
+msgstr "これにより、保護されたページへのリダイレクトが防止され、<em>秘密の</em> URL が公開されないようにすることができます。<strong>デフォルトでは、予期しない動作が発生しないように、この機能は無効になっています。</strong>"
+
+msgid "Delete redirect"
+msgstr "リダイレクトの削除"
+
+msgid "Redirect Source"
+msgstr "リダイレクト・ソース"
+
+msgid "Query"
+msgstr "クエリー"
+
+msgid "Redirect source"
+msgstr "リダイレクト・ソース"
+
+msgid "Stores a redirect source"
+msgstr "リダイレクト・ソースを保管します"
+
+msgid "The source path %path is likely a valid path. It is preferred to <a href=\"@url-alias\">create URL aliases</a> for existing paths rather than redirects."
+msgstr "ソース・パス %path は有効なパスのようです。リダイレクトではなく既存のパスの <a href=\"@url-alias\">URL 別名を作成</a>することをお勧めします。"
+
+msgid "The base source path %source is already being redirected. Do you want to <a href=\"@edit-page\">edit the existing redirect</a>?"
+msgstr "基本ソース・パス %source は既にリダイレクト中です。<a href=\"@edit-page\">既存のリダイレクトを編集</a>しますか?"
+
+msgctxt "Validation"
+msgid "Link data valid for redirect source link type."
+msgstr "リダイレクト・ソースのリンク・タイプとして有効なリンク・データ。"
+
+msgid "The URL %url is not valid."
+msgstr "そのURL %url は有効ではありません"
+
+msgid "Source"
+msgstr "ソース"
+
+msgid "Fragment"
+msgstr "フラグメント"
+
+msgid "Last Used"
+msgstr "最終使用"
+
+msgid "UID"
+msgstr "ユーザーID"
+
+msgid "Source Options"
+msgstr "ソース・オプション"
+
+msgid "Redirect Options"
+msgstr "リダイレクト・オプション"
+
+msgid "Status Code"
+msgstr "状況コード"
+
+msgid "Access"
+msgstr "アクセス"
+

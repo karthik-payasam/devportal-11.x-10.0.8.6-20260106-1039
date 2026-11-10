@@ -1,0 +1,236 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Your last login was @stamp."
+msgstr "Vaše poslední přihlášení: @stamp."
+
+msgid "Your last page access (site activity) was @stamp."
+msgstr "Váš poslední přístup na stránku (aktivita stránky): @stamp."
+
+msgid "Make sure you have reviewed the <a href=\"!README\">README file</a> for further information about how all these settings will affect your Drupal login form submissions."
+msgstr "Přečtěte si <a href=\"!README\">soubor README</a>, kde jsou uvedeny další informace o tom, jak všechna tato nastavení ovlivňují vaše odesílání přihlašovacího formuláře Drupal."
+
+msgid "Suspicious activity in login form submissions is no longer detected: Currently @tracking_current_count events are being tracked, and threshold is configured for @activity_threshold maximum allowed attempts."
+msgstr "Podezřelá aktivita v odesláních přihlašovacích formulářů již není zjištěna: Aktuálně jsou sledováno @tracking_current_count událostí a prahová hodnota je nakonfigurována pro maximální povolený počet @activity_threshold pokusů."
+
+msgid "Banned IP address @ip due to security configuration."
+msgstr "Adresa IP @ip byla zakázána kvůli konfiguraci zabezpečení."
+
+msgid "Blocked user @username due to security configuration."
+msgstr "Byl zablokován uživatel @username kvůli konfiguraci zabezpečení."
+
+msgid "Ongoing attack detected: Suspicious activity detected in login form submissions. Too many invalid login attempts threshold reached: Currently @tracking_current_count events are tracked, and threshold is configured for @activity_threshold attempts."
+msgstr "Zjištěn probíhající útok: Zjištěna podezřelá aktivita odesláních v přihlašovacích formulářů. Bylo dosaženo prahové hodnoty příliš mnoha neplatných pokusů o přihlášení: Aktuálně je sledováno @tracking_current_count událostí a prahová hodnota je nakonfigurována pro @activity_threshold pokusů."
+
+msgid "Login Security"
+msgstr "Zabezpečení přihlášení"
+
+msgid "Enable security options in the login flow of the site."
+msgstr "Povolte volby zabezpečení pro proces přihlášení na web."
+
+msgid "Login Security settings"
+msgstr "Nastavení zabezpečení přihlášení"
+
+msgid "Login security settings"
+msgstr "Nastavení zabezpečení přihlášení"
+
+msgid "Track time"
+msgstr "Čas záznamu"
+
+msgid "Maximum number of login failures before blocking a user"
+msgstr "Maximální počet neúspěšných přihlášení před zablokováním uživatele"
+
+msgid "Maximum number of login failures before soft blocking a host"
+msgstr "Maximální počet neúspěšných přihlášení před částečným zablokováním hostitele"
+
+msgid "Maximum number of login failures before blocking a host"
+msgstr "Maximální počet neúspěšných přihlášení před úplným zablokováním hostitele"
+
+msgid "Maximum number of login failures before detecting an ongoing attack"
+msgstr "Maximální počet neúspěšných přihlášení před rozpoznáním probíhajícího útoku"
+
+msgid "Disable login failure error message"
+msgstr "Deaktivovat chybovou zprávu o neúspěšném přihlášení"
+
+msgid "Notify the user about the number of remaining login attempts"
+msgstr "Oznamovat uživateli počet zbývajících pokusů o přihlášení"
+
+msgid "Display last login timestamp"
+msgstr "Zobrazit časové razítko posledního přihlášení"
+
+msgid "Display last access timestamp"
+msgstr "Zobrazit časové razítko posledního přístupu"
+
+msgid "Message to be shown on each failed login attempt"
+msgstr "Zpráva, která se má zobrazit po každém neúspěšném pokusu o přihlášení"
+
+msgid "Message for banned host (Soft IP ban)"
+msgstr "Zpráva pro zakázaného hostitele (částečný zákaz adresy IP)"
+
+msgid "Message for banned host (Hard IP ban)"
+msgstr "Zpráva pro zakázaného hostitele (úplný zákaz adresy IP)"
+
+msgid "Message when user is blocked by uid"
+msgstr "Zpráva při zablokování uživatele podle UID"
+
+msgid "Email subject"
+msgstr "Předmět e-mailové zprávy"
+
+msgid "Email body"
+msgstr "Tělo e-mailové zprávy"
+
+msgid "Emails to be notified when users are blocked"
+msgstr "E-mailové adresy k zaslání upozornění na zablokování uživatelů"
+
+msgid "Emails to be notified during excess activity"
+msgstr "E-mailové adresy k zaslání upozornění na nadměrnou aktivitu"
+
+msgid "General settings"
+msgstr "Obecné nastavení"
+
+msgid "The time window to check for security violations: the time in minutes the login information is kept to compute the login attempts count. A common example could be 1440 minutes (24 hours). After that time, the attempt is deleted from the list, and will never be considered again."
+msgstr "Časové okno pro kontrolu narušení zabezpečení: Doba v minutách, po kterou jsou uloženy přihlašovací informace pro výpočet počtu pokusů o přihlášení. Běžným příkladem může být 1440 minut (24 hodin). Po této době je pokus odstraněn ze seznamu a nikdy nebude znovu zvažován."
+
+msgid "minute(s)"
+msgstr "minuty"
+
+msgid "User"
+msgstr "Uživatel"
+
+msgid ""
+"Enter the number of login failures a user is allowed. <br>\n"
+"        After this amount is reached, the user will be blocked, no matter the host attempting to log in. Use this option carefully on public sites, as an attacker may block your site users. <br>\n"
+"        The user blocking protection will not disappear and should be removed manually from the <a href=\":user\">user management</a> interface."
+msgstr ""
+"Zadejte povolený počet neúspěšných přihlášení pro uživatele. <br>\n"
+"        Po dosažení tohoto počtu dojde k zablokování uživatele bez ohledu na to, ze kterého počítače se pokouší přihlásit. Tuto volbu používejte pro veřejné weby obezřetně, neboť útočník takto může blokovat uživatele vašeho webu. <br>\n"
+"        Ochrana blokováním uživatele se nevypíná automaticky. Je zapotřebí ji deaktivovat ručně prostřednictvím rozhraní <a href=\":user\">správy uživatelů</a>."
+
+msgid "failed attempts"
+msgstr "neúspěšné pokusy"
+
+msgid "Soft host"
+msgstr "Podmíněný zákaz hostitele"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this amount is reached, the host will not be able to submit the log in form again, but can still browse the site contents as an anonymous user. <br>\n"
+"        This protection is effective during the time indicated at tracking time option."
+msgstr ""
+"Zadejte povolený počet neúspěšných přihlášení pro hostitele. <br>\n"
+"        Po dosažení této hodnoty hostitel nebude schopen znovu odeslat formulář, ale nadále bude moci procházet obsahem webu jako anonymní uživatel. <br>\n"
+"        Tato ochrana je uplatňována po dobu uvedenou ve volbě času sledování."
+
+msgid "Host"
+msgstr "Hostitel"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this number is reached, the host will be blocked, no matter the username attempting to log in. <br>\n"
+"        The host blocking protection will not disappear automatically and should be removed manually from the <a href=\":access\">access rules</a> administration interface."
+msgstr ""
+"Zadejte povolený počet neúspěšných přihlášení pro hostitele. <br>\n"
+"        Po dosažení tohoto počtu bude hostitel zablokován bez ohledu na jméno uživatele, které se pokouší přihlásit. <br>\n"
+"        Ochrana blokováním hostitelů se nevypíná automaticky, je zapotřebí ji deaktivovat ručně prostřednictvím rozhraní administrace <a href=\":access\">přístupová pravidla</a>."
+
+msgid "Attack detection"
+msgstr "Detekce útoku"
+
+msgid ""
+"Enter the number of login failures before creating a warning log entry about this suspicious activity. <br>\n"
+"        If the number of invalid login events currently being tracked reach this number, and ongoing attack is detected."
+msgstr ""
+"Zadejte počet neúspěšných přihlášení před vytvořením varovné položky protokolu o podezřelé aktivitě. <br>\n"
+"        Pokud počet aktuálně sledovaných událostí neúspěšného přihlášení dosáhne této hodnoty, je rozpoznán probíhající útok."
+
+msgid "Notification"
+msgstr "Oznámení"
+
+msgid ""
+"Prevents the display of login error messages. <br>\n"
+"        A user attempting to login will not be aware if the account exists, an invalid user name or password has been submitted, or if the account is blocked. The core messages are also hidden."
+msgstr ""
+"Zabraňuje v zobrazování zpráv o neúspěšném přihlášení. <br>\n"
+"        Uživatel, který se pokouší o přihlášení, nebude vědět, zda účet existuje, zda bylo zadáno neplatné jméno či heslo uživatele, případně zda je účet zablokován. Zprávy hlavního modulu budou rovněž skryté."
+
+msgid ""
+"The user is notified about the number of remaining login attempts before the account gets blocked. <br>\n"
+"        Security tip: If you enable this option, try to not disclose as much of your login policies as possible in the message shown on any failed login attempt."
+msgstr ""
+"Uživatel je informován o počtu zbývajících pokusů o přihlášení před zablokováním účtu. <br>\n"
+"        Tip pro zabezpečení: Aktivujete-li tuto volbu, pokuste se ve zprávách zobrazujících se při každém neúspěšném pokusu o přihlášení prozrazovat co nejméně informací."
+
+msgid "When a user successfully logs in, a message will display the last time he logged into the site."
+msgstr "Po úspěšném přihlášení uživatele se zobrazí zpráva s časem posledního přihlášení na web."
+
+msgid "When a user successfully logs in, a message will display the last site access with this account."
+msgstr "Po úspěšném přihlášení uživatele se zobrazí zpráva s posledním přihlášením na web s prostřednictvím tohoto účtu."
+
+msgid "Email for ongoing attack detection"
+msgstr "E-mail pro detekci probíhajícího útoku"
+
+msgid "To"
+msgstr "Komu"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when an ongoing attack is detected. No notification will be sent if the field is blank."
+msgstr "Zadejte seznam e-mailových adres oddělených čárkami, na něž bude odeslána e-mailová zpráva při rozpoznání probíhajícího útoku. Ponecháte-li pole prázdné, nebude odesláno žádné oznámení."
+
+msgid "Subject"
+msgstr "Předmět"
+
+msgid "Body"
+msgstr "Text"
+
+msgid "Email for blocked account"
+msgstr "E-mail pro zablokování účtu"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when a user is blocked. No notification will be sent if the field is blank."
+msgstr "Zadejte seznam e-mailových adres oddělených čárkami, na něž bude odeslána e-mailová zpráva při zablokování uživatele. Ponecháte-li pole prázdné, nebude odesláno žádné oznámení."
+
+msgid "Failed login attempt"
+msgstr "Neúspěšný pokus o přihlášení"
+
+msgid "Enter the message string to be shown if the login fails after the form is submitted."
+msgstr "Zadejte řetězec zprávy, jež se má zobrazit při selhání přihlášení po odeslání formuláře."
+
+msgid "Banned host (soft IP ban)"
+msgstr "Zakázaný hostitel (částečný zákaz adresy IP)"
+
+msgid "Enter the soft IP ban message to be shown when a host attempts to log in too many times."
+msgstr "Zadejte zprávu o částečném zákazu adresy IP, která se má zobrazit poté, co hostitel provede příliš mnoho pokusů o přihlášení."
+
+msgid "Banned host (hard IP ban)"
+msgstr "Zakázaný hostitel (úplný zákaz adresy IP)"
+
+msgid "Enter the hard IP ban message to be shown when a host attempts to log in too many times."
+msgstr "Zadejte zprávu o úplném zákazu adresy IP, která se má zobrazit poté, co hostitel provede příliš mnoho pokusů o přihlášení."
+
+msgid "Blocked user by uid"
+msgstr "Zablokovaný uživatel podle UID"
+
+msgid "Enter the message to be shown when a user gets blocked due to enough failed login attempts."
+msgstr "Zadejte zprávu, která se má zobrazit při zablokování uživatele kvůli dosažení mezního počtu neúspěšných pokusů o přihlášení."
+
+msgid "Tokens"
+msgstr "Tokeny"
+
+msgid "<ul><li>%date: The (formatted) date and time of the event.</li><li>%ip: The IP address tracked for this event.</li><li>%username: The username entered in the login form (sanitized).</li><li>%email: If the user exists, this will be the email address.</li><li>%uid: If the user exists, this will be the user uid.</li><li>%site: The name of the site as configured in the administration.</li><li>%uri: The base url of this Drupal site.</li><li>%edit_uri: Direct link to the user (based on the name entered) edit page.</li><li>%hard_block_attempts: Configured maximum attempts before hard blocking the IP address.</li><li>%soft_block_attempts: Configured maximum attempts before soft blocking the IP address.</li><li>%user_block_attempts: Configured maximum login attempts before blocking the user.</li><li>%user_ip_current_count: The total attempts for this user name tracked from this IP address.</li><li>%ip_current_count: The total login attempts tracked from from this IP address.</li><li>%user_current_count: The total login attempts tracked for this user name .</li><li>%tracking_time: The tracking time value: in hours.</li><li>%tracking_current_count: Total tracked events</li><li>%activity_threshold: Value of attempts to detect ongoing attack.</li></ul>"
+msgstr "<ul><li>%date: (formátované) datum a čas události.</li><li>%ip: Adresa IP sledovaná pro tuto událost.</li><li>%username: Jméno uživatele zadané do přihlašovacího formuláře (očištěné).</li><li>%email: Pokud uživatel existuje, toto je jeho e-mailová adresa.</li><li>%uid: Pokud uživatel existuje, toto je jeho identifikátor UID.</li><li>%site: Název webu, který je nakonfigurován v administraci.</li><li>%uri: Základní adresa URL tohoto webu Drupal.</li><li>%edit_uri: Přímý odkaz na stránku úprav uživatele (podle zadaného jména).</li><li>%hard_block_attempts: Nakonfigurovaný maximální počet pokusů před úplným zablokováním adresy IP.</li><li>%soft_block_attempts: Nakonfigurovaný maximální počet pokusů před částečným zablokováním adresy IP.</li><li>%user_block_attempts: Nakonfigurovaný maximální počet pokusů o přihlášení před zablokováním uživatele.</li><li>%user_ip_current_count: Celkový počet pokusů pro toto jméno uživatele sledovaných z této adresy IP.</li><li>%ip_current_count: Celkový počet pokusů o přihlášení sledovaných z toto adresy IP.</li><li>%user_current_count: Celkový počet pokusů o přihlášení sledovaných pro toto jméno uživatele.</li><li>%tracking_time: Hodnota času sledování: v hodinách.</li><li>%tracking_current_count: Celkový počet sledovaných událostí</li><li>%activity_threshold: Počet pokusů pro detekci probíhajícího útoku.</li></ul>"
+
+msgid "Clear event tracking information"
+msgstr "Vymazat informace sledování událostí"
+
+msgid "Login Security event track list is now empty. @count item(s) deleted."
+msgstr "Seznam sledování událostí zabezpečení přihlášení je nyní prázdný. Bylo smazáno @count položek."
+

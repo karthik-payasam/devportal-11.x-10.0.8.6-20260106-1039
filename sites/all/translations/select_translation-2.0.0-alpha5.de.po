@@ -1,0 +1,126 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Select translation"
+msgstr "Übersetzung auswählen"
+
+msgid "Select which translation of a node should be displayed"
+msgstr "Wählen Sie aus, welche Übersetzung eines Knotens angezeigt werden soll."
+
+msgid "Select Translation"
+msgstr "Übersetzung auswählen"
+
+msgid "Provides a Views filter to select which translation of a node should be displayed."
+msgstr "Stellt einen Filter für Ansichten bereit, mit dem ausgewählt werden kann, welche Übersetzung eines Knotens angezeigt werden soll."
+
+msgid "Multilingual"
+msgstr "Mehrsprachenunterstützung"
+
+msgid "The 'nid' argument must be an integer >= 1."
+msgstr "Das Argument 'nid' muss eine ganze Zahl >= 1 sein."
+
+msgid "Select translation filter"
+msgstr "Filter für Übersetzungsauswahl"
+
+msgid "Original node language fallback"
+msgstr "Fallback auf ursprüngliche Knotensprache"
+
+msgid "Default site language fallback"
+msgstr "Fallback auf Standardsitesprache"
+
+msgid "Language fallback candidates list"
+msgstr "Liste der Kandidaten für die Zurücksetzung der Sprache"
+
+msgid "Custom language priority"
+msgstr "Angepasste Sprachpriorität"
+
+msgid "Select translation selection mode"
+msgstr "Übersetzungsauswahlmodus auswählen"
+
+msgid "Use the current interface language; if not available use the original node language"
+msgstr "Aktuelle Schnittstellensprache verwenden. Falls nicht verfügbar, ursprüngliche Knotensprache verwenden."
+
+msgid "Use the current interface language; if not available use the default site language; if not available use the original node language"
+msgstr "Aktuelle Schnittstellensprache verwenden. Falls nicht verfügbar, Standardsitesprache verwenden. Falls nicht verfügbbar, ursprüngliche Knotensprache verwenden."
+
+msgid "Use the language fallback candidates list provided by the language manager service"
+msgstr "Verwenden Sie die vom Sprachmanager-Service bereitgestellte Liste der Kandidaten für die Fallback-Sprache."
+
+msgid "Custom language priorities"
+msgstr "Angepasste Sprachprioritäten"
+
+msgid "Language priorities"
+msgstr "Sprachprioritäten"
+
+msgid ""
+"<p>If the selection mode is set to \"Custom language priorities\",\n"
+"                           a comma separated list of language codes can be specified.<br/>\n"
+"                           The filter will then return the node in the first available language\n"
+"                           in that list; falling back to the original node language if no match was found.</p>\n"
+"                           Some special values are recognized:\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" will be replaced with the current interface language;</li>\n"
+"                             <li>\"<em>default</em>\" will be replaced with the default site language;</li>\n"
+"                             <li>\"<em>original</em>\" will be replaced with the original node language.</li>\n"
+"                            </ul>\n"
+"                           Example:<br/><em>en,fr,current,default,original</em><br/>\n"
+"                           This will return:\n"
+"                           <ol>\n"
+"                             <li>the version in English, if available;</li>\n"
+"                             <li>if not, then the version in French, if available;</li>\n"
+"                             <li>if not, then the version in the current interface language, if available;</li>\n"
+"                             <li>if not, then the version in the default site language, if available;</li>\n"
+"                             <li>if none are available it will return the original node version.</li>\n"
+"                          </ol>"
+msgstr ""
+"<p>Wenn der Auswahlmodus auf \"Angepasste Sprachprioritäten\" gesetzt ist,\n"
+"                           kann eine durch Kommas getrennte Liste von Sprachcodes angegeben werden. <br/>\n"
+"                           Der Filter gibt dann den Knoten in der ersten verfügbaren Sprache in dieser Liste zurück. \n"
+"                           Es findet ein Fallback auf die ursprüngliche Knotensprache statt, wenn keine Übereinstimmung gefunden wurde.</p>\n"
+" Einige Sonderwerte werden erkannt: \n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" wird durch die aktuelle Schnittstellensprache ersetzt. </li>\n"
+"                             <li>\"<em>default</em>\" wird durch die Standardsitesprache ersetzt. </li>\n"
+"                             <li>\"<em>original</em>\" wird durch die ursprüngliche Knotensprache ersetzt. </li>\n"
+"                            </ul>\n"
+" Beispiel: <br/><em>en,fr,current,default,original</em><br/>\n"
+" In diesem Fall wird Folgendes zurückgegeben: \n"
+"                           <ol>\n"
+"                             <li>Die Version auf Englisch, falls verfügbar. </li>\n"
+"                             <li>Falls diese Version nicht verfügbar ist, die Version auf Französisch, falls verfügbar. </li>\n"
+"                             <li>Falls diese Version nicht verfügbar ist, die Version in der aktuellen Schnittstellensprache, falls verfügbar. </li>\n"
+"                             <li>Falls diese Version nicht verfügbar ist, die Version in der Standardsitesprache, falls verfügbar. </li>\n"
+"                             <li>Wenn keine der vorherigen Versionen verfügbar ist, wird die ursprüngliche Knotenversion zurückgegeben. </li>\n"
+"                          </ol>"
+
+msgid "Display default language content *only*, if the currently selected user language is the default site language."
+msgstr "Standardspracheninhalt *nur* anzeigen, wenn die derzeit ausgewählte Benutzersprache die Standardsitesprache ist."
+
+msgid ""
+"When you check this option, the order chosen above will be ignored when current language = site default language,\n"
+"        instead it will only show translations for the default language. "
+msgstr ""
+"Wenn Sie diese Option aktivieren, wird die oben ausgewählte Reihenfolge ignoriert, wenn die aktuelle Sprache = Standardsitesprache ist, \n"
+" stattdessen werden nur Übersetzungen für die Standardsprache angezeigt."
+
+msgid "Return content in the site default language when a translation for the current language *does* exist, but it is unpublished."
+msgstr "Inhalt in der Standardsprache der Site zurückgeben, wenn eine Übersetzung für die aktuelle Sprache *vorhanden*, aber unveröffentlicht ist."
+
+msgid ""
+"When you check this option, in addition to the order chosen above, content will be shown in the default site language in the event that the translation in the current language is unpublished.<br/>\n"
+"      <strong>NOTE</strong>: This option assumes that the view is already filtering out unpublished content with the <code>Published (=Yes)</code> criterion, otherwise both the published and unpublished node will be displayed."
+msgstr ""
+"Wenn Sie diese Option aktivieren, wird der Inhalt zusätzlich zu der oben angegebenen Reihenfolge in der Standardsitesprache angezeigt, falls die Übersetzung in der aktuellen Sprache unveröffentlicht ist.<br/>\n"
+"      <strong>ANMERKUNG</strong>: Diese Option geht davon aus, dass die Ansicht bereits unveröffentlichten Inhalt über die Bedingung <code>Veröffentlicht (=Ja)</code> herausfiltert. Andernfalls werden sowohl die veröffentlichten als auch die unveröffentlichten Knoteninhalte angezeigt."
+

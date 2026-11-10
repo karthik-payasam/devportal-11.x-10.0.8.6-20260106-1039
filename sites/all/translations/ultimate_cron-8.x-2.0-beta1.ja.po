@@ -1,0 +1,825 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Launched by drush"
+msgstr "Drush により起動"
+
+msgid "This command will list cron jobs"
+msgstr "このコマンドはクーロン・ジョブをリストします"
+
+msgid "This command will run a cron job"
+msgstr "このコマンドはクーロン・ジョブを実行します"
+
+msgid "This command will enable a cron job"
+msgstr "このコマンドはクーロン・ジョブを有効化します"
+
+msgid "This command will disable a cron job"
+msgstr "このコマンドはクーロン・ジョブを無効化します"
+
+msgid "This command will unlock a cron job"
+msgstr "このコマンドはクーロン・ジョブのロックを解除します"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Module"
+msgstr "モジュール"
+
+msgid "Scheduled"
+msgstr "スケジュール済"
+
+msgid "Started"
+msgstr "開始済"
+
+msgid "Duration"
+msgstr "期間"
+
+msgid "Status"
+msgstr "状態"
+
+msgid "Legend: D = Disabled, R = Running, B = Behind schedule"
+msgstr "凡例: D = 使用不可、R = 実行中、B = スケジュール遅れ"
+
+msgid "No job specified?"
+msgstr "ジョブが指定されていますか?"
+
+msgid "@name not found"
+msgstr "@name が見つかりません"
+
+msgid "User"
+msgstr "ユーザー"
+
+msgid "Initial message"
+msgstr "初期メッセージ"
+
+msgid "Message"
+msgstr "メッセージ"
+
+msgid "Cron is running."
+msgstr "クーロンは実行中です。"
+
+msgid "Cron is not running."
+msgstr "クーロンが実行されていません。"
+
+msgid "@name enabled"
+msgstr "@name が有効化されました"
+
+msgid "@name disabled"
+msgstr "@name が無効化されました"
+
+msgid "@name is not running"
+msgstr "@name が実行されていません"
+
+msgid "Cron job @name unlocked"
+msgstr "クーロン・ジョブ @name のロックを解除しました"
+
+msgid "Could not unlock cron job @name"
+msgstr "クーロン・ジョブ @name のロックを解除できませんでした"
+
+msgid "@name manually unlocked by user @username (@uid)"
+msgstr "@name がユーザー @username (@uid) によって手動でロック解除されました"
+
+msgid "Ultimate Cron Monitoring"
+msgstr "アルティメット・クーロンのモニター"
+
+msgid "Thresholds"
+msgstr "しきい値"
+
+msgid "Thresholds for reporting critical alerts to Nagios."
+msgstr "重大なアラートを Nagios に報告するためのしきい値。"
+
+msgid "Running jobs count"
+msgstr "実行中のジョブの数"
+
+msgid "Issue a critical alert when more than this number of jobs are running. Default is 50."
+msgstr "この数を超えるジョブが実行されているときに重大なアラートを発行します。デフォルトは 50 です。"
+
+msgid "Failed jobs count"
+msgstr "失敗したジョブの数"
+
+msgid "Issue a critical alert when more than this number of jobs failed their last run. Default is 10."
+msgstr "この数を超えるジョブが最終実行時に失敗したときに重大なアラートを発行します。デフォルトは 10 です。"
+
+msgid "Long running jobs"
+msgstr "長時間実行ジョブ"
+
+msgid "Issue a critical alert when more than this number of jobs are running longer than usual. Default is 0."
+msgstr "この数を超えるジョブが通常よりも長い時間にわたって実行されているときに重大なアラートを発行します。デフォルトは 0 です。"
+
+msgid "Check number of currently running jobs"
+msgstr "現在実行中のジョブの数をチェックする"
+
+msgid "Check the number of jobs that failed last run"
+msgstr "最終実行時に失敗したジョブの数をチェックする"
+
+msgid "Check the number of jobs that are running longer than usual"
+msgstr "通常よりも長い時間にわたって実行されているジョブの数をチェックする"
+
+msgid "@jobs currently running - it is more than @threshold"
+msgstr "@jobs 個が現在実行中です - これは @threshold 個を超えています"
+
+msgid "@jobs currently running"
+msgstr "@jobs 個が現在実行中です"
+
+msgid "@jobs failed their last run - it is more than @threshold"
+msgstr "@jobs 個が最終実行時に失敗しました - これは @threshold 個を超えています"
+
+msgid "@jobs failed their last run"
+msgstr "@jobs 個が最終実行時に失敗しました"
+
+msgid "@jobs jobs are running longer than usual - it is more than @threshold"
+msgstr "@jobs 個のジョブが通常よりも長い時間にわたって実行中です - これは @threshold 個を超えています"
+
+msgid "@jobs jobs are running longer than usual"
+msgstr "@jobs 個のジョブが通常よりも長い時間にわたって実行中です"
+
+msgid "Never"
+msgstr "なし"
+
+msgid "Some jobs are behind their schedule. Please check if <a href=\":system_cron_url\">Cron</a> is running properly."
+msgstr "一部のジョブがスケジュールよりも遅れています。<a href=\":system_cron_url\">Cron</a> が正常に実行されているかどうか確認してください。"
+
+msgid "Cron is running properly."
+msgstr "クーロンは正常に実行中です。"
+
+msgid "@count job is behind schedule"
+msgid_plural "@count jobs are behind schedule"
+msgstr[0] "@count 個のジョブがスケジュールよりも遅れています"
+
+msgid "Ultimate Cron"
+msgstr "アルティメット・クーロン"
+
+msgid "Cron"
+msgstr "cron"
+
+msgid "Discover jobs"
+msgstr "ジョブのディスカバー"
+
+msgid "Manage automatic site maintainenance tasks."
+msgstr "サイトの自動保守タスクを管理します。"
+
+msgid "Cron Jobs"
+msgstr "クーロン・ジョブ"
+
+msgid "Run cron"
+msgstr "cron を実行"
+
+msgid "Cron settings"
+msgstr "Cron の設定"
+
+msgid "Queue"
+msgstr "キュー"
+
+msgid "Launcher"
+msgstr "ランチャー"
+
+msgid "Logger"
+msgstr "ロガー"
+
+msgid "Scheduler"
+msgstr "スケジューラー"
+
+msgid "Administer Ultimate Cron"
+msgstr "アルティメット・クーロンの管理"
+
+msgid "Lets you configure everything in Ultimate Cron"
+msgstr "アルティメット・クーロンのすべての設定を構成できます"
+
+msgid "View cron jobs"
+msgstr "クーロン・ジョブの表示"
+
+msgid "Lets you view cron jobs and their logs"
+msgstr "クーロン・ジョブとそのログを表示できます"
+
+msgid "Run cron jobs"
+msgstr "クーロン・ジョブの実行"
+
+msgid "Lets you run cron jobs"
+msgstr "クーロン・ジョブを実行できます"
+
+msgid "Manage Cron settings"
+msgstr "クーロン設定の管理"
+
+msgid "General Cron Settings"
+msgstr "クーロンの基本設定"
+
+msgid "Launcher settings"
+msgstr "ランチャーの設定"
+
+msgid "Logger settings"
+msgstr "ロガーの設定"
+
+msgid "Scheduler settings"
+msgstr "スケジューラー設定"
+
+msgid "Cron jobs"
+msgstr "クーロン・ジョブ"
+
+msgid "Edit job"
+msgstr "ジョブの編集"
+
+msgid "Run Cron job"
+msgstr "クーロン・ジョブの実行"
+
+msgid "Delete job"
+msgstr "ジョブの削除"
+
+msgid "Disable cron job"
+msgstr "クーロン・ジョブの無効化"
+
+msgid "Enable cron job"
+msgstr "クーロン・ジョブの有効化"
+
+msgid "Cron jobs logs"
+msgstr "クーロン・ジョブのログ"
+
+msgid "Unlock Cron job"
+msgstr "クーロン・ジョブのロック解除"
+
+msgid "Ultimate cron settings"
+msgstr "アルティメット・クーロンの設定"
+
+msgid "Bypass transactional connection"
+msgstr "トランザクション接続のバイパス"
+
+msgid "Queue settings"
+msgstr "キューの設定"
+
+msgid "Toggle queing jobs"
+msgstr "キューイング・ジョブの切り替え"
+
+msgid "Timeouts"
+msgstr "タイムアウト"
+
+msgid "Time to claim item"
+msgstr "項目を要求するための時間"
+
+msgid "Time to process item"
+msgstr "項目を処理するための時間"
+
+msgid "Delays"
+msgstr "遅延"
+
+msgid "Time to idle when finished with item"
+msgstr "項目の処理完了時のアイドル時間"
+
+msgid "Toggles throttling of queues"
+msgstr "キューのスロットルの切り替え"
+
+msgid "Number of threads for queues"
+msgstr "キューのスレッド数"
+
+msgid "Number of items needed for a queue"
+msgstr "キューに必要な項目数"
+
+msgid "Which thread to use"
+msgstr "使用するスレッド"
+
+msgid "Maximum number of threads"
+msgstr "スレッド最大数"
+
+msgid "Time to lock job"
+msgstr "ジョブをロックする時間"
+
+msgid "Maximum time for the job to run"
+msgstr "ジョブの最大実行時間"
+
+msgid "Cache"
+msgstr "キャッシュ"
+
+msgid "The cache bin to use"
+msgstr "使用するキャッシュ・ビン"
+
+msgid "Time until cache expires"
+msgstr "キャッシュの有効期限切れまでの時間"
+
+msgid "Database"
+msgstr "データベース"
+
+msgid "The method used for log retention"
+msgstr "ログの保存に使用する方法"
+
+msgid "Time until expiration"
+msgstr "有効期限切れまでの時間"
+
+msgid "Maximum number of logs to keep"
+msgstr "保持するログの最大数"
+
+msgid "Schedulr"
+msgstr "Schedulr"
+
+msgid "Crontab"
+msgstr "Crontab"
+
+msgid "Stop between job runs"
+msgstr "ジョブ実行の間に停止"
+
+msgid "Array with rules"
+msgstr "ルールの配列"
+
+msgid "Formatted rule"
+msgstr "定形式のルール"
+
+msgid "Simple"
+msgstr "簡単"
+
+msgid "Rule for Simple scheduler"
+msgstr "簡易スケジューラーのルール"
+
+msgid "Cron Job"
+msgstr "クーロン・ジョブ"
+
+msgid "Machine-readable name"
+msgstr "システム内部名称"
+
+msgid "Weight"
+msgstr "ウェイト"
+
+msgid "Module Name"
+msgstr "モジュール名"
+
+msgid "Callback"
+msgstr "コールバック"
+
+msgid "Scheduler ID"
+msgstr "スケジューラー ID"
+
+msgid "Launcher ID"
+msgstr "ランチャー ID"
+
+msgid "Logger ID"
+msgstr "ロガー ID"
+
+msgid "Scheduler configuration"
+msgstr "スケジューラーの構成"
+
+msgid "Scheduler rules"
+msgstr "スケジューラーのルール"
+
+msgid "Scheduling rule"
+msgstr "スケジューリング・ルール"
+
+msgid "Timeout (s) after job run"
+msgstr "ジョブ実行後のタイムアウト"
+
+msgid "Timeout settings"
+msgstr "タイムアウトの設定"
+
+msgid "Lock timeout"
+msgstr "ロックのタイムアウト"
+
+msgid "Max execution time"
+msgstr "最大実行時間"
+
+msgid "Max threads"
+msgstr "最大スレッド数"
+
+msgid "Thread"
+msgstr "スレッド"
+
+msgid "Method"
+msgstr "メソッド"
+
+msgid "Expiration"
+msgstr "有効期限"
+
+msgid "Retain X amount of logs"
+msgstr "保持するログの数"
+
+msgid "Cache bin to use for storing logs"
+msgstr "ログの保管に使用するキャッシュ・ビン"
+
+msgid "Timeout (s) before cache entry expires"
+msgstr "キャッシュ項目の有効期限切れまでのタイムアウト"
+
+msgid "Queue: @title"
+msgstr "キュー: @title"
+
+msgid "Store the maximum possible comments per thread"
+msgstr "スレッドあたりの最大許容コメント数を保管"
+
+msgid "Remove expired log messages and flood control events"
+msgstr "有効期限が切れたログ・メッセージとフラッディング制御イベントを削除"
+
+msgid "Purges deleted Field API data"
+msgstr "削除されたフィールド API データをパージ"
+
+msgid "Deletes temporary files"
+msgstr "一時ファイルを削除"
+
+msgid "Deletes history"
+msgstr "履歴を削除"
+
+msgid "Updates indexable active search pages"
+msgstr "インデックス付け可能なアクティブな検索ページを更新"
+
+msgid "Cleanup (caches, batch, flood, temp-files, etc.)"
+msgstr "クリーンアップ (キャッシュ、バッチ、フラッディング、一時ファイルなど)"
+
+msgid "Update indexes"
+msgstr "インデックスを更新"
+
+msgid "Updates search rankings for nodes"
+msgstr "ノードの検索ランキングを更新します"
+
+msgid "Refresh feeds"
+msgstr "フィードを最新表示"
+
+msgid "Runs internal cleanup operations"
+msgstr "内部クリーンアップ操作を実行"
+
+msgid "Reset counts and clean up"
+msgstr "カウントをリセットしてクリーンアップ"
+
+msgid "Update tracker index"
+msgstr "トラッカー・インデックスの更新"
+
+msgid "Default cron handler"
+msgstr "デフォルトのクーロン・ハンドラー"
+
+msgid "Last Run"
+msgstr "最終実行"
+
+msgid "Job is behind schedule!"
+msgstr "ジョブがスケジュールよりも遅れています"
+
+msgid "Missing"
+msgstr "喪失"
+
+msgid "Disabled"
+msgstr "無効"
+
+msgid "Run"
+msgstr "実行"
+
+msgid "Unlock"
+msgstr "ロック解除"
+
+msgid "Logs"
+msgstr "ログ"
+
+msgid "Default (@default)"
+msgstr "デフォルト (@default)"
+
+msgid "(Blank = @default)."
+msgstr "(ブランク = @default)。"
+
+msgid "Queue: @name"
+msgstr "キュー: @name"
+
+msgid "Enable cron queue processing"
+msgstr "クーロン・キューの処理を有効化"
+
+msgid "If enabled, cron queues will be processed by this plugin. If another cron queue plugin is installed, it may be necessary/beneficial to disable this plugin."
+msgstr "有効化すると、クーロン・キューがこのプラグインによって処理されます。別のクーロン・キュー・プラグインがインストールされている場合は、このプラグインを無効にする必要があるか、無効にしておいた方が得策な可能性があります。"
+
+msgid "Queue lease time"
+msgstr "キューのリース時間"
+
+msgid "Seconds to claim a cron queue item."
+msgstr "クーロン・キューの項目を要求する秒数。"
+
+msgid "Time"
+msgstr "時間"
+
+msgid "Time in seconds to process items during a cron run."
+msgstr "クーロン実行中に項目を処理する時間 (秒単位)。"
+
+msgid "Empty delay"
+msgstr "空の場合の遅延"
+
+msgid "Seconds to delay processing of queue if queue is empty (0 = end job)."
+msgstr "キューが空の場合 (0 = ジョブの終了) にキューの処理を遅らせる秒数。"
+
+msgid "Item delay"
+msgstr "項目間の遅延"
+
+msgid "Seconds to wait between processing each item in a queue."
+msgstr "キュー内の各項目の処理の間に待機する秒数。"
+
+msgid "Throttle"
+msgstr "スロットル"
+
+msgid "Throttle queues using multiple threads."
+msgstr "複数のスレッドを使用するキューにスロットルを適用します。"
+
+msgid "Throttling"
+msgstr "スロットル設定"
+
+msgid "Threads"
+msgstr "スレッド数"
+
+msgid "Number of threads to use for queues."
+msgstr "キューに使用するスレッド数。"
+
+msgid "Threshold"
+msgstr "しきい値"
+
+msgid "Number of items in queue required to activate the next cron job."
+msgstr "次のクーロン・ジョブをアクティブ化するために必要なキュー内の項目数。"
+
+msgid "disabled"
+msgstr "無効"
+
+msgid "enabled"
+msgstr "有効"
+
+msgid "Processed @items items from queue @queue"
+msgstr "キュー @queue から @items 個の項目を処理しました"
+
+msgid "kill signal recieved"
+msgstr "Kill シグナルを受信しました"
+
+msgid "Queue item @item_id from queue @queue failed with message @message"
+msgstr "キュー @queue のキュー項目 @item_id がメッセージ @message を発行して失敗しました"
+
+msgid "Kill signal received for job @job_id"
+msgstr "ジョブ @job_id に対する Kill シグナルを受信しました"
+
+msgid "Running all cronjobs is not supported by Ultimate Cron's cron:run - please use Drupal Core's core:cron command!"
+msgstr "Ultimate Cron の cron:run では、すべてのクーロン・ジョブの実行はサポートされていません。Drupal Core の core:cron コマンドを使用してください。"
+
+msgid "Launched manually"
+msgstr "手動で起動"
+
+msgid "Cron job @job_label (@module) was successfully run."
+msgstr "クーロン・ジョブ @job_label (@module) は正常に実行されました。"
+
+msgid "Completed discovery for new cron jobs."
+msgstr "新規クーロン・ジョブのディスカバリーが完了しました。"
+
+msgid "Severity"
+msgstr "重大度"
+
+msgid "Start Time"
+msgstr "開始時間"
+
+msgid "End Time"
+msgstr "終了時間"
+
+msgid "No log information available."
+msgstr "使用可能なログ情報がありません。"
+
+msgid "Logs for %label"
+msgstr "%label のログ"
+
+msgid "Cron job @name unlocked successfully."
+msgstr "クーロン・ジョブ @name のロックを正常に解除しました"
+
+msgid "Could not get lock for job @name"
+msgstr "ジョブ @name のロックを取得できませんでした"
+
+msgid "Do you really want to disable @cronjob_id cron job?"
+msgstr "@cronjob_id クーロン・ジョブを無効化しますか?"
+
+msgid "This cron job will no longer be executed."
+msgstr "このクーロン・ジョブはもう実行されません。"
+
+msgid "Disable"
+msgstr "無効"
+
+msgid "Disabled cron job %cronjob."
+msgstr "クーロン・ジョブ %cronjob を無効化しました。"
+
+msgid "Do you really want to enable @cronjob_id cron job?"
+msgstr "@cronjob_id クーロン・ジョブを有効化しますか?"
+
+msgid "This cron job will be executed again."
+msgstr "このクーロン・ジョブは再実行されます。"
+
+msgid "Enable"
+msgstr "有効"
+
+msgid "Enabled cron job %cronjob."
+msgstr "クーロン・ジョブ %cronjob を有効化しました。"
+
+msgid "This will appear in the administrative interface to easily identify it."
+msgstr "これは管理インターフェイス中で簡単に識別できるように表示されます。"
+
+msgid "Enabled"
+msgstr "有効"
+
+msgid "This checkbox enables the cron job. Disabled Cron jobs are not run."
+msgstr "このチェック・ボックスを使用するとクーロン・ジョブを有効化できます。無効化されたクーロン・ジョブは実行されません。"
+
+msgid "@title (Default)"
+msgstr "@title (デフォルト)"
+
+msgid "Select which @plugin to use for this job."
+msgstr "このジョブに使用する @plugin を選択します。"
+
+msgid "Select"
+msgstr "選択"
+
+msgid "job %label has been updated."
+msgstr "ジョブ %label が更新されました。"
+
+msgid "nodejs"
+msgstr "nodejs"
+
+msgid "Enable nodejs integration (Live reload on jobs page. Requires the nodejs module to be installed and configured)."
+msgstr "nodejs 統合を有効化します (ジョブ・ページ上でのライブ再ロード。nodejs モジュールがインストールおよび構成されている必要があります)。"
+
+msgid "Override cron queue processing"
+msgstr "クーロン・キューの処理をオーバーライド"
+
+msgid "If enabled, queue workers are exposed as cron jobs and can be configured separately. When disabled, the standard queue processing is used. <strong>This feature is currently experimental, do not enable unless you need it.</strong>"
+msgstr "有効化すると、キュー・ワーカーがクーロン・ジョブとして公開され、個別に構成できるようになります。無効化すると、標準的なキュー処理が使用されます。<strong>この機能は現時点では実験用です。必要な場合以外は有効化しないでください。</strong>"
+
+msgid "Launching options"
+msgstr "起動オプション"
+
+msgid "Job lock timeout"
+msgstr "ジョブ・ロックのタイムアウト"
+
+msgid "Number of seconds to keep lock on job."
+msgstr "ジョブのロックを保持する秒数。"
+
+msgid "Maximum execution time"
+msgstr "最大実行時間"
+
+msgid "Maximum execution time for a cron run in seconds."
+msgstr "クーロンの最大実行時間 (秒数)。"
+
+msgid "Maximum number of launcher threads"
+msgstr "最大ランチャー・スレッド数"
+
+msgid "The maximum number of launch threads that can be running at any given time."
+msgstr "ある一定の時間に実行できる起動スレッドの最大数。"
+
+msgid "Run in thread"
+msgstr "実行スレッド"
+
+msgid "Which thread to run jobs in."
+msgstr "ジョブの実行に使用するスレッド。"
+
+msgid "<strong>Any</strong>: Just use any available thread"
+msgstr "<strong>任意</strong>: どれでも使用可能なスレッドを使用"
+
+msgid "<strong>Fixed</strong>: Only run in one specific thread. The maximum number of threads is spread across the jobs."
+msgstr "<strong>固定</strong>: 1 つの特定のスレッドでのみ実行。最大スレッド数はすべてのジョブ間で分散されます。"
+
+msgid "<strong>1-?</strong>: Only run when a specific thread is invoked. This setting only has an effect when cron is run through cron.php with an argument ?thread=N or through Drush with --options=thread=N."
+msgstr "<strong>1 から ?</strong>: 特定のスレッドが起動されたときにのみ実行。この設定は、クーロンが cron.php (引数 ?thread=N を使用) または Drush (--options=thread=N を使用) を通じて実行される場合にのみ適用されます。"
+
+msgid "Cache bin"
+msgstr "キャッシュ・ビン"
+
+msgid "Select which cache bin to use for storing logs."
+msgstr "ログの保管に使用するキャッシュ・ビンを選択します。"
+
+msgid "Cache timeout"
+msgstr "キャッシュのタイムアウト"
+
+msgid "Seconds before cache entry expires (0 = never, -1 = on next general cache wipe)."
+msgstr "キャッシュ項目の有効期限が切れるまでの秒数 (0 = 有効期限切れなし、-1 = 次の一般キャッシュ・ワイプ時)。"
+
+msgid "Remove logs older than a specified age"
+msgstr "指定した経過時間より古いログを削除"
+
+msgid "Retain only a specific amount of log entries"
+msgstr "特定の数のログ項目のみ保持"
+
+msgid "Log entry cleanup method"
+msgstr "ログ項目のクリーンアップ方法"
+
+msgid "Select which method to use for cleaning up logs."
+msgstr "ログのクリーンアップに使用する方法を選択します。"
+
+msgid "Log entry expiration"
+msgstr "ログ項目の有効期限"
+
+msgid "Remove log entries older than X seconds."
+msgstr "指定した秒数よりも古いログ項目を削除します。"
+
+msgid "Retain logs"
+msgstr "保持するログ数"
+
+msgid "Retain X amount of log entries."
+msgstr "指定した数のログ項目を保持します。"
+
+msgid "Catch up"
+msgstr "キャッチアップ"
+
+msgid "Don't run job after X seconds of rule."
+msgstr "ルールの実行後 X 秒間はジョブを実行しません。"
+
+msgid "Rules"
+msgstr "ルール"
+
+msgid "Semi-colon separated list of crontab rules."
+msgstr "crontab ルールのセミコロン区切りリスト。"
+
+msgid "Rules help"
+msgstr "ルールのヘルプ"
+
+msgid "Run cron every"
+msgstr "次の間隔で Cron を実行"
+
+msgid "Select the interval you wish cron to run on."
+msgstr "クーロンの実行間隔を選択します。"
+
+msgid "running"
+msgstr "実行中"
+
+msgid "unfinished but not locked?"
+msgstr "未完了にもかかわらずロックされていないですか?"
+
+msgid "Cleaned up @count expired locks"
+msgstr "@count 個の有効期限切れロックをクリーンアップしました"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "anonymous"
+msgstr "匿名"
+
+msgid "by"
+msgstr "投稿者"
+
+msgid "Registered at @datetime"
+msgstr "@datetime に登録しました"
+
+msgid "no info"
+msgstr "情報なし"
+
+msgid "-- Any -- "
+msgstr "-- 任意 -- "
+
+msgid "-- Fixed -- "
+msgstr "-- 固定 -- "
+
+msgid "Which thread to run in when invoking with ?thread=N. Note: This setting only has an effect when cron is run through cron.php with an argument ?thread=N or through Drush with --options=thread=N."
+msgstr "?thread=N を使用して起動したときに実行に使用するスレッド。注: この設定は、クーロンが cron.php (引数 ?thread=N を使用) または Drush (--options=thread=N を使用) を通じて実行される場合にのみ適用されます。"
+
+msgid "%title must be greater than 0"
+msgstr "%title は 0 より大きくする必要があります"
+
+msgid "Launched in thread @current_thread"
+msgstr "スレッド @current_thread 内で起動しました"
+
+msgid "Invalid thread available for starting launch thread"
+msgstr "起動スレッドの開始に使用できるスレッドが無効です"
+
+msgid "Thread @thread is already running"
+msgstr "スレッド @thread は既に実行中です"
+
+msgid "No free threads available for launching jobs"
+msgstr "ジョブの起動に使用できる空きスレッドがありません"
+
+msgid "Serial"
+msgstr "シリアル"
+
+msgid "Launches scheduled jobs in the same thread and runs them consecutively."
+msgstr "スケジュールに入れられたジョブを同じスレッドで起動し、連続的に実行します。"
+
+msgid "Stores the last log entry (and only the last) in the cache."
+msgstr "最新ログ項目 (のみ) をキャッシュに保管します。"
+
+msgid "Lock #@original_lid was already closed and logged. Creating a new log entry #@lid"
+msgstr "ロック #@original_lid は既に閉じられ、ログに記録されました。新規ログ項目 #@lid を作成しています"
+
+msgid "@count_entries log entries removed for @jobs_count jobs"
+msgstr "@jobs_count 個のジョブに関する @count_entries 個のログ項目が削除されました"
+
+msgid "Invalid cleanup method: @method"
+msgstr "クリーンアップ方法が無効です: @method"
+
+msgid "Stores logs in the database."
+msgstr "ログをデータベースに保管します。"
+
+msgid "Next scheduled run at @datetime"
+msgstr "次回実行予定: @datetime"
+
+msgid "Comma separated list of crontab rules."
+msgstr "crontab ルールのコンマ区切りリスト。"
+
+msgid "Rule is invalid"
+msgstr "ルールが無効です"
+
+msgid "Use crontab rules for scheduling jobs."
+msgstr "crontab ルールを使用してジョブのスケジュールを行います。"
+
+msgid "Every @interval"
+msgstr "@interval ごと"
+
+msgid "Provides a set of predefined intervals for scheduling."
+msgstr "スケジューリングのための一連の定義済み間隔を提供します。"
+

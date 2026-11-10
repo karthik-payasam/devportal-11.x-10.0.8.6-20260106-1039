@@ -1,0 +1,101 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "關於"
+
+msgid "The Redirect domain module allows users to redirect between domains."
+msgstr "「重新導向網域」模組可讓使用者在網域之間重新導向。"
+
+msgid "Uses"
+msgstr "使用"
+
+msgid "Manage domain redirects"
+msgstr "管理網域重新導向"
+
+msgid "The domain redirect is accessed through <a href=\":domainlist\">Domain Redirects</a>. The user can add the domain redirects through the domain redirect table which consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected. The module also supports the usage of a wildcard redirecting, thus many requests can be handled with one instance of domain redirect."
+msgstr "透過<a href=\":domainlist\">網域重新導向</a>來存取網域重新導向。 使用者可以透過網域重新導向表格來新增網域重新導向，此表格包含需要重新導向的來源網域、子路徑，以及需要重新導向至的完整 URL 目的地。 該模組也支援使用萬用字元重新導向，因此可以使用一個網域重新導向實例來處理許多要求。"
+
+msgid "The domain redirect table consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected."
+msgstr "網域重新導向表格包含需要重新導向的來源網域、子路徑，以及需要重新導向至的完整 URL 目的地。"
+
+msgid "Example Configuration"
+msgstr "範例配置"
+
+msgid "Example Redirects"
+msgstr "範例重新導向"
+
+msgid "Request: example.com/redirect => Response: redirected.com/example-path"
+msgstr "要求：example.com/redirect => 回應：redirected.com/example-path"
+
+msgid "Request: foo.com/any-path => Response: bar.com"
+msgstr "要求：foo.com/any-path => 回應：bar.com"
+
+msgid "Precedence"
+msgstr "優先順序"
+
+msgid "Top-down precedence is used. This means the first matching redirect that is found will be taken. For example, assume these redirect rules:"
+msgstr "使用由上而下優先順序。 這表示將會採用第一個找到的相符重新導向。 例如，假設重新導向規則如下："
+
+msgid "foo.com/some/path => somedomain.com/path"
+msgstr "foo.com/some/path => somedomain.com/path"
+
+msgid "foo.com/* => wildcardredirect.com"
+msgstr "foo.com/* => wildcardredirect.com"
+
+msgid "foo.com/other/path => otherdomain.com/path"
+msgstr "foo.com/other/path => otherdomain.com/path"
+
+msgid "The following redirects would actually occur:"
+msgstr "實際發生的重新導向如下："
+
+msgid "foo.com/other/path => wildcardredirect.com"
+msgstr "foo.com/other/path => wildcardredirect.com"
+
+msgid "Redirect Domain"
+msgstr "重新導向網域"
+
+msgid "Allows users to redirect between domains."
+msgstr "容許使用者在網域之間重新導向。"
+
+msgid "Domain redirects"
+msgstr "網域重新導向"
+
+msgid "Configure domain redirects."
+msgstr "配置網域重新導向。"
+
+msgid "Redirect domains"
+msgstr "重新導向網域"
+
+msgid "Sub path"
+msgstr "子路徑"
+
+msgid "Destination"
+msgstr "目的地"
+
+msgid "From domain"
+msgstr "來源網域"
+
+msgid "Add another"
+msgstr "新增另一個"
+
+msgid "Save"
+msgstr "儲存"
+
+msgid "No protocol should be included in the redirect domain."
+msgstr "不應在重新導向網域中包括任何通訊協定。"
+
+msgid "The domain redirects have been saved."
+msgstr "已儲存網域重新導向。"
+

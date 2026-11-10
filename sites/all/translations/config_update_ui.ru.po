@@ -1,0 +1,236 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "О программе"
+
+msgid "The Configuration Update Reports module provides a report that allows you to see the differences between the default configuration provided by the current versions of your installed modules, themes, and install profile, and the active configuration of your site. From this report, you can also import new configuration provided by updates, and revert your active configuration to the provided default values."
+msgstr "Модуль Отчеты об обновлениях конфигураций создает отчет, в котором можно просмотреть различия между активной конфигурацией сайта и конфигурацией по умолчанию из текущих версий установленных модулей, тем и профайла установки. Кроме того, из этого отчета можно импортировать новую конфигурацию и восстановить значения по умолчанию в активной конфигурации."
+
+msgid "Uses"
+msgstr "Использует"
+
+msgid "Checking for configuration differences"
+msgstr "Проверка различий в конфигурациях"
+
+msgid "The <a href=\":report\">Updates report</a> shows you configuration that differs between your site's active configuration and the installed modules, themes, and install profile. Choose a particular configuration type (or All), or run the report for a particular module, theme, or your install profile."
+msgstr "В <a href=\":report\">отчете об обновлениях</a> показаны различия между активной конфигурацией сайта и конфигурацией из установленных модулей, тем и профайла установки. Выберите конкретный тип конфигурации (или Все) или выполните отчет для конкретного модуля, темы или профайла установки."
+
+msgid "This report shows which default configuration items provided by the current versions of your installed modules, themes, and install profile differ from the active configuration of your site. You can generate the report for all configuration of a certain type; for a particular installed module, theme, or your install profile (only modules, themes, and install profiles that actually provide configuration are listed); or for all configuration."
+msgstr "В этом отчете показано, какие элементы конфигурации по умолчанию из текущих версий установленных модулей, тем и профайла установки отличаются от активной конфигурации сайта. Отчет можно создать для всей конфигурации конкретного типа, для конкретного установленного модуля, темы или профайла установки (отображаются только модули, темы и профайлы установки, которые дополняют конфигурацию) или для всей конфигурации. "
+
+msgid "Some configuration provided by modules has dependencies, and is only added to your system when all the dependencies are satisfied. This is known as <em>optional</em> configuration."
+msgstr "Элементы конфигурации, предоставляемые модулями с зависимостями, добавляются в систему только после удовлетворения всех зависимостей. Другое название - <em>дополнительная</em> конфигурация."
+
+msgid "Differences, including missing and added configuration, can be due to either an updated module or theme providing different configuration from when you installed it, or to changes made by site administrators. This report does not differentiate between these two sources for differences, and note that an install profile can also silently override module/theme configuration. Overrides (such as those in your settings.php file) and translations are not considered when looking at differences."
+msgstr "Различия, включая отсутствующие и добавленные конфигурации, могут возникать в результате обновления модуля или темы либо внесения изменений администраторами сайта. В этом отчете не различаются такие источники различий. Кроме того, профайл установки может косвенным образом переопределять конфигурацию модуля/темы. В процессе анализа различий не учитываются переопределения (например из файла settings.php) и переводы."
+
+msgid "Most configuration is organized into a hierarchy of settings; at a minimum, it is a one-level hierarchy where each setting has a name and a value, and the hierarchy comes in when some of the settings have multiple components."
+msgstr "Большая часть конфигурации представляет собой иерархическую структуру параметров. В самом простом случае она состоит из одного уровня, на котором каждый параметр имеет имя и значение. Дополнительные уровни появляются, если отдельные параметры содержат несколько компонентов."
+
+msgid "Configuration items are normalized and formatted before computing differences. The normalization step alphabetizes the components at each level of the hierarchy, and removes a few components whose differences should be ignored, such as the UUID. The formatting step shows the full hierarchy of each configuration value with :: separators for the hierarchy levels, and a : separator between the lowest-level setting name and the value, so that in a line-by-line diff you can always see which values are actually different. Green lines with + signs have been added, and yellow lines with - signs have been removed."
+msgstr "Перед анализом различий элементы конфигурации нормализуются и форматируются. Нормализация предусматривает упорядочивание компонентов по алфавиту на каждом уровне иерархии и удаление игнорируемых компонентов, таких как UUID. В результате форматирования отображается полная иерархия каждой конфигурации с разделителями :: для уровней иерархии и разделителем : между именем и значением параметра на нижнем уровне, чтобы в режиме построчного сравнения можно было сразу определить отличающиеся значения. Добавлены зеленые линии сетки со знаками +, а желтые линии сетки со знаками - были удалены."
+
+msgid "Note that differences are considering the base configuration, without overrides from your settings.php file, or translations."
+msgstr "Обратите внимание, что анализ различий выполняется с учетом базовой конфигурации без переопределений из файла settings.php или переводов."
+
+msgid "Updates report"
+msgstr "Отчет об обновлениях"
+
+msgid "Configuration Update Reports"
+msgstr "Отчеты об обновлениях конфигураций"
+
+msgid "View configuration updates report"
+msgstr "Показать отчет об обновлениях конфигурации"
+
+msgid "Revert any configuration"
+msgstr "Восстановить любую конфигурацию"
+
+msgid "Delete any configuration"
+msgstr "Удалить любую конфигурацию"
+
+msgid "Import"
+msgstr "Импортировать"
+
+msgid "Differences"
+msgstr "Различия"
+
+msgid "Revert"
+msgstr "Восстановить"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "No added config."
+msgstr "Нет добавленных конфигураций. "
+
+msgid "No missing config."
+msgstr "Нет отсутствующих конфигураций. "
+
+msgid "No inactive config."
+msgstr "Нет неактивных конфигураций. "
+
+msgid "No different config"
+msgstr "Нет отличающихся конфигураций"
+
+msgid "Config is missing, cannot diff."
+msgstr "Конфигурация отсутствует, невозможно сравнить. "
+
+msgid "The configuration item @name was reverted to its source."
+msgstr "Восстановлен исходный элемент конфигурации @name."
+
+msgid "There was an error and the configuration item @name was not reverted."
+msgstr "Произошла ошибка в ходе восстановления элемента конфигурации @name."
+
+msgid "The configuration item @name was imported from its source."
+msgstr "Элемент конфигурации @name импортирован из источника."
+
+msgid "There was an error and the configuration item @name was not imported."
+msgstr "Произошла ошибка в ходе импорта элемента конфигурации @name."
+
+msgid "Simple configuration"
+msgstr "Простая конфигурация"
+
+msgid "Config difference for @type @name"
+msgstr "Различия конфигураций для @type @name"
+
+msgid "Source config"
+msgstr "Исходная конфигурация"
+
+msgid "Site config"
+msgstr "Конфигурация сайта"
+
+msgid "Revert to source"
+msgstr "Вернуться к источнику"
+
+msgid "Export"
+msgstr "Экспортировать"
+
+msgid "Generate new report"
+msgstr "Создать новый отчет"
+
+msgid "Report type"
+msgstr "Тип отчета"
+
+msgid "Report on"
+msgstr "Тип отчета"
+
+msgid "Everything"
+msgstr "Все"
+
+msgid "Full report"
+msgstr "Полный отчет"
+
+msgid "Single configuration type"
+msgstr "Один тип конфигурации"
+
+msgid "Single module"
+msgstr "Один модуль"
+
+msgid "Single theme"
+msgstr "Одна тема"
+
+msgid "Installation profile"
+msgstr "Профайл установки"
+
+msgid "All configuration"
+msgstr "Вся конфигурация"
+
+msgid "@name configuration"
+msgstr "Конфигурация @name"
+
+msgid "@name module"
+msgstr "Модуль @name"
+
+msgid "@name theme"
+msgstr "Тема @name"
+
+msgid "@name profile"
+msgstr "Профайл @name"
+
+msgid "Configuration updates report for @label"
+msgstr "Отчет об обновлениях конфигурации для @label"
+
+msgid "Missing configuration items"
+msgstr "Отсутствующие элементы конфигурации"
+
+msgid "None: all provided configuration items are in your active configuration."
+msgstr "Нет: все предоставленные элементы конфигурации присутствуют в активной конфигурации. "
+
+msgid "Inactive optional items"
+msgstr "Неактивные необязательные элементы"
+
+msgid "None: all optional configuration items are in your active configuration."
+msgstr "Нет: все необязательные элементы конфигурации присутствуют в активной конфигурации."
+
+msgid "Added configuration items"
+msgstr "Добавленные элементы конфигурации"
+
+msgid "None: all active configuration items of this type were provided by modules, themes, or install profile."
+msgstr "Нет: все элементы активной конфигурации этого типа предоставлены модулями, темами или профайлом установки. "
+
+msgid "Changed configuration items"
+msgstr "Измененные элементы конфигурации"
+
+msgid "None: no active configuration items differ from their current provided versions."
+msgstr "Нет: все элементы активной конфигурации совпадают с текущими предоставленными версиями. "
+
+msgid "Machine name"
+msgstr "Имя системы"
+
+msgid "Label (if any)"
+msgstr "Метка (если указана)"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Provider"
+msgstr "Провайдер"
+
+msgid "Operations"
+msgstr "Операции"
+
+msgid "Import from source"
+msgstr "Импортировать из источника"
+
+msgid "Show differences"
+msgstr "Показать различия"
+
+msgid "Are you sure you want to delete the %type config %item?"
+msgstr "Вы действительно хотите удалить элемент конфигурации %item %type?"
+
+msgid "This action cannot be undone. Manually deleting configuration from this page can cause problems on your site due to missing dependencies, and should only be done if there is no other way to delete a problematic piece of configuration."
+msgstr "Это действие нельзя будет отменить. Удаление конфигурации вручную на этой странице может вызвать неполадки сайта, связанные с отсутствующими зависимостями. Эту операцию следует выполнять только в том случае, если отсутствуют другие способы удаления ошибочного фрагмента конфигурации. "
+
+msgid "The configuration %item has been deleted."
+msgstr "Элемент конфигурации %item удален."
+
+msgid "Are you sure you want to import the %type config %item from its source configuration?"
+msgstr "Вы действительно хотите импортировать элемент конфигурации %item типа %type из исходной конфигурации?"
+
+msgid "Configuration will be added to your site. This action cannot be undone."
+msgstr "Конфигурация будет добавлена на сайт. Это действие нельзя будет отменить."
+
+msgid "The configuration %item has been imported from its source."
+msgstr "Конфигурация %item импортирована из источника."
+
+msgid "Are you sure you want to revert the %type config %item to its source configuration?"
+msgstr "Вы действительно хотите восстановить исходный элемент конфигурации %item %type?"
+
+msgid "Customizations will be lost. This action cannot be undone."
+msgstr "Изменения будут потеряны. Это действие нельзя будет отменить."
+
+msgid "The configuration %item has been reverted to its source."
+msgstr "Восстановлена исходная конфигурация %item."
+

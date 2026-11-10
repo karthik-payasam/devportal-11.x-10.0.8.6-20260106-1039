@@ -1,0 +1,78 @@
+<?php
+
+/**
+ * @file
+ * Install/update hooks for the Encrypted Login module.
+ */
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_schema().
+ */
+function encrypted_login_schema() {
+  // We no longer need the encrypted_login_keys table since AES keys
+  // are generated client-side and not stored in the database.
+  return [];
+}
+
+/**
+ * Implements hook_install().
+ */
+function encrypted_login_install() {
+  // Generate RSA Key Pair with stronger key length and proper padding.
+  $config = [
+    'private_key_bits' => 2048,
+    'private_key_type' => OPENSSL_KEYTYPE_RSA,
+    'digest_alg' => 'sha256',
+  ];
+
+  try {
+    // Generate new key pair.
+    $res = openssl_pkey_new($config);
+    if ($res === FALSE) {
+      throw new \Exception('Failed to generate RSA key pair: ' . openssl_error_string());
+    }
+
+    // Export private key.
+    if (!openssl_pkey_export($res, $private_key)) {
+      throw new \Exception('Failed to export private key: ' . openssl_error_string());
+    }
+
+    // Get public key.
+    $key_details = openssl_pkey_get_details($res);
+    if ($key_details === FALSE) {
+      throw new \Exception('Failed to get key details: ' . openssl_error_string());
+    }
+    $public_key = $key_details['key'];
+
+    // Store RSA keys securely in state API.
+    \Drupal::state()->set('encrypted_login.rsa_private_key', $private_key);
+    \Drupal::state()->set('encrypted_login.rsa_public_key', $public_key);
+
+    \Drupal::logger('encrypted_login')->info('RSA key pair successfully generated and stored.');
+  }
+  catch (\Exception $e) {
+    \Drupal::logger('encrypted_login')->error('Failed to initialize encrypted login: @message', ['@message' => $e->getMessage()]);
+    throw $e;
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function encrypted_login_uninstall() {
+  // Clean up state variables.
+  \Drupal::state()->delete('encrypted_login.rsa_private_key');
+  \Drupal::state()->delete('encrypted_login.rsa_public_key');
+}
+
+/**
+ * Remove encrypted_login_keys table and clean up old AES keys.
+ */
+function encrypted_login_update_8001() {
+  $schema = Database::getConnection()->schema();
+  if ($schema->tableExists('encrypted_login_keys')) {
+    $schema->dropTable('encrypted_login_keys');
+  }
+}

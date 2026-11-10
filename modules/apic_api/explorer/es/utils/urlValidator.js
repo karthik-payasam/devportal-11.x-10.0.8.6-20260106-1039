@@ -1,0 +1,1 @@
+export var navigateTo=function(a){window.location.assign(a)};export var isUrlSafe=function(a){if(!a||""===a.trim())return!1;try{var b=new URL(a);return"https:"===b.protocol}catch(a){return!1}};export var safeNavigate=function(a){if(!isUrlSafe(a))return!1;try{var b=new URL(a);return navigateTo(b.href),!0}catch(b){return console.warn("Error navigating to URL:",a),!1}};

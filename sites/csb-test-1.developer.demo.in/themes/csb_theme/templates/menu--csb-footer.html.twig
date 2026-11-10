@@ -1,0 +1,82 @@
+<div class="footer-cta">
+    <div class="footer-cta-text">
+      <h3>Integrate CSB Banking APIs</h3>
+      <p>Access Environment &amp; documentation to start building.</p>
+    </div>
+    <div>
+      <a href="/devcustportal/portal/product" class="cta-btn">Get API Access →</a>
+    </div>
+  </div>
+<div class="footer-grid">
+
+  <!-- Logo Column -->
+  <div class="footer-col footer-logo">
+    <a href="{{ path('<front>') }}">
+      <img src="{{ file_url('public://inline-images/CSB Main Logo_CSB Bank_Primary Logo (1).jpg') }}" alt="CSB Bank Logo">
+    </a>
+    <p>
+      Secure and scalable API platform for fintech and enterprise integrations.
+    </p>
+  </div>
+
+  {# MAIN FOOTER COLUMNS #}
+  {% for item in items %}
+
+    {# Skip bottom links #}
+    {% if item.title not in ['Privacy Policy', 'Contact Us', 'Terms and Conditions'] %}
+
+      {% set column_classes = ['footer-col'] %}
+
+      {% if item.title|trim == 'Products' %}
+        {% set column_classes = column_classes|merge(['footer-products']) %}
+      {% elseif item.title|trim == "Let's Get Started" %}
+        {% set column_classes = column_classes|merge(['footer-developers']) %}
+      {% elseif item.title|trim == 'Getting Help & Community' %}
+        {% set column_classes = column_classes|merge(['footer-support']) %}
+      {% endif %}
+
+      <div{{ item.attributes.addClass(column_classes) }}>
+
+        <h4>{{ item.title }}</h4>
+
+        {% if item.below %}
+          <ul>
+            {% for sub_item in item.below %}
+              <li>
+                <a href="{{ sub_item.url }}">
+                  {{ sub_item.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+      </div>
+
+    {% endif %}
+
+  {% endfor %}
+
+</div>
+
+<hr>
+
+<div class="footer-bottom">
+  <div>
+    &copy; {{ "now"|date("Y") }} CSB Bank. All Rights Reserved.
+  </div>
+
+  <div class="footer-links">
+    <ul>
+      {% for item in items %}
+        {% if item.title in ['Privacy Policy', 'Contact Us', 'Terms and Conditions'] %}
+          <li>
+            <a href="{{ item.url }}">
+              {{ item.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

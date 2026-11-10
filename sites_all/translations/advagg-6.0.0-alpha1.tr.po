@@ -1,0 +1,1117 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Keep all Advagg settings but disable all functionality."
+msgstr "Tüm Advagg ayarlarını tut, ancak tüm işlevselliği devre dışı bırak"
+
+msgid "Restore all Advagg functionality if disabled."
+msgstr "Devre dışı bırakılırsa tüm Advagg işlevselliğini geri yükleyin."
+
+msgid "Run the advagg cron hook. This will clear out all stale advagg aggregated files, remove aggregates that include missing files, and remove unused aggregates."
+msgstr "advagg görev kancasını çalıştırın. Bu, tüm eski advagg toplanmış dosyalarını temizler, eksik dosyalar içeren toplamaları kaldırır ve kullanılmayan toplamaları kaldırır."
+
+msgid "Remove all generated files. Useful if you think some of the generated files got corrupted and thus need to be deleted."
+msgstr "Tüm oluşturulan dosyaları kaldırın. Oluşturulan dosyaların bazılarının bozulduğunu ve bu nedenle silinmesi gerektiğini düşünüyorsanız yararlıdır."
+
+msgid "Force the creation of all new optimized files by incrementing a global counter. Current value of counter: %value. This is may be useful if a CDN has cached an something incorrectly as it will force new ones to be used even if nothing else has changed."
+msgstr "Genel bir sayacı artırarak tüm yeni eniyilenmiş dosyaların oluşturulmasını zorlayın. Sayacın geçerli değeri: %value. Bu, hiçbir şey değişmemiş olsa da yenilerinin kullanılmasını zorlayacağından, CDN bir  şeyi yanlış şekilde önbelleğe aldıysa yararlı olabilir."
+
+msgid "Run the advagg cron hook."
+msgstr "advagg görev kancasını çalıştırın."
+
+msgid "Disable Advagg."
+msgstr "Advagg'i devre dışı bırakın."
+
+msgid "Enable Advagg."
+msgstr "Advagg'i etkinleştirin."
+
+msgid "Remove all generated files."
+msgstr "Tüm oluşturulan dosyaları kaldırın."
+
+msgid "Force the creation of all new files by incrementing a global counter."
+msgstr "Genel bir sayacı artırarak tüm yeni dosyaların oluşturulmasını zorlayın."
+
+msgid "All Advagg functionality is disabled."
+msgstr "Tüm Advagg işlevselliği devre dışı bırakıldı."
+
+msgid "All Advagg functionality is enabled."
+msgstr "Tüm Advagg işlevselliği etkinleştirildi."
+
+msgid "Global counter is now set to @new_value"
+msgstr "Genel sayaç şimdi @new_value değerine ayarlandı"
+
+msgid "All AdvAgg optimized files have been deleted. %css_count CSS files and %js_count JS files have been removed."
+msgstr "AdvAgg için optimize edilmiş tüm dosyalar silindi. %css_count CSS dosyaları ve %js_count JS dosyaları kaldırıldı."
+
+msgid "All stale aggregates have been deleted. %css_count CSS files and %js_count JS files have been removed."
+msgstr "Tüm eski toplamalar silindi. %css_count CSS dosyaları ve %js_count JS dosyaları kaldırıldı."
+
+msgid "No stale aggregates found. Nothing was deleted."
+msgstr "Eski bir toplama bulunamadı. Herhangi bir şey silinmedi."
+
+msgid "NOTE: If you wish to bypass AdvAgg optimizations for a set amount of time, you can go to the <a href=\"@operations\">AdvAgg operations</a> page and press the <em>\"optimization bypass cookie\"</em> button."
+msgstr "NOT: Belirli bir süre için AdvAgg optimizasyonlarını atlamak istiyorsanız, <a href=\"@operations\">AdvAgg işlemleri</a> sayfasına gidip <em>\"optimizasyon atlama tanımlama bilgisi\"</em> düğmesine basabilirsiniz."
+
+msgid "You can also selectively bypass AdvAgg optimization by adding <code>@code</code> to the URL of any page."
+msgstr "Herhangi bir sayfanın URL'sine <code>@code</code> öğesini ekleyip seçerek de AdvAgg eniyilemesini atlayabilirsiniz."
+
+msgid "You do not have the <a href=\"@permission\">bypass advanced aggregation permission</a> so adding <code>@code</code> to the URL will not work at this time for you; either grant this permission to your user role or use the bypass cookie if you wish to selectively bypass AdvAgg optimizations."
+msgstr "<a href=\"@permission\">Gelişmiş toplamayı atlama izniniz</a> yoktur, bu nedenle URL'ye <code>@code</code> eklenmesi şu anda sizin için işe yaramaz; ya kullanıcı rolünüze bu izni verin ya da AdvAgg eniyilemelerini seçerek atlamak istiyorsanız atlama tanımlama bilgisini kullanın."
+
+msgid "The AdvAgg bypass cookie is currently enabled. Turn it off by going to the <a href=\"@advagg_operations\">AdvAgg Operations</a> page and clicking the <em>Toggle the \"aggregation bypass cookie\" for this browser</em> button."
+msgstr "AdvAgg atlama tanımlama bilgisi şu anda etkinleştirildi. <a href=\"@advagg_operations\">AdvAgg İşlemleri</a> sayfasına gidip <em>Bu tarayıcı için \"toplama atlama tanımlama bilgisini\" aç/kapat</em> düğmesini tıklatarak bu seçeneği kapatın."
+
+msgid "The AdvAgg bypass cookie is currently enabled. Turn it off by <a href=\"@login\">logging in</a> with a user with the \"administer site configuration\" permissions and going to the <a herf=\"@advagg_operations\">AdvAgg Operations page</a> and clicking the <em>Toggle the \"aggregation bypass cookie\" for this browser</em> button."
+msgstr "AdvAgg atlama tanımlama bilgisi şu anda etkinleştirildi. \"Site yapılandırmasını yönetme\" izinlerine sahip bir kullanıcıyla <a href=\"@login\">oturum açarak</a> ve <a herf=\"@advagg_operations\">AdvAgg İşlemleri sayfasına</a> gidip, <em>Bu tarayıcı için \"toplama atlama tanımlama bilgisini\" aç/kapat</em> düğmesini tıklatarak bunu kapatın."
+
+msgid "0 sec"
+msgstr "0 sn"
+
+msgid "AdvAgg Bypass Cookie Removed"
+msgstr "AdvAgg Atlama Tanımlama Bilgisi Kaldırıldı"
+
+msgid "AdvAgg Bypass Cookie Set for @time."
+msgstr "@time için AdvAgg Atlama Tanımlama Bilgisi Ayarlandı."
+
+msgid "1 year"
+msgid_plural "@count years"
+msgstr[0] "1 yıl"
+msgstr[1] "@count yıl"
+
+msgid "1 month"
+msgid_plural "@count months"
+msgstr[0] "1 ay"
+msgstr[1] "@count ay"
+
+msgid "1 week"
+msgid_plural "@count weeks"
+msgstr[0] "1 hafta"
+msgstr[1] "@count weeks"
+
+msgid "1 day"
+msgid_plural "@count days"
+msgstr[0] "1 gün"
+msgstr[1] "@count gün"
+
+msgid "1 hour"
+msgid_plural "@count hours"
+msgstr[0] "1 saat"
+msgstr[1] "@count saat"
+
+msgid "1 min"
+msgid_plural "@count min"
+msgstr[0] "1 dak"
+msgstr[1] "@count min"
+
+msgid "1 sec"
+msgid_plural "@count sec"
+msgstr[0] "1 sn"
+msgstr[1] "@count sec"
+
+msgid "Advanced CSS/JS Aggregation"
+msgstr "Gelişmiş CSS/JS Toplaması"
+
+msgid "Aggregates multiple CSS/JS files in a way that prevents 404 from happening when accessing a CSS or JS file."
+msgstr "Bir CSS ya da JS dosyasına erişilirken 404 hatası oluşmasını engelleyecek şekilde birden çok CSS/JS dosyasını toplar."
+
+msgid "AdvAgg"
+msgstr "AdvAgg"
+
+msgid "Information"
+msgstr "Bilgi"
+
+msgid "Operations"
+msgstr "İşlemler"
+
+msgid "AdvAgg settings."
+msgstr "AdvAgg ayarları."
+
+msgid "Display AdvAgg system information."
+msgstr "AdvAgg sistem bilgilerini görüntüleyin."
+
+msgid "Perform AdvAgg operations."
+msgstr "AdvAgg işlemleri gerçekleştirin."
+
+msgid "Configuration"
+msgstr "Yapılandırma"
+
+msgid "Bypass advanced aggregation"
+msgstr "Gelişmiş toplamayı atla"
+
+msgid "User can use URL query strings to bypass AdvAgg."
+msgstr "Kullanıcı, AdvAgg öğesini atlamak için URL sorgu dizgilerini kullanabilir."
+
+msgid "AdvAgg: Configuration"
+msgstr "AdvAgg: Yapılandırma"
+
+msgid "AdvAgg: Information"
+msgstr "AdvAgg: Bilgi"
+
+msgid "AdvAgg: Operations"
+msgstr "AdvAgg: İşlemler"
+
+msgid "AdvAgg Bundler"
+msgstr "AdvAgg Paketleyici"
+
+msgid "Customize the number of aggregates to be created."
+msgstr "Oluşturulacak toplamaların sayısını özelleştirin."
+
+msgid "Bundler"
+msgstr "Paketleyici"
+
+msgid "AdvAgg Bundler settings."
+msgstr "AdvAgg Paketleyici ayarları."
+
+msgid "AdvAgg: Bundler"
+msgstr "AdvAgg: Paketleyici"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Whether to run the bundler options."
+msgstr "Paketleyici seçeneklerinin çalıştırılıp çalıştırılmayacağı."
+
+msgid "Settings for CSS bundling."
+msgstr "CSS paketleme ayarları"
+
+msgid "Maximum target css aggregates."
+msgstr "Hedef css toplamaları üst sınırı."
+
+msgid "The logic to use for bundling the CSS Files."
+msgstr "CSS Dosyalarının paketlenmesinde kullanılacak mantık."
+
+msgid "Settings for JavaScript bundling."
+msgstr "JavaScript paketleme ayarları"
+
+msgid "Maximum target JavaScript aggregates."
+msgstr "Hedef JavaScript toplamaları üst sınırı."
+
+msgid "The logic to use for bundling the JS Files."
+msgstr "JS Dosyalarının paketlenmesinde kullanılacak mantık."
+
+msgid "Bundler is Active"
+msgstr "Paketleyici Etkin"
+
+msgid "If not checked, the bundler will not split up aggregates."
+msgstr "İşaretlenmezse, paketleyici toplamaları bölmez."
+
+msgid "CSS Bundling options."
+msgstr "CSS Paketleme seçenekleri."
+
+msgid "Target Number Of CSS Bundles Per Page"
+msgstr "Sayfa Başına Hedef CSS Paketi Sayısı"
+
+msgid "If 0 is selected then the bundler is disabled"
+msgstr "0 seçilirse, paketleyici devre dışı bırakılır"
+
+msgid "Grouping logic"
+msgstr "Gruplama mantığı"
+
+msgid "File count"
+msgstr "Dosya sayısı"
+
+msgid "File size"
+msgstr "Dosya boyutu"
+
+msgid "If file count is selected then each bundle will try to have a similar number of original files aggregated inside of it. If file size is selected then each bundle will try to have a similar file size."
+msgstr "Dosya sayısı seçilirse, her paketin içinde aynı sayıda özgün dosya toplanması girişiminde bulunulur. Dosya boyutu seçilirse, her bir paket, benzer dosya boyutuna sahip olmaya çalışır."
+
+msgid "JavaScript Bundling options."
+msgstr "JavaScript Paketleme seçenekleri."
+
+msgid "Target Number Of JS Bundles Per Page"
+msgstr "Sayfa Başına Hedef JS Paketi Sayısı"
+
+msgid "AdvAgg CDN"
+msgstr "AdvAgg CDN"
+
+msgid "Use a shared CDN for JavaScript and/or CSS libraries, Google Libraries API currently."
+msgstr "Şu anda JavaScript ve/veya CSS kitaplıkları, Google Kitaplıkları API'si için paylaşılan bir CDN kullanın."
+
+msgid "AdvAgg CSS Minify"
+msgstr "AdvAgg CSS Küçültme"
+
+msgid "AdvAgg CSS Minification is disabled."
+msgstr "AdvAgg CSS Küçültme özelliği devre dışı bırakıldı."
+
+msgid "Go to the <a href=\"@settings\">AdvAgg Minify CSS settings page</a> and select a minifier, or go to the <a href=\"@modules\">modules page</a> and disable the \"AdvAgg Minify CSS\" module."
+msgstr "<a href=\"@settings\">AdvAgg Minify CSS ayarları sayfasına</a> gidin ve bir küçültücü seçin ya da <a href=\"@modules\">modüller sayfasına</a> gidin ve \"AdvAgg Minify CSS\" modülünü devre dışı bırakın."
+
+msgid "AdvAgg Minify CSS"
+msgstr "AdvAgg CSS Küçültme"
+
+msgid "Minify CSS."
+msgstr "CSS'yi küçültün."
+
+msgid "CSS Minification"
+msgstr "CSS Küçültme"
+
+msgid "AdvAgg CSS minification settings."
+msgstr "AdvAgg CSS küçültme ayarları."
+
+msgid "AdvAgg: CSS Minification"
+msgstr "AdvAgg: CSS Küçültme"
+
+msgid "Which minifier to use. 0 is Disabled."
+msgstr "Kullanılacak küçültücü. 0, Devre Dışı demektir."
+
+msgid "Add licensing information to aggregates for individual source files."
+msgstr "Tek tek kaynak dosyaları için toplamalara lisans bilgileri ekleyin."
+
+msgid "The settings below will not have any effect because AdvAgg is currently in <a href=\"@devel\">development mode</a>. Once the cache settings have been set to a non-development level, CSS minification will take place."
+msgstr "AdvAgg şu anda <a href=\"@devel\">geliştirme kipinde</a> olduğundan aşağıdaki ayarların herhangi bir etkisi olmaz. Önbellek ayarları, geliştirme dışı bir düzeye ayarlandıktan sonra CSS küçültme işlemi gerçekleşir."
+
+msgid "Disabled"
+msgstr "Geçersiz Kılındı"
+
+msgid "Core"
+msgstr "Çekirdek"
+
+msgid "YUI Compressor"
+msgstr "YUI Compressor"
+
+msgid "Minification: Select a minifier"
+msgstr "Küçültme: Bir küçültücü seçin"
+
+msgid "Add licensing comments"
+msgstr "Lisans açıklamaları ekle"
+
+msgid ""
+"If unchecked, the Advanced Aggregation module's licensing comments\n"
+"      will be omitted from the aggregated files. Omitting the comments will produce somewhat better scores in\n"
+"      some automated security scans but otherwise should not affect your site. These are included by default in order to better follow the spirit of the GPL by providing the source for javascript files."
+msgstr ""
+"İşaretlenmezse, Advanced Aggregation modülünün lisans yorumları,\n"
+"       toplanan dosyalardan çıkarılır. Yorumları atlarsanız, bazı otomatik güvenlik taramalarında daha iyi\n"
+"      puanlar elde edersiniz, ancak aksi takdirde sitenizi etkilememeniz gerekir. Javascript dosyaları için kaynak sağlayarak GPL ruhunu daha iyi izlemek için varsayılan olarak bunlar dahildir."
+
+msgid "Advagg External Minification: PHP shell_exec"
+msgstr "Advagg Dış Küçültme: PHP shell_exec"
+
+msgid "PHP shell_exec is non-functional."
+msgstr "PHP shell_exec işlevsel değildir."
+
+msgid "Check php.ini for safemode or <a href=\"@link\" target=\"_blank\">disable_functions</a>."
+msgstr "Güvenli kip ya da <a href=\"@link\" target=\"_blank\">disable_functions</a> için php.ini dosyasını denetleyin."
+
+msgid "Enabled"
+msgstr "Etkinleştirildi"
+
+msgid "AdvAgg External Minification"
+msgstr "AdvAgg Dış Küçültme"
+
+msgid "Minify Javascript and/or CSS with a command line minifier."
+msgstr "Javascript ve/veya CSS'yi bir komut satırı küçültücü ile küçültün."
+
+msgid "External Minification"
+msgstr "Dış Küçültme"
+
+msgid "AdvAgg external minification settings."
+msgstr "AdvAgg dış küçültme ayarları"
+
+msgid "AdvAgg: External Minifiers"
+msgstr "AdvAgg: Dış Küçültücüler"
+
+msgid "Command line for external CSS minification."
+msgstr "Dış CSS küçültme için komut satırı."
+
+msgid "Whether to use the external CSS minifier if configured."
+msgstr "Yapılandırıldıysa, dış CSS küçültücünün kullanılıp kullanılmayacağı."
+
+msgid "Command line for external JavaScript minification."
+msgstr "Dış JavaScript küçültme için komut satırı."
+
+msgid "Whether to use the external JS minifier if configured."
+msgstr "Yapılandırıldıysa, dış JS küçültücünün kullanılıp kullanılmayacağı."
+
+msgid "CSS"
+msgstr "CSS"
+
+msgid "JavaScript"
+msgstr "JavaScript"
+
+msgid "Command Line"
+msgstr "Komut Satırı"
+
+msgid "{%CWD%} = \\Drupal::root(). <br /> {%IN%} = input file. <br /> {%IN_URL_ENC%} = url pointing to the input file that has been url encoded. <br /> {%OUT%} = output file. <br /><br />"
+msgstr "{%CWD%} = \\Drupal::root (). <br /> {%IN%} = giriş dosyası. <br /> {%IN_URL_ENC%} = url kodlu giriş dosyasını gösteren url. <br /> {%OUT%} = çıkış dosyası.<br /><br />"
+
+msgid "Example using the <a href=\"@link1\">Microsoft Ajax Minifier</a>. <p><code>@code1</code></p>"
+msgstr "<a href=\"@link1\">Microsoft Ajax Minifier</a> özelliğinin kullanımı örneği. <p><code>@code1</code></p>"
+
+msgid "Example using the <a href=\"@link1\">Google Closure Compiler</a>. <p><code>@code1</code></p>"
+msgstr "<a href=\"@link1\">Google Closure Compiler</a> özelliğini kullanım örneği. <p><code>@code1</code></p>"
+
+msgid "Example using curl to minify via the <a href=\"@link1\">Online Google Closure Compiler</a>. <p><code>@code1</code></p>"
+msgstr "<a href=\"@link1\">Çevrimiçi Google Closure Compiler</a> aracılığıyla küçültmek için curl kullanımı örneği. <p><code>@code1</code></p>"
+
+msgid "Example using the <a href=\"@link1\">YUI Compressor</a>. <p><code>@code1</code></p>"
+msgstr "<a href=\"@link1\">YUI Compressor</a> kullanma örneği. <p><code>@code1</code></p>"
+
+msgid "Example using curl to minify via an online <a href=\"@link1\">CSS Minifier</a>. <p><code>@code1</code></p>"
+msgstr "Çevrimiçi <a href=\"@link1\">CSS Minifier</a> aracılığıyla küçültmek için curl kullanımı örneği. <p><code>@code1</code></p>"
+
+msgid "Command to run"
+msgstr "Çalıştırılacak komut"
+
+msgid "Enable external @type minification"
+msgstr "Dış @type küçültmesini etkinleştir"
+
+msgid "AdvAgg JS Minify"
+msgstr "AdvAgg JS Küçültme"
+
+msgid "AdvAgg JS Minification is disabled."
+msgstr "AdvAgg JS Küçültme devre dışı bırakıldı."
+
+msgid "Go to the <a href=\"@settings\">AdvAgg Minify JavaScript settings page</a> and select a minifier, or go to the <a href=\"@modules\">modules page</a> and disable the \"AdvAgg Minify Javascript\" module."
+msgstr "<a href=\"@settings\">AdvAgg Minify JavaScript ayarlar sayfasına</a> gidin ve bir küçültücü seçin ya da <a href=\"@modules\">modüller sayfasına</a> gidin ve \"AdvAgg Minify Javascript\" modülünü devre dışı bırakın."
+
+msgid "AdvAgg Minify JavaScript"
+msgstr "AdvAgg JavaScript Küçültme"
+
+msgid "Minify JavaScript with a 3rd party minifier; JSMin+, JSMin c ext, JShrink, and JSqueeze currently."
+msgstr "JavaScript'i 3. taraf küçültücü ile küçültün; şu anda JSMin+, JSMin c ext, JShrink ve JSqueeze."
+
+msgid "JavaScript Minification"
+msgstr "JavaScript Küçültme"
+
+msgid "AdvAgg JavaScript minification settings."
+msgstr "AdvAgg JavaScript küçültme ayarları."
+
+msgid "AdvAgg: JS Minification"
+msgstr "AdvAgg: JS Küçültme"
+
+msgid "Minifier to use. 0 is disabled."
+msgstr "Kullanılacak küçültücü. 0, devre dışı demektir."
+
+msgid "Upper bound comparison value for the minification ratio test."
+msgstr "Küçültme oranı testi için üst sınır karşılaştırma değeri."
+
+msgid "Lower bound comparison value for the minification ratio test."
+msgstr "Küçültme oranı testi için alt sınır karşılaştırma değeri."
+
+msgid "The jsmin function does not exist. Using JSqueeze."
+msgstr "jsmin işlevi yok. JSqueeze kullanılıyor."
+
+msgid "JSMin had a possible error minifying: @file, correcting."
+msgstr "JSMin, @file küçültülürken olası bir hatayla karşılaştı, hata düzeltiliyor."
+
+msgid "JSMin had an error minifying file: @file, attempting to correct."
+msgstr "JSMin, @file dosyası küçültülürken bir hatayla karşılaştı, hata düzeltilmeye çalışılıyor."
+
+msgid "The currently installed jsmin version does not handle multibyte characters, you may consider to upgrade the jsmin extension. Using JSqueeze fallback."
+msgstr "Şu anda kurulu jsmin sürümü, çok baytlı karakterleri işlemiyor; jsmin uzantısını yükseltmeyi düşünebilirsiniz. JSqueeze yedeği kullanılıyor."
+
+msgid "The settings below will not have any effect because AdvAgg is currently in <a href=\"@devel\">development mode</a>. Once the cache settings have been set to a non-development level, JS minification will take place."
+msgstr "AdvAgg şu anda <a href=\"@devel\">geliştirme kipinde</a> olduğundan aşağıdaki ayarların herhangi bir etkisi olmaz. Önbellek ayarları, geliştirme dışı bir düzeye ayarlandıktan sonra JS küçültme işlemi gerçekleşir."
+
+msgid "JSMin+ ~1300ms"
+msgstr "JSMin+ ~1300 ms"
+
+msgid "JShrink ~1000ms"
+msgstr "JShrink ~1000 ms"
+
+msgid "JSqueeze ~600ms"
+msgstr "JSqueeze ~600 ms"
+
+msgid "JSMin ~2ms"
+msgstr "JSMin ~2 ms"
+
+msgid "JSMin is the very fast C complied version. Recommend using it."
+msgstr "JSMin, çok hızlı C derlenmiş sürümüdür. Bunun kullanılmasını öneririz."
+
+msgid "You can use the much faster C version of JSMin (~2ms) by installing the <a href=\"@php_jsmin\">JSMin PHP Extension</a> on this server."
+msgstr "Bu sunucuya <a href=\"@php_jsmin\">JSMin PHP Uzantısı</a>'nı kurarak JSMin'in çok daha hızlı C sürümünü (~2 ms) kullanabilirsiniz."
+
+msgid "AdvAgg Modifier"
+msgstr "AdvAgg Değiştirici"
+
+msgid "Allows one to alter the CSS and JS array."
+msgstr "CSS ve JS dizisinin değiştirilmesine olanak sağlar."
+
+msgid "Modifications"
+msgstr "Değişiklikler"
+
+msgid "AdvAgg Modifications."
+msgstr "AdvAgg Değişiklikleri."
+
+msgid "AdvAgg: Modifications"
+msgstr "AdvAgg: Değişiklikler"
+
+msgid "Default value to adjust the sorting of browser conditional CSS."
+msgstr "Tarayıcı koşullu CSS sıralamasını ayarlamak için varsayılan değer."
+
+msgid "Default value to adjust the sorting of external CSS."
+msgstr "Dış CSS sıralamasını ayarlamak için varsayılan değer."
+
+msgid "Default value to use JavaScript to defer CSS loading."
+msgstr "CSS yüklemesini ertelemek için JavaScript kullanmaya ilişkin varsayılan değer."
+
+msgid "Whether to defer loading of CSS on the admin theme."
+msgstr "Yönetici temasında CSS yüklemesinin ertelenip ertelenmeyeceği."
+
+msgid "Whether to also defer loading of external stylesheets."
+msgstr "Dış stil sayfalarının yüklemesinin de ertelenip ertelenmeyeceği."
+
+msgid "Default value of the inclusion method for the loadCSS code."
+msgstr "loadCSS kodu için ekleme yönteminin varsayılan değeri."
+
+msgid "Default value to turn on preprocessing for all CSS files."
+msgstr "Tüm CSS dosyalarına ilişkin ön işlemeyi açmak için varsayılan değer."
+
+msgid "Default value to translate the content attributes of CSS files."
+msgstr "CSS dosyalarının içerik özniteliklerini çevirmek için varsayılan değer."
+
+msgid "Default value to adjust the sorting of external JavaScript"
+msgstr "Dış JavaScript sıralamasını ayarlamak için varsayılan değer."
+
+msgid "Default value to adjust the sorting of browser conditional JavaScript."
+msgstr "Tarayıcı koşullu JavaScript sıralamasını ayarlamak için varsayılan değer."
+
+msgid "Default value to have async on all JS script tags."
+msgstr "Tüm JS komut dosyası etiketlerinde zamanuyumsuz olmak için varsayılan değer."
+
+msgid "Default value to move async js to the header."
+msgstr "Zamanuyumsuz js'yi üstbilgiye taşımak için varsayılan değer."
+
+msgid "Default value to add the defer tag to all script tags."
+msgstr "Tüm komut dosyası etiketlerine erteleme etiketi eklemek için varsayılan değer."
+
+msgid "Default value to move all JS to the footer."
+msgstr "Tüm JS'yi altbilgiye taşımak için varsayılan değer."
+
+msgid "Default value to turn on preprocessing for all JavaScript files."
+msgstr "Tüm JavaScript dosyalarına ilişkin ön işlemeyi açmak için varsayılan değer."
+
+msgid "Remove console.log() calls from JavaScript files."
+msgstr "JavaScript dosyalarından console.log() çağrılarını kaldırın."
+
+msgid "Default value to use the prefetch tag for certain domains."
+msgstr "Belirli etki alanlarına ilişkin önceden getirme etiketini kullanmak için varsayılan değer."
+
+msgid "Use one css/js directory for a multi-site."
+msgstr "Çoklu site için tek bir css/js dizini kullanın."
+
+msgid "@before"
+msgstr "@before"
+
+msgid "JS"
+msgstr "JS"
+
+msgid "Enable preprocess on all JS"
+msgstr "Tüm JS'lerde ön işlemeyi etkinleştir"
+
+msgid "Force all JavaScript to have the preprocess attribute be set to TRUE. All JavaScript files will be aggregated if enabled."
+msgstr "Tüm JavaScript'i, ön işleme özniteliğini TRUE olarak ayarlamaya zorlayın. Bu etkinleştirilirse, tüm JavaScript dosyaları toplanır."
+
+msgid "Remove console logging from JS files."
+msgstr "JS dosyalarından konsol günlüğünü kaldırın."
+
+msgid "Harmless under most cases, but may make debugging difficult. WARNING: experimental."
+msgstr "Çoğu durumda zararsızdır, ancak hata ayıklamayı zorlaştırabilir. UYARI: deneyseldir."
+
+msgid "Optimize JavaScript Ordering"
+msgstr "JavaScript Sıralamasını Eniyile"
+
+msgid "The settings in here might change the order in which the JavaScript is loaded. It will move the scripts around so that more optimal aggregates are built. In most cases enabling these checkboxes will cause no negative side effects."
+msgstr "Buradaki ayarlar, JavaScript'in yüklenme sırasını değiştirebilir. Daha fazla en iyi toplama oluşturulması için komut dosyalarını taşır. Çoğu durumda bu onay kutularının etkinleştirilmesi, olumsuz yan etkilere neden olur."
+
+msgid "Move all external scripts to the top of the execution order"
+msgstr "Tüm dış komut dosyalarını, yürütme sırasının en üstüne taşı"
+
+msgid "This will group all external JavaScript files to be above all other JavaScript."
+msgstr "Bu, tüm dış JavaScript dosyalarını, diğer tüm JavaScript'lerin en üstünde olacak şekilde gruplar."
+
+msgid "Move all browser conditional JavaScript to the bottom of the group"
+msgstr "Tüm tarayıcı koşullu JavaScript'ini grubun en altına taşı"
+
+msgid "This will group all browser conditional JavaScript to be in the lowest group of that conditional rule."
+msgstr "Bu, tüm tarayıcı koşullu JavaScript'ini, söz konusu koşullu kuralın en alt grubunda olacak şekilde gruplar."
+
+msgid "Adjust javascript location and execution"
+msgstr "Javascript konumunu ve yürütmesini ayarla"
+
+msgid "Most of the time adjusting the settings are safe but in some rare cases adjusting these can cause serious JavaScript issues with your site."
+msgstr "Çoğu zaman ayarların yapılması güvenlidir; ancak bazı nadir durumlarda bunların ayarlanması, sitenizle ilgili ciddi JavaScript sorunlarına neden olabilir."
+
+msgid "Deferred JavaScript Execution: Add The defer Tag To All Script Tags"
+msgstr "Ertelenen JavaScript Yürütmesi:  Tüm Komut Dosyası Etiketlerine erteleme Etiketi ekle"
+
+msgid "All but external scripts"
+msgstr "Dış komut dosyaları dışında tümü"
+
+msgid "All (might break things)"
+msgstr "Tümü (bazı şeyleri bozabilir)"
+
+msgid "This will delay the script execution until the HTML parser has finished. This will have a similar effect to moving all JavaScript to the footer. This might break javascript (especially inline); only use after extensive testing! <a href=\"@link\">More Info</a>"
+msgstr "Bu, komut dosyası yürütmesini HTML ayrıştırıcısı tamamlanıncaya kadar geciktirir. Tüm JavaScript'in altbilgiye taşınmasına benzer bir etkisi vardır. Bu, javascript'i (özellikle satır içi) bozabilir; yalnızca kapsamlı testten sonra kullanın! <a href=\"@link\">Daha Fazla Bilgi</a>"
+
+msgid "Experimental Settings"
+msgstr "Deneysel Ayarlar"
+
+msgid "Here there be dragons! Asynchronous JavaScript Execution: Add The async Tag To All Script Tags"
+msgstr "İşte en büyük silahınız! Zamanuyumsuz JavaScript Yürütmesi: Tüm Komut Dosyası Etiketlerine zamanuyumsuz Etiketi ekle"
+
+msgid "This will cause the script to be downloaded in the background and executed out of order. This will break most javascript as most code is not async safe; only use after extensive testing! <a href=\"@link\">More Info</a>"
+msgstr "Bu, komut dosyasının arka planda indirilmesine ve sırasız yürütülmesine neden olur. Çoğu kod zamanuyumsuzluk açısından güvenli olmadığından bu çoğu javascript'i bozar; yalnızca kapsamlı testten sonra kullanın! <a href=\"@link\">Daha Fazla Bilgi</a>"
+
+msgid "Asynchronous JavaScript Execution: Group together in the header"
+msgstr "Zamanuyumsuz JavaScript Yürütmesi: Üstbilgide birlikte grupla"
+
+msgid "This will move all async JavaScript code to the header in the same group."
+msgstr "Bu, tüm zamanuyumsuz JavaScript kodunu aynı gruptaki üstbilgiye taşır."
+
+msgid "Enable preprocess on all CSS"
+msgstr "Tüm CSS'lerde ön işlemeyi etkinleştir"
+
+msgid "Force all CSS to have the preprocess attribute be set to TRUE. All CSS files will be aggregated if enabled."
+msgstr "Tüm CSS'yi, ön işleme özniteliğini TRUE olarak ayarlamaya zorlayın. Bu etkinleştirilirse, tüm CSS dosyaları toplanır."
+
+msgid "You might want to increase the <a href=\"@link\">CSS Bundles Per Page</a> if this is checked."
+msgstr "Bu işaretlenirse, <a href=\"@link\">Sayfa Başına CSS Paketlerini</a> artırmak isteyebilirsiniz."
+
+msgid "Translate CSS content strings"
+msgstr "CSS içerik dizgilerini başka dile çevir"
+
+msgid "Run strings inside of quotes of the content attribute through the <a href=\"@t\">t() function</a>. An alternative to this can be found in this <a href=\"@post\">blog post</a>."
+msgstr "Dizgileri, <a href=\"@t\">t() işlevi</a> aracılığıyla içerik özniteliğinin tırnak işaretleri içinde çalıştırın. Bunun alternatifi, bu <a href=\"@post\">blog gönderisinde</a> bulunabilir."
+
+msgid "Optimize CSS Ordering"
+msgstr "CSS Sıralamasını Eniyile"
+
+msgid "The settings in here might change the order in which the CSS is loaded. It will move the CSS around so that more optimal aggregates are built. In most cases enabling these checkboxes will cause no negative side effects."
+msgstr "Buradaki ayarlar, CSS'nin yüklenme sırasını değiştirebilir. Daha fazla en iyi toplama oluşturulması için CSS'yi taşır. Çoğu durumda bu onay kutularının etkinleştirilmesi, olumsuz yan etkilere neden olur."
+
+msgid "Move all external CSS to the top of the execution order"
+msgstr "Tüm dış CSS'leri, yürütme sırasının en üstüne taşı"
+
+msgid "This will group all external CSS files to be above all other CSS."
+msgstr "Bu, tüm dış CSS dosyalarını, diğer tüm CSS'lerin en üstünde olacak şekilde gruplar."
+
+msgid "Move all browser conditional CSS to the bottom of the group"
+msgstr "Tüm tarayıcı koşullu CSS'sini grubun en altına taşı"
+
+msgid "This will group all browser conditional CSS to be in the lowest group of that conditional rule."
+msgstr "Bu, tüm tarayıcı koşullu CSS'sini, söz konusu koşullu kuralın en alt grubunda olacak şekilde gruplar."
+
+msgid "Adjust CSS location and execution (Experimental)"
+msgstr "CSS konumunu ve yürütmesini ayarla (Deneysel)"
+
+msgid "Deferred CSS Execution: Use JS to load CSS"
+msgstr "Ertelenmiş CSS Yürütmesi: CSS yüklemek için JS kullan"
+
+msgid "Enabled (In head)"
+msgstr "Etkin (başlıkta)"
+
+msgid "This will try to optimize CSS delivery by using JavaScript to load the CSS. This might break CSS on different browsers and will cause a flash of unstyled content (FOUC). Only enable after extensive testing! <a href=\"@link\">More Info</a>"
+msgstr "Bu, CSS'yi yüklemek için JavaScript kullanarak CSS'yi eniyilemeye çalışır. Bu, farklı tarayıcılarda CSS'yi bozabilir ve ilk anda stilsiz içeriğin gösterilmesine neden olur. Yalnızca kapsamlı testten sonra etkinleştirin! <a href=\"@link\">Daha Fazla Bilgi</a>"
+
+msgid "Use JS to load CSS in the admin theme"
+msgstr "Yönetici temasında CSS yüklemek için JS kullan"
+
+msgid "This will optimize CSS delivery with JavaScript when viewing the admin theme."
+msgstr "Bu, yönetici teması görüntülenirken JavaScript ile CSS teslimini eniyiler."
+
+msgid "Use JS to load external CSS"
+msgstr "Dış CSS yüklemek için JS kullan"
+
+msgid "This will optimize CSS delivery with JavaScript for external stylesheets."
+msgstr "Bu, dış stil sayfaları için JavaScript ile CSS teslimini eniyiler."
+
+msgid "How to include the JS loading code"
+msgstr "JS yükleme kodunu dahil etme"
+
+msgid "Inline javascript loader library (If enabled this is recommended)"
+msgstr "Satır içi javascript yükleyici kitaplığı (Etkinse, bu önerilir)"
+
+msgid "Local file included in aggregate"
+msgstr "Toplamaya dahil edilen yerel dosya"
+
+msgid "Externally load the latest from github"
+msgstr "En yenisini dışarıdan github'dan yükleyin"
+
+msgid "The <a href=\"@link\">loadCSS</a> library can be included in various ways."
+msgstr "<a href=\"@link\">loadCSS</a> kitaplığı çeşitli şekillerde dahil edilebilir."
+
+msgid "AdvAgg Old Internet Explorer Compatibility Enhancer"
+msgstr "AdvAgg Eski Internet Explorer Uyumluluk Geliştiricisi"
+
+msgid "Provides some enhanced compatibility with outdated Internet Explorer versions."
+msgstr "Güncelliğini yitirmiş Internet Explorer sürümleriyle gelişmiş uyumluluk sağlar."
+
+msgid "AdvAgg CSS/JS Validator"
+msgstr "AdvAgg CSS/JS Doğrulayıcı"
+
+msgid "Validate the CSS and JS files used in Aggregation for syntax errors."
+msgstr "Toplamada kullanılan CSS ve JS dosyalarını, sözdizimi hataları açısından doğrulayın."
+
+msgid "AdvAgg: Asset Validation"
+msgstr "AdvAgg: Varlık Doğrulaması"
+
+msgid "CSSLint"
+msgstr "CSSLint"
+
+msgid "W3.org CSS Validator"
+msgstr "W3.org CSS Doğrulayıcı"
+
+msgid "JSHint"
+msgstr "JSHint"
+
+msgid "Asset Validation"
+msgstr "Varlık Doğrulaması"
+
+msgid "Validate CSS with CSSLint"
+msgstr "CSSLint ile CSS'yi Doğrula"
+
+msgid "Validate CSS with the W3.org css validator"
+msgstr "W3.org css doğrulayıcı ile CSS'yi doğrula"
+
+msgid "Validate JavaScript with JSHint"
+msgstr "JSHint ile JavaScript'i doğrula"
+
+msgid "Advanced CSS/JS Aggregation Asset Validation"
+msgstr "Gelişmiş CSS/JS Toplama Varlığı Doğrulaması"
+
+msgid "AdvAgg: CSS Validator using CSSLint"
+msgstr "AdvAgg: CSSLint kullanan CSS Doğrulayıcı"
+
+msgid "AdvAgg: CSS Validator using w3.org"
+msgstr "AdvAgg: w3.org kullanan CSS Doğrulayıcı"
+
+msgid "AdvAgg: JavaScript Validator using JSHint"
+msgstr "AdvAgg: JSHint kullanan JavaScript Doğrulayıcı"
+
+msgid "Default CSS Lint ignore settings."
+msgstr "Varsayılan CSS Lint yoksayma ayarları."
+
+msgid "Default JS Hint ignore settings."
+msgstr "Varsayılan JS Hint yoksayma ayarları."
+
+msgid "Browser unable to read file. @error"
+msgstr "Tarayıcı dosyayı okuyamıyor. @error"
+
+msgid "Directory:"
+msgstr "Dizin:"
+
+msgid "Check directory and all subdirectories"
+msgstr "Dizini ve tüm alt dizinleri denetle"
+
+msgid "Check directory"
+msgstr "Dizini denetle"
+
+msgid "File:"
+msgstr "Dosya:"
+
+msgid "Files:"
+msgstr "Dosyalar:"
+
+msgid "valid"
+msgstr "geçerli"
+
+msgid "Options:"
+msgstr "Seçenekler:"
+
+msgid "Errors:"
+msgstr "Hatalar:"
+
+msgid "Warnings:"
+msgstr "Uyarılar:"
+
+msgid "Notice: The form below will submit files to the <a href=\"http://jigsaw.w3.org/css-validator/\">http://jigsaw.w3.org/css-validator/</a> service if used."
+msgstr "Bildirim: Aşağıdaki form, kullanılması durumunda <a href=\"http://jigsaw.w3.org/css-validator/\">http://jigsaw.w3.org/css-validator/</a> hizmetine dosyaları gönderir."
+
+msgid "W3C Server did not return a 200 or request data was empty."
+msgstr "W3C Server, 200 döndürmedi ya da istek verileri boştu."
+
+msgid "CSS settings"
+msgstr "CSS ayarları"
+
+msgid "Compress css assets with brotli compression."
+msgstr "Css varlıklarını brotli sıkıştırması ile sıkıştırın."
+
+msgid "Combine multiple media selectors per aggregate."
+msgstr "Toplama başına birden çok ortam seçiciyi birleştirin."
+
+msgid "Fix type of added asset files."
+msgstr "Eklenen varlık dosyalarının tipini düzeltin."
+
+msgid "Do not change external to file if on same host for css."
+msgstr "Css için aynı anasistemdeyse, dış tipini dosya tipine dönüştürmeyin."
+
+msgid "Prefetch external domains for css/js"
+msgstr "Css/js için dış etki alanlarını önceden getir"
+
+msgid "Path/Url settings"
+msgstr "Yol/Url ayarları"
+
+msgid "What conversions to apply."
+msgstr "Uygulanacak dönüştürmeler."
+
+msgid "Convert absolute path css/js src/url() to be protocol relative."
+msgstr "css/js src/url() mutlak yolunu, protokol göreli yoluna dönüştürün."
+
+msgid "Convert relative paths to absolute."
+msgstr "Göreli yolları mutlak yollara dönüştürün."
+
+msgid "Convert absolute path css/js src/url() to use https://"
+msgstr "css/js src/url() mutlak yolunu https:// adresini kullanacak şekilde dönüştürün"
+
+msgid "Level of caching for AdvAgg to use."
+msgstr "Kullanılacak AdvAgg için önbelleğe alma düzeyi."
+
+msgid "frequency to run the AdvAgg cron maintenance functions."
+msgstr "AdvAgg görevi bakım işlevlerini çalıştırma sıklığı."
+
+msgid "Enable AdvAgg."
+msgstr "AdvAgg özelliğini etkinleştirin."
+
+msgid "Counter to force new aggregates through caches etc."
+msgstr "Önbellekler vb. aracılığıyla yeni toplamaları zorlamak için sayaç."
+
+msgid "Add the immutable tag to Apache cache control strings."
+msgstr "Apache önbelleği denetim dizgilerine sabit kimlik etiketini ekleyin."
+
+msgid "JavaScript specific settings."
+msgstr "JavaScript'e özgü ayarlar."
+
+msgid "Do not change external to file if on same host for js."
+msgstr "Js için aynı anasistemdeyse, dış tipini dosya tipine dönüştürmeyin."
+
+msgid "Skip preprocess check on status page"
+msgstr "Durum sayfasında ön işleme denetimini atla"
+
+msgid "Display a message when the bypass cookie is active."
+msgstr "Atlama tanımlama bilgisi etkin olduğunda bir ileti görüntüleyin."
+
+msgid "Use Options +FollowSymlinks to support some hosts."
+msgstr "Bazı anasistemleri desteklemek için Options +FollowSymlinks olanağını kullanın."
+
+msgid "Use options +SymLinksIfOwnerMatch to support some hosts."
+msgstr "Bazı anasistemleri desteklemek için +SymLinksIfOwnerMatch seçeneklerini kullanın."
+
+msgid "This page provides debugging information. There are no configuration options here."
+msgstr "Bu sayfa, hata ayıklama bilgileri sağlar. Burada bir yapılandırma seçeneği yoktur."
+
+msgid "Hook Theme Info"
+msgstr "Kanca Teması Bilgileri"
+
+msgid "Get detailed info about an optimized file"
+msgstr "Eniyilenmiş bir dosya hakkında ayrıntılı bilgi edinin"
+
+msgid "Filename"
+msgstr "Dosya adı"
+
+msgid "Lookup Details"
+msgstr "Arama Ayrıntıları"
+
+msgid "Input an optimized filename like \"@css_file\"."
+msgstr "\"@css_file\" gibi optimize edilmiş bir dosya adı girin."
+
+msgid "Please input a valid optimized filename."
+msgstr "Lütfen geçerli bir eniyilenmiş dosya adı girin."
+
+msgid "Optimized file information not found, confirm spelling of the path. Alternatively, that could be an outdated file."
+msgstr "Eniyilenmiş dosya bilgileri bulunamadı, yolun yazımını onaylayın. Alternatif olarak bu, güncelliğini yitirmiş bir dosya olabilir."
+
+msgid "This is a collection of commands to control the cache and to manage testing of this module. In general this page is useful when troubleshooting some aggregation issues. For normal operations, you do not need to do anything on this page below the Smart Cache Flush. There are no configuration options here."
+msgstr "Bu, önbelleği denetleme ve bu modülün testini yönetme komutlarının bir toplamasıdır. Genellikle bu sayfa, bazı toplama sorunları giderilirken yararlıdır. Normal işlemler için bu sayfada, Akıllı Önbellek Temizleme'nin altında herhangi bir şey yapmanız gerekmez. Burada bir yapılandırma seçeneği yoktur."
+
+msgid "Aggregation Bypass Cookie"
+msgstr "Toplama Atlama Tanımlama Bilgisi"
+
+msgid "This will set or remove a cookie that disables aggregation for a set period of time."
+msgstr "Bu, belirli bir süre boyunca toplamayı devre dışı bırakan bir tanımlama bilgisini ayarlar ya da kaldırır."
+
+msgid "Bypass length"
+msgstr "Atlama uzunluğu"
+
+msgid "6 hours"
+msgstr "6 saat"
+
+msgid "12 hours"
+msgstr "12 saat"
+
+msgid "1 day"
+msgstr "1 gün"
+
+msgid "2 days"
+msgstr "2 gün"
+
+msgid "1 week"
+msgstr "1 hafta"
+
+msgid "1 month"
+msgstr "1 ay"
+
+msgid "1 year"
+msgstr "1 yıl"
+
+msgid "Toggle The \"aggregation bypass cookie\" For This Browser"
+msgstr "Bu Tarayıcıda \"Toplama Atlama Tanımlama Bilgisini\" Aç/Kapat"
+
+msgid "Cron Maintenance Tasks"
+msgstr "Görev Bakım Görevleri"
+
+msgid "The following operation is ran on cron but you can run it manually here."
+msgstr "Aşağıdaki işlem, görev üzerinde çalıştırılıyor, ancak buradan el ile çalıştırabilirsiniz."
+
+msgid "Clear Stale Files"
+msgstr "Eski Dosyaları Temizle"
+
+msgid "Scan all files in the css/js optimized directories and remove outdated ones."
+msgstr "Css/js eniyilenmiş dizinlerindeki tüm dosyaları tarayın ve güncelliğini yitirmiş olanları kaldırın."
+
+msgid "Remove All Stale Files"
+msgstr "Tüm Eski Dosyaları Kaldır"
+
+msgid "Drastic Measures"
+msgstr "Önemli Ölçüler"
+
+msgid "The options below should normally never need to be done."
+msgstr "Aşağıdaki seçeneklerin normalde hiçbir zaman yapılması gerekmez."
+
+msgid "Clear All Caches"
+msgstr "Tüm Önbellekleri Temizle"
+
+msgid "Remove all entries from the advagg cache and file information stores. Useful if you suspect a cache is not getting cleared."
+msgstr "Advagg önbelleğinden ve dosya bilgi depolarından tüm girdileri kaldırın. Bir önbelleğin temizlenmediğinden şüpheleniyorsanız yararlıdır."
+
+msgid "Clear All Caches & File Information"
+msgstr "Tüm Önbellekleri ve Dosya Bilgilerini Temizle"
+
+msgid "Force new files"
+msgstr "Yeni dosyaları zorla"
+
+msgid "Force the creation of all new optimized files by incrementing a global counter. Current value of counter: %value. This is useful if a CDN has cached a file incorrectly as it will force new ones to be used even if nothing else has changed."
+msgstr "Genel bir sayacı artırarak tüm yeni eniyilenmiş dosyaların oluşturulmasını zorlayın. Sayacın geçerli değeri: %value. Bu, hiçbir şey değişmemiş olsa da yenilerinin kullanılmasını zorlayacağından, CDN bir dosyayı yanlış şekilde önbelleğe aldıysa yararlı olur."
+
+msgid "Increment Global Counter"
+msgstr "Genel Sayacı Artır"
+
+msgid "Global counter is now set to %new_value"
+msgstr "Genel sayaç şimdi %new_value olarak ayarlandı"
+
+msgid "AdvAgg Bypass Cookie Removed."
+msgstr "AdvAgg Atlama Tanımlama Bilgisi Kaldırıldı."
+
+msgid "AdvAgg Bypass Cookie Set for %time."
+msgstr "%time için Ayarlanan AdvAgg Atlama Tanımlama Bilgileri."
+
+msgid "Development"
+msgstr "Geliştirme"
+
+msgid "Low"
+msgstr "Düşük"
+
+msgid "Normal"
+msgstr "Normal"
+
+msgid "High"
+msgstr "Yüksek"
+
+msgid "15 minutes"
+msgstr "15 dakika"
+
+msgid "30 minutes"
+msgstr "30 dakika"
+
+msgid "45 minutes"
+msgstr "45 dakika"
+
+msgid "1 hour"
+msgstr "1 saat"
+
+msgid "2 hours"
+msgstr "2 saat"
+
+msgid "4 hours"
+msgstr "4 saat"
+
+msgid "18 hours"
+msgstr "18 saat"
+
+msgid "3 days"
+msgstr "3 gün"
+
+msgid "4 days"
+msgstr "4 gün"
+
+msgid "5 days"
+msgstr "5 gün"
+
+msgid "6 days"
+msgstr "6 gün"
+
+msgid "2 week"
+msgstr "2 hafta"
+
+msgid "3 week"
+msgstr "3 hafta"
+
+msgid "6 weeks"
+msgstr "6 hafta"
+
+msgid "2 months"
+msgstr "2 ay"
+
+msgid "Global Options"
+msgstr "Genel Seçenekler"
+
+msgid "Enable advanced aggregation"
+msgstr "Gelişmiş toplamayı etkinleştir"
+
+msgid "Uncheck this box to temporarily disable AdvAgg functionality."
+msgstr "AdvAgg işlevselliğini geçici olarak devre dışı bırakmak için bu kutunun işaretini kaldırın."
+
+msgid "Use DNS Prefetch for external CSS/JS."
+msgstr "Dış CSS/JS için DNS Önceden Getirmeyi kullanın."
+
+msgid "Start the DNS lookup for external CSS and JavaScript files as soon as possible."
+msgstr "Mümkün olan en kısa sürede dış CSS ve JavaScript dosyaları için DNS aramasını başlatın."
+
+msgid "Server Config"
+msgstr "Sunucu Yapılandırması"
+
+msgid "Cache-Control: Immutable"
+msgstr "Önbellek Denetimi: Sabit Kimlik"
+
+msgid "Your server can send <a href=\"@url1\">Cache-Control: immutable</a> header for all optimized files. This should improve performance for some users. Current <a href=\"@url2\">browser support</a>"
+msgstr "Sunucunuz, tüm eniyilenmiş dosyalar için <a href=\"@url1\">Önbellek Denetimi: sabit kimlik</a> üstbilgisini gönderebilir. Bu bazı kullanıcılar için performansı artırmalıdır. Geçerli <a href=\"@url2\">tarayıcı desteği</a>"
+
+msgid "Include Cache-Control: immutable in generated .htaccess files."
+msgstr "Oluşturulan .htaccess dosyalarına Önbellek Denetimi: sabit kimlik öğesini dahil edin."
+
+msgid "With the Apache server, AdvAgg can generate config to send the header for all optimized files."
+msgstr "Apache sunucusu ile AdvAgg, tüm eniyilenmiş dosyalara ilişkin üstbilgiyi göndermek için yapılandırma oluşturabilir."
+
+msgid "With Nginx, AdvAgg can't set the headers for optimized files in a performant manner. However, you can easily do so in your server config. See the <a href='@url'>manual for instructions</a>."
+msgstr "Nginx ile AdvAgg, yüksek performanslı bir şekilde eniyilenmiş dosyalar için üstbilgileri ayarlayamaz. Ancak sunucu yapılandırmanızda kolayca bunu yapabilirsiniz. <a href='@url'>Yönergeler için kılavuza</a> bakın."
+
+msgid "AdvAgg Cache Settings"
+msgstr "AdvAgg Önbellek Ayarları"
+
+msgid "No performance data yet but most use cases will probably want to use the Normal cache mode."
+msgstr "Henüz bir performans verisi yok, ancak çoğu kullanım senaryosunda muhtemelen Normal önbellek kipi kullanılması istenir."
+
+msgid "Compression Options"
+msgstr "Sıkıştırma Seçenekleri"
+
+msgid "Compressed files will automatically be served by the Apache server"
+msgstr "Sıkıştırılmış dosyalar otomatik olarak Apache sunucusu tarafından sunulur"
+
+msgid "AdvAgg can't configure your Nginx server to automatically serve compressed assets. See the <a href='@url'>AdvAgg manual</a> for instructions on manually doing so."
+msgstr "AdvAgg, sıkıştırılmış varlıklar otomatik olarak sunulacak şekilde Nginx sunucunuzu yapılandıramaz. Bunu el ile yapmaya ilişkin yönergeler için <a href='@url'>AdvAgg kılavuzuna</a> bakın."
+
+msgid "Gzip CSS assets"
+msgstr "Gzip CSS varlıkları"
+
+msgid "This should be enabled unless you are experiencing corrupted compressed asset files."
+msgstr "Bozuk sıkıştırılmış varlık dosyalarıyla karşılaşmadığınız sürece bu etkinleştirilmelidir."
+
+msgid "Gzip JavaScript assets"
+msgstr "Gzip JavaScript varlıkları"
+
+msgid "Select to compress this asset type with brotli compression. See <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> page for more information."
+msgstr "Bu varlık tipini brotli sıkıştırması ile sıkıştırmak için seçin. Daha fazla bilgi için <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> sayfasına bakın."
+
+msgid "Brotli compression is not available on your server. See <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> page for more information."
+msgstr "Sunucunuzda Brotli sıkıştırması mevcut değil. Daha fazla bilgi için <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> sayfasına bakın."
+
+msgid "Brotli compress CSS assets"
+msgstr "CSS varlıklarını Brotli sıkıştırması ile sıkıştır"
+
+msgid "Brotli compress JavaScript assets"
+msgstr "JavaScript varlıklarını Brotli sıkıştırması ile sıkıştır"
+
+msgid "CSS Options"
+msgstr "CSS Seçenekleri"
+
+msgid "Combine CSS files by using media queries"
+msgstr "Ortam sorgularını kullanarak CSS dosyalarını sıkıştır"
+
+msgid "Will combine more CSS files together because different CSS media types can be used in the same file by using media queries. Use cores grouping logic needs to be unchecked in order for this to work. Also noted is that due to an issue with IE9, compatibility mode is forced off if this is enabled."
+msgstr "Ortam sorguları kullanılarak aynı dosyada farklı CSS ortam türleri kullanılabileceğinden, daha fazla CSS dosyasını birleştirir. Bunun çalışması için çekirdek gruplama mantığını kullan seçeneğinin işaretinin kaldırılması gerekir. Ayrıca bunun etkinleştirilmesi durumunda, IE9 ile ilgili bir sorun nedeniyle uyumluluk kipinin zorlamalı olarak kapatıldığı da dikkat çekmiştir."
+
+msgid "Fix improperly set type"
+msgstr "Uygunsuz şekilde ayarlanan tipi düzelt"
+
+msgid "If type is external but does not start with http, https, or // change it to be type file. If type is file but it starts with http, https, or // change type to be external. Note that if this is causing issues, odds are you have a double slash when there should be a single; see <a href=\"@link\">this issue</a>"
+msgstr "Tip dış olduğu halde http, https ya da // ile başlamıyorsa bunu tip dosyası olacak şekilde değiştirin. Tip dosya olduğu halde http, https ya da // ile başlıyorsa, tipi dış olacak şekilde değiştirin. Bu, sorunlara neden oluyorsa, başka bir deyişle tek eğik çizgi olması gerekirken çift eğik çizgi oluyorsa <a href=\"@link\">bu soruna</a> bakın"
+
+msgid "Do not change external to file if on same host."
+msgstr "Aynı anasistemdeyse, dış tipini dosya tipine dönüştürmeyin."
+
+msgid "If a CSS file is set as external and is on the same hosts do not convert to file."
+msgstr "Bir CSS dosyası dış olarak ayarlanırsa ve aynı anasistemdeyse, dosyaya dönüştürmeyin."
+
+msgid "JS Options"
+msgstr "JS Seçenekleri"
+
+msgid "If a JS file is set as external and is on the same hosts do not convert to file."
+msgstr "Bir JS dosyası dış olarak ayarlanırsa ve aynı anasistemdeyse dosyaya dönüştürmeyin."
+
+msgid "Cron Options"
+msgstr "Görev Seçenekleri"
+
+msgid "Unless you have a good reason to adjust these values you should leave them alone."
+msgstr "Bu değerleri ayarlamak için iyi bir nedeniniz yoksa değerleri tek bırakmalısınız."
+
+msgid "@time ago"
+msgstr "@time ago"
+
+msgid "never"
+msgstr "hiçbir zaman"
+
+msgid "The default value for this is %value. The last time advagg_cron was ran is %time."
+msgstr "Bunun varsayılan değeri: %value. advagg_cron'un son çalıştırılma zamanı: %time."
+
+msgid "The default value for this is %value."
+msgstr "Bunun varsayılan değeri: %value."
+
+msgid "Obscure Options"
+msgstr "Belirsiz Seçenekler"
+
+msgid "Some of the more obscure AdvAgg settings. Odds are you do not need to change anything in here."
+msgstr "Diğer anlaşılmaz AdvAgg ayarlardan bazıları. Burada bir şeyi değiştirmeniz gerekmez."
+
+msgid "Convert absolute paths to be protocol relative paths."
+msgstr "Mutlak yolları, protokol göreli yollarına dönüştürün."
+
+msgid "If the src to a CSS/JS file points starts with http:// or https://, convert it to use a protocol relative path //. Will also convert url() references inside of css files."
+msgstr "CSS/JS dosyasının işaret ettiği kaynak, http:// ya da https:// ile başlıyorsa bunu, // protokol göreli yolunu kullanacak şekilde dönüştürün. Css dosyalarının içindeki url() başvuruları da dönüştürülür."
+
+msgid "Convert relative paths to be absolute paths."
+msgstr "Göreli yolları, mutlak yollara dönüştürün."
+
+msgid "If the src to a CSS/JS file points starts with a relative path / convert to absolute."
+msgstr "CSS/JS dosyasının işaret ettiği kaynak, / göreli yolu ile başlıyorsa bunu mutlak yola dönüştürün."
+
+msgid "Convert http:// to https://."
+msgstr "http:// öğesini https:// öğesine dönüştürün."
+
+msgid "If the src to a CSS/JS file starts with http:// convert it https://. Will also convert url() references inside of css files."
+msgstr "CSS/JS dosyasının kaynağı http:// ile başlıyorsa bunu https:// öğesine dönüştürün. Css dosyalarının içindeki url() başvuruları da dönüştürülür."
+
+msgid "Use \"Options +FollowSymLinks\""
+msgstr "\"Options +FollowSymLinks\" seçeneğini kullanın"
+
+msgid "Some shared hosts require \"<code>Options +FollowSymLinks</code>\" in the .htaccess for asset directories."
+msgstr "Bazı paylaşılan anasistemler, varlık dizinleri için .htaccess içinde \"<code>Options +FollowSymLinks</code>\" gerektirir."
+
+msgid "Use \"Options +SymLinksIfOwnerMatch\""
+msgstr "\"Options +SymLinksIfOwnerMatch\" seçeneğini kullanın"
+
+msgid "Some shared hosts require \"<code>Options +SymLinksIfOwnerMatch</code>\" in the .htaccess for asset directories."
+msgstr "Bazı paylaşılan anasistemler, varlık dizinleri için .htaccess içinde \"<code>Options +SymLinksIfOwnerMatch</code>\" gerektirir."
+

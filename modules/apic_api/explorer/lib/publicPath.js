@@ -1,0 +1,1 @@
+"use strict";var a,b=require("lodash"),c=window.apiConnectExplorer||null;(0,b.has)(window,"drupalSettings.api.explorer")?c=window.drupalSettings.api.explorer:(0,b.has)(window,"Drupal.settings.api.explorer")&&(c=window.Drupal.settings.api.explorer),__webpack_public_path__=(null===(a=c)||void 0===a||null===(a=a.options)||void 0===a?void 0:a.explorerDir)||"/";

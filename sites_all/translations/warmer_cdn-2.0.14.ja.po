@@ -1,0 +1,77 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "CDN Warmer"
+msgstr "CDN ウォーマー"
+
+msgid "Executes HTTP requests to warm the edge caches. It is useful without a CDN as well, as it will also warm Varnish and Page Cache."
+msgstr "エッジ・キャッシュをウォーミングする HTTP 要求を実行します。 これは、CDN がなくても、Varnish やページ・キャッシュをウォーミングするため、便利です。"
+
+msgid "URLs"
+msgstr "URL"
+
+msgid "Enter the list of URLs. One on each line. Examples: https://example.org/foo/bar, /foo/bar."
+msgstr "URL のリストを入力します。 1 行に 1 つずつ入力します。 例: https://example.org/foo/bar, /foo/bar"
+
+msgid "Headers"
+msgstr "ヘッダー"
+
+msgid "Specific headers to use when making HTTP requests. Format: <code>Header-Name: value1; value2</code>"
+msgstr "HTTP 要求を行うときに使用する特定のヘッダー。フォーマット: <code>ヘッダー名: 値 1; 値 2</code>"
+
+msgid "Enable SSL verification"
+msgstr "SSL 検証の有効化"
+
+msgid "Enable SSL verification. Recommended to keep it checked for security reasons."
+msgstr "SSL 検証の有効化。 セキュリティー上の理由から、チェックを付けたままにしておくことを推奨します。"
+
+msgid "Maximum number of concurrent Requests."
+msgstr "同時要求の最大数。"
+
+msgid "The maximum number of concurrent requests."
+msgstr "同時要求の最大数です。"
+
+msgid "CDN"
+msgstr "CDN"
+
+msgid "minPriority should be a float between 0 and 1."
+msgstr "minPriority は 0 から 1 の間の浮動小数点にする必要があります。"
+
+msgid "Sitemaps"
+msgstr "サイト・マップ"
+
+msgid "Enter the list of sitemap URLs. One on each line. Examples: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+msgstr "サイト・マップ URL のリストを入力します。 1 行に 1 つずつ入力します。 例: https://example.org/sitemap.xml, /drupal-sitemap.xml。"
+
+msgid "Minimum Priority"
+msgstr "最小優先順位"
+
+msgid "URLs with a lower priority than the configured will not be warmed. A float value between 0 and 1."
+msgstr "構成済みのものより優先順位が低い URL はウォーミングされません。 浮動小数点値は 0 から 1 の間です。"
+
+msgid "This defines the maximum number of concurrent requests."
+msgstr "これにより、同時要求の最大数が定義されます。"
+
+msgid "There was an error parsing the Sitemap in %location. Please check the watchdog logs for more information."
+msgstr "%location のサイトマップを解析しているときにエラーが発生しました。 詳細については、ウォッチドッグ・ログを確認してください。"
+
+msgid "CDN via Sitemap"
+msgstr "サイト・マップ経由の CDN"
+
+msgid "Collects the URLs to warm from the sitemap. Then uses the CDN warmer for those."
+msgstr "サイト・マップからウォーミングする URL を収集します。 次にそれらに CDN ウォーマーを使用します。"
+
+msgid "All headers must have a colon. Follow the format: <code>the-name: the-value</code>"
+msgstr "すべてのヘッダーにはコロンが必要です。 次の形式に従ってください: <code>名前: 値</code>"
+

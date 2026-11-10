@@ -1,0 +1,1 @@
+import a,{Suspense as b,lazy as c}from"react";import d from"prop-types";import{SkeletonText as e}from"@carbon/react";var f=c(function(){return import("./CodeViewerImpl")});export default function g(c){return a.createElement(b,{fallback:a.createElement(e,{paragraph:!0})},a.createElement(f,c))}g.propTypes={codeLanguage:d.string,className:d.string,children:d.node};

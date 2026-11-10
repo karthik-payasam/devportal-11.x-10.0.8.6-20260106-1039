@@ -1,0 +1,16 @@
+themegenerator.theme_generate:
+  path: '/admin/theme/generate'
+  defaults:
+    _form: '\Drupal\themegenerator\Form\GenerateTheme'
+    _title: 'Generate sub-theme'
+  requirements:
+    _permission: 'administer software updates'
+    _access_update_manager: 'TRUE'
+themegenerator.theme_add:
+  path: '/admin/theme/install'
+  defaults:
+    _form: '\Drupal\update\Form\UpdateManagerInstall'
+    _title: 'Add new theme'
+  requirements:
+    _permission: 'administer software updates'
+    _access_update_manager: 'TRUE'

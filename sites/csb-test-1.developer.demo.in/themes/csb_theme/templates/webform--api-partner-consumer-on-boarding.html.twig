@@ -1,0 +1,74 @@
+{#
+/**
+ * @file
+ * Theme implementation for a 'webform' element.
+ *
+ * This is an copy of the webform.html.twig theme_wrapper which includes the
+ * 'title_prefix' and 'title_suffix' variables needed for
+ * contextual links to appear.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the webform.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ *
+ * @see template_preprocess_webform()
+ * @see _webform_form_after_build()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="api-partner-consumer-container">
+   <div class="api-partner-consumer-inner">
+         <!-- Left Side - Bank Branding -->
+        <div class="bank-side">
+            <div class="bank-logo">
+                <i class="fas fa-university"></i>
+            </div>
+            <h1 class="bank-title" >CSB Bank API Portal</h1>
+            <p class="bank-subtitle" >Access enterprise-grade banking APIs with the highest security standards and reliability.</p>
+            
+            <div class="bank-features" >
+                <div class="feature1">
+                    <i class="fas fa-lock"></i>
+                    <span>Bank-grade security</span>
+                </div>
+                <div class="feature1">
+                    <i class="fas fa-bolt"></i>
+                    <span>High performance APIs</span>
+                </div>
+                <div class="feature1">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 dedicated support</span>
+                </div>
+                <div class="feature1">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Advanced analytics</span>
+                </div>
+            </div>
+            
+            {# <p class="bank-footer" style="font-size: 14px; opacity: 0.7;">© 2023 CUB Bank. All rights reserved.</p> #}
+            
+         
+        </div>
+
+                <!-- Right Side - Form -->
+        <div class="api-partner-consumer-form-side">
+                      <div class="form-header">
+                        <h2 class="form-title">API Partner/Consumer Onboarding Request</h2>
+                      <p class="form-subtitle">Complete the form below to request API access</p>
+                     </div>
+                   <form{{ attributes }}>
+                   {{ title_prefix }}
+                   {{ children }}
+                   {{ title_suffix }}
+                  </form>
+        </div>
+
+ 
+   </div>
+</div>
+

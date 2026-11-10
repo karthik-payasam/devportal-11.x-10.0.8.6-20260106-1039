@@ -1,0 +1,888 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "EU Cookie Compliance Consents"
+msgstr "EU Cookie コンプライアンス同意"
+
+msgid "EU Cookie Compliance consent data from the database."
+msgstr "データベースからの EU Cookie コンプライアンス同意データ。"
+
+msgid "User ID"
+msgstr "ユーザーID"
+
+msgid "User ID."
+msgstr "ユーザーID"
+
+msgid "Users"
+msgstr "ユーザー"
+
+msgid "Timestamp"
+msgstr "タイムスタンプ"
+
+msgid "Time of consent."
+msgstr "同意の時間。"
+
+msgid "IP address"
+msgstr "IPアドレス"
+
+msgid "The IP address."
+msgstr "IP アドレス。"
+
+msgid "Consent Type"
+msgstr "同意タイプ"
+
+msgid "The type of consent, such as \"banner\" for the banner and form_id for forms."
+msgstr "同意のタイプ。バナーの場合は「banner」、フォームの場合は form_id など。"
+
+msgid "Revision ID"
+msgstr "リビジョンID"
+
+msgid "Revision of the privacy policy at the time of consent."
+msgstr "同意時のプライバシー・ポリシーの改訂。"
+
+msgid "About"
+msgstr "アバウト"
+
+msgid "This module intends to deal with the EU Directive on Privacy and Electronic Communications that comes into effect on 26th May 2012. From that date, if you are not compliant or visibly working towards compliance, you run the risk of enforcement action, which can include a fine of up to half a million pounds for a serious breach."
+msgstr "このモジュールは、2012 年 5 月 26 日に発行した EU Directive on Privacy and Electronic Communications に対処するためのものです。この日以降、準拠していなかったり準拠に向けた目に見えた取り組みがなされていなかったりする場合は、強制措置のリスクを犯すこととなり、重大な違反により最大 50 万ポンドの罰金を科されることもあります。"
+
+msgid "How it works"
+msgstr "動作のしくみ"
+
+msgid "The module displays a banner at the bottom or the top of website to make users aware of the fact that cookies are being set. The user may then give his/her consent or move to a page that provides more details. Consent is given by user pressing the agree buttons or by continuing browsing the website. Once consent is given another banner appears with a \"Thank you\" message."
+msgstr "このモジュールは Web サイトの下部または上部にバナーを表示し、Cookie が設定されていることをユーザーに知らせます。ユーザーは、同意を示したり、詳細情報を提供するページに移動したりできます。同意はユーザーが同意ボタンを押すか、Web サイトの参照を続行することによって示されます。同意が示されると、「ありがとうございます」というメッセージの別のバナーが表示されます。"
+
+msgid "The module provides a settings page where the banner can be customized. There are also template files for the banners that can be overridden by your theme."
+msgstr "モジュールには、バナーをカスタマイズできる設定ページが用意されています。テーマによってオーバーライドできるバナー用のテンプレート・ファイルもあります。"
+
+msgid "Installation"
+msgstr "インストール"
+
+msgid "Unzip the files to the \"sites/all/modules\" OR \"modules\" directory and enable the module."
+msgstr "ファイルを「sites/all/modules」または「modules」ディレクトリーに unzip してモジュールを使用可能にします。"
+
+msgid "If desired, give the administer EU Cookie Compliance banner permissions that allow users of certain roles access the administration page. You can do so on the admin/user/permissions page."
+msgstr "必要な場合、特定のロールを持つユーザーが管理ページにアクセスできるようにする EU Cookie 準拠バナーの管理権限を付与します。これは admin/user/permissions ページから実行できます。"
+
+msgid "there is also a 'display eu cookie compliance banner' permission that helps you show the banner to the roles you desire."
+msgstr "また、必要なロールに対してバナーを表示するのに役立つ「EU Cookie 準拠バナーの表示」許可もあります。"
+
+msgid "You may want to create a page that would explain how your site uses cookies. Alternatively, if you have a privacy policy, you can link the banner to that page (see next step)."
+msgstr "ご使用のサイトでの Cookie の使用方法を説明するページを作成できます。あるいは、プライバシー・ポリシーがある場合、バナーをそのページにリンクすることができます (次のステップを参照)。"
+
+msgid "Go to the admin/config/system/eu-cookie-compliance page to configure and enable the banner."
+msgstr "admin/config/system/eu-cookie-compliance ページに移動し、バナーを構成して使用可能にします。"
+
+msgid "If you want to customize the banner background and text color, either type in the hex values or simply install http://drupal.org/project/coloris."
+msgstr "バナーの背景とテキストの色をカスタマイズする場合は、16 進値を入力するか、単に http://drupal.org/project/coloris をインストールします。"
+
+msgid "If you want to theme your banner override the themes in the template file."
+msgstr "バナーのテーマを設定する場合は、テンプレート・ファイル内のテーマをオーバーライドします。"
+
+msgid "If you want to show the message in EU countries only, install the Smart IP module: http://drupal.org/project/smart_ip and enable the option on the admin page."
+msgstr "メッセージを EU 加盟国でのみ表示する場合、Smart IP モジュール: http://drupal.org/project/smart_ip をインストールし、管理ページのオプションを有効にします。"
+
+msgid "NOTICE: The module does not audit your cookies nor does it prevent cookies from being set."
+msgstr "注意: このモジュールは Cookie を監査したり、Cookie が設定されないようにしたりすることはありません。"
+
+msgid "For developers"
+msgstr "開発者向け"
+
+msgid "If you want to conditionally set cookies in your module, there is a javascript function provided that returns TRUE if the current user has given his consent:"
+msgstr "Cookie をモジュール内に条件付きで設定する場合、現在のユーザーが同意を示した場合に TRUE を返す JavaScript 関数が提供されています:"
+
+msgid "Could not read the EU Cookie Compliance JavaScript file that is used to handle disabled scripts. There may be a problem with your file system or the file may be missing. Try accessing the EU Cookie Compliance settings page and re-save the form."
+msgstr "無効化されたスクリプトを処理するために使用される EU Cookie 準拠 JavaScript ファイルを読み取ることができませんでした。 ファイル・システムに問題があるか、ファイルが欠落している可能性があります。 「EU Cookie 準拠」設定ページにアクセスして、フォームを再保存してください。"
+
+msgid "%name must be a HEX value (without leading #) or empty."
+msgstr "%name は、16 進数の値 (先頭に # は付けない) または空にする必要があります。"
+
+msgid "<h2>Thank you for accepting cookies</h2><p>You can now hide this message or find out more about cookies.</p>"
+msgstr "<h2>Cookie をご利用いただき、ありがとうございます。</h2><p>このメッセージを非表示にしたり、Cookie の詳細を確認したりできるようになりました。</p>"
+
+msgid "Accept"
+msgstr "受信"
+
+msgid "More info"
+msgstr "詳細"
+
+msgid "Hide"
+msgstr "非表示"
+
+msgid "<h2>We use cookies on this site to enhance your user experience</h2><p>By clicking the Accept button, you agree to us doing so.</p>"
+msgstr "<h2>お客様のユーザー・エクスペリエンスを向上させるために、このサイトで Cookie を使用します。</h2><p>「同意する」ボタンをクリックすると、同意したことになります。</p>"
+
+msgid "<h2>We use cookies on this site to enhance your user experience</h2><p>By tapping the Accept button, you agree to us doing so.</p>"
+msgstr "<h2>お客様のユーザー・エクスペリエンスを向上させるために、このサイトで Cookie を使用します。</h2><p>「同意する」ボタンをタップすると、同意したことになります。</p>"
+
+msgid "No, thanks"
+msgstr "いいえ、結構です"
+
+msgid "<h2>We use cookies on this site to enhance your user experience</h2><p>You have given your consent for us to set cookies.</p>"
+msgstr "<h2>お客様のユーザー・エクスペリエンスを向上させるために、このサイトで Cookie を使用します。</h2><p>Cookie を設定することに同意したことになります。</p>"
+
+msgid "Withdraw consent"
+msgstr "同意を撤回する"
+
+msgid "Privacy settings"
+msgstr "プライバシー設定"
+
+msgid "Save preferences"
+msgstr "設定の保存"
+
+msgid "Accept all cookies"
+msgstr "すべての Cookie を受け入れる"
+
+msgid "EU Cookie Compliance"
+msgstr "EU Cookie コンプライアンス"
+
+msgid "Language @language_id: Your privacy policy link is not set or is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "言語 @language_id: プライバシー・ポリシー・リンクが設定されていないか、フロントページを指しています。 これはインストール後のデフォルト値で、プライバシー・ポリシーが実際にフロント・ページにポストされない限り、プライバシー・ポリシー用に別のページを作成し、そのページにリンクする必要があります。"
+
+msgid "Privacy policy link not provided"
+msgstr "プライバシー・ポリシー・リンクが提供されていません"
+
+msgid "Language @language_id: Your privacy policy link is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "言語 @language_id: プライバシー・ポリシーのリンクがフロント・ページを指しています。 これはインストール後のデフォルト値で、プライバシー・ポリシーが実際にフロント・ページにポストされない限り、プライバシー・ポリシー用に別のページを作成し、そのページにリンクする必要があります。"
+
+msgid "Cookie category"
+msgstr "Cookie カテゴリー"
+
+msgid "Cookie categories"
+msgstr "Cookie のカテゴリー"
+
+msgid "This module aims at making the website compliant with the new EU cookie regulation"
+msgstr "このモジュールは、Web サイトを新しい EU Cookie 規制に準拠させることを目的としています"
+
+msgid "User interface"
+msgstr "ユーザーインターフェース"
+
+msgid "Add Cookie category"
+msgstr "Cookie カテゴリーの追加"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Categories"
+msgstr "カテゴリー"
+
+msgid "Cookie settings"
+msgstr "Cookie の設定"
+
+msgid "Make your website compliant with the EU Directive on Privacy and Electronic Communications."
+msgstr "Web サイトを EU Directive on Privacy and Electronic Communications に準拠させます。"
+
+msgid "Configure the cookie consent popup."
+msgstr "Cookie についての同意のポップアップを構成します。"
+
+msgid "Administer cookie categories."
+msgstr "Cookie カテゴリーを管理します。"
+
+msgid "Toggle the cookie consent settings tray"
+msgstr "Cookie 同意設定トレイを切り替えます"
+
+msgid "Administer EU Cookie Compliance banner"
+msgstr "EU Cookie 準拠バナーの管理"
+
+msgid "Administer EU Cookie Compliance categories"
+msgstr "EU Cookie 準拠カテゴリーの管理"
+
+msgid "Display EU Cookie Compliance banner"
+msgstr "EU Cookie 準拠バナーの表示"
+
+msgid "EU Cookie Compliance store consent"
+msgstr "EU Cookie コンプライアンス・ストア同意"
+
+msgid "Cookie category config"
+msgstr "Cookie カテゴリーの構成"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "ラベル"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "Checkbox default state"
+msgstr "チェック・ボックスのデフォルトの状態"
+
+msgid "Weight"
+msgstr "ウェイト"
+
+msgid "EU Cookie Compliance Settings"
+msgstr "EU Cookie コンプライアンス設定"
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "Enable banner"
+msgstr "バナーの有効化"
+
+msgid "Consent by clicking"
+msgstr "クリックして同意"
+
+msgid "Consent by scrolling"
+msgstr "スクロールして同意"
+
+msgid "Array of EU countries"
+msgstr "EU 諸国の配列"
+
+msgid "Country name."
+msgstr "国名。"
+
+msgid "Only display banner in EU countries."
+msgstr "EU 加盟国のみでバナーを表示します。"
+
+msgid "Only display banner in EU countries (Javascript based)."
+msgstr "EU 加盟国でのみバナーを表示します (JavaScript ベース)。"
+
+msgid "Place the banner at the top of the website"
+msgstr "Web サイトの上部にバナーを配置"
+
+msgid "If the banner is at the top, don't scroll the banner with the page."
+msgstr "バナーが先頭にある場合、ページと一緒にバナーをスクロールしません。"
+
+msgid "Cookie information banner message"
+msgstr "Cookie 情報バナー・メッセージ"
+
+msgid "Cookie information banner message - mobile"
+msgstr "Cookie 情報バナー・メッセージ - モバイル"
+
+msgid "Template to use for \"consent by default\" method"
+msgstr "「デフォルトで同意」方式に使用されるテンプレート"
+
+msgid "Agree button message"
+msgstr "同意ボタンのメッセージ"
+
+msgid "Cookie Policy button message"
+msgstr "Cookie ポリシー・ボタンのメッセージ"
+
+msgid "Mobile breakpoint"
+msgstr "モバイル・ブレークポイント"
+
+msgid "Enable \"Thank you\" banner."
+msgstr "「ありがとうございます」バナーを有効にします。"
+
+msgid "Clicking hides \"Thank you\" banner."
+msgstr "クリックして「ありがとうございます」バナーを非表示にします。"
+
+msgid "Disagree button label"
+msgstr "「同意しない」ボタンのラベル"
+
+msgid "Thank you banner message"
+msgstr "「ありがとうございます」バナー・メッセージ"
+
+msgid "More info button label"
+msgstr "詳細情報ボタンのラベル"
+
+msgid "Hide button label"
+msgstr "非表示ボタンのラベル"
+
+msgid "Privacy policy link"
+msgstr "プライバシー・ポリシー・リンク"
+
+msgid "Open privacy policy link in a new window."
+msgstr "プライバシー・ポリシー・リンクを新しいウィンドウで開きます。"
+
+msgid "Banner height in pixels"
+msgstr "バナーの高さ (ピクセル)"
+
+msgid "Banner width in pixels or a percentage value"
+msgstr "バナーの幅 (ピクセルまたはパーセンテージ値)"
+
+msgid "Banner sliding animation time in milliseconds"
+msgstr "バナー・スライド・アニメーション時間 (ミリ秒)"
+
+msgid "Show \"Cookie Policy\" and \"More info\" buttons"
+msgstr "「Cookie ポリシー」ボタンおよび「詳細」ボタンを表示"
+
+msgid "Background color"
+msgstr "背景色"
+
+msgid "Text color"
+msgstr "テキストの色"
+
+msgid "Domain"
+msgstr "ドメイン"
+
+msgid "Add/Remove banner on specified domains"
+msgstr "指定されたドメインでバナーを追加/削除"
+
+msgid "Domains list"
+msgstr "ドメインリスト"
+
+msgid "Exclude paths"
+msgstr "パスの除外"
+
+msgid "Exclude admin pages."
+msgstr "管理ページを除外します。"
+
+msgid "Cookie session"
+msgstr "Cookie セッション"
+
+msgid "Disagree set cookie session"
+msgstr "Cookie 設定セッションを拒否"
+
+msgid "Cookie lifetime"
+msgstr "Cookie 存続時間"
+
+msgid "Use a different message for mobile phones"
+msgstr "携帯電話については別のメッセージを使用する"
+
+msgid "Include minimal CSS, I want to style the overlay in the theme CSS"
+msgstr "最小の CSS を組み込み、テーマ CSS のオーバーレイのスタイルを設定する"
+
+msgid "Include styles to support Drupal Olivero theme default CSS."
+msgstr "Drupal Olivero テーマのデフォルト CSS をサポートするスタイルを組み込みます。"
+
+msgid "Do not show cookie policy when the user clicks the \"Cookie Policy\" button."
+msgstr "ユーザーが「Cookie ポリシー」ボタンをクリックしたときに Cookie ポリシーを表示しません。"
+
+msgid "Reload page after user clicks the \"Agree\" button."
+msgstr "ユーザーが「同意」ボタンをクリックした後にページを再ロードします。"
+
+msgid "Include/exclude specified routes for reloading"
+msgstr "再ロード用に指定されたルートの組み込み/除外"
+
+msgid "Routes list"
+msgstr "ルート・リスト"
+
+msgid "Cookie name"
+msgstr "Cookie 名"
+
+msgid "Don't show the banner for UID 1."
+msgstr "UID 1 のバナーを表示しません。"
+
+msgid "Let screen readers see the banner before other links on the page"
+msgstr "スクリーン・リーダーに、ページの他のリンクよりも前にバナーを認識させる"
+
+msgid "Consent method"
+msgstr "同意の方法"
+
+msgid "Disable JavaScripts"
+msgstr "JavaScript を無効にする"
+
+msgid "Enable cookie(s) automatic-removal when consent is not explicitly given"
+msgstr "明示的に同意を得られない場合には Cookie の自動削除を有効にする"
+
+msgid "Allowed cookies"
+msgstr "許可された Cookie"
+
+msgid "Consent storage method"
+msgstr "同意の保管方法"
+
+msgid "Withdraw consent banner message"
+msgstr "「同意を撤回する」バナー・メッセージ"
+
+msgid "Privacy settings tab label"
+msgstr "「プライバシー設定」タブのラベル"
+
+msgid "Withdraw consent action button label"
+msgstr "「同意を撤回する」アクション・ボタンのラベル"
+
+msgid "Enable floating privacy settings tab and withdraw consent banner"
+msgstr "「プライバシー設定」タブと「同意を撤回する」バナーのフロート表示を有効にする"
+
+msgid "Put the withdraw consent action button on the cookie information banner"
+msgstr "Cookie 情報バナーに「同意を撤回する」アクション・ボタンを配置する"
+
+msgid "Save preferences action button label"
+msgstr "「設定の保存」アクション・ボタンのラベル"
+
+msgid "Accept all categories action button label"
+msgstr "「すべてのカテゴリーを受け入れる」アクション・ボタンのラベル"
+
+msgid "Replace the Agree button by a Save preferences and an Accept all categories button"
+msgstr "「同意」ボタンを「設定の保存」と「すべてのカテゴリーを受け入れる」ボタンで置き換える"
+
+msgid "Allow the cookie to be set for all sites on the same domain"
+msgstr "同じドメインのすべてのサイトに Cookie を設定できるようにする"
+
+msgid "Enable floating privacy settings permanently"
+msgstr "プライバシー設定のフロート表示を永続的に有効にする"
+
+msgid "Containing element"
+msgstr "含まれているエレメント"
+
+msgid "Cookie Policy Version"
+msgstr "Cookie ポリシーのバージョン"
+
+msgid "Cookie value (disagreed)"
+msgstr "Cookie の値 (同意しない)"
+
+msgid "Cookie value (agreed, show thank you banner)"
+msgstr "Cookie の値 (同意済み、感謝バナーを表示)"
+
+msgid "Cookie value (agreed)"
+msgstr "Cookie の値 (同意済み)"
+
+msgid "Show disagree button (DEPRECATED)"
+msgstr "「同意しない」ボタンを表示 (非推奨)"
+
+msgid "Disagree button message (DEPRECATED)"
+msgstr "「同意しない」ボタンのメッセージ (非推奨)"
+
+msgid "Whitelisted cookies (DEPRECATED)"
+msgstr "ホワイトリスト Cookie (非推奨)"
+
+msgid "Cookie categories (DEPRECATED)"
+msgstr "Cookie カテゴリー (非推奨)"
+
+msgid "Boolean value to indicate that the first consent category cannot be unchecked (DEPRECATED)"
+msgstr "最初の同意カテゴリーをチェック解除できないことを示すブール値 (非推奨)"
+
+msgid "Select all categories by default (DEPRECATED)"
+msgstr "デフォルトですべてのカテゴリーを選択 (非推奨)"
+
+msgid "Buttons have red focus outline (for accessibility)"
+msgstr "ボタンには赤色のフォーカス・アウトラインがあります (アクセシビリティー用)"
+
+msgid "Close button action"
+msgstr "「閉じる」ボタン・アクション"
+
+msgid "Reject button label"
+msgstr "「拒否」ボタンのラベル"
+
+msgid "Enable \"Reject/deny all\" button"
+msgstr "「すべて拒否/拒否」ボタンを有効にする"
+
+msgid "Close button/box enabled"
+msgstr "「閉じる」ボタン/ボックスが有効"
+
+msgid "Unchecked by default"
+msgstr "デフォルトでチェック解除"
+
+msgid "Checked by default"
+msgstr "デフォルトでチェック"
+
+msgid "Checked and disabled (user cannot clear the checkbox)"
+msgstr "チェックされており使用不可 (ユーザーはこのチェック・ボックスをクリアできません)"
+
+msgid "Machine name"
+msgstr "システム内部名称"
+
+msgid "Save configuration"
+msgstr "構成を保存"
+
+msgid "I accept processing of my personal data. For more information, read the <a href=\"@url\">privacy policy</a>,"
+msgstr "個人データの処理に同意します。詳しくは、<a href=\"@url\">プライバシー・ポリシー</a>を参照してください。"
+
+msgid "Could not generate the EU Cookie Compliance JavaScript file that would be used for handling disabled JavaScripts. There may be a problem with your files folder."
+msgstr "使用不可の JavaScript の処理に使用される EU Cookie 準拠 JavaScript ファイルを生成できませんでした。 ファイル・フォルダーに問題がある可能性があります。"
+
+msgid "Are you sure you want to delete %name?"
+msgstr "%name を削除してもよろしいですか？"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "content @type: deleted @label."
+msgstr "コンテンツ @type: @label を削除しました。"
+
+msgid "The name that will be shown to the website visitor."
+msgstr "Web サイトの訪問者に対して表示される名前。"
+
+msgid "The description that will be shown to the website visitor."
+msgstr "Web サイトの訪問者に対して表示される説明。"
+
+msgid "Determines the default state of this category's selection checkbox on the cookie consent popup."
+msgstr "Cookie についての同意のポップアップでのこのカテゴリーの選択チェック・ボックスのデフォルト状態を決定します。"
+
+msgid "Created the %label Cookie category."
+msgstr "%label Cookie カテゴリーが作成されました。"
+
+msgid "Saved the %label Cookie category."
+msgstr "%label Cookie カテゴリーが保存されました。"
+
+msgid "Do not store"
+msgstr "保管しない"
+
+msgid "Permissions"
+msgstr "権限"
+
+msgid "Display the banner for"
+msgstr "次についてのバナーの表示:"
+
+msgid "Consent for processing of personal information"
+msgstr "個人情報の処理に対する同意"
+
+msgid "The EU General Data Protection Regulation (GDPR) (see <a href=\"https://gdpr.eu/\" target=\"_blank\">https://gdpr.eu/</a>) comes into enforcement from 25 May 2018 and introduces new requirements for web sites which handle information that can be used to identify individuals. The regulation underlines that consent must be <strong>unambiguous</strong> and involve a <strong>clear affirmative action</strong>. When evaluating how to best handle the requirements in the GDPR, remember that if you have a basic web site where the visitors don't log in, you always have the option to <strong>not process data that identifies individuals</strong>, in which case you may not need this module. Also note that GDPR applies to any electronic processing or storage of personal data that your organization may do, and simply installing a module may not be enough to become fully GDPR compliant."
+msgstr "EU 一般データ保護規則 (GDPR) ( <a href=\"https://gdpr.eu/\" target=\"_blank\">https://gdpr.eu/</a>を参照) は 2018 年 5 月 25 日から施行され、個人を識別するために使用できる情報を扱う Web サイトの新しい要件が導入されました。 この規制は、同意が <strong>明確な</strong> 必要があることを強調し、 <strong>明確な肯定アクション</strong>を伴います。 GDPR の要件を最も適切に処理する方法を評価する際には、訪問者がログインしない基本的な Web サイトがある場合には、常に <strong>個人を識別するデータを処理しない</strong>オプションがあることに注意してください。この場合、このモジュールは必要ありません。 また、GDPR は、お客様の組織が行う可能性のあるすべての電子処理または個人データの保管に適用され、単にモジュールをインストールするだけでは GDPR に完全に準拠するには十分ではない場合があることにも注意してください。"
+
+msgid "Consent by default. Don't provide any option to opt out."
+msgstr "デフォルトで同意する。オプトアウトのオプションを提供しない。"
+
+msgid "Opt-in. Don't track visitors unless they specifically give consent. (GDPR compliant)"
+msgstr "オプトインする。明確な同意を得ていない限り、訪問者を追跡しない。(GDPR 準拠)"
+
+msgid "Opt-in with categories. Let visitors choose which cookie categories they want to opt-in for (GDPR compliant)."
+msgstr "カテゴリーでオプトインします。訪問者がオプトインしたい Cookie カテゴリーを選択できるようにします (GDPR 準拠)。"
+
+msgid "Opt-out. Track visitors by default, unless they choose to opt out."
+msgstr "オプトアウトする。オプトアウトが選択されない限り、デフォルトで訪問者を追跡する。"
+
+msgid "Automatic. Respect the DNT (Do not track) setting in the browser, if present. Uses opt-in when DNT is 1 or not set, and consent by default when DNT is 0."
+msgstr "自動。ブラウザーの DNT (追跡しない) 設定を尊重する (存在する場合)。DNT が 1 であるか設定されていない場合はオプトインを使用して、DNT が 0 の場合はデフォルトで同意する。"
+
+msgid "Cookie categories are managed in the Categories tab (found at the top of this page)."
+msgstr "Cookie カテゴリーは「カテゴリー」タブで管理されます (このページの上部に表示されています)。"
+
+msgid "Replace the Agree button with \"Save preferences\" and \"Accept all categories\" buttons."
+msgstr "「同意」ボタンを「設定の保存」と「すべてのカテゴリーを受け入れる」ボタンで置き換えます。"
+
+msgid "\"Save preferences\" button label"
+msgstr "「設定の保存」ボタンのラベル"
+
+msgid "\"Accept all categories\" button label"
+msgstr "「すべてのカテゴリーを受け入れる」ボタンのラベル"
+
+msgid "Select the popup info template for 'default by consent' option"
+msgstr "「同意時のデフォルト」オプションのポップアップ情報テンプレートを選択してください"
+
+msgid "Info banner template"
+msgstr "通知バナーのテンプレート"
+
+msgid ""
+"Cookie policy button in popup-buttons section and styled similarly to the Agree button,\n"
+"        as in earlier versions of this module"
+msgstr ""
+"popup-buttons セクションにあり、「同意」ボタンと同様のスタイルが設定される Cookie ポリシーのボタン。\n"
+"        (このモジュールの旧バージョンと同様)"
+
+msgid "Cookie policy button in popup-text section, styled differently than Agree button."
+msgstr "popup-text セクションにあり、「同意」ボタンと異なるスタイルが設定される Cookie ポリシー・ボタン。"
+
+msgid "Disable the following JavaScripts when consent isn't given"
+msgstr "同意が得られない場合は以下の JavaScript を無効にする"
+
+msgid "<span class='eu-cookie-compliance-word-break'>Include the full path of JavaScripts, each on a separate line. When using the opt-in or opt-out consent options, you can block certain JavaScript files from being loaded when consent isn't given. The on-site JavaScripts should be written as root relative paths <strong>without the leading slash</strong>, you can use public://path/to/file.js and private://path/to/file.js, and off-site JavaScripts should be written as complete URLs <strong>with the leading http(s)://</strong>. Note that after the user gives consent, the scripts will be executed in the order you enter here.<br /><br />Libraries and scripts that attach to Drupal.behaviors are supported. To indicate a behavior that needs to be loaded on consent, append the behavior name after the script with a | (vertical bar). If you also want to conditionally load a library, place that as the third parameter, following another | (vertical bar). <strong>Example: modules/custom/custom_module/js/custom.js|customModule|custom_module/custom_module</strong>.<br />If your script file does not attach to Drupal.attributes, you may skip the second parameter. <strong>Example: modules/custom/custom_module/js/custom.js||custom_module/custom_module</strong><br /><strong>Note that Drupal behavior name and library parameters are both optional</strong>, but may be required to achieve your objective.</span>"
+msgstr "<span class='eu-cookie-compliance-word-break'>JavaScript の絶対パスを 1 つずつ別々の行に組み込みます。オプトインまたはオプトアウトの同意オプションを使用する場合、同意を得られなければ特定の JavaScript ファイルがロードされないようにブロックできます。オンサイトの JavaScript は<strong>先頭のスラッシュを付けない</strong>ルート相対パスとして、public://path/to/file.js および private://path/to/file.js のように使用できます。オフサイトの JavaScript は<strong>先頭に http(s)://</strong> を付けた完全な URL として記述します。ユーザーが同意した後、ここで入力した順序でスクリプトが実行されることに注意してください。<br /><br />Drupal.behaviors に付加されるライブラリーおよびスクリプトがサポートされます。同意に基づいてロードする必要がある動作を指定するには、| (縦棒) を使用してスクリプトの後に動作名を付加します。ライブラリーのロードも条件付きで行いたい場合は、さらに | (縦棒) を続けて第 3 パラメーターとして記述します。<strong>例: modules/custom/custom_module/js/custom.js|customModule|custom_module/custom_module</strong>。<br />スクリプト・ファイルが Drupal.attributes に付加されない場合は、第 2 パラメーターを省略できます。<strong>例: modules/custom/custom_module/js/custom.js||custom_module/custom_module</strong><br /><strong>Drupal の動作名およびライブラリー・パラメーターはいずれもオプションです</strong>。ただし、目的によっては必須になる場合もあります。</span>"
+
+msgid "When using the consent method \"Opt-in with categories\", you can link the script to a specific category by using the format: \"category:path/to/the/script.js\"."
+msgstr "同意メソッドの「カテゴリーでオプトイン」を使用する場合、「category:path/to/the/script.js」という形式を使用してスクリプトを特定のカテゴリーにリンクできます。"
+
+msgid "Cookie handling"
+msgstr "Cookie の処理"
+
+msgid "Enable cookie(s) automatic-removal when consent isn't given."
+msgstr "同意を得られない場合に Cookie の自動削除を有効にします。"
+
+msgid "Include the name of cookies, each on a separate line. When using the opt-in or opt-out consent options, this module will <strong>delete cookies from your domain that are not allowed</strong> every few seconds when consent isn't given. PHP session cookies and the cookie for this module are always allowed."
+msgstr "Cookie の名前をそれぞれ別々の行に組み込みます。オプトインまたはオプﾄアウトの同意オプションを使用する場合、このモジュールは、同意を得られなければ<strong>許可されていない Cookie をドメインから削除します</strong>。PHP セッション Cookie およびこのモジュール用の Cookie は常に許可されます。"
+
+msgid "When using the consent method \"Opt-in with categories\", you can link the cookie to a specific consent category by using the format: \"category:cookie_name\".  Only when consent is given for the given category, will the cookie be allowed."
+msgstr "同意メソッドの「カテゴリーでオプトイン」を使用する場合、「category:cookie_name」という形式を使用して Cookie を特定の同意カテゴリーにリンクできます。特定のカテゴリーの同意が得られた場合にのみ、Cookie は許可されます。"
+
+msgid "Cookie names can contain \"*\" characters which mean a series of any characters."
+msgstr "Cookie 名には、一連の任意の文字を表す「*」文字を使用できます。"
+
+msgid "Store record of consent"
+msgstr "同意の記録を保管する"
+
+msgid "Depending on your implementation of GDPR, you may have to store a record when the user consents. This module comes with a basic consent storage plugin that writes a record to the database. Note that if your site has significant traffic, the basic consent storage may become a bottleneck, as every consent action will require a write to the database. You can easily create your own module with a ConsentStorage Plugin that extends ConsentStorageBase, using BasicConsentStorage from this module as a template. If you create a highly performant consent storage plugin, please consider contributing it back to the Drupal community as a contrib module."
+msgstr "GDPR の実装環境によっては、ユーザーが同意した場合に記録を保管することが必要になります。このモジュールには、記録をデータベースに書き込む基本同意の保管プラグインが付属しています。ご使用のサイトのトラフィックが大量である場合は、すべての同意アクションでデータベースへの書き込みが必要になるため、基本同意の保管がボトルネックとなる可能性があることに注意してください。このモジュールの BasicConsentStorage をテンプレートとして使用し、ConsentStorageBase を拡張する ConsentStorage プラグインによって独自のモジュールを容易に作成できます。高性能な同意保管プラグインを作成する場合は、Drupal コミュニティーに提供モジュールとして提供することを検討してください。"
+
+msgid "Cookie information banner"
+msgstr "Cookie 情報バナー"
+
+msgid "By default by clicking any link or button on the website the visitor accepts the cookie policy. Uncheck this box if you don’t require this functionality. You may want to edit the banner message below accordingly."
+msgstr "デフォルトでは、Web サイトで任意のリンクまたはボタンをクリックすることによって、訪問者は Cookie ポリシーを受け入れます。この機能が不要である場合は、このボックスのチェック・マークを外します。下のバナー・メッセージを適宜編集することが必要になる場合があります。"
+
+msgid "Use a different message for mobile phones."
+msgstr "携帯電話については別のメッセージを使用する"
+
+msgid "px"
+msgstr "px"
+
+msgid "The mobile message will be used when the window width is below or equal to the given value."
+msgstr "ウィンドウ幅が所定の値以下であるときにモバイル・メッセージが使用されます。"
+
+msgid "Agree button label"
+msgstr "同意ボタンのラベル"
+
+msgid "If this option is checked, the cookie policy button will be shown on the site. Disabling this option will hide both the \"Cookie Policy\" button on the information banner and the \"More info\" button on the \"Thank you\" banner."
+msgstr "このオプションにチェック・マークが付いている場合、Cookie ポリシー・ボタンがサイトに表示されます。このオプションを無効にすると、情報バナーの「Cookie ポリシー」ボタンと「ありがとうございます」バナーの「詳細」ボタンが非表示になります。"
+
+msgid "Cookie policy button label"
+msgstr "Cookie ポリシー・ボタンのラベル"
+
+msgid "GDPR requires that withdrawing consent for handling personal information should be as easy as giving consent. This module offers a tab button that when clicked brings up a message and a button that can be used to withdraw consent."
+msgstr "GDPR では、個人情報の処理に対する同意の撤回は同意の付与と同程度に容易なものでなければならないとしています。このモジュールは、クリックしたときにメッセージを表示するタブ・ボタンと、同意を撤回するために使用できるボタンを提供します。"
+
+msgid "Adds a floating privacy settings tab and withdraw consent banner. This option also provides a \"Cookie settings\" button block and menu item suggestion in \"Navigation\" menu."
+msgstr "浮動プライバシー設定タブを追加し、同意バナーを撤回します。 このオプションは、「ナビゲーション」メニューの「Cookie 設定」ボタン・ブロックとメニュー項目の提案も提供します。"
+
+msgid "Enable floating privacy settings tab after withdrawing consent"
+msgstr "同意が撤回された後で「プライバシー設定」タブのフロート表示を有効にする"
+
+msgid "Put the \"Withdraw consent\" button on the cookie information banner."
+msgstr "Cookie 情報バナーに「同意を撤回する」ボタンを配置します。"
+
+msgid "Text that will be displayed in the banner that appears when the privacy settings tab is clicked."
+msgstr "「プライバシー設定」タブをクリックしたときに表示されるバナーに示されるテキスト。"
+
+msgid "Tab button that reveals/hides the withdraw message and action button when clicked."
+msgstr "クリックしたときに撤回メッセージとアクション・ボタンの表示/非表示を切り替えるタブ・ボタン。"
+
+msgid "Withdraw consent button label"
+msgstr "「同意を撤回する」ボタンのラベル"
+
+msgid "This button will withdraw consent when clicked."
+msgstr "このボタンをクリックすると、同意を撤回します。"
+
+msgid "Reject button and close box"
+msgstr "「拒否」ボタンと「閉じる」ボックス"
+
+msgid "Close banner"
+msgstr "バナーを閉じる"
+
+msgid "Reject all cookies"
+msgstr "すべての Cookie を拒否"
+
+msgid "Trigger Save preferences (for banner with categories)"
+msgstr "設定の保存のトリガー (カテゴリー付きバナー用)"
+
+msgid "The default position of the close button is in the top right corner of the banner."
+msgstr "「閉じる」ボタンのデフォルトの位置は、バナーの右上隅です。"
+
+msgid "Thank you banner"
+msgstr "「ありがとうございます」バナー"
+
+msgid "Enable \"Thank you\" banner"
+msgstr "「ありがとうございます」バナーを有効にする"
+
+msgid "Clicking a link or button hides the \"Thank you\" message automatically."
+msgstr "リンクまたはボタンをクリックすると、「ありがとうございます」メッセージが自動的に非表示になります。"
+
+msgid "\"Thank you\" banner message"
+msgstr "「ありがとうございます」バナー・メッセージ"
+
+msgid "Privacy policy"
+msgstr "プライバシー・ポリシー"
+
+msgid "Enter link to your privacy policy or other page that will explain cookies to your users, external links should start with http:// or https://."
+msgstr "ユーザーに対して Cookie について説明するプライバシー・ポリシーまたはその他のページへのリンクを入力してください。外部リンクは、http:// または https:// で始まっていなければなりません。"
+
+msgid "Privacy Policy Version"
+msgstr "プライバシー・ポリシーのバージョン"
+
+msgid "Change this value to make the cookie information banner reappear for all visitors. A typical usage of this field is to increase the value when the privacy policy has been changed."
+msgstr "すべての訪問者に対して Cookie 情報バナーを再び表示するには、この値を変更します。このフィールドは通常、プライバシー・ポリシーの変更時にこの値を増やすために使用されます。"
+
+msgid "Appearance"
+msgstr "テーマ"
+
+msgid "Olivero theme is enabled, but Olivero style support is not enabled. You can enable this setting within the <a href=\"#edit-appearance\">Appearance fieldset</a> to extend the look and feel of the Olivero theme."
+msgstr "Olivero テーマは有効になっていますが、Olivero スタイルのサポートは有効になっていません。 <a href=\"#edit-appearance\">「外観フィールド・セット」</a> 内でこの設定を有効にすると、Olivero テーマのルック・アンド・フィールを拡張できます。"
+
+msgid "This uses opinionated styling to fit in with the Drupal Olivero theme. Enabling this will disable other appearance options."
+msgstr "これは、 Drupal Olivero テーマに適合するように、自説的なスタイルを使用します。 これを有効にすると、他の外観オプションが無効になります。"
+
+msgid "Change the text color of the banner."
+msgstr "バナーのテキストの色を変更します。"
+
+msgid "Change the background color of the banner."
+msgstr "バナーの背景色を変更します。"
+
+msgid "Change the text color of the banner. Provide HEX value without the #."
+msgstr "バナーのテキストの色を変更します。# を付けずに 16 進数の値を指定します。"
+
+msgid "Change the background color of the banner. Provide HEX value without the #."
+msgstr "バナーの背景色を変更します。# を付けずに 16 進数の値を指定します。"
+
+msgid "Serves as the parent element to append cookie banner html to."
+msgstr "Cookie バナー html を付加する親エレメントとして機能します"
+
+msgid "Bottom"
+msgstr "ボトム"
+
+msgid "Top"
+msgstr "トップ"
+
+msgid "Position"
+msgstr "ポジション"
+
+msgid "Include minimal CSS, I want to style the banner in the theme CSS."
+msgstr "最小の CSS を組み込み、テーマ CSS のバナーのスタイルを設定する"
+
+msgid "This may be useful if you want the banner to share the button style of your theme. Note that you will have to configure values like the banner width, text color and background color in your CSS file."
+msgstr "これはテーマのボタン・スタイルをバナーで共有する場合に便利なことがあります。バナーの幅、テキストの色、背景色などの値を CSS ファイル内で構成する必要があることに注意してください。"
+
+msgid "Banner height"
+msgstr "バナーの高さ"
+
+msgid "Enter an integer value for a desired height in pixels or leave empty for automatically adjusted height."
+msgstr "希望する高さ (ピクセル) の整数値を入力します。高さが自動的に調整されるようにする場合は、空のままにします。"
+
+msgid "px or %"
+msgstr "ピクセルまたは %"
+
+msgid "Set the width of the banner. This can be either an integer value or percentage of the screen width. For example: 200 or 50%."
+msgstr "バナーの幅を設定します。これには、整数値か、または画面幅のパーセンテージを指定できます。例えば、200 または 50% とします。"
+
+msgid "EU countries"
+msgstr "EU 加盟国"
+
+msgid "<p>You can limit the number of countries for which the banner is displayed. If you want to provide a list of countries other than current EU states, you may place an array in <code>$conf['eu_cookie_compliance_eu_countries']</code> in your <code>settings.php</code> file. Using the <a href=\"http://drupal.org/project/geoip\">geoip</a> module or the <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> module or the <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP function.</p>"
+msgstr "<p>バナーが表示される国の数を制限することができます。 現在の EU 加盟国以外の国のリストを指定する場合は、 <code>settings.php</code> ファイルの <code>$conf ['eu_cookie_compliance_eu_states']</code> に配列を配置できます。 <a href=\"http://drupal.org/project/geoip\">ジオイプ</a> モジュール、 <a href=\"http://drupal.org/project/smart_ip\">スマート IP</a> モジュール、または <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name ()</a> PHP 関数を使用する。</p>"
+
+msgid "Use JavaScript to determine if the visitor is in a country where GDPR applies. Required if caching is enabled or a caching strategy such as varnish is utilized."
+msgstr "JavaScript を使用して、訪問者が GDPR が適用される国にいるかどうかを判別します。 キャッシングが使用可能になっている場合、またはワニスなどのキャッシング・ストラテジーが使用されている場合に必要です。"
+
+msgid "I have no caching enabled or set up. Use non-JavaScript method."
+msgstr "キャッシュが有効になっていないか、セットアップされていません。 非 JavaScript メソッドを使用します。"
+
+msgid "Disabled. Show the banner to all visitors, also those in non-GDPR countries."
+msgstr "無効。 すべての訪問者、および非 GDPR 国の訪問者にバナーを表示します。"
+
+msgid "You can choose to show the banner only to visitors from EU countries. In order to achieve this, you need to install the <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> module or install the <a href=\"http://drupal.org/project/geoip\">geoip</a> module or enable the <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP function."
+msgstr "EU 加盟国からの訪問者にのみバナーを表示することを選択できます。これを行うには、<a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> モジュールをインストールするか、<a href=\"http://drupal.org/project/geoip\">geoip</a> モジュールをインストールするか、<a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP 関数を有効にする必要があります。"
+
+msgid "Advanced"
+msgstr "高度"
+
+msgid "Use position:fixed for the banner when displayed at the top."
+msgstr "先頭に表示するときにバナーについて position:fixed を使用します。"
+
+msgid "Banner sliding animation time"
+msgstr "バナー・スライド・アニメーション時間"
+
+msgid "ms"
+msgstr "ms"
+
+msgid "Enabling this will make it possible to record the fact that the user disagrees without the user having to see the privacy policy."
+msgstr "これを有効にすることで、ユーザーにプライバシー・ポリシーを表示しなくてもユーザーが同意しないことを記録できるようになります。"
+
+msgid "Include"
+msgstr "含む"
+
+msgid "Exclude"
+msgstr "除外"
+
+msgid "Specify if you want to include or exclude the listed below routes for reloading the page after agreeing cookies."
+msgstr "Cookie の同意を得た後でページを再ロードするための以下のルートを組み込むかまたは除外するかを指定します。"
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. Leave blank for reloading all pages. Leave the list empty to reload on all pages. This field does not support url aliases."
+msgstr "パスを使用してページを指定します。1 行につき 1 つのパスを入力します。「*」文字はワイルドカードです。例えば、ブログ・ページのパスを指定する場合は %blog、すべての個人ブログのパスを指定する場合は %blog-wildcard と入力します。すべてのページを再ロードする場合は、ブランクのままにします。すべてのページで再ロードするには、このリストを空のままにします。このフィールドでは URL 別名はサポートされていません。"
+
+msgid "Scrolling makes the visitors to accept the cookie policy. In some countries, like Italy, it is permitted."
+msgstr "スクロールによって訪問者は Cookie ポリシーへの同意を示します。イタリアなどの一部の国では、このことが許可されます。"
+
+msgid "Sets the cookie name that is used to check whether the user has agreed or not. This option is useful when policies change and the user needs to agree again."
+msgstr "ユーザーが同意したかどうかを確認するために使用される Cookie 名を設定します。このオプションは、ポリシーが変更されてユーザーの再同意が必要な場合に便利です。"
+
+msgid "The cookie value which will be set where the user has disagreed."
+msgstr "ユーザーが同意しなかった場合に設定される Cookie 値。"
+
+msgid "The cookie value which will be set where the user has agreed and we will show a thank-you banner."
+msgstr "ユーザーが同意して感謝バナーを表示する場所に設定される Cookie 値。"
+
+msgid "The cookie value which will be set where the user has agreed."
+msgstr "ユーザーが同意した場所に設定される Cookie 値。"
+
+msgid "Add"
+msgstr "追加"
+
+msgid "Remove"
+msgstr "削除"
+
+msgid "Add/remove banner on specified domains"
+msgstr "指定されたドメインでバナーを追加/削除"
+
+msgid "Specify if you want to add or remove banner on the listed below domains."
+msgstr "下にリストされているドメインでバナーを追加するか、削除するかを指定します。"
+
+msgid "Specify domains with protocol (e.g., http or https). Enter one domain per line."
+msgstr "ドメインをプロトコル (例えば http または https) と共に指定します。1 行に 1 つのドメインを入力します。"
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page."
+msgstr "１行に１ベージとして、パスを入力してください。 <b>*</b> はワイルドカードとして使えます。 例えばブログページのパスを指定するには <b>%blog</b>、ユーザー別のブログは <b>%blog-wildcard</b> と入力してください。 また、フロントページを指定するには <b>%front</b> と入力してください。"
+
+msgid "Note: if you enable the Withdraw feature, the Privacy settings tab will be displayed also on admin pages, but the banner will not open until you click the tab."
+msgstr "注: 「撤回」機能を使用可能にすると、「プライバシー設定」タブは管理ページにも表示されますが、バナーはタブをクリックするまで開かれません。"
+
+msgid "Don't show the banner for site administrators (including UID 1)."
+msgstr "サイト管理者 (UID 1 を含む) のバナーを表示しません。"
+
+msgid "Note: if you enable the Withdraw feature, the Privacy settings tab will be displayed also for site administrators, but the banner will not open until you click the tab."
+msgstr "注: 「撤回」機能を使用可能にすると、「プライバシー設定」タブはサイト管理者に対しても表示されますが、バナーはタブをクリックするまで開かれません。"
+
+msgid "Let screen readers see the banner before other links on the page."
+msgstr "スクリーン・リーダーに、ページの他のリンクよりも前にバナーを認識させます。"
+
+msgid "Enable this if you want to place the banner as the first HTML element on the page. This will make it possible for screen readers to close the banner without tabbing through all links on the page."
+msgstr "バナーをページの最初の HTML 要素として配置する場合にこれを有効にします。これにより、スクリーン・リーダーはページのすべてのリンクをタブ操作することなくバナーを閉じることが可能になります。"
+
+msgid "Prompt for consent (from the same user) at every new browser session."
+msgstr "すべての新規ブラウザー・セッションで (同じユーザーからの) 同意を求める。"
+
+msgid "This sets cookie lifetime to 0, invalidating the cookie at the end of the browser session. To set a cookie lifetime greater than 0, uncheck this option. Note that some users will find this behavior highly annoying, and it's recommended to double-check with the legal advisor whether you really need this option enabled."
+msgstr "これにより、Cookie の存続時間が 0 に設定され、ブラウザー・セッションの終了時に Cookie は無効になります。Cookie の存続時間を 0 より大きい値に設定するには、このオプションのチェック・マークを外します。一部のユーザーがこの動作を非常に不快なものと捉える可能性があることに注意してください。このオプションを有効にする必要が本当にあるかどうかを法的アドバイザーと再確認することをお勧めします。"
+
+msgid "Sets the domain of the cookie to a specific url. Used when you need consistency across domains. This is language independent. Note: Make sure you actually enter a domain that the browser can make use of. For example if your site is accessible at both www.domain.com and domain.com, you will not be able to hide the banner at domain.com if your value for this field is www.domain.com."
+msgstr "Cookie のドメインを特定の URL に設定します。ドメイン間の一貫性が必要な場合に使用します。これは言語に依存します。注: ブラウザーが使用できるドメインを必ず入力してください。例えば、サイトが www.domain.com と domain.com の両方でアクセスできる場合に、このフィールドの値が www.domain.com の場合、domain.com でバナーを非表示にできません。"
+
+msgid "Allow the cookie to be set for all sites on the same domain."
+msgstr "同じドメインのすべてのサイトに Cookie を設定できるようにします。"
+
+msgid "Sets the path of the cookie to '/' so that the cookie works across all sites on the domain."
+msgstr "Cookie のパスを「/」に設定し、ドメインのすべてのサイトで Cookie が機能するようにします。"
+
+msgid "Set cookie lifetime to 0 if the user clicks the \"Decline\" or the \"Withdraw consent\" button."
+msgstr "ユーザーが「同意しない」ボタンまたは「同意を撤回する」ボタンをクリックした場合に、Cookie の存続期間を 0 に設定します。"
+
+msgid "Enable this if you want to show the consent banner at every new session until the user clicks the \"Agree\" button."
+msgstr "ユーザーが「同意」ボタンをクリックするまで、新規セッションで常に同意バナーを表示するには、これを有効にします。"
+
+msgid "How many days the system remember the user's choice."
+msgstr "システムでユーザーの選択内容を記憶する日数。"
+
+msgid "days"
+msgstr "日"
+
+msgid "@name field is required"
+msgstr "@name フィールドは必須項目です"
+
+msgid "Invalid cookie name, please remove any special characters and try again."
+msgstr "Cookie 名が無効です。特殊文字を削除して再試行してください。"
+
+msgid "Your privacy policy link is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "プライバシー・ポリシー・リンクがフロントページを指しています。これはインストール後のデフォルト値で、プライバシー・ポリシーが実際にフロントページに掲載されている場合を除き、プライバシー・ポリシー用の別のページを作成してそのページへのリンクを作成する必要があります。"
+
+msgid "The user role permission could not be set because the <code>config_readonly</code> module is enabled. To allow setting of user role permissions, please add <code>user.role.%name</code> to the <code>config_readonly</code> allowlist."
+msgstr "<code>config_readonly</code> モジュールが使用可能になっているため、ユーザー役割の権限を設定できませんでした。 ユーザー役割の権限を設定できるようにするには、<code>config_readonly</code> 許可リストに <code>user.role.%name</code> を追加してください。"
+
+msgid "The module weight could not be set because the <code>config_readonly</code> module is enabled. To allow setting of module weight, please add <code>core.extension</code> to the <code>config_readonly</code> allowlist."
+msgstr "<code>config_readonly</code> モジュールが使用可能になっているため、モジュールのウェイトを設定できませんでした。 モジュールのウェイトを設定できるようにするには、<code>config_readonly</code> 許可リストに <code>core.extension</code> を追加してください。"
+
+msgid "Invalid protocol specified for the %name (valid protocols: %protocols)."
+msgstr "%name に対して無効なプロトコルが指定されました (有効なプロトコル: %protocols)。"
+
+msgid "Invalid %name (:message)."
+msgstr "無効な %name (:message)。"
+
+msgid "Invalid URL in %name field (:message)."
+msgstr "%name フィールドの無効な URL (:message)。"
+
+msgid "This block requires the \"@withdraw_enabled_setting_name\" to be enabled in <a href=\"@eu_cookie_compliance_settings_url\">EU Cookie Compliance settings</a>."
+msgstr "このブロックを使用するには、「 <a href=\"@eu_cookie_compliance_settings_url\">EU Cookie 準拠設定</a>」で「@withdraw_enabled_setting_name」が有効になっている必要があります。"
+
+msgid "EU Cookie Compliance Button Block"
+msgstr "EU Cookie 準拠ボタン・ブロック"
+
+msgid "Basic storage"
+msgstr "基本ストレージ"
+

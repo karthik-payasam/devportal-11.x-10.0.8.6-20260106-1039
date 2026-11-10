@@ -1,0 +1,137 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Fulltext field database columns updated."
+msgstr "Colonnes de base de données de zone en texte intégral mises à jour."
+
+msgid "Primary keys added to all denormalized index tables."
+msgstr "Clés principales ajoutées à toutes les tables d'index dénormalisées."
+
+msgid "Database Search"
+msgstr "Recherche dans la base de données"
+
+msgid "Offers an implementation of the Search API that uses database tables for indexing content."
+msgstr "Propose une implémentation de l'API de recherche qui utilise des tables de base de données pour indexer le contenu."
+
+msgid "Search"
+msgstr "Rechercher"
+
+msgid "Search API DB settings"
+msgstr "Paramètres de base de données de l'API de recherche"
+
+msgid "Name of the database we are connecting to"
+msgstr "Nom de la base de données à laquelle nous nous connectons"
+
+msgid "Minimum length of indexed words"
+msgstr "Longueur minimale des mots indexés"
+
+msgid "The matching mode – \"words\", \"prefix\" or \"partial\""
+msgstr "Le mode de correspondance – \"words\", \"prefix\" ou \"partial\""
+
+msgid "Autocomplete configuration"
+msgstr "Configuration de la saisie semi-automatique"
+
+msgid "Suggest suffix"
+msgstr "Suggérer un suffixe"
+
+msgid "Suggest words"
+msgstr "Suggérer des mots"
+
+msgid "Maximum occurrences of a term until autocomplete suggestions ignores it"
+msgstr "Nombre maximal d'occurrences d'un terme qui, s'il est atteint, entraîne l'ignorance du terme par la fonction de suggestion de saisie semi-automatique"
+
+msgid "Database Search Defaults"
+msgstr "Valeurs par défaut de la recherche dans la base de données"
+
+msgid "Enable this module for a best-practice default setup of Search API with the Database backend. After installation it is recommended to uninstall this module again for performance reasons. The provided configuration will not be removed."
+msgstr "Activez ce module pour une configuration par défaut conforme aux meilleures pratiques de l'API de recherche avec le système de back end de la base de données. Après son installation, il est recommandé de désinstaller le module pour de meilleures performances. La configuration fournie ne sera pas retirée."
+
+msgid "Database"
+msgstr "Base de données"
+
+msgid "Select the database key and target to use for storing indexing information in. Cannot be changed after creation."
+msgstr "Sélectionnez la clé et la cible de base de données à utiliser pour le stockage des informations d'indexation. Elles ne peuvent pas être modifiées après leur création."
+
+msgid "Minimum word length"
+msgstr "Longueur minimale de mot"
+
+msgid "The minimum number of characters a word must consist of to be indexed"
+msgstr "Nombre minimal de caractères qu'un mot doit comporter pour pouvoir être indexé"
+
+msgid "Partial matching"
+msgstr "Correspondance partielle"
+
+msgid "Match whole words only"
+msgstr "Correspondance uniquement de mots entiers"
+
+msgid "Match on parts of a word"
+msgstr "Correspondance sur des parties d'un mot"
+
+msgid "Match words starting with given keywords"
+msgstr "Correspondance de mots commençant par certains mots clés"
+
+msgid "Autocomplete settings"
+msgstr "Paramètres de saisie semi-automatique"
+
+msgid "These settings allow you to configure how suggestions are computed when autocompletion is used. If you are seeing many inappropriate suggestions you might want to deactivate the corresponding suggestion type. You can also deactivate one method to speed up the generation of suggestions."
+msgstr "Ces paramètres vous permettent de configurer la façon dont les suggestions sont calculées lorsque la saisie semi-automatique est utilisée. Si de nombreuses suggestions inappropriées sont proposées, il peut être judicieux de désactiver le type de suggestion correspondant. Vous pouvez aussi désactiver une méthode afin d'accélérer la génération des suggestions."
+
+msgid "Suggest word endings"
+msgstr "Suggérer des fins de mot"
+
+msgid "Suggest endings for the currently entered word."
+msgstr "Suggérer des fins pour le mot saisi."
+
+msgid "Suggest additional words"
+msgstr "Suggérer des mots supplémentaires"
+
+msgid "Suggest additional words the user might want to search for."
+msgstr "Suggérer des mots supplémentaires que l'utilisateur pourrait rechercher."
+
+msgid "None selected yet"
+msgstr "Aucun n'a encore été sélectionné"
+
+msgid "none"
+msgstr "aucun"
+
+msgid "Autocomplete suggestions"
+msgstr "Suggestions de saisie semi-automatique"
+
+msgid "No valid search keys were present in the query."
+msgstr "Aucune clé de recherche valide n'est indiquée dans la requête."
+
+msgid "Unknown sort order @order. Assuming \"@default\"."
+msgstr "Ordre de tri @order inconnu. En supposant que \"@default\"."
+
+msgid "Unknown facet field @field."
+msgstr "Zone de facette @field inconnue."
+
+msgid "Facets on location fields are currently not supported."
+msgstr "Les facettes pour les zones d'emplacement ne sont pas prises en charge actuellement."
+
+msgid "Unknown field @field: please check (and re-save) the index's fields settings."
+msgstr "Zone @field inconnue : vérifiez (et sauvegardez à nouveau) les paramètres des zones de l'index."
+
+msgid "An overlong word (more than 50 characters) was encountered while indexing: %word.<br />Since database search servers currently cannot index words of more than 50 characters, the word was truncated for indexing. If this should not be a single word, please make sure the \"Tokenizer\" processor is enabled and configured correctly for index %index."
+msgstr "Un mot trop long (plus de 50 caractères) a été détecté lors de l'indexation : %word.<br />Etant donné que les serveurs de recherche dans la base de données ne peuvent actuellement pas indexer des mots de plus de 50 caractères, le mot a été tronqué pour l'indexation. S'il ne doit pas s'agir d'un seul mot, assurez-vous que le processeur \"Tokenizer\" est activé et configuré correctement pour l'index %index."
+
+msgid "An overlong value (more than 255 characters) was encountered while indexing: %value.<br />Database search servers currently cannot index such values correctly – the value was therefore trimmed to the allowed length."
+msgstr "Une valeur trop longue (plus de 255 caractères) a été détectée lors de l'indexation : %value.<br />Les serveurs de recherche dans la base de données ne peuvent actuellement pas indexer ces valeurs correctement, la valeur a donc été tronquée à la longueur autorisée."
+
+msgid "Error while adding facets: only \"item_id\" field should be used, used are: @fields."
+msgstr "Erreur lors de l'ajout de facettes : seule la zone \"item_id\" doit être utilisée. Les valeurs utilisées sont : @fields."
+
+msgid "Indexes items in the database. Supports several advanced features, but should not be used for large sites."
+msgstr "Indexe les éléments dans la base de données. Prend en charge plusieurs fonctions avancées mais ne doit pas être utilisé sur les grands sites."
+

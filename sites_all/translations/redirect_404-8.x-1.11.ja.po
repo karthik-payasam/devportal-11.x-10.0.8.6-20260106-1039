@@ -1,0 +1,149 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Redirect 404"
+msgstr "Redirect 404"
+
+msgid "Fix 404 pages"
+msgstr "404 ページを修正"
+
+msgid "Overview for 404 error paths with no redirect assigned yet."
+msgstr "リダイレクトがまだ割り当てられていない 404 エラーのパスの概要。"
+
+msgid "Path"
+msgstr "パス"
+
+msgid "The path of the request."
+msgstr "要求のパス。"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "The language of this request."
+msgstr "この要求の言語。"
+
+msgid "Count"
+msgstr "数"
+
+msgid "The number of requests with that path and language."
+msgstr "そのパスと言語を使用する要求の数。"
+
+msgid "Daily count"
+msgstr "日次カウント"
+
+msgid "The number of requests with that path and language in a day."
+msgstr "1 日にそのパスと言語を使用する要求の数。"
+
+msgid "Timestamp"
+msgstr "タイムスタンプ"
+
+msgid "The timestamp of the last request with that path and language."
+msgstr "そのパスと言語を使用する最後の要求のタイム・スタンプ。"
+
+msgid "Resolved"
+msgstr "解決済み"
+
+msgid "Whether or not this path has a redirect assigned."
+msgstr "このパスにリダイレクトが割り当てられているかどうか。"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "Provide operation buttons to handle the 404 path."
+msgstr "404 パスの処理を行う操作ボタンを提供します。"
+
+msgid "404 error database logs to keep"
+msgstr "保持する 404 エラー・データベース・ログ"
+
+msgid "All"
+msgstr "すべて"
+
+msgid "The maximum number of 404 error logs to keep in the database log. Requires a <a href=\":cron\">cron maintenance task</a>."
+msgstr "データベース・ログに保持する 404 エラー・ログの最大数。 <a href=\":cron\">クローン保守タスク</a>が必要です。"
+
+msgid "Clear all 404 log entries"
+msgstr "すべての 404 ログ・エントリーをクリアする"
+
+msgid "Pages to ignore"
+msgstr "無視するページ"
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. An example path is %user-wildcard for every user page. %front is the front page."
+msgstr "パスを使用してページを指定します。 1 行につき 1 つのパスを入力します。 「*」文字はワイルドカードです。 パスの例として、すべてのユーザー・ページの%user-wildcardがあります。%fは、フロントページです。"
+
+msgid "Clear ignored 404 log entries when saving this form"
+msgstr "このフォームの保存時に無視された404ログ・エントリーをクリア"
+
+msgid "Suppress 'page not found' log messages"
+msgstr "「ページが見つかりません」のログ・メッセージを抑制します"
+
+msgid "Prevents logging 'page not found' events. Can be safely enabled when redirect_404 module is used, which stores them separately, nothing else relies on those messages."
+msgstr "「ページが見つかりません」のイベントがログに記録されないようにします。 redirect_404 モジュールが使用され (これらのイベントが別個に保管されます)、このメッセージを使用しているものが他にないときに安全に有効化できます。"
+
+msgid "Logs 404 errors and allows users to create redirects for often requested but missing pages."
+msgstr "404 エラーをログに記録し、頻繁に要求されるが見つからないページに対してユーザーがリダイレクトを作成できるようにします。"
+
+msgid "Fix 404 pages with URL redirects"
+msgstr "URL リダイレクトを使用して 404 ページを修正します"
+
+msgid "Add redirects for 404 pages."
+msgstr "404 ページ用のリダイレクトを追加します。"
+
+msgid "Ignore 404 requests"
+msgstr "404要求を無視"
+
+msgid "This allows users without the Administer redirect settings to ignore specific 404 requests, without the ability to customize the 404 exclude patterns."
+msgstr "これにより、「リダイレクトの管理」を持たないユーザーは、404除外パターンをカスタマイズすることなく、特定の404要求を無視できます。"
+
+msgid "404 error database logging settings."
+msgstr "404 エラーのデータベース・ロギング設定"
+
+msgid "404 error database logs to keep."
+msgstr "保持する 404 エラー・データベース・ログ。"
+
+msgid "Whether to log 'page not found' messages to the standard log or not."
+msgstr "「ページが見つかりません」のメッセージを標準ログに記録するかどうか。"
+
+msgid "Redirect 404 operations"
+msgstr "Redirect 404 の操作"
+
+msgid "Resolved the path %path in the database."
+msgstr "データベース内のパス%pathを解決しました。"
+
+msgid "Resolved the path %path in the database. Please check the ignored list and save the settings."
+msgstr "データベース内のパス%pathを解決しました。 無視されたリストを確認して、設定を保存してください。"
+
+msgid "Filter 404s"
+msgstr "404 のフィルタリング"
+
+msgid "Filter"
+msgstr "フィルター"
+
+msgid "Reset"
+msgstr "リセット"
+
+msgid "Last accessed"
+msgstr "最終アクセス"
+
+msgid "Undefined @langcode"
+msgstr "未定義の @langcode"
+
+msgid "Add redirect"
+msgstr "リダイレクトの追加"
+
+msgid "There are no 404 errors to fix."
+msgstr "修正すべき 404 エラーがありません。"
+
+msgid "Ignore"
+msgstr "無視"
+

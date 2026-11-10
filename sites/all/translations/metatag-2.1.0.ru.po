@@ -1,0 +1,2696 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Metatags"
+msgstr "Мета-теги"
+
+msgid "Tokens related to Metatags."
+msgstr "Маркеры, связанные с метатегами. "
+
+msgid "Metatag values for the current page."
+msgstr "Значения метатегов для текущей страницы."
+
+msgid "@label tokens."
+msgstr "Маркеры @label."
+
+msgid "List of @type values"
+msgstr "Список значений @type"
+
+msgid "Tokens for lists of @type values."
+msgstr "Токены для списков значений @type."
+
+msgid "@type type with delta @delta"
+msgstr "Тип @type с поправкой @delta"
+
+msgid "Metatags (Hidden field for JSON support)"
+msgstr "Мета-теги (скрытое поле для поддержки JSON)"
+
+msgid "The meta tags for the entity."
+msgstr "Мета-теги для сущности."
+
+msgid "About"
+msgstr "Информация"
+
+msgid "This module allows a site to automatically provide structured metadata, aka \"meta tags\", about the site and individual pages."
+msgstr "Этот модуль позволяет сайту автоматически предоставлять структурированные метаданные, например \"метатеги\", о сайте и отдельных страницах."
+
+msgid "In the context of search engine optimization, providing an extensive set of meta tags may help improve the site's and pages' rankings, thus may aid with achieving a more prominent display of the content within search engine results. They can also be used to tailor how content is displayed when shared on social networks. For additional information, see the <a href=\":online\">online documentation for Metatag</a>."
+msgstr "В контексте оптимизации поисковых запросов предоставление обширного набора метатегов может помочь улучшить ранжирование сайта и страниц, что может сделать представление содержимого в результатах поиска более наглядным. Кроме того, их можно использовать для настройки способа отображения содержимого при совместном использовании в социальных сетях. См. <a href=\":online\">электронную документацию модуля Метатег</a>."
+
+msgid "The module uses <a href=\":tokens\">\"tokens\"</a> to automatically fill in values for different meta tags. Specific values may also be filled in."
+msgstr "Модуль использует <a href=\":tokens\">\"маркеры\"</a> для автоматического заполнения значений различных метатегов. Конкретные значения тоже могут быть заполнены."
+
+msgid "The best way of using Metatag is as follows:"
+msgstr "Рекомендуемое использование модуля Метатег:"
+
+msgid "Customize the <a href=\":defaults\">global defaults</a>, fill in the specific values and tokens that every page should have."
+msgstr "Настройте <a href=\":defaults\">глобальные параметры по умолчанию</a>, заполните конкретные значения и маркеры, которые должна иметь каждая страница."
+
+msgid "Override each of the <a href=\":defaults\">other defaults</a>, fill in specific values and tokens that each item should have by default. This allows e.g. for all nodes to have different values than taxonomy terms."
+msgstr "Переопределите все <a href=\":defaults\">остальные значения по умолчанию</a>, укажите конкретные значения и маркеры в качестве параметров по умолчанию данного элемента. Это позволяет, например, иметь для всех узлов значения, отличные от терминов таксономии."
+
+msgid "<a href=\":add\">Add more default configurations</a> as necessary for different entity types and entity bundles, e.g. for different content types or different vocabularies."
+msgstr "<a href=\":add\">Добавьте дополнительные конфигурации по умолчанию</a> по мере необходимости для различных типов сущностей и комплектов сущностей, например для различных типов содержимого или для различных словарей."
+
+msgid "To override the meta tags for individual entities, e.g. for individual nodes, add the \"Metatag\" field via the field settings for that entity or bundle type."
+msgstr "Для того чтобы переопределить метатеги для отдельных сущностей, например для отдельных узлов, добавьте поле \"Метатег\" через параметры полей для этой сущности или типа комплекта."
+
+msgid "Configure global meta tag default values below. Meta tags may be left as the default."
+msgstr "Настройте значения по умолчанию для мета-тегов. Мета-теги могут быть оставлены по умолчанию."
+
+msgid "Meta tag patterns are passed down from one level to the next unless they are overridden. To view a summary of the individual meta tags and the pattern for a specific configuration, click on its name below."
+msgstr "Шаблоны настроек метатегов будут действовать и для дочерних элементов, если они не были переопределены. Для просмотра сводку настроек нажмите на элементы ниже."
+
+msgid "If the top-level configuration is not specific enough, additional default meta tag configurations can be added for a specific entity type or entity bundle, e.g. for a specific content type."
+msgstr "Если конфигурация верхнего уровня  ещё не указана, можно добавить дополнительные конфигурации мета-тегов по умолчанию для определённого типа сущности или пакета сущностей, например, для определённого типа материала."
+
+msgid "Meta tags can be further refined on a per-entity basis, e.g. for individual nodes, by adding the \"Metatag\" field to that entity type through its normal field settings pages."
+msgstr "Мета-теги могут быть дополнительно уточнены для каждого объекта, например, для отдельных материалов, путём добавления поля «Мета-тег» к этому типу объекта на странице настроек полей."
+
+msgid "Use the following form to override the global default meta tags for a specific entity type or entity bundle. In practical terms, this allows the meta tags to be customized for a specific content type or taxonomy vocabulary, so that its content will have different meta tags <em>default values</em> than others."
+msgstr "Используйте следующую форму, чтобы переопределить глобальные метатеги по умолчанию для конкретного типа сущности или комплекта сущностей. На практике это позволяет настроить метатеги для определенного типа содержимого или словаря таксономии, чтобы его содержимое имело отличные от других <em>значения по умолчанию</em> метатегов."
+
+msgid "As a reminder, if the \"Metatag\" field is added to the entity type through its normal field settings, the meta tags can be further refined on a per entity basis; this allows each node to have its meta tags  customized on an individual basis."
+msgstr "В качестве напоминания, если поле \"Метатег\" добавляется в тип сущности через обычные параметры поля, то метатеги можно дополнительно уточнить для каждой сущности. Это позволяет каждому узлу индивидуально настраивать метатеги."
+
+msgid "Not enabled while in maintenance mode"
+msgstr "Не включено в режиме обслуживания"
+
+msgid "Please note that while the site is in maintenance mode none of the usual meta tags will be output."
+msgstr "Обратите внимание, что пока сайт находится в режиме обслуживания, ни один из обычных метатегов не выводится."
+
+msgid "Schema.org Metatag is recommended"
+msgstr "Рекомендуется модуль Schema.org Metatag"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is highly recommended to add <a href=\"@jsonld\">JSON-LD</a> -formatted <a href=\"@schema\">schema.org</a> compatible data structures to the site."
+msgstr "Модуль <a href=\"@module\">Schema.org Metatag</a>  настоятельно рекомендуется для добавления поддержки <a href=\"@jsonld\">JSON-LD</a> -форматированных <a href=\"@schema\">schema.org</a> совместимых структур данных для сайта."
+
+msgid "Schema.org Metatag is installed"
+msgstr "Schema.org Metatag установлен"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is installed."
+msgstr "Модуль <a href=\"@module\">Метатег Schema.org</a> установлен."
+
+msgid "The new Metatag: Open Graph module has been enabled."
+msgstr "Новый метатег: включен модуль Open Graph."
+
+msgid "The sites's caches will need to be rebuild to ensure Metatag works as intended."
+msgstr "Для правильной работы метатегов потребуется перекомпоновка кэшей сайта. "
+
+msgid "Metatag"
+msgstr "Мета-тег"
+
+msgid "Manage meta tags for all entities."
+msgstr "Управление мета-тегами для всех сущностей."
+
+msgid "SEO"
+msgstr "Поисковая оптимизация"
+
+msgid "Add default meta tags"
+msgstr "Добавить мета-теги по умолчанию"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Metatag plugins"
+msgstr "Плагины метатегов"
+
+msgid "Configure Metatag defaults."
+msgstr "Настройка мета-тегов по умолчанию"
+
+msgid "Overview of plugins used in metatag."
+msgstr "Обзор модулей, применяемых для работы с метатегами. "
+
+msgid "Metatag defaults"
+msgstr "Мета-теги по-умолчанию"
+
+msgid "Administer meta tags"
+msgstr "Управление параметрами мета-тега"
+
+msgid "Control the main settings pages and modify per-object meta tags."
+msgstr "Управление страницами основных параметров и изменять метатеги для отдельных объектов."
+
+msgid "Delete default meta tags"
+msgstr "Удалить мета-теги по-умолчанию"
+
+msgid "Revert default meta tags"
+msgstr "Вернуть мета-теги по-умолчанию"
+
+msgid "Configure the Metatag module"
+msgstr "Настроить модуль мета-тегов"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Tags"
+msgstr "Теги"
+
+msgid "Abstract"
+msgstr "Абстрактный"
+
+msgid "Cache control"
+msgstr "Управление кэшем"
+
+msgid "Canonical URL"
+msgstr "Канонический URL"
+
+msgid "Content Language"
+msgstr "Язык содержимого"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Expires"
+msgstr "Истекает"
+
+msgid "Generator"
+msgstr "Генератор"
+
+msgid "Image SRC"
+msgstr "Источник изображения"
+
+msgid "Keywords"
+msgstr "Ключевые слова"
+
+msgid "Google News Keywords"
+msgstr "Ключевые слова для Google Новости"
+
+msgid "Next page URL"
+msgstr "Ссылка на следующую страницу"
+
+msgid "Original source"
+msgstr "Оригинальный источник"
+
+msgid "Pragma"
+msgstr "Pragma"
+
+msgid "Previous page URL"
+msgstr "Ссылка на предыдущую страницу"
+
+msgid "Rating"
+msgstr "Рейтинг"
+
+msgid "Referrer policy"
+msgstr "Ссылка на оригинал"
+
+msgid "Refresh"
+msgstr "Обновить"
+
+msgid "Revisit After"
+msgstr "Пересмотреть после"
+
+msgid "Rights"
+msgstr "Права на материал"
+
+msgid "Robots"
+msgstr "Robots"
+
+msgid "Shortlink"
+msgstr "Короткая ссылка"
+
+msgid "Standout"
+msgstr "Важное"
+
+msgid "Page title"
+msgstr "Заголовок страницы"
+
+msgid "ICBM"
+msgstr "ICBM адрес"
+
+msgid "Geographical region"
+msgstr "Географический регион"
+
+msgid "Geographical place name"
+msgstr "Географическое название"
+
+msgid "Geographical position"
+msgstr "Географическая позиция"
+
+msgid "Set Cookie"
+msgstr "Установить cookie"
+
+msgid "Google"
+msgstr "Google"
+
+msgid "Author"
+msgstr "Автор"
+
+msgid "Default value"
+msgstr "Значение по умолчанию"
+
+msgid "Advanced meta tags form"
+msgstr "Форма дополнительных мета-тегов"
+
+msgid "Place field in sidebar"
+msgstr "Разместить поле на боковой панели"
+
+msgid "Metatag settings"
+msgstr "Настройки Metatag"
+
+msgid "Metatag groups that apply to each entity type"
+msgstr "Группы мета-тегов, применяемые к каждому типу сущности"
+
+msgid "Entity type"
+msgstr "Тип сущности"
+
+msgid "Bundle"
+msgstr "Набор"
+
+msgid "Group"
+msgstr "Группа"
+
+msgid "Provides support for applinks.org meta tags."
+msgstr "Обеспечивает поддержку метатегов applinks.org."
+
+msgid "Metatag: App Links"
+msgstr "Метатег: App Links"
+
+msgid "Android app name"
+msgstr "Имя приложения Android"
+
+msgid "Android app Activity Class"
+msgstr "Класс Activity приложения Android"
+
+msgid "Android app package ID"
+msgstr "ИД пакета приложения Android"
+
+msgid "Android app URL scheme"
+msgstr "Схема URL приложения Android"
+
+msgid "iOS app URL scheme"
+msgstr "Схема URL приложения iOS"
+
+msgid "iOS app store ID"
+msgstr "ИД App Store iOS"
+
+msgid "iOS app name"
+msgstr "Имя приложения iOS"
+
+msgid "iPad app URL scheme"
+msgstr "Схема URL приложения iPad"
+
+msgid "iPad app store ID"
+msgstr "ИД App Store iPad"
+
+msgid "iPad app name"
+msgstr "Имя приложения iPad"
+
+msgid "iPhone app URL scheme"
+msgstr "Схема URL приложения iPhone"
+
+msgid "iPhone app store ID"
+msgstr "ИД App Store iPhone"
+
+msgid "Windows app GUID"
+msgstr "GUID приложения Windows"
+
+msgid "Windows app name"
+msgstr "Имя приложения Windows"
+
+msgid "Windows app URL scheme"
+msgstr "Схема URL приложения Windows"
+
+msgid "Windows Phone app URL scheme"
+msgstr "Схема URL приложения Windows Phone"
+
+msgid "Windows Phone app GUID"
+msgstr "GUID приложения Windows Phone"
+
+msgid "Windows Phone app name"
+msgstr "Имя приложения Windows Phone"
+
+msgid "Windows Universal app URL scheme"
+msgstr "Схема URL приложения Windows Universal"
+
+msgid "Windows Universal app GUID"
+msgstr "GUID приложения Windows Universal"
+
+msgid "Windows Universal app name"
+msgstr "Имя приложения Windows Universal"
+
+msgid "Web URL"
+msgstr "URL веб-страницы"
+
+msgid "Should fallback"
+msgstr "Переключаться на резерв"
+
+msgid "App Links"
+msgstr "App Links"
+
+msgid "The name of the app (suitable for display)."
+msgstr "Имя приложения (подходящее для показа на экране)."
+
+msgid "A fully-qualified Activity class name for intent generation."
+msgstr "Полное имя класса Activity для создания объекта Intent."
+
+msgid "A fully-qualified package name for intent generation. <strong>This attribute is required by the App Links specification.</strong>"
+msgstr "Полное имя пакета для создания объекта Intent. <strong>Этот атрибут является обязательным для спецификации App Links.</strong>"
+
+msgid "A custom scheme for the Android app."
+msgstr "Пользовательская схема для приложения Android."
+
+msgid "The name of the app (suitable for display)"
+msgstr "Имя приложения (подходящее для показа на экране)"
+
+msgid "The app ID for the app store."
+msgstr "ИД приложения для App Store."
+
+msgid "A custom scheme for the iOS app. <strong>This attribute is required by the app Links specification.</strong>"
+msgstr "Пользовательская схема для приложения iOS. <strong>Этот атрибут является обязательным для спецификации App Links.</strong>"
+
+msgid "iPhone app name"
+msgstr "Имя приложения iPhone"
+
+msgid "The web URL; defaults to the URL for the content that contains this tag."
+msgstr "URL веб-страницы; по умолчанию используется URL содержимого, содержащего этот тег."
+
+msgid "Windows app ID"
+msgstr "ИД приложения Windows"
+
+msgid "Windows Phone app ID"
+msgstr "ИД приложения Windows Phone"
+
+msgid "Windows Universal app ID"
+msgstr "ИД приложения Windows Universal"
+
+msgid "Metatag: Dublin Core"
+msgstr "Метатег: Dublin Core"
+
+msgid "Provides the fifteen <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "Предоставляет 15 метатегов <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> от <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+
+msgid "Dublin Core: Contributor"
+msgstr "Dublin Core: Автор"
+
+msgid "Dublin Core: Coverage"
+msgstr "Dublin Core: Охват"
+
+msgid "Dublin Core: Creator"
+msgstr "Dublin Core: Создатель"
+
+msgid "Dublin Core: Date"
+msgstr "Dublin Core: Дата"
+
+msgid "Dublin Core: Description"
+msgstr "Dublin Core: Описание"
+
+msgid "Dublin Core: Format"
+msgstr "Dublin Core: Формат"
+
+msgid "Dublin Core: Identifier"
+msgstr "Dublin Core: Идентификатор"
+
+msgid "Dublin Core: Language"
+msgstr "Dublin Core: Язык"
+
+msgid "Dublin Core: Publisher"
+msgstr "Dublin Core: Издатель"
+
+msgid "Dublin Core: Relation"
+msgstr "Dublin Core: Связь"
+
+msgid "Dublin Core: Rights"
+msgstr "Dublin Core: Права доступа"
+
+msgid "Dublin Core: Source"
+msgstr "Dublin Core: Источник"
+
+msgid "Dublin Core: Subject"
+msgstr "Dublin Core: Тема"
+
+msgid "Dublin Core: Title"
+msgstr "Dublin Core: Заголовок"
+
+msgid "Dublin Core: Type"
+msgstr "Dublin Core: Тип"
+
+msgid "Dublin Core"
+msgstr "Дублинское Ядро"
+
+msgid "Contributor"
+msgstr "Участник"
+
+msgid "An entity responsible for making contributions to the resource. Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."
+msgstr "Сущность, отвечающая за внесение дополнений в ресурс. Авторами могут быть люди, организации или службы. Как правило, для указания сущности следует использовать имя автора."
+
+msgid "Coverage"
+msgstr "Охват"
+
+msgid "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."
+msgstr "Пространственная или временная тема ресурса, пространственная применимость ресурса или юрисдикция, в которой этот ресурс имеет значение. Пространственная тема и пространственная применимость могут быть именованным местом или расположением, заданным в его географических координатах. Временная тема может представлять собой именованный период, дату или диапазон дат. Юрисдикцией может быть именованная административная сущность или географическое расположение, к которому применяется ресурс. Рекомендуется использовать управляемый словарь, например Тезаурус географических названий [TGN]. Там, где это уместно, следует использовать именованные группы страниц или периоды времени вместо числовых идентификаторов, таких как наборы координат и диапазоны дат."
+
+msgid "Creator"
+msgstr "Автор"
+
+msgid "An entity primarily responsible for making the resource. Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."
+msgstr "Сущность, отвечающая главным образом за создание ресурса. Создателями могут быть люди, организации или службы. Как правило, для указания сущности следует использовать имя создателя."
+
+msgid "Date"
+msgstr "Дата"
+
+msgid "A point or period of time associated with an event in the lifecycle of the resource. Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."
+msgstr "Момент или период времени, связанный с событием жизненного цикла ресурса. Дата может использоваться для выражения временной информации на любом уровне дискретности. Рекомендуется использовать схему кодирования, например профайл W3CDTF ISO 8601 [W3CDTF]."
+
+msgid "An account of the resource. Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."
+msgstr "Учетная запись ресурса. Описание может включать в себя, но не ограничивается следующим: аннотация, оглавление, графическое представление или текстовое представление ресурса."
+
+msgid "Format"
+msgstr "Формат"
+
+msgid "The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."
+msgstr "Формат файла, физический медиаобъект или размеры ресурса. Примеры размеров: длина и продолжительность. Рекомендуется использовать управляемый словарь, такой как список типов MIME."
+
+msgid "Identifier"
+msgstr "Идентификатор"
+
+msgid "An unambiguous reference to the resource within a given context. Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."
+msgstr "Однозначная ссылка на ресурс в данном контексте. Рекомендуется идентифицировать ресурс посредством строки, соответствующей формальной системе идентификации."
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "A language of the resource. Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."
+msgstr "Язык ресурса. Рекомендуется использовать управляемый словарь, например RFC 4646 [RFC4646]."
+
+msgid "Publisher"
+msgstr "Издатель"
+
+msgid "An entity responsible for making the resource available. Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."
+msgstr "Сущность, делающая ресурс доступным. Издателями могут быть люди, организации или службы. Как правило, для указания сущности следует использовать имя издателя."
+
+msgid "Relation"
+msgstr "Связь"
+
+msgid "A related resource. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "Связанный ресурс. Рекомендуется идентифицировать связанный ресурс посредством строки, соответствующей формальной системе идентификации."
+
+msgid "Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."
+msgstr "Информация о правах, содержащихся в ресурсе и по отношению к этому ресурсу. Как правило, информация о правах включает в себя заявление о различных правах собственности, связанных с этим ресурсом, включая права интеллектуальной собственности."
+
+msgid "Source"
+msgstr "Источник"
+
+msgid "A related resource from which the described resource is derived. The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "Связанный ресурс, производным от которого является описываемый ресурс. Описываемый ресурс может быть частично или полностью производным от связанного ресурса. Рекомендуется идентифицировать связанный ресурс посредством строки, соответствующей формальной системе идентификации."
+
+msgid "Subject"
+msgstr "Тема"
+
+msgid "The topic of the resource. Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary. To describe the spatial or temporal topic of the resource, use the Coverage element."
+msgstr "Тема ресурса. Как правило, тема представляется посредством ключевых слов, ключевых фраз или кодов классификации. Рекомендуется использовать управляемый словарь. Для описания пространственной или временной темы ресурса используйте элемент Покрытие."
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "The name given to the resource."
+msgstr "Имя, данное ресурсу."
+
+msgid "The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."
+msgstr "Природа или род ресурса. Рекомендуется использовать управляемый словарь, например Словарь типов DCMI [DCMITYPE]. Для описания формата файла, физического носителя или размеров ресурса используйте элемент Формат."
+
+msgid "Provides forty additional meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "Предоставляет 40 дополнительных метатегов из <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+
+msgid "Metatag: Dublin Core Advanced"
+msgstr "Метатег: Dublin Core Advanced"
+
+msgid "Dublin Core: Abstract"
+msgstr "Dublin Core: Аннотация"
+
+msgid "Dublin Core: Access Rights"
+msgstr "Dublin Core: Права доступа"
+
+msgid "Dublin Core: Accrual Method"
+msgstr "Dublin Core: Метод добавления"
+
+msgid "Dublin Core: Accrual Periodicity"
+msgstr "Dublin Core: Периодичность добавления"
+
+msgid "Dublin Core: Accrual Policy"
+msgstr "Dublin Core: Стратегия добавления"
+
+msgid "Dublin Core: Alternative Title"
+msgstr "Dublin Core: Альтернативный заголовок"
+
+msgid "Dublin Core: Audience"
+msgstr "Dublin Core: Аудитория"
+
+msgid "Dublin Core: Date Available"
+msgstr "Dublin Core: Дата доступности"
+
+msgid "Dublin Core: Bibliographic Citation"
+msgstr "Dublin Core: Библиографическая цитата"
+
+msgid "Dublin Core: Conforms To"
+msgstr "Dublin Core: Соответствует"
+
+msgid "Dublin Core: Date Created"
+msgstr "Dublin Core: Дата создания"
+
+msgid "Dublin Core: Date Accepted"
+msgstr "Dublin Core: Дата принятия"
+
+msgid "Dublin Core: Date Copyrighted"
+msgstr "Dublin Core: Дата авторских прав"
+
+msgid "Dublin Core: Date Submitted"
+msgstr "Dublin Core: Дата отправки"
+
+msgid "Dublin Core: Audience Education Level"
+msgstr "Dublin Core: Уровень образования аудитории"
+
+msgid "Dublin Core: Extent"
+msgstr "Dublin Core: Величина"
+
+msgid "Dublin Core: Has Format"
+msgstr "Dublin Core: Имеет формат"
+
+msgid "Dublin Core: Has Part"
+msgstr "Dublin Core: Имеет часть"
+
+msgid "Dublin Core: Has Version"
+msgstr "Dublin Core: Имеет версию"
+
+msgid "Dublin Core: Instructional Method"
+msgstr "Dublin Core: Метод обучения"
+
+msgid "Dublin Core: Is Format Of"
+msgstr "Dublin Core: Является форматом"
+
+msgid "Dublin Core: Is Part Of"
+msgstr "Dublin Core: Является частью"
+
+msgid "Dublin Core: Is Referenced By"
+msgstr "Dublin Core: Есть ссылки от"
+
+msgid "Dublin Core: Is Replaced By"
+msgstr "Dublin Core: Заменен на"
+
+msgid "Dublin Core: Is Required By"
+msgstr "Dublin Core: Требуется для"
+
+msgid "Dublin Core: Date Issued"
+msgstr "Dublin Core: Дата выпуска"
+
+msgid "Dublin Core: Is Version Of"
+msgstr "Dublin Core: Является версией"
+
+msgid "Dublin Core: License"
+msgstr "Dublin Core: Лицензия"
+
+msgid "Dublin Core: Mediator"
+msgstr "Dublin Core: Посредник"
+
+msgid "Dublin Core: Medium"
+msgstr "Dublin Core: Носитель"
+
+msgid "Dublin Core: Date Modified"
+msgstr "Dublin Core: Дата изменения"
+
+msgid "Dublin Core: Provenance"
+msgstr "Dublin Core: Происхождение"
+
+msgid "Dublin Core: References"
+msgstr "Dublin Core: Ссылки"
+
+msgid "Dublin Core: Replaces"
+msgstr "Dublin Core: Заменяет"
+
+msgid "Dublin Core: Requires"
+msgstr "Dublin Core: Требует"
+
+msgid "Dublin Core: Rights Holder"
+msgstr "Dublin Core: Правообладатель"
+
+msgid "Dublin Core: Spatial Coverage"
+msgstr "Dublin Core: Пространственный охват"
+
+msgid "Dublin Core: Table Of Contents"
+msgstr "Dublin Core: Оглавление"
+
+msgid "Dublin Core: Temporal Coverage"
+msgstr "Dublin Core: Временной охват"
+
+msgid "Dublin Core: Date Valid"
+msgstr "Dublin Core: Дата действительности"
+
+msgid "Dublin Core Additional Tags"
+msgstr "Дополнительные теги Dublin Core"
+
+msgid "These tags are not part of the Metadata Element Set but may be useful for certain scenarios."
+msgstr "Эти теги не входят в набор элементов метаданных, но могут быть полезны в некоторых случаях."
+
+msgid "A summary of the resource."
+msgstr "Краткое описание ресурса."
+
+msgid "Access Rights"
+msgstr "Права доступа"
+
+msgid "Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."
+msgstr "Информация о том, кто имеет доступ к ресурсу, или о его состоянии защиты. Права доступа могут включать информацию о правах доступа или ограничениях, определенных конфиденциальностью, безопасностью или другими стратегиями."
+
+msgid "Accrual Method"
+msgstr "Метод добавления"
+
+msgid "The method by which items are added to a collection."
+msgstr "Метод добавления элементов в набор."
+
+msgid "Accrual Periodicity"
+msgstr "Периодичность добавления"
+
+msgid "The frequency with which items are added to a collection."
+msgstr "Частота добавления элементов в набор."
+
+msgid "Accrual Policy"
+msgstr "Стратегия добавления"
+
+msgid "The policy governing the addition of items to a collection."
+msgstr "Политика, управляющая добавлением элементов в набор."
+
+msgid "Alternative Title"
+msgstr "Альтернативный заголовок"
+
+msgid "An alternative name for the resource. The distinction between titles and alternative titles is application-specific."
+msgstr "Альтернативное имя ресурса. Различие между заголовками и альтернативными заголовками определяется конкретным приложением."
+
+msgid "Audience"
+msgstr "Аудитория"
+
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "Класс сущности, для которого предназначен или полезен ресурс."
+
+msgid "Date Available"
+msgstr "Дата доступности"
+
+msgid "Date (often a range) that the resource became or will become available."
+msgstr "Дата (часто период), когда ресурс стал или станет доступен."
+
+msgid "Bibliographic Citation"
+msgstr "Библиографическая цитата"
+
+msgid "A bibliographic reference for the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."
+msgstr "Библиографическая ссылка для ресурса. Рекомендуется добавить достаточное количество библиографических сведений для максимально однозначной идентификации ресурса."
+
+msgid "Conforms To"
+msgstr "Соответствует"
+
+msgid "An established standard to which the described resource conforms."
+msgstr "Установленный стандарт, которому соответствует описываемый ресурс."
+
+msgid "Date Created"
+msgstr "Дата создания"
+
+msgid "Date of creation of the resource."
+msgstr "Дата создания ресурса."
+
+msgid "Date Accepted"
+msgstr "Дата принятия"
+
+msgid "Date of acceptance of the resource. Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."
+msgstr "Дата принятия ресурса. Примерами ресурсов, для которых может иметь смысл дата принятия, является диссертация (принимаемая университетом) или статья (принимаемая журналом)."
+
+msgid "Date Copyrighted"
+msgstr "Дата авторских прав"
+
+msgid "Date of copyright."
+msgstr "Дата авторских прав."
+
+msgid "Date Submitted"
+msgstr "Дата отправки"
+
+msgid "Date of submission of the resource. Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal)."
+msgstr "Дата отправки ресурса. Примерами ресурсов, для которых может иметь смысл дата отправки, является диссертация (сдаваемая в университет) или статья (сдаваемая в журнал)."
+
+msgid "Audience Education Level"
+msgstr "Уровень образования аудитории"
+
+msgid "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."
+msgstr "Класс сущности, определенный в терминах прохождения этапов обучения или подготовки, для которого предназначен описываемый ресурс."
+
+msgid "Extent"
+msgstr "Величина"
+
+msgid "The size or duration of the resource."
+msgstr "Размер или продолжительность ресурса."
+
+msgid "Has Format"
+msgstr "Имеет формат"
+
+msgid "A related resource that is substantially the same as the pre-existing described resource, but in another format."
+msgstr "Связанный ресурс, который в значительной степени совпадает с уже существующим описанным ресурсом, но в другом формате."
+
+msgid "Has Part"
+msgstr "Имеет часть"
+
+msgid "A related resource that is included either physically or logically in the described resource."
+msgstr "Связанный ресурс, который включен физически или логически в описываемый ресурс."
+
+msgid "Has Version"
+msgstr "Имеет версию"
+
+msgid "A related resource that is a version, edition, or adaptation of the described resource."
+msgstr "Связанный ресурс, который представляет собой версию, издание или адаптацию описываемого ресурса."
+
+msgid "Instructional Method"
+msgstr "Метод обучения"
+
+msgid "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support. Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured. Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."
+msgstr "Процесс, используемый для формирования знаний, отношений и навыков, для поддержки которых предназначен описываемый ресурс. Метод обучения, как правило, включает способы представления учебных материалов или проведения учебных мероприятий, шаблоны взаимодействия обучаемых между собой и с преподавателем, а также механизмы оценки группы и отдельных уровней знаний. Методы обучения включают все аспекты процесса преподавания и обучения, начиная с планирования и реализации и заканчивая оценкой и обратной связью."
+
+msgid "Is Format Of"
+msgstr "Является форматом"
+
+msgid "A related resource that is substantially the same as the described resource, but in another format."
+msgstr "Связанный ресурс, который в значительной степени совпадает с описываемым ресурсом, но в другом формате."
+
+msgid "Is Part Of"
+msgstr "Является частью"
+
+msgid "A related resource in which the described resource is physically or logically included."
+msgstr "Связанный ресурс, в состав которого физически или логически входит описываемый ресурс."
+
+msgid "Is Referenced By"
+msgstr "Есть ссылки от"
+
+msgid "A related resource that references, cites, or otherwise points to the described resource."
+msgstr "Связанный ресурс, который ссылается на описываемый ресурс, цитирует его или как-либо указывает на него."
+
+msgid "Is Replaced By"
+msgstr "Заменен на"
+
+msgid "A related resource that supplants, displaces, or supersedes the described resource."
+msgstr "Связанный ресурс, заменяющий или замещающий описываемый ресурс."
+
+msgid "Is Required By"
+msgstr "Требуется для"
+
+msgid "A related resource that requires the described resource to support its function, delivery, or coherence."
+msgstr "Связный ресурс, которому требуется описываемый ресурс для поддержки своих функции, доставки или согласованности."
+
+msgid "Is Version Of"
+msgstr "Является версией"
+
+msgid "A related resource of which the described resource is a version, edition, or adaptation. Changes in version imply substantive changes in content rather than differences in format."
+msgstr "Связанный ресурс, для которого описываемый ресурс является версией, изданием или адаптацией. Изменения в версии подразумевают существенные изменения в содержимом, а не различия в формате."
+
+msgid "Date Issued"
+msgstr "Дата выпуска"
+
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "Дата официального выпуска, например публикации, ресурса."
+
+msgid "License"
+msgstr "Лицензия"
+
+msgid "A legal document giving official permission to do something with the resource."
+msgstr "Юридический документ, который дает официальное разрешение на использование ресурса."
+
+msgid "Mediator"
+msgstr "Посредник"
+
+msgid "An entity that mediates access to the resource and for whom the resource is intended or useful. In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."
+msgstr "Сущность, которая обеспечивает доступ к ресурсу или для которой данный ресурс предназначен или полезен. В образовательном контексте посредник может быть родителем, учителем, помощником преподавателя или попечителем."
+
+msgid "Medium"
+msgstr "Средний"
+
+msgid "The material or physical carrier of the resource."
+msgstr "Материал или физический носитель ресурса."
+
+msgid "Date Modified"
+msgstr "Дата изменения"
+
+msgid "Date on which the resource was changed."
+msgstr "Дата, когда ресурс был изменен."
+
+msgid "Provenance"
+msgstr "Происхождение"
+
+msgid "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation. The statement may include a description of any changes successive custodians made to the resource."
+msgstr "Информация о любых изменениях принадлежности ресурса с момента его создания, которые являются существенными с точки зрения подлинности, целостности и интерпретации. Эта информация может включать описание всех изменений, которые вносили последовательные владельцы в ресурс."
+
+msgid "References"
+msgstr "Ссылки"
+
+msgid "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+msgstr "Связанный ресурс, на который описываемый ресурс ссылается, цитирует его или как-либо указывает на него."
+
+msgid "Replaces"
+msgstr "Заменяет"
+
+msgid "A related resource that is supplanted, displaced, or superseded by the described resource."
+msgstr "Связанный ресурс, заменяемый или замещаемый описываемым ресурсом."
+
+msgid "Requires"
+msgstr "Требует"
+
+msgid "A related resource that is required by the described resource to support its function, delivery, or coherence."
+msgstr "Связный ресурс, требуемый описываемому ресурсу для поддержки своих функции, доставки или согласованности."
+
+msgid "Rights Holder"
+msgstr "Правообладатель"
+
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "Лицо или организация, владеющие правами собственности или управления по отношению к ресурсу."
+
+msgid "Spatial Coverage"
+msgstr "Пространственный охват"
+
+msgid "Spatial characteristics of the resource."
+msgstr "Пространственные характеристики ресурса."
+
+msgid "Table Of Contents"
+msgstr "Содержание"
+
+msgid "A list of subunits of the resource."
+msgstr "Список подъединиц ресурса."
+
+msgid "Temporal Coverage"
+msgstr "Временной охват"
+
+msgid "Temporal characteristics of the resource."
+msgstr "Временные характеристики ресурса."
+
+msgid "Date Valid"
+msgstr "Дата действительности"
+
+msgid "Date (often a range) of validity of a resource."
+msgstr "Дата (часто период) действительности ресурса."
+
+msgid "Metatag Extended Permissions"
+msgstr "Расширенные права доступа к метатегам"
+
+msgid "Access %tag in %group"
+msgstr "Доступ к %tag в %group"
+
+msgid "Metatag: Facebook"
+msgstr "Метатег: Facebook"
+
+msgid "A set of meta tags specially for controlling advanced functionality with Facebook."
+msgstr "Набор метатегов специально для управления расширенными функциями в Facebook."
+
+msgid "Facebook Admins"
+msgstr "Администраторы Facebook"
+
+msgid "Facebook App ID"
+msgstr "ID приложения Facebook"
+
+msgid "Facebook Pages"
+msgstr "Страницы Facebook"
+
+msgid "facebook"
+msgstr "facebook"
+
+msgid "A comma-separated list of Facebook user IDs of people who are considered administrators or moderators of this page."
+msgstr "Список ИД пользователей Facebook, которые считаются администраторами или модераторами на этой странице, через запятую."
+
+msgid "Facebook Application ID"
+msgstr "ID приложения Facebook"
+
+msgid "A comma-separated list of Facebook Platform Application IDs applicable for this site."
+msgstr "Список ИД приложений платформы Facebook, применимых для этого сайта, через запятую."
+
+msgid "Facebook Instant Articles claim URL token."
+msgstr "Facebook Instant Articles - маркер URL требования."
+
+msgid "Provides support for many different favicons."
+msgstr "Обеспечивает поддержку для множества значков favicon."
+
+msgid "Metatag: Favicons"
+msgstr "Метатег: Favicons"
+
+msgid "Default shortcut icon"
+msgstr "Значок ярлыка по умолчанию"
+
+msgid "Icon: SVG"
+msgstr "Значок: SVG"
+
+msgid "Color"
+msgstr "Цвет"
+
+msgid "Icon: 16px x 16px"
+msgstr "Значок: 16x16 пикс."
+
+msgid "Icon: 32px x 32px"
+msgstr "Значок: 32x32 пикс."
+
+msgid "Icon: 96px x 96px"
+msgstr "Значок: 96x96 пикс."
+
+msgid "Icon: 192px x 192px"
+msgstr "Значок: 192x192 пикс."
+
+msgid "Apple touch icon: 60px x 60px"
+msgstr "Значок Apple Touch: 60x60 пикс."
+
+msgid "Apple touch icon: 72px x 72px"
+msgstr "Значок Apple Touch: 72x72 пикс."
+
+msgid "Apple touch icon: 76px x 76px"
+msgstr "Значок Apple Touch: 76x76 пикс."
+
+msgid "Apple touch icon: 114px x 114px"
+msgstr "Значок Apple Touch: 114x114 пикс."
+
+msgid "Apple touch icon: 120px x 120px"
+msgstr "Значок Apple Touch: 120x120 пикс."
+
+msgid "Apple touch icon: 144px x 144px"
+msgstr "Значок Apple Touch: 144x144 пикс."
+
+msgid "Apple touch icon: 152px x 152px"
+msgstr "Значок Apple Touch: 152x152 пикс."
+
+msgid "Apple touch icon: 180px x 180px"
+msgstr "Значок Apple Touch: 180x180 пикс."
+
+msgid "Apple touch icon (precomposed): 57px x 57px"
+msgstr "Значок Apple Touch (готовый): 57x57 пикс."
+
+msgid "Apple touch icon (precomposed): 72px x 72px"
+msgstr "Значок Apple Touch (готовый): 72x72 пикс."
+
+msgid "Apple touch icon (precomposed): 76px x 76px"
+msgstr "Значок Apple Touch (готовый): 76x76 пикс."
+
+msgid "Apple touch icon (precomposed): 114px x 114px"
+msgstr "Значок Apple Touch (готовый): 114x114 пикс."
+
+msgid "Apple touch icon (precomposed): 120px x 120px"
+msgstr "Значок Apple Touch (готовый): 120x120 пикс."
+
+msgid "Apple touch icon (precomposed): 144px x 144px"
+msgstr "Значок Apple Touch (готовый): 144x144 пикс."
+
+msgid "Apple touch icon (precomposed): 152px x 152px"
+msgstr "Значок Apple Touch (готовый): 152x152 пикс."
+
+msgid "Apple touch icon (precomposed): 180px x 180px"
+msgstr "Значок Apple Touch (готовый): 180x180 пикс."
+
+msgid "Favicons & touch icons"
+msgstr "Значки favicon и Apple Touch"
+
+msgid "A PNG image that is 60px wide by 60px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "Изображение PNG 60x60 пикс. Используется с устройствами iPhone (не Retina), iPod Touch и Android 2.1+."
+
+msgid "A PNG image that is 114px wide by 114px high. Used with iPhone with @2x display running iOS <= 6."
+msgstr "Изображение PNG 114x114 пикс. Используется для iPhone с экраном @2x и iOS до версии 6."
+
+msgid "A PNG image that is 120px wide by 120px high. Used with iPhone with @2x display running iOS >= 7."
+msgstr "Изображение PNG 120x120 пикс. Используется для iPhone с экраном @2x и iOS начиная с версии 7."
+
+msgid "A PNG image that is 144px wide by 144px high. Used with iPad with @2x display running iOS <= 6."
+msgstr "Изображение PNG 144x144 пикс. Используется для iPad с экраном @2x и iOS до версии 6."
+
+msgid "A PNG image that is 152px wide by 152px high. Used with iPad with @2x display running iOS >= 7."
+msgstr "Изображение PNG 152x152 пикс. Используется для iPad с экраном @2x и iOS начиная с версии 7."
+
+msgid "A PNG image that is 180px wide by 180px high. Used with iPhone 6 Plus with @3x display."
+msgstr "Изображение PNG 180x180 пикс. Используется для iPhone 6 Plus с экраном @3x."
+
+msgid "A PNG image that is 72px wide by 72px high. Used with the iPad mini and the first- and second-generation iPad (@1x display) on iOS <= 6."
+msgstr "Изображение PNG 72x72 пикс. Используется для iPad mini и iPad 1-го и 2-го поколения (дисплей @1x) с iOS < = 6."
+
+msgid "A PNG image that is 76px wide by 76px high. Used with the iPad mini and the second-generation iPad (@1x display) on iOS >= 7."
+msgstr "Изображение PNG 76x76 пикс. Используется для iPad mini и iPad 2-го поколения (дисплей @1x) с iOS > = 7."
+
+msgid "A PNG image that is 57px wide by 57px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "Изображение PNG 57x57 пикс. Используется с устройствами iPhone (не Retina), iPod Touch и Android 2.1+."
+
+msgid "A PNG image that is 16px wide by 16px high."
+msgstr "Изображение PNG 16x16 пикс."
+
+msgid "A PNG image that is 192px wide by 192px high."
+msgstr "Изображение PNG 192x192 пикс."
+
+msgid "A PNG image that is 32px wide by 32px high."
+msgstr "Изображение PNG 32x32 пикс."
+
+msgid "A PNG image that is 96px wide by 96px high."
+msgstr "Изображение PNG 96x96 пикс."
+
+msgid "A grayscale scalable vector graphic (SVG) file."
+msgstr "Файл SVG (оттенки серого)."
+
+msgid "Default icon"
+msgstr "Иконка по умолчанию"
+
+msgid "The traditional favicon, must be either a GIF, ICO, JPG/JPEG or PNG image."
+msgstr "Обычный значок favicon (GIF, ICO, JPG/JPEG или PNG)."
+
+msgid "Provides support for meta tags used for Google Custom Search Engine."
+msgstr "Обеспечивает поддержку метатегов, используемых для Google Custom Search Engine."
+
+msgid "Metatag: Google Custom Search Engine (CSE)"
+msgstr "Метатег: Google Custom Search Engine (CSE)"
+
+msgid "Thumbnail"
+msgstr "Миниатюра"
+
+msgid "Department"
+msgstr "Отдел"
+
+msgid "Content audience"
+msgstr "Аудитория содержимого"
+
+msgid "Document status"
+msgstr "Состояние документа"
+
+msgid "google_rating"
+msgstr "google_rating"
+
+msgid "Google Custom Search Engine (CSE)"
+msgstr "Google Custom Search Engine (CSE)"
+
+msgid "Meta tags used to control the mobile browser experience. Some of these meta tags have been replaced by newer mobile browsers. These meta tags usually only need to be set globally, rather than per-page."
+msgstr "Метатеги, используемые для управления мобильным браузером. Некоторые из этих метатегов были заменены более новыми мобильными браузерами. Эти метатеги обычно нужно задавать только глобально, а не на каждой странице."
+
+msgid "Department tag."
+msgstr "Тег отдела."
+
+msgid "Content rating"
+msgstr "Возрастной рейтинг содержимого"
+
+msgid "Works only with numeric values."
+msgstr "Работает только с числовыми значениями."
+
+msgid "Use a url of a valid image."
+msgstr "Используйте URL допустимого изображения."
+
+msgid "Metatag: Google Plus"
+msgstr "Метатег: Google Plus"
+
+msgid "Google Plus: name"
+msgstr "Google Plus: имя"
+
+msgid "Google Plus: image"
+msgstr "Google Plus: изображение"
+
+msgid "Google Plus: description"
+msgstr "Google Plus: описание"
+
+msgid "Publisher URL"
+msgstr "URL издателя"
+
+msgid "Google Plus"
+msgstr "Google Plus"
+
+msgid "Content description less than 200 characters."
+msgstr "Описание содержимого не более 200 символов."
+
+msgid "Image"
+msgstr "Изображение"
+
+msgid "The URL of an image which should represent the content. For best results use an image that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Supports PNG, JPEG and GIF formats."
+msgstr "URL изображения, которое будет представлять содержимое. Для достижения наилучших результатов рекомендуется использовать изображение размером не менее 1200 x 630 пикселей (600 x 316 пикселей - рекомендуемый минимум). Поддерживаются форматы PNG, JPEG и GIF."
+
+msgid "Name"
+msgstr "Название"
+
+msgid "Content title."
+msgstr "Заголовок содержимого."
+
+msgid "Used by some search engines to confirm publication of the content on a page. Should be the full URL for the publication's Google+ profile page."
+msgstr "Используется некоторыми системами поиска для подтверждения публикации содержимого на странице. Должен быть полный URL страницы Google+ профайла публикации."
+
+msgid "Provides support for the hreflang meta tag with some extra logic to simplify it."
+msgstr "Обеспечивает поддержку метатега hreflang с некоторой дополнительной логикой для упрощения."
+
+msgid "Metatag: Hreflang"
+msgstr "Метатег: Hreflang"
+
+msgid "Default locale (x-default)"
+msgstr "Локаль по умолчанию (x-default)"
+
+msgid "URL for a version of this page in %langcode"
+msgstr "URL для версии этой страницы в %langcode"
+
+msgid "Alternative language links (hreflang)"
+msgstr "Ссылки на альтернативные языки (hreflang)"
+
+msgid "These meta tags are designed to point visitors to versions of the current page in other languages."
+msgstr "Эти метатеги предназначены для того, чтобы указывать посетителям на версии текущей страницы на других языках."
+
+msgid "Hreflang per language"
+msgstr "Один hreflang на язык"
+
+msgid "This plugin will be cloned from these settings for each enabled language."
+msgstr "Для каждого включенного языка будет создана копия этого модуля на основе данных параметров."
+
+msgid "This should point to the version of the page that is for the main or primary locale, e.g. the original version of an article that is translated into other languages."
+msgstr "Это должно указывать на версию страницы, которая относится к главной или основной локали, например к исходной версии статьи, которая переводится на другие языки."
+
+msgid "Provides support for meta tags used to control the mobile browser experience."
+msgstr "Обеспечивает поддержку метатегов, используемых для управления интерфейсом мобильного браузера."
+
+msgid "Metatag: Mobile & UI Adjustments"
+msgstr "Метатег: Корректировки для пользовательского интерфейса и мобильных устройств"
+
+msgid "Handheld URL"
+msgstr "URL для карманных устройств"
+
+msgid "Android Mobile: Android App Link Alternative"
+msgstr "Android Mobile: Альтернатива ссылки на приложение Android"
+
+msgid "Android Mobile: Manifest"
+msgstr "Android Mobile: Манифест"
+
+msgid "Apple Mobile: iTunes App"
+msgstr "Apple Mobile: Приложение iTunes"
+
+msgid "Apple Mobile: Web App Capable"
+msgstr "Apple Mobile: Поддержка веб-приложений"
+
+msgid "Apple Mobile: Web App Status bar color"
+msgstr "Apple Mobile: Цвет строки состояния веб-приложения"
+
+msgid "Apple Mobile: Web App Title"
+msgstr "Apple Mobile: Название веб-приложения"
+
+msgid "Application name"
+msgstr "Название приложения"
+
+msgid "Mobile: Cleartype"
+msgstr "Мобильные устройства: Cleartype"
+
+msgid "Apple Mobile: Format Detection"
+msgstr "Apple Mobile: Определение формата"
+
+msgid "Mobile: Handheld-Friendly"
+msgstr "Мобильные устройства: Поддержка карманных устройств"
+
+msgid "Apple Mobile: iOS App Link Alternative"
+msgstr "Apple Mobile: Альтернатива ссылки на приложение iOS"
+
+msgid "Mobile: Mobile Optimized"
+msgstr "Мобильные устройства: Оптимизировано для мобильных устройств"
+
+msgid "MSApplication - Allow domain API calls"
+msgstr "MSApplication - Разрешить вызовы API домена"
+
+msgid "MSApplication - Allow domain meta tags"
+msgstr "MSApplication - Разрешить метатеги домена"
+
+msgid "MSApplication - Badge"
+msgstr "MSApplication - Идентификационная карточка"
+
+msgid "MSApplication - Config"
+msgstr "MSApplication - Конфигурация"
+
+msgid "MSApplication - Nav button color"
+msgstr "MSApplication - Цвет кнопки навигации"
+
+msgid "MSApplication - Notification"
+msgstr "MSApplication - Уведомление"
+
+msgid "MSApplication - Square logo, 150px x 150px"
+msgstr "MSApplication - Квадратный логотип (150x150 пикс.)"
+
+msgid "MSApplication - Square logo, 310px x 310px"
+msgstr "MSApplication - Квадратный логотип (310x310 пикс.)"
+
+msgid "MSApplication - Square logo, 70px x 70px"
+msgstr "MSApplication - Квадратный логотип (70x70 пикс.)"
+
+msgid "MSApplication - Start URL"
+msgstr "MSApplication - Начальный URL"
+
+msgid "MSApplication - Task"
+msgstr "MSApplication - Задача"
+
+msgid "MSApplication - Task separator"
+msgstr "MSApplication - Разделитель задач"
+
+msgid "MSApplication - Tile color"
+msgstr "MSApplication - Цвет плитки"
+
+msgid "MSApplication - Tile image"
+msgstr "MSApplication - Изображение плитки"
+
+msgid "MSApplication - Tooltip"
+msgstr "MSApplication - Всплывающая подсказка"
+
+msgid "MSApplication - Wide logo, 310px x 150px"
+msgstr "MSApplication - Широкий логотип (310x150 пикс.)"
+
+msgid "MSApplication - Window"
+msgstr "MSApplication - Окно"
+
+msgid "Mobile: Theme Color"
+msgstr "Мобильные устройства: Цвет темы"
+
+msgid "Mobile: Viewport"
+msgstr "Мобильные устройства: Область вывода"
+
+msgid "Mobile: Web Manifest"
+msgstr "Мобильные устройства: веб-манифест"
+
+msgid "X-UA-Compatible"
+msgstr "X-UA-Compatible"
+
+msgid "Android"
+msgstr "Android"
+
+msgid "Custom meta tags used by the Android OS, browser, etc."
+msgstr "Пользовательские метатеги, используемые операционной системой Android, браузером и пр."
+
+msgid "Apple & iOS"
+msgstr "Apple и iOS"
+
+msgid "Custom meta tags used by Apple's software, iOS, Safari, etc."
+msgstr "Пользовательские метатеги, используемые программным обеспечением Apple, iOS, Safari и пр."
+
+msgid "Mobile & UI Adjustments"
+msgstr "Корректировки для пользовательского интерфейса и мобильных устройств"
+
+msgid "Windows & Windows Mobile"
+msgstr "Windows и Windows Mobile"
+
+msgid "Custom meta tags used by the Windows and Windows Mobile OSes, IE browser, etc."
+msgstr "Пользовательские метатеги, используемые операционными системами Windows и Windows Mobile, браузером IE и пр."
+
+msgid "Provides an absolute URL to a specially formatted version of the current page designed for 'feature phones', mobile phones that do not support modern browser standards. See the <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>official Google Mobile SEO Guide</a> for details on how the page should be formatted."
+msgstr "Предоставляет полный URL на специально отформатированную версию текущей страницы для мобильных телефонов, которые не поддерживают современные браузеры. Дополнительная информация о форматировании страниц приведена в <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>официальном руководстве Google по мобильному SEO</a>."
+
+msgid "Android app link alternative"
+msgstr "Альтернативная ссылка на приложение Android"
+
+msgid "A custom string for deeplinking to an Android mobile app. Should be in the format 'package_name/host_path', e.g. 'com.example.android/example/hello-screen'. The 'android-app://' prefix will be included automatically."
+msgstr "Пользовательская строка для внешнего связывания мобильного приложения Android. Должна быть задана в формате 'имя-пакета/путь-к-хосту', например 'com.example.android/example/hello-screen'. Префикс 'android-app://' добавляется автоматически."
+
+msgid "iTunes App details"
+msgstr "Сведения о приложении iTunes"
+
+msgid "This informs iOS devices to display a banner to a specific app. If used, it must provide the 'app-id' value, the 'affiliate-data' and 'app-argument' values are optional."
+msgstr "Указывает устройству iOS выводить информационную строку в определенное приложение. Если используется, должен предоставлять значение 'app-id', значения 'affiliate-data' и 'app-argument' необязательные."
+
+msgid "Web app capable?"
+msgstr "С поддержкой веб-приложений?"
+
+msgid "If set to 'yes', the application will run in full-screen mode; the default behavior is to use Safari to display web content."
+msgstr "Если указано значение 'yes', то приложение будет работать в полноэкранном режиме (поведение по умолчанию - использовать Safari для отображения веб-материалов)."
+
+msgid "Status bar color"
+msgstr "Цвет строки состояния"
+
+msgid "Requires the 'Web app capable' meta tag to be set to 'yes'. May be set to 'default', 'black', or 'black-translucent'."
+msgstr "Требует, чтобы метатег 'С поддержкой веб-приложений' был равен 'yes'. Значения: 'default', 'black' или 'black-translucent'."
+
+msgid "Apple Web App Title"
+msgstr "Заголовок веб-приложения Apple"
+
+msgid "Overrides the long site title when using the Apple Add to Home Screen."
+msgstr "Переопределяет длинный заголовок сайта при использовании команды Apple Добавить на экран 'Домой'."
+
+msgid "The default name displayed with the pinned sites tile (or icon). Set the content attribute to the desired name."
+msgstr "Имя по умолчанию, отображаемое с помощью плитки (или значка) закрепленных сайтов. Укажите требуемое имя в атрибуте content."
+
+msgid "Cleartype"
+msgstr "Cleartype"
+
+msgid "A legacy meta tag for older versions of Internet Explorer on Windows, use the value 'on' to enable it; this tag is ignored by all other browsers."
+msgstr "Устаревший метатег для предыдущих версий Internet Explorer в Windows, используйте значение 'on', чтобы включить его (этот тег игнорируется всеми остальными браузерами)."
+
+msgid "Format detection"
+msgstr "Определение формата"
+
+msgid "If set to 'telephone=no' the page will not be checked for phone numbers, which would be presented."
+msgstr "Если указано значение 'telephone=no', то страница не будет проверяться на телефонные номера, которые могут быть."
+
+msgid "Handheld-Friendly"
+msgstr "Поддержка карманных устройств"
+
+msgid "Some older mobile browsers will expect this meta tag to be set to 'true' to indicate that the site has been designed with mobile browsers in mind."
+msgstr "Некоторые старые мобильные браузеры ожидают, что этот метатег будет иметь значение 'true', указывающее, что сайт спроектирован с учетом мобильных браузеров."
+
+msgid "iOS app link alternative"
+msgstr "Альтернативная ссылка на приложение iOS"
+
+msgid "A custom string for deeplinking to an iOS mobile app. Should be in the format 'itunes_id/scheme/host_path', e.g. 123456/example/hello-screen'. The 'ios-app://' prefix will be included automatically."
+msgstr "Пользовательская строка для внешнего связывания мобильного приложения iOS. Должна быть задана в формате 'ИД-itunes/схема/путь-к-хосту', например 123456/example/hello-screen'. Префикс 'ios-app://' добавляется автоматически."
+
+msgid "Mobile Optimized"
+msgstr "Оптимизировано для мобильных устройств"
+
+msgid "Using the value 'width' tells certain mobile Internet Explorer browsers to display as-is, without being resized. Alternatively a numerical width may be used to indicate the desired page width the page should be rendered in: '240' is the suggested default, '176' for older browsers or '480' for newer devices with high DPI screens."
+msgstr "Использование значения 'width' указывает на то, что некоторые мобильные браузеры Internet Explorer должны показывать как есть, без изменения размеров. Можно также использовать числовую ширину, чтобы указать нужную ширину страницы: 240 - рекомендуемое значение по умолчанию, 176 для старых браузеров или 480 для новых устройств с экранами высокого разрешения."
+
+msgid "Allows tasks to be defined on child domains of the fully qualified domain name associated with the pinned site. Should be either 'true' or 'false'."
+msgstr "Позволяет определить задачи в дочерних доменах полного имени домена, связанного с закрепленным сайтом. Значения: 'true' или 'false'."
+
+msgid "A semi-colon -separated string that must contain the 'polling-uri=' value with the full URL to a <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>Badge Schema XML file</a>. May also contain 'frequency=' value set to either 30, 60, 360, 720 or 1440 (default) which specifies (in minutes) how often the URL should be polled."
+msgstr "Строка значений через точку с запятой, которая должна содержать значение 'polling-uri=' с полным URL <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>файла XML схемы идентификационной карточки</a>. Может также содержать значение 'frequency=' для 30, 60, 360, 720 или 1440 (по умолчанию), которое указывает (в минутах), как часто должен производиться опрос URL."
+
+msgid "Should contain the full URL to a <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>Browser configuration schema</a> file that further controls tile customizations."
+msgstr "Должен содержать полный URL файла <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>схемы конфигурации браузера</a>, который обеспечивает дополнительное управление настройкой плиток."
+
+msgid "Controls the color of the Back and Forward buttons in the pinned site browser window."
+msgstr "Позволяет управлять цветом кнопок Назад и Вперед в окне браузера закрепленных сайтов."
+
+msgid "A semi-colon -separated string containing 'polling-uri=' (required), 'polling-uri2=', 'polling-uri3=', 'polling-uri4=' and 'polling-uri5=' to indicate the URLs for notifications. May also contain a 'frequency=' value to specify how often (in minutes) the URLs will be polled; limited to 30, 60, 360, 720 or 1440 (default). May also contain the value 'cycle=' to control the notifications cycle."
+msgstr "Строка значений через точку с запятой, содержащая 'polling-uri=' (обязательный), 'polling-uri2=', 'polling-uri3=', 'polling-uri4=' и 'polling-uri5=' для указания URL для уведомлений. Может также содержать значение 'frequency=', определяющее, как часто (в минутах) опрашиваются URL; допустимые значения: 30, 60, 360, 720 или 1440 (по умолчанию). Может также содержать значение 'cycle=' для управления циклом уведомлений."
+
+msgid "The URL to a logo file that is 150px by 150px."
+msgstr "URL файла логотипа размером 150 на 150 пикс."
+
+msgid "The URL to a logo file that is 310px by 310px."
+msgstr "URL файла логотипа размером 310 на 310 пикс."
+
+msgid "The URL to a logo file that is 70px by 70px."
+msgstr "URL файла логотипа размером 70 на 70 пикс."
+
+msgid "The URL to the root page of the site."
+msgstr "URL корневой страницы сайта."
+
+msgid "A semi-colon -separated string defining the 'jump' list task. Should contain the 'name=' value to specify the task's name, the 'action-uri=' value to set the URL to load when the jump list is clicked, the 'icon-uri=' value to set the URL to an icon file to be displayed, and 'window-type=' set to either 'tab' (default), 'self' or 'window' to control how the link opens in the browser."
+msgstr "Строка значений через точку с запятой, определяющая задачу списка 'jump'. Должна содержать значение 'name=' для имени задачи; значение 'action-uri=' для URL, с которого выполняется загрузка при щелчке на списке переходов; значение 'icon-uri=' для URL файла значка, который будет показываться; и значение 'window-type=' 'tab' (по умолчанию), 'self' или 'window', управляющее открытием ссылки в браузере."
+
+msgid "The HTML color to use as the background color for the live tile."
+msgstr "Цвет HTML, который будет использоваться в качестве цвета фона для живой плитки."
+
+msgid "The URL to an image to use as the background for the live tile."
+msgstr "URL изображения, которое будет использоваться в качестве фона для живой плитки."
+
+msgid "Controls the text shown in the tooltip for the pinned site's shortcut."
+msgstr "Управляет текстом, который показывается во всплывающей подсказке для ярлыка закрепленного сайта."
+
+msgid "The URL to a logo file that is 310px by 150px."
+msgstr "URL файла логотипа размером 310 на 150 пикс."
+
+msgid "A semi-colon -separated value that controls the dimensions of the initial window. Should contain the values 'width=' and 'height=' to control the width and height respectively."
+msgstr "Значение через точку с запятой, управляющее размерами начального окна. Должно содержать 'width=' и 'height=', управляющие шириной и высотой соответственно."
+
+msgid "Theme Color"
+msgstr "Цвет темы"
+
+msgid "A color in hexadecimal format, e.g. '#0000ff' for blue; must include the '#' symbol. Used by some browsers to control the background color of the toolbar, the color used with an icon, etc."
+msgstr "Цвет в 16-ричном формате, например '#0000ff' (синий); символ '#' обязательный. Используется некоторыми браузерами для управления цветом фона панели инструментов, цветом, который используется со значком, и т. п."
+
+msgid "Viewport"
+msgstr "Область вывода"
+
+msgid "Used by most contemporary browsers to control the display for mobile browsers. Please read a guide on responsive web design for details of what values to use."
+msgstr "Используется большинством современных браузеров для управления отображением в мобильных браузерах. Дополнительная информация о том, какие значения следует использовать, приведена в руководстве по адаптивному веб-дизайну."
+
+msgid "Web Manifest"
+msgstr "Веб-манифест"
+
+msgid "A URL to a manifest.json file that describes the application. The <a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>JSON-based manifest</a> provides developers with a centralized place to put metadata associated with a web application."
+msgstr "URL файла manifest.json с описанием приложения. <a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>Манифест на основе JSON</a> предоставляет разработчикам централизованное место хранения метаданных, связанных с веб-приложением."
+
+msgid "Indicates to IE which rendering engine should be used for the current page."
+msgstr "Указывает IE, какой модуль вывода должен использоваться для текущей страницы."
+
+msgid "Metatag: Open Graph"
+msgstr "Метатег: Open Graph"
+
+msgid "Provides support for Open Graph Protocol meta tags."
+msgstr "Обеспечивает поддержку для метатегов Open Graph Protocol."
+
+msgid "Article author"
+msgstr "Автор статьи"
+
+msgid "Article expiration time"
+msgstr "Срок действия статьи"
+
+msgid "Article modified time"
+msgstr "Время изменения статьи"
+
+msgid "Article published time"
+msgstr "Время публикации статьи"
+
+msgid "Article publisher"
+msgstr "Издатель статьи"
+
+msgid "Article section"
+msgstr "Раздел статьи"
+
+msgid "Article tag(s)"
+msgstr "Теги статьи"
+
+msgid "Book Author"
+msgstr "Автор книги"
+
+msgid "Book ISBN"
+msgstr "ISBN книги"
+
+msgid "Book Release Date"
+msgstr "Дата выпуска книги"
+
+msgid "Book Tags"
+msgstr "ключевые слова для Книг"
+
+msgid "Audio URL"
+msgstr "URL звуковой дорожки"
+
+msgid "Audio secure URL"
+msgstr "Безопасный URL звуковой дорожки"
+
+msgid "Audio type"
+msgstr "Тип аудио"
+
+msgid "Open Graph: Country name"
+msgstr "Open Graph: Название страны"
+
+msgid "Open Graph: Description"
+msgstr "Open Graph: Описание"
+
+msgid "Open Graph: Determiner"
+msgstr "Open Graph: Определитель"
+
+msgid "Open Graph: Email"
+msgstr "Open Graph: Электронная почта"
+
+msgid "Open Graph: Fax number"
+msgstr "Open Graph: Номер факса"
+
+msgid "Open Graph: Image"
+msgstr "Open Graph: Изображение"
+
+msgid "Open Graph: Image alt"
+msgstr "Open Graph: альтернативный текст для изображения"
+
+msgid "Open Graph: Image height"
+msgstr "Open Graph: Высота изображения"
+
+msgid "Open Graph: Image secure URL"
+msgstr "Open Graph: Защищенный URL изображения"
+
+msgid "Open Graph: Image type"
+msgstr "Open Graph: Тип изображения"
+
+msgid "Open Graph: Image URL"
+msgstr "Open Graph: URL изображения"
+
+msgid "Open Graph: Image width"
+msgstr "Open Graph: Ширина изображения"
+
+msgid "Open Graph: Latitude"
+msgstr "Open Graph: Широта"
+
+msgid "Open Graph: Locale"
+msgstr "Open Graph: Локаль"
+
+msgid "Open Graph: Alternative locale"
+msgstr "Open Graph: Альтернативная локаль"
+
+msgid "Open Graph: Locality"
+msgstr "Open Graph: Адрес"
+
+msgid "Open Graph: Longitude"
+msgstr "Open Graph: Долгота"
+
+msgid "Open Graph: Phone number"
+msgstr "Open Graph: Телефонный номер"
+
+msgid "Open Graph: Postal code"
+msgstr "Open Graph: Почтовый индекс"
+
+msgid "Open Graph: Region"
+msgstr "Open Graph: Регион"
+
+msgid "Open Graph: See also"
+msgstr "Open Graph: См. также"
+
+msgid "Open Graph: Site name"
+msgstr "Open Graph: Название сайта"
+
+msgid "Open Graph: Street address"
+msgstr "Open Graph: Улица"
+
+msgid "Open Graph: Title"
+msgstr "Open Graph: Заголовок"
+
+msgid "Open Graph: Type"
+msgstr "Open Graph: Тип"
+
+msgid "Open Graph: Updated time"
+msgstr "Open Graph: Время обновления"
+
+msgid "Open Graph: URL"
+msgstr "Open Graph: URL"
+
+msgid "Open Graph: Video URL"
+msgstr "Open Graph: URL видеозаписи"
+
+msgid "Open Graph: Video duration"
+msgstr "Open Graph: Продолжительность видеозаписи"
+
+msgid "Open Graph: Video height"
+msgstr "Open Graph: Высота видеозаписи"
+
+msgid "Open Graph: Video Secure URL"
+msgstr "Open Graph: Защищенный URL видеозаписи"
+
+msgid "Open Graph: Video type"
+msgstr "Open Graph: Тип видеозаписи"
+
+msgid "Open Graph: Video width"
+msgstr "Open Graph: Ширина видеозаписи"
+
+msgid "First name"
+msgstr "Имя"
+
+msgid "Gender"
+msgstr "Пол"
+
+msgid "Last name"
+msgstr "Фамилия"
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Actor(s)"
+msgstr "Актеры"
+
+msgid "Actor's role"
+msgstr "Роль актера"
+
+msgid "Director(s)"
+msgstr "Режиссеры"
+
+msgid "Release date"
+msgstr "Дата выхода"
+
+msgid "Series"
+msgstr "Сериал"
+
+msgid "Tag words"
+msgstr "Ключевые слова"
+
+msgid "Scriptwriter(s)"
+msgstr "Сценаристы"
+
+msgid "Open Graph"
+msgstr "Open Graph"
+
+msgid "The <a href='https://ogp.me/'>Open Graph meta tags</a> are used to control how Facebook, Pinterest, LinkedIn and other social networking sites interpret the site's content.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "<a href='https://ogp.me/'>Метатеги Open Graph</a> используются для управления тем, как Facebook, Pinterest, LinkedIn и другие сайты социальных сетей интерпретируют содержимое сайта.<br><br>Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> обеспечивает возможность предварительного просмотра содержимого, размещаемого в Facebook, и отладки неполадок с тегами Open Graph."
+
+msgid "Links an article to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "Связывает статью с профайлом Facebook автора. Это должен быть либо URL страницы профайла автора, либо его ИД профайла Facebook."
+
+msgid "Article expiration date & time"
+msgstr "Дата и время истечения срока действия статьи"
+
+msgid "The date this content will expire, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "Дата истечения срока действия этого содержимого с необязательным значением времени. Значение должно быть указано в формате <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>."
+
+msgid "Article modification date & time"
+msgstr "Дата и время изменения статьи"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "Дата последнего изменения содержимого с необязательным значением времени. Значение должно быть указано в формате <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>."
+
+msgid "Article publication date & time"
+msgstr "Дата и время публикации статьи"
+
+msgid "The date this content was published on, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "Дата публикации данного содержимого с необязательным значением времени. Значение должно быть указано в формате <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>."
+
+msgid "Links an article to a publisher's Facebook page."
+msgstr "Связывает статью со страницей Facebook издателя."
+
+msgid "The primary section of this website the content belongs to."
+msgstr "Основной раздел данного веб-сайта, которому принадлежит содержимое."
+
+msgid "Appropriate keywords for this content."
+msgstr "Соответствующие ключевые слова для данного содержимого."
+
+msgid "Book author"
+msgstr "Автор книги"
+
+msgid "Links a book to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "Связывает книгу с профайлом Facebook автора. Это должен быть либо URL на страницу профайла автора, либо его ИД профайла Facebook."
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "The Book's ISBN"
+msgstr "ISBN книги"
+
+msgid "Release Date"
+msgstr "Дата выпуска"
+
+msgid "The date the book was released."
+msgstr "Дата выпуска книги."
+
+msgid "Book tag(s)"
+msgstr "Теги книги"
+
+msgid "The URL to an audio file that complements this object."
+msgstr "URL аудиофайла, дополняющего этот объект."
+
+msgid "The secure URL to an audio file that complements this object. All 'http://' URLs will automatically be converted to 'https://'."
+msgstr "Безопасный URL аудиофайла, дополняющего этот объект. Все URL 'http://' будут автоматически преобразованы в 'https://'."
+
+msgid "The MIME type of the audio file. Examples include 'application/mp3' for an MP3 file."
+msgstr "Тип MIME аудиофайла. Например, 'application/mp3' для файла MP3."
+
+msgid "Country name"
+msgstr "Название страны"
+
+msgid "A one to two sentence description of the content."
+msgstr "Описание содержимого в одном-двух предложениях."
+
+msgid "Determiner"
+msgstr "Определитель"
+
+msgid "The word that appears before the content's title in a sentence. The default ignores this value, the 'Automatic' value should be sufficient if this is actually needed."
+msgstr "Слово, показываемое перед заголовком содержимого в предложении. По умолчанию это значение игнорируется, значения Автоматически должно быть достаточно, если это действительно необходимо."
+
+msgid "Email address"
+msgstr "E-mail адрес"
+
+msgid "Fax number"
+msgstr "Номер факса"
+
+msgid "The URL of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats. Should not be used if og:image:url is used. Note: if multiple images are added many services (e.g. Facebook) will default to the largest image, not specifically the first one."
+msgstr "URL изображения, которое будет представлять содержимое. Изображение должно быть размером не менее 200 x 200 пикселей (рекомендуемый минимальный размер - 600 x 316 пикселей, а для наилучших результатов следует использовать изображение размером не менее 1200 x 630 пикселей). Поддерживаются форматы PNG, JPEG и GIF. Не следует использовать, когда используется og:image:url. Примечание: в случае добавления нескольких изображений многие службы, например Facebook, будут по умолчанию использовать наибольшее изображение, а не первое."
+
+msgid "Image 'alt'"
+msgstr "параметр 'alt' изображения"
+
+msgid "A description of what is in the image, not a caption. If the page specifies an og:image it should specify og:image:alt."
+msgstr "Описание изображения, не является заголовком изображения. Если на странице указан og:image, должен быть указан и og:image:alt."
+
+msgid "Image height"
+msgstr "Высота изображения"
+
+msgid "The height of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "Высота указанных выше изображений. Примечание: если указаны как незащищенные, так и защищенные изображения, то они должны иметь одинаковый размер."
+
+msgid "Image Secure URL"
+msgstr "Защищенный URL изображения"
+
+msgid "The secure URL (HTTPS) of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats."
+msgstr "Защищенный URL (HTTPS) изображения, которое будет представлять содержимое. Изображение должно быть размером не менее 200 x 200 пикселей (рекомендуемый минимальный размер - 600 x 316 пикселей, а для наилучших результатов следует использовать изображение размером не менее 1200 x 630 пикселей). Поддерживаются форматы PNG, JPEG и GIF."
+
+msgid "Image type"
+msgstr "Тип изображения"
+
+msgid "The type of image referenced above. Should be either 'image/gif' for a GIF image, 'image/jpeg' for a JPG/JPEG image, or 'image/png' for a PNG image. Note: there should be one value for each image, and having more than there are images may cause problems."
+msgstr "Тип указанного выше изображения. Должен быть 'image/gif' для изображения в формате GIF, 'image/jpeg' для изображения JPG/JPEG или 'image/png' для изображения PNG. Примечание: для каждого изображения должно быть одно значение; наличие нескольких изображений может привести к неполадкам."
+
+msgid "Image URL"
+msgstr "URL изображения"
+
+msgid "A alternative version of og:image and has exactly the same requirements; only one needs to be used."
+msgstr "Альтернативная версия og:image, имеющая точно такие же требования (нужно использовать что-то одно)."
+
+msgid "Image width"
+msgstr "Ширина изображения"
+
+msgid "The width of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "Ширина указанных выше изображений. Примечание: если указаны как незащищенные, так и защищенные изображения, то они должны иметь одинаковый размер."
+
+msgid "Latitude"
+msgstr "Широта"
+
+msgid "Locale"
+msgstr "Язык"
+
+msgid "The locale these tags are marked up in, must be in the format language_TERRITORY. Default is 'en_US'."
+msgstr "Локаль тегов должна быть представлена в формате язык_ТЕРРИТОРИЯ. По умолчанию используется 'en_US'."
+
+msgid "Alternative locales"
+msgstr "Альтернативные локали"
+
+msgid "Other locales this content is available in, must be in the format language_TERRITORY, e.g. 'fr_FR'."
+msgstr "Другие локали данного содержимого должны быть в формате язык_ТЕРРИТОРИЯ, например 'fr_FR'."
+
+msgid "Locality"
+msgstr "Местоположение"
+
+msgid "Longitude"
+msgstr "Долгота"
+
+msgid "Phone number"
+msgstr "Номер телефона"
+
+msgid "Postal/ZIP code"
+msgstr "Почтовый код"
+
+msgid "Region"
+msgstr "Область"
+
+msgid "See also"
+msgstr "См. также"
+
+msgid "URLs to related content"
+msgstr "URL связанного содержимого"
+
+msgid "Site name"
+msgstr "Название сайта"
+
+msgid "A human-readable name for the site, e.g., <em>IMDb</em>."
+msgstr "Имя сайта, предназначенное для пользователей, например <em>IMDb</em>."
+
+msgid "Street address"
+msgstr "Адрес"
+
+msgid "The title of the content, e.g., <em>The Rock</em>."
+msgstr "Заголовок содержимого, например <em>Скала</em>."
+
+msgid "Content type"
+msgstr "Тип материала"
+
+msgid "The type of the content, e.g., <em>movie</em>."
+msgstr "Тип содержимого, например <em>фильм</em>."
+
+msgid "Content modification date & time"
+msgstr "Дата и время изменения содержимого"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format. Can be the same as the 'Article modification date' tag."
+msgstr "Дата последнего изменения содержимого с необязательным значением времени. Значение должно быть указано в формате <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>. Может совпадать с тегом Дата изменения статьи."
+
+msgid "Page URL"
+msgstr "URL страницы"
+
+msgid "Preferred page location or URL to help eliminate duplicate content for search engines, e.g., <em>https://www.imdb.com/title/tt0117500/</em>."
+msgstr "Предпочтительное расположение страницы или URL для устранения дублирования содержимого для служб поиска, например <em>https://www.imdb.com/title/tt0117500/</em>."
+
+msgid "Video URL"
+msgstr "URL-адрес видео"
+
+msgid "The URL of an video which should represent the content. For best results use a source that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Object types supported include video.episode, video.movie, video.other, and video.tv_show."
+msgstr "URL видеозаписи, которая будет представлять содержимое. Для достижения наилучших результатов рекомендуется использовать источник размером не менее 1200 x 630 пикселей (600 x 316 пикселей - рекомендуемый минимум). Поддерживаются следующие типы объектов: video.episode, video.movie, video.other, video.tv_show."
+
+msgid "Video duration (seconds)"
+msgstr "Продолжительность видеозаписи (секунды)"
+
+msgid "The length of the video in seconds"
+msgstr "Продолжительность видеозаписи в секундах"
+
+msgid "Video height"
+msgstr "Высота видео"
+
+msgid "The height of the above video(s). Note: if both the unsecured and secured videos are provided, they should both be the same size."
+msgstr "Высота указанных выше видеозаписей. Примечание: если указаны как незащищенные, так и защищенные видеозаписи, то они должны иметь одинаковый размер."
+
+msgid "Video Secure URL"
+msgstr "Защищенный URL видеозаписи"
+
+msgid "The secure URL (HTTPS) of an video which should represent the content."
+msgstr "Защищенный URL (HTTPS) видеозаписи, которая будет представлять содержимое."
+
+msgid "Video type"
+msgstr "Тип видео"
+
+msgid "The type of video referenced above. Should be either  video.episode, video.movie, video.other, and video.tv_show. Note: there should be one value for each video, and having more than there are videos may cause problems."
+msgstr "Тип указанной выше видеозаписи. Должен быть video.episode, video.movie, video.other или video.tv_show. Примечание: для каждой видеозаписи должно быть одно значение; наличие нескольких видеозаписей может привести к неполадкам."
+
+msgid "Video width"
+msgstr "Ширина видео"
+
+msgid "The first name of the person who's Profile page this is."
+msgstr "Имя владельца этого профиля."
+
+msgid "Any of Facebook's gender values should be allowed, the initial two being 'male' and 'female'."
+msgstr "Должны поддерживаться все варианты значения пола из Facebook, и первые два из них - это 'male' и 'female'."
+
+msgid "The person's last name."
+msgstr "Фамилия человека."
+
+msgid "A pseudonym / alias of this person."
+msgstr "Псевдоним человека."
+
+msgid "Links to the Facebook profiles for actor(s) that appear in the video."
+msgstr "Ссылки на профили в Facebook тех актеров, которые снимались в видео."
+
+msgid "The roles of the actor(s)."
+msgstr "Роли, которые исполняют актеры."
+
+msgid "Links to the Facebook profiles for director(s) that worked on the video."
+msgstr "Ссылки на профили в Facebook тех режиссеров, которые снимали это видео."
+
+msgid "The date the video was released."
+msgstr "Дата выпуска видео."
+
+msgid "The TV show this series belongs to."
+msgstr "Сериал, к которому относится эта серия."
+
+msgid "Tag words associated with this video."
+msgstr "Ключевые слова, связанные с этим видео."
+
+msgid "Links to the Facebook profiles for scriptwriter(s) for the video."
+msgstr "Ссылки на профили в Facebook сценаристов этого видео."
+
+msgid "Provides additional Open Graph Protocol meta tags for describing products."
+msgstr "Предоставляет дополнительные метатеги Open Graph Protocol для описания продуктов."
+
+msgid "Metatag: Open Graph Products"
+msgstr "Метатег: Open Graph - продукты"
+
+msgid "Open Graph Product: Price amount"
+msgstr "Open Graph - продукт: Цена"
+
+msgid "Open Graph Product: Price currency"
+msgstr "Open Graph - продукт: Денежная единица цены"
+
+msgid "Open Graph - Products"
+msgstr "Open Graph - продукты"
+
+msgid "These <a href='https://ogp.me/'>Open Graph meta tags</a> are for describing products.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "Эти <a href='https://ogp.me/'>метатеги Open Graph</a> предназначены для описания продуктов.<br><br>Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> обеспечивает возможность предварительного просмотра содержимого, размещаемого в Facebook, и отладки неполадок с тегами Open Graph."
+
+msgid "Product price amount"
+msgstr "Цена продукта"
+
+msgid "The price amount of the product."
+msgstr "Цена продукта."
+
+msgid "Product price currency"
+msgstr "Денежная единица цены продукта"
+
+msgid "The price currency of the product."
+msgstr "Денежная единица цены продукта."
+
+msgid "Metatag: Page Manager"
+msgstr "Метатег: Администратор страниц"
+
+msgid "Provides metatag support for Page Manager variants."
+msgstr "Предоставляет поддержку метатегов для вариантов администратора страниц."
+
+msgid "Metatag: Pinterest"
+msgstr "Метатег: Pinterest"
+
+msgid "Provides support for Pinterest's custom meta tags."
+msgstr "Обеспечивает поддержку пользовательских метатегов Pinterest."
+
+msgid "Pinterest: Description"
+msgstr "Pinterest: Описание"
+
+msgid "Pinterest: ID"
+msgstr "Pinterest: ИД"
+
+msgid "Pinterest: Media"
+msgstr "Pinterest: Медиаобъект"
+
+msgid "Pinterest: No hover"
+msgstr "Pinterest: Без всплывающих элементов"
+
+msgid "Pinterest: No pin"
+msgstr "Pinterest: Без закрепления"
+
+msgid "Pinterest: No search"
+msgstr "Pinterest: Без поиска"
+
+msgid "Pinterest: URL"
+msgstr "Pinterest: URL"
+
+msgid "Pinterest"
+msgstr "Pinterest"
+
+msgid "A set of meta tags used to control how the site's content is consumed by <a href='https://pinterest.com/'>Pinterest</a>."
+msgstr "Набор метатегов, используемых для управления тем, как содержимое сайта передается в <a href='https://pinterest.com/'>Pinterest</a>."
+
+msgid "Id"
+msgstr "Id"
+
+msgid "The Canonical Pinterest object to pin."
+msgstr "Канонический объект Pinterest для закрепления."
+
+msgid "Media"
+msgstr "Мультимедиа"
+
+msgid "The URL of media which should represent the content."
+msgstr "URL медиаобъекта, который будет представлять содержимое."
+
+msgid "No hover"
+msgstr "Без всплывающих элементов"
+
+msgid "Do not show hovering Save or Search buttons, generated by the Pinterest browser extensions."
+msgstr "Не показывать всплывающие кнопки Сохранить и Поиск, создаваемые браузерными расширениями Pinterest."
+
+msgid "No pin"
+msgstr "Без закрепления"
+
+msgid "Do not pin anything from this page. When selected, this option will take precedence over all options below."
+msgstr "Ничего не закреплять с этой страницы. Если эта опция выбрана, то она будет иметь приоритет перед всеми опциями внизу."
+
+msgid "No search"
+msgstr "Без поиска"
+
+msgid "Do not allow Pinterest visual search to happen from this page."
+msgstr "Запретить визуальный поиск Pinterest с этой страницы."
+
+msgid "URL"
+msgstr "URL"
+
+msgid "The URL which should represent the content."
+msgstr "URL, который будет представлять содержимое."
+
+msgid "Submit"
+msgstr "Отправить"
+
+msgid "Metatag: Twitter Cards"
+msgstr "Metatag: Twitter карты"
+
+msgid "Provides support for Twitter's Card meta tags."
+msgstr "Обеспечивает поддержку метатегов карточки Twitter."
+
+msgid "Twitter Cards: Google Play app ID"
+msgstr "Twitter Cards: ИД приложения Google Play"
+
+msgid "Twitter Cards: iPad app ID"
+msgstr "Twitter Cards: ИД приложения iPad"
+
+msgid "Twitter Cards: iPhone app ID"
+msgstr "Twitter Cards: ИД приложения iPhone"
+
+msgid "Twitter Cards: Google Play app name"
+msgstr "Twitter Cards: Имя приложения Google Play"
+
+msgid "Twitter Cards: iPad app name"
+msgstr "Twitter Cards: Имя приложения iPad"
+
+msgid "Twitter Cards: iPhone app name"
+msgstr "Twitter Cards: Имя приложения iPhone"
+
+msgid "Twitter Cards: App store country"
+msgstr "Twitter Cards: Страна App Store"
+
+msgid "Twitter Cards: Google Play app URL schema"
+msgstr "Twitter Cards: Схема URL приложения Google Play"
+
+msgid "Twitter Cards: iPad app URL schema"
+msgstr "Twitter Cards: Схема URL приложения iPad"
+
+msgid "Twitter Cards: iPhone app URL schema"
+msgstr "Twitter Cards: Схема URL приложения iPhone"
+
+msgid "Twitter Cards: Creator's Twitter account"
+msgstr "Twitter Cards: Учетная запись создателя в Twitter"
+
+msgid "Twitter Cards: Creator's Twitter account ID"
+msgstr "Twitter Cards: ИД учетной записи создателя в Twitter"
+
+msgid "Twitter Cards: Data 1"
+msgstr "Twitter Cards: Данные 1"
+
+msgid "Twitter Cards: Data 2"
+msgstr "Twitter Cards: Данные 2"
+
+msgid "Twitter Cards: Description"
+msgstr "Twitter Cards: Описание"
+
+msgid "Twitter Cards: Do Not Track"
+msgstr "Twitter Cards: Не отслеживать"
+
+msgid "Twitter Cards: 1st gallery image"
+msgstr "Twitter Cards: 1-е изображение галереи"
+
+msgid "Twitter Cards: 2nd gallery image"
+msgstr "Twitter Cards: 2-е изображение галереи"
+
+msgid "Twitter Cards: 3rd gallery image"
+msgstr "Twitter Cards: 3-е изображение галереи"
+
+msgid "Twitter Cards: 4th gallery image"
+msgstr "Twitter Cards: 4-е изображение галереи"
+
+msgid "Twitter Cards: Image URL"
+msgstr "Twitter Cards: URL изображения"
+
+msgid "Twitter Cards: Image height"
+msgstr "Twitter Cards: Высота изображения"
+
+msgid "Twitter Cards: Image width"
+msgstr "Twitter Cards: Ширина изображения"
+
+msgid "Twitter Cards: Image alternative text"
+msgstr "Twitter Cards: Альтернативный текст изображения"
+
+msgid "Twitter Cards: Label 1"
+msgstr "Twitter Cards: Надпись 1"
+
+msgid "Twitter Cards: Label 2"
+msgstr "Twitter Cards: Надпись 2"
+
+msgid "Twitter Cards: Page URL"
+msgstr "Twitter Cards: URL страницы"
+
+msgid "Twitter Cards: Media player URL"
+msgstr "Twitter Cards: URL медиаплеера"
+
+msgid "Twitter Cards: Media player height"
+msgstr "Twitter Cards: Высота медиаплеера"
+
+msgid "Twitter Cards: MP4 media stream URL"
+msgstr "Twitter Cards: URL медиапотока MP4"
+
+msgid "Twitter Cards: MP4 media straem MIME-type"
+msgstr "Twitter Cards: Тип MIME медиапотока MP4"
+
+msgid "Twitter Cards: Media player width"
+msgstr "Twitter Cards: Ширина медиаплеера"
+
+msgid "Twitter Cards: Site's Twitter account"
+msgstr "Twitter Cards: Учетная запись сайта в Twitter"
+
+msgid "Twitter Cards: Site's Twitter account ID"
+msgstr "Twitter Cards: ИД учетной записи сайта в Twitter"
+
+msgid "Twitter Cards: Title"
+msgstr "Twitter Cards: Заголовок"
+
+msgid "Twitter Cards: Type"
+msgstr "Twitter Cards: Тип"
+
+msgid "Twitter Cards"
+msgstr "Twitter Cards"
+
+msgid "A set of meta tags specially for controlling the summaries displayed when content is shared on <a href='https://twitter.com/'>Twitter</a>."
+msgstr "Набор метатегов специально для управления краткой информацией, отображаемой при совместном доступе к содержимому в <a href='https://twitter.com/'>Twitter</a>."
+
+msgid "Google Play app ID"
+msgstr "ИД приложения Google Play"
+
+msgid "iPad app ID"
+msgstr "ИД приложения iPad"
+
+msgid "String value, should be the numeric representation of your iPad app's ID in the App Store."
+msgstr "Строковое значение, должно быть числовым представлением ИД приложения iPad в App Store."
+
+msgid "iPhone app ID"
+msgstr "ИД приложения iPhone"
+
+msgid "String value, should be the numeric representation of your iPhone app's ID in the App Store."
+msgstr "Строковое значение, должно быть числовым представлением ИД приложения iPhone в App Store."
+
+msgid "Google Play app name"
+msgstr "Имя приложения Google Play"
+
+msgid "The name of the app in the Google Play app store."
+msgstr "Имя приложения в Google Play."
+
+msgid "The name of the iPad app."
+msgstr "Имя приложения iPad."
+
+msgid "The name of the iPhone app."
+msgstr "Имя приложения iPhone."
+
+msgid "App store country"
+msgstr "Страна App Store"
+
+msgid "If your application is not available in the US App Store, you must set this value to the two-letter country code for the App Store that contains your application."
+msgstr "Если приложение отсутствует в американском App Store, необходимо указать здесь двухбуквенный код страны магазина App Store, где находится приложение."
+
+msgid "Google Play app's custom URL scheme"
+msgstr "Пользовательская схема URL приложения Google Play"
+
+msgid "iPad app's custom URL scheme"
+msgstr "Пользовательская схема URL приложения iPad"
+
+msgid "iPhone app's custom URL scheme"
+msgstr "Пользовательская схема URL приложения iPhone"
+
+msgid "Creator's Twitter account"
+msgstr "Учетная запись создателя в Twitter"
+
+msgid "The @username for the content creator / author for this page, including the @ symbol."
+msgstr "@username создателя/автора содержимого для этой страницы, включая символ @."
+
+msgid "Creator's Twitter account ID"
+msgstr "ИД учетной записи создателя в Twitter"
+
+msgid "The numerical Twitter account ID for the content creator / author for this page."
+msgstr "Числовой ИД учетной записи в Twitter создателя/автора информации на этой странице."
+
+msgid "Data 1"
+msgstr "Данные 1"
+
+msgid "This field expects a string, and allows you to specify the types of data you want to offer (price, country, etc.)."
+msgstr "В этом поле указывается строка, содержащая типы предлагаемых данных (цена, страна и т. п.)."
+
+msgid "Data 2"
+msgstr "Данные 2"
+
+msgid "A description that concisely summarizes the content of the page, as appropriate for presentation within a Tweet. Do not re-use the title text as the description, or use this field to describe the general services provided by the website. The string will be truncated, by Twitter, at the word to 200 characters."
+msgstr "Краткое описание содержимого страницы, подходящее для публикации в Twitter. Не следует использовать текст заголовка в качестве описания и использовать это поле для описания общих служб, предоставляемых веб-сайтом. Строка усекается до целого слова в пределах 200 символов (ограничение Twitter)."
+
+msgid "Do Not Track"
+msgstr "Не отслеживать"
+
+msgid "1st gallery image"
+msgstr "1-е изображение галереи"
+
+msgid "A URL to the image representing the first photo in your gallery."
+msgstr "URL изображения, представляющего первое фото в галерее."
+
+msgid "2nd gallery image"
+msgstr "2-е изображение галереи"
+
+msgid "A URL to the image representing the second photo in your gallery."
+msgstr "URL изображения, представляющего второе фото в галерее."
+
+msgid "3rd gallery image"
+msgstr "3-е изображение галереи"
+
+msgid "A URL to the image representing the third photo in your gallery."
+msgstr "URL изображения, представляющего третье фото в галерее."
+
+msgid "4th gallery image"
+msgstr "4-е изображение галереи"
+
+msgid "A URL to the image representing the fourth photo in your gallery."
+msgstr "URL изображения, представляющего четвертое фото в галерее."
+
+msgid "The URL to a unique image representing the content of the page. Do not use a generic image such as your website logo, author photo, or other image that spans multiple pages. Images larger than 120x120px will be resized and cropped square based on longest dimension. Images smaller than 60x60px will not be shown. If the 'type' is set to Photo then the image must be at least 280x150px."
+msgstr "URL уникального изображения, представляющего содержимое страницы. Не следует использовать общее изображение, такое как логотип сайта, фотография автора или другое изображение, показываемое на нескольких страницах. Изображения, размер которых превышает 120x120 пикс., будут масштабироваться и обрезаться по большей стороне. Изображения меньше 60x60 пикс. не будут показываться. Если 'тип' - Фотография, то изображение должно быть не меньше 280x150 пикс."
+
+msgid "Image alternative text"
+msgstr "Альтернативный текст изображения"
+
+msgid "The alternative text of the image being linked to. Limited to 420 characters."
+msgstr "Альтернативный текст связываемого изображения. Не более 420 символов."
+
+msgid "The height of the image being linked to, in pixels."
+msgstr "Высота связываемого изображения в пикселях."
+
+msgid "The width of the image being linked to, in pixels."
+msgstr "Ширина связываемого изображения в пикселях."
+
+msgid "Label 1"
+msgstr "Метка 1"
+
+msgid "This field expects a string, and you can specify values for labels such as price, items in stock, sizes, etc."
+msgstr "В этом поле указывается строка, содержащая надписи, такие как цена, число товаров в наличии, размеры и т. п."
+
+msgid "Label 2"
+msgstr "Метка 2"
+
+msgid "The permalink / canonical URL of the current page."
+msgstr "Постоянный/канонический URL текущей страницы."
+
+msgid "Media player URL"
+msgstr "URL медиа-плеера"
+
+msgid "Media player height"
+msgstr "Высота медиа-плеера"
+
+msgid "MP4 media stream URL"
+msgstr "URL медиапотока MP4"
+
+msgid "The full URL for an MP4 video (h.264) or audio (AAC) stream, takes precedence over the other media player field."
+msgstr "Полный URL видеопотока MP4 (h.264) или аудиопотока (AAC). Имеет приоритет перед другим полем медиаплеера."
+
+msgid "MP4 media stream MIME-type"
+msgstr "Тип MIME медиапотока MP4"
+
+msgid "Media player width"
+msgstr "Ширина медиа-плеера"
+
+msgid "Site's Twitter account"
+msgstr "Учетная запись сайта в Twitter"
+
+msgid "The @username for the website, which will be displayed in the Card's footer; must include the @ symbol."
+msgstr "@username для веб-сайта, который будет показываться в нижнем колонтитуле карточки (должен содержать символ @)."
+
+msgid "Site's Twitter account ID"
+msgstr "ИД учетной записи сайта в Twitter"
+
+msgid "The numerical Twitter account ID for the website, which will be displayed in the Card's footer."
+msgstr "Числовой ИД учетной записи веб-сайта в Twitter, который будет отображаться в нижнем колонтитуле карточки."
+
+msgid "The page's title, which should be concise; it will be truncated at 70 characters by Twitter. This field is required unless this the 'type' field is set to 'photo'."
+msgstr "Заголовок страницы, который должен быть коротким (усекается до 70 символов в Twitter). Это поле обязательное, если в этом поле 'тип' не указано значение 'фотография'."
+
+msgid "- None -"
+msgstr "- Не указано -"
+
+msgid "Summary Card"
+msgstr "Карточка краткого описания"
+
+msgid "Summary Card with large image"
+msgstr "Карточка краткого описания с большим изображением"
+
+msgid "Photo Card"
+msgstr "Карточка фотографии"
+
+msgid "Gallery Card"
+msgstr "Карточка галереи"
+
+msgid "App Card"
+msgstr "Карточка приложения"
+
+msgid "Player Card"
+msgstr "Карточка плеера"
+
+msgid "Product Card"
+msgstr "Карточка продукта"
+
+msgid "Twitter card type"
+msgstr "Тип карточки Twitter"
+
+msgid "Notes:<ul><li>no other fields are required for a Summary card</li><li>Photo card requires the 'image' field</li><li>Media player card requires the 'title', 'description', 'media player URL', 'media player width', 'media player height' and 'image' fields,</li><li>Summary Card with Large Image card requires the 'Summary' field and the 'image' field,</li><li>Gallery Card requires all the 'Gallery Image' fields,</li><li>App Card requires the 'iPhone app ID' field, the 'iPad app ID' field and the 'Google Play app ID' field,</li><li>Product Card requires the 'description' field, the 'image' field, the 'Label 1' field, the 'Data 1' field, the 'Label 2' field and the 'Data 2' field.</li></ul>"
+msgstr "Примечания:<ul><li>остальные поля необязательные для карточки краткого описания</li><li>Карточке фотографии требуется поле 'изображение'</li><li>Карточке медиаплеера требуются поля 'заголовок', 'описание', 'URL медиаплеера', 'ширина медиаплеера', 'высота медиаплеера' и 'изображение',</li><li>Карточке краткого описания с большим изображением требуется поле 'Краткое описание' и поле 'изображение',</li><li>Карточке галереи требуются все поля 'Изображение галереи',</li><li>Карточке приложения требуется поле 'ИД приложения iPhone', поле 'ИД приложения iPad' и поле 'ИД приложения Google Play',</li><li>Карточке продукта требуется поле 'описание', поле 'изображение', поле 'Метка 1', поле 'Данные 1', поле 'Метка 2' и поле 'Данные 2'.</li></ul>"
+
+msgid "Metatag: Verification"
+msgstr "Метатег: Проверка"
+
+msgid "Verifies ownership of a site for search engines and other services."
+msgstr "Проверяет принадлежность сайта для служб поиска и других служб."
+
+msgid "Site validation: Alexa"
+msgstr "Проверка сайта: Alexa"
+
+msgid "Site validation: Baidu"
+msgstr "Проверка сайта: Baidu"
+
+msgid "Site validation: Bing"
+msgstr "Проверка сайта: Bing"
+
+msgid "Site validation: Facebook"
+msgstr "Проверка сайта: Facebook"
+
+msgid "Site validation: Google"
+msgstr "Проверка сайта: Google"
+
+msgid "Site validation: Norton Safe Web"
+msgstr "Проверка сайта: Norton Safe Web"
+
+msgid "Site validation: Pinterest"
+msgstr "Проверка сайта: Pinterest"
+
+msgid "Site validation: Pocket"
+msgstr "Проверка сайта: Pocket"
+
+msgid "Site validation: Yahoo"
+msgstr "Проверка сайта: Yahoo"
+
+msgid "Site validation: Yandex"
+msgstr "Проверка сайта: Yandex"
+
+msgid "Site validation: Zoom"
+msgstr "Проверка сайта: Zoom"
+
+msgid "Site verification"
+msgstr "Проверка сайта"
+
+msgid "These meta tags are used to confirm site ownership for search engines and other services."
+msgstr "Эти метатеги используются для подтверждения принадлежности сайта для служб поиска и других служб."
+
+msgid "Baidu"
+msgstr "Baidu"
+
+msgid "Bing"
+msgstr "Bing"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Norton Safe Web"
+msgstr "Norton Safe Web"
+
+msgid "Pocket"
+msgstr "Pocket"
+
+msgid "Yandex"
+msgstr "Яндекс"
+
+msgid "Zoom"
+msgstr "Zoom"
+
+msgid "The custom admin pages for managing Views meta tags at /admin/config/search/metatag/views have been disabled for now, hopefully they'll be back in a future release. Until then, the meta tags can be managed directly on each individual view via the \"Meta tags\" section."
+msgstr "Пользовательские административные страницы для управления метатегами представлений в каталоге /admin/config/search/metatag/views на данный момент выключены, но они снова будут доступны в одном из будущих выпусков. До тех пор метатегами можно управлять непосредственно в каждом отдельном представлении (через раздел \"Метатеги\")."
+
+msgid "Metatag: Views"
+msgstr "Мета-тег: Представления"
+
+msgid "Provides views integration for metatags."
+msgstr "Предоставляет интеграцию представлений для метатегов."
+
+msgid "Should replacement tokens be used from the first row"
+msgstr "Использовать ли токены замены из первой строки"
+
+msgid "To view a list of displays with meta tags set up, click on a view name. To view a summary of meta tags configuration for a particular display, click on the display name. If you need to set meta tags for a specific view, choose Add views meta tags. Reverting the meta tags removes the specific configuration and falls back to defaults."
+msgstr "Для просмотра списка отображений с настроенными метатегами щелкните на имени представления. Для просмотра обзора конфигурации метатегов для конкретного представления щелкните на отображаемом имени. Если необходимо задать метатеги для конкретного представления, выберите Добавить метатеги представлений. Возврат метатегов приводит к удалению конкретной конфигурации и восстановлению значений по умолчанию."
+
+msgid "Display"
+msgstr "Отображение"
+
+msgid "Operations"
+msgstr "Операции"
+
+msgid "Edit"
+msgstr "Редактировать"
+
+msgid "Translate"
+msgstr "Переводы"
+
+msgid "Revert"
+msgstr "Вернуть"
+
+msgid "@language (original)"
+msgstr "@language (оригинал)"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "- Select a view -"
+msgstr "- Выберите представление -"
+
+msgid "View"
+msgstr "Просмотр"
+
+msgid "Metatags for @view : @display have been saved."
+msgstr "Мета-теги для @view : @display сохранены."
+
+msgid "Do you want to revert meta tags for @view_name : @display_name?"
+msgstr "Вы желаете вернуть мета-теги для @view_name : @display_name?"
+
+msgid "You are about to revert the custom meta tags for the %display_name display on the %view_name view. This action cannot be undone."
+msgstr "Будет выполнен возврат пользовательских метатегов для отображения %display_name в представлении %view_name. Это действие нельзя отменить."
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Reverted meta tags for @view_name : @display_name"
+msgstr "Возвращенные мета-теги для @view_name : @display_name"
+
+msgid "Edit @language translation for %view: %display metatags"
+msgstr "Изменить перевод @language для метатегов %view: %display"
+
+msgid "Successfully updated @language translation."
+msgstr "Перевод @language успешно обновлен."
+
+msgid "The meta tags for this display"
+msgstr "Мета-теги для данного отображения"
+
+msgid "Use replacement tokens from the first row"
+msgstr "Использовать шаблон подстановки из первой строки"
+
+msgid "@argument title"
+msgstr "@argument заголовок"
+
+msgid "@argument input"
+msgstr "@argument ввод"
+
+msgid "Replacement patterns"
+msgstr "Подстановочные шаблоны"
+
+msgid "The following tokens are available. You may use Twig syntax in this field."
+msgstr "Доступны следующие токены. Также в этом поле можно использовать синтаксис Twig."
+
+msgid "Meta tags"
+msgstr "Мета-теги"
+
+msgid "Overridden"
+msgstr "Переопределён"
+
+msgid "Using defaults"
+msgstr "Использовать по умолчанию"
+
+msgid "Arguments"
+msgstr "Аргументы"
+
+msgid "Fields"
+msgstr "Поля"
+
+msgid "Metatag display extender"
+msgstr "Расширитель отображения метатегов"
+
+msgid "Metatag settings for this view."
+msgstr "Настройки Metatag для этого представления."
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Active"
+msgstr "Активно"
+
+msgid "Disabled"
+msgstr "Отключено"
+
+msgid "Inherits meta tags from: @inherits"
+msgstr "Метатеги наследуются от: @inherits"
+
+msgid "Configure the meta tags below."
+msgstr "Настройте мета-теги ниже."
+
+msgid "Undefined group '%group' on tag '%tag'"
+msgstr "Неопределенная группа '%group' у тега '%tag'"
+
+msgid "Use tokens to avoid redundant meta data and search engine penalization. For example, a 'keyword' value of \"example\" will be shown on all content using this configuration, whereas using the [node:field_keywords] automatically inserts the \"keywords\" values from the current entity (node, term, etc)."
+msgstr "Используйте токены, чтобы избежать избыточных метаданных и пессимизации от поисковых систем. Например, в теге 'ключевые слова' значение \"пример\" будет отображаться во всём контенте с использованием этой конфигурации, тогда как использование [node:field_keywords] автоматически вставляет значения \"ключевых слов\" из текущей сущности (материал, термин и т. д.)."
+
+msgid "To use tokens to image fields, the image field on that entity bundle (content type, term, etc) must have the \"Token\" display settings enabled, the image field must not be hidden, and it must be set to output as an image, e.g. using the \"Thumbnail\" field formatter. It is also recommended to use an appropriate image style that resizes the image rather than output the original image; see individual meta tag descriptions for size recommendations."
+msgstr "Для применения маркеров в полях изображений должны быть выполнены следующие условия: для поля изображения в комплекте сущностей (тип содержимого, термин и т. д.) должны быть включены параметры отображения \"маркеров\", поле не должно быть скрытым и оно должно выводиться в качестве изображения, например с помощью функции форматирования поля \"Миниатюра\". Кроме того, рекомендуется использовать подходящий стиль изображения с поддержкой изменения размера. Рекомендации относительно размеров можно просмотреть в описаниях отдельных тегов. "
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "Label / Description"
+msgstr "Метка/описание"
+
+msgid "Weight"
+msgstr "Вес"
+
+msgid "Secure"
+msgstr "Защита"
+
+msgid "Multiple"
+msgstr "Множественная"
+
+msgid "Provided by"
+msgstr "Предоставлено"
+
+msgid "All meta tags in the \"@group\" group."
+msgstr "Все метатеги в группе \"@group\". "
+
+msgid "Are you sure you want to delete %name?"
+msgstr "Вы уверены, что хотите удалить %name?"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Deleted @label defaults."
+msgstr "Удалены значения по умолчанию @label."
+
+msgid "Select the type of default meta tags you would like to add."
+msgstr "Выберите тип мета-тега по умолчанию, который хотите добавить."
+
+msgid "Warning: disabling the Global default metatag will prevent any metatags from being used."
+msgstr "Предупреждение: если выключить глобальный метатег по умолчанию, то никакие метатеги нельзя будет использовать."
+
+msgid "Created the %label Metatag defaults."
+msgstr "Мета-тег \"%label\" создан."
+
+msgid "Saved the %label Metatag defaults."
+msgstr "Сохранены значения по умолчанию метатега %label."
+
+msgid "Are you sure you want to revert %name to its default values?"
+msgstr "Вы действительно хотите восстановить значения по умолчанию для %name?"
+
+msgid "Reverted @label defaults."
+msgstr "Восстановлены значения по умолчанию @label."
+
+msgid "Entity type / Group Mapping"
+msgstr "Типы сущностей / Группа соответствий"
+
+msgid "Identify which metatag groups should be available on which entity type / bundle combination. Unselected groups will not appear on the configuration form for that entity type, reducing the size of the form and increasing performance. If no groups are selected for a type, all groups will appear."
+msgstr "Укажите, какие группы метатегов должны быть доступны для каждой комбинации сущность(entity_type) / тип сущности(bundle) . Не выбранные группы не будут отображаться в форме настроек для этой сущности, что уменьшит размер формы и повысит производительность. Если для сущности/типа сущности не выбрано ни одной группы, то будут показаны все."
+
+msgid "length"
+msgstr "длина"
+
+msgid "Empty formatter"
+msgstr "Пустая функция форматирования"
+
+msgid "@label"
+msgstr "@label"
+
+msgid "This field stores code meta tags."
+msgstr "В этом поле хранятся метатеги кода."
+
+msgid "If checked, the field will be placed in the sidebar on entity forms."
+msgstr "Позволяет разместить поле на боковой панели в формах сущностей. "
+
+msgid "Use sidebar: Yes"
+msgstr "Использовать боковую панель: да"
+
+msgid "Use sidebar: No"
+msgstr "Использовать боковую панель: нет"
+
+msgid "Advanced"
+msgstr "Расширенные"
+
+msgid "Meta tags that might not be needed by many sites."
+msgstr "Метатеги, которые могут быть ненужными для многих сайтов."
+
+msgid "Basic tags"
+msgstr "Основные теги"
+
+msgid "Simple meta tags."
+msgstr "Основные мета-теги."
+
+msgid "A brief and concise summary of the page's content, preferably 150 characters or less. Where as the description meta tag may be used by search engines to display a snippet about the page in search results, the abstract tag may be used to archive a summary about the page. This meta tag is <em>no longer</em> supported by major search engines."
+msgstr "Метатег \"Abstract\"  алогично метатегу \"Description\" но рекомендуемая длина строки равна 150 символов. Если метатег \"Description\" используется поисковыми системами в результатах выдачи, то данный метатег может быть использован для архивирования краткого информации о странице.  Данный метатег не поддерживается основными поисковыми системами"
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Pragma meta tag."
+msgstr "Позволяет разрешить локальное кэширование конкретной страницы браузером. Не для широкого использования. Необходимо применять в сочетании с метатегом Pragma. "
+
+msgid "A link to the preferred page location or URL of the content of this page, to help eliminate duplicate content penalties from search engines."
+msgstr "Ссылка на предпочитаемое расположение страницы или URL содержимого этой страницы, чтобы избежать штрафов за дублирование от служб поиска."
+
+msgid "A brief and concise summary of the page's content that is a maximum of 160 characters in length. The description meta tag may be used by search engines to display a snippet about the page in search results."
+msgstr "Краткое описание содержимого страницы, длиной не более 160 символов. Данный метатег может быть использован поисковыми системами в качестве краткого описания страницы в результатах поисковой выдачи."
+
+msgid "Control when the browser's internal cache of the current page should expire. The date must to be an <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a>-compliant date string that is represented in Greenwich Mean Time (GMT), e.g. 'Thu, 01 Sep 2016 00:12:56 GMT'. Set to '0' to stop the page being cached entirely."
+msgstr "Управляет сроком действия внутреннего кэша браузера для текущей страницы. Укажите дату в формате <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a> с временем по Гринвичу (GMT), например 'Thu, 01 Sep 2016 00:12:56 GMT'. Значение '0' позволяет запретить кэширование страницы. "
+
+msgid "Describes the name and version number of the software or publishing tool used to create the page."
+msgstr "Описывает название и номер версии программного обеспечения или публикующего инструмента используемого для создания страницы."
+
+msgid "A location's formal name."
+msgstr "Официальное название местоположения."
+
+msgid "A location's two-letter international country code, with an optional two-letter region, e.g. 'US-NH' for New Hampshire in the USA."
+msgstr "Международный двухбуквенный код страны с необязательным двухбуквенный регионом, например 'US-NH' для штата Нью-Гэмпшир в США."
+
+msgid "This meta tag communicates with Google. There are currently two directives supported: 'nositelinkssearchbox' to not to show the sitelinks search box, and 'notranslate' to ask Google not to offer a translation of the page. Both options may be added, just separate them with a comma. See <a href='https://support.google.com/webmasters/answer/79812?hl=en'>meta tags that Google understands</a> for further details."
+msgstr "Данный мета-тег связывается с Google. В данный момент поддерживаются два направления: 'nositelinkssearchbox' - не отображать окно поиска ссылок сайта, и 'notranslate' - запросить Google не предлагать перевод страницы. Можно добавить обе опции, просто разделив их запятой. Дополнительные сведения приведены в разделе <a href='https://support.google.com/webmasters/answer/79812?hl=en'>мета-теги, понятные для Google</a>."
+
+msgid "An image associated with this page, for use as a thumbnail in social networks and other services."
+msgstr "Изображение ассоциирующееся с этой страницей, для использования в качестве иконки в социальных сетях и других сервисах."
+
+msgid "A comma-separated list of keywords about the page. This meta tag is <em>no longer</em> supported by most search engines."
+msgstr "Список ключевых слов для страницы, разделенных запятыми. Этот метатег не поддерживают большинство поисковых систем."
+
+msgid "Multiple values may be used, separated by a comma. Note: Tokens that return multiple values will be handled automatically."
+msgstr "Можно указать несколько значений через запятую. Примечание: маркеры, которые возвращают несколько значений, будут обрабатываться автоматически."
+
+msgid "This will be able to extract the URL from an image field if the field is configured properly."
+msgstr "Возможно извлечение адреса URL из поля изображения, если поле настроено правильным образом. "
+
+msgid "Any relative or protocol-relative URLs will be converted to absolute URLs."
+msgstr "Все относительные URL и URL относительно протокола преобразуются в абсолютные URL."
+
+msgid "Any URLs which start with \"http://\" will be converted to \"https://\"."
+msgstr "Все URL, начинающиеся с \"http://\", преобразуются в \"https://\"."
+
+msgid "News Keywords"
+msgstr "Ключевые слова новости"
+
+msgid "Used for paginated content by providing URL with rel='next' link."
+msgstr "Применяется для разбитого на страницы содержимого путем предоставления URL с ссылкой rel='next'. "
+
+msgid "Used to indicate the URL that broke the story, and can link to either an internal URL or an external source. If the full URL is not known it is acceptable to use a partial URL or just the domain name."
+msgstr "Используется для указания URL, который послужил источником для материала. Может быть ссылкой на любой внутренний URL или внешний источник. Если полный URL не известен, допустимо указать частичный или просто имя домена."
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Cache-Control meta tag."
+msgstr "Позволяет разрешить локальное кэширование конкретной страницы браузером. Не для широкого использования. Необходимо применять в сочетании с метатегом Cache-Control."
+
+msgid "Used for paginated content by providing URL with rel='prev' link."
+msgstr "Применяется для разбитого на страницы содержимого путем предоставления URL с ссылкой rel='prev'."
+
+msgid "Used to rate content for audience appropriateness. This tag has little known influence on search engine rankings, but can be used by browsers, browser extensions, and apps. The <a href='https://www.metatags.org/meta_name_rating'>most common options</a> are general, mature, restricted, 14 years, safe for kids. If you follow the <a href='https://www.rtalabel.org/index.php?content=howto'>RTA Documentation</a> you should enter RTA-5042-1996-1400-1577-RTA"
+msgstr "Используется для оценки уместности информации для целевой аудитории. Этот тег имеет незначительное влияние на ранжирование служб поиска, но может использоваться браузерами, расширениями браузеров и приложениями. <a href='https://www.metatags.org/meta_name_rating'>Наиболее часто используемые значения</a>: общего назначения, для взрослых, ограниченная аудитория, 14 лет, безопасно для детей. Для выполнения требований <a href='https://www.rtalabel.org/index.php?content=howto'>документации RTA</a> следует ввести RTA-5042-1996-1400-1577-RTA"
+
+msgid "No Referrer"
+msgstr "Нет ссылки"
+
+msgid "No Referrer When Downgrade"
+msgstr "Нет ссылки на более раннюю версию"
+
+msgid "Origin"
+msgstr "принадлежность"
+
+msgid "Origin When Cross-Origin"
+msgstr "Оригинал при перекрёстном происхождении"
+
+msgid "Same Origin"
+msgstr "Один источник"
+
+msgid "Strict Origin"
+msgstr "Строгая защита источника"
+
+msgid "Strict Origin When Cross-Origin"
+msgstr "Строгая защита источника, когда ресурсы из разных источников"
+
+msgid "Unsafe URL"
+msgstr "Небезопасный URL"
+
+msgid "The number of seconds to wait before refreshing the page. May also force redirect to another page using the format '5; url=https://example.com/', which would be triggered after five seconds."
+msgstr "Время задержки перед обновлением страницы в секундах. Например, значение в формате '5; url=https://example.com/' позволяет выполнить перенаправление на другую страницу через пять секунд. "
+
+msgid "Tell search engines when to index the page again. Very few search engines support this tag, it is more useful to use an <a href='https://www.drupal.org/project/xmlsitemap'>XML Sitemap</a> file."
+msgstr "Указывает время повторной индексации страницы для служб поиска. Этот тег поддерживают не все службы поиска, рекомендуется использовать файл <a href='https://www.drupal.org/project/xmlsitemap'>Карта сайта XML</a>. "
+
+msgid "Details about intellectual property, such as copyright or trademarks; does not automatically protect the site's content or intellectual property."
+msgstr "Подробная информация об интеллектуальной собственности, такой как авторское право или товарные знаки; автоматически не защищает содержимое или интеллектуальную собственность сайта."
+
+msgid "Select"
+msgstr "Выбрать"
+
+msgid "index - Allow search engines to index this page (assumed)."
+msgstr "index - Разрешить службам поиска индексировать эту страницу (предполагается). "
+
+msgid "follow - Allow search engines to follow links on this page (assumed)."
+msgstr "follow - Разрешить службам поиска переходить по ссылкам на этой странице (предполагается)."
+
+msgid "noindex - Prevents search engines from indexing this page."
+msgstr "noindex - Запрещает службам поиска индексировать эту страницу. "
+
+msgid "nofollow - Prevents search engines from following links on this page."
+msgstr "nofollow - Запрещает службам поиска переходить по ссылкам на этой странице. "
+
+msgid "noarchive - Prevents cached copies of this page from appearing in search results."
+msgstr "noarchive - Запрещает возврат кэшированных копий этой страницы в результатах поиска. "
+
+msgid "nosnippet - Prevents descriptions from appearing in search results, and prevents page caching."
+msgstr "nosnippet - Запрещает отображение описаний в результатах поиска, а также запрещает кэширование страниц. "
+
+msgid "noimageindex - Prevent search engines from indexing images on this page."
+msgstr "noimageindex - Запрещает службам поиска индексировать изображения на этой странице. "
+
+msgid "notranslate - Prevent search engines from offering to translate this page in search results."
+msgstr "notranslate - Запрещает службам поиска предлагать перевод этой страницы в результатах поиска. "
+
+msgid "Provides search engines with specific directions for what to do when this page is indexed."
+msgstr "Предоставляет поисковым системам определенные указания, что делать, когда эта страница индексируется."
+
+msgid "Set cookie"
+msgstr "Установить cookie"
+
+msgid "<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>Sets a cookie</a> on the visitor's browser. Can be in either NAME=VALUE format, or a more verbose format including the path and expiration date; see the link for full details on the syntax."
+msgstr "<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>Задает cookie</a> в браузере посетителя. Может быть в формате ИМЯ=ЗНАЧЕНИЕ или в более подробном формате, включающем путь и срок действия (см. ссылку на полную информацию о синтаксисе)."
+
+msgid "Shortlink URL"
+msgstr "Короткая ссылка"
+
+msgid "A brief URL, often created by a URL shortening service."
+msgstr "Короткий URL, часто создаётся с помощью сервиса сокращения ссылок."
+
+msgid "The text to display in the title bar of a visitor's web browser when they view this page. This meta tag may also be used as the title of the page when a visitor bookmarks or favorites this page, or as the page title in a search engine result. It is common to append '[site:name]' to the end of this, so the site's name is automatically added. It is recommended that the title is no greater than 55 - 65 characters long, including spaces."
+msgstr "Данный текст будет использован в строке заголовка браузера. Так же может быть использован в качестве  заголовка страницы, когда пользователь добавляет страницу в избранное или как заголовок страницы в результатах поисковой выдачи. Обычно в конец строки добавляют '[site:name]' поэтому имя сайта добавляется автоматически. Рекомендуется, чтобы длина заголовка не превышала 55–65 символов, включая пробелы."
+
+msgid "Configuration type"
+msgstr "Тип конфигурации"
+
+msgid "@label of @type"
+msgstr "@label типа @type"
+
+msgid "@label of @type @entity-type-label"
+msgstr "@label типа @type @entity-type-label"
+

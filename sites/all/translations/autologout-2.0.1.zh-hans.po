@@ -1,0 +1,333 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "关于"
+
+msgid "This module allows you to force site users to be logged out after a given amount of time due to inactivity after first being presented with a confirmation dialog. Your current logout threshold is %seconds seconds."
+msgstr "此模块允许您在站点用户一段指定时间内保持不活动后，在事先显示确认对话框的情况下，强行使其注销。您的当前注销阈值是 %seconds 秒。"
+
+msgid "Your current logout threshold"
+msgstr "您的当前注销阈值"
+
+msgid "The length of inactivity time, in seconds, before automated log out. Must be between 60 and @max_timeout seconds."
+msgstr "自动注销前保持不活动状态的时长（秒）。 必须在 60 到 @max_timeout 秒之间。"
+
+msgid "The timeout must be an integer greater than 60, and less then %max."
+msgstr "超时必须是大于 60 并小于 %max 的整数。"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid "Autologout settings are successfully updated. Updated @users"
+msgstr "已成功更新自动注销设置。已更新 @users"
+
+msgid "Automated Logout"
+msgstr "自动注销"
+
+msgid "Adds automated timed logout."
+msgstr "添加自动定时注销。"
+
+msgid "Automated logout settings"
+msgstr "自动注销设置"
+
+msgid "Configure default automated logout settings."
+msgstr "配置缺省自动注销设置。"
+
+msgid "Change own logout threshold"
+msgstr "更改自己的注销阈值"
+
+msgid "Administer Autologout"
+msgstr "管理自动注销"
+
+msgid "Enable autologout"
+msgstr "启用自动注销"
+
+msgid "Timeout value"
+msgstr "超时值"
+
+msgid "Max timeout value"
+msgstr "最大超时值"
+
+msgid "Seconds to give a user to respond"
+msgstr "用户响应的限制秒数"
+
+msgid "Logout user regardless of activity"
+msgstr "注销用户而不考虑活动"
+
+msgid "Disable user-specific logout thresholds"
+msgstr "禁用特定于用户的注销阈值"
+
+msgid "Enable role timeout"
+msgstr "启用角色超时"
+
+msgid "Use highest role timeout value"
+msgstr "使用最高角色超时值"
+
+msgid "Redirect url"
+msgstr "重定向 url"
+
+msgid "Integer label"
+msgstr "整数标签"
+
+msgid "Message to display"
+msgstr "显示的消息"
+
+msgid "Message displayed after logging out"
+msgstr "注销后显示的消息"
+
+msgid "Type of the message displayed"
+msgstr "显示的消息类型"
+
+msgid "Modal width"
+msgstr "模态宽度"
+
+msgid "Enable admin logout"
+msgstr "启用管理员注销"
+
+msgid "JS timer format"
+msgstr "JS 计时器格式"
+
+msgid "JS timer load"
+msgstr "JS 计时器加载"
+
+msgid "Use alternate logout methode"
+msgstr "使用备选注销方式"
+
+msgid "Use watchdog"
+msgstr "使用看守程序"
+
+msgid "Title"
+msgstr "标题"
+
+msgid "Disable buttons"
+msgstr "禁用按钮"
+
+msgid "Yes button text"
+msgstr "“是”按钮文本"
+
+msgid "No button text"
+msgstr "“否”按钮文本"
+
+msgid "Whitelisted IP addresses"
+msgstr "已列入白名单的 IP 地址"
+
+msgid "Role Settings"
+msgstr "角色设置"
+
+msgid "Enabled"
+msgstr "启用"
+
+msgid "Timeout"
+msgstr "间歇"
+
+msgid "redirect_url"
+msgstr "redirect_url"
+
+msgid "@message"
+msgstr "@message"
+
+msgid "Session automatically closed for %name by autologout."
+msgstr "通过自动注销为 %name 自动关闭会话。"
+
+msgid "Reset Timeout"
+msgstr "重置超时"
+
+msgid "Enable autologout on this site."
+msgstr "在此站点上启用自动注销。"
+
+msgid "Timeout value in seconds"
+msgstr "超时值（秒）"
+
+msgid "The length of inactivity time, in seconds, before automated log out. Must be 60 seconds or greater. Will not be used if role timeout is activated."
+msgstr "自动注销前保持不活动状态的时长（秒）。必须为 60 秒或更长。如果激活角色超时，将不使用该设置。"
+
+msgid "Max timeout setting"
+msgstr "最大超时设置"
+
+msgid "The maximum logout threshold time that can be set by users who have the permission to set user level timeouts."
+msgstr "有权设置用户级别超时的用户可设置的最大注销阈值时间。"
+
+msgid "Timeout padding"
+msgstr "超时填充"
+
+msgid "How many seconds to give a user to respond to the logout dialog before ending their session."
+msgstr "用户结束其会话前响应注销对话框的限制秒数。"
+
+msgid "Enable this to autologout user regardless of his activity."
+msgstr "启用此选项可自动注销用户，而不考虑其活动。"
+
+msgid "Enable this to only allow autologout thresholds to be set globally on this form and don't allow users to set their own logout threshold."
+msgstr "启用此项以仅允许在此表单上全局设置自动注销阈值，并且不允许用户设置其自己的注销阈值。"
+
+msgid "Role Timeout"
+msgstr "角色超时"
+
+msgid "Enable each role to have its own timeout threshold and redirect URL, a refresh may be required for changes to take effect. Any role not ticked will use the default timeout value and default redirect URL. Any role can have a timeout value of 0 which means that they will never be logged out. Roles without specified redirect URL will use the default redirect URL."
+msgstr "使每个角色都具有其自己的超时阈值和重定向 URL，可能需要刷新才能使更改生效。任何未勾选的角色都将使用缺省超时值和缺省重定向 URL。任何角色都可以具有为 0 的超时值，这意味着其永远不会注销。未指定重定向 URL 的角色将使用缺省重定向 URL。"
+
+msgid "Check this to use the highest timeout value instead of the lowest for users that have more than one role."
+msgstr "选中此项可针对具有多个角色的用户使用最高（而非最低）超时值。"
+
+msgid "Redirect URL at logout"
+msgstr "注销时重定向 URL"
+
+msgid "Send users to this internal page when they are logged out."
+msgstr "用户注销时将其发送至此内部页面。"
+
+msgid "Do not display the logout dialog"
+msgstr "请勿显示注销对话框"
+
+msgid "Enable this if you want users to logout right away and skip displaying the logout dialog."
+msgstr "如果您希望用户立即注销并跳过显示注销对话框，请启用该设置。"
+
+msgid "Use alternate logout method"
+msgstr "使用备选注销方法"
+
+msgid "Normally when auto logout is triggered, it is done via an AJAX service call. Sites that use an SSO provider, such as CAS, are likely to see this request fail with the error \"Origin is not allowed by Access-Control-Allow-Origin\". The alternate approach is to have the auto logout trigger a page redirect to initiate the logout process instead."
+msgstr "通常，在触发自动注销时，系统会通过 AJAX 服务调用完成操作。使用 CAS 等 SSO 提供者的站点可能会看到此请求失败，显示错误“Access-Control-Allow-Origin 不支持源”。备选方法是使自动注销触发页面重定向从而启动注销过程。"
+
+msgid "Dialog title"
+msgstr "对话框标题"
+
+msgid "This text will be dialog box title."
+msgstr "此文本将是对话框标题。"
+
+msgid "Message to display in the logout dialog"
+msgstr "注销对话框中显示的消息"
+
+msgid "This message must be plain text as it might appear in a JavaScript confirm dialog."
+msgstr "此消息必须是纯文本，因为它可能会在 JavaScript 确认对话框中显示。"
+
+msgid "Message to display to the user after they are logged out"
+msgstr "用户注销后向其显示的消息"
+
+msgid "This message is displayed after the user was logged out due to inactivity. You can leave this blank to show no message to the user."
+msgstr "用户由于不活动而注销后显示此消息。您可以将其保留为空，以便不向用户显示任何消息。"
+
+msgid "Type of the message to display"
+msgstr "要显示的消息的类型"
+
+msgid "Specifies whether to display the message as status or warning."
+msgstr "指定是否将消息显示为状态或警告。"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Warning"
+msgstr "警告"
+
+msgid "This modal dialog width in pixels."
+msgstr "此模态对话框的宽度（以像素为单位）。"
+
+msgid "Disable Yes/No buttons for automatic logout popout."
+msgstr "禁用自动注销弹出框的“是/否”按钮。"
+
+msgid "Custom confirm button text"
+msgstr "定制确认按钮文本"
+
+msgid "Add custom text to confirmation button."
+msgstr "向确认按钮添加定制文本。"
+
+msgid "Custom decline button text"
+msgstr "定制拒绝按钮文本"
+
+msgid "Add custom text to decline button."
+msgstr "向拒绝按钮添加定制文本。"
+
+msgid "Enable watchdog Automated Logout logging"
+msgstr "启用看守程序自动注销日志记录"
+
+msgid "Enable logging of automatically logged out users"
+msgstr "启用自动注销用户日志记录"
+
+msgid "Enforce auto logout on admin pages"
+msgstr "在管理页面上实施自动注销"
+
+msgid "If checked, then users will be automatically logged out when administering the site."
+msgstr "如选中，用户将在管理站点时自动注销。"
+
+msgid "Whitelisted ip addresses"
+msgstr "已列入白名单的 IP 地址"
+
+msgid "Users from these IP addresses will not be logged out."
+msgstr "来自这些 IP 地址的用户将不会注销。"
+
+msgid "Autologout block time format"
+msgstr "自动注销块时间格式"
+
+msgid "Change the display of the dynamic timer. Available replacement values are: %day%, %month%, %year%, %dow%, %moy%, %years%, %ydays%, %days%, %hours%, %mins%, and %secs%."
+msgstr "更改动态计时器显示。可用替换值有：%day%、%month%、%year%、%dow%、%moy%、%years%、%ydays%、%days%、%hours%、%mins% 和 %secs%。"
+
+msgid "Customize"
+msgstr "自定义"
+
+msgid "Role Name"
+msgstr "角色名称"
+
+msgid "Timeout (seconds)"
+msgstr "超时（秒）"
+
+msgid "%role role timeout must be an integer greater than 60, less then %max or 0 to disable autologout for that role."
+msgstr "%role 角色超时必须是大于 60 并小于 %max 的整数，或为 0 来为此角色禁用自动注销。"
+
+msgid "%role role redirect URL at logout :redirect_url must begin with a '/'"
+msgstr "%role 角色的注销时重定向 URL：redirect_url 必须以“/”开头"
+
+msgid "The timeout value must be an integer 60 seconds or greater."
+msgstr "超时值必须是 60 秒或更大的整数。"
+
+msgid "The max timeout must be an integer greater than 60."
+msgstr "最大超时必须是大于 60 的整数。"
+
+msgid "The max timeout must be an integer lower than or equal to %limit."
+msgstr "最大超时必须是小于或等于 %limit 的整数。"
+
+msgid "The timeout must be an integer greater than or equal to 60 and less then or equal to %max."
+msgstr "超时必须是大于或等于 60 且小于或等于 %max 的整数。"
+
+msgid "Redirect URL at logout :redirect_url must begin with a '/'"
+msgstr "注销时重定向 URL：redirect_url 必须以“/”开头"
+
+msgid "Whitlelisted IP address list should contain only valid IP addresses, one per row"
+msgstr "已列入白名单的 IP 地址列表应仅包含有效 IP 地址，每行一个"
+
+msgid ""
+"Autologout does not apply on the current page,\n"
+"         you will be kept logged in whilst this page remains open."
+msgstr ""
+"自动注销不适用于当前页面，\n"
+"         此页面打开时，您将一直处于登录状态。"
+
+msgid "You will be logged out in @time if this page is not refreshed before then."
+msgstr "如果在那之前未刷新此页面，您将在 @time 后注销。"
+
+msgid "Automated logout info"
+msgstr "自动注销信息"
+
+msgid "User"
+msgstr "用户"
+
+msgid "Autologout user role is enabled."
+msgstr "已启用“自动注销”用户角色。"
+
+msgid "Autologout user role timeout."
+msgstr "“自动注销”用户角色已超时。"
+
+msgid "Autologout user role."
+msgstr "“自动注销”用户角色。"
+

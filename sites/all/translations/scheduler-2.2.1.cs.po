@@ -1,0 +1,1005 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Publish on date"
+msgstr "Datum publikování"
+
+msgid "The date the %type will be published."
+msgstr "Datum, kdy bude typ %type publikován."
+
+msgid "Unpublish on date"
+msgstr "Datum stažení"
+
+msgid "The date the %type will be unpublished."
+msgstr "Datum, kdy bude zrušeno publikování typu %type."
+
+msgid "About"
+msgstr "Popis"
+
+msgid "The Scheduler module provides the functionality for automatic publishing and unpublishing of entities, such and nodes and media items, at specified future dates."
+msgstr "Modul Plánovač poskytuje funkce pro automatické publikování a rušení publikování entit, například uzlů a položek médií, v určených budoucích datech."
+
+msgid "You can read more in the <a href=\"@readme\">readme</a> file or our <a href=\"@project\">project page on Drupal.org</a>."
+msgstr "Další informace si můžete přečíst v souboru <a href=\"@readme\">readme</a> nebo na naší <a href=\"@project\">stránce projektu na adrese Drupal.org</a>. "
+
+msgid "When you have set up Drupal's standard crontab job cron.php then Scheduler will be executed during each cron run. However, if you would like finer granularity to scheduler, but don't want to run Drupal's cron more often then you can use the lightweight cron handler provided by Scheduler. This is an independent cron job which only runs the scheduler process and does not execute any cron tasks defined by Drupal core or any other modules."
+msgstr "Pokud jste nastavili standardní úlohu crontab systému Drupal cron.php, modul Scheduler bude proveden při každém spuštění programu cron. Pokud však chcete pro modul Scheduler jemnější granularitu, ale nechcete spouštět program cron systému Drupal častěji, můžete použít odlehčenou obslužnou rutinu programu cron poskytovanou modulem Scheduler. Jedná se o nezávislou úlohu cron, která spouští pouze proces modulu Scheduler a nespouští žádné úlohy cron definované jádrem systému Drupal nebo jinými moduly. "
+
+msgid "Scheduler's cron is at /scheduler/cron/{access-key} and a sample crontab entry to run scheduler every minute might look like:"
+msgstr "Program cron modulu Scheduler se nachází v umístění /scheduler/cron/{access-key} a vzorové zadání crontab pro spuštění modulu Scheduler každou minutu může vypadat následovně: "
+
+msgid "or"
+msgstr "nebo"
+
+msgid "Scheduling options"
+msgstr "Možnosti plánování"
+
+msgid "Enter a date. The time part is optional."
+msgstr "Zadejte datum. Část s časovým údajem je volitelná. "
+
+msgid "The default time is @default_time."
+msgstr "Výchozí čas je @default_time."
+
+msgid "Enter a date and time."
+msgstr "Zadejte datum a čas. "
+
+msgid "Leave the date blank for no scheduled publishing."
+msgstr "Není-li naplánováno žádné publikování, ponechejte datum prázdné. "
+
+msgid "Leave the date blank for no scheduled unpublishing."
+msgstr "Není-li naplánováno žádné stažení, ponechejte datum prázdné. "
+
+msgid "The widget for field %field is incorrectly set to %wrong. This should be changed to %correct by an admin user via the <a href=\"@link\">Field UI form display</a> :not_available"
+msgstr "Modul widget pro pole %field je nesprávně nastaven na hodnotu %wrong. Ta by měla být změněna na hodnotu %correct administrátorem pomocí <a href=\"@link\">zobrazení formuláře Uživatelské rozhraní pole</a> :node_available"
+
+msgid "not available"
+msgstr "není k dispozici"
+
+msgid "Scheduler"
+msgstr "Scheduler"
+
+msgid "Publishing"
+msgstr "Publikování"
+
+msgid "Enable scheduled publishing for %type @plural"
+msgstr "Povolit plánované publikování pro typ %type @plural"
+
+msgid "Change %type creation time to match the scheduled publish time"
+msgstr "Změnit čas vytvoření typu %type, aby odpovídal naplánovanému času publikování"
+
+msgid "The entity type does not support the change of creation time."
+msgstr "Typ entity nepodporuje změnu času vytvoření."
+
+msgid "Require scheduled publishing"
+msgstr "Vyžadovat plánované publikování"
+
+msgid "Create a new revision on publishing"
+msgstr "Vytvořit novou revizi při publikování"
+
+msgid "Advanced options"
+msgstr "Pokročilé volby"
+
+msgid "Action to be taken for publication dates in the past"
+msgstr "Akce, která se má provést pro data publikování v minulosti"
+
+msgid "Display an error message - do not allow dates in the past"
+msgstr "Zobrazit chybovou zprávu - nepovolit data v minulosti"
+
+msgid "Publish the %type @singular immediately after saving"
+msgstr "Publikovat typ %type @singular okamžitě po uložení"
+
+msgid "Schedule the %type @singular for publication on the next cron run"
+msgstr "Plánovat typ %type @singular pro publikování v dalším plánovaném spuštění"
+
+msgid "Change %type creation time to match the published time, for dates before the %type was created"
+msgstr "Změnit čas vytvoření typu %type tak, aby odpovídal publikovanému času, pro data před vytvořením typu %type"
+
+msgid "The created time will only be altered when the scheduled publishing time is earlier than the existing creation time"
+msgstr "Vytvořený čas bude změněn pouze tehdy, když je plánovaný čas publikování dřívější než existující čas vytvoření"
+
+msgid "Unpublishing"
+msgstr "Stažení"
+
+msgid "Enable scheduled unpublishing for %type @plural"
+msgstr "Povolit plánované zrušení publikování pro typ %typ @plural"
+
+msgid "Require scheduled unpublishing"
+msgstr "Vyžadovat plánované stažení"
+
+msgid "Create a new revision on unpublishing"
+msgstr "Vytvořit novou revizi při stažení"
+
+msgid "@type edit page"
+msgstr "Upravit stránku typu @type"
+
+msgid "Display scheduling date input fields in"
+msgstr "Zobrazit vstupní pole data plánování v"
+
+msgid "Vertical tab"
+msgstr "Svislá karta"
+
+msgid "Separate fieldset"
+msgstr "Samostatná skupina polí"
+
+msgid "Use this option to specify how the scheduler fields are displayed when editing %type @plural"
+msgstr "Tato volba slouží k určení způsobu zobrazení polí plánovače při úpravách typu %type @plural"
+
+msgid "Expand fieldset or vertical tab"
+msgstr "Rozbalit skupinu polí nebo svislou kartu"
+
+msgid "Expand only when a scheduled date exists or when a date is required"
+msgstr "Rozbalit pouze v případě, že existuje plánované datum nebo je-li datum povinné. "
+
+msgid "Always open the fieldset or vertical tab"
+msgstr "Vždy otevřít skupinu polí nebo svislou kartu"
+
+msgid "Show message"
+msgstr "Zobrazit zprávu"
+
+msgid "Show a confirmation message when a scheduled %type @singular is saved"
+msgstr "Zobrazit potvrzovací zprávu, když je uložen plánovaný typ %type @singular"
+
+msgid "Scheduler settings"
+msgstr "Nastavení modulu Scheduler"
+
+msgid "Enabled for publishing"
+msgstr "Povoleno pro publikování"
+
+msgid "Enabled for unpublishing"
+msgstr "Povoleno pro zrušení publikování"
+
+msgid "None"
+msgstr "Žádné"
+
+msgid "Now"
+msgstr "Nyní"
+
+msgid "How far into the future should the items be scheduled?"
+msgstr "Jak daleko do budoucnosti by měly být položky naplánovány?"
+
+msgid "Scheduled dates will be set randomly within the selected time span."
+msgstr "Naplánovaná data budou nastavena náhodně v rámci vybraného časového rozpětí."
+
+msgid "Publishing date for Scheduler"
+msgstr "Datum publikování pro modul Scheduler "
+
+msgid "Enter a percentage for randomly selecting Scheduler-enabled entities to be given a publish-on date. Enter 0 for none, 100 for all. The date and time will be random within the range starting at entity creation date, up to a time in the future matching the same span as selected above."
+msgstr "Zadejte procentní část pro náhodný výběr entit povolených plánovačem, kterým má být poskytnuto datum publikování. Zadejte hodnotu 0 pro žádnou, 100 pro všechny. Datum a čas budou náhodné v rámci rozsahu od data vytvoření entity až do času v budoucnosti odpovídajícího stejnému rozpětí, které bylo vybráno výše."
+
+msgid "Unpublishing date for Scheduler"
+msgstr "Datum zrušení publikování pro modul Scheduler"
+
+msgid "Enter a percentage for randomly selecting Scheduler-enabled entities to be given an unpublish-on date. Enter 0 for none, 100 for all. The date and time will be random within the range starting at the later of entity creation date and publish-on date, up to a time in the future matching the same span as selected above."
+msgstr "Zadejte procentní část pro náhodný výběr entit povolených plánovačem, kterým má být poskytnuto datum zrušení publikování. Zadejte hodnotu 0 pro žádnou, 100 pro všechny. Datum a čas budou náhodné v rámci rozsahu od pozdějšího data vytvoření entity a data publikování až do času v budoucnosti odpovídajícího stejnému rozpětí, které bylo vybráno výše."
+
+msgid "There is a problem with @entity '@type' - The translatable settings for status field '%status' and Scheduler field '%scheduler_field' should match, either both on or both off"
+msgstr "Vyskytl se problém s @entity '@type' - Přeložitelná nastavení pro stavové pole '%status' a pole plánovače '%scheduler_field' by se měla shodovat, a to buď obě s hodnotou on, nebo obě s hodnotou off"
+
+msgid "Publish on"
+msgstr "Zveřejnit v čase"
+
+msgid "Unpublish on"
+msgstr "Schovat v čase"
+
+msgid "Media Field Data"
+msgstr "Data pole médií"
+
+msgid "Relationship to access the Media fields that are not on Media Revision."
+msgstr "Relace pro přístup k polím médií, která nejsou na revizi médií."
+
+msgid "Media Field"
+msgstr "Pole médií"
+
+msgid "%title is scheduled to be published @publish_time and unpublished @unpublish_time."
+msgstr "Pro %title je naplánováno publikování v čase @publish_time a nepublikování v čase @unpublish_time."
+
+msgid "%title is scheduled to be published @publish_time."
+msgstr "Pro %title je naplánováno publikování v čase @publish_time."
+
+msgid "%title is scheduled to be unpublished @unpublish_time."
+msgstr "Pro %title je naplánováno nepublikování v čase @unpublish_time."
+
+msgid "Scheduler Dates"
+msgstr "Data modulu Scheduler "
+
+msgid "Fieldset containing Scheduler Publish-on and Unpublish-on date input fields"
+msgstr "Skupina polí obsahující vstupní pole data publikování a zrušení publikování modulu Scheduler "
+
+msgid "Scheduler: publish on"
+msgstr "Modul Scheduler: datum publikování"
+
+msgid "The date when the Scheduler module will publish the content."
+msgstr "Datum, kdy bude modul Plánovač publikovat obsah."
+
+msgid "Scheduler: unpublish on"
+msgstr "Modul Scheduler: datum zrušení publikování"
+
+msgid "The date when the Scheduler module will unpublish the content."
+msgstr "Datum, kdy modul Plánovač zruší publikování obsahu."
+
+msgid "Scheduler settings cannot be migrated due to RequirementsException: %message, %requirements, line %line in %file"
+msgstr "Nastavení plánovače nelze migrovat kvůli výjimce RequirementsException: %message, %requirements, řádek %line v souboru %file"
+
+msgid "Function %function has not been executed. Implementations of hook_scheduler_api() should be replaced by Scheduler event listeners."
+msgstr "Funkce %funkce nebyla provedena. Implementace hook_scheduler_api() by měly být nahrazeny moduly listener událostí plánovače."
+
+msgid "Local task route %route contains duplicates in addition to Scheduler. %data"
+msgstr "Trasa k lokální úloze %route obsahuje kromě plánovače duplikáty. %data"
+
+msgid "currently in daylight saving mode"
+msgstr "aktuálně v režimu letního času"
+
+msgid "not in daylight saving mode"
+msgstr "není v režimu letního času"
+
+msgid "In most cases the server time should match Coordinated Universal Time (UTC) / Greenwich Mean Time (GMT)."
+msgstr "Ve většině případů by se měl čas serveru shodovat s časem UTC (Coordinated Universal Time)/Greenwichským časem (GMT). "
+
+msgid "Default timezone: %date_default_timezone (%date_default_code), offset from UTC/GMT by %date_default_offset hours. This timezone can be <a href=\"@admin_regional_settings\">changed by admin users</a> with the appropriate access."
+msgstr "Výchozí časové pásmo: %date_default_timezone (%date_default_code), posun od UTC/GMT o %date_default_offset hodin. Toto časové pásmo může být <a href=\"@admin_regional_settings\">změněno uživateli s oprávněním administrátora</a> s příslušným přístupem. "
+
+msgid "Local time: %localtime (%daylight_saving). You can change this via your <a href=\"@account_edit\">user account</a>."
+msgstr "Místní čas: %localtime (%daylight_saving). Toto nastavení můžete změnit prostřednictvím svého <a href=\"@account_edit\">uživatelského účtu</a>. "
+
+msgid "Note: The user timezone has not been stored, so defaulting to the website timezone."
+msgstr "Poznámka: Časové pásmo uživatele nebylo uloženo, takže se použije výchozí časové pásmo webu. "
+
+msgid "Your local time is %localtime (%daylight_saving). This is not configurable by you."
+msgstr "Váš místní čas je %localtime (%daylight_saving). Tento údaj nemůžete konfigurovat. "
+
+msgid "Scheduler Time Check"
+msgstr "Kontrola času modulu Scheduler "
+
+msgid "Server time: @utc"
+msgstr "Čas serveru: @utc "
+
+msgid "The date and time format has been reset."
+msgstr "Formát data a času byl restován. "
+
+msgid "Default set on for new option \"Show a message after updating content\""
+msgstr "Výchozí nastavení pro novou volbu \"Zobrazit zprávu po aktualizaci obsahu\""
+
+msgid "The \"Scheduled\" tab is now a \"Scheduled content\" sub-task under the \"Content\" tab"
+msgstr "Karta \"Naplánováno\" je podúloha \"Naplánovaný obsah\" pod kartou \"Obsah\"."
+
+msgid "Added Scheduler date fields to the following entity types: %updated."
+msgstr "Přidána datová pole plánovače do následujících typů entit: %updated."
+
+msgid "No database fields had to be added."
+msgstr "Nebyla přidána žádná databázová pole."
+
+msgid "Updated views: %updated."
+msgstr "Aktualizované pohledy: %updated."
+
+msgid "No views require updating."
+msgstr "Žádné pohledy nevyžadují aktualizaci."
+
+msgid "Nothing requires updating for Taxonomy Terms."
+msgstr "Nic nevyžaduje aktualizaci pro podmínky taxonomie."
+
+msgid "No reaction rules required updating with entity context."
+msgstr "Při aktualizaci pomocí kontextu entity nebyla vyžadována žádná pravidla reakce."
+
+msgid "%updated."
+msgstr "%updated."
+
+msgid "No update required."
+msgstr "Nepožaduje se žádná aktualizace."
+
+msgid "1 reaction rule updated with entity context"
+msgid_plural "@count reaction rules updated with entity context"
+msgstr[0] "1 pravidlo reakce aktualizováno pomocí kontextu entity"
+msgstr[1] "@count pravidel reakce aktualizováno pomocí kontexu entity"
+msgstr[2] "@count pravidel reakce aktualizováno pomocí kontexu entity"
+
+msgid "Publish and unpublish content and entities automatically on specified dates and times."
+msgstr "Publikujte a zrušte publikaci obsah a entity automaticky v zadaných datech a časech."
+
+msgid "Configure settings for scheduled publishing and unpublishing."
+msgstr "Konfigurujte nastavení pro plánované publikování a zrušení publikování. "
+
+msgid "Settings"
+msgstr "Nastavení"
+
+msgid "Lightweight cron"
+msgstr "Odlehčený program cron "
+
+msgid "Administer scheduler"
+msgstr "Spravovat modul Scheduler "
+
+msgid "Configure scheduler - set default times, lightweight cron."
+msgstr "Nakonfigurujte plánovač - nastavte výchozí časy, lehký program cron."
+
+msgid "Allow date-only input with time taken from default time setting"
+msgstr "Povolit vstup pouze pro datum s časem přijatým z výchozího nastavení času "
+
+msgid "Full date and time format"
+msgstr "Úplný formát data a času "
+
+msgid "The set of PHP date letters allowed in the Scheduler date format"
+msgstr "Sada písmen data PHP povolených v datovém formátu modulu Scheduler "
+
+msgid "Date part of the full format"
+msgstr "Část data úplného formátu"
+
+msgid "Default value for entity type setting expand_fieldset"
+msgstr "Výchozí hodnota pro nastavení typu entity expand_fieldset"
+
+msgid "Default value for entity type setting fields_display_mode"
+msgstr "Výchozí hodnota pro nastavení typu entity fields_display_mode"
+
+msgid "Default value for entity type setting publish_enable"
+msgstr "Výchozí hodnota pro pro nastavení typu entity publish_enable"
+
+msgid "Default value for entity type setting publish_past_date"
+msgstr "Výchozí hodnota pro nastavení typu entity publish_past_date"
+
+msgid "Default value for entity type setting publish_past_date_created"
+msgstr "Výchozí hodnota pro nastavení typu entity publish_past_date_created"
+
+msgid "Default value for entity type setting publish_required"
+msgstr "Výchozí hodnota pro nastavení typu entity publish_required"
+
+msgid "Default value for entity type setting publish_revision"
+msgstr "Výchozí hodnota pro nastavení typu entity publish_revision"
+
+msgid "Default value for entity type setting publish_touch"
+msgstr "Výchozí hodnota pro nastavení typu entity publish_touch"
+
+msgid "Default value for entity type setting show_message_after_update"
+msgstr "Výchozí hodnota pro nastavení typu entity show_message_after_update"
+
+msgid "Default Scheduling Time. This is used with the option to allow date only"
+msgstr "Výchozí čas plánování. Používá se s volbou povolující pouze datum "
+
+msgid "Default value for entity type setting unpublish_enable"
+msgstr "Výchozí hodnota pro nastavení typu entity unpublish_enable"
+
+msgid "Default value for entity type setting unpublish_required"
+msgstr "Výchozí hodnota pro nastavení typu entity unpublish_required"
+
+msgid "Default value for entity type setting unpublish_revision"
+msgstr "Výchozí hodnota pro nastavení typu entity unpublish_revision"
+
+msgid "Hide the seconds on the input control when entering a time"
+msgstr "Skrýt sekundy na vstupním obslužném prvku při zadávání času"
+
+msgid "Lightweight cron access key"
+msgstr "Přístupový klíč pro odlehčený program cron"
+
+msgid "Log every Scheduler lightweight cron activation and completion message"
+msgstr "Protokolovat každou zprávu o aktivaci a dokončení odlehčeného programu cron modulu Scheduler "
+
+msgid "The set of PHP time letters allowed in the Scheduler time format"
+msgstr "Sada písmen času PHP povolených ve formátu času modulu Scheduler"
+
+msgid "Time part of the full format"
+msgstr "Časová část úplného formátu "
+
+msgid "Scheduler entity type settings"
+msgstr "Nastavení typu entity plánovače"
+
+msgid "Conditions under which to expand the date input fieldset or vertical tab (\"when_required\" or \"always\")"
+msgstr "Podmínky pro rozbalení sady polí vstupu data nebo svislé karty (\"whens_required\" nebo \"always\")"
+
+msgid "The way the scheduling fields are displayed in the edit form (\"vertical_tab\" or \"fieldset\")"
+msgstr "Způsob zobrazení polí plánování ve formuláři úprav (\"vertical_tab\" nebo \"fieldset\")"
+
+msgid "Enable scheduled publishing"
+msgstr "Povolit plánované publikování "
+
+msgid "Action to be taken for publication dates in the past (\"error\", \"publish\" or \"schedule\")"
+msgstr "Akce, která má být provedena pro data publikování v minulosti (\"error\", \"publish\" nebo \"schedule\")"
+
+msgid "Change entity creation date for past dates to avoid \"changed\" being earlier than \"created\""
+msgstr "Změnit datum vytvoření entity pro minulá data, aby nedošlo k dřívějším hodnotám \"changed\" než \"created\""
+
+msgid "Change entity creation time to match the scheduled publish time"
+msgstr "Změnit čas vytvoření entity tak, aby odpovídal naplánovanému času publikování"
+
+msgid "Show a message after updating an entity which is scheduled"
+msgstr "Zobrazit zprávu po aktualizaci entity, která je naplánována"
+
+msgid "Enable scheduled unpublishing"
+msgstr "Povolit plánované zrušení publikování "
+
+msgid "State Change configuration"
+msgstr "Konfigurace změny stavu"
+
+msgid "Scheduled for publishing"
+msgstr "Plánováno pro publikování "
+
+msgid "Scheduled for unpublishing"
+msgstr "Plánováno pro zrušení publikování "
+
+msgid "Not scheduled"
+msgstr "Neplánováno "
+
+msgid "Publishing enabled"
+msgstr "Publikování povoleno "
+
+msgid "Unpublishing enabled"
+msgstr "Zrušení publikování povoleno "
+
+msgid "Node form scheduler"
+msgstr "Formulář uzlu modulu Scheduler "
+
+msgid "Scheduler date options on the Node form."
+msgstr "Volby data modulu Scheduler ve formuláři uzlu. "
+
+msgid "Form"
+msgstr "Formulář"
+
+msgid "Scheduler options"
+msgstr "Volby modulu Scheduler"
+
+msgid "Send e-mail when content is published by Scheduler"
+msgstr "Odeslat e-mail při publikování obsahu modulem Scheduler (plánovačem) "
+
+msgid "'[node:title]' has been published on [site:name]"
+msgstr "'[node:title]' byl publikován na [site:name] "
+
+msgid ""
+"Dear [node:author:name],\r\n"
+"Your [node:type] '[node:title]' has been published on [site:name].\r\n"
+"The link is [node:url]\r\n"
+""
+msgstr ""
+"Vážený [node:author:name],\r\n"
+"Váš [node:type] '[node:title]' byl [site:name].\r\n"
+"Odkaz je [node:url]\r\n"
+""
+
+msgid "Send e-mail when content is unpublished by Scheduler"
+msgstr "Odeslat e-mail, když má obsah zrušené publikování modulem Scheduler"
+
+msgid "'[node:title]' has been unpublished on [site:name]"
+msgstr "'[node:title]' má zrušené publikování z [site:name]"
+
+msgid ""
+"Dear [node:author:name],\r\n"
+"Your [node:type] '[node:title]' has been unpublished on [site:name].\r\n"
+"The link is [node:url]\r\n"
+""
+msgstr ""
+"Vážený [node:author:name],\r\n"
+"Vašemu [node:type] '[node:title]' bylo zrušeno publikování z [site:name].\r\n"
+"Odkaz je [node:url]\r\n"
+""
+
+msgid "Node"
+msgstr "Uzly"
+
+msgid "The node for publishing via Scheduler."
+msgstr "Uzel pro publikování prostřednictvím modulu Scheduler. "
+
+msgid "Publish-on Date"
+msgstr "Datum publikování "
+
+msgid "The publishing date to be used by Scheduler."
+msgstr "Datum publikování, které má být použito modulem Scheduler."
+
+msgid "Set scheduled publishing date"
+msgstr "Nastavit datum plánovaného publikování"
+
+msgid "The node for unpublishing via Scheduler."
+msgstr "Uzel pro stažení prostřednictvím modulu Scheduler."
+
+msgid "Unpublish-on Date"
+msgstr "Datum stažení"
+
+msgid "The unpublishing date to be used by Scheduler."
+msgstr "Datum stažení, které má být použito modulem Scheduler."
+
+msgid "Set scheduled unpublishing date"
+msgstr "Nastavit datum plánovaného stažení"
+
+msgid "The scheduled node"
+msgstr "Plánovaný uzel"
+
+msgid "The node scheduled for publishing via Scheduler."
+msgstr "Uzel plánovaný pro publikování prostřednictvím modulu Scheduler."
+
+msgid "Remove scheduled publishing date"
+msgstr "Odebrat datum plánovaného publikování"
+
+msgid "The node scheduled for unpublishing via Scheduler."
+msgstr "Uzel naplánovaný pro stažení prostřednictvím modulu Scheduler."
+
+msgid "Remove scheduled unpublishing date"
+msgstr "Odebrat datum plánovaného stažení"
+
+msgid "Scheduler Rules Integration"
+msgstr "Integrace pravidel modulu Scheduler"
+
+msgid "Scheduler sub-module providing conditions, actions and events for use with the Rules module."
+msgstr "Dílčí modul modulu Scheduler poskytující podmínky, akce a události pro použití s modulem Pravidla."
+
+msgid "The object representing the scheduled @entity_type"
+msgstr "Objekt představující naplánovaný @entity_type"
+
+msgid "After saving a new @entity_type that is scheduled for publishing"
+msgstr "Po uložení nového @entity_type, který je naplánován pro publikování"
+
+msgid "After saving a new @entity_type that is scheduled for unpublishing"
+msgstr "Po uložení nového @entity_type, který je naplánován pro zrušení publikování"
+
+msgid "After updating a @entity_type that is scheduled for publishing"
+msgstr "Po aktualizaci @entity_type, který je naplánován pro publikování"
+
+msgid "After updating a @entity_type that is scheduled for unpublishing"
+msgstr "Po aktualizaci @entity_type, který je naplánován pro zrušení publikování"
+
+msgid "After Scheduler has published a @entity_type"
+msgstr "Když plánovač publikoval @entity_type"
+
+msgid "After Scheduler has unpublished a @entity_type"
+msgstr "Když plánovač zrušil publikování @entity_type"
+
+msgid "@entity_type_label type is enabled for scheduled publishing"
+msgstr "Typ @entity_type_label je povolen pro plánované publikování"
+
+msgid "@entity_type_label"
+msgstr "@entity_type_label"
+
+msgid "The @entity_type_singular to check for the type being enabled for scheduled publishing."
+msgstr "@entity_type_singular kontrolující typ povolený pro plánované publikování."
+
+msgid "@entity_type_label type is enabled for scheduled unpublishing"
+msgstr "Typ @entity_type_label je povolen pro plánované zrušení publikování"
+
+msgid "The @entity_type_singular to check for the type being enabled for scheduled unpublishing."
+msgstr "@entity_type_singular kontrolující typ povolený pro plánované zrušení publikování."
+
+msgid "@entity_type_label is scheduled for publishing"
+msgstr "@entity_type_label je naplánován pro publikování"
+
+msgid "The @entity_type_singular to check for having a scheduled publishing date."
+msgstr "@entity_type_singular kontrolující existenci data naplánované publikování."
+
+msgid "@entity_type_label is scheduled for unpublishing"
+msgstr "@entity_type_label je naplánován pro zrušení publikování"
+
+msgid "The @entity_type_singular to check for having a scheduled unpublishing date."
+msgstr "@entity_type_singular kontrolující existenci data naplánované zrušení publikování."
+
+msgid "Node type is enabled for scheduled publishing"
+msgstr "Typ uzlu je povolen pro plánované publikování"
+
+msgid "Content (Scheduler)"
+msgstr "Obsah (Plánovač)"
+
+msgid "The node to check for the type being enabled for scheduled publishing."
+msgstr "Uzel kontrolující typ povolený pro plánované publikování."
+
+msgid "Node is scheduled for publishing"
+msgstr "Uzel je naplánován pro publikování"
+
+msgid "The node to check for having a scheduled publishing date."
+msgstr "Uzel kontrolující existenci data plánovaného publikování."
+
+msgid "Node is scheduled for unpublishing"
+msgstr "Uzel je naplánován pro stažení"
+
+msgid "The node to check for having a scheduled unpublishing date."
+msgstr "Uzel kontrolující existenci data plánovaného zrušení publikování."
+
+msgid "Node type is enabled for scheduled unpublishing"
+msgstr "Typ uzlu je povolen pro plánované stažení"
+
+msgid "The node to check for the type being enabled for scheduled unpublishing."
+msgstr "Uzel kontrolující typ povolený pro plánované zrušení publikování."
+
+msgid "scheduled publishing"
+msgstr "plánované publikování"
+
+msgid "scheduled unpublishing"
+msgstr "plánované zrušení publikování"
+
+msgid "@bundle_label is enabled for @activity"
+msgstr "@bundle_label je povolen pro @activity"
+
+msgid "@type settings"
+msgstr "Nastavení @type"
+
+msgid "Action %action is not valid because @activity is not enabled for %type @group. Add the condition %condition to your Reaction Rule, or enable @activity via the <a href=\"@url\">%type</a> settings."
+msgstr "Akce %akce není platná, protože @activity není povolena pro %type @group. Přidejte podmínku %condition do svého pravidla reakce, nebo povolte @activity prostřednictvím nastavení <a href=\"@url\">%type</a>."
+
+msgid "Action %action is not valid because @activity is not enabled for %type @group. Add the condition %condition to your Reaction Rule, or enable @activity via the %type settings."
+msgstr "Akce %akce není platná, protože @activity není povolena pro %type @group. Přidejte podmínku %condition do svého pravidla reakce, nebo povolte @activity prostřednictvím nastavení %type."
+
+msgid "Set date for publishing a @entity_type_singular"
+msgstr "Nastavit datum publikování @entity_type_singular"
+
+msgid "@entity_type_label for scheduling"
+msgstr "@entity_type_label pro plánování"
+
+msgid "The @entity_type_singular which is to have a scheduled publishing date set"
+msgstr "@entity_type_singular, který má mít nastaveno datum plánovaného publikování"
+
+msgid "Date for publishing"
+msgstr "Datum publikování"
+
+msgid "The date when Scheduler will publish the @entity_type_singular"
+msgstr "Datum, kdy plánovač publikuje @entity_type_singular"
+
+msgid "Set date for unpublishing a @entity_type_singular"
+msgstr "Nastavit datum pro zrušení publikování @entity_type_singular"
+
+msgid "The @entity_type_singular which is to have a scheduled unpublishing date set"
+msgstr "@entity_type_singular, který má mít nastaveno datum plánovaného zrušení publikování"
+
+msgid "Date for unpublishing"
+msgstr "Datum zrušení publikování"
+
+msgid "The date when Scheduler will unpublish the @entity_type_singular"
+msgstr "Datum, kdy plánovač zruší publikování @entity_type_singular"
+
+msgid "Remove date for publishing a @entity_type_singular"
+msgstr "Odebrat datum publikování @entity_type_singular"
+
+msgid "The @entity_type_singular from which to remove the scheduled publishing date"
+msgstr "@entity_type_singular, ze kterého má být odebráno plánované datum publikování"
+
+msgid "Remove date for unpublishing a @entity_type_singular"
+msgstr "Odebrat datum pro zrušení publikování @entity_type_singular"
+
+msgid "The @entity_type_singular from which to remove the scheduled unpublishing date"
+msgstr "@entity_type_singular, ze kterého má být odebráno plánované datum zrušení publikování"
+
+msgid "Publish a @entity_type_singular immediately"
+msgstr "Publikovat @entity_type_singular okamžitě"
+
+msgid "@entity_type_label for publishing"
+msgstr "@entity_type_label pro publikování"
+
+msgid "The @entity_type_singular to be published now"
+msgstr "@entity_type_singular, který má být nyní publikován"
+
+msgid "Unpublish a @entity_type_singular immediately"
+msgstr "Zrušit publikování @entity_type_singular okamžitě"
+
+msgid "@entity_type_label for unpublishing"
+msgstr "@entity_type_label pro zrušení publikování"
+
+msgid "The @entity_type_singular to be unpublished now"
+msgstr "@entity_type_singular jehož publikace má být nyní zrušena"
+
+msgid "Publish a content item immediately"
+msgstr "Publikovat položku obsahu okamžitě"
+
+msgid "The node to be published now"
+msgstr "Uzel, který má být nyní publikován"
+
+msgid "Remove date for publishing a content item"
+msgstr "Odebrat datum publikování položky obsahu"
+
+msgid "The node from which to remove the scheduled publishing date"
+msgstr "Uzel, ze kterého se má odebrat datum plánovaného publikování"
+
+msgid "Remove date for unpublishing a content item"
+msgstr "Odebrat datum zrušení publikování položky obsahu"
+
+msgid "The node from which to remove the scheduled unpublishing date"
+msgstr "Uzel, ze kterého se má odebrat datum plánovaného stažení"
+
+msgid "Set date for publishing a content item"
+msgstr "Nastavit datum publikování položky obsahu"
+
+msgid "Node for scheduling"
+msgstr "Uzel pro plánování"
+
+msgid "The node which is to have a scheduled publishing date set"
+msgstr "Uzel, pro který má být nastaveno datum plánovaného publikování"
+
+msgid "The date for publishing"
+msgstr "Datum publikování"
+
+msgid "The date when Scheduler will publish the node"
+msgstr "Datum, kdy modul Scheduler publikuje uzel"
+
+msgid "Set date for unpublishing a content item"
+msgstr "Nastavit datum zrušení publikování položky obsahu"
+
+msgid "The node which is to have a scheduled unpublishing date set"
+msgstr "Uzel, pro který má být nastaveno datum plánovaného stažení"
+
+msgid "The date for unpublishing"
+msgstr "Datum zrušení publikování"
+
+msgid "The date when Scheduler will unpublish the node"
+msgstr "Datum, kdy modul Scheduler zruší publikování uzlu"
+
+msgid "Unpublish a content item immediately"
+msgstr "Zrušit publikování položky obsahu okamžitě"
+
+msgid "The node to be unpublished now"
+msgstr "Uzel, který má mít nyní zrušené publikování"
+
+msgid "The previous creation date was @old_creation_date, now updated to match the publishing date."
+msgstr "Předchozí datum vytvoření bylo @old_creation_date, nyní je aktualizováno tak, aby odpovídalo datu publikování."
+
+msgid "Published by Scheduler. The scheduled publishing date was @publish_on."
+msgstr "Publikováno plánovačem. Naplánované datum publikování bylo @publish_on."
+
+msgid "View @type"
+msgstr "Zobrazit @type"
+
+msgid "@label settings"
+msgstr "Nastavení @label "
+
+msgid "Unpublished by Scheduler. The scheduled unpublishing date was @unpublish_on."
+msgstr "Staženo plánovačem. Naplánované datum zrušení publikování bylo @unpublish_on."
+
+msgid "Config Update for actions"
+msgstr "Aktualizace konfigurace pro akce"
+
+msgid "Enable Config Update Reports"
+msgstr "Povolit sestavy aktualizace konfigurace"
+
+msgid "Action '%action_id' is missing. Use <a href=':url'>Config Update</a> to import the missing action."
+msgstr "Akce '%action_id' chybí. Chcete-li importovat chybějící akci, použijte volbu <a href=':url'>Aktualizace konfigurace</a>."
+
+msgid "settings"
+msgstr "nastavení"
+
+msgid "Field '%field' specified by typeFieldName in the Scheduler plugin %id is not found in entity type %entity"
+msgstr "Pole '%field' určené pomocí typeFieldName v modulu plug-in plánovače %id nebylo nalezeno v typu entity %entity"
+
+msgid "Unknown entity types (@unknown)"
+msgstr "Neznámé typy entit (@unknown)"
+
+msgid "Scheduler fields removed from @entityType"
+msgstr "Pole plánovače odebraná z @entityType"
+
+msgid "Settings removed from @bundle"
+msgstr "Nastavení odebraná z @bundle"
+
+msgid "Scheduler issue 3320341"
+msgstr "Problém s plánovačem 3320341"
+
+msgid ""
+"The Scheduler fields are now hidden by default and automatically changed to be displayed when an entity\n"
+"      bundle is enabled for scheduling. If you have previously manually hidden scheduler fields for enabled\n"
+"      entity types then these fields will now be displayed. You will need to manually hide them again or\n"
+"      implement hook_scheduler_hide_publish_date() or hook_scheduler_TYPE_hide_publish_date() and the\n"
+"      equivalent for unpublish_date. See @issue for details."
+msgstr ""
+"Pole plánovače jsou nyní standardně skryta a nastavení se automaticky změní na zobrazení, když je balík entit\n"
+" povolen pro plánování. Pokud jste předtím ručně skryli pole plánovače pro povolené\n"
+" typy entit, budou tato pole nyní zobrazena. Budete je muset znovu ručně skrýt nebo\n"
+" implementovat hook_scheduler_hide_publish_date() nebo hook_scheduler_TYPE_hide_publish_date() a\n"
+" ekvivalent pro unpublish_date. Podrobnosti viz @issue."
+
+msgid "Publish On field displayed for: @list"
+msgstr "Pole Publikovat na zobrazené pro: @list"
+
+msgid "Unpublish On field displayed for: @list"
+msgstr "Pole Zrušit publikování na zobrazené pro: @list"
+
+msgid "Publish On field hidden for: @list"
+msgstr "Pole Publikovat na skryté pro: @list"
+
+msgid "Unpublish On field hidden for: @list"
+msgstr "Pole Zrušit publikování na skryté pro: @list"
+
+msgid "%view view updated."
+msgstr "Pohled %view aktualizován."
+
+msgid "%view view loaded from source."
+msgstr "Pohled %view načten ze zdroje."
+
+msgid "%field field removed from %entityType entity type"
+msgstr "Pole %field odebráno z typu entity %entityType"
+
+msgid "Scheduler settings removed from %entity %bundle"
+msgstr "Nastavení plánovače odebráno z %entity %bundle"
+
+msgid "@type: scheduled \"publish\" processing of %title completed by @sucessful_hooks."
+msgstr "@type: plánované zpracování \"publish\" pro %title bylo dokončeno @sucessful_hooks."
+
+msgid "@type: scheduled publishing of %title."
+msgstr "@type: naplánované publikování %title. "
+
+msgid "@type: scheduled \"unpublish\" processing of %title completed by @sucessful_hooks."
+msgstr "@type: plánované zpracování \"unpublish\" pro %title bylo dokončeno @sucessful_hooks."
+
+msgid "@type: scheduled unpublishing of %title."
+msgstr "@type: naplánované zrušení publikování %title. "
+
+msgid "Lightweight cron run activated by @trigger."
+msgstr "Spuštění odlehčeného programu cron aktivováno spouštěčem @trigger."
+
+msgid "Lightweight cron run completed."
+msgstr "Spuštění odlehčeného programu cron provedeno. "
+
+msgid "%entity entity type updated with %publish_on and %unpublish_on fields."
+msgstr "Typ entity %entity byl aktualizován pomocí polí %publish_on a %unpublish_on."
+
+msgid "No source file for %full_name in either %install_folder or %optional_folder folders"
+msgstr "Žádný zdrojový soubor pro %full_name ve složkách %install_folder nebo %optional_folder"
+
+msgid "Publishing failed for %title. @failed_hooks returned a failure code."
+msgstr "Publikování se nezdařilo pro %title. @failed_hooks vrátil kód poruchy."
+
+msgid "Unpublishing failed for %title. @failed_hooks returned a failure code."
+msgstr "Zrušení publikování se nezdařilo pro %title. @failed_hooks vrátil kód poruchy."
+
+msgid "Action '%action_id' is missing. Use Config Update to import the missing action."
+msgstr "Akce '%action_id' chybí. Chcete-li importovat chybějící akci, použijte volbu Aktualizace konfigurace."
+
+msgid "Entity id @id is not a @type entity. Processing skipped."
+msgstr "ID entity @id není entita @type. Zpracování bylo vynecháno."
+
+msgid "Schedule publishing and unpublishing of %label"
+msgstr "Naplánovat publikování a zrušení publikování pro %label"
+
+msgid "Allows users to set a start and end time for %singular_label publication."
+msgstr "Umožňuje uživatelům nastavit počáteční a koncový čas pro publikování %singlar_label."
+
+msgid "View scheduled %label"
+msgstr "Zobrazit plánovaný %label"
+
+msgid "Allows users to see a list of all %plural_label that are scheduled."
+msgstr "Umožňuje uživatelům zobrazit seznam všech plánovaných %plural_label."
+
+msgid "Scheduler lightweight cron completed."
+msgstr "Odlehčený program cron modulu Scheduler dokončen."
+
+msgid "nothing to update"
+msgstr "nic k aktualizaci"
+
+msgid "Scheduler entity update - @updated"
+msgstr "Aktualizace entity plánovače - @updated"
+
+msgid "nothing to do"
+msgstr "nic k provedení"
+
+msgid "Scheduler entity revert - @reverted"
+msgstr "Vráceni entity plánovače zpět - @reverted"
+
+msgid "Most of the Scheduler options are set independently for each entity type and bundle. These can be accessed from the <a href=\"@link\">admin structure</a> page or directly by using the drop-button"
+msgstr "Většina voleb plánovače je nastavena nezávisle pro každý typ entity a balík. Můžete k nim přistupovat ze stránky <a href=\"@link\">struktury administrátora</a> nebo přímo pomocí rozevíracího tlačítka"
+
+msgid "Entity Types"
+msgstr "Typy entit"
+
+msgid "no entity types defined"
+msgstr "nejsou definovány žádné typy entit"
+
+msgid "publishing"
+msgstr "publikování"
+
+msgid "unpublishing"
+msgstr "zrušení publikování"
+
+msgid "The settings below are common to all entity types."
+msgstr "Níže uvedená nastavení jsou společná pro všechny typy entit."
+
+msgid "Date only"
+msgstr "Pouze datum"
+
+msgid "Allow users to enter only a date and provide a default time."
+msgstr "Povolit uživatelům zadat pouze datum a poskytnout výchozí čas."
+
+msgid "When only a date is entered the time will default to a specified value, but the user can change this if required."
+msgstr "Pokud je nastaveno pouze datum, bude použit přednastavený čas. V případě potřeby může uživatel čas změnit."
+
+msgid "Default time"
+msgstr "Výchozí čas"
+
+msgid "Provide a default time in @format format that will be used if the user does not enter a value."
+msgstr "Zadejte výchozí čas ve formátu @format, který se použije, pokud uživatel nezadá žádnou hodnotu."
+
+msgid "Time settings"
+msgstr "Nastavení času"
+
+msgid "Hide the seconds."
+msgstr "Skrýt sekundy."
+
+msgid "When entering a time, only show hours and minutes in the input field."
+msgstr "Když zadáváte čas, ve vstupním poli se zobrazí pouze hodiny a minuty."
+
+msgid "The default time should be in the format @format"
+msgstr "Výchozí čas by měl být ve formátu @format"
+
+msgid "No %bundle_id entity types returned by %module module for use in %plugin_label"
+msgstr "Modul %module nevrátil žádné typy entit %bundle_id pro použití v %plugin_label"
+
+msgid "Lightweight cron settings"
+msgstr "Nastavení odlehčeného programu cron "
+
+msgid "Log every activation and completion message."
+msgstr "Protokolovat každou zprávu o aktivaci a dokončení. "
+
+msgid "When this option is checked, Scheduler will write an entry to the log every time the lightweight cron process is started and completed. This is useful during set up and testing, but can result in a large number of log entries. Any actions performed during the lightweight cron run will always be logged regardless of this setting."
+msgstr "Je-li tato volba zaškrtnuta, modul Scheduler zapíše položku do protokolu pokaždé, když se spustí a dokončí proces odlehčeného programu cron. To je užitečné během nastavení a testování, ale může to vést k velkému počtu záznamů v protokolu. Jakékoli akce provedené během spuštění odlehčeného programu cron budou vždy protokolovány bez ohledu na toto nastavení. "
+
+msgid "Similar to Drupal's cron key this acts as a security token to prevent unauthorised calls to scheduler/cron. The key should be passed as scheduler/cron/{access key}"
+msgstr "Podobně jako klíč programu cron systému Drupal funguje jako token zabezpečení, který zabraňuje neoprávněným voláním modulu Scheduler/programu cron. Klíč musí být zadán jako {access klíč} modulu Scheduler/programu cron/"
+
+msgid "Generate new random key"
+msgstr "Generovat nový náhodný klíč "
+
+msgid "You can test Scheduler's lightweight cron process interactively"
+msgstr "Proces odlehčeného programu cron modulu Scheduler můžete interaktivně testovat "
+
+msgid "Run Scheduler's lightweight cron now"
+msgstr "Spustit okamžitě odlehčený program cron pro modul Scheduler "
+
+msgid "Lightweight cron run completed. See the <a href=\"@url\">log</a> for details."
+msgstr "Spuštění odlehčeného programu cron provedeno. Podrobnosti viz <a href=\"@url\">protokol</a>. "
+
+msgid "Scheduled content"
+msgstr "Naplánovaný obsah"
+
+msgid "Overview"
+msgstr "Přehled"
+
+msgid "Scheduled media"
+msgstr "Plánované médium"
+
+msgid "Scheduled products"
+msgstr "Plánované produkty"
+
+msgid "Scheduled terms"
+msgstr "Plánované termíny"
+
+msgid "Leave blank for no date."
+msgstr "Ponechte prázdné pro žádné datum."
+
+msgid "Datetime Timestamp for Scheduler"
+msgstr "Časové razítko data a času pro modul Scheduler "
+
+msgid "An optional datetime field. Does not fill in the current datetime if left blank. Defined by Scheduler module."
+msgstr "Volitelné pole pro datum a čas. Nevyplní aktuální datum a čas, zůstane-li prázdné. Definováno modulem plánovače."
+
+msgid "Commerce Product Scheduler Plugin"
+msgstr "Modul plug-in plánovače produktu Commerce"
+
+msgid "Provides support for scheduling Commerce Product entities"
+msgstr "Poskytuje podporu pro plánování entit produktu Commerce."
+
+msgid "Media Scheduler Plugin"
+msgstr "Modul plug-in plánovače médií"
+
+msgid "Provides support for scheduling media entities"
+msgstr "Poskytuje podporu pro plánování entit médií"
+
+msgid "Node Scheduler Plugin"
+msgstr "Modul plug-in plánovače uzlů"
+
+msgid "Provides support for scheduling node entities"
+msgstr "Poskytuje podporu pro plánování entit uzlů"
+
+msgid "Taxonomy Term Scheduler Plugin"
+msgstr "Modul plug-in plánovače taxonomického termínu"
+
+msgid "Provides support for scheduling Taxonomy Term entities"
+msgstr "Poskytuje podporu pro plánování entit taxonomického termínu"
+
+msgctxt "Validation"
+msgid "Scheduler publish on"
+msgstr "Datum publikování modulu Scheduler"
+
+msgctxt "Validation"
+msgid "Scheduler unpublish on"
+msgstr "Datum zrušení publikování modulu Scheduler"
+
+msgid "Scheduled content access. REDUNDANT, DO NOT USE THIS."
+msgstr "Přístup k naplánovaným obsahu. REDUNDANTNÍ, TUTO VOLBU NEPOUŽÍVEJTE."
+
+msgid "NOT USED"
+msgstr "NEPOUŽITO"
+

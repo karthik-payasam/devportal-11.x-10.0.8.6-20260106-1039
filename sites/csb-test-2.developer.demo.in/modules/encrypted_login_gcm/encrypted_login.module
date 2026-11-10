@@ -1,0 +1,764 @@
+<?php
+
+/**
+ * @file
+ * Encrypts Drupal login and registration credentials in the browser
+ * before submission.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function encrypted_login_form_alter(
+  array &$form,
+  FormStateInterface $form_state,
+  $form_id
+) {
+
+  /*
+   * Only modify Drupal login and registration forms.
+   */
+  if (
+    $form_id !== 'user_login_form' &&
+    $form_id !== 'user_register_form'
+  ) {
+    return;
+  }
+
+  /*
+   * Get RSA public key.
+   */
+  $public_key = encrypted_login_get_public_key();
+
+  if ($public_key === '') {
+    return;
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * Hidden field for RSA-encrypted AES key.
+   * ------------------------------------------------------------
+   */
+  $form['encrypted_aes_key'] = [
+    '#type' => 'hidden',
+    '#default_value' => '',
+    '#attributes' => [
+      'id' => 'edit-encrypted-aes-key',
+      'autocomplete' => 'off',
+    ],
+  ];
+
+  /*
+   * ------------------------------------------------------------
+   * Hidden field for AES-encrypted username + password.
+   * ------------------------------------------------------------
+   */
+  $form['encrypted_credentials'] = [
+    '#type' => 'hidden',
+    '#default_value' => '',
+    '#attributes' => [
+      'id' => 'edit-encrypted-credentials',
+      'autocomplete' => 'off',
+    ],
+  ];
+
+  /*
+   * Attach JavaScript library.
+   */
+  $form['#attached']['library'][] =
+    'encrypted_login/encrypted_login';
+
+  /*
+   * Send RSA public key to JavaScript.
+   */
+  $form['#attached']['drupalSettings']
+    ['encrypted_login']
+    ['public_key'] = $public_key;
+
+  /*
+   * ------------------------------------------------------------
+   * Run decryption before Drupal's normal validation.
+   * ------------------------------------------------------------
+   */
+  array_unshift(
+    $form['#validate'],
+    'encrypted_login_validate_encrypted_credentials'
+  );
+
+  /*
+   * ------------------------------------------------------------
+   * LOGIN FORM
+   * ------------------------------------------------------------
+   */
+  if ($form_id === 'user_login_form') {
+
+    /*
+     * JavaScript clears the password field before
+     * submitting the form.
+     */
+    if (isset($form['pass'])) {
+      $form['pass']['#required'] = FALSE;
+    }
+
+    /*
+     * JavaScript also clears the username field.
+     */
+    if (isset($form['name'])) {
+      $form['name']['#required'] = FALSE;
+    }
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * REGISTRATION FORM
+   * ------------------------------------------------------------
+   */
+  elseif ($form_id === 'user_register_form') {
+
+    /*
+     * Allow the username field to be empty at the browser
+     * validation level because JavaScript clears it.
+     */
+    if (isset($form['account']['name'])) {
+      $form['account']['name']['#required'] = FALSE;
+    }
+
+    /*
+     * Allow the password element to be empty because
+     * JavaScript clears the plaintext password.
+     */
+    if (isset($form['account']['pass'])) {
+      $form['account']['pass']['#required'] = FALSE;
+    }
+  }
+}
+
+
+/**
+ * Returns a valid RSA public key matching the stored private key.
+ *
+ * @return string
+ *   PEM encoded RSA public key, or an empty string on failure.
+ */
+function encrypted_login_get_public_key(): string {
+
+  $state = \Drupal::state();
+
+  /*
+   * Get existing keys.
+   */
+  $private_key = $state->get(
+    'encrypted_login.rsa_private_key'
+  );
+
+  $public_key = $state->get(
+    'encrypted_login.rsa_public_key'
+  );
+
+  /*
+   * ------------------------------------------------------------
+   * Check existing RSA key pair.
+   * ------------------------------------------------------------
+   */
+  if (
+    !empty($private_key) &&
+    !empty($public_key)
+  ) {
+
+    $private_resource =
+      openssl_pkey_get_private($private_key);
+
+    if ($private_resource !== FALSE) {
+
+      $details =
+        openssl_pkey_get_details(
+          $private_resource
+        );
+
+      if (
+        is_array($details) &&
+        !empty($details['key']) &&
+        hash_equals(
+          trim($details['key']),
+          trim($public_key)
+        )
+      ) {
+        return $public_key;
+      }
+    }
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * Generate new RSA key pair.
+   * ------------------------------------------------------------
+   */
+  $config = [
+    'private_key_bits' => 2048,
+    'private_key_type' => OPENSSL_KEYTYPE_RSA,
+    'digest_alg' => 'sha256',
+  ];
+
+  $resource =
+    openssl_pkey_new($config);
+
+  if ($resource === FALSE) {
+
+    \Drupal::logger('encrypted_login')->error(
+      'Unable to generate RSA key pair: @error',
+      [
+        '@error' =>
+          openssl_error_string() ?: 'unknown OpenSSL error',
+      ]
+    );
+
+    return '';
+  }
+
+  /*
+   * Export private key.
+   */
+  $new_private_key = '';
+
+  if (
+    !openssl_pkey_export(
+      $resource,
+      $new_private_key
+    )
+  ) {
+
+    \Drupal::logger('encrypted_login')->error(
+      'Unable to export RSA private key: @error',
+      [
+        '@error' =>
+          openssl_error_string() ?: 'unknown OpenSSL error',
+      ]
+    );
+
+    return '';
+  }
+
+  /*
+   * Get public key.
+   */
+  $details =
+    openssl_pkey_get_details($resource);
+
+  if (
+    !is_array($details) ||
+    empty($details['key'])
+  ) {
+
+    \Drupal::logger('encrypted_login')->error(
+      'Unable to obtain RSA public key.'
+    );
+
+    return '';
+  }
+
+  /*
+   * Store key pair.
+   */
+  $state->set(
+    'encrypted_login.rsa_private_key',
+    $new_private_key
+  );
+
+  $state->set(
+    'encrypted_login.rsa_public_key',
+    $details['key']
+  );
+
+  \Drupal::logger('encrypted_login')->notice(
+    'A matching RSA key pair was generated for encrypted login and registration.'
+  );
+
+  return $details['key'];
+}
+
+
+/**
+ * Validation callback for encrypted credentials.
+ *
+ * Decrypts the username and password before Drupal's
+ * normal login/registration validation runs.
+ */
+function encrypted_login_validate_encrypted_credentials(
+  array &$form,
+  FormStateInterface $form_state
+) {
+
+  /*
+   * ------------------------------------------------------------
+   * Get encrypted AES key.
+   * ------------------------------------------------------------
+   */
+  $encrypted_aes_key =
+    (string) $form_state->getValue(
+      'encrypted_aes_key'
+    );
+
+  /*
+   * Get encrypted username/password.
+   */
+  $encrypted_credentials =
+    (string) $form_state->getValue(
+      'encrypted_credentials'
+    );
+
+  /*
+   * ------------------------------------------------------------
+   * If JavaScript did not run, leave Drupal's normal
+   * processing untouched.
+   * ------------------------------------------------------------
+   */
+  if (
+    $encrypted_aes_key === '' ||
+    $encrypted_credentials === ''
+  ) {
+    return;
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * Get RSA private key.
+   * ------------------------------------------------------------
+   */
+  $private_key =
+    \Drupal::state()->get(
+      'encrypted_login.rsa_private_key'
+    );
+
+  if (empty($private_key)) {
+
+    \Drupal::logger('encrypted_login')->error(
+      'RSA private key is missing.'
+    );
+
+    $form_state->setErrorByName(
+      'name',
+      t(
+        'Authentication encryption is not configured.'
+      )
+    );
+
+    return;
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * Decode RSA-encrypted AES key.
+   * ------------------------------------------------------------
+   */
+  $wrapped_key =
+    base64_decode(
+      $encrypted_aes_key,
+      TRUE
+    );
+
+  if (
+    $wrapped_key === FALSE ||
+    $wrapped_key === ''
+  ) {
+
+    \Drupal::logger('encrypted_login')->error(
+      'Invalid base64 RSA-wrapped AES key.'
+    );
+
+    $form_state->setErrorByName(
+      'name',
+      t(
+        'Authentication error. Please try again.'
+      )
+    );
+
+    return;
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * RSA decrypt AES key.
+   * ------------------------------------------------------------
+   */
+  $aes_key_base64 = '';
+
+  $success =
+    openssl_private_decrypt(
+      $wrapped_key,
+      $aes_key_base64,
+      $private_key,
+      OPENSSL_PKCS1_PADDING
+    );
+
+  if (
+    !$success ||
+    $aes_key_base64 === ''
+  ) {
+
+    while (openssl_error_string()) {
+      // Clear OpenSSL error queue.
+    }
+
+    \Drupal::logger('encrypted_login')->error(
+      'RSA decryption of AES key failed.'
+    );
+
+    $form_state->setErrorByName(
+      'name',
+      t(
+        'Authentication error. Please try again.'
+      )
+    );
+
+    return;
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * Decode AES key.
+   * ------------------------------------------------------------
+   */
+  $aes_key =
+    base64_decode(
+      $aes_key_base64,
+      TRUE
+    );
+
+  /*
+   * AES-256 requires exactly 32 bytes.
+   */
+  if (
+    $aes_key === FALSE ||
+    strlen($aes_key) !== 32
+  ) {
+
+    \Drupal::logger('encrypted_login')->error(
+      'RSA decrypted value is not a 32-byte AES key.'
+    );
+
+    $form_state->setErrorByName(
+      'name',
+      t(
+        'Authentication error. Please try again.'
+      )
+    );
+
+    return;
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * AES decrypt username + password.
+   * ------------------------------------------------------------
+   */
+  $credentials =
+    encrypted_login_decrypt_aes(
+      $encrypted_credentials,
+      $aes_key
+    );
+
+  if (
+    $credentials === FALSE ||
+    $credentials === ''
+  ) {
+
+    \Drupal::logger('encrypted_login')->error(
+      'AES credentials decryption failed.'
+    );
+
+    $form_state->setErrorByName(
+      'name',
+      t(
+        'Authentication error. Please try again.'
+      )
+    );
+
+    return;
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * Decode decrypted JSON.
+   * ------------------------------------------------------------
+   */
+  $credentials_data =
+    json_decode(
+      $credentials,
+      TRUE
+    );
+
+  if (
+    !is_array($credentials_data) ||
+    !array_key_exists(
+      'username',
+      $credentials_data
+    ) ||
+    !array_key_exists(
+      'password',
+      $credentials_data
+    )
+  ) {
+
+    \Drupal::logger('encrypted_login')->error(
+      'Decrypted credentials JSON is invalid.'
+    );
+
+    $form_state->setErrorByName(
+      'name',
+      t(
+        'Authentication error. Please try again.'
+      )
+    );
+
+    return;
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * Get decrypted username.
+   * ------------------------------------------------------------
+   */
+  $username =
+    (string) $credentials_data['username'];
+
+  /*
+   * Get decrypted password.
+   */
+  $password =
+    (string) $credentials_data['password'];
+
+  if (
+    $username === '' ||
+    $password === ''
+  ) {
+
+    $form_state->setErrorByName(
+      'name',
+      t(
+        'Username and password are required.'
+      )
+    );
+
+    return;
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * Get original user input.
+   * ------------------------------------------------------------
+   */
+  $user_input =
+    $form_state->getUserInput();
+
+  /*
+   * ------------------------------------------------------------
+   * Detect registration.
+   * ------------------------------------------------------------
+   */
+  $is_registration =
+    isset($form['account']);
+
+  /*
+   * ------------------------------------------------------------
+   * RESTORE USERNAME.
+   * ------------------------------------------------------------
+   *
+   * Both login and registration expect the username at
+   * the root level of the user input data.
+   */
+  $user_input['name'] =
+    $username;
+
+  /*
+   * ------------------------------------------------------------
+   * RESTORE PASSWORD.
+   * ------------------------------------------------------------
+   */
+  if ($is_registration) {
+
+    /*
+     * Registration uses a password confirmation element.
+     *
+     * The raw browser POST data expects an array:
+     *
+     * pass[pass1]
+     * pass[pass2]
+     */
+    $user_input['pass'] = [
+      'pass1' => $password,
+      'pass2' => $password,
+    ];
+  }
+  else {
+
+    /*
+     * Login uses a standard password element.
+     *
+     * 'pass' is a string.
+     */
+    $user_input['pass'] =
+      $password;
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * Put corrected input back into FormState.
+   * ------------------------------------------------------------
+   */
+  $form_state->setUserInput(
+    $user_input
+  );
+
+  /*
+   * ------------------------------------------------------------
+   * Update FormState values.
+   * ------------------------------------------------------------
+   *
+   * Both login and registration receive the decrypted
+   * username as a string.
+   *
+   * The password is also supplied as a string for the
+   * processed form value.
+   */
+  $form_state->setValue(
+    'name',
+    $username
+  );
+
+  $form_state->setValue(
+    'pass',
+    $password
+  );
+}
+
+
+/**
+ * Decrypts:
+ *
+ * Base64(
+ *   IV ||
+ *   ciphertext ||
+ *   authentication tag
+ * )
+ *
+ * AES-256-GCM.
+ *
+ * @param string $encrypted_data
+ *   Base64 encoded AES encrypted data.
+ * @param string $key
+ *   Raw 32-byte AES key.
+ *
+ * @return string|false
+ *   Decrypted plaintext or FALSE.
+ */
+function encrypted_login_decrypt_aes(
+  string $encrypted_data,
+  string $key
+) {
+
+  /*
+   * AES-256 requires a 32-byte key.
+   */
+  if (strlen($key) !== 32) {
+    return FALSE;
+  }
+
+  /*
+   * Base64 decode encrypted payload.
+   */
+  $payload =
+    base64_decode(
+      $encrypted_data,
+      TRUE
+    );
+
+  if ($payload === FALSE) {
+    return FALSE;
+  }
+
+  /*
+   * Minimum payload:
+   *
+   * 12 bytes IV
+   * +
+   * 1 byte ciphertext
+   * +
+   * 16 bytes authentication tag
+   *
+   * = 29 bytes.
+   */
+  if (strlen($payload) < 29) {
+    return FALSE;
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * Extract IV.
+   * ------------------------------------------------------------
+   */
+  $iv =
+    substr(
+      $payload,
+      0,
+      12
+    );
+
+  /*
+   * Get ciphertext + authentication tag.
+   */
+  $ciphertext_and_tag =
+    substr(
+      $payload,
+      12
+    );
+
+  /*
+   * Last 16 bytes are the GCM authentication tag.
+   */
+  $tag =
+    substr(
+      $ciphertext_and_tag,
+      -16
+    );
+
+  /*
+   * Everything before the tag is ciphertext.
+   */
+  $ciphertext =
+    substr(
+      $ciphertext_and_tag,
+      0,
+      -16
+    );
+
+  if (
+    $ciphertext === '' ||
+    strlen($tag) !== 16
+  ) {
+    return FALSE;
+  }
+
+  /*
+   * ------------------------------------------------------------
+   * AES-256-GCM decrypt.
+   * ------------------------------------------------------------
+   */
+  $plaintext =
+    openssl_decrypt(
+      $ciphertext,
+      'aes-256-gcm',
+      $key,
+      OPENSSL_RAW_DATA,
+      $iv,
+      $tag,
+      ''
+    );
+
+  if ($plaintext === FALSE) {
+    return FALSE;
+  }
+
+  return $plaintext;
+}

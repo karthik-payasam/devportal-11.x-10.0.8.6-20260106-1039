@@ -1,0 +1,263 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "The Configuration Update Base module provides functionality that other modules can use, related to updating and computing differences between configuration versions. This module does not provide any end-user functionality itself."
+msgstr "Yapılandırma Güncelleme Temeli modülü, yapılandırma sürümleri arasında farklılıkların güncellenmesi ve hesaplanmasıyla ilgili, diğer modüllerin kullanabildiği işlevselliği sağlar. Bu modülün kendisi bir son kullanıcı işlevselliği sağlamaz."
+
+msgid "Configuration Update Base"
+msgstr "Yapılandırma Güncelleme Temeli"
+
+msgid "Provides basic revert and update functionality for other modules."
+msgstr "Diğer modüller için temel geri döndürme ve güncelleme işlevleri sağlar."
+
+msgid "The Configuration Update Reports module provides a report that allows you to see the differences between the default configuration provided by the current versions of your installed modules, themes, and install profile, and the active configuration of your site. From this report, you can also import new configuration provided by updates, and revert your active configuration to the provided default values."
+msgstr "Yapılandırma Güncelleme Raporları modülü, kurulu modülleriniz, temalarınız ve kurulum profilinizin geçerli sürümleriyle sağlanan varsayılan yapılandırma ile sitenizin etkin yapılandırması arasındaki farkları görmenizi sağlayan bir rapor sağlar. Bu rapordan güncellemeler tarafından sağlanan yeni yapılandırmayı içe aktarabilir ve etkin yapılandırmanızı sağlanan varsayılan değerlere geri döndürebilirsiniz."
+
+msgid "Uses"
+msgstr "Kullanım alanları"
+
+msgid "Checking for configuration differences"
+msgstr "Yapılandırma farklılıkları denetleniyor"
+
+msgid "The <a href=\":report\">Updates report</a> shows you configuration that differs between your site's active configuration and the installed modules, themes, and install profile. Choose a particular configuration type (or All), or run the report for a particular module, theme, or your install profile."
+msgstr "<a href=\":report\">Güncellemeler raporu</a>, sitenizin etkin yapılandırması ile kurulu modüller, temalar ve kurulum profili arasında farklılık gösteren yapılandırmayı size gösterir. Belirli bir yapılandırma tipi (veya Tümü) seçin ya da belirli bir modül, tema veya kurulum profiliniz için raporu çalıştırın."
+
+msgid "This report shows which default configuration items provided by the current versions of your installed modules, themes, and install profile differ from the active configuration of your site. You can generate the report for all configuration of a certain type; for a particular installed module, theme, or your install profile (only modules, themes, and install profiles that actually provide configuration are listed); or for all configuration."
+msgstr "Bu rapor, kurulu modülleriniz, temalarınız ve kurulum profilinizin geçerli sürümleri tarafından sağlanan hangi varsayılan yapılandırma öğelerinin sitenizin etkin yapılandırmasından farklı olduğunu gösterir. Belirli bir tipin tüm yapılandırması için; belirli bir kurulu modül, tema ya da kurulum profiliniz için (yalnızca gerçekten yapılandırma sağlayan modüller, temalar ve kurulum profilleri listelenir) veya tüm yapılandırma için rapor oluşturabilirsiniz."
+
+msgid "Some configuration provided by modules has dependencies, and is only added to your system when all the dependencies are satisfied. This is known as <em>optional</em> configuration."
+msgstr "Modüller tarafından sağlanan bazı yapılandırmaların bağımlılıkları vardır ve bunlar yalnızca tüm bağımlılıklar karşılandığında sisteminize eklenir. Bu <em>isteğe bağlı</em> yapılandırma olarak bilinir."
+
+msgid "Differences, including missing and added configuration, can be due to either an updated module or theme providing different configuration from when you installed it, or to changes made by site administrators. This report does not differentiate between these two sources for differences, and note that an install profile can also silently override module/theme configuration. Overrides (such as those in your settings.php file) and translations are not considered when looking at differences."
+msgstr "Eksik ve eklenen yapılandırma da dahil farklılıklar, kurduğunuz andakinden farklı yapılandırma sağlayan, güncellenmiş bir modül ya da tema veya site yöneticileri tarafından yapılan değişiklikler nedeniyle olabilir. Bu rapor, bu iki kaynak arasında farklılıkları göstermez ve bir kurulum profilinin de modül/tema yapılandırmasını sessiz bir biçimde geçersiz kılabileceğini göz önünde bulundurun. Farklılıklara bakılırken geçersiz kılma işlemleri (settings.php dosyanızdakiler gibi) ve çeviriler göz önünde bulundurulmaz."
+
+msgid "Most configuration is organized into a hierarchy of settings; at a minimum, it is a one-level hierarchy where each setting has a name and a value, and the hierarchy comes in when some of the settings have multiple components."
+msgstr "Yapılandırmanın çoğu bir ayarlar hiyerarşisi şeklinde düzenlenir, minimum seviyede, her ayarın bir adının ve değerinin olduğu, tek düzeyli bir hiyerarşidir ve hiyerarşi, ayarların bazılarında birden çok bileşen olduğunda görülür. "
+
+msgid "Configuration items are normalized and formatted before computing differences. The normalization step alphabetizes the components at each level of the hierarchy, and removes a few components whose differences should be ignored, such as the UUID. The formatting step shows the full hierarchy of each configuration value with :: separators for the hierarchy levels, and a : separator between the lowest-level setting name and the value, so that in a line-by-line diff you can always see which values are actually different. Green lines with + signs have been added, and yellow lines with - signs have been removed."
+msgstr "Farklılıklar hesaplanmadan önce yapılandırma öğeleri olağanlaştırılır ve biçimlendirilir. Olağanlaştırma adımı, hiyerarşinin her düzeyinde bileşenleri harflendirir ve farklılıkları yoksayılması gereken birkaç bileşeni (UUID gibi) kaldırır. Biçimlendirme adımı, her yapılandırma değerinin tüm hiyerarşini, hiyerarşi düzeyleri için :: ayırıcıları ve en düşük düzeydeki ayar adı ve değeri arasında bir : ayırıcısı ile gösterir; böylece, satır satır bir ayrım içinde her zaman hangi değerlerin gerçekten farklı olduğunu görebilirsiniz. + işaretli yeşil satırlar eklenmiş ve - işaretli sarı satırlar kaldırılmıştır."
+
+msgid "Note that differences are considering the base configuration, without overrides from your settings.php file, or translations."
+msgstr "Farklılıklarda, settings.php dosyanızdaki geçersiz kılma işlemleri ya da çeviriler olmadan, temel yapılandırmanın göz önünde bulundurulduğuna dikkat edin. "
+
+msgid "Updates report"
+msgstr "Güncellemeler raporu"
+
+msgid "Configuration Update Reports"
+msgstr "Yapılandırma Güncelleme Raporları"
+
+msgid "Adds an updates report and revert functionality to configuration management."
+msgstr "Yapılandırma yönetimine bir güncelleme raporu ve geri döndürme işlevi ekler."
+
+msgid "View configuration updates report"
+msgstr "Yapılandırma güncellemeleri raporunu görüntüle"
+
+msgid "Revert any configuration"
+msgstr "Yapılandırmaları geri çevir"
+
+msgid "Delete any configuration"
+msgstr "Yapılandırmaları sil"
+
+msgid "Import"
+msgstr "İçe aktar"
+
+msgid "Differences"
+msgstr "Farklılıklar"
+
+msgid "Revert"
+msgstr "Geri çevir"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Configuration Update Reports settings"
+msgstr "Yapılandırma Güncelleme Raporları ayarları"
+
+msgid "Ignored configuration items"
+msgstr "Yoksayılan yapılandırma öğeleri"
+
+msgid "No added config."
+msgstr "Eklenen yapılandırma yok."
+
+msgid "No missing config."
+msgstr "Eksik yapılandırma yok."
+
+msgid "No inactive config."
+msgstr "Devre dışı yapılandırma yok."
+
+msgid "No different config"
+msgstr "Farklı yapılandırma yok"
+
+msgid "Config is missing, cannot diff."
+msgstr "Yapılandırma eksik, farklılaştırılamıyor."
+
+msgid "The configuration item @name was reverted to its source."
+msgstr "Yapılandırma öğesi @name, kaynağına döndürüldü."
+
+msgid "There was an error and the configuration item @name was not reverted."
+msgstr "Bir hata oluştu ve yapılandırma öğesi @name geri döndürülemedi."
+
+msgid "The configuration item @name was imported from its source."
+msgstr "Yapılandırma öğesi @name kaynağından içe aktarıldı."
+
+msgid "There was an error and the configuration item @name was not imported."
+msgstr "Bir hata oluştu ve yapılandırma öğesi @name içe aktarılmadı."
+
+msgid "Simple configuration"
+msgstr "Basit yapılandırma"
+
+msgid "Config difference for @type @name"
+msgstr "@type @name için yapılandırma farklılığı"
+
+msgid "Source config"
+msgstr "Kaynak yapılandırma"
+
+msgid "Site config"
+msgstr "Site yapılandırması"
+
+msgid "There are no changes."
+msgstr "Değişiklik yok."
+
+msgid "Revert to source"
+msgstr "Kaynağa geri çevir"
+
+msgid "Export"
+msgstr "Dışa aktar"
+
+msgid "Back to 'Updates report' page"
+msgstr "'Güncelleme raporu' sayfasına dön"
+
+msgid "Generate new report"
+msgstr "Yeni rapor oluştur"
+
+msgid "Report type"
+msgstr "Rapor tipi"
+
+msgid "Report on"
+msgstr "Raporlanma tarihi"
+
+msgid "Everything"
+msgstr "Her şey"
+
+msgid "Full report"
+msgstr "Tam rapor"
+
+msgid "Single configuration type"
+msgstr "Tekli yapılandırma tipi"
+
+msgid "Single module"
+msgstr "Tekli modül"
+
+msgid "Single theme"
+msgstr "Tekli tema"
+
+msgid "Installation profile"
+msgstr "Kurulum profili"
+
+msgid "All configuration"
+msgstr "Tüm yapılandırma"
+
+msgid "@name configuration"
+msgstr "@name yapılandırması"
+
+msgid "@name module"
+msgstr "@name modülü"
+
+msgid "@name theme"
+msgstr "@name teması"
+
+msgid "@name profile"
+msgstr "@name profili"
+
+msgid "Configuration updates report for @label"
+msgstr "@label için yapılandırma güncellemeleri raporu"
+
+msgid "Missing configuration items"
+msgstr "Eksik yapılandırma öğeleri"
+
+msgid "None: all provided configuration items are in your active configuration."
+msgstr "Yok: Tüm sağlanan yapılandırma öğeleri etkin yapılandırmanız içindedir. "
+
+msgid "Inactive optional items"
+msgstr "Etkin olmayan isteğe bağlı öğeler"
+
+msgid "None: all optional configuration items are in your active configuration."
+msgstr "Yok: Tüm isteğe bağlı yapılandırma öğeleri etkin yapılandırmanız içindedir."
+
+msgid "Added configuration items"
+msgstr "Eklenen yapılandırma öğeleri"
+
+msgid "None: all active configuration items of this type were provided by modules, themes, or install profile."
+msgstr "Yok: Bu tipteki tüm etkin yapılandırma öğeleri modüller, temalar ya da kurulum profili tarafından sağlandı."
+
+msgid "Changed configuration items"
+msgstr "Değiştirilen yapılandırma öğeleri"
+
+msgid "None: no active configuration items differ from their current provided versions."
+msgstr "Yok: Geçerli sağlanan sürümlerinden farklı olan etkin yapılandırma öğesi yok."
+
+msgid "Machine name"
+msgstr "Makine adı"
+
+msgid "Label (if any)"
+msgstr "Etiket (varsa)"
+
+msgid "Type"
+msgstr "Tip"
+
+msgid "Provider"
+msgstr "Sağlayıcı"
+
+msgid "Operations"
+msgstr "İşlemler"
+
+msgid "Import from source"
+msgstr "Kaynaktan içe aktar"
+
+msgid "Show differences"
+msgstr "Farkları göster"
+
+msgid "Malformed config file @config_name."
+msgstr "Bozuk biçimli yapılandırma dosyası @config_name."
+
+msgid "Are you sure you want to delete the %type config %item?"
+msgstr "%type %item yapılandırma öğesini silmek istediğinizden emin misiniz?"
+
+msgid "This action cannot be undone. Manually deleting configuration from this page can cause problems on your site due to missing dependencies, and should only be done if there is no other way to delete a problematic piece of configuration."
+msgstr "Bu işlem geri alınamaz. Bu sayfadan yapılandırmanın el ile silinmesi eksik bağımlılıklar nedeniyle sitenizde sorunlara neden olabilir ve yalnızca sorunlu bir yapılandırma parçasını silmenin başka yolu yoksa yapılmalıdır."
+
+msgid "The configuration %item has been deleted."
+msgstr "%item yapılandırması silindi."
+
+msgid "Are you sure you want to import the %type config %item from its source configuration?"
+msgstr "%type yapılandırmasını %item kaynak yapılandırmasından içe aktarmak istediğinizden emin misiniz?"
+
+msgid "Configuration will be added to your site. This action cannot be undone."
+msgstr "Yapılandırma sitenize eklenecek. Bu işlem geri alınamaz."
+
+msgid "The configuration %item has been imported from its source."
+msgstr "%item yapılandırması, kaynağından içe aktarıldı."
+
+msgid "Are you sure you want to revert the %type config %item to its source configuration?"
+msgstr "%type %item yapılandırmasını kaynak yapılandırmasına geri çevirmek istediğinizden emin misiniz?"
+
+msgid "Customizations will be lost. This action cannot be undone."
+msgstr "Özelleştirmeler kaybolacak. Bu işlem geri alınamaz."
+
+msgid "The configuration %item has been reverted to its source."
+msgstr "%item yapılandırması, kaynağına geri döndürüldü."
+

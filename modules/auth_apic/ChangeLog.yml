@@ -1,0 +1,380 @@
+changes:
+  6.3.1:
+  - Make php 8.3 compat (#799) (#801)
+  6.3.0:
+  - update version 6.2.7 -> 6.3.0
+  6.2.6:
+  - velox/devportal#8913 - CIO SonarQube
+  6.2.5:
+  - change portal-ci-v10-0 to portal-ci-v10-0-8
+  6.2.4:
+  - avt fixes (#798)
+  6.2.3:
+  - add env.GIT_COMMIT_SUMMARY
+  6.2.2:
+  - Using the external consumer allways for OIDC redirect
+  6.2.1:
+  - Update .whitesource (#790)
+  6.2.0:
+  - update version 6.1.14 -> 6.2.0
+  6.1.13:
+  - Fix icons (#787) (#788)
+  6.1.12:
+  - fix unit tests (#786)
+  - velox/devportal#8738 - Copyright 2024
+  6.1.11:
+  - register form validation catches URLs of all formats
+  6.1.10:
+  - Add unauthorized message to more failed login cases (#780)
+  6.1.9:
+  - adopted using ModuleHandlerInterface instead of class ModuleHandler
+  6.1.8:
+  - Made failed login errors more consistent (#772)
+  6.1.7:
+  - velox/devportal#8193 - add SonarQube integration
+  6.1.6: null
+  6.1.5:
+  - apimesh -> velox
+  6.1.4:
+  - Send custom fields to apim on first login (#769)
+  6.1.3:
+  - OIDC dos v10.0 (#767)
+  6.1.2:
+  - Headers allowed isnt in function
+  6.1.1:
+  - Update auth_apic.info.yml
+  6.0.6-6.1.0:
+  - update version 6.0.6 -> 6.0.6-6.1.0
+  6.0.5:
+  - Fixed behat tests (#762)
+  - Show sign up success when username/email is taken (#759)
+  6.0.4:
+  - Make admin failed login error the same as non-admin (#755)
+  6.0.3:
+  - Rename twig templates (#753)
+  6.0.2:
+  - mock environment correctly for invites (#749) (#751)
+  6.0.1:
+  - fix ci channel
+  8.x-5.3.3:
+  - Save codesnippet language to apim (#746)
+  8.x-5.3.2:
+  - DeleteUserForm Fix - Delete owner after corg (#743)
+  8.x-5.3.1:
+  - Fix for password_policy_username on password reset form
+  - Metadata save v10.0.5 (#737)
+  8.x-5.3.0:
+  - update version 8.x-5.2.3 -> 8.x-5.3.0
+  8.x-5.2.2:
+  - Fix OIDC redirects to homepage (#725)
+  8.x-5.2.1:
+  - Use new pass policy function
+  - Use new pass policy function
+  8.x-5.2.0:
+  - update version 8.x-5.1.6 -> 8.x-5.2.0
+  8.x-5.1.5:
+  - Fixed redirect when using OIDC (#717)
+  8.x-5.1.4:
+  - deleteFix v10.0.5 (#715)
+  8.x-5.1.3:
+  - Don't login users on form error (#711)
+  8.x-5.1.2:
+  - Improved jwt token validation (#702) (#707)
+  8.x-5.1.1:
+  - Error messages should be red (#693) (#705)
+  8.x-5.1.0:
+  - update version 8.x-5.0.8 -> 8.x-5.1.0
+  8.x-5.0.7:
+  - Handle null responses (#698)
+  8.x-5.0.6:
+  - Error handling for unexpected activation url (#694)
+  8.x-5.0.5:
+  - users need to be in consumer orgs
+  8.x-5.0.4:
+  - users need to be in consumer orgs
+  8.x-5.0.3:
+  - update copyright statements (#691)
+  8.x-5.0.2:
+  - 7735 redirect (#690)
+  8.x-5.0.1:
+  - Only redirect successful change password attempts (#687)
+  8.x-5.0.0:
+  - update slack channel to $CICHAN
+  8.x-4.0.56:
+  - url encode consumer org title (#678)
+  8.x-4.0.55:
+  - use more secure passwords
+  8.x-4.0.54: null
+  8.x-4.0.53: null
+  8.x-4.0.52:
+  - Update .whitesource
+  8.x-4.0.51:
+  - Update .whitesource
+  - Add .whitesource configuration file
+  8.x-4.0.50: null
+  8.x-4.0.49:
+  - remove dpm call (#672)
+  - Handle JWT tokens in token parser (#671)
+  8.x-4.0.48:
+  - moved custom field code
+  8.x-4.0.47:
+  - Check session invite token before query parameter
+  8.x-4.0.46: null
+  8.x-4.0.45:
+  - string translations - auth_apic
+  - fix up unit tests 2 - auth_apic
+  - fix up unit tests - auth_apic
+  - deprecated functions - auth_apic
+  8.x-4.0.44: null
+  8.x-4.0.43:
+  - remove references to 'admin'
+  8.x-4.0.42:
+  - added destination check before redirect on login
+  8.x-4.0.41:
+  - Fixed ibm_apim tests (#656)
+  - Fixed deleteLocalAccount and tests (#651)
+  8.x-4.0.40:
+  - Fixed oidc first time form (#652)
+  8.x-4.0.39: null
+  8.x-4.0.38:
+  - git -> gitci
+  8.x-4.0.37:
+  - Jenkinsfile refactor fixes
+  - refactor Jenkinsfile for the new portal.groovy
+  8.x-4.0.36:
+  - Fixed invites for existing users (#648)
+  - Improved invitation tests (#646)
+  8.x-4.0.35:
+  - Fixed sign in on member invitations
+  8.x-4.0.34:
+  - Fix for strict samesite
+  8.x-4.0.33:
+  - prune oidc states (#635)
+  8.x-4.0.32:
+  - Added pending_approval state (#633)
+  8.x-4.0.31:
+  - Rename OidcRegisterForm to OidcFirstTimeLoginForm
+  8.x-4.0.30:
+  - test doesnt work
+  8.x-4.0.29:
+  - Change invites from sessionBasedTempStore to privateTempStore (#625)
+  8.x-4.0.28: null
+  8.x-4.0.27:
+  - update tests for captcha possibly being present
+  8.x-4.0.26:
+  - update tests for captcha possibly being present
+  8.x-4.0.25:
+  - Switch to catching Throwable
+  8.x-4.0.24:
+  - assertRegExp is deprecated use assertMatchesRegularExpression instead
+  - see if this fixes the NPE in the test
+  8.x-4.0.23:
+  - Show pending approval message on oidc login (#620)
+  8.x-4.0.22: null
+  8.x-4.0.21:
+  - Added support for account approvals
+  8.x-4.0.20:
+  - use "IBM API Developer Portal" instead of API Connect
+  8.x-4.0.19:
+  - handle a 201 too
+  8.x-4.0.18: null
+  8.x-4.0.17: null
+  8.x-4.0.16:
+  - need to set flood var on our form
+  8.x-4.0.15:
+  - fix parent constructor call
+  8.x-4.0.14:
+  - need to have a UR title set even if no URs
+  8.x-4.0.13:
+  - dont pass in registry if not set
+  - need to not override existing method and use different name instead
+  - fix up unit tests
+  - tidy up some more warnings
+  - need to have a user registry
+  - only if url is not null
+  8.x-4.0.12:
+  - fix render (#613)
+  8.x-4.0.11: null
+  8.x-4.0.10:
+  - missing group anotation
+  - fix missing password form constructor parameter
+  - urghh case issues
+  - code order matters for test
+  - fix remaining test
+  - signature is not base64 encoded json
+  - signature is not base64 encoded json
+  - fix unit tests
+  - tidy up some code smells
+  8.x-4.0.9: null
+  8.x-4.0.8:
+  - use void
+  - deprecated function
+  8.x-4.0.7: null
+  8.x-4.0.6: null
+  8.x-4.0.5:
+  - remove deprecated entity.manager
+  8.x-4.0.4:
+  - Oidc invite fix (#606)
+  8.x-4.0.3:
+  - handle null response
+  8.x-4.0.2: null
+  8.x-4.0.1: null
+  8.x-3.0.50: null
+  8.x-3.0.49:
+  - Added action parameter (#605)
+  8.x-3.0.48:
+  - Add drupal core compatibility info
+  8.x-3.0.47:
+  - Copyright statements for 2021
+  8.x-3.0.46:
+  - explicitly mention email
+  - Added an error message
+  8.x-3.0.45:
+  - remove extra `the`
+  8.x-3.0.44: null
+  8.x-3.0.43: null
+  8.x-3.0.42:
+  - Always update off apim response (#599)
+  8.x-3.0.41:
+  - Fixed tests
+  - Check for name and email on oidc register
+  8.x-3.0.40:
+  - add missing services
+  8.x-3.0.39:
+  - fix logic
+  8.x-3.0.38:
+  - avoid warnings about nulls
+  8.x-3.0.37:
+  - Stop user being logged out on login
+  8.x-3.0.36: null
+  8.x-3.0.35:
+  - Another fix
+  - More test fixes
+  - Fixed bug and maybe tests, added tests
+  - Fixed login bug
+  - Removed icons from oidc sign in/up buttons
+  - Oidc login fix
+  - minor invitation fix
+  - Import module handler
+  - Oidc form for log in
+  - Use a form for oidc register
+  8.x-3.0.34:
+  - Fixed UR icons on register form (#587)
+  8.x-3.0.33:
+  - Show icons on reset password (#586)
+  8.x-3.0.32:
+  - Oidc register form (#585)
+  8.x-3.0.31:
+  - hide change password link for ro registries
+  8.x-3.0.30:
+  - Fixed redirect when logging in with oidc (#584)
+  8.x-3.0.29:
+  - reverse form order
+  8.x-3.0.28: null
+  8.x-3.0.27:
+  - fix tests for new getting started page
+  8.x-3.0.26:
+  - dont allow create account if logged in
+  8.x-3.0.25:
+  - Fixed Unit test
+  - Fixed tests
+  - small fix
+  - Update custom fields on login
+  8.x-3.0.24:
+  - use the git based layout for the admin one time link form too
+  8.x-3.0.23:
+  - carbon x for register and reset pwd
+  8.x-3.0.22:
+  - carbon x for login panel
+  8.x-3.0.21:
+  - update field label
+  - Submit -> Save
+  8.x-3.0.20:
+  - remove glyph icons
+  8.x-3.0.19:
+  - Use getter functions for get response (#578)
+  8.x-3.0.18: null
+  8.x-3.0.17:
+  - Save custom fields on register
+  8.x-3.0.16:
+  - Store custom fields in apim
+  8.x-3.0.15: null
+  8.x-3.0.14:
+  - Make checks case insensitive
+  8.x-3.0.13: null
+  8.x-3.0.12:
+  - update interface
+  - change funcs to be public
+  - updated test
+  - Removed use of deprecated functions
+  - Replaced drupal set message and entity manager
+  8.x-3.0.11:
+  - Validate input (#564)
+  8.x-3.0.10: null
+  8.x-3.0.9:
+  - Added a test for ports and made it more defensive (#563)
+  - Fixed OIDC tests and added another (#561)
+  - Allows more query parameters in oidc
+  8.x-3.0.8:
+  - Add port to redirect (#558)
+  8.x-3.0.7:
+  - user design form finesse
+  8.x-3.0.6:
+  - Improved logs (#556)
+  8.x-3.0.5:
+  - Fixed invitations for portal redirect oidc (#555)
+  8.x-3.0.4:
+  - Fixed test
+  - minor fix
+  - Fix password reset
+  - Fixed LinkedIn (and potentially more)
+  8.x-3.0.3: null
+  8.x-3.0.2:
+  - Fixes password policy (#551)
+  8.x-3.0.1:
+  - Oidc proxy (#549)
+  8.x-2.0.18: null
+  8.x-2.0.17:
+  - remove constraint hook
+  - add multiple users edit profile test
+  8.x-2.0.16:
+  - minor tidy up services.yml and behat tests
+  8.x-2.0.15:
+  - Refresh tokens (#546)
+  8.x-2.0.14: null
+  8.x-2.0.13:
+  - copyright date
+  8.x-2.0.12:
+  - Update Jenkinsfile
+  8.x-2.0.11:
+  - fix inherited variable case
+  8.x-2.0.10: null
+  8.x-2.0.9:
+  - User invite wldap tests
+  - Delete wldap user test
+  - Edit profile tests
+  8.x-2.0.8:
+  - Forgot password for writable ldap
+  - Change password for writable ldap
+  8.x-2.0.7:
+  - sign in tests
+  8.x-2.0.6:
+  - Making use of AccountProxyInterface to improve compatibility.
+  8.x-2.0.5:
+  - view wldap sign up_in forms
+  8.x-2.0.4:
+  - view wldap sign up form
+  8.x-2.0.3:
+  - ChangeLogs flipped upside down.
+  8.x-2.0.2: null
+  8.x-2.0.1:
+  - Bump Major version in master to differentiate from the service stream
+  8.x-1.2.109:
+  - Update password reset form to not use autocomplete
+  8.x-1.2.108:
+  - need to update the user when remove them from org
+  8.x-1.2.107:
+  - disable caching entirely for the core user invitation / activation routes
+  8.x-1.2.106:
+  - Merge pull request
+  - Logging all the changes between the two successful builds. All the commits since the last successful build are fetched and stored in the ChangeLog.yml file. Commits are also filtered before logging them. Commits that start with 'INT' or 'bump version' are omitted.

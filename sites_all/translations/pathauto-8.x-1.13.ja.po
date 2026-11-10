@@ -1,0 +1,578 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Joined path"
+msgstr "結合されるパス"
+
+msgid "The array values each cleaned by Pathauto and then joined with the slash into a string that resembles an URL."
+msgstr "Pathauto によってそれぞれ処理された後、スラッシュを使用して URL に似たストリングの形に結合される配列値。"
+
+msgid "About"
+msgstr "アバウト"
+
+msgid "The Pathauto module provides a mechanism to automate the creation of <a href=\"path\">path</a> aliases. This makes URLs more readable and helps search engines index content more effectively.  For more information, see the <a href=\":online\">online documentation for Pathauto</a>."
+msgstr "Pathauto モジュールは、<a href=\"path\">パス</a>のエイリアスを自動的に作成するためのメカニズムを提供します。これを使用することで、URL が読みやすくなり、検索エンジンがコンテンツのインデックス付けをより効果的に行うことができます。詳しくは、<a href=\":online\">Pathauto のオンライン資料</a>を参照してください。"
+
+msgid "Uses"
+msgstr "機能"
+
+msgid "Pathauto is accessed from the tabs it adds to the list of <a href=\":aliases\">URL aliases</a>."
+msgstr "Pathauto には、<a href=\":aliases\">URL エイリアス</a>のリストに追加されるタブからアクセスします。"
+
+msgid "Creating Pathauto Patterns"
+msgstr "Pathauto パターンの作成"
+
+msgid "The <a href=\":pathauto_pattern\">\"Patterns\"</a> page is used to configure automatic path aliasing.  New patterns are created here using the <a href=\":add_form\">Add Pathauto pattern</a> button which presents a form to simplify pattern creation thru the use of <a href=\"token\">available tokens</a>. The patterns page provides a list of all patterns on the site and allows you to edit and reorder them. An alias is generated for the first pattern that applies."
+msgstr "<a href=\":pathauto_pattern\">「パターン」</a>ページは、パスのエイリアスの自動割り当てを構成するために使用します。新規パターンを作成するには、<a href=\":add_form\">Pathauto パターンを追加する</a>ためのボタンを使用します。このボタンをクリックすると、<a href=\"token\">使用可能なトークン</a>を使用して、簡単な方法でパターンを作成するためのフォームが表示されます。「パターン」ページには、サイト上のすべてのパターンのリストが表示され、ここでパターンの編集や並べ替えを行うことができます。エイリアスの生成は、該当する最初のパターンに対して行われます。"
+
+msgid "Pathauto Settings"
+msgstr "Pathauto 設定"
+
+msgid "The <a href=\":settings\">\"Settings\"</a> page is used to customize global Pathauto settings for automated pattern creation."
+msgstr "<a href=\":settings\">「設定」</a>ページは、パターンの自動作成に関する Pathauto のグローバル設定をカスタマイズするために使用します。"
+
+msgid "The <strong>maximum alias length</strong> and <strong>maximum component length</strong> values default to 100 and have a limit of @max from Pathauto. You should enter a value that is the length of the \"alias\" column of the path_alias database table minus the length of any strings that might get added to the end of the URL. The recommended and default value is 100."
+msgstr "<strong>エイリアスの最大長</strong>および<strong>コンポーネントの最大長</strong>のデフォルト値は 100 で、Pathauto から設定される上限は @max です。path_alias データベース表の「alias」列の長さから、URL の末尾に追加される可能性のあるストリングの長さを引いた値を入力する必要があります。推奨される値は 100 (デフォルト) です。"
+
+msgid "Bulk Generation"
+msgstr "一括生成"
+
+msgid "The <a href=\":pathauto_bulk\">\"Bulk Generate\"</a> page allows you to create URL aliases for items that currently have no aliases. This is typically used when installing Pathauto on a site that has existing un-aliased content that needs to be aliased in bulk."
+msgstr "<a href=\":pathauto_bulk\">「一括生成」</a>ページを使用すると、現時点でエイリアスが割り当てられていない項目に対して URL エイリアスを作成できます。これは、多くの場合、エイリアスが割り当てられていない既存のコンテンツがあり、これらのコンテンツに対して一括でエイリアスを作成する必要のあるサイトに、Pathauto をインストールするときに使用されます。"
+
+msgid "Delete Aliases"
+msgstr "エイリアスの削除"
+
+msgid "The <a href=\":pathauto_delete\">\"Delete Aliases\"</a> page allows you to remove URL aliases from items that have previously been assigned aliases using pathauto."
+msgstr "<a href=\":pathauto_delete\">「エイリアスの削除」</a>ページを使用すると、以前に Pathauto を使用してエイリアスを割り当てられた項目から URL エイリアスを削除できます。"
+
+msgid "This page provides a list of all patterns on the site and allows you to edit and reorder them."
+msgstr "このページには、サイト上のすべてのパターンのリストが表示され、ここでパターンの編集や並べ替えを行うことができます。"
+
+msgid "You need to select a pattern type, then a pattern and filter, and a label. Additional types can be enabled on the <a href=\":settings\">Settings</a> page."
+msgstr "パターンのタイプを選択し、次にパターンとフィルターを選択して、ラベルを選択します。他のタイプを有効にするには、<a href=\":settings\">「設定」</a>ページを使用します。"
+
+msgid "Bulk generation can be used to generate URL aliases for items that currently have no aliases. This is typically used when installing Pathauto on a site that has existing un-aliased content that needs to be aliased in bulk."
+msgstr "一括生成を使用すると、現時点でエイリアスが割り当てられていない項目に対して URL エイリアスを生成できます。これは、多くの場合、エイリアスが割り当てられていない既存のコンテンツがあり、これらのコンテンツに対して一括でエイリアスを作成する必要のあるサイトに、Pathauto をインストールするときに使用されます。"
+
+msgid "It can also be used to regenerate URL aliases for items that have an old alias and for which the Pathauto pattern has been changed."
+msgstr "また、以前のエイリアスが割り当てられているが、Pathauto パターンが変更された項目に対して、URL エイリアスを再生成する目的でも使用できます。"
+
+msgid "Note that this will only affect items which are configured to have their URL alias automatically set. Items whose URL alias is manually set are not affected."
+msgstr "この設定は、URL エイリアスを自動設定するように構成されている項目にのみ適用されます。URL エイリアスが手動で設定されている項目は影響を受けません。"
+
+msgid "URL alias"
+msgstr "URLエイリアス"
+
+msgid "The %element-title is using the following invalid characters: @invalid-characters."
+msgstr "%element-title で以下の無効文字が使用されています: @invalid-characters"
+
+msgid "The %element-title doesn't allow the patterns ending with whitespace."
+msgstr "%element-title ではパターンの末尾を空白文字にすることはできません。"
+
+msgid "Entity of type @type was not processed. It defines the following patterns: @patterns"
+msgstr "タイプ @type のエンティティーが処理されませんでした。以下のパターンが定義されています: @patterns"
+
+msgid "Unrecognized entity bundle @entity:@bundle was not processed. It defines the following patterns: @patterns"
+msgstr "認識できないエンティティー・バンドル @entity:@bundle が処理されませんでした。以下のパターンが定義されています: @patterns"
+
+msgid "Automatic alias"
+msgstr "エイリアスの自動生成"
+
+msgid "Alias: @alias"
+msgstr "エイリアス: @alias"
+
+msgid "No alias"
+msgstr "エイリアスなし"
+
+msgid "Pathauto"
+msgstr "自動エイリアス設定"
+
+msgid "Provides a mechanism for modules to automatically generate aliases for the content they manage."
+msgstr "コンテンツ管理のために、自動的に URL エイリアス（別名）を生成するメカニズムを提供します。"
+
+msgid "Add Pathauto pattern"
+msgstr "Pathauto パターンを追加"
+
+msgid "Patterns"
+msgstr "パターン"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Bulk generate"
+msgstr "一括生成"
+
+msgid "Delete aliases"
+msgstr "エイリアスの削除"
+
+msgid "Administer pathauto"
+msgstr "自動エイリアス設定の管理"
+
+msgid "Allows a user to configure patterns for automated aliases and bulk delete URL-aliases."
+msgstr "自動的に生成されるエイリアスのパターンを設定したり、URLエイリアスを一括削除することができるようになります。"
+
+msgid "Notify of Path Changes"
+msgstr "パスの変更の通知"
+
+msgid "Determines whether or not users are notified."
+msgstr "ユーザーに通知するかどうかを選択してください。"
+
+msgid "Duplicate Pathauto pattern"
+msgstr "Pathauto パターンが重複しています"
+
+msgid "Enabled entity types"
+msgstr "有効なエンティティー・タイプ"
+
+msgid "Tokens that are safe to use and do not need to be cleaned."
+msgstr "安全に使用でき、クリーニングする必要がないトークン。"
+
+msgid "Update URL alias"
+msgstr "URLエイリアスを更新"
+
+msgid "Pathauto pattern config"
+msgstr "Pathauto パターンの設定"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "ラベル"
+
+msgid "Pattern type"
+msgstr "パターン・タイプ"
+
+msgid "Pattern"
+msgstr "パターン"
+
+msgid "Selection criteria"
+msgstr "選択基準"
+
+msgid "Selection condition"
+msgstr "選択条件"
+
+msgid "Selection logic"
+msgstr "選択ロジック"
+
+msgid "Weight"
+msgstr "ウェイト"
+
+msgid "Context definitions"
+msgstr "コンテキスト定義"
+
+msgid "Relationship"
+msgstr "リレーションシップ"
+
+msgid "Double quotation marks"
+msgstr "二重引用符"
+
+msgid "Single quotation marks (apostrophe)"
+msgstr "単一引用符 (アポストロフィ)"
+
+msgid "Back tick"
+msgstr "バック・ティック"
+
+msgid "Comma"
+msgstr "コンマ"
+
+msgid "Period"
+msgstr "期間"
+
+msgid "Hyphen"
+msgstr "ハイフン"
+
+msgid "Underscore"
+msgstr "アンダースコアー"
+
+msgid "Colon"
+msgstr "コロン"
+
+msgid "Semicolon"
+msgstr "セミコロン"
+
+msgid "Vertical bar (pipe)"
+msgstr "縦棒 (パイプ)"
+
+msgid "Left curly bracket"
+msgstr "左中括弧"
+
+msgid "Left square bracket"
+msgstr "左大括弧"
+
+msgid "Right curly bracket"
+msgstr "右中括弧"
+
+msgid "Right square bracket"
+msgstr "右大括弧"
+
+msgid "Plus sign"
+msgstr "正符号"
+
+msgid "Equal sign"
+msgstr "等号"
+
+msgid "Asterisk"
+msgstr "アスタリスク"
+
+msgid "Ampersand"
+msgstr "アンパサンド(&amp;)"
+
+msgid "Percent sign"
+msgstr "% 記号"
+
+msgid "Caret"
+msgstr "キャレット"
+
+msgid "Dollar sign"
+msgstr "ドル記号"
+
+msgid "Number sign (pound sign, hash)"
+msgstr "番号記号 (ポンド記号、ハッシュ)"
+
+msgid "At sign"
+msgstr "アットマーク"
+
+msgid "Exclamation mark"
+msgstr "感嘆符"
+
+msgid "Tilde"
+msgstr "ティルド"
+
+msgid "Left parenthesis"
+msgstr "左括弧"
+
+msgid "Right parenthesis"
+msgstr "右括弧"
+
+msgid "Question mark"
+msgstr "疑問符"
+
+msgid "Less-than sign"
+msgstr "より小記号"
+
+msgid "Greater-than sign"
+msgstr "より大記号"
+
+msgid "Slash"
+msgstr "スラッシュ"
+
+msgid "Backslash"
+msgstr "円記号"
+
+msgid "Ignoring alias %alias because it is the same as the internal path."
+msgstr "内部パスと同じであるため、エイリアス %alias を無視します。"
+
+msgid "Created new alias %alias for %source, replacing %old_alias."
+msgstr "%source のエイリアス %old_alias を置き換え、%alias を作成しました。"
+
+msgid "Created new alias %alias for %source."
+msgstr "%source のエイリアス %alias を作成しました。"
+
+msgid "The automatically generated alias %original_alias conflicted with an existing alias. Alias changed to %alias."
+msgstr "自動生成されたエイリアス %original_alias は、既存のエイリアスとコンフリクトしたため %alias に変更されました。"
+
+msgid "Pathauto state"
+msgstr "Pathauto の状態"
+
+msgid "Whether an automated alias should be created or not."
+msgstr "自動エイリアスを作成するかどうか。"
+
+msgid "Conditions"
+msgstr "条件"
+
+msgid "Duplicate"
+msgstr "複製"
+
+msgid "Uncheck this to create a custom alias below. <a href=\"@admin_link\">Configure URL alias patterns.</a>"
+msgstr "カスタムエイリアスを下で作成する場合はこのチェックを外してください。<a href=\"@admin_link\">URLエイリアスのパターンを設定。</a>"
+
+msgid "Uncheck this to create a custom alias below."
+msgstr "カスタムエイリアスを下で作成する場合はこのチェックを外してください。"
+
+msgid "Generate automatic URL alias"
+msgstr "URL エイリアスを自動生成する"
+
+msgid "Bulk updating URL aliases"
+msgstr "URLエイリアスを一括更新"
+
+msgid "Bulk deleting URL aliases"
+msgstr "URL エイリアスの一括削除中"
+
+msgid "All of your path aliases have been deleted."
+msgstr "すべての URL エイリアスが削除されました。"
+
+msgid "All of your %label path aliases have been deleted."
+msgstr "%label パスのエイリアスがすべて削除されました。"
+
+msgid "Choose the action to perform."
+msgstr "実行するアクションを選択します。"
+
+msgid "Choose the alias type(s). Separate multiple choices with commas, e.g. \"1,2,4\", or choose \"0\" for all types."
+msgstr "別名のタイプを選択します。複数の選択項目をコンマで区切ります (例: \"1,2,4\")。またはすべてのタイプの場合は \"0\" を選択します。"
+
+msgid "Invalid action argument \"@invalid_action\". Please use one of: @valid_actions"
+msgstr "アクション引数 \"@invalid_action\" が無効です。@valid_actions のいずれかを使用してください。"
+
+msgid "Invalid type argument \"@invalid_types\". Please choose from the following: @valid_types"
+msgstr "タイプ引数 \"@invalid_types\" が無効です。@valid_types から選択してください。"
+
+msgid "Generate a URL alias for un-aliased paths only."
+msgstr "別名が割り当てられていないパスの URL 別名のみ生成します。"
+
+msgid "Update the URL alias for paths having an old URL alias."
+msgstr "以前の URL 別名が存在するパスの URL 別名を更新します。"
+
+msgid "Regenerate URL aliases for all paths."
+msgstr "すべてのパスの URL 別名を再生成します。"
+
+msgid "Pathauto pattern"
+msgstr "Pathauto パターン"
+
+msgid "Choose aliases to delete"
+msgstr "削除するエイリアスを選択"
+
+msgid "All aliases"
+msgstr "すべてのエイリアス"
+
+msgid "Delete all aliases. Number of aliases which will be deleted: %count."
+msgstr "すべての URL エイリアスを削除します。 削除される URL エイリアスの数： %count"
+
+msgid "Delete aliases for all @label. Number of aliases which will be deleted: %count."
+msgstr "@labelページのすべての URL エイリアスを削除します。 削除される URL エイリアスの数： %count"
+
+msgid "Delete options"
+msgstr "削除オプション"
+
+msgid "Only delete automatically generated aliases"
+msgstr "自動生成されたエイリアスのみ削除"
+
+msgid "When checked, aliases which have been manually set are not affected by this mass-deletion."
+msgstr "チェック・マークを付けると、手動で設定されたエイリアスが、この一括削除の対象になりません。"
+
+msgid "<strong>Note:</strong> there is no confirmation. Be sure of your action before clicking the \"Delete aliases now!\" button.<br />You may want to make a backup of the database and/or the path_alias and path_alias_revision tables prior to using this feature."
+msgstr "<strong>注:</strong> 確認は行われません。「今すぐ別名を削除」ボタンをクリックする前に、アクションを確認してください。<br />この機能を使用する前に、データベースまたは path_alias および path_alias_revision テーブル (あるいはその両方) のバックアップを作成することをお勧めします。"
+
+msgid "Delete aliases now!"
+msgstr "エイリアスの削除"
+
+msgid "All of your automatically generated path aliases have been deleted."
+msgstr "自動生成されたパス・エイリアスがすべて削除されました。"
+
+msgid "All of your automatically generated %label path aliases have been deleted."
+msgstr "自動生成された %label パスのエイリアスがすべて削除されました。"
+
+msgid "An error occurred while processing @operation with arguments : @args"
+msgstr "引数の @operation を処理中にエラーが発生しました: @args"
+
+msgid "Select the types of paths for which to generate URL aliases"
+msgstr "URLエイリアスを生成するパスの種類を選択"
+
+msgid "Select which URL aliases to generate"
+msgstr "生成するURLエイリアスを選択"
+
+msgid "Generate a URL alias for un-aliased paths only"
+msgstr "エイリアスのないパスのみのURLエイリアスを生成"
+
+msgid "<a href=\":url\">Pathauto settings</a> are set to ignore paths which already have a URL alias. You can only create URL aliases for paths having none."
+msgstr "<a href=\":url\">Pathauto の設定</a>が、URL エイリアスが既に存在するパスを無視するように設定されています。エイリアスが割り当てられていないパスについてのみ URL エイリアスを作成できます。"
+
+msgid "Update the URL alias for paths having an old URL alias"
+msgstr "古いURLエイリアスのパスになっているURLエイリアスを更新"
+
+msgid "Regenerate URL aliases for all paths"
+msgstr "すべてのパスのURLエイリアスを再生成"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "No new URL aliases to generate."
+msgstr "生成する新規 URL エイリアスがありません。"
+
+msgid "Generated 1 URL alias."
+msgid_plural "Generated @count URL aliases."
+msgstr[0] "1個のURLエイリアスを生成しました。"
+msgstr[1] "@count個のURLエイリアスを生成しました。"
+
+msgid "Enable to add a path field and allow to define alias patterns for the given type. Disabled types already define a path field themselves or currently have a pattern."
+msgstr "有効にすると、パス・フィールドが追加され、指定されたタイプに対してエイリアス・パターンを定義できるようになります。無効になっているタイプには、パス・フィールドが既に定義されているか、現時点でパターンが存在します。"
+
+msgid "Verbose"
+msgstr "詳細なメッセージを出力"
+
+msgid "Display alias changes (except during bulk updates)."
+msgstr "エイリアスの変更内容を表示します。（一括アップデート時は除く）"
+
+msgid "Separator"
+msgstr "セパレーター"
+
+msgid "Character used to separate words in titles. This will replace any spaces and punctuation characters. Using a space or + character can cause unexpected results."
+msgstr "タイトル中の単語を区切るために使用される文字（記号）です。 セパレーターはスペースや句読点（記号）の置換にも利用されます。 スペースやプラス（+）記号を使用した場合、予想外の結果を引き起こす可能性があります。"
+
+msgid "Character case"
+msgstr "大文字・小文字の区別"
+
+msgid "Convert token values to lowercase."
+msgstr "トークン値を小文字に変換します。"
+
+msgid "See <a href=\":pathauto-help\">Pathauto help</a> for details."
+msgstr "詳しくは <a href=\":pathauto-help\">Pathauto のヘルプ</a>を参照してください。"
+
+msgid "Maximum alias length"
+msgstr "エイリアスの最大文字数"
+
+msgid "Maximum length of aliases to generate. 100 is the recommended length. @max is the maximum possible length."
+msgstr "生成するエイリアスの最大長。推奨される長さは 100 です。指定可能な最大長は @max です。"
+
+msgid "Maximum component length"
+msgstr "コンポーネントの最大文字数"
+
+msgid "Maximum text length of any component in the alias (e.g., [title]). 100 is the recommended length. @max is the maximum possible length."
+msgstr "エイリアス内のコンポーネントの最大テキスト長 ([title] など)。推奨される長さは 100 です。指定可能な最大長は @max です。"
+
+msgid "What should Pathauto do when updating an existing content item which already has an alias?"
+msgstr "すでにエイリアスがある既存のコンテンツを更新した場合の、自動エイリアス設定の動作。"
+
+msgid "The <a href=\":url\">Redirect module settings</a> affect whether a redirect is created when an alias is deleted."
+msgstr "<a href=\":url\">リダイレクト・モジュールの設定</a>は、エイリアスが削除されたときにリダイレクトが作成されるかどうかに影響します。"
+
+msgid "Considering installing the <a href=\":url\">Redirect module</a> to get redirects when your aliases change."
+msgstr "エイリアスが変更されたときにリダイレクトを取得するには、<a href=\":url\">リダイレクト・モジュール</a>をインストールすることを検討してください。"
+
+msgid "Update action"
+msgstr "アップデート動作"
+
+msgid "Do nothing. Leave the old alias intact."
+msgstr "なにもしません。 既存の URL エイリアスをそのまま使用します。"
+
+msgid "Create a new alias. Leave the existing alias functioning."
+msgstr "新しい URL エイリアスを作成します。 既存の URL エイリアスもそのまま機能させておきます。"
+
+msgid "Create a new alias. Delete the old alias."
+msgstr "新しい URL エイリアスを作成します。 既存の URL エイリアスは削除します。"
+
+msgid "Transliterate prior to creating alias"
+msgstr "URL エイリアスを生成する前に翻訳を行う"
+
+msgid "When a pattern includes certain characters (such as those with accents) should Pathauto attempt to transliterate them into the US-ASCII alphabet?"
+msgstr "パターンに特定の文字 (アクセントを含むものなど) が含まれている場合に、US-ASCII アルファベットへの文字変換を Pathauto で試行するかどうか。"
+
+msgid "Reduce strings to letters and numbers"
+msgstr "文字列を文字と数字に分解"
+
+msgid "Filters the new alias to only letters and numbers found in the ASCII-96 set."
+msgstr "ASCII-96 セット内に存在する文字列や数字だけを抽出して新しい URL エイリアスを生成します。"
+
+msgid "Strings to Remove"
+msgstr "取り除く文字列"
+
+msgid "Words to strip out of the URL alias, separated by commas. Do not use this to remove punctuation."
+msgstr "URLエイリアスから取り除く文字列を、カンマ区切りで入力してください。句読点を除去するのにこの機能を使用しないでください。"
+
+msgid "Safe tokens"
+msgstr "安全なトークン"
+
+msgid "List of tokens that are safe to use in alias patterns and do not need to be cleaned. For example urls, aliases, machine names. Separated with a comma."
+msgstr "別名パターンで安全に使用でき、クリーニングする必要がないトークンのリスト。例えば、URL、別名、およびマシン名です。コンマで区切ってください。"
+
+msgid "Punctuation"
+msgstr "記号"
+
+msgid "Remove"
+msgstr "削除"
+
+msgid "Replace by separator"
+msgstr "セパレーターに置換"
+
+msgid "No action (do not replace)"
+msgstr "なにもしない（置換しない）"
+
+msgid "Are you sure you want to disable the pattern %label?"
+msgstr "パターン %label を無効にしますか?"
+
+msgid "Disable"
+msgstr "無効"
+
+msgid "Disabled patterns are ignored when generating aliases."
+msgstr "無効にされたパターンはエイリアスの生成時に無視されます。"
+
+msgid "Disabled pattern %label."
+msgstr "パターン %label を無効にしました。"
+
+msgid "Path pattern"
+msgstr "パス・パターン"
+
+msgid "Check to which types this pattern should be applied. Leave empty to allow any."
+msgstr "このパターンが適用されるタイプにチェック・マークを付けます。すべて許可する場合は空のままにします。"
+
+msgid "Languages"
+msgstr "言語"
+
+msgid "Check to which languages this pattern should be applied. Leave empty to allow any."
+msgstr "このパターンが適用される言語にチェック・マークを付けます。すべて許可する場合は空のままにします。"
+
+msgid "A short name to help you identify this pattern in the patterns list."
+msgstr "パターン・リストでこのパターンの識別に役立つ短縮名。"
+
+msgid "Enabled"
+msgstr "有効"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "Pattern %label saved."
+msgstr "パターン %label が保存されました。"
+
+msgid "Are you sure you want to enable the pattern %label?"
+msgstr "パターン %label を有効にしますか?"
+
+msgid "Enable"
+msgstr "有効"
+
+msgid "Enabled pattern %label."
+msgstr "パターン %label を有効にしました。"
+
+msgid "Update URL alias of an entity"
+msgstr "エンティティーの URL エイリアスを更新"
+
+msgid "@label being aliased"
+msgstr "@label のエイリアス割り当て中"
+
+msgid "The name of the pattern's variable."
+msgstr "パターンの変数の名前。"
+
+msgid "The value of the pattern's variable."
+msgstr "パターンの変数の値。"
+
+msgid "Broken type"
+msgstr "破損したタイプ"
+
+msgid "Broken"
+msgstr "壊れている"
+
+msgid "Broken/Missing"
+msgstr "壊れている/見つからない"
+
+msgid "AliasType"
+msgstr "AliasType"
+
+msgid "Updated alias for %label @id."
+msgstr "%label @id のエイリアスを更新しました。"
+
+msgid "Updated 1 %label URL alias."
+msgid_plural "Updated @count %label URL aliases."
+msgstr[0] "@count 個の %label URL エイリアスを更新しました。"
+
+msgid "Forum"
+msgstr "フォーラム"
+

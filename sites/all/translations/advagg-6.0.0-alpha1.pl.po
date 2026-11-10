@@ -1,0 +1,1124 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Keep all Advagg settings but disable all functionality."
+msgstr "Zachowaj wszystkie ustawienia modułu Advagg, ale wyłącz wszystkie funkcje."
+
+msgid "Restore all Advagg functionality if disabled."
+msgstr "Odtwórz wszystkie funkcje modułu Advagg, jeśli są wyłączone."
+
+msgid "Run the advagg cron hook. This will clear out all stale advagg aggregated files, remove aggregates that include missing files, and remove unused aggregates."
+msgstr "Uruchom hak cron modułu advagg. Spowoduje to usunięcie wszystkich nieaktualnych zagregowanych plików modułu advagg, usunięcie agregatów, które zawierają brakujące pliki, i usunięcie nieużywanych agregatów."
+
+msgid "Remove all generated files. Useful if you think some of the generated files got corrupted and thus need to be deleted."
+msgstr "Usuń wszystkie wygenerowane pliki. Jest to przydatne w przypadku podejrzenia, że niektóre z wygenerowanych plików są uszkodzone i dlatego wymagane jest ich usunięcie."
+
+msgid "Force the creation of all new optimized files by incrementing a global counter. Current value of counter: %value. This is may be useful if a CDN has cached an something incorrectly as it will force new ones to be used even if nothing else has changed."
+msgstr "Wymuś utworzenie wszystkich nowych zoptymalizowanych plików, zwiększając wartość licznika globalnego. Bieżąca wartość licznika: %value. Może to być przydatne, jeśli sieć CDN zbuforowała coś nieprawidłowo, ponieważ wymusza to użycie nowych elementów nawet wtedy, gdy nic innego nie zostało zmienione."
+
+msgid "Run the advagg cron hook."
+msgstr "Uruchom hak cron modułu advagg."
+
+msgid "Disable Advagg."
+msgstr "Wyłącz moduł Advagg."
+
+msgid "Enable Advagg."
+msgstr "Włącz moduł Advagg."
+
+msgid "Remove all generated files."
+msgstr "Usuń wszystkie wygenerowane pliki."
+
+msgid "Force the creation of all new files by incrementing a global counter."
+msgstr "Wymuś utworzenie wszystkich nowych plików, zwiększając wartość licznika globalnego."
+
+msgid "All Advagg functionality is disabled."
+msgstr "Wszystkie funkcje modułu Advagg są wyłączone."
+
+msgid "All Advagg functionality is enabled."
+msgstr "Wszystkie funkcje modułu Advagg są włączone."
+
+msgid "Global counter is now set to @new_value"
+msgstr "Licznik globalny jest teraz ustawiony na wartość @new_value"
+
+msgid "All AdvAgg optimized files have been deleted. %css_count CSS files and %js_count JS files have been removed."
+msgstr "Wszystkie zoptymalizowane pliki AdvAgg zostały usunięte. Usunięto następującą liczbę plików CSS: %css_count i JS: %js_count."
+
+msgid "All stale aggregates have been deleted. %css_count CSS files and %js_count JS files have been removed."
+msgstr "Wszystkie nieaktualne agregaty zostały usunięte. Usunięto następującą liczbę plików CSS: %css_count CSS i JS: %js_count."
+
+msgid "No stale aggregates found. Nothing was deleted."
+msgstr "Nie znaleziono nieaktualnych agregatów. Nic nie zostało usunięte."
+
+msgid "NOTE: If you wish to bypass AdvAgg optimizations for a set amount of time, you can go to the <a href=\"@operations\">AdvAgg operations</a> page and press the <em>\"optimization bypass cookie\"</em> button."
+msgstr "UWAGA: Aby pominąć optymalizacje AdvAgg przez określony czas, przejdź do strony <a href=\"@operations\">Operacje AdvAgg</a> i kliknij przycisk <em>\"Informacje cookie obejścia optymalizacji\"</em>."
+
+msgid "You can also selectively bypass AdvAgg optimization by adding <code>@code</code> to the URL of any page."
+msgstr "Można również wybiórczo obejść optymalizację modułu AdvAgg, dodając łańcuch <code>@code</code> do adresu URL dowolnej strony."
+
+msgid "You do not have the <a href=\"@permission\">bypass advanced aggregation permission</a> so adding <code>@code</code> to the URL will not work at this time for you; either grant this permission to your user role or use the bypass cookie if you wish to selectively bypass AdvAgg optimizations."
+msgstr "Nie masz <a href=\"@permission\">uprawnień do obejścia zaawansowanej agregacji</a>, dlatego dodanie łańcucha <code>@code</code> do adresu URL tym razem nie zadziała. Nadaj to uprawnienie swojej roli użytkownika lub użyj informacji cookie obejścia, aby wybiórczo obejść optymalizacje modułu AdvAgg."
+
+msgid "The AdvAgg bypass cookie is currently enabled. Turn it off by going to the <a href=\"@advagg_operations\">AdvAgg Operations</a> page and clicking the <em>Toggle the \"aggregation bypass cookie\" for this browser</em> button."
+msgstr "Informacje cookie obejścia modułu AdvAgg są obecnie włączone. Wyłącz je, przechodząc do strony <a href=\"@advagg_operations\">Operacje AdvAgg</a> i klikając przycisk <em>Przełącz \"informacje cookie obejścia agregacji\" dla tej przeglądarki</em>."
+
+msgid "The AdvAgg bypass cookie is currently enabled. Turn it off by <a href=\"@login\">logging in</a> with a user with the \"administer site configuration\" permissions and going to the <a herf=\"@advagg_operations\">AdvAgg Operations page</a> and clicking the <em>Toggle the \"aggregation bypass cookie\" for this browser</em> button."
+msgstr "Informacje cookie obejścia modułu AdvAgg są obecnie włączone. Można je wyłączyć, <a href=\"@login\">logując się</a> jako użytkownik z uprawnieniami do administrowania konfiguracją serwisu i przechodząc na stronę <a herf=\"@advagg_operations\">Operacje AdvAgg</a> a potem klikając przycisk <em>Przełącz \"informacje cookie obejścia agregacji\" dla tej przeglądarki</em>."
+
+msgid "0 sec"
+msgstr "0 s"
+
+msgid "AdvAgg Bypass Cookie Removed"
+msgstr "Informacja cookie obejścia modułu AdvAgg została usunięta"
+
+msgid "AdvAgg Bypass Cookie Set for @time."
+msgstr "Informacja cookie obejścia modułu AdvAgg jest ustawiona na następujący czas: @time."
+
+msgid "1 year"
+msgid_plural "@count years"
+msgstr[0] "1 rok"
+msgstr[1] "liczba lat: @count"
+msgstr[2] "liczba lat: @count"
+
+msgid "1 month"
+msgid_plural "@count months"
+msgstr[0] "1 miesiąc"
+msgstr[1] "liczba miesięcy: @count"
+msgstr[2] "liczba miesięcy: @count"
+
+msgid "1 week"
+msgid_plural "@count weeks"
+msgstr[0] "1 tydzień"
+msgstr[1] "liczba tygodni: @count"
+msgstr[2] "liczba tygodni: @count"
+
+msgid "1 day"
+msgid_plural "@count days"
+msgstr[0] "1 dzień"
+msgstr[1] "liczba dni: @count"
+msgstr[2] "liczba dni: @count"
+
+msgid "1 hour"
+msgid_plural "@count hours"
+msgstr[0] "1 godzina"
+msgstr[1] "liczba godzin: @count"
+msgstr[2] "liczba godzin: @count"
+
+msgid "1 min"
+msgid_plural "@count min"
+msgstr[0] "1 minuta"
+msgstr[1] "liczba minut: @count"
+msgstr[2] "liczba minut: @count"
+
+msgid "1 sec"
+msgid_plural "@count sec"
+msgstr[0] "1 sekunda"
+msgstr[1] "liczba sekund: @count"
+msgstr[2] "liczba sekund: @count"
+
+msgid "Advanced CSS/JS Aggregation"
+msgstr "Zaawansowana agregacja CSS/JS"
+
+msgid "Aggregates multiple CSS/JS files in a way that prevents 404 from happening when accessing a CSS or JS file."
+msgstr "Agreguje wiele plików CSS/JS w sposób zapobiegający występowaniu błędów 404 podczas uzyskiwania dostępu do pliku CSS lub JS."
+
+msgid "AdvAgg"
+msgstr "AdvAgg"
+
+msgid "Information"
+msgstr "Informacje"
+
+msgid "Operations"
+msgstr "Operacje"
+
+msgid "AdvAgg settings."
+msgstr "Ustawienia modułu AdvAgg."
+
+msgid "Display AdvAgg system information."
+msgstr "Wyświetl informacje o systemie AdvAgg."
+
+msgid "Perform AdvAgg operations."
+msgstr "Wykonaj operacje modułu AdvAgg."
+
+msgid "Configuration"
+msgstr "Konfiguracja"
+
+msgid "Bypass advanced aggregation"
+msgstr "Obejdź zaawansowaną agregację"
+
+msgid "User can use URL query strings to bypass AdvAgg."
+msgstr "Użytkownik może użyć łańcuchów zapytania URL, aby obejść moduł AdvAgg."
+
+msgid "AdvAgg: Configuration"
+msgstr "AdvAgg: Konfiguracja"
+
+msgid "AdvAgg: Information"
+msgstr "AdvAgg: Informacje"
+
+msgid "AdvAgg: Operations"
+msgstr "AdvAgg: Operacje"
+
+msgid "AdvAgg Bundler"
+msgstr "Pakowarka modułu AdvAgg"
+
+msgid "Customize the number of aggregates to be created."
+msgstr "Dostosuj liczbę agregatów, które mają zostać utworzone."
+
+msgid "Bundler"
+msgstr "Pakowarka"
+
+msgid "AdvAgg Bundler settings."
+msgstr "Ustawienia pakowarki modułu AdvAgg."
+
+msgid "AdvAgg: Bundler"
+msgstr "AdvAgg: pakowarka"
+
+msgid "Settings"
+msgstr "Ustawienia"
+
+msgid "Whether to run the bundler options."
+msgstr "Określa, czy mają być uruchamiane opcje pakowarki."
+
+msgid "Settings for CSS bundling."
+msgstr "Ustawienia dla tworzenia pakunków CSS."
+
+msgid "Maximum target css aggregates."
+msgstr "Maksymalna liczba docelowych agregatów CSS."
+
+msgid "The logic to use for bundling the CSS Files."
+msgstr "Logika, która ma być używana do tworzenia pakunków plików CSS."
+
+msgid "Settings for JavaScript bundling."
+msgstr "Ustawienia dotyczące tworzenia pakunków JavaScript."
+
+msgid "Maximum target JavaScript aggregates."
+msgstr "Maksymalna liczba docelowych agregatów JavaScript."
+
+msgid "The logic to use for bundling the JS Files."
+msgstr "Logika, która ma być używana do tworzenia pakunków plików JS."
+
+msgid "Bundler is Active"
+msgstr "Pakowarka jest aktywna"
+
+msgid "If not checked, the bundler will not split up aggregates."
+msgstr "Jeśli ta opcja nie zostanie zaznaczona, pakowarka nie będzie dzielić agregatów."
+
+msgid "CSS Bundling options."
+msgstr "Opcje tworzenia pakunków CSS."
+
+msgid "Target Number Of CSS Bundles Per Page"
+msgstr "Docelowa liczba pakunków CSS na stronie"
+
+msgid "If 0 is selected then the bundler is disabled"
+msgstr "Wybranie wartości 0 oznacza, że pakowarka jest wyłączona"
+
+msgid "Grouping logic"
+msgstr "Logika grupowania"
+
+msgid "File count"
+msgstr "Liczba plików"
+
+msgid "File size"
+msgstr "Wielkość pliku"
+
+msgid "If file count is selected then each bundle will try to have a similar number of original files aggregated inside of it. If file size is selected then each bundle will try to have a similar file size."
+msgstr "Jeśli zostanie wybrana liczba plików, będzie podejmowana próba zagregowania w każdym pakunku podobnej liczby oryginalnych plików. Jeśli zostanie wybrana wielkość pliku, będzie podejmowana próba zapewnienia podobnej wielkości pliku każdego pakunku."
+
+msgid "JavaScript Bundling options."
+msgstr "Opcje tworzenia pakunków JavaScript."
+
+msgid "Target Number Of JS Bundles Per Page"
+msgstr "Docelowa liczba pakunków JS na stronie"
+
+msgid "AdvAgg CDN"
+msgstr "Sieć CDN modułu AdvAgg"
+
+msgid "Use a shared CDN for JavaScript and/or CSS libraries, Google Libraries API currently."
+msgstr "Użyj współużytkowanej sieci CDN dla bibliotek JavaScript i/lub bibliotek CSS, obecnie interfejsu API Google Libraries."
+
+msgid "AdvAgg CSS Minify"
+msgstr "Minifikacja arkusza CSS modułu AdvAgg"
+
+msgid "AdvAgg CSS Minification is disabled."
+msgstr "Minifikacja arkusza CSS modułu AdvAgg jest wyłączone."
+
+msgid "Go to the <a href=\"@settings\">AdvAgg Minify CSS settings page</a> and select a minifier, or go to the <a href=\"@modules\">modules page</a> and disable the \"AdvAgg Minify CSS\" module."
+msgstr "Przejdź do strony <a href=\"@settings\">Ustawienia redukcji CSS AdvAgg</a> i wybierz reduktor lub przejdź do strony <a href=\"@modules\">modułów</a> i wyłącz moduł \"Redukcja CSS AdvAgg\"."
+
+msgid "AdvAgg Minify CSS"
+msgstr "Minifikacja arkusza CSS modułu AdvAgg"
+
+msgid "Minify CSS."
+msgstr "Minifikuj arkusz CSS."
+
+msgid "CSS Minification"
+msgstr "Minifikacja arkusza CSS"
+
+msgid "AdvAgg CSS minification settings."
+msgstr "Ustawienia minifikacji arkusza CSS modułu AdvAgg."
+
+msgid "AdvAgg: CSS Minification"
+msgstr "AdvAgg: Minifikacja arkusza CSS"
+
+msgid "Which minifier to use. 0 is Disabled."
+msgstr "Narzędzie do minifikacji do użycia. Wartość 0 oznacza wyłączone."
+
+msgid "Add licensing information to aggregates for individual source files."
+msgstr "Dodaj informacje licencyjne do agregatów dla poszczególnych plików źródłowych."
+
+msgid "The settings below will not have any effect because AdvAgg is currently in <a href=\"@devel\">development mode</a>. Once the cache settings have been set to a non-development level, CSS minification will take place."
+msgstr "Poniższe ustawienie nie odniesie skutku, ponieważ moduł AdvAgg jest obecnie w <a href=\"@devel\">trybie programistycznym</a>. Po skonfigurowaniu ustawień pamięci podręcznej na poziom inny niż programistyczny zostanie wykonana minifikacja arkusza CSS."
+
+msgid "Disabled"
+msgstr "Wyłączone"
+
+msgid "Core"
+msgstr "Podstawowe"
+
+msgid "YUI Compressor"
+msgstr "Kompresor YUI"
+
+msgid "Minification: Select a minifier"
+msgstr "Minifikacja: wybierz narzędzie do minifikacji"
+
+msgid "Add licensing comments"
+msgstr "Dodaj komentarze dotyczące licencji"
+
+msgid ""
+"If unchecked, the Advanced Aggregation module's licensing comments\n"
+"      will be omitted from the aggregated files. Omitting the comments will produce somewhat better scores in\n"
+"      some automated security scans but otherwise should not affect your site. These are included by default in order to better follow the spirit of the GPL by providing the source for javascript files."
+msgstr ""
+"Jeśli ta opcja nie jest zaznaczona, komentarze dotyczące licencji modułu \n"
+"Agregacja zaawansowana zostaną pominięte w zagregowanych plikach. Pominięcie komentarzy spowoduje uzyskanie nieco lepszych wyników \n"
+"w niektórych zautomatyzowanych skanowaniach zabezpieczeń, ale poza tym nie powinno mieć wpływu na serwis. Są one domyślnie uwzględniane, aby zachować tendencję licencjonowania GPL przez dołączenie źródeł plików javascript."
+
+msgid "Advagg External Minification: PHP shell_exec"
+msgstr "Advagg External Minification: funkcja PHP shell_exec"
+
+msgid "PHP shell_exec is non-functional."
+msgstr "Funkcja PHP shell_exec nie działa."
+
+msgid "Check php.ini for safemode or <a href=\"@link\" target=\"_blank\">disable_functions</a>."
+msgstr "Sprawdź w pliku php.ini wpis safemode lub <a href=\"@link\" target=\"_blank\">disable_functions</a>."
+
+msgid "Enabled"
+msgstr "Włączone"
+
+msgid "AdvAgg External Minification"
+msgstr "Zewnętrzna minifikacja AdvAgg"
+
+msgid "Minify Javascript and/or CSS with a command line minifier."
+msgstr "Minifikacja kodu Javascript i/lub arkusza CSS za pomocą narzędzia wiersza komend do minifikacji."
+
+msgid "External Minification"
+msgstr "Minifikacja zewnętrzna"
+
+msgid "AdvAgg external minification settings."
+msgstr "Ustawienia minifikacji zewnętrznej modułu AdvAgg."
+
+msgid "AdvAgg: External Minifiers"
+msgstr "AdvAgg: zewnętrzne narzędzia do minifikacji"
+
+msgid "Command line for external CSS minification."
+msgstr "Wiersz komend dla zewnętrznej minifikacji arkusza CSS."
+
+msgid "Whether to use the external CSS minifier if configured."
+msgstr "Określa, czy ma być używane zewnętrzne narzędzie do minifikacji arkusza CSS, jeśli jest skonfigurowane."
+
+msgid "Command line for external JavaScript minification."
+msgstr "Wiersz komend dla zewnętrznej minifikacji kodu JavaScript."
+
+msgid "Whether to use the external JS minifier if configured."
+msgstr "Określa, czy ma być używane zewnętrzne narzędzie do minifikacji kodu JS, jeśli jest skonfigurowane."
+
+msgid "CSS"
+msgstr "CSS"
+
+msgid "JavaScript"
+msgstr "JavaScript"
+
+msgid "Command Line"
+msgstr "Wiersz komend"
+
+msgid "{%CWD%} = \\Drupal::root(). <br /> {%IN%} = input file. <br /> {%IN_URL_ENC%} = url pointing to the input file that has been url encoded. <br /> {%OUT%} = output file. <br /><br />"
+msgstr "{%CWD%} = \\Drupal::root(). <br /> {%IN%} = plik wejściowy. <br /> {%IN_URL_ENC%} = adres url wskazujący na plik wejściowy, zakodowany z użyciem kodowania url. <br /> {%OUT%} = plik wyjściowy. <br /><br />"
+
+msgid "Example using the <a href=\"@link1\">Microsoft Ajax Minifier</a>. <p><code>@code1</code></p>"
+msgstr "Przykład użycia <a href=\"@link1\">reduktora Microsoft Ajax</a>. <p><code>@code1</code></p>"
+
+msgid "Example using the <a href=\"@link1\">Google Closure Compiler</a>. <p><code>@code1</code></p>"
+msgstr "Przykład z użyciem kompilatora <a href=\"@link1\">Google Closure Compiler</a>. <p><code>@code1</code></p>"
+
+msgid "Example using curl to minify via the <a href=\"@link1\">Online Google Closure Compiler</a>. <p><code>@code1</code></p>"
+msgstr "Przykład użycia komendy curl w celu zredukowania z użyciem kompilatora <a href=\"@link1\">Online Google Closure Compiler</a>. <p><code>@code1</code></p>"
+
+msgid "Example using the <a href=\"@link1\">YUI Compressor</a>. <p><code>@code1</code></p>"
+msgstr "Przykład użycia <a href=\"@link1\">kompresora YUI</a>. <p><code>@code1</code></p>"
+
+msgid "Example using curl to minify via an online <a href=\"@link1\">CSS Minifier</a>. <p><code>@code1</code></p>"
+msgstr "Przykład użycia komendy curl w celu zredukowania z użyciem <a href=\"@link1\">reduktora CSS</a>. <p><code>@code1</code></p>"
+
+msgid "Command to run"
+msgstr "Komenda do uruchomienia"
+
+msgid "Enable external @type minification"
+msgstr "Włącz zewnętrzną minifikację typu @type"
+
+msgid "AdvAgg JS Minify"
+msgstr "Minifikacja kodu JS modułu AdvAgg"
+
+msgid "AdvAgg JS Minification is disabled."
+msgstr "Minifikacja kodu JS modułu AdvAgg jest wyłączona."
+
+msgid "Go to the <a href=\"@settings\">AdvAgg Minify JavaScript settings page</a> and select a minifier, or go to the <a href=\"@modules\">modules page</a> and disable the \"AdvAgg Minify Javascript\" module."
+msgstr "Przejdź do strony ustawień <a href=\"@settings\">redukcji JavaScript modułu AdvAgg</a> i wybierz reduktor albo przejdź do <a href=\"@modules\">strony modułów</a> i wyłącz moduł \"Redukcja Javascript AdvAgg\"."
+
+msgid "AdvAgg Minify JavaScript"
+msgstr "Minifikacja kodu JavaScript modułu AdvAgg"
+
+msgid "Minify JavaScript with a 3rd party minifier; JSMin+, JSMin c ext, JShrink, and JSqueeze currently."
+msgstr "Minifikuj kod JavaScript za pomocą narzędzia do minifikacji innej firmy, obecnie są to: JSMin+, JSMin c ext, JShrink i JSqueeze."
+
+msgid "JavaScript Minification"
+msgstr "Minifikacja JavaScript"
+
+msgid "AdvAgg JavaScript minification settings."
+msgstr "Ustawienia minifikacji kodu JavaScript modułu AdvAgg."
+
+msgid "AdvAgg: JS Minification"
+msgstr "AdvAgg: minifikacja kodu JS"
+
+msgid "Minifier to use. 0 is disabled."
+msgstr "Narzędzie do minifikacji do użycia. Wartość 0 oznacza wyłączone."
+
+msgid "Upper bound comparison value for the minification ratio test."
+msgstr "Górna granica wartości porównywana dla testu współczynnika minifikacji."
+
+msgid "Lower bound comparison value for the minification ratio test."
+msgstr "Dolna granica wartości porównywana dla testu współczynnika minifikacji."
+
+msgid "The jsmin function does not exist. Using JSqueeze."
+msgstr "Funkcja jsmin nie istnieje. Używane jest narzędzie JSqueeze."
+
+msgid "JSMin had a possible error minifying: @file, correcting."
+msgstr "W narzędziu JSMin wystąpił prawdopodobnie błąd minifikacji: @file, trwa poprawianie."
+
+msgid "JSMin had an error minifying file: @file, attempting to correct."
+msgstr "Wystąpił błąd w narzędziu JSMin podczas minifikacji pliku: @file, podejmowana jest próba poprawienia."
+
+msgid "The currently installed jsmin version does not handle multibyte characters, you may consider to upgrade the jsmin extension. Using JSqueeze fallback."
+msgstr "Obecnie zainstalowana wersja narzędzia jsmin nie obsługuje znaków wielobajtowych. Rozważ aktualizację rozszerzenia narzędzia jsmin. Wycofanie użycia narzędzia JSqueeze."
+
+msgid "The settings below will not have any effect because AdvAgg is currently in <a href=\"@devel\">development mode</a>. Once the cache settings have been set to a non-development level, JS minification will take place."
+msgstr "Poniższe ustawienie nie odniesie skutku, ponieważ moduł AdvAgg jest obecnie w <a href=\"@devel\">trybie programistycznym</a>. Po skonfigurowaniu ustawień pamięci podręcznej na poziom inny niż programistyczny zostanie wykonana minifikacja kodu JS."
+
+msgid "JSMin+ ~1300ms"
+msgstr "JSMin+ ~1300 ms"
+
+msgid "JShrink ~1000ms"
+msgstr "JShrink ~1000 ms"
+
+msgid "JSqueeze ~600ms"
+msgstr "JSqueeze ~600 ms"
+
+msgid "JSMin ~2ms"
+msgstr "JSMin ~2 ms"
+
+msgid "JSMin is the very fast C complied version. Recommend using it."
+msgstr "Narzędzie JSMin jest bardzo szybką wersją skompilowaną w języku C. Zalecane jest jego użycie."
+
+msgid "You can use the much faster C version of JSMin (~2ms) by installing the <a href=\"@php_jsmin\">JSMin PHP Extension</a> on this server."
+msgstr "Aby użyć szybszej wersji C narzędzia JSMin (~2 ms), możesz zainstalować <a href=\"@php_jsmin\">rozszerzenie PHP narzędzia JSMin</a> na tym serwerze."
+
+msgid "AdvAgg Modifier"
+msgstr "Modyfikator AdvAgg"
+
+msgid "Allows one to alter the CSS and JS array."
+msgstr "Umożliwia zmianę tablicy CSS i JS."
+
+msgid "Modifications"
+msgstr "Modyfikacje"
+
+msgid "AdvAgg Modifications."
+msgstr "Modyfikacje modułu AdvAgg."
+
+msgid "AdvAgg: Modifications"
+msgstr "AdvAgg: modyfikacje"
+
+msgid "Default value to adjust the sorting of browser conditional CSS."
+msgstr "Wartość domyślna umożliwiająca dopasowanie sortowania warunkowego arkusza CSS przeglądarki."
+
+msgid "Default value to adjust the sorting of external CSS."
+msgstr "Wartość domyślna umożliwiająca dopasowanie sortowania zewnętrznego arkusza CSS."
+
+msgid "Default value to use JavaScript to defer CSS loading."
+msgstr "Wartość domyślna umożliwiająca użycie kodu JavaScript w celu odroczenia ładowania arkusza CSS."
+
+msgid "Whether to defer loading of CSS on the admin theme."
+msgstr "Informacja o tym, czy odroczyć ładowanie arkusza CSS w kompozycji administracyjnej."
+
+msgid "Whether to also defer loading of external stylesheets."
+msgstr "Informacja o tym, czy należy również odroczyć ładowanie zewnętrznych arkuszy stylów."
+
+msgid "Default value of the inclusion method for the loadCSS code."
+msgstr "Wartość domyślna metody włączania dla kodu loadCSS."
+
+msgid "Default value to turn on preprocessing for all CSS files."
+msgstr "Wartość domyślna umożliwiająca włączenie przetwarzania wstępnego dla wszystkich plików CSS."
+
+msgid "Default value to translate the content attributes of CSS files."
+msgstr "Wartość domyślna umożliwiająca przetłumaczenie atrybutów treści plików CSS."
+
+msgid "Default value to adjust the sorting of external JavaScript"
+msgstr "Wartość domyślna umożliwiająca dopasowanie sortowania zewnętrznego kodu JavaScript"
+
+msgid "Default value to adjust the sorting of browser conditional JavaScript."
+msgstr "Wartość domyślna umożliwiająca dopasowanie sortowania warunkowego kodu JavaScript przeglądarki."
+
+msgid "Default value to have async on all JS script tags."
+msgstr "Wartość domyślna umożliwiająca zapewnienie asynchroniczności we wszystkich znacznikach w skrypcie JS."
+
+msgid "Default value to move async js to the header."
+msgstr "Wartość domyślna umożliwiająca przeniesienie asynchronicznego kodu js do nagłówka."
+
+msgid "Default value to add the defer tag to all script tags."
+msgstr "Wartość domyślna umożliwiająca dodanie znacznika odroczenia do wszystkich znaczników w skrypcie."
+
+msgid "Default value to move all JS to the footer."
+msgstr "Wartość domyślna umożliwiająca przeniesienie całego kodu JS do stopki."
+
+msgid "Default value to turn on preprocessing for all JavaScript files."
+msgstr "Wartość domyślna umożliwiająca włączenie przetwarzania wstępnego dla wszystkich plików JavaScript."
+
+msgid "Remove console.log() calls from JavaScript files."
+msgstr "Usuń wywołania console.log() z plików JavaScript."
+
+msgid "Default value to use the prefetch tag for certain domains."
+msgstr "Wartość domyślna umożliwiająca użycie pobieranego z wyprzedzeniem znacznika dla niektórych domen."
+
+msgid "Use one css/js directory for a multi-site."
+msgstr "Użyj jednego katalogu css/js dla wielu serwisów."
+
+msgid "@before"
+msgstr "@before"
+
+msgid "JS"
+msgstr "JS"
+
+msgid "Enable preprocess on all JS"
+msgstr "Włącz wstępne przetwarzanie dla całego kodu JS"
+
+msgid "Force all JavaScript to have the preprocess attribute be set to TRUE. All JavaScript files will be aggregated if enabled."
+msgstr "Wymuś, aby cały kod JavaScript miał atrybut preprocess ustawiony na wartość TRUE. Jeśli włączono, wszystkie pliki JavaScript zostaną zagregowane."
+
+msgid "Remove console logging from JS files."
+msgstr "Usuń rejestrowanie konsoli z plików JS."
+
+msgid "Harmless under most cases, but may make debugging difficult. WARNING: experimental."
+msgstr "W większości przypadków nieszkodliwe, ale może utrudnić debugowanie. OSTRZEŻENIE: eksperymentalne."
+
+msgid "Optimize JavaScript Ordering"
+msgstr "Optymalizuj porządkowanie JavaScript"
+
+msgid "The settings in here might change the order in which the JavaScript is loaded. It will move the scripts around so that more optimal aggregates are built. In most cases enabling these checkboxes will cause no negative side effects."
+msgstr "Ustawienia w tym miejscu mogą zmienić kolejność, w jakiej jest ładowany kod JavaScript. Spowoduje to przeniesienie skryptów w taki sposób, aby budowane były bardziej optymalne agregaty. W większości przypadków włączenie tych pól wyboru nie spowoduje żadnych negatywnych skutków ubocznych."
+
+msgid "Move all external scripts to the top of the execution order"
+msgstr "Przenieś wszystkie skrypty zewnętrzne na początek kolejności wykonywania"
+
+msgid "This will group all external JavaScript files to be above all other JavaScript."
+msgstr "Spowoduje to zgrupowanie wszystkich zewnętrznych plików JavaScript powyżej wszystkich pozostałych skryptów JavaScript."
+
+msgid "Move all browser conditional JavaScript to the bottom of the group"
+msgstr "Przenieś wszystkie warunkowe skrypty JavaScript przeglądarki na dół grupy"
+
+msgid "This will group all browser conditional JavaScript to be in the lowest group of that conditional rule."
+msgstr "Spowoduje to zgrupowanie całego warunkowego kodu JavaScript przeglądarki, tak aby był w najniższej grupie tej reguły warunkowej."
+
+msgid "Adjust javascript location and execution"
+msgstr "Dostosuj położenie i wykonywanie kodu JavaScript"
+
+msgid "Most of the time adjusting the settings are safe but in some rare cases adjusting these can cause serious JavaScript issues with your site."
+msgstr "Na ogół dostosowania ustawień są bezpieczne, ale w niektórych rzadkich przypadkach ich dostosowanie może spowodować poważne problemy z kodem JavaScript w serwisie."
+
+msgid "Deferred JavaScript Execution: Add The defer Tag To All Script Tags"
+msgstr "Odroczone wykonanie kodu JavaScript: dodaj znacznik odroczenia do wszystkich znaczników w skrypcie"
+
+msgid "All but external scripts"
+msgstr "Wszystkie z wyjątkiem skryptów zewnętrznych"
+
+msgid "All (might break things)"
+msgstr "Wszystkie (może prowadzić do uszkodzeń)"
+
+msgid "This will delay the script execution until the HTML parser has finished. This will have a similar effect to moving all JavaScript to the footer. This might break javascript (especially inline); only use after extensive testing! <a href=\"@link\">More Info</a>"
+msgstr "Spowoduje to opóźnienie wykonania skryptu do momentu zakończenia działania analizatora składni HTML. Będzie to miało skutek podobny do przeniesienia wszystkich skryptów JavaScript do stopki. To może uszkodzić kod javascript (zwłaszcza wstawiany), używać tylko po dokładnym przetestowaniu! <a href=\"@link\">Więcej informacji</a>"
+
+msgid "Experimental Settings"
+msgstr "Ustawienia eksperymentalne"
+
+msgid "Here there be dragons! Asynchronous JavaScript Execution: Add The async Tag To All Script Tags"
+msgstr "Tu żyją smoki! Asynchroniczne wykonanie kodu JavaScript: dodaj znacznik asynchroniczności do wszystkich znaczników w skrypcie"
+
+msgid "This will cause the script to be downloaded in the background and executed out of order. This will break most javascript as most code is not async safe; only use after extensive testing! <a href=\"@link\">More Info</a>"
+msgstr "Spowoduje to, że skrypt zostanie pobrany w tle i wykonany poza kolejnością. Spowoduje to uszkodzenie większości kodu javascript, ponieważ większość kodu nie jest zabezpieczona pod kątem działania asynchronicznego, używać tylko po dokładnym przetestowaniu! <a href=\"@link\">Więcej informacji</a>"
+
+msgid "Asynchronous JavaScript Execution: Group together in the header"
+msgstr "Asynchroniczne wykonywanie kodu JavaScript: zgrupuj razem w nagłówku"
+
+msgid "This will move all async JavaScript code to the header in the same group."
+msgstr "Spowoduje to przeniesienie całego asynchronicznego kodu JavaScript do nagłówka w tej samej grupie."
+
+msgid "Enable preprocess on all CSS"
+msgstr "Włącz wstępne przetwarzanie dla wszystkich arkuszy CSS"
+
+msgid "Force all CSS to have the preprocess attribute be set to TRUE. All CSS files will be aggregated if enabled."
+msgstr "Wymuś, aby wszystkie arkusze CSS miały atrybut preprocess ustawiony na wartość TRUE. Jeśli włączono, wszystkie pliki CSS zostaną zagregowane."
+
+msgid "You might want to increase the <a href=\"@link\">CSS Bundles Per Page</a> if this is checked."
+msgstr "Jeśli ta opcja jest zaznaczona, można zwiększyć wartość <a href=\"@link\">Pakunki CSS na stronę</a>."
+
+msgid "Translate CSS content strings"
+msgstr "Przetłumacz łańcuchy treści CSS"
+
+msgid "Run strings inside of quotes of the content attribute through the <a href=\"@t\">t() function</a>. An alternative to this can be found in this <a href=\"@post\">blog post</a>."
+msgstr "Uruchom łańcuchy w cudzysłowach atrybutu treści za pomocą <a href=\"@t\">funkcji t()</a>. Alternatywne działanie można znaleźć w następującym <a href=\"@post\">wpisie w blogu</a>."
+
+msgid "Optimize CSS Ordering"
+msgstr "Optymalizuj porządkowanie CSS"
+
+msgid "The settings in here might change the order in which the CSS is loaded. It will move the CSS around so that more optimal aggregates are built. In most cases enabling these checkboxes will cause no negative side effects."
+msgstr "Ustawienia w tym miejscu mogą zmienić kolejność, w jakiej jest ładowany arkusz CSS. Spowoduje to przeniesienie arkusza CSS w taki sposób, aby budowane były bardziej optymalne agregaty. W większości przypadków włączenie tych pól wyboru nie spowoduje żadnych negatywnych skutków ubocznych."
+
+msgid "Move all external CSS to the top of the execution order"
+msgstr "Przenieś wszystkie zewnętrzne arkusze CSS na początek kolejności wykonywania"
+
+msgid "This will group all external CSS files to be above all other CSS."
+msgstr "Spowoduje to zgrupowanie wszystkich zewnętrznych plików CSS powyżej wszystkich pozostałych arkuszy CSS."
+
+msgid "Move all browser conditional CSS to the bottom of the group"
+msgstr "Przenieś wszystkie warunkowe arkusze CSS przeglądarki na dół grupy"
+
+msgid "This will group all browser conditional CSS to be in the lowest group of that conditional rule."
+msgstr "Spowoduje to zgrupowanie całego warunkowego arkusza CSS przeglądarki, tak aby był w najniższej grupie tej reguły warunkowej."
+
+msgid "Adjust CSS location and execution (Experimental)"
+msgstr "Dostosuj położenie i wykonanie arkusza CSS (eksperymentalne)"
+
+msgid "Deferred CSS Execution: Use JS to load CSS"
+msgstr "Odroczone wykonanie arkusza CSS: użyj kodu JS, aby załadować arkusz CSS"
+
+msgid "Enabled (In head)"
+msgstr "Włączone (w nagłówku)"
+
+msgid "This will try to optimize CSS delivery by using JavaScript to load the CSS. This might break CSS on different browsers and will cause a flash of unstyled content (FOUC). Only enable after extensive testing! <a href=\"@link\">More Info</a>"
+msgstr "Zostanie podjęta próba zoptymalizowania dostarczania arkusza CSS za pomocą kodu JavaScript do załadowania arkusza CSS. Może to spowodować uszkodzenie arkusza CSS w różnych przeglądarkach i może spowodować błąd FOUC (flash of unstyled content). Włączać tylko po dokładnym przetestowaniu! <a href=\"@link\">Więcej informacji</a>"
+
+msgid "Use JS to load CSS in the admin theme"
+msgstr "Użyj kodu JS do załadowania arkusza CSS w kompozycji administracyjnej"
+
+msgid "This will optimize CSS delivery with JavaScript when viewing the admin theme."
+msgstr "Spowoduje to zoptymalizowanie dostarczania arkusza CSS za pomocą kodu JavaScript podczas wyświetlania kompozycji administracyjnej."
+
+msgid "Use JS to load external CSS"
+msgstr "Użyj kodu JS do załadowania zewnętrznego arkusza CSS"
+
+msgid "This will optimize CSS delivery with JavaScript for external stylesheets."
+msgstr "Spowoduje to zoptymalizowanie dostarczania arkusza CSS za pomocą kodu JavaScript dla zewnętrznych arkuszy stylów."
+
+msgid "How to include the JS loading code"
+msgstr "W jaki sposób dołączyć kod ładujący JS"
+
+msgid "Inline javascript loader library (If enabled this is recommended)"
+msgstr "Wstawiana biblioteka programu ładującego javascript (jeśli ta opcja jest włączona, zalecane)"
+
+msgid "Local file included in aggregate"
+msgstr "Plik lokalny włączony w agregacie"
+
+msgid "Externally load the latest from github"
+msgstr "Ładuj zewnętrznie najnowsze z serwisu github"
+
+msgid "The <a href=\"@link\">loadCSS</a> library can be included in various ways."
+msgstr "Bibliotekę <a href=\"@link\">loadCSS</a> można dołączyć na szereg sposobów."
+
+msgid "AdvAgg Old Internet Explorer Compatibility Enhancer"
+msgstr "Program rozszerzający kompatybilność modułu AdvAgg ze starą przeglądarką Internet Explorer"
+
+msgid "Provides some enhanced compatibility with outdated Internet Explorer versions."
+msgstr "Udostępnia rozszerzoną kompatybilność z nieaktualnymi wersjami programu Internet Explorer."
+
+msgid "AdvAgg CSS/JS Validator"
+msgstr "Analizator poprawności CSS/JS modułu AdvAgg"
+
+msgid "Validate the CSS and JS files used in Aggregation for syntax errors."
+msgstr "Sprawdź poprawność plików CSS i JS użytych w agregacji pod kątem błędów składniowych."
+
+msgid "AdvAgg: Asset Validation"
+msgstr "AdvAgg: sprawdzanie poprawności zasobu"
+
+msgid "CSSLint"
+msgstr "CSSLint"
+
+msgid "W3.org CSS Validator"
+msgstr "Analizator poprawności arkusza CSS W3.org"
+
+msgid "JSHint"
+msgstr "JSHint"
+
+msgid "Asset Validation"
+msgstr "Sprawdzanie poprawności zasobu"
+
+msgid "Validate CSS with CSSLint"
+msgstr "Sprawdź poprawność arkusza CSS za pomocą narzędzia CSSLint"
+
+msgid "Validate CSS with the W3.org css validator"
+msgstr "Sprawdź poprawność arkusza CSS za pomocą analizatora poprawności arkusza CSS W3.org"
+
+msgid "Validate JavaScript with JSHint"
+msgstr "Sprawdź poprawność kodu JavaScript za pomocą narzędzia JSHint"
+
+msgid "Advanced CSS/JS Aggregation Asset Validation"
+msgstr "Sprawdzanie poprawności zasobu zaawansowanej agregacji CSS/JS"
+
+msgid "AdvAgg: CSS Validator using CSSLint"
+msgstr "AdvAgg: analizator poprawności arkusza CSS przy użyciu narzędzia CSSLint"
+
+msgid "AdvAgg: CSS Validator using w3.org"
+msgstr "AdvAgg: analizator poprawności arkusza CSS przy użyciu w3.org"
+
+msgid "AdvAgg: JavaScript Validator using JSHint"
+msgstr "AdvAgg: analizator poprawności kodu JavaScript przy użyciu narzędzia JSHint"
+
+msgid "Default CSS Lint ignore settings."
+msgstr "Domyślne ustawienia ignorowania narzędzia CSSLint."
+
+msgid "Default JS Hint ignore settings."
+msgstr "Domyślne ustawienia ignorowania narzędzia JSHint."
+
+msgid "Browser unable to read file. @error"
+msgstr "Przeglądarka nie może odczytać pliku. @error"
+
+msgid "Directory:"
+msgstr "Katalog:"
+
+msgid "Check directory and all subdirectories"
+msgstr "Sprawdź katalog i wszystkie podkatalogi"
+
+msgid "Check directory"
+msgstr "Sprawdź katalog"
+
+msgid "File:"
+msgstr "Plik:"
+
+msgid "Files:"
+msgstr "Pliki:"
+
+msgid "valid"
+msgstr "poprawny"
+
+msgid "Options:"
+msgstr "Opcje:"
+
+msgid "Errors:"
+msgstr "Błędy:"
+
+msgid "Warnings:"
+msgstr "Ostrzeżenia:"
+
+msgid "Notice: The form below will submit files to the <a href=\"http://jigsaw.w3.org/css-validator/\">http://jigsaw.w3.org/css-validator/</a> service if used."
+msgstr "Uwaga: poniższy formularz będzie wysyłać pliki do usługi <a href=\"http://jigsaw.w3.org/css-validator/\">http://jigsaw.w3.org/css-validator/</a>, jeśli jest używana."
+
+msgid "W3C Server did not return a 200 or request data was empty."
+msgstr "Serwer W3C nie zwrócił kodu 200 lub dane żądania były puste."
+
+msgid "CSS settings"
+msgstr "Ustawienia CSS"
+
+msgid "Compress css assets with brotli compression."
+msgstr "Kompresuj zasoby CSS z użyciem algorytmu kompresji Brotli."
+
+msgid "Combine multiple media selectors per aggregate."
+msgstr "Złóż wiele selektorów multimediów na agregat."
+
+msgid "Fix type of added asset files."
+msgstr "Napraw typ dodanych plików zasobów."
+
+msgid "Do not change external to file if on same host for css."
+msgstr "Nie zmieniaj wartości external na file, jeśli jest na tym samym hoście dla arkusza CSS."
+
+msgid "Prefetch external domains for css/js"
+msgstr "Pobierz wstępnie domeny zewnętrzne dla css/js"
+
+msgid "Path/Url settings"
+msgstr "Ustawienia ścieżki/adresu URL"
+
+msgid "What conversions to apply."
+msgstr "Konwersja do zastosowania."
+
+msgid "Convert absolute path css/js src/url() to be protocol relative."
+msgstr "Przekształć pełną ścieżkę css/js src/url() na względną w stosunku do protokołu."
+
+msgid "Convert relative paths to absolute."
+msgstr "Przekształć ścieżki względne w pełne."
+
+msgid "Convert absolute path css/js src/url() to use https://"
+msgstr "Przekształć pełną ścieżkę css/js src/url(), aby użyć https://"
+
+msgid "Level of caching for AdvAgg to use."
+msgstr "Poziom buforowania dla modułu AdvAgg, który ma zostać użyty."
+
+msgid "frequency to run the AdvAgg cron maintenance functions."
+msgstr "częstotliwość uruchamiania funkcji konserwacyjnych modułu AdvAgg."
+
+msgid "Enable AdvAgg."
+msgstr "Włącz moduł AdvAgg."
+
+msgid "Counter to force new aggregates through caches etc."
+msgstr "Licznik wymuszający nowe agregaty za pośrednictwem pamięci podręcznych itp."
+
+msgid "Add the immutable tag to Apache cache control strings."
+msgstr "Dodaj znacznik immutable do łańcuchów sterowania pamięcią podręczną Apache."
+
+msgid "JavaScript specific settings."
+msgstr "Ustawienia specyficzne dla kodu JavaScript."
+
+msgid "Do not change external to file if on same host for js."
+msgstr "Nie zmieniaj wartości external na file, jeśli jest na tym samym hoście dla kodu JS."
+
+msgid "Skip preprocess check on status page"
+msgstr "Pomiń sprawdzanie przetwarzania wstępnego na stronie statusu"
+
+msgid "Display a message when the bypass cookie is active."
+msgstr "Wyświetl komunikat, gdy informacja cookie obejścia jest aktywna."
+
+msgid "Use Options +FollowSymlinks to support some hosts."
+msgstr "Użyj wpisu Options +FollowSymlinks do obsługi niektórych hostów."
+
+msgid "Use options +SymLinksIfOwnerMatch to support some hosts."
+msgstr "Użyj wpisu Options +SymLinksIfOwnerMatch do obsługi niektórych hostów."
+
+msgid "This page provides debugging information. There are no configuration options here."
+msgstr "Na tej stronie znajdują się informacje debugowania. W tym miejscu nie ma żadnych opcji konfiguracyjnych."
+
+msgid "Hook Theme Info"
+msgstr "Informacje o kompozycji haka"
+
+msgid "Get detailed info about an optimized file"
+msgstr "Uzyskaj szczegółowe informacje o zoptymalizowanym pliku"
+
+msgid "Filename"
+msgstr "Nazwa pliku"
+
+msgid "Lookup Details"
+msgstr "Wyszukaj szczegóły"
+
+msgid "Input an optimized filename like \"@css_file\"."
+msgstr "Wprowadź zoptymalizowaną nazwę pliku, na przykład \"@css_file\"."
+
+msgid "Please input a valid optimized filename."
+msgstr "Wprowadź poprawną nazwę zoptymalizowanego pliku."
+
+msgid "Optimized file information not found, confirm spelling of the path. Alternatively, that could be an outdated file."
+msgstr "Nie znaleziono informacji o zoptymalizowanym pliku, sprawdź poprawność pisowni ścieżki. Inną możliwością jest to, że plik może być przestarzały."
+
+msgid "This is a collection of commands to control the cache and to manage testing of this module. In general this page is useful when troubleshooting some aggregation issues. For normal operations, you do not need to do anything on this page below the Smart Cache Flush. There are no configuration options here."
+msgstr "Jest to kolekcja komend służąca do sterowania pamięcią podręczną i do zarządzania testowaniem tego modułu. Na ogół ta strona jest przydatna podczas rozwiązywania problemów z agregacją. W przypadku normalnych operacji nie trzeba nic robić na tej stronie poniżej opcji inteligentnego opróżniania pamięci podręcznej. W tym miejscu nie ma żadnych opcji konfiguracyjnych."
+
+msgid "Aggregation Bypass Cookie"
+msgstr "Informacja cookie obejścia agregacji"
+
+msgid "This will set or remove a cookie that disables aggregation for a set period of time."
+msgstr "Spowoduje to ustawienie lub usunięcie informacji cookie, która wyłącza agregację dla określonego przedziału czasu."
+
+msgid "Bypass length"
+msgstr "Długość pomijania"
+
+msgid "6 hours"
+msgstr "6 godzin"
+
+msgid "12 hours"
+msgstr "12 godzin"
+
+msgid "1 day"
+msgstr "1 dzień"
+
+msgid "2 days"
+msgstr "2 dni"
+
+msgid "1 week"
+msgstr "1 tydzień"
+
+msgid "1 month"
+msgstr "1 miesiąc"
+
+msgid "1 year"
+msgstr "1 rok"
+
+msgid "Toggle The \"aggregation bypass cookie\" For This Browser"
+msgstr "Przełącz \"Informacje cookie obejścia agregacji\" dla tej przeglądarki"
+
+msgid "Cron Maintenance Tasks"
+msgstr "Zadania konserwacji cron"
+
+msgid "The following operation is ran on cron but you can run it manually here."
+msgstr "Następująca operacja jest wykonywana w zadaniu cron, ale można ją tutaj uruchomić ręcznie."
+
+msgid "Clear Stale Files"
+msgstr "Wyczyść nieaktualne pliki"
+
+msgid "Scan all files in the css/js optimized directories and remove outdated ones."
+msgstr "Przeszukaj wszystkie pliki w zoptymalizowanych katalogach css/js i usuń nieaktualne."
+
+msgid "Remove All Stale Files"
+msgstr "Usuń wszystkie nieaktualne pliki"
+
+msgid "Drastic Measures"
+msgstr "Radykalne środki"
+
+msgid "The options below should normally never need to be done."
+msgstr "Poniższe opcje normalnie nigdy nie powinny zostać wykonane."
+
+msgid "Clear All Caches"
+msgstr "Wyczyść wszystkie pamięci podręczne"
+
+msgid "Remove all entries from the advagg cache and file information stores. Useful if you suspect a cache is not getting cleared."
+msgstr "Usuń wszystkie wpisy z magazynów informacji o pamięci podręcznej i pliku modułu advagg. Opcja ta jest przydatna, jeśli pamięć podręczna prawdopodobnie nie zostanie wyczyszczona."
+
+msgid "Clear All Caches & File Information"
+msgstr "Wyczyść wszystkie pamięci podręczne i informacje o plikach"
+
+msgid "Force new files"
+msgstr "Wymuś nowe pliki"
+
+msgid "Force the creation of all new optimized files by incrementing a global counter. Current value of counter: %value. This is useful if a CDN has cached a file incorrectly as it will force new ones to be used even if nothing else has changed."
+msgstr "Wymuś utworzenie wszystkich nowych zoptymalizowanych plików, zwiększając wartość licznika globalnego. Bieżąca wartość licznika: %value. Opcja ta jest przydatna, jeśli sieć CDN zbuforowała plik nieprawidłowo, ponieważ wymusza to użycie nowych elementów nawet wtedy, gdy nic innego nie zostało zmienione."
+
+msgid "Increment Global Counter"
+msgstr "Zwiększ licznik globalny"
+
+msgid "Global counter is now set to %new_value"
+msgstr "Licznik globalny jest teraz ustawiony na wartość: %new_value"
+
+msgid "AdvAgg Bypass Cookie Removed."
+msgstr "Informacja cookie obejścia modułu AdvAgg została usunięta."
+
+msgid "AdvAgg Bypass Cookie Set for %time."
+msgstr "Informacje obejścia AdvAgg ustawione na %time."
+
+msgid "Development"
+msgstr "Tworzenie"
+
+msgid "Low"
+msgstr "Niska"
+
+msgid "Normal"
+msgstr "Normalna"
+
+msgid "High"
+msgstr "Wysoki"
+
+msgid "15 minutes"
+msgstr "15 minut"
+
+msgid "30 minutes"
+msgstr "30 minut"
+
+msgid "45 minutes"
+msgstr "45 minut"
+
+msgid "1 hour"
+msgstr "1 godz."
+
+msgid "2 hours"
+msgstr "2 godziny"
+
+msgid "4 hours"
+msgstr "4 godziny"
+
+msgid "18 hours"
+msgstr "18 godzin"
+
+msgid "3 days"
+msgstr "3 dni"
+
+msgid "4 days"
+msgstr "4 dni"
+
+msgid "5 days"
+msgstr "5 dni"
+
+msgid "6 days"
+msgstr "6 dni"
+
+msgid "2 week"
+msgstr "2 tygodnie"
+
+msgid "3 week"
+msgstr "3 tygodnie"
+
+msgid "6 weeks"
+msgstr "6 tygodni"
+
+msgid "2 months"
+msgstr "2 miesiące"
+
+msgid "Global Options"
+msgstr "Opcje globalne"
+
+msgid "Enable advanced aggregation"
+msgstr "Włącz zaawansowaną agregację"
+
+msgid "Uncheck this box to temporarily disable AdvAgg functionality."
+msgstr "Usuń zaznaczenie tego pola wyboru, aby tymczasowo wyłączyć funkcje modułu AdvAgg."
+
+msgid "Use DNS Prefetch for external CSS/JS."
+msgstr "Użyj opcji pobierania DNS z wyprzedzeniem dla zewnętrznych plików CSS/JS."
+
+msgid "Start the DNS lookup for external CSS and JavaScript files as soon as possible."
+msgstr "Uruchom wyszukiwanie DNS dla zewnętrznych plików CSS i JavaScript tak szybko, jak to możliwe."
+
+msgid "Server Config"
+msgstr "Konfiguracja serwera"
+
+msgid "Cache-Control: Immutable"
+msgstr "Cache-Control: Immutable"
+
+msgid "Your server can send <a href=\"@url1\">Cache-Control: immutable</a> header for all optimized files. This should improve performance for some users. Current <a href=\"@url2\">browser support</a>"
+msgstr "Serwer może wysłać nagłówek <a href=\"@url1\">Cache-Control: immutable</a> dla wszystkich zoptymalizowanych plików. Powinno to poprawić wydajność dla niektórych użytkowników. Obecna <a href=\"@url2\">obsługa przeglądarki</a>"
+
+msgid "Include Cache-Control: immutable in generated .htaccess files."
+msgstr "Dołącz wpis Cache-Control: immutable w wygenerowanych plikach .htaccess."
+
+msgid "With the Apache server, AdvAgg can generate config to send the header for all optimized files."
+msgstr "W przypadku serwera Apache moduł AdvAgg może wygenerować konfigurację do wysyłania nagłówka dla wszystkich zoptymalizowanych plików."
+
+msgid "With Nginx, AdvAgg can't set the headers for optimized files in a performant manner. However, you can easily do so in your server config. See the <a href='@url'>manual for instructions</a>."
+msgstr "W przypadku serwera Nginx moduł AdvAgg nie może ustawić nagłówków dla zoptymalizowanych plików w wydajny sposób. Jednak można to łatwo wprowadzić w konfiguracji serwera. Odpowiednie <a href='@url'>instrukcje zawiera podręcznik</a>."
+
+msgid "AdvAgg Cache Settings"
+msgstr "Ustawienia pamięci podręcznej modułu AdvAgg"
+
+msgid "No performance data yet but most use cases will probably want to use the Normal cache mode."
+msgstr "Brak danych o wydajności, jednak większość przypadków użycie będzie prawdopodobnie korzystać z trybu pamięci podręcznej Normalny."
+
+msgid "Compression Options"
+msgstr "Opcje kompresji"
+
+msgid "Compressed files will automatically be served by the Apache server"
+msgstr "Skompresowane pliki zostaną automatycznie obsłużone przez serwer Apache"
+
+msgid "AdvAgg can't configure your Nginx server to automatically serve compressed assets. See the <a href='@url'>AdvAgg manual</a> for instructions on manually doing so."
+msgstr "Moduł AdvAgg nie może skonfigurować serwera Nginx do automatycznej obsługi skompresowanych zasobów. Instrukcje ręcznego wykonania zawiera <a href='@url'>podręcznik modułu AdvAgg</a>."
+
+msgid "Gzip CSS assets"
+msgstr "Spakuj zasoby CSS programem gzip"
+
+msgid "This should be enabled unless you are experiencing corrupted compressed asset files."
+msgstr "Ta opcja powinna być włączona, chyba że występują uszkodzone skompresowane pliki zasobów."
+
+msgid "Gzip JavaScript assets"
+msgstr "Spakuj zasoby JavaScript programem gzip"
+
+msgid "Select to compress this asset type with brotli compression. See <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> page for more information."
+msgstr "Wybierz tę opcję, aby skompresować ten typ zasobów z użyciem kompresji Brotli. Więcej informacji na ten temat zawiera strona <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a>."
+
+msgid "Brotli compression is not available on your server. See <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a> page for more information."
+msgstr "Kompresja Brotli jest niedostępna na serwerze. Więcej informacji na ten temat zawiera strona <a href='https://github.com/kjdev/php-ext-brotli'>PHP Brotli</a>."
+
+msgid "Brotli compress CSS assets"
+msgstr "Spakuj zasoby CSS, używając kompresji Brotli"
+
+msgid "Brotli compress JavaScript assets"
+msgstr "Spakuj zasoby JavaScript, używając kompresji Brotli"
+
+msgid "CSS Options"
+msgstr "Opcje CSS"
+
+msgid "Combine CSS files by using media queries"
+msgstr "Złóż pliki CSS przy użyciu zapytań o multimedia"
+
+msgid "Will combine more CSS files together because different CSS media types can be used in the same file by using media queries. Use cores grouping logic needs to be unchecked in order for this to work. Also noted is that due to an issue with IE9, compatibility mode is forced off if this is enabled."
+msgstr "Spowoduje złożenie razem większej liczby plików CSS, ponieważ różne typy multimediów CSS mogą zostać użyte w tym samym pliku przy użyciu zapytań o multimedia. Aby to zadziałało, należy anulować zaznaczenie podstawowych logik grupowania. Należy również zauważyć, że ze względu na problem z przeglądarką IE9, jeśli ta opcja jest włączona, wymuszane jest wyłączenie trybu zgodności."
+
+msgid "Fix improperly set type"
+msgstr "Napraw niepoprawnie ustawiony typ"
+
+msgid "If type is external but does not start with http, https, or // change it to be type file. If type is file but it starts with http, https, or // change type to be external. Note that if this is causing issues, odds are you have a double slash when there should be a single; see <a href=\"@link\">this issue</a>"
+msgstr "Jeśli typ ma wartość external, ale nie rozpoczyna się od łańcucha http, https lub //, zmień ją na wartość file. Jeśli typ ma wartość file, ale rozpoczyna się od łańcucha http, https lub // change, zmień ją na wartość external. Pamiętaj, że jeśli powoduje to problemy, prawdopodobnie zamiast pojedynczego jest podany podwójny ukośnik, patrz opis <a href=\"@link\">tego problemu</a>"
+
+msgid "Do not change external to file if on same host."
+msgstr "Nie zmieniaj wartości external na file, jeśli jest na tym samym hoście."
+
+msgid "If a CSS file is set as external and is on the same hosts do not convert to file."
+msgstr "Jeśli plik CSS jest ustawiony na wartość external i znajduje się na tych samych hostach, nie przekształcaj tej wartości w file."
+
+msgid "JS Options"
+msgstr "Opcje JS"
+
+msgid "If a JS file is set as external and is on the same hosts do not convert to file."
+msgstr "Jeśli plik JS jest ustawiony na wartość external i znajduje się na tych samych hostach, nie przekształcaj tej wartości w file."
+
+msgid "Cron Options"
+msgstr "Opcje zadania cron"
+
+msgid "Unless you have a good reason to adjust these values you should leave them alone."
+msgstr "O ile nie ma dobrej przyczyny, aby korygować te wartości, należy pozostawić je bez zmian."
+
+msgid "@time ago"
+msgstr "upłynęło: @time"
+
+msgid "never"
+msgstr "nigdy"
+
+msgid "The default value for this is %value. The last time advagg_cron was ran is %time."
+msgstr "Wartością domyślną jest: %value. Czas ostatniego uruchomienia zadania advagg_cron: %time."
+
+msgid "The default value for this is %value."
+msgstr "Wartością domyślną jest: %value."
+
+msgid "Obscure Options"
+msgstr "Opcje przysłonięcia"
+
+msgid "Some of the more obscure AdvAgg settings. Odds are you do not need to change anything in here."
+msgstr "Niektóre z większej liczby ustawień przesłonięcia modułu AdvAgg. Prawdopodobnie nie ma potrzeby zmieniać tutaj niczego."
+
+msgid "Convert absolute paths to be protocol relative paths."
+msgstr "Przekształć pełne ścieżki tak, aby były ścieżkami względnymi w stosunku do protokołu."
+
+msgid "If the src to a CSS/JS file points starts with http:// or https://, convert it to use a protocol relative path //. Will also convert url() references inside of css files."
+msgstr "Jeśli źródło do wskazań pliku CSS/JS rozpoczyna się od łańcucha http:// lub https://, przekształć je tak, aby użyć ścieżki względnej w stosunku do protokołu //. Spowoduje to również przekształcenie odwołań url() w plikach CSS."
+
+msgid "Convert relative paths to be absolute paths."
+msgstr "Przekształć ścieżki względne w pełne ścieżki."
+
+msgid "If the src to a CSS/JS file points starts with a relative path / convert to absolute."
+msgstr "Jeśli źródło do wskazań pliku CSS/JS rozpoczyna się od ścieżki względnej /, przekształć w pełną."
+
+msgid "Convert http:// to https://."
+msgstr "Przekształć http:// w https://."
+
+msgid "If the src to a CSS/JS file starts with http:// convert it https://. Will also convert url() references inside of css files."
+msgstr "Jeśli źródło do pliku CSS/JS rozpoczyna się od łańcucha http://, przekształć go w łańcuch https://. Spowoduje to również przekształcenie odwołań url() w plikach CSS."
+
+msgid "Use \"Options +FollowSymLinks\""
+msgstr "Użyj \"Options +FollowSymLinks\""
+
+msgid "Some shared hosts require \"<code>Options +FollowSymLinks</code>\" in the .htaccess for asset directories."
+msgstr "Niektóre hosty współużytkowane wymagają podania w pliku .htaccess opcji \"<code>Options +FollowSymLinks</code>\" dla katalogów zasobów."
+
+msgid "Use \"Options +SymLinksIfOwnerMatch\""
+msgstr "Użyj \"Options +SymLinksIfOwnerMatch\""
+
+msgid "Some shared hosts require \"<code>Options +SymLinksIfOwnerMatch</code>\" in the .htaccess for asset directories."
+msgstr "Niektóre hosty współużytkowane wymagają podania w pliku .htaccess opcji \"<code>Options +SymLinksIfOwnerMatch</code>\" dla katalogów zasobów."
+

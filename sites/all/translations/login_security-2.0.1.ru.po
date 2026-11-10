@@ -1,0 +1,221 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Your last login was @stamp."
+msgstr "Ваш последний вход был @stamp."
+
+msgid "Your last page access (site activity) was @stamp."
+msgstr "Ваш последний доступ к странице (активность на сайте) был @stamp."
+
+msgid "Make sure you have reviewed the <a href=\"!README\">README file</a> for further information about how all these settings will affect your Drupal login form submissions."
+msgstr "Прочитайте <a href=\"!README\">файл README</a>, чтобы получить дополнительную информацию о том, как все эти параметры влияют на передачу форм входа в Drupal."
+
+msgid "Banned IP address @ip due to security configuration."
+msgstr "Запрещен IP-адрес согласно конфигурации защиты."
+
+msgid "Blocked user @username due to security configuration."
+msgstr "Заблокирован пользователь @username согласно конфигурации защиты."
+
+msgid "Login Security"
+msgstr "Защита входа"
+
+msgid "Enable security options in the login flow of the site."
+msgstr "Включите параметры защиты в потоке входа на сайт."
+
+msgid "Login security settings"
+msgstr "Параметры защиты входа"
+
+msgid "Track time"
+msgstr "Отслеживать время"
+
+msgid "Maximum number of login failures before blocking a user"
+msgstr "Максимальное число неудачных попыток входа перед блокировкой пользователя"
+
+msgid "Maximum number of login failures before soft blocking a host"
+msgstr "Максимальное число неудачных попыток входа перед мягкой блокировкой хоста"
+
+msgid "Maximum number of login failures before blocking a host"
+msgstr "Максимальное число неудачных попыток входа перед блокировкой хоста"
+
+msgid "Maximum number of login failures before detecting an ongoing attack"
+msgstr "Максимальное число неудачных попыток входа в систему перед обнаружением идущей атаки"
+
+msgid "Disable login failure error message"
+msgstr "Выключить сообщение о сбое входа"
+
+msgid "Notify the user about the number of remaining login attempts"
+msgstr "Уведомить пользователя о количестве оставшихся попыток входа"
+
+msgid "Display last login timestamp"
+msgstr "Показывать время последнего входа"
+
+msgid "Display last access timestamp"
+msgstr "Показывать время последнего доступа"
+
+msgid "Message to be shown on each failed login attempt"
+msgstr "Сообщение, показываемое при каждой неудачной попытке входа"
+
+msgid "Message for banned host (Soft IP ban)"
+msgstr "Сообщение для запрещенного хоста (мягкий запрет IP-адреса)"
+
+msgid "Message for banned host (Hard IP ban)"
+msgstr "Сообщение для запрещенного хоста (жесткий запрет IP-адреса)"
+
+msgid "Message when user is blocked by uid"
+msgstr "Сообщение при блокировании пользователя по uid"
+
+msgid "Email subject"
+msgstr "Тема сообщения"
+
+msgid "Email body"
+msgstr "Текст письма"
+
+msgid "Emails to be notified when users are blocked"
+msgstr "Адреса электронной почты, на которые отправляются уведомления о блокировке пользователей"
+
+msgid "Emails to be notified during excess activity"
+msgstr "Адреса электронной почты, на которые отправляются уведомления об избыточной активности"
+
+msgid "General settings"
+msgstr "Основные настройки"
+
+msgid "User"
+msgstr "Пользователь"
+
+msgid ""
+"Enter the number of login failures a user is allowed. <br>\n"
+"        After this amount is reached, the user will be blocked, no matter the host attempting to log in. Use this option carefully on public sites, as an attacker may block your site users. <br>\n"
+"        The user blocking protection will not disappear and should be removed manually from the <a href=\":user\">user management</a> interface."
+msgstr ""
+"Введите число допустимых неудачных попыток входа пользователя. <br>\n"
+"        После достижения этого значения пользователь блокируется независимо от того, с какого хоста была попытка входа. Этот параметр следует использовать на общедоступных сайтах с осторожностью, так как злоумышленники могут намеренно блокировать пользователей сайта посредством этой функции. <br>\n"
+"        Защитная блокировка пользователей не снимается автоматически, это необходимо сделать вручную через интерфейс <a href=\":user\">управления пользователями</a>."
+
+msgid "failed attempts"
+msgstr "неудачные попытки"
+
+msgid "Soft host"
+msgstr "Мягкий хост"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this amount is reached, the host will not be able to submit the log in form again, but can still browse the site contents as an anonymous user. <br>\n"
+"        This protection is effective during the time indicated at tracking time option."
+msgstr ""
+"Введите число допустимых неудачных попыток входа с хоста. <br>\n"
+"        После достижения этого значения хост не сможет повторно отправить форму входа, однако возможность просматривать содержимое сайта от лица анонимного пользователя останется. <br>\n"
+"        Эта защита действует в течение времени, указанного в параметре отслеживания времени."
+
+msgid "Host"
+msgstr "Хост"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this number is reached, the host will be blocked, no matter the username attempting to log in. <br>\n"
+"        The host blocking protection will not disappear automatically and should be removed manually from the <a href=\":access\">access rules</a> administration interface."
+msgstr ""
+"Введите число допустимых неудачных попыток входа с хоста. <br>\n"
+"        После достижения этого значения хост блокируется независимо от того, от имени какого пользователя была попытка входа. <br>\n"
+"        Защитная блокировка хостов не снимается автоматически, это необходимо сделать вручную через административный интерфейс <a href=\":access\">правил доступа</a>."
+
+msgid "Attack detection"
+msgstr "Обнаружение атаки"
+
+msgid ""
+"Enter the number of login failures before creating a warning log entry about this suspicious activity. <br>\n"
+"        If the number of invalid login events currently being tracked reach this number, and ongoing attack is detected."
+msgstr ""
+"Введите число неудачных попыток входа, по достижении которого будет добавляться запись в протокол предупреждений об этой подозрительной операции. <br>\n"
+"        Если число недопустимых событий входа в систему, отслеживаемых в настоящий момент, достигает этого числа, то это считается идущей атакой."
+
+msgid "Notification"
+msgstr "Уведомление"
+
+msgid ""
+"Prevents the display of login error messages. <br>\n"
+"        A user attempting to login will not be aware if the account exists, an invalid user name or password has been submitted, or if the account is blocked. The core messages are also hidden."
+msgstr ""
+"Запрещает вывод сообщений об ошибках входа. <br>\n"
+"        Пользователь, который пытается войти, не будет знать, существует ли учетная запись, передано ли неправильное имя пользователя или пароль и заблокирована ли учетная запись. Основные сообщения тоже скрываются."
+
+msgid ""
+"The user is notified about the number of remaining login attempts before the account gets blocked. <br>\n"
+"        Security tip: If you enable this option, try to not disclose as much of your login policies as possible in the message shown on any failed login attempt."
+msgstr ""
+"Пользователь уведомляется о количестве оставшихся попыток входа в систему, по исчерпании которых учетная запись блокируется. <br>\n"
+"        Совет по защите: при включении этого параметра рекомендуется по минимуму разглашать стратегии защиты входа в сообщении, которое показывается при каждой неудачной попытке входа в систему."
+
+msgid "When a user successfully logs in, a message will display the last time he logged into the site."
+msgstr "При успешном входе пользователя будет показано сообщение со временем его последнего входа на сайт."
+
+msgid "When a user successfully logs in, a message will display the last site access with this account."
+msgstr "При успешном входе пользователя будет показано сообщение со временем последнего доступа к сайту посредством этой учетной записи."
+
+msgid "Email for ongoing attack detection"
+msgstr "Электронная почта для обнаружения атаки"
+
+msgid "To"
+msgstr "Кому"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when an ongoing attack is detected. No notification will be sent if the field is blank."
+msgstr "Укажите список адресов электронной почты через запятую, которые должны получать сообщения электронной почты в случае обнаружения атаки. Если поле пустое, то уведомления отправляться не будут."
+
+msgid "Subject"
+msgstr "Тема"
+
+msgid "Body"
+msgstr "Содержимое"
+
+msgid "Email for blocked account"
+msgstr "Электронная почта для заблокированной учетной записи"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when a user is blocked. No notification will be sent if the field is blank."
+msgstr "Укажите список адресов электронной почты через запятую, которые должны получать сообщения электронной почты в случае блокировки пользователя. Если поле пустое, то уведомления отправляться не будут."
+
+msgid "Failed login attempt"
+msgstr "Неудачная попытка входа"
+
+msgid "Enter the message string to be shown if the login fails after the form is submitted."
+msgstr "Введите строку сообщения, которая будет показываться в случае сбоя входа после передачи формы."
+
+msgid "Banned host (soft IP ban)"
+msgstr "Запрещенный хост (мягкий запрет IP-адреса)"
+
+msgid "Enter the soft IP ban message to be shown when a host attempts to log in too many times."
+msgstr "Введите сообщение для мягкого запрета IP-адреса, которое будет показываться, когда хост попытается войти на сайт слишком много раз."
+
+msgid "Banned host (hard IP ban)"
+msgstr "Запрещенный хост (жесткий запрет IP-адреса)"
+
+msgid "Enter the hard IP ban message to be shown when a host attempts to log in too many times."
+msgstr "Введите сообщение для жесткого запрета IP-адреса, которое будет показываться, когда хост попытается войти на сайт слишком много раз."
+
+msgid "Blocked user by uid"
+msgstr "Блокировка пользователя по ИД"
+
+msgid "Enter the message to be shown when a user gets blocked due to enough failed login attempts."
+msgstr "Введите сообщение, которое будет показываться в случае блокировки пользователя из-за слишком большого количества неудачных попыток входа."
+
+msgid "Tokens"
+msgstr "Токены"
+
+msgid "<ul><li>%date: The (formatted) date and time of the event.</li><li>%ip: The IP address tracked for this event.</li><li>%username: The username entered in the login form (sanitized).</li><li>%email: If the user exists, this will be the email address.</li><li>%uid: If the user exists, this will be the user uid.</li><li>%site: The name of the site as configured in the administration.</li><li>%uri: The base url of this Drupal site.</li><li>%edit_uri: Direct link to the user (based on the name entered) edit page.</li><li>%hard_block_attempts: Configured maximum attempts before hard blocking the IP address.</li><li>%soft_block_attempts: Configured maximum attempts before soft blocking the IP address.</li><li>%user_block_attempts: Configured maximum login attempts before blocking the user.</li><li>%user_ip_current_count: The total attempts for this user name tracked from this IP address.</li><li>%ip_current_count: The total login attempts tracked from from this IP address.</li><li>%user_current_count: The total login attempts tracked for this user name .</li><li>%tracking_time: The tracking time value: in hours.</li><li>%tracking_current_count: Total tracked events</li><li>%activity_threshold: Value of attempts to detect ongoing attack.</li></ul>"
+msgstr "<ul><li>%date: дата и время события (форматированное значение).</li><li>%ip: отслеженный IP-адрес для этого события.</li><li>%username: Имя пользователя, введенное в форме входа (очищенное).</li><li>%email: Если пользователь существует, это будет адрес электронной почты.</li><li>%uid: Если пользователь существует, это будет ИД пользователя.</li><li>%site: Имя сайта, настроенное администратором.</li><li>%uri: Базовый URL этого сайта Drupal.</li><li>%edit_uri: Прямая ссылка на страницу редактирования пользователя (на основе введенного имени).</li><li>%hard_block_attempts: Настроенное максимальное число попыток перед жесткой блокировкой IP-адреса.</li><li>%soft_block_attempts: Настроенное максимальное число попыток перед мягкой блокировкой IP-адреса.</li><li>%user_block_attempts: Настроенное максимальное число попыток входа перед блокировкой пользователя.</li><li>%user_ip_current_count: Общее число попыток для этого имени пользователя, отслеженных с этого IP-адреса.</li><li>%ip_current_count: Общее число попыток входа, отслеженных с этого IP-адреса.</li><li>%user_current_count: Общее число попыток входа, отслеженных для этого имени пользователя.</li><li>%tracking_time: Значение времени отслеживания (в часах).</li><li>%tracking_current_count: Всего отслеженных событий</li><li>%activity_threshold: Число попыток для обнаружения идущей атаки.</li></ul>"
+
+msgid "Clear event tracking information"
+msgstr "Очистить информацию отслеживания событий"
+
+msgid "Login Security event track list is now empty. @count item(s) deleted."
+msgstr "Список отслеживания событий защиты входа теперь пустой. Удалено @count элементов."
+

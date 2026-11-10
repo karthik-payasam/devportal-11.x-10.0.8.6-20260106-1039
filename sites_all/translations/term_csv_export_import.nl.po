@@ -1,0 +1,131 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "No destination directory provided."
+msgstr "Geen doeldirectory opgegeven."
+
+msgid "About"
+msgstr "Over"
+
+msgid "Helper module to quickly import a list of terms with parent structure."
+msgstr "Helper-module om snel een lijst met termen met de bovenliggende structuur te importeren."
+
+msgid "Term CSV Export/Import"
+msgstr "Export/import van termen-CSV"
+
+msgid "Import and Export Taxonomy terms as csv."
+msgstr "Taxonomytermen in de vorm van csv importeren en exporteren."
+
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+msgid "Import and Export Taxonomy Terms as CSV"
+msgstr "Taxonomietermen importeren en exporteren als CSV"
+
+msgid "Term CSV Import"
+msgstr "CSV-import van termen"
+
+msgid "Term CSV Export"
+msgstr "CSV-export van termen"
+
+msgid "Administer CSV Term Import"
+msgstr "Import van CSV-termen beheren"
+
+msgid "Allows a user to import taxonomy terms."
+msgstr "Hiermee kan een gebruiker taxonomietermen importeren."
+
+msgid "CSV Term Import"
+msgstr "Import van CSV-termen"
+
+msgid "CSV Term Export"
+msgstr "Export van CSV-termen"
+
+msgid "The header keys were not included in the import."
+msgstr "De headersleutels zijn niet opgenomen in de import."
+
+msgid "Line with \"@part\" could not be parsed. Incorrect number of values: @count."
+msgstr "Regel met \"@part\" ka niet ontleed worden. Onjuist aantal waarden: @count."
+
+msgid "The term @name has multiple matches. Ignoring."
+msgstr "De term @name heeft meerdere overeenkomsten. Wordt genegeerd."
+
+msgid "The term with id @id already exists and preserve existing terms is checked. No modification has been made."
+msgstr "De term met ID @id bestaat al en het behouden van bestaande termen is geselecteerd. Er is geen wijziging aangebracht."
+
+msgid "The Term ID already exists."
+msgstr "Het term-ID bestaat al."
+
+msgid "More than 1 terms are named @name. Cannot distinguish by name. Try using id export/import."
+msgstr "Er is meer dan 1 term met de naam @name. Onderscheid op naam is niet mogelijk. Probeer export/import van ID te gebruiken."
+
+msgid "The field data <em>@data</em> is not formatted correctly. Please use the export function."
+msgstr "De veldgegevens <em>@data</em> zijn niet correct ingedeeld. Gebruik de exportfunctie."
+
+msgid "The field data <em>@data</em> could not be imported. Please add the appropriate fields to the vocabulary you are importing into."
+msgstr "De veldgegevens <em>@data</em> kunnen niet geïmporteerd worden. Voeg de juiste velden toe aan de vocabulaire waarnaar u importeert."
+
+msgid "Imported @count terms."
+msgstr "@count termen geïmporteerd."
+
+msgid "Include Term Ids in export."
+msgstr "Term-ID's opnemen in export."
+
+msgid "Include Term Headers in export."
+msgstr "Headers van term opnemen in export."
+
+msgid "Include extra fields in export."
+msgstr "Extra velden in export opnemen."
+
+msgid "Note that fields are stringified using <a href=\"http://www.php.net/http_build_query\">http_build_query</a>"
+msgstr "Velden zijn tot tekenreeks gemaakt met behulp van <a href=\"http://www.php.net/http_build_query\">http_build_query</a>"
+
+msgid "Export"
+msgstr "Exporteren"
+
+msgid "CSV Data"
+msgstr "CSV-gegevens"
+
+msgid "The formatted term data"
+msgstr "De ingedeelde termgegevens"
+
+msgid "Input"
+msgstr "Invoer"
+
+msgid "<p><strong>See CSV Export for an example.</strong></p><p>Enter in the form of: <pre>\"name,status,description,format,weight,parent_name,[any_additional_fields];</pre><pre>name,status,description,format,weight,parent_name[;parent_name1;parent_name2;...],[any_additional_fields]\"</pre> or <pre>\"tid,uuid,name,status,revision_id,description,format,weight,parent_name[;parent_name1;parent_name2;...],parent_tid[;parent_tid1;parent_tid2;...],[any_additional_fields];</pre><pre>tid,uuid,name,status,revision_id,description,format,weight,parent_name,parent_tid,[any_additional_fields]\"</pre> Note that <em>[any_additional_fields]</em> are optional and are stringified using <a href=\"http://www.php.net/http_build_query\">http_build_query</a>.</p><p>If you need to export from Drupal 7, you can import and modify the view d7exportview.txt found at the root directory of this project</p>"
+msgstr "<p><strong>Zie CSV-export voor een voorbeeld.</strong></p><p>Geef dit op in de volgend vorm: <pre>\"naam,status,beschrijving,indeling, gewicht, bovenliggende_naam ,[evt_extra_velden];</pre><pre>naam,status,beschrijving,indeling,gewicht,bovenliggende_naam [;bovenliggende_naam 1;bovenliggende_naam 2;...],[eventuele_aanvullende_velden]\"</pre> of <pre>\"tid,uuid,naam,status,revision_id,beschrijving,indeling,gewicht,bovenliggende_naam [;bovenliggende_naam 1;bovenliggende_naam 2;...],bovenliggend_tid[;bovenliggend_tid1;bovenliggend_tid2;...],[eventuele_andere_velden];</pre><pre>tid,uuid,naam,status,revision_id,beschrijving,indeling,gewicht,bovenliggende_naam ,bovenliggend_tid,[eventuele andere velden]\"</pre> <em>[andere velden]</em> is optioneel en deze velden worden naar tekenreeks omgezet met behulp van <a href=\"http://www.php.net/http_build_query\">http_build_query</a>.</p><p>Als u vanuit Drupal 7 wilt exporteren, kunt u de view d7exportview.txt in de hoofddirectory van dit project importeren en wijzigen.</p>"
+
+msgid "Preserve Vocabularies on existing terms."
+msgstr "Vocabulaires bewaren voor bestaande termen."
+
+msgid "Preserve existing terms. This will prevent a term id collision if importing from another install."
+msgstr "Bestaande termen behouden. Hierdoor wordt voorkomen dat een botsing van term-ID's ontstaat bij het importeren vanuit een andere installatie."
+
+msgid "Next"
+msgstr "Volgende"
+
+msgid "Name"
+msgstr "Naam"
+
+msgid "Create New Vocabulary"
+msgstr "Nieuw vocabulaire maken"
+
+msgid "Create Vocabulary"
+msgstr "Vocabulaire maken"
+
+msgid "Are you sure you want to copy @count_terms terms into the vocabulary @vocabulary@preserve_vocabularies?"
+msgstr "Weet u zeker dat u @count_terms termen naar de vocabulaire @vocabulary@preserve_vocabularies wilt kopiëren?"
+
+msgid "Import"
+msgstr "Importeren"
+

@@ -1,0 +1,578 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Joined path"
+msgstr "합친 경로"
+
+msgid "The array values each cleaned by Pathauto and then joined with the slash into a string that resembles an URL."
+msgstr "배열 값들을 패스오토 모듈로 소독한 후 URL을 구성하는 문자열을 슬래시로 합친 경로입니다."
+
+msgid "About"
+msgstr "소개"
+
+msgid "The Pathauto module provides a mechanism to automate the creation of <a href=\"path\">path</a> aliases. This makes URLs more readable and helps search engines index content more effectively.  For more information, see the <a href=\":online\">online documentation for Pathauto</a>."
+msgstr "Pathauto 모듈은 <a href=\"path\">path</a> 별명 작성을 자동화하는 메커니즘을 제공합니다. 이는 URL을 보다 읽기 좋게 만들고 검색 엔진이 컨텐츠를 보다 효과적으로 색인 작성하도록 돕습니다. 자세한 정보는 <a href=\":online\">Pathauto의 온라인 문서</a>를 참조하십시오."
+
+msgid "Uses"
+msgstr "사용"
+
+msgid "Pathauto is accessed from the tabs it adds to the list of <a href=\":aliases\">URL aliases</a>."
+msgstr "Pathauto는 <a href=\":aliases\">URL 별명</a> 목록에 추가하는 탭에서 액세스됩니다. "
+
+msgid "Creating Pathauto Patterns"
+msgstr "Pathauto 패턴 작성"
+
+msgid "The <a href=\":pathauto_pattern\">\"Patterns\"</a> page is used to configure automatic path aliasing.  New patterns are created here using the <a href=\":add_form\">Add Pathauto pattern</a> button which presents a form to simplify pattern creation thru the use of <a href=\"token\">available tokens</a>. The patterns page provides a list of all patterns on the site and allows you to edit and reorder them. An alias is generated for the first pattern that applies."
+msgstr "<a href=\":pathauto_pattern\">\"패턴\"</a> 페이지가 자동 경로 별명을 구성하는 데 사용됩니다. 새 패턴은 <a href=\"token\">사용 가능한 토큰</a>의 사용을 통해 패턴 작성을 단순화하기 위해 양식을 제공하는 <a href=\":add_form\">Pathauto 패턴 추가</a> 단추를 사용하여 여기에서 작성됩니다. 패턴 페이지는 사이트에서 모든 패턴의 목록을 제공하며 이를 편집하고 다시 정렬할 수 있게 해줍니다. 별명은 적용되는 첫 번째 패턴에 대해 생성됩니다. "
+
+msgid "Pathauto Settings"
+msgstr "Pathauto 설정"
+
+msgid "The <a href=\":settings\">\"Settings\"</a> page is used to customize global Pathauto settings for automated pattern creation."
+msgstr "<a href=\":settings\">\"설정\"</a> 페이지는 자동화된 패턴 작성을 위해 글로벌 Pathauto 설정을 사용자 정의하는 데 사용됩니다. "
+
+msgid "The <strong>maximum alias length</strong> and <strong>maximum component length</strong> values default to 100 and have a limit of @max from Pathauto. You should enter a value that is the length of the \"alias\" column of the path_alias database table minus the length of any strings that might get added to the end of the URL. The recommended and default value is 100."
+msgstr "<strong>최대 별명 길이</strong> 및 <strong>최대 컴포넌트 길이</strong> 값은 기본적으로 100이고 Pathauto로부터 @max의 한계가 있습니다. path_alias 데이터베이스 테이블의 \"별명\" 열의 길이에서 URL의 끝에 추가될 수도 있는 문자열의 길이를 뺀 값을 입력해야 합니다. 권장값 및 기본값은 100입니다."
+
+msgid "Bulk Generation"
+msgstr "대량 생성"
+
+msgid "The <a href=\":pathauto_bulk\">\"Bulk Generate\"</a> page allows you to create URL aliases for items that currently have no aliases. This is typically used when installing Pathauto on a site that has existing un-aliased content that needs to be aliased in bulk."
+msgstr "<a href=\":pathauto_bulk\">\"대량 생성\"</a> 페이지를 사용하면 현재 별명이 없는 항목에 대해 URL 별명을 작성할 수 있습니다. 이는 일반적으로 대량으로 별명이 지정되어야 하는 기존의 별명이 없는 컨텐츠가 있는 사이트에서 Pathauto를 설치할 때 사용됩니다. "
+
+msgid "Delete Aliases"
+msgstr "별명 삭제"
+
+msgid "The <a href=\":pathauto_delete\">\"Delete Aliases\"</a> page allows you to remove URL aliases from items that have previously been assigned aliases using pathauto."
+msgstr "<a href=\":pathauto_delete\">\"별명 삭제\"</a> 페이지를 사용하면 pathauto를 사용하여 이전에 별명이 지정된 항목에서 URL 별명을 제거할 수 있습니다. "
+
+msgid "This page provides a list of all patterns on the site and allows you to edit and reorder them."
+msgstr "이 페이지는 사이트에서 모든 패턴의 목록을 제공하며 이를 편집하고 다시 정렬할 수 있게 해줍니다. "
+
+msgid "You need to select a pattern type, then a pattern and filter, and a label. Additional types can be enabled on the <a href=\":settings\">Settings</a> page."
+msgstr "패턴 유형을 선택한 다음 패턴 및 필터 및 레이블을 선택해야 합니다. <a href=\":settings\">설정</a> 페이지에서 추가 유형을 사용으로 설정할 수 있습니다. "
+
+msgid "Bulk generation can be used to generate URL aliases for items that currently have no aliases. This is typically used when installing Pathauto on a site that has existing un-aliased content that needs to be aliased in bulk."
+msgstr "대량 생성은 현재 별명이 없는 항목의 URL 별명을 생성하는 데 사용할 수 있습니다. 이는 일반적으로 대량으로 별명이 지정되어야 하는 기존의 별명이 없는 컨텐츠가 있는 사이트에서 Pathauto를 설치할 때 사용됩니다. "
+
+msgid "It can also be used to regenerate URL aliases for items that have an old alias and for which the Pathauto pattern has been changed."
+msgstr "이는 또한 이전 별명이 있고 Pathauto 패턴이 변경된 항목의 URL 별명을 재생성하는 데 사용할 수도 있습니다. "
+
+msgid "Note that this will only affect items which are configured to have their URL alias automatically set. Items whose URL alias is manually set are not affected."
+msgstr "이는 URL 별명이 자동으로 설정되도록 구성된 항목에만 영향을 미침을 유의하십시오. URL 별명이 수동으로 설정된 항목은 영향을 받지 않습니다. "
+
+msgid "URL alias"
+msgstr "URL 별명"
+
+msgid "The %element-title is using the following invalid characters: @invalid-characters."
+msgstr "%element-title이(가) 다음 올바르지 않은 문자를 사용 중입니다. @invalid-characters."
+
+msgid "The %element-title doesn't allow the patterns ending with whitespace."
+msgstr "%element-title이(가) 패턴이 공백으로 끝나는 것을 허용하지 않습니다. "
+
+msgid "Entity of type @type was not processed. It defines the following patterns: @patterns"
+msgstr "@type 유형의 엔티티가 처리되지 않았습니다. 이는 다음 패턴을 정의합니다. @patterns"
+
+msgid "Unrecognized entity bundle @entity:@bundle was not processed. It defines the following patterns: @patterns"
+msgstr "인식되지 않은 엔티티 번들 @entity:@bundle이 처리되지 않았습니다. 이는 다음 패턴을 정의합니다. @patterns"
+
+msgid "Automatic alias"
+msgstr "자동 별명"
+
+msgid "Alias: @alias"
+msgstr "경로 별명: @alias"
+
+msgid "No alias"
+msgstr "경로 별명 없음"
+
+msgid "Pathauto"
+msgstr "Pathauto"
+
+msgid "Provides a mechanism for modules to automatically generate aliases for the content they manage."
+msgstr "모듈들이 관리하는 콘텐츠 경로에 대한 별명을 자동으로 생성하는 기능을 제공합니다."
+
+msgid "Add Pathauto pattern"
+msgstr "Pathauto 패턴 추가"
+
+msgid "Patterns"
+msgstr "패턴"
+
+msgid "Settings"
+msgstr "설정"
+
+msgid "Bulk generate"
+msgstr "대량 생성"
+
+msgid "Delete aliases"
+msgstr "별명 삭제"
+
+msgid "Administer pathauto"
+msgstr "pathauto 모듈 관리"
+
+msgid "Allows a user to configure patterns for automated aliases and bulk delete URL-aliases."
+msgstr "사용자가 자동 별명 패턴을 설정하고 URL 별명을 일괄 삭제하도록 허용합니다."
+
+msgid "Notify of Path Changes"
+msgstr "경로 변경사항 알리기"
+
+msgid "Determines whether or not users are notified."
+msgstr "사용자에게 고지했는지 안했는지 결정합니다."
+
+msgid "Duplicate Pathauto pattern"
+msgstr "Pathauto 패턴 중복"
+
+msgid "Enabled entity types"
+msgstr "사용 가능한 엔티티 유형"
+
+msgid "Tokens that are safe to use and do not need to be cleaned."
+msgstr "사용하기에 안전하며 정리할 필요가 없는 토큰."
+
+msgid "Update URL alias"
+msgstr "URL 별명 업데이트하기"
+
+msgid "Pathauto pattern config"
+msgstr "Pathauto 패턴 구성"
+
+msgid "ID"
+msgstr "아이디"
+
+msgid "Label"
+msgstr "레이블"
+
+msgid "Pattern type"
+msgstr "패턴 유형"
+
+msgid "Pattern"
+msgstr "패턴"
+
+msgid "Selection criteria"
+msgstr "선택 기준"
+
+msgid "Selection condition"
+msgstr "선택 조건"
+
+msgid "Selection logic"
+msgstr "선택 논리"
+
+msgid "Weight"
+msgstr "표시순서"
+
+msgid "Context definitions"
+msgstr "컨텍스트 정의"
+
+msgid "Relationship"
+msgstr "관계"
+
+msgid "Double quotation marks"
+msgstr "따옴표"
+
+msgid "Single quotation marks (apostrophe)"
+msgstr "작은 따옴표 (아포스트로피)"
+
+msgid "Back tick"
+msgstr "백 틱"
+
+msgid "Comma"
+msgstr "쉼표"
+
+msgid "Period"
+msgstr "마침표"
+
+msgid "Hyphen"
+msgstr "붙임표 (하이픈)"
+
+msgid "Underscore"
+msgstr "밑줄"
+
+msgid "Colon"
+msgstr "콜론"
+
+msgid "Semicolon"
+msgstr "쎄미콜론"
+
+msgid "Vertical bar (pipe)"
+msgstr "수직 막대 (파이프)"
+
+msgid "Left curly bracket"
+msgstr "여는 중괄호"
+
+msgid "Left square bracket"
+msgstr "여는 대괄호"
+
+msgid "Right curly bracket"
+msgstr "닫는 중괄호"
+
+msgid "Right square bracket"
+msgstr "닫는 대괄호"
+
+msgid "Plus sign"
+msgstr "더하기표"
+
+msgid "Equal sign"
+msgstr "등호"
+
+msgid "Asterisk"
+msgstr "별표"
+
+msgid "Ampersand"
+msgstr "앰퍼샌드"
+
+msgid "Percent sign"
+msgstr "퍼센트"
+
+msgid "Caret"
+msgstr "삽입 기호 (캐럿)"
+
+msgid "Dollar sign"
+msgstr "달러 기호"
+
+msgid "Number sign (pound sign, hash)"
+msgstr "숫자 기호 (파운드 기호, 해시)"
+
+msgid "At sign"
+msgstr "골뱅이표"
+
+msgid "Exclamation mark"
+msgstr "느낌표"
+
+msgid "Tilde"
+msgstr "물결표"
+
+msgid "Left parenthesis"
+msgstr "여는 괄호"
+
+msgid "Right parenthesis"
+msgstr "닫는 괄호"
+
+msgid "Question mark"
+msgstr "물음표"
+
+msgid "Less-than sign"
+msgstr "왼쪽 부등호"
+
+msgid "Greater-than sign"
+msgstr "오른쪽 부등호"
+
+msgid "Slash"
+msgstr "슬래시"
+
+msgid "Backslash"
+msgstr "역슬래시"
+
+msgid "Ignoring alias %alias because it is the same as the internal path."
+msgstr "내부 경로와 동일해서 %alias 별명을 무시합니다."
+
+msgid "Created new alias %alias for %source, replacing %old_alias."
+msgstr "%source에 대해 새로운 %alias 별명을 만들어 %old_alias를 대체했습니다."
+
+msgid "Created new alias %alias for %source."
+msgstr "%source에 대해 새로운 %alias 별명을 만들었습니다."
+
+msgid "The automatically generated alias %original_alias conflicted with an existing alias. Alias changed to %alias."
+msgstr "자동으로 생성한 %original_alias 별명이 기존 별명과 충돌합니다. 해당 별명을 %alias으로 변경했습니다."
+
+msgid "Pathauto state"
+msgstr "Pathauto 상태"
+
+msgid "Whether an automated alias should be created or not."
+msgstr "자동화된 별명을 작성해야 하는지 여부입니다. "
+
+msgid "Conditions"
+msgstr "조건"
+
+msgid "Duplicate"
+msgstr "중복"
+
+msgid "Uncheck this to create a custom alias below. <a href=\"@admin_link\">Configure URL alias patterns.</a>"
+msgstr "아래의 사용자 정의 별명을 작성하려면 이를 선택 취소하십시오. <a href=\"@admin_link\">URL 별명 패턴을 구성합니다. </a>"
+
+msgid "Uncheck this to create a custom alias below."
+msgstr "별칭을 직접 입력하려면 여기 선택을 풀면 됩니다."
+
+msgid "Generate automatic URL alias"
+msgstr "자동 URL 별칭 생성"
+
+msgid "Bulk updating URL aliases"
+msgstr "URL 별명 일괄 업데이트하기"
+
+msgid "Bulk deleting URL aliases"
+msgstr "URL 별명 대량 삭제"
+
+msgid "All of your path aliases have been deleted."
+msgstr "모든 경로 별명을 삭제했습니다."
+
+msgid "All of your %label path aliases have been deleted."
+msgstr "%label 경로 별명이 모두 삭제되었습니다. "
+
+msgid "Choose the action to perform."
+msgstr "수행할 조치를 선택하십시오."
+
+msgid "Choose the alias type(s). Separate multiple choices with commas, e.g. \"1,2,4\", or choose \"0\" for all types."
+msgstr "별명 유형을 선택하십시오. 다중 선택사항을 쉼표로 구분하거나(예: \"1,2,4\"), 모든 유형의 경우 \"0\"을 선택하십시오."
+
+msgid "Invalid action argument \"@invalid_action\". Please use one of: @valid_actions"
+msgstr "올바르지 않은 조치 인수 \"@invalid_action\"입니다. @valid_actions 중 하나를 사용하십시오."
+
+msgid "Invalid type argument \"@invalid_types\". Please choose from the following: @valid_types"
+msgstr "올바르지 않은 유형 인수 \"@invalid_types\"입니다. @valid_types 중에서 선택하십시오."
+
+msgid "Generate a URL alias for un-aliased paths only."
+msgstr "별명이 없는 경로에 대해서만 URL 별명을 생성합니다."
+
+msgid "Update the URL alias for paths having an old URL alias."
+msgstr "이전 URL 별명이 있는 경로의 URL 별명을 업데이트합니다."
+
+msgid "Regenerate URL aliases for all paths."
+msgstr "모든 경로의 URL 별명을 재생성합니다."
+
+msgid "Pathauto pattern"
+msgstr "Pathauto 패턴"
+
+msgid "Choose aliases to delete"
+msgstr "삭제할 별명을 선택하세요"
+
+msgid "All aliases"
+msgstr "모든 별명"
+
+msgid "Delete all aliases. Number of aliases which will be deleted: %count."
+msgstr "모든 별명을 삭제합니다. 삭제될 별명의 갯수: %count."
+
+msgid "Delete aliases for all @label. Number of aliases which will be deleted: %count."
+msgstr "모든 @label에 대한 별명을 삭제합니다. 삭제될 별명의 갯수: %count."
+
+msgid "Delete options"
+msgstr "삭제 옵션"
+
+msgid "Only delete automatically generated aliases"
+msgstr "자동으로 생성된 별명만을 삭제합니다. "
+
+msgid "When checked, aliases which have been manually set are not affected by this mass-deletion."
+msgstr "선택되면 수동으로 설정된 별명은 이 대량 삭제의 영향을 받지 않습니다. "
+
+msgid "<strong>Note:</strong> there is no confirmation. Be sure of your action before clicking the \"Delete aliases now!\" button.<br />You may want to make a backup of the database and/or the path_alias and path_alias_revision tables prior to using this feature."
+msgstr "<strong>참고:</strong> 확인이 없습니다. \"지금 별명 삭제!\" 단추를 클릭하기 전에 조치를 확인하십시오.<br />이 기능을 사용하기 전에 데이터베이스 및/또는 path_alias 및 path_alias_revision 테이블의 백업을 작성할 수 있습니다."
+
+msgid "Delete aliases now!"
+msgstr "당장 별명 삭제하기!"
+
+msgid "All of your automatically generated path aliases have been deleted."
+msgstr "자동으로 생성된 모든 경로 별명이 삭제되었습니다. "
+
+msgid "All of your automatically generated %label path aliases have been deleted."
+msgstr "자동으로 생성된 모든 %label 경로 별명이 삭제되었습니다. "
+
+msgid "An error occurred while processing @operation with arguments : @args"
+msgstr "@args 매개변수로 @operation 작업을 수행하는 중 에러가 발생했습니다."
+
+msgid "Select the types of paths for which to generate URL aliases"
+msgstr "URL 별명을 생성할 경로 유형을 선택합니다. "
+
+msgid "Select which URL aliases to generate"
+msgstr "생성할 URL 별명을 선택합니다. "
+
+msgid "Generate a URL alias for un-aliased paths only"
+msgstr "별명이 없는 경로에 대해서만 URL 별명을 생성합니다. "
+
+msgid "<a href=\":url\">Pathauto settings</a> are set to ignore paths which already have a URL alias. You can only create URL aliases for paths having none."
+msgstr "<a href=\":url\">Pathauto 설정</a>은 URL 별명이 이미 있는 경로를 무시하도록 설정되었습니다. 별명이 없는 경로에 대해서만 URL 별명을 작성할 수 있습니다. "
+
+msgid "Update the URL alias for paths having an old URL alias"
+msgstr "이전 URL 별명이 있는 경로의 URL 별명을 업데이트합니다. "
+
+msgid "Regenerate URL aliases for all paths"
+msgstr "모든 경로의 URL 별명을 재생성합니다. "
+
+msgid "Update"
+msgstr "업데이트"
+
+msgid "No new URL aliases to generate."
+msgstr "생성할 URL 별칭이 없습니다."
+
+msgid "Generated 1 URL alias."
+msgid_plural "Generated @count URL aliases."
+msgstr[0] "한 개의 URL 별명을 생성했습니다."
+msgstr[1] "@count 개의 URL 별명을 생성했습니다."
+
+msgid "Enable to add a path field and allow to define alias patterns for the given type. Disabled types already define a path field themselves or currently have a pattern."
+msgstr "경로 필드를 추가할 수 있게 하고 지정된 유형의 별명 패턴을 정의할 수 있게 합니다. 사용 안함으로 설정된 유형은 이미 자체 경로 필드를 정의했고 현재 패턴을 가지고 있습니다. "
+
+msgid "Verbose"
+msgstr "상세 설명"
+
+msgid "Display alias changes (except during bulk updates)."
+msgstr "별명 변경 내역을 표시합니다. (일괄 업데이트 중에는 제외)"
+
+msgid "Separator"
+msgstr "구분자"
+
+msgid "Character used to separate words in titles. This will replace any spaces and punctuation characters. Using a space or + character can cause unexpected results."
+msgstr "제목별로 단어들을 구분하는데 사용할 문자입니다. 모든 공백 및 구두점들을 이 문자로 대체합니다. 이 항목에 공백이나 + 를 지정하면 예상치못한 결과를 초래할 수 있습니다."
+
+msgid "Character case"
+msgstr "대소문자"
+
+msgid "Convert token values to lowercase."
+msgstr "토큰 값을 소문자로 변환합니다. "
+
+msgid "See <a href=\":pathauto-help\">Pathauto help</a> for details."
+msgstr "세부사항은 <a href=\":pathauto-help\">Pathauto 도움말</a>을 참조하십시오. "
+
+msgid "Maximum alias length"
+msgstr "별명 최대 길이"
+
+msgid "Maximum length of aliases to generate. 100 is the recommended length. @max is the maximum possible length."
+msgstr "생성할 별명의 최대 길이입니다. 100이 권장 길이입니다. @max는 가능한 최대 길이입니다. "
+
+msgid "Maximum component length"
+msgstr "구성 요소 최대 길이"
+
+msgid "Maximum text length of any component in the alias (e.g., [title]). 100 is the recommended length. @max is the maximum possible length."
+msgstr "별명의 컴포넌트에서 최대 텍스트 길이(예: [title])입니다. 100이 권장 길이입니다. @max는 가능한 최대 길이입니다. "
+
+msgid "What should Pathauto do when updating an existing content item which already has an alias?"
+msgstr "이미 별명을 갖고 있는 기존 콘텐츠를 업데이트할 때 Pathauto 모듈이 어떻게 해야 할까요?"
+
+msgid "The <a href=\":url\">Redirect module settings</a> affect whether a redirect is created when an alias is deleted."
+msgstr "<a href=\":url\">경로 재지정 모듈 설정</a>은 별명이 삭제될 때 경로 재지정이 작성되는지 여부에 영향을 미칩니다. "
+
+msgid "Considering installing the <a href=\":url\">Redirect module</a> to get redirects when your aliases change."
+msgstr "별명이 변경될 때 경로 재지정하려면 <a href=\":url\">경로 재지정 모듈</a> 설치를 고려하십시오. "
+
+msgid "Update action"
+msgstr "업데이트 방식"
+
+msgid "Do nothing. Leave the old alias intact."
+msgstr "아무것도 하지 않습니다. 기존 별명을 그대로 둡니다."
+
+msgid "Create a new alias. Leave the existing alias functioning."
+msgstr "새로운 별명을 만들고 기존 별명도 그대로 사용합니다."
+
+msgid "Create a new alias. Delete the old alias."
+msgstr "새로운 별명을 만들고 기존 별명은 삭제합니다."
+
+msgid "Transliterate prior to creating alias"
+msgstr "별명 생성 이전에 음역하기"
+
+msgid "When a pattern includes certain characters (such as those with accents) should Pathauto attempt to transliterate them into the US-ASCII alphabet?"
+msgstr "패턴에 특정 문자(예: 액센트가 있는 문자)가 포함될 때 Pathauto가 이들을 US-ASCII 알파벳으로 변환하려고 시도해야 합니까? "
+
+msgid "Reduce strings to letters and numbers"
+msgstr "문자열을 글자 및 숫자로 줄이기"
+
+msgid "Filters the new alias to only letters and numbers found in the ASCII-96 set."
+msgstr "새로운 별명에서 오직 ASCII-96의 글자 및 숫자만 남깁니다."
+
+msgid "Strings to Remove"
+msgstr "삭제할 문자열"
+
+msgid "Words to strip out of the URL alias, separated by commas. Do not use this to remove punctuation."
+msgstr "URL 별명에서 삭제할 단어들을 쉼표로 구분해서 입력하세요. 여기에 구두점을 입력하지 마세요."
+
+msgid "Safe tokens"
+msgstr "안전한 토큰"
+
+msgid "List of tokens that are safe to use in alias patterns and do not need to be cleaned. For example urls, aliases, machine names. Separated with a comma."
+msgstr "별명 패턴에 사용하기 안전하고 정리할 필요가 없는 토큰 목록입니다. 예: urls, aliases, machine names. 쉼표로 구분합니다."
+
+msgid "Punctuation"
+msgstr "구두점"
+
+msgid "Remove"
+msgstr "제거"
+
+msgid "Replace by separator"
+msgstr "구분자로 대체"
+
+msgid "No action (do not replace)"
+msgstr "그대로 (대체 안함)"
+
+msgid "Are you sure you want to disable the pattern %label?"
+msgstr "패턴 %label을(를) 사용 안함으로 설정하시겠습니까?"
+
+msgid "Disable"
+msgstr "사용안함"
+
+msgid "Disabled patterns are ignored when generating aliases."
+msgstr "사용 안함으로 설정된 패턴은 별명을 생성할 때 무시됩니다. "
+
+msgid "Disabled pattern %label."
+msgstr "사용 안함으로 설정된 패턴 %label."
+
+msgid "Path pattern"
+msgstr "경로 패턴"
+
+msgid "Check to which types this pattern should be applied. Leave empty to allow any."
+msgstr "이 패턴을 적용해야 하는 유형을 선택합니다. 모두 허용하려면 비워두십시오. "
+
+msgid "Languages"
+msgstr "언어 설정"
+
+msgid "Check to which languages this pattern should be applied. Leave empty to allow any."
+msgstr "이 패턴을 적용해야 하는 언어를 선택합니다. 모두 허용하려면 비워두십시오. "
+
+msgid "A short name to help you identify this pattern in the patterns list."
+msgstr "패턴 목록에서 이 패턴을 식별하는 데 도움을 주는 짧은 이름입니다. "
+
+msgid "Enabled"
+msgstr "사용"
+
+msgid "Language"
+msgstr "언어"
+
+msgid "Pattern %label saved."
+msgstr "%label 패턴이 저장되었습니다."
+
+msgid "Are you sure you want to enable the pattern %label?"
+msgstr "패턴 %label을(를) 사용으로 설정하시겠습니까?"
+
+msgid "Enable"
+msgstr "사용하기"
+
+msgid "Enabled pattern %label."
+msgstr "사용으로 설정된 패턴 %label."
+
+msgid "Update URL alias of an entity"
+msgstr "엔티티의 URL 별명 업데이트"
+
+msgid "@label being aliased"
+msgstr "별명을 작성 중인 @label"
+
+msgid "The name of the pattern's variable."
+msgstr "패턴 변수의 이름입니다."
+
+msgid "The value of the pattern's variable."
+msgstr "패턴 변수의 값입니다."
+
+msgid "Broken type"
+msgstr "Broken 유형"
+
+msgid "Broken"
+msgstr "깨짐"
+
+msgid "Broken/Missing"
+msgstr "망가짐/없어짐"
+
+msgid "AliasType"
+msgstr "AliasType"
+
+msgid "Updated alias for %label @id."
+msgstr "%label @id의 업데이트된 별명."
+
+msgid "Updated 1 %label URL alias."
+msgid_plural "Updated @count %label URL aliases."
+msgstr[0] "업데이트된 @count %label URL 별명입니다. "
+
+msgid "Forum"
+msgstr "포럼"
+

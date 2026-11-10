@@ -1,0 +1,101 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "O programu"
+
+msgid "The Redirect domain module allows users to redirect between domains."
+msgstr "Modul domény přesměrování umožňuje uživatelům přesměrování mezi doménami."
+
+msgid "Uses"
+msgstr "Používá"
+
+msgid "Manage domain redirects"
+msgstr "Spravovat přesměrování domény"
+
+msgid "The domain redirect is accessed through <a href=\":domainlist\">Domain Redirects</a>. The user can add the domain redirects through the domain redirect table which consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected. The module also supports the usage of a wildcard redirecting, thus many requests can be handled with one instance of domain redirect."
+msgstr "K přesměrování domény se přistupuje prostřednictvím <a href=\":domainlist\">přesměrování domény</a>. Uživatel může přidat přesměrování domény prostřednictvím tabulky pro přesměrování domén, která obsahuje doménu, z níž je třeba provést přesměrování, dílčí cestu a úplnou adresu URL cíle přesměrování. Modul také podporuje použití přesměrování pomocí zástupných znaků, takže s mnoha požadavky lze zacházet s jednou instancí přesměrování domény."
+
+msgid "The domain redirect table consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected."
+msgstr "Tabulka pro přesměrování domény obsahuje doménu, z níž je třeba provést přesměrování, dílčí cestu a úplnou adresu URL cíle přesměrování."
+
+msgid "Example Configuration"
+msgstr "Příklad konfigurace"
+
+msgid "Example Redirects"
+msgstr "Příklad přesměrování"
+
+msgid "Request: example.com/redirect => Response: redirected.com/example-path"
+msgstr "Požadavek: example.com/redirect => Odezva: redirected.com/example-path"
+
+msgid "Request: foo.com/any-path => Response: bar.com"
+msgstr "Požadavek: foo.com/any-path => Odezva: bar.com"
+
+msgid "Precedence"
+msgstr "Přednost"
+
+msgid "Top-down precedence is used. This means the first matching redirect that is found will be taken. For example, assume these redirect rules:"
+msgstr "Je použita priorita shora dolů. To znamená, že první vyhovující přesměrování, které se najde, bude přijato. Předpokládejme například tato pravidla přesměrování:"
+
+msgid "foo.com/some/path => somedomain.com/path"
+msgstr "foo.com/some/path => somedomain.com/path"
+
+msgid "foo.com/* => wildcardredirect.com"
+msgstr "foo.com/* => wildcardredirect.com"
+
+msgid "foo.com/other/path => otherdomain.com/path"
+msgstr "foo.com/other/path => otherdomain.com/path"
+
+msgid "The following redirects would actually occur:"
+msgstr "Ve skutečnosti by došlo k následujícímu přesměrování:"
+
+msgid "foo.com/other/path => wildcardredirect.com"
+msgstr "foo.com/other/path => wildcardredirect.com"
+
+msgid "Redirect Domain"
+msgstr "Doména přesměrování"
+
+msgid "Allows users to redirect between domains."
+msgstr "Umožňuje uživatelům přesměrování mezi doménami."
+
+msgid "Domain redirects"
+msgstr "Přesměrování domény"
+
+msgid "Configure domain redirects."
+msgstr "Nakonfigurujte přesměrování domény."
+
+msgid "Redirect domains"
+msgstr "Domény přesměrování"
+
+msgid "Sub path"
+msgstr "Dílčí cesta"
+
+msgid "Destination"
+msgstr "Cíl"
+
+msgid "From domain"
+msgstr "Z domény"
+
+msgid "Add another"
+msgstr "Přidat další"
+
+msgid "Save"
+msgstr "Uložit"
+
+msgid "No protocol should be included in the redirect domain."
+msgstr "Do domény přesměrování by neměl být zahrnut žádný protokol."
+
+msgid "The domain redirects have been saved."
+msgstr "Přesměrování domény byla uložena."
+

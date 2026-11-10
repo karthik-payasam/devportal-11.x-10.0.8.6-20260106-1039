@@ -1,0 +1,31 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid ""
+"The trusted_host_patterns setting is not configured in <code>settings.php</code>.<br />\n"
+"      <strong>The Trusted Reverse Proxy module is installed and will trust reverse proxies it detects</strong> (or those explicitly configured). Therefore, not having trusted host patterns set is not necessarily a security risk <em>if you trust your upstream network path</em>.<br />\n"
+"      <a href=\"https://www.drupal.org/docs/8/install/trusted-host-settings\">Read more about this setting</a> and disable the <code>trusted_reverse_proxy</code> module if you are not behind a trusted proxy or this message is unfamiliar to you.<br />\n"
+"      Reverse proxies such as CloudFlare that perform backend requests over the public Internet should be configured to use \"authenticated origin pulls\" to ensure integrity of the <code>x-forwarded-for</code> header this site receives."
+msgstr ""
+"Die Einstellung trusted_host_patterns ist in <code>settings.php</code> nicht konfiguriert.<br />\n"
+"      <strong>Das Trusted Reverse Proxy-Modul ist installiert und vertraut Reverse-Proxys, die es erkennt</strong> (oder die explizit konfiguriert sind). Daher ist es nicht unbedingt ein Sicherheitsrisiko, wenn keine vertrauenswürdigen Host-Muster vorhanden sind, <em>solange Sie Ihrem vorgeschalteten Netzpfad vertrauen</em>.<br />\n"
+"      <a href=\"https://www.drupal.org/docs/8/install/trusted-host-settings\">Lesen Sie mehr über diese Einstellung</a> und inaktivieren Sie das Modul <code>trusted_reverse_proxy</code>, wenn Sie sich nicht hinter einem vertrauenswürdigen Proxy befinden oder Ihnen diese Nachricht nicht bekannt ist.<br />\n"
+"      Reverse-Proxys wie CloudFlare, die Back-End-Anforderungen über das öffentliche Internet ausführen, sollten so konfiguriert werden, dass sie authentifizierte Pull-Anforderungen an den Ursprungsserver verwenden, um die Integrität des <code>X-Forwarded-For</code>-Headers, den diese Site empfängt, sicherzustellen."
+
+msgid "Trusted Reverse Proxy Support"
+msgstr "Trusted Reverse Proxy-Unterstützung"
+
+msgid "Provides sensible defaults for sites running behind known trusted reverse proxies."
+msgstr "Stellt sinnvolle Standardwerte für Sites bereit, die hinter bekannten vertrauenswürdigen Reverse Proxys ausgeführt werden."
+

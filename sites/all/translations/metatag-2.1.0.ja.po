@@ -1,0 +1,2971 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Processed @processed of @total overridden Metatag records."
+msgstr "@total オーバーライドされたメタタグ・レコードの @processed を処理しました。"
+
+msgid "There were no overridden Metatag records."
+msgstr "オーバーライドされたメタタグ・レコードはありませんでした。"
+
+msgid "Metatags"
+msgstr "メタタグ"
+
+msgid "Tokens related to Metatags."
+msgstr "メタタグに関連したトークン。"
+
+msgid "Metatag values for the current page."
+msgstr "現行ページのメタタグ値。"
+
+msgid "@label tokens."
+msgstr "@label のトークン。"
+
+msgid "List of @type values"
+msgstr "@type の値のリスト"
+
+msgid "Tokens for lists of @type values."
+msgstr "@type の値のリストのトークン。"
+
+msgid "@type type with delta @delta"
+msgstr "差分 @delta を含む @type タイプ"
+
+msgid "Metatags (Hidden field for JSON support)"
+msgstr "メタタグ (JSON サポート用の非表示フィールド)"
+
+msgid "The meta tags for the entity."
+msgstr "エンティティーのメタタグ。"
+
+msgid "About"
+msgstr "アバウト"
+
+msgid "This module allows a site to automatically provide structured metadata, aka \"meta tags\", about the site and individual pages."
+msgstr "このモジュールを使用すると、サイトおよび個別のページに関する構造化されたメタデータ (「メタタグ」とも呼ばれます) をサイトから自動的に提供できます。"
+
+msgid "In the context of search engine optimization, providing an extensive set of meta tags may help improve the site's and pages' rankings, thus may aid with achieving a more prominent display of the content within search engine results. They can also be used to tailor how content is displayed when shared on social networks. For additional information, see the <a href=\":online\">online documentation for Metatag</a>."
+msgstr "検索エンジン最適化のコンテキストにおいては、広範囲に及ぶメタタグを提供することで、サイトやページのランキングを向上させることができ、それによって検索エンジンの結果でより目立つ場所にコンテンツを表示させることができます。また、メタタグを使用することで、ソーシャル・ネットワークでの共有時に、コンテンツがどのように表示されるかを調整することもできます。詳しくは、<a href=\":online\">メタタグに関するオンライン資料</a>を参照してください。"
+
+msgid "Intended workflow"
+msgstr "意図したワークフロー"
+
+msgid "The module uses <a href=\":tokens\">\"tokens\"</a> to automatically fill in values for different meta tags. Specific values may also be filled in."
+msgstr "このモジュールでは、各種メタタグに自動的に値を設定するために<a href=\":tokens\">「トークン」</a>が使用されます。特定の値を設定することもできます。"
+
+msgid "The best way of using Metatag is as follows:"
+msgstr "メタタグの最良の使用方法は以下のとおりです。"
+
+msgid "Customize the <a href=\":defaults\">global defaults</a>, fill in the specific values and tokens that every page should have."
+msgstr "<a href=\":defaults\">グローバルなデフォルト</a>をカスタマイズして、すべてのページに指定する必要のある特定の値およびトークンを設定する。"
+
+msgid "Override each of the <a href=\":defaults\">other defaults</a>, fill in specific values and tokens that each item should have by default. This allows e.g. for all nodes to have different values than taxonomy terms."
+msgstr "<a href=\":defaults\">その他のデフォルト</a>を個別にオーバーライドして、各項目にデフォルトで指定する必要のある特定の値およびトークンを設定する。これにより、すべてのノードにタクソノミー用語以外の値を設定することなどができるようになります。"
+
+msgid "<a href=\":add\">Add more default configurations</a> as necessary for different entity types and entity bundles, e.g. for different content types or different vocabularies."
+msgstr "各種のエンティティー・タイプおよびエンティティー・バンドル (各種コンテンツ・タイプや各種語彙など) に、必要に応じて<a href=\":add\">他のデフォルト構成を追加</a>する。"
+
+msgid "To override the meta tags for individual entities, e.g. for individual nodes, add the \"Metatag\" field via the field settings for that entity or bundle type."
+msgstr "個別のエンティティー (個別のノードなど) のメタタグをオーバーライドするには、そのエンティティー・タイプまたはバンドル・タイプのフィールド設定を通じて「メタタグ」フィールドを追加します。"
+
+msgid "Configure global meta tag default values below. Meta tags may be left as the default."
+msgstr "以下に示すグローバルなメタタグのデフォルト値を構成します。メタタグはデフォルトのままにすることができます。"
+
+msgid "Meta tag patterns are passed down from one level to the next unless they are overridden. To view a summary of the individual meta tags and the pattern for a specific configuration, click on its name below."
+msgstr "メタタグのパターンは、オーバーライドされない限り、1 つのレベルから次のレベルへ下位方向に継承されます。個別のメタタグの要約や特定の構成のパターンを確認するには、以下でその名前をクリックします。"
+
+msgid "If the top-level configuration is not specific enough, additional default meta tag configurations can be added for a specific entity type or entity bundle, e.g. for a specific content type."
+msgstr "最上位の構成だけでは具体性が足りない場合は、特定のエンティティー・タイプまたはエンティティー・バンドル (特定のコンテンツ・タイプなど) に対して、別のデフォルト・メタタグ構成を追加できます。"
+
+msgid "Meta tags can be further refined on a per-entity basis, e.g. for individual nodes, by adding the \"Metatag\" field to that entity type through its normal field settings pages."
+msgstr "メタタグはエンティティーごとにさらに詳細化することができます。例えば個別のノードを対象とする場合は、そのエンティティー・タイプに通常のフィールド設定ページを通じて「メタタグ」フィールドを追加します。"
+
+msgid "Use the following form to override the global default meta tags for a specific entity type or entity bundle. In practical terms, this allows the meta tags to be customized for a specific content type or taxonomy vocabulary, so that its content will have different meta tags <em>default values</em> than others."
+msgstr "特定のエンティティー・タイプまたはエンティティー・バンドルについて、グローバル・デフォルト・メタタグをオーバーライドするには、以下のフォームを使用します。実際には、これによって特定のコンテンツ・タイプまたはタクソノミー・ボキャブラリーのメタタグをカスタマイズすることで、そのコンテンツに他とは異なるメタタグの<em>デフォルト値</em> を設定することができます。"
+
+msgid "As a reminder, if the \"Metatag\" field is added to the entity type through its normal field settings, the meta tags can be further refined on a per entity basis; this allows each node to have its meta tags  customized on an individual basis."
+msgstr "また、エンティティー・タイプに通常のフィールド設定を通じて「メタタグ」フィールドを追加すると、エンティティーごとにメタタグを詳細化することができます。これにより、各ノードのメタタグを個別にカスタマイズできるようになります。"
+
+msgid "Not enabled while in maintenance mode"
+msgstr "保守モード中は無効です"
+
+msgid "Please note that while the site is in maintenance mode none of the usual meta tags will be output."
+msgstr "サイトが保守モードである間は、通常のメタタグは出力されないことに注意してください。"
+
+msgid "Schema.org Metatag is recommended"
+msgstr "Schema.org Metatag が推奨されます"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is highly recommended to add <a href=\"@jsonld\">JSON-LD</a> -formatted <a href=\"@schema\">schema.org</a> compatible data structures to the site."
+msgstr "<a href=\"@jsonld\">JSON-LD</a> フォーマットの <a href=\"@schema\">schema.org</a> 互換のデータ構造をサイトに追加するために <a href=\"@module\">Schema.org Metatag</a> モジュールが高く推奨されます。"
+
+msgid "Schema.org Metatag is installed"
+msgstr "Schema.org Metatag はインストール済みです"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is installed."
+msgstr "<a href=\"@module\">Schema.org Metatag</a> モジュールはインストール済みです。"
+
+msgid "Token Or"
+msgstr "トークンまたは"
+
+msgid "The <a href=\"@module\">Token OR module</a> is suggested for when the basic content tokens are not flexible enough, e.g. to make a meta tag show the contents of one field if it is filled in or another if the first one is empty."
+msgstr "<a href=\"@module\">「トークン OR モジュール」</a> は、基本的なコンテンツ・トークンに十分な柔軟性がない場合に推奨されます。例えば、メタ・タグが 1 つのフィールドに入力された場合はその内容を表示し、最初のフィールドが空の場合は別のフィールドの内容を表示します。"
+
+msgid "The new Metatag: Open Graph module has been enabled."
+msgstr "新しいメタタグ: Open Graph モジュールが有効化されました。"
+
+msgid "The sites's caches will need to be rebuild to ensure Metatag works as intended."
+msgstr "メタタグが想定どおりに機能するように、サイトのキャッシュを再作成する必要があります。"
+
+msgid "Metatag"
+msgstr "メタタグ"
+
+msgid "Manage meta tags for all entities."
+msgstr "すべてのエンティティーのメタタグを管理します。"
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Add default meta tags"
+msgstr "デフォルトのメタタグを追加"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Metatag plugins"
+msgstr "メタタグ・プラグイン"
+
+msgid "Configure Metatag defaults."
+msgstr "デフォルトのメタタグを設定します。"
+
+msgid "Overview of plugins used in metatag."
+msgstr "メタタグで使用されるプラグインの概要。"
+
+msgid "Metatag defaults"
+msgstr "Metatag デフォルト"
+
+msgid "Administer meta tags"
+msgstr "メタタグの管理"
+
+msgid "Control the main settings pages and modify per-object meta tags."
+msgstr "メインの設定ページを制御し、オブジェクトごとのメタタグを変更します。"
+
+msgid "Delete default meta tags"
+msgstr "デフォルト・メタタグの削除"
+
+msgid "Revert default meta tags"
+msgstr "デフォルト・メタタグを戻す"
+
+msgid "Configure the Metatag module"
+msgstr "メタタグ・モジュールの構成"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Type"
+msgstr "タイプ"
+
+msgid "Tags"
+msgstr "タグ"
+
+msgid "Abstract"
+msgstr "要約"
+
+msgid "Cache control"
+msgstr "キャッシュ制御"
+
+msgid "Canonical URL"
+msgstr "標準 URL"
+
+msgid "Content Language"
+msgstr "コンテンツの言語"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "Expires"
+msgstr "期限切れ"
+
+msgid "Generator"
+msgstr "生成プログラム"
+
+msgid "Image SRC"
+msgstr "イメージのソース"
+
+msgid "Keywords"
+msgstr "キーワード"
+
+msgid "Google News Keywords"
+msgstr "Google ニュース・キーワード"
+
+msgid "Next page URL"
+msgstr "次のページの URL"
+
+msgid "Original source"
+msgstr "元のソース"
+
+msgid "Pragma"
+msgstr "Pragma"
+
+msgid "Previous page URL"
+msgstr "前のページの URL"
+
+msgid "Rating"
+msgstr "レーティング"
+
+msgid "Referrer policy"
+msgstr "参照元ポリシー"
+
+msgid "Refresh"
+msgstr "リフレッシュ"
+
+msgid "Revisit After"
+msgstr "以下の後で再アクセス:"
+
+msgid "Rights"
+msgstr "権利"
+
+msgid "Robots"
+msgstr "ロボット"
+
+msgid "Shortlink"
+msgstr "ショート・リンク"
+
+msgid "Standout"
+msgstr "スタンドアウト"
+
+msgid "Page title"
+msgstr "ページのタイトル"
+
+msgid "ICBM"
+msgstr "ICBM"
+
+msgid "Geographical region"
+msgstr "地理的地域"
+
+msgid "Geographical place name"
+msgstr "地理的場所名"
+
+msgid "Geographical position"
+msgstr "地理的位置"
+
+msgid "Set Cookie"
+msgstr "Cookie の設定"
+
+msgid "Google"
+msgstr "Google"
+
+msgid "Author"
+msgstr "投稿者"
+
+msgid "Default value"
+msgstr "デフォルト値"
+
+msgid "Advanced meta tags form"
+msgstr "拡張メタタグ・フォーム"
+
+msgid "Place field in sidebar"
+msgstr "フィールドをサイドバーに配置"
+
+msgid "Place field in collapsed details container"
+msgstr "省略された詳細コンテナーにフィールドを配置する"
+
+msgid "Metatag settings"
+msgstr "メタタグ設定"
+
+msgid "Metatag groups that apply to each entity type"
+msgstr "各エンティティー・タイプに適用されるメタタグ・グループ"
+
+msgid "Entity type"
+msgstr "エンティティタイプ"
+
+msgid "Bundle"
+msgstr "バンドル"
+
+msgid "Group"
+msgstr "グループ"
+
+msgid "Trim method for trimmable tags."
+msgstr "トリム可能タグのトリム方式。"
+
+msgid "Use Maxlength module to force these limits?"
+msgstr "Maxlengthモジュールを使用してこれらの制限を強制しますか?"
+
+msgid "Tag-specific maximum length"
+msgstr "タグ固有の最大長"
+
+msgid "Tag maximum length in characters"
+msgstr "タグの最大長 (文字数)"
+
+msgid "Add max height value"
+msgstr "最大高さの値を追加"
+
+msgid "Provides support for applinks.org meta tags."
+msgstr "applinks.org メタ・タグに対するサポートを提供します。"
+
+msgid "Metatag: App Links"
+msgstr "メタタグ: App Links"
+
+msgid "Android app name"
+msgstr "Android アプリケーション名"
+
+msgid "Android app Activity Class"
+msgstr "Android アプリケーションのアクティビティー・クラス"
+
+msgid "Android app package ID"
+msgstr "Android アプリケーションのパッケージ ID"
+
+msgid "Android app URL scheme"
+msgstr "Android アプリケーションの URL スキーム"
+
+msgid "iOS app URL scheme"
+msgstr "iOS アプリケーションの URL スキーム"
+
+msgid "iOS app store ID"
+msgstr "iOS アプリケーションのストア ID"
+
+msgid "iOS app name"
+msgstr "iOS アプリケーション名"
+
+msgid "iPad app URL scheme"
+msgstr "iPad アプリケーションの URL スキーム"
+
+msgid "iPad app store ID"
+msgstr "iPad アプリケーションのストア ID"
+
+msgid "iPad app name"
+msgstr "iPad アプリケーション名"
+
+msgid "iPhone app URL scheme"
+msgstr "iPhone アプリケーションの URL スキーム"
+
+msgid "iPhone app store ID"
+msgstr "iPhone アプリケーションのストア ID"
+
+msgid "Windows app GUID"
+msgstr "Windows アプリケーションの GUID"
+
+msgid "Windows app name"
+msgstr "Windows アプリケーション名"
+
+msgid "Windows app URL scheme"
+msgstr "Windows アプリケーションの URL スキーム"
+
+msgid "Windows Phone app URL scheme"
+msgstr "Windows Phone アプリケーションの URL スキーム"
+
+msgid "Windows Phone app GUID"
+msgstr "Windows Phone アプリケーションの GUID"
+
+msgid "Windows Phone app name"
+msgstr "Windows Phone アプリケーション名"
+
+msgid "Windows Universal app URL scheme"
+msgstr "Windows ユニバーサルのアプリケーションの URL スキーム"
+
+msgid "Windows Universal app GUID"
+msgstr "Windows ユニバーサルのアプリケーションの GUID"
+
+msgid "Windows Universal app name"
+msgstr "Windows ユニバーサルのアプリケーション名"
+
+msgid "Web URL"
+msgstr "Web URL"
+
+msgid "Should fallback"
+msgstr "フォールバックする"
+
+msgid "App Links"
+msgstr "App Links"
+
+msgid "The name of the app (suitable for display)."
+msgstr "アプリケーションの (表示に適した) 名前。"
+
+msgid "A fully-qualified Activity class name for intent generation."
+msgstr "意図生成のための完全修飾アクティビティー・クラス名。"
+
+msgid "A fully-qualified package name for intent generation. <strong>This attribute is required by the App Links specification.</strong>"
+msgstr "意図生成のための完全修飾パッケージ名。<strong>この属性は App Links の仕様により必須です。</strong>"
+
+msgid "A custom scheme for the Android app."
+msgstr "Android アプリケーションのカスタムのスキーム。"
+
+msgid "The name of the app (suitable for display)"
+msgstr "アプリの名前 (表示に適しています)"
+
+msgid "The app ID for the app store."
+msgstr "アプリケーション・ストア用のアプリケーション ID。"
+
+msgid "A custom scheme for the iOS app. <strong>This attribute is required by the app Links specification.</strong>"
+msgstr "iOS アプリケーションのカスタムのスキーム。<strong>この属性は App Links の仕様により必須です。</strong>"
+
+msgid "iPhone app name"
+msgstr "iPhone アプリケーション名"
+
+msgid "The web URL; defaults to the URL for the content that contains this tag."
+msgstr "Web URL。デフォルトはこのタグを含むコンテンツの URL。"
+
+msgid "Windows app ID"
+msgstr "Windows アプリケーション ID"
+
+msgid "Windows Phone app ID"
+msgstr "Windows Phone アプリケーション ID"
+
+msgid "Windows Universal app ID"
+msgstr "Windows ユニバーサル・アプリケーション ID"
+
+msgid "Metatag: Dublin Core"
+msgstr "メタタグ: Dublin Core"
+
+msgid "Provides the fifteen <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "<a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a> からの 15 個の <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> メタタグを提供します。"
+
+msgid "Dublin Core: Contributor"
+msgstr "Dublin Core: 寄与者"
+
+msgid "Dublin Core: Coverage"
+msgstr "Dublin Core: 適応範囲"
+
+msgid "Dublin Core: Creator"
+msgstr "Dublin Core: 作成者"
+
+msgid "Dublin Core: Date"
+msgstr "Dublin Core: 日付"
+
+msgid "Dublin Core: Description"
+msgstr "Dublin Core: 説明"
+
+msgid "Dublin Core: Format"
+msgstr "Dublin Core: フォーマット"
+
+msgid "Dublin Core: Identifier"
+msgstr "Dublin Core: 識別子"
+
+msgid "Dublin Core: Language"
+msgstr "Dublin Core: 言語"
+
+msgid "Dublin Core: Publisher"
+msgstr "Dublin Core: 公開者"
+
+msgid "Dublin Core: Relation"
+msgstr "Dublin Core: リレーション"
+
+msgid "Dublin Core: Rights"
+msgstr "Dublin Core: 権利"
+
+msgid "Dublin Core: Source"
+msgstr "Dublin Core: ソース"
+
+msgid "Dublin Core: Subject"
+msgstr "Dublin Core: 件名"
+
+msgid "Dublin Core: Title"
+msgstr "Dublin Core: タイトル"
+
+msgid "Dublin Core: Type"
+msgstr "Dublin Core: タイプ"
+
+msgid "Dublin Core"
+msgstr "Dublin Core"
+
+msgid "Contributor"
+msgstr "寄与者"
+
+msgid "An entity responsible for making contributions to the resource. Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."
+msgstr "リソースへの貢献を担当するエンティティー。寄与者の例としては、人物、組織、サービスなどが挙げられます。通常は寄与者の名前を使用してエンティティーを示す必要があります。"
+
+msgid "Coverage"
+msgstr "適応範囲"
+
+msgid "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."
+msgstr "リソースの空間的または時間的な側面、リソースの空間的な適用可能性、もしくはリソースに適用される準拠法。空間的側面および空間的な適用可能性としては、名前で指定される場所または地理的座標によって指定される場所を指定できます。時間的側面としては、名前で指定される期間、日付、または日付範囲を指定できます。準拠法としては、名前で指定される管理主体またはそのリソースが該当する地理的位置を指定できます。推奨されるベスト・プラクティスは、Thesaurus of Geographic Names (TGN) などの管理された語彙を使用することです。該当する場合は、一連の座標や日付範囲などの数値識別子よりも、名前で指定される場所や期間を優先的に使用できます。"
+
+msgid "Creator"
+msgstr "作者"
+
+msgid "An entity primarily responsible for making the resource. Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."
+msgstr "リソースの作成を主に担当するエンティティー。作成者の例としては、人物、組織、サービスなどが挙げられます。通常は作成者の名前を使用してエンティティーを示す必要があります。"
+
+msgid "Date"
+msgstr "日付"
+
+msgid "A point or period of time associated with an event in the lifecycle of the resource. Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."
+msgstr "リソースのライフサイクルにおけるイベントに関連付けられた特定の時点または期間。日付は、任意の細分度の時間情報を表すために使用できます。推奨されるベスト・プラクティスは、ISO 8601 の W3CDTF プロファイル [W3CDTF] などのエンコード・スキームを使用することです。"
+
+msgid "An account of the resource. Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."
+msgstr "リソースの説明。説明には、要約、目次、グラフィカル表現、リソースの自由表記の説明を含めることができます (ただしこれら以外の要素を含めることもできます)。"
+
+msgid "Format"
+msgstr "フォーマット"
+
+msgid "The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."
+msgstr "リソースのファイル・フォーマット、物理メディア、または規模。規模の例としては、サイズや期間が挙げられます。推奨されるベスト・プラクティスは、インターネット・メディア・タイプ (MIME) のリストなどの管理された語彙を使用することです。"
+
+msgid "Identifier"
+msgstr "識別子"
+
+msgid "An unambiguous reference to the resource within a given context. Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."
+msgstr "指定されたコンテキスト内のリソースに対する明確な参照。推奨されるベスト・プラクティスは、正式な識別システムに準拠したストリングによってリソースを識別することです。"
+
+msgid "Language"
+msgstr "言語"
+
+msgid "A language of the resource. Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."
+msgstr "リソースの言語。推奨されるベスト・プラクティスは、RFC 4646 [RFC4646] などの管理された語彙を使用することです。"
+
+msgid "Publisher"
+msgstr "出版社"
+
+msgid "An entity responsible for making the resource available. Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."
+msgstr "リソースの使用可能化を担当するエンティティー。公開者の例としては、人物、組織、サービスなどが挙げられます。通常は公開者の名前を使用してエンティティーを示す必要があります。"
+
+msgid "Relation"
+msgstr "リレーション"
+
+msgid "A related resource. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "関連リソース。推奨されるベスト・プラクティスは、正式な識別システムに適合するストリングによって関連リソースを特定することです。"
+
+msgid "Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."
+msgstr "リソース内で、またはリソースに対して保持する権利に関する情報。多くの場合、権利情報には、リソースに関連付けられたさまざまな財産権 (知的所有権など) に関する記述が含まれます。"
+
+msgid "Source"
+msgstr "ソース"
+
+msgid "A related resource from which the described resource is derived. The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "記述対象のリソースの派生元となった関連リソース。記述対象のリソースが、関連リソースから全体的または部分的に派生している場合があります。推奨されるベスト・プラクティスは、正式な識別システムに適合するストリングによって関連リソースを特定することです。"
+
+msgid "Subject"
+msgstr "件名"
+
+msgid "The topic of the resource. Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary. To describe the spatial or temporal topic of the resource, use the Coverage element."
+msgstr "リソースの主題。多くの場合、件名は、キーワード、キー・フレーズ、または分類コードを使用して表されます。推奨されるベスト・プラクティスは、管理された語彙を使用することです。リソースの空間的または時間的な側面を示す場合は、「適応範囲」要素を使用してください。"
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "The name given to the resource."
+msgstr "リソースに付けられた名前。"
+
+msgid "The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."
+msgstr "リソースの性質またはジャンル。推奨されるベスト・プラクティスは、DCMI Type Vocabulary (DCMITYPE) などの管理された語彙を使用することです。リソースのファイル・フォーマット、物理メディア、または規模を示す場合は、「フォーマット」要素を使用してください。"
+
+msgid "Provides forty additional meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "<a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a> からの追加の 40 個のメタタグを提供します。"
+
+msgid "Metatag: Dublin Core Advanced"
+msgstr "メタタグ: Dublin Core 拡張"
+
+msgid "Dublin Core: Abstract"
+msgstr "Dublin Core: 要約"
+
+msgid "Dublin Core: Access Rights"
+msgstr "Dublin Core: アクセス権"
+
+msgid "Dublin Core: Accrual Method"
+msgstr "Dublin Core: 発生方式"
+
+msgid "Dublin Core: Accrual Periodicity"
+msgstr "Dublin Core: 発生周期性"
+
+msgid "Dublin Core: Accrual Policy"
+msgstr "Dublin Core: 発生ポリシー"
+
+msgid "Dublin Core: Alternative Title"
+msgstr "Dublin Core: 代替タイトル"
+
+msgid "Dublin Core: Audience"
+msgstr "Dublin Core: 対象者"
+
+msgid "Dublin Core: Date Available"
+msgstr "Dublin Core: 使用可能日"
+
+msgid "Dublin Core: Bibliographic Citation"
+msgstr "Dublin Core: 文献引用"
+
+msgid "Dublin Core: Conforms To"
+msgstr "Dublin Core: 準拠対象"
+
+msgid "Dublin Core: Date Created"
+msgstr "Dublin Core: 作成日"
+
+msgid "Dublin Core: Date Accepted"
+msgstr "Dublin Core: 受理日"
+
+msgid "Dublin Core: Date Copyrighted"
+msgstr "Dublin Core: 著作権日付"
+
+msgid "Dublin Core: Date Submitted"
+msgstr "Dublin Core: 提出日"
+
+msgid "Dublin Core: Audience Education Level"
+msgstr "Dublin Core: 対象者教育レベル"
+
+msgid "Dublin Core: Extent"
+msgstr "Dublin Core: 規模"
+
+msgid "Dublin Core: Has Format"
+msgstr "Dublin Core: フォーマット違い"
+
+msgid "Dublin Core: Has Part"
+msgstr "Dublin Core: パーツあり"
+
+msgid "Dublin Core: Has Version"
+msgstr "Dublin Core: バージョン違い"
+
+msgid "Dublin Core: Instructional Method"
+msgstr "Dublin Core: 教育方式"
+
+msgid "Dublin Core: Is Format Of"
+msgstr "Dublin Core: 次の別フォーマット"
+
+msgid "Dublin Core: Is Part Of"
+msgstr "Dublin Core: 次の一部"
+
+msgid "Dublin Core: Is Referenced By"
+msgstr "Dublin Core: 参照元"
+
+msgid "Dublin Core: Is Replaced By"
+msgstr "Dublin Core: 置換先"
+
+msgid "Dublin Core: Is Required By"
+msgstr "Dublin Core: 次で必要"
+
+msgid "Dublin Core: Date Issued"
+msgstr "Dublin Core: 発行日"
+
+msgid "Dublin Core: Is Version Of"
+msgstr "Dublin Core: 次のバージョン"
+
+msgid "Dublin Core: License"
+msgstr "Dublin Core: ライセンス"
+
+msgid "Dublin Core: Mediator"
+msgstr "Dublin Core: 仲介者"
+
+msgid "Dublin Core: Medium"
+msgstr "Dublin Core: 媒体"
+
+msgid "Dublin Core: Date Modified"
+msgstr "Dublin Core: 変更日"
+
+msgid "Dublin Core: Provenance"
+msgstr "Dublin Core: 来歴"
+
+msgid "Dublin Core: References"
+msgstr "Dublin Core: 参照先"
+
+msgid "Dublin Core: Replaces"
+msgstr "Dublin Core: 置換対象"
+
+msgid "Dublin Core: Requires"
+msgstr "Dublin Core: 次が必要"
+
+msgid "Dublin Core: Rights Holder"
+msgstr "Dublin Core: 権利保有者"
+
+msgid "Dublin Core: Spatial Coverage"
+msgstr "Dublin Core: 空間カバレッジ"
+
+msgid "Dublin Core: Table Of Contents"
+msgstr "Dublin Core: 目次"
+
+msgid "Dublin Core: Temporal Coverage"
+msgstr "Dublin Core: 時間カバレッジ"
+
+msgid "Dublin Core: Date Valid"
+msgstr "Dublin Core: 有効日"
+
+msgid "Dublin Core Additional Tags"
+msgstr "Dublin Core 追加タグ"
+
+msgid "These tags are not part of the Metadata Element Set but may be useful for certain scenarios."
+msgstr "これらのタグは Metadata Element Set には含まれませんが、一部のシナリオで役立つ場合があります。"
+
+msgid "A summary of the resource."
+msgstr "リソースの要約。"
+
+msgid "Access Rights"
+msgstr "アクセス権"
+
+msgid "Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."
+msgstr "リソースにアクセスできるユーザーに関する情報、またはリソースのセキュリティー状況を表す標識。アクセス権には、プライバシー・セキュリティー、またはその他のポリシーに基づいたアクセスまたは制限に関する情報が含まれることがあります。"
+
+msgid "Accrual Method"
+msgstr "発生方式"
+
+msgid "The method by which items are added to a collection."
+msgstr "項目がコレクションに追加される方式。"
+
+msgid "Accrual Periodicity"
+msgstr "発生周期性"
+
+msgid "The frequency with which items are added to a collection."
+msgstr "項目がコレクションに追加される頻度。"
+
+msgid "Accrual Policy"
+msgstr "発生ポリシー"
+
+msgid "The policy governing the addition of items to a collection."
+msgstr "コレクションへの項目の追加を制御するポリシー。"
+
+msgid "Alternative Title"
+msgstr "代替タイトル"
+
+msgid "An alternative name for the resource. The distinction between titles and alternative titles is application-specific."
+msgstr "リソースの代替名。タイトルと代替タイトルの違いは、アプリケーション固有です。"
+
+msgid "Audience"
+msgstr "読者"
+
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "リソースが意図されている、あるいは有用である対象エンティティーのクラス。"
+
+msgid "Date Available"
+msgstr "使用可能日"
+
+msgid "Date (often a range) that the resource became or will become available."
+msgstr "リソースが利用可能になる・なった日付です(たいてい範囲)。"
+
+msgid "Bibliographic Citation"
+msgstr "文献引用"
+
+msgid "A bibliographic reference for the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."
+msgstr "リソースの文献参照。十分な文献の詳細を含めて、できるかぎり曖昧性のないようにリソースを特定することが推奨されます。"
+
+msgid "Conforms To"
+msgstr "準拠対象"
+
+msgid "An established standard to which the described resource conforms."
+msgstr "記述されているリソースが準拠する確立された標準。"
+
+msgid "Date Created"
+msgstr "作成日"
+
+msgid "Date of creation of the resource."
+msgstr "リソースの作成日。"
+
+msgid "Date Accepted"
+msgstr "受理日"
+
+msgid "Date of acceptance of the resource. Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."
+msgstr "リソースの受理の日付。受理日が関連する可能性があるリソースの例としては、論文 (大学の学部での受理) や投稿論文 (学術雑誌での受理) が挙げられます。"
+
+msgid "Date Copyrighted"
+msgstr "著作権日付"
+
+msgid "Date of copyright."
+msgstr "著作権の日付。"
+
+msgid "Date Submitted"
+msgstr "提出日"
+
+msgid "Date of submission of the resource. Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal)."
+msgstr "リソースの提出の日付。提出日が関連する可能性があるリソースの例としては、論文 (大学の学部への提出) や投稿論文 (学術雑誌への提出) が挙げられます。"
+
+msgid "Audience Education Level"
+msgstr "対象者教育レベル"
+
+msgid "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."
+msgstr "記述されているリソースの対象である、教育またはトレーニングのコンテキストでの進度の観点で定義された、エンティティーのクラス。"
+
+msgid "Extent"
+msgstr "規模"
+
+msgid "The size or duration of the resource."
+msgstr "リソースのサイズまたは所要時間。"
+
+msgid "Has Format"
+msgstr "フォーマット違い"
+
+msgid "A related resource that is substantially the same as the pre-existing described resource, but in another format."
+msgstr "既存の記述されているリソースと実質的には同じであるが、別のフォーマットである関連リソース。"
+
+msgid "Has Part"
+msgstr "パーツあり"
+
+msgid "A related resource that is included either physically or logically in the described resource."
+msgstr "記述されているリソースに物理的または論理的に含まれる関連リソース。"
+
+msgid "Has Version"
+msgstr "バージョン違い"
+
+msgid "A related resource that is a version, edition, or adaptation of the described resource."
+msgstr "記述されているリソースのバージョン、エディション、またはアダプテーションである関連リソース。"
+
+msgid "Instructional Method"
+msgstr "教育方式"
+
+msgid "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support. Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured. Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."
+msgstr "記述されているリソースのサポート対象である知識、態度、スキルを培うために使用されるプロセス。教育方式には通常、教材を提示する方法、教育活動を実施する方法、学習者間および学習者と講師間の対話のパターン、グループおよび個人の学習レベルの測定メカニズムが含まれます。教育方式には、計画や実施から評価やフィードバックに至るまで、教育および学習プロセスのすべての側面が含まれます。"
+
+msgid "Is Format Of"
+msgstr "次の別フォーマット"
+
+msgid "A related resource that is substantially the same as the described resource, but in another format."
+msgstr "記述されているリソースと実質的には同じであるが、別のフォーマットである関連リソース。"
+
+msgid "Is Part Of"
+msgstr "次の一部"
+
+msgid "A related resource in which the described resource is physically or logically included."
+msgstr "記述されているリソースが物理的または論理的に含まれている関連リソース。"
+
+msgid "Is Referenced By"
+msgstr "参照元"
+
+msgid "A related resource that references, cites, or otherwise points to the described resource."
+msgstr "記述されているリソースを参照、引用、あるいは別の方法で指している関連リソース。"
+
+msgid "Is Replaced By"
+msgstr "置換先"
+
+msgid "A related resource that supplants, displaces, or supersedes the described resource."
+msgstr "記述されているリソースを置き換える、取り替える、あるいは記述されているリソースより優先される関連リソース。"
+
+msgid "Is Required By"
+msgstr "次で必要"
+
+msgid "A related resource that requires the described resource to support its function, delivery, or coherence."
+msgstr "機能、デリバリー、または一貫性をサポートするために、記述されているリソースを要求する関連リソース。"
+
+msgid "Is Version Of"
+msgstr "次のバージョン"
+
+msgid "A related resource of which the described resource is a version, edition, or adaptation. Changes in version imply substantive changes in content rather than differences in format."
+msgstr "記述されているリソースがバージョン、エディション、またはアダプテーションである関連リソース。バージョンの違いは、フォーマットの違いではなく、内容の相当な変更を意味します。"
+
+msgid "Date Issued"
+msgstr "発行日"
+
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "リソースの正式な発行 (例えば、出版) の日付。"
+
+msgid "License"
+msgstr "ライセンス"
+
+msgid "A legal document giving official permission to do something with the resource."
+msgstr "リソースについて何らかの処理をする正式な許可を与える法的文書。"
+
+msgid "Mediator"
+msgstr "仲介者"
+
+msgid "An entity that mediates access to the resource and for whom the resource is intended or useful. In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."
+msgstr "リソースへのアクセスを、そのリソースが意図されている、あるいは有用である対象に仲介するエンティティー。教育のコンテキストでは、仲介者は、親、教師、補助教員、介護者などです。"
+
+msgid "Medium"
+msgstr "中程度"
+
+msgid "The material or physical carrier of the resource."
+msgstr "リソースの素材または物理的な媒介体。"
+
+msgid "Date Modified"
+msgstr "変更日"
+
+msgid "Date on which the resource was changed."
+msgstr "リソースが変更された日付。"
+
+msgid "Provenance"
+msgstr "来歴"
+
+msgid "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation. The statement may include a description of any changes successive custodians made to the resource."
+msgstr "真正性、整合性、および解釈にとって重要である、作成以降のリソースの所有権および管理の変更を示す記述。この記述には、リソースに対して歴代の管理者が行った変更の記述も含まれることがあります。"
+
+msgid "References"
+msgstr "参照"
+
+msgid "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+msgstr "記述されているリソースによって参照、引用、あるいはその他の方法で指されている関連リソース。"
+
+msgid "Replaces"
+msgstr "置換対象"
+
+msgid "A related resource that is supplanted, displaced, or superseded by the described resource."
+msgstr "記述されているリソースが置き換えるか、取り替えるか、優先される関連リソース。"
+
+msgid "Requires"
+msgstr "次が必要"
+
+msgid "A related resource that is required by the described resource to support its function, delivery, or coherence."
+msgstr "機能、デリバリー、または一貫性をサポートするために、記述されているリソースが要求する関連リソース。"
+
+msgid "Rights Holder"
+msgstr "権利保有者"
+
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "リソースに対する権利を所有または管理している個人または組織。"
+
+msgid "Spatial Coverage"
+msgstr "空間カバレッジ"
+
+msgid "Spatial characteristics of the resource."
+msgstr "リソースの空間特性。"
+
+msgid "Table Of Contents"
+msgstr "目次"
+
+msgid "A list of subunits of the resource."
+msgstr "リソースのサブユニットのリスト。"
+
+msgid "Temporal Coverage"
+msgstr "時間カバレッジ"
+
+msgid "Temporal characteristics of the resource."
+msgstr "リソースの時間特性。"
+
+msgid "Date Valid"
+msgstr "有効日"
+
+msgid "Date (often a range) of validity of a resource."
+msgstr "リソースが有効である日付 (多くの場合、範囲)。"
+
+msgid "Metatag Extended Permissions"
+msgstr "メタタグ拡張許可"
+
+msgid "Adds individual permissions for each meta tag, allowing for fine-grained access to the meta tags. Note: this may lead to performance issues on the permissions admin page, please see the included README.txt file for details."
+msgstr "メタタグごとに許可を個別に追加して、メタタグへのアクセスを微細に制御できるようにします。 注: これにより、権限管理ページでパフォーマンスの問題が発生する可能性があります。詳しくは、付属の README.txt ファイルを参照してください。"
+
+msgid "Access %tag in %group"
+msgstr "%group の %tag にアクセス"
+
+msgid "Metatag: Facebook"
+msgstr "メタタグ: Facebook"
+
+msgid "A set of meta tags specially for controlling advanced functionality with Facebook."
+msgstr "Facebook で高度な機能を制御することを主な目的とする一連のメタタグ。"
+
+msgid "Facebook Admins"
+msgstr "Facebook 管理者"
+
+msgid "Facebook App ID"
+msgstr "Facebook アプリケーション ID"
+
+msgid "Facebook Pages"
+msgstr "Facebook ページ"
+
+msgid "facebook"
+msgstr "Facebook"
+
+msgid "A comma-separated list of Facebook user IDs of people who are considered administrators or moderators of this page."
+msgstr "このページの管理者またはモデレーターと見なされている人の Facebook ユーザー ID のコンマ区切りリスト。"
+
+msgid "Facebook Application ID"
+msgstr "Facebook アプリケーション ID"
+
+msgid "A comma-separated list of Facebook Platform Application IDs applicable for this site."
+msgstr "このサイトで利用可能な Facebook プラットフォーム・アプリケーション ID のコンマ区切りリスト。"
+
+msgid "Facebook Instant Articles claim URL token."
+msgstr "Facebook インスタント記事要求 URL のトークン。"
+
+msgid "Provides support for many different favicons."
+msgstr "多種多様なファビコンに対するサポートを提供します。"
+
+msgid "Metatag: Favicons"
+msgstr "メタタグ: Favicons"
+
+msgid "Default shortcut icon"
+msgstr "デフォルトのショートカット・アイコン"
+
+msgid "Icon: SVG"
+msgstr "アイコン: SVG"
+
+msgid "href"
+msgstr "href"
+
+msgid "Color"
+msgstr "色"
+
+msgid "Icon: 16px x 16px"
+msgstr "アイコン: 16px x 16px"
+
+msgid "Icon: 32px x 32px"
+msgstr "アイコン: 32px x 32px"
+
+msgid "Icon: 96px x 96px"
+msgstr "アイコン: 96px x 96px"
+
+msgid "Icon: 192px x 192px"
+msgstr "アイコン: 192px x 192px"
+
+msgid "Apple touch icon: 60px x 60px"
+msgstr "Apple タッチ・アイコン: 60px x 60px"
+
+msgid "Apple touch icon: 72px x 72px"
+msgstr "Apple タッチ・アイコン: 72px x 72px"
+
+msgid "Apple touch icon: 76px x 76px"
+msgstr "Apple タッチ・アイコン: 76px x 76px"
+
+msgid "Apple touch icon: 114px x 114px"
+msgstr "Apple タッチ・アイコン: 114px x 114px"
+
+msgid "Apple touch icon: 120px x 120px"
+msgstr "Apple タッチ・アイコン: 120px x 120px"
+
+msgid "Apple touch icon: 144px x 144px"
+msgstr "Apple タッチ・アイコン: 144px x 144px"
+
+msgid "Apple touch icon: 152px x 152px"
+msgstr "Apple タッチ・アイコン: 152px x 152px"
+
+msgid "Apple touch icon: 180px x 180px"
+msgstr "Apple タッチ・アイコン: 180px x 180px"
+
+msgid "Apple touch icon (precomposed): 57px x 57px"
+msgstr "Apple タッチ・アイコン (事前作成済み): 57px x 57px"
+
+msgid "Apple touch icon (precomposed): 72px x 72px"
+msgstr "Apple タッチ・アイコン (事前作成済み): 72px x 72px"
+
+msgid "Apple touch icon (precomposed): 76px x 76px"
+msgstr "Apple タッチ・アイコン (事前作成済み): 76px x 76px"
+
+msgid "Apple touch icon (precomposed): 114px x 114px"
+msgstr "Apple タッチ・アイコン (事前作成済み): 114px x 114px"
+
+msgid "Apple touch icon (precomposed): 120px x 120px"
+msgstr "Apple タッチ・アイコン (事前作成済み): 120px x 120px"
+
+msgid "Apple touch icon (precomposed): 144px x 144px"
+msgstr "Apple タッチ・アイコン (事前作成済み): 144px x 144px"
+
+msgid "Apple touch icon (precomposed): 152px x 152px"
+msgstr "Apple タッチ・アイコン (事前作成済み): 152px x 152px"
+
+msgid "Apple touch icon (precomposed): 180px x 180px"
+msgstr "Apple タッチ・アイコン (事前作成済み): 180px x 180px"
+
+msgid "Favicons & touch icons"
+msgstr "ファビコンとタッチ・アイコン"
+
+msgid "A PNG image that is 60px wide by 60px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "幅 60 ピクセル、高さ 60 ピクセルの PNG イメージ。非 Retina iPhone、iPod Touch、Android 2.1 以上のデバイスを使用。"
+
+msgid "A PNG image that is 114px wide by 114px high. Used with iPhone with @2x display running iOS <= 6."
+msgstr "幅 114 ピクセル、高さ 114 ピクセルの PNG イメージ。iOS 6 以下を実行する @2x ディスプレイの iPhone で使用されます。"
+
+msgid "A PNG image that is 120px wide by 120px high. Used with iPhone with @2x display running iOS >= 7."
+msgstr "幅 120 ピクセル、高さ 120 ピクセルの PNG イメージ。iOS 7 以上を実行する @2x ディスプレイの iPhone で使用されます。"
+
+msgid "A PNG image that is 144px wide by 144px high. Used with iPad with @2x display running iOS <= 6."
+msgstr "幅 144 ピクセル、高さ 144 ピクセルの PNG イメージ。iOS 6 以下を実行する @2x ディスプレイの iPad で使用されます。"
+
+msgid "A PNG image that is 152px wide by 152px high. Used with iPad with @2x display running iOS >= 7."
+msgstr "幅 152 ピクセル、高さ 152 ピクセルの PNG イメージ。iOS 7 以上を実行する @2x ディスプレイの iPad で使用されます。"
+
+msgid "A PNG image that is 180px wide by 180px high. Used with iPhone 6 Plus with @3x display."
+msgstr "幅 180 ピクセル、高さ 180 ピクセルの PNG イメージ。@3x ディスプレイの iPhone 6 Plus で使用されます。"
+
+msgid "A PNG image that is 72px wide by 72px high. Used with the iPad mini and the first- and second-generation iPad (@1x display) on iOS <= 6."
+msgstr "幅 72 ピクセル、高さ 72 ピクセルの PNG イメージ。iOS 6 以下で実行される iPad mini、および第 1 世代と第 2 世代の iPad (@1x ディスプレイ) で使用されます。"
+
+msgid "A PNG image that is 76px wide by 76px high. Used with the iPad mini and the second-generation iPad (@1x display) on iOS >= 7."
+msgstr "幅 76 ピクセル、高さ 76 ピクセルの PNG イメージ。iOS 7 以上で実行される iPad mini、および第 2 世代の iPad (@1x ディスプレイ) で使用されます。"
+
+msgid "A PNG image that is 57px wide by 57px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "幅 57 ピクセル、高さ 57 ピクセルの PNG イメージ。非 Retina iPhone、iPod Touch、Android 2.1 以上のデバイスを使用。"
+
+msgid "A PNG image that is 16px wide by 16px high."
+msgstr "幅 16 ピクセル、高さ 16 ピクセルの PNG イメージ。"
+
+msgid "A PNG image that is 192px wide by 192px high."
+msgstr "幅 192 ピクセル、高さ 192 ピクセルの PNG イメージ。"
+
+msgid "A PNG image that is 32px wide by 32px high."
+msgstr "幅 32 ピクセル、高さ 32 ピクセルの PNG イメージ。"
+
+msgid "A PNG image that is 96px wide by 96px high."
+msgstr "幅 96 ピクセル、高さ 96 ピクセルの PNG イメージ。"
+
+msgid "Mask icon color"
+msgstr "マスク・アイコンの色"
+
+msgid "Color attribute for SVG (mask) icon in hexadecimal format, e.g. '#0000ff'. Setting it will break HTML validation. If not set macOS Safari ignores the Mask Icon entirely, making the Icon: SVG completely useless."
+msgstr "16 進形式の SVG (マスク) アイコンの色属性、例: 「#0000ff」。 これを設定すると、HTML 検証が中断されます。 macOS Safari が設定されていない場合、マスク・アイコンを完全に無視して、アイコン SVG を完全に使用不可にします。"
+
+msgid "Mask icon (SVG)"
+msgstr "マスク・アイコン (SVG)"
+
+msgid "A grayscale scalable vector graphic (SVG) file."
+msgstr "グレースケールの Scalable Vector Graphics (SVG) ファイル。"
+
+msgid "Default icon"
+msgstr "デフォルト・アイコン"
+
+msgid "The traditional favicon, must be either a GIF, ICO, JPG/JPEG or PNG image."
+msgstr "従来型のファビコン。GIF、ICO、JPG/JPEG、または PNG の各イメージのいずれかでなければなりません。"
+
+msgid "Provides support for meta tags used for Google Custom Search Engine."
+msgstr "Google カスタム検索エンジンに使用されるメタタグに対するサポートを提供します。"
+
+msgid "Metatag: Google Custom Search Engine (CSE)"
+msgstr "メタタグ: Google カスタム検索エンジン (CSE)"
+
+msgid "Thumbnail"
+msgstr "サムネイル"
+
+msgid "Department"
+msgstr "部門"
+
+msgid "Content audience"
+msgstr "コンテンツ対象者"
+
+msgid "Document status"
+msgstr "文書のステータス"
+
+msgid "google_rating"
+msgstr "google_rating"
+
+msgid "Google Custom Search Engine (CSE)"
+msgstr "Google カスタム検索エンジン (CSE)"
+
+msgid "Meta tags used to control the mobile browser experience. Some of these meta tags have been replaced by newer mobile browsers. These meta tags usually only need to be set globally, rather than per-page."
+msgstr "メタ・タグはモバイル・ブラウザー・エクスペリエンスを制御するために使用されていました。これらのメタ・タグの一部はより新しいモバイル・ブラウザーによって置き換えられました。これらのメタ・タグは、通常、ページごとではなく、全体的に設定するだけでかまいません。"
+
+msgid "Department tag."
+msgstr "部門タグ。"
+
+msgid "Content rating"
+msgstr "コンテンツのレーティング"
+
+msgid "Works only with numeric values."
+msgstr "数値を指定した場合のみ機能します。"
+
+msgid "Use a url of a valid image."
+msgstr "有効なイメージの URL を使用します。"
+
+msgid "Metatag: Google Plus"
+msgstr "メタタグ: Google+"
+
+msgid "Provides support for Google's Plus meta tags. Deprecated, will be removed in Metatag 2.0.0."
+msgstr "Google+ メタタグに対するサポートを提供します。 非推奨。メタタグ 2.0.0 で削除されます。"
+
+msgid "Google Plus: name"
+msgstr "Google+: 名前"
+
+msgid "Google Plus: image"
+msgstr "Google+: イメージ"
+
+msgid "Google Plus: description"
+msgstr "Google+: 説明"
+
+msgid "Publisher URL"
+msgstr "発行元 URL"
+
+msgid "Google Plus"
+msgstr "Google+"
+
+msgid "DEPRECATED, use Advanced-Author instead."
+msgstr "非推奨です。代わりに Advanced-Author を使用してください。"
+
+msgid "Content description less than 200 characters."
+msgstr "200 文字未満のコンテンツの説明。"
+
+msgid "Image"
+msgstr "画像"
+
+msgid "The URL of an image which should represent the content. For best results use an image that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Supports PNG, JPEG and GIF formats."
+msgstr "内容を表す、イメージの URL。最良の結果を出すには、1200 x 630 ピクセル以上のサイズのイメージを使用してください。推奨される最小サイズは 600 x 316 ピクセルです。PNG、JPEG、GIF 形式をサポートしています。"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Content title."
+msgstr "コンテンツのタイトル。"
+
+msgid "Used by some search engines to confirm publication of the content on a page. Should be the full URL for the publication's Google+ profile page."
+msgstr "ページ上のコンテンツの掲載元を確認するために、一部の検索エンジンによって使用されます。掲載元の Google+ プロファイル・ページの完全 URL を指定する必要があります。"
+
+msgid "Provides support for the hreflang meta tag with some extra logic to simplify it."
+msgstr "hreflang メタタグ、およびこれを簡素化するための追加のロジックに対するサポートを提供します。"
+
+msgid "Metatag: Hreflang"
+msgstr "メタタグ: Hreflang"
+
+msgid "Default locale (x-default)"
+msgstr "デフォルト・ロケール (x-default)"
+
+msgid "Href per language"
+msgstr "言語ごとの Href"
+
+msgid "URL for a version of this page in %langcode"
+msgstr "%langcode でのこのページのバージョンの URL"
+
+msgid "Alternative language links (hreflang)"
+msgstr "代替言語リンク (hreflang)"
+
+msgid "These meta tags are designed to point visitors to versions of the current page in other languages."
+msgstr "これらのメタタグは、現在のページの他言語バージョンに訪問者を誘導することを目的としています。"
+
+msgid "Hreflang per language"
+msgstr "言語ごとの hreflang"
+
+msgid "This plugin will be cloned from these settings for each enabled language."
+msgstr "このプラグインは、有効になっている各言語の該当する設定から複製されます。"
+
+msgid "This should point to the version of the page that is for the main or primary locale, e.g. the original version of an article that is translated into other languages."
+msgstr "これはページのメイン・ロケールまたは 1 次ロケール用バージョンを指し示す必要があります (例: 他言語に翻訳される記事のオリジナル・バージョン)。"
+
+msgid "Provides support for meta tags used to control the mobile browser experience."
+msgstr "モバイル・ブラウザーのエクスペリエンスを制御するために使用されるメタタグに対するサポートを提供します。"
+
+msgid "Metatag: Mobile & UI Adjustments"
+msgstr "メタタグ: モバイルおよび UI の調整"
+
+msgid "Handheld URL"
+msgstr "携帯電話 URL"
+
+msgid "Android Mobile: Android App Link Alternative"
+msgstr "Android モバイル: Android アプリケーション・リンク代替"
+
+msgid "Android Mobile: Manifest"
+msgstr "Android モバイル: マニフェスト"
+
+msgid "Apple Mobile: iTunes App"
+msgstr "Apple モバイル: iTunes アプリケーション"
+
+msgid "Apple Mobile: Web App Capable"
+msgstr "Apple モバイル: Web アプリケーション対応"
+
+msgid "Apple Mobile: Web App Status bar color"
+msgstr "Apple モバイル: Web アプリケーションのステータス・バーの色"
+
+msgid "Apple Mobile: Web App Title"
+msgstr "Apple モバイル: Web アプリケーションのタイトル"
+
+msgid "Application name"
+msgstr "アプリケーション名"
+
+msgid "Mobile: Cleartype"
+msgstr "モバイル: ClearType"
+
+msgid "Apple Mobile: Format Detection"
+msgstr "Apple モバイル: フォーマット検出"
+
+msgid "Mobile: Handheld-Friendly"
+msgstr "モバイル: 携帯電話対応"
+
+msgid "Apple Mobile: iOS App Link Alternative"
+msgstr "Apple モバイル: iOS アプリケーション・リンク代替"
+
+msgid "Mobile: Mobile Optimized"
+msgstr "モバイル: モバイル最適化"
+
+msgid "MSApplication - Allow domain API calls"
+msgstr "MSApplication - ドメインの API 呼び出しを許可"
+
+msgid "MSApplication - Allow domain meta tags"
+msgstr "MSApplication - ドメインのメタタグを許可"
+
+msgid "MSApplication - Badge"
+msgstr "MSApplication - バッジ"
+
+msgid "MSApplication - Config"
+msgstr "MSApplication - 構成"
+
+msgid "MSApplication - Nav button color"
+msgstr "MSApplication - ナビゲーション・ボタンの色"
+
+msgid "MSApplication - Notification"
+msgstr "MSApplication - 通知"
+
+msgid "MSApplication - Square logo, 150px x 150px"
+msgstr "MSApplication - 正方形ロゴ、150px x 150px"
+
+msgid "MSApplication - Square logo, 310px x 310px"
+msgstr "MSApplication - 正方形ロゴ、310px x 310px"
+
+msgid "MSApplication - Square logo, 70px x 70px"
+msgstr "MSApplication - 正方形ロゴ、70px x 70px"
+
+msgid "MSApplication - Start URL"
+msgstr "MSApplication - 開始 URL"
+
+msgid "MSApplication - Task"
+msgstr "MSApplication - タスク"
+
+msgid "MSApplication - Task separator"
+msgstr "MSApplication - タスク・セパレーター"
+
+msgid "MSApplication - Tile color"
+msgstr "MSApplication - タイル色"
+
+msgid "MSApplication - Tile image"
+msgstr "MSApplication - タイル・イメージ"
+
+msgid "MSApplication - Tooltip"
+msgstr "MSApplication - ツールチップ"
+
+msgid "MSApplication - Wide logo, 310px x 150px"
+msgstr "MSApplication - 横長ロゴ、310px x 150px"
+
+msgid "MSApplication - Window"
+msgstr "MSApplication - ウィンドウ"
+
+msgid "Mobile: Theme Color"
+msgstr "Mobile: テーマ色"
+
+msgid "Mobile: Viewport"
+msgstr "Mobile: ビューポート"
+
+msgid "Mobile: Web Manifest"
+msgstr "モバイル: Web マニフェスト"
+
+msgid "X-UA-Compatible"
+msgstr "X-UA-Compatible"
+
+msgid "Android"
+msgstr "Android"
+
+msgid "Custom meta tags used by the Android OS, browser, etc."
+msgstr "Android OS、ブラウザーなどで使用されるカスタムのメタタグ"
+
+msgid "Apple & iOS"
+msgstr "Apple および iOS"
+
+msgid "Custom meta tags used by Apple's software, iOS, Safari, etc."
+msgstr "Apple のソフトウェア、iOS、Safari などで使用されるカスタムのメタタグ"
+
+msgid "Mobile & UI Adjustments"
+msgstr "モバイルおよび UI の調整"
+
+msgid "Windows & Windows Mobile"
+msgstr "Windows および Windows Mobile"
+
+msgid "Custom meta tags used by the Windows and Windows Mobile OSes, IE browser, etc."
+msgstr "Windows OS、Windows Mobile OS、IE ブラウザーなどで使用されるカスタムのメタタグ"
+
+msgid "Provides an absolute URL to a specially formatted version of the current page designed for 'feature phones', mobile phones that do not support modern browser standards. See the <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>official Google Mobile SEO Guide</a> for details on how the page should be formatted."
+msgstr "「フィーチャー・フォン」(最新のブラウザー標準をサポートしない携帯電話) 用に設計された、特殊なフォーマットを持つ現行ページのバージョンへの絶対 URL を提供します。ページのフォーマット方法について詳しくは、<a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>公式 Google モバイル SEO ガイド</a>を参照してください。"
+
+msgid "Android app link alternative"
+msgstr "Android アプリケーション・リンク代替"
+
+msgid "A custom string for deeplinking to an Android mobile app. Should be in the format 'package_name/host_path', e.g. 'com.example.android/example/hello-screen'. The 'android-app://' prefix will be included automatically."
+msgstr "Android モバイル・アプリケーションにディープリンクするためのカスタムのストリング。「パッケージ名/ホストのパス」の形式で指定する必要があります (例: com.example.android/example/hello-screen)。「android-app://」という接頭部が自動的に挿入されます。"
+
+msgid "iTunes App details"
+msgstr "iTunes アプリケーション詳細"
+
+msgid "This informs iOS devices to display a banner to a specific app. If used, it must provide the 'app-id' value, the 'affiliate-data' and 'app-argument' values are optional."
+msgstr "特定のアプリケーションのバナーを表示するように iOS デバイスに通知します。使用する場合は「app-id」値を指定する必要があります。「affiliate-data」値と「app-argument」値はオプションです。"
+
+msgid "Web app capable?"
+msgstr "Web アプリケーション対応"
+
+msgid "If set to 'yes', the application will run in full-screen mode; the default behavior is to use Safari to display web content."
+msgstr "「yes」に設定すると、アプリケーションが全画面モードで実行されます。デフォルトの動作では Safari を使用して Web コンテンツを表示します。"
+
+msgid "Status bar color"
+msgstr "ステータス・バーの色"
+
+msgid "Requires the 'Web app capable' meta tag to be set to 'yes'. May be set to 'default', 'black', or 'black-translucent'."
+msgstr "「Web アプリケーション対応」メタタグを「yes」に設定する必要があります。設定可能な値は「default」、「black」、または「black-translucent」です。"
+
+msgid "Apple Web App Title"
+msgstr "Apple Web アプリケーションのタイトル"
+
+msgid "Overrides the long site title when using the Apple Add to Home Screen."
+msgstr "Apple の「ホーム画面に追加」を使用する場合に、長いサイトのタイトルをオーバーライドします。"
+
+msgid "The default name displayed with the pinned sites tile (or icon). Set the content attribute to the desired name."
+msgstr "ピン留めされたサイト・タイル (またはアイコン) とともに表示されるデフォルトの名前。コンテンツ属性を目的の名前に設定します。"
+
+msgid "Cleartype"
+msgstr "ClearType"
+
+msgid "A legacy meta tag for older versions of Internet Explorer on Windows, use the value 'on' to enable it; this tag is ignored by all other browsers."
+msgstr "Windows 上の以前のバージョンの Internet Explorer で使用される従来のメタタグ。有効化する場合は値「on」を使用します。このタグは他のすべてのブラウザーでは無視されます。"
+
+msgid "Format detection"
+msgstr "フォーマット検出"
+
+msgid "If set to 'telephone=no' the page will not be checked for phone numbers, which would be presented."
+msgstr "「telephone=no」に設定されている場合は、ページに表示される電話番号のチェックが行われません。"
+
+msgid "Handheld-Friendly"
+msgstr "携帯電話対応"
+
+msgid "Some older mobile browsers will expect this meta tag to be set to 'true' to indicate that the site has been designed with mobile browsers in mind."
+msgstr "以前のモバイル・ブラウザーの中には、サイトがモバイル・ブラウザーの使用を考慮して設計されている場合に、そのことを示すためにこのメタタグが「true」に設定されていることを想定しているものがあります。"
+
+msgid "iOS app link alternative"
+msgstr "iOS アプリケーション・リンク代替"
+
+msgid "A custom string for deeplinking to an iOS mobile app. Should be in the format 'itunes_id/scheme/host_path', e.g. 123456/example/hello-screen'. The 'ios-app://' prefix will be included automatically."
+msgstr "iOS モバイル・アプリケーションにディープリンクするためのカスタムのストリング。「iTunes ID/スキーム/ホストのパス」という形式で指定する必要があります (例: 123456/example/hello-screen)。「ios-app://」という接頭部が自動的に挿入されます。"
+
+msgid "Mobile Optimized"
+msgstr "モバイル最適化"
+
+msgid "Using the value 'width' tells certain mobile Internet Explorer browsers to display as-is, without being resized. Alternatively a numerical width may be used to indicate the desired page width the page should be rendered in: '240' is the suggested default, '176' for older browsers or '480' for newer devices with high DPI screens."
+msgstr "値「width」を使用すると、一部のモバイル Internet Explorer ブラウザーに対し、サイズを変更せずにそのまま表示するように指示されます。あるいは、幅を数値で指定することで、ページのレンダリング時に使用するページ幅を示すことができます。推奨されるデフォルトは「240」、古いブラウザーの場合は「176」、高 DPI 画面を備えた新しいデバイスの場合は「480」を使用します。"
+
+msgid "Allows tasks to be defined on child domains of the fully qualified domain name associated with the pinned site. Should be either 'true' or 'false'."
+msgstr "ピン留めされたサイトに関連付けられた完全修飾ドメイン名の子ドメイン上でタスクを定義することが可能になります。「true」または「false」を指定する必要があります。"
+
+msgid "A semi-colon -separated string that must contain the 'polling-uri=' value with the full URL to a <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>Badge Schema XML file</a>. May also contain 'frequency=' value set to either 30, 60, 360, 720 or 1440 (default) which specifies (in minutes) how often the URL should be polled."
+msgstr "セミコロン区切りのストリング。「polling-uri=」値と<a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>バッジ・スキーマ XML ファイル</a>の完全 URL が含まれている必要があります。「frequency=」値を 30、60、360、720、または 1440 (デフォルト) に設定して指定することもできます。これは URL をポーリングする頻度 (分単位) を指定します。"
+
+msgid "Should contain the full URL to a <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>Browser configuration schema</a> file that further controls tile customizations."
+msgstr "タイルのカスタマイズをさらに詳細に制御する<a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>ブラウザー構成スキーマ</a>・ファイルの完全 URL を指定する必要があります。"
+
+msgid "Controls the color of the Back and Forward buttons in the pinned site browser window."
+msgstr "ピン留めサイトを表示するブラウザー・ウィンドウの「戻る」ボタンと「進む」ボタンの色を制御します。"
+
+msgid "A semi-colon -separated string containing 'polling-uri=' (required), 'polling-uri2=', 'polling-uri3=', 'polling-uri4=' and 'polling-uri5=' to indicate the URLs for notifications. May also contain a 'frequency=' value to specify how often (in minutes) the URLs will be polled; limited to 30, 60, 360, 720 or 1440 (default). May also contain the value 'cycle=' to control the notifications cycle."
+msgstr "セミコロンで区切られた文字列で、注意のためのURLを示す\"polling-uri=\"(必須)、\"polling-uri2=\", \"polling-uri3=\", \"polling-uri4=\", \"polling-uri5=\" を含めなければなりません。どれくらい頻繁にURLがポールされるか (分単位で) 指定する、 \"frequency=\" 値を設定できます; 30, 60, 360, 720, 1440 (デフォルト)に限定されます。通知サイクルをコントロールする\"cycle=\"値を含めることもできます。"
+
+msgid "The URL to a logo file that is 150px by 150px."
+msgstr "幅 150 ピクセル、高さ 150 ピクセルのロゴ・ファイルの URL。"
+
+msgid "The URL to a logo file that is 310px by 310px."
+msgstr "幅 310 ピクセル、高さ 310 ピクセルのロゴ・ファイルの URL。"
+
+msgid "The URL to a logo file that is 70px by 70px."
+msgstr "幅 70 ピクセル、高さ 70 ピクセルのロゴ・ファイルの URL。"
+
+msgid "The URL to the root page of the site."
+msgstr "サイトのルート・ページの URL。"
+
+msgid "A semi-colon -separated string defining the 'jump' list task. Should contain the 'name=' value to specify the task's name, the 'action-uri=' value to set the URL to load when the jump list is clicked, the 'icon-uri=' value to set the URL to an icon file to be displayed, and 'window-type=' set to either 'tab' (default), 'self' or 'window' to control how the link opens in the browser."
+msgstr "「ジャンプ」リストのタスクを定義するセミコロン区切りのストリング。タスク名を指定する「name=」値、ジャンプ・リストのクリック時にロードする URL を設定する「action-uri=」値、表示するアイコン・ファイルの URL を設定する「icon-uri=」値、およびブラウザーでリンクを開く方法を制御する「window-type=」(「tab」(デフォルト)、「self」、または「window」に設定) を指定する必要があります。"
+
+msgid "The HTML color to use as the background color for the live tile."
+msgstr "ライブ・タイルの背景色として使用する HTML 色。"
+
+msgid "The URL to an image to use as the background for the live tile."
+msgstr "ライブ・タイルの背景として使用するイメージの URL。"
+
+msgid "Controls the text shown in the tooltip for the pinned site's shortcut."
+msgstr "ピン留めされたサイトのショートカットのツールチップに表示されるテキストを制御します。"
+
+msgid "The URL to a logo file that is 310px by 150px."
+msgstr "幅 310 ピクセル、高さ 150 ピクセルのロゴ・ファイルの URL。"
+
+msgid "A semi-colon -separated value that controls the dimensions of the initial window. Should contain the values 'width=' and 'height=' to control the width and height respectively."
+msgstr "初期ウィンドウの大きさを制御するセミコロン区切りの値。幅を制御する値「width=」と高さを制御する値「height=」を指定する必要があります。"
+
+msgid "Theme Color"
+msgstr "テーマ色"
+
+msgid "A color in hexadecimal format, e.g. '#0000ff' for blue; must include the '#' symbol. Used by some browsers to control the background color of the toolbar, the color used with an icon, etc."
+msgstr "16 進形式の色 (例: 青は「#0000ff」)。「#」記号を含める必要があります。一部のブラウザーで、ツールバーの背景色や、アイコンとともに使用する色などを制御するために使用されます。"
+
+msgid "Viewport"
+msgstr "ビューポート"
+
+msgid "Used by most contemporary browsers to control the display for mobile browsers. Please read a guide on responsive web design for details of what values to use."
+msgstr "現在使用されているほとんどのブラウザーで、モバイル・ブラウザーの表示を制御するために使用されます。使用する値について詳しくは、レスポンシブ Web デザインのガイドを参照してください。"
+
+msgid "Web Manifest"
+msgstr "Web マニフェスト"
+
+msgid "A URL to a manifest.json file that describes the application. The <a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>JSON-based manifest</a> provides developers with a centralized place to put metadata associated with a web application."
+msgstr "アプリケーションについて記述する manifest.json ファイルの URL。<a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>JSON ベースのマニフェスト</a>は、開発者が Web アプリケーションに関連付けられたメタデータを一元的に保管する場所を提供します。"
+
+msgid "Indicates to IE which rendering engine should be used for the current page."
+msgstr "現行ページで使用するレンダリング・エンジンを IE に指示します。"
+
+msgid "Metatag: Open Graph"
+msgstr "メタタグ: Open Graph"
+
+msgid "Provides support for Open Graph Protocol meta tags."
+msgstr "Open Graph Protocol メタタグに対するサポートを提供します。"
+
+msgid "Article author"
+msgstr "記事の作者"
+
+msgid "Article expiration time"
+msgstr "記事の有効期限"
+
+msgid "Article modified time"
+msgstr "記事の変更時刻"
+
+msgid "Article published time"
+msgstr "記事の公開時刻"
+
+msgid "Article publisher"
+msgstr "記事の出版者"
+
+msgid "Article section"
+msgstr "記事のセクション"
+
+msgid "Article tag(s)"
+msgstr "記事のタグ"
+
+msgid "Book Author"
+msgstr "本の著者"
+
+msgid "Book ISBN"
+msgstr "ブック ISBN"
+
+msgid "Book Release Date"
+msgstr "ブック・リリース日"
+
+msgid "Book Tags"
+msgstr "ブック・タグ"
+
+msgid "Audio URL"
+msgstr "オーディオ URL"
+
+msgid "Audio secure URL"
+msgstr "オーディオのセキュア URL"
+
+msgid "Audio type"
+msgstr "オーディオ・タイプ"
+
+msgid "Open Graph: Country name"
+msgstr "Open Graph: 国名"
+
+msgid "Open Graph: Description"
+msgstr "Open Graph: 説明"
+
+msgid "Open Graph: Determiner"
+msgstr "Open Graph: 限定詞"
+
+msgid "Open Graph: Email"
+msgstr "Open Graph: E メール"
+
+msgid "Open Graph: Fax number"
+msgstr "Open Graph: FAX 番号"
+
+msgid "Open Graph: Image"
+msgstr "Open Graph: イメージ"
+
+msgid "Open Graph: Image alt"
+msgstr "Open Graph: イメージの代替"
+
+msgid "Open Graph: Image height"
+msgstr "Open Graph: イメージの高さ"
+
+msgid "Open Graph: Image secure URL"
+msgstr "Open Graph: イメージのセキュア URL"
+
+msgid "Open Graph: Image type"
+msgstr "Open Graph: イメージのタイプ"
+
+msgid "Open Graph: Image URL"
+msgstr "Open Graph: イメージ URL"
+
+msgid "Open Graph: Image width"
+msgstr "Open Graph: イメージの幅"
+
+msgid "Open Graph: Latitude"
+msgstr "Open Graph: 緯度"
+
+msgid "Open Graph: Locale"
+msgstr "Open Graph: ロケール"
+
+msgid "Open Graph: Alternative locale"
+msgstr "Open Graph: 代替ロケール"
+
+msgid "Open Graph: Locality"
+msgstr "Open Graph: 市町村名"
+
+msgid "Open Graph: Longitude"
+msgstr "Open Graph: 経度"
+
+msgid "Open Graph: Phone number"
+msgstr "Open Graph: 電話番号"
+
+msgid "Open Graph: Postal code"
+msgstr "Open Graph: 郵便番号"
+
+msgid "Open Graph: Region"
+msgstr "Open Graph: 地域"
+
+msgid "Open Graph: See also"
+msgstr "Open Graph: 参照"
+
+msgid "Open Graph: Site name"
+msgstr "Open Graph: サイト名"
+
+msgid "Open Graph: Street address"
+msgstr "Open Graph: 番地"
+
+msgid "Open Graph: Title"
+msgstr "Open Graph: タイトル"
+
+msgid "Open Graph: Type"
+msgstr "Open Graph: タイプ"
+
+msgid "Open Graph: Updated time"
+msgstr "Open Graph: 更新時刻"
+
+msgid "Open Graph: URL"
+msgstr "Open Graph: URL"
+
+msgid "Open Graph: Video URL"
+msgstr "Open Graph: ビデオ URL"
+
+msgid "Open Graph: Video duration"
+msgstr "Open Graph: ビデオの所要時間"
+
+msgid "Open Graph: Video height"
+msgstr "Open Graph: ビデオの高さ"
+
+msgid "Open Graph: Video Secure URL"
+msgstr "Open Graph: ビデオのセキュア URL"
+
+msgid "Open Graph: Video type"
+msgstr "Open Graph: ビデオのタイプ"
+
+msgid "Open Graph: Video width"
+msgstr "Open Graph: ビデオの幅"
+
+msgid "First name"
+msgstr "名"
+
+msgid "Gender"
+msgstr "性別"
+
+msgid "Last name"
+msgstr "姓"
+
+msgid "Username"
+msgstr "ユーザー名"
+
+msgid "Actor(s)"
+msgstr "俳優"
+
+msgid "Actor's role"
+msgstr "俳優の役"
+
+msgid "Director(s)"
+msgstr "監督"
+
+msgid "Release date"
+msgstr "発売日"
+
+msgid "Series"
+msgstr "シリーズ"
+
+msgid "Tag words"
+msgstr "タグ・ワード"
+
+msgid "Scriptwriter(s)"
+msgstr "脚本家"
+
+msgid "Open Graph"
+msgstr "Open Graph"
+
+msgid "The <a href='https://ogp.me/'>Open Graph meta tags</a> are used to control how Facebook, Pinterest, LinkedIn and other social networking sites interpret the site's content.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "<a href='https://ogp.me/'>Open Graph メタタグ</a>は、Facebook、Pinterest、LinkedIn などのソーシャル・ネットワーキング・サイトがサイトのコンテンツを解釈する方法を制御するために使用されます。<br><br>Facebook の<a href='https://developers.facebook.com/tools/debug/'>シェアデバッガー</a>では、Facebook で共有されたコンテンツがどのように表示されるかをプレビューし、Open Graph タグの問題をデバッグすることができます。"
+
+msgid "Links an article to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "記事の作者のFacebookプロフィールへのリンクです。プロフィールのURLもしくはFacebookのプロフィールIDである必要があります。"
+
+msgid "Article expiration date & time"
+msgstr "記事の有効期限"
+
+msgid "The date this content will expire, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "コンテンツの有効期限です。オプションで時間を指定することができます。<a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> のフォーマットである必要があります。"
+
+msgid "Article modification date & time"
+msgstr "記事の編集日時"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "コンテンツが最後に編集された日付です。オプションで時間を指定することができます。<a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> フォーマットである必要があります。"
+
+msgid "Article publication date & time"
+msgstr "記事の公開日時"
+
+msgid "The date this content was published on, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "このコンテンツが公開された日付です。オプションで時間を指定することができます。<a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>のフォーマットである必要があります。"
+
+msgid "Links an article to a publisher's Facebook page."
+msgstr "記事の出版者のFacebookページへのリンクです。"
+
+msgid "The primary section of this website the content belongs to."
+msgstr "コンテンツがウェブサイト内のどの主要セクションに属するかを表します。"
+
+msgid "Appropriate keywords for this content."
+msgstr "コンテンツを表す適切なキーワードです。"
+
+msgid "Book author"
+msgstr "本の著者"
+
+msgid "Links a book to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "本の著者のFacebookプロフィールへのリンクです。著者のプロフィールページのURLかFacebookプロフィールのIDである必要があります。"
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "The Book's ISBN"
+msgstr "本のISBN"
+
+msgid "Release Date"
+msgstr "発売日"
+
+msgid "The date the book was released."
+msgstr "本が発売された日付です。"
+
+msgid "Book tag(s)"
+msgstr "本のタグ"
+
+msgid "The URL to an audio file that complements this object."
+msgstr "このオブジェクトを補完するオーディオ・ファイルの URL。"
+
+msgid "The secure URL to an audio file that complements this object. All 'http://' URLs will automatically be converted to 'https://'."
+msgstr "このオブジェクトを補完するオーディオ・ファイルのセキュア URL。すべての 'http://' URL は 'https://' に自動的に変換されます。"
+
+msgid "The MIME type of the audio file. Examples include 'application/mp3' for an MP3 file."
+msgstr "オーディオ・ファイルの MIME タイプ。例えば、MP3 ファイルの場合は 'application/mp3' を含めます。"
+
+msgid "Country name"
+msgstr "国名"
+
+msgid "A one to two sentence description of the content."
+msgstr "一文〜二文程度の長さで書かれたコンテンツの説明。"
+
+msgid "Determiner"
+msgstr "ディターミナー"
+
+msgid "The word that appears before the content's title in a sentence. The default ignores this value, the 'Automatic' value should be sufficient if this is actually needed."
+msgstr "コンテンツのタイトルの前に書かれる単語。デフォルトでは無視されます。もし必要な場合も、Automaticな値を使うように設定すれば十分です。"
+
+msgid "Email address"
+msgstr "メールアドレス"
+
+msgid "Fax number"
+msgstr "FAX番号"
+
+msgid "The URL of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats. Should not be used if og:image:url is used. Note: if multiple images are added many services (e.g. Facebook) will default to the largest image, not specifically the first one."
+msgstr "コンテンツを表す画像のURL。画像は少なくとも200 x 200ピクセルのサイズでなければなりません。 600 x 316ピクセルが推奨される最小サイズで、最良の結果を得るには1200 x 630ピクセル以上のサイズの画像を使用してください。 PNG、JPEG、およびGIF形式をサポートします。 og:image:url が使われている場合は使用しないでください。注: 複数の画像が追加された場合、多くのサービス (Facebookなど) は、最初の画像ではなく、最大の画像がデフォルトに設定されます。"
+
+msgid "Image 'alt'"
+msgstr "画像の代替テキスト"
+
+msgid "A description of what is in the image, not a caption. If the page specifies an og:image it should specify og:image:alt."
+msgstr "画像に何が含まれているかを説明する文章です。キャプションではありません。ページでog:imageが指定されている場合、og:image:altも設定しなくてはいけません。"
+
+msgid "Image height"
+msgstr "画像の高さ"
+
+msgid "The height of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "上記の画像の高さです。注意：もし安全な画像とそうでない画像を設定している場合、それらの画像は同じサイズである必要があります。"
+
+msgid "Image Secure URL"
+msgstr "画像の安全なURL"
+
+msgid "The secure URL (HTTPS) of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats."
+msgstr "コンテンツを表すイメージのセキュア URL (HTTPS)。イメージのサイズは 200 x 200 ピクセル以上でなければなりません。600 x 316 ピクセルが推奨される最小サイズです。最適な結果が得られるようにするには、サイズが 1200 x 630 ピクセル以上のイメージを使用してください。PNG、JPEG、GIF 形式をサポートしています。"
+
+msgid "Image type"
+msgstr "画像タイプ"
+
+msgid "The type of image referenced above. Should be either 'image/gif' for a GIF image, 'image/jpeg' for a JPG/JPEG image, or 'image/png' for a PNG image. Note: there should be one value for each image, and having more than there are images may cause problems."
+msgstr "「画像URL」や「画像の安全なURL」で参照されている画像のタイプです。GIFの場合はimage/gif、JPG/JPEGの場合はimage/jpeg、PNGの場合はimage/pngとする必要があります。注意：一つの画像に対して一つの値を設定する必要があります。もし画像の数よりも画像タイプの数のほうが多いと問題になる可能性があります。"
+
+msgid "Image URL"
+msgstr "画像URL"
+
+msgid "A alternative version of og:image and has exactly the same requirements; only one needs to be used."
+msgstr "og:imageの別バージョンで、og:imageと待ったく同じ条件を持ちます。使用の際はどちらか一方を選ぶ必要があります。"
+
+msgid "Image width"
+msgstr "画像の幅"
+
+msgid "The width of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "上記イメージの幅。注: 保護されていないイメージと保護されているイメージの両方が提供されている場合は、どちらも同じサイズでなければなりません。"
+
+msgid "Latitude"
+msgstr "緯度"
+
+msgid "Locale"
+msgstr "ロケール"
+
+msgid "The locale these tags are marked up in, must be in the format language_TERRITORY. Default is 'en_US'."
+msgstr "これらのタグがマークアップされているロケールです。language_TERRITORYの形式である必要があります。デフォルトは'en_US'です。"
+
+msgid "Alternative locales"
+msgstr "他の言語"
+
+msgid "Other locales this content is available in, must be in the format language_TERRITORY, e.g. 'fr_FR'."
+msgstr "このコンテンツが利用可能な他の言語です。language_TERRITORYのフォーマットである必要があります。「fr_FR」など。"
+
+msgid "Locality"
+msgstr "地域"
+
+msgid "Longitude"
+msgstr "経度"
+
+msgid "Phone number"
+msgstr "電話番号"
+
+msgid "Postal/ZIP code"
+msgstr "郵便番号/ZIPコード"
+
+msgid "Region"
+msgstr "リージョン"
+
+msgid "See also"
+msgstr "こちらもご覧ください"
+
+msgid "URLs to related content"
+msgstr "関連するコンテンツのURL"
+
+msgid "Site name"
+msgstr "サイト名"
+
+msgid "A human-readable name for the site, e.g., <em>IMDb</em>."
+msgstr "人が読めるサイトの名前。<em>IMDb</em>など。"
+
+msgid "Street address"
+msgstr "番地その他"
+
+msgid "The title of the content, e.g., <em>The Rock</em>."
+msgstr "コンテンツのタイトル。<em>The Rock</em>など。"
+
+msgid "Content type"
+msgstr "コンテンツタイプ"
+
+msgid "The type of the content, e.g., <em>movie</em>."
+msgstr "コンテンツのタイプ。<em>映画</em>など。"
+
+msgid "Content modification date & time"
+msgstr "コンテンツを編集した日時"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format. Can be the same as the 'Article modification date' tag."
+msgstr "コンテンツが最後に編集された日付です。オプションで時間を指定することができます。<a href='http://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> フォーマットである必要があります。「記事の編集日（Article modification date）」タグと同じです。"
+
+msgid "Page URL"
+msgstr "ページ URL"
+
+msgid "Preferred page location or URL to help eliminate duplicate content for search engines, e.g., <em>https://www.imdb.com/title/tt0117500/</em>."
+msgstr "検索エンジンで重複するコンテンツを除去するときに役立つ優先ページのロケーションまたは URL (例: <em>https://www.imdb.com/title/tt0117500/</em>)。"
+
+msgid "Video URL"
+msgstr "動画URL"
+
+msgid "The URL of an video which should represent the content. For best results use a source that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Object types supported include video.episode, video.movie, video.other, and video.tv_show."
+msgstr "コンテンツに表示される動画のURL。最良の結果を得るには少なくとも1200 x 630ピクセルの動画を使用してください。推奨される最小サイズは600 x 316ピクセルです。video.episode, video.movie, video.other, and video.tv_showなどのオブジェクトがサポートされています。"
+
+msgid "Video duration (seconds)"
+msgstr "ビデオの所要時間 (秒)"
+
+msgid "The length of the video in seconds"
+msgstr "動画の長さを表す秒数"
+
+msgid "Video height"
+msgstr "動画の高さ"
+
+msgid "The height of the above video(s). Note: if both the unsecured and secured videos are provided, they should both be the same size."
+msgstr "上記の動画の高さです。もし安全な動画とそうではない動画を設定している場合、それらの動画は同じサイズである必要があります。"
+
+msgid "Video Secure URL"
+msgstr "動画の安全なURL"
+
+msgid "The secure URL (HTTPS) of an video which should represent the content."
+msgstr "コンテンツを表すビデオのセキュア URL (HTTPS)。"
+
+msgid "Video type"
+msgstr "動画タイプ"
+
+msgid "The type of video referenced above. Should be either  video.episode, video.movie, video.other, and video.tv_show. Note: there should be one value for each video, and having more than there are videos may cause problems."
+msgstr "「動画URL」や「動画の安全なURL」で参照されている動画のタイプです。video.episode、video.movie、 video.other、video.tv_showのどれかである必要があります。注意：一つの動画に対して一つの動画タイプを設定する必要があります。動画の数より動画タイプの数が多いと問題を引き起こす可能性があります。"
+
+msgid "Video width"
+msgstr "動画の幅"
+
+msgid "The first name of the person who's Profile page this is."
+msgstr "「プロファイル」ページの個人の名前。"
+
+msgid "Any of Facebook's gender values should be allowed, the initial two being 'male' and 'female'."
+msgstr "Facebook の性別値を使用できます。初期設定では 'male' および 'female' の 2 つがあります。"
+
+msgid "The person's last name."
+msgstr "個人の姓。"
+
+msgid "A pseudonym / alias of this person."
+msgstr "個人の仮名/別名。"
+
+msgid "Links to the Facebook profiles for actor(s) that appear in the video."
+msgstr "動画に登場する俳優の Facebook プロファイルへのリンク。"
+
+msgid "The roles of the actor(s)."
+msgstr "俳優の役。"
+
+msgid "Links to the Facebook profiles for director(s) that worked on the video."
+msgstr "動画を担当した監督の Facebook プロファイルへのリンク。"
+
+msgid "The date the video was released."
+msgstr "動画が公開された日付。"
+
+msgid "The TV show this series belongs to."
+msgstr "このシリーズが属する TV 番組。"
+
+msgid "Tag words associated with this video."
+msgstr "この動画に関連付けられているタグ・ワード。"
+
+msgid "Links to the Facebook profiles for scriptwriter(s) for the video."
+msgstr "この動画の脚本家の Facebook プロファイルへのリンク。"
+
+msgid "Provides additional Open Graph Protocol meta tags for describing products."
+msgstr "製品について説明するための追加の Open Graph Protocol メタタグを提供します。"
+
+msgid "Metatag: Open Graph Products"
+msgstr "メタタグ: Open Graph、製品"
+
+msgid "Open Graph Product: Price availability"
+msgstr "グラフ商品を開く: 価格の可用性"
+
+msgid "Open Graph Product: Product condition"
+msgstr "グラフ商品を開く: 製品条件"
+
+msgid "Open Graph Product: Price amount"
+msgstr "Open Graph Product: 価格"
+
+msgid "Open Graph Product: Price currency"
+msgstr "Open Graph Product: 価格の通貨"
+
+msgid "Open Graph Product: Retailer Item ID"
+msgstr "グラフ商品を開く: 小売業者アイテム ID"
+
+msgid "Open Graph - Products"
+msgstr "Open Graph - 製品"
+
+msgid "These <a href='https://ogp.me/'>Open Graph meta tags</a> are for describing products.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "これらの <a href='https://ogp.me/'>Open Graph メタタグ</a>は製品について説明することを目的としています。<br><br>Facebook の<a href='https://developers.facebook.com/tools/debug/'>シェアデバッガー</a>では、Facebook で共有されたコンテンツがどのように表示されるかをプレビューし、Open Graph タグの問題をデバッグすることができます。"
+
+msgid "Product availability"
+msgstr "製品可用性"
+
+msgid "The availability of the product."
+msgstr "製品の可用性。"
+
+msgid "Product condition"
+msgstr "製品の条件"
+
+msgid "The condition of the product."
+msgstr "製品の状態。"
+
+msgid "Product price amount"
+msgstr "製品価格"
+
+msgid "The price amount of the product."
+msgstr "製品の価格。"
+
+msgid "Product price currency"
+msgstr "製品価格の通貨"
+
+msgid "The price currency of the product."
+msgstr "製品の価格の通貨。"
+
+msgid "Retailer Item ID"
+msgstr "小売業者アイテム ID"
+
+msgid "The ID of the product as provided by the retailer."
+msgstr "小売業者から提供された商品の ID。"
+
+msgid "Metatag: Page Manager"
+msgstr "メタタグ: ページ・マネージャー"
+
+msgid "Provides metatag support for Page Manager variants."
+msgstr "ページ・マネージャー・バリアントのメタタグ・サポートを提供します。"
+
+msgid "Metatag: Pinterest"
+msgstr "メタタグ: Pinterest"
+
+msgid "Provides support for Pinterest's custom meta tags."
+msgstr "Pinterest のカスタム・メタタグのサポートを提供します。"
+
+msgid "Pinterest: Description"
+msgstr "Pinterest: 説明"
+
+msgid "Pinterest: ID"
+msgstr "Pinterest: ID"
+
+msgid "Pinterest: Media"
+msgstr "Pinterest: メディア"
+
+msgid "Pinterest: No hover"
+msgstr "Pinterest: 吹き出しなし"
+
+msgid "Pinterest: No pin"
+msgstr "Pinterest: ピンなし"
+
+msgid "Pinterest: No search"
+msgstr "Pinterest: 検索なし"
+
+msgid "Pinterest: URL"
+msgstr "Pinterest: URL"
+
+msgid "Pinterest"
+msgstr "Pinterest"
+
+msgid "A set of meta tags used to control how the site's content is consumed by <a href='https://pinterest.com/'>Pinterest</a>."
+msgstr "サイトのコンテンツが <a href='https://pinterest.com/'>Pinterest</a> によってどのように取り込まれるのかを制御するために使用する一連のメタタグ。"
+
+msgid "Id"
+msgstr "ID"
+
+msgid "The Canonical Pinterest object to pin."
+msgstr "ピンする正規 Pinterest オブジェクト。"
+
+msgid "Media"
+msgstr "メディア"
+
+msgid "The URL of media which should represent the content."
+msgstr "コンテンツを表すメディアの URL。"
+
+msgid "No hover"
+msgstr "吹き出しなし"
+
+msgid "Do not show hovering Save or Search buttons, generated by the Pinterest browser extensions."
+msgstr "Pinterest ブラウザー拡張機能によって生成される吹き出しの「保存」ボタンおよび「検索」ボタンを表示しません。"
+
+msgid "No pin"
+msgstr "ピンなし"
+
+msgid "Do not pin anything from this page. When selected, this option will take precedence over all options below."
+msgstr "このページのいずれの項目もピンしません。選択されている場合、このオプションは、以下のすべてのオプションよりも優先されます。"
+
+msgid "No search"
+msgstr "検索なし"
+
+msgid "Do not allow Pinterest visual search to happen from this page."
+msgstr "このページから Pinterest ビジュアル検索が行われないようにします。"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "The URL which should represent the content."
+msgstr "コンテンツを表す URL。"
+
+msgid "Enables metatags for custom routes"
+msgstr "カスタム経路のメタタグを有効にします"
+
+msgid "Metatag Custom Routes (Paths)"
+msgstr "メタタグ・カスタム経路 (パス)"
+
+msgid "Allows assigning meta tags to be used on custom routes, equivalent to custom paths."
+msgstr "カスタム・パスに相当する、カスタム経路で使用するメタ・タグを割り当てることができます。"
+
+msgid "Add meta tag for custom route"
+msgstr "カスタム経路のメタ・タグの追加"
+
+msgid "Add custom metatag"
+msgstr "カスタム・メタタグの追加"
+
+msgid "Route / Path"
+msgstr "ルート/パス"
+
+msgid "Enter the route (path) for this new configuration, starting with a leading slash.<br />Note: this must already exist as a path in Drupal."
+msgstr "この新規構成の先頭にスラッシュを付けて経路 (パス) を入力します。<br />注: これは、 Drupalのパスとして既に存在している必要があります。"
+
+msgid "Submit"
+msgstr "送信"
+
+msgid "The path must begin with /"
+msgstr "パスの先頭は/でなければなりません"
+
+msgid "The admin routes should not have metatags."
+msgstr "管理経路にメタタグを付けることはできません。"
+
+msgid "The entities routes metatags must be added by fields. @entity_type - @id"
+msgstr "エンティティー経路メタタグは、フィールドによって追加する必要があります。 @entity_type - @id"
+
+msgid "There are already metatags created for this route."
+msgstr "この経路には既にメタタグが作成されています。"
+
+msgid "The path does not exist as an internal Drupal route."
+msgstr "このパスは、内部 Drupal 経路として存在しません。"
+
+msgid "Created metatags for the path: @url. Internal route: @route."
+msgstr "パス @urlのメタタグを作成しました。 内部経路: @route。"
+
+msgid "The metatags could not be created for the path: @url."
+msgstr "パス @urlのメタタグを作成できませんでした。"
+
+msgid "Metatag: Twitter Cards"
+msgstr "メタタグ: Twitter カード"
+
+msgid "Provides support for Twitter's Card meta tags."
+msgstr "Twitter カードのメタタグに対するサポートを提供します。"
+
+msgid "Twitter Cards: Google Play app ID"
+msgstr "Twitter カード: Google Play アプリケーション ID"
+
+msgid "Twitter Cards: iPad app ID"
+msgstr "Twitter カード: iPad アプリケーション ID"
+
+msgid "Twitter Cards: iPhone app ID"
+msgstr "Twitter カード: iPhone アプリケーション ID"
+
+msgid "Twitter Cards: Google Play app name"
+msgstr "Twitter カード: Google Play アプリケーション名"
+
+msgid "Twitter Cards: iPad app name"
+msgstr "Twitter カード: iPad アプリケーション名"
+
+msgid "Twitter Cards: iPhone app name"
+msgstr "Twitter カード: iPhone アプリケーション名"
+
+msgid "Twitter Cards: App store country"
+msgstr "Twitter カード: アプリケーション・ストアの国"
+
+msgid "Twitter Cards: Google Play app URL schema"
+msgstr "Twitter カード: Google Play アプリケーション URL スキーマ"
+
+msgid "Twitter Cards: iPad app URL schema"
+msgstr "Twitter カード: iPad アプリケーション URL スキーマ"
+
+msgid "Twitter Cards: iPhone app URL schema"
+msgstr "Twitter カード: iPhone アプリケーション URL スキーマ"
+
+msgid "Twitter Cards: Creator's Twitter account"
+msgstr "Twitter カード: 作成者の Twitter アカウント"
+
+msgid "Twitter Cards: Creator's Twitter account ID"
+msgstr "Twitter カード: 作成者の Twitter アカウント ID"
+
+msgid "Twitter Cards: Data 1"
+msgstr "Twitter カード: データ 1"
+
+msgid "Twitter Cards: Data 2"
+msgstr "Twitter カード: データ 2"
+
+msgid "Twitter Cards: Description"
+msgstr "Twitter カード: 説明"
+
+msgid "Twitter Cards: Do Not Track"
+msgstr "Twitter Cards: 追跡しない"
+
+msgid "Twitter Cards: 1st gallery image"
+msgstr "Twitter カード: 最初のギャラリー・イメージ"
+
+msgid "Twitter Cards: 2nd gallery image"
+msgstr "Twitter カード: 2 番目のギャラリー・イメージ"
+
+msgid "Twitter Cards: 3rd gallery image"
+msgstr "Twitter カード: 3 番目のギャラリー・イメージ"
+
+msgid "Twitter Cards: 4th gallery image"
+msgstr "Twitter カード: 4 番目のギャラリー・イメージ"
+
+msgid "Twitter Cards: Image URL"
+msgstr "Twitter カード: イメージ URL"
+
+msgid "Twitter Cards: Image height"
+msgstr "Twitter カード: イメージの高さ"
+
+msgid "Twitter Cards: Image width"
+msgstr "Twitter カード: イメージの幅"
+
+msgid "Twitter Cards: Image alternative text"
+msgstr "Twitter カード: イメージの代替テキスト"
+
+msgid "Twitter Cards: Label 1"
+msgstr "Twitter カード: ラベル 1"
+
+msgid "Twitter Cards: Label 2"
+msgstr "Twitter カード: ラベル 2"
+
+msgid "Twitter Cards: Page URL"
+msgstr "Twitter カード: ページ URL"
+
+msgid "Twitter Cards: Media player URL"
+msgstr "Twitter カード: メディア・プレイヤー URL"
+
+msgid "Twitter Cards: Media player height"
+msgstr "Twitter カード: メディア・プレイヤーの高さ"
+
+msgid "Twitter Cards: MP4 media stream URL"
+msgstr "Twitter カード: MP4 メディア・ストリーム URL"
+
+msgid "Twitter Cards: MP4 media straem MIME-type"
+msgstr "Twitter カード: MP4 メディア・ストリーム MIME タイプ"
+
+msgid "Twitter Cards: Media player width"
+msgstr "Twitter カード: メディア・プレイヤーの幅"
+
+msgid "Twitter Cards: Site's Twitter account"
+msgstr "Twitter カード: サイトの Twitter アカウント"
+
+msgid "Twitter Cards: Site's Twitter account ID"
+msgstr "Twitter カード: サイトの Twitter アカウント ID"
+
+msgid "Twitter Cards: Title"
+msgstr "Twitter カード: タイトル"
+
+msgid "Twitter Cards: Type"
+msgstr "Twitter カード: タイプ"
+
+msgid "Twitter Cards"
+msgstr "Twitter カード"
+
+msgid "A set of meta tags specially for controlling the summaries displayed when content is shared on <a href='https://twitter.com/'>Twitter</a>."
+msgstr "<a href='https://twitter.com/'>Twitter</a> 上でコンテンツが共有されたときに表示される要約を制御することを主な目的とする一連のメタタグ。"
+
+msgid "Google Play app ID"
+msgstr "Google Play アプリケーション ID"
+
+msgid "iPad app ID"
+msgstr "iPad アプリケーション ID"
+
+msgid "String value, should be the numeric representation of your iPad app's ID in the App Store."
+msgstr "ストリング値。アプリケーション・ストアにおける iPad アプリケーションの ID の数値表現を指定する必要があります。"
+
+msgid "iPhone app ID"
+msgstr "iPhone アプリケーション ID"
+
+msgid "String value, should be the numeric representation of your iPhone app's ID in the App Store."
+msgstr "ストリング値。アプリケーション・ストアにおける iPhone アプリケーションの ID の数値表現を指定する必要があります。"
+
+msgid "Google Play app name"
+msgstr "Google Play アプリケーション名"
+
+msgid "The name of the app in the Google Play app store."
+msgstr "Google Play アプリケーション・ストアにおけるアプリケーションの名前。"
+
+msgid "The name of the iPad app."
+msgstr "iPad アプリケーションの名前。"
+
+msgid "The name of the iPhone app."
+msgstr "iPhone アプリケーションの名前。"
+
+msgid "App store country"
+msgstr "アプリケーション・ストアの国"
+
+msgid "If your application is not available in the US App Store, you must set this value to the two-letter country code for the App Store that contains your application."
+msgstr "アプリケーションを米国のアプリケーション・ストアから入手できない場合は、アプリケーションを提供しているアプリケーション・ストアの 2 文字の国別コードにこの値を設定する必要があります。"
+
+msgid "Google Play app's custom URL scheme"
+msgstr "Google Play アプリケーションのカスタム URL スキーム"
+
+msgid "iPad app's custom URL scheme"
+msgstr "iPad アプリケーションのカスタム URL スキーム"
+
+msgid "iPhone app's custom URL scheme"
+msgstr "iPhone アプリケーションのカスタム URL スキーム"
+
+msgid "Creator's Twitter account"
+msgstr "作成者の Twitter アカウント"
+
+msgid "The @username for the content creator / author for this page, including the @ symbol."
+msgstr "このページのコンテンツ作成者の @username (@ 記号を含む)。"
+
+msgid "Creator's Twitter account ID"
+msgstr "作成者の Twitter アカウント ID"
+
+msgid "The numerical Twitter account ID for the content creator / author for this page."
+msgstr "このページのコンテンツ作成者の数値の Twitter アカウント ID。"
+
+msgid "Data 1"
+msgstr "データ 1"
+
+msgid "This field expects a string, and allows you to specify the types of data you want to offer (price, country, etc.)."
+msgstr "このフィールドには文字列が期待され、あなたは (価格、国など) を提供したいデータの種類を指定することができます。"
+
+msgid "Data 2"
+msgstr "データ 2"
+
+msgid "A description that concisely summarizes the content of the page, as appropriate for presentation within a Tweet. Do not re-use the title text as the description, or use this field to describe the general services provided by the website. The string will be truncated, by Twitter, at the word to 200 characters."
+msgstr "ツイートでの表示用にページのコンテンツを短く要約した説明。タイトルのテキストをこの説明に再利用しないでください。このフィールドは Web サイトが提供する一般的なサービスについて説明するために使用してください。このストリングは Twitter によって 200 文字までに単語単位で切り捨てられます。"
+
+msgid "Do Not Track"
+msgstr "追跡しない"
+
+msgid "1st gallery image"
+msgstr "最初のギャラリー・イメージ"
+
+msgid "A URL to the image representing the first photo in your gallery."
+msgstr "ギャラリー内の最初の写真を表すイメージの URL。"
+
+msgid "2nd gallery image"
+msgstr "2 番目のギャラリー・イメージ"
+
+msgid "A URL to the image representing the second photo in your gallery."
+msgstr "ギャラリー内の 2 番目の写真を表すイメージの URL。"
+
+msgid "3rd gallery image"
+msgstr "3 番目のギャラリー・イメージ"
+
+msgid "A URL to the image representing the third photo in your gallery."
+msgstr "ギャラリー内の 3 番目の写真を表すイメージの URL。"
+
+msgid "4th gallery image"
+msgstr "4 番目のギャラリー・イメージ"
+
+msgid "A URL to the image representing the fourth photo in your gallery."
+msgstr "ギャラリー内の 4 番目の写真を表すイメージの URL。"
+
+msgid "The URL to a unique image representing the content of the page. Do not use a generic image such as your website logo, author photo, or other image that spans multiple pages. Images larger than 120x120px will be resized and cropped square based on longest dimension. Images smaller than 60x60px will not be shown. If the 'type' is set to Photo then the image must be at least 280x150px."
+msgstr "ページのコンテンツを表す固有のイメージの URL。Web サイトのロゴや作成者の写真などの汎用イメージや、複数のページにまたがるイメージは使用しないでください。120 x 120 ピクセルを超えるイメージはサイズ変更され、最も長い寸法に基づいて正方形にトリミングされます。60 x 60 ピクセル未満のイメージは表示されません。「タイプ」がフォトに設定されている場合、イメージは 280 x 150 ピクセル以上でなければなりません。"
+
+msgid "Image alternative text"
+msgstr "イメージの代替テキスト"
+
+msgid "The alternative text of the image being linked to. Limited to 420 characters."
+msgstr "リンク先イメージの代替テキスト。420 文字までに制限されています。"
+
+msgid "The height of the image being linked to, in pixels."
+msgstr "リンク先イメージの高さ (ピクセル単位)。"
+
+msgid "The width of the image being linked to, in pixels."
+msgstr "リンク先イメージの幅 (ピクセル単位)。"
+
+msgid "Label 1"
+msgstr "ラベル 1"
+
+msgid "This field expects a string, and you can specify values for labels such as price, items in stock, sizes, etc."
+msgstr "このフィールドではストリングが期待されています。ラベルの値 (価格、在庫品目、サイズなど) を指定できます。"
+
+msgid "Label 2"
+msgstr "ラベル 2"
+
+msgid "The permalink / canonical URL of the current page."
+msgstr "現行ページの固定リンク/標準 URL。"
+
+msgid "Media player URL"
+msgstr "メディア・プレイヤー URL"
+
+msgid "The full URL for loading a media player, specifically an iframe for an embedded video rather than the URL to a page that contains a player. Required when using the Player Card type."
+msgstr "メディア・プレイヤーをロードするための完全なURL。具体的には、プレイヤーを含むページへのURLではなく、埋め込みビデオ用のiframe です。 「プレイヤー・カード」タイプを使用する場合は必須です。"
+
+msgid "Media player height"
+msgstr "メディア・プレイヤーの高さ"
+
+msgid "The height of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "メディア・プレイヤーの iframe の高さ (ピクセル単位)。 「プレイヤー・カード」タイプを使用する場合は必須です。"
+
+msgid "MP4 media stream URL"
+msgstr "MP4 メディア・ストリーム URL"
+
+msgid "The full URL for an MP4 video (h.264) or audio (AAC) stream, takes precedence over the other media player field."
+msgstr "MP4 のビデオ (h.264) またはオーディオ (AAC) ストリームの完全 URL。他のメディア・プレイヤー・フィールドよりも優先されます。"
+
+msgid "MP4 media stream MIME-type"
+msgstr "MP4 メディア・ストリーム MIME タイプ"
+
+msgid "Media player width"
+msgstr "メディア・プレイヤーの幅"
+
+msgid "The width of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "メディア・プレイヤーの iframe の幅 (ピクセル単位)。 「プレイヤー・カード」タイプを使用する場合は必須です。"
+
+msgid "Site's Twitter account"
+msgstr "サイトの Twitter アカウント"
+
+msgid "The @username for the website, which will be displayed in the Card's footer; must include the @ symbol."
+msgstr "Web サイトの @username。カードのフッターに表示されます。@ 記号を含める必要があります。"
+
+msgid "Site's Twitter account ID"
+msgstr "サイトの Twitter アカウント ID"
+
+msgid "The numerical Twitter account ID for the website, which will be displayed in the Card's footer."
+msgstr "Web サイトの数値の Twitter アカウント ID。カードのフッターに表示されます。"
+
+msgid "The page's title, which should be concise; it will be truncated at 70 characters by Twitter. This field is required unless this the 'type' field is set to 'photo'."
+msgstr "ページのタイトル。簡潔な名前にする必要があります。Twitter によって 70 文字に切り捨てられます。「タイプ」フィールドが「フォト」に設定されていない場合、このフィールドは必須です。"
+
+msgid "- None -"
+msgstr "- なし -"
+
+msgid "Summary Card"
+msgstr "要約カード"
+
+msgid "Summary Card with large image"
+msgstr "大型のイメージを含む要約カード"
+
+msgid "Photo Card"
+msgstr "フォト・カード"
+
+msgid "Gallery Card"
+msgstr "ギャラリー・カード"
+
+msgid "App Card"
+msgstr "アプリケーション・カード"
+
+msgid "Player Card"
+msgstr "プレイヤー・カード"
+
+msgid "Product Card"
+msgstr "製品カード"
+
+msgid "Twitter card type"
+msgstr "Twitter カード・タイプ"
+
+msgid "Notes:<ul><li>no other fields are required for a Summary card</li><li>Photo card requires the 'image' field</li><li>Media player card requires the 'title', 'description', 'media player URL', 'media player width', 'media player height' and 'image' fields,</li><li>Summary Card with Large Image card requires the 'Summary' field and the 'image' field,</li><li>Gallery Card requires all the 'Gallery Image' fields,</li><li>App Card requires the 'iPhone app ID' field, the 'iPad app ID' field and the 'Google Play app ID' field,</li><li>Product Card requires the 'description' field, the 'image' field, the 'Label 1' field, the 'Data 1' field, the 'Label 2' field and the 'Data 2' field.</li></ul>"
+msgstr "注:<ul><li>要約カードの場合は他のフィールドは不要です</li><li>フォト・カードには「イメージ」フィールドが必要です</li><li>メディア・プレイヤー・カードには、「タイトル」、「説明」、「メディア・プレイヤー URL」、「メディア・プレイヤーの幅」、「メディア・プレイヤーの高さ」、および「イメージ」の各フィールドが必要です。</li><li>大型のイメージを含む要約カードには、「要約」フィールドと「イメージ」フィールドが必要です。</li><li>ギャラリー・カードには「ギャラリー・イメージ」のすべてのフィールドが必要です。</li><li>アプリケーション・カードには、「iPhone アプリケーション ID」フィールド、「iPad アプリケーション ID」フィールド、および「Google Play アプリケーション ID」フィールドが必要です。</li><li>製品カードには、「説明」フィールド、「イメージ」フィールド、「ラベル 1」フィールド、「データ 1」フィールド、「ラベル 2」フィールド、および「データ 2」フィールドが必要です。</li></ul>"
+
+msgid "Metatag: Verification"
+msgstr "メタタグ: 検査"
+
+msgid "Verifies ownership of a site for search engines and other services."
+msgstr "検索エンジンまたはその他のサービス用にサイトの所有権を検査します。"
+
+msgid "Site validation: Alexa"
+msgstr "サイト検証: Alexa"
+
+msgid "Site validation: Baidu"
+msgstr "サイト検証: Baidu"
+
+msgid "Site validation: Bing"
+msgstr "サイト検証: Bing"
+
+msgid "Site validation: Facebook"
+msgstr "サイト検証: Facebook"
+
+msgid "Site validation: Google"
+msgstr "サイト検証: Google"
+
+msgid "Site validation: Norton Safe Web"
+msgstr "サイト検証: Norton Safe Web"
+
+msgid "Site validation: Pinterest"
+msgstr "サイト検証: Pinterest"
+
+msgid "Site validation: Pocket"
+msgstr "サイト検証: Pocket"
+
+msgid "Site validation: SIWECOS"
+msgstr "サイト検証: SIWECOS"
+
+msgid "Site validation: Yahoo"
+msgstr "サイト検証: Yahoo"
+
+msgid "Site validation: Yandex"
+msgstr "サイト検証: Yandex"
+
+msgid "Site validation: Zoom"
+msgstr "サイト検証: Zoom"
+
+msgid "Site verification"
+msgstr "サイト確認"
+
+msgid "These meta tags are used to confirm site ownership for search engines and other services."
+msgstr "これらのメタタグは、検索エンジンまたはその他のサービス用に、サイトの所有権を確認するために使用されます。"
+
+msgid "Baidu"
+msgstr "Baidu"
+
+msgid "Bing"
+msgstr "Bing"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Google Site Verification"
+msgstr "Google サイト検証"
+
+msgid "Norton Safe Web"
+msgstr "Norton Safe Web"
+
+msgid "Pocket"
+msgstr "Pocket"
+
+msgid "SIWECOS"
+msgstr "SIWECOS (S)"
+
+msgid "Yandex"
+msgstr "Yandex"
+
+msgid "Zoom"
+msgstr "ズーム"
+
+msgid "The custom admin pages for managing Views meta tags at /admin/config/search/metatag/views have been disabled for now, hopefully they'll be back in a future release. Until then, the meta tags can be managed directly on each individual view via the \"Meta tags\" section."
+msgstr "ビューのメタタグを管理するための /admin/config/search/metatag/views にあるカスタム管理ページは、現時点では無効になっていますが、将来のリリースで再開される可能性があります。それまでは、メタタグは、各個別ビューの「メタタグ」セクションで直接管理できます。"
+
+msgid "Empty update script to clear the site's caches so the new token replacement functionality will work."
+msgstr "更新スクリプトを空にしてサイトのキャッシュをクリアし、新しいトークン置換機能が機能するようにします。"
+
+msgid "Metatag: Views"
+msgstr "Metatag: ビュー"
+
+msgid "Provides views integration for metatags."
+msgstr "メタタグ用のビューの統合を提供します。"
+
+msgid "Should replacement tokens be used from the first row"
+msgstr "置換トークンは最初の行から使われます"
+
+msgid "To view a list of displays with meta tags set up, click on a view name. To view a summary of meta tags configuration for a particular display, click on the display name. If you need to set meta tags for a specific view, choose Add views meta tags. Reverting the meta tags removes the specific configuration and falls back to defaults."
+msgstr "メタタグがセットアップされた表示のリストを確認するには、ビュー名をクリックします。特定の表示のメタタグ構成の要約を確認するには、表示名をクリックします。特定のビューにメタタグを設定する必要がある場合は、「ビューのメタタグを追加」を選択します。メタタグを戻すと、具体的な構成が削除され、デフォルトにフォールバックします。"
+
+msgid ":label"
+msgstr ":ラベル"
+
+msgid "Display"
+msgstr "表示"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "Translate"
+msgstr "翻訳"
+
+msgid "Revert"
+msgstr "戻す"
+
+msgid "@language (original)"
+msgstr "@language (オリジナル)"
+
+msgid "Add"
+msgstr "追加"
+
+msgid "- Select a view -"
+msgstr "- ビューを選択 -"
+
+msgid "View"
+msgstr "ビュー"
+
+msgid "Metatags for @view : @display have been saved."
+msgstr "@view : @display のメタタグが保存されました。"
+
+msgid "Do you want to revert meta tags for @view_name : @display_name?"
+msgstr "@view_name : @display_name のメタタグを戻しますか?"
+
+msgid "You are about to revert the custom meta tags for the %display_name display on the %view_name view. This action cannot be undone."
+msgstr "%view_name ビュー上の %display_name 表示のカスタム・メタタグを戻そうとしています。この処理を元に戻すことはできません。"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "Reverted meta tags for @view_name : @display_name"
+msgstr "@view_name : @display_name のメタタグが戻されました"
+
+msgid "Edit @language translation for %view: %display metatags"
+msgstr "%view: %display メタタグの @language 翻訳を編集"
+
+msgid "Successfully updated @language translation."
+msgstr "@language翻訳を更新しました。"
+
+msgid "The meta tags for this display"
+msgstr "この表示用のメタタグ"
+
+msgid "Use replacement tokens from the first row"
+msgstr "1行目の置換トークンを使用"
+
+msgid "@argument title"
+msgstr "@argument タイトル"
+
+msgid "@argument input"
+msgstr "@argument インプット"
+
+msgid "Replacement patterns"
+msgstr "置換パターン"
+
+msgid "The following tokens are available. You may use Twig syntax in this field."
+msgstr "以下のトークが利用可能です。このフィールドでは Twig の構文を使用することができます。"
+
+msgid "Meta tags"
+msgstr "メタタグ"
+
+msgid "Overridden"
+msgstr "オーバーライド"
+
+msgid "Using defaults"
+msgstr "デフォルトの使用"
+
+msgid "Arguments"
+msgstr "引数"
+
+msgid "Fields"
+msgstr "フィールド"
+
+msgid "Metatag display extender"
+msgstr "メタタグ表示拡張"
+
+msgid "Metatag settings for this view."
+msgstr "このビューのメタタグ設定。"
+
+msgid "Status"
+msgstr "状態"
+
+msgid "Active"
+msgstr "アクティブ"
+
+msgid "Disabled"
+msgstr "無効"
+
+msgid "Inherits meta tags from: @inherits"
+msgstr "メタタグの継承: @inherits"
+
+msgid "Configure the meta tags below."
+msgstr "以下からメタタグを設定します。"
+
+msgid "Undefined group '%group' on tag '%tag'"
+msgstr "タグ '%tag' 上のグループ %group' が未定義です"
+
+msgid ""
+"This was expected to be an array but it is not: \n"
+"%value"
+msgstr ""
+"これは配列であることが予期されていましたが、配列ではありません: \n"
+"%value"
+
+msgid ""
+"This could not be unserialized: \n"
+"%value"
+msgstr ""
+"これはシリアライズ解除できませんでした: \n"
+"%value"
+
+msgid "Use tokens to avoid redundant meta data and search engine penalization. For example, a 'keyword' value of \"example\" will be shown on all content using this configuration, whereas using the [node:field_keywords] automatically inserts the \"keywords\" values from the current entity (node, term, etc)."
+msgstr "冗長なメタデータや検索エンジンによるペナルティを防ぐにはトークンを使用してください。例えば、keywordの\"example\"という値はこの設定を使用する全コンテンツに表示されます。その一方、[node:field_keywords]を使うと自動的に現在のエンティティ（ノードやタームなど）から得られるkeywordの値を挿入することができます。"
+
+msgid "To use tokens to image fields, the image field on that entity bundle (content type, term, etc) must have the \"Token\" display settings enabled, the image field must not be hidden, and it must be set to output as an image, e.g. using the \"Thumbnail\" field formatter. It is also recommended to use an appropriate image style that resizes the image rather than output the original image; see individual meta tag descriptions for size recommendations."
+msgstr "イメージ・フィールドに対してトークンを使用するには、当該エンティティー・バンドル (コンテンツ・タイプ、用語など) のイメージ・フィールドで「トークン」表示設定を有効にすること、イメージ・フィールドを非表示にしないこと、およびイメージ・フィールドを (例えば「サムネール」フィールド・フォーマッターを使用して) イメージとして出力されるように設定することが必要です。また、元のイメージを出力するのではなく、イメージのサイズを変更する適切なイメージ・スタイルを使用することをお勧めします。サイズに関する推奨事項については、個々のメタタグの説明を参照してください。"
+
+msgid "Yes"
+msgstr "はい"
+
+msgid "No"
+msgstr "いいえ"
+
+msgid "Label / Description"
+msgstr "ラベル/説明"
+
+msgid "Weight"
+msgstr "ウェイト"
+
+msgid "Secure"
+msgstr "セキュア"
+
+msgid "Multiple"
+msgstr "複数"
+
+msgid "Provided by"
+msgstr "提供"
+
+msgid "All meta tags in the \"@group\" group."
+msgstr "「@group」グループ内のすべてのメタタグ。"
+
+msgid "Are you sure you want to delete %name?"
+msgstr "%name を削除してもよろしいですか？"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "Deleted @label defaults."
+msgstr "@label のデフォルトを削除しました。"
+
+msgid "Select the type of default meta tags you would like to add."
+msgstr "追加するデフォルト・メタタグのタイプを選択します。"
+
+msgid "Warning: disabling the Global default metatag will prevent any metatags from being used."
+msgstr "警告: グローバル・デフォルト・メタタグを無効にすると、メタタグを使用できなくなります。"
+
+msgid "Created the %label Metatag defaults."
+msgstr "%label メタタグのデフォルトを作成しました。"
+
+msgid "Saved the %label Metatag defaults."
+msgstr "%label メタタグのデフォルトを保存しました。"
+
+msgid "Edit default meta tags for @path"
+msgstr "@path のデフォルト・メタタグを編集する"
+
+msgid "Are you sure you want to revert %name to its default values?"
+msgstr "%name をデフォルト値に戻しますか?"
+
+msgid "Reverted @label defaults."
+msgstr "@label のデフォルトを戻しました。"
+
+msgid "Entity type / Group Mapping"
+msgstr "エンティティー・タイプ/グループ・マッピング"
+
+msgid "Identify which metatag groups should be available on which entity type / bundle combination. Unselected groups will not appear on the configuration form for that entity type, reducing the size of the form and increasing performance. If no groups are selected for a type, all groups will appear."
+msgstr "どのメタタグ・グループをどのエンティティー・タイプ/バンドルの組み合わせで使用可能にするかを示します。選択されていないグループは、そのエンティティー・タイプの構成フォームに表示されないため、フォームのサイズが小さくなり、パフォーマンスが向上します。タイプに対してグループが選択されていない場合は、すべてのグループが表示されます。"
+
+msgid "Metatag Trimming Options"
+msgstr "メタタグ・トリミング・オプション"
+
+msgid "Many Meta-Tags can be trimmed on a specific length for search engine optimization.<br/>If the value is set to '0' or left empty, the whole Metatag will be untrimmed."
+msgstr "多くのメタタグは、検索エンジンの最適化のために特定の長さでトリムできます。<br/>値を「0」に設定するか空のままにすると、メタタグ全体がトリム解除されます。"
+
+msgid "Because of how tokens are processed in meta tags, use of the Maxlength module may not provide an accurate representation of the actual current length of each meta tag, so it may cause more problem than it is worth. "
+msgstr "トークンがメタ・タグでどのように処理されるかにより、Maxlengthモジュールを使用すると、各メタ・タグの実際の現在の長さを正確に表現できない可能性があるため、使用価値以上の問題が発生する可能性があります。 "
+
+msgid "Install the Maxlength module to enable this option."
+msgstr "このオプションを有効にするには、Maxlengthモジュールをインストールしてください。"
+
+msgid "Meta Tags:"
+msgstr "メタ・タグ:"
+
+msgid "length"
+msgstr "長さ"
+
+msgid "Meta Tags: Trimming Options"
+msgstr "メタ・タグ: トリミング・オプション"
+
+msgid "Trim the Meta Tag after the word on the given value"
+msgstr "指定された値の単語の後のメタ・タグをトリムします"
+
+msgid "Trim the Meta Tag on the given value"
+msgstr "指定された値のメタ・タグをトリムします"
+
+msgid "Trim the Meta Tag before the word on the given value"
+msgstr "指定された値の単語の前にあるメタ・タグをトリムします"
+
+msgid "Metatag widget options"
+msgstr "メタタグ・ウィジェットのオプション"
+
+msgid "Various options for the field widget used on entity forms, e.g. on content type forms."
+msgstr "エンティティー・フォーム (コンテンツ・タイプ・フォームなど) で使用されるフィールド・ウィジェットのさまざまなオプション。"
+
+msgid "Scroll maximum height"
+msgstr "スクロールの最大の高さ"
+
+msgid "eg 500px or 8rem"
+msgstr "例: 500px または 8rem"
+
+msgid "To enable scrolling please enter a value and its units, e.g. 500px, 8rem, etc. Removing this value will remove the scroll."
+msgstr "スクロールを有効にするには、値とその単位 ( 500px、 8remなど) を入力してください。 この値を削除すると、スクロールが削除されます。"
+
+msgid "Empty formatter"
+msgstr "空のフォーマッター"
+
+msgid "@label"
+msgstr "@label"
+
+msgid "This field stores code meta tags."
+msgstr "このフィールドはコード・メタタグを格納します。"
+
+msgid "If checked, the field will be placed in the sidebar on entity forms."
+msgstr "チェック・マークを付けると、フィールドがエンティティー・フォーム上のサイドバーに配置されます。"
+
+msgid "Wrap the meta tags in a collapsed details container."
+msgstr "省略された詳細コンテナーでメタ・タグをラップします。"
+
+msgid "If checked, the contents of the field will be placed inside a collapsed details container."
+msgstr "チェックされた場合、フィールドの内容は、縮小された詳細コンテナー内に配置されます。"
+
+msgid "Use sidebar: Yes"
+msgstr "サイドバーの使用: はい"
+
+msgid "Use sidebar: No"
+msgstr "サイドバーの使用: いいえ"
+
+msgid "Use details container: Yes"
+msgstr "詳細コンテナーの使用: はい"
+
+msgid "Use details container: No"
+msgstr "詳細コンテナーの使用: いいえ"
+
+msgid "Metatag Field Diff"
+msgstr "メタタグ・フィールドの差分"
+
+msgid "Advanced"
+msgstr "高度"
+
+msgid "Meta tags that might not be needed by many sites."
+msgstr "多くのサイトでは必要とされない可能性のあるメタタグ。"
+
+msgid "Basic tags"
+msgstr "基本のタグ"
+
+msgid "Simple meta tags."
+msgstr "シンプルなメタタグです。"
+
+msgid "A brief and concise summary of the page's content, preferably 150 characters or less. Where as the description meta tag may be used by search engines to display a snippet about the page in search results, the abstract tag may be used to archive a summary about the page. This meta tag is <em>no longer</em> supported by major search engines."
+msgstr "ページのコンテンツの概要です。文字数は150字以内が望ましいです。説明タグ（ディスクリプションタグ）が検索エンジンの検索結果に使われるのに対して、概要タグ（アブストラクトタグ）はページの概要をアーカイブするのに使われます。このメタタグは多くの検索エンジンで<em>現在は使われていません。</em>"
+
+msgid "Define the author of a page."
+msgstr "ページの作成者を定義します。"
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Pragma meta tag."
+msgstr "ブラウザーが特定のページをローカルにキャッシュするかどうかを制御するために使用されます。一般的には使用されません。Pragma メタタグと組み合わせて使用する必要があります。"
+
+msgid "A link to the preferred page location or URL of the content of this page, to help eliminate duplicate content penalties from search engines."
+msgstr "このページのコンテンツの優先されるページ位置または URL へのリンク。検索エンジンからコンテンツ重複のペナルティーを排除するのに役立ちます。"
+
+msgid "A brief and concise summary of the page's content that is a maximum of 160 characters in length. The description meta tag may be used by search engines to display a snippet about the page in search results."
+msgstr "最大160文字長のページのコンテンツの短い簡潔な要約。 descriptionメタタグは検索エンジンが検索結果にページに関するスニペットを表示するために使用されます。"
+
+msgid "Control when the browser's internal cache of the current page should expire. The date must to be an <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a>-compliant date string that is represented in Greenwich Mean Time (GMT), e.g. 'Thu, 01 Sep 2016 00:12:56 GMT'. Set to '0' to stop the page being cached entirely."
+msgstr "ブラウザーでの現行ページの内部キャッシュの有効期限が切れる時点を制御します。日付は、グリニッジ標準時 (GMT) で表される <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a> 準拠の日付ストリングでなければなりません (例: 「Thu, 01 Sep 201600:12:56 GMT」)。ページのキャッシュを完全に停止するには、「0」に設定します。"
+
+msgid "Describes the name and version number of the software or publishing tool used to create the page."
+msgstr "ページの作成に使用されたソフトウェアまたはパブリッシング・ツールの名前とバージョン番号を記述します。"
+
+msgid "A location's formal name."
+msgstr "場所の正式名。"
+
+msgid "Geo-spatial information in 'latitude; longitude' format, e.g. '50.167958; -97.133185'; <a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>see Wikipedia for details</a>."
+msgstr "「緯度、経度」の形式の地理空間情報、例:「50.167958; -97.133185」。<a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>詳しくは、ウィキペディアを参照してください</a>。"
+
+msgid "A location's two-letter international country code, with an optional two-letter region, e.g. 'US-NH' for New Hampshire in the USA."
+msgstr "場所の 2 文字の国際国別コードと、オプションで 2 文字の地域コード。例: 米国ニューハンプシャー州の場合は「US-NH」。"
+
+msgid "This meta tag communicates with Google. There are currently two directives supported: 'nositelinkssearchbox' to not to show the sitelinks search box, and 'notranslate' to ask Google not to offer a translation of the page. Both options may be added, just separate them with a comma. See <a href='https://support.google.com/webmasters/answer/79812?hl=en'>meta tags that Google understands</a> for further details."
+msgstr "このメタタグは、Google と通信します。現時点では、2 つのディレクティブがサポートされています。1 つは、サイト・リンク検索ボックスを表示しないための「nositelinkssearchbox」で、もう 1 つは Google にページの翻訳を提供しないよう要求するための「notranslate」です。両方のオプションを追加できます。それぞれをコンマで区切ってください。詳しくは、<a href='https://support.google.com/webmasters/answer/79812?hl=en'>Google が理解するメタタグ</a>を参照してください。"
+
+msgid "Geo-spatial information in 'latitude, longitude' format, e.g. '50.167958, -97.133185'; <a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>see Wikipedia for details</a>."
+msgstr "「緯度、経度」形式の地理空間情報、例:「50.167958, -97.133185」。<a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>詳しくは、ウィキペディアを参照してください</a>。"
+
+msgid "An image associated with this page, for use as a thumbnail in social networks and other services."
+msgstr "このページの関連付けられたイメージ。ソーシャル・ネットワークやその他のサービスでサムネールとして使用されます。"
+
+msgid "A comma-separated list of keywords about the page. This meta tag is <em>no longer</em> supported by most search engines."
+msgstr "コンマで区切られた、ページに関するキーワードのリストです。このメタタグはほとんどの検索エンジンで<em>現在はサポートされていません。</em>"
+
+msgid "Multiple values may be used, separated by a comma. Note: Tokens that return multiple values will be handled automatically."
+msgstr "コンマで区切られた複数の値を使うこともできます。注意：複数の値を返すトークンは自動的に処理されます。"
+
+msgid "This will be able to extract the URL from an image field if the field is configured properly."
+msgstr "これにより、イメージ・フィールドから URL を抽出できます (フィールドが正しく構成されている場合)。"
+
+msgid "Any relative or protocol-relative URLs will be converted to absolute URLs."
+msgstr "相対 URL またはプロトコル相対 URL はすべて絶対 URL に変換されます。"
+
+msgid "Any URLs which start with \"http://\" will be converted to \"https://\"."
+msgstr "「http://」で始まる URL はすべて「https://」に変換されます。"
+
+msgid "This will be truncated to a maximum of %max characters after any tokens are processsed."
+msgstr "これは、トークンが処理された後、最大%max文字に切り捨てられます。"
+
+msgid "News Keywords"
+msgstr "ニュース・キーワード"
+
+msgid "Used for paginated content by providing URL with rel='next' link."
+msgstr "rel='next' リンクを使用して URL を指定することにより、ページ番号付けされたコンテンツに使用されます。"
+
+msgid "Used to indicate the URL that broke the story, and can link to either an internal URL or an external source. If the full URL is not known it is acceptable to use a partial URL or just the domain name."
+msgstr "その内容を最初に伝えた URL を示すために使用され、内部 URL または外部ソースにリンクできます。完全 URL がわからない場合は、部分 URL やドメイン名だけを使用することもできます。"
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Cache-Control meta tag."
+msgstr "ブラウザーが特定のページをローカルにキャッシュするかどうかを制御するために使用されます。一般的には使用されません。Cache-Control メタタグと組み合わせて使用する必要があります。"
+
+msgid "Used for paginated content by providing URL with rel='prev' link."
+msgstr "rel='prev' リンクを使用して URL を指定することにより、ページ番号付けされたコンテンツに使用されます。"
+
+msgid "Used to rate content for audience appropriateness. This tag has little known influence on search engine rankings, but can be used by browsers, browser extensions, and apps. The <a href='https://www.metatags.org/meta_name_rating'>most common options</a> are general, mature, restricted, 14 years, safe for kids. If you follow the <a href='https://www.rtalabel.org/index.php?content=howto'>RTA Documentation</a> you should enter RTA-5042-1996-1400-1577-RTA"
+msgstr "対象者の適切性についてコンテンツを評価するために使用されます。このタグは、検索エンジンのランキングにほとんど影響しませんが、ブラウザー、ブラウザー拡張、およびアプリケーションで使用できます。<a href='https://www.metatags.org/meta_name_rating'>最も一般的なオプション</a>は、一般、成人向け、制限付き、14 歳、子供に安全です。<a href='https://www.rtalabel.org/index.php?content=howto'>RTA 資料</a>に従う場合には、RTA-5042-1996-1400-1577-RTA を入力する必要があります。"
+
+msgid "No Referrer"
+msgstr "参照元なし"
+
+msgid "No Referrer When Downgrade"
+msgstr "ダウングレード時は参照元なし"
+
+msgid "Origin"
+msgstr "原点"
+
+msgid "Origin When Cross-Origin"
+msgstr "Cross-Origin の場合の発信元"
+
+msgid "Same Origin"
+msgstr "同じ発信元"
+
+msgid "Strict Origin"
+msgstr "厳密な発信元"
+
+msgid "Strict Origin When Cross-Origin"
+msgstr "Cross-Origin の場合の厳密な発信元"
+
+msgid "Unsafe URL"
+msgstr "安全でない URL"
+
+msgid "Indicate to search engines and other page scrapers whether or not links should be followed. See <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>the W3C specifications</a> for further details. Note: this serves the same purpose as the HTTP header by the same name."
+msgstr "検索エンジンやその他のページ・スクレイパーに対し、リンクをたどる必要があるかどうかを指示します。 詳しくは <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>W3C 仕様</a>を参照してください。 注:これは、同じ名前のHTTPヘッダーと同じ目的を果たします。"
+
+msgid "The number of seconds to wait before refreshing the page. May also force redirect to another page using the format '5; url=https://example.com/', which would be triggered after five seconds."
+msgstr "ページを最新表示する前に待機する秒数。フォーマット「5; url=https://example.com/」を使用して、別のページに強制的にリダイレクトすることもできます。これは 5 秒後にトリガーされます。"
+
+msgid "Tell search engines when to index the page again. Very few search engines support this tag, it is more useful to use an <a href='https://www.drupal.org/project/xmlsitemap'>XML Sitemap</a> file."
+msgstr "ページを再度インデックス付けする時点を検索エンジンに指示します。このタグをサポートする検索エンジンはほとんどありません。<a href='https://www.drupal.org/project/xmlsitemap'>XML サイト・マップ</a>・ファイルを使用したほうが便利です。"
+
+msgid "Details about intellectual property, such as copyright or trademarks; does not automatically protect the site's content or intellectual property."
+msgstr "著作権や商標などの知的財産に関する詳細情報。サイトのコンテンツや知的財産が自動的に保護されるわけではありません。"
+
+msgid "Max Snippet"
+msgstr "最大スニペット"
+
+msgid "Use a number character as a textual snippet for this search result. \"0\" equals \"nosnippet\". \"-1\" will let the search engine decide the most effective length."
+msgstr "この検索結果のテキスト・スニペットとして数字を使用します。 「0」は「nosnippet」に相当します。「-1」は、最も有効な長さを検索エンジンに決定させます。"
+
+msgid "Max Video Preview"
+msgstr "最大ビデオ・プレビュー"
+
+msgid "Use a maximum of number seconds as a video snippet for videos on this page in search results. \"0\" will use a static a image. \"-1\" means there is no limit."
+msgstr "検索結果で、このページの動画のビデオ・スニペットとして最大秒数を使用します。 \"0\" は静的イメージを使用します。「-1」は、制限がないことを意味します。"
+
+msgid "Max Image Preview"
+msgstr "最大イメージ・プレビュー"
+
+msgid "Set the maximum size of an image preview for this page in a search results."
+msgstr "検索結果で、このページのイメージ・プレビューの最大サイズを設定します。"
+
+msgid "None - no image preview is to be shown."
+msgstr "なし-イメージ・プレビューは表示されません。"
+
+msgid "Standard - a default image preview may be shown."
+msgstr "標準-デフォルトのイメージ・プレビューが表示される場合があります。"
+
+msgid "Large - a larger image preview, up to the width of the viewport, may be shown."
+msgstr "大-ビューポートの幅までの、より大きなイメージ・プレビューが表示される場合があります。"
+
+msgid "Select"
+msgstr "選択"
+
+msgid "Unavailable after date"
+msgstr "指定日付以降は使用不可"
+
+msgid "Do not show this page in search results after the specified date"
+msgstr "指定された日付より後の検索結果に、このページを表示しない"
+
+msgid "index - Allow search engines to index this page (assumed)."
+msgstr "index - 検索エンジンがこのページにインデックス付けすることを許可します (想定)。"
+
+msgid "follow - Allow search engines to follow links on this page (assumed)."
+msgstr "follow - 検索エンジンがこのページのリンクをたどることを許可します (想定)。"
+
+msgid "noindex - Prevents search engines from indexing this page."
+msgstr "noindex - 検索エンジンがこのページにインデックス付けしないようにします。"
+
+msgid "nofollow - Prevents search engines from following links on this page."
+msgstr "nofollow - 検索エンジンがこのページのリンクをたどらないようにします。"
+
+msgid "noarchive - Prevents cached copies of this page from appearing in search results."
+msgstr "noarchive - キャッシュされたこのページのコピーが検索結果に表示されないようにします。"
+
+msgid "nosnippet - Prevents descriptions from appearing in search results, and prevents page caching."
+msgstr "nosnippet - 説明が検索結果に表示されないようにし、ページがキャッシュされないようにします。"
+
+msgid "noimageindex - Prevent search engines from indexing images on this page."
+msgstr "noimageindex - 検索エンジンがこのページのイメージにインデックス付けしないようにします。"
+
+msgid "notranslate - Prevent search engines from offering to translate this page in search results."
+msgstr "notranslate - 検索エンジンがこのページを翻訳するオプションを検索結果で提供しないようにします。"
+
+msgid "Provides search engines with specific directions for what to do when this page is indexed."
+msgstr "検索エンジンがこのページにインデックスを付けるときに行う処理について、具体的な指示を検索エンジンに提供します。"
+
+msgid "Set cookie"
+msgstr "Cookie の設定"
+
+msgid "<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>Sets a cookie</a> on the visitor's browser. Can be in either NAME=VALUE format, or a more verbose format including the path and expiration date; see the link for full details on the syntax."
+msgstr "訪問者のブラウザーで <a href='https://www.metatags.org/meta_http_equiv_set_cookie'>Cookie を設定</a>します。「名前=値」というフォーマットにするか、パスと有効期限を組み込んだ詳細フォーマットにすることができます。構文の完全な詳細については、リンクを参照してください。"
+
+msgid "Shortlink URL"
+msgstr "ショート・リンク URL"
+
+msgid "A brief URL, often created by a URL shortening service."
+msgstr "短縮された URL。多くの場合、URL 短縮サービスによって作成されます。"
+
+msgid "The text to display in the title bar of a visitor's web browser when they view this page. This meta tag may also be used as the title of the page when a visitor bookmarks or favorites this page, or as the page title in a search engine result. It is common to append '[site:name]' to the end of this, so the site's name is automatically added. It is recommended that the title is no greater than 55 - 65 characters long, including spaces."
+msgstr "訪問者がこのページを見るときにウェブブラウザのタイトルバーに表示されるテキストです。このメタタグは訪問者がこのページをブックマークしたり気に入りするときにタイトルとして使われます。また、検索エンジンの検索結果に表示されるページタイトルとしても使われます。サイト名が自動的に付け加えられるように、[site:name]を最後に入れるのが通例です。タイトルはスペースを含めて55〜65文字以下に収めることが推奨されています。"
+
+msgid "Configuration type"
+msgstr "構成タイプ"
+
+msgid "@label of @type"
+msgstr "@type の @label"
+
+msgid "@label of @type @entity-type-label"
+msgstr "@type @entity-type-label の @label"
+
+msgid "No default for \"%tag_name\" - entity_type: %type, entity_bundle: %bundle, id: %id. See src/TypedData/Metatags.php."
+msgstr "\"%tag_name\" のデフォルトがありません-entity_type: %type、entity_bundle: %bundle、id: %id。 src/TypedData/Metatags.php を参照してください。"
+

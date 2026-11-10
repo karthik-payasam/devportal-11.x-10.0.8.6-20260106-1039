@@ -1,0 +1,126 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Select translation"
+msgstr "Wybierz tłumaczenie"
+
+msgid "Select which translation of a node should be displayed"
+msgstr "Wybierz, które tłumaczenie węzła ma być wyświetlane"
+
+msgid "Select Translation"
+msgstr "Wybierz tłumaczenie"
+
+msgid "Provides a Views filter to select which translation of a node should be displayed."
+msgstr "Udostępnia filtr widoków, aby wybrać, które tłumaczenie węzła powinno być wyświetlane."
+
+msgid "Multilingual"
+msgstr "Wielojęzyczne"
+
+msgid "The 'nid' argument must be an integer >= 1."
+msgstr "Argument 'nid' musi być liczbą całkowitą większą lub równą 1."
+
+msgid "Select translation filter"
+msgstr "Wybierz filtr tłumaczeń"
+
+msgid "Original node language fallback"
+msgstr "Powrót do oryginalnego języka węzła"
+
+msgid "Default site language fallback"
+msgstr "Powrót do domyślnego języka serwisu"
+
+msgid "Language fallback candidates list"
+msgstr "Lista kandydatów zastępczych dla języków"
+
+msgid "Custom language priority"
+msgstr "Priorytet języków niestandardowych"
+
+msgid "Select translation selection mode"
+msgstr "Wybierz tryb wyboru tłumaczenia"
+
+msgid "Use the current interface language; if not available use the original node language"
+msgstr "Użyj bieżącego języka interfejsu; jeśli nie jest dostępny, użyj oryginalnego języka węzła"
+
+msgid "Use the current interface language; if not available use the default site language; if not available use the original node language"
+msgstr "Użyj bieżącego języka interfejsu; jeśli nie jest dostępny, użyj domyślnego języka serwisu; jeśli nie jest dostępny, użyj oryginalnego języka węzła"
+
+msgid "Use the language fallback candidates list provided by the language manager service"
+msgstr "Użyj listy kandydatów zastępczych dla języków udostępnianą przez usługę menedżera języków"
+
+msgid "Custom language priorities"
+msgstr "Priorytety języków niestandardowych"
+
+msgid "Language priorities"
+msgstr "Priorytety języków"
+
+msgid ""
+"<p>If the selection mode is set to \"Custom language priorities\",\n"
+"                           a comma separated list of language codes can be specified.<br/>\n"
+"                           The filter will then return the node in the first available language\n"
+"                           in that list; falling back to the original node language if no match was found.</p>\n"
+"                           Some special values are recognized:\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" will be replaced with the current interface language;</li>\n"
+"                             <li>\"<em>default</em>\" will be replaced with the default site language;</li>\n"
+"                             <li>\"<em>original</em>\" will be replaced with the original node language.</li>\n"
+"                            </ul>\n"
+"                           Example:<br/><em>en,fr,current,default,original</em><br/>\n"
+"                           This will return:\n"
+"                           <ol>\n"
+"                             <li>the version in English, if available;</li>\n"
+"                             <li>if not, then the version in French, if available;</li>\n"
+"                             <li>if not, then the version in the current interface language, if available;</li>\n"
+"                             <li>if not, then the version in the default site language, if available;</li>\n"
+"                             <li>if none are available it will return the original node version.</li>\n"
+"                          </ol>"
+msgstr ""
+"<p>Jeśli tryb wyboru jest ustawiony na \"Priorytety języków niestandardowych\" ,\n"
+"                           można podać rozdzielaną przecinkami listę kodów języków.<br/>\n"
+" Filtr zwróci następnie węzeł w pierwszym dostępnym języku\n"
+"                           z tej listy; jeśli nie zostanie znaleziona pasująca pozycja, nastąpi powrót do oryginalnego języka węzła.</p>\n"
+"                           Rozpoznawane są pewne wartości specjalne:\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" (bieżący) zostanie zastąpiony bieżącym językiem interfejsu;</li>\n"
+"                             <li>\"<em>default</em>\" (domyślny) zostanie zastąpiony domyślnym językiem serwisu;</li>\n"
+"                             <li>\"<em>original</em>\" (oryginalny) zostanie zastąpiony oryginalnym językiem węzła.</li>\n"
+"                            </ul>\n"
+"                           Przykład:<br/><em>en,fr,current,default,original</em><br/>\n"
+"                           Spowoduje zwrócenie:\n"
+"                           <ol>\n"
+"                             <li>wersji angielskiej, jeśli jest dostępna;</li>\n"
+"                             <li>jeśli nie, wersji francuskiej, jeśli jest dostępna;</li>\n"
+"                             <li>jeśli nie, wersji w bieżącym języku interfejsu, jeśli jest dostępna;</li>\n"
+"                             <li>jeśli nie, wersji w domyślnym języku serwisu, jeśli jest dostępna;</li>\n"
+"                             <li>jeśli nie będzie dostępny żaden z tych języków, nastąpi powrót do oryginalnej wersji węzła.</li>\n"
+"                          </ol>"
+
+msgid "Display default language content *only*, if the currently selected user language is the default site language."
+msgstr "Wyświetl treść w języku domyślnym *tylko wtedy*, gdy aktualnie wybrany język użytkownika jest domyślnym językiem serwisu."
+
+msgid ""
+"When you check this option, the order chosen above will be ignored when current language = site default language,\n"
+"        instead it will only show translations for the default language. "
+msgstr ""
+"Zaznaczenie tej opcji powoduje, że kolejność wybrana powyżej będzie ignorowana, jeśli bieżący język jest taki sam jak domyślny język serwisu,\n"
+" w przeciwnym razie będą wyświetlane tylko tłumaczenia dla języka domyślnego. "
+
+msgid "Return content in the site default language when a translation for the current language *does* exist, but it is unpublished."
+msgstr "Zwracana jest treść w domyślnym języku serwisu, gdy tłumaczenie dla bieżącego języka *istnieje*, ale nie zostało opublikowane."
+
+msgid ""
+"When you check this option, in addition to the order chosen above, content will be shown in the default site language in the event that the translation in the current language is unpublished.<br/>\n"
+"      <strong>NOTE</strong>: This option assumes that the view is already filtering out unpublished content with the <code>Published (=Yes)</code> criterion, otherwise both the published and unpublished node will be displayed."
+msgstr ""
+"Po zaznaczeniu tej opcji, oprócz podanej powyżej kolejności, treść będzie wyświetlana w domyślnym języku serwisu w przypadku, gdy tłumaczenie w bieżącym języku nie zostanie opublikowane.<br/>\n"
+"      <strong>UWAGA</strong>: Ta opcja zakłada, że widok już odfiltrowuje nieopublikowaną treść za pomocą kryterium <code>Opublikowane (=Tak)</code>. W przeciwnym razie zostanie wyświetlony zarówno opublikowany, jak i nieopublikowany węzeł."
+

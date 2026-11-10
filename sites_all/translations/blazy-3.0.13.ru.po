@@ -1,0 +1,527 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Blazy"
+msgstr "Blazy"
+
+msgid "Displays a preview of a File using Blazy, if applicable."
+msgstr "Отображает предварительный просмотр файла с помощью Blazy (если применимо)."
+
+msgid "Displays a preview of a Media using Blazy, if applicable."
+msgstr "Отображает предварительный просмотр медиаобъекта с помощью Blazy (если применимо)."
+
+msgid "Display the results in a Blazy grid."
+msgstr "Показать результаты в таблице Blazy."
+
+msgid "Works best with Views field containing Blazy."
+msgstr "Лучше всего подходит для поля Представления, содержащего Blazy."
+
+msgid "Blazy requires Media core module"
+msgstr "Для Blazy требуется базовый модуль Медиаобъект"
+
+msgid "Blazy now requires core Media module, which is currently not installed. By continuing the update the module will be installed."
+msgstr "Теперь для работы Blazy требуется базовый модуль Медиаобъект, который не установлен. Если продолжить обновление, модуль будет установлен. "
+
+msgid "Blazy has installed core \"Media\" module."
+msgstr "Blazy установил базовый модуль \"Медиаобъект\". "
+
+msgid "Provides basic Blazy integration for lazy loading and multi-serving images."
+msgstr "Предоставляет интеграцию Blazy для отложенной загрузки изображений в зависимости от размера экрана. "
+
+msgid "Blazy UI"
+msgstr "Пользовательский интерфейс Blazy"
+
+msgid "Provides Blazy configuration UI."
+msgstr "Предоставляет пользовательский интерфейс настройки Blazy. "
+
+msgid "Manage Blazy UI."
+msgstr "Управление пользовательским интерфейсом Blazy. "
+
+msgid "Administer the Blazy module"
+msgstr "Администрирование модуля Blazy"
+
+msgid "Admin CSS"
+msgstr "Административный CSS"
+
+msgid "Uncheck to disable blazy related admin compact form styling, only if not compatible with your admin theme."
+msgstr "Отмените выбор, чтобы выключить стиль компактной формы администрирования blazy, если он несовместим с темой администрирования."
+
+msgid "Add noscript"
+msgstr "Добавить noscript"
+
+msgid "Enable noscript if you want to support <a href=\":url\">non-javascript users</a>."
+msgstr "Включите noscript для поддержки <a href=\":url\">пользователей non-javascript</a>."
+
+msgid "Support Responsive image"
+msgstr "Поддержка адаптивных изображений"
+
+msgid "Responsive image 1px placeholder"
+msgstr "Заменитель адаптивного изображения размером в 1 пиксель"
+
+msgid "Placeholder"
+msgstr "Заполнитель"
+
+msgid "Extensions without image styles"
+msgstr "Расширения без стилей изображений"
+
+msgid "Extensions that should not use (Responsive) image style, space delimited without dot, e.g.: <code>gif apng</code> <br>Normally animated images. No way to distinguish animated from static gif, it is all or nothing. This means no thumbnail, no blur, nor features which makes use image style. Default to svg."
+msgstr "Расширения, которые не должны использовать (адаптивные) стили изображений. В качестве разделителя применяется пробел, например: <code>gif apng</code> <br>Как правило, указываются анимированные изображения. Поскольку анимированные изображения gif нельзя отличить от статических, этот параметр применяются ко всем изображениям gif. Это означает, что не будет поддержки миниатюр, размытия и других функций стиля изображений. Значение по умолчанию: svg."
+
+msgid "Image effect"
+msgstr "Эффект изображения"
+
+msgid "Blazy settings"
+msgstr "Параметры Blazy"
+
+msgid "Load invisible"
+msgstr "Загружать невидимые"
+
+msgid "Offset"
+msgstr "Пропустить"
+
+msgid "The offset controls how early you want the elements to be loaded before they're visible. Default is <strong>100</strong>, so 100px before an element is visible it'll start loading."
+msgstr "Смещение позволяет настроить загрузку элементов перед их отображением. По умолчанию применяется значение <strong>100</strong> (загрузка элемента начинается за 100px до его отображения). "
+
+msgid "Save viewport offset delay"
+msgstr "Сохранить задержку смещения окна просмотра"
+
+msgid "Delay for how often it should call the saveViewportOffset function on resize. Default is <strong>50</strong>ms."
+msgstr "Задержка, управляющая вызовом функции saveViewportOffset при изменении размера. Значение по умолчанию: <strong>50</strong>ms."
+
+msgid "Set validate delay"
+msgstr "Указать задержку проверки"
+
+msgid "Delay for how often it should call the validate function on scroll/resize. Default is <strong>25</strong>ms."
+msgstr "Задержка, управляющая вызовом функции проверки при изменении размера/прокрутке. Значение по умолчанию: <strong>25</strong> мс."
+
+msgid "Scrolling container"
+msgstr "Контейнер прокрутки"
+
+msgid "If you put Blazy within a scrolling container, provide valid comma separated CSS selectors, except <code>#drupal-modal, .is-b-scroll</code>, e.g.: <code>#my-scrolling-container, .another-scrolling-container</code>. Known scrolling containers are <code>#drupal-modal</code> like seen at Media library, parallax containers with fixed height replacing default browser scrollbar. A scrolling modal with an iframe like Entity Browser has no issue since the scrolling container is the entire DOM. Must know <code>.blazy</code> parent container, or itself, which has CSS rules containing <code>overflow</code> with values anything but <code>hidden</code> such as <code>auto or scroll</code>. Press <code>F12</code> at any browser to inspect elements. IO does not need it, old bLazy does. Default to known <code>#drupal-modal, .is-b-scroll</code>. The <code>.is-b-scroll</code> is for modules which cannot reach this UI without extra legs. Symptons: eternal blue loader while should be loaded."
+msgstr "В случае размещения Blazy в контейнере прокрутки перечислите через запятую селекторы CSS, кроме <code>#drupal-modal, .is-b-scroll</code>. Пример: <code>#my-scrolling-container, .another-scrolling-container</code>. Известные контейнеры прокрутки: <code>#drupal-modal</code>, как в библиотеке медиаобъектов, параллакс-контейнеры с фиксированной высотой, заменяющие панель прокрутки браузера по умолчанию. Модальное окно с прокруткой и iframe, такое как Браузер сущностей, работает правильным образом, поскольку роль контейнера прокрутки выполняет DOM. Требуется родительский контейнер <code>.blazy</code> с правилами CSS, содержащими <code>overflow</code> со значениями, отличными от <code>hidden</code> (например <code>auto или scroll</code>). Нажмите клавишу <code>F12</code> в любом браузере, чтобы проверить элементы. Это требуется только для старых версий bLazy. Значение по умолчанию: <code>#drupal-modal, .is-b-scroll</code>. <code>.is-b-scroll</code> относится к модулям, которые не могут напрямую взаимодействовать с этим пользовательским интерфейсом. Признаки: синий значок загрузки отображается слишком долго. "
+
+msgid "Unload bLazy"
+msgstr "Выгрузить bLazy"
+
+msgid "rootMargin"
+msgstr "rootMargin"
+
+msgid "Margin around the root. Can have values similar to the CSS margin property, e.g. <code>10px 20px 30px 40px</code> (top, right, bottom, left). The values can be percentages. This set of values serves to grow or shrink each side of the root element's bounding box before computing intersections. Defaults to all zeros."
+msgstr "Отступ вокруг корневого элемента. Можно указать значения, аналогичные свойству CSS margin, такие как <code>10px 20px 30px 40px</code> (сверху, справа, снизу, слева). Допустимы процентные значения. С помощью этого набора значений можно увеличить каждую строну рамки вокруг корневого элемента перед вычислением пересечений. По умолчанию применяются нулевые значения."
+
+msgid "threshold"
+msgstr "пороговое значение"
+
+msgid "Either a single number or an array of numbers which indicate at what percentage of the target's visibility the observer's callback should be executed. If you only want to detect when visibility passes the 50% mark, you can use a value of 0.5. If you want the callback to run every time visibility passes another 25%, you would specify the array [<code>0, 0.25, 0.5, 0.75, 1</code>] (without brackets). The default is 0 (meaning as soon as even one pixel is visible, the callback will be run). A value of 1.0 means that the threshold isn't considered passed until every pixel is visible."
+msgstr "Отдельное значение или массив значений, которые задают процент видимости целевого элемента для обратного вызова наблюдателя. Для того чтобы разрешить обнаружение после достижения видимости 50%, укажите значение 0.5. Для того чтобы выполнять обратный вызов каждый раз при увеличении видимости на 25%, укажите массив [<code>0, 0.25, 0.5, 0.75, 1</code>] (без квадратных скобок). Значение по умолчанию: 0 (обратный вызов выполняется, если видим по крайней мере один пиксель). Значение 1.0 указывает, что порог считается достигнутым только в том случае, если видимы все пиксели."
+
+msgid "Disconnect"
+msgstr "Отключить"
+
+msgid "Check if you want to disconnect IO once all images loaded. If you keep seeing eternal blue loader while an image should be already loaded, this means it is not working yet in all cases. Just uncheck this."
+msgstr "Позволяет отключить IO после загрузки всех изображений. Если вместо изображения отображается синий значок загрузки, то возникли неполадки. Выключите этот параметр."
+
+msgid "Extra settings"
+msgstr "Дополнительные настройки"
+
+msgid "Be sure to <a href=\":clear_cache\">clear the cache</a> if trouble to see the updated settings."
+msgstr "Если обновленные параметры не отображаются, <a href=\":clear_cache\">очистите кэш</a>."
+
+msgid "One pixel placeholder"
+msgstr "Заменитель размером в один пиксель"
+
+msgid "IO"
+msgstr "IO"
+
+msgid "Extras"
+msgstr "Дополнительные"
+
+msgid "Blazy image base display format settings"
+msgstr "Базовые параметры формата отображения изображений Blazy"
+
+msgid "Captions"
+msgstr "Заголовки"
+
+msgid "Caption"
+msgstr "Подпись"
+
+msgid "Optionset"
+msgstr "Набор параметров"
+
+msgid "Blazy image display format settings"
+msgstr "Параметры формата отображения изображений Blazy"
+
+msgid "Blazy media display format settings"
+msgstr "Параметры формата отображения медиаобъектов Blazy"
+
+msgid "Blazy oembed display format settings"
+msgstr "Параметры формата отображения oembed Blazy"
+
+msgid "Blazy text display format settings"
+msgstr "Параметры формата отображения текста Blazy"
+
+msgid "Blazy third party display format settings"
+msgstr "Внешние параметры формата отображения Blazy"
+
+msgid "Blazy filter"
+msgstr "Фильтр Blazy"
+
+msgid "Media switcher"
+msgstr "Функция переключения медиаобъектов"
+
+msgid "(Responsive) image style"
+msgstr "(Адаптивный) стиль изображений"
+
+msgid "Lightbox (Responsive) image style"
+msgstr "Стиль изображений Lightbox (адаптивный)"
+
+msgid "Lightbox caption"
+msgstr "Заголовок Lightbox"
+
+msgid "HTML tags"
+msgstr "Теги HTML"
+
+msgid "tag"
+msgstr "тег"
+
+msgid "Trust data URI"
+msgstr "Защищенный URI данных"
+
+msgid "Delimiter"
+msgstr "Разделитель"
+
+msgid "Tag"
+msgstr "Тег"
+
+msgid "Blazy image with VEF display format settings"
+msgstr "Параметры формата отображения изображений Blazy с VEF"
+
+msgid "Lightbox image style"
+msgstr "Стиль изображения Lightbox"
+
+msgid "Lightbox video style"
+msgstr "Стиль видео Lightbox"
+
+msgid "Image style"
+msgstr "Стиль изображения"
+
+msgid "Media switch"
+msgstr "Переключение медиаобъектов"
+
+msgid "Aspect ratio"
+msgstr "Соотношение сторон"
+
+msgid "Thumbnail style"
+msgstr "Стиль миниатюры"
+
+msgid "View mode"
+msgstr "Режим просмотра"
+
+msgid "Blazy Grid"
+msgstr "Сетка Blazy"
+
+msgid "Configure"
+msgstr "Настроить"
+
+msgid "Duplicate"
+msgstr "Дубликат"
+
+msgid "The optionsets order has been updated."
+msgstr "Обновлен порядок наборов параметров."
+
+msgid "Image to iFrame"
+msgstr "Изображение в iFrame"
+
+msgid "Displays lazyloaded images, or iframes, for VEF/ ME."
+msgstr "Отображает изображения или iframe с поддержкой отложенной загрузки для VEF/ ME."
+
+msgid "Image rendered by its formatter"
+msgstr "Изображение выводится функцией форматирования"
+
+msgid "Check fields to be treated as captions, even if not caption texts."
+msgstr "Выберите поля, которые следует обрабатывать как заголовки (даже в том случае, если отсутствует текст заголовка). "
+
+msgid "Image Title"
+msgstr "Заголовок изображения"
+
+msgid "Image Alt"
+msgstr "Альтернативный текст изображения"
+
+msgid "Create a dedicated List (text - max number 1) field related to the caption placement to have unique layout per slide with the following supported keys: top, right, bottom, left, center, center-top, etc. Be sure its formatter is Key."
+msgstr "Создайте выделенное поле списка (текст - максимальное число 1), связанное с размещением заголовка, с уникальным макетом слайда и следующими поддерживаемыми ключами: top, right, bottom, left, center, center-top и т. д. Убедитесь, что применяется функция форматирования Key."
+
+msgid "The formatter/renderer is managed by the child formatter."
+msgstr "Функция форматирования/вывода работает под управлением дочерней функции форматирования."
+
+msgid "Recursive rendering detected when rendering entity @entity_type @entity_id. Aborting rendering."
+msgstr "Во время генерирования сущности @entity_type @entity_id обнаружена рекурсия. Генерирование прервано."
+
+msgid "Display style"
+msgstr "Стиль отображения"
+
+msgid "- None -"
+msgstr "- Не указано -"
+
+msgid "Skin"
+msgstr "Обложка"
+
+msgid "Use CSS background"
+msgstr "Использовать фон CSS"
+
+msgid "Layout"
+msgstr "Макет"
+
+msgid "Caption fields"
+msgstr "Поля заголовков"
+
+msgid "Grid large"
+msgstr "Большая сетка"
+
+msgid "Grid medium"
+msgstr "Средняя сетка"
+
+msgid "Grid small"
+msgstr "Маленькая сетка"
+
+msgid "Visible items"
+msgstr "Видимые элементы"
+
+msgid "Preserve keys"
+msgstr "Сохранять ключи"
+
+msgid "Image linked to content"
+msgstr "Изображение со ссылкой на содержимое"
+
+msgid "Main stage"
+msgstr "Основной фон"
+
+msgid "Fields"
+msgstr "Поля"
+
+msgid "Image to @lightbox"
+msgstr "Изображение в @lightbox"
+
+msgid "Lightbox custom caption"
+msgstr "Пользовательский заголовок Lightbox"
+
+msgid "Tokens"
+msgstr "Токены"
+
+msgid "@title"
+msgstr "@title"
+
+msgid "SVG"
+msgstr "SVG"
+
+msgid "Vanilla @namespace"
+msgstr "Vanilla @namespace"
+
+msgid "Thumbnail image"
+msgstr "Миниатюра изображения"
+
+msgid "Overlay media"
+msgstr "Наложенный медиаобъект"
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "Link"
+msgstr "Ссылка"
+
+msgid "Item class"
+msgstr "Класс пункта"
+
+msgid "Cache"
+msgstr "Кэш"
+
+msgid "Ditch all the logic to cached bare HTML. <ol><li><strong>Permanent</strong>: cached contents will persist (be displayed) till the next cron runs.</li><li><strong>Any number</strong>: expired by the selected expiration time, and fresh contents are fetched till the next cache rebuilt.</li></ol>A working cron job is required to clear stale cache. At any rate, cached contents will be refreshed regardless of the expiration time after the cron hits. <br />Leave it empty to disable caching.<br /><strong>Warning!</strong> Be sure no useless/ sensitive data such as Edit links as they are rendered as is regardless permissions. No permissions are changed, just ugly. Only enable it when all is done, otherwise cached options will be displayed while changing them."
+msgstr "Переместите всю логику в кэшируемый код HTML. <ol><li><strong>Постоянно</strong>: кэшируемые данные сохраняются (будут отображаться) до следующего запуска cron. </li><li><strong>Любое число</strong>: позволяет ограничить срок хранения данных в кэше; содержимое будет извлекаться до следующей перекомпоновки кэша. </li></ol>Для очистки кэша требуется активное задание cron. Задание cron обновляет содержимое кэша вне зависимости от срока хранения. <br />Оставьте пустое значение, чтобы выключить кэширование. <br /><strong>Предупреждение!</strong> Избегайте ненужных/конфиденциальных данных, таких как ссылки Изменить, поскольку они выводятся без учета прав доступа. Права доступа не изменяются. Следует включать только после завершения обработки, чтобы избежать отображения кэшируемых параметров в процессе изменения. "
+
+msgid "Enable any of the following fields as captions. These fields are treated and wrapped as captions."
+msgstr "Настройте любые из следующих полей в качестве заголовков. Они будут обрабатываться как заголовки. "
+
+msgid "Also disable Views cache (<strong>Advanced &gt; Caching</strong>) temporarily _only if trouble to see updated settings."
+msgstr "Кроме того, кэш представлений (<strong>Дополнительно &gt; Кэширование</strong>) следует временно выключать только в случае неполадок при отображении обновленных параметров. "
+
+msgid "Be sure to CHECK \"Use field template\" under its formatter if using Slick field formatter."
+msgstr "В случае применения функции форматирования полей Slick включите переключатель \"Использовать шаблон поля\". "
+
+msgid "If provided, individual item will have this class, e.g.: to have different background with transparent images. Be sure its formatter is Key or Label. Accepted field types: list text, string (e.g.: node title), term/entity reference label."
+msgstr "Позволяет указать класс для отдельного элемента (например, другой фон с прозрачными изображениями). Требуется функция форматирования Key или Label. Допустимые типы полей: текст списка, строка (например, заголовок узла), метка ссылки на термин/сущность. "
+
+msgid "Enable the optionset UI module to manage the optionsets."
+msgstr "Включите модуль пользовательского интерфейса набора параметров для управления наборами параметров. "
+
+msgid "<strong>Check</strong>:<ul><li>To render individual item as is as without extra logic.</li><li>To disable 99% @module features, and most of the mentioned options here, such as layouts, et al.</li><li>When the @module features can not satisfy the need.</li><li>Things may be broken! You are on your own.</li></ul><strong>Uncheck</strong>:<ul><li>To get consistent markups and its advanced features -- relevant for the provided options as @module needs to know what to style/work with.</li></ul>"
+msgstr "<strong>Включите</strong>:<ul><li>Для вывода отдельного элемента в исходном виде без дополнительной логики. </li><li>Для выключения 99% функций @module и большинства перечисленных параметров, таких как макеты и т. д. </li><li>Если функции @module не соответствуют потребностям. </li><li>Работа сайта может быть нарушена! Вы действуете на свой страх и риск. </li></ul><strong>Выключите</strong>:<ul><li>Для получения согласованной разметки и расширенных функций - применимо к описанным параметрам, поскольку @module должен знать, с каким содержимым он работает. </li></ul>"
+
+msgid "Responsive image"
+msgstr "Адаптивное изображение"
+
+msgid "Responsive image style for the main stage image is more reasonable for large images. Works with multi-serving IMG, or PICTURE element. Leave empty to disable. <a href=\":url\" target=\"_blank\">Manage responsive image styles</a>."
+msgstr "Адаптивный стиль основного изображения больше подходит для больших изображений. Поддерживает автоматический выбор размера изображения с помощью элемента IMG или PICTURE. Оставьте пустое значение, чтобы выключить. <a href=\":url\" target=\"_blank\">Управление стилями адаптивных изображений</a>."
+
+msgid "@title: <strong>@setting</strong>"
+msgstr "@title: <strong>@setting</strong>"
+
+msgid "Are you sure you want to delete the %name optionset %label?"
+msgstr "Вы действительно хотите удалить набор параметров %name %label?"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "The %name optionset %label has been deleted."
+msgstr "Набор параметров %name %label удален."
+
+msgid "Deleted optionset %oid (%label)"
+msgstr "Удален набор параметров %oid (%label)"
+
+msgid "<em>Duplicate %name optionset</em>: @label"
+msgstr "<em>Дублируется набор параметров %name</em>: @label"
+
+msgid "<em>Edit %name optionset</em>: @label"
+msgstr "<em>Изменить набор параметров %name</em>: @label"
+
+msgid "@config_prefix %label has been updated."
+msgstr "@config_prefix %label обновлен."
+
+msgid "@config_prefix %label has been added."
+msgstr "@config_prefix %label добавлен."
+
+msgid "Alt"
+msgstr "Alt"
+
+msgid "No caching"
+msgstr "Без кэша"
+
+msgid "Permanent"
+msgstr "Постоянный"
+
+msgid "Automatic"
+msgstr "Автоматически"
+
+msgid "Alt text"
+msgstr "Alt текст"
+
+msgid "Title text"
+msgstr "Текст в Title"
+
+msgid "Alt and Title"
+msgstr "Альтернативный текст и заголовок"
+
+msgid "Title and Alt"
+msgstr "Заголовок и альтернативный текст"
+
+msgid "Content title"
+msgstr "Заголовок"
+
+msgid "Custom"
+msgstr "Собственная"
+
+msgid "Required to grab the fields, or to have custom entity display as fallback display. If it has fields, be sure the selected \"View mode\" is enabled, and the enabled fields here are not hidden there."
+msgstr "Требуется для захвата полей или настройки пользовательского способа отображения сущности как резервного. Если она содержит поля, убедитесь, что выбранный \"режим просмотра\" включен и поля не являются скрытыми. "
+
+msgid "Manage view modes on the <a href=\":view_modes\">View modes page</a>."
+msgstr "Для управления режимами отображения применяется страница <a href=\":view_modes\">Режимы отображения</a>."
+
+msgid "The content image style. This will be treated as the fallback image to override the global option <a href=\":url\">Responsive image 1px placeholder</a>, which is normally smaller, if Responsive image are provided. Shortly, leave it empty to make Responsive image fallback respected. Otherwise this is the only image displayed. This image style is also used to provide dimensions not only for image/iframe but also any media entity like local video, where no images are even associated with, to have the designated dimensions in tandem with aspect ratio as otherwise no UI to customize for."
+msgstr "Стиль изображения содержимого.Это будет считаться резервным изображением, переопределяющим глобальный вариант <a href=\":url\">Заменитель адаптивного изображения размером в 1 пиксель</a>, которое обычно меньше, если предоставлено Адаптивное изображение. Оставьте его пустым, чтобы отображалось резервное адаптивное изображение. В противном случае это единственное отображаемое изображение. Этот стиль изображения также применяется для предоставления размеров не только изображения/iframe, но и любых медиасущностей, таких как локальное видео (даже без связанных изображений), чтобы использовать размеры в сочетании с характеристическим соотношением."
+
+msgid "Supports both Responsive and regular images."
+msgstr "Поддерживает как адаптивные, так и обычные изображения."
+
+msgid "Automatic will search for Alt text first, then Title text. Try selecting <strong>- None -</strong> first when changing if trouble with form states."
+msgstr "Сначала выполняется поиск альтернативного текста, а затем - текста заголовка. В случае неполадок со состояниями формы сначала попробуйте выбрать значение <strong>- Нет -</strong>."
+
+msgid "Multi-value rich text field will be mapped to each image by its delta."
+msgstr "С каждым изображением связывается поле отформатированного текста с несколькими значениями. "
+
+msgid "Only accepts uniform columns (1 - 12, or empty) for medium devices 40.063em - 64em (641px - 1024px) up, even for Native Grid due to being pure CSS without JS."
+msgstr "Поддерживаются только колонки одинаковой ширины (1–12 или пустое значение) для устройств среднего размера 40,063–64em (641–1024px), даже для Native Grid, так как используется чистый CSS без JS."
+
+msgid "How many items per display at a time."
+msgstr "Число одновременно отображаемых элементов. "
+
+msgid "If checked, keys will be preserved. Default is FALSE which will reindex the grid chunk numerically."
+msgstr "Позволяет сохранять ключи. По умолчанию применяется значение FALSE, обеспечивающее числовую индексацию фрагмента сетки. "
+
+msgid "Check this to turn the image into CSS background. This opens up the goodness of CSS, such as background cover, fixed attachment, etc. <br /><strong>Important!</strong> Requires an Aspect ratio, otherwise collapsed containers. Unless explicitly removed such as for GridStack which manages its own problem, or a min-height is added manually to <strong>.b-bg</strong> selector."
+msgstr "Позволяет преобразовать изображение в фон CSS. Поддерживаются такие преимущества CSS, как масштабирование фона, фиксация фона и т. д. <br /><strong>Важно!</strong> Требуется характеристическое отношение; в противном случае применяются свертываемые контейнеры. Если это не удалено явно, например для GridStack, который сам решает эту задачу, или в селектор <strong>.b-bg</strong> вручную не добавлена минимальная высота."
+
+msgid "Requires a skin. The builtin layouts affects the entire items uniformly. Leave empty to DIY."
+msgstr "Требуется оболочка. Встроенные макеты равномерно применяются ко всем элементам. Оставьте пустое значение, чтобы сделать самостоятельно."
+
+msgid "Skins allow various layouts with just CSS. Some options below depend on a skin. Leave empty to DIY. Or use the provided hook_info() and implement the skin interface to register ones."
+msgstr "Оболочки позволяют изменять макеты с помощью CSS. Отдельные параметры зависят от оболочки. Оставьте пустое значение, чтобы сделать самостоятельно. Кроме того, можно использовать стандартный метод hook_info() и реализовать интерфейс для регистрации оболочек. "
+
+msgid "Preview"
+msgstr "Предпросмотр"
+
+msgid "Thumbnail"
+msgstr "Миниатюра"
+
+msgid "Image convert failed using the %toolkit toolkit on %path (%mimetype)"
+msgstr "Ошибка преобразования изображения с помощью средства %toolkit в %path (%mimetype)"
+
+msgid "Description"
+msgstr "Описание"
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "Enable HTML tags"
+msgstr "Включить теги HTML"
+
+msgid "Image"
+msgstr "Изображение"
+
+msgid "Video iframe"
+msgstr "Iframe с видео"
+
+msgid "To disable Blazy per individual item, add attribute <code>data-unblazy</code>."
+msgstr "Чтобы отключить Blazy для конкретного элемента, добавьте атрибут <code>data-unblazy</code>."
+
+msgid "Recommended placement after Align / Caption images. Not tested against, nor dependent on, Shortcode module. Be sure to place Blazy filter before any other Shortcode if installed."
+msgstr "Рекомендуемое размещение: после выравнивания или добавления подписей к изображениям. Не зависит от модуля Shortcode, совместимость также не тестировалась. Фильтр Blazy должен размещаться перед любым другим Shortcode (если он установлен)."
+
+msgid "Lazyload inline images, or video iframes using Blazy."
+msgstr "Отложенная загрузка встроенных изображений и iframe с видео с помощью Blazy."
+
+msgid "Image to iframe"
+msgstr "Изображение в iframe"
+
+msgid "Fallback (Responsive) image style when <code>[data-image-style]</code> or <code>[data-responsive-image-style]</code> attributes are not present, see https://drupal.org/node/2061377."
+msgstr "Резервный (адаптивный) стиль изображений, если атрибуты <code>[data-image-style]</code> или <code>[data-responsive-image-style]</code> не указаны, см. https://drupal.org/node/2061377."
+
+msgid "Caption filter"
+msgstr "Фильтр заголовка"
+
+msgid "Will fallback to this view mode, else entity label."
+msgstr "Это резервный режим просмотра; также учитывается метка сущности. "
+
+msgid "Load and play video."
+msgstr "Загрузить и воспроизвести видео."
+
+msgid "Stop and close video."
+msgstr "Остановить и закрыть видео."
+
+msgid "Load and play the video \"@label\"."
+msgstr "Загрузить и воспроизвести видео \"@label\"."
+
+msgid "Stop and close the video \"@label\"."
+msgstr "Остановить и закрыть видео \"@label\"."
+

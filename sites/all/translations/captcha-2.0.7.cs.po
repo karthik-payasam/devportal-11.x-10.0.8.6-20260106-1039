@@ -1,0 +1,755 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "The answer you entered for the CAPTCHA was not correct."
+msgstr "Odpověď, kterou jste zadali pro CAPTCHA, je nesprávná. "
+
+msgid "About"
+msgstr "Popis"
+
+msgid "\"CAPTCHA\" is an acronym for \"Completely Automated Public Turing test to tell Computers and Humans Apart\". It is typically a challenge-response test to determine whether the user is human. The CAPTCHA module is a tool to fight automated submission by malicious users (spamming) of for example comments forms, user registration forms, guestbook forms, etc. You can extend the desired forms with an additional challenge, which should be easy for a human to solve correctly, but hard enough to keep automated scripts and spam bots out."
+msgstr "\"CAPTCHA\" je zkratka pro anglický výraz \"Completely Automated Public Turing test to tell Computers and Humans Apart\" (Zcela automatizovaný veřejný Turingův test odlišující počítače od lidských jedinců). Obvykle jde o test reakce na výzvu, který má stanovit, zda je uživatelem člověk. Modul CAPTCHA je nástroj, který má odradit od automatizovaného odesílání dat zlomyslnými osobami (spam), například u komentářových formulářů, formulářů pro registraci uživatelů, formulářů seznamu hostů atd. Požadované formuláře můžete doplnit o další výzvu, jejíž řešení je snadné pro člověka, ale dostatečně obtížné pro automatické skripty a spamovací roboty."
+
+msgid "Note that the CAPTCHA module interacts with page caching (see <a href=\":performancesettings\">performance settings</a>). Because the challenge should be unique for each generated form, the caching of the page it appears on is prevented. Make sure that these forms do not appear on too many pages or you will lose much caching efficiency. For example, if you put a CAPTCHA on the user login block, which typically appears on each page for anonymous visitors, caching will practically be disabled. The comment submission forms are another example. In this case you should set the <em>Location of comment submission form</em> to <em>Display on separate page</em> in the comment settings of the relevant <a href=\":contenttypes\">content types</a> for better caching efficiency."
+msgstr "Mějte na zřeteli, že modul CAPTCHA interaguje s mezipamětí stránky (viz <a href=\":performancesettings\">nastavení výkonu</a>). Protože výzva musí být jedinečná pro každý vygenerovaný formulář, nelze pro stránku, na které se takováto výzva zobrazuje, použít mezipaměť. Zajistěte, aby se tyto formuláře nevyskytovali na příliš vysokém počtu stránek. Jinak totiž může dojít k výraznému poklesu efektivity používání mezipaměti. Pokud například vložíte CAPTCHA do bloku přihlášení uživatele, který se obvykle objevuje na každé stránce pro anonymní návštěvníky, použití mezipaměti tak prakticky zrušíte. Dalším příkladem jsou formuláře pro odesílání komentářů. V tomto případě musíte pro volbu <em>Umístění formuláře k odeslání komentáře</em> nastavit hodnotu <em>Zobrazit na samostatné stránce</em> v nastavení komentáře příslušných <a href=\":contenttypes\">typů obsahu</a>, a zajistit tak vyšší efektivitu využití mezipaměti."
+
+msgid "CAPTCHA is a trademark of Carnegie Mellon University."
+msgstr "CAPTCHA je ochranná známka Univerzity Carnegie Mellon"
+
+msgid "A CAPTCHA can be added to virtually any Drupal form, through adding an affiliated <em>CAPTCHA Point</em>. Some default <em>CAPTCHA Points</em> are already provided in the <em>CAPTCHA Point</em> section, but arbitrary forms can be easily added and managed."
+msgstr "CAPTCHA lze přidat prakticky do libovolného formuláře Drupal prostřednictvím přidání přidruženého bodu <em>CAPTCHA</em>. Některé výchozí body <em>CAPTCHA</em> jsou již k dispozici v sekci bodu <em>CAPTCHA</em>, ale lze snadno přidávat a spravovat libovolné formuláře."
+
+msgid "Users with the <em>Skip CAPTCHA</em> <a href=\":perm\">permission</a> won't be offered a challenge. Be sure to grant this permission to the trusted users (e.g. site administrators). If you want to test a protected form, be sure to do it as a user without the <em>Skip CAPTCHA</em> permission (e.g. as anonymous user)."
+msgstr "Uživatelům s oprávněním <em>Vynechat CAPTCHA</em> <a href=\":perm\"></a> se výzva nezobrazuje. Udělte toto oprávnění důvěryhodným uživatelům (např. správcům webu). Chcete-li otestovat určitý chráněný formulář, učiňte tak jako uživatel bez oprávnění <em>Vynechat CAPTCHA</em> (např. jako anonymní uživatel)."
+
+msgid "Note that the CAPTCHA module disables <a href=\":performancesettings\">page caching</a> of pages that include a CAPTCHA challenge."
+msgstr "Mějte na zřeteli, že modul CAPTCHA deaktivuje <a href=\":performancesettings\">ukládání stránky do mezipaměti</a> pro stránky obsahující výzvu CAPTCHA."
+
+msgid "CAPTCHA"
+msgstr "CAPTCHA"
+
+msgid "CAPTCHA: challenge \"@type\" enabled"
+msgstr "CAPTCHA: výzva \"@type\" je povolena"
+
+msgid "CAPTCHA: challenge \"@type\" disabled"
+msgstr "CAPTCHA: výzva \"@type\" je zakázána"
+
+msgid "Users without the \"skip CAPTCHA\" permission will see a CAPTCHA here (<a href=\"@settings\">general CAPTCHA settings</a>)."
+msgstr "Uživatelé bez oprávnění \"skip CAPTCHA\" zde uvidí CAPTCHA (<a href=\"@settings\">obecná nastavení CAPTCHA</a>)."
+
+msgid "CAPTCHA disabled, Untrusted users won't see the captcha (<a href=\"@settings\">general CAPTCHA settings</a>)."
+msgstr "CAPTCHA je zakázána. Nedůvěryhodným uživatelům se CAPTCHA nezobrazí (<a href=\"@settings\">obecná nastavení CAPTCHA</a>)."
+
+msgid "Enabled challenge"
+msgstr "Povolené testy"
+
+msgid "change"
+msgstr "změna"
+
+msgid "CAPTCHA: no challenge enabled"
+msgstr "CAPTCHA: žádné testy nejsou aktivní"
+
+msgid "Place a CAPTCHA here for untrusted users."
+msgstr "Zde umístěte prvek CAPTCHA pro nedůvěryhodné uživatele."
+
+msgid "Most CAPTCHA methods will disable the caching of pages that contain a CAPTCHA element. Check the different implementations to know more about how it affects caching."
+msgstr "Většina metod CAPTCHA deaktivuje ukládání do mezipaměti pro stránky obsahující prvek CAPTCHA. Podívejte se na různé implementace a zjistěte více o tom, jak to ovlivňuje ukládání do mezipaměti."
+
+msgid "Captcha is currently disabled via settings.php."
+msgstr "Captcha je v současné době zakázán prostřednictvím settings.php."
+
+msgid "CAPTCHA configuration error: Contact the site administrator."
+msgstr "Chyba konfigurace CAPTCHA: Obraťte se na administrátora webu."
+
+msgid "CAPTCHA validation error: unknown CAPTCHA session ID. Contact the site administrator if this problem persists."
+msgstr "Chyba ověření platnosti CAPTCHA: neznámé ID relace CAPTCHA. Pokud tento problém přetrvává, obraťte se na správce serveru."
+
+msgid "Math question"
+msgstr "Matematický příklad"
+
+msgid "Solve this simple math problem and enter the result. E.g. for 1+3, enter 4."
+msgstr "Vyřešte tento jednoduchý matematický příklad a vložte výsledek. Např. pro 1+3 vložte 4."
+
+msgid "@x + @y ="
+msgstr "@x + @y ="
+
+msgid "Test one two three"
+msgstr "Test jedna dvě tři "
+
+msgid "CAPTCHA session reuse attack detected on @form_id <br/>Posted CAPTCHA token: @posted_captcha_token <br/>Expected captcha token: @expected_captcha_token"
+msgstr "Byl zjištěn útok opětovného použití relace CAPTCHA v @form_id <br/>Vystavený token CAPTCHA: @posted_captcha_token <br/>Očekávaný token captcha: @expected_captcha_token"
+
+msgid "%form_id post blocked by CAPTCHA module: challenge %challenge (by module %module)."
+msgstr "Odeslání %form_id bylo zablokováno modulem CAPTCHA: výzva %challenge (provedená modulem %module)."
+
+msgid "%form_id post blocked by CAPTCHA module: challenge %challenge (by module %module), user answered \"@response\", but the solution was \"@solution\"."
+msgstr "Odeslání %form_id bylo zablokováno modulem CAPTCHA: výzva %challenge (provedená modulem %module), uživatel odpověděl \"@response\", ale správné řešení je \"@solution\"."
+
+msgid "CAPTCHA validation error: unknown CAPTCHA session ID (%csid)."
+msgstr "Chyba ověření platnosti CAPTCHA: neznámé ID relace CAPTCHA (%csid)."
+
+msgid "CAPTCHA configuration error: cacheable CAPTCHA type %challenge did not provide a validation function."
+msgstr "Chyba konfigurace CAPTCHA: typ CAPTCHA uložitelný do paměti %challenge neposkytl funkci ověření platnosti."
+
+msgid "Already 1 blocked form submission"
+msgid_plural "Already @count blocked form submissions"
+msgstr[0] "Již bylo zablokováno 1 odeslání formuláře"
+msgstr[1] "Již bylo zablokováno @count odeslání formuláře"
+msgstr[2] "Již bylo zablokováno @count odeslání formuláře"
+
+msgid "Provides the CAPTCHA API for adding challenges to arbitrary forms."
+msgstr "Poskytuje rozhraní API CAPTCHA pro přidávání výzev do libovolných formulářů."
+
+msgid "Spam control"
+msgstr "Kontrola nevyžádané komunikace"
+
+msgid "Add Captcha Point"
+msgstr "Přidat bod Captcha"
+
+msgid "CAPTCHA settings"
+msgstr "Nastavení CAPTCHA"
+
+msgid "CAPTCHA examples"
+msgstr "Příklady CAPTCHA"
+
+msgid "Administer CAPTCHA settings"
+msgstr "Administrace CAPTCHA nastavení"
+
+msgid "Overview of the available CAPTCHA challenge types with examples'"
+msgstr "Přehled dostupných typů výzev CAPTCHA s příklady'"
+
+msgid "CAPTCHA Settings"
+msgstr "Nastavení CAPTCHA"
+
+msgid "CAPTCHA Examples"
+msgstr "Příklady CAPTCHA"
+
+msgid "Captcha Points"
+msgstr "Body Captcha"
+
+msgid "Skip CAPTCHA"
+msgstr "Přeskočit CAPTCHA"
+
+msgid "Users with this permission will not be offered a CAPTCHA."
+msgstr "Uživatelům s tímto oprávněním nebude nabízen CAPTCHA."
+
+msgid "CAPTCHA configuration"
+msgstr "Konfigurace CAPTCHA"
+
+msgid "Add CAPTCHA point"
+msgstr "Přidat bod CAPTCHA"
+
+msgid "Edit CAPTCHA point"
+msgstr "Upravit bod CAPTCHA"
+
+msgid "Disable CAPTCHA point"
+msgstr "Vypnout bod CAPTCHA"
+
+msgid "Enable CAPTCHA point"
+msgstr "Zapnout bod CAPTCHA"
+
+msgid "Delete CAPTCHA point"
+msgstr "Odstranit bod CAPTCHA"
+
+msgid "CAPTCHA point"
+msgstr "Bod CAPTCHA"
+
+msgid "Form ID"
+msgstr "ID formuláře"
+
+msgid "Captcha Type"
+msgstr "Typ Captcha"
+
+msgid "Label"
+msgstr "Popisek"
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "Add captcha to all forms."
+msgstr "Přidejte obrázek CAPTCHA do všech formulářů."
+
+msgid "Additionally add captcha to admin forms."
+msgstr "Navíc přidejte captcha do formulářů administrátora."
+
+msgid "The default challenge for captcha."
+msgstr "Výchozí výzva pro captcha."
+
+msgid "The default captcha description."
+msgstr "Výchozí popis captcha."
+
+msgid "The default captcha title."
+msgstr "Výchozí název captcha."
+
+msgid "Add CAPTCHA administration links to forms"
+msgstr "Přidat k formulářům odkaz na CAPTCHA administraci"
+
+msgid "Additionally add administration links on admin pages"
+msgstr "Dále přidat odkazy na administraci na stránkách administrátora"
+
+msgid "IP addresses list"
+msgstr "Seznam adres IP"
+
+msgid "The error message when a user has entered an incorrect CAPTCHA answer."
+msgstr "Chybová zpráva, když uživatel zadal nesprávnou odpověď CAPTCHA."
+
+msgid "Default CAPTCHA validation"
+msgstr "Výchozí ověření CAPTCHA"
+
+msgid "CAPTCHA Persistence"
+msgstr "Perzistence CAPTCHA"
+
+msgid "Enable statistics"
+msgstr "Povolit statistiku"
+
+msgid "Log wrong responses"
+msgstr "Zaznamenávat chybné odpovědi"
+
+msgid "The image CAPTCHA is a popular challenge where a random textual code is obfuscated in an image. The image is generated on the fly for each request, which is rather CPU intensive for the server. Be careful with the size and computation related settings."
+msgstr "Obrázková CAPTCHA je oblíbená výzva, v jejímž rámci je náhodný text skryt do obrázku. Obrázek se generuje dynamicky pro jednotlivé požadavky, což klade vyšší nároky na výpočetní výkon serveru. Velikost a nastavení související s výpočtem nastavujte obezřetně."
+
+msgid "Image CAPTCHA"
+msgstr "Obrázkové CAPTCHA"
+
+msgid "What code is in the image?"
+msgstr "Jaký kód je na obrázku?"
+
+msgid "Enter the characters shown in the image."
+msgstr "Vložte znaky zobrazené na obrázku."
+
+msgid "Encountered an illegal byte while splitting an utf8 string in characters."
+msgstr "Byl zjištěn nepřípustný bajt při rozdělování řetězce UTF8 na znaky."
+
+msgid "Provides an image based CAPTCHA."
+msgstr "Poskytuje obrázkové CAPTCHA."
+
+msgid "Image Captcha"
+msgstr "Obrázek Captcha"
+
+msgid "Configure Image Captcha Settings."
+msgstr "Nakonfigurujte nastavení obrázku Captcha."
+
+msgid "Image Captcha settings"
+msgstr "Nastavení obrázku Captcha"
+
+msgid "Font preview map cache"
+msgstr "Mezipaměť mapování náhledu písma"
+
+msgid "Uri"
+msgstr "Uri"
+
+msgid "Filename"
+msgstr "Název souboru"
+
+msgid "Name"
+msgstr "Jméno"
+
+msgid "Fonts"
+msgstr "Fonty"
+
+msgid "Font filepath"
+msgstr "Cesta k souboru písma"
+
+msgid "Font Size in Image Captcha"
+msgstr "Velikost písma v obrázku Captcha"
+
+msgid "Spacing between characters"
+msgstr "Rozestupy mezi znaky"
+
+msgid "String with allowed characters"
+msgstr "Řetězec s povolenými znaky"
+
+msgid "Captcha code length"
+msgstr "Délka textu Captcha"
+
+msgid "Right to left support"
+msgstr "Podpora zprava doleva"
+
+msgid "Hexadecimal background color code"
+msgstr "Hexadecimální kód barvy pozadí"
+
+msgid "Hexadecimal foreground color code"
+msgstr "Hexadecimální kód barvy popředí"
+
+msgid "Background color randomness"
+msgstr "Náhodnost barvy pozadí"
+
+msgid "File format"
+msgstr "Formát souboru"
+
+msgid "Distortion amplitude"
+msgstr "Amplituda zkreslení"
+
+msgid "Bilinear interpolation"
+msgstr "Bilineární interpolace"
+
+msgid "Dot noise"
+msgstr "Bodový šum"
+
+msgid "Line noise"
+msgstr "Čárový šum"
+
+msgid "Noise level"
+msgstr "Úroveň šumu"
+
+msgid "Generation of image CAPTCHA failed. Check your image CAPTCHA configuration and especially the used font."
+msgstr "Vygenerování obrázkového CAPTCHA se nezdařilo. Zkontrolujte svou konfiguraci obrázkového CAPTCHA a zejména použité písmo."
+
+msgid "Error has occurred. Please contact to site administrator."
+msgstr "Došlo k chybě. Obraťte se na správce serveru."
+
+msgid "The Image CAPTCHA module can not generate images because your PHP setup does not support it (no <a href=\"!gdlib\" target=\"_blank\">GD library</a> with JPEG support)."
+msgstr "Modul obrázkového CAPTCHA není schopen generovat obrázky, protože váš systém PHP tuto funkci nepodporuje (chybí <a href=\"!gdlib\" target=\"_blank\">knihovna GD</a> s podporou formátu JPEG)."
+
+msgid "Example"
+msgstr "Příklad"
+
+msgid "Presolved image CAPTCHA example, generated with the current settings."
+msgstr "Příklad vyřešeného obrázku CAPTCHA vygenerovaného s použitím aktuálního nastavení."
+
+msgid "Code settings"
+msgstr "Nastavení kódu"
+
+msgid "Characters to use in the code"
+msgstr "Znaky, které se mají použít v kódu"
+
+msgid "Code length"
+msgstr "Délka kódu"
+
+msgid "The code length influences the size of the image. Note that larger values make the image generation more CPU intensive."
+msgstr "Délka textu ovlivňuje velikost obrázku. Mějte na zřeteli, že vyšší hodnoty zvyšují výpočetní náročnost generování obrázku."
+
+msgid "RTL support"
+msgstr "Podpora RTL"
+
+msgid "Enable this option to render the code from right to left for right to left languages."
+msgstr "Tuto volbu povolte, chcete-li text vykreslovat zprava doleva. "
+
+msgid "Color and image settings"
+msgstr "Nastavení obrázku a barvy"
+
+msgid "Configuration of the background, text colors and file format of the image CAPTCHA."
+msgstr "Konfigurace pozadí, barvy textu a formátu souboru obrázku CAPTCHA."
+
+msgid "Background color"
+msgstr "Barva pozadí"
+
+msgid "Enter the hexadecimal code for the background color (e.g. #FFF or #FFCE90). When using the PNG file format with transparent background, it is recommended to set this close to the underlying background color."
+msgstr "Zadejte hexadecimální kód pro barvu pozadí (např. #FFF nebo #FFCE90). Při použití souborového formátu PNG s transparentním pozadím doporučujeme nastavit tuto volbu blízko použité barvy pozadí."
+
+msgid "Text color"
+msgstr "Barva textu"
+
+msgid "Enter the hexadecimal code for the text color (e.g. #000 or #004283)."
+msgstr "Zadejte hexadecimální kód pro barvu textu (např. #000 nebo #004283)."
+
+msgid "Additional variation of text color"
+msgstr "Další varianty barvy textu"
+
+msgid "No variation"
+msgstr "Bez variace"
+
+msgid "Little variation"
+msgstr "Malá variace"
+
+msgid "Medium variation"
+msgstr "Středně velká variace"
+
+msgid "High variation"
+msgstr "Vysoká variace"
+
+msgid "Very high variation"
+msgstr "Velmi vysoká variace"
+
+msgid "The different characters will have randomized colors in the specified range around the text color."
+msgstr "Různé znaky budou mít náhodné barvy v zadaném rozsahu okolo barvy textu."
+
+msgid "Select the file format for the image. JPEG usually results in smaller files, PNG allows transparency."
+msgstr "Vyberte formát souboru pro obrázek. JPEG obvykle vede k menším souborům, PNG umožňuje průhlednost."
+
+msgid "JPEG"
+msgstr "JPEG"
+
+msgid "PNG"
+msgstr "PNG"
+
+msgid "PNG with transparent background"
+msgstr "PNG s transparentním pozadím"
+
+msgid "Distortion and noise"
+msgstr "Deformace a šum"
+
+msgid "With these settings you can control the degree of obfuscation by distortion and added noise. Do not exaggerate the obfuscation and assure that the code in the image is reasonably readable. For example, do not combine high levels of distortion and noise."
+msgstr "Pomocí těchto nastavení můžete ovládat stupeň znečitelnění použitím zkreslení a rušivých prvků. Znečitelnění nepřežeňte a zajistěte, aby byl text v obrázku v rozumné míře čitelný. Například nekombinujte vysokou úroveň zkreslení a vysokou úroveň rušivých prvků."
+
+msgid "Distortion level"
+msgstr "Úroveň zkreslení"
+
+msgid "@level - no distortion"
+msgstr "@level - bez zkreslení"
+
+msgid "@level - low"
+msgstr "@level - nízká"
+
+msgid "@level - medium"
+msgstr "@level - střední"
+
+msgid "@level - high"
+msgstr "@level - vysoká"
+
+msgid "Set the degree of wave distortion in the image."
+msgstr "Nastavte stupeň vlnového zkreslení obrázku."
+
+msgid "Smooth distortion"
+msgstr "Plynulé zkreslení"
+
+msgid "This option enables bilinear interpolation of the distortion which makes the image look smoother, but it is more CPU intensive."
+msgstr "Tato volba umožňuje bilineární interpolaci zkreslení, která posiluje plynulost obrázku, ale má větší výpočetní nároky."
+
+msgid "Add salt and pepper noise"
+msgstr "Přidat šum typu sůl a pepř"
+
+msgid "This option adds randomly colored point noise."
+msgstr "Tato volba přidává náhodně obarvené rušivé body."
+
+msgid "Add line noise"
+msgstr "Přidat čárový šum"
+
+msgid "This option enables lines randomly drawn on top of the text code."
+msgstr "Tato volba umožňuje náhodné vykreslení čar přes text."
+
+msgid "low"
+msgstr "nízká"
+
+msgid "medium"
+msgstr "střední"
+
+msgid "high"
+msgstr "vysoká"
+
+msgid "severe"
+msgstr "silné"
+
+msgid "Text Content"
+msgstr "Textový obsah"
+
+msgid "Customize image CAPTCHA text content."
+msgstr "Upravte textový obsah obrázku CAPTCHA."
+
+msgid "Refresh button text."
+msgstr "Obnovte text tlačítka."
+
+msgid "Customize the refresh button text."
+msgstr "Upravte text tlačítka obnovení."
+
+msgid "The list of characters to use should not contain spaces."
+msgstr "Seznam znaků, které mají být použity, nesmí obsahovat mezery."
+
+msgid "You need to select at least one font."
+msgstr "Musíte vybrat nejméně jedno písmo."
+
+msgid "The built-in font only supports Latin2 characters. Only use \"a\" to \"z\" and numbers."
+msgstr "Vestavěné písmo podporuje pouze znaky Latin2. Použijte pouze znaky \"a\" až \"z\" a čísla."
+
+msgid "The following fonts are not readable: %fonts."
+msgstr "Tato písma nelze číst: %fonts."
+
+msgid "Background color is not a valid hexadecimal color value."
+msgstr "Pro barvu pozadí byla zadána neplatná hexadecimální hodnota barvy."
+
+msgid "Text color is not a valid hexadecimal color value."
+msgstr "Pro barvu textu byla zadána neplatná hexadecimální hodnota barvy."
+
+msgid "Font settings"
+msgstr "Nastavení fontu"
+
+msgid "No TrueType support"
+msgstr "Bez podpory TrueType"
+
+msgid "The Image CAPTCHA module can not use TrueType fonts because your PHP setup does not support it. You can only use a PHP built-in bitmap font of fixed size."
+msgstr "Modul obrázkového CAPTCHA není schopen používat písma TrueType, protože vaše instalace PHP tato písma nepodporuje. Používat můžete pouze bitmapové písmo pevné velikosti, které je součástí PHP."
+
+msgid "Font preview of @font (@file)"
+msgstr "Náhled fontu @font (@file)"
+
+msgid "Preview of built-in font"
+msgstr "Náhled vestavěného fontu"
+
+msgid "PHP built-in font: <img src=\"@font_preview_url\" alt=\"@title\" title=\"@title\">"
+msgstr "Vestavěné písmo PHP: <img src=\"@font_preview_url\" alt=\"@title\" title=\"@title\">"
+
+msgid "Select the fonts to use for the text in the image CAPTCHA. Apart from the provided defaults, you can also use your own TrueType fonts (filename extension .ttf) by putting them in %fonts_library_general or %fonts_library_specific."
+msgstr "Vyberte písma, která se použijí k zobrazení textu v obrázkovém CAPTCHA. Kromě poskytnutých výchozích písem můžete použít svá vlastní písma TrueType (přípona názvu souboru .ttf) jejich vložením do %fonts_library_general nebo %fonts_library_specific."
+
+msgid "Font size"
+msgstr "Velikost fontu"
+
+msgid "tiny"
+msgstr "velmi malé"
+
+msgid "small"
+msgstr "malé"
+
+msgid "normal"
+msgstr "normální"
+
+msgid "large"
+msgstr "velké"
+
+msgid "extra large"
+msgstr "extra velké"
+
+msgid "The font size influences the size of the image. Note that larger values make the image generation more CPU intensive."
+msgstr "Velikost písma ovlivňuje velikost obrázku. Mějte na zřeteli, že vyšší hodnoty zvyšují výpočetní náročnost generování obrázku."
+
+msgid "Character spacing"
+msgstr "Rozestup znaků"
+
+msgid "Define the average spacing between characters. Note that larger values make the image generation more CPU intensive."
+msgstr "Definujte průměrný rozestup znaků. Mějte na zřeteli, že vyšší hodnoty zvyšují výpočetní náročnost generování obrázku."
+
+msgid "tight"
+msgstr "úzký"
+
+msgid "wide"
+msgstr "široký"
+
+msgid "extra wide"
+msgstr "extra široký"
+
+msgid "Get new captcha!"
+msgstr "Získat nový obrázek CAPTCHA!"
+
+msgid "Missing required form ID on route @route"
+msgstr "Chybí požadované ID formuláře na trase @route"
+
+msgid "Generate new CAPTCHA image"
+msgstr "Generovat nový obrázek CAPTCHA"
+
+msgid "CAPTCHA problem: unexpected result from hook_captcha() of module %module when trying to retrieve challenge type %type for form %form_id."
+msgstr "Problém CAPTCHA: neočekávaný výsledek z hook_captcha() modulu %module při pokusu o načtení výzvy typu %type pro formulář %form_id."
+
+msgid "Captcha Point"
+msgstr "Bod Captcha"
+
+msgid "Captcha Point form ID"
+msgstr "ID formuláře bodu Captcha"
+
+msgid "Captcha Point challenge type"
+msgstr "Typ výzvy bodu Captcha"
+
+msgid "Status"
+msgstr "Stav"
+
+msgid "Enabled"
+msgstr "Zapnuto"
+
+msgid "Disabled"
+msgstr "Vypnuto"
+
+msgid "This page gives an overview of all available challenge types, generated with their current settings."
+msgstr "Tato stránka poskytuje přehled všech dostupných typů výzev, které se generují s použitím jejich aktuálních nastavení. "
+
+msgid "Challenge %challenge by module %module"
+msgstr "Výzva %challenge modulu %module"
+
+msgid "10 more examples of this challenge."
+msgstr "Dalších 10 příkladů tohoto testu."
+
+msgid "Are you sure you want to delete %name?"
+msgstr "Opravdu smazat %name?"
+
+msgid "Delete"
+msgstr "Smazat"
+
+msgid "Captcha point %label has been deleted."
+msgstr "Bod Captcha %label byl odstraněn."
+
+msgid "Are you sure you want to disable the Captcha?"
+msgstr "Opravdu chcete vypnout Captcha?"
+
+msgid "This will disable the captcha."
+msgstr "Dojde k deaktivaci Captcha."
+
+msgid "Disable"
+msgstr "Vypnout"
+
+msgid "Captcha point %label has been disabled."
+msgstr "Bod Captcha %label byl deaktivován."
+
+msgid "Are you sure you want to enable the Captcha?"
+msgstr "Opravdu chcete aktivovat Captcha?"
+
+msgid "This will enable the captcha."
+msgstr "Dojde k aktivaci Captcha."
+
+msgid "Enable"
+msgstr "Zapnout"
+
+msgid "Captcha point %label has been enabled."
+msgstr "Bod Captcha %label byl aktivován."
+
+msgid "Also works with the base form ID."
+msgstr "Také pracuje s ID základního formuláře."
+
+msgid "Challenge type"
+msgstr "Typ testu"
+
+msgid "The CAPTCHA type to use for this form."
+msgstr "Typ CAPTCHA, který má být použit pro tento formulář."
+
+msgid "Captcha Point for %form_id form was created."
+msgstr "Byl vytvořen bod Captcha pro formulář %form_id."
+
+msgid "Captcha Point for %form_id form was updated."
+msgstr "Byl aktualizován bod Captcha pro formulář %form_id."
+
+msgid "Default challenge type"
+msgstr "Výchozí typ testu"
+
+msgid "Select the default <em>CAPTCHA Point</em> challenge type. This can be overridden for each <em>CAPTCHA Point</em> individually."
+msgstr "Vyberte výchozí typ výzvy bodu <em>CAPTCHA</em>. Tuto hodnotu lze přepsat pro každý bod <em>CAPTCHA</em> jednotlivě."
+
+msgid "Add CAPTCHA challenges on all forms"
+msgstr "Přidat výzvy CAPTCHA do všech formulářů"
+
+msgid "Adds CAPTCHA to all Drupal forms, regardless of the Captcha Points list. Note, that the captcha point <em>default challenge</em> will be used as the challenge type for the created CAPTCHA challenges."
+msgstr "Přidá CAPTCHA do všech formulářů Drupal bez ohledu na seznam bodů Captcha. Všimněte si, že se <em>výchozí výzva</em> bodu captcha použije jako typ výzvy pro vytvořené výzvy CAPTCHA."
+
+msgid "Additionally add CAPTCHA challenges on admin forms"
+msgstr "Dále přidejte výzvy CAPTCHA na formulářích administrátora"
+
+msgid "Add CAPTCHA administration information to forms"
+msgstr "Přidat informace o administraci CAPTCHA do formulářů"
+
+msgid "This option makes it easy to manage CAPTCHA settings on forms. When enabled, users with the <em>administer CAPTCHA settings</em> permission will see a fieldset with CAPTCHA administration links and informations on all forms, except on administrative pages."
+msgstr "Tato volba usnadňuje správu nastavení CAPTCHA ve formulářích. Je-li tato volba povolena, uživatelé s oprávněním <em>spravovat nastavení CAPTCHA</em> uvidí sadu polí s odkazy na administraci CAPTCHA a informacemi na formulářích, s výjimkou administrativních stránek."
+
+msgid "Additionally add administration informations on admin pages"
+msgstr "Dále přidejte informace o administraci na stránkách administrátora"
+
+msgid "Typically this isn't needed. In some situations, e.g. in the case of demo sites, it can be useful to allow CAPTCHAs on administrative pages."
+msgstr "Obvykle to není potřeba. V některých situacích, např. v případě demo verzí stránek, může být užitečné povolit CAPTCHA na administrativních stránkách."
+
+msgid "Whitelisted IP Addresses"
+msgstr "Seznam povolených adres IP"
+
+msgid "Enter the IP addresses or IP address ranges you wish to whitelist. All CAPTCHA challenges will be skipped for these IP addresses."
+msgstr "Zadejte adresy IP nebo rozsahy adres IP, které chcete umístit na seznam povolených adres. Všechny výzvy CAPTCHA budou pro tyto adresy IP vynechány."
+
+msgid "Enter one IP-address per row in the format XXX.XXX.XXX.XXX. Alternatively you can also define IP-address ranges per row in the format XXX.XXX.XXX.YYY-XXX.XXX.XXX.ZZZ. No spaces allowed. Your current IP address is %ip_address."
+msgstr "Zadejte jednu adresu IP na řádek ve formátu XXX.XXX.XXX.XXX. Volitelně můžete také definovat rozsahy adres IP na řádek ve formátu XXX.XXX.XXX.YYY-XXX.XXX.XXX.ZZZ. Nejsou povoleny žádné mezery. Vaše aktuální adresa IP je %ip_address."
+
+msgid "CAPTCHA placement caching"
+msgstr "Ukládání umístění CAPTCHA do mezipaměti"
+
+msgid "For efficiency, the positions of the CAPTCHA elements in each of the configured forms are cached. Most of the time, the structure of a form does not change and it would be a waste to recalculate the positions every time. Occasionally however, the form structure can change (e.g. during site building) and clearing the CAPTCHA placement cache can be required to fix the CAPTCHA placement."
+msgstr "Kvůli účinnosti se polohy prvků CAPTCHA v jednotlivých nakonfigurovaných formulářích ukládají do mezipaměti. Většinou se struktura formuláře nemění, a proto by přepočítávání pokaždé bylo ztrátou času. Nicméně občas se struktura formuláře změnit může (např. při sestavování webu) a vymazání mezipaměti umístění CAPTCHA může být zapotřebí k opravě umístění CAPTCHA."
+
+msgid "Clear the CAPTCHA placement cache"
+msgstr "Vymazat mezipaměť umístění CAPTCHA"
+
+msgid "Challenge title"
+msgstr "Název výzvy"
+
+msgid "Configure the title for the CAPTCHA form. Leave empty to show no title. Default: \"@title_default\""
+msgstr "Nakonfigurujte název pro formulář CAPTCHA. Nechcete-li zobrazit žádný název, ponechte pole prázdné. Výchozí nastavení: \"@title_default\""
+
+msgid "Challenge description"
+msgstr "Popis testu"
+
+msgid "Configurable description of the CAPTCHA. Leave empty to show no description. Default: \"@description_default\""
+msgstr "Konfigurovatelný popis CAPTCHA. Nechcete-li zobrazit žádný popis, ponechte pole prázdné. Výchozí nastavení: \"@description_default\""
+
+msgid "This question is for testing whether or not you are a human visitor and to prevent automated spam submissions."
+msgstr "Tato otázka je pro testování, zda jste či nejste lidským návštěvníkem a pro prevenci automatizovaných spamových příspěvků."
+
+msgid "Wrong CAPTCHA response error message"
+msgstr "Nesprávná chybová zpráva odezvy CAPTCHA"
+
+msgid "Configurable error message that the user gets when it enters an incorrect CAPTCHA answer."
+msgstr "Konfigurovatelná chybová zpráva, kterou uživatel dostane, když zadá nesprávnou odezvu CAPTCHA."
+
+msgid "Define how the response should be processed by default. Note that the modules that provide the actual challenges can override or ignore this."
+msgstr "Definujte, jak má být standardně zpracovávána odezva. Mějte na zřeteli, že moduly, které poskytují dané výzvy, mohou toto nastavení potlačit nebo ignorovat."
+
+msgid "Case sensitive validation: the response has to exactly match the solution."
+msgstr "Rozlišovat velikost písmen: odpověď musí přesně souhlasit se zadáním."
+
+msgid "Case insensitive validation: lowercase/uppercase errors are ignored."
+msgstr "Nerozlišovat velikost písmen: chyby v malých/velkých písmenech jsou ignorovány."
+
+msgid "Persistence"
+msgstr "Perzistence"
+
+msgid "Always add a challenge."
+msgstr "Vždy přidat test."
+
+msgid "Omit challenges in a multi-step/preview workflow once the user successfully responds to a challenge."
+msgstr "Vynechání výzev ve vícekrokovém/náhledovém sledu prací po úspěšném reagování uživatele na výzvu."
+
+msgid "Omit challenges on a form type once the user successfully responds to a challenge on a form of that type."
+msgstr "Vynechat výzvy v určitém typu formuláře poté, co uživatel úspěšně odpoví na výzvu ve formuláři dotyčného typu."
+
+msgid "Omit challenges on all forms once the user successfully responds to any challenge on the site."
+msgstr "Přeskočit testy ve všech formulářích, pokud uživatel šprávně odpověděl na jakýkoli test na stránce."
+
+msgid "Define if challenges should be omitted during the rest of a session once the user successfully responds to a challenge."
+msgstr "Definujte, zda mají být výzvy vynechány ve zbytku relace poté, co uživatel úspěšně odpoví na výzvu."
+
+msgid "Keep CAPTCHA related counters in the <a href=\":statusreport\">status report</a>. Note that this comes with a performance penalty as updating the counters results in clearing the variable cache."
+msgstr "Ponechat počítadla související s CAPTCHA ve <a href=\":statusreport\">zprávě o stavu</a>. Mějte na zřeteli, že toto nastavení vyvolává pokles výkonu, protože aktualizace počítadel vede k vymazání mezipaměti proměnných."
+
+msgid "Report information about wrong responses to the log."
+msgstr "Zapisovat informace o nesprávných odpovědích do protokolu."
+
+msgid "Report information about wrong responses to the <a href=\":dblog\">log</a>."
+msgstr "Zapisovat informace o nesprávných odpovědích do <a href=\":dblog\">protokolu</a>."
+
+msgid "Save configuration"
+msgstr "Uložit nastavení"
+
+msgid "IP address %ip_address is not valid."
+msgstr "Adresa IP %ip_address není platná."
+
+msgid "Lower IP address %ip_address in range %ip_range is not valid."
+msgstr "Dolní adresa IP %ip_address v rozsahu %ip_range není platná."
+
+msgid "Upper IP address %ip_address in range %ip_range is not valid."
+msgstr "Horní adresa IP %ip_address v rozsahu %ip_range není platná."
+
+msgid "Lower and upper IP addresses should be different. Please correct range %ip_range."
+msgstr "Dolní a horní adresa IP by měly být odlišné. Prosím opravte rozsah %ip_range."
+
+msgid "Lower IP can't be greater than upper IP addresses in range. Please correct range %ip_range."
+msgstr "Dolní adresa IP nemůže být větší než horní adresa IP v rozsahu. Prosím opravte rozsah %ip_range."
+
+msgid "The CAPTCHA settings have been saved."
+msgstr "Nastavení CAPTCHA byla uložena."
+
+msgid "Cleared the CAPTCHA placement cache."
+msgstr "Mezipaměť umístění CAPTCHA byla vymazána."
+
+msgid "The name of the form"
+msgstr "Název formuláře"
+
+msgid "The captcha point providing module."
+msgstr "Bod Captcha poskytující modul."
+
+msgid "The captcha type."
+msgstr "Typ captcha."
+
+msgid "@type (from module @module)"
+msgstr "@type (z modulu @module)"
+

@@ -1,0 +1,245 @@
+/********************************************************* {COPYRIGHT-TOP} ***
+ * Licensed Materials - Property of IBM
+ *
+ * (C) Copyright IBM Corporation 2021, 2025
+ *
+ * All Rights Reserved.
+ * US Government Users Restricted Rights - Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ ********************************************************** {COPYRIGHT-END} **/
+/** specific overrides for bluemix light and dark theme support **/
+
+.apiconnect-explorer .apim-portal-api {
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 2) 0%, rgba(255, 255, 255, 1) 50%, rgba(32, 52, 62, 1) 50%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 2) 0%, rgba(255, 255, 255, 1) 50%, rgba(32, 52, 62, 1) 50%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 2) 0%, rgba(255, 255, 255, 1) 50%, rgba(32, 52, 62, 1) 50%);
+}
+
+.cds--global-light-ui .apiconnect-explorer .apim-portal-api {
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 2) 0%, rgba(255, 255, 255, 1) 50%, rgba(245, 247, 250, 1) 50%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 2) 0%, rgba(255, 255, 255, 1) 50%, rgba(245, 247, 250, 1) 50%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 2) 0%, rgba(255, 255, 255, 1) 50%, rgba(245, 247, 250, 1) 50%);
+}
+
+/* hide stripes when interact collapsed */
+.apiconnect-explorer .apim-portal-api.interactNotVisible,
+.cds--global-light-ui .apiconnect-explorer .apim-portal-api.interactNotVisible {
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 2) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 50%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 2) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 50%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 2) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 50%);
+}
+
+.apiconnect-explorer input.ng-invalid.ng-touched {
+  box-shadow: 0 2px 0px 0px #ff5050;
+}
+
+.apiconnect-explorer .cds--text__input {
+  font-weight: inherit;
+}
+
+.apiconnect-explorer .cds--search__input {
+  color: #8c9ba5;
+}
+
+.apiconnect-api-explorer .documentation {
+  background-color: white;
+}
+
+.apiconnect-explorer .spinner:after {
+  background-color: #20343e;
+}
+
+.cds--global-light-ui .apiconnect-explorer .spinner:after {
+  background-color: #f5f7fa;
+}
+
+.apiconnect-explorer .documentation .spinner:after,
+.cds--global-light-ui .apiconnect-explorer .documentation .spinner:after {
+  background-color: #fff;
+}
+
+.apiconnect-api-explorer a {
+  color: #7cc7ff;
+}
+
+.cds--global-light-ui .apiconnect-api-explorer a {
+  color: #3d70b2;
+}
+
+.apiconnect-api-explorer .underlined:hover {
+  border-bottom: 3px solid #7cc7ff;
+}
+
+.cds--global-light-ui .apiconnect-api-explorer .underlined:hover {
+  border-bottom: 3px solid #3d70b2;
+}
+
+.apiconnect-explorer .interact code,
+.apiconnect-explorer .interact code.hljs {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cds--global-light-ui .apiconnect-explorer .interact code,
+.cds--global-light-ui .apiconnect-explorer .interact code.hljs {
+  background-color: rgba(61, 112, 178, 0.1);
+}
+
+.apiconnect-explorer .explorer-toc a.selected,
+.apiconnect-explorer .explorer-toc ul .tocItem a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cds--global-light-ui .apiconnect-explorer .explorer-toc ul .tocItem a:hover {
+  background-color: rgba(61, 112, 178, 0.1);
+}
+
+.apiconnect-explorer .contentSelectable,
+.apiconnect-explorer .explorer-toc .tocToggle {
+  color: #7cc7ff;
+}
+
+.apiconnect-explorer .explorer-toc .tocToggle.tocToggleSelected {
+  color: inherit;
+}
+
+.cds--global-light-ui .apiconnect-explorer .contentSelectable,
+.cds--global-light-ui .apiconnect-explorer .explorer-toc .tocToggle {
+  color: #3d70b2;
+}
+
+.cds--global-light-ui .apiconnect-explorer .explorer-toc .tocToggle.tocToggleSelected {
+  color: inherit;
+}
+
+.apiconnect-api-explorer .parametersSection .schema,
+.apiconnect-api-explorer .bodySection .schema,
+.apiconnect-api-explorer .responsesSection .schema,
+.apiconnect-api-explorer .responsesSection .example {
+  color: #7cc7ff;
+}
+
+.cds--global-light-ui .apiconnect-api-explorer .parametersSection .schema,
+.cds--global-light-ui .apiconnect-api-explorer .bodySection .schema,
+.cds--global-light-ui .apiconnect-api-explorer .responsesSection .schema,
+.cds--global-light-ui .apiconnect-api-explorer .responsesSection .example {
+  color: #3d70b2;
+}
+
+.apiconnect-explorer .spinner {
+  background: -webkit-linear-gradient(left, #7cc7ff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -moz-linear-gradient(left, #7cc7ff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #7cc7ff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #7cc7ff 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #7cc7ff 10%, rgba(255, 255, 255, 0) 42%);
+}
+
+.cds--global-light-ui .apiconnect-explorer .spinner {
+  background: -webkit-linear-gradient(left, #3d70b2 10%, rgba(255, 255, 255, 0) 42%);
+  background: -moz-linear-gradient(left, #3d70b2 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #3d70b2 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #3d70b2 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #3d70b2 10%, rgba(255, 255, 255, 0) 42%);
+}
+
+.apiconnect-explorer .spinner:before {
+  background-color: #7cc7ff;
+}
+
+.cds--global-light-ui .apiconnect-explorer .spinner:before {
+  background-color: #3d70b2;
+}
+
+.apiconnect-explorer button.iconOnlyButton:not(:disabled):hover,
+.apiconnect-explorer button.iconOnlyButton:not(:disabled):focus {
+  color: #7cc7ff;
+}
+
+.cds--global-light-ui .apiconnect-explorer button.iconOnlyButton:not(:disabled):hover,
+.cds--global-light-ui .apiconnect-explorer button.iconOnlyButton:not(:disabled):focus {
+  color: #3d70b2;
+}
+
+.apiconnect-api-explorer .langs-menu li {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cds--global-light-ui .apiconnect-api-explorer .langs-menu li {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.apiconnect-api-explorer .langs-menu li.current {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.cds--global-light-ui .apiconnect-api-explorer .langs-menu li.current {
+  background-color: rgba(61, 112, 178, 0.1);
+  border-bottom: 1px solid rgba(61, 112, 178, 0.1);
+}
+
+.apiconnect-api-explorer .langs-menu li a {
+  color: #fff;
+}
+
+.cds--global-light-ui .apiconnect-api-explorer .langs-menu li a {
+  color: #000;
+}
+
+.apiconnect-api-explorer .langtab {
+  border-top: 1px solid #dfe6eb;
+}
+
+.cds--global-light-ui .apiconnect-api-explorer .langtab {
+  border-top: 1px solid #dfe6eb;
+}
+
+.apiconnect-explorer .hljs {
+  color: black;
+}
+
+.cds--global-light-ui .apiconnect-explorer .hljs {
+  color: black;
+}
+
+.apiconnect-api-explorer .documentation pre,
+.apiconnect-api-explorer .definitionsSection .schemaView {
+  background: #f5f7fa;
+  border: 1px solid #dfe6eb;
+}
+
+.apiconnect-api-explorer .interact .responseSection .request,
+.apiconnect-api-explorer .interact .responseSection .response {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cds--global-light-ui .apiconnect-api-explorer .interact .responseSection .request,
+.cds--global-light-ui .apiconnect-api-explorer .interact .responseSection .response {
+  background-color: rgba(61, 112, 178, 0.1);
+}
+
+/* Tweaks for the menu filter button */
+.apiconnect-explorer .cds--toolbar.searchAndFilter {
+  margin-top: 11px;
+}
+
+.apiconnect-explorer .cds--overflow-menu__icon {
+  padding: unset;
+}
+
+.apiconnect-explorer .cds--fieldset {
+  margin-bottom: unset;
+}
+/*
+.apiconnect-explorer .cds--tabs__nav {
+  position: unset;
+}
+
+.apiconnect-explorer a.cds--tabs__nav-link {
+  padding-left: 0;
+}
+*/
+
+.apiconnect-explorer ul.cds--overflow-menu-options {
+  min-width: 11.25rem;
+  width: auto;
+}

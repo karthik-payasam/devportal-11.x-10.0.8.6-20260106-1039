@@ -1,0 +1,126 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Select translation"
+msgstr "Vybrat překlad"
+
+msgid "Select which translation of a node should be displayed"
+msgstr "Vyberte, který překlad uzlu by měl být zobrazen"
+
+msgid "Select Translation"
+msgstr "Vybrat překlad"
+
+msgid "Provides a Views filter to select which translation of a node should be displayed."
+msgstr "Poskytuje filtr zobrazení pro výběr, který překlad uzlu by měl být zobrazen."
+
+msgid "Multilingual"
+msgstr "Vícejazyčné"
+
+msgid "The 'nid' argument must be an integer >= 1."
+msgstr "Argument 'nid' musí být celé číslo >= 1."
+
+msgid "Select translation filter"
+msgstr "Vybrat filtr překladu"
+
+msgid "Original node language fallback"
+msgstr "Náhradní jazyk původního uzlu"
+
+msgid "Default site language fallback"
+msgstr "Náhradní jazyk výchozího webu"
+
+msgid "Language fallback candidates list"
+msgstr "Seznam náhradních kandidátů jazyka"
+
+msgid "Custom language priority"
+msgstr "Priorita vlastního jazyka"
+
+msgid "Select translation selection mode"
+msgstr "Vybrat režim výběru překladu"
+
+msgid "Use the current interface language; if not available use the original node language"
+msgstr "Použít aktuální jazyk rozhraní; pokud není k dispozici, použijte původní jazyk uzlu"
+
+msgid "Use the current interface language; if not available use the default site language; if not available use the original node language"
+msgstr "Použít aktuální jazyk rozhraní; pokud není k dispozici, použijte výchozí jazyk webu; pokud není k dispozici, použijte původní jazyk uzlu"
+
+msgid "Use the language fallback candidates list provided by the language manager service"
+msgstr "Použijte seznam náhradních kandidátů jazyka poskytnutý službou správce jazyků"
+
+msgid "Custom language priorities"
+msgstr "Priority vlastního jazyka"
+
+msgid "Language priorities"
+msgstr "Priority jazyka"
+
+msgid ""
+"<p>If the selection mode is set to \"Custom language priorities\",\n"
+"                           a comma separated list of language codes can be specified.<br/>\n"
+"                           The filter will then return the node in the first available language\n"
+"                           in that list; falling back to the original node language if no match was found.</p>\n"
+"                           Some special values are recognized:\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" will be replaced with the current interface language;</li>\n"
+"                             <li>\"<em>default</em>\" will be replaced with the default site language;</li>\n"
+"                             <li>\"<em>original</em>\" will be replaced with the original node language.</li>\n"
+"                            </ul>\n"
+"                           Example:<br/><em>en,fr,current,default,original</em><br/>\n"
+"                           This will return:\n"
+"                           <ol>\n"
+"                             <li>the version in English, if available;</li>\n"
+"                             <li>if not, then the version in French, if available;</li>\n"
+"                             <li>if not, then the version in the current interface language, if available;</li>\n"
+"                             <li>if not, then the version in the default site language, if available;</li>\n"
+"                             <li>if none are available it will return the original node version.</li>\n"
+"                          </ol>"
+msgstr ""
+"<p>Je-li režim výběru nastaven na \"Priority vlastního jazyka\",\n"
+"                           lze určit seznam kódů jazyka oddělený čárkami.<br/>\n"
+"                           Filtr poté vrátí uzel v prvním dostupném jazyku\n"
+"                           v daném seznamu; vrátí se zpět na původní jazyk uzlu, pokud nebyla nalezena žádná shoda.</p>\n"
+"                           Některé speciální hodnoty jsou rozpoznány:\n"
+"                           <ul>\n"
+"                             <li>\"<em>current</em>\" bude nahrazeno aktuálním jazykem rozhraní;</li>\n"
+"                             <li>\"<em>default</em>\" bude nahrazeno výchozím jazykem webu;</li>\n"
+"                             <li>\"<em>original</em>\" bude nahrazeno původním jazykem uzlu.</li>\n"
+"                            </ul>\n"
+"                           Příklad:<br/><em>en,fr,current,default,original</em><br/>\n"
+"                           To vrátí:\n"
+"                           <ol>\n"
+"                             <li>verzi v angličtině, je-li dostupná;</li>\n"
+"                             <li>pokud není, potom bude verze ve francouzštině, je-li dostupná;</li>\n"
+"                             <li>pokud není, potom bude verze v aktuálním jazyce rozhraní, je-li dostupná;</li>\n"
+"                             <li>pokud není, potom bude verze ve výchozím jazyce webu, je-li dostupná;</li>\n"
+"                             <li>pokud není dostupná, vrátí původní verzi uzlu.</li>\n"
+"                          </ol>"
+
+msgid "Display default language content *only*, if the currently selected user language is the default site language."
+msgstr "Zobrazte pouze výchozí jazyk obsahu * only*, je-li aktuálně vybraný jazyk uživatele výchozím jazykem webu."
+
+msgid ""
+"When you check this option, the order chosen above will be ignored when current language = site default language,\n"
+"        instead it will only show translations for the default language. "
+msgstr ""
+"Při zaškrtnutí této volby bude výše vybrané pořadí ignorováno, když se aktuální jazyk = výchozímu jazyku webu,\n"
+"        místo toho se budou zobrazovat pouze překlady pro výchozí jazyk. "
+
+msgid "Return content in the site default language when a translation for the current language *does* exist, but it is unpublished."
+msgstr "Vraťte obsah ve výchozím jazyce webu, když překlad pro aktuální jazyk neexistuje, ale je nepublikovaný."
+
+msgid ""
+"When you check this option, in addition to the order chosen above, content will be shown in the default site language in the event that the translation in the current language is unpublished.<br/>\n"
+"      <strong>NOTE</strong>: This option assumes that the view is already filtering out unpublished content with the <code>Published (=Yes)</code> criterion, otherwise both the published and unpublished node will be displayed."
+msgstr ""
+"Když zaškrtnete tuto volbu, kromě výše vybraného pořadí, bude obsah zobrazen ve výchozím jazyce webu v případě, že překlad v aktuálním jazyce je nepublikovaný.<br/>\n"
+"      <strong>POZNÁMKA</strong>: Tato volba předpokládá, že pohled již filtruje nepublikovaný obsah s kritériem <code>Published (=Yes)</code>, jinak budou zobrazeny jak publikovaný, tak nepublikovaný uzel."
+

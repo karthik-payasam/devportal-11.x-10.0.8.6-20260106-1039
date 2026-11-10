@@ -1,0 +1,241 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "@text"
+msgstr "@text"
+
+msgid "About"
+msgstr "Popis"
+
+msgid ""
+"Instead of showing a default \"Page not found\"\n"
+"      for a 404 error, this module performs a search on the keywords in\n"
+"      the URL and display results based on the search. You can add basic\n"
+"      settings for the 404 resulting page and other search404\n"
+"      configurations in @link page."
+msgstr ""
+"Namísto zobrazení výchozí zprávy \"Stránka nebyla nalezena\"\n"
+"      pro chybu 404 provede tento modul hledání klíčových slov v adresáři\n"
+"      určeném adresou URL a zobrazí výsledky tohoto vyhledávání. Můžete přidat základní\n"
+"      nastavení pro výslednou stránku 404 a další konfigurace search404\n"
+"      na stránce @link."
+
+msgid "Search 404"
+msgstr "Vyhledávání 404"
+
+msgid "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found."
+msgstr "Automaticky v adresách URL vyhledávat klíčová slova, která způsobují chyby 404, a místo zprávy Stránka nebyla nalezena zobrazit výsledky."
+
+msgid "Search"
+msgstr "Hledat"
+
+msgid "Search 404 settings"
+msgstr "Nastavení vyhledávání 404"
+
+msgid "Configure searching for keywords from URLs that result in 404 errors."
+msgstr "Nakonfigurovat vyhledávání klíčových slov z adres URL, jejichž výsledkem jsou chyby 404."
+
+msgid "Settings"
+msgstr "Nastavení"
+
+msgid "Page not found"
+msgstr "Stránka nebyla nalezena"
+
+msgid "The requested page could not be found."
+msgstr "Požadovaná stránka nebyla nalezena."
+
+msgid ""
+"<ul>\n"
+"        <li>Check if your spelling is correct.</li>\n"
+"        <li>Remove quotes around phrases to search for each word individually. <em>bike shed</em> will often show more results than <em>&quot;bike shed&quot;</em>.</li>\n"
+"        <li>Consider loosening your query with <em>OR</em>. <em>bike OR shed</em> will often show more results than <em>bike shed</em>.</li>\n"
+"        </ul>"
+msgstr ""
+"<ul>\n"
+"        <li>Zkontrolujte zda je pravopis správný.</li>\n"
+"        <li>Chcete-li vyhledat každé slovo jednotlivě, odeberte uvozovky kolem frází. Vyhledání <em>přístřešek na kolo</em> bude často zobrazovat více výsledků než <em>&quot;přístřešek na kolo&quot;</em>.</li>\n"
+"        <li>Zvažte zmírnění dotazu pomocí operátoru <em>OR</em>. Vyhledání <em>přístřešek OR kolo</em> bude často zobrazovat více výsledků než <em>přístřešek na kolo</em>.</li>\n"
+"        </ul>"
+
+msgid "Your search yielded no results."
+msgstr "Vyhledávání nenalezlo žádné výsledky."
+
+msgid "The page you requested does not exist."
+msgstr "Požadovaná stránka neexistuje."
+
+msgid "The page you requested does not exist. Invalid keywords used."
+msgstr "Požadovaná stránka neexistuje. Byla použita neplatná klíčová slova."
+
+msgid "The page you requested does not exist. For your convenience, a search was performed using the query %keys."
+msgstr "Stránka, kterou jste požadovali, neexistuje. Z odkazu byla vybrána klíčová slova a bylo provedeno hledání pomocí dotazu %keys."
+
+msgid "Searched %type for %keys."
+msgstr "Hledaný typ %type pro klíče %keys."
+
+msgid "Jump directly to the search result when there is only one result"
+msgstr "Pokud je k dispozici pouze jeden výsledek, skočit přímo na výsledek vyhledávání"
+
+msgid "Works only with Core, Apache Solr, Lucene and Xapian searches. An HTTP status of 301 or 302 will be returned for this redirect."
+msgstr "Funguje pouze s vyhledáváními Core, Apache Solr, Lucene a Xapian. Pro toto přesměrování se vrátí stav HTTP 301 nebo 302."
+
+msgid "Jump directly to the first search result even when there are multiple results"
+msgstr "Skočit přímo na první výsledek vyhledávání, i když existuje více výsledků"
+
+msgid "Jump directly to the first search result only on the listed paths."
+msgstr "Přejít přímo na první výsledek hledání pouze na uvedených cestách."
+
+msgid "Enter one path per line. The \"*\" character is a wildcard. Example paths are blog for the blog page and blog/* for every personal blog."
+msgstr "Zadejte jednu cestu na řádek. Znak \"*\" je zástupný znak. Příkladem cest jsou blog pro stránku blogu a blog/* pro každý osobní blog."
+
+msgid "Do a Google CSE Search instead of a Drupal Search when a 404 occurs"
+msgstr "Pokud se vyskytne chyba 404, použít místo vyhledávání Drupal vyhledávání Google CSE"
+
+msgid "Requires Google CSE and Google CSE Search modules to be enabled."
+msgstr "Vyžaduje povolení modulů Google CSE a Google CSE Search."
+
+msgid "Do a \"Search by page\" Search instead of a Drupal Search when a 404 occurs"
+msgstr "Pokud se vyskytne chyba 404, použít vyhledávání \"Vyhledávání podle stránky\" místo vyhledávání Drupal"
+
+msgid "Requires \"Search by page\" module to be enabled."
+msgstr "Vyžaduje povolení modulu \"Vyhledávání podle stránky\"."
+
+msgid "Do a \"Search\" with custom path instead of a Drupal Search when a 404 occurs"
+msgstr "Pokud se vyskytne chyba 404, použít \"vyhledávání\" pomocí vlastní cesty místo vyhledávání Drupal"
+
+msgid "Redirect the user to a Custom search path to be entered below. Can be used to open a view with path parameter."
+msgstr "Přesměrovat uživatele na zadání vlastní cesty vyhledávání níže. Lze použít k otevření pohledu s parametrem cesty."
+
+msgid "Custom search path"
+msgstr "Vlastní vyhledávací cesta"
+
+msgid "The custom search path: example: myownsearch/@keys. The token \"@keys\" will be replaced with the search keys from the URL."
+msgstr "Vlastní vyhledávací cesta: příklad: myownsearch/@keys. Token \"@keys\" bude nahrazen hledanými klíčovými slovy z adresy URL."
+
+msgid "Use a 301 Redirect instead of 302 Redirect"
+msgstr "Použít přesměrování 301 místo přesměrování 302"
+
+msgid "This applies when the option to jump to first result is enabled and also for search404 results pages other than for Core, Apache Solr, Lucene and Xapian."
+msgstr "Toto se použije, pokud je povolena možnost přeskočit na první výsledek a také pro stránky výsledků vyhledávání 404 jiné než pro Core, Apache Solr, Lucene a Xapian."
+
+msgid "Disable auto search"
+msgstr "Zakázat automatické vyhledávání"
+
+msgid "Disable automatically searching for the keywords when a page is not found and instead show the populated search form with the keywords. Useful for large sites to reduce server loads."
+msgstr "Zakázat automatické vyhledávání klíčových slov, když není stránka nalezena, a místo toho zobrazit formulář vyhledávání vyplněný klíčovými slovy. Užitečné pro velké weby za účelem snížení zatížení serverů."
+
+msgid "Disable error message"
+msgstr "Zakázat chybovou zprávu"
+
+msgid "Disable the Drupal error message when search results are shown on a 404 page."
+msgstr "Zakázat chybovou zprávu Drupal, pokud se na stránce 404 zobrazí výsledky vyhledávání."
+
+msgid "Custom error message"
+msgstr "Vlastní chybová zpráva"
+
+msgid "For example, Invalid search for @keys, Sorry the page does not exist, etc."
+msgstr "Například Neplatné hledání pro @keys, Omlouváme se, že stránka neexistuje atd."
+
+msgid "A custom error message instead of default Drupal message, that should be displayed when search results are shown on a 404 page, use \"@keys\" to insert the searched key value if necessary."
+msgstr "Vlastní chybová zpráva namísto výchozí zprávy Drupal, která by se měla objevit při zobrazení výsledků vyhledávání na stránce 404, v případě potřeby použijte pro vložení hodnoty hledaného klíčového slova \"@keys\"."
+
+msgid "Advanced settings"
+msgstr "Pokročilá nastavení"
+
+msgid "Use OR between keywords when searching"
+msgstr "Při vyhledávání použijte mezi klíčovými slovy operátor OR"
+
+msgid "Use a custom string between keywords when searching"
+msgstr "Použít vlastní řetězec mezi klíčovými slovy při hledání"
+
+msgid "using a custom string (for example a hyphen) to concatenate the keywords, has no effect if OR keyword is chosen, leave this empty to concatenate by whitespace"
+msgstr "použití vlastního řetězce (například spojovník) pro zřetězení klíčových slov nemá žádný efekt, NEBO pokud je klíčové slovo zvoleno, nechte tuto volbu prázdnou a proveďte zřetězení pomocí mezery"
+
+msgid "Use auto-detection of keywords from search engine referer"
+msgstr "Použít automatickou detekci klíčových slov z odkazujícího webu vyhledávače"
+
+msgid "This feature will conduct a search based on the query string got from a search engine if the URL of the search result points to a 404 page in the current website. Currently supported search engines: Google, Yahoo, Altavista, Lycos, Bing and AOL."
+msgstr "Tato funkce provede vyhledávání založené na řetězci dotazu získaném z vyhledávače, pokud adresa URL výsledku vyhledávání ukazuje na stránku 404 v aktuálním webu. Aktuálně podporované vyhledávače: Google, Yahoo, Altavista, Lycos, Bing a AOL."
+
+msgid "Ignore language code"
+msgstr "Ignorovat kód jazyka"
+
+msgid "All enabled language codes will ignored from the search query."
+msgstr "Všechny povolené kódy jazyka budou ignorovány z dotazu hledání."
+
+msgid "Words to ignore"
+msgstr "Ignorovaná slova"
+
+msgid "These words will be ignored from the search query. Separate words with a space, e.g.: \"and or the\"."
+msgstr "Tato slova budou z vyhledávacího dotazu ignorována. Oddělte slova mezerou, např.: \"and or the\"."
+
+msgid "Specific paths to ignore"
+msgstr "Specifické cesty, které se mají ignorovat"
+
+msgid "These paths will be ignored. Site default \"Page not found\" page will be displayed. Enter one path per line. The \"*\" character is a wildcard. Example paths are blog for the blog page and blog/* for every personal blog."
+msgstr "Tyto cesty budou ignorovány. Zobrazí se výchozí stránka webu \"Page not found\". Zadejte jednu cestu na řádek. Znak \"*\" je zástupný znak. Příkladem cest jsou blog pro stránku blogu a blog/* pro každý osobní blog."
+
+msgid "Extensions to ignore"
+msgstr "Přípony, které se mají ignorovat"
+
+msgid "These extensions will be ignored from the search query, e.g.: http://www.example.com/invalid/page.php will only search for \"invalid page\". Separate extensions with a space, e.g.: \"htm html php\". Do not include leading dot."
+msgstr "Tyto přípony budou z dotazu vyhledávání ignorovány, např.: http://www.example.com/invalid/page.php vyhledá pouze \"invalid page\". Oddělte přípony mezerou, např.: \"htm html php\". Nezahrnujte úvodní tečku."
+
+msgid "Extensions to abort search"
+msgstr "Přípony, které mají vyhledávání předčasně ukončit"
+
+msgid "A search will not be performed for a query ending in these extensions. Separate extensions with a space, e.g.: \"gif jpg jpeg bmp png\". Do not include leading dot."
+msgstr "Pro dotazy končící těmito příponami nebude vyhledávání provedeno. Oddělte přípony mezerami, např.: \"gif jpg jpeg bmp png\". Nezahrnujte úvodní tečku."
+
+msgid "PCRE filter"
+msgstr "Filtr PCRE"
+
+msgid "This regular expression will be applied to filter all queries. The parts of the path that match the expression will be EXCLUDED from the search. You do NOT have to enclose the regex in forward slashes when defining the PCRE. e.g.: use \"[foo]bar\" instead of \"/[foo]bar/\". On how to use a PCRE Regex please refer <a href=\"http://php.net/pcre\">PCRE pages in the PHP Manual</a>."
+msgstr "Tento regulární výraz bude použit k filtrování všech dotazů. Části cesty, které odpovídají danému výrazu, budou z vyhledávání VYLOUČENY. Když definujete PCRE, NEMUSÍTE uzavírat regulární výraz do dopředných lomítek. Např.: Použijte \"[foo]bar\" místo \"/[foo]bar/\". Informace o použití Regulárního výrazu PCRE viz <a href=\"http://php.net/pcre\">stránky PCRE v příručce PHP</a>."
+
+msgid "Custom page title"
+msgstr "Vlastní titulek stránky"
+
+msgid "You can enter a value that will be displayed at the title of the webpage e.g. \"Page not found\"."
+msgstr "Můžete zadat hodnotu, která se zobrazí v titulku webové stránky, např. \"Stránka nenalezena\"."
+
+msgid "Custom page text"
+msgstr "Vlastní text stránky"
+
+msgid "You can enter a custom text message that can be displayed at the top of the search results, HTML formatting can be used."
+msgstr "Můžete zadat vlastní text zprávy, která může být zobrazena v horní části výsledků vyhledávání, lze použít formátování HTML."
+
+msgid "Add a redirection url for empty search results."
+msgstr "Přidat adresu URL přesměrování pro prázdné výsledky vyhledávání."
+
+msgid "You can enter a valid url with a leading \"/\" to display instead of an empty result."
+msgstr "Můžete zadat platnou adresu URL s úvodním \"/\", která se má zobrazit místo prázdného výsledku."
+
+msgid "Saving this form will revert the 404 handling on the site to this module."
+msgstr "Uložením tohoto formuláře povolíte tomuto modulu manipulovat se stránkou 404."
+
+msgid "The redirect URL should not be a space, and should not start with a space."
+msgstr "Adresa URL pro přesměrování by neměla být mezera a neměla by začínat mezerou."
+
+msgid "The redirect URL should start with a slash."
+msgstr "Adresa URL pro přesměrování by měla začínat lomítkem."
+
+msgid "Custom search path should end with search key pattern \"@keys\"."
+msgstr "Vlastní vyhledávací cesta by měla končit vzorem hledaného klíčového slova \"@keys\"."
+
+msgid "Custom search path should not contain special characters other than \"/?=_\"."
+msgstr "Vlastní vyhledávací cesta by neměla obsahovat speciální znaky jiné než \"/?=_\"."
+
+msgid "Custom search path should not start with a slash."
+msgstr "Vlastní vyhledávací cesta by neměla začínat lomítkem."
+

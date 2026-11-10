@@ -1,0 +1,2971 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Processed @processed of @total overridden Metatag records."
+msgstr "@total 대체된 메타 태그 레코드 중 @processed개를 처리했습니다."
+
+msgid "There were no overridden Metatag records."
+msgstr "대체된 메타 태그 레코드가 없습니다."
+
+msgid "Metatags"
+msgstr "메타 태그"
+
+msgid "Tokens related to Metatags."
+msgstr "메타태그와 관련된 토큰입니다. "
+
+msgid "Metatag values for the current page."
+msgstr "현재 페이지의 메타태그 값입니다."
+
+msgid "@label tokens."
+msgstr "@label 토큰입니다."
+
+msgid "List of @type values"
+msgstr "@type 값의 목록"
+
+msgid "Tokens for lists of @type values."
+msgstr "@type 값의 목록의 토큰입니다."
+
+msgid "@type type with delta @delta"
+msgstr "@delta 델타가 있는 @type 유형"
+
+msgid "Metatags (Hidden field for JSON support)"
+msgstr "메타태그(JSON 지원을 위한 숨겨진 필드)"
+
+msgid "The meta tags for the entity."
+msgstr "엔티티에 대한 메타 태그."
+
+msgid "About"
+msgstr "소개"
+
+msgid "This module allows a site to automatically provide structured metadata, aka \"meta tags\", about the site and individual pages."
+msgstr "이 모듈을 사용하여 사이트에서 사이트와 개별 페이지에 대한 구조화된 메타데이터 즉, \"메타 태그\"를 자동으로 제공합니다. "
+
+msgid "In the context of search engine optimization, providing an extensive set of meta tags may help improve the site's and pages' rankings, thus may aid with achieving a more prominent display of the content within search engine results. They can also be used to tailor how content is displayed when shared on social networks. For additional information, see the <a href=\":online\">online documentation for Metatag</a>."
+msgstr "검색 엔진 최적화 컨텍스트에서, 광범위한 메타 태그 세트를 제공하면 사이트와 페이지의 등급을 개선하는 데 도움이 될 수 있으므로 따라서 검색 엔진 결과 내에서 컨텐츠를 보다 눈에 띄게 표시할 수 있습니다. 또한 소셜 네트워크에서 공유할 때 컨텐츠를 표시하는 방법을 조정하는 데에 사용할 수도 있습니다. 추가 정보는 <a href=\":online\">메타 태그의 온라인 문서</a>를 참조하십시오."
+
+msgid "Intended workflow"
+msgstr "의도된 워크플로우"
+
+msgid "The module uses <a href=\":tokens\">\"tokens\"</a> to automatically fill in values for different meta tags. Specific values may also be filled in."
+msgstr "모듈은 다른 메타 태그의 값을 자동으로 채우기 위해 <a href=\":tokens\">\"토큰\"</a>을 사용합니다. 특정 값을 채울 수도 있습니다. "
+
+msgid "The best way of using Metatag is as follows:"
+msgstr "메타 태그를 사용하는 최상의 방법은 다음과 같습니다. "
+
+msgid "Customize the <a href=\":defaults\">global defaults</a>, fill in the specific values and tokens that every page should have."
+msgstr "<a href=\":defaults\">글로벌 기본값</a>을 사용자 정의하고, 모든 페이지에 있어야 하는 특정 값과 토큰을 채우십시오. "
+
+msgid "Override each of the <a href=\":defaults\">other defaults</a>, fill in specific values and tokens that each item should have by default. This allows e.g. for all nodes to have different values than taxonomy terms."
+msgstr "<a href=\":defaults\">기타 기본값</a> 각각을 대체하고, 각 항목에 기본적으로 있어야 하는 특정 값과 토큰을 채우십시오. 그러면 예를 들어, 모든 노드가 분류 용어가 아닌 다른 값을 가질 수 있습니다. "
+
+msgid "<a href=\":add\">Add more default configurations</a> as necessary for different entity types and entity bundles, e.g. for different content types or different vocabularies."
+msgstr "다른 엔티티 유형과 엔티티 번들에 대해 <a href=\":add\">더 많은 기본 구성을 추가하십시오</a>(예: 다른 컨텐츠 유형 또는 다른 어휘). "
+
+msgid "To override the meta tags for individual entities, e.g. for individual nodes, add the \"Metatag\" field via the field settings for that entity or bundle type."
+msgstr "개별 엔티티의 메타 태그를 대체하려면(예: 개별 노드), 해당 엔티티 또는 번들 유형에 대해 필드 설정을 통해 \"메타 태그\" 필드를 추가하십시오. "
+
+msgid "Configure global meta tag default values below. Meta tags may be left as the default."
+msgstr "아래의 글로벌 메타 태그 기본값을 구성하십시오. 메타 태그는 기본값으로 남겨질 수도 있습니다. "
+
+msgid "Meta tag patterns are passed down from one level to the next unless they are overridden. To view a summary of the individual meta tags and the pattern for a specific configuration, click on its name below."
+msgstr "메타 태그 패턴은 대체되지 않는 한 한 레벨에서 다음 레벨로 아래로 패스됩니다. 특정 구성의 개별 메타 태그 및 패턴의 요약을 보려면 아래의 해당 이름을 클릭하십시오. "
+
+msgid "If the top-level configuration is not specific enough, additional default meta tag configurations can be added for a specific entity type or entity bundle, e.g. for a specific content type."
+msgstr "최상위 레벨 구성이 특정적이지 않으면 특정 엔티티 유형이나 엔티티 번들에 대해 추가로 기본 메타 태그 구성을 추가할 수 있습니다(예: 특정 컨텐츠 유형). "
+
+msgid "Meta tags can be further refined on a per-entity basis, e.g. for individual nodes, by adding the \"Metatag\" field to that entity type through its normal field settings pages."
+msgstr "메타 태그는 해당 일반 필드 설정 페이지를 통해 해당 엔티티 유형에 \"메타 태그\" 필드를 추가하여 엔티티별로 추가로 정제될 수 있습니다(예: 개별 노드). "
+
+msgid "Use the following form to override the global default meta tags for a specific entity type or entity bundle. In practical terms, this allows the meta tags to be customized for a specific content type or taxonomy vocabulary, so that its content will have different meta tags <em>default values</em> than others."
+msgstr "특정 엔티티 유형이나 엔티티 번들에 대해 글로벌 기본 메타 태그를 대체하려면 다음 양식을 사용하십시오. 실용적인 관점에서 이는 메타 태그를 특정 컨텐츠 유형이나 분류 어휘에 맞게 사용자 정의할 수 있게 해주므로, 해당 컨텐츠는 나머지와는 다른 메타 태그 <em>기본값</em>을 가질 수 있게 됩니다. "
+
+msgid "As a reminder, if the \"Metatag\" field is added to the entity type through its normal field settings, the meta tags can be further refined on a per entity basis; this allows each node to have its meta tags  customized on an individual basis."
+msgstr "다시 한 번 상기하자면, \"메타 태그\" 필드가 해당 정상 필드 설정을 통해 엔티티 유형에 추가되는 경우, 메타 태그는 엔티티별로 추가로 정제될 수 있습니다. 그러면 각 노드는 해당 메타 태그를 개별적으로 사용자 정의할 수 있습니다. "
+
+msgid "Not enabled while in maintenance mode"
+msgstr "유지보수 모드일 때 사용으로 설정되지 않음"
+
+msgid "Please note that while the site is in maintenance mode none of the usual meta tags will be output."
+msgstr "사이트가 유지보수 모드에 있는 동안에는 일반 메타 태그가 출력되지 않습니다."
+
+msgid "Schema.org Metatag is recommended"
+msgstr "Schema.org Metatag 권장"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is highly recommended to add <a href=\"@jsonld\">JSON-LD</a> -formatted <a href=\"@schema\">schema.org</a> compatible data structures to the site."
+msgstr "<a href=\"@module\">Schema.org Metatag</a> 모듈은 <a href=\"@jsonld\">JSON-LD</a> 형식으로 <a href=\"@schema\">schema.org</a> 호환 데이터 구조를 사이트에 추가하십시오."
+
+msgid "Schema.org Metatag is installed"
+msgstr "Schema.org Metatag 설치됨"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is installed."
+msgstr "<a href=\"@module\">Schema.org Metatag</a> 모듈이 설치되었습니다."
+
+msgid "Token Or"
+msgstr "토큰 OR"
+
+msgid "The <a href=\"@module\">Token OR module</a> is suggested for when the basic content tokens are not flexible enough, e.g. to make a meta tag show the contents of one field if it is filled in or another if the first one is empty."
+msgstr "<a href=\"@module\">토큰 OR 모듈</a>은 기본 컨텐츠 토큰의 유연성(예: 메타 태그가 한 필드가 채워져 있는 경우에는 그 컨텐츠를 표시하고, 첫 번째 필드가 비어 있는 경우에는 다른 필드를 표시하도록 함)이 충분하지 않은 경우 제안됩니다."
+
+msgid "The new Metatag: Open Graph module has been enabled."
+msgstr "새 메타 태그: 그래프 열기 모듈이 사용 가능으로 설정되었습니다. "
+
+msgid "The sites's caches will need to be rebuild to ensure Metatag works as intended."
+msgstr "메타 태그가 의도대로 작동하도록 하려면 사이트의 캐시를 다시 빌드해야 합니다."
+
+msgid "Metatag"
+msgstr "메타 태그"
+
+msgid "Manage meta tags for all entities."
+msgstr "모든 엔티티의 메타 태그를 관리합니다. "
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Add default meta tags"
+msgstr "기본 메타 태그를 추가합니다. "
+
+msgid "Settings"
+msgstr "설정"
+
+msgid "Metatag plugins"
+msgstr "메타 태그 플러그인"
+
+msgid "Configure Metatag defaults."
+msgstr "메타 태그 기본값을 구성합니다. "
+
+msgid "Overview of plugins used in metatag."
+msgstr "메타 태그에서 사용되는 플러그인의 개요입니다."
+
+msgid "Metatag defaults"
+msgstr "메타 태그 기본값"
+
+msgid "Administer meta tags"
+msgstr "메타 태그를 관리합니다. "
+
+msgid "Control the main settings pages and modify per-object meta tags."
+msgstr "기본 설정 페이지를 제어하고 오브젝트별 메타 태그를 수정합니다. "
+
+msgid "Delete default meta tags"
+msgstr "기본 메타 태그를 삭제합니다. "
+
+msgid "Revert default meta tags"
+msgstr "기본 메타 태그를 되돌립니다. "
+
+msgid "Configure the Metatag module"
+msgstr "Metatag 모듈 구성"
+
+msgid "ID"
+msgstr "아이디"
+
+msgid "Type"
+msgstr "종류"
+
+msgid "Tags"
+msgstr "태그"
+
+msgid "Abstract"
+msgstr "요약"
+
+msgid "Cache control"
+msgstr "캐시 제어"
+
+msgid "Canonical URL"
+msgstr "기준 URL"
+
+msgid "Content Language"
+msgstr "컨텐츠 언어"
+
+msgid "Description"
+msgstr "설명"
+
+msgid "Expires"
+msgstr "만료됨"
+
+msgid "Generator"
+msgstr "생성기"
+
+msgid "Image SRC"
+msgstr "이미지 SRC"
+
+msgid "Keywords"
+msgstr "키워드"
+
+msgid "Google News Keywords"
+msgstr "Google 뉴스 키워드"
+
+msgid "Next page URL"
+msgstr "다음 페이지 URL"
+
+msgid "Original source"
+msgstr "원본 소스"
+
+msgid "Pragma"
+msgstr "Pragma"
+
+msgid "Previous page URL"
+msgstr "이전 페이지 URL"
+
+msgid "Rating"
+msgstr "등급 지정"
+
+msgid "Referrer policy"
+msgstr "관계자 정책"
+
+msgid "Refresh"
+msgstr "새로 고침"
+
+msgid "Revisit After"
+msgstr "이후 다시 방문"
+
+msgid "Rights"
+msgstr "권한"
+
+msgid "Robots"
+msgstr "로봇"
+
+msgid "Shortlink"
+msgstr "간단 링크"
+
+msgid "Standout"
+msgstr "표준 출력"
+
+msgid "Page title"
+msgstr "페이지 제목"
+
+msgid "ICBM"
+msgstr "ICBM"
+
+msgid "Geographical region"
+msgstr "지리적 영역"
+
+msgid "Geographical place name"
+msgstr "지리적 위치 이름"
+
+msgid "Geographical position"
+msgstr "지리적 위치"
+
+msgid "Set Cookie"
+msgstr "쿠키 설정"
+
+msgid "Google"
+msgstr "구글"
+
+msgid "Author"
+msgstr "작성자"
+
+msgid "Default value"
+msgstr "기본 값"
+
+msgid "Advanced meta tags form"
+msgstr "고급 메타 태그 양식"
+
+msgid "Place field in sidebar"
+msgstr "사이드바에 필드 배치"
+
+msgid "Place field in collapsed details container"
+msgstr "접힌 세부사항 컨테이너에 필드 배치"
+
+msgid "Metatag settings"
+msgstr "Metatag 설정"
+
+msgid "Metatag groups that apply to each entity type"
+msgstr "각 엔티티 유형에 적용하는 Metatag 그룹"
+
+msgid "Entity type"
+msgstr "엔터티 유형"
+
+msgid "Bundle"
+msgstr "번들"
+
+msgid "Group"
+msgstr "그룹"
+
+msgid "Trim method for trimmable tags."
+msgstr "트리밍 가능한 태그의 트리밍 방법."
+
+msgid "Use Maxlength module to force these limits?"
+msgstr "Maxlength 모듈을 사용하여 이러한 한계를 강제 실행하시겠습니까?"
+
+msgid "Tag-specific maximum length"
+msgstr "태그별 최대 길이"
+
+msgid "Tag maximum length in characters"
+msgstr "태그 최대 길이(문자)"
+
+msgid "Add max height value"
+msgstr "최대 높이 값 추가"
+
+msgid "Provides support for applinks.org meta tags."
+msgstr "applinks.org 메타 태그에 대한 지원을 제공합니다. "
+
+msgid "Metatag: App Links"
+msgstr "메타 태그: 앱 링크"
+
+msgid "Android app name"
+msgstr "Android 앱 이름"
+
+msgid "Android app Activity Class"
+msgstr "Android 앱 활동 클래스"
+
+msgid "Android app package ID"
+msgstr "Android 앱 패키지 ID"
+
+msgid "Android app URL scheme"
+msgstr "Android 앱 URL 체계"
+
+msgid "iOS app URL scheme"
+msgstr "iOS 앱 URL 체계 "
+
+msgid "iOS app store ID"
+msgstr "iOS 앱 스토어 ID"
+
+msgid "iOS app name"
+msgstr "iOS 앱 이름"
+
+msgid "iPad app URL scheme"
+msgstr "iPad 앱 URL 체계"
+
+msgid "iPad app store ID"
+msgstr "iPad 앱 스토어 ID"
+
+msgid "iPad app name"
+msgstr "iPad 앱 이름"
+
+msgid "iPhone app URL scheme"
+msgstr "iPhone 앱 URL 체계"
+
+msgid "iPhone app store ID"
+msgstr "iPhone 앱 스토어 ID"
+
+msgid "Windows app GUID"
+msgstr "Windows 앱 GUID"
+
+msgid "Windows app name"
+msgstr "Windows 앱 이름"
+
+msgid "Windows app URL scheme"
+msgstr "Windows 앱 URL 체계"
+
+msgid "Windows Phone app URL scheme"
+msgstr "Windows Phone 앱 URL 체계"
+
+msgid "Windows Phone app GUID"
+msgstr "Windows Phone 앱 GUID"
+
+msgid "Windows Phone app name"
+msgstr "Windows Phone 앱 이름"
+
+msgid "Windows Universal app URL scheme"
+msgstr "Windows Universal 앱 URL 체계"
+
+msgid "Windows Universal app GUID"
+msgstr "Windows Universal 앱 GUID"
+
+msgid "Windows Universal app name"
+msgstr "Windows Universal 앱 이름"
+
+msgid "Web URL"
+msgstr "웹 URL"
+
+msgid "Should fallback"
+msgstr "대체해야 함"
+
+msgid "App Links"
+msgstr "앱 링크"
+
+msgid "The name of the app (suitable for display)."
+msgstr "앱 이름(표시에 적합)입니다. "
+
+msgid "A fully-qualified Activity class name for intent generation."
+msgstr "목적 생성을 위한 완전한 활동 클래스 이름입니다. "
+
+msgid "A fully-qualified package name for intent generation. <strong>This attribute is required by the App Links specification.</strong>"
+msgstr "목적 생성을 위한 완전한 패키지 이름입니다. <strong>이 속성은 앱 링크 스펙에 필수입니다. </strong>"
+
+msgid "A custom scheme for the Android app."
+msgstr "Android 앱에 대한 사용자 정의 체계입니다. "
+
+msgid "The name of the app (suitable for display)"
+msgstr "앱 이름입니다(표시에 적합함). "
+
+msgid "The app ID for the app store."
+msgstr "앱 스토어의 앱 ID입니다. "
+
+msgid "A custom scheme for the iOS app. <strong>This attribute is required by the app Links specification.</strong>"
+msgstr "iOS 앱에 대한 사용자 정의 체계입니다. <strong>이 속성은 앱 링크 스펙에 필수입니다. </strong>"
+
+msgid "iPhone app name"
+msgstr "iPhone 앱 이름"
+
+msgid "The web URL; defaults to the URL for the content that contains this tag."
+msgstr "웹 URL. 이 태그를 포함하는 컨텐츠에 대한 URL이 기본값입니다. "
+
+msgid "Windows app ID"
+msgstr "Windows 앱 ID"
+
+msgid "Windows Phone app ID"
+msgstr "Windows Phone 앱 ID"
+
+msgid "Windows Universal app ID"
+msgstr "Windows Universal 앱 ID"
+
+msgid "Metatag: Dublin Core"
+msgstr "메타 태그: Dublin Core"
+
+msgid "Provides the fifteen <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "<a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>에서 15개의 <a href=\"https://dublincore.org/documents/dces/\">Dublin Core 메타데이터 요소 세트 1.1</a> 메타 태그를 제공합니다."
+
+msgid "Dublin Core: Contributor"
+msgstr "Dublin Core: 기여자"
+
+msgid "Dublin Core: Coverage"
+msgstr "Dublin Core: 범위"
+
+msgid "Dublin Core: Creator"
+msgstr "Dublin Core: 작성자"
+
+msgid "Dublin Core: Date"
+msgstr "Dublin Core: 날짜"
+
+msgid "Dublin Core: Description"
+msgstr "Dublin Core: 설명"
+
+msgid "Dublin Core: Format"
+msgstr "Dublin Core: 형식"
+
+msgid "Dublin Core: Identifier"
+msgstr "Dublin Core: ID"
+
+msgid "Dublin Core: Language"
+msgstr "Dublin Core: 언어"
+
+msgid "Dublin Core: Publisher"
+msgstr "Dublin Core: 공개자"
+
+msgid "Dublin Core: Relation"
+msgstr "Dublin Core: 관계"
+
+msgid "Dublin Core: Rights"
+msgstr "Dublin Core: 권한"
+
+msgid "Dublin Core: Source"
+msgstr "Dublin Core: 소스"
+
+msgid "Dublin Core: Subject"
+msgstr "Dublin Core: 주제"
+
+msgid "Dublin Core: Title"
+msgstr "Dublin Core: 제목"
+
+msgid "Dublin Core: Type"
+msgstr "Dublin Core: 유형"
+
+msgid "Dublin Core"
+msgstr "Dublin Core"
+
+msgid "Contributor"
+msgstr "기여자"
+
+msgid "An entity responsible for making contributions to the resource. Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."
+msgstr "자원 컨트리뷰션을 담당하는 엔티티입니다. 기여자의 예로는 사람, 조직 또는 서비스가 포함됩니다. 일반적으로 기여자 이름은 엔티티를 표시하는 데 사용되어야 합니다. "
+
+msgid "Coverage"
+msgstr "범위"
+
+msgid "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."
+msgstr "자원의 공간 또는 시간 주제, 자원의 공간 적용성 또는 자원이 관련된 관할권입니다. 공간 주제와 공간 적용성은 지리적 좌표로 지정된 위치 또는 이름 지정된 장소일 수 있습니다. 시간 주제는 이름 지정된 기간, 날짜 또는 날짜 범위일 수 있습니다. 관할권은 자원이 적용되는 지리적 위치 또는 이름 지정된 관리 엔티티일 수 있습니다. 권장되는 우수 사례는 제어된 어휘(예: TGN(Thesaurus of Geographic Names))를 사용하는 것입니다. 해당되는 경우 이름 지정된 장소 또는 기간은 좌표 또는 날짜 범위 세트와 같은 숫자 ID보다 우선적으로 사용될 수 있습니다. "
+
+msgid "Creator"
+msgstr "작성자"
+
+msgid "An entity primarily responsible for making the resource. Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."
+msgstr "주로 자원 작성을 담당하는 엔티티입니다. 작성자의 예로는 사람, 조직 또는 서비스가 포함됩니다. 일반적으로 작성자 이름은 엔티티를 표시하는 데 사용되어야 합니다. "
+
+msgid "Date"
+msgstr "날짜"
+
+msgid "A point or period of time associated with an event in the lifecycle of the resource. Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."
+msgstr "자원의 라이프사이클에서 이벤트와 연관된 지점 또는 특정 시점입니다. 날짜를 사용하여 모든 단위 레벨로 시간 정보를 표현할 수 있습니다. 권장되는 우수 사례는 인코딩 체계(예: ISO 8601의 W3CDTF[W3CDTF])를 사용하는 것입니다. "
+
+msgid "An account of the resource. Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."
+msgstr "자원에 대한 설명입니다. 설명은 다음을 포함할 수 있습니다(단, 이에 한하지 않음). 요약, 목차, 지리적 표시 또는 자원의 자유 텍스트 설명."
+
+msgid "Format"
+msgstr "양식"
+
+msgid "The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."
+msgstr "자원의 파일 형식, 실제 미디어 또는 치수입니다. 치수의 예로는 크기 및 기간이 포함됩니다. 권장되는 우수 사례는 제어된 어휘(예: 인터넷 미디어 유형 목록[MIME])를 사용하는 것입니다. "
+
+msgid "Identifier"
+msgstr "식별자"
+
+msgid "An unambiguous reference to the resource within a given context. Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."
+msgstr "제공된 컨텍스트에서 자원에 대한 명확한 참조입니다. 권장되는 우수 사례는 정규 ID 시스템을 준수하는 문자열로 자원을 식별하는 것입니다. "
+
+msgid "Language"
+msgstr "언어"
+
+msgid "A language of the resource. Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."
+msgstr "자원의 언어입니다. 권장되는 우수 사례는 제어된 어휘(예: RFC4646[RFC4646])를 사용하는 것입니다. "
+
+msgid "Publisher"
+msgstr "공개자"
+
+msgid "An entity responsible for making the resource available. Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."
+msgstr "자원을 사용 가능하게 하는 작업을 담당하는 엔티티입니다. 공개자의 예로는 사람, 조직 또는 서비스가 포함됩니다. 일반적으로 공개자 이름은 엔티티를 표시하는 데 사용되어야 합니다. "
+
+msgid "Relation"
+msgstr "관계"
+
+msgid "A related resource. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "관련 자원입니다. 권장되는 우수 사례는 정규 ID 시스템을 준수하는 문자열로 관련 자원을 식별하는 것입니다. "
+
+msgid "Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."
+msgstr "자원과 내부에 보유된 권한에 대한 정보입니다. 일반적으로 권한 정보로는 지적 자산권을 포함하여 자산과 연관된 다양한 자산권에 대한 지시문이 포함됩니다. "
+
+msgid "Source"
+msgstr "원본"
+
+msgid "A related resource from which the described resource is derived. The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "설명하는 소스가 파생된 관련 자원입니다. 설명되는 자원은 전체 또는 부분적으로 관련 자원에서 파생될 수 있습니다. 권장되는 우수 사례는 정규 ID 시스템을 준수하는 문자열로 관련 자원을 식별하는 것입니다. "
+
+msgid "Subject"
+msgstr "제목"
+
+msgid "The topic of the resource. Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary. To describe the spatial or temporal topic of the resource, use the Coverage element."
+msgstr "자원의 주제입니다. 일반적으로 주제는 키워드, 키 구문 또는 분류 코드를 사용하여 표시됩니다. 권장되는 우수 사례는 제어된 어휘를 사용하는 것입니다. 자원의 공간 또는 시간 주제를 설명하려면 범위 요소를 사용합니다. "
+
+msgid "Title"
+msgstr "제목"
+
+msgid "The name given to the resource."
+msgstr "자원에 제공된 이름입니다. "
+
+msgid "The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."
+msgstr "자원의 네이처 또는 장르입니다. 권장되는 우수 사례는 제어된 어휘(예: DCMI 유형 어휘[DCMITYPE])를 사용하는 것입니다. 자원의 파일 형식, 실제 미디어 또는 치수를 설명하려면 형식 요소를 사용합니다. "
+
+msgid "Provides forty additional meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "<a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>에서 40개의 추가 메타 태그를 제공합니다."
+
+msgid "Metatag: Dublin Core Advanced"
+msgstr "메타 태그: Dublin Core 고급"
+
+msgid "Dublin Core: Abstract"
+msgstr "Dublin Core: 요약"
+
+msgid "Dublin Core: Access Rights"
+msgstr "Dublin Core: 액세스 권한"
+
+msgid "Dublin Core: Accrual Method"
+msgstr "Dublin Core: 발생 방법"
+
+msgid "Dublin Core: Accrual Periodicity"
+msgstr "Dublin Core: 발생 주기"
+
+msgid "Dublin Core: Accrual Policy"
+msgstr "Dublin Core: 발생 정책"
+
+msgid "Dublin Core: Alternative Title"
+msgstr "Dublin Core: 대체 제목"
+
+msgid "Dublin Core: Audience"
+msgstr "Dublin Core: 독자"
+
+msgid "Dublin Core: Date Available"
+msgstr "Dublin Core: 사용 가능한 날짜"
+
+msgid "Dublin Core: Bibliographic Citation"
+msgstr "Dublin Core: 도서 목록 인용"
+
+msgid "Dublin Core: Conforms To"
+msgstr "Dublin Core: 준수 대상"
+
+msgid "Dublin Core: Date Created"
+msgstr "Dublin Core: 작성한 날짜"
+
+msgid "Dublin Core: Date Accepted"
+msgstr "Dublin Core: 동의된 날짜"
+
+msgid "Dublin Core: Date Copyrighted"
+msgstr "Dublin Core: 저작권 소유 날짜"
+
+msgid "Dublin Core: Date Submitted"
+msgstr "Dublin Core: 제출한 날짜"
+
+msgid "Dublin Core: Audience Education Level"
+msgstr "Dublin Core: 독자 교육 수준"
+
+msgid "Dublin Core: Extent"
+msgstr "Dublin Core: 범위"
+
+msgid "Dublin Core: Has Format"
+msgstr "Dublin Core: 형식 있음"
+
+msgid "Dublin Core: Has Part"
+msgstr "Dublin Core: 파트 있음"
+
+msgid "Dublin Core: Has Version"
+msgstr "Dublin Core: 버전 있음"
+
+msgid "Dublin Core: Instructional Method"
+msgstr "Dublin Core: 교육 방법"
+
+msgid "Dublin Core: Is Format Of"
+msgstr "Dublin Core: 형식"
+
+msgid "Dublin Core: Is Part Of"
+msgstr "Dublin Core: 파트"
+
+msgid "Dublin Core: Is Referenced By"
+msgstr "Dublin Core: 참조 대상"
+
+msgid "Dublin Core: Is Replaced By"
+msgstr "Dublin Core: 대체 대상"
+
+msgid "Dublin Core: Is Required By"
+msgstr "Dublin Core: 필수 대상"
+
+msgid "Dublin Core: Date Issued"
+msgstr "Dublin Core: 발행 날짜"
+
+msgid "Dublin Core: Is Version Of"
+msgstr "Dublin Core: 버전"
+
+msgid "Dublin Core: License"
+msgstr "Dublin Core: 라이센스"
+
+msgid "Dublin Core: Mediator"
+msgstr "Dublin Core: 중개자"
+
+msgid "Dublin Core: Medium"
+msgstr "Dublin Core: 중간"
+
+msgid "Dublin Core: Date Modified"
+msgstr "Dublin Core: 수정한 날짜"
+
+msgid "Dublin Core: Provenance"
+msgstr "Dublin Core: 출처"
+
+msgid "Dublin Core: References"
+msgstr "Dublin Core: 참조"
+
+msgid "Dublin Core: Replaces"
+msgstr "Dublin Core: 대체"
+
+msgid "Dublin Core: Requires"
+msgstr "Dublin Core: 필수"
+
+msgid "Dublin Core: Rights Holder"
+msgstr "Dublin Core: 권리 보유자"
+
+msgid "Dublin Core: Spatial Coverage"
+msgstr "Dublin Core: 공간 범위"
+
+msgid "Dublin Core: Table Of Contents"
+msgstr "Dublin Core: 목차"
+
+msgid "Dublin Core: Temporal Coverage"
+msgstr "Dublin Core: 임시 범위"
+
+msgid "Dublin Core: Date Valid"
+msgstr "Dublin Core: 유효 날짜"
+
+msgid "Dublin Core Additional Tags"
+msgstr "Dublin Core 추가 태그"
+
+msgid "These tags are not part of the Metadata Element Set but may be useful for certain scenarios."
+msgstr "이 태그는 메타데이터 요소 세트의 일부가 아니지만, 특정 시나리오에서 유용합니다. "
+
+msgid "A summary of the resource."
+msgstr "자원 요약."
+
+msgid "Access Rights"
+msgstr "액세스 권한"
+
+msgid "Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."
+msgstr "자원에 액세스할 수 있는 사용자 또는 자원의 보안 상태 표시에 대한 정보입니다. 액세스 권한에는 개인정보 보호, 보안 또는 기타 정책에 따라 액세스 또는 제한에 대한 정보가 포함될 수 있습니다."
+
+msgid "Accrual Method"
+msgstr "발생 방법"
+
+msgid "The method by which items are added to a collection."
+msgstr "콜렉션에 항목을 추가하는 방법입니다."
+
+msgid "Accrual Periodicity"
+msgstr "발생 주기"
+
+msgid "The frequency with which items are added to a collection."
+msgstr "콜렉션에 항목을 추가하는 빈도입니다."
+
+msgid "Accrual Policy"
+msgstr "발생 정책"
+
+msgid "The policy governing the addition of items to a collection."
+msgstr "콜렉션에 항목을 추가하는 정책입니다."
+
+msgid "Alternative Title"
+msgstr "대체 제목"
+
+msgid "An alternative name for the resource. The distinction between titles and alternative titles is application-specific."
+msgstr "자원에 대한 대체 이름입니다. 제목과 대체 제목의 구별은 애플리케이션마다 다릅니다."
+
+msgid "Audience"
+msgstr "독자"
+
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "자원이 의도되거나 유용한 엔티티 클래스."
+
+msgid "Date Available"
+msgstr "사용 가능한 날짜"
+
+msgid "Date (often a range) that the resource became or will become available."
+msgstr "자원이 사용 가능해 졌거나 사용할 수 있게 되는 날짜(종종 범위)."
+
+msgid "Bibliographic Citation"
+msgstr "도서 목록 인용"
+
+msgid "A bibliographic reference for the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."
+msgstr "자원에 대한 서적 참조. 자원을 최대한 명확하게 식별할 수 있도록 충분한 서적 세부사항을 포함하는 것이 권장됩니다."
+
+msgid "Conforms To"
+msgstr "준수 대상"
+
+msgid "An established standard to which the described resource conforms."
+msgstr "설명된 자원이 준수하는 확립된 표준."
+
+msgid "Date Created"
+msgstr "작성한 날짜"
+
+msgid "Date of creation of the resource."
+msgstr "자원의 작성 날짜입니다."
+
+msgid "Date Accepted"
+msgstr "동의 날짜"
+
+msgid "Date of acceptance of the resource. Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."
+msgstr "자원의 동의 날짜입니다. 동의된 날짜와 관련될 수 있는 자원의 예로는 논문(대학 학과에서 승인)또는 기사(저널에서 수락함)가 있습니다."
+
+msgid "Date Copyrighted"
+msgstr "저작권 소유 날짜"
+
+msgid "Date of copyright."
+msgstr "저작권의 날짜입니다."
+
+msgid "Date Submitted"
+msgstr "제출한 날짜"
+
+msgid "Date of submission of the resource. Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal)."
+msgstr "자원의 제출 날짜입니다. 제출한 날짜와 관련될 수 있는 자원의 예로는 논문(대학 학과에서 제출됨)또는 기사(저널에서 제출됨)가 있습니다."
+
+msgid "Audience Education Level"
+msgstr "독자 교육 수준"
+
+msgid "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."
+msgstr "설명된 자원이 의도된 교육 또는 훈련 상황을 통한 진행 측면에서 정의된 엔티티 클래스."
+
+msgid "Extent"
+msgstr "범위"
+
+msgid "The size or duration of the resource."
+msgstr "자원의 크기 또는 지속 기간입니다."
+
+msgid "Has Format"
+msgstr "형식 있음"
+
+msgid "A related resource that is substantially the same as the pre-existing described resource, but in another format."
+msgstr "기존에 설명된 자원과 실질적으로 동일하지만 다른 형식의 관련 자원입니다."
+
+msgid "Has Part"
+msgstr "파트 있음"
+
+msgid "A related resource that is included either physically or logically in the described resource."
+msgstr "설명된 자원에 물리적 또는 논리적으로 포함된 관련 자원입니다."
+
+msgid "Has Version"
+msgstr "버전 있음"
+
+msgid "A related resource that is a version, edition, or adaptation of the described resource."
+msgstr "설명된 자원의 버전, 개정판 또는 적응인 관련 자원입니다."
+
+msgid "Instructional Method"
+msgstr "교육 방법"
+
+msgid "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support. Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured. Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."
+msgstr "설명된 자원이 지원하도록 설계된 지식, 태도 및 기술을 생성하는 데 사용되는 프로세스입니다. 교육 방법은 일반적으로 교육 자료를 제시하거나 교육 활동을 수행하는 방법, 학습자 간 및 학습자와 강사 학습자 간의 상호작용의 패턴과 그룹 및 개별 학습 수준을 측정하는 메커니즘을 포함합니다. 교육 방법에는 평가 및 피드백을 통해 계획 및 구현에서 교육 및 학습 프로세스의 모든 측면이 포함됩니다."
+
+msgid "Is Format Of"
+msgstr "형식"
+
+msgid "A related resource that is substantially the same as the described resource, but in another format."
+msgstr "설명된 자원과 실질적으로 동일하지만 다른 형식의 관련 자원입니다."
+
+msgid "Is Part Of"
+msgstr "파트"
+
+msgid "A related resource in which the described resource is physically or logically included."
+msgstr "설명된 자원이 물리적 또는 논리적으로 포함된 관련 자원입니다."
+
+msgid "Is Referenced By"
+msgstr "참조 대상"
+
+msgid "A related resource that references, cites, or otherwise points to the described resource."
+msgstr "설명된 자원을 참조, 인용하거나 다른 방법으로 가리키는 관련 자원입니다."
+
+msgid "Is Replaced By"
+msgstr "대체 대상"
+
+msgid "A related resource that supplants, displaces, or supersedes the described resource."
+msgstr "설명된 자원을 대체(supplant), 대신(displace) 또는 대체(supersede)하는 관련 자원입니다."
+
+msgid "Is Required By"
+msgstr "필수 대상"
+
+msgid "A related resource that requires the described resource to support its function, delivery, or coherence."
+msgstr "설명된 자원이 기능, 전달 또는 일관성을 지원하도록 요구하는 관련 자원입니다."
+
+msgid "Is Version Of"
+msgstr "버전"
+
+msgid "A related resource of which the described resource is a version, edition, or adaptation. Changes in version imply substantive changes in content rather than differences in format."
+msgstr "설명된 자원의 버전, 개정판 또는 적응인 관련 자원입니다. 버전의 변경은 형식의 차이보다는 내용의 실질적인 변경을 의미합니다."
+
+msgid "Date Issued"
+msgstr "발행 날짜"
+
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "자원의 정규 발행(예: 출판) 날짜입니다."
+
+msgid "License"
+msgstr "라이센스"
+
+msgid "A legal document giving official permission to do something with the resource."
+msgstr "자원으로 무언가를 할 수 있는 공식 권한을 제공하는 법적 문서입니다."
+
+msgid "Mediator"
+msgstr "중개자"
+
+msgid "An entity that mediates access to the resource and for whom the resource is intended or useful. In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."
+msgstr "자원에 대한 액세스를 조정하고 자원을 의도하거나 유용하게 사용하는 엔티티입니다. 교육적인 맥락에서 중재자는 부모, 교사, 보조 교사 또는 보호자일 수 있습니다."
+
+msgid "Medium"
+msgstr "중간길이 형식"
+
+msgid "The material or physical carrier of the resource."
+msgstr "자원의 재료 또는 물리적 캐리어."
+
+msgid "Date Modified"
+msgstr "수정된 날짜"
+
+msgid "Date on which the resource was changed."
+msgstr "자원이 변경된 날짜입니다."
+
+msgid "Provenance"
+msgstr "출처"
+
+msgid "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation. The statement may include a description of any changes successive custodians made to the resource."
+msgstr "출처의 신뢰성, 무결성 및 해석에 중요한 자원의 작성 이후 소유권 및 보유에 대한 변경사항을 나타내는 문장입니다. 이 문장에는 관리자가 자원에 대해 진행한 변경사항에 대한 설명이 포함될 수 있습니다."
+
+msgid "References"
+msgstr "참조"
+
+msgid "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+msgstr "설명된 자원이 참조, 인용하거나 다른 방법으로 가리키는 관련 자원입니다."
+
+msgid "Replaces"
+msgstr "대체"
+
+msgid "A related resource that is supplanted, displaced, or superseded by the described resource."
+msgstr "설명된 자원을 대체(supplant), 대신(displace) 또는 대체(supersede)하는 관련 자원입니다."
+
+msgid "Requires"
+msgstr "필수"
+
+msgid "A related resource that is required by the described resource to support its function, delivery, or coherence."
+msgstr "설명된 자원이 기능, 전달 또는 일관성을 지원하도록 요구하는 관련 자원입니다."
+
+msgid "Rights Holder"
+msgstr "권리 보유자"
+
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "자원에 대한 권리를 소유하거나 관리하는 사람 또는 조직입니다."
+
+msgid "Spatial Coverage"
+msgstr "공간 범위"
+
+msgid "Spatial characteristics of the resource."
+msgstr "자원의 공간 특성입니다."
+
+msgid "Table Of Contents"
+msgstr "목차"
+
+msgid "A list of subunits of the resource."
+msgstr "자원의 하위 단위 목록입니다."
+
+msgid "Temporal Coverage"
+msgstr "임시 범위"
+
+msgid "Temporal characteristics of the resource."
+msgstr "자원의 임시 특성입니다."
+
+msgid "Date Valid"
+msgstr "유효 날짜"
+
+msgid "Date (often a range) of validity of a resource."
+msgstr "자원의 유효 날짜(종종 범위)입니다."
+
+msgid "Metatag Extended Permissions"
+msgstr "메타태그 확장 권한"
+
+msgid "Adds individual permissions for each meta tag, allowing for fine-grained access to the meta tags. Note: this may lead to performance issues on the permissions admin page, please see the included README.txt file for details."
+msgstr "각 메타태그에 대한 개별 권한을 추가하여 메타태그에 대한 세분화된 액세스를 허용합니다. 참고: 이로 인해 권한 관리 페이지에서 성능 문제가 발생할 수 있습니다. 자세한 내용은 포함된 README.txt 파일을 참조하십시오."
+
+msgid "Access %tag in %group"
+msgstr "%group의 %tag에 액세스"
+
+msgid "Metatag: Facebook"
+msgstr "메타 태그: Facebook"
+
+msgid "A set of meta tags specially for controlling advanced functionality with Facebook."
+msgstr "Facebook에서 특별히 고급 기능을 제어하는 메타 태그 세트입니다. "
+
+msgid "Facebook Admins"
+msgstr "Facebook 관리자"
+
+msgid "Facebook App ID"
+msgstr "Facebook 앱 ID"
+
+msgid "Facebook Pages"
+msgstr "Facebook 페이지"
+
+msgid "facebook"
+msgstr "facebook"
+
+msgid "A comma-separated list of Facebook user IDs of people who are considered administrators or moderators of this page."
+msgstr "이 페이지의 관리자 또는 중재자로 간주되는 사람의 쉼표로 분리된 Facebook 사용자 ID 목록입니다. "
+
+msgid "Facebook Application ID"
+msgstr "Facebook 애플리케이션 ID"
+
+msgid "A comma-separated list of Facebook Platform Application IDs applicable for this site."
+msgstr "이 사이트에 대해 해당되는 쉼표로 분리된 Facebook Platform Application ID 목록입니다. "
+
+msgid "Facebook Instant Articles claim URL token."
+msgstr "Facebook Instant Articles에서 URL 토큰을 요청합니다. "
+
+msgid "Provides support for many different favicons."
+msgstr "서로 다른 여러 파비콘에 대한 지원을 제공합니다. "
+
+msgid "Metatag: Favicons"
+msgstr "메타 태그: 파비콘"
+
+msgid "Default shortcut icon"
+msgstr "기본 바로 가기 아이콘"
+
+msgid "Icon: SVG"
+msgstr "아이콘: SVG"
+
+msgid "href"
+msgstr "href"
+
+msgid "Color"
+msgstr "색상"
+
+msgid "Icon: 16px x 16px"
+msgstr "아이콘: 16 x 16픽셀"
+
+msgid "Icon: 32px x 32px"
+msgstr "아이콘: 32 x 32픽셀"
+
+msgid "Icon: 96px x 96px"
+msgstr "아이콘: 96 x 96픽셀"
+
+msgid "Icon: 192px x 192px"
+msgstr "아이콘: 192 x 192픽셀"
+
+msgid "Apple touch icon: 60px x 60px"
+msgstr "Apple 터치 아이콘: 60 x 60픽셀"
+
+msgid "Apple touch icon: 72px x 72px"
+msgstr "Apple 터치 아이콘: 72 x 72픽셀"
+
+msgid "Apple touch icon: 76px x 76px"
+msgstr "Apple 터치 아이콘: 76 x 76픽셀"
+
+msgid "Apple touch icon: 114px x 114px"
+msgstr "Apple 터치 아이콘: 114 x 114픽셀"
+
+msgid "Apple touch icon: 120px x 120px"
+msgstr "Apple 터치 아이콘: 120 x 120픽셀"
+
+msgid "Apple touch icon: 144px x 144px"
+msgstr "Apple 터치 아이콘: 144 x 144픽셀"
+
+msgid "Apple touch icon: 152px x 152px"
+msgstr "Apple 터치 아이콘: 152 x 152픽셀"
+
+msgid "Apple touch icon: 180px x 180px"
+msgstr "Apple 터치 아이콘: 180 x 180픽셀"
+
+msgid "Apple touch icon (precomposed): 57px x 57px"
+msgstr "Apple 터치 아이콘(사전 작성됨): 57 x 57픽셀"
+
+msgid "Apple touch icon (precomposed): 72px x 72px"
+msgstr "Apple 터치 아이콘(사전 작성됨): 72 x 72픽셀"
+
+msgid "Apple touch icon (precomposed): 76px x 76px"
+msgstr "Apple 터치 아이콘(사전 작성됨): 76 x 76픽셀"
+
+msgid "Apple touch icon (precomposed): 114px x 114px"
+msgstr "Apple 터치 아이콘(사전 작성됨): 114 x 114픽셀"
+
+msgid "Apple touch icon (precomposed): 120px x 120px"
+msgstr "Apple 터치 아이콘(사전 작성됨): 120 x 120픽셀"
+
+msgid "Apple touch icon (precomposed): 144px x 144px"
+msgstr "Apple 터치 아이콘(사전 작성됨): 144 x 144픽셀"
+
+msgid "Apple touch icon (precomposed): 152px x 152px"
+msgstr "Apple 터치 아이콘(사전 작성됨): 152 x 152픽셀"
+
+msgid "Apple touch icon (precomposed): 180px x 180px"
+msgstr "Apple 터치 아이콘(사전 작성됨): 180 x 180픽셀"
+
+msgid "Favicons & touch icons"
+msgstr "파비콘 및 터치 아이콘"
+
+msgid "A PNG image that is 60px wide by 60px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "너비 x 높이가 60 x 60픽셀인 PNG 이미지입니다. Retina iPhone, iPod Touch, Android 2.1+ 외 장치에서만 사용됩니다. "
+
+msgid "A PNG image that is 114px wide by 114px high. Used with iPhone with @2x display running iOS <= 6."
+msgstr "너비 x 높이가 114 x 114픽셀인 PNG 이미지입니다. iOS 6 이하를 실행 중인 @2x 디스플레이가 있는 iPhone에서 사용됩니다. "
+
+msgid "A PNG image that is 120px wide by 120px high. Used with iPhone with @2x display running iOS >= 7."
+msgstr "너비 x 높이가 120 x 120픽셀인 PNG 이미지입니다. iOS 7 이상을 실행 중인 @2x 디스플레이가 있는 iPhone에서 사용됩니다. "
+
+msgid "A PNG image that is 144px wide by 144px high. Used with iPad with @2x display running iOS <= 6."
+msgstr "너비 x 높이가 144 x 144픽셀인 PNG 이미지입니다. iOS 6 이하를 실행 중인 @2x 디스플레이가 있는 iPhone에서 사용됩니다. "
+
+msgid "A PNG image that is 152px wide by 152px high. Used with iPad with @2x display running iOS >= 7."
+msgstr "너비 x 높이가 152 x 152픽셀인 PNG 이미지입니다. iOS 7 이상을 실행 중인 @2x 디스플레이가 있는 iPad에서 사용됩니다. "
+
+msgid "A PNG image that is 180px wide by 180px high. Used with iPhone 6 Plus with @3x display."
+msgstr "너비 x 높이가 180 x 180픽셀인 PNG 이미지입니다. @3x 디스플레이가 있는 iPhone 6 Plus에서 사용됩니다. "
+
+msgid "A PNG image that is 72px wide by 72px high. Used with the iPad mini and the first- and second-generation iPad (@1x display) on iOS <= 6."
+msgstr "너비 x 높이가 72 x 72픽셀인 PNG 이미지입니다. iOS 6 이하에서 iPad mini 및 1세대 및 2세대 iPad(@1x 디스플레이)에서 사용됩니다. "
+
+msgid "A PNG image that is 76px wide by 76px high. Used with the iPad mini and the second-generation iPad (@1x display) on iOS >= 7."
+msgstr "너비 x 높이가 76 x 76픽셀인 PNG 이미지입니다. iOS 7 이상에서 iPad mini 및 2세대 iPad(@1x 디스플레이)에서 사용됩니다. "
+
+msgid "A PNG image that is 57px wide by 57px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "너비 x 높이가 57 x 57픽셀인 PNG 이미지입니다. Retina iPhone, iPod Touch, Android 2.1+ 외 장치에서만 사용됩니다. "
+
+msgid "A PNG image that is 16px wide by 16px high."
+msgstr "너비 x 높이가 16 x 16픽셀인 PNG 이미지입니다. "
+
+msgid "A PNG image that is 192px wide by 192px high."
+msgstr "너비 x 높이가 192 x 192픽셀인 PNG 이미지입니다. "
+
+msgid "A PNG image that is 32px wide by 32px high."
+msgstr "너비 x 높이가 32 x 32픽셀인 PNG 이미지입니다. "
+
+msgid "A PNG image that is 96px wide by 96px high."
+msgstr "너비 x 높이가 96 x 96픽셀인 PNG 이미지입니다. "
+
+msgid "Mask icon color"
+msgstr "마스크 아이콘 색상"
+
+msgid "Color attribute for SVG (mask) icon in hexadecimal format, e.g. '#0000ff'. Setting it will break HTML validation. If not set macOS Safari ignores the Mask Icon entirely, making the Icon: SVG completely useless."
+msgstr "16진 형식의 SVG(마스크) 아이콘에 대한 색상 속성입니다(예: '#0000ff'). 설정하면 HTML 유효성 검증이 중단됩니다. 설정하지 않으면 macOS Safari가 마스크 아이콘을 완전히 무시하여 아이콘: SVG를 완전히 쓸모없게 만듭니다."
+
+msgid "Mask icon (SVG)"
+msgstr "마스크 아이콘(SVG)"
+
+msgid "A grayscale scalable vector graphic (SVG) file."
+msgstr "그레이스케일 SVG(Scalable Vector Graphic) 파일입니다. "
+
+msgid "Default icon"
+msgstr "기본 아이콘"
+
+msgid "The traditional favicon, must be either a GIF, ICO, JPG/JPEG or PNG image."
+msgstr "기존 파비콘은 GIF, ICO, JPG/JPEG 또는 PNG 이미지여야 합니다. "
+
+msgid "Provides support for meta tags used for Google Custom Search Engine."
+msgstr "Google Custom Search Engine에 사용된 메타 태그에 대한 지원을 제공합니다. "
+
+msgid "Metatag: Google Custom Search Engine (CSE)"
+msgstr "메타 태그: Google CSE(Custom Search Engine)"
+
+msgid "Thumbnail"
+msgstr "썸네일"
+
+msgid "Department"
+msgstr "부서"
+
+msgid "Content audience"
+msgstr "컨텐츠의 대상"
+
+msgid "Document status"
+msgstr "문서 상태"
+
+msgid "google_rating"
+msgstr "google_rating"
+
+msgid "Google Custom Search Engine (CSE)"
+msgstr "Google CSE(Custom Search Engine)"
+
+msgid "Meta tags used to control the mobile browser experience. Some of these meta tags have been replaced by newer mobile browsers. These meta tags usually only need to be set globally, rather than per-page."
+msgstr "모바일 브라우저 경험을 제어하는 데 사용되는 메타 태그입니다. 이러한 메타 태그 중 일부는 새 모바일 브라우저로 대체됩니다. 이 메타 태그는 보통 페이지당이 아니라 글로벌 범위로만 설정해야 합니다. "
+
+msgid "Department tag."
+msgstr "부서 태그입니다. "
+
+msgid "Content rating"
+msgstr "컨텐츠 등급 지정"
+
+msgid "Works only with numeric values."
+msgstr "숫자 값만 사용합니다. "
+
+msgid "Use a url of a valid image."
+msgstr "올바른 이미지의 URL을 사용합니다. "
+
+msgid "Metatag: Google Plus"
+msgstr "메타 태그: Google Plus"
+
+msgid "Provides support for Google's Plus meta tags. Deprecated, will be removed in Metatag 2.0.0."
+msgstr "Google Plus 메타 태그에 대한 지원을 제공합니다. 더 이상 사용되지 않으며 Metatag 2.0.0에서 제거될 예정입니다."
+
+msgid "Google Plus: name"
+msgstr "Google Plus: 이름"
+
+msgid "Google Plus: image"
+msgstr "Google Plus: 이미지"
+
+msgid "Google Plus: description"
+msgstr "Google Plus: 설명"
+
+msgid "Publisher URL"
+msgstr "공개자 URL"
+
+msgid "Google Plus"
+msgstr "Google Plus"
+
+msgid "DEPRECATED, use Advanced-Author instead."
+msgstr "더 이상 사용되지 않습니다. Advanced-Author를 대신 사용하십시오."
+
+msgid "Content description less than 200 characters."
+msgstr "컨텐츠 설명이 200자 미만입니다. "
+
+msgid "Image"
+msgstr "이미지"
+
+msgid "The URL of an image which should represent the content. For best results use an image that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Supports PNG, JPEG and GIF formats."
+msgstr "컨텐츠를 표시해야 하는 이미지의 URL입니다. 최상의 결과를 얻으려면 크기가 1200 x 630픽셀 이상인 이미지를 사용하십시오. 하지만 최소 권장 크기는 600 x 316픽셀 이상입니다. PNG, JPEG, GIF 형식을 지원합니다. "
+
+msgid "Name"
+msgstr "이름"
+
+msgid "Content title."
+msgstr "컨텐츠 제목입니다. "
+
+msgid "Used by some search engines to confirm publication of the content on a page. Should be the full URL for the publication's Google+ profile page."
+msgstr "일부 검색 엔진이 페이지에서 컨텐츠의 공개를 확인하는 데 사용됩니다. 공개 항목의 Google+ 프로파일 페이지에 대한 전체 URL이어야 합니다. "
+
+msgid "Provides support for the hreflang meta tag with some extra logic to simplify it."
+msgstr "단순화하기 위해 일부 추가 논리를 포함하는 hreflang 메타 태그에 대한 지원을 제공합니다. "
+
+msgid "Metatag: Hreflang"
+msgstr "메타 태그: Hreflang"
+
+msgid "Default locale (x-default)"
+msgstr "기본 로케일(x-default)"
+
+msgid "Href per language"
+msgstr "언어별 href"
+
+msgid "URL for a version of this page in %langcode"
+msgstr "%langcode에 있는 이 페이지의 버전 URL"
+
+msgid "Alternative language links (hreflang)"
+msgstr "대체 언어 링크(hreflang)"
+
+msgid "These meta tags are designed to point visitors to versions of the current page in other languages."
+msgstr "이 메타 태그는 방문자에게 다른 언어의 현재 페이지 버전을 지시하도록 설계되었습니다. "
+
+msgid "Hreflang per language"
+msgstr "언어당 Hreflang"
+
+msgid "This plugin will be cloned from these settings for each enabled language."
+msgstr "이 플러그인은 각 사용 언어에 대해 이 설정에서 복제됩니다."
+
+msgid "This should point to the version of the page that is for the main or primary locale, e.g. the original version of an article that is translated into other languages."
+msgstr "기본 또는 1차 로케일(예: 다른 언어로 번역된 기사의 원래 버전)에 해당하는 페이지 버전을 가리켜야 합니다. "
+
+msgid "Provides support for meta tags used to control the mobile browser experience."
+msgstr "모바일 브라우저 경험을 제어하는 데 사용되는 메타 태그에 대한 지원을 제공합니다. "
+
+msgid "Metatag: Mobile & UI Adjustments"
+msgstr "메타 태그: 모바일 및 UI 조정"
+
+msgid "Handheld URL"
+msgstr "휴대용 URL"
+
+msgid "Android Mobile: Android App Link Alternative"
+msgstr "Android 모바일: Android 앱 링크 대체"
+
+msgid "Android Mobile: Manifest"
+msgstr "Android 모바일: Manifest"
+
+msgid "Apple Mobile: iTunes App"
+msgstr "Apple 모바일: iTunes 앱"
+
+msgid "Apple Mobile: Web App Capable"
+msgstr "Apple 모바일: 웹 앱 사용 가능"
+
+msgid "Apple Mobile: Web App Status bar color"
+msgstr "Apple 모바일: 웹 앱 상태 표시줄 색상"
+
+msgid "Apple Mobile: Web App Title"
+msgstr "Apple 모바일: 웹 앱 제목"
+
+msgid "Application name"
+msgstr "애플리케이션 이름"
+
+msgid "Mobile: Cleartype"
+msgstr "모바일: Cleartype"
+
+msgid "Apple Mobile: Format Detection"
+msgstr "Apple 모바일: 형식 발견"
+
+msgid "Mobile: Handheld-Friendly"
+msgstr "모바일: 휴대용 친화적"
+
+msgid "Apple Mobile: iOS App Link Alternative"
+msgstr "Apple 모바일: iOS 앱 링크 대체"
+
+msgid "Mobile: Mobile Optimized"
+msgstr "모바일: 모바일 최적화됨"
+
+msgid "MSApplication - Allow domain API calls"
+msgstr "MSApplication - 도메인 API 호출 허용"
+
+msgid "MSApplication - Allow domain meta tags"
+msgstr "MSApplication - 도메인 메타 태그 허용"
+
+msgid "MSApplication - Badge"
+msgstr "MSApplication - 배지"
+
+msgid "MSApplication - Config"
+msgstr "MSApplication - 구성"
+
+msgid "MSApplication - Nav button color"
+msgstr "MSApplication - 탐색 단추 색상"
+
+msgid "MSApplication - Notification"
+msgstr "MSApplication - 알림"
+
+msgid "MSApplication - Square logo, 150px x 150px"
+msgstr "MSApplication - 사각형 로고, 150 x 150픽셀"
+
+msgid "MSApplication - Square logo, 310px x 310px"
+msgstr "MSApplication - 사각형 로고, 310 x 310픽셀"
+
+msgid "MSApplication - Square logo, 70px x 70px"
+msgstr "MSApplication - 사각형 로고, 70 x 70픽셀"
+
+msgid "MSApplication - Start URL"
+msgstr "MSApplication - 시작 URL"
+
+msgid "MSApplication - Task"
+msgstr "MSApplication - 태스크"
+
+msgid "MSApplication - Task separator"
+msgstr "MSApplication - 태스크 구분 기호"
+
+msgid "MSApplication - Tile color"
+msgstr "MSApplication - 타일 색상"
+
+msgid "MSApplication - Tile image"
+msgstr "MSApplication - 타일 이미지"
+
+msgid "MSApplication - Tooltip"
+msgstr "MSApplication - 도구 팁"
+
+msgid "MSApplication - Wide logo, 310px x 150px"
+msgstr "MSApplication - 넓은 로고, 310 x 150픽셀"
+
+msgid "MSApplication - Window"
+msgstr "MSApplication - 창"
+
+msgid "Mobile: Theme Color"
+msgstr "모바일: 테마 색상"
+
+msgid "Mobile: Viewport"
+msgstr "모바일: 뷰포트"
+
+msgid "Mobile: Web Manifest"
+msgstr "모바일: 웹 Manifest"
+
+msgid "X-UA-Compatible"
+msgstr "X-UA-호환 가능"
+
+msgid "Android"
+msgstr "Android"
+
+msgid "Custom meta tags used by the Android OS, browser, etc."
+msgstr "Android OS, 브라우저 등에서 사용되는 사용자 정의 메타 태그"
+
+msgid "Apple & iOS"
+msgstr "Apple 및 iOS"
+
+msgid "Custom meta tags used by Apple's software, iOS, Safari, etc."
+msgstr "Apple 소프트웨어, iOS, Safari 등에서 사용되는 사용자 정의 메타 태그"
+
+msgid "Mobile & UI Adjustments"
+msgstr "모바일 및 UI 조정"
+
+msgid "Windows & Windows Mobile"
+msgstr "Windows 및 Windows Mobile"
+
+msgid "Custom meta tags used by the Windows and Windows Mobile OSes, IE browser, etc."
+msgstr "Windows 및 Windows Mobile OSes, IE 브라우저 등에서 사용되는 사용자 정의 메타 태그"
+
+msgid "Provides an absolute URL to a specially formatted version of the current page designed for 'feature phones', mobile phones that do not support modern browser standards. See the <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>official Google Mobile SEO Guide</a> for details on how the page should be formatted."
+msgstr "최신 브라우저 표준을 지원하지 않는 휴대전화인 '피처폰'용으로 디자인된 현재 페이지의 특수하게 형식화된 버전에 대한 절대 URL을 제공합니다. 페이지가 형식화되는 방법에 대한 세부사항은 <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>공식 Google 모바일 SEO 안내서</a>를 참조하십시오."
+
+msgid "Android app link alternative"
+msgstr "Android 앱 링크 대체"
+
+msgid "A custom string for deeplinking to an Android mobile app. Should be in the format 'package_name/host_path', e.g. 'com.example.android/example/hello-screen'. The 'android-app://' prefix will be included automatically."
+msgstr "Android 모바일 앱에 딥링크할 사용자 정의 문자열입니다. 'package_name/host_path' 형식이어야 합니다(예: 'com.example.android/example/hello-screen'). 'android-app://' 접두부는 자동으로 포함됩니다. "
+
+msgid "iTunes App details"
+msgstr "iTunes 앱 세부사항"
+
+msgid "This informs iOS devices to display a banner to a specific app. If used, it must provide the 'app-id' value, the 'affiliate-data' and 'app-argument' values are optional."
+msgstr "iOS 디바이스에 특정 앱에 대한 배너를 표시합니다. 사용하는 경우 'app-id' 값을 제공해야 합니다. 'affiliate-data' 및 'app-argument' 값은 선택사항입니다."
+
+msgid "Web app capable?"
+msgstr "웹 앱을 사용할 수 있습니까?"
+
+msgid "If set to 'yes', the application will run in full-screen mode; the default behavior is to use Safari to display web content."
+msgstr "'yes'로 설정하면 애플리케이션은 전체 화면 모드로 실행됩니다. 기본 동작은 Safari를 사용하여 웹 컨텐츠를 표시하는 것입니다."
+
+msgid "Status bar color"
+msgstr "상태 표시줄 색상"
+
+msgid "Requires the 'Web app capable' meta tag to be set to 'yes'. May be set to 'default', 'black', or 'black-translucent'."
+msgstr "'웹 앱 사용 가능' 메타 태그를 'yes'로 설정해야 합니다. 'default', 'black' 또는 'black-translucent'로 설정할 수도 있습니다. "
+
+msgid "Apple Web App Title"
+msgstr "Apple 웹 앱 제목"
+
+msgid "Overrides the long site title when using the Apple Add to Home Screen."
+msgstr "Apple 홈 화면에 추가를 사용하는 경우 긴 사이트 제목을 대체합니다. "
+
+msgid "The default name displayed with the pinned sites tile (or icon). Set the content attribute to the desired name."
+msgstr "고정된 사이트 타일 또는 아이콘과 함께 표시되는 기본 이름입니다. 원하는 이름으로 컨텐츠 속성을 설정합니다. "
+
+msgid "Cleartype"
+msgstr "Cleartype"
+
+msgid "A legacy meta tag for older versions of Internet Explorer on Windows, use the value 'on' to enable it; this tag is ignored by all other browsers."
+msgstr "Windows에서 이전 버전의 Internet Explorer에 대한 레거시 메타 태그입니다. 사용하려면 값 'on'을 사용합니다. 다른 모든 브라우저에서는 이 태그가 무시됩니다."
+
+msgid "Format detection"
+msgstr "형식 발견"
+
+msgid "If set to 'telephone=no' the page will not be checked for phone numbers, which would be presented."
+msgstr "'telephone=no'로 설정하면 페이지에서는 표시되는 전화번호를 확인하지 않습니다. "
+
+msgid "Handheld-Friendly"
+msgstr "휴대용 친화적"
+
+msgid "Some older mobile browsers will expect this meta tag to be set to 'true' to indicate that the site has been designed with mobile browsers in mind."
+msgstr "일부 예전 모바일 브라우저에서는 모바일 브라우저를 염두에 두고 사이트가 설계되었음을 표시하기 위해 이 메타 태그가 'true'로 설정됩니다. "
+
+msgid "iOS app link alternative"
+msgstr "iOS 앱 링크 대체"
+
+msgid "A custom string for deeplinking to an iOS mobile app. Should be in the format 'itunes_id/scheme/host_path', e.g. 123456/example/hello-screen'. The 'ios-app://' prefix will be included automatically."
+msgstr "iOS 모바일 앱에 딥링크할 사용자 정의 문자열입니다. 'itunes_id/scheme/host_path' 형식이어야 합니다(예: 123456/example/hello-screen'). 'ios-app://' 접두부는 자동으로 포함됩니다. "
+
+msgid "Mobile Optimized"
+msgstr "모바일 최적화됨"
+
+msgid "Using the value 'width' tells certain mobile Internet Explorer browsers to display as-is, without being resized. Alternatively a numerical width may be used to indicate the desired page width the page should be rendered in: '240' is the suggested default, '176' for older browsers or '480' for newer devices with high DPI screens."
+msgstr "값 'width'를 사용하면 특정 모바일 Internet Explorer 브라우저에 크기를 조정하지 않고 그대로 표시하도록 지시합니다. 또는 숫자 너비를 사용하여 페이지에서 렌더링해야 하는 원하는 페이지 너비를 표시할 수 있습니다. '240'은 제안되는 기본값입니다. 예전 브라우저의 경우 '176', 높은 DPI 화면의 최신 디바이스인 경우 '480'입니다."
+
+msgid "Allows tasks to be defined on child domains of the fully qualified domain name associated with the pinned site. Should be either 'true' or 'false'."
+msgstr "고정된 사이트와 연관된 완전한 도메인 이름의 하위 도메인에 태스크를 정의할 수 있습니다. 'true' 또는 'false'여야 합니다. "
+
+msgid "A semi-colon -separated string that must contain the 'polling-uri=' value with the full URL to a <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>Badge Schema XML file</a>. May also contain 'frequency=' value set to either 30, 60, 360, 720 or 1440 (default) which specifies (in minutes) how often the URL should be polled."
+msgstr "세미콜론으로 분리된 문자열로, <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>배지 스키마 XML 파일</a>에 대한 전체 URL과 함께 'polling-uri=' 값을 포함해야 합니다. 또한 30, 60, 360, 720 또는 1440(기본값)으로 설정된 'frequency=' 값을 포함할 수도 있습니다. 이 값은 URL을 폴링하는 빈도(분)를 지정합니다."
+
+msgid "Should contain the full URL to a <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>Browser configuration schema</a> file that further controls tile customizations."
+msgstr "추가로 타일 사용자 정의를 제어하는 <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>브라우저 구성 스키마</a> 파일에 대한 전체 URL을 포함해야 합니다. "
+
+msgid "Controls the color of the Back and Forward buttons in the pinned site browser window."
+msgstr "고정된 사이트 브라우저 창에서 뒤로 또는 앞으로 단추의 색상을 제어합니다. "
+
+msgid "A semi-colon -separated string containing 'polling-uri=' (required), 'polling-uri2=', 'polling-uri3=', 'polling-uri4=' and 'polling-uri5=' to indicate the URLs for notifications. May also contain a 'frequency=' value to specify how often (in minutes) the URLs will be polled; limited to 30, 60, 360, 720 or 1440 (default). May also contain the value 'cycle=' to control the notifications cycle."
+msgstr "알림에 대한 URL을 표시하기 위해 'polling-uri='(필수), 'polling-uri2=', 'polling-uri3=', 'polling-uri4=', 'polling-uri5='를 포함하는 세미콜론으로 분리된 문자열입니다. 또한 URL을 폴링하는 빈도(분)를 지정하기 위해 'frequency=' 값을 포함할 수도 있습니다. 30, 60, 360, 720 또는 1440(기본값)으로 제한됩니다. 또한 알림 주기를 제어하기 위해 'cycle=' 값을 포함할 수 있습니다. "
+
+msgid "The URL to a logo file that is 150px by 150px."
+msgstr "150 x 150픽셀인 로고 파일에 대한 URL입니다. "
+
+msgid "The URL to a logo file that is 310px by 310px."
+msgstr "310 x 310픽셀인 로고 파일에 대한 URL입니다. "
+
+msgid "The URL to a logo file that is 70px by 70px."
+msgstr "70 x 70픽셀인 로고 파일에 대한 URL입니다. "
+
+msgid "The URL to the root page of the site."
+msgstr "사이트의 루트 페이지에 대한 URL입니다. "
+
+msgid "A semi-colon -separated string defining the 'jump' list task. Should contain the 'name=' value to specify the task's name, the 'action-uri=' value to set the URL to load when the jump list is clicked, the 'icon-uri=' value to set the URL to an icon file to be displayed, and 'window-type=' set to either 'tab' (default), 'self' or 'window' to control how the link opens in the browser."
+msgstr "'이동' 목록 태스크를 정의하는 세미콜론으로 분리된 문자열입니다. 태스크 이름을 지정하려면 'name=' 값, 이동 목록을 클릭할 때 로드할 URL을 설정하려면 'action-uri=' 값, 표시할 아이콘 파일에 대한 URL을 설정하려면 'icon-uri=' 값, 브라우저에서 링크를 여는 방법을 제어하려면 'tab'(기본값), 'self' 또는 'window'로 설정된 'window-type='을 포함해야 합니다. "
+
+msgid "The HTML color to use as the background color for the live tile."
+msgstr "실시간 타일에 대한 배경색으로 사용할 HTML 색상입니다. "
+
+msgid "The URL to an image to use as the background for the live tile."
+msgstr "실시간 타일에 대한 배경으로 사용할 이미지 색상입니다. "
+
+msgid "Controls the text shown in the tooltip for the pinned site's shortcut."
+msgstr "고정된 사이트의 바로 가기에 대한 도구 팁에 표시되는 텍스트를 제어합니다. "
+
+msgid "The URL to a logo file that is 310px by 150px."
+msgstr "310 x 150픽셀인 로고 파일에 대한 URL입니다. "
+
+msgid "A semi-colon -separated value that controls the dimensions of the initial window. Should contain the values 'width=' and 'height=' to control the width and height respectively."
+msgstr "초기 창의 치수를 제어하는 세미콜론으로 분리된 값입니다. 너비와 높이를 각각 제어하기 위해 'width=' 및 'height=' 값을 포함해야 합니다. "
+
+msgid "Theme Color"
+msgstr "테마 색상"
+
+msgid "A color in hexadecimal format, e.g. '#0000ff' for blue; must include the '#' symbol. Used by some browsers to control the background color of the toolbar, the color used with an icon, etc."
+msgstr "16진 형식의 색상입니다(예: 파란색의 경우 '#0000ff'). '#' 기호를 포함해야 합니다. 일부 브라우저에서 도구 모음의 배경색, 아이콘에서 사용되는 색상 등을 제어하는 데 사용됩니다."
+
+msgid "Viewport"
+msgstr "뷰포트"
+
+msgid "Used by most contemporary browsers to control the display for mobile browsers. Please read a guide on responsive web design for details of what values to use."
+msgstr "대부분의 최근 브라우저에서 모바일 브라우저에 대한 표시를 제어하는 데 사용됩니다. 사용할 값에 대한 세부사항은 응답 웹 디자인에 대한 안내서를 참조하십시오."
+
+msgid "Web Manifest"
+msgstr "웹 Manifest"
+
+msgid "A URL to a manifest.json file that describes the application. The <a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>JSON-based manifest</a> provides developers with a centralized place to put metadata associated with a web application."
+msgstr "애플리케이션을 설명하는 manifest.json 파일에 대한 URL입니다. <a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>JSON 기반 Manifest</a>에서는 웹 애플리케이션과 연관된 메타데이터를 배치하기 위해 중앙화된 위치를 개발자에게 제공합니다."
+
+msgid "Indicates to IE which rendering engine should be used for the current page."
+msgstr "현재 페이지에 대해 사용해야 하는 렌더링 엔진을 IE에 표시합니다. "
+
+msgid "Metatag: Open Graph"
+msgstr "메타 태그: Open Graph"
+
+msgid "Provides support for Open Graph Protocol meta tags."
+msgstr "Open Graph Protocol 메타 태그에 대한 지원을 제공합니다. "
+
+msgid "Article author"
+msgstr "기사 작성자"
+
+msgid "Article expiration time"
+msgstr "기사 만기 시간"
+
+msgid "Article modified time"
+msgstr "기사 수정 시간"
+
+msgid "Article published time"
+msgstr "기사 공개 시간"
+
+msgid "Article publisher"
+msgstr "기사 공개자"
+
+msgid "Article section"
+msgstr "기사 섹션"
+
+msgid "Article tag(s)"
+msgstr "기사 태그"
+
+msgid "Book Author"
+msgstr "서적 저자"
+
+msgid "Book ISBN"
+msgstr "서적 ISBN"
+
+msgid "Book Release Date"
+msgstr "서적 릴리스 날짜"
+
+msgid "Book Tags"
+msgstr "서적 태그"
+
+msgid "Audio URL"
+msgstr "오디오 URL"
+
+msgid "Audio secure URL"
+msgstr "오디오 보안 URL"
+
+msgid "Audio type"
+msgstr "오디오 유형"
+
+msgid "Open Graph: Country name"
+msgstr "Open Graph: 국가 이름"
+
+msgid "Open Graph: Description"
+msgstr "Open Graph: 설명"
+
+msgid "Open Graph: Determiner"
+msgstr "Open Graph: 결정자"
+
+msgid "Open Graph: Email"
+msgstr "Open Graph: 이메일"
+
+msgid "Open Graph: Fax number"
+msgstr "Open Graph: 팩스 번호"
+
+msgid "Open Graph: Image"
+msgstr "Open Graph: 이미지"
+
+msgid "Open Graph: Image alt"
+msgstr "Open Graph: 이미지 alt"
+
+msgid "Open Graph: Image height"
+msgstr "Open Graph: 이미지 높이"
+
+msgid "Open Graph: Image secure URL"
+msgstr "Open Graph: 이미지 보안 URL"
+
+msgid "Open Graph: Image type"
+msgstr "Open Graph: 이미지 유형"
+
+msgid "Open Graph: Image URL"
+msgstr "Open Graph: 이미지 URL"
+
+msgid "Open Graph: Image width"
+msgstr "Open Graph: 이미지 너비"
+
+msgid "Open Graph: Latitude"
+msgstr "Open Graph: 위도"
+
+msgid "Open Graph: Locale"
+msgstr "Open Graph: 로케일"
+
+msgid "Open Graph: Alternative locale"
+msgstr "Open Graph: 대체 로케일"
+
+msgid "Open Graph: Locality"
+msgstr "Open Graph: 구/군"
+
+msgid "Open Graph: Longitude"
+msgstr "Open Graph: 경도"
+
+msgid "Open Graph: Phone number"
+msgstr "Open Graph: 전화번호"
+
+msgid "Open Graph: Postal code"
+msgstr "Open Graph: 우편번호"
+
+msgid "Open Graph: Region"
+msgstr "Open Graph: 지역"
+
+msgid "Open Graph: See also"
+msgstr "Open Graph: 관련 참조"
+
+msgid "Open Graph: Site name"
+msgstr "Open Graph: 사이트 이름"
+
+msgid "Open Graph: Street address"
+msgstr "Open Graph: 상세 주소"
+
+msgid "Open Graph: Title"
+msgstr "Open Graph: 제목"
+
+msgid "Open Graph: Type"
+msgstr "Open Graph: 유형"
+
+msgid "Open Graph: Updated time"
+msgstr "Open Graph: 업데이트된 시간"
+
+msgid "Open Graph: URL"
+msgstr "Open Graph: URL"
+
+msgid "Open Graph: Video URL"
+msgstr "Open Graph: 비디오 URL"
+
+msgid "Open Graph: Video duration"
+msgstr "Open Graph: 비디오 지속 시간"
+
+msgid "Open Graph: Video height"
+msgstr "Open Graph: 비디오 높이"
+
+msgid "Open Graph: Video Secure URL"
+msgstr "Open Graph: 비디오 보안 URL"
+
+msgid "Open Graph: Video type"
+msgstr "Open Graph: 비디오 유형"
+
+msgid "Open Graph: Video width"
+msgstr "Open Graph: 비디오 너비"
+
+msgid "First name"
+msgstr "이름"
+
+msgid "Gender"
+msgstr "성별"
+
+msgid "Last name"
+msgstr "성"
+
+msgid "Username"
+msgstr "아이디"
+
+msgid "Actor(s)"
+msgstr "액터"
+
+msgid "Actor's role"
+msgstr "액터의 역할"
+
+msgid "Director(s)"
+msgstr "디렉터"
+
+msgid "Release date"
+msgstr "릴리스 날짜"
+
+msgid "Series"
+msgstr "시리즈"
+
+msgid "Tag words"
+msgstr "태그 단어"
+
+msgid "Scriptwriter(s)"
+msgstr "스크립트 작가"
+
+msgid "Open Graph"
+msgstr "Open Graph"
+
+msgid "The <a href='https://ogp.me/'>Open Graph meta tags</a> are used to control how Facebook, Pinterest, LinkedIn and other social networking sites interpret the site's content.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "<a href='https://ogp.me/'>Open Graph 메타 태그</a>는 Facebook, Pinterest, LinkedIn, 기타 소셜 네트워킹 사이트에서 사이트 컨텐츠를 해석하는 방법을 제어하는 데 사용됩니다.<br><br>Facebook <a href='https://developers.facebook.com/tools/debug/'>공유 디버거</a>를 사용하면 컨텐츠가 Facebook에 공유될 때 컨텐츠가 어떻게 보이는지 미리보고 Open Graph 태그 관련 문제를 디버깅할 수 있습니다."
+
+msgid "Links an article to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr " 작성자의 Facebook 프로파일에 기사를 링크합니다. 작성자의 프로파일 페이지 또는 해당 Facebook 프로파일 ID에 대한 URL이어야 합니다."
+
+msgid "Article expiration date & time"
+msgstr "기사 만기 날짜 및 시간"
+
+msgid "The date this content will expire, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "이 컨텐츠가 만료되는 날짜(선택적 시간 값 포함)입니다. <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> 형식이어야 합니다."
+
+msgid "Article modification date & time"
+msgstr "기사 수정 날짜 및 시간"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "이 컨텐츠가 마지막으로 수정된 날짜(선택적 시간 값 포함)입니다. <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> 형식이어야 합니다."
+
+msgid "Article publication date & time"
+msgstr "기사 공개 날짜 및 시간"
+
+msgid "The date this content was published on, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "이 컨텐츠가 공개된 날짜(선택적 시간 값 포함)입니다. <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> 형식이어야 합니다."
+
+msgid "Links an article to a publisher's Facebook page."
+msgstr "공개자의 Facebook 페이지에 기사를 링크합니다. "
+
+msgid "The primary section of this website the content belongs to."
+msgstr "컨텐츠가 속한 이 웹 사이트의 1차 섹션입니다. "
+
+msgid "Appropriate keywords for this content."
+msgstr "이 컨텐츠에 대한 적절한 키워드입니다. "
+
+msgid "Book author"
+msgstr "서적 저자"
+
+msgid "Links a book to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "서적을 저자의 Facebook 프로파일에 연결합니다. 작성자의 프로파일 페이지 URL 또는 Facebook 프로파일 ID여야 합니다."
+
+msgid "ISBN"
+msgstr "ISBN"
+
+msgid "The Book's ISBN"
+msgstr "서적 ISBN"
+
+msgid "Release Date"
+msgstr "릴리스 날짜"
+
+msgid "The date the book was released."
+msgstr "서적이 릴리스된 날짜입니다."
+
+msgid "Book tag(s)"
+msgstr "서적 태그"
+
+msgid "The URL to an audio file that complements this object."
+msgstr "이 오브젝트를 보완하는 오디오 파일의 URL입니다."
+
+msgid "The secure URL to an audio file that complements this object. All 'http://' URLs will automatically be converted to 'https://'."
+msgstr "이 오브젝트를 보완하는 오디오 파일의 보안 URL입니다. 모든 'http://' URL은 자동으로 'https://'로 변환됩니다. "
+
+msgid "The MIME type of the audio file. Examples include 'application/mp3' for an MP3 file."
+msgstr "오디오 파일의 MIME 유형입니다. 예제에는 MP3 파일에 대한 'application/mp3'가 포함되어 있습니다."
+
+msgid "Country name"
+msgstr "국가 이름"
+
+msgid "A one to two sentence description of the content."
+msgstr "컨텐츠에 대한 1 - 2개 문장의 설명입니다. "
+
+msgid "Determiner"
+msgstr "결정자"
+
+msgid "The word that appears before the content's title in a sentence. The default ignores this value, the 'Automatic' value should be sufficient if this is actually needed."
+msgstr "컨텐츠의 제목 앞에 문장으로 나타내는 단어입니다. 기본값은 이 값을 무시하는 것입니다. 실제로 필요한 경우 '자동' 값으로 충분합니다."
+
+msgid "Email address"
+msgstr "이메일 주소"
+
+msgid "Fax number"
+msgstr "팩스 번호"
+
+msgid "The URL of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats. Should not be used if og:image:url is used. Note: if multiple images are added many services (e.g. Facebook) will default to the largest image, not specifically the first one."
+msgstr "컨텐츠를 표시해야 하는 이미지의 URL입니다. 이미지는 적어도 200 x 200픽셀 이상의 크기여야 합니다. 최소 권장 크기는 600 x 316픽셀입니다 그리고 최상의 결과를 얻으려면 크기가 1200 x 630픽셀 이상인 이미지를 사용하십시오. PNG, JPEG, GIF 형식을 지원합니다. og:image:url을 사용하는 경우 사용해서는 안 됩니다. 참고: 여러 이미지가 추가되면 많은 서비스(예: Facebook)가 첫 번째 이미지가 아닌 가장 큰 이미지로 기본 설정됩니다."
+
+msgid "Image 'alt'"
+msgstr "이미지 'alt'"
+
+msgid "A description of what is in the image, not a caption. If the page specifies an og:image it should specify og:image:alt."
+msgstr "캡션이 아니라 이미지에 있는 내용에 대한 설명입니다. 페이지에 og:image가 지정된 경우 og:image:alt를 지정해야 합니다."
+
+msgid "Image height"
+msgstr "이미지 높이"
+
+msgid "The height of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "위의 이미지의 높이입니다. 참고: 보안되지 않는 이미지 및 보안 이미지 모두 제공하는 경우 둘 다 크기가 동일해야 합니다. "
+
+msgid "Image Secure URL"
+msgstr "이미지 보안 URL"
+
+msgid "The secure URL (HTTPS) of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats."
+msgstr "컨텐츠를 표시해야 하는 이미지의 보안 URL(HTTPS)입니다. 이미지는 적어도 200 x 200픽셀 이상의 크기여야 합니다. 최소 권장 크기는 600 x 316픽셀입니다 그리고 최상의 결과를 얻으려면 크기가 1200 x 630픽셀 이상인 이미지를 사용하십시오. PNG, JPEG, GIF 형식을 지원합니다."
+
+msgid "Image type"
+msgstr "이미지 유형"
+
+msgid "The type of image referenced above. Should be either 'image/gif' for a GIF image, 'image/jpeg' for a JPG/JPEG image, or 'image/png' for a PNG image. Note: there should be one value for each image, and having more than there are images may cause problems."
+msgstr "위에서 참조되는 이미지 유형입니다. GIF 이미지의 경우 'image/gif', JPG/JPEG 이미지의 경우 'image/jpeg' 또는 PNG 이미지의 경우 'image/png'이어야 합니다. 참고: 각 이미지에 대해 하나의 값이 있어야 합니다. 여기 이미지 수보다 많으면 문제점이 발생할 수 있습니다."
+
+msgid "Image URL"
+msgstr "이미지 URL"
+
+msgid "A alternative version of og:image and has exactly the same requirements; only one needs to be used."
+msgstr "og:image의 대체 버전이며, 정확히 동일한 요구사항이 적용되어야 합니다. 하나만 사용해야 합니다."
+
+msgid "Image width"
+msgstr "이미지 너비"
+
+msgid "The width of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "위 이미지의 너비입니다. 참고: 보안되지 않는 이미지 및 보안 이미지 모두 제공하는 경우 둘 다 크기가 동일해야 합니다."
+
+msgid "Latitude"
+msgstr "위도"
+
+msgid "Locale"
+msgstr "로케일"
+
+msgid "The locale these tags are marked up in, must be in the format language_TERRITORY. Default is 'en_US'."
+msgstr "이 태그가 마크업된 로케일은 language_TERRITORY 형식이어야 합니다. 기본값은 'en_US'입니다. "
+
+msgid "Alternative locales"
+msgstr "대체 로케일"
+
+msgid "Other locales this content is available in, must be in the format language_TERRITORY, e.g. 'fr_FR'."
+msgstr "이 컨텐츠가 사용 가능한 기타 로케일은 language_TERRITORY 형식(예: 'fr_FR')이어야 합니다. "
+
+msgid "Locality"
+msgstr "구/군"
+
+msgid "Longitude"
+msgstr "경도"
+
+msgid "Phone number"
+msgstr "전화번호"
+
+msgid "Postal/ZIP code"
+msgstr "우편번호"
+
+msgid "Region"
+msgstr "구역"
+
+msgid "See also"
+msgstr "관련 참조"
+
+msgid "URLs to related content"
+msgstr "컨텐츠 관련 URL"
+
+msgid "Site name"
+msgstr "사이트 이름"
+
+msgid "A human-readable name for the site, e.g., <em>IMDb</em>."
+msgstr "사람이 읽을 수 있는 사이트 이름(예: <em>IMDb</em>)입니다. "
+
+msgid "Street address"
+msgstr "상세 주소"
+
+msgid "The title of the content, e.g., <em>The Rock</em>."
+msgstr "컨텐츠 제목(예: <em>The Rock</em>)입니다. "
+
+msgid "Content type"
+msgstr "콘텐츠 유형"
+
+msgid "The type of the content, e.g., <em>movie</em>."
+msgstr "컨텐츠 유형(예: <em>동영상</em>)입니다. "
+
+msgid "Content modification date & time"
+msgstr "컨텐츠 수정 날짜 및 시간"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format. Can be the same as the 'Article modification date' tag."
+msgstr "이 컨텐츠가 마지막으로 수정된 날짜(선택적 시간 값 포함)입니다. <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> 형식이어야 합니다. '기사 수정 날짜' 태그와 동일할 수 있습니다."
+
+msgid "Page URL"
+msgstr "페이지 URL"
+
+msgid "Preferred page location or URL to help eliminate duplicate content for search engines, e.g., <em>https://www.imdb.com/title/tt0117500/</em>."
+msgstr "검색 엔진에서 중복 컨텐츠를 제거할 수 있도록 지원하는 기본 페이지 위치 또는 URL(예: <em>https://www.imdb.com/title/tt0117500/</em>)입니다."
+
+msgid "Video URL"
+msgstr "비디오 URL"
+
+msgid "The URL of an video which should represent the content. For best results use a source that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Object types supported include video.episode, video.movie, video.other, and video.tv_show."
+msgstr "컨텐츠를 표시해야 하는 비디오의 URL입니다. 최상의 결과를 얻으려면 크기가 1200 x 630픽셀 이상인 소스를 사용하십시오. 하지만 최소 권장 크기는 600 x 316픽셀 이상입니다. 지원되는 오브젝트 유형으로는 video.episode, video.movie, video.other, video.tv_show가 포함됩니다. "
+
+msgid "Video duration (seconds)"
+msgstr "비디오 지속 시간(초)"
+
+msgid "The length of the video in seconds"
+msgstr "비디오 길이(초)"
+
+msgid "Video height"
+msgstr "비디오 높이"
+
+msgid "The height of the above video(s). Note: if both the unsecured and secured videos are provided, they should both be the same size."
+msgstr "위의 비디오의 높이입니다. 참고: 보안되지 않는 비디오 및 보안 비디오 모두 제공하는 경우 둘 다 크기가 동일해야 합니다. "
+
+msgid "Video Secure URL"
+msgstr "비디오 보안 URL"
+
+msgid "The secure URL (HTTPS) of an video which should represent the content."
+msgstr "컨텐츠를 표시해야 하는 비디오의 보안 URL(HTTPS)입니다."
+
+msgid "Video type"
+msgstr "비디오 유형"
+
+msgid "The type of video referenced above. Should be either  video.episode, video.movie, video.other, and video.tv_show. Note: there should be one value for each video, and having more than there are videos may cause problems."
+msgstr "위에서 참조되는 비디오 유형입니다. video.episode, video.movie, video.other, video.tv_show가 포함됩니다. 참고: 각 비디오에 대해 하나의 값이 있어야 합니다. 여기 비디오 수보다 많으면 문제점이 발생할 수 있습니다."
+
+msgid "Video width"
+msgstr "비디오 너비"
+
+msgid "The first name of the person who's Profile page this is."
+msgstr "이 페이지가 프로파일 페이지인 개인의 이름입니다. "
+
+msgid "Any of Facebook's gender values should be allowed, the initial two being 'male' and 'female'."
+msgstr "초기 두 가지는 '남성' 및 '여성'이 되는 Facebook의 성별 값을 허용해야 합니다. "
+
+msgid "The person's last name."
+msgstr "개인의 성."
+
+msgid "A pseudonym / alias of this person."
+msgstr "개인의 필명/별명."
+
+msgid "Links to the Facebook profiles for actor(s) that appear in the video."
+msgstr "비디오에 나오는 액터의 Facebook 프로파일로 링크됩니다."
+
+msgid "The roles of the actor(s)."
+msgstr "액터의 역할."
+
+msgid "Links to the Facebook profiles for director(s) that worked on the video."
+msgstr "비디오에 대해 작업한 디렉터의 Facebook 프로파일로 링크됩니다."
+
+msgid "The date the video was released."
+msgstr "비디오가 공개된 날짜."
+
+msgid "The TV show this series belongs to."
+msgstr "이 시리즈가 속하는 TV 프로그램."
+
+msgid "Tag words associated with this video."
+msgstr "이 비디오와 연관된 태그 단어."
+
+msgid "Links to the Facebook profiles for scriptwriter(s) for the video."
+msgstr "비디오 스크립트 작가의 Facebook 프로파일로 링크됩니다."
+
+msgid "Provides additional Open Graph Protocol meta tags for describing products."
+msgstr "제품을 설명하는 추가 Open Graph Protocol 메타 태그를 제공합니다. "
+
+msgid "Metatag: Open Graph Products"
+msgstr "메타 태그: Open Graph 제품"
+
+msgid "Open Graph Product: Price availability"
+msgstr "Open Graph 제품: 가격 가용성"
+
+msgid "Open Graph Product: Product condition"
+msgstr "Open Graph 제품: 제품 조건"
+
+msgid "Open Graph Product: Price amount"
+msgstr "Open Graph 제품: 가격 금액"
+
+msgid "Open Graph Product: Price currency"
+msgstr "Open Graph 제품: 가격 통화"
+
+msgid "Open Graph Product: Retailer Item ID"
+msgstr "Open Graph 제품: 소매업체 항목 ID"
+
+msgid "Open Graph - Products"
+msgstr "Open Graph - 제품"
+
+msgid "These <a href='https://ogp.me/'>Open Graph meta tags</a> are for describing products.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "<a href='https://ogp.me/'>Open Graph 메타 태그</a>는 제품을 설명합니다.<br><br>Facebook <a href='https://developers.facebook.com/tools/debug/'>공유 디버거</a>를 사용하면 컨텐츠가 Facebook에 공유될 때 컨텐츠가 어떻게 보이는지 미리보고 Open Graph 태그 관련 문제를 디버깅할 수 있습니다."
+
+msgid "Product availability"
+msgstr "제품 가용성"
+
+msgid "The availability of the product."
+msgstr "제품의 가용성입니다."
+
+msgid "Product condition"
+msgstr "제품 조건"
+
+msgid "The condition of the product."
+msgstr "상품의 상태."
+
+msgid "Product price amount"
+msgstr "제품 가격 금액"
+
+msgid "The price amount of the product."
+msgstr "제품의 가격 금액입니다."
+
+msgid "Product price currency"
+msgstr "제품 가격 통화"
+
+msgid "The price currency of the product."
+msgstr "제품의 가격 통화입니다."
+
+msgid "Retailer Item ID"
+msgstr "소매업체 항목 ID"
+
+msgid "The ID of the product as provided by the retailer."
+msgstr "소매업체에서 제공하는 제품의 ID입니다."
+
+msgid "Metatag: Page Manager"
+msgstr "메타 태그: 페이지 관리자"
+
+msgid "Provides metatag support for Page Manager variants."
+msgstr "페이지 관리자 변형에 대한 Metatag 지원을 제공합니다."
+
+msgid "Metatag: Pinterest"
+msgstr "Metatag: Pinterest"
+
+msgid "Provides support for Pinterest's custom meta tags."
+msgstr "Pinterest 사용자 정의 메타 태그에 대한 지원을 제공합니다."
+
+msgid "Pinterest: Description"
+msgstr "Pinterest: 설명"
+
+msgid "Pinterest: ID"
+msgstr "Pinterest: ID"
+
+msgid "Pinterest: Media"
+msgstr "Pinterest: 매체"
+
+msgid "Pinterest: No hover"
+msgstr "Pinterest: 도움말 없음"
+
+msgid "Pinterest: No pin"
+msgstr "Pinterest: 핀 없음"
+
+msgid "Pinterest: No search"
+msgstr "Pinterest: 검색 없음"
+
+msgid "Pinterest: URL"
+msgstr "Pinterest: URL"
+
+msgid "Pinterest"
+msgstr "Pinterest"
+
+msgid "A set of meta tags used to control how the site's content is consumed by <a href='https://pinterest.com/'>Pinterest</a>."
+msgstr "<a href='https://pinterest.com/'>Pinterest</a>에 의해 사이트의 컨텐츠가 소비되는 방식을 제어하는 데 사용되는 메타 태그 세트입니다."
+
+msgid "Id"
+msgstr "ID"
+
+msgid "The Canonical Pinterest object to pin."
+msgstr "표준 Pinterest 오브젝트를 고정합니다."
+
+msgid "Media"
+msgstr "미디어"
+
+msgid "The URL of media which should represent the content."
+msgstr "컨텐츠를 표시해야 하는 매체의 URL입니다."
+
+msgid "No hover"
+msgstr "도움말 없음"
+
+msgid "Do not show hovering Save or Search buttons, generated by the Pinterest browser extensions."
+msgstr "Pinterest 브라우저 확장 기능에 의해 생성된 호버링 저장 또는 검색 버튼을 표시하지 마십시오."
+
+msgid "No pin"
+msgstr "핀 없음"
+
+msgid "Do not pin anything from this page. When selected, this option will take precedence over all options below."
+msgstr "이 페이지에서 아무 것도 고정하지 마십시오. 선택하면 이 옵션이 아래의 모든 옵션보다 우선 적용됩니다."
+
+msgid "No search"
+msgstr "검색 없음"
+
+msgid "Do not allow Pinterest visual search to happen from this page."
+msgstr "이 페이지에서 Pinterest 시각적 검색을 허용하지 마십시오."
+
+msgid "URL"
+msgstr "URL"
+
+msgid "The URL which should represent the content."
+msgstr "컨텐츠에 표시해야 하는 URL."
+
+msgid "Enables metatags for custom routes"
+msgstr "사용자 정의 라우트에 대해 메타 태그 사용"
+
+msgid "Metatag Custom Routes (Paths)"
+msgstr "메타 태그 사용자 정의 라우트(경로)"
+
+msgid "Allows assigning meta tags to be used on custom routes, equivalent to custom paths."
+msgstr "사용자 정의 경로와 동격인 사용자 정의 라우트에서 메타 태그 지정을 사용할 수 있도록 합니다."
+
+msgid "Add meta tag for custom route"
+msgstr "사용자 정의 라우트에 대한 메타 태그 추가"
+
+msgid "Add custom metatag"
+msgstr "사용자 정의 메타 태그 추가"
+
+msgid "Route / Path"
+msgstr "라우트/경로"
+
+msgid "Enter the route (path) for this new configuration, starting with a leading slash.<br />Note: this must already exist as a path in Drupal."
+msgstr "선행 슬래시로 시작하는, 이 새 구성의 라우트(경로)를 입력하십시오.<br />참고: 이는 Drupal에서 경로로서 이미 존재해야 합니다."
+
+msgid "Submit"
+msgstr "전송"
+
+msgid "The path must begin with /"
+msgstr "경로는 /로 시작해야 함"
+
+msgid "The admin routes should not have metatags."
+msgstr "관리자 라우트에는 메타 태그가 없어야 합니다."
+
+msgid "The entities routes metatags must be added by fields. @entity_type - @id"
+msgstr "엔티티 라우트 메타 태그는 필드에 의해 추가되어야 합니다. @entity_type - @id"
+
+msgid "There are already metatags created for this route."
+msgstr "이 라우트에 대해 작성된 메타 태그가 이미 있습니다."
+
+msgid "The path does not exist as an internal Drupal route."
+msgstr "이 경로가 내부 Drupal 라우트로서 존재하지 않습니다."
+
+msgid "Created metatags for the path: @url. Internal route: @route."
+msgstr "경로에 대한 메타 태그를 작성했습니다: @url. 내부 라우트: @route."
+
+msgid "The metatags could not be created for the path: @url."
+msgstr "경로에 대해 메타 태그를 작성하지 못했습니다: @url."
+
+msgid "Metatag: Twitter Cards"
+msgstr "메타 태그: Twitter 카드"
+
+msgid "Provides support for Twitter's Card meta tags."
+msgstr "Twitter의 카드 메타 태그에 대한 지원을 제공합니다. "
+
+msgid "Twitter Cards: Google Play app ID"
+msgstr "Twitter 카드: Google Play 앱 ID"
+
+msgid "Twitter Cards: iPad app ID"
+msgstr "Twitter 카드: iPad 앱 ID"
+
+msgid "Twitter Cards: iPhone app ID"
+msgstr "Twitter 카드: iPhone 앱 ID"
+
+msgid "Twitter Cards: Google Play app name"
+msgstr "Twitter 카드: Google Play 앱 이름"
+
+msgid "Twitter Cards: iPad app name"
+msgstr "Twitter 카드: iPad 앱 이름"
+
+msgid "Twitter Cards: iPhone app name"
+msgstr "Twitter 카드: iPhone 앱 이름"
+
+msgid "Twitter Cards: App store country"
+msgstr "Twitter 카드: 앱 스토어 국가"
+
+msgid "Twitter Cards: Google Play app URL schema"
+msgstr "Twitter 카드: Google Play 앱 URL 스키마"
+
+msgid "Twitter Cards: iPad app URL schema"
+msgstr "Twitter 카드: iPad 앱 URL 스키마"
+
+msgid "Twitter Cards: iPhone app URL schema"
+msgstr "Twitter 카드: iPhone 앱 URL 스키마"
+
+msgid "Twitter Cards: Creator's Twitter account"
+msgstr "Twitter 카드: 작성자의 Twitter 계정"
+
+msgid "Twitter Cards: Creator's Twitter account ID"
+msgstr "Twitter 카드: 작성자의 Twitter 계정 ID"
+
+msgid "Twitter Cards: Data 1"
+msgstr "Twitter 카드: 데이터 1"
+
+msgid "Twitter Cards: Data 2"
+msgstr "Twitter 카드: 데이터 2"
+
+msgid "Twitter Cards: Description"
+msgstr "Twitter 카드: 설명"
+
+msgid "Twitter Cards: Do Not Track"
+msgstr "Twitter 카드: 추적하지 않음"
+
+msgid "Twitter Cards: 1st gallery image"
+msgstr "Twitter 카드: 첫 번째 갤러리 이미지"
+
+msgid "Twitter Cards: 2nd gallery image"
+msgstr "Twitter 카드: 두 번째 갤러리 이미지"
+
+msgid "Twitter Cards: 3rd gallery image"
+msgstr "Twitter 카드: 세 번째 갤러리 이미지"
+
+msgid "Twitter Cards: 4th gallery image"
+msgstr "Twitter 카드: 네 번째 갤러리 이미지"
+
+msgid "Twitter Cards: Image URL"
+msgstr "Twitter 카드: 이미지 URL"
+
+msgid "Twitter Cards: Image height"
+msgstr "Twitter 카드: 이미지 높이"
+
+msgid "Twitter Cards: Image width"
+msgstr "Twitter 카드: 이미지 너비"
+
+msgid "Twitter Cards: Image alternative text"
+msgstr "Twitter 카드: 이미지 대체 텍스트"
+
+msgid "Twitter Cards: Label 1"
+msgstr "Twitter 카드: 레이블 1"
+
+msgid "Twitter Cards: Label 2"
+msgstr "Twitter 카드: 레이블 2"
+
+msgid "Twitter Cards: Page URL"
+msgstr "Twitter 카드: 페이지 URL"
+
+msgid "Twitter Cards: Media player URL"
+msgstr "Twitter 카드: 미디어 플레이어 URL"
+
+msgid "Twitter Cards: Media player height"
+msgstr "Twitter 카드: 미디어 플레이어 높이"
+
+msgid "Twitter Cards: MP4 media stream URL"
+msgstr "Twitter 카드: MP4 미디어 스트림 URL"
+
+msgid "Twitter Cards: MP4 media straem MIME-type"
+msgstr "Twitter 카드: MP4 미디어 스트림 MIME-type"
+
+msgid "Twitter Cards: Media player width"
+msgstr "Twitter 카드: 미디어 플레이어 너비"
+
+msgid "Twitter Cards: Site's Twitter account"
+msgstr "Twitter 카드: 사이트의 Twitter 계정"
+
+msgid "Twitter Cards: Site's Twitter account ID"
+msgstr "Twitter 카드: 사이트의 Twitter 계정 ID"
+
+msgid "Twitter Cards: Title"
+msgstr "Twitter 카드: 제목"
+
+msgid "Twitter Cards: Type"
+msgstr "Twitter 카드: 유형"
+
+msgid "Twitter Cards"
+msgstr "Twitter 카드"
+
+msgid "A set of meta tags specially for controlling the summaries displayed when content is shared on <a href='https://twitter.com/'>Twitter</a>."
+msgstr "<a href='https://twitter.com/'>Twitter</a>에서 컨텐츠가 공유될 때 특별히  표시되는 요약을 제어하는 메타 태그 세트입니다. "
+
+msgid "Google Play app ID"
+msgstr "Google Play 앱 ID"
+
+msgid "iPad app ID"
+msgstr "iPad 앱 ID"
+
+msgid "String value, should be the numeric representation of your iPad app's ID in the App Store."
+msgstr "문자열 값. 앱 스토어에서 iPad 앱 ID의 숫자 표시여야 합니다. "
+
+msgid "iPhone app ID"
+msgstr "iPhone 앱 ID"
+
+msgid "String value, should be the numeric representation of your iPhone app's ID in the App Store."
+msgstr "문자열 값. 앱 스토어에서 iPhone 앱 ID의 숫자 표시여야 합니다. "
+
+msgid "Google Play app name"
+msgstr "Google Play 앱 이름"
+
+msgid "The name of the app in the Google Play app store."
+msgstr "Google Play 앱 스토어에서 앱의 이름입니다. "
+
+msgid "The name of the iPad app."
+msgstr "iPad 앱의 이름입니다. "
+
+msgid "The name of the iPhone app."
+msgstr "iPhone 앱의 이름입니다. "
+
+msgid "App store country"
+msgstr "앱 스토어 국가"
+
+msgid "If your application is not available in the US App Store, you must set this value to the two-letter country code for the App Store that contains your application."
+msgstr "애플리케이션이 미국 앱 스토어에서 사용 불가능한 경우 애플리케이션을 포함하는 앱 스토어에서 이 값을 두 글자 국가 코드로 설정해야 합니다. "
+
+msgid "Google Play app's custom URL scheme"
+msgstr "Google Play 앱의 사용자 정의 URL 체계"
+
+msgid "iPad app's custom URL scheme"
+msgstr "iPad 앱의 사용자 정의 URL 체계"
+
+msgid "iPhone app's custom URL scheme"
+msgstr "iPhone 앱의 사용자 정의 URL 체계"
+
+msgid "Creator's Twitter account"
+msgstr "작성자의 Twitter 계정"
+
+msgid "The @username for the content creator / author for this page, including the @ symbol."
+msgstr "이 페이지의 작성자/컨텐츠 작성자에 대한 @username(@ 기호 포함)입니다. "
+
+msgid "Creator's Twitter account ID"
+msgstr "작성자의 Twitter 계정 ID"
+
+msgid "The numerical Twitter account ID for the content creator / author for this page."
+msgstr "이 페이지의 작성자/컨텐츠 작성자에 대한 숫자 Twitter 계정 ID입니다. "
+
+msgid "Data 1"
+msgstr "데이터 1"
+
+msgid "This field expects a string, and allows you to specify the types of data you want to offer (price, country, etc.)."
+msgstr "이 필드는 문자열을 예상하고, 사용자가 제공하고 싶은 데이터 유형(가격, 국가 등)을 지정할 수 있습니다. "
+
+msgid "Data 2"
+msgstr "데이터 2"
+
+msgid "A description that concisely summarizes the content of the page, as appropriate for presentation within a Tweet. Do not re-use the title text as the description, or use this field to describe the general services provided by the website. The string will be truncated, by Twitter, at the word to 200 characters."
+msgstr "트윗에서 표시하기에 적합하도록 페이지의 컨텐츠를 간결하게 요약하는 설명입니다. 설명으로 제목 텍스트를 재사용하지 마십시오. 또는 이 필드를 사용하여 웹 사이트에서 제공하는 일반 서비스를 설명하지 마십시오. 문자열은 Twitter에서 200자까지 단어로 잘립니다. "
+
+msgid "Do Not Track"
+msgstr "추적하지 않음"
+
+msgid "1st gallery image"
+msgstr "첫 번째 갤러리 이미지"
+
+msgid "A URL to the image representing the first photo in your gallery."
+msgstr "갤러리에서 첫 번째 사진을 나타내는 이미지에 대한 URL입니다."
+
+msgid "2nd gallery image"
+msgstr "두 번째 갤러리 이미지"
+
+msgid "A URL to the image representing the second photo in your gallery."
+msgstr "갤러리에서 두 번째 사진을 나타내는 이미지에 대한 URL입니다."
+
+msgid "3rd gallery image"
+msgstr "세 번째 갤러리 이미지"
+
+msgid "A URL to the image representing the third photo in your gallery."
+msgstr "갤러리에서 세 번째 사진을 나타내는 이미지에 대한 URL입니다."
+
+msgid "4th gallery image"
+msgstr "네 번째 갤러리 이미지"
+
+msgid "A URL to the image representing the fourth photo in your gallery."
+msgstr "갤러리에서 네 번째 사진을 나타내는 이미지에 대한 URL입니다."
+
+msgid "The URL to a unique image representing the content of the page. Do not use a generic image such as your website logo, author photo, or other image that spans multiple pages. Images larger than 120x120px will be resized and cropped square based on longest dimension. Images smaller than 60x60px will not be shown. If the 'type' is set to Photo then the image must be at least 280x150px."
+msgstr "페이지 컨텐츠를 나타내는 고유한 이미지에 대한 URL입니다. 일반 이미지(예: 웹 사이트 로고, 작성자 사진 또는 여러 페이지에 걸쳐 있는 다른 이미지)를 사용하지 마십시오. 120 x 120픽셀보다 큰 이미지는 크기 조정되며, 가장 긴 치수에 따라 사각형으로 잘립니다. 60 x 60픽셀보다 작은 이미지는 표시되지 않습니다. '유형'이 사진으로 설정된 경우 이미지는 280 x 150픽셀 이상이어야 합니다."
+
+msgid "Image alternative text"
+msgstr "이미지 대체 텍스트"
+
+msgid "The alternative text of the image being linked to. Limited to 420 characters."
+msgstr "링크되는 이미지의 대체 텍스트입니다. 420자로 제한됩니다. "
+
+msgid "The height of the image being linked to, in pixels."
+msgstr "링크되는 이미지 높이(픽셀)입니다. "
+
+msgid "The width of the image being linked to, in pixels."
+msgstr "링크되는 이미지 너비(픽셀)입니다. "
+
+msgid "Label 1"
+msgstr "레이블 1"
+
+msgid "This field expects a string, and you can specify values for labels such as price, items in stock, sizes, etc."
+msgstr "이 필드에는 문자열이 예상됩니다. 레이블에 대한 값(예: 가격, 재고 내 항목, 크기 등)을 지정할 수 있습니다."
+
+msgid "Label 2"
+msgstr "레이블 2"
+
+msgid "The permalink / canonical URL of the current page."
+msgstr "현재 페이지의 고유 링크/기준 URL입니다. "
+
+msgid "Media player URL"
+msgstr "미디어 플레이어 URL"
+
+msgid "The full URL for loading a media player, specifically an iframe for an embedded video rather than the URL to a page that contains a player. Required when using the Player Card type."
+msgstr "미디어 플레이어를 로드하기 위한 전체 URL, 특히 플레이어가 포함된 페이지의 URL이 아닌 임베디드 비디오의 iframe입니다. 플레이어 카드 유형을 사용할 때 필요합니다."
+
+msgid "Media player height"
+msgstr "미디어 플레이어 높이"
+
+msgid "The height of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "미디어 플레이어 iframe 높이(픽셀)입니다. 플레이어 카드 유형을 사용할 때 필요합니다."
+
+msgid "MP4 media stream URL"
+msgstr "MP4 미디어 스트림 URL"
+
+msgid "The full URL for an MP4 video (h.264) or audio (AAC) stream, takes precedence over the other media player field."
+msgstr "MP4 비디오(h.264) 또는 오디오(AAC) 스트림의 전체 URL은 다른 매체 플레이어 필드보다 우선합니다."
+
+msgid "MP4 media stream MIME-type"
+msgstr "MP4 미디어 스트림 MIME 유형"
+
+msgid "Media player width"
+msgstr "미디어 플레이어 너비"
+
+msgid "The width of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "미디어 플레이어 iframe 너비(픽셀)입니다. 플레이어 카드 유형을 사용할 때 필요합니다."
+
+msgid "Site's Twitter account"
+msgstr "사이트의 Twitter 계정"
+
+msgid "The @username for the website, which will be displayed in the Card's footer; must include the @ symbol."
+msgstr "웹 사이트에 대한 @username입니다. 카드의 바닥글에 표시되며, @ 기호를 포함해야 합니다."
+
+msgid "Site's Twitter account ID"
+msgstr "사이트의 Twitter 계정 ID"
+
+msgid "The numerical Twitter account ID for the website, which will be displayed in the Card's footer."
+msgstr "웹 사이트에 대한 숫자 Twitter 계정 ID입니다. 카드의 바닥글에 표시됩니다."
+
+msgid "The page's title, which should be concise; it will be truncated at 70 characters by Twitter. This field is required unless this the 'type' field is set to 'photo'."
+msgstr "페이지의 제목은 간결해야 합니다. 이는 Twitter에 의해 70자로 잘립니다. 'type' 필드가 'photo'로 설정되지 않는 한 이 필드는 필수입니다. "
+
+msgid "- None -"
+msgstr "- 없음 -"
+
+msgid "Summary Card"
+msgstr "요약 카드"
+
+msgid "Summary Card with large image"
+msgstr "큰 이미지가 있는 요약 카드"
+
+msgid "Photo Card"
+msgstr "사진 카드"
+
+msgid "Gallery Card"
+msgstr "갤러리 카드"
+
+msgid "App Card"
+msgstr "앱 카드"
+
+msgid "Player Card"
+msgstr "플레이어 카드"
+
+msgid "Product Card"
+msgstr "제품 카드"
+
+msgid "Twitter card type"
+msgstr "Twitter 카드 유형"
+
+msgid "Notes:<ul><li>no other fields are required for a Summary card</li><li>Photo card requires the 'image' field</li><li>Media player card requires the 'title', 'description', 'media player URL', 'media player width', 'media player height' and 'image' fields,</li><li>Summary Card with Large Image card requires the 'Summary' field and the 'image' field,</li><li>Gallery Card requires all the 'Gallery Image' fields,</li><li>App Card requires the 'iPhone app ID' field, the 'iPad app ID' field and the 'Google Play app ID' field,</li><li>Product Card requires the 'description' field, the 'image' field, the 'Label 1' field, the 'Data 1' field, the 'Label 2' field and the 'Data 2' field.</li></ul>"
+msgstr "참고:<ul><li>요약 카드에는 다른 필드는 필요하지 않습니다. </li><li>사진 카드에는 'image' 필드가 필요합니다. </li><li>미디어 플레이어 카드에는 'title', 'description', 'media player URL', 'media player width', 'media player height' 및 'image' 필드가 필요합니다. </li><li>큰 이미지 카드가 있는 요약 카드에는 'Summary' 필드와 'image' 필드가 필요합니다. </li><li>갤러리 카드에는 'Gallery Image' 필드가 필요합니다. </li><li>앱 카드에는 'iPhone app ID' 필드, 'iPad app ID' 필드 및 'Google Play app ID' 필드가 필요합니다. </li><li>제품 카드에는 'description' 필드, 'image' 필드, 'Label 1' 필드, 'Data 1' 필드, 'Label 2' 필드 및 'Data 2' 필드가 필요합니다. </li></ul>"
+
+msgid "Metatag: Verification"
+msgstr "메타 태그: 검증"
+
+msgid "Verifies ownership of a site for search engines and other services."
+msgstr "검색 엔진 및 기타 서비스에 대한 사이트의 소유권을 확인합니다. "
+
+msgid "Site validation: Alexa"
+msgstr "사이트 유효성 검증: Alexa"
+
+msgid "Site validation: Baidu"
+msgstr "사이트 유효성 검증: Baidu"
+
+msgid "Site validation: Bing"
+msgstr "사이트 유효성 검증: Bing"
+
+msgid "Site validation: Facebook"
+msgstr "사이트 유효성 검증: Facebook"
+
+msgid "Site validation: Google"
+msgstr "사이트 유효성 검증: Google"
+
+msgid "Site validation: Norton Safe Web"
+msgstr "사이트 유효성 검증: Norton Safe Web"
+
+msgid "Site validation: Pinterest"
+msgstr "사이트 유효성 검증: Pinterest"
+
+msgid "Site validation: Pocket"
+msgstr "사이트 유효성 검증: 포켓"
+
+msgid "Site validation: SIWECOS"
+msgstr "사이트 유효성 검증: SIWECOS"
+
+msgid "Site validation: Yahoo"
+msgstr "사이트 유효성 검증: Yahoo"
+
+msgid "Site validation: Yandex"
+msgstr "사이트 유효성 검증: Yandex"
+
+msgid "Site validation: Zoom"
+msgstr "사이트 유효성 검증: 확대/축소"
+
+msgid "Site verification"
+msgstr "사이트 검증"
+
+msgid "These meta tags are used to confirm site ownership for search engines and other services."
+msgstr "이 메타 태그는 검색 엔진 및 기타 서비스에 대한 사이트의 소유권을 확인하는 데 사용됩니다. "
+
+msgid "Baidu"
+msgstr "Baidu"
+
+msgid "Bing"
+msgstr "빙"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Google Site Verification"
+msgstr "Google Site Verification"
+
+msgid "Norton Safe Web"
+msgstr "Norton Safe Web"
+
+msgid "Pocket"
+msgstr "포켓"
+
+msgid "SIWECOS"
+msgstr "SIWECOS"
+
+msgid "Yandex"
+msgstr "Yandex"
+
+msgid "Zoom"
+msgstr "확대/축소"
+
+msgid "The custom admin pages for managing Views meta tags at /admin/config/search/metatag/views have been disabled for now, hopefully they'll be back in a future release. Until then, the meta tags can be managed directly on each individual view via the \"Meta tags\" section."
+msgstr "/admin/config/search/metatag/views에서 보기 메타 태그를 관리하기 위한 사용자 정의 관리 페이지가 현재 비활성화되어 있으므로 향후 릴리스에서 다시 사용할 수 있습니다. 그때까지 메타 태그는 \"메타 태그\" 섹션을 통해 각 개별 보기에서 직접 관리할 수 있습니다."
+
+msgid "Empty update script to clear the site's caches so the new token replacement functionality will work."
+msgstr "새 토큰 대체 기능이 작동하도록 사이트의 캐시를 지우는 빈 업데이트 스크립트입니다."
+
+msgid "Metatag: Views"
+msgstr "메타 태그: 보기"
+
+msgid "Provides views integration for metatags."
+msgstr "메타 태그에 대한 보기 통합을 제공합니다. "
+
+msgid "Should replacement tokens be used from the first row"
+msgstr "첫 번째 행에서 대체 토큰을 사용해야 함"
+
+msgid "To view a list of displays with meta tags set up, click on a view name. To view a summary of meta tags configuration for a particular display, click on the display name. If you need to set meta tags for a specific view, choose Add views meta tags. Reverting the meta tags removes the specific configuration and falls back to defaults."
+msgstr "메타 태그가 설정된 표시 목록을 보려면 보기 이름을 클릭합니다. 특정 표시의 메타 태그 구성에 대한 요약을 보려면 표시 이름을 클릭합니다. 특정 보기에 대한 메타 태그를 설정해야 하는 경우 보기 추가 메타 태그를 선택하십시오. 메타 태그를 되돌리면 특정 구성을 제거하고 기본값으로 대체됩니다."
+
+msgid ":label"
+msgstr ":label"
+
+msgid "Display"
+msgstr "화면표시"
+
+msgid "Operations"
+msgstr "작업"
+
+msgid "Edit"
+msgstr "편집하기"
+
+msgid "Translate"
+msgstr "번역"
+
+msgid "Revert"
+msgstr "복구"
+
+msgid "@language (original)"
+msgstr "@language (원본)"
+
+msgid "Add"
+msgstr "추가"
+
+msgid "- Select a view -"
+msgstr "- 보기 선택 -"
+
+msgid "View"
+msgstr "화면"
+
+msgid "Metatags for @view : @display have been saved."
+msgstr "@view에 대한 메타 태그: @display이(가) 저장되었습니다. "
+
+msgid "Do you want to revert meta tags for @view_name : @display_name?"
+msgstr "@view_name : @display_name에 대한 메타 태그를 되돌리시겠습니까?"
+
+msgid "You are about to revert the custom meta tags for the %display_name display on the %view_name view. This action cannot be undone."
+msgstr "%view_name 보기에서 %display_name 표시에 대한 사용자 정의 메타 태그를 되돌리려고 합니다. 이 조치를 실행 취소할 수 없습니다."
+
+msgid "Cancel"
+msgstr "취소"
+
+msgid "Reverted meta tags for @view_name : @display_name"
+msgstr "@view_name : @display_name에 대한 되돌린 메타 태그"
+
+msgid "Edit @language translation for %view: %display metatags"
+msgstr "%view: %display 메타 태그에 대한 @language 번역 편집"
+
+msgid "Successfully updated @language translation."
+msgstr "@language 번역이 업데이트되었습니다."
+
+msgid "The meta tags for this display"
+msgstr "이 표시에 대한 메타 태그"
+
+msgid "Use replacement tokens from the first row"
+msgstr "첫 번째 행에서 대체 토큰 사용"
+
+msgid "@argument title"
+msgstr "@argument 제목"
+
+msgid "@argument input"
+msgstr "@argument 입력"
+
+msgid "Replacement patterns"
+msgstr "대체 패턴"
+
+msgid "The following tokens are available. You may use Twig syntax in this field."
+msgstr "다음 토큰이 사용 가능합니다. 이 필드에서 Twig 구문을 사용할 수 있습니다."
+
+msgid "Meta tags"
+msgstr "메타 태그"
+
+msgid "Overridden"
+msgstr "재정의됨"
+
+msgid "Using defaults"
+msgstr "기본값 사용"
+
+msgid "Arguments"
+msgstr "인수"
+
+msgid "Fields"
+msgstr "필드"
+
+msgid "Metatag display extender"
+msgstr "메타 태그 표시 익스텐더"
+
+msgid "Metatag settings for this view."
+msgstr "이 보기에 대한 메타 태그 설정입니다. "
+
+msgid "Status"
+msgstr "상태"
+
+msgid "Active"
+msgstr "활동"
+
+msgid "Disabled"
+msgstr "사용 안 함"
+
+msgid "Inherits meta tags from: @inherits"
+msgstr "메타 태그 상속: @inherits"
+
+msgid "Configure the meta tags below."
+msgstr "아래와 같이 메타 태그를 구성하십시오."
+
+msgid "Undefined group '%group' on tag '%tag'"
+msgstr "'%tag' 태그에서 미정의된 그룹 '%group'"
+
+msgid ""
+"This was expected to be an array but it is not: \n"
+"%value"
+msgstr ""
+"다음 항목은 배열로 기대되었으나 그렇지 않음: \n"
+"%value"
+
+msgid ""
+"This could not be unserialized: \n"
+"%value"
+msgstr ""
+"다음 항목을 직렬화 해제하지 못함: \n"
+"%value"
+
+msgid "Use tokens to avoid redundant meta data and search engine penalization. For example, a 'keyword' value of \"example\" will be shown on all content using this configuration, whereas using the [node:field_keywords] automatically inserts the \"keywords\" values from the current entity (node, term, etc)."
+msgstr "중복 메타 데이터 및 검색 엔진 벌칙을 피하려면 토큰을 사용하십시오. 예를 들어, \"example\"의 'keyword' 값은 이 구성을 사용하여 모든 컨텐츠에 표시되는 반면, [node:field_keywords]는 자동으로 \"keywords\" 값을 현재 엔티티(노드, 기간, 등)에서 삽입합니다."
+
+msgid "To use tokens to image fields, the image field on that entity bundle (content type, term, etc) must have the \"Token\" display settings enabled, the image field must not be hidden, and it must be set to output as an image, e.g. using the \"Thumbnail\" field formatter. It is also recommended to use an appropriate image style that resizes the image rather than output the original image; see individual meta tag descriptions for size recommendations."
+msgstr "이미지 필드에 토큰을 사용하려면 해당 엔티티 번들(컨텐츠 유형, 용어 등)의 이미지 필드에 \"토큰\" 표시 설정이 활성화되어 있어야 하고 이미지 필드가 숨겨져 있지 않아야 하며 이미지로 출력되도록 설정되어야 합니다. 예를 들어, 이미지 \"작은 그림\" 필드 포맷터를 사용합니다. 또한 원본 이미지를 출력하는 대신 이미지 크기를 조정하는 적절한 이미지 스타일을 사용하는 것이 좋습니다. 크기 권장 사항은 개별 메타 태그 설명을 참조하십시오."
+
+msgid "Yes"
+msgstr "예"
+
+msgid "No"
+msgstr "아니오"
+
+msgid "Label / Description"
+msgstr "레이블/설명"
+
+msgid "Weight"
+msgstr "표시순서"
+
+msgid "Secure"
+msgstr "보안"
+
+msgid "Multiple"
+msgstr "다중"
+
+msgid "Provided by"
+msgstr "제공자"
+
+msgid "All meta tags in the \"@group\" group."
+msgstr "\"@group\" 그룹의 모든 메타 태그입니다."
+
+msgid "Are you sure you want to delete %name?"
+msgstr "%name을(를) 삭제하시겠습니까?"
+
+msgid "Delete"
+msgstr "삭제하기"
+
+msgid "Deleted @label defaults."
+msgstr "@label 기본값을 삭제했습니다. "
+
+msgid "Select the type of default meta tags you would like to add."
+msgstr "추가하고 싶은 기본 메타 태그 유형을 선택하십시오. "
+
+msgid "Warning: disabling the Global default metatag will prevent any metatags from being used."
+msgstr "경고: 글로벌 기본 메타 태그를 사용 안함으로 설정하면 메타 태그가 사용되지 않습니다."
+
+msgid "Created the %label Metatag defaults."
+msgstr "%label 메타 태그 기본값을 작성했습니다. "
+
+msgid "Saved the %label Metatag defaults."
+msgstr "%label 메타 태그 기본값을 저장했습니다. "
+
+msgid "Edit default meta tags for @path"
+msgstr "@path에 대한 기본 메타태그 편집"
+
+msgid "Are you sure you want to revert %name to its default values?"
+msgstr "%name을(를) 기본값으로 되돌리시겠습니까? "
+
+msgid "Reverted @label defaults."
+msgstr "@label 기본값을 되돌렸습니다. "
+
+msgid "Entity type / Group Mapping"
+msgstr "엔티티 유형/그룹 맵핑"
+
+msgid "Identify which metatag groups should be available on which entity type / bundle combination. Unselected groups will not appear on the configuration form for that entity type, reducing the size of the form and increasing performance. If no groups are selected for a type, all groups will appear."
+msgstr "엔티티 유형/번들 조합에서 사용할 수 있는 Metatag 그룹을 식별하십시오. 선택되지 않은 그룹은 해당 엔티티 유형의 구성 양식에 나타나지 않으므로 양식의 크기가 줄어들고 성능이 향상됩니다. 유형에 대해 선택된 그룹이 없으면 모든 그룹이 나타납니다."
+
+msgid "Metatag Trimming Options"
+msgstr "메타태그 트리밍 옵션"
+
+msgid "Many Meta-Tags can be trimmed on a specific length for search engine optimization.<br/>If the value is set to '0' or left empty, the whole Metatag will be untrimmed."
+msgstr "검색 엔진 최적화를 위해 많은 메타태그를 특정 길이로 트리밍할 수 있습니다.<br/>값이 '0'으로 설정되거나 비어 있으면 전체 메타태그가 트리밍되지 않습니다."
+
+msgid "Because of how tokens are processed in meta tags, use of the Maxlength module may not provide an accurate representation of the actual current length of each meta tag, so it may cause more problem than it is worth. "
+msgstr "메타 태그에서 토큰이 처리되는 방법 때문에 Maxlength 모듈을 사용하면 각 메타 태그의 실제 현재 길이를 정확하게 표시할 수 없으므로 가치가 있는 것보다 더 많은 문제가 발생할 수 있습니다. "
+
+msgid "Install the Maxlength module to enable this option."
+msgstr "이 옵션을 사용하려면 Maxlength 모듈을 설치하십시오."
+
+msgid "Meta Tags:"
+msgstr "메타태그:"
+
+msgid "length"
+msgstr "길이"
+
+msgid "Meta Tags: Trimming Options"
+msgstr "메타태그: 트리밍 옵션"
+
+msgid "Trim the Meta Tag after the word on the given value"
+msgstr "지정된 값에서 단어 뒤의 메타태그 트리밍"
+
+msgid "Trim the Meta Tag on the given value"
+msgstr "지정된 값에서 메타태그 트리밍"
+
+msgid "Trim the Meta Tag before the word on the given value"
+msgstr "지정된 값에서 단어 앞의 메타태그 트리밍"
+
+msgid "Metatag widget options"
+msgstr "메타 태그 위젯 옵션"
+
+msgid "Various options for the field widget used on entity forms, e.g. on content type forms."
+msgstr "엔티티 양식(예: 컨텐츠 유형 양식)에서 사용되는 필드 위젯에 대한 다양한 옵션입니다."
+
+msgid "Scroll maximum height"
+msgstr "스크롤 최대 높이"
+
+msgid "eg 500px or 8rem"
+msgstr "예: 500px 또는 8rem"
+
+msgid "To enable scrolling please enter a value and its units, e.g. 500px, 8rem, etc. Removing this value will remove the scroll."
+msgstr "스크롤을 사용으로 설정하려면 값 및 해당 단위(예: 500px, 8rem 등)를 입력하십시오. 이 값을 제거하면 스크롤이 제거됩니다."
+
+msgid "Empty formatter"
+msgstr "빈 포맷터"
+
+msgid "@label"
+msgstr "@label"
+
+msgid "This field stores code meta tags."
+msgstr "이 필드는 코드 메타 태그를 저장합니다. "
+
+msgid "If checked, the field will be placed in the sidebar on entity forms."
+msgstr "선택된 경우 필드가 엔티티 양식의 사이드바에 배치됩니다."
+
+msgid "Wrap the meta tags in a collapsed details container."
+msgstr "접힌 세부사항 컨테이너에 메타태그 랩핑."
+
+msgid "If checked, the contents of the field will be placed inside a collapsed details container."
+msgstr "선택할 경우, 필드의 컨텐츠가 접힌 세부사항 컨테이너 내에 배치됩니다."
+
+msgid "Use sidebar: Yes"
+msgstr "사이드바 사용: 예"
+
+msgid "Use sidebar: No"
+msgstr "사이드바 사용: 아니오"
+
+msgid "Use details container: Yes"
+msgstr "세부사항 컨테이너 사용: 예"
+
+msgid "Use details container: No"
+msgstr "세부사항 컨테이너 사용: 아니오"
+
+msgid "Metatag Field Diff"
+msgstr "메타 태그 필드 차이"
+
+msgid "Advanced"
+msgstr "고급"
+
+msgid "Meta tags that might not be needed by many sites."
+msgstr "많은 사이트에서 필요하지 않을 수도 있는 메타 태그입니다. "
+
+msgid "Basic tags"
+msgstr "기본 태그"
+
+msgid "Simple meta tags."
+msgstr "단순 메타 태그"
+
+msgid "A brief and concise summary of the page's content, preferably 150 characters or less. Where as the description meta tag may be used by search engines to display a snippet about the page in search results, the abstract tag may be used to archive a summary about the page. This meta tag is <em>no longer</em> supported by major search engines."
+msgstr "페이지의 컨텐츠의 간략한 요약이며 15자 미만이 선호됩니다. 설명 메타 태그가 검색 결과에서 페이지에 대한 스니펫을 표시하기 위해 사용될 수 있으므로, 페이지에 대한 요약을 아카이브하기 위해 요약 태그가 사용될 수도 있습니다. 이 메타 태그는 주요 검색 엔진이 더 이상 지원하지 <em>않습니다. </em>  "
+
+msgid "Define the author of a page."
+msgstr "페이지의 작성자를 정의합니다."
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Pragma meta tag."
+msgstr "브라우저가 특정 페이지를 로컬로 캐시하는지 여부를 제어하는 데 사용됩니다. 일반적으로 사용되지 않습니다. Pragma 메타 태그와 함께 사용되어야 합니다."
+
+msgid "A link to the preferred page location or URL of the content of this page, to help eliminate duplicate content penalties from search engines."
+msgstr "검색 엔진에서 중복된 컨텐츠 벌칙을 제거하기 위해 이 페이지의 컨텐츠의 선호 페이지 위치 또는 URL에 대한 링크입니다. "
+
+msgid "A brief and concise summary of the page's content that is a maximum of 160 characters in length. The description meta tag may be used by search engines to display a snippet about the page in search results."
+msgstr "페이지의 컨텐츠에 대한 간략하고 정확한 요약이며 최대 160자입니다. 검색 결과에서 페이지에 대한 스니펫을 표시하기 위해 검색 엔진이 설명 메타 태그를 사용할 수도 있습니다."
+
+msgid "Control when the browser's internal cache of the current page should expire. The date must to be an <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a>-compliant date string that is represented in Greenwich Mean Time (GMT), e.g. 'Thu, 01 Sep 2016 00:12:56 GMT'. Set to '0' to stop the page being cached entirely."
+msgstr "현재 페이지의 브라우저 내부 캐시가 만료되는 시기를 제어합니다. 날짜는 그리니치 표준시(GMT)로 표시되는 <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a> 준수 날짜 문자열이어야 합니다(예: 'Thu, 01 Sep 2016 00:12:56 GMT'). 페이지가 완전히 캐시되지 않도록 하려면 '0'으로 설정하십시오."
+
+msgid "Describes the name and version number of the software or publishing tool used to create the page."
+msgstr "페이지를 작성하는 데 사용되는 소프트웨어 또는 발행 도구의 이름 및 버전 번호를 설명합니다. "
+
+msgid "A location's formal name."
+msgstr "위치의 공식 이름입니다. "
+
+msgid "Geo-spatial information in 'latitude; longitude' format, e.g. '50.167958; -97.133185'; <a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>see Wikipedia for details</a>."
+msgstr "'latitude; longitude' 형식으로 된 특정 지역과 관련된 정보(예: '50.167958; -97.133185')입니다. <a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>세부사항은 Wikipedia를 참조하십시오.</a>."
+
+msgid "A location's two-letter international country code, with an optional two-letter region, e.g. 'US-NH' for New Hampshire in the USA."
+msgstr "선택적 두 글자 지역이 있는 위치의 두 자로 된 국제 국가 코드(예: 미국의 뉴햄프셔의 경우 'US-NH')입니다. "
+
+msgid "This meta tag communicates with Google. There are currently two directives supported: 'nositelinkssearchbox' to not to show the sitelinks search box, and 'notranslate' to ask Google not to offer a translation of the page. Both options may be added, just separate them with a comma. See <a href='https://support.google.com/webmasters/answer/79812?hl=en'>meta tags that Google understands</a> for further details."
+msgstr "이 메타 태그는 Google과 통신합니다. 두 개의 지시문이 지원됩니다. 'nositelinkssearchbox'는 사이트 링크 검색 상자를 표시하지 않고 'notranslate'는 Google에 페이지의 번역본을 제공하지 말 것을 요청합니다. 두 옵션을 모두 쉼표로 구분하여 추가할 수 있습니다. 세부사항은 <a href='https://support.google.com/webmasters/answer/79812?hl=en'>Google이 이해하는 메타 태그</a>의 내용을 참조하십시오."
+
+msgid "Geo-spatial information in 'latitude, longitude' format, e.g. '50.167958, -97.133185'; <a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>see Wikipedia for details</a>."
+msgstr "'latitude, longitude' 형식으로 된 특정 지역과 관련된 정보(예: '50.167958, -97.133185')입니다. <a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>세부사항은 Wikipedia를 참조하십시오.</a>."
+
+msgid "An image associated with this page, for use as a thumbnail in social networks and other services."
+msgstr "소셜 네트워크 및 기타 서비스에서 작은 그림으로 사용하기 위한 이 페이지와 연관된 이미지입니다. "
+
+msgid "A comma-separated list of keywords about the page. This meta tag is <em>no longer</em> supported by most search engines."
+msgstr "페이지에 대한 키워드의 쉼표로 구분된 목록입니다. 이 메타 태그는 대부분의 검색 엔진이 더 이상 지원하지 <em>않습니다. </em>  "
+
+msgid "Multiple values may be used, separated by a comma. Note: Tokens that return multiple values will be handled automatically."
+msgstr "여러 값이 쉼표로 구분되어서 사용될 수도 있습니다. 참고: 여러 값을 리턴하는 토큰은 자동으로 처리됩니다. "
+
+msgid "This will be able to extract the URL from an image field if the field is configured properly."
+msgstr "필드가 올바르게 구성된 경우 이미지 필드에서 URL을 추출할 수 있습니다."
+
+msgid "Any relative or protocol-relative URLs will be converted to absolute URLs."
+msgstr "상대 또는 프로토콜 관련 URL은 모두 절대 URL로 변환됩니다."
+
+msgid "Any URLs which start with \"http://\" will be converted to \"https://\"."
+msgstr "\"http://\"로 시작하는 모든 URL은 \"https://\"로 변환됩니다."
+
+msgid "This will be truncated to a maximum of %max characters after any tokens are processsed."
+msgstr "토큰이 처리된 후 최대 %max 문자까지 잘립니다."
+
+msgid "News Keywords"
+msgstr "뉴스 키워드"
+
+msgid "Used for paginated content by providing URL with rel='next' link."
+msgstr "rel='next' 링크가 있는 URL을 제공하여 페이지 번호가 매겨진 컨텐츠에 사용됩니다."
+
+msgid "Used to indicate the URL that broke the story, and can link to either an internal URL or an external source. If the full URL is not known it is acceptable to use a partial URL or just the domain name."
+msgstr "스토리를 구분하는 URL을 나타내는 데 사용되고, 내부 URL 또는 외부 소스로 링크할 수 있습니다. 전체 URL을 알 수 없는 경우에는 부분 URL 또는 도메인 이름만을 사용하는 것도 허용됩니다. "
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Cache-Control meta tag."
+msgstr "브라우저가 특정 페이지를 로컬로 캐시하는지 여부를 제어하는 데 사용됩니다. 일반적으로 사용되지 않습니다. Cache-Control 메타 태그와 함께 사용되어야 합니다."
+
+msgid "Used for paginated content by providing URL with rel='prev' link."
+msgstr "rel='prev' 링크가 있는 URL을 제공하여 페이지 번호가 매겨진 컨텐츠에 사용됩니다."
+
+msgid "Used to rate content for audience appropriateness. This tag has little known influence on search engine rankings, but can be used by browsers, browser extensions, and apps. The <a href='https://www.metatags.org/meta_name_rating'>most common options</a> are general, mature, restricted, 14 years, safe for kids. If you follow the <a href='https://www.rtalabel.org/index.php?content=howto'>RTA Documentation</a> you should enter RTA-5042-1996-1400-1577-RTA"
+msgstr "대상 고객의 적합성에 맞는 컨텐츠를 평가하는 데 사용됩니다. 이 태그는 검색 엔진 순위에 거의 영향을 주지 않지만 브라우저, 브라우저 확장기능 및 앱에서 사용될 수 있습니다. <a href='https://www.metatags.org/meta_name_rating'>가장 일반적인 옵션</a>은 일반, 성인, 제한, 14세, 어린이용입니다. <a href='https://www.rtalabel.org/index.php?content=howto'>RTA 문서</a>를 따르는 경우 RTA-5042-1996-1400-1577-RTA를 입력해야 합니다."
+
+msgid "No Referrer"
+msgstr "참조자 없음"
+
+msgid "No Referrer When Downgrade"
+msgstr "다운그레이드할 때 참조자 없음 "
+
+msgid "Origin"
+msgstr "정보출처"
+
+msgid "Origin When Cross-Origin"
+msgstr "크로스 오리진 시에 오리진"
+
+msgid "Same Origin"
+msgstr "동일한 원본"
+
+msgid "Strict Origin"
+msgstr "엄격한 원본"
+
+msgid "Strict Origin When Cross-Origin"
+msgstr "크로스 원본 시 엄격한 원본"
+
+msgid "Unsafe URL"
+msgstr "안전하지 않은 URL"
+
+msgid "Indicate to search engines and other page scrapers whether or not links should be followed. See <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>the W3C specifications</a> for further details. Note: this serves the same purpose as the HTTP header by the same name."
+msgstr "검색 엔진 및 다른 페이지 스크레이퍼가 링크를 따라야 하는지 여부를 나타냅니다. 세부사항은 <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>W3C 명세</a>를 참조하십시오. 참고: 이는 동일한 이름의 HTTP 헤더와 동일한 용도로 사용됩니다."
+
+msgid "The number of seconds to wait before refreshing the page. May also force redirect to another page using the format '5; url=https://example.com/', which would be triggered after five seconds."
+msgstr "페이지를 새로 고치기 전에 대기하는 시간(초)입니다. 5초 후에 트리거되는 '5; url=https://example.com/' 형식을 사용하여 강제로 다른 페이지로 경로 재지정할 수도 있습니다."
+
+msgid "Tell search engines when to index the page again. Very few search engines support this tag, it is more useful to use an <a href='https://www.drupal.org/project/xmlsitemap'>XML Sitemap</a> file."
+msgstr "검색 엔진에 페이지를 다시 색인화할 시기를 알립니다. 이 태그를 지원하는 검색 엔진은 거의 없습니다. <a href='https://www.drupal.org/project/xmlsitemap'>XML 사이트맵</a> 파일을 사용하는 것이 더 유용합니다."
+
+msgid "Details about intellectual property, such as copyright or trademarks; does not automatically protect the site's content or intellectual property."
+msgstr "저작권 또는 상표 등과 같은 지적재산권에 대한 세부사항입니다. 사이트의 컨텐츠 또는 지적재산권을 자동으로 보호하지 않습니다. "
+
+msgid "Max Snippet"
+msgstr "최대 스니펫"
+
+msgid "Use a number character as a textual snippet for this search result. \"0\" equals \"nosnippet\". \"-1\" will let the search engine decide the most effective length."
+msgstr "숫자 문자를 이 검색 결과의 텍스트 스니펫으로 사용하십시오. \"0\"은 \"nosnippet\"과 같습니다. \"-1\"은 검색 엔진이 가장 효과적인 길이를 결정하도록 합니다."
+
+msgid "Max Video Preview"
+msgstr "최대 비디오 미리보기"
+
+msgid "Use a maximum of number seconds as a video snippet for videos on this page in search results. \"0\" will use a static a image. \"-1\" means there is no limit."
+msgstr "검색 결과에서 이 페이지의 비디오에 대한 비디오 스니펫으로 최대 시간(초)을 사용하십시오. \"0\"은 정적 이미지를 사용합니다. \"-1\"은 한계가 없음을 의미합니다."
+
+msgid "Max Image Preview"
+msgstr "최대 이미지 미리보기"
+
+msgid "Set the maximum size of an image preview for this page in a search results."
+msgstr "검색 결과에서 이 페이지에 대한 이미지 미리보기의 최대 크기를 설정하십시오."
+
+msgid "None - no image preview is to be shown."
+msgstr "없음 - 이미지 미리보기가 표시되지 않습니다."
+
+msgid "Standard - a default image preview may be shown."
+msgstr "표준 - 기본 이미지 미리보기가 표시될 수 있습니다."
+
+msgid "Large - a larger image preview, up to the width of the viewport, may be shown."
+msgstr "대형 - 뷰포트 너비까지 더 큰 이미지 미리보기가 표시될 수 있습니다."
+
+msgid "Select"
+msgstr "선택"
+
+msgid "Unavailable after date"
+msgstr "날짜 이후에는 사용 불가능"
+
+msgid "Do not show this page in search results after the specified date"
+msgstr "지정된 날짜 이후의 검색 결과에 이 페이지를 표시하지 않음"
+
+msgid "index - Allow search engines to index this page (assumed)."
+msgstr "index - 검색 엔진이 이 페이지를 색인화하도록 허용합니다(가정됨)."
+
+msgid "follow - Allow search engines to follow links on this page (assumed)."
+msgstr "follow - 검색 엔진이 이 페이지의 링크를 따르도록 허용합니다(가정됨)."
+
+msgid "noindex - Prevents search engines from indexing this page."
+msgstr "noindex - 검색 엔진이 이 페이지를 색인화하는 것을 막습니다."
+
+msgid "nofollow - Prevents search engines from following links on this page."
+msgstr "nofollow - 검색 엔진이 이 페이지의 링크를 따르는 것을 막습니다."
+
+msgid "noarchive - Prevents cached copies of this page from appearing in search results."
+msgstr "noarchive - 이 페이지의 캐싱된 사본이 검색 결과에 나타나는 것을 막습니다."
+
+msgid "nosnippet - Prevents descriptions from appearing in search results, and prevents page caching."
+msgstr "nosnippet - 설명이 검색 결과에 나타나는 것을 막고 페이지 캐싱을 막습니다."
+
+msgid "noimageindex - Prevent search engines from indexing images on this page."
+msgstr "noimageindex - 검색 엔진이 이 페이지의 이미지를 색인화하는 것을 막습니다."
+
+msgid "notranslate - Prevent search engines from offering to translate this page in search results."
+msgstr "notranslate - 검색 엔진이 검색 결과에서 이 페이지 변환을 제공하는 것을 막습니다."
+
+msgid "Provides search engines with specific directions for what to do when this page is indexed."
+msgstr "이 페이지가 색인화될 때 해야 할 일에 대한 특정 지시사항을 검색 엔진에 제공합니다. "
+
+msgid "Set cookie"
+msgstr "쿠키 설정"
+
+msgid "<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>Sets a cookie</a> on the visitor's browser. Can be in either NAME=VALUE format, or a more verbose format including the path and expiration date; see the link for full details on the syntax."
+msgstr "방문자의 브라우저에 <a href='https://www.metatags.org/meta_http_equiv_set_cookie'>쿠키 설정</a>하십시오. NAME=VALUE 형식이거나 경로 및 만기 날짜를 포함하는 보다 자세한 형식일 수 있습니다. 구문에 대한 세부사항은 링크를 참조하십시오."
+
+msgid "Shortlink URL"
+msgstr "간단한 링크 URL"
+
+msgid "A brief URL, often created by a URL shortening service."
+msgstr "URL 축약 서비스에 의해 종종 작성되는 간략한 URL입니다. "
+
+msgid "The text to display in the title bar of a visitor's web browser when they view this page. This meta tag may also be used as the title of the page when a visitor bookmarks or favorites this page, or as the page title in a search engine result. It is common to append '[site:name]' to the end of this, so the site's name is automatically added. It is recommended that the title is no greater than 55 - 65 characters long, including spaces."
+msgstr "방문자가 이 페이지를 볼 때 방문자의 웹 브라우저의 제목 표시줄에 표시할 텍스트입니다. 이 메타 태그는 또한 방문자가 이 페이지를 책갈피에 추가하거나 즐겨찾기할 때 페이지의 제목 또는 검색 엔진 결과의 페이지 제목으로 사용될 수도 있습니다. 끝에 '[site:name]'을 추가하는 것이 일반적이므로 사이트의 이름이 자동으로 추가됩니다. 제목은 공백을 포함하여 55 - 65자 길이를 초과하지 않는 것이 좋습니다. "
+
+msgid "Configuration type"
+msgstr "설정 유형"
+
+msgid "@label of @type"
+msgstr "@type의 @label"
+
+msgid "@label of @type @entity-type-label"
+msgstr "@type @entity-type-label의 @label"
+
+msgid "No default for \"%tag_name\" - entity_type: %type, entity_bundle: %bundle, id: %id. See src/TypedData/Metatags.php."
+msgstr "\"%tag_name\"에 대한 기본값이 없음 - entity_type: %type, entity_bundle: %bundle, id: %id. src/TypedData/Metatags.php를 참조하십시오."
+

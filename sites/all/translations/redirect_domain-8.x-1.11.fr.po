@@ -1,0 +1,101 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "A propos de"
+
+msgid "The Redirect domain module allows users to redirect between domains."
+msgstr "Le module Redirection de domaine permet aux utilisateurs d'effectuer des redirections entre domaines."
+
+msgid "Uses"
+msgstr "Utilisations"
+
+msgid "Manage domain redirects"
+msgstr "Gérer les redirections de domaine"
+
+msgid "The domain redirect is accessed through <a href=\":domainlist\">Domain Redirects</a>. The user can add the domain redirects through the domain redirect table which consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected. The module also supports the usage of a wildcard redirecting, thus many requests can be handled with one instance of domain redirect."
+msgstr "Le module Redirection de domaine est accessible via <a href=\":domainlist\">Redirections de domaine</a>. L'utilisateur peut ajouter des redirections de domaine via le tableau de redirection de domaine qui contient le domaine source de la redirection, le sous-chemin et l'URL cible complète pour la redirection. Le module prend également en charge l'utilisation d'une redirection générique, ainsi, un grand nombre de demandes peuvent être gérées à l'aide d'une instance de redirection de domaine."
+
+msgid "The domain redirect table consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected."
+msgstr "Le tableau de redirection de domaine contient le domaine source de la redirection, le sous-chemin et l'URL cible complète pour la redirection."
+
+msgid "Example Configuration"
+msgstr "Exemple de configuration"
+
+msgid "Example Redirects"
+msgstr "Exemples de redirection"
+
+msgid "Request: example.com/redirect => Response: redirected.com/example-path"
+msgstr "Demande : example.com/redirect => Réponse : redirected.com/example-path"
+
+msgid "Request: foo.com/any-path => Response: bar.com"
+msgstr "Demande : foo.com/any-path => Réponse : bar.com"
+
+msgid "Precedence"
+msgstr "Priorité"
+
+msgid "Top-down precedence is used. This means the first matching redirect that is found will be taken. For example, assume these redirect rules:"
+msgstr "La priorité est descendante. Autrement dit, la première correspondance de redirection trouvée est utilisée. Prenons l'exemple des règles de redirection suivantes :"
+
+msgid "foo.com/some/path => somedomain.com/path"
+msgstr "foo.com/some/path => somedomain.com/path"
+
+msgid "foo.com/* => wildcardredirect.com"
+msgstr "foo.com/* => wildcardredirect.com"
+
+msgid "foo.com/other/path => otherdomain.com/path"
+msgstr "foo.com/other/path => otherdomain.com/path"
+
+msgid "The following redirects would actually occur:"
+msgstr "Les redirections ci-dessous seraient appliquées :"
+
+msgid "foo.com/other/path => wildcardredirect.com"
+msgstr "foo.com/other/path => wildcardredirect.com"
+
+msgid "Redirect Domain"
+msgstr "Rediriger un domaine"
+
+msgid "Allows users to redirect between domains."
+msgstr "Permet aux utilisateurs d'effectuer des redirections entre domaines."
+
+msgid "Domain redirects"
+msgstr "Redirections de domaine"
+
+msgid "Configure domain redirects."
+msgstr "Configurez les redirections de domaine."
+
+msgid "Redirect domains"
+msgstr "Rediriger des domaines"
+
+msgid "Sub path"
+msgstr "Sous-chemin"
+
+msgid "Destination"
+msgstr "Destination"
+
+msgid "From domain"
+msgstr "A partir du domaine"
+
+msgid "Add another"
+msgstr "Ajouter un autre"
+
+msgid "Save"
+msgstr "Sauvegarder"
+
+msgid "No protocol should be included in the redirect domain."
+msgstr "Aucun protocole ne doit être inclus dans le domaine pour redirection."
+
+msgid "The domain redirects have been saved."
+msgstr "Les redirections de domaine ont été sauvegardées."
+

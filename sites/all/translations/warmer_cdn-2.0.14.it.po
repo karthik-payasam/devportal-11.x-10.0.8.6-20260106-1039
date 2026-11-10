@@ -1,0 +1,77 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "CDN Warmer"
+msgstr "Warmer CDN"
+
+msgid "Executes HTTP requests to warm the edge caches. It is useful without a CDN as well, as it will also warm Varnish and Page Cache."
+msgstr "Esegue le richieste HTTP per eseguire il warming delle cache perimetrali. È utile anche senza un CDN, perché esegue il warming anche di Varnish e Cache della pagina."
+
+msgid "URLs"
+msgstr "URL"
+
+msgid "Enter the list of URLs. One on each line. Examples: https://example.org/foo/bar, /foo/bar."
+msgstr "Immettere l'elenco degli URL. Uno su ciascuna riga. Esempi: https://example.org/foo/bar, /foo/bar."
+
+msgid "Headers"
+msgstr "Intestazioni"
+
+msgid "Specific headers to use when making HTTP requests. Format: <code>Header-Name: value1; value2</code>"
+msgstr "Intestazioni specifiche da utilizzare quando si effettuano richieste HTTP. Formato: <code>Nome-Intestazione: valore1; valore2</code>"
+
+msgid "Enable SSL verification"
+msgstr "Abilita verifica SSL"
+
+msgid "Enable SSL verification. Recommended to keep it checked for security reasons."
+msgstr "Abilita la verifica SSL. Si consiglia di selezionare questa opzione per motivi di sicurezza."
+
+msgid "Maximum number of concurrent Requests."
+msgstr "Numero massimo di richieste simultanee"
+
+msgid "The maximum number of concurrent requests."
+msgstr "Il numero massimo di richieste simultanee"
+
+msgid "CDN"
+msgstr "CDN"
+
+msgid "minPriority should be a float between 0 and 1."
+msgstr "minPriority deve essere un float compreso tra 0 e 1."
+
+msgid "Sitemaps"
+msgstr "Sitemap"
+
+msgid "Enter the list of sitemap URLs. One on each line. Examples: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+msgstr "Immettere l'elenco degli URL della mappa del sito. Uno su ciascuna riga. Esempi: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+
+msgid "Minimum Priority"
+msgstr "Priorità minima"
+
+msgid "URLs with a lower priority than the configured will not be warmed. A float value between 0 and 1."
+msgstr "Gli URL con una priorità più bassa del valore configurato non saranno sottoposti a warming. Un valore float compreso tra 0 e 1."
+
+msgid "This defines the maximum number of concurrent requests."
+msgstr "Ciò definisce il numero massimo di richieste simultanee"
+
+msgid "There was an error parsing the Sitemap in %location. Please check the watchdog logs for more information."
+msgstr "Si è verificato un errore durante l'analisi della Sitemap in %location. Controllare i log watchdog per ulteriori informazioni."
+
+msgid "CDN via Sitemap"
+msgstr "CDN tramite Sitemap"
+
+msgid "Collects the URLs to warm from the sitemap. Then uses the CDN warmer for those."
+msgstr "Raccoglie gli URL da sottoporre a warming dalla mappa del sito. Quindi utilizza il warmer CDN."
+
+msgid "All headers must have a colon. Follow the format: <code>the-name: the-value</code>"
+msgstr "Tutte le intestazioni devono avere i due punti. Attenersi al formato: <code>il-nome: il-valore</code>"
+

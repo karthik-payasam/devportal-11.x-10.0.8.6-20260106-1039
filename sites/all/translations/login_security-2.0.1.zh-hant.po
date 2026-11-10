@@ -1,0 +1,236 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Your last login was @stamp."
+msgstr "您的前次登入時間為 @stamp。"
+
+msgid "Your last page access (site activity) was @stamp."
+msgstr "您的前次頁面存取（網站活動）時間為 @stamp。"
+
+msgid "Make sure you have reviewed the <a href=\"!README\">README file</a> for further information about how all these settings will affect your Drupal login form submissions."
+msgstr "請確定您已檢閱 <a href=\"!README\">Readme 檔</a>，以進一步取得這些設定如何影響您的 Drupal 登入表單提交的相關資訊。"
+
+msgid "Suspicious activity in login form submissions is no longer detected: Currently @tracking_current_count events are being tracked, and threshold is configured for @activity_threshold maximum allowed attempts."
+msgstr "不再偵測登入表單提交中的可疑活動：目前正在追蹤 @tracking_current_count 事件，並針對 @activity_threshold 容許的嘗試次數上限配置臨界值。"
+
+msgid "Banned IP address @ip due to security configuration."
+msgstr "由於安全配置，已禁用 IP 位址 @ip。"
+
+msgid "Blocked user @username due to security configuration."
+msgstr "由於安全配置，已封鎖使用者 @username。"
+
+msgid "Ongoing attack detected: Suspicious activity detected in login form submissions. Too many invalid login attempts threshold reached: Currently @tracking_current_count events are tracked, and threshold is configured for @activity_threshold attempts."
+msgstr "偵測到進行中攻擊：在登入表單提交中偵測到可疑活動。 已達到太多無效登入嘗試臨界值：目前正在追蹤 @tracking_current_count 事件，而且給 @activity_threshold 嘗試次數配置了臨界值。"
+
+msgid "Login Security"
+msgstr "登入安全"
+
+msgid "Enable security options in the login flow of the site."
+msgstr "在網站的登入流程中啟用安全選項。"
+
+msgid "Login Security settings"
+msgstr "登入安全設定"
+
+msgid "Login security settings"
+msgstr "登入安全設定"
+
+msgid "Track time"
+msgstr "追蹤時間"
+
+msgid "Maximum number of login failures before blocking a user"
+msgstr "封鎖使用者之前的登入失敗次數上限"
+
+msgid "Maximum number of login failures before soft blocking a host"
+msgstr "軟封鎖主機之前的登入失敗次數上限"
+
+msgid "Maximum number of login failures before blocking a host"
+msgstr "封鎖主機之前的登入失敗次數上限"
+
+msgid "Maximum number of login failures before detecting an ongoing attack"
+msgstr "偵測進行中攻擊之前的登入失敗次數上限"
+
+msgid "Disable login failure error message"
+msgstr "停用登入失敗錯誤訊息"
+
+msgid "Notify the user about the number of remaining login attempts"
+msgstr "通知使用者有關剩餘的登入嘗試次數"
+
+msgid "Display last login timestamp"
+msgstr "顯示前次登入時間戳記"
+
+msgid "Display last access timestamp"
+msgstr "顯示前次存取時間戳記"
+
+msgid "Message to be shown on each failed login attempt"
+msgstr "要對每次失敗的登入嘗試顯示的訊息"
+
+msgid "Message for banned host (Soft IP ban)"
+msgstr "用於禁用主機的訊息（暫時性 IP 禁用）"
+
+msgid "Message for banned host (Hard IP ban)"
+msgstr "用於禁用主機的訊息（永久性 IP 禁用）"
+
+msgid "Message when user is blocked by uid"
+msgstr "透過 uid 封鎖使用者的訊息"
+
+msgid "Email subject"
+msgstr "電子郵件主旨"
+
+msgid "Email body"
+msgstr "電子郵件內文"
+
+msgid "Emails to be notified when users are blocked"
+msgstr "在使用者遭封鎖時要通知的電子郵件"
+
+msgid "Emails to be notified during excess activity"
+msgstr "在過多活動期間要通知的電子郵件"
+
+msgid "General settings"
+msgstr "一般設定"
+
+msgid "The time window to check for security violations: the time in minutes the login information is kept to compute the login attempts count. A common example could be 1440 minutes (24 hours). After that time, the attempt is deleted from the list, and will never be considered again."
+msgstr "檢查安全違規的時間範圍：保留登入資訊以計算登入嘗試計數的時間（分鐘）。 一般範例可能是 1440 分鐘（24 小時）。 在該時間之後，就會從清單中刪除嘗試，然後永遠不會再次計入。"
+
+msgid "minute(s)"
+msgstr "分鐘"
+
+msgid "User"
+msgstr "使用者"
+
+msgid ""
+"Enter the number of login failures a user is allowed. <br>\n"
+"        After this amount is reached, the user will be blocked, no matter the host attempting to log in. Use this option carefully on public sites, as an attacker may block your site users. <br>\n"
+"        The user blocking protection will not disappear and should be removed manually from the <a href=\":user\">user management</a> interface."
+msgstr ""
+"輸入容許的使用者登入失敗次數。<br>\n"
+"        在到達此數量之後，不論嘗試登入的主機為何，都會封鎖該使用者。在公用網站上使用此選項時請小心，因為攻擊者可以封鎖您的網站使用者。<br>\n"
+"        使用者封鎖保護不會消失，且須手動透過<a href=\":user\">使用者管理</a>介面移除。"
+
+msgid "failed attempts"
+msgstr "失敗的嘗試"
+
+msgid "Soft host"
+msgstr "軟主機"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this amount is reached, the host will not be able to submit the log in form again, but can still browse the site contents as an anonymous user. <br>\n"
+"        This protection is effective during the time indicated at tracking time option."
+msgstr ""
+"輸入容許的主機登入失敗次數。<br>\n"
+"        在到達此數量之後，主機就無法重新提交登入表單，但仍然可以使用匿名使用者身分瀏覽網站內容。<br>\n"
+"        在追蹤時間選項中指出的時間期間，此保護才會生效。"
+
+msgid "Host"
+msgstr "主機"
+
+msgid ""
+"Enter the number of login failures a host is allowed. <br>\n"
+"        After this number is reached, the host will be blocked, no matter the username attempting to log in. <br>\n"
+"        The host blocking protection will not disappear automatically and should be removed manually from the <a href=\":access\">access rules</a> administration interface."
+msgstr ""
+"輸入容許的主機登入失敗次數。<br>\n"
+"        在到達此數目之後，不論嘗試登入的使用者名稱為何，都會封鎖該主機。<br>\n"
+"        主機封鎖保護不會自動消失，且須手動透過<a href=\":access\">存取規則</a>管理介面移除。"
+
+msgid "Attack detection"
+msgstr "攻擊偵測"
+
+msgid ""
+"Enter the number of login failures before creating a warning log entry about this suspicious activity. <br>\n"
+"        If the number of invalid login events currently being tracked reach this number, and ongoing attack is detected."
+msgstr ""
+"輸入在建立有關此可疑活動的警告日誌項目之前的登入失敗次數。<br>\n"
+"        如果目前追蹤的無效登入事件次數達到此次數，即會偵測到進行中攻擊。"
+
+msgid "Notification"
+msgstr "通知"
+
+msgid ""
+"Prevents the display of login error messages. <br>\n"
+"        A user attempting to login will not be aware if the account exists, an invalid user name or password has been submitted, or if the account is blocked. The core messages are also hidden."
+msgstr ""
+"防止顯示登入錯誤訊息。<br>\n"
+"        嘗試登入的使用者不會知道帳戶是否已存在、已提交無效的使用者名稱或密碼，或是帳戶是否遭到封鎖。同時還會隱藏核心訊息。"
+
+msgid ""
+"The user is notified about the number of remaining login attempts before the account gets blocked. <br>\n"
+"        Security tip: If you enable this option, try to not disclose as much of your login policies as possible in the message shown on any failed login attempt."
+msgstr ""
+"在封鎖帳戶之前會通知使用者有關剩餘的登入嘗試次數。<br>\n"
+"        安全提示：如果您啟用此選項，請嘗試盡可能不要在任何失敗的登入嘗試所顯示的訊息中揭露過多登入原則。"
+
+msgid "When a user successfully logs in, a message will display the last time he logged into the site."
+msgstr "當使用者順利登入時，會出現一則訊息，顯示使用者前次登入網站的時間。"
+
+msgid "When a user successfully logs in, a message will display the last site access with this account."
+msgstr "當使用者順利登入時，會出現一則訊息，顯示前次使用此帳戶存取網站的時間。"
+
+msgid "Email for ongoing attack detection"
+msgstr "用於進行中攻擊偵測的電子郵件"
+
+msgid "To"
+msgstr "收件人"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when an ongoing attack is detected. No notification will be sent if the field is blank."
+msgstr "提供在偵測到進行中攻擊時，應該收到電子郵件訊息之人員的電子郵件清單（以逗點區隔）。如果此欄位空白，則不會傳送任何通知。"
+
+msgid "Subject"
+msgstr "標題"
+
+msgid "Body"
+msgstr "內文"
+
+msgid "Email for blocked account"
+msgstr "用於封鎖帳戶的電子郵件"
+
+msgid "Provide a comma-separated list of emails for who should receive an email message when a user is blocked. No notification will be sent if the field is blank."
+msgstr "提供當使用者遭封鎖時，應該收到電子郵件訊息之人員的電子郵件清單（以逗點區隔）。如果此欄位空白，則不會傳送任何通知。"
+
+msgid "Failed login attempt"
+msgstr "失敗的登入嘗試"
+
+msgid "Enter the message string to be shown if the login fails after the form is submitted."
+msgstr "輸入在提交表單之後登入失敗時要顯示的訊息字串。"
+
+msgid "Banned host (soft IP ban)"
+msgstr "禁用的主機（暫時性 IP 禁用）"
+
+msgid "Enter the soft IP ban message to be shown when a host attempts to log in too many times."
+msgstr "輸入當主機嘗試登入太多次時要顯示的暫時性 IP 禁用訊息。"
+
+msgid "Banned host (hard IP ban)"
+msgstr "禁用的主機（永久性 IP 禁用）"
+
+msgid "Enter the hard IP ban message to be shown when a host attempts to log in too many times."
+msgstr "輸入當主機嘗試登入太多次時要顯示的永久性 IP 禁用訊息。"
+
+msgid "Blocked user by uid"
+msgstr "已依 uid 封鎖使用者"
+
+msgid "Enter the message to be shown when a user gets blocked due to enough failed login attempts."
+msgstr "輸入當使用者因相當的失敗登入嘗試次敗而遭到封鎖時要顯示的訊息。"
+
+msgid "Tokens"
+msgstr "記號"
+
+msgid "<ul><li>%date: The (formatted) date and time of the event.</li><li>%ip: The IP address tracked for this event.</li><li>%username: The username entered in the login form (sanitized).</li><li>%email: If the user exists, this will be the email address.</li><li>%uid: If the user exists, this will be the user uid.</li><li>%site: The name of the site as configured in the administration.</li><li>%uri: The base url of this Drupal site.</li><li>%edit_uri: Direct link to the user (based on the name entered) edit page.</li><li>%hard_block_attempts: Configured maximum attempts before hard blocking the IP address.</li><li>%soft_block_attempts: Configured maximum attempts before soft blocking the IP address.</li><li>%user_block_attempts: Configured maximum login attempts before blocking the user.</li><li>%user_ip_current_count: The total attempts for this user name tracked from this IP address.</li><li>%ip_current_count: The total login attempts tracked from from this IP address.</li><li>%user_current_count: The total login attempts tracked for this user name .</li><li>%tracking_time: The tracking time value: in hours.</li><li>%tracking_current_count: Total tracked events</li><li>%activity_threshold: Value of attempts to detect ongoing attack.</li></ul>"
+msgstr "<ul><li>%date                  ：事件的（格式化）日期和時間。</li><li>%ip                    ：針對此事件所追蹤的 IP 位址。</li><li>%username              ：登入表單中輸入的使用者名稱（已清理）。</li><li>%email                 ：如果使用者已存在，則此值會是電子郵件位址。</li><li>%uid                   ：如果使用者已存在，這會是使用者 uid。</li><li>%site                ：網站的名稱，如管理中所配置。</li><li>%uri                   ：此 Drupal 網站的基本 URL。</li><li>%edit_uri              ：連接至使用者（根據所輸入的名稱）編輯頁面的直接鏈結。</li><li>%hard_block_attempts   ：配置的嘗試次數上限，在此之後即永久性封鎖該 IP 位址。</li><li>%soft_block_attempts   ：配置的嘗試次數上限，在此之後會暫時性封鎖該 IP 位址。</li><li>%user_block_attempts   ：配置的登入嘗試次數上限，在此之後即封鎖使用者。</li><li>%user_ip_current_count ：從此 IP 位址追蹤的此使用者名稱的嘗試次數總計。</li><li>%ip_current_count      ：從此 IP 位址追蹤的登入嘗試次數總計。</li><li>%user_current_count    ：針對此使用者名稱追蹤的登入嘗試次數總計。</li><li>%tracking_time         ：追蹤時間值（以小時為單位）。</li><li>%tracking_current_count：追蹤事件總計</li><li>%activity_threshold    ：嘗試偵測進行中攻擊的值。</li></ul>"
+
+msgid "Clear event tracking information"
+msgstr "清除事件追蹤資訊"
+
+msgid "Login Security event track list is now empty. @count item(s) deleted."
+msgstr "登入安全事件追蹤清單現在是空的。已刪除 @count 個項目。"
+

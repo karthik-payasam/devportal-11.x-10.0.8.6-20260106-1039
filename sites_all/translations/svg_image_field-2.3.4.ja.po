@@ -1,0 +1,375 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "svg image from @field_name"
+msgstr "@field_name からの svg イメージ"
+
+msgid "@entity using @field"
+msgstr "@fieldを使用している@entity"
+
+msgid "@field_name"
+msgstr "@field_name"
+
+msgid "Relate each @entity with a @field set to the svg image."
+msgstr "@field を svg イメージに設定して、@entity を関連付けます。"
+
+msgid "About"
+msgstr "アバウト"
+
+msgid ""
+"The SVG image field module allows you to create fields that contain\n"
+" svg image files and to configure svg output. See the <a href=\":field\">Field module help</a> and\n"
+"  the <a href=\":field_ui\">Field UI help</a> pages for terminology and general information on\n"
+"  entities, fields, and how to create and manage fields."
+msgstr ""
+"SVG イメージ・フィールド・モジュールにより、svg イメージ・ファイルが含まれる\n"
+" フィールドを作成し、svg 出力を構成できます。エンティティーとフィールドに関する用語と一般情報、および\n"
+"  フィールドを作成して管理する方法については、<a href=\":field\">フィールド・モジュールのヘルプ</a>・ページと\n"
+"  <a href=\":field_ui\">フィールド UI のヘルプ</a>・ページを参照してください。"
+
+msgid "Uses"
+msgstr "機能"
+
+msgid "Configuring svg image fields"
+msgstr "svg イメージ・フィールドの構成"
+
+msgid ""
+"A few of the settings for svg image fields are defined once when you create the field and\n"
+"      cannot be changed later; these include the choice of public or private file storage and the number of images that can be stored in the field.\n"
+"       The rest of the settings can be edited later; these settings include the field label, help text, and the subdirectory in the public or private file storage\n"
+"       where the images will be stored. The editable settings can also have different values for different entity sub-types; for instance,\n"
+"       if your image field is used on both Page and Article content types, you can store the files in a\n"
+"        different subdirectory for the two content types."
+msgstr ""
+"svg イメージ・フィールドのいくつかの設定は、フィールドの作成時に一度定義されると、\n"
+"      後で変更することはできません。これらにはパブリックまたはプライベートのファイル・ストレージの選択と、フィールドに保管できるイメージの数が含まれます。\n"
+"       残りの設定は後から編集できます。それらの設定には、フィールド・ラベル、ヘルプ・テキスト、およびイメージが保管されるパブリックまたはプライベート・ファイル・ストレージ内の\n"
+"       サブディレクトリーが含まれます。編集可能な設定には、エンティティー・サブタイプごとに異なる値を指定することもできます。例えば、\n"
+"       イメージ・フィールドがページと記事の両方のコンテンツ・タイプで使用される場合、その 2 つのコンテンツ・タイプの\n"
+"        異なるサブディレクトリー内にファイルを保管できます。"
+
+msgid ""
+"For accessibility and search engine optimization, all images that convey meaning on web sites should have alternate text.\n"
+"       Drupal also allows entry of title text for images, but it can lead to confusion for screen reader users and its use is not recommended.\n"
+"       SVG image fields can be configured so that alternate and title text fields are enabled or disabled; if enabled, the fields can be set to be required.\n"
+"        The recommended setting is to enable and require alternate text and disable title text."
+msgstr ""
+"アクセシビリティーと検索エンジン最適化のために、Web サイト上で意味を伝達するすべてのイメージには代替テキストが必要です。\n"
+"       Drupal ではイメージのタイトル・テキストを入力することもできますが、スクリーン・リーダーのユーザーが混乱する可能性があるため、その使用は推奨されません。\n"
+"       SVG イメージ・フィールドは、代替テキスト・フィールドとタイトル・テキスト・フィールドを有効または無効にするように構成できます。有効にした場合は、フィールドを必須として設定できます。\n"
+"        代替テキストを有効にして必須にし、タイトル・テキストを無効にするように設定することが推奨されています。"
+
+msgid ""
+"When you create an svg image field, you will need to choose whether the uploaded images will be stored in the public or\n"
+" private file directory defined in your settings.php file and shown on the <a href=\":file-system\">File system page</a>. This choice cannot be changed later.\n"
+"  You can also configure your field to store files in a subdirectory of the public or private directory; this setting can be changed later and\n"
+"  can be different for each entity sub-type using the field. For more information on file storage,\n"
+"  see the <a href=\":system-help\">System module help page</a>."
+msgstr ""
+"svg イメージ・フィールドの作成時には、アップロードされたイメージを、settings.php ファイルで定義されたパブリックまたは\n"
+" プライベート・ファイル・ディレクトリーに保管して<a href=\":file-system\">ファイル・システム・ページ</a>に表示するかどうかを選択する必要があります。この選択は後から変更できません。\n"
+"  また、パブリックまたはプライベート・ディレクトリーのサブディレクトリーにファイルを格納するようにフィールドを構成することもできます。この設定は後で変更でき、\n"
+"  フィールドを使用してエンティティーのサブタイプごとに変えることもできます。ファイル・ストレージについて詳しくは、\n"
+"  <a href=\":system-help\">システム・モジュールのヘルプ・ページ</a>を参照してください。"
+
+msgid ""
+"The maximum file size that can be uploaded is limited by PHP settings of the server,\n"
+" but you can restrict it further by configuring a <em>Maximum upload size</em> in the field settings (this setting can be changed later).\n"
+" The maximum file size, either from PHP server settings or field configuration, is automatically displayed to users in the help text of the image field."
+msgstr ""
+"アップロード可能な最大ファイル・サイズはサーバーの PHP 設定によって制限されますが、\n"
+" さらにフィールド設定で<em>最大アップロード・サイズ</em>を構成することによって制限できます (この設定は後で変更できます)。\n"
+" PHP サーバー設定またはフィールド構成のいずれかの最大ファイル・サイズが、イメージ・フィールドのヘルプ・テキストでユーザーに自動的に表示されます。"
+
+msgid ""
+"You can also configure a default image that will be used if no image is uploaded in an image field.\n"
+"       This default can be defined for all instances of the field in the field storage settings when you create a field, and the setting can be overridden\n"
+"        for each entity sub-type that uses the field."
+msgstr ""
+"イメージがイメージ・フィールドにアップロードされていない場合に使用される、デフォルトのイメージを構成することもできます。\n"
+"このデフォルトは、フィールドの作成時にフィールド・ストレージ設定でフィールドのすべてのインスタンスに対して定義でき、設定はフィールドを使用する各エンティティー・サブタイプに対してオーバーライドできます。\n"
+""
+
+msgid "Configuring displays and form displays"
+msgstr "表示とフォームディスプレイの設定"
+
+msgid ""
+"On the <em>Manage display</em> page, you can choose the image formatter,\n"
+" which determines the image width and height used to display the image in each display mode and whether or not to display the image alt and title.\n"
+"  On the <em>Manage form display</em> page, you can configure the image upload widget, including setting the preview image max-width and max-height\n"
+"   shown on the entity edit form."
+msgstr ""
+"<em>「表示管理」</em>ページでは、イメージ・フォーマッターを選択できます。\n"
+"これは各表示モードでイメージを表示するために使用されるイメージの幅と高さ、およびイメージの Alt とタイトルを表示するかどうかを決定します。\n"
+"<em>「フォーム表示管理」</em>ページでは、イメージ・アップロード・ウィジェットを構成できます。これにはエンティティー編集フォームに表示されるプレビュー・イメージの最大幅と最大高さの設定が含まれます。\n"
+""
+
+msgid "Only files with mime type %mime-types-allowed are allowed. Mime type detected %mime-type-detected"
+msgstr "MIME タイプ %mime-types-allowed のファイルのみが許可されます。検出された MIME タイプ: %mime-type-detected"
+
+msgid "File %file-name is not valid svg"
+msgstr "ファイル %file-name は有効な svg ではありません"
+
+msgid "SVG image field"
+msgstr "SVG イメージ・フィールド"
+
+msgid "Provides svg image field"
+msgstr "svg イメージ・フィールドを提供します"
+
+msgid "Field types"
+msgstr "フィールドタイプ"
+
+msgid "Image settings"
+msgstr "画像の設定"
+
+msgid "Default value"
+msgstr "デフォルト値"
+
+msgid "Enable Alt field"
+msgstr "alt フィールドの有効化"
+
+msgid "Alt field required"
+msgstr "alt フィールドは入力必須"
+
+msgid "Enable Title field"
+msgstr "タイトルフィールドの有効化"
+
+msgid "Title field required"
+msgstr "タイトルフィールドは入力必須"
+
+msgid "Image field display format settings"
+msgstr "画像フィールドのディスプレイフォーマット設定"
+
+msgid "Output SVG inline"
+msgstr "出力 SVG インライン"
+
+msgid "Apply dimensions"
+msgstr "寸法の適用"
+
+msgid "Width"
+msgstr "幅"
+
+msgid "Height"
+msgstr "高さ"
+
+msgid "Enable alt"
+msgstr "Alt の有効化"
+
+msgid "Enable title"
+msgstr "タイトルの有効化"
+
+msgid "Link image to"
+msgstr "画像へのリンク"
+
+msgid "Force fill"
+msgstr "fill の強制"
+
+msgid "Sanitize"
+msgstr "サニタイズ"
+
+msgid "Sanitize remote"
+msgstr "リモートのサニタイズ"
+
+msgid "Progress indicator"
+msgstr "進捗状況の表示"
+
+msgid "Preview max width"
+msgstr "プレビューの最大幅"
+
+msgid "Preview max height"
+msgstr "プレビューの最大高さ"
+
+msgid "SVG Image Field - Media Bundle"
+msgstr "SVG イメージ・フィールド - メディア・バンドル"
+
+msgid "Creates a media bundle to use SVG Image Field with the Media capabilities in core. NOTE: if you are planning to use this with the Media Library in core, it is recommended to install that module before this one. Will also install Acquia Site Studio Components if that is installed."
+msgstr "SVG イメージ・フィールドをコアのメディア機能で使用するためにメディア・バンドルを作成します。 これをコアのメディア・ライブラリーで使用する場合は、このモジュールの前にそのモジュールをインストールすることをお勧めします。 インストールされている場合は、Acquia Site Studio コンポーネントもインストールします。"
+
+msgid "Content"
+msgstr "コンテンツ"
+
+msgid "File"
+msgstr "ファイル"
+
+msgid ""
+"Check this option if you want to manipulate the SVG image with CSS and JavaScript.\n"
+"       Notice only trusted users should use fields with this option enabled because of\n"
+"       <a href=\"@svg_security_link\">inline svg security</a>"
+msgstr ""
+"SVG イメージを CSS および JavaScript で操作する場合は、このオプションにチェック・マークを付けます。\n"
+"       <a href=\"@svg_security_link\">インライン svg セキュリティー</a>上の理由から、このオプションを有効にしたフィールドは、\n"
+"       信頼できるユーザーのみが使用するようにしてください。"
+
+msgid "Apply dimensions."
+msgstr "寸法を適用します。"
+
+msgid "Image width."
+msgstr "イメージの幅。"
+
+msgid "Image height."
+msgstr "イメージの高さ。"
+
+msgid "Force the fill to currentColor"
+msgstr "fill を強制的に currentColor に設定"
+
+msgid "This can allow the SVG to inherit coloring from the enclosing tag, such as a link tag."
+msgstr "これにより、SVG がリンク・タグなどの囲みタグから色の指定を継承できるようになります。"
+
+msgid "Sanitize SVG code"
+msgstr "SVG コードのサニタイズ"
+
+msgid "Sanitize the SVG XML code and prevent XSS attacks."
+msgstr "SVG XML コードをサニタイズして、XSS 攻撃を防止します。"
+
+msgid "Sanitize: Remove remote references"
+msgstr "サニタイズ: リモート参照の除去"
+
+msgid "Remove attributes that reference remote files, this will stop HTTP leaks but will add an overhead to the sanitizer."
+msgstr "リモート・ファイルを参照する属性を除去します。これにより HTTP のリークが停止しますが、サニタイザーにはオーバーヘッドが追加されます。"
+
+msgid "Nothing"
+msgstr "なし"
+
+msgid "Enable alt attribute."
+msgstr "Alt 属性を有効にします。"
+
+msgid "Enable title attribute."
+msgstr "タイトル属性を有効にします。"
+
+msgid "Inline SVG"
+msgstr "インライン SVG"
+
+msgid "Image width: @width"
+msgstr "イメージの幅: @width"
+
+msgid "Image height: @height"
+msgstr "イメージの高さ: @height"
+
+msgid "Alt enabled"
+msgstr "Alt が有効"
+
+msgid "Title enabled"
+msgstr "タイトルが有効"
+
+msgid "Inline file %file is missing or empty. Inline display will be disabled and an image tag used instead."
+msgstr "インライン・ファイル%fが欠落しているか空です。 インライン表示は無効になり、代わりにイメージ・タグが使用されます。"
+
+msgid "File %file could not be displayed by image formatter because it does not exist on server."
+msgstr "ファイル%fはサーバー上に存在しないため、イメージ・フォーマッターによって表示できませんでした。"
+
+msgid "SVG Image Field formatter"
+msgstr "SVG イメージ・フィールド・フォーマッター"
+
+msgid "SVG Image URL formatter"
+msgstr "SVG イメージ URL フォーマッター"
+
+msgid "Alternative text"
+msgstr "代替テキスト"
+
+msgid "Alternative image text, for the image's 'alt' attribute."
+msgstr "画像の alt 属性に使用される、画像の代替テキスト。"
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "Image title text, for the image's 'title' attribute."
+msgstr "画像の title 属性に使用される、画像のタイトル。"
+
+msgid "Upload destination"
+msgstr "アップロード先"
+
+msgid "Select where the final files should be stored. Private file storage has significantly more overhead than public files, but allows restricted access to files within this field."
+msgstr "ファイルが最終的に保存される場所を選択する。プライベートファイル保存は、パブリック保存に比べてはるかに大きなオーバーヘッドがありますが、このフィールド内ファイルへのアクセス制限を行うことができます。"
+
+msgid "If no image is uploaded, this image will be shown on display."
+msgstr "画像がアップロードされていない場合、この画像が表示されます。"
+
+msgid "Enable <em>Alt</em> field"
+msgstr "<strong>Alt</strong>フィールドを有効にする"
+
+msgid "The alt attribute may be used by search engines, screen readers, and when the image cannot be loaded. Enabling this field is recommended."
+msgstr "alt 属性は、検索エンジンやスクリーンリーダーによって、もしくは画像を読み込めなかった際に使用されます。このフィールドを有効にすることをおすすめします。"
+
+msgid "<em>Alt</em> field required"
+msgstr "<em>Alt</em> フィールドは入力必須"
+
+msgid "Making this field required is recommended."
+msgstr "このフィールドを入力必須にすることをおすすめします。"
+
+msgid "Enable <em>Title</em> field"
+msgstr "<em>Title</em> フィールドを有効にする"
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image. Enabling this field is not recommended as it can cause problems with screen readers."
+msgstr "title 属性は、画像にマウスカーソルを重ねた際のツールチップとして使用されます。スクリーンリーダー利用者に混乱を生じさせることがあるので、このフィールドを有効にするのはおすすめしません。"
+
+msgid "<em>Title</em> field required"
+msgstr "<em>Title</em> フィールドは入力必須"
+
+msgid "If no image is uploaded, this image will be shown on display and will override the field's default image."
+msgstr "もしイメージがアップロードされない場合、フィールドのデフォルトイメージよりもこのイメージが優先的に表示されます。"
+
+msgid "Default image"
+msgstr "デフォルト画像"
+
+msgid "Image"
+msgstr "画像"
+
+msgid "Image to be shown if no image is uploaded."
+msgstr "アップロードされた画像が無い場合に表示する画像。"
+
+msgid "This text will be used by screen readers, search engines, and when the image cannot be loaded."
+msgstr "このテキストは、スクリーンリーダーや検索エンジンによって、あるいは画像を読み込めない場合に用いられます。"
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image."
+msgstr "title 属性は、画像の上にマウスが置かれた時、ツールチップに表示されます。"
+
+msgid "Svg Image"
+msgstr "Svg イメージ"
+
+msgid "This field stores the ID of an image file as an integer value."
+msgstr "このフィールドは画像ファイルを整数で表現したIDを格納します。"
+
+msgid "Reference"
+msgstr "参照"
+
+msgid "Alt"
+msgstr "Alt"
+
+msgid "Preview image max width"
+msgstr "プレビュー・イメージの最大幅"
+
+msgid "Preview image max height"
+msgstr "プレビュー・イメージの最大高さ"
+
+msgid "Preview image width: @width"
+msgstr "プレビュー・イメージの幅: @width"
+
+msgid "Preview image height: @height"
+msgstr "プレビュー・イメージの高さ: @height"
+
+msgid "This text will be used by screen readers, search engines, or when the image cannot be loaded."
+msgstr "このテキストは音声読み上げソフトや検索エンジン、画像が読み込めない時に利用されます。"
+
+msgid "The title is used as a tool tip when the user hovers the mouse over the image."
+msgstr "このタイトルは画像の上にマウスを置いた時、ツールチップに表示されます。"
+
+msgid "SVG image"
+msgstr "SVG イメージ"
+
+msgid "SVG"
+msgstr "SVG"
+
+msgid "Provides business logic and metadata for SVG files."
+msgstr "SVG ファイルのビジネス・ロジックとメタデータを提供します。"
+

@@ -1,0 +1,888 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "EU Cookie Compliance Consents"
+msgstr "欧盟 Cookie 合规性许可"
+
+msgid "EU Cookie Compliance consent data from the database."
+msgstr "来自数据库的欧盟 Cookie 合规性许可数据。"
+
+msgid "User ID"
+msgstr "用户 ID"
+
+msgid "User ID."
+msgstr "用户标识。"
+
+msgid "Users"
+msgstr "用户"
+
+msgid "Timestamp"
+msgstr "时间戳"
+
+msgid "Time of consent."
+msgstr "许可时间。"
+
+msgid "IP address"
+msgstr "IP地址"
+
+msgid "The IP address."
+msgstr "IP 地址。"
+
+msgid "Consent Type"
+msgstr "许可类型"
+
+msgid "The type of consent, such as \"banner\" for the banner and form_id for forms."
+msgstr "许可的类型，例如，用于条幅的“banner”和用于表单的 form_id。"
+
+msgid "Revision ID"
+msgstr "修订版本ID"
+
+msgid "Revision of the privacy policy at the time of consent."
+msgstr "许可时的隐私策略修订。"
+
+msgid "About"
+msgstr "关于"
+
+msgid "This module intends to deal with the EU Directive on Privacy and Electronic Communications that comes into effect on 26th May 2012. From that date, if you are not compliant or visibly working towards compliance, you run the risk of enforcement action, which can include a fine of up to half a million pounds for a serious breach."
+msgstr "此模块旨在应对 2012 年 5 月 26 日生效的欧盟《隐私与电子通讯指令》。从该日期起，如果您不合规或者未明确致力于实现合规，那么您将面临着遭遇强制措施的风险，包括可能高达 50 万英镑的严重违规罚款。"
+
+msgid "How it works"
+msgstr "工作原理"
+
+msgid "The module displays a banner at the bottom or the top of website to make users aware of the fact that cookies are being set. The user may then give his/her consent or move to a page that provides more details. Consent is given by user pressing the agree buttons or by continuing browsing the website. Once consent is given another banner appears with a \"Thank you\" message."
+msgstr "该模块会在 Web 站点底部或顶部显示条幅，以使用户了解正在设置 cookie 的情况。用户可对此表示许可，或者转移至另一个提供更多详细信息的页面。按下同意按钮或者继续浏览该 Web 站点即表示用户已许可。许可后，将显示另一个条幅，其中包含一条“感谢”消息。"
+
+msgid "The module provides a settings page where the banner can be customized. There are also template files for the banners that can be overridden by your theme."
+msgstr "此模块提供了一个设置页面，可在其中定制条幅。此外还为可使用您的主题覆盖的条幅提供了模板文件。"
+
+msgid "Installation"
+msgstr "安装"
+
+msgid "Unzip the files to the \"sites/all/modules\" OR \"modules\" directory and enable the module."
+msgstr "将这些文件解压到“sites/all/modules”或“modules”目录，并启用该模块。"
+
+msgid "If desired, give the administer EU Cookie Compliance banner permissions that allow users of certain roles access the administration page. You can do so on the admin/user/permissions page."
+msgstr "如果需要，请授予“管理欧盟 Cookie 合规性”条幅许可权，以允许承担某些角色的用户访问管理页面。可在“管理/用户/许可权”页面上执行此操作。"
+
+msgid "there is also a 'display eu cookie compliance banner' permission that helps you show the banner to the roles you desire."
+msgstr "另外还有“显示欧盟 Cookie 合规性”条幅许可权，以帮助您向您期望的角色显示此条幅。"
+
+msgid "You may want to create a page that would explain how your site uses cookies. Alternatively, if you have a privacy policy, you can link the banner to that page (see next step)."
+msgstr "您可能想要创建一个页面，用于说明您的站点使用 cookie 的方式。或者，如果您具有隐私策略，可将条幅链接至此页面（请参阅下一步）。"
+
+msgid "Go to the admin/config/system/eu-cookie-compliance page to configure and enable the banner."
+msgstr "转至“管理/配置/系统/EU - cookie - 合规性”页面以配置并启用该条幅。"
+
+msgid "If you want to customize the banner background and text color, either type in the hex values or simply install http://drupal.org/project/coloris."
+msgstr "如果要定制条幅背景和文本颜色，请输入十六进制值，或只需安装 http://drupal.org/project/coloris 即可。"
+
+msgid "If you want to theme your banner override the themes in the template file."
+msgstr "如果要为条幅制定主题，请覆盖模板文件中的主题。"
+
+msgid "If you want to show the message in EU countries only, install the Smart IP module: http://drupal.org/project/smart_ip and enable the option on the admin page."
+msgstr "如果要仅在欧盟国家或地区显示此消息，请安装“智能 IP”模块：http://drupal.org/project/smart_ip，并在管理页面上启用该选项。"
+
+msgid "NOTICE: The module does not audit your cookies nor does it prevent cookies from being set."
+msgstr "注：该模块不会审计您的 cookie，也不会阻止设置 cookie。"
+
+msgid "For developers"
+msgstr "对于开发人员"
+
+msgid "If you want to conditionally set cookies in your module, there is a javascript function provided that returns TRUE if the current user has given his consent:"
+msgstr "如果要在您的模块中有条件地设置 cookie，系统提供了一个 JavaScript 函数，该函数在当前用户表示同意的情况下会返回 TRUE："
+
+msgid "Could not read the EU Cookie Compliance JavaScript file that is used to handle disabled scripts. There may be a problem with your file system or the file may be missing. Try accessing the EU Cookie Compliance settings page and re-save the form."
+msgstr "无法读取用于处理已禁用脚本的欧盟 Cookie 合规性 JavaScript 文件。 您的文件系统可能存在问题，或者该文件可能缺失。 请尝试访问“欧盟 Cookie 合规性设置”页面，然后重新保存该表单。"
+
+msgid "%name must be a HEX value (without leading #) or empty."
+msgstr "%name 必须为十六进制值（不含前导 #）或为空。"
+
+msgid "<h2>Thank you for accepting cookies</h2><p>You can now hide this message or find out more about cookies.</p>"
+msgstr "<h2>感谢您接受 cookie</h2><p>现在，您可以隐藏此消息或了解有关 cookie 的更多信息。</p>"
+
+msgid "Accept"
+msgstr "接受"
+
+msgid "More info"
+msgstr "更多信息"
+
+msgid "Hide"
+msgstr "隐藏"
+
+msgid "<h2>We use cookies on this site to enhance your user experience</h2><p>By clicking the Accept button, you agree to us doing so.</p>"
+msgstr "<h2>我们在此站点上使用 cookie 来改善您的用户体验</h2><p>单击“接受”按钮即表明您同意我们这样做。</p>"
+
+msgid "<h2>We use cookies on this site to enhance your user experience</h2><p>By tapping the Accept button, you agree to us doing so.</p>"
+msgstr "<h2>我们在此站点上使用 cookie 来改善您的用户体验</h2><p>点击“接受”按钮即表明您同意我们这样做。</p>"
+
+msgid "No, thanks"
+msgstr "不用，谢谢。"
+
+msgid "<h2>We use cookies on this site to enhance your user experience</h2><p>You have given your consent for us to set cookies.</p>"
+msgstr "<h2>我们在此站点上使用 cookie 来改善您的用户体验</h2><p>您已同意我们设置 cookie。</p>"
+
+msgid "Withdraw consent"
+msgstr "撤回许可"
+
+msgid "Privacy settings"
+msgstr "隐私设置"
+
+msgid "Save preferences"
+msgstr "保存首选项"
+
+msgid "Accept all cookies"
+msgstr "接受所有 cookie"
+
+msgid "EU Cookie Compliance"
+msgstr "欧盟 Cookie 合规性"
+
+msgid "Language @language_id: Your privacy policy link is not set or is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "语言 @language_id：您的隐私策略链接未设置或指向首页。 这是安装后的缺省值，除非您的隐私策略实际上发布在首页上，否则您将需要为隐私策略创建一个单独的页面，并链接至该页面。"
+
+msgid "Privacy policy link not provided"
+msgstr "未提供隐私策略链接"
+
+msgid "Language @language_id: Your privacy policy link is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "语言 @language_id：您的隐私策略链接指向首页。 这是安装后的缺省值，除非您的隐私策略实际上发布在首页上，否则您将需要为隐私策略创建一个单独的页面，并链接至该页面。"
+
+msgid "Cookie category"
+msgstr "Cookie 类别"
+
+msgid "Cookie categories"
+msgstr "Cookie 类别"
+
+msgid "This module aims at making the website compliant with the new EU cookie regulation"
+msgstr "此模块的目的在于让 Web 站点符合新的欧盟 cookie 法规"
+
+msgid "User interface"
+msgstr "用户界面"
+
+msgid "Add Cookie category"
+msgstr "添加 Cookie 类别"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Categories"
+msgstr "分类"
+
+msgid "Cookie settings"
+msgstr "Cookie 设置"
+
+msgid "Make your website compliant with the EU Directive on Privacy and Electronic Communications."
+msgstr "让您的 Web 站点符合有关隐私和电子通讯的欧盟指令。"
+
+msgid "Configure the cookie consent popup."
+msgstr "配置 cookie 同意弹出窗口。"
+
+msgid "Administer cookie categories."
+msgstr "管理 cookie 类别。"
+
+msgid "Toggle the cookie consent settings tray"
+msgstr "切换 cookie 许可设置托盘"
+
+msgid "Administer EU Cookie Compliance banner"
+msgstr "“管理欧盟 Cookie 合规性”条幅"
+
+msgid "Administer EU Cookie Compliance categories"
+msgstr "管理欧盟 Cookie 合规性类别"
+
+msgid "Display EU Cookie Compliance banner"
+msgstr "“显示欧盟 Cookie 合规性”条幅"
+
+msgid "EU Cookie Compliance store consent"
+msgstr "欧盟 Cookie 合规性存储许可"
+
+msgid "Cookie category config"
+msgstr "Cookie 类别配置"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "标签"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Checkbox default state"
+msgstr "复选框缺省状态"
+
+msgid "Weight"
+msgstr "权重"
+
+msgid "EU Cookie Compliance Settings"
+msgstr "欧盟 Cookie 合规性设置"
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "Enable banner"
+msgstr "启用条幅"
+
+msgid "Consent by clicking"
+msgstr "通过单击同意"
+
+msgid "Consent by scrolling"
+msgstr "通过滚动来表示同意"
+
+msgid "Array of EU countries"
+msgstr "一系列欧盟国家或地区"
+
+msgid "Country name."
+msgstr "国家或地区名称。"
+
+msgid "Only display banner in EU countries."
+msgstr "仅在欧盟国家或地区显示条幅。"
+
+msgid "Only display banner in EU countries (Javascript based)."
+msgstr "仅在欧盟国家或地区显示条幅（基于 JavaScript）。"
+
+msgid "Place the banner at the top of the website"
+msgstr "将条幅放置在 Web 站点的顶部"
+
+msgid "If the banner is at the top, don't scroll the banner with the page."
+msgstr "如果条幅位于顶部，请勿随页面滚动条幅。"
+
+msgid "Cookie information banner message"
+msgstr "Cookie 信息条幅消息"
+
+msgid "Cookie information banner message - mobile"
+msgstr "Cookie 信息条幅消息 - 移动"
+
+msgid "Template to use for \"consent by default\" method"
+msgstr "用于“缺省情况下同意”方法的模板"
+
+msgid "Agree button message"
+msgstr "同意按钮消息"
+
+msgid "Cookie Policy button message"
+msgstr "Cookie 策略按钮消息"
+
+msgid "Mobile breakpoint"
+msgstr "移动断点"
+
+msgid "Enable \"Thank you\" banner."
+msgstr "启用“感谢”条幅。"
+
+msgid "Clicking hides \"Thank you\" banner."
+msgstr "单击以隐藏“感谢”条幅。"
+
+msgid "Disagree button label"
+msgstr "不同意按钮标签"
+
+msgid "Thank you banner message"
+msgstr "“感谢”条幅消息"
+
+msgid "More info button label"
+msgstr "更多信息按钮标签"
+
+msgid "Hide button label"
+msgstr "隐藏按钮标签"
+
+msgid "Privacy policy link"
+msgstr "隐私策略链接"
+
+msgid "Open privacy policy link in a new window."
+msgstr "在新窗口中打开隐私策略链接。"
+
+msgid "Banner height in pixels"
+msgstr "条幅高度（以像素为单位）"
+
+msgid "Banner width in pixels or a percentage value"
+msgstr "条幅宽度（以像素为单位或为百分比值）"
+
+msgid "Banner sliding animation time in milliseconds"
+msgstr "条幅滑动动画时间（以毫秒为单位）"
+
+msgid "Show \"Cookie Policy\" and \"More info\" buttons"
+msgstr "显示“Cookie 策略”和“更多信息”按钮"
+
+msgid "Background color"
+msgstr "背景色"
+
+msgid "Text color"
+msgstr "文本颜色"
+
+msgid "Domain"
+msgstr "域"
+
+msgid "Add/Remove banner on specified domains"
+msgstr "在指定域中添加/移除条幅"
+
+msgid "Domains list"
+msgstr "域列表"
+
+msgid "Exclude paths"
+msgstr "排除路径"
+
+msgid "Exclude admin pages."
+msgstr "排除管理页面。"
+
+msgid "Cookie session"
+msgstr "Cookie 会话"
+
+msgid "Disagree set cookie session"
+msgstr "不同意设置 Cookie 会话"
+
+msgid "Cookie lifetime"
+msgstr "Cookie 生存期"
+
+msgid "Use a different message for mobile phones"
+msgstr "针对移动电话使用其他消息"
+
+msgid "Include minimal CSS, I want to style the overlay in the theme CSS"
+msgstr "包含最小 CSS，我希望在主题 CSS 中对覆盖层进行样式设置"
+
+msgid "Include styles to support Drupal Olivero theme default CSS."
+msgstr "包含样式以支持 Drupal Olivero 主题缺省 CSS。"
+
+msgid "Do not show cookie policy when the user clicks the \"Cookie Policy\" button."
+msgstr "当用户单击“Cookie 策略”按钮时不显示 Cookie 策略。"
+
+msgid "Reload page after user clicks the \"Agree\" button."
+msgstr "在用户单击“同意”按钮后重新装入页面。"
+
+msgid "Include/exclude specified routes for reloading"
+msgstr "包含/排除为重新加载指定的路由"
+
+msgid "Routes list"
+msgstr "路由列表"
+
+msgid "Cookie name"
+msgstr "Cookie 名称"
+
+msgid "Don't show the banner for UID 1."
+msgstr "针对 UID 1 不显示条幅。"
+
+msgid "Let screen readers see the banner before other links on the page"
+msgstr "让屏幕朗读器在看到页面上的其他链接之前先看到条幅"
+
+msgid "Consent method"
+msgstr "许可方法"
+
+msgid "Disable JavaScripts"
+msgstr "禁用 JavaScript"
+
+msgid "Enable cookie(s) automatic-removal when consent is not explicitly given"
+msgstr "未明确表示同意时，启用 Cookie 自动移除"
+
+msgid "Allowed cookies"
+msgstr "已允许 cookie"
+
+msgid "Consent storage method"
+msgstr "许可存储方法"
+
+msgid "Withdraw consent banner message"
+msgstr "撤回许可条幅消息"
+
+msgid "Privacy settings tab label"
+msgstr "隐私设置选项卡标签"
+
+msgid "Withdraw consent action button label"
+msgstr "撤回许可操作按钮标签"
+
+msgid "Enable floating privacy settings tab and withdraw consent banner"
+msgstr "启用浮动式隐私设置选项卡和撤回许可条幅"
+
+msgid "Put the withdraw consent action button on the cookie information banner"
+msgstr "在 cookie 信息条幅上放置撤回许可操作按钮"
+
+msgid "Save preferences action button label"
+msgstr "保存首选项操作按钮标签"
+
+msgid "Accept all categories action button label"
+msgstr "接受所有类别操作按钮标签"
+
+msgid "Replace the Agree button by a Save preferences and an Accept all categories button"
+msgstr "通过“保存首选项”和“接受所有类别”按钮替换“同意”按钮"
+
+msgid "Allow the cookie to be set for all sites on the same domain"
+msgstr "允许为同一域上的所有站点设置 cookie"
+
+msgid "Enable floating privacy settings permanently"
+msgstr "永久启用浮动隐私设置"
+
+msgid "Containing element"
+msgstr "包含的元素"
+
+msgid "Cookie Policy Version"
+msgstr "Cookie 策略版本"
+
+msgid "Cookie value (disagreed)"
+msgstr "Cookie 值（不同意）"
+
+msgid "Cookie value (agreed, show thank you banner)"
+msgstr "Cookie 值（同意，显示感谢条幅）"
+
+msgid "Cookie value (agreed)"
+msgstr "Cookie 值（同意）"
+
+msgid "Show disagree button (DEPRECATED)"
+msgstr "显示不一致按钮（不推荐）"
+
+msgid "Disagree button message (DEPRECATED)"
+msgstr "不同意按钮消息（不推荐）"
+
+msgid "Whitelisted cookies (DEPRECATED)"
+msgstr "列入白名单的 cookie（不推荐）"
+
+msgid "Cookie categories (DEPRECATED)"
+msgstr "Cookie 类别（不推荐）"
+
+msgid "Boolean value to indicate that the first consent category cannot be unchecked (DEPRECATED)"
+msgstr "指示第一个同意类别不可取消的布尔值（不推荐）"
+
+msgid "Select all categories by default (DEPRECATED)"
+msgstr "缺省情况下选择所有类别（不推荐）"
+
+msgid "Buttons have red focus outline (for accessibility)"
+msgstr "按钮具有红色焦点轮廓（对于辅助功能选项）"
+
+msgid "Close button action"
+msgstr "关闭按钮操作"
+
+msgid "Reject button label"
+msgstr "拒绝按钮标签"
+
+msgid "Enable \"Reject/deny all\" button"
+msgstr "启用“拒绝/全部拒绝”按钮"
+
+msgid "Close button/box enabled"
+msgstr "已启用关闭按钮/框"
+
+msgid "Unchecked by default"
+msgstr "缺省情况下取消选中"
+
+msgid "Checked by default"
+msgstr "缺省情况下选中"
+
+msgid "Checked and disabled (user cannot clear the checkbox)"
+msgstr "选中和禁用（用户无法清除该复选框）"
+
+msgid "Machine name"
+msgstr "机读名称"
+
+msgid "Save configuration"
+msgstr "保存配置"
+
+msgid "I accept processing of my personal data. For more information, read the <a href=\"@url\">privacy policy</a>,"
+msgstr "我同意处理我的个人数据。有关更多信息，请参阅<a href=\"@url\">隐私策略</a>。"
+
+msgid "Could not generate the EU Cookie Compliance JavaScript file that would be used for handling disabled JavaScripts. There may be a problem with your files folder."
+msgstr "无法生成要用于处理已禁用的 JavaScript 的欧盟 Cookie 合规性 JavaScript 文件。 您的 files 文件夹可能存在问题。"
+
+msgid "Are you sure you want to delete %name?"
+msgstr "你确定要删除  %name ?"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "content @type: deleted @label."
+msgstr "@type： 已删除 @label."
+
+msgid "The name that will be shown to the website visitor."
+msgstr "将显示给 Web 站点访问者的名称。"
+
+msgid "The description that will be shown to the website visitor."
+msgstr "将显示给 Web 站点访问者的描述。"
+
+msgid "Determines the default state of this category's selection checkbox on the cookie consent popup."
+msgstr "确定 cookie 同意弹出框上此类别的选择复选框的缺省状态。"
+
+msgid "Created the %label Cookie category."
+msgstr "已创建 %label Cookie 类别。"
+
+msgid "Saved the %label Cookie category."
+msgstr "已保存 %label Cookie 类别。"
+
+msgid "Do not store"
+msgstr "不存储"
+
+msgid "Permissions"
+msgstr "权限"
+
+msgid "Display the banner for"
+msgstr "为以下对象显示条幅"
+
+msgid "Consent for processing of personal information"
+msgstr "用于处理个人信息的许可"
+
+msgid "The EU General Data Protection Regulation (GDPR) (see <a href=\"https://gdpr.eu/\" target=\"_blank\">https://gdpr.eu/</a>) comes into enforcement from 25 May 2018 and introduces new requirements for web sites which handle information that can be used to identify individuals. The regulation underlines that consent must be <strong>unambiguous</strong> and involve a <strong>clear affirmative action</strong>. When evaluating how to best handle the requirements in the GDPR, remember that if you have a basic web site where the visitors don't log in, you always have the option to <strong>not process data that identifies individuals</strong>, in which case you may not need this module. Also note that GDPR applies to any electronic processing or storage of personal data that your organization may do, and simply installing a module may not be enough to become fully GDPR compliant."
+msgstr "欧盟通用数据保护条例 (GDPR)（请参阅 <a href=\"https://gdpr.eu/\" target=\"_blank\">https://gdpr.eu/</a>）于 2018 年 5 月 25 日生效，它对处理个人身份识别信息的网站提出了新的要求。 此条例强调，许可必须<strong>明确</strong>并且包含<strong>明确的肯定行动</strong>。 在评估如何以最佳方式处理 GDPR 中的要求时，请记住，如果有一个客户并不登录的基本 Web 站点，那么您始终具有<strong>不处理可识别个人的数据</strong>这一选项，在此情况下可能不需要此模块。 另请注意，GDPR 适用于您的组织可能对个人数据执行的任何电子处理或存储操作，只是安装一个模块可能并不足以完全符合 GDPR 的要求。"
+
+msgid "Consent by default. Don't provide any option to opt out."
+msgstr "缺省情况下许可。不提供任何选择性停用选项。"
+
+msgid "Opt-in. Don't track visitors unless they specifically give consent. (GDPR compliant)"
+msgstr "选择性加入。除非明确给予许可，否则不跟踪访问者。（符合 GDPR 要求）"
+
+msgid "Opt-in with categories. Let visitors choose which cookie categories they want to opt-in for (GDPR compliant)."
+msgstr "使用类别选择性加入。允许访问者选择想要选择性加入的 cookie 类别（以符合 GDPR）。"
+
+msgid "Opt-out. Track visitors by default, unless they choose to opt out."
+msgstr "选择性停用。缺省情况下跟踪访问者，除非他们选择停用。"
+
+msgid "Automatic. Respect the DNT (Do not track) setting in the browser, if present. Uses opt-in when DNT is 1 or not set, and consent by default when DNT is 0."
+msgstr "自动。如果存在，考虑浏览器中的 DNT（不跟踪）设置。在 DNT 为 1 或者未设置时使用选择性加入，并且在 DNT 为 0 时默认为许可。"
+
+msgid "Cookie categories are managed in the Categories tab (found at the top of this page)."
+msgstr "在“类别”选项卡（位于此页面顶部）中管理 Cookie 类别。"
+
+msgid "Replace the Agree button with \"Save preferences\" and \"Accept all categories\" buttons."
+msgstr "将“同意”按钮替换为“保存首选项”和“接受所有类别”按钮。"
+
+msgid "\"Save preferences\" button label"
+msgstr "“保存首选项”按钮标签"
+
+msgid "\"Accept all categories\" button label"
+msgstr "“接受所有类别”按钮标签"
+
+msgid "Select the popup info template for 'default by consent' option"
+msgstr "选择“缺省同意”选项的弹出信息模板"
+
+msgid "Info banner template"
+msgstr "信息条幅模板"
+
+msgid ""
+"Cookie policy button in popup-buttons section and styled similarly to the Agree button,\n"
+"        as in earlier versions of this module"
+msgstr ""
+"弹出按钮部分中的 cookie 策略按钮，样式类似于“同意”按钮，\n"
+"        与此模块的早期版本相同"
+
+msgid "Cookie policy button in popup-text section, styled differently than Agree button."
+msgstr "弹出文本部分中的 Cookie 策略按钮，样式不同于“同意”按钮。"
+
+msgid "Disable the following JavaScripts when consent isn't given"
+msgstr "在未给出许可时禁用以下 JavaScript"
+
+msgid "<span class='eu-cookie-compliance-word-break'>Include the full path of JavaScripts, each on a separate line. When using the opt-in or opt-out consent options, you can block certain JavaScript files from being loaded when consent isn't given. The on-site JavaScripts should be written as root relative paths <strong>without the leading slash</strong>, you can use public://path/to/file.js and private://path/to/file.js, and off-site JavaScripts should be written as complete URLs <strong>with the leading http(s)://</strong>. Note that after the user gives consent, the scripts will be executed in the order you enter here.<br /><br />Libraries and scripts that attach to Drupal.behaviors are supported. To indicate a behavior that needs to be loaded on consent, append the behavior name after the script with a | (vertical bar). If you also want to conditionally load a library, place that as the third parameter, following another | (vertical bar). <strong>Example: modules/custom/custom_module/js/custom.js|customModule|custom_module/custom_module</strong>.<br />If your script file does not attach to Drupal.attributes, you may skip the second parameter. <strong>Example: modules/custom/custom_module/js/custom.js||custom_module/custom_module</strong><br /><strong>Note that Drupal behavior name and library parameters are both optional</strong>, but may be required to achieve your objective.</span>"
+msgstr "<span class='eu-cookie-compliance-word-break'>包含 JavaScript 的完整路径，每个单独一行。在使用选择性加入或选择性停用许可选项时，您可以在未给予许可时阻止装入特定 JavaScript 文件。现场 JavaScript 的书写形式为<strong>不含前置斜杠</strong>的根目录相对路径，您可以使用 public://path/to/file.js 和 private://path/to/file.js，非现场 JavaScript 的书写形式为<strong>带前置 http(s)://</strong> 的完整 URL。请注意，在用户给予许可后，将按照此处输入的顺序执行脚本。<br /><br />支持附加到 Drupal.behaviors 的库和脚本。要指示需要在同意时装入的行为，请在脚本后面用 |（竖线）附加行为名称。如果您还希望有条件地装入库，请将其作为第三个参数放置在另一个 |（竖线）之后。<strong>示例：modules/custom/custom_module/js/custom.js|customModule|custom_module/custom_module</strong>。<br />如果脚本文件未附加到 Drupal.attributes，那么可以跳过第二个参数。<strong>示例：modules/custom/custom_module/js/custom.js||custom_module/custom_module</strong><br /><strong>请注意，Drupal 行为名称和库参数都是可选的</strong>，但实现您的目标时可能需要用到。</span>"
+
+msgid "When using the consent method \"Opt-in with categories\", you can link the script to a specific category by using the format: \"category:path/to/the/script.js\"."
+msgstr "在使用许可方法“使用类别选择性加入”时，您可以通过使用以下格式将脚本链接至特定类别：“category:path/to/the/script.js”。"
+
+msgid "Cookie handling"
+msgstr "Cookie 处理"
+
+msgid "Enable cookie(s) automatic-removal when consent isn't given."
+msgstr "未表示同意时，启用 Cookie 自动移除。"
+
+msgid "Include the name of cookies, each on a separate line. When using the opt-in or opt-out consent options, this module will <strong>delete cookies from your domain that are not allowed</strong> every few seconds when consent isn't given. PHP session cookies and the cookie for this module are always allowed."
+msgstr "包含 Cookie 的名称，每个单独一行。在使用选择性加入或选择性停用同意选项时，如果未表示同意，此模块每隔几秒就会<strong>从您的域中删除不允许的 cookie</strong>。始终允许 PHP 会话 cookie 和此模块的 cookie。"
+
+msgid "When using the consent method \"Opt-in with categories\", you can link the cookie to a specific consent category by using the format: \"category:cookie_name\".  Only when consent is given for the given category, will the cookie be allowed."
+msgstr "在使用许可方法“使用类别选择性加入”时，您可以通过使用以下格式将 Cookie 链接至特定许可类别：“category:cookie_name”。仅当为给定类别给予同意时，才允许 cookie。"
+
+msgid "Cookie names can contain \"*\" characters which mean a series of any characters."
+msgstr "Cookie 名称可以包含“*”字符，表示一系列任意字符。"
+
+msgid "Store record of consent"
+msgstr "存储许可记录"
+
+msgid "Depending on your implementation of GDPR, you may have to store a record when the user consents. This module comes with a basic consent storage plugin that writes a record to the database. Note that if your site has significant traffic, the basic consent storage may become a bottleneck, as every consent action will require a write to the database. You can easily create your own module with a ConsentStorage Plugin that extends ConsentStorageBase, using BasicConsentStorage from this module as a template. If you create a highly performant consent storage plugin, please consider contributing it back to the Drupal community as a contrib module."
+msgstr "根据您的 GDPR 实施情况，在用户许可时可能必须存储记录。此模块随附将记录写入数据库的基本许可存储插件。请注意，如果站点的流量很大，那么基本许可存储可能会成为瓶颈，因为每个许可操作都需写入数据库一次。您可以使用来自此模块的 BasicConsentStorage 作为模板，通过用来扩展 ConsentStorageBase 的 ConsentStorage 插件轻松创建自己的模块。如果创建了高性能许可存储插件，请考虑将其添加回 Drupal 社区作为贡献模块。"
+
+msgid "Cookie information banner"
+msgstr "Cookie 信息条幅"
+
+msgid "By default by clicking any link or button on the website the visitor accepts the cookie policy. Uncheck this box if you don’t require this functionality. You may want to edit the banner message below accordingly."
+msgstr "缺省情况下，访问者可通过单击 Web 站点上的任意链接或按钮接受 cookie 策略。如果不需要此功能，请取消选中此框。您可能需要编辑下面的条幅消息。"
+
+msgid "Use a different message for mobile phones."
+msgstr "对手机使用其他消息。"
+
+msgid "px"
+msgstr "像素"
+
+msgid "The mobile message will be used when the window width is below or equal to the given value."
+msgstr "当窗口宽度小于或等于给定值时，将使用移动消息。"
+
+msgid "Agree button label"
+msgstr "同意按钮标签"
+
+msgid "If this option is checked, the cookie policy button will be shown on the site. Disabling this option will hide both the \"Cookie Policy\" button on the information banner and the \"More info\" button on the \"Thank you\" banner."
+msgstr "如果选中此选项，那么将在站点上显示“cookie 策略”按钮。禁用此选项将隐藏信息条幅上的“Cookie 策略”按钮和“感谢”条幅上的“更多信息”按钮。"
+
+msgid "Cookie policy button label"
+msgstr "Cookie 策略按钮标签"
+
+msgid "GDPR requires that withdrawing consent for handling personal information should be as easy as giving consent. This module offers a tab button that when clicked brings up a message and a button that can be used to withdraw consent."
+msgstr "GDPR 要求个人信息处理许可的撤回应与给予许可一样简单。此模块提供一个选项卡按钮，在单击时将弹出一条消息和一个可用于撤回许可的按钮。"
+
+msgid "Adds a floating privacy settings tab and withdraw consent banner. This option also provides a \"Cookie settings\" button block and menu item suggestion in \"Navigation\" menu."
+msgstr "添加一个浮动的“隐私设置”选项卡并撤销同意条幅。 此选项还提供了“导航”菜单中的“Cookie 设置”按钮块和菜单项建议。"
+
+msgid "Enable floating privacy settings tab after withdrawing consent"
+msgstr "撤回同意后启用浮动隐私设置选项卡"
+
+msgid "Put the \"Withdraw consent\" button on the cookie information banner."
+msgstr "在 Cookie 信息条幅上放置“撤回许可”按钮。"
+
+msgid "Text that will be displayed in the banner that appears when the privacy settings tab is clicked."
+msgstr "在单击“隐私设置”选项卡时所出现的条幅中将显示的文本。"
+
+msgid "Tab button that reveals/hides the withdraw message and action button when clicked."
+msgstr "在单击时显示/隐藏撤回消息和操作按钮的选项卡按钮。"
+
+msgid "Withdraw consent button label"
+msgstr "撤回许可按钮标签"
+
+msgid "This button will withdraw consent when clicked."
+msgstr "单击此按钮将撤回许可。"
+
+msgid "Reject button and close box"
+msgstr "拒绝按钮和关闭框"
+
+msgid "Close banner"
+msgstr "关闭条幅"
+
+msgid "Reject all cookies"
+msgstr "拒绝所有 cookie"
+
+msgid "Trigger Save preferences (for banner with categories)"
+msgstr "触发“保存首选项”（针对包含类别的条幅）"
+
+msgid "The default position of the close button is in the top right corner of the banner."
+msgstr "关闭按钮的缺省位置位于条幅的右上角。"
+
+msgid "Thank you banner"
+msgstr "“感谢”条幅"
+
+msgid "Enable \"Thank you\" banner"
+msgstr "启用“感谢”条幅"
+
+msgid "Clicking a link or button hides the \"Thank you\" message automatically."
+msgstr "单击链接或按钮会自动隐藏“感谢”消息。"
+
+msgid "\"Thank you\" banner message"
+msgstr "“感谢”条幅消息"
+
+msgid "Privacy policy"
+msgstr "隐私策略"
+
+msgid "Enter link to your privacy policy or other page that will explain cookies to your users, external links should start with http:// or https://."
+msgstr "输入到您的隐私策略或向用户解释 cookie 的其他页面的链接，外部链接应以 http:// 或 https:// 开头。"
+
+msgid "Privacy Policy Version"
+msgstr "隐私策略版本"
+
+msgid "Change this value to make the cookie information banner reappear for all visitors. A typical usage of this field is to increase the value when the privacy policy has been changed."
+msgstr "更改此值以使 Cookie 信息条幅重新向所有访问者显示。此字段的典型用法是在更改隐私策略时增加该值。"
+
+msgid "Appearance"
+msgstr "外观"
+
+msgid "Olivero theme is enabled, but Olivero style support is not enabled. You can enable this setting within the <a href=\"#edit-appearance\">Appearance fieldset</a> to extend the look and feel of the Olivero theme."
+msgstr "已启用 Olivero 主题，但未启用 Olivero 样式支持。 您可以在<a href=\"#edit-appearance\">外观字段集</a>中启用此设置，以扩展 Olivero 主题的外观。"
+
+msgid "This uses opinionated styling to fit in with the Drupal Olivero theme. Enabling this will disable other appearance options."
+msgstr "这将使用适用于 Drupal Olivero 主题的固有样式。 启用此选项将禁用其他外观选项。"
+
+msgid "Change the text color of the banner."
+msgstr "更改条幅的文本颜色。"
+
+msgid "Change the background color of the banner."
+msgstr "更改条幅的背景色。"
+
+msgid "Change the text color of the banner. Provide HEX value without the #."
+msgstr "更改条幅的文本颜色。请提供不带 # 的十六进制值。"
+
+msgid "Change the background color of the banner. Provide HEX value without the #."
+msgstr "更改条幅的背景色。请提供不带 # 的十六进制值。"
+
+msgid "Serves as the parent element to append cookie banner html to."
+msgstr "充当父元素以追加 cookie 条幅 html。"
+
+msgid "Bottom"
+msgstr "底部"
+
+msgid "Top"
+msgstr "顶部"
+
+msgid "Position"
+msgstr "位置"
+
+msgid "Include minimal CSS, I want to style the banner in the theme CSS."
+msgstr "包含最小 CSS，我希望在主题 CSS 中对条幅进行样式设置。"
+
+msgid "This may be useful if you want the banner to share the button style of your theme. Note that you will have to configure values like the banner width, text color and background color in your CSS file."
+msgstr "如果您希望条幅共享您的主题的按钮样式，那么这可能很有用。请注意，您将必须在 CSS 文件中配置条幅宽度、文本颜色和背景色等值。"
+
+msgid "Banner height"
+msgstr "条幅高度"
+
+msgid "Enter an integer value for a desired height in pixels or leave empty for automatically adjusted height."
+msgstr "输入所需高度的整数值（以像素为单位），或留空以自动调整高度。"
+
+msgid "px or %"
+msgstr "px 或 %"
+
+msgid "Set the width of the banner. This can be either an integer value or percentage of the screen width. For example: 200 or 50%."
+msgstr "设置条幅的宽度。这可以为整数值，也可以是其占屏幕宽度的百分比值。例如：200 或 50%。"
+
+msgid "EU countries"
+msgstr "欧盟国家或地区"
+
+msgid "<p>You can limit the number of countries for which the banner is displayed. If you want to provide a list of countries other than current EU states, you may place an array in <code>$conf['eu_cookie_compliance_eu_countries']</code> in your <code>settings.php</code> file. Using the <a href=\"http://drupal.org/project/geoip\">geoip</a> module or the <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> module or the <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP function.</p>"
+msgstr "<p>您可以限制要显示条幅的国家或地区的数量。 如果要提供除当前欧盟国家以外的国家或地区的列表，那么可以在 <code>settings.php</code> 文件中的 <code>$conf ['eu_cookie_compliance_eu_states']</code> 中放置一个数组。 使用 <a href=\"http://drupal.org/project/geoip\">geoip</a> 模块、<a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> 模块或 <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name ()</a> PHP 函数。</p>"
+
+msgid "Use JavaScript to determine if the visitor is in a country where GDPR applies. Required if caching is enabled or a caching strategy such as varnish is utilized."
+msgstr "使用 JavaScript 文件来确定访问者是否位于 GDPR 适用的国家或地区。 如果启用了高速缓存或使用了诸如 varnish 之类的高速缓存策略，那么需要使用此选项。"
+
+msgid "I have no caching enabled or set up. Use non-JavaScript method."
+msgstr "我未启用或设置高速缓存。 使用非 JavaScript 方法。"
+
+msgid "Disabled. Show the banner to all visitors, also those in non-GDPR countries."
+msgstr "已禁用。 向所有访问者（也包括非 GDPR 国家或地区的访问者）显示条幅。"
+
+msgid "You can choose to show the banner only to visitors from EU countries. In order to achieve this, you need to install the <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> module or install the <a href=\"http://drupal.org/project/geoip\">geoip</a> module or enable the <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP function."
+msgstr "您可以选择仅向来自欧盟国家或地区的访客显示条幅。为实现此目的，需要安装 <a href=\"http://drupal.org/project/smart_ip\">smart_ip</a> 模块、安装 <a href=\"http://drupal.org/project/geoip\">geoip</a> 模块或者启用 <a href=\"http://www.php.net/manual/en/function.geoip-country-code-by-name.php\">geoip_country_code_by_name()</a> PHP 函数。"
+
+msgid "Advanced"
+msgstr "高级"
+
+msgid "Use position:fixed for the banner when displayed at the top."
+msgstr "条幅显示在顶部时，针对条幅使用 position:fixed。"
+
+msgid "Banner sliding animation time"
+msgstr "条幅滑动动画时间"
+
+msgid "ms"
+msgstr "ms"
+
+msgid "Enabling this will make it possible to record the fact that the user disagrees without the user having to see the privacy policy."
+msgstr "启用此项将可在用户不查看隐私策略的情况下，记录用户不同意的事实。"
+
+msgid "Include"
+msgstr "包含"
+
+msgid "Exclude"
+msgstr "不包含"
+
+msgid "Specify if you want to include or exclude the listed below routes for reloading the page after agreeing cookies."
+msgstr "指定在同意 Cookie 后是要包含还是排除下列用于重新加载页面的路由。"
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. Leave blank for reloading all pages. Leave the list empty to reload on all pages. This field does not support url aliases."
+msgstr "使用路径指定页面。每行输入一个路径。“*”字符是通配符。示例路径为 %blog（用于博客页面）和 %blog-wildcard（用于每个个人博客）。留空以重新加载所有页面。将列表留空以在所有页面上重新加载。此字段不支持 URL 别名。"
+
+msgid "Scrolling makes the visitors to accept the cookie policy. In some countries, like Italy, it is permitted."
+msgstr "滚动即表示访客接受 cookie 策略。在某些国家或地区（例如，意大利），这是允许的。"
+
+msgid "Sets the cookie name that is used to check whether the user has agreed or not. This option is useful when policies change and the user needs to agree again."
+msgstr "设置用于检查用户是否已许可的 cookie 名称。当策略发生更改并且用户需要重新表示许可时，该选项很有用。"
+
+msgid "The cookie value which will be set where the user has disagreed."
+msgstr "将在用户不同意的情况下设置的 cookie 值。"
+
+msgid "The cookie value which will be set where the user has agreed and we will show a thank-you banner."
+msgstr "将在用户同意的情况下设置的 cookie 值，我们将显示“感谢”条幅。"
+
+msgid "The cookie value which will be set where the user has agreed."
+msgstr "将在用户同意的位置设置 cookie 值。"
+
+msgid "Add"
+msgstr "添加"
+
+msgid "Remove"
+msgstr "移除"
+
+msgid "Add/remove banner on specified domains"
+msgstr "在指定域中添加/移除条幅"
+
+msgid "Specify if you want to add or remove banner on the listed below domains."
+msgstr "指定要在以下列出的域中添加还是移除条幅。"
+
+msgid "Specify domains with protocol (e.g., http or https). Enter one domain per line."
+msgstr "指定带有协议（如 http 或 https）的域。每行输入一个域。"
+
+msgid "Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page."
+msgstr "通过页面路径指定页面。每行一个路径。'*' 为通配符。比如%blog可用作博客页面，%blog-wildcard可用作每个用户的个人博客，%front为首页。"
+
+msgid "Note: if you enable the Withdraw feature, the Privacy settings tab will be displayed also on admin pages, but the banner will not open until you click the tab."
+msgstr "注：如果启用“撤销”功能，“隐私设置”选项卡也将显示在管理页面上，但在单击选项卡之前，条幅将不会打开。"
+
+msgid "Don't show the banner for site administrators (including UID 1)."
+msgstr "不要显示站点管理员的条幅（包括 UID 1）。"
+
+msgid "Note: if you enable the Withdraw feature, the Privacy settings tab will be displayed also for site administrators, but the banner will not open until you click the tab."
+msgstr "注意: 如果启用“撤销”功能，那么也将对站点管理员显示“隐私设置”选项卡，但在单击选项卡之前，条幅将不会打开。"
+
+msgid "Let screen readers see the banner before other links on the page."
+msgstr "让屏幕朗读器在看到页面上的其他链接之前先看到条幅。"
+
+msgid "Enable this if you want to place the banner as the first HTML element on the page. This will make it possible for screen readers to close the banner without tabbing through all links on the page."
+msgstr "如果要将条幅放置为页面上的首个 HTML 元素，请启用此选项。这将使屏幕朗读器能够关闭条幅，而无需通过 Tab 键切换页面上的所有链接。"
+
+msgid "Prompt for consent (from the same user) at every new browser session."
+msgstr "在每个新的浏览器会话上提示许可（来自相同用户）。"
+
+msgid "This sets cookie lifetime to 0, invalidating the cookie at the end of the browser session. To set a cookie lifetime greater than 0, uncheck this option. Note that some users will find this behavior highly annoying, and it's recommended to double-check with the legal advisor whether you really need this option enabled."
+msgstr "这会将 Cookie 生存期设置为 0，从而使 Cookie 在浏览器会话结束时失效。要将 Cookie 生存期设置为大于 0，请取消选中此选项。请注意，某些用户会认为此行为极度烦人，建议您与法律顾问一起核查，看看是否真的需要启用此选项。"
+
+msgid "Sets the domain of the cookie to a specific url. Used when you need consistency across domains. This is language independent. Note: Make sure you actually enter a domain that the browser can make use of. For example if your site is accessible at both www.domain.com and domain.com, you will not be able to hide the banner at domain.com if your value for this field is www.domain.com."
+msgstr "将 cookie 的域设置为特定 url。需要域间的一致性时使用。这与语言无关。注：请确保实际输入浏览器可以使用的域。例如，如果可通过 www.domain.com 和 domain.com 访问您的站点，那么如果该字段的值为 www.domain.com，那么将无法在 domain.com 上隐藏该条幅。"
+
+msgid "Allow the cookie to be set for all sites on the same domain."
+msgstr "允许为同一域上的所有站点设置 cookie。"
+
+msgid "Sets the path of the cookie to '/' so that the cookie works across all sites on the domain."
+msgstr "将 cookie 的路径设置为“/”，从而使 cookie 在域中的所有站点上生效。"
+
+msgid "Set cookie lifetime to 0 if the user clicks the \"Decline\" or the \"Withdraw consent\" button."
+msgstr "如果用户单击“拒绝”或“撤回同意”按钮，那么将 cookie 生存期设置为 0。"
+
+msgid "Enable this if you want to show the consent banner at every new session until the user clicks the \"Agree\" button."
+msgstr "如果要在每个新会话中显示同意条幅，直至用户单击“同意”按钮，请启用此选项。"
+
+msgid "How many days the system remember the user's choice."
+msgstr "系统记住用户选择的天数。"
+
+msgid "days"
+msgstr "天"
+
+msgid "@name field is required"
+msgstr "@name 字段为必填项"
+
+msgid "Invalid cookie name, please remove any special characters and try again."
+msgstr "Cookie 名称无效，请除去任何特殊字符，然后重试。"
+
+msgid "Your privacy policy link is pointing at the front page. This is the default value after installation, and unless your privacy policy is actually posted at the front page, you will need to create a separate page for the privacy policy and link to that page."
+msgstr "您的隐私策略链接指向首页。这是安装后的缺省值，除非您的隐私策略实际上发布在首页上，否则您将需要为隐私策略创建一个单独的页面，并链接至该页面。"
+
+msgid "The user role permission could not be set because the <code>config_readonly</code> module is enabled. To allow setting of user role permissions, please add <code>user.role.%name</code> to the <code>config_readonly</code> allowlist."
+msgstr "无法设置用户角色许可权，因为已启用 <code>config_readonly</code> 模块。 要允许设置用户角色许可权，请将 <code>user.role.%name</code> 添加到 <code>config_readonly</code> 允许列表。"
+
+msgid "The module weight could not be set because the <code>config_readonly</code> module is enabled. To allow setting of module weight, please add <code>core.extension</code> to the <code>config_readonly</code> allowlist."
+msgstr "无法设置模块权重，因为已启用 <code>config_readonly</code> 模块。 要允许设置模块权重，请将 <code>core.extension</code> 添加到 <code>config_readonly</code> 允许列表。"
+
+msgid "Invalid protocol specified for the %name (valid protocols: %protocols)."
+msgstr "针对 %name 指定的协议无效（有效协议：%protocols）。"
+
+msgid "Invalid %name (:message)."
+msgstr "无效的 %name (:message)。"
+
+msgid "Invalid URL in %name field (:message)."
+msgstr "%name 字段中的 URL 无效 (:message)。"
+
+msgid "This block requires the \"@withdraw_enabled_setting_name\" to be enabled in <a href=\"@eu_cookie_compliance_settings_url\">EU Cookie Compliance settings</a>."
+msgstr "此块要求在<a href=\"@eu_cookie_compliance_settings_url\">欧盟 Cookie 合规性设置</a>中启用“@withdraw_enabled_setting_name”。"
+
+msgid "EU Cookie Compliance Button Block"
+msgstr "欧盟 Cookie 合规性按钮块"
+
+msgid "Basic storage"
+msgstr "基本存储"
+

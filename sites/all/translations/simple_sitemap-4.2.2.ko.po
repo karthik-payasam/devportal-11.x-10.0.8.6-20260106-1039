@@ -1,0 +1,875 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Simple XML Sitemap settings will be added only to entity forms of entity types enabled here. Settings for specific entity bundles (e.g. <em>page</em>) can be adjusted here or on the bundle pages."
+msgstr "단순 XML 사이트맵 설정은 여기에서 사용 가능으로 설정한 엔티티의 엔티티 양식에만 추가됩니다. 특정 엔티티 번들에 대한 설정(예: <em>페이지</em>)을 여기 또는 번들 페이지에서 조정할 수 있습니다."
+
+msgid "Add custom internal drupal paths to specific sitemaps."
+msgstr "특정 사이트 맵에 사용자 정의 내부 drupal 경로를 추가하십시오."
+
+msgid "Specify drupal internal (relative) paths, one per line. Do not forget to prepend the paths with a '/'.<br>Optionally link priority <em>(0.0 - 1.0)</em> can be added by appending it after a space.<br> Optionally link change frequency <em>(always / hourly / daily / weekly / monthly / yearly / never)</em> can be added by appending it after a space."
+msgstr "행당 하나씩 drupal 내부(상대) 경로를 지정하십시오. 경로 앞에 '/'를 추가하는 것을 잊지 마십시오.<br>선택적으로 공백 뒤에 추가하여 링크 우선순위<em>(0.0 - 1.0)</em>를 추가할 수 있습니다.<br>선택적으로 링크 변경 빈도<em>(always/hourly/daily/weekly/monthly/hourly/never)</em>를 공백 뒤에 추가하여 추가할 수 있습니다."
+
+msgid "<strong>Examples:</strong><br><em>/ 1.0 daily</em> -> home page with the highest priority and daily change frequency<br><em>/contact</em> -> contact page with the default priority and no change frequency information"
+msgstr "<strong>예:</strong><br><em>/ 1.0 daily</em> -> 가장 높은 우선순위 및 일별 변경 빈도를 갖는 홈 페이지<br><em>/contact</em> -> 기본 우선순위를 갖고 변경 빈도 정보가 없는 연락처 페이지"
+
+msgid "Simple XML Sitemap"
+msgstr "단순 XML 사이트맵"
+
+msgid "Simple XML Sitemap settings"
+msgstr "단순 XML 사이트맵 설정"
+
+msgid "Simple XML Sitemap PHP extensions"
+msgstr "단순 XML 사이트맵 PHP 확장기능"
+
+msgid "Missing PHP xmlwriter extension"
+msgstr "PHP xmlwriter 확장기능 누락"
+
+msgid "In order to be able to generate sitemaps, the Simple XML Sitemap module requires the <em>xmlwriter</em> PHP extension to be enabled."
+msgstr "사이트 맵을 생성하려면 단순 XML 사이트맵에 <em>xmlwriter</em> PHP 확장기능을 사용하도록 설정해야 합니다. "
+
+msgid "You may now want to configure the new changefreq setting for the XML sitemap entities and custom links."
+msgstr "이제 XML 사이트맵 엔티티 및 사용자 정의 링크에 대한 새로운 changefreq 설정을 구성할 수 있습니다."
+
+msgid "You may now want to configure your XML sitemap entities to include images."
+msgstr "이제 이미지를 포함하도록 XML 사이트맵 엔티티를 구성할 수 있습니다."
+
+msgid "The XML sitemaps need to be regenerated."
+msgstr "XML 사이트맵을 재생성해야 합니다."
+
+msgid "The new 'Entities per queue item' setting has been set to 50 to improve generation performance. This changes the memory footprint during generation, so please make sure to test and adjust performance settings to your needs on the module's settings page."
+msgstr "생성 성능을 향상시키기 위해 새로운 '큐 항목당 엔티티' 설정이 50으로 설정되었습니다. 이렇게 하면 생성 중에 메모리 사용량이 변경되므로 모듈의 설정 페이지에서 필요에 따라 성능 설정을 테스트하고 조정하십시오."
+
+msgid "All variants belonging to the built-in \"Default hreflang\" sitemap type have been converted to entities. Custom sitemap types added via plugins will have to be recreated manually. See simple_sitemap.type.default_hreflang.yml. The sitemaps need to be regenerated now."
+msgstr "기본 제공 \"기본 hreflang\" 사이트맵 유형에 속하는 모든 변형이 엔티티로 변환되었습니다. 플러그인을 통해 추가된 사용자 정의 사이트맵 유형은 수동으로 다시 작성해야 합니다. simple_sitemap.type.default_hreflang.yml을 참조하십시오. 사이트맵을 지금 다시 생성해야 합니다."
+
+msgid "A sitemap index which lists all other sitemaps is now available and can be enabled."
+msgstr "이제 다른 모든 사이트맵을 나열하는 사이트맵 인덱스를 사용할 수 있으며 활성화할 수 있습니다."
+
+msgid "Generates standard conform hreflang XML sitemaps of the site content and provides a framework for developing other sitemap types."
+msgstr "사이트 컨텐츠의 표준 준수 hreflang XML 사이트맵을 생성하고 다른 사이트맵 유형을 개발하기 위한 프레임워크를 제공합니다."
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Add sitemap"
+msgstr "사이트맵 추가"
+
+msgid "Add sitemap type"
+msgstr "사이트맵 유형 추가"
+
+msgid "Sitemaps"
+msgstr "사이트맵"
+
+msgid "Inclusion"
+msgstr "포함"
+
+msgid "Configure, add content to and generate XML sitemaps."
+msgstr "XML 사이트맵을 구성하고 컨텐츠를 추가하며 생성합니다."
+
+msgid "Status"
+msgstr "상태"
+
+msgid "Types"
+msgstr "형식"
+
+msgid "Settings"
+msgstr "설정"
+
+msgid "Entities"
+msgstr "엔터티"
+
+msgid "Custom links"
+msgstr "사용자 정의 링크"
+
+msgid "Administer sitemap settings"
+msgstr "사이트맵 설정 관리"
+
+msgid "Administer Simple XML Sitemap settings, alter inclusion settings of content and generate sitemaps on demand."
+msgstr "단순 XML 사이트맵 설정을 관리하고, 컨텐츠의 포함 설정을 변경하며, 요청 시 사이트맵을 생성합니다."
+
+msgid "Max links"
+msgstr "최대 링크"
+
+msgid "Cron generation"
+msgstr "Cron 생성"
+
+msgid "Cron generation interval"
+msgstr "Cron 생성 간격"
+
+msgid "Generation duration"
+msgstr "생성 기간"
+
+msgid "Entities per queue item"
+msgstr "큐 항목당 엔티티"
+
+msgid "Remove duplicates"
+msgstr "중복 제거"
+
+msgid "Skip untranslated"
+msgstr "변환되지 않은 항목 건너뛰기"
+
+msgid "Include a stylesheet in the sitemaps for humans"
+msgstr "사람을 위해 사이트맵에 스타일시트 포함"
+
+msgid "Base URL"
+msgstr "기본 URL"
+
+msgid "Default variant"
+msgstr "기본 변형"
+
+msgid "Include images of custom links"
+msgstr "사용자 정의 링크 포함"
+
+msgid "Disable language hreflang"
+msgstr "언어 hreflang 사용 안함"
+
+msgid "Hide branding"
+msgstr "브랜딩 숨기기"
+
+msgid "Excluded languages"
+msgstr "언어 제외"
+
+msgid "Enabled entity types"
+msgstr "사용 가능한 엔티티 유형"
+
+msgid "Entity bundle settings"
+msgstr "엔티티 번들 설정"
+
+msgid "Index"
+msgstr "색인"
+
+msgid "Priority"
+msgstr "우선순위"
+
+msgid "Change frequency"
+msgstr "빈도 변경"
+
+msgid "Include images"
+msgstr "이미지 포함"
+
+msgid "Path"
+msgstr "경로"
+
+msgid "ID"
+msgstr "아이디"
+
+msgid "Label"
+msgstr "레이블"
+
+msgid "Description"
+msgstr "설명"
+
+msgid "Type"
+msgstr "종류"
+
+msgid "Weight"
+msgstr "표시순서"
+
+msgid "Sitemap types"
+msgstr "사이트맵 유형"
+
+msgid "Sitemap generator"
+msgstr "사이트맵 생성기"
+
+msgid "URL generators"
+msgstr "URL 생성기"
+
+msgid "IndexNow notification enabled"
+msgstr "IndexNow 알림 사용"
+
+msgid "IndexNow notification disabled"
+msgstr "IndexNow 알림 사용 안함"
+
+msgid "Included in sitemaps: "
+msgstr "사이트맵에 포함됨: "
+
+msgid "Excluded from all sitemaps"
+msgstr "모든 사이트맵에서 제외"
+
+msgid "The sitemap settings and any per-entity overrides will be deleted for the unchecked entity types."
+msgstr "선택되지 않은 엔티티 유형에 대해 사이트맵 설정 및 엔티티당 겹쳐쓰기가 삭제됩니다."
+
+msgid "IndexNow notification"
+msgstr "IndexNow 알림"
+
+msgid "IndexNow notification checkbox"
+msgstr "IndexNow 알림 선택란"
+
+msgid "Simple XML Sitemap IndexNow"
+msgstr "단순 XML 사이트맵 IndexNow"
+
+msgid "Verification key in Drupal State"
+msgstr "Drupal 상태의 확인 키"
+
+msgid "Verification key not available"
+msgstr "확인 키를 사용할 수 없음"
+
+msgid "In order to generate a verification key for the IndexNow service and choose which sitemaps are to be submitted to search engines, visit <a href=\"@url\">this</a> configuration page."
+msgstr "IndexNow 서비스에 대한 확인 키를 생성하고 검색 엔진에 제출할 사이트맵을 선택하려면 <a href=\"@url\">이</a> 구성 페이지를 방문하십시오."
+
+msgid "Simple XML Sitemap (Search engines)"
+msgstr "단순 XML 사이트맵(검색 엔진)"
+
+msgid "Submits sitemaps to search engines and notifies IndexNow compatible engines about changes to entities."
+msgstr "검색 엔진에 사이트맵을 제출하고 IndexNow 호환 가능 엔진에 엔티티 변경 사항을 알립니다."
+
+msgid "Search engines"
+msgstr "검색 엔진"
+
+msgid "Index entity on save"
+msgstr "저장 시 인덱스 엔티티"
+
+msgid "Allows optionally sending a change notice to IndexNow compatible search engines on entity form save."
+msgstr "선택적으로 엔티티 양식 저장 시 IndexNow 호환 가능 검색 엔진으로 변경 통지를 전송할 수 있습니다."
+
+msgid "Search engine"
+msgstr "검색 엔진"
+
+msgid "Search engine ID"
+msgstr "검색 엔진 ID"
+
+msgid "Submission URL"
+msgstr "제출 URL"
+
+msgid "IndexNow URL"
+msgstr "IndexNow URL"
+
+msgid "Sitemap variants"
+msgstr "사이트맵 변형"
+
+msgid "Sitemap variant"
+msgstr "사이트맵 변형"
+
+msgid "IndexNow bundle settings"
+msgstr "IndexNow 번들 설정"
+
+msgid "IndexNow"
+msgstr "IndexNow"
+
+msgid "Sitemap search engine submission settings"
+msgstr "사이트맵 검색 엔진 제출 설정"
+
+msgid "Sitemap submission enabled"
+msgstr "사이트맵 제출 사용"
+
+msgid "Sitemap submission frequency"
+msgstr "사이트맵 제출 빈도"
+
+msgid "IndexNow submission enabled"
+msgstr "IndexNow 제출 사용"
+
+msgid "Selected engine for IndexNow submissions"
+msgstr "IndexNow 제출을 위해 선택된 엔진"
+
+msgid "IndexNow on entity save"
+msgstr "엔티티 저장 시 IndexNow"
+
+msgid "Sitemap submission status"
+msgstr "사이트맵 제출 상태"
+
+msgid "Name"
+msgstr "이름"
+
+msgid "Last submitted"
+msgstr "마지막으로 제출됨"
+
+msgid "There are no @label yet."
+msgstr "아직 @label이(가) 없습니다."
+
+msgid "Submission settings can be configured <a href=\"@url\">here</a>."
+msgstr "<a href=\"@url\">여기</a>에서 제출 설정을 구성할 수 있습니다."
+
+msgid "Never"
+msgstr "하지 않음"
+
+msgid "No search engines supporting sitemap submission have been found."
+msgstr "사이트맵 제출을 지원하는 검색 엔진을 찾을 수 없습니다."
+
+msgid "Sitemap submission is disabled."
+msgstr "사이트맵 제출을 사용할 수 없습니다."
+
+msgid "IndexNow status"
+msgstr "IndexNow 상태"
+
+msgid "The last IndexNow submission was <em>@entity</em> to @engine_label on @time"
+msgstr "마지막 IndexNow 제출은 @time에 @engine_label로 제출한 <em>@entity</em>입니다."
+
+msgid "IndexNow settings can be configured <a href=\"@url\">here</a>."
+msgstr "IndexNow 설정은 <a href=\"@url\">여기</a>에서 구성할 수 있습니다."
+
+msgid "No search engines supporting IndexNow have been found."
+msgstr "IndexNow를 지원하는 검색 엔진을 찾을 수 없습니다."
+
+msgid "IndexNow submission is disabled."
+msgstr "IndexNow 제출이 사용 불가능합니다."
+
+msgid "Excluded"
+msgstr "제외됨"
+
+msgid "Sitemap submission settings"
+msgstr "사이트맵 제출 설정"
+
+msgid "Submit sitemaps to search engines"
+msgstr "검색 엔진에 사이트맵 제출"
+
+msgid "This enables/disables sitemap submission; don't forget to choose sitemaps below."
+msgstr "이는 사이트맵 제출을 사용/사용 안함으로 설정합니다. 아래의 사이트맵을 선택하는 것을 잊지 마십시오."
+
+msgid "Submission interval"
+msgstr "제출 간격"
+
+msgid "Engines"
+msgstr "엔진"
+
+msgid "Choose which sitemaps are to be submitted to which search engines.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "검색 엔진에 제출할 사이트맵을 선택하십시오.<br>사이트맵은 <a href=\"@url\">여기</a>로 구성할 수 있습니다."
+
+msgid "IndexNow settings"
+msgstr "IndexNow 설정"
+
+msgid "Submit changes to IndexNow capable engines"
+msgstr "IndexNow 가능 엔진에 대한 변경사항 제출"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting entity forms. Changes include creating, deleting and updating of an entity.<br/>This behaviour can be overridden on entity forms. Don't forget to <a href=\"@inclusion_url\">include entities</a>."
+msgstr "엔티티 양식을 제출한 직후 IndexNow 호환 가능 검색 엔진으로 변경 통지를 보냅니다. 변경사항에는 엔티티의 작성, 삭제 및 업데이트가 포함됩니다.<br/>이 작동은 엔티티 양식에서 대체될 수 있습니다. <a href=\"@inclusion_url\">엔티티 포함</a>을 잊지 마십시오."
+
+msgid "Preferred IndexNow engine"
+msgstr "선호되는 IndexNow 엔진"
+
+msgid "All IndexNow requests will be sent to the engine selected here. Only one engine needs to be notified, as it will notify other IndexNow compatible engines for you.<br/>For the sake of equality of opportunity, <strong>consider leaving this at <em>Random</em></strong>, so a random engine can be picked on each submission."
+msgstr "여기서 선택한 엔진으로 모든 IndexNow 요청이 전송됩니다. 다른 IndexNow 호환 엔진에 알림을 보내므로 하나의 엔진에만 알림을 보내면 됩니다.<br/>기회의 평등을 위해 제출할 때마다 무작위 엔진이 선택될 수 있도록 <strong><em>Random</em> 상태로 두는 것을 고려하십시오.</strong>"
+
+msgid "Random"
+msgstr "무작위"
+
+msgid "Index on every entity save operation"
+msgstr "모든 엔티티 저장 조작에 대한 인덱스"
+
+msgid "If checked, all entity save operations for <a href=\"@inclusion_url\">included entities</a> will trigger notification of IndexNow search engines.<br/>If unchecked, this will only be possible by adding/altering/deleting an entity through a form.<br/>This should be unchecked if there are mass operations performed on entities that are irrelevant to indexing."
+msgstr "선택한 경우, <a href=\"@inclusion_url\">포함된 엔티티</a>에 대한 모든 엔티티 저장 조작이 IndexNow 검색 엔진의 알림을 트리거합니다.<br/>선택하지 않으면, 양식을 통해 엔티티를 추가/변경/삭제하는 것만 가능합니다.<br/>인덱싱과 관련이 없는 엔티티에 대해 수행된 대량 조작이 있는 경우에는 이 옵션을 선택 취소해야 합니다."
+
+msgid "Remove verification key from state"
+msgstr "상태에서 확인 키 제거"
+
+msgid "Generate verification key"
+msgstr "확인 키 생성하기"
+
+msgid "The IndexNow verification key is saved in <em>settings.php</em>: @key"
+msgstr "IndexNow 확인 키가 <em>settings.php</em>에 저장됩니다: @key"
+
+msgid "The IndexNow verification key is defined in <em>Drupal state</em>: @key"
+msgstr "IndexNow 확인 키가 <em>Drupal 상태</em>에 정의됩니다: @key"
+
+msgid "The IndexNow verification key is saved in <em>Drupal state</em>. Consider defining it in <em>settings.php</em> like so:<br/>@code"
+msgstr "IndexNow 확인 키는 <em>Drupal 상태</em>에 저장됩니다. 다음과 같이 <em>settings.php</em>에서 정의를 고려하십시오:<br/>@code"
+
+msgid "The IndexNow verification key is saved in <em>settings.php</em> and can be safely removed from <em>Drupal state</em>."
+msgstr "IndexNow 확인 키는 <em>settings.php</em>에 저장되며 <em>Drupal 상태</em>에서 안전하게 제거할 수 있습니다."
+
+msgid "An IndexNow verification key needs to be generated and optionally added to <em>settings.php</em> in order for IndexNow engines to get notified about changes. This warning only applies to the production environment."
+msgstr "IndexNow 엔진이 변경사항에 대한 알림을 받으려면 IndexNow 확인 키를 생성하고 선택적으로 <em>settings.php</em>에 추가해야 합니다. 이 경고는 프로덕션 환경에만 적용됩니다."
+
+msgid "No sitemaps have been selected for submission."
+msgstr "제출을 위해 선택된 사이트맵이 없습니다."
+
+msgid "Notify IndexNow search engines of changes <em>now</em>"
+msgstr "IndexNow 검색 엔진 변경사항 <em>지금</em> 알림"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting this form."
+msgstr "이 양식을 제출한 후 IndexNow 호환 가능한 검색 엔진으로 변경 통지를 보냅니다."
+
+msgid "Notify IndexNow search engines of changes <em>by default</em>"
+msgstr "<em>기본적으로</em> IndexNow 검색 엔진에 변경 사항 알림"
+
+msgid "Send change notice to IndexNow compatible search engines right after submitting entity forms of this type.<br/>Changes include creating, deleting and updating of an entity. This setting can be overridden on the entity form."
+msgstr "이 유형의 엔티티 양식을 제출한 직후 IndexNow 호환 가능한 검색 엔진으로 변경 통지를 보내십시오.<br/>변경에는 엔티티의 작성, 삭제 및 업데이트가 포함됩니다. 이 설정은 엔티티 양식에서 대체할 수 있습니다."
+
+msgid "Sitemap search engine submission"
+msgstr "사이트맵 검색 엔진 제출"
+
+msgid "In order to use the Simple XML Sitemap Views module, the Views URL generator must be <a href=\"@url\">added</a> to a sitemap type."
+msgstr "단순 XML 사이트맵 보기 모듈을 사용하려면 보기 URL 생성기가 사이트맵 유형에 <a href=\"@url\">추가</a> 되어야 합니다."
+
+msgid "Simple XML Sitemap (Views)"
+msgstr "단순 XML 사이트맵(보기)"
+
+msgid "Provides integration of the Simple XML Sitemap module with the Views module."
+msgstr "단순 XML 사이트맵 모듈과 보기 모듈의 통합을 제공합니다."
+
+msgid "Views"
+msgstr "뷰"
+
+msgid "Variants"
+msgstr "변형들"
+
+msgid "Indexed arguments"
+msgstr "색인화된 인수"
+
+msgid "View"
+msgstr "화면"
+
+msgid "Display"
+msgstr "화면표시"
+
+msgid "Operations"
+msgstr "작업"
+
+msgid "No view displays are set to be indexed yet. <a href=\"@url\">Edit a view.</a>"
+msgstr "색인화하도록 설정된 보기 디스플레이가 없습니다. <a href=\"@url\">보기를 편집</a>하십시오."
+
+msgid "Please configure at least one <a href=\"@sitemaps_url\">sitemap</a> to be of a <a href=\"@types_url\">type</a> that implements the views URL generator."
+msgstr "보기 URL 생성기를 구현하는 <a href=\"@types_url\">유형</a> 으로 하나 이상의 <a href=\"@sitemaps_url\">사이트맵</a>을 구성하십시오."
+
+msgid "Edit"
+msgstr "편집하기"
+
+msgid "Garbage collection in the simple_sitemap_views table"
+msgstr "simple_sitemap_views 테이블의 가비지 콜렉션"
+
+msgid "Views URL generator"
+msgstr "보기 URL 생성기"
+
+msgid "Generates URLs for views."
+msgstr "보기의 URL을 생성합니다."
+
+msgid "Index this display in sitemap <em>@variant_label</em>"
+msgstr "사이트맵 <em>@variant_label</em>에서 이 표시 색인화"
+
+msgid "The priority this display will have in the eyes of search engine bots."
+msgstr "이 디스플레이가 검색 엔진 봇의 시선에서 가지게 될 우선순위입니다. "
+
+msgid "The frequency with which this display changes. Search engine bots may take this as an indication of how often to index it."
+msgstr "이 디스플레이가 변경되는 빈도입니다. 검색 엔진 봇은 색인 생성 빈도를 나타내는 지표로 사용할 수 있습니다."
+
+msgid "Maximum display variations"
+msgstr "최대 디스플레이 변형"
+
+msgid "The maximum number of link variations to be indexed for this display. If left blank, each argument will create link variations for this display. Use with caution, as a large number of argument values​can significantly increase the number of sitemap links."
+msgstr "이 디스플레이에 대해 색인화할 최대 링크 변형 수입니다. 공백으로 두면 각 인수가 이 디스플레이에 대한 링크 변형을 작성합니다. 인수 값 수가 많으면 사이트맵 링크 수가 크게 증가할 수 있으므로 주의해서 사용하십시오."
+
+msgid "Simple XML Sitemap settings for this display"
+msgstr "이 디스플레이의 단순 XML 사이트맵 설정"
+
+msgid "Included in sitemaps: @variants"
+msgstr "사이트맵에 포함됨: @variants"
+
+msgid "To enable indexing of an argument, you must enable indexing of all previous arguments."
+msgstr "인수 색인화를 사용하려면 이전의 모든 인수에 대해 색인화를 사용해야 합니다."
+
+msgid "Simple XML Sitemap settings for this view."
+msgstr "이 보기에 대한 단순 XML 사이트맵 설정입니다."
+
+msgid "Sitemap"
+msgstr "사이트맵"
+
+msgid "Link count"
+msgstr "링크 수"
+
+msgid "disabled"
+msgstr "사용 안 함"
+
+msgid "pending"
+msgstr "보류 중"
+
+msgid "generating"
+msgstr "생성 중"
+
+msgid "published on @time"
+msgstr "@time에 공개됨"
+
+msgid "published on @time, regenerating"
+msgstr "@time에 공개됨, 다시 생성 중"
+
+msgid "Delete"
+msgstr "삭제하기"
+
+msgid "No sitemaps have been defined yet. <a href=\"@url\">Add a new one</a>."
+msgstr "아직 정의된 사이트맵이 없습니다. <a href=\"@url\">새로 추가하십시오</a>."
+
+msgid "Sitemap type"
+msgstr "사이트맵 유형"
+
+msgid "No sitemap types have been defined yet. <a href=\"@url\">Add a new one</a>."
+msgstr "아직 사이트맵 유형이 정의되지 않았습니다. <a href=\"@url\">새로 추가하십시오</a>."
+
+msgid "sitemap"
+msgstr "사이트맵"
+
+msgid "sitemaps"
+msgstr "사이트맵"
+
+msgid "Simple XML sitemap type"
+msgstr "간단한 XML 사이트맵 유형"
+
+msgid "sitemap type"
+msgstr "사이트맵 유형"
+
+msgid "sitemap types"
+msgstr "사이트맵 유형"
+
+msgid "If a custom link points to an entity, include its referenced images in the sitemap."
+msgstr "사용자 정의 링크가 엔티티를 가리키는 경우 참조된 이미지를 사이트맵에 포함시킵니다."
+
+msgid "No"
+msgstr "아니오"
+
+msgid "Yes"
+msgstr "예"
+
+msgid "<strong>@sitemap, line @line</strong>: The path <em>@path</em> does not exist."
+msgstr "<strong>@sitemap, 행 @line</strong>: <em>@path</em> 경로가 존재하지 않습니다."
+
+msgid "<strong>@sitemap, line @line</strong>: The path <em>@path</em> needs to start with a '/'."
+msgstr "<strong>@sitemap, 행 @line</strong>: <em>@path</em> 경로는 '/'로 시작해야 합니다."
+
+msgid "<strong>@sitemap, line @line</strong>: The priority setting <em>@priority</em> for path <em>@path</em> is incorrect. Set the priority from 0.0 to 1.0."
+msgstr "<strong>@sitemap, 행 @line</strong>: <em>@path</em> 경로에 대한 우선순위 설정 <em>@priority</em>가 올바르지 않습니다. 우선순위를 0.0부터 1.0까지로 설정합니다."
+
+msgid "<strong>@sitemap, line @line</strong>: The changefreq setting <em>@changefreq</em> for path <em>@path</em> is incorrect. The following are the correct values: <em>@changefreq_options</em>."
+msgstr "<strong>@sitemap, 행 @line</strong>: 경로 <em>@path</em>에 대한 changefreq 설정 <em>@changefreq</em>이 올바르지 않습니다. 다음은 올바른 값입니다. <em>@changefreq_options</em>."
+
+msgid "Entity type"
+msgstr "엔터티 유형"
+
+msgid "Indexed bundles"
+msgstr "색인된 번들"
+
+msgid "Enabled"
+msgstr "사용"
+
+msgid "No supported entity types available."
+msgstr "지원되는 엔티티 유형을 사용할 수 없습니다."
+
+msgid "Configure"
+msgstr "구성하기"
+
+msgid "%bundle_label <span class=\"description\">(sitemaps: %sitemaps)</span>"
+msgstr "%bunle_label <span class=\"description\">(사이트맵: %sitemap)</span>"
+
+msgid "Configure %label entity type"
+msgstr "%label 엔티티 유형 구성"
+
+msgid "Regenerate all sitemaps after hitting <em>Save</em>"
+msgstr "<em>저장</em>을 클릭하면 모든 사이트맵 재생성"
+
+msgid "This setting will regenerate all sitemaps including the above changes."
+msgstr "이 설정은 위의 변경사항을 포함하여 모든 사이트맵을 재생성합니다. "
+
+msgid "Otherwise the sitemaps will be regenerated during a future cron run."
+msgstr "그렇지 않은 경우 사이트맵은 다음 cron 실행 시에 재생성됩니다."
+
+msgid "- Not specified -"
+msgstr "- 지정되지 않음 -"
+
+msgid "always"
+msgstr "항상"
+
+msgid "hourly"
+msgstr "시간별"
+
+msgid "daily"
+msgstr "매일"
+
+msgid "weekly"
+msgstr "매주"
+
+msgid "monthly"
+msgstr "매월"
+
+msgid "yearly"
+msgstr "매년"
+
+msgid "never"
+msgstr "없음"
+
+msgid "On every cron run"
+msgstr "cron 실행 시마다"
+
+msgid "Regenerate the sitemaps during cron runs"
+msgstr "cron 실행 중에 사이트맵 재생성"
+
+msgid "Uncheck this if you intend to only regenerate the sitemaps manually or via drush."
+msgstr "사이트맵을 수동으로 또는 drush를 통해서만 재생성하고 싶은 경우에는 이를 선택 취소하십시오."
+
+msgid "Sitemap generation interval"
+msgstr "사이트맵 생성 간격"
+
+msgid "The sitemap will be generated according to this interval."
+msgstr "이 간격에 따라 사이트맵이 생성됩니다."
+
+msgid "Add styling and sorting to sitemaps"
+msgstr "사이트맵에 스타일 및 정렬 추가"
+
+msgid "If checked, sitemaps will be displayed as tables with sortable entries and thus become much friendlier towards human visitors. Search engines will not care."
+msgstr "이를 선택하면, 사이트맵이 정렬 가능한 항목이 있는 테이블로 표시되므로 사람 방문자에게 보다 친화적입니다. 검색 엔진에는 영향이 없습니다. "
+
+msgid "Remove the 'Generated by the Simple XML Sitemap Drupal module' string from the XSL output."
+msgstr "XSL 출력에서 '단순 XML 사이트맵 Drupal 모듈 문자열에 의해 생성됨' 문자열을 제거하십시오."
+
+msgid "Language settings"
+msgstr "언어 설정"
+
+msgid "Remove hreflang markup in HTML"
+msgstr "HTML에서 hreflang 마크업 제거"
+
+msgid "Google recommends displaying hreflang definitions either in the HTML markup or in the sitemap, but not in both places.<br>If checked, hreflang definitions created by the language module will be removed from the markup reducing its size."
+msgstr "Google에서는 HTML 마크업 또는 사이트맵에서 hreflang 정의를 표시하지만 두 위치 모두에서 표시하지 않도록 권장합니다.<br>선택된 경우 언어 모듈에서 작성된 hreflang 정의가 마크업에서 제거되어 크기가 줄어듭니다."
+
+msgid "Skip non-existent translations"
+msgstr "존재하지 않는 변환 건너뛰기"
+
+msgid "If checked, entity links are generated exclusively for languages the entity has been translated to as long as the language is not excluded below.<br>Otherwise entity links are generated for every language installed on the site apart from languages excluded below.<br>Bear in mind that non-entity paths like homepage will always be generated for every non-excluded language."
+msgstr "이 옵션을 선택하면 언어가 아래에서 제외되지 않는 한 엔티티가 번역된 언어에 대해서만 엔티티 링크가 생성됩니다.<br>그렇지 않으면 아래에 제외된 언어를 제외하고 사이트에 설치된 모든 언어에 대해 엔티티 링크가 생성됩니다.<br>홈 페이지와 같은 비 엔티티 경로는 제외되지 않은 모든 언어에 대해 항상 생성된다는 점에 주의하십시오."
+
+msgid "Exclude languages"
+msgstr "언어 제외"
+
+msgid "There will be no links generated for languages checked here."
+msgstr "여기에서 확인된 언어에 대한 링크는 생성되지 않습니다."
+
+msgid "There are no languages other than the default language available."
+msgstr "사용 가능한 기본 언어 이외의 언어가 없습니다."
+
+msgid "Advanced settings"
+msgstr "고급 설정"
+
+msgid "Default sitemap"
+msgstr "기본 사이트맵"
+
+msgid "This sitemap will be available under <em>/sitemap.xml</em> in addition to its default path <em>/variant-name/sitemap.xml</em>.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "이 사이트맵은 기본 경로 <em>/variant-name/sitemap.xml</em>외에 <em>/sitemap.xml</em>에서 사용할 수 있습니다.<br>사이트맵은 <a href=\"@url\">여기</a>에서 구성할 수 있습니다."
+
+msgid "- None -"
+msgstr "- 없음 -"
+
+msgid "Default base URL"
+msgstr "기본값 기본 URL"
+
+msgid "On some hosting providers it is impossible to pass parameters to cron to tell Drupal which URL to bootstrap with. In this case the base URL of sitemap links can be overridden here.<br>Example: <em>@url</em>"
+msgstr "일부 호스팅 제공업체에서는 어떤 URL과 부트스트랩을 할지를 Drupal에 알려주기 위해 cron에 매개변수를 전달하는 것이 불가능합니다. 이 경우 사이트맵 링크의 기본 URL이 여기에서 대체될 수 있습니다.<br>예: <em>@url</em>"
+
+msgid "Exclude duplicate links"
+msgstr "중복 링크 제외"
+
+msgid "Prevent per-sitemap duplicate links.<br>Unchecking this may help avoiding PHP memory errors on huge sites."
+msgstr "사이트맵별 중복 링크를 방지합니다. <br>이 옵션을 선택 해제하면 대규모 사이트에서 PHP 메모리 오류를 방지하는 데 도움이 될 수 있습니다."
+
+msgid "Maximum links in a sitemap"
+msgstr "사이트맵에서 최대 링크"
+
+msgid "The maximum number of links one sitemap can hold. If more links are generated than set here, a sitemap index will be created and the links split into several sub-sitemaps.<br>50 000 links is the maximum Google will parse per sitemap, but choosing a lower value may be needed to avoid PHP memory errors on huge sites.<br>If left blank, all links will be shown on a single sitemap."
+msgstr "한 사이트맵이 보유할 수 있는 최대 링크 수입니다. 여기에 설정된 것보다 더 많은 링크가 생성된 경우에는 사이트맵 색인이 작성되고 링크가 여러 하위 사이트맵으로 분할됩니다.<br>Google이 사이트맵당 구문 분석하는 최대값은 5만개의 링크이지만 매우 큰 사이트에서 PHP 메모리 오류를 피하려면 더 낮은 값을 선택해야 할 수 있습니다. <br>공백으로 두면 모든 링크는 단일 사이트맵에 표시됩니다."
+
+msgid "Sitemap generation max duration"
+msgstr "사이트맵 생성 최대 기간"
+
+msgid "The maximum duration <strong>in seconds</strong> the generation task can run during a single cron run or during one batch process iteration.<br>The higher the number, the quicker the generation process, but higher the risk of PHP timeout errors."
+msgstr "단일 cron 실행 또는 하나의 일괄처리 프로세스 반복 중에 생성 태스크가 실행할 수 있는 최대 기간(<strong>초</strong>)입니다.<br>이 수가 크면 생성 프로세스가 더 빨리 처리되지만 PHP 제한시간 초과 오류가 발생할 위험이 늘어납니다."
+
+msgid "The number of entities to process in each queue item.<br>Increasing this number will use more memory but will result in less queries improving generation speed."
+msgstr "각 큐 항목에서 처리할 엔티티 수입니다. <br>이 숫자를 늘리면 메모리가 더 많이 사용되지만 쿼리 수가 줄어들어 생성 속도가 향상됩니다."
+
+msgid "The base URL is invalid."
+msgstr "기본 URL이 올바르지 않습니다. "
+
+msgid "Include this sitemap during generation"
+msgstr "생성 중에 이 사이트맵 포함"
+
+msgid "The sitemap ID will be part of the URL and can only contain lowercase letters, numbers, dashes and underscores."
+msgstr "사이트맵 ID는 URL의 일부가 되며 소문자, 숫자, 대시 및 밑줄만 포함할 수 있습니다."
+
+msgid "The sitemap's type defines its looks and content. Sitemaps types can be configured <a href=\"@url\">here</a>."
+msgstr "사이트맵의 유형은 그 모양과 내용을 정의합니다. 사이트맵 유형은 <a href=\"@url\">여기</a>에서 구성할 수 있습니다."
+
+msgid "Administrative description"
+msgstr "관리용 설명"
+
+msgid "Save"
+msgstr "저장"
+
+msgid "Sitemap %label has been updated."
+msgstr "사이트맵 %label이 업데이트되었습니다."
+
+msgid "Sitemap %label has been created."
+msgstr "사이트맵 %label이 작성되었습니다."
+
+msgid "Sitemaps of this type will be built according to the sitemap generator plugin chosen here."
+msgstr "이 유형의 사이트맵은 여기서 선택한 사이트맵 생성기 플러그인에 따라 빌드됩니다."
+
+msgid "Sitemaps of this type will be populated with URLs generated by these URL generator plugins."
+msgstr "이 유형의 사이트맵은 이러한 URL 생성기 플러그인에 의해 생성된 URL로 채워집니다."
+
+msgid "Sitemap type %label has been updated."
+msgstr "사이트맵 유형 %label이 업데이트되었습니다."
+
+msgid "Sitemap type %label has been created."
+msgstr "사이트맵 유형 %label이 작성되었습니다."
+
+msgid "Sitemap status"
+msgstr "사이트맵 상태"
+
+msgid "Sitemaps can be regenerated on demand here."
+msgstr "요청 시 여기에서 사이트맵을 재생성할 수 있습니다."
+
+msgid "Rebuild queue"
+msgstr "큐 다시 빌드"
+
+msgid "Resume generation"
+msgstr "생성 재개"
+
+msgid "Rebuild queue & generate"
+msgstr "큐 및 생성 다시 빌드"
+
+msgid "Progress of sitemap regeneration"
+msgstr "사이트맵 재생성 진행상태"
+
+msgid "@indexed out of @total queue items have been processed.<br>Each sitemap is published after all of its items have been processed."
+msgstr "@total 중 @indexed개의 큐 항목이 처리되었습니다.<br>각 사이트맵은 모든 항목이 처리된 후에 공개됩니다."
+
+msgid "There are no items to be indexed."
+msgstr "색인화할 항목이 없습니다."
+
+msgid "Do not index entities of type <em>@bundle</em> in sitemap <em>@sitemap</em>"
+msgstr "사이트맵 <em>@sitemap</em>에 <em>@bundle</em> 유형의 엔티티를 색인화하지 마십시오."
+
+msgid "Index entities of type <em>@bundle</em> in sitemap <em>@sitemap</em>"
+msgstr "사이트맵 <em>@sitemap</em>에 <em>@bundle</em> 유형의 엔티티를 색인화합니다."
+
+msgid "The priority entities of this type will have in the eyes of search engine bots."
+msgstr "이 유형의 우선순위 엔티티는 검색 엔진 봇의 시선에 있습니다. "
+
+msgid "The frequency with which entities of this type change. Search engine bots may take this as an indication of how often to index them."
+msgstr "이 유형의 엔티티가 변경되는 빈도입니다. 검색 엔진 로봇은 색인 생성 빈도를 나타내는 지표로 사용할 수 있습니다."
+
+msgid "Determines if images referenced by entities of this type should be included in the sitemap."
+msgstr "이 유형의 엔티티에서 참조하는 이미지를 사이트맵에 포함할지 여부를 결정합니다."
+
+msgid "Settings for this entity can be overridden here."
+msgstr "이 엔티티의 설정은 여기에서 대체할 수 있습니다. "
+
+msgid "Do not index this <em>@bundle</em> entity in sitemap <em>@sitemap</em>"
+msgstr "사이트맵 <em>@sitemap</em>에 이 <em>@bundle</em> 엔티티를 색인화하지 않습니다."
+
+msgid "Index this <em>@bundle</em> entity in sitemap <em>@sitemap</em>"
+msgstr "사이트맵 <em>@sitemap</em>에서 이 <em>@bundle</em> 엔티티를 색인화합니다."
+
+msgid "The priority this <em>@bundle</em> entity will have in the eyes of search engine bots."
+msgstr "이 <em>@bundle</em> 엔티티가 검색 엔진 봇의 시선에서 가지게 될 우선순위입니다. "
+
+msgid "The frequency with which this <em>@bundle</em> entity changes. Search engine bots may take this as an indication of how often to index it."
+msgstr "이 <em>@bundle</em> 엔티티가 변경되는 빈도입니다. 검색 엔진 봇은 색인 생성 빈도를 나타내는 지표로 사용할 수 있습니다."
+
+msgid "Determines if images referenced by this <em>@bundle</em> entity should be included in the sitemap."
+msgstr "이 <em>@bundle</em> 엔티티에서 참조하는 이미지를 사이트맵에 포함할지 여부를 결정합니다."
+
+msgid "default"
+msgstr "기본값"
+
+msgid "At least one sitemap needs to be defined for a bundle to be indexable.<br>Sitemaps can be configured <a href=\"@url\">here</a>."
+msgstr "번들을 색인화하려면 최소 하나의 사이트맵을 정의해야 합니다.<br>사이트맵은 <a href=\"@url\">여기</a>에서 구성할 수 있습니다."
+
+msgid "Do not index entities of this type in sitemap <em>@sitemap</em>"
+msgstr "사이트맵 <em>@sitemap</em>에서 이 유형의 엔티티를 색인화하지 않음"
+
+msgid "Index entities of this type in sitemap <em>@sitemap</em>"
+msgstr "사이트맵 <em>@sitemap</em>에서 이 유형의 엔티티를 색인화"
+
+msgid "Sitemap file"
+msgstr "사이트맵 파일"
+
+msgid "Generated by the <a href=\"@url\">@module_name</a> Drupal module."
+msgstr "<a href=\"@url\">@module_name</a> Drupal 모듈에서 생성했습니다."
+
+msgid "Number of sitemaps in this index"
+msgstr "이 색인의 사이트맵 수"
+
+msgid "Sitemap URL"
+msgstr "사이트맵 URL"
+
+msgid "Number of URLs in this sitemap"
+msgstr "이 사이트맵의 URL 수"
+
+msgid "URL location"
+msgstr "URL 위치"
+
+msgid "Last modification date"
+msgstr "마지막 수정 날짜"
+
+msgid "Translation set"
+msgstr "변환 세트"
+
+msgid "Images"
+msgstr "이미지"
+
+msgid "Title"
+msgstr "제목"
+
+msgid "Caption"
+msgstr "캡션"
+
+msgid "Default sitemap generator"
+msgstr "기본 사이트맵 생성기"
+
+msgid "Generates a standard conform hreflang sitemap of your content."
+msgstr "사용자 컨텐츠의 표준 준수 hreflang 사이트맵을 생성합니다. "
+
+msgid "Sitemap index generator"
+msgstr "사이트맵 색인 생성기"
+
+msgid "Generates an index of your sitemaps."
+msgstr "사이트맵의 색인을 생성합니다."
+
+msgid "Arbitrary URL generator"
+msgstr "임의 URL 생성기"
+
+msgid "Generates URLs from data sets collected in the hook_arbitrary_links_alter hook."
+msgstr "hook_arbitrary_links_alter 후크에 수집된 데이터 세트에서 URL을 생성합니다."
+
+msgid "Custom URL generator"
+msgstr "사용자 정의 URL 생성기"
+
+msgid "Generates URLs set in admin/config/search/simplesitemap/custom."
+msgstr "admin/config/search/simplesitemap/custom에 설정된 URL을 생성합니다."
+
+msgid "Menu link URL generator"
+msgstr "메뉴 링크 URL 생성기"
+
+msgid "Generates menu link URLs by overriding the 'entity' URL generator."
+msgstr "'엔티티' URL 생성기를 재정의하여 메뉴 링크 URL을 생성합니다."
+
+msgid "Entity URL generator"
+msgstr "엔티티 URL 생성기"
+
+msgid "Generates URLs for entity bundles and bundle overrides."
+msgstr "엔티티 번들 및 번들 대체에 대한 URL을 생성합니다."
+
+msgid "Sitemap URL generator"
+msgstr "사이트맵 URL 생성기"
+
+msgid "Generates sitemap URLs for a sitemap index."
+msgstr "사이트맵 인덱스에 대한 사이트맵 URL을 생성합니다."
+
+msgid "Generating XML sitemaps"
+msgstr "XML 사이트맵 생성 중"
+
+msgid "Initializing..."
+msgstr "초기화 중..."
+
+msgid "Processing items from the queue.<br>Each sitemap gets published after all of its items have been processed."
+msgstr "큐에서 항목을 처리합니다.<br>각 사이트맵은 모든 항목이 처리된 후에 공개됩니다."
+
+msgid "@indexed out of @total total queue items have been processed."
+msgstr "@total 총 큐 항목 중 @indexed이(가) 처리되었습니다."
+

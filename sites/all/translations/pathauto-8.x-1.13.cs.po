@@ -1,0 +1,581 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Joined path"
+msgstr "Sloučená cesta"
+
+msgid "The array values each cleaned by Pathauto and then joined with the slash into a string that resembles an URL."
+msgstr "Každá hodnota pole byla vyčištěna modulem Pathauto a následně spojena lomítkem do řetězce podobajicímu se adrese URL."
+
+msgid "About"
+msgstr "Popis"
+
+msgid "The Pathauto module provides a mechanism to automate the creation of <a href=\"path\">path</a> aliases. This makes URLs more readable and helps search engines index content more effectively.  For more information, see the <a href=\":online\">online documentation for Pathauto</a>."
+msgstr "Modul Pathauto poskytuje mechanizmus pro automatizaci vytvoření aliasů <a href=\"path\">cesty</a>. Díky tomu jsou adresy URL čitelnější a pomáhají vyhledávačům efektivněji indexovat obsah. Další informace viz <a href=\":online\">dokumentace online pro Pathauto</a>."
+
+msgid "Uses"
+msgstr "Použití"
+
+msgid "Pathauto is accessed from the tabs it adds to the list of <a href=\":aliases\">URL aliases</a>."
+msgstr "Modul Pathauto je přístupný z karet, které přidává do seznamu <a href=\":aliases\">aliasů adresy URL</a>."
+
+msgid "Creating Pathauto Patterns"
+msgstr "Vytvoření vzorů Pathauto"
+
+msgid "The <a href=\":pathauto_pattern\">\"Patterns\"</a> page is used to configure automatic path aliasing.  New patterns are created here using the <a href=\":add_form\">Add Pathauto pattern</a> button which presents a form to simplify pattern creation thru the use of <a href=\"token\">available tokens</a>. The patterns page provides a list of all patterns on the site and allows you to edit and reorder them. An alias is generated for the first pattern that applies."
+msgstr "Stránka <a href=\":pathauto_pattern\">\"Vzory\"</a> se používá ke konfiguraci automatického aliasingu cest. Nové vzory jsou vytvořeny zde pomocí tlačítka <a href=\":add_form\">Přidat vzor Pathauto</a>, které představuje formulář pro zjednodušení vytváření vzoru prostřednictvím použití <a href=\"token\">dostupných tokenů</a>. Stránka Vzory poskytuje seznam všech vzorů na webu a umožňuje vám je upravit a změnit jejich pořadí. Pro první vzor, který se použije, se vygeneruje alias."
+
+msgid "Pathauto Settings"
+msgstr "Nastavení Pathauto"
+
+msgid "The <a href=\":settings\">\"Settings\"</a> page is used to customize global Pathauto settings for automated pattern creation."
+msgstr "Stránka <a href=\":settings\">\"Nastavení\"</a> se používá k přizpůsobení globálních nastavení Pathauto pro automatické vytvoření vzoru."
+
+msgid "The <strong>maximum alias length</strong> and <strong>maximum component length</strong> values default to 100 and have a limit of @max from Pathauto. You should enter a value that is the length of the \"alias\" column of the path_alias database table minus the length of any strings that might get added to the end of the URL. The recommended and default value is 100."
+msgstr "Hodnoty <strong>maximální délka aliasu</strong> a <strong>Maximální délka komponenty</strong> jsou standardně nastaveny na hodnotu 100 a mají mezní hodnotu @max z modulu Pathauto. Měli byste zadat hodnotu, která je délka sloupce \"alias\" databázové tabulky path_alias minus délka jakýchkoli řetězců, které mohou být přidány na konec adresy URL. Doporučená a výchozí hodnota je 100."
+
+msgid "Bulk Generation"
+msgstr "Hromadné generování"
+
+msgid "The <a href=\":pathauto_bulk\">\"Bulk Generate\"</a> page allows you to create URL aliases for items that currently have no aliases. This is typically used when installing Pathauto on a site that has existing un-aliased content that needs to be aliased in bulk."
+msgstr "Stránka <a href=\":pathauto_bulk\">\"Hromadné generování\"</a> vám umožňuje vytvořit aliasy adresy URL pro položky, které aktuálně nemají žádné aliasy. Toto se obvykle používá při instalaci modulu Pathauto na webu, který má existující obsah bez aliasů, který musí být hromadně aliasován."
+
+msgid "Delete Aliases"
+msgstr "Odstranit aliasy"
+
+msgid "The <a href=\":pathauto_delete\">\"Delete Aliases\"</a> page allows you to remove URL aliases from items that have previously been assigned aliases using pathauto."
+msgstr "Stránka <a href=\":pathauto_delete\">\"Odstranit aliasy\"</a> vám umožňuje odebrat aliasy adresy URL z položek, kterým byly dříve přiděleny aliasy pomocí modulu pathauto."
+
+msgid "This page provides a list of all patterns on the site and allows you to edit and reorder them."
+msgstr "Tato stránka poskytuje seznam všech vzorů na webu a umožňuje vám je upravit a změnit jejich pořadí."
+
+msgid "You need to select a pattern type, then a pattern and filter, and a label. Additional types can be enabled on the <a href=\":settings\">Settings</a> page."
+msgstr "Je třeba vybrat typ vzoru, potom vzor a filtr a štítek. Další typy lze povolit na stránce <a href=\":settings\">Nastavení</a>."
+
+msgid "Bulk generation can be used to generate URL aliases for items that currently have no aliases. This is typically used when installing Pathauto on a site that has existing un-aliased content that needs to be aliased in bulk."
+msgstr "Hromadné generování lze použít ke generování aliasů adresy URL pro položky, které aktuálně nemají žádné aliasy. Toto se obvykle používá při instalaci modulu Pathauto na webu, který má existující obsah bez aliasů, který musí být hromadně aliasován."
+
+msgid "It can also be used to regenerate URL aliases for items that have an old alias and for which the Pathauto pattern has been changed."
+msgstr "Lze jej také použít ke znovugenerování aliasů adresy URL pro položky, které mají starý alias a pro které byl změněn vzor Pathauto."
+
+msgid "Note that this will only affect items which are configured to have their URL alias automatically set. Items whose URL alias is manually set are not affected."
+msgstr "Poznámka: tato akce ovlivní pouze položky, které jsou nakonfigurovány tak, aby jejich adresy URL měly automaticky nastaven alias. Položky, jejichž alias adresy URL je třeba ručně nastavit, nejsou ovlivněny."
+
+msgid "URL alias"
+msgstr "URL alias"
+
+msgid "The %element-title is using the following invalid characters: @invalid-characters."
+msgstr "%element-title používá následující neplatné znaky: @invalid-characters."
+
+msgid "The %element-title doesn't allow the patterns ending with whitespace."
+msgstr "%element-title neumožňuje, aby vzory končily prázdným znakem."
+
+msgid "Entity of type @type was not processed. It defines the following patterns: @patterns"
+msgstr "Entita typu @type nebyla zpracována. Definuje následující vzory: @patterns"
+
+msgid "Unrecognized entity bundle @entity:@bundle was not processed. It defines the following patterns: @patterns"
+msgstr "Nerozpoznaný balík entit @entity: @bundle nebyl zpracován. Definuje následující vzory: @patterns"
+
+msgid "Automatic alias"
+msgstr "Automatický alias"
+
+msgid "Alias: @alias"
+msgstr "Alias: @alias"
+
+msgid "No alias"
+msgstr "Žádný alias"
+
+msgid "Pathauto"
+msgstr "Pathauto"
+
+msgid "Provides a mechanism for modules to automatically generate aliases for the content they manage."
+msgstr "Umožňuje modulům automaticky generovat aliasy pro obsah."
+
+msgid "Add Pathauto pattern"
+msgstr "Přidat vzor Pathauto"
+
+msgid "Patterns"
+msgstr "Vzory"
+
+msgid "Settings"
+msgstr "Nastavení"
+
+msgid "Bulk generate"
+msgstr "Hromadné generování"
+
+msgid "Delete aliases"
+msgstr "Smazat aliasy"
+
+msgid "Administer pathauto"
+msgstr "Spravovat pathauto"
+
+msgid "Allows a user to configure patterns for automated aliases and bulk delete URL-aliases."
+msgstr "Umožňuje uživateli nastavit šablony pro automatické aliasy a hromadné mazání URL aliasů."
+
+msgid "Notify of Path Changes"
+msgstr "Informovat o změnách cest"
+
+msgid "Determines whether or not users are notified."
+msgstr "Určuje, zda jsou uživatelé informováni."
+
+msgid "Duplicate Pathauto pattern"
+msgstr "Duplikovat vzor Pathauto"
+
+msgid "Enabled entity types"
+msgstr "Povolené typy entit"
+
+msgid "Tokens that are safe to use and do not need to be cleaned."
+msgstr "Tokeny, které jsou bezpečné a není třeba je vyčistit."
+
+msgid "Update URL alias"
+msgstr "Aktualizovat URL alias"
+
+msgid "Pathauto pattern config"
+msgstr "Konfigurace vzoru Pathauto"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "Popisek"
+
+msgid "Pattern type"
+msgstr "Typ vzoru"
+
+msgid "Pattern"
+msgstr "Vzor"
+
+msgid "Selection criteria"
+msgstr "Kritéria výběru"
+
+msgid "Selection condition"
+msgstr "Podmínka výběru"
+
+msgid "Selection logic"
+msgstr "Logika výběru"
+
+msgid "Weight"
+msgstr "Váha"
+
+msgid "Context definitions"
+msgstr "Definice kontextu"
+
+msgid "Relationship"
+msgstr "Vztah"
+
+msgid "Double quotation marks"
+msgstr "Uvozovky"
+
+msgid "Single quotation marks (apostrophe)"
+msgstr "Jednoduché uvozovky (apostrof)"
+
+msgid "Back tick"
+msgstr "Zpětná uvozovka"
+
+msgid "Comma"
+msgstr "Čárka"
+
+msgid "Period"
+msgstr "Period"
+
+msgid "Hyphen"
+msgstr "Spojovník"
+
+msgid "Underscore"
+msgstr "Podtržítko"
+
+msgid "Colon"
+msgstr "Dvojtečka"
+
+msgid "Semicolon"
+msgstr "Středník"
+
+msgid "Vertical bar (pipe)"
+msgstr "Svislá čára (roura)"
+
+msgid "Left curly bracket"
+msgstr "Levá složená závorka"
+
+msgid "Left square bracket"
+msgstr "Levá hranatá závorka"
+
+msgid "Right curly bracket"
+msgstr "Pravá složená závorka"
+
+msgid "Right square bracket"
+msgstr "Pravá hranatá závorka"
+
+msgid "Plus sign"
+msgstr "Znaménko plus"
+
+msgid "Equal sign"
+msgstr "Znaménko rovnosti"
+
+msgid "Asterisk"
+msgstr "Hvězdička"
+
+msgid "Ampersand"
+msgstr "Ampersand"
+
+msgid "Percent sign"
+msgstr "Procento"
+
+msgid "Caret"
+msgstr "Stříška"
+
+msgid "Dollar sign"
+msgstr "Dolar"
+
+msgid "Number sign (pound sign, hash)"
+msgstr "Označení čísla (znaménko libry, mřížka)"
+
+msgid "At sign"
+msgstr "Zavináč"
+
+msgid "Exclamation mark"
+msgstr "Vykřičník"
+
+msgid "Tilde"
+msgstr "Vlnovka"
+
+msgid "Left parenthesis"
+msgstr "Levá závorka"
+
+msgid "Right parenthesis"
+msgstr "Pravá závorka"
+
+msgid "Question mark"
+msgstr "Otazník"
+
+msgid "Less-than sign"
+msgstr "Menší než"
+
+msgid "Greater-than sign"
+msgstr "Větší než"
+
+msgid "Slash"
+msgstr "Lomítko"
+
+msgid "Backslash"
+msgstr "Zpětné lomítko"
+
+msgid "Ignoring alias %alias because it is the same as the internal path."
+msgstr "Ignorování aliasu %alias, protože je stejný jako interní cesta."
+
+msgid "Created new alias %alias for %source, replacing %old_alias."
+msgstr "Vytvořen nový alias %alias pro %source, nahrazení %old_alias."
+
+msgid "Created new alias %alias for %source."
+msgstr "Vytvořen nový alias %alias pro %source."
+
+msgid "The automatically generated alias %original_alias conflicted with an existing alias. Alias changed to %alias."
+msgstr "Automaticky generovaný alias %original_alias měl konflikt s již existujícím aliasem. Byl změněn na %alias."
+
+msgid "Pathauto state"
+msgstr "Stav PathAuto"
+
+msgid "Whether an automated alias should be created or not."
+msgstr "Určuje, zda má být vytvořen automatický alias, či nikoli."
+
+msgid "Conditions"
+msgstr "Podmínky"
+
+msgid "Duplicate"
+msgstr "Duplikovat"
+
+msgid "Uncheck this to create a custom alias below. <a href=\"@admin_link\">Configure URL alias patterns.</a>"
+msgstr "Zrušte zaškrtnutí, chcete-li vytvořit vlastní alias níže. <a href=\"@admin_link\">Konfigurujte vzory aliasu adresy URL.</a>"
+
+msgid "Uncheck this to create a custom alias below."
+msgstr "Zrušte zaškrtnutí této volby pro vytvoření vlastního aliasu níže."
+
+msgid "Generate automatic URL alias"
+msgstr "Generovat automatický URL alias"
+
+msgid "Bulk updating URL aliases"
+msgstr "Hromadná aktualizace URL aliasů"
+
+msgid "Bulk deleting URL aliases"
+msgstr "Hromadné odstranění aliasů adres URL"
+
+msgid "All of your path aliases have been deleted."
+msgstr "Všechny aliasy byly smazány."
+
+msgid "All of your %label path aliases have been deleted."
+msgstr "Všechny aliasy cest %label byly odstraněny."
+
+msgid "Choose the action to perform."
+msgstr "Zvolte akci, která má být provedena."
+
+msgid "Choose the alias type(s). Separate multiple choices with commas, e.g. \"1,2,4\", or choose \"0\" for all types."
+msgstr "Vyberte typ(y) aliasu. Oddělte více voleb čárkami, např. \"1,2,4\" nebo vyberte \"0\" pro všechny typy."
+
+msgid "Invalid action argument \"@invalid_action\". Please use one of: @valid_actions"
+msgstr "Neplatný argument akce \"@invalid_action\". Použijte jeden z: @valid_actions"
+
+msgid "Invalid type argument \"@invalid_types\". Please choose from the following: @valid_types"
+msgstr "Neplatný typ argumentu \"@invalid_types\". Vyberte z následujících: @valid_types"
+
+msgid "Generate a URL alias for un-aliased paths only."
+msgstr "Generovat alias adresy URL pouze pro cesty bez aliasu."
+
+msgid "Update the URL alias for paths having an old URL alias."
+msgstr "Aktualizovat alias adresy URL pro cesty, které mají starý alias adresy URL."
+
+msgid "Regenerate URL aliases for all paths."
+msgstr "Znovu generovat aliasy adresy URL pro všechny cesty."
+
+msgid "Pathauto pattern"
+msgstr "Vzor Pathauto"
+
+msgid "Choose aliases to delete"
+msgstr "Vybrat aliasy, které se mají odstranit"
+
+msgid "All aliases"
+msgstr "Všechny aliasy"
+
+msgid "Delete all aliases. Number of aliases which will be deleted: %count."
+msgstr "Vymaže všechny aliasy. Počet aliasů, které budou smazány: %count."
+
+msgid "Delete aliases for all @label. Number of aliases which will be deleted: %count."
+msgstr "Vymazat všechny aliasy typu @label. Počet aliasů k vymazání: %count."
+
+msgid "Delete options"
+msgstr "Odstranit volby"
+
+msgid "Only delete automatically generated aliases"
+msgstr "Odstranit pouze automaticky generované aliasy"
+
+msgid "When checked, aliases which have been manually set are not affected by this mass-deletion."
+msgstr "Je-li políčko zaškrtnuto, aliasy, které byly ručně nastaveny, nejsou tímto hromadným odstraněním ovlivněny."
+
+msgid "<strong>Note:</strong> there is no confirmation. Be sure of your action before clicking the \"Delete aliases now!\" button.<br />You may want to make a backup of the database and/or the path_alias and path_alias_revision tables prior to using this feature."
+msgstr "<strong>Poznámka:</strong> Není k dispozici žádné potvrzení. Než klepnete na tlačítko \"Odstranit aliasy nyní!\", ujistěte se, že vaše akce byla provedena.  <br />Před použitím této funkce můžete vytvořit zálohu databáze anebo tabulek path_alias a path_alias_revision. "
+
+msgid "Delete aliases now!"
+msgstr "Smazat aliasy!"
+
+msgid "All of your automatically generated path aliases have been deleted."
+msgstr "Všechny automaticky generované aliasy cest byly odstraněny."
+
+msgid "All of your automatically generated %label path aliases have been deleted."
+msgstr "Všechny automaticky generované aliasy cest %label byly odstraněny."
+
+msgid "An error occurred while processing @operation with arguments : @args"
+msgstr "Došlo k chybě během zpracování operace @operation s argumenty: @args"
+
+msgid "Select the types of paths for which to generate URL aliases"
+msgstr "Vybrat typy cest, pro které mají být generovány aliasy adresy URL"
+
+msgid "Select which URL aliases to generate"
+msgstr "Vybrat, které aliasy URL se mají generovat"
+
+msgid "Generate a URL alias for un-aliased paths only"
+msgstr "Generovat alias adresy URL pouze pro cesty bez aliasu"
+
+msgid "<a href=\":url\">Pathauto settings</a> are set to ignore paths which already have a URL alias. You can only create URL aliases for paths having none."
+msgstr "<a href=\":url\">Nastavení Pathauto</a> jsou nastaveny pro ignorování cest, které již mají alias adresy URL. Můžete vytvářet pouze aliasy adres URL pro cesty, které nemají žádný alias."
+
+msgid "Update the URL alias for paths having an old URL alias"
+msgstr "Aktualizovat alias adresy URL pro cesty, které mají starý alias adresy URL"
+
+msgid "Regenerate URL aliases for all paths"
+msgstr "Znovu generovat aliasy adresy URL pro všechny cesty"
+
+msgid "Update"
+msgstr "Aktualizovat"
+
+msgid "No new URL aliases to generate."
+msgstr "K vygenerování nejsou žádné nové aliasy."
+
+msgid "Generated 1 URL alias."
+msgid_plural "Generated @count URL aliases."
+msgstr[0] "Vygenerován 1 URL alias."
+msgstr[1] "Vygenerovány @count URL aliasy."
+msgstr[2] "Vygenerováno @count URL aliasů."
+
+msgid "Enable to add a path field and allow to define alias patterns for the given type. Disabled types already define a path field themselves or currently have a pattern."
+msgstr "Povolte, chcete-li přidat pole cesty a povolit definování vzorů aliasů pro daný typ. Vypnuté typy již definují samotné pole cesty nebo jsou v současné době vzorem."
+
+msgid "Verbose"
+msgstr "Detailní výpis"
+
+msgid "Display alias changes (except during bulk updates)."
+msgstr "Zobrazuje změny cest (kromě hromadných změn)"
+
+msgid "Separator"
+msgstr "Oddělovač"
+
+msgid "Character used to separate words in titles. This will replace any spaces and punctuation characters. Using a space or + character can cause unexpected results."
+msgstr "Znak používaný pro oddělení slov v nadpisech. Tímto znakem budou nahrazeny mezery mezi slovy a interpunkční znaménka (tečky, čárky, pomlčky atd.). Použití mezery nebo znaku plus může způsobit neočekávaný výsledek."
+
+msgid "Character case"
+msgstr "VELKÁ/malá písmena"
+
+msgid "Convert token values to lowercase."
+msgstr "Převeďte hodnoty tokenu na malá písmena."
+
+msgid "See <a href=\":pathauto-help\">Pathauto help</a> for details."
+msgstr "Podrobnosti viz <a href=\":pathauto-help\">nápověda Pathauto</a>."
+
+msgid "Maximum alias length"
+msgstr "Maximální délka aliasu"
+
+msgid "Maximum length of aliases to generate. 100 is the recommended length. @max is the maximum possible length."
+msgstr "Maximální délka aliasů, které se mají generovat. Hodnota 100 je doporučená délka. @max je maximální možná délka."
+
+msgid "Maximum component length"
+msgstr "Maximální délka komponentu"
+
+msgid "Maximum text length of any component in the alias (e.g., [title]). 100 is the recommended length. @max is the maximum possible length."
+msgstr "Maximální délka textu jakékoli komponenty v aliasu (např. [title]). Hodnota 100 je doporučená délka. @max je maximální možná délka."
+
+msgid "What should Pathauto do when updating an existing content item which already has an alias?"
+msgstr "Co by měl modul Pathauto dělat při aktualizaci existující položky obsahu, která již má alias?"
+
+msgid "The <a href=\":url\">Redirect module settings</a> affect whether a redirect is created when an alias is deleted."
+msgstr "<a href=\":url\">Nastavení modulu Přesměrovat</a> ovlivňuje, zda je při odstranění aliasu vytvořeno přesměrování."
+
+msgid "Considering installing the <a href=\":url\">Redirect module</a> to get redirects when your aliases change."
+msgstr "Zvažte instalaci <a href=\":url\">modulu Přesměrovat</a>, aby bylo možné přesměrování při změně aliasů."
+
+msgid "Update action"
+msgstr "Nastavení aktualizace"
+
+msgid "Do nothing. Leave the old alias intact."
+msgstr "Neprovádějte nic. Ponechte starý alias neporušený."
+
+msgid "Create a new alias. Leave the existing alias functioning."
+msgstr "Vytvořte nový alias. Ponechte existující alias funkční."
+
+msgid "Create a new alias. Delete the old alias."
+msgstr "Vytvořte nový alias. Odstraňte starý alias."
+
+msgid "Transliterate prior to creating alias"
+msgstr "Převést znaky před vytvořením aliasu"
+
+msgid "When a pattern includes certain characters (such as those with accents) should Pathauto attempt to transliterate them into the US-ASCII alphabet?"
+msgstr "Když vzor obsahuje určité znaky (například ty s diakritikou), měl by se modul Pathauto pokusit o jejich přepis do abecedy US-ASCII?"
+
+msgid "Reduce strings to letters and numbers"
+msgstr "Omezit řetězce na písmena a čísla"
+
+msgid "Filters the new alias to only letters and numbers found in the ASCII-96 set."
+msgstr "Filtruje nový alias pouze do znaků a čísel z množiny ASCII-96."
+
+msgid "Strings to Remove"
+msgstr "Řetězce k odebrání"
+
+msgid "Words to strip out of the URL alias, separated by commas. Do not use this to remove punctuation."
+msgstr "Slova, která mají být vyjmuta z aliasu adresy URL, jsou oddělena čárkami. Nepoužívejte tuto volbu k odebrání interpunkce."
+
+msgid "Safe tokens"
+msgstr "Bezpečné tokeny"
+
+msgid "List of tokens that are safe to use in alias patterns and do not need to be cleaned. For example urls, aliases, machine names. Separated with a comma."
+msgstr "Seznam tokenů, které jsou bezpečné pro použití ve vzorech aliasů a které není třeba vyčistit. Například adresy URL, aliasy, názvy počítačů. Oddělené čárkou."
+
+msgid "Punctuation"
+msgstr "Interpunkce"
+
+msgid "Remove"
+msgstr "Odstranit"
+
+msgid "Replace by separator"
+msgstr "Nahradit za oddělovač"
+
+msgid "No action (do not replace)"
+msgstr "Žádná akce (nenahrazovat)"
+
+msgid "Are you sure you want to disable the pattern %label?"
+msgstr "Opravdu chcete zakázat vzor %label?"
+
+msgid "Disable"
+msgstr "Vypnout"
+
+msgid "Disabled patterns are ignored when generating aliases."
+msgstr "Zakázané vzory se ignorují při generování aliasů."
+
+msgid "Disabled pattern %label."
+msgstr "Zakázaný vzor %label."
+
+msgid "Path pattern"
+msgstr "Vzor cest"
+
+msgid "Check to which types this pattern should be applied. Leave empty to allow any."
+msgstr "Zkontrolujte, které typy by tento vzor měl použít. Ponechejte prázdné pro libovolnou možnost."
+
+msgid "Languages"
+msgstr "Jazyky"
+
+msgid "Check to which languages this pattern should be applied. Leave empty to allow any."
+msgstr "Zkontrolujte, které jazyky by tento vzor měl použít. Ponechejte prázdné pro libovolnou možnost."
+
+msgid "A short name to help you identify this pattern in the patterns list."
+msgstr "Krátký název, který vám pomůže identifikovat tento vzor v seznamu vzorů."
+
+msgid "Enabled"
+msgstr "Zapnuto"
+
+msgid "Language"
+msgstr "Jazyk"
+
+msgid "Pattern %label saved."
+msgstr "Vzor %label byl uložen."
+
+msgid "Are you sure you want to enable the pattern %label?"
+msgstr "Opravdu chcete povolit vzor %label?"
+
+msgid "Enable"
+msgstr "Zapnout"
+
+msgid "Enabled pattern %label."
+msgstr "Povolený vzor %label."
+
+msgid "Update URL alias of an entity"
+msgstr "Aktualizovat alias adresy URL entity"
+
+msgid "@label being aliased"
+msgstr "@label s aliasem"
+
+msgid "The name of the pattern's variable."
+msgstr "Název proměnné šablony."
+
+msgid "The value of the pattern's variable."
+msgstr "Hodnota proměnné šablony."
+
+msgid "Broken type"
+msgstr "Přerušený typ"
+
+msgid "Broken"
+msgstr "Poškozeno"
+
+msgid "Broken/Missing"
+msgstr "Rozbitý/chybějící"
+
+msgid "AliasType"
+msgstr "AliasType"
+
+msgid "Updated alias for %label @id."
+msgstr "Aktualizovaný alias pro %label @id."
+
+msgid "Updated 1 %label URL alias."
+msgid_plural "Updated @count %label URL aliases."
+msgstr[0] "Aktualizovaný 1 alias adresy URL %label."
+msgstr[1] "Aktualizováno @count aliasů adresy URL %label."
+msgstr[2] "Aktualizováno @count aliasů adresy URL %label."
+
+msgid "Forum"
+msgstr "Fórum"
+

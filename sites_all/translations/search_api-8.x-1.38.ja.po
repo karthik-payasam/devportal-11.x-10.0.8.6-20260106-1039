@@ -1,0 +1,2506 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "The following views have had caching switched off. The selected caching mechanism does not work with views on Search API indexes. Please either use one of the Search API-specific caching options or \"None\": @ids."
+msgstr "以下のビューでは、キャッシングがオフに切り替えられています。 選択されたキャッシング・メカニズムは、検索 API 索引のビューでは機能しません。 検索 API 固有のキャッシュ・オプションの 1 つを使用するか、「なし」: @idsを使用してください。"
+
+msgid "No fields have been added for this datasource."
+msgstr "このデータ・ソース用にフィールドが追加されていません。"
+
+msgid "Data Type"
+msgstr "データ タイプ"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "Supported"
+msgstr "サポート対象"
+
+msgid "Fallback data type"
+msgstr "フォールバック・データ型"
+
+msgid "Yes"
+msgstr "はい"
+
+msgid "No"
+msgstr "いいえ"
+
+msgid "enabled (<a href=\":url\">disable</a>)"
+msgstr "有効 (<a href=\":url\">無効化</a>)"
+
+msgid "disabled (<a href=\":url\">enable</a>)"
+msgstr "無効 (<a href=\":url\">有効化</a>)"
+
+msgid "Status"
+msgstr "状態"
+
+msgid "Invalid or missing backend plugin: %backend_id"
+msgstr "バックエンド・プラグイン %backend_id が無効であるか見つかりません"
+
+msgid "Backend class"
+msgstr "バックエンド・クラス"
+
+msgid "Search indexes"
+msgstr "検索インデックス"
+
+msgid "disabled"
+msgstr "無効"
+
+msgid "@indexed/@total indexed"
+msgstr "@indexed/@total 個をインデックス付けしました"
+
+msgid "Invalid or missing datasource plugin: %datasource_id"
+msgstr "データ・ソース・プラグイン %datasource_id が無効であるか見つかりません"
+
+msgid "Datasource"
+msgstr "データソース"
+
+msgid "Invalid or missing tracker plugin: %tracker_id"
+msgstr "トラッカー・プラグイン %tracker_id が無効であるか見つかりません"
+
+msgid "Tracker"
+msgstr "トラッカー"
+
+msgid "Server"
+msgstr "サーバー"
+
+msgid "Unknown server set for index: %server_id"
+msgstr "インデックスに不明なサーバーが設定されています: %server_id"
+
+msgid "Server index status"
+msgstr "サーバーのインデックス状況"
+
+msgid "Error while checking server index status: @message"
+msgstr "サーバーのインデックス状況確認中にエラーが発生しました: @message"
+
+msgid "All items will be indexed at once during cron runs."
+msgstr "クーロン実行中にすべての項目が一度にインデックス付けされます。"
+
+msgid "No items will be indexed during cron runs."
+msgstr "クーロン実行中にインデックス付けされる項目はありません。"
+
+msgid "Cron batch size"
+msgstr "クーロンのバッチ・サイズ"
+
+msgid "There is 1 item indexed on the server for this index. (<a href=\":url\">More information</a>)"
+msgid_plural "There are @count items indexed on the server for this index. (<a href=\":url\">More information</a>)"
+msgstr[0] "サーバーではこのインデックス用に @count 個のアイテムがインデックスされています。(<a href=\":url\">詳しい情報</a>)"
+msgstr[1] "サーバーではこのインデックス用に @count 個のアイテムがインデックスされています。(<a href=\":url\">詳しい情報</a>)"
+
+msgid "During cron runs, 1 item will be indexed per batch."
+msgid_plural "During cron runs, @count items will be indexed per batch."
+msgstr[0] "クーロン実行中に、1 バッチにつき @count 個の項目がインデックス付けされます。"
+
+msgid "Index @name"
+msgstr "インデックス @name"
+
+msgid "Use the @name search index for filtering and retrieving data."
+msgstr "@name 検索インデックスを使用してデータのフィルタリングと取得を行います。"
+
+msgid "(No description available)"
+msgstr "(使用可能な説明はありません)"
+
+msgid "@datasource datasource"
+msgstr "@datasource データ・ソース"
+
+msgid "Search"
+msgstr "検索"
+
+msgid "@field (indexed field)"
+msgstr "@field (インデックス・フィールド)"
+
+msgid "Item ID"
+msgstr "項目ID"
+
+msgid "The item's internal (Search API-specific) ID"
+msgstr "項目の内部 (検索 API 固有の) ID"
+
+msgid "The datasource ID"
+msgstr "データ・ソース ID"
+
+msgid "Item language"
+msgstr "項目の言語"
+
+msgid "The item's language"
+msgstr "項目の言語"
+
+msgid "Item URL"
+msgstr "項目 URL"
+
+msgid "The item's URL"
+msgstr "項目の URL"
+
+msgid "Relevance"
+msgstr "関連度"
+
+msgid "The relevance of this search result with respect to the query"
+msgstr "この検索結果の照会との関連度"
+
+msgid "Excerpt"
+msgstr "引用"
+
+msgid "The search result excerpted to show found search terms"
+msgstr "検出された検索語を示す検索結果の抜粋"
+
+msgid "Fulltext search"
+msgstr "フルテキスト検索"
+
+msgid "Search several or all fulltext fields at once."
+msgstr "一部またはすべてのフルテキスト・フィールドを一度に検索します。"
+
+msgid "More like this"
+msgstr "類似検索"
+
+msgid "Find similar content."
+msgstr "類似したコンテンツを検索します。"
+
+msgid "Rendered item"
+msgstr "レンダリング対象項目"
+
+msgid "Renders item in a view mode."
+msgstr "ビュー・モードで項目をレンダリングします。"
+
+msgid "Operations links"
+msgstr "管理リンク"
+
+msgid "Provides links to perform entity operations."
+msgstr "エンティティの操作を行うリンクを提供します。"
+
+msgid "All taxonomy term fields"
+msgstr "すべての分類用語フィールド"
+
+msgid "Search all indexed taxonomy term fields"
+msgstr "すべてのインデックス付けされた分類用語フィールドの検索"
+
+msgid "Bulk update"
+msgstr "一括更新"
+
+msgid "Allows users to apply an action to one or more items."
+msgstr "一つ以上のアクションの適用を許可する。"
+
+msgid "@entity_type relationship"
+msgstr "@entity_type の関係"
+
+msgid "@label referenced from @field_name"
+msgstr "@field_nameから参照されている@label"
+
+msgid "@field_name: @label"
+msgstr "@field_name: @label"
+
+msgid "Below is a list of indexes grouped by the server they are associated with. A server is the definition of the actual indexing, querying and storage engine (for example, an Apache Solr server, the database, …). An index defines the indexed content (for example, all content and all comments on \"Article\" posts)."
+msgstr "関連付けられたサーバー別にグループ化されたインデックスのリストを以下に示します。サーバーとは、インデックス付け、照会、および保管を行う実際のエンジンを定義したものです (Apache Solr サーバー、データベースなど)。インデックスは、インデックス・コンテンツを定義します (「記事」投稿のすべてのコンテンツとすべてのコメントなど)。"
+
+msgid "The selected caching mechanism does not work with views on Search API indexes. Please either use one of the Search API-specific caching options or \"None\". Caching was turned off for this view."
+msgstr "選択されたキャッシング・メカニズムは、検索 API インデックスのビューでは動作しません。検索 API に固有のキャッシング・オプションのいずれかを使用するか、「なし」を使用してください。キャッシングは、このビューに対してオフになりました。"
+
+msgid "The default Drupal core Search module is still enabled. If you are using Search API, you probably want to <a href=\":url\">uninstall</a> the Search module for performance reasons. For more information see <a href=\":documentation\">the Search API handbook</a>."
+msgstr "デフォルトの Drupal コア検索モジュールがまだ有効です。検索 API を使用する場合は、パフォーマンス上の理由で検索モジュールを<a href=\":url\">アンインストール</a>することをお勧めします。詳しくは、<a href=\":documentation\">検索 API のハンドブック</a>を参照してください。"
+
+msgid "Search result excerpt"
+msgstr "検索結果の抜粋"
+
+msgid "An excerpt provided by Search API when rendered in a search."
+msgstr "検索でレンダリングされたときに検索 APIによって提供される抜粋。"
+
+msgid "Indexed @num items for index %name."
+msgstr "インデックス %name に @num 個の項目のインデックスを付けました。"
+
+msgid "Search API"
+msgstr "検索 API"
+
+msgid "Execute now"
+msgstr "今すぐ実行"
+
+msgid "Index config schema updated."
+msgstr "インデックス構成スキーマが更新されました。"
+
+msgid "Switched from old \"Node status\" to new \"Entity status\" processor."
+msgstr "以前の「ノードの状況」から新しい「エンティティーの状況」プロセッサーに切り替えました。"
+
+msgid "Updated the configuration schema of the \"Ignore characters\" processor."
+msgstr "「Ignore characters」プロセッサーの構成スキーマが更新されました。"
+
+msgid "Enabled \"Track changes in referenced entities\" on all existing search indexes."
+msgstr "既存のすべての検索索引で「参照先エンティティーの変更を追跡する」が有効になりました。"
+
+msgid "The search server \"@servers\" is currently not available"
+msgid_plural "The following search servers are not available: @servers"
+msgstr[0] "以下の検索サーバーが使用不可です: @servers"
+
+msgid "There is @count pending Search API task. @link"
+msgid_plural "There are @count pending Search API tasks. @link"
+msgstr[0] "保留中の検索 API タスクが @count 個あります。@link"
+
+msgid "Provides a generic framework for modules offering search capabilities."
+msgstr "検索機能を提供するモジュールの汎用フレームワークを提供します。"
+
+msgid "Add server"
+msgstr "サーバーの追加"
+
+msgid "Add index"
+msgstr "インデックスの追加"
+
+msgid "Execute pending tasks"
+msgstr "保留中のタスクの実行"
+
+msgid "Create and configure search indexes and servers."
+msgstr "検索インデックスとサーバーを作成および構成します。"
+
+msgid "View"
+msgstr "ビュー"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "Fields"
+msgstr "フィールド"
+
+msgid "Processors"
+msgstr "プロセッサー"
+
+msgid "Administer Search API"
+msgstr "検索 API の管理"
+
+msgid "Create and configure Search API servers and indexes."
+msgstr "検索 API のサーバーとインデックスを作成および構成します。"
+
+msgid "Edit field"
+msgstr "フィールドの編集"
+
+msgid "Break lock"
+msgstr "ロックを解除"
+
+msgid "Entity datasource configuration"
+msgstr "エンティティー・データ・ソース構成"
+
+msgid "Bundles"
+msgstr "バンドル"
+
+msgid "Whether to exclude (TRUE) or include (FALSE) the selected bundles."
+msgstr "選択したバンドルを除外する (TRUE) か含める (FALSE) か。"
+
+msgid "The selected bundles"
+msgstr "選択したバンドル"
+
+msgid "A bundle machine name"
+msgstr "バンドルのシステム内部名称"
+
+msgid "Do not use a database query for tracking"
+msgstr "トラッキングにデータベース照会を使用しない"
+
+msgid "Languages"
+msgstr "言語"
+
+msgid "Whether to exclude (TRUE) or include (FALSE) the selected languages."
+msgstr "選択した言語を除外する (TRUE) か含める (FALSE) か。"
+
+msgid "The selected languages"
+msgstr "選択した言語"
+
+msgid "A language code"
+msgstr "言語コード"
+
+msgid "Search index"
+msgstr "検索インデックス"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Read-only"
+msgstr "読み取りのみ"
+
+msgid "Indexed fields"
+msgstr "インデックス付け対象フィールド"
+
+msgid "field"
+msgstr "フィールド"
+
+msgid "A label for the field"
+msgstr "フィールドのラベル"
+
+msgid "The datasource ID of the field"
+msgstr "フィールドのデータ・ソース ID"
+
+msgid "The property path of the field"
+msgstr "フィールドのプロパティー・パス"
+
+msgid "The data type of the field"
+msgstr "フィールドのデータ型"
+
+msgid "The boost of the field"
+msgstr "フィールドのランキング調整"
+
+msgid "Whether the field is locked or can be removed"
+msgstr "フィールドをロックするか、削除できるようにするか"
+
+msgid "Whether the field's data type is locked or can be changed"
+msgstr "フィールドのデータ型をロックするか、変更できるようにするか"
+
+msgid "Whether the field should appear in the UI"
+msgstr "フィールドを UI で表示するかどうか"
+
+msgid "The field's dependencies"
+msgstr "フィールドの依存関係"
+
+msgid "Datasource settings"
+msgstr "データ・ソース設定"
+
+msgid "The configuration for a single datasource"
+msgstr "単一データ・ソースの構成"
+
+msgid "Processor settings"
+msgstr "プロセッサー設定"
+
+msgid "The configuration for a single processor"
+msgstr "単一プロセッサーの構成"
+
+msgid "Tracker settings"
+msgstr "トラッカーの設定"
+
+msgid "The configuration for the tracker"
+msgstr "トラッカーの構成"
+
+msgid "Options"
+msgstr "オプション"
+
+msgid "Index items immediately"
+msgstr "即座にインデックスする"
+
+msgid "Track changes in referenced entities"
+msgstr "参照先エンティティーの変更を追跡する"
+
+msgid "Server ID"
+msgstr "サーバー ID"
+
+msgid "Language code"
+msgstr "言語コード"
+
+msgid "Dependencies"
+msgstr "依存関係"
+
+msgid "Default processor configuration"
+msgstr "デフォルトのプロセッサー構成"
+
+msgid "The processor's weights for the different processing stages"
+msgstr "各種処理ステージのプロセッサーの重みづけ"
+
+msgid "The processor's weight for this stage"
+msgstr "このステージでのプロセッサーの重みづけ"
+
+msgid "Fields processor configuration"
+msgstr "フィールド・プロセッサー構成"
+
+msgid "Enabled for all supported fields"
+msgstr "すべてのサポート対象フィールドについて有効"
+
+msgid "The selected fields"
+msgstr "選択したフィールド"
+
+msgid "Selected field"
+msgstr "選択したフィールド"
+
+msgid "Hierarchy processor configuration"
+msgstr "階層プロセッサー構成"
+
+msgid "Fields for which to add the hierarchy, mapped to their hierarchical nested property"
+msgstr "階層型のネストされたプロパティーにマップされる、階層を追加するフィールド"
+
+msgid "Field ID"
+msgstr "フィールドID"
+
+msgid "Highlight processor configuration"
+msgstr "強調表示プロセッサー構成"
+
+msgid "Text/HTML that will be prepended to all occurrences of search keywords in highlighted text"
+msgstr "強調表示テキスト内の検索キーワードのすべてのオカレンスの前に付加されるテキスト/HTML"
+
+msgid "Text/HTML that will be appended to all occurrences of search keywords in highlighted text"
+msgstr "強調表示テキスト内の検索キーワードのすべてのオカレンスの後に付加されるテキスト/HTML"
+
+msgid "When enabled, an excerpt will be created for searches with keywords, containing all occurrences of keywords in a fulltext field."
+msgstr "有効にすると、キーワードを含む検索の抜粋が作成されます。これには、フルテキスト・フィールドにおけるキーワードのすべてのオカレンスが含まれます。"
+
+msgid "When enabled, an excerpt will be created even with an empty query string."
+msgstr "有効にすると、空の照会ストリングを使用しても抜粋が作成されます。"
+
+msgid "The requested length of the excerpt, in characters"
+msgstr "抜粋に要求される長さ (文字数)"
+
+msgid "Fields excluded from excerpt"
+msgstr "抜粋から除外するフィールド"
+
+msgid "An excluded field's ID"
+msgstr "除外するフィールドの ID"
+
+msgid "Defines whether returned fields should be highlighted (always/if returned/never)."
+msgstr "返されるフィールドを強調表示するかどうかを定義します (常に強調表示する/返された場合に強調表示する/強調表示しない)。"
+
+msgid "Whether matches in parts of words should be highlighted"
+msgstr "単語の部分一致を強調表示するかどうか"
+
+msgid "HTML filter processor configuration"
+msgstr "HTML フィルター・プロセッサー構成"
+
+msgid "Title"
+msgstr "タイトル"
+
+msgid "Alt"
+msgstr "Alt"
+
+msgid "Tag boosts"
+msgstr "タグ・ランキング調整"
+
+msgid "Boost"
+msgstr "ランキング調整"
+
+msgid "Ignore case processor configuration"
+msgstr "大/小文字の無視に関するプロセッサー構成"
+
+msgid "Ignore Character processor configuration"
+msgstr "無視文字に関するプロセッサー構成"
+
+msgid "Regular expression for characters to ignore"
+msgstr "無視する文字の正規表現"
+
+msgid "Character categories to ignore"
+msgstr "無視する文字カテゴリー"
+
+msgid "Character set"
+msgstr "文字セット"
+
+msgid "Number field-based boosting processor configuration"
+msgstr "数値フィールド・ベースのランキング調整プロセッサー構成"
+
+msgid "Boost settings"
+msgstr "ランキング調整設定"
+
+msgid "Field boost settings"
+msgstr "フィールドのランキング調整設定"
+
+msgid "The boost factor for this field"
+msgstr "このフィールドのランキング調整要因"
+
+msgid "The aggregation function for multi-valued fields"
+msgstr "複数値フィールドの集約関数"
+
+msgid "Stemmer processor configuration"
+msgstr "ステマー・プロセッサー構成"
+
+msgid "Stemming exceptions"
+msgstr "ステミングの例外"
+
+msgid "Exception"
+msgstr "例外"
+
+msgid "Role filter processor configuration"
+msgstr "ロール・フィルター・プロセッサー構成"
+
+msgid "Default"
+msgstr "デフォルト"
+
+msgid "The selected roles"
+msgstr "選択したロール"
+
+msgid "The role name"
+msgstr "ロール名"
+
+msgid "Stopwords processor configuration"
+msgstr "ストップワード・プロセッサー構成"
+
+msgid "Entered stopwords"
+msgstr "入力されたストップワード"
+
+msgid "Stopword"
+msgstr "ストップワード"
+
+msgid "Tokenizer processor configuration"
+msgstr "トークナイザー・プロセッサー構成"
+
+msgid "Regular expression for spaces"
+msgstr "スペースの正規表現"
+
+msgid "Regular expression for ignored characters"
+msgstr "無視する文字の正規表現"
+
+msgid "Defines if simple CJK handling should be enabled."
+msgstr "単純な CJK 処理を有効にするかどうかを定義します。"
+
+msgid "Defines the minimum word size"
+msgstr "単語の最小サイズの定義"
+
+msgid "Transliteration processor configuration"
+msgstr "音訳プロセッサー構成"
+
+msgid "Type-specific boosting processor configuration"
+msgstr "タイプ固有のランキング調整プロセッサー構成"
+
+msgid "Datasource boost settings"
+msgstr "データ・ソース・ランキング調整設定"
+
+msgid "Base boost for the datasource"
+msgstr "データ・ソースの基本ランキング調整"
+
+msgid "Bundle-specific boosts"
+msgstr "バンドル固有のランキング調整"
+
+msgid "The boost value for this bundle"
+msgstr "このバンドルのランキング調整値"
+
+msgid "Default field configuration"
+msgstr "デフォルトのフィールド構成"
+
+msgid "Aggregated field configuration"
+msgstr "集約フィールドの構成"
+
+msgid "The type of the aggregation"
+msgstr "集約のタイプ"
+
+msgid "The properties to be aggregated"
+msgstr "集約するプロパティー"
+
+msgid "A property that should be part of the aggregation"
+msgstr "集約の一部とすべきプロパティー"
+
+msgid "Rendered item processor configuration"
+msgstr "レンダリング対象項目プロセッサー構成"
+
+msgid "The user roles which will be active when the entity is rendered"
+msgstr "エンティティーのレンダリング時にアクティブになるユーザー・ロール"
+
+msgid "The selected view modes for each datasource, by bundle"
+msgstr "各データ・ソースの選択されたビュー・モード (バンドルごと)"
+
+msgid "The selected view modes for the datasource, by bundle"
+msgstr "データ・ソースの選択されたビュー・モード (バンドルごと)"
+
+msgid "The view mode used to render the entity for the specified bundle"
+msgstr "指定されたバンドルのエンティティーをレンダリングするときに使用するビュー・モード"
+
+msgid "Add URL configuration"
+msgstr "URL 構成の追加"
+
+msgid "Whether to generate an absolute URL"
+msgstr "絶対 URL を生成するかどうか。"
+
+msgid "Search API settings"
+msgstr "検索 API 設定"
+
+msgid "Default cron batch size"
+msgstr "デフォルトのクーロン・バッチ・サイズ"
+
+msgid "Maximum runtime for the cron worker"
+msgstr "クーロン・ワーカーの最大実行時間"
+
+msgid "The default tracker plugin"
+msgstr "デフォルトのトラッカー・プラグイン"
+
+msgid "The number of entities loaded at once when adding items to the tracker for a newly created index"
+msgstr "新規作成されたインデックスについて、トラッカーに項目を追加するときに一度にロードされるエンティティーの数"
+
+msgid "The boost factors available for selection in forms"
+msgstr "フォームで選択できるランキング調整要因"
+
+msgid "The boost factor"
+msgstr "ランキング調整要因"
+
+msgid "Search server"
+msgstr "検索サーバー"
+
+msgid "Backend Plugin ID"
+msgstr "バックエンド・プラグイン ID"
+
+msgid "Entity tracker configuration"
+msgstr "エンティティー・トラッカー構成"
+
+msgid "Indexing order"
+msgstr "インデックス付け順"
+
+msgid "Search API query"
+msgstr "検索 API 照会"
+
+msgid "If the underlying search index has access checks enabled, this option allows you to disable them for this view."
+msgstr "基底の検索インデックスでアクセス・チェックが有効になっている場合に、このオプションを使用すると、このビューに対してこれらのチェックを無効にすることができます。"
+
+msgid "Do not execute additional access checks for all items in the search results."
+msgstr "検索結果のすべての項目に対して追加のアクセス・チェックを行いません。"
+
+msgid "By default, changing an exposed filter would reset all selected facets. This option allows you to prevent this behavior."
+msgstr "デフォルトでは、公開されたフィルターを変更すると、選択されたファセットがすべてリセットされます。このオプションを使用することにより、この動作を防止できます。"
+
+msgid "Query Tags"
+msgstr "クエリーダグ"
+
+msgid "Tag"
+msgstr "タグ"
+
+msgid "Search API rendered item"
+msgstr "検索 API のレンダリング対象項目"
+
+msgid "View modes for each datasource"
+msgstr "各データ・ソースのビュー・モード"
+
+msgid "A list of all the bundles and their configured view mode"
+msgstr "すべてのバンドル、およびそれらに対して構成されたビュー・モードのリスト"
+
+msgid "View mode for the specific bundle"
+msgstr "特定のバンドルのビュー・モード"
+
+msgid "Entity (Search API)"
+msgstr "エンティティー (検索 API)"
+
+msgid "Time-based caching (Search API)"
+msgstr "時間に基づくキャッシュ (検索 API)"
+
+msgid "Cache options"
+msgstr "キャッシュオプション"
+
+msgid "The length of time raw query results should be cached."
+msgstr "クエリーをキャッシュする時間の長さ。"
+
+msgid "Length of time in seconds raw query results should be cached."
+msgstr "未加工のクエリ結果をキャッシュする時間（秒）。"
+
+msgid "The length of time rendered HTML output should be cached."
+msgstr "生成された HTML の出力をキャッシュする時間の長さ。"
+
+msgid "Length of time in seconds rendered HTML output should be cached."
+msgstr "レンダリングされたHTML出力をキャッシュする時間（秒）。"
+
+msgid "Tag-based caching (Search API)"
+msgstr "タグに基づくキャッシュ (検索 API)"
+
+msgid "Search API all taxonomy terms"
+msgstr "検索 API のすべての分類用語"
+
+msgid "Search API date"
+msgstr "検索 API の日付"
+
+msgid "Search API more like this"
+msgstr "検索 API の類似検索"
+
+msgid "Parse mode"
+msgstr "解析モード"
+
+msgid "Conjunction"
+msgstr "結合"
+
+msgid "Field"
+msgstr "フィールド"
+
+msgid "Search API taxonomy term"
+msgstr "検索 API のタクソノミー用語"
+
+msgid "Search API standard"
+msgstr "検索 API 標準"
+
+msgid "Link to item"
+msgstr "項目にリンク"
+
+msgid "Use highlighted field data"
+msgstr "強調表示されたフィールド・データを使用する"
+
+msgid "Handling of multiple values"
+msgstr "複数値の処理"
+
+msgid "Separator for multiple values"
+msgstr "複数値の区切り文字"
+
+msgid "Search API boolean"
+msgstr "検索 API のブール値"
+
+msgid "Search API bulk form"
+msgstr "API バルク・フォームの検索"
+
+msgid "Search API entity reference"
+msgstr "検索 API のエンティティー参照"
+
+msgid "Display settings"
+msgstr "表示設定"
+
+msgid "Display settings for bundle"
+msgstr "バンドルの表示設定"
+
+msgid "Display method"
+msgstr "表示方法"
+
+msgid "View mode"
+msgstr "ビュー・モード"
+
+msgid "Search API operations links"
+msgstr "検索 API 操作のリンク"
+
+msgid "Search API entity field"
+msgstr "検索 API のエンティティー・フィールド"
+
+msgid "Use entity field rendering"
+msgstr "エンティティー・フィールドのレンダリングを使用"
+
+msgid "Fallback handler"
+msgstr "フォールバック・ハンドラー"
+
+msgid "Options for fallback handler"
+msgstr "フォールバック・ハンドラーのオプション"
+
+msgid "Pluralized strings"
+msgstr "複数形のストリング"
+
+msgid "Singular/Plural string"
+msgstr "単数形/複数形ストリング"
+
+msgid "Search API datasource"
+msgstr "検索 API データ・ソース"
+
+msgid "Search API fulltext search"
+msgstr "検索 API のフルテキスト検索"
+
+msgid "Minimum search string length"
+msgstr "検索ストリングの最小の長さ"
+
+msgid "Fields to search on"
+msgstr "検索対象フィールド"
+
+msgid "Field name"
+msgstr "フィールド名"
+
+msgid "Exposed"
+msgstr "外部設置"
+
+msgid "Expose the list of searched fields"
+msgstr "検索対象フィールドのリストを公開"
+
+msgid "Placeholder"
+msgstr "プレースホルダー"
+
+msgid "Searched fields identifier"
+msgstr "検索対象フィールドの識別子"
+
+msgid "Search API language"
+msgstr "検索 API の言語"
+
+msgid "Search API numeric"
+msgstr "検索 API の数値"
+
+msgid "Search API options"
+msgstr "検索 API オプション"
+
+msgid "Search API string"
+msgstr "検索 API のストリング"
+
+msgid "Search API text"
+msgstr "検索 API のテキスト"
+
+msgid "Search API user"
+msgstr "検索 API ユーザー"
+
+msgid "Value"
+msgstr "値"
+
+msgid "Do not execute access checks for entities referenced via this relationship."
+msgstr "この関係を通じて参照されたエンティティーに対してアクセス・チェックを行いません。"
+
+msgid "Enabled"
+msgstr "有効"
+
+msgid "Disabled"
+msgstr "無効"
+
+msgid "Fulltext field database columns updated."
+msgstr "フルテキスト・フィールドのデータベース列が更新されました。"
+
+msgid "Primary keys added to all denormalized index tables."
+msgstr "すべての非正規化インデックス表に 1 次キーが追加されました。"
+
+msgid "Updated 1 server."
+msgid_plural "Updated @count servers."
+msgstr[0] "@count 台のサーバーを更新しました。"
+
+msgid "Database Search"
+msgstr "データベース検索"
+
+msgid "Offers an implementation of the Search API that uses database tables for indexing content."
+msgstr "コンテンツのインデックス付けにデータベース表を使用する検索 API の実装を提供します。"
+
+msgid "Search API DB settings"
+msgstr "検索 API DB 設定"
+
+msgid "Name of the database we are connecting to"
+msgstr "接続先データベースの名前"
+
+msgid "Minimum length of indexed words"
+msgstr "インデックス・ワードの最小の長さ"
+
+msgid "The matching mode – \"words\", \"prefix\" or \"partial\""
+msgstr "一致モード – 「単語」、「接頭部」、または「部分」"
+
+msgid "Autocomplete configuration"
+msgstr "オートコンプリート構成"
+
+msgid "Suggest suffix"
+msgstr "末尾の候補を表示"
+
+msgid "Suggest words"
+msgstr "単語の候補を表示"
+
+msgid "Maximum occurrences of a term until autocomplete suggestions ignores it"
+msgstr "オートコンプリートによる候補の表示が用語を無視し始める用語の最大オカレンス"
+
+msgid "Database Search Defaults"
+msgstr "データベース検索のデフォルト"
+
+msgid "Enable this module for a best-practice default setup of Search API with the Database backend. After installation it is recommended to uninstall this module again for performance reasons. The provided configuration will not be removed."
+msgstr "このモジュールを有効化すると、データベースをバックエンドに持つ検索 API に、ベスト・プラクティスのデフォルト設定を適用できます。パフォーマンス上の理由により、このモジュールをインストールした後、アンインストールすることをお勧めします。提供済みの構成は削除されません。"
+
+msgid "Database"
+msgstr "データベース"
+
+msgid "Select the database key and target to use for storing indexing information in. Cannot be changed after creation."
+msgstr "インデックス付け情報の保管先として使用するデータベース・キーとターゲットを選択します。作成後は変更できません。"
+
+msgid "Minimum word length"
+msgstr "単語の最小の長さ"
+
+msgid "The minimum number of characters a word must consist of to be indexed"
+msgstr "単語がインデックス付けの対象となるために必要な最小文字数"
+
+msgid "Partial matching"
+msgstr "部分一致"
+
+msgid "Match whole words only"
+msgstr "単語全体のみの一致"
+
+msgid "Match on parts of a word"
+msgstr "単語の部分の一致"
+
+msgid "Match words starting with given keywords"
+msgstr "指定されたキーワードで始まる単語の一致"
+
+msgid "Autocomplete settings"
+msgstr "オートコンプリート設定"
+
+msgid "These settings allow you to configure how suggestions are computed when autocompletion is used. If you are seeing many inappropriate suggestions you might want to deactivate the corresponding suggestion type. You can also deactivate one method to speed up the generation of suggestions."
+msgstr "これらの設定を使用すると、オートコンプリート使用時の候補の計算方法を構成できます。不適切な候補が多く表示される場合は、該当する候補タイプを非アクティブ化できます。候補の生成速度を上げるために、特定の方法を非アクティブ化することもできます。"
+
+msgid "Suggest word endings"
+msgstr "単語の末尾を提案"
+
+msgid "Suggest endings for the currently entered word."
+msgstr "現在入力されている単語の末尾を提案します。"
+
+msgid "Suggest additional words"
+msgstr "追加の単語を提案"
+
+msgid "Suggest additional words the user might want to search for."
+msgstr "ユーザーが検索しようとしている可能性のある追加の単語を提案します。"
+
+msgid "None selected yet"
+msgstr "まだ選択されていません"
+
+msgid "none"
+msgstr "なし"
+
+msgid "Autocomplete suggestions"
+msgstr "オートコンプリート候補"
+
+msgid "No valid search keys were present in the query."
+msgstr "照会内に有効な検索キーがありませんでした。"
+
+msgid "Unknown sort order @order. Assuming \"@default\"."
+msgstr "ソート順 @order が不明です。\"@default\" を想定します。"
+
+msgid "Unknown facet field @field."
+msgstr "ファセット・フィールド @field が不明です。"
+
+msgid "Facets on location fields are currently not supported."
+msgstr "ロケーション・フィールドのファセットは現在サポートされていません。"
+
+msgid "Unknown field @field: please check (and re-save) the index's fields settings."
+msgstr "フィールド @field が不明です。インデックスのフィールド設定を確認 (および再保存) してください。"
+
+msgid "An overlong word (more than 50 characters) was encountered while indexing: %word.<br />Since database search servers currently cannot index words of more than 50 characters, the word was truncated for indexing. If this should not be a single word, please make sure the \"Tokenizer\" processor is enabled and configured correctly for index %index."
+msgstr " %word のインデックス付けの実行中に (50 文字を超える) 長すぎる単語を検出しました。<br />データベース検索サーバーは、現在 50 文字を超える単語にインデックスを付けることができないため、この単語はインデックス付けのために切り捨てられました。これが単一の単語でない場合は、「トークナイザー」プロセッサーが有効化され、インデックス %index 用に正しく構成されていることを確認してください。"
+
+msgid "An overlong value (more than 255 characters) was encountered while indexing: %value.<br />Database search servers currently cannot index such values correctly – the value was therefore trimmed to the allowed length."
+msgstr "%value のインデックス付けの実行中に (255 文字を超える) 長すぎる値を検出しました。<br />データベース検索サーバーは、現在このような値に正しくインデックスを付けることができません。このため、値は許容される長さにトリムされました。"
+
+msgid "Error while adding facets: only \"item_id\" field should be used, used are: @fields."
+msgstr "ファセットの追加中にエラーが発生しました。使用できるのは \"item_id\" フィールドだけですが、@fields が使用されました。"
+
+msgid "Indexes items in the database. Supports several advanced features, but should not be used for large sites."
+msgstr "データベース内の項目にインデックスを付けます。いくつかの拡張機能がサポートされていますが、大規模サイトには使用しないでください。"
+
+msgid "Completed about @percentage% of the indexing operation (@current of @total)."
+msgstr "インデックス付け操作の約 @percentage% を完了しました (@current/@total)。"
+
+msgid "An error occurred during indexing on @index: @message"
+msgstr "@indexでの索引付け中にエラーが発生しました: @message"
+
+msgid "Couldn't index items. Check the logs for details."
+msgstr "項目にインデックス付けできませんでした。詳しくは、ログを確認してください。"
+
+msgid "An error occurred while trying to index items. Check the logs for details."
+msgstr "項目にインデックス付けしようとしているときにエラーが発生しました。詳しくは、ログを確認してください。"
+
+msgid "Successfully indexed 1 item."
+msgid_plural "Successfully indexed @count items."
+msgstr[0] "@count 個の項目に正常にインデックス付けしました。"
+
+msgid "1 item could not be indexed. Check the logs for details."
+msgid_plural "@count items could not be indexed. Check the logs for details."
+msgstr[0] "@count 個の項目にインデックス付けできませんでした。詳しくは、ログを確認してください。"
+
+msgid "The required Node module is not installed on your site. Database Search Defaults module could not be installed."
+msgstr "必要な Node モジュールがサイトにインストールされていません。データベース検索のデフォルト・モジュールはインストールされませんでした。"
+
+msgid "Content type @content_type not found. Database Search Defaults module could not be installed."
+msgstr "コンテンツ・タイプ @content_type が見つかりませんでした。データベース検索のデフォルト・モジュールはインストールされませんでした。"
+
+msgid "Field @field in content type @node_type not found. Database Search Defaults module could not be installed"
+msgstr "コンテンツ・タイプ @node_type でフィールド @field が見つかりませんでした。データベース検索のデフォルト・モジュールはインストールされませんでした。"
+
+msgid "It looks like the default setup provided by this module already exists on your site. Cannot re-install module."
+msgstr "このモジュールで提供されたデフォルトのセットアップは、ご使用のサイトにすでに存在しているようです。モジュールを再インストールできません。"
+
+msgid "Type"
+msgstr "タイプ"
+
+msgid "Index"
+msgstr "インデックス"
+
+msgid "ID: @name"
+msgstr "ID: @name"
+
+msgid "Unavailable"
+msgstr "利用不可"
+
+msgid "Indexes not currently associated with any server"
+msgstr "インデックスは現在サーバーに関連付けられていません"
+
+msgid "There are no servers or indexes defined. For a quick start, we suggest you install the Database Search Defaults module."
+msgstr "サーバーまたはインデックスが定義されていません。すぐに使い始めるには、「データベース検索のデフォルト」モジュールをインストールすることをお勧めします。"
+
+msgid "There are no servers or indexes defined."
+msgstr "サーバーまたはインデックスが定義されていません。"
+
+msgid "Deleting some of the items on the server failed. Check the logs for details. The server was still removed."
+msgstr "サーバー上の一部の項目を削除できませんでした。詳しくは、ログを確認してください。ただしサーバーは削除されました。"
+
+msgid "My backend"
+msgstr "マイ・バックエンド"
+
+msgid "Searches with SuperSearch™."
+msgstr "SuperSearch™ を使用して検索します。"
+
+msgid "The search index %name has been enabled."
+msgstr "検索インデックス %name が有効になりました。"
+
+msgid "The search index %name could not be enabled. Check if its server is set and enabled."
+msgstr "検索インデックス %name を有効にできませんでした。サーバーが設定および有効化されているかどうか確認してください。"
+
+msgid "The field %field is locked and cannot be removed."
+msgstr "フィールド %field はロックされており、削除できません。"
+
+msgid "The search server %name has been enabled."
+msgstr "検索サーバー %name が使用可能になりました。"
+
+msgid "My data type"
+msgstr "マイ・データ型"
+
+msgid "Some information about my data type"
+msgstr "マイ・データ型に関する一部の情報"
+
+msgid "My datasource"
+msgstr "マイ・データ・ソース"
+
+msgid "Exposes my custom items as a datasource."
+msgstr "マイ・カスタム項目をデータ・ソースとして公開します。"
+
+msgid "My display"
+msgstr "マイ表示"
+
+msgid "A few words about this search display"
+msgstr "この検索表示を表すいくつかの単語"
+
+msgid "Could not load the following items on index %index: @items."
+msgstr "インデックス %index 上の以下の項目をロードできませんでした: @items。"
+
+msgid "search index"
+msgstr "検索インデックス"
+
+msgid "search indexes"
+msgstr "検索インデックス"
+
+msgid "Trying to delete items from index %index which is marked as read-only."
+msgstr "読み取り専用のマークが付けられたインデックス %index から項目を削除しようとしています。"
+
+msgid "Search servers"
+msgstr "検索サーバー"
+
+msgid "search server"
+msgstr "検索サーバー"
+
+msgid "search servers"
+msgstr "検索サーバー"
+
+msgid "Task type"
+msgstr "タスク・タイプ"
+
+msgid "Index ID"
+msgstr "インデックス ID"
+
+msgid "Task data"
+msgstr "タスク・データ"
+
+msgid "Search task"
+msgstr "検索タスク"
+
+msgid "Search tasks"
+msgstr "検索タスク"
+
+msgid "search task"
+msgstr "検索タスク"
+
+msgid "search tasks"
+msgstr "検索タスク"
+
+msgid "Unknown field with ID \"@id\"."
+msgstr "ID \"@id\" のフィールドが不明です。"
+
+msgid "Edit field %field"
+msgstr "フィールド %field の編集"
+
+msgid "Field %field is not configurable."
+msgstr "フィールド %field は構成不可です。"
+
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgid "The field configuration was successfully saved."
+msgstr "フィールド構成が正常に保存されました。"
+
+msgid "Add fields to index %index"
+msgstr "インデックス %index にフィールドを追加"
+
+msgid "Skipped fields"
+msgstr "スキップされたフィールド"
+
+msgid "The following fields cannot be indexed since there is no type mapping for them:"
+msgstr "以下のフィールドは型マッピングがないためにインデックス付けできません。"
+
+msgid "If you think one of these fields should be available for indexing, please report this in the module's <a href=':url'>issue queue</a>. (Make sure to first search for an existing issue for this field.) Please note that entity-valued fields generally can be indexed by either indexing their parent reference field, or their child entity ID field."
+msgstr "これらのフィールドのうちいずれかがインデックス付け可能と考えられる場合は、モジュールの<a href=':url'>問題キュー</a>にこの問題を報告してください。(まずこのフィールドに関する既存の問題を検索してください。) エンティティーによって値が設定されるフィールドの場合は、通常、親参照フィールドか子エンティティー ID フィールドにインデックス付けすることによって、これらのフィールドをインデックス付けできます。"
+
+msgid "General"
+msgstr "全般"
+
+msgid "Add"
+msgstr "追加"
+
+msgid "Done"
+msgstr "完了"
+
+msgid "Field %label was added to the index."
+msgstr "フィールド %label がインデックスに追加されました。"
+
+msgid "Do you want to break the lock on search index %name?"
+msgstr "検索インデックス %name のロックを解除しますか?"
+
+msgid "By breaking this lock, any unsaved changes made by @user will be lost."
+msgstr "ロックを解除すると、@user によって加えられた変更で保存されていないものはすべて失われます。"
+
+msgid "There is no lock on search index %name to break."
+msgstr "検索インデックス %name には解除するロックがありません。"
+
+msgid "The lock has been broken. You may now edit this search index."
+msgstr "ロックが解除されました。この検索インデックスの編集が可能になりました。"
+
+msgid "Are you sure you want to clear the indexed data for the search index %name?"
+msgstr "検索インデックス %name のインデックス付けされたデータをクリアしますか?"
+
+msgid "All indexed data for this index will be deleted from the search server. Searches on this index will not return any results until items are reindexed. This action cannot be undone."
+msgstr "このインデックスのインデックス付けされたすべてのデータが検索サーバーから削除されます。項目を再インデックス付けしない限り、このインデックス使用して検索を行っても結果が返されることはありません。この処理を元に戻すことはできません。"
+
+msgid "All items were successfully deleted from search index %name."
+msgstr "すべての項目が検索インデックス %name から正常に削除されました。"
+
+msgid "Failed to clear the search index %name."
+msgstr "検索インデックス %name をクリアできませんでした。"
+
+msgid "Are you sure you want to delete the search index %name?"
+msgstr "検索インデックス %name を削除しますか?"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "The search index %name has been removed."
+msgstr "検索インデックス %name が削除されました。"
+
+msgid "Are you sure you want to disable the search index %name?"
+msgstr "検索インデックス %name を無効にしますか?"
+
+msgid "Searches on this index will stop working. Indexed data will be deleted from the server and will need to be reindexed when the index is enabled again."
+msgstr "このインデックスによる検索の処理が停止します。インデックス付けされたデータがサーバーから削除され、インデックスを再有効化する場合は再インデックス付けが必要になります。"
+
+msgid "Disable"
+msgstr "無効"
+
+msgid "The search index %name has been disabled."
+msgstr "検索インデックス %name が無効になりました。"
+
+msgid "Manage fields for search index %label"
+msgstr "検索インデックス %label のフィールドの管理"
+
+msgid "Add fields"
+msgstr "フィールドの追加"
+
+msgid "<p>The data type of a field determines how it can be used for searching and filtering. The boost is used to give additional weight to certain fields, for example titles or tags.</p> <p>For information about the data types available for indexing, see the <a href=\":url\">data types table</a> at the bottom of the page.</p>"
+msgstr "<p>フィールドのデータ型はそのデータが検索や絞り込みでどのように使われるかを決めます。ブースト値はタイトルやタグといった特定のフィールドを重み付けしたいときに使用します。</p> <p>インデックスに使用できるデータ型についてはページ最下部にある<a href=\":url\">データ型</a> の表をご覧ください。</p>"
+
+msgid "Data types"
+msgstr "データ型"
+
+msgid "The data types which can be used for indexing fields in this index. Whether a type is supported depends on the backend of the index's server. If a type is not supported, the fallback type that will be used instead is shown, too."
+msgstr "このインデックスにおいてフィールドのインデックスに使えるデータ型です。どのようなデータ型がサポートされているかはインデックスのサーバーのバックエンドによって決まります。もし特定のデータ型がサポートされていなければ、その代わりに使われるデータ型が表示されます。"
+
+msgid "Some of the used data types aren't supported by the server's backend. See the <a href=\":url\">data types table</a> to find out which types are supported."
+msgstr "使用されたデータ型の一部がサーバーのバックエンドでサポートされていません。サポートされる型については、<a href=\":url\">データ型の表</a>を参照してください。"
+
+msgid "Label"
+msgstr "ラベル"
+
+msgid "Machine name"
+msgstr "システム内部名称"
+
+msgid "Property path"
+msgstr "プロパティー・パス"
+
+msgid "Operations"
+msgstr "操作"
+
+msgid "Remove"
+msgstr "削除"
+
+msgid "Save changes"
+msgstr "変更を保存"
+
+msgid "%field_id is a reserved value and cannot be used as the machine name of a normal field."
+msgstr "%field_id は予約済みの値であるため、通常のフィールドのシステム内部名称として使用できません。"
+
+msgid "Field IDs have to contain non-underscore characters."
+msgstr "フィールド ID にはアンダースコアー以外の文字を含める必要があります。"
+
+msgid "Field IDs must contain only lowercase letters, numbers and underscores."
+msgstr "フィールド ID には、小文字、数字、およびアンダースコアーのみを使用する必要があります。"
+
+msgid "Field ID %field_id is used multiple times. Field IDs must be unique."
+msgstr "フィールド ID %field_id は複数回にわたって使用されています。フィールド ID は固有でなければなりません。"
+
+msgid "The field with ID %field_id does not exist anymore."
+msgstr "ID %field_id のフィールドはもう存在しません。"
+
+msgid "The type of field %field (%field_id) cannot be changed."
+msgstr "フィールド %field (%field_id) のタイプは変更できません。"
+
+msgid "The changes were successfully saved."
+msgstr "変更が保存されました。"
+
+msgid "All content was scheduled for <a href=\":url\">reindexing</a> so the new settings can take effect."
+msgstr "新しい構成を反映するため、全てのコンテンツが<a href=\":url\">再インデックス</a>待ちの状態になりました。"
+
+msgid "Add search index"
+msgstr "検索インデックスの追加"
+
+msgid "Edit search index %label"
+msgstr "検索インデックス %label の編集"
+
+msgid "Index name"
+msgstr "インデックス名"
+
+msgid "Enter the displayed name for the index."
+msgstr "このインデックスの表示名を入力してください。"
+
+msgid "Datasources"
+msgstr "データ・ソース"
+
+msgid "Select one or more datasources of items that will be stored in this index."
+msgstr "このインデックスに保存するアイテムのデータソースを一つ以上選択してください。"
+
+msgid "Configure"
+msgstr "設定"
+
+msgid "Select the type of tracker which should be used for keeping track of item changes."
+msgstr "項目の変更を追跡するために使用するトラッカーのタイプを選択します。"
+
+msgid "Select the server this index should use. Indexes cannot be enabled without a connection to a valid, enabled server."
+msgstr "このインデックスが使用するサーバーを選択してください。利用可能なサーバーへの接続が無くてはインデックスを行うことはできません。"
+
+msgid "- No server -"
+msgstr "- サーバーなし -"
+
+msgid "Only enabled indexes can be used for indexing and searching. This setting will only take effect if the selected server is also enabled."
+msgstr "インデックスや検索に使うにはインデックスを有効化する必要があります。この設定はサーバーも有効化されている場合のみ有効になります。"
+
+msgid "Enter a description for the index."
+msgstr "このインデックスの説明を入力してください。"
+
+msgid "Index options"
+msgstr "インデックス・オプション"
+
+msgid "Read only"
+msgstr "表示のみ"
+
+msgid "Do not write to this index or track the status of items in this index."
+msgstr "このインデックスへの書き込み、もしくはこのインデックスへのアイテムのステータスのトラッキングを行わないようにします。"
+
+msgid "Immediately index new or updated items instead of waiting for the next cron run. This might have serious performance drawbacks and is generally not advised for larger sites."
+msgstr "次回クーロン実行を待機せずに、新規項目または更新された項目に直ちにインデックスを付けます。この設定はパフォーマンスに深刻な悪影響を及ぼす可能性があるため、一般に大規模サイトに対しては推奨されません。"
+
+msgid "Automatically queue items for re-indexing if one of the field values indexed from entities they reference is changed. (For instance, when indexing the name of a taxonomy term in a Content index, this would lead to re-indexing when the term’s name changes.) Enabling this setting can lead to performance problems on large sites when saving some types of entities (an often-used taxonomy term in our example). However, when the setting is disabled, fields from referenced entities can go stale in the search index and other steps should be taken to prevent this."
+msgstr "参照元のエンティティーから索引付けされたフィールド値の 1 つが変更された場合に、再索引付けのために項目を自動的にキューに入れます。 (例えば、コンテンツ索引内の分類用語の名前に索引を付けると、用語の名前が変更されたときに再索引付けが行われます。) この設定を有効にすると、一部のタイプのエンティティー (この例ではよく使用される分類用語) を保存するときに、大規模サイトでパフォーマンス上の問題が発生する可能性があります。 ただし、この設定を無効にすると、参照先のエンティティーのフィールドが検索索引で不整合になる可能性があるため、これを回避するために他のステップを実行する必要があります。"
+
+msgid "Set how many items will be indexed at once when indexing items during a cron run. \"0\" means that no items will be indexed by cron for this index, \"-1\" means that cron should index all items at once."
+msgstr "クーロン実行中に項目のインデックス付けを行うときに、一度にインデックス付けを行う項目の数を設定します。「0」を設定すると、クーロンによってこのインデックスの項目のインデックス付けが行われません。「-1」を設定すると、クーロンによって一度にすべての項目にインデックスが付けられます。"
+
+msgid "Configure the %datasource datasource"
+msgstr "データソース %datasource の構成"
+
+msgid "Please configure the used datasources."
+msgstr "使用するデータ・ソースを構成してください。"
+
+msgid "The tracker plugin is missing or invalid."
+msgstr "トラッカー・プラグインが見つからないか無効です。"
+
+msgid "Configure the %plugin tracker"
+msgstr "%plugin トラッカーの構成"
+
+msgid "Please configure the used tracker."
+msgstr "使用するトラッカーを構成してください。"
+
+msgid "Save and add fields"
+msgstr "保存しフィールドを追加"
+
+msgid "The index was successfully saved."
+msgstr "インデックスが正常に保存されました。"
+
+msgid "The index could not be saved."
+msgstr "インデックスを保存できませんでした。"
+
+msgid "It is recommended not to use this processor with the selected server."
+msgstr "このプロセッサーは選択したサーバーとともに使用しないことをお勧めします。"
+
+msgid "Manage processors for search index %label"
+msgstr "検索インデックス %label のプロセッサーの管理"
+
+msgid "Configure processors which will pre- and post-process data at index and search time. Find more information on the <a href=\":url\" target=\"_blank\">processors documentation page</a>."
+msgstr "インデックス付けと検索を行うときに、データの前処理と後処理を行うプロセッサーを構成します。詳しくは、<a href=\":url\" target=\"_blank\">プロセッサーの資料ページ</a>を参照してください。"
+
+msgid "Processor order"
+msgstr "プロセッサーの順序"
+
+msgid "Weight for processor %title"
+msgstr "プロセッサー %title の重みづけ"
+
+msgid "The indexing workflow was successfully edited."
+msgstr "インデックス付けのワークフローが正常に編集されました。"
+
+msgid "No values were changed."
+msgstr "値は変更されませんでした。"
+
+msgid "Processor %id specifies a non-existing class %class."
+msgstr "プロセッサー %id が存在しないクラス %class を指定しています。"
+
+msgid "Are you sure you want to rebuild the tracking data for the search index %name?"
+msgstr "検索インデックス %name のトラッキング・データを再作成しますか?"
+
+msgid "<p>The complete information about existing and indexed items for this index will be deleted and will have to be rebuilt.</p><p>This should usually not be necessary, but can help if some existing items aren't contained in the index's tracking data for whatever reason (in other words, when the total number of items to be indexed is less than it should be).</p><p>This action cannot be undone.</p>"
+msgstr "<p>このインデックスの既存のインデックス付けされた項目に関するすべての情報が削除され、再作成しなければならなくなります。</p><p>これは通常不要ですが、何らかの理由でインデックスのトラッキング・データに既存の項目が含まれていない (言い換えると、インデックス付けする項目の総数が本来より少ない) 場合に役立つことがあります。</p><p>この処理を元に戻すことはできません。</p>"
+
+msgid "The tracking information for search index %name will be rebuilt."
+msgstr "検索インデックス %name のトラッキング情報が再作成されます。"
+
+msgid "Are you sure you want to reindex the search index %name?"
+msgstr "検索インデックス %name の再インデックス付けを行いますか?"
+
+msgid "Indexed data will remain on the search server until all items have been reindexed. Searches on this index will continue to yield results. This action cannot be undone."
+msgstr "インデックス付けされたデータは、すべての項目に対する再インデックス付けが完了するまで、検索サーバー上に残ります。このインデックスに基づく検索は引き続き結果を生成します。この処理を元に戻すことはできません。"
+
+msgid "The search index %name was successfully queued for reindexing."
+msgstr "検索索引 %name が再インデックス付けのために正常にキューに入れられました。"
+
+msgid "Failed to queue items for reindexing on search index %name."
+msgstr "検索索引 %name で再インデックス付けのために項目をキューに入れることができませんでした。"
+
+msgid "Track items for index"
+msgstr "インデックスの項目の追跡"
+
+msgid "Not all items have been tracked for this index. This means the displayed index status is incomplete and not all items will currently be indexed."
+msgstr "このインデックスについて一部の項目が追跡されていません。このため、表示されるインデックスの状況は不完全であり、現時点で一部の項目にインデックスが付けられません。"
+
+msgid "Track now"
+msgstr "今すぐ追跡"
+
+msgid "Start indexing now"
+msgstr "今すぐにインデックスを行う"
+
+msgid "all"
+msgstr "すべて"
+
+msgid "all"
+msgstr "すべて"
+
+msgid "all"
+msgstr "すべて"
+
+msgid "all"
+msgstr "すべて"
+
+msgid "Index @limit items in batches of @batch_size items"
+msgstr "@limit 個のアイテムを @batch_size 個ごとのバッチ処理でインデックスする"
+
+msgid "Number of items to index"
+msgstr "インデックス付けを行う項目数"
+
+msgid "Number of items per batch run"
+msgstr "バッチ実行 1 回あたりの項目数"
+
+msgid "Index now"
+msgstr "今すぐインデックス付け"
+
+msgid "Queue all items for reindexing"
+msgstr "全てのアイテムをインデックス待ちの状態にする"
+
+msgid "Clear all indexed data"
+msgstr "全てのインデックスデータを削除する"
+
+msgid "Rebuild tracking information"
+msgstr "トラッキング情報の再作成"
+
+msgid "Enter a non-zero integer. Use \"-1\" or \"@all\" for \"all items\"."
+msgstr "ゼロ以外の整数を入力します。「すべての項目」の場合は「-1」または「@all」を使用します。"
+
+msgid "Failed to create a batch, please check the batch size and limit."
+msgstr "バッチを作成できませんでした。バッチ・サイズと制限を確認してください。"
+
+msgid "Are you sure you want to clear all indexed data from the search server %name?"
+msgstr "本当に全てのインデックスデータを検索サーバー%nameから削除しますか？"
+
+msgid "This will permanently remove all data currently indexed on this server for indexes that aren't read-only. Items are queued for reindexing. Until reindexing occurs, searches for the affected indexes will not return any results. This action cannot be undone."
+msgstr "これにより、読み取り専用でないインデックスについて現在インデックス付けされているこのサーバー上のすべてのデータが完全に削除されます。項目は再インデックス付けのキューに入れられます。再インデックス付けを行うまで、影響を受けるインデックスに対する検索は結果を返しません。この処理を元に戻すことはできません。"
+
+msgid "All indexed data was successfully deleted from the server."
+msgstr "すべてのインデックス付けされたデータがサーバーから正常に削除されました。"
+
+msgid "Indexed data could not be cleared for some indexes. Check the logs for details."
+msgstr "一部のインデックスについてインデックス付けされたデータをクリアできませんでした。詳しくは、ログを確認してください。"
+
+msgid "Failed to mark the following indexes for reindexing: @indexes. Check the logs for details."
+msgstr "以下のインデックスに再インデックス付けのマークを付けることができませんでした: @indexes。詳しくは、ログを確認してください。"
+
+msgid "Are you sure you want to delete the search server %name?"
+msgstr "検索サーバー %name を削除しますか?"
+
+msgid "Deleting a server will disable all its indexes and their searches."
+msgstr "サーバーを削除すると、そのすべてのインデックスとそれらの検索が無効になります。"
+
+msgid "The search server %name has been deleted."
+msgstr "検索サーバー %name が削除されました。"
+
+msgid "Are you sure you want to disable the search server %name?"
+msgstr "検索サーバー %name を無効にしますか?"
+
+msgid "Disabling a server will also disable all attached indexes, clearing their tracking tables and indexed data. When re-enabling the server and its indexes, all data will have to be re-indexed. This action cannot be undone."
+msgstr "サーバーを無効にすると、接続されたすべてのインデックスも無効になり、それらのインデックスのトラッキング表とインデックス付けされたデータがクリアされます。サーバーとそのインデックスを再有効化するときは、すべてのデータに再インデックス付けを行う必要があります。この処理を元に戻すことはできません。"
+
+msgid "The search server %name has been disabled."
+msgstr "検索サーバー %name が無効になりました。"
+
+msgid "Add search server"
+msgstr "検索サーバーの追加"
+
+msgid "Edit search server %label"
+msgstr "検索サーバー %label の編集"
+
+msgid "Server name"
+msgstr "サーバー名"
+
+msgid "Enter the displayed name for the server."
+msgstr "サーバーの表示名を入力します。"
+
+msgid "Only enabled servers can index items or execute searches."
+msgstr "項目へのインデックス付けや検索を実行できるのは有効なサーバーだけです。"
+
+msgid "Enter a description for the server."
+msgstr "サーバーの説明を入力します。"
+
+msgid "Backend"
+msgstr "バックエンド"
+
+msgid "Choose a backend to use for this server."
+msgstr "このサーバーに使用するバックエンドを選択します。"
+
+msgid "There are no backend plugins available for the Search API. Please install a <a href=\":url\">module that provides a backend plugin</a> to proceed."
+msgstr "検索 API が使用できるバックエンド・プラグインがありません。続行するには、<a href=\":url\">バックエンド・プラグインを提供するモジュール</a>をインストールしてください。"
+
+msgid "Please configure the selected backend."
+msgstr "選択したバックエンドを構成してください。"
+
+msgid "Configure %plugin backend"
+msgstr "%plugin バックエンドの構成"
+
+msgid "The backend plugin is missing or invalid."
+msgstr "バックエンド・プラグインが見つからないか無効です。"
+
+msgid "The server was successfully saved."
+msgstr "サーバーが正常に保存されました。"
+
+msgid "The server could not be saved."
+msgstr "サーバーを保存できませんでした。"
+
+msgid "Pending server tasks"
+msgstr "保留中のサーバー・タスク"
+
+msgid "Pending tasks are created when operations on the server, such as deleting one or more items, cannot be executed because the server is currently unavailable (which will usually also create an entry in the Drupal logs). They are automatically tried again before any other operation is executed and the operation is aborted if the tasks could still not be executed, or if there are too many pending tasks to be executed in a single page request. In the latter case, you can use this form to manually execute all tasks and thus unblock the server again."
+msgstr "保留中のタスクが作成されるのは、サーバーが現時点で使用不可であるために、サーバー上の操作 (1 つ以上の項目の削除など) を実行できないときです (この場合、通常は Drupal のログにもエントリーが作成されます)。これらのタスクは、他の操作が実行される前に自動的に再試行され、タスクを依然として実行できなかった場合、または保留中のタスクが多すぎて単一のページ要求で実行できない場合は、その操作が打ち切られます。後者の場合は、このフォームを使用して手動ですべてのタスクを実行することで、サーバーを再度ブロック解除できます。"
+
+msgid "Execute tasks now"
+msgstr "タスクを今すぐ実行"
+
+msgid "Delete all indexed data on this server"
+msgstr "このサーバー上のすべてのインデックス付けされたデータを削除"
+
+msgid "There is currently @count task pending for this server."
+msgid_plural "There are currently @count tasks pending for this server."
+msgstr[0] "このサーバーの保留中のタスクは現時点で @count 個です。"
+
+msgid "This index is being edited by user @user, and is therefore locked from editing by others. This lock is @age old. Click here to <a href=\":url\">break this lock</a>."
+msgstr "このインデックスはユーザー @user が編集中であるため、他のユーザーが編集できないようにロックされています。このロックは@ageが経過しています。 <a href=\":url\">このロックを解除</a>するにはこちらをクリックしてください。"
+
+msgid "You have unsaved changes."
+msgstr "変更はまだ保存されていません。"
+
+msgid "My parse mode"
+msgstr "マイ解析モード"
+
+msgid "Some information about my parse mode"
+msgstr "マイ解析モードに関するいくつかの情報"
+
+msgid "HTML text (Search API)"
+msgstr "HTML テキスト (検索 API)"
+
+msgid "Text (Search API)"
+msgstr "テキスト (検索 API)"
+
+msgid "Boolean"
+msgstr "真偽値"
+
+msgid "Boolean fields can only have one of two values: true or false."
+msgstr "真偽値には2つの値のうちの1つを入れることができます（trueもしくはfalse）。"
+
+msgid "Error while parsing date/time value \"@value\": @error."
+msgstr "日付/時刻値「@value」の構文解析中にエラーが発生しました: @error。"
+
+msgid "Date"
+msgstr "日付"
+
+msgid "Represents points in time."
+msgstr "ポイント・イン・タイムを表します。"
+
+msgid "Decimal"
+msgstr "固定小数点数値"
+
+msgid "Contains numeric, typically non-integer values."
+msgstr "数値 (通常は非整数値) を設定します。"
+
+msgid "Integer"
+msgstr "整数"
+
+msgid "Contains integer values."
+msgstr "整数値を取ります。"
+
+msgid "String"
+msgstr "文字列"
+
+msgid "String fields are used for short, keyword-like character strings where you only want to find complete field values, not individual words."
+msgstr "文字列フィールドは短いキーワードのような文字列に対して、個々の単語ではなく完全なフィールド値を検索したい場合に使用します。"
+
+msgid "Fulltext"
+msgstr "フルテキスト"
+
+msgid "Fulltext fields are analyzed fields which are made available for fulltext search. This data type should be used for any fields (usually with free text input by users) which you want to search for individual words."
+msgstr "フルテキストフィールドはフルテキスト検索に利用可能なフィールドです。このデータ型はテキスト内の単語を検索したい場合に使うことが推奨されます。通常はユーザーが自由にテキスト入力できるフィールドに対して使われます。"
+
+msgid "Which bundles should be indexed?"
+msgstr "どのバンドルをインデックスしますか？"
+
+msgid "Only those selected"
+msgstr "選択したもののみ"
+
+msgid "All except those selected"
+msgstr "選択したもの以外"
+
+msgid "Which languages should be indexed?"
+msgstr "どの言語をインデックスしますか？"
+
+msgid "Go to changed %entity_type with ID \"@entity_id\""
+msgstr "ID \"@entity_id\" の変更済み %entity_type に移動"
+
+msgid "Provides %entity_type entities for indexing and searching."
+msgstr "%entity_typeエンティティに対してインデックスと検索を行います。"
+
+msgid "View %view_name, display %display_title"
+msgstr "ビュー %view_name、表示 %display_title"
+
+msgid "%view_description – Represents the display %display_title of view %view_name."
+msgstr "%view_description – ビュー %view_name の表示 %display_title を表します。"
+
+msgid "Represents the display %display_title of view %view_name."
+msgstr "ビュー %view_name の表示 %display_title を表します。"
+
+msgid "Direct query"
+msgstr "直接照会"
+
+msgid "Don't parse the query, just hand it to the search server unaltered. Might fail if the query contains syntax errors in regard to the specific server's query syntax."
+msgstr "照会を解析せず、検索サーバーにそのままの形で渡します。特定のサーバーの照会構文に関して構文エラーがある場合は、失敗する可能性があります。"
+
+msgid "Single phrase"
+msgstr "単一の句"
+
+msgid "The query is interpreted as a single phrase, possibly containing spaces or special characters, that should appear exactly like this in the results."
+msgstr "照会にスペースや特殊文字が含まれていても、その照会が単一の句として解釈され、結果でそのまま表示されます。"
+
+msgid "Multiple words"
+msgstr "複合語"
+
+msgid "Select the fields to which hierarchical data should be added."
+msgstr "階層データを追加するフィールドを選択します。"
+
+msgid "Hierarchy property to use"
+msgstr "使用する階層プロパティー"
+
+msgid "This field has several nested properties which look like they might contain hierarchy data for the field. Please pick the one that should be used."
+msgstr "このフィールドには、このフィールドの階層データを含むと思われる複数のネストされたプロパティーがあります。使用するものを選択してください。"
+
+msgid "You need to select a nested property to use for the hierarchy data."
+msgstr "階層データに使用する、ネストされたプロパティーを選択する必要があります。"
+
+msgid "You need to select at least one field for which to add hierarchy data."
+msgstr "階層データを追加するフィールドを少なくとも 1 つ選択する必要があります。"
+
+msgid "Index hierarchy"
+msgstr "階層のインデックス付け"
+
+msgid "Allows the indexing of values along with all their ancestors for hierarchical fields (like taxonomy term references)"
+msgstr "階層フィールドについて、値とそのすべての上位値にインデックス付けできるようにします (タクソノミー用語の参照など)。"
+
+msgid "URI"
+msgstr "URI"
+
+msgid "A URI where the item can be accessed"
+msgstr "項目にアクセスできる URI"
+
+msgid "URL field"
+msgstr "URL フィールド"
+
+msgid "Adds the item's URL to the indexed data."
+msgstr "項目の URL をインデックス付けされたデータに追加します。"
+
+msgid "Aggregated field"
+msgstr "集約フィールド"
+
+msgid "An aggregation of multiple other fields."
+msgstr "他の複数のフィールドを集約したフィールド。"
+
+msgid "Aggregated fields"
+msgstr "集約フィールド"
+
+msgid "Add customized aggregations of existing fields to the index."
+msgstr "既存のフィールドのカスタマイズされた集約をインデックスに追加します。"
+
+msgid "Node access information"
+msgstr "ノード・アクセス権限情報"
+
+msgid "Data needed to apply node access."
+msgstr "ノード・アクセス権限を適用するために必要なデータ。"
+
+msgid "You have no access to any results in this search."
+msgstr "この検索の結果に対するアクセス権限がありません。"
+
+msgid "An illegal user UID was given for node access: @uid."
+msgstr "ノード・アクセス権限に対して無許可のユーザー UID が指定されました: @uid。"
+
+msgid "Content access"
+msgstr "コンテンツへのアクセス権限"
+
+msgid "Adds content access checks for nodes and comments."
+msgstr "ノードおよびコメントに対するコンテンツのアクセス・チェックを追加します。"
+
+msgid "Entity status"
+msgstr "エンティティーの状況"
+
+msgid "Entity type"
+msgstr "エンティティタイプ"
+
+msgid "The indexed item's entity type"
+msgstr "索引付き項目のエンティティー・タイプ"
+
+msgid "Adds the item's entity type to the indexed data."
+msgstr "項目のエンティティー・タイプを索引付きデータに追加します。"
+
+msgid "Highlight returned field data"
+msgstr "返されたフィールド・データを強調表示"
+
+msgid "Select whether returned fields should be highlighted."
+msgstr "返されたフィールドを強調表示するかどうかを選択します。"
+
+msgid "Always"
+msgstr "必須"
+
+msgid "If the server returns fields"
+msgstr "サーバーがフィールドを返した場合"
+
+msgid "Never"
+msgstr "なし"
+
+msgid "Highlight partial matches"
+msgstr "部分一致を強調表示"
+
+msgid "When enabled, matches in parts of words will be highlighted as well."
+msgstr "有効にすると、単語の一部で検出された一致も強調表示されます。"
+
+msgid "Create excerpt"
+msgstr "抜粋の作成"
+
+msgid "Create excerpt even if no search keys are available"
+msgstr "使用可能な検索キーがない場合でも抜粋を作成する"
+
+msgid "Excerpt length"
+msgstr "抜粋の長さ"
+
+msgid "Exclude fields from excerpt"
+msgstr "抜粋の除外フィールド"
+
+msgid "Exclude certain fulltext fields from being included in the excerpt."
+msgstr "特定のフルテキスト・フィールドが抜粋に含まれないようにします。"
+
+msgid "Highlighting prefix"
+msgstr "強調表示のプレフィックス"
+
+msgid "Highlighting suffix"
+msgstr "強調表示のサフィックス"
+
+msgid "… @excerpt … @excerpt …"
+msgstr "… @excerpt … @excerpt …"
+
+msgid "A PCRE error (#%error_num) occurred during results highlighting."
+msgstr "結果の強調表示中に PCRE エラー (#%error_num) が発生しました。"
+
+msgid "Highlight"
+msgstr "強調表示"
+
+msgid "Adds a highlighted excerpt to results and highlights returned fields."
+msgstr "強調表示された抜粋を結果に追加し、返されたフィールドを強調表示します。"
+
+msgid "Index title attribute"
+msgstr "タイトル属性にインデックスを付ける"
+
+msgid "If set, the contents of title attributes will be indexed."
+msgstr "設定すると、タイトル属性の内容にインデックスが付けられます。"
+
+msgid "Index alt attribute"
+msgstr "alt 属性にインデックスを付ける"
+
+msgid "If set, the alternative text of images will be indexed."
+msgstr "設定すると、イメージの代替テキストにインデックスが付けられます。"
+
+msgid "Specify special boost values for certain HTML elements, in <a href=\":url\">YAML file format</a>. The boost values of nested elements are multiplied, elements not mentioned will have the default boost value of 1. Assign a boost of 0 to ignore the text content of that HTML element."
+msgstr "特定の HTML エレメントに対する特別なランキング調整値を <a href=\":url\">YAML ファイル・フォーマット</a>で指定します。ネストされたエレメントのランキング調整値は乗算されます。指定されていないエレメントにはデフォルトのランキング調整値である 1 が割り当てられます。HTML エレメントのテキスト・コンテンツを無視する場合はランキング調整値として 0 を割り当てます。"
+
+msgid "Tags is not a valid YAML map. See @link for information on how to write correctly formed YAML."
+msgstr "タグは有効な YAML マップではありません。正しい形式の YAML を記述する方法については、@link を参照してください。"
+
+msgid "Boost value for tag @tag can't be an array."
+msgstr "タグ @tag のランキング調整値を配列にすることはできません。"
+
+msgid "Boost value for tag @tag must be numeric."
+msgstr "タグ @tag のランキング調整値は数値でなければなりません。"
+
+msgid "Boost value for tag @tag must be non-negative."
+msgstr "タグ @tag のランキング調整値は負でない値にする必要があります。"
+
+msgid "HTML filter"
+msgstr "HTMLフィルター"
+
+msgid "Strips HTML tags from fulltext fields and decodes HTML entities. Use this processor when indexing HTML data – for example, node bodies for certain text formats. The processor also allows to boost (or ignore) the contents of specific elements."
+msgstr "フルテキスト・フィールドから HTML タグを除去し、HTML エンティティーをデコードします。このプロセッサーは HTML データにインデックス付けするときに使用します (特定のテキスト・フォーマットのノード本体など)。このプロセッサーを使用すると、特定のエレメントのコンテンツをランキング調整 (または無視) することもできます。"
+
+msgid "Ignore case"
+msgstr "大/小文字を区別しない"
+
+msgid "Makes searches case-insensitive on selected fields."
+msgstr "選択したフィールドでの検索で大/小文字が区別されないようにします。"
+
+msgid "Strip by regular expression"
+msgstr "正規表現を使用して除去"
+
+msgid "Specify characters which should be removed from fulltext fields and search strings, as a <a href=\":url\">PCRE regular expression</a>."
+msgstr "フルテキスト・フィールドおよび検索ストリングから除去する文字を、<a href=\":url\">PCRE 正規表現</a>の形で指定します。"
+
+msgid "Strip by character property"
+msgstr "文字プロパティーを使用して除去"
+
+msgid "Specify <a href=\":url\">Unicode character properties</a> of characters to be ignored."
+msgstr "無視する文字の <a href=\":url\">Unicode 文字プロパティー</a>を指定します。"
+
+msgid "Ignored character properties"
+msgstr "無視する文字プロパティー"
+
+msgid "The entered text is no valid regular expression."
+msgstr "入力されたテキストは無効な正規表現です。"
+
+msgid "Punctuation, Connector Characters"
+msgstr "句読点、接続文字"
+
+msgid "Punctuation, Dash Characters"
+msgstr "句読点、ダッシュ文字"
+
+msgid "Punctuation, Close Characters"
+msgstr "句読点、クローズ文字"
+
+msgid "Punctuation, Final quote Characters"
+msgstr "句読点、終了引用符文字"
+
+msgid "Punctuation, Initial quote Characters"
+msgstr "句読点、開始引用符文字"
+
+msgid "Punctuation, Other Characters"
+msgstr "句読点、その他の文字"
+
+msgid "Punctuation, Open Characters"
+msgstr "句読点、オープン文字"
+
+msgid "Other, Control Characters"
+msgstr "その他、制御文字"
+
+msgid "Other, Format Characters"
+msgstr "その他、書式制御文字"
+
+msgid "Other, Private Use Characters"
+msgstr "その他、私的利用文字"
+
+msgid "Mark, Spacing Combining Characters"
+msgstr "マーク、スペース結合文字"
+
+msgid "Mark, Enclosing Characters"
+msgstr "マーク、囲み文字"
+
+msgid "Mark, Nonspacing Characters"
+msgstr "マーク、非スペース文字"
+
+msgid "Symbol, Currency Characters"
+msgstr "記号、通貨文字"
+
+msgid "Symbol, Modifier Characters"
+msgstr "記号、修飾文字"
+
+msgid "Symbol, Math Characters"
+msgstr "記号、数学文字"
+
+msgid "Symbol, Other Characters"
+msgstr "記号、その他の文字"
+
+msgid "Separator, Line Characters"
+msgstr "セパレーター、改行文字"
+
+msgid "Separator, Paragraph Characters"
+msgstr "セパレーター、段落文字"
+
+msgid "Separator, Space Characters"
+msgstr "セパレーター、スペース文字"
+
+msgid "Ignore characters"
+msgstr "無視文字"
+
+msgid "Configure types of characters which should be ignored for searches."
+msgstr "検索で無視する文字のタイプを構成します。"
+
+msgid "Language (with fallback)"
+msgstr "言語 (フォールバックあり)"
+
+msgid "The item language, or a language the item is a fallback for."
+msgstr "項目の言語、または項目がフォールバックである言語。"
+
+msgid "Adds the item's language to the indexed data, and considers language fallbacks."
+msgstr "項目の言語をインデックス付けされたデータに追加し、言語フォールバックを考慮します。"
+
+msgid "Ignore"
+msgstr "無視"
+
+msgid "Boost factor"
+msgstr "ランキング調整要因"
+
+msgid "The boost factor the field value gets multiplied with. Setting it to 1.00 means using the field value as a boost as it is."
+msgstr "フィールド値が乗算されるランキング調整要因。 1.00 に設定すると、フィールド値がそのままランキング調整として使用されます。"
+
+msgid "Aggregation"
+msgstr "集約"
+
+msgid "maximum"
+msgstr "最大"
+
+msgid "minimum"
+msgstr "最小"
+
+msgid "average"
+msgstr "平均"
+
+msgid "sum"
+msgstr "合計"
+
+msgid "product"
+msgstr "商品"
+
+msgid "use first value"
+msgstr "先頭値を使用"
+
+msgid "Select the method of aggregation to use in case the field has multiple values."
+msgstr "フィールドに複数の値がある場合に使用する集約方式を選択します。"
+
+msgid "Number field-based boosting"
+msgstr "数値フィールド・ベースのランキング調整"
+
+msgid "Adds a boost to indexed items based on the value of a numeric field."
+msgstr "数値フィールドの値に基づいて、インデックス付き項目にランキング調整を追加します。"
+
+msgid "Rendered HTML output"
+msgstr "レンダリング済み HTML 出力"
+
+msgid "The complete HTML which would be displayed when viewing the item"
+msgstr "項目の表示時に表示される完全 HTML"
+
+msgid "Field settings"
+msgstr "フィールドの設定"
+
+msgid "The field %field_label (%field_id) on index %index is missing view mode configuration for some datasources or bundles. Please review (and re-save) the field settings."
+msgstr "インデックス %index のフィールド %field_label (%field_id) に、一部のデータ・ソースまたはバンドルのビュー・モード構成がありません。フィールド設定を確認 (および再保存) してください。"
+
+msgid "Adds an additional field containing the rendered item as it would look when viewed."
+msgstr "表示時と同じ外観のレンダリング対象項目を含む追加のフィールドを追加します。"
+
+msgid "Reverse reference: %entity_type using %property"
+msgstr "逆参照: %property を使用した %entity_type"
+
+msgid "All %entity_type entities that reference this item via the %property field."
+msgstr "%property フィールドを使用してこの項目を参照するすべての %entity_type エンティティー。"
+
+msgid "Reverse entity references"
+msgstr "逆エンティティー参照"
+
+msgid "Allows indexing of entities that link to the indexed entity."
+msgstr "インデックス付けされたエンティティーにリンクするエンティティーのインデックス付けを許可します。"
+
+msgid "Role-based access information"
+msgstr "役割ベースのアクセス情報"
+
+msgid "Data needed to apply role-based item access"
+msgstr "役割ベースの項目のアクセスを適用するために必要なデータ"
+
+msgid "Role-based access checks could not be added to a search query on index %index since the required field is not available. Please re-save the index."
+msgstr "必須フィールドが使用できないため、役割ベースのアクセス検査をインデックス %index の検索照会に追加できませんでした。 インデックスを再保存してください。"
+
+msgid "Role-based access"
+msgstr "役割ベースのアクセス"
+
+msgid "Which users should be indexed?"
+msgstr "インデックス付けの対象となるユーザー"
+
+msgid "All but those from one of the selected roles"
+msgstr "選択したロールのいずれかに属するユーザーを除くすべてのユーザー"
+
+msgid "Only those from the selected roles"
+msgstr "選択したロールに属するユーザーのみ"
+
+msgid "Roles"
+msgstr "役割"
+
+msgid "Role filter"
+msgstr "ロール・フィルター"
+
+msgid "Filters out users based on their role."
+msgstr "ユーザーのロールに基づいてユーザーをフィルタリングします。"
+
+msgid "If the <a href=\"http://snowball.tartarus.org/algorithms/english/stemmer.html\">algorithm</a> does not stem words in your dataset in the desired way, you can enter specific exceptions in the form of WORD=STEM, where \"WORD\" is the original word in the text and \"STEM\" is the resulting stem. List each exception on a separate line."
+msgstr "<a href=\"http://snowball.tartarus.org/algorithms/english/stemmer.html\">アルゴリズム</a>によってデータ・セット内の単語を目的どおりにステミングできない場合は、具体的な例外を WORD=STEM (「WORD」はテキスト内の元の単語、「STEM」は結果の語幹) の形で入力できます。各例外を個別の行でリストしてください。"
+
+msgid "Exceptions"
+msgstr "例外"
+
+msgid "The entered text is not in valid WORD=STEM format."
+msgstr "入力されたテキストは有効な WORD=STEM 形式ではありません。"
+
+msgid "Stemmer"
+msgstr "ステマー"
+
+msgid "Enter a list of stopwords, each on a separate line, that will be removed from content before it is indexed and from search terms before searching. <a href=\":url\">More info about stopwords.</a>."
+msgstr "ストップワードのリストを入力します。このとき、各ストップワードを個別の行で指定します。これらのストップワードは、コンテンツをインデックス付けする前にコンテンツから除去され、検索を行う前に検索語から除去されます。<a href=\":url\">ストップワードの詳細</a>"
+
+msgid "Stopwords"
+msgstr "ストップワード"
+
+msgid "Allows you to define stopwords which will be ignored in searches. <strong>Caution:</strong> Only use after both 'Ignore case' and 'Tokenizer' have run."
+msgstr "検索で無視されるストップワードを定義できます。<strong>注意:</strong> 必ず「大/小文字を区別しない」と「トークナイザー」の両方を実行した後に使用してください。"
+
+msgid "Ignored characters"
+msgstr "無視する文字"
+
+msgid "Specify the characters that should be removed prior to processing, as the inside of a <a href=\":pcre-url\">PCRE character class</a>."
+msgstr "<a href=\":pcre-url\">PCRE 文字クラス</a>の内部として、処理の前に削除する必要がある文字を指定します。"
+
+msgid "Whitespace characters"
+msgstr "空白文字"
+
+msgid "Specify the characters that should be regarded as whitespace and therefore used as word-delimiters. Specify the characters as the inside of a <a href=\":pcre-url\">PCRE character class</a>. Leave empty to use a <a href=\":doc-url\">default</a> which should be suitable for most languages with a Latin alphabet."
+msgstr "空白文字として見なされ、単語の区切り文字として使用される文字を指定します。これらの文字は <a href=\":pcre-url\">PCRE 文字クラス</a>内の文字として指定します。<a href=\":doc-url\">デフォルト</a> (ラテン・アルファベットを使用するほとんどの言語に対応) を使用する場合は空のままにします。"
+
+msgid "Simple CJK handling"
+msgstr "簡易CJK処理"
+
+msgid "Whether to apply a simple Chinese/Japanese/Korean tokenizer based on overlapping sequences. Does not affect other languages."
+msgstr "オーバーラップするシーケンスに基づいて、単純な中国語/日本語/韓国語トークナイザーを適用するかどうか。なお、この機能は他の言語には影響を与えません。"
+
+msgid "Minimum word length to index"
+msgstr "インデックス付けをする単語の最小文字数"
+
+msgid "The number of characters a word has to be to be indexed. A lower setting means better search result ranking, but also a larger database. Each search query must contain at least one keyword that is this size (or longer)."
+msgstr "インデックス付けをする単語に必要な最小文字数を入力してください。 文字数が少ないほど検索キーワードのヒット率は上がりますが、それに比例してデータベースの使用量が増大します。 また、この文字数は検索可能なキーワードの最小文字数にもなります。 例えば <b>5</b> を指定した場合、検索する際のキーワードに最低でも1つは、5文字以上のものを含むことが必須となります"
+
+msgid "The entered text is no valid PCRE character class."
+msgstr "入力されたテキストは有効な PCRE 文字クラスではありません。"
+
+msgid "Tokenizer"
+msgstr "トークナイザー"
+
+msgid "Splits text into individual words for searching."
+msgstr "テキストを検索用に個別の単語に分割します。"
+
+msgid "Transliteration"
+msgstr "音訳"
+
+msgid "Makes searches insensitive to accents and other non-ASCII characters."
+msgstr "検索でアクセントや他の非 ASCII 文字が認識されないようにします。"
+
+msgid "Use datasource default"
+msgstr "データ・ソースのデフォルトを使用"
+
+msgid "Boost settings for %datasource"
+msgstr "%datasource のランキング調整設定"
+
+msgid "Default boost for items from this datasource"
+msgstr "このデータ・ソースに属する項目のデフォルトのランキング調整"
+
+msgid "A boost of 1.00 is the default. Assign a boost of 0.00 to not score the item at all."
+msgstr "1.00 のランキング調整がデフォルトです。 0.00 のランキング調整を割り当てて、項目をまったくスコアリングしないようにします。"
+
+msgid "Boost for the %bundle bundle"
+msgstr "%bundle バンドルのランキング調整"
+
+msgid "Type-specific boosting"
+msgstr "タイプ固有のランキング調整"
+
+msgid "Adds a boost to indexed items based on their datasource and/or bundle."
+msgstr "項目のデータ・ソースおよび/またはバンドルに基づいて、インデックス付けされた項目にランキング調整を追加します。"
+
+msgid "Generate absolute URL"
+msgstr "絶対 URL を生成"
+
+msgid "Check this box to pass absolute URLs to the index. This can be useful when indexing multiple sites with a single search index."
+msgstr "絶対 URL をインデックスに渡す場合はこのボックスにチェック・マークを付けます。これは、1 つの検索インデックスを使用して複数のサイトにインデックス付けする場合に役立つことがあります。"
+
+msgid "Aggregation type"
+msgstr "アグリゲーションタイプ"
+
+msgid "Apart from the @union type, all types will result in just a single value."
+msgstr "@union タイプを除くすべてのタイプは単一の値になります。"
+
+msgid "Union"
+msgstr "和集合"
+
+msgid "Contained fields"
+msgstr "含まれるフィールド"
+
+msgid "Machine name: @name"
+msgstr "システム内部名称: @name"
+
+msgid "A @type aggregation of the following fields: @fields."
+msgstr "以下のフィールドの @type の集約: @fields。"
+
+msgid "Concatenation"
+msgstr "連結"
+
+msgid "Sum"
+msgstr "合計"
+
+msgid "Count"
+msgstr "カウント"
+
+msgid "Maximum"
+msgstr "最大"
+
+msgid "Minimum"
+msgstr "最小"
+
+msgid "First"
+msgstr "最初"
+
+msgid "Last"
+msgstr "最後"
+
+msgid "First letter"
+msgstr "先頭文字"
+
+msgid "The Union aggregation does an union operation of all the values of the field. 2 fields with 2 values each become 1 field with 4 values."
+msgstr "「和集合」集約は、フィールドのすべての値の和集合演算を行います。それぞれ 2 つの値を含む 2 つのフィールドは、4 つの値を含む 1 つのフィールドになります。"
+
+msgid "The Concatenation aggregation concatenates the text data of all contained fields."
+msgstr "「連結」集約は、対象となるすべてのフィールドのテキスト・データを連結します。"
+
+msgid "The Sum aggregation adds the values of all contained fields numerically."
+msgstr "「合計」集約は、対象となるすべてのフィールドの値を数値的に合計します。"
+
+msgid "The Count aggregation takes the total number of contained field values as the aggregated field value."
+msgstr "「カウント」集約は、対象となるフィールド値の総数を集計フィールドの値として使用します。"
+
+msgid "The Maximum aggregation computes the numerically largest contained field value."
+msgstr "「最大」集約は、対象となるフィールド値のうち数値的に最大のものを計算します。"
+
+msgid "The Minimum aggregation computes the numerically smallest contained field value."
+msgstr "「最小」集約は、対象となるフィールド値のうち数値的に最小のものを計算します。"
+
+msgid "The First aggregation will simply keep the first encountered field value."
+msgstr "「最初」集約は、単純に最初に検出されたフィールド値を格納します。"
+
+msgid "The Last aggregation will keep the last encountered field value."
+msgstr "「最後」集約は、最後に検出されたフィールド値を格納します。"
+
+msgid "The “First letter” aggregation uses just the first letter of the first encountered field value as the aggregated value. This can, for example, be used to build a Glossary view."
+msgstr "「先頭文字」集約では、最初に検出されたフィールド値の最初の文字のみが、集約値として使用されます。 これは例えば、「グロッサリー」ビューの作成に使用されたりします。"
+
+msgid "User roles"
+msgstr "ユーザーの役割"
+
+msgid "Your item will be rendered as seen by a user with the selected roles. We recommend to just use \"@anonymous\" here to prevent data leaking out to unauthorized roles."
+msgstr "選択したロールを持つユーザーに表示されるとおりに項目がレンダリングされます。無許可ロール対してデータが漏えいしないように、ここでは「@anonymous」だけを使用することをお勧めします。"
+
+msgid "You can choose the view modes to use for rendering the items of different datasources and bundles. We recommend using a dedicated view mode (for example, the \"Search index\" view mode available by default for content) to make sure that only relevant data (especially no field labels) will be included in the index."
+msgstr "各種データ・ソースおよびバンドルの項目のレンダリング時に使用するビュー・モードを選択できます。関連するデータだけがインデックスに含まれるように (特にフィールド・ラベルは含まれないように)、専用のビュー・モード (コンテンツ用にデフォルトで用意されている「検索インデックス」ビュー・モードなど) を使用することをお勧めします。"
+
+msgid "Don't include the rendered item."
+msgstr "レンダリングされる項目は含まれません。"
+
+msgid "View mode for %datasource » %bundle"
+msgstr "%datasource » %bundle のビュー・モード"
+
+msgid "The order in which items will be indexed."
+msgstr "項目がインデックス付けされる順序。"
+
+msgid "Index items in the same order in which they were saved"
+msgstr "保存された順に項目をインデックス付けする"
+
+msgid "Index the most recent items first"
+msgstr "最新の項目からインデックス付けする"
+
+msgid "Default index tracker which uses a simple database table for tracking items."
+msgstr "項目の追跡にシンプルなデータベース表を使用するデフォルト・インデックス・トラッカー。"
+
+msgid "Could not load taxonomy terms."
+msgstr "分類用語をロードできませんでした。"
+
+msgid "No valid taxonomy term IDs given for \"All taxonomy term fields\" contextual filter."
+msgstr "「すべての分類用語フィールド」コンテキスト・フィルターに有効な分類用語 ID が付与されていません。"
+
+msgid "Invalid taxonomy term ID given for \"All taxonomy term fields\" contextual filter."
+msgstr "「すべての分類用語フィールド」コンテキスト・フィルターに無効な分類用語 ID が指定されました。"
+
+msgid "\"All taxonomy term fields\" contextual filter could not be applied as taxonomy term %label (ID: @id) belongs to vocabulary %vocabulary, not contained in any indexed fields."
+msgstr "「すべての分類用語フィールド」コンテキスト・フィルターを適用できませんでした。これは、分類用語 %label (ID: @id) が、インデックス付けされたフィールドに含まれていないボキャブラリー %vocabulary に属しているためです。"
+
+msgid "\"All taxonomy term fields\" contextual filter could not be applied as no indexed fields were found matching the given vocabularies of the given terms (@terms)."
+msgstr "指定された用語 (@terms) の指定された語彙に一致する索引付きフィールドが見つからなかったため、「すべての分類用語フィールド」コンテキスト・フィルターを適用できませんでした。"
+
+msgid "Choose how the search keys will be parsed."
+msgstr "検索キーの解析方法を選択します。"
+
+msgid "Searched fields"
+msgstr "検索フィールド"
+
+msgid "Select the fields that will be searched. If no fields are selected, all available fulltext fields will be searched."
+msgstr "検索対象となるフィールドを選択します。フィールドを選択しない場合は、すべての使用可能なフルテキスト・フィールドが検索されます。"
+
+msgid "Operator"
+msgstr "オペレータ"
+
+msgid "Determines how multiple keywords entered for the search will be combined."
+msgstr "検索用に入力された複数のキーワードを結合する方法を決定します。"
+
+msgid "Contains all of these words"
+msgstr "すべての語を含む"
+
+msgid "Contains any of these words"
+msgstr "いずれかの語を含む"
+
+msgid "Fields for similarity"
+msgstr "類似性のフィールド"
+
+msgid "Select the fields that will be used for finding similar content. If no fields are selected, all available fields will be used."
+msgstr "類似したコンテンツを検出するために使用されるフィールドを選択します。フィールドを選択しない場合は、すべての使用可能なフィールドが使用されます。"
+
+msgid "The search backend \"@backend_id\" does not offer \"More like this\" functionality."
+msgstr "検索バックエンド「@backend_id」には「類似検索」機能がありません。"
+
+msgid "Allow multiple values"
+msgstr "複数の値を許可する"
+
+msgid "If selected, users can enter multiple values in the form of 1+2+3 (for OR) or 1,2,3 (for AND)."
+msgstr "選択された場合、ユーザーは複数の値を入力できます。'OR' の際には1+2+3、'AND' の場合は 1,2,3 となります。"
+
+msgid "Exclude"
+msgstr "除外"
+
+msgid "If selected, the values entered for the filter will be excluded rather than limiting the view to those values."
+msgstr "選択すると、フィルターとして入力した値だけが表示されるのではなく、それらの値が除外されます。"
+
+msgid "Search API (tag-based)"
+msgstr "検索 API (タグ基準)"
+
+msgid "Cache results until the associated cache tags are invalidated. Useful for small sites that use the database search backend. <strong>Caution:</strong> Can lead to stale results and might harm performance for complex search pages."
+msgstr "関連付けられたキャッシュ・タグが無効化されるまで、結果をキャッシュします。検索バックエンドとしてデータベースを使用する小規模サイトに有効です。<strong>注意:</strong> 古い結果が表示されたり、複雑な検索ページの場合はパフォーマンスが低下する可能性があります。"
+
+msgid "Search API (time-based)"
+msgstr "検索 API (時間基準)"
+
+msgid "Cache results for a predefined time period. Useful for sites that use external search engines such as Solr, or index multiple datasources. <strong>Caution:</strong> Will lead to stale results and might harm performance for complex search pages."
+msgstr "事前定義された期間だけ結果をキャッシュします。Solr などの外部検索エンジンを使用するサイトや、複数のデータ・ソースのインデックス付けを行うサイトに有効です。<strong>注意:</strong> 古い結果が表示されたり、複雑な検索ページの場合はパフォーマンスが低下する可能性があります。"
+
+msgid "Update this item"
+msgstr "このアイテムを更新"
+
+msgid "Apply to selected items"
+msgstr "選択したアイテムに適用"
+
+msgid "Row %items removed from selection as it's not compatible with %action action."
+msgid_plural "Rows %items removed from selection as they are not compatible with %action action."
+msgstr[0] "行 %items は %action アクションと互換性がないため、選択から削除されました。"
+
+msgid "Display for \"@bundle\" bundle"
+msgstr "「@bundle」バンドルの表示"
+
+msgid "Hide"
+msgstr "非表示"
+
+msgid "Raw ID"
+msgstr "未加工 ID"
+
+msgid "Only label"
+msgstr "ラベルのみ"
+
+msgid "Entity view"
+msgstr "エンティティー・ビュー"
+
+msgid "View mode for \"@bundle\" bundle"
+msgstr "「@bundle」バンドルのビュー・モード"
+
+msgid "This will only take effect for entities for which only the entity label is displayed."
+msgstr "エンティティー・ラベルのみが表示されるエンティティーにのみ適用されます。"
+
+msgid "If checked, Drupal's built-in field rendering mechanism will be used for rendering this field's values, which requires the entity to be loaded. If unchecked, a type-specific, entity-independent rendering mechanism will be used."
+msgstr "チェック・マークを付けると、このフィールドの値をレンダリングするときに、Drupal の組み込みのフィールド・レンダリング・メカニズムが使用されます。この場合はエンティティーをロードする必要があります。チェック・マークを外すと、タイプ固有のエンティティーに依存しないレンダリング・メカニズムが使用されます。"
+
+msgid "Render settings"
+msgstr "レンダリング設定"
+
+msgid "Link this field to its item"
+msgstr "このフィールドを項目にリンク"
+
+msgid "Display this field as a link to its original entity or item."
+msgstr "このフィールドを元のエンティティーまたは項目へのリンクとして表示します。"
+
+msgid "Display field with matches of the search keywords highlighted, if available."
+msgstr "検索キーワードの一致が強調表示された表示フィールド (使用可能な場合)。"
+
+msgid "Multiple values handling"
+msgstr "複数値の処理"
+
+msgid "If this field contains multiple values for an item, these settings will determine how they are handled."
+msgstr "このフィールドに 1 つの項目に対する複数の値が含まれている場合は、これらの設定によってその処理方法が決まります。"
+
+msgid "Display type"
+msgstr "表示形式"
+
+msgid "Unordered list"
+msgstr "順序なしリスト"
+
+msgid "Ordered list"
+msgstr "順序付きリスト"
+
+msgid "Simple separator"
+msgstr "単純なセパレーター"
+
+msgid "Separator"
+msgstr "セパレーター"
+
+msgid "View mode for datasource %name"
+msgstr "データ・ソース %name のビュー・モード"
+
+msgid "This datasource doesn't have any view modes available. It is therefore not possible to display results of this datasource in this field."
+msgstr "このデータ・ソースに対して使用可能なビュー・モードはありません。このため、このフィールドのこのデータ・ソースの結果を表示することはできません。"
+
+msgid "View mode for datasource %datasource, bundle %bundle"
+msgstr "データ・ソース %datasource、バンドル %bundle のビュー・モード"
+
+msgid "This bundle doesn't have any view modes available. It is therefore not possible to display results of this bundle using this row plugin."
+msgstr "このバンドルに対して使用可能なビュー・モードはありません。このため、この行プラグインを使用して、このバンドルの結果を表示することはできません。"
+
+msgid "Failed to load item %item_id in view %view."
+msgstr "項目 %item_id をビュー %view にロードできませんでした。"
+
+msgid "Item of unknown datasource %datasource returned in view %view."
+msgstr "不明なデータ・ソース %datasource の項目がビュー %view に返されました。"
+
+msgid "Depending on the parse mode set, some of these options might not work as expected. Please either use \"@multiple_words\" as the parse mode or make sure that the filter behaves as expected for multiple words."
+msgstr "設定されている解析モードによっては、これらのオプションの一部が期待どおりに機能しない可能性があります。解析モードに「@multiple_words」を使用するか、複数の単語に対してフィルターが期待どおりに動作することを確認してください。"
+
+msgid "and"
+msgstr "かつ"
+
+msgid "or"
+msgstr "または"
+
+msgid "Contains none of these words"
+msgstr "どの語も含まない"
+
+msgid "not"
+msgstr "～でない"
+
+msgid "Minimum keyword length"
+msgstr "最小キーワード長"
+
+msgid "Minimum length of each word in the search keys. Leave empty to allow all words."
+msgstr "検索キー内の各単語の最小長。すべての語を使用できるようにする場合は空のままにします。"
+
+msgid "Hint text that appears inside the field when empty."
+msgstr "フィールドが空のときに内部に表示されるヒント・テキスト。"
+
+msgid "Expose searched fields"
+msgstr "検索対象フィールドを公開"
+
+msgid "Expose the list of searched fields. This allows users to narrow the search to the desired fields."
+msgstr "検索対象フィールドのリストを公開します。これにより、ユーザーが検索の対象を必要なフィールドに絞り込むことができます。"
+
+msgid "This will appear in the URL after the ? to identify this searched fields form element."
+msgstr "これは、この検索対象フィールド・フォーム・エレメントを特定するために、URL 内の ? の後に表示されます。"
+
+msgid "Search fields"
+msgstr "検索フィールド"
+
+msgid "You must include at least one positive keyword with @count characters or more."
+msgstr "@count文字以上のキーワードを、最低でも1つは入力してください。"
+
+msgid "contains"
+msgstr "含む"
+
+msgid "doesn't contain"
+msgstr "含まない"
+
+msgid "Is one of"
+msgstr "のいずれか"
+
+msgid "="
+msgstr "="
+
+msgid "Is all of"
+msgstr "～のすべて"
+
+msgid "Is none of"
+msgstr "～のどれでもない"
+
+msgid "<>"
+msgstr "<>"
+
+msgid "Is empty (NULL)"
+msgstr "空(NULL)です"
+
+msgid "empty"
+msgstr "空"
+
+msgid "Is not empty (NOT NULL)"
+msgstr "空でない（NOT NULL）"
+
+msgid "not empty"
+msgstr "空ではない"
+
+msgid "Skip item access checks"
+msgstr "項目のアクセス・チェックをスキップ"
+
+msgid "By default, an additional access check will be executed for each item returned by the search query. However, since removing results this way will break paging and result counts, it is preferable to configure the view in a way that it will only return accessible results. If you are sure that only accessible results will be returned in the search, or if you want to show results to which the user normally wouldn't have access, you can enable this option to skip those additional access checks. This should be used with care."
+msgstr "デフォルトでは、検索照会によって返される各項目に対して、追加のアクセス・チェックが行われます。ただし、この方法で結果を削除すると、ページ送りや結果のカウントが正確に行われないため、アクセス可能な結果だけを返すようにビューを構成することが適切です。検索でアクセス可能な結果だけが返されることが確実な場合や、通常はユーザーがアクセスできない結果を表示したい場合は、このオプションを有効にして、追加のアクセス・チェックをスキップできます。このオプションは慎重に使用する必要があります。"
+
+msgid "Bypass access checks"
+msgstr "アクセス権限チェックをパス"
+
+msgid "If the underlying search index has access checks enabled (for example, through the \"Content access\" processor), this option allows you to disable them for this view. This will never disable any filters placed on this view."
+msgstr "基盤となる検索インデックスで (「コンテンツへのアクセス権限」プロセッサーなどを使用して) アクセス・チェックが有効になっている場合に、このオプションを使用すると、このビューに対してこれらのチェックを無効にできます。このビューに設定されたフィルターが、このオプションによって無効になることはありません。"
+
+msgid "Preserve facets while using filters"
+msgstr "フィルターの使用中にファセットを保持"
+
+msgid "If set, these tags will be appended to the query and can be used to identify the query in a module. This can be helpful for altering queries."
+msgstr "設定すると、これらのタグがクエリーに追加され、モジュールがクエリーを判別するのに使用されます。クエリーに変更を加えるのに役立ちます。"
+
+msgid "Tried to sort results randomly on server %server which does not support random sorting."
+msgstr "ランダムなソートをサポートしていないサーバー %server で、結果をランダムにソートしようとしました。"
+
+msgid "Search API Query"
+msgstr "検索 API 照会"
+
+msgid "The query will be generated and run using the Search API."
+msgstr "検索 API を使用して照会が生成および実行されます。"
+
+msgid "Skip access checks"
+msgstr "アクセス・チェックをスキップ"
+
+msgid "Do not verify that the user has access to the entities referenced through this relationship. This will allow you to display data to the user to which they normally would not have access. This should therefore be used with care."
+msgstr "この関係を通じて参照されたエンティティーに対して、ユーザーがアクセス権限を保持しているかどうかの検査を行いません。これにより、そのユーザーが通常はアクセスできないデータを、そのユーザーに表示することができます。このため、このオプションは慎重に使用する必要があります。"
+
+msgid "Retrieves entities as row data."
+msgstr "エンティティーを行データとして取得します。"
+
+msgid "This datasource doesn't have any view modes available. It is therefore not possible to display results of this datasource using this row plugin."
+msgstr "このデータ・ソースに対して使用可能なビュー・モードはありません。このため、この行プラグインを使用して、このデータ・ソースの結果を表示することはできません。"
+
+msgid "Rendered entity"
+msgstr "描画されたエンティティ"
+
+msgid "Displays entity of the matching search API item"
+msgstr "一致する検索 API 項目のエンティティーを表示します"
+
+msgid "Enable on all supported fields"
+msgstr "すべてのサポート対象フィールドで有効にする"
+
+msgid "Enable this processor for all supported fields. This will also automatically update the setting when new supported fields are added to the index."
+msgstr "サポート対象のすべてのフィールドでこのプロセッサーを有効にします。これにより、新規のサポート対象フィールドがインデックスに追加された場合に、設定も自動的に更新されます。"
+
+msgid "Enable this processor on the following fields"
+msgstr "以下のフィールドでこのプロセッサーを有効にする"
+
+msgid "Note: The Search API currently doesn't support per-field keywords processing, so this setting will be ignored when preprocessing search keywords. It is therefore usually recommended that you enable the processor for all fields that you intend to use as fulltext search fields, to avoid undesired consequences."
+msgstr "注: 検索 API では現在、フィールドごとのキーワード処理がサポートされていません。このため、検索キーワードの前処理時には、この設定は無視されます。したがって、望ましくない結果が生じないように、通常はフルテキスト検索フィールドとして使用する予定のあるすべてのフィールドについて、このプロセッサーを有効にすることをお勧めします。"
+
+msgid "My Processor"
+msgstr "マイ・プロセッサー"
+
+msgid "Does … something."
+msgstr "何らかの処理を行います。"
+
+msgid "Preprocess index"
+msgstr "インデックスの前処理"
+
+msgid "Preprocess query"
+msgstr "照会の前処理"
+
+msgid "Postprocess query"
+msgstr "照会の後処理"
+
+msgid "An error occurred while trying to execute tasks. Check the logs for details."
+msgstr "タスクを実行しようとしているときにエラーが発生しました。詳しくは、ログを確認してください。"
+
+msgid "Successfully executed @count pending task."
+msgid_plural "Successfully executed @count pending tasks."
+msgstr[0] "@count 個の保留中のタスクを正常に実行しました。"
+
+msgid "My tracker"
+msgstr "マイ・トラッカー"
+
+msgid "Simple tracking system."
+msgstr "単純なトラッキング・システム。"
+
+msgid "enabled"
+msgstr "有効"
+
+msgid "There are no indexes defined. Please create an index before trying to enable it."
+msgstr "インデックスが定義されていません。インデックスの有効化を試行する前にインデックスを作成してください。"
+
+msgid "You must specify at least one index to enable."
+msgstr "有効にするインデックスを少なくとも 1 つ指定する必要があります。"
+
+msgid "There are no indexes defined. Please create an index before trying to disable it."
+msgstr "インデックスが定義されていません。インデックスの無効化を試行する前にインデックスを作成してください。"
+
+msgid "You must specify at least one index to disable."
+msgstr "無効にするインデックスを少なくとも 1 つ指定する必要があります。"
+
+msgid "The index @index is up to date."
+msgstr "インデックス @index は最新です。"
+
+msgid "Found @remaining items to index for @index. Indexing @limit items."
+msgstr "@index でインデックス付けする項目が @remaining 個検出されました。@limit 個の項目にインデックスを付けます。"
+
+msgid "Indexing a maximum number of @limit items (@batch_size items per batch run) for the index '@index'."
+msgstr "インデックス '@index' を使用して、最大 @limit 個の項目 (バッチ実行ごとに @batch_size 個の項目) にインデックスを付けます。"
+
+msgid "Couldn't create a batch, please check the batch size and limit parameters."
+msgstr "バッチを作成できませんでした。バッチ・サイズと制限パラメーターを確認してください。"
+
+msgid "The following datasources of @index were successfully scheduled for reindexing: @datasources."
+msgstr "@index の以下のデータ・ソースの再索引付けが正常にスケジュールされました: @datasources。"
+
+msgid "@index was successfully scheduled for reindexing."
+msgstr "@index の再索引付けが正常にスケジュールされました。"
+
+msgid "@index was successfully cleared."
+msgstr "@index は正常にクリアされました。"
+
+msgid "@index was not found"
+msgstr "@index が見つかりませんでした"
+
+msgid "There are no servers present."
+msgstr "サーバーがありません。"
+
+msgid "The server could not be loaded."
+msgstr "サーバーをロードできませんでした。"
+
+msgid "Invalid index ID \"@index_id\"."
+msgstr "インデックス ID \"@index_id\" が無効です。"
+
+msgid "Invalid server ID \"@server_id\"."
+msgstr "サーバー ID \"@server_id\" が無効です。"
+
+msgid "Index @index has been set to use server @server and items have been queued for indexing."
+msgstr "インデックス @index はサーバー @server を使用するように設定され、項目がインデックス付けのキューに入れられました。"
+
+msgid "There was an error setting index @index to use server @server, or this index is already configured to use this server."
+msgstr "サーバー @server を使用するようにインデックス @index を設定しているときにエラーが発生したか、このインデックスが既にこのサーバーを使用するように構成されています。"
+
+msgid "The index @index is already @desired_state."
+msgstr "インデックス @index は既に @desired_state です。"
+
+msgid "Index @index could not be @desired_state because it is not bound to any server."
+msgstr "インデックス @index はどのサーバーにもバインドされていないため、@desired_state になることができませんでした。"
+
+msgid "The index @index was successfully @desired_state."
+msgstr "インデックス @index は正常に @desired_state になりました。"
+
+msgid "Index status"
+msgstr "インデックスのステータス"
+

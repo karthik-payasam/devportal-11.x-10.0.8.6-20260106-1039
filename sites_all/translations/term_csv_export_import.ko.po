@@ -1,0 +1,131 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "No destination directory provided."
+msgstr "대상 디렉토리가 제공되지 않았습니다."
+
+msgid "About"
+msgstr "소개"
+
+msgid "Helper module to quickly import a list of terms with parent structure."
+msgstr "상위 구조를 갖는 용어의 목록을 빨리 가져오기 위한 헬퍼 모듈입니다."
+
+msgid "Term CSV Export/Import"
+msgstr "용어 CSV 내보내기/가져오기"
+
+msgid "Import and Export Taxonomy terms as csv."
+msgstr "분류 용어를 CSV로서 가져오고 내보냅니다."
+
+msgid "Taxonomy"
+msgstr "분류"
+
+msgid "Import and Export Taxonomy Terms as CSV"
+msgstr "분류 용어를 CSV로서 가져오기 및 내보내기"
+
+msgid "Term CSV Import"
+msgstr "용어 CSV 가져오기"
+
+msgid "Term CSV Export"
+msgstr "용어 CSV 내보내기"
+
+msgid "Administer CSV Term Import"
+msgstr "CSV 용어 가져오기 관리"
+
+msgid "Allows a user to import taxonomy terms."
+msgstr "사용자가 분류 용어를 가져올 수 있게 합니다."
+
+msgid "CSV Term Import"
+msgstr "CSV 용어 가져오기"
+
+msgid "CSV Term Export"
+msgstr "CSV 용어 내보내기"
+
+msgid "The header keys were not included in the import."
+msgstr "헤더 키가 가져오기에 포함되지 않았습니다."
+
+msgid "Line with \"@part\" could not be parsed. Incorrect number of values: @count."
+msgstr "\"@part\"을(를) 갖는 행은 구문 분석할 수 없습니다. 값의 올바르지 않은 수: @count."
+
+msgid "The term @name has multiple matches. Ignoring."
+msgstr "@name 용어가 다중 일치를 갖습니다. 이를 무시합니다."
+
+msgid "The term with id @id already exists and preserve existing terms is checked. No modification has been made."
+msgstr "ID가 @id인 용어가 이미 존재하며 기존 용어가 확인되도록 유지합니다. 수정되지 않았습니다. "
+
+msgid "The Term ID already exists."
+msgstr "용어 ID가 이미 존재합니다."
+
+msgid "More than 1 terms are named @name. Cannot distinguish by name. Try using id export/import."
+msgstr "둘 이상의 용어가 @name(으)로 이름이 지정됩니다. 이름으로 구별할 수 없습니다. ID 내보내기/가져오기를 사용하여 시도하십시오."
+
+msgid "The field data <em>@data</em> is not formatted correctly. Please use the export function."
+msgstr "필드 데이터 <em>@data</em>이(가) 올바르게 형식화되지 않았습니다. 내보내기 기능을 사용하십시오."
+
+msgid "The field data <em>@data</em> could not be imported. Please add the appropriate fields to the vocabulary you are importing into."
+msgstr "필드 데이터 <em>@data</em>을(를) 가져올 수 없습니다. 가져오려는 어휘에 적절한 필드를 추가하십시오."
+
+msgid "Imported @count terms."
+msgstr "@count개의 용어를 가져왔습니다."
+
+msgid "Include Term Ids in export."
+msgstr "내보내기에 용어 ID를 포함합니다."
+
+msgid "Include Term Headers in export."
+msgstr "내보내기에 용어 헤더를 포함합니다."
+
+msgid "Include extra fields in export."
+msgstr "내보내기에 추가 필드를 포함합니다."
+
+msgid "Note that fields are stringified using <a href=\"http://www.php.net/http_build_query\">http_build_query</a>"
+msgstr "필드가 <a href=\"http://www.php.net/http_build_query\">http_build_query</a>를 사용하여 문자열화됨을 주의하십시오."
+
+msgid "Export"
+msgstr "내보내기"
+
+msgid "CSV Data"
+msgstr "CSV 데이터"
+
+msgid "The formatted term data"
+msgstr "형식화된 용어 데이터"
+
+msgid "Input"
+msgstr "입력"
+
+msgid "<p><strong>See CSV Export for an example.</strong></p><p>Enter in the form of: <pre>\"name,status,description,format,weight,parent_name,[any_additional_fields];</pre><pre>name,status,description,format,weight,parent_name[;parent_name1;parent_name2;...],[any_additional_fields]\"</pre> or <pre>\"tid,uuid,name,status,revision_id,description,format,weight,parent_name[;parent_name1;parent_name2;...],parent_tid[;parent_tid1;parent_tid2;...],[any_additional_fields];</pre><pre>tid,uuid,name,status,revision_id,description,format,weight,parent_name,parent_tid,[any_additional_fields]\"</pre> Note that <em>[any_additional_fields]</em> are optional and are stringified using <a href=\"http://www.php.net/http_build_query\">http_build_query</a>.</p><p>If you need to export from Drupal 7, you can import and modify the view d7exportview.txt found at the root directory of this project</p>"
+msgstr "<p><strong>예에 대해서는 CSV 내보내기를 참조하십시오.</strong></p><p>다음 양식으로 입력하십시오. <pre>\"name,status,description,format,weight,parent_name,[any_additional_fields];</pre><pre>name,status,description,format,weight,parent_name[;parent_name1;parent_name2;...],[any_additional_fields]\"</pre> 또는 <pre>\"tid,uuid,name,status,revision_id,description,format,weight,parent_name[;parent_name1;parent_name2;...],parent_tid[;parent_tid1;parent_tid2;...],[any_additional_fields];</pre><pre>tid,uuid,name,status,revision_id,description,format,weight,parent_name,parent_tid,[any_additional_fields]\"</pre> <em>[any_additional_fields]</em>는 선택사항이며 <a href=\"http://www.php.net/http_build_query\">http_build_query</a>를 사용하여 문자열화됨을 주의하십시오.</p><p>Drupal 7에서 내보내야 하는 경우 이 프로젝트의 루트 디렉토리에서 발견된 보기 d7exportview.txt를 가져오고 수정할 수 있습니다. </p>"
+
+msgid "Preserve Vocabularies on existing terms."
+msgstr "기존 용어에서 어휘 유지"
+
+msgid "Preserve existing terms. This will prevent a term id collision if importing from another install."
+msgstr "기존 용어를 유지합니다. 다른 설치에서 가져오는 경우 용어 ID 충돌을 방지합니다."
+
+msgid "Next"
+msgstr "다음"
+
+msgid "Name"
+msgstr "이름"
+
+msgid "Create New Vocabulary"
+msgstr "새 어휘 작성"
+
+msgid "Create Vocabulary"
+msgstr "어휘 작성"
+
+msgid "Are you sure you want to copy @count_terms terms into the vocabulary @vocabulary@preserve_vocabularies?"
+msgstr "@count_terms개의 용어를 @vocabulary@preserve_vocabularies 어휘에 복사하시겠습니까?"
+
+msgid "Import"
+msgstr "가져오기"
+

@@ -1,0 +1,452 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Vote Result \"@result_function\" for @plural_label"
+msgstr "@plural_label の投票結果「@result_function」"
+
+msgid "This includes vote result \"@result_function\" for the @plural_label"
+msgstr "こにには @plural_label の投票結果「@result_function」が含まれます"
+
+msgid "Vote Result \"@result_function\" for @plural_label: @vote_type_label"
+msgstr "@plural_label: @vote_type_label の投票結果「@result_function」"
+
+msgid "This includes vote result \"@result_function\" for the @plural_label voted with @vote_type"
+msgstr "ここには @vote_type で投票された @plural_label の投票結果「@result_function」が含まれます"
+
+msgid "About"
+msgstr "アバウト"
+
+msgid "VotingAPI helps developers who want to use a standardized API and schema for storing, retrieving and tabulating votes for Drupal content."
+msgstr "Voting API は、Drupal コンテンツの投票の保管、取得、および集計を行うために標準化された API およびスキーマを使用する開発者に役立ちます。"
+
+msgid "Please view the %url page for more details."
+msgstr "詳しくは、%url ページを参照してください。"
+
+msgid "Voting API"
+msgstr "投票 API"
+
+msgid "Uses"
+msgstr "使用"
+
+msgid "General"
+msgstr "一般"
+
+msgid "VotingAPI uses a flexible, easy-to-use framework for rating, voting, moderation, and consensus-gathering modules in Drupal. Module developers use it to focus on their ideas (say, providing a \"rate this thread\" widget at the bottom of each forum post) without worrying about the grunt work of storing votes, preventing ballot-stuffing, calculating the results, and so on."
+msgstr "VotingAPI は、Drupal でのレーティング、投票、モデレーション、および合意形成の各モジュールのための柔軟で使いやすいフレームワークを使用します。モジュール開発者はこれを使用してアイデア (例えば、各フォーラムの投稿の下部に「このスレッドの評価」ウィジェットを提供することなど) に集中し、投票の保管、票の水増し、結果の計算といった手間のかかる作業について心配せずに済みます。"
+
+msgid "Basic Concepts and Features"
+msgstr "基本的な概念および機能"
+
+msgid "VotingAPI does NOT directly expose any voting mechanisms to end users. It is a framework designed to make life easier for other developers, and to standardize voting data for consumption by other modules (like Views)."
+msgstr "VotingAPI は、どのような投票メカニズムもエンド・ユーザーに対して直接公開しません。 これは、他の開発者の作業を容易にし、他のモジュール (ビューなど) での使用のために投票データを標準化する目的で設計されたフレームワークです。"
+
+msgid "Two kinds of records are stored: individual votes by each user on each piece of content, and cached \"result\" records. The cached records aggregate calculated values like the average vote for a piece of content, how many people voted on it, etc. Each time a user votes, the cached result records are automatically recalculated. This means that no \"on-the-fly\" calculations have to be done when displaying content ratings."
+msgstr "2 種類のレコード (コンテンツの各部分に対する各ユーザーによる個々の投票と、キャッシュされた「結果」レコード) が保管されます。 キャッシュされたレコードは、コンテンツの一部分についての平均投票数、それに投票した人数などの計算値を集計します。 ユーザーが投票するたびに、キャッシュされた結果レコードは自動的に再計算されます。これは、コンテンツ評価を表示するときに「オンザフライ」計算を行わう必要がないことを意味します。"
+
+msgid "Provides a voting API that other modules can make use of."
+msgstr "他のモジュールが利用できる投票 API を提供します。"
+
+msgid "Voting"
+msgstr "投票"
+
+msgid "Add vote type"
+msgstr "投票タイプの追加"
+
+msgid "Voting API Settings"
+msgstr "「投票 API」の設定"
+
+msgid "Vote Types"
+msgstr "投票タイプ"
+
+msgid "Configure Voting API."
+msgstr "投票 API を構成します。"
+
+msgid "Manage Vote Types."
+msgstr "投票タイプを管理します。"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Edit"
+msgstr "編集"
+
+msgid "List"
+msgstr "リスト"
+
+msgid "Administer Voting API"
+msgstr "「投票 API」の管理"
+
+msgid "Allow access to configure Voting API."
+msgstr "「投票 API」を構成するためのアクセス権限を許可します。"
+
+msgid "Administer Vote Types"
+msgstr "投票タイプの管理"
+
+msgid "Allow access to create/edit vote types."
+msgstr "投票タイプを作成/編集するためのアクセス権限を許可します。"
+
+msgid "Delete Votes"
+msgstr "投票の削除"
+
+msgid "Allow access to delete any vote."
+msgstr "投票を削除するためのアクセスを許可します。"
+
+msgid "Voting API settings"
+msgstr "「投票 API」の設定"
+
+msgid "Delete"
+msgstr "削除"
+
+msgid "VotingApi settings"
+msgstr "VotingApi の設定"
+
+msgid "Anonymous vote rollover"
+msgstr "匿名投票のロールオーバー"
+
+msgid "Registered user vote rollover"
+msgstr "登録済みユーザーの投票のロールオーバー"
+
+msgid "Vote tallying"
+msgstr "投票の集計"
+
+msgid "Delete everywhere"
+msgstr "すべての場所で削除"
+
+msgid "Vote Type"
+msgstr "投票タイプ"
+
+msgid "Machine-readable name"
+msgstr "システム内部名称"
+
+msgid "Name"
+msgstr "名前"
+
+msgid "Type of vote value (percentage, points, etc.)"
+msgstr "投票値のタイプ (パーセンテージ、ポイントなど)"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "Voting API widget field settings."
+msgstr "Voting API ウィジェット・フィールド設定。"
+
+msgid "Vote plugin"
+msgstr "投票プラグイン"
+
+msgid "Vote type"
+msgstr "投票タイプ"
+
+msgid "Status"
+msgstr "状況"
+
+msgid "Result function"
+msgstr "結果関数"
+
+msgid "Widget format"
+msgstr "ウィジェット・フォーマット"
+
+msgid "Default value"
+msgstr "デフォルト値"
+
+msgid "VotingAPI tokens"
+msgstr "VotingAPI トークン"
+
+msgid "Dynamic Tokens for VotingAPI."
+msgstr "VotingAPI の動的トークン。"
+
+msgid "Vote count"
+msgstr "投票カウント"
+
+msgid "Number of votes."
+msgstr "投票の数。"
+
+msgid "Average Result"
+msgstr "平均結果"
+
+msgid "Average result of votes."
+msgstr "投票の平均結果。"
+
+msgid "Best Vote"
+msgstr "最高の投票"
+
+msgid "Best Vote cast."
+msgstr "最高の投票数。"
+
+msgid "Worst Vote"
+msgstr "最低の投票"
+
+msgid "Worst Vote cast."
+msgstr "最低の投票数。"
+
+msgid "This module enables tokens for all entity types that has <kbd>voting_api_field</kbd>."
+msgstr "このモジュールは、<kbd>voting_api_field</kbd> を持つすべてのエンティティー・タイプのトークンを有効にします。"
+
+msgid "Usage"
+msgstr "使用量"
+
+msgid "Tokens are dynamic and you have to pass <emph>vote_type</emph> as the last parameter. Module defines four tokens:"
+msgstr "トークンは動的であり、<emph>vote_type</emph> は最後のパラメーターとして渡す必要があります。 モジュールは、以下の 4 つのトークンを定義します。"
+
+msgid "<ul><li>Vote count :: <code>[votingapi_ENTITY_TYPE_token:vote_count:VOTE_TYPE]</code></li>"
+msgstr "<ul><li>投票数 :: <code>[votingapi_ENTITY_TYPE_token:vote_count:VOTE_TYPE]</code></li>"
+
+msgid "<li>Vote average :: <code>[votingapi_ENTITY_TYPE_token:vote_average:VOTE_TYPE]</code></li>"
+msgstr "<li>投票の平均 :: <code>[votingapi_ENTITY_TYPE_token:vote_average:VOTE_TYPE]</code></li>"
+
+msgid "<li>Best vote :: <code>[votingapi_ENTITY_TYPE_token:best_vote:VOTE_TYPE]</code></li>"
+msgstr "<li>最上位投票 :: <code>[votingapi_ENTITY_TYPE_token:best_vote:VOTE_TYPE]</code></li>"
+
+msgid "<li>Worst vote :: <code>[votingapi_ENTITY_TYPE_token:worst_vote:VOTE_TYPE]</code></li>"
+msgstr "<li>最下位投票 :: <code>[votingapi_ENTITY_TYPE_token:worst_vote:VOTE_TYPE]</code></li>"
+
+msgid "Voting API Tokens"
+msgstr "投票 API トークン"
+
+msgid "Token support for Voting API"
+msgstr "投票 API のトークン・サポート"
+
+msgid "Edit %label vote type"
+msgstr "%label 投票タイプの編集"
+
+msgid "The human-readable name of this vote type. This text will be displayed as part of the list on the <em>Add vote type</em> page. This name must be unique."
+msgstr "この投票タイプの人間が判読可能な名前。このテキストは、<em>「投票タイプの追加」</em>ページのリストの一部として表示されます。 この名前は一意でなければなりません。"
+
+msgid "A unique machine-readable name for this vote type. It must only contain lowercase letters, numbers, and underscores."
+msgstr "この投票タイプの固有のシステム内部名称。 半角英数字とアンダースコアのみ利用できます。"
+
+msgid "Value type"
+msgstr "値タイプ"
+
+msgid "The type of value for this vote (percentage, points, etc.)"
+msgstr "この投票の値のタイプ (パーセンテージ、ポイントなど)。"
+
+msgid "Describe this vote type. The text will be displayed on administrative pages."
+msgstr "この投票タイプの説明。 このテキストは管理ページに表示されます。"
+
+msgid "Save vote type"
+msgstr "投票タイプの保存"
+
+msgid "Delete vote type"
+msgstr "投票タイプの削除"
+
+msgid "The vote type %name has been updated."
+msgstr "投票タイプ %name が更新されました。"
+
+msgid "The vote type %name has been added."
+msgstr "投票タイプ %name が追加されました。"
+
+msgid "View"
+msgstr "表示"
+
+msgid "Added vote type %name."
+msgstr "投票タイプ %name が追加されました。"
+
+msgid "Id"
+msgstr "ID"
+
+msgid "Label"
+msgstr "ラベル"
+
+msgid "No vote types available. <a href=\"@link\">Add vote type</a>."
+msgstr "使用可能な投票タイプがありません。<a href=\"@link\">投票タイプを追加します</a>。"
+
+msgid "Generated @vtype votes for @etype entities."
+msgstr "@etype エンティティーに対する @vtype 投票を生成しました。"
+
+msgid "Rebuilt voting results for @type votes."
+msgstr "@type 投票の投票結果を再作成しました。"
+
+msgid "Rebuilt voting results for @type id: @entity_id."
+msgstr "@type id: @entity_id の投票結果を再作成しました。"
+
+msgid "Delete @type voting data?"
+msgstr "@type 投票データを削除しますか?"
+
+msgid "Flushed vote data for @type entities."
+msgstr "@type エンティティーの投票データをフラッシュしました。"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "The vote ID."
+msgstr "投票 ID。"
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "The vote UUID."
+msgstr "投票の UUID。"
+
+msgid "Type"
+msgstr "タイプ"
+
+msgid "The vote type."
+msgstr "投票タイプ。"
+
+msgid "Entity Type"
+msgstr "エンティティー・タイプ"
+
+msgid "The type from the voted entity."
+msgstr "投票対象エンティティーから取得したタイプ。"
+
+msgid "Voted entity"
+msgstr "投票対象エンティティー"
+
+msgid "The ID from the voted entity"
+msgstr "投票対象エンティティーから取得した ID"
+
+msgid "Value"
+msgstr "値"
+
+msgid "The numeric value of the vote."
+msgstr "投票の数値。"
+
+msgid "Value Type"
+msgstr "値タイプ"
+
+msgid "Authored by"
+msgstr "作成者"
+
+msgid "The user who submitted the vote."
+msgstr "投票を送信したユーザー。"
+
+msgid "Created"
+msgstr "作成済み"
+
+msgid "The time that the entity was created."
+msgstr "エンティティーが作成された時刻。"
+
+msgid "Vote Source"
+msgstr "投票ソース"
+
+msgid "The IP address hash from the user who submitted the vote."
+msgstr "投票を送信したユーザーから取得した IP アドレス・ハッシュ。"
+
+msgid "Vote"
+msgstr "投票"
+
+msgid "Votes"
+msgstr "投票"
+
+msgid "vote"
+msgstr "投票"
+
+msgid "votes"
+msgstr "投票"
+
+msgid "The vote result ID."
+msgstr "投票結果 ID。"
+
+msgid "Function"
+msgstr "関数"
+
+msgid "Function to apply to the numbers."
+msgstr "数字に適用する関数。"
+
+msgid "Vote result"
+msgstr "投票結果"
+
+msgid "Vote results"
+msgstr "投票結果"
+
+msgid "vote result"
+msgstr "投票結果"
+
+msgid "vote results"
+msgstr "投票結果"
+
+msgid "Vote Result"
+msgstr "投票結果"
+
+msgid "The Vote Result ID."
+msgstr "投票結果 ID。"
+
+msgid "Vote types"
+msgstr "投票タイプ"
+
+msgid "vote type"
+msgstr "投票タイプ"
+
+msgid "vote types"
+msgstr "投票タイプ"
+
+msgid "The Vote ID."
+msgstr "投票 ID。"
+
+msgid "The amount of time that must pass before two anonymous votes from the same computer are considered unique. Setting this to 'never' will eliminate most double-voting, but will make it impossible for multiple anonymous on the same computer (like internet cafe customers) from casting votes."
+msgstr "2 人の匿名ユーザーによる同じコンピューターからの投票は固有であると見なされるまでにかかる時間。 これを「なし」に設定すると、ほとんどの二重投票がなくなりますが、複数の匿名ユーザーが同じコンピューターから投票を行うことができなくなります (インターネット・カフェの利用者など)。"
+
+msgid "The amount of time that must pass before two registered user votes from the same user ID are considered unique. Setting this to 'never' will eliminate most double-voting for registered users."
+msgstr "2 人の登録済みユーザーによる同じユーザー ID からの投票は固有であると見なされるまでにかかる時間。 これを「なし」に設定すると、登録済みユーザーによるほとんどの二重投票がなくなくなります。"
+
+msgid "Calculation schedule"
+msgstr "計算スケジュール"
+
+msgid "On high-traffic sites, administrators can use this setting to postpone the calculation of vote results."
+msgstr "高トラフィックのサイトにおいて、管理者はこの設定を使用して投票結果の計算を延期することができます。"
+
+msgid "Tally results whenever a vote is cast"
+msgstr "投票が行われるたびに結果を集計"
+
+msgid "Tally results at cron-time"
+msgstr "クーロン実行時に結果を集計"
+
+msgid "Do not tally results automatically: I am using a module that manages its own vote results."
+msgstr "結果を自動集計しない: 自身の投票結果を管理するモジュールを使用中。"
+
+msgid "Allow deleting votes to someone else's entity when owner user of this votes is deleting."
+msgstr "この投票の所有者ユーザーが削除している場合に、他のユーザーのエンティティーへの投票の削除を許可します。"
+
+msgid "Are you sure you want to delete the vote?"
+msgstr "投票を削除しますか?"
+
+msgid "The vote by %user on @entity-type %label has been deleted."
+msgstr "%user による @entity-type %label への投票が削除されました。"
+
+msgid "You are about to delete a vote by %user on @entity-type %label. This action cannot be undone."
+msgstr "%user による @entity-type %label への投票を削除しようとしています。 この処理を元に戻すことはできません。"
+
+msgid "Average"
+msgstr "平均"
+
+msgid "The average vote value."
+msgstr "投票値の平均。"
+
+msgid "Count"
+msgstr "カウント"
+
+msgid "The number of votes cast."
+msgstr "投票数。"
+
+msgid "Sum"
+msgstr "合計"
+
+msgid "The total of all vote values."
+msgstr "すべての投票値の合計。"
+
+msgid "Vote ID"
+msgstr "投票 ID"
+
+msgid "Entity ID"
+msgstr "エンティティー ID"
+
+msgid "Tag"
+msgstr "タグ"
+
+msgid "User ID"
+msgstr "ユーザー ID"
+
+msgid "Timestamp"
+msgstr "タイム・スタンプ"
+

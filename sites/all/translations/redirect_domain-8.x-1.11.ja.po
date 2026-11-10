@@ -1,0 +1,101 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "製品情報"
+
+msgid "The Redirect domain module allows users to redirect between domains."
+msgstr "Redirect Domain モジュールは、ユーザーがドメイン間でリダイレクトできるようにします。"
+
+msgid "Uses"
+msgstr "使用"
+
+msgid "Manage domain redirects"
+msgstr "ドメインのリダイレクトの管理"
+
+msgid "The domain redirect is accessed through <a href=\":domainlist\">Domain Redirects</a>. The user can add the domain redirects through the domain redirect table which consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected. The module also supports the usage of a wildcard redirecting, thus many requests can be handled with one instance of domain redirect."
+msgstr "ドメインのリダイレクトは、<a href=\":domainlist\">Domain Redirects</a> を介してアクセスされます。 ユーザーは、ドメイン・リダイレクト・テーブルを使用してドメインのリダイレクトを追加できます。このテーブルは、リダイレクト元のドメイン、サブパス、およびリダイレクトの宛先の完全な URL から構成されています。 このモジュールは、ワイルドカード・リダイレクトの使用もサポートしているため、多くの要求をドメイン・リダイレクトの 1 つのインスタンスで処理できます。"
+
+msgid "The domain redirect table consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected."
+msgstr "ドメイン・リダイレクト・テーブルは、リダイレクト元のドメイン、サブパス、およびリダイレクトの宛先の完全な URL から構成されています。"
+
+msgid "Example Configuration"
+msgstr "構成の例"
+
+msgid "Example Redirects"
+msgstr "リダイレクトの例"
+
+msgid "Request: example.com/redirect => Response: redirected.com/example-path"
+msgstr "要求: example.com/redirect => 応答: redirected.com/example-path"
+
+msgid "Request: foo.com/any-path => Response: bar.com"
+msgstr "要求: foo.com/any-path => 応答: bar.com"
+
+msgid "Precedence"
+msgstr "優先順位"
+
+msgid "Top-down precedence is used. This means the first matching redirect that is found will be taken. For example, assume these redirect rules:"
+msgstr "トップダウン優先順位が使用されます。 つまり、最初に検出された一致するリダイレクトが使用されます。 例えば、以下のようなリダイレクト・ルールがあるとします。"
+
+msgid "foo.com/some/path => somedomain.com/path"
+msgstr "foo.com/some/path => somedomain.com/path"
+
+msgid "foo.com/* => wildcardredirect.com"
+msgstr "foo.com/* => wildcardredirect.com"
+
+msgid "foo.com/other/path => otherdomain.com/path"
+msgstr "foo.com/other/path => otherdomain.com/path"
+
+msgid "The following redirects would actually occur:"
+msgstr "実際には、以下のようなリダイレクトが行われます。"
+
+msgid "foo.com/other/path => wildcardredirect.com"
+msgstr "foo.com/other/path => wildcardredirect.com"
+
+msgid "Redirect Domain"
+msgstr "リダイレクト・ドメイン"
+
+msgid "Allows users to redirect between domains."
+msgstr "ユーザーがドメイン間でリダイレクトできるようにします。"
+
+msgid "Domain redirects"
+msgstr "ドメインのリダイレクト"
+
+msgid "Configure domain redirects."
+msgstr "ドメイン・リダイレクトを構成します。"
+
+msgid "Redirect domains"
+msgstr "リダイレクト・ドメイン"
+
+msgid "Sub path"
+msgstr "サブパス"
+
+msgid "Destination"
+msgstr "宛先"
+
+msgid "From domain"
+msgstr "リダイレクト元ドメイン"
+
+msgid "Add another"
+msgstr "もう 1 つ追加"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "No protocol should be included in the redirect domain."
+msgstr "プロトコルをリダイレクト・ドメインに含めてはなりません。"
+
+msgid "The domain redirects have been saved."
+msgstr "ドメインのリダイレクトが保存されました。"
+

@@ -1,0 +1,374 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "svg image from @field_name"
+msgstr "@field_name의 svg 이미지"
+
+msgid "@entity using @field"
+msgstr "@entity가 @field 사용"
+
+msgid "@field_name"
+msgstr "@field_name"
+
+msgid "Relate each @entity with a @field set to the svg image."
+msgstr "각 @entity을(를) svg 이미지에 설정된 @field과(와) 상관시킵니다. "
+
+msgid "About"
+msgstr "소개"
+
+msgid ""
+"The SVG image field module allows you to create fields that contain\n"
+" svg image files and to configure svg output. See the <a href=\":field\">Field module help</a> and\n"
+"  the <a href=\":field_ui\">Field UI help</a> pages for terminology and general information on\n"
+"  entities, fields, and how to create and manage fields."
+msgstr ""
+"SVG 이미지 필드 모듈을 사용하면 svg 이미지 파일이 포함된 필드를 작성하고\n"
+" svg 출력을 구성할 수 있습니다. 엔티티, 필드, 필드 작성 및 관리 방법에 대한 용어와\n"
+"  일반 정보에 대해서는 <a href=\":field\"> 필드 모듈 도움말</a> 및 <a href=\":field_ui\">필드 UI 도움말</a>\n"
+"  페이지를 참조하십시오."
+
+msgid "Uses"
+msgstr "사용"
+
+msgid "Configuring svg image fields"
+msgstr "svg 이미지 필드 구성"
+
+msgid ""
+"A few of the settings for svg image fields are defined once when you create the field and\n"
+"      cannot be changed later; these include the choice of public or private file storage and the number of images that can be stored in the field.\n"
+"       The rest of the settings can be edited later; these settings include the field label, help text, and the subdirectory in the public or private file storage\n"
+"       where the images will be stored. The editable settings can also have different values for different entity sub-types; for instance,\n"
+"       if your image field is used on both Page and Article content types, you can store the files in a\n"
+"        different subdirectory for the two content types."
+msgstr ""
+"필드를 작성하면 svg 이미지 필드에 대한 몇 가지 설정이 정의되고\n"
+"      이는 나중에 변경할 수 없습니다. 여기에는 공용 또는 개인용 파일 스토리지의 선택사항과 필드에 저장할 수 있는 이미지 수가 포함됩니다.\n"
+"       나머지 설정은 나중에 편집할 수 있습니다. 이러한 설정은 필드 레이블, 도움말 텍스트 및 이미지가 저장되는 공용 또는 개인용 파일 스토리지의\n"
+"       서브디렉토리가 포함됩니다. 편집 가능한 설정은 서로 다른 엔티티 하위 유형에 대해 서로 다른 값을 보유할 수도 있습니다. 예를 들어,\n"
+"       페이지 및 기사 컨텐츠 유형 모두에서 이미지 필드가 사용된 경우 두 컨텐츠 유형에 대해\n"
+"        서로 다른 값을 보유할 수도 있습니다."
+
+msgid ""
+"For accessibility and search engine optimization, all images that convey meaning on web sites should have alternate text.\n"
+"       Drupal also allows entry of title text for images, but it can lead to confusion for screen reader users and its use is not recommended.\n"
+"       SVG image fields can be configured so that alternate and title text fields are enabled or disabled; if enabled, the fields can be set to be required.\n"
+"        The recommended setting is to enable and require alternate text and disable title text."
+msgstr ""
+"접근성 및 검색 엔진 최적화를 위해 웹 사이트에서 의미를 전달하는 모든 이미지는 대체 텍스트를 포함해야 합니다.\n"
+"       또한 Drupal에서는 이미지에 대한 제목 텍스트 입력을 허용하지만, 스크린 리더 사용자에게 혼란을 일으킬 수 있으므로 사용은 권장되지 않습니다.\n"
+"       대체 및 제목 텍스트 필드를 사용하거나 사용하지 않도록 SVG 이미지 필드를 구성할 수 있습니다. 사용하는 경우 필드를 필수로 설정할 수 있습니다.\n"
+"        권장되는 설정은 대체 텍스트를 사용하고 요구하며, 제목 텍스트를 사용하지 않도록 합니다."
+
+msgid ""
+"When you create an svg image field, you will need to choose whether the uploaded images will be stored in the public or\n"
+" private file directory defined in your settings.php file and shown on the <a href=\":file-system\">File system page</a>. This choice cannot be changed later.\n"
+"  You can also configure your field to store files in a subdirectory of the public or private directory; this setting can be changed later and\n"
+"  can be different for each entity sub-type using the field. For more information on file storage,\n"
+"  see the <a href=\":system-help\">System module help page</a>."
+msgstr ""
+"svg 이미지 필드를 작성하는 경우 업로드된 이미지가 settings.php 파일에 정의된 공용 또는\n"
+" 개인용 파일 디렉토리에 저장되어 <a href=\":file-system\">파일 시스템 페이지</a>에 표시되는지 여부를 선택해야 합니다. 이 선택사항은 나중에 변경할 수 없습니다.\n"
+"  또한 공용 또는 개인용 디렉토리의 서브디렉토리에 파일을 저장하도록 필드를 구성할 수 있습니다. 이 설정은 나중에 변경할 수 있으며\n"
+"  필드를 사용하는 각 엔티티 하위 유형에 대해 서로 다를 수 있습니다. 파일 스토리지에 대한 자세한 정보는,\n"
+"  <a href=\":system-help\">시스템 모듈 도움말 페이지</a>를 참조하십시오."
+
+msgid ""
+"The maximum file size that can be uploaded is limited by PHP settings of the server,\n"
+" but you can restrict it further by configuring a <em>Maximum upload size</em> in the field settings (this setting can be changed later).\n"
+" The maximum file size, either from PHP server settings or field configuration, is automatically displayed to users in the help text of the image field."
+msgstr ""
+"업로드할 수 있는 최대 파일 크기는 서버의 PHP 설정으로 제한되지만\n"
+"  필드 설정에서 <em>최대 업로드 크기</em>를 구성하여 추가로 제한할 수 있습니다(이 설정은 나중에 변경 가능함). 최대 파일 크기, PHP 서버 설정 또는 필드 구성은 이미지 필드의 도움말 텍스트에서 사용자에게 자동으로 표시됩니다."
+
+msgid ""
+"You can also configure a default image that will be used if no image is uploaded in an image field.\n"
+"       This default can be defined for all instances of the field in the field storage settings when you create a field, and the setting can be overridden\n"
+"        for each entity sub-type that uses the field."
+msgstr ""
+"또한 이미지 필드에서 업로드된 이미지가 없는 경우 사용되는 기본 이미지를 구성할 수 있습니다.\n"
+" 이 기본값은 필드를 작성할 때 필드 스토리지 설정에서 필드의 모든 인스턴스에 대해 정의될 수 있으며, 설정은 필드를 사용하는\n"
+" 각 엔티티 하위 유형에 대해 대체할 수 있습니다. "
+
+msgid "Configuring displays and form displays"
+msgstr "표시 및 양식 표시 구성"
+
+msgid ""
+"On the <em>Manage display</em> page, you can choose the image formatter,\n"
+" which determines the image width and height used to display the image in each display mode and whether or not to display the image alt and title.\n"
+"  On the <em>Manage form display</em> page, you can configure the image upload widget, including setting the preview image max-width and max-height\n"
+"   shown on the entity edit form."
+msgstr ""
+"<em>표시 관리</em> 페이지에서 이미지 포맷터를 선택할 수 있습니다.\n"
+" 이를 통해 각 표시 모드에서 이미지를 표시하는 데 사용되는 이미지 너비와 높이를 판별하고 이미지 alt와 제목을 표시하는지 여부를 판별합니다.\n"
+" <em>양식 표시 관리</em> 페이지에서는 엔티티 편집 양식에 표시된 미리보기 이미지 최대 너비 및 최대 높이 설정을 포함하여\n"
+" 이미지 업로드 위젯을 구성할 수 있습니다. "
+
+msgid "Only files with mime type %mime-types-allowed are allowed. Mime type detected %mime-type-detected"
+msgstr "mime 유형 %mime-types-allowed인 파일만 허용됩니다. MIME 유형이 %mime-type-detected를 발견했습니다."
+
+msgid "File %file-name is not valid svg"
+msgstr "%file-name 파일이 올바른 svg가 아님"
+
+msgid "SVG image field"
+msgstr "SVG 이미지 필드"
+
+msgid "Provides svg image field"
+msgstr "svg 이미지 필드 제공"
+
+msgid "Field types"
+msgstr "필드 유형"
+
+msgid "Image settings"
+msgstr "이미지 설정"
+
+msgid "Default value"
+msgstr "기본 값"
+
+msgid "Enable Alt field"
+msgstr "대체 필드 사용"
+
+msgid "Alt field required"
+msgstr "대체 필드가 필요함"
+
+msgid "Enable Title field"
+msgstr "제목 필드 사용"
+
+msgid "Title field required"
+msgstr "제목 필드가 필요함"
+
+msgid "Image field display format settings"
+msgstr "이미지 필드 표시 형식 설정"
+
+msgid "Output SVG inline"
+msgstr "출력 SVG 인라인"
+
+msgid "Apply dimensions"
+msgstr "차원 적용"
+
+msgid "Width"
+msgstr "너비"
+
+msgid "Height"
+msgstr "높이"
+
+msgid "Enable alt"
+msgstr "alt 사용"
+
+msgid "Enable title"
+msgstr "제목 사용"
+
+msgid "Link image to"
+msgstr "이미지 링크 대상"
+
+msgid "Force fill"
+msgstr "강제 채우기"
+
+msgid "Sanitize"
+msgstr "무결 처리"
+
+msgid "Sanitize remote"
+msgstr "원격 무결 처리"
+
+msgid "Progress indicator"
+msgstr "진행률 표시기"
+
+msgid "Preview max width"
+msgstr "미리보기 최대 너비"
+
+msgid "Preview max height"
+msgstr "미리보기 최대 높이"
+
+msgid "SVG Image Field - Media Bundle"
+msgstr "SVG 이미지 필드 - 매체 번들"
+
+msgid "Creates a media bundle to use SVG Image Field with the Media capabilities in core. NOTE: if you are planning to use this with the Media Library in core, it is recommended to install that module before this one. Will also install Acquia Site Studio Components if that is installed."
+msgstr "코어의 미디어 기능과 함께 SVG 이미지 필드를 사용하는 미디어 번들을 작성합니다. 참고: 코어에 있는 미디어 라이브러리와 함께 사용할 계획인 경우, 이 모듈 보다 먼저 해당 모듈을 설치하는 것이 좋습니다. 설치되어 있는 경우에도 Acquia Site Components 구성요소를 설치합니다."
+
+msgid "Content"
+msgstr "콘텐츠"
+
+msgid "File"
+msgstr "파일"
+
+msgid ""
+"Check this option if you want to manipulate the SVG image with CSS and JavaScript.\n"
+"       Notice only trusted users should use fields with this option enabled because of\n"
+"       <a href=\"@svg_security_link\">inline svg security</a>"
+msgstr ""
+"CSS 및 JavaScript를 사용하여 SVG 이미지를 조작하려면 이 옵션을 선택하십시오.\n"
+"       <a href=\"@svg_security_link\">인라인 svg 보안</a> 때문에 신뢰할 수 있는 사용자만\n"
+"       이 옵션이 설정된 필드를 사용해야 합니다."
+
+msgid "Apply dimensions."
+msgstr "차원을 적용합니다."
+
+msgid "Image width."
+msgstr "이미지 너비입니다. "
+
+msgid "Image height."
+msgstr "이미지 높이입니다. "
+
+msgid "Force the fill to currentColor"
+msgstr "currentColor로 강제 채우기"
+
+msgid "This can allow the SVG to inherit coloring from the enclosing tag, such as a link tag."
+msgstr "이렇게 하면 SVG가 링크 태그와 같은 엔클로징 태그에서 색상을 상속할 수 있습니다."
+
+msgid "Sanitize SVG code"
+msgstr "SVG 코드 무결 처리"
+
+msgid "Sanitize the SVG XML code and prevent XSS attacks."
+msgstr "SVG XML 코드를 처리하고 XSS 공격을 예방합니다."
+
+msgid "Sanitize: Remove remote references"
+msgstr "무결 처리: 원격 참조 제거"
+
+msgid "Remove attributes that reference remote files, this will stop HTTP leaks but will add an overhead to the sanitizer."
+msgstr "원격 파일을 참조하는 속성을 제거하면 HTTP 누수가 중지되지만, 처리 프로그램에 오버헤드가 추가됩니다."
+
+msgid "Nothing"
+msgstr "없음"
+
+msgid "Enable alt attribute."
+msgstr "alt 속성을 사용합니다."
+
+msgid "Enable title attribute."
+msgstr "제목 속성을 사용합니다."
+
+msgid "Inline SVG"
+msgstr "인라인 SVG"
+
+msgid "Image width: @width"
+msgstr "이미지 너비: @width"
+
+msgid "Image height: @height"
+msgstr "이미지 높이: @height"
+
+msgid "Alt enabled"
+msgstr "Alt 사용"
+
+msgid "Title enabled"
+msgstr "제목 사용"
+
+msgid "Inline file %file is missing or empty. Inline display will be disabled and an image tag used instead."
+msgstr "인라인 파일 %file이(가) 누락되었거나 비어 있습니다. 인라인 표시가 사용 안함으로 설정되고 대신 이미지 태그가 사용됩니다."
+
+msgid "File %file could not be displayed by image formatter because it does not exist on server."
+msgstr "파일 %file이(가) 서버에 존재하지 않으므로 이미지 포맷터에 의해 표시될 수 없습니다."
+
+msgid "SVG Image Field formatter"
+msgstr "SVG 이미지 필드 포맷터"
+
+msgid "SVG Image URL formatter"
+msgstr "SVG 이미지 URL 포맷터"
+
+msgid "Alternative text"
+msgstr "대체 텍스트"
+
+msgid "Alternative image text, for the image's 'alt' attribute."
+msgstr "이미지의 '대체' 속성에 대한 대체 이미지 텍스트입니다."
+
+msgid "Title"
+msgstr "제목"
+
+msgid "Image title text, for the image's 'title' attribute."
+msgstr "이미지의 '제목' 속성에 대한 이미지 제목 텍스트입니다."
+
+msgid "Upload destination"
+msgstr "업로드 목적 경로"
+
+msgid "Select where the final files should be stored. Private file storage has significantly more overhead than public files, but allows restricted access to files within this field."
+msgstr "파일을 최종적으로 저장하려는 위치를 선택하세요. 사설 파일 저장소는 공개 파일 보다는 훨씬 부하가 걸리지만 이 필드안에 있는 파일에 대한 접근을 제한할 수 있습니다."
+
+msgid "If no image is uploaded, this image will be shown on display."
+msgstr "이미지를 업로드하지 않으면 이 이미지를 표시합니다."
+
+msgid "Enable <em>Alt</em> field"
+msgstr "<em>Alt</em> 필드 사용하기"
+
+msgid "The alt attribute may be used by search engines, screen readers, and when the image cannot be loaded. Enabling this field is recommended."
+msgstr "대체 속성은 검색 엔진, 스크린 리더, 그리고 이미지를 로드할 수 없는 경우에 사용할 수 있습니다. 이 필드를 사용하는 것이 좋습니다."
+
+msgid "<em>Alt</em> field required"
+msgstr "<em>대체</em> 필드가 필요함"
+
+msgid "Making this field required is recommended."
+msgstr "이 필드를 필수로 설정하는 것이 좋습니다."
+
+msgid "Enable <em>Title</em> field"
+msgstr "<em>Title</em> 필드 사용하기"
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image. Enabling this field is not recommended as it can cause problems with screen readers."
+msgstr "제목 속성은 이미지에 마우스를 대면 도구 팁으로 사용됩니다. 스크린 리더에서는 문제점이 발생할 수 있으므로 이 필드를 사용하지 않는 것이 좋습니다."
+
+msgid "<em>Title</em> field required"
+msgstr "<em>제목</em> 필드가 필요함"
+
+msgid "If no image is uploaded, this image will be shown on display and will override the field's default image."
+msgstr "이미지를 올리지 않았을 경우, 이 이미지를 필드 기본 이미지에 우선하여 화면에 표시합니다."
+
+msgid "Default image"
+msgstr "기본 이미지"
+
+msgid "Image"
+msgstr "이미지"
+
+msgid "Image to be shown if no image is uploaded."
+msgstr "업로드된 이미지가 없는 경우 표시할 이미지입니다."
+
+msgid "This text will be used by screen readers, search engines, and when the image cannot be loaded."
+msgstr "이 텍스트는 스크린 리더와 검색 엔진, 그리고 이미지를 로드할 수 없는 경우에 사용됩니다."
+
+msgid "The title attribute is used as a tooltip when the mouse hovers over the image."
+msgstr "title 속성은 마우스를 이미지 위로 올렸을 때 툴팁으로 사용됩니다."
+
+msgid "Svg Image"
+msgstr "Svg 이미지"
+
+msgid "This field stores the ID of an image file as an integer value."
+msgstr "이 필드는 이미지 파일 ID를 정수로 저장합니다."
+
+msgid "Reference"
+msgstr "참조"
+
+msgid "Alt"
+msgstr "Alt"
+
+msgid "Preview image max width"
+msgstr "미리보기 이미지 최대 너비"
+
+msgid "Preview image max height"
+msgstr "미리보기 이미지 최대 높이"
+
+msgid "Preview image width: @width"
+msgstr "미리보기 이미지 너비: @width"
+
+msgid "Preview image height: @height"
+msgstr "미리보기 이미지 높이: @height"
+
+msgid "This text will be used by screen readers, search engines, or when the image cannot be loaded."
+msgstr "검색 엔진, 스크린 리더가 접근했을 때, 이미지를 표시할 수 없을 때 이 텍스트를 사용합니다."
+
+msgid "The title is used as a tool tip when the user hovers the mouse over the image."
+msgstr "제목은 사용자가 이미지에 마우스를 올릴 때 표시할 툴팁으로 사용합니다."
+
+msgid "SVG image"
+msgstr "SVG 이미지"
+
+msgid "SVG"
+msgstr "SVG"
+
+msgid "Provides business logic and metadata for SVG files."
+msgstr "SVG 파일에 대한 비즈니스 로직 및 메타데이터를 제공합니다."
+

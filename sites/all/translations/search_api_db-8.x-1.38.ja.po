@@ -1,0 +1,137 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Fulltext field database columns updated."
+msgstr "フルテキスト・フィールドのデータベース列が更新されました。"
+
+msgid "Primary keys added to all denormalized index tables."
+msgstr "すべての非正規化インデックス表に 1 次キーが追加されました。"
+
+msgid "Database Search"
+msgstr "データベース検索"
+
+msgid "Offers an implementation of the Search API that uses database tables for indexing content."
+msgstr "コンテンツのインデックス付けにデータベース表を使用する検索 API の実装を提供します。"
+
+msgid "Search"
+msgstr "検索"
+
+msgid "Search API DB settings"
+msgstr "検索 API DB 設定"
+
+msgid "Name of the database we are connecting to"
+msgstr "接続先データベースの名前"
+
+msgid "Minimum length of indexed words"
+msgstr "インデックス・ワードの最小の長さ"
+
+msgid "The matching mode – \"words\", \"prefix\" or \"partial\""
+msgstr "マッチング・モード-「words」、「prefix」、または「partial」"
+
+msgid "Autocomplete configuration"
+msgstr "オートコンプリート構成"
+
+msgid "Suggest suffix"
+msgstr "末尾の候補を表示"
+
+msgid "Suggest words"
+msgstr "単語の候補を表示"
+
+msgid "Maximum occurrences of a term until autocomplete suggestions ignores it"
+msgstr "オートコンプリートによる候補の表示が用語を無視し始める用語の最大オカレンス"
+
+msgid "Database Search Defaults"
+msgstr "データベース検索のデフォルト"
+
+msgid "Enable this module for a best-practice default setup of Search API with the Database backend. After installation it is recommended to uninstall this module again for performance reasons. The provided configuration will not be removed."
+msgstr "このモジュールを有効化すると、データベースをバックエンドに持つ検索 API に、ベスト・プラクティスのデフォルト設定を適用できます。 パフォーマンス上の理由により、このモジュールをインストールした後、アンインストールすることをお勧めします。 提供済みの構成は削除されません。"
+
+msgid "Database"
+msgstr "データベース"
+
+msgid "Select the database key and target to use for storing indexing information in. Cannot be changed after creation."
+msgstr "インデックス付け情報の保管先として使用するデータベース・キーとターゲットを選択します。 作成後は変更できません。"
+
+msgid "Minimum word length"
+msgstr "単語の最小の長さ"
+
+msgid "The minimum number of characters a word must consist of to be indexed"
+msgstr "単語がインデックス付けの対象となるために必要な最小文字数"
+
+msgid "Partial matching"
+msgstr "部分一致"
+
+msgid "Match whole words only"
+msgstr "単語全体のみの一致"
+
+msgid "Match on parts of a word"
+msgstr "単語の部分の一致"
+
+msgid "Match words starting with given keywords"
+msgstr "指定されたキーワードで始まる単語の一致"
+
+msgid "Autocomplete settings"
+msgstr "オートコンプリート設定"
+
+msgid "These settings allow you to configure how suggestions are computed when autocompletion is used. If you are seeing many inappropriate suggestions you might want to deactivate the corresponding suggestion type. You can also deactivate one method to speed up the generation of suggestions."
+msgstr "これらの設定を使用すると、オートコンプリート使用時の候補の計算方法を構成できます。 不適切な候補が多く表示される場合は、該当する候補タイプを非アクティブ化できます。 候補の生成速度を上げるために、特定の方法を非アクティブ化することもできます。"
+
+msgid "Suggest word endings"
+msgstr "単語の末尾を提案"
+
+msgid "Suggest endings for the currently entered word."
+msgstr "現在入力されている単語の末尾を提案します。"
+
+msgid "Suggest additional words"
+msgstr "追加の単語を提案"
+
+msgid "Suggest additional words the user might want to search for."
+msgstr "ユーザーが検索しようとしている可能性のある追加の単語を提案します。"
+
+msgid "None selected yet"
+msgstr "まだ選択されていません"
+
+msgid "none"
+msgstr "なし"
+
+msgid "Autocomplete suggestions"
+msgstr "オートコンプリート候補"
+
+msgid "No valid search keys were present in the query."
+msgstr "照会内に有効な検索キーがありませんでした。"
+
+msgid "Unknown sort order @order. Assuming \"@default\"."
+msgstr "ソート順 @order が不明です。 \"@default\" を想定します。"
+
+msgid "Unknown facet field @field."
+msgstr "ファセット・フィールド @field が不明です。"
+
+msgid "Facets on location fields are currently not supported."
+msgstr "ロケーション・フィールドのファセットは現在サポートされていません。"
+
+msgid "Unknown field @field: please check (and re-save) the index's fields settings."
+msgstr "フィールド @field が不明です。インデックスのフィールド設定を確認 (および再保存) してください。"
+
+msgid "An overlong word (more than 50 characters) was encountered while indexing: %word.<br />Since database search servers currently cannot index words of more than 50 characters, the word was truncated for indexing. If this should not be a single word, please make sure the \"Tokenizer\" processor is enabled and configured correctly for index %index."
+msgstr "インデックス付け中に、長すぎる単語 (50 文字を超える) が検出されました: %word。<br />データベース検索サーバーは現在、50 文字を超える単語にインデックスを付けることができないため、この単語はインデックス付けのために切り捨てられました。 これが単一のワードではない場合は、「トークナイザー」プロセッサーが有効になっていて、索引 %index 用に正しく構成されていることを確認してください。"
+
+msgid "An overlong value (more than 255 characters) was encountered while indexing: %value.<br />Database search servers currently cannot index such values correctly – the value was therefore trimmed to the allowed length."
+msgstr "インデックス付け中に、長すぎる値 (255 文字を超える) が検出されました: %value。<br />データベース検索サーバーは現在、そのような値を正しくインデックス付けできません。そのため、値は許容される長さにトリムされました。"
+
+msgid "Error while adding facets: only \"item_id\" field should be used, used are: @fields."
+msgstr "ファセットの追加中にエラーが発生しました。「item_id」フィールドのみを使用する必要があります。使用されているのは @fieldsです。"
+
+msgid "Indexes items in the database. Supports several advanced features, but should not be used for large sites."
+msgstr "データベース内の項目にインデックスを付けます。 いくつかの拡張機能がサポートされていますが、大規模サイトには使用しないでください。"
+

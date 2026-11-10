@@ -1,0 +1,2971 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Processed @processed of @total overridden Metatag records."
+msgstr "Przetworzono @processed z @total przesłoniętych rekordów Metatag."
+
+msgid "There were no overridden Metatag records."
+msgstr "Nie przesłonięto żadnych rekordów Metatag."
+
+msgid "Metatags"
+msgstr "Metatagi"
+
+msgid "Tokens related to Metatags."
+msgstr "Leksemy związane z metaznacznikami."
+
+msgid "Metatag values for the current page."
+msgstr "Wartości metaznaczników dla bieżącej strony."
+
+msgid "@label tokens."
+msgstr "Leksemy @label."
+
+msgid "List of @type values"
+msgstr "Lista wartości @type"
+
+msgid "Tokens for lists of @type values."
+msgstr "Leksemy dla list wartości @type."
+
+msgid "@type type with delta @delta"
+msgstr "Typ @type z deltą @delta"
+
+msgid "Metatags (Hidden field for JSON support)"
+msgstr "Metaznaczniki (ukryte pole do obsługi JSON)"
+
+msgid "The meta tags for the entity."
+msgstr "Metaznaczniki dla jednostki. "
+
+msgid "About"
+msgstr "O stronie"
+
+msgid "This module allows a site to automatically provide structured metadata, aka \"meta tags\", about the site and individual pages."
+msgstr "Ten moduł pozwala dostarczać automatycznie ustrukturyzowane metadane o stronie lub indywidualnych odsłonach, zwane inaczej \"metatagami\"."
+
+msgid "In the context of search engine optimization, providing an extensive set of meta tags may help improve the site's and pages' rankings, thus may aid with achieving a more prominent display of the content within search engine results. They can also be used to tailor how content is displayed when shared on social networks. For additional information, see the <a href=\":online\">online documentation for Metatag</a>."
+msgstr "W kontekście optymalizacji mechanizmu wyszukiwania udostępnienie bogatego zestawu metaznaczników może pomóc w podwyższeniu rankingów serwisu i stron, a tym samym w uzyskaniu bardziej eksponowanego wyświetlania treści w wynikach wyszukiwarki. Istnieje także możliwość ich dostosowania pod kątem wyświetlania treści udostępnianej do współużytkowania w sieciach społecznościowych. Aby uzyskać dodatkowe informacje, patrz <a href=\":online\">dokumentacja elektroniczna dotycząca metaznaczników</a>."
+
+msgid "Intended workflow"
+msgstr "Planowany przepływ pracy"
+
+msgid "The module uses <a href=\":tokens\">\"tokens\"</a> to automatically fill in values for different meta tags. Specific values may also be filled in."
+msgstr "Moduł używa <a href=\":tokens\">\"leksemów\"</a> do automatycznego wypełniania wartości różnych metaznaczników. Istnieje także możliwość określenia konkretnych wartości."
+
+msgid "The best way of using Metatag is as follows:"
+msgstr "Najlepszy sposób korzystania z metaznaczników określa procedura zawierająca następujące kroki: "
+
+msgid "Customize the <a href=\":defaults\">global defaults</a>, fill in the specific values and tokens that every page should have."
+msgstr "Dostosowanie <a href=\":defaults\">globalnych wartości domyślnych</a>, określenie konkretnych wartości i leksemów, które powinny znajdować się na każdej stronie."
+
+msgid "Override each of the <a href=\":defaults\">other defaults</a>, fill in specific values and tokens that each item should have by default. This allows e.g. for all nodes to have different values than taxonomy terms."
+msgstr "Przesłonięcie wszystkich <a href=\":defaults\">pozostałych wartości domyślnych</a>, określenie konkretnych wartości i leksemów, które każdy element powinien mieć domyślnie. Umożliwia to na przykład podanie dla wszystkich węzłów wartości innych niż terminy systematyki."
+
+msgid "<a href=\":add\">Add more default configurations</a> as necessary for different entity types and entity bundles, e.g. for different content types or different vocabularies."
+msgstr "<a href=\":add\">Dodanie kolejnych konfiguracji domyślnych </a> odpowiednio do potrzeb dla różnych typów jednostek i pakunków jednostek, np. dla różnych typów treści lub różnych słowników."
+
+msgid "To override the meta tags for individual entities, e.g. for individual nodes, add the \"Metatag\" field via the field settings for that entity or bundle type."
+msgstr "Aby przesłonić metaznaczniki dla poszczególnych jednostek, np. dla poszczególnych węzłów, należy dodać pole \"Metatag\" za pomocą ustawień pola dla danej jednostki lub typu pakunku."
+
+msgid "Configure global meta tag default values below. Meta tags may be left as the default."
+msgstr "Konfiguruj poniżej globalne metatagi."
+
+msgid "Meta tag patterns are passed down from one level to the next unless they are overridden. To view a summary of the individual meta tags and the pattern for a specific configuration, click on its name below."
+msgstr "Wzorce metaznaczników są przekazywane w dół do następnego poziomu, chyba że zostaną przesłonięte. Aby wyświetlić podsumowanie poszczególnych metaznaczników i wzorzec dla konkretnej konfiguracji, należy kliknąć jego nazwę poniżej. "
+
+msgid "If the top-level configuration is not specific enough, additional default meta tag configurations can be added for a specific entity type or entity bundle, e.g. for a specific content type."
+msgstr "Jeśli konfiguracja najwyższego poziomu nie jest wystarczająco specyficzna, można dodać kolejne domyślne konfiguracje metaznaczników dla konkretnego typu jednostki lub pakunku jednostki, np. dla konkretnego typu treści."
+
+msgid "Meta tags can be further refined on a per-entity basis, e.g. for individual nodes, by adding the \"Metatag\" field to that entity type through its normal field settings pages."
+msgstr "Metaznaczniki można dodatkowo uszczegółowić dla poszczególnych jednostek, np. węzłów, dodając pole \"Metatag\" do typu jednostki przy użyciu normalnych stron ustawień pola."
+
+msgid "Use the following form to override the global default meta tags for a specific entity type or entity bundle. In practical terms, this allows the meta tags to be customized for a specific content type or taxonomy vocabulary, so that its content will have different meta tags <em>default values</em> than others."
+msgstr "Należy użyć następującego formularza, aby przesłonić domyślne globalne metaznaczniki dla konkretnego typu jednostki lub pakunku jednostki. W praktyce umożliwia to dostosowanie metaznaczników pod kątem konkretnego typu treści lub słownika systematyki, dzięki czemu jego treść będzie miała inne <em>wartości domyślne</em> metaznaczników niż inne elementy tego typu."
+
+msgid "As a reminder, if the \"Metatag\" field is added to the entity type through its normal field settings, the meta tags can be further refined on a per entity basis; this allows each node to have its meta tags  customized on an individual basis."
+msgstr "Należy pamiętać, że jeśli pole \"Metatag\" zostanie dodane do typu jednostki przy użyciu jego normalnych ustawień pola, metaznaczniki można dalej uszczegóławiać dla poszczególnych jednostek. Pozwala to na indywidualne dostosowanie metaznaczników dla każdego węzła."
+
+msgid "Not enabled while in maintenance mode"
+msgstr "Niewłączone podczas pracy w trybie serwisowym"
+
+msgid "Please note that while the site is in maintenance mode none of the usual meta tags will be output."
+msgstr "Należy pamiętać, że gdy serwis jest w trybie serwisowym, nie będą generowane żadne ze zwykłych znaczników meta."
+
+msgid "Schema.org Metatag is recommended"
+msgstr "Zalecane jest użycie modułu Schema.org Metatag"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is highly recommended to add <a href=\"@jsonld\">JSON-LD</a> -formatted <a href=\"@schema\">schema.org</a> compatible data structures to the site."
+msgstr "Moduł <a href=\"@module\">Schema.org Metatag</a> jest szczególnie zalecany w przypadku dodawania struktur danych w formacie <a href=\"@jsonld\">JSON-LD</a> zgodnych ze standardem serwisu <a href=\"@schema\">schema.org</a>. "
+
+msgid "Schema.org Metatag is installed"
+msgstr "Moduł Schema.org Metatag jest instalowany"
+
+msgid "The <a href=\"@module\">Schema.org Metatag</a> module is installed."
+msgstr "Moduł <a href=\"@module\">Schema.org Metatag</a> jest instalowany. "
+
+msgid "Token Or"
+msgstr "Token lub"
+
+msgid "The <a href=\"@module\">Token OR module</a> is suggested for when the basic content tokens are not flexible enough, e.g. to make a meta tag show the contents of one field if it is filled in or another if the first one is empty."
+msgstr "Opcja <a href=\"@module\">Token lub moduł</a> jest sugerowana, gdy podstawowe tokeny treści nie są wystarczająco elastyczne, np. aby znacznik meta pokazał zawartość jednego pola, jeśli jest ono wypełnione, lub innego, jeśli pierwsze pole jest puste."
+
+msgid "The new Metatag: Open Graph module has been enabled."
+msgstr "Włączono nowy metaznacznik: moduł Open Graph."
+
+msgid "The sites's caches will need to be rebuild to ensure Metatag works as intended."
+msgstr "Pamięci podręczne serwisów będą musiały zostać odbudowane w celu zapewnienia prawidłowego działania modułu Metatag."
+
+msgid "Metatag"
+msgstr "Metatagi"
+
+msgid "Manage meta tags for all entities."
+msgstr "Zarządzaj metatagami dla wszystkich encji."
+
+msgid "SEO"
+msgstr "SEO"
+
+msgid "Add default meta tags"
+msgstr "Dodaj metaznaczniki domyślne"
+
+msgid "Settings"
+msgstr "Ustawienia"
+
+msgid "Metatag plugins"
+msgstr "Wtyczki Metatag"
+
+msgid "Configure Metatag defaults."
+msgstr "Konfigurowanie domyślnych meta tagów."
+
+msgid "Overview of plugins used in metatag."
+msgstr "Przegląd wtyczek używanych w module Metatag."
+
+msgid "Metatag defaults"
+msgstr "Wartości domyślne metaznacznika"
+
+msgid "Administer meta tags"
+msgstr "Administruj metaznacznikami"
+
+msgid "Control the main settings pages and modify per-object meta tags."
+msgstr "Sterowanie głównymi stronami ustawień i modyfikowanie metaznaczników dla poszczególnych obiektów. "
+
+msgid "Delete default meta tags"
+msgstr "Usuń metaznaczniki domyślne"
+
+msgid "Revert default meta tags"
+msgstr "Przywróć metaznaczniki domyślne"
+
+msgid "Configure the Metatag module"
+msgstr "Konfiguruj moduł Metatag"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Type"
+msgstr "Typ"
+
+msgid "Tags"
+msgstr "Tagi"
+
+msgid "Abstract"
+msgstr "Streszczenie"
+
+msgid "Cache control"
+msgstr "Sterowanie pamięcią podręczną"
+
+msgid "Canonical URL"
+msgstr "Kanoniczny URL"
+
+msgid "Content Language"
+msgstr "Język zawartości"
+
+msgid "Description"
+msgstr "Opis"
+
+msgid "Expires"
+msgstr "Wygasa"
+
+msgid "Generator"
+msgstr "Generator"
+
+msgid "Image SRC"
+msgstr "Element SRC obrazu"
+
+msgid "Keywords"
+msgstr "Słowa kluczowe"
+
+msgid "Google News Keywords"
+msgstr "Słowa kluczowe serwisu Google Wiadomości"
+
+msgid "Next page URL"
+msgstr "Adres URL następnej strony"
+
+msgid "Original source"
+msgstr "Oryginalne źródło"
+
+msgid "Pragma"
+msgstr "Pragma"
+
+msgid "Previous page URL"
+msgstr "Adres URL poprzedniej strony"
+
+msgid "Rating"
+msgstr "Ocena"
+
+msgid "Referrer policy"
+msgstr "Strategia dla stron odsyłających"
+
+msgid "Refresh"
+msgstr "Odśwież"
+
+msgid "Revisit After"
+msgstr "Ponowne odwiedziny po"
+
+msgid "Rights"
+msgstr "Prawa"
+
+msgid "Robots"
+msgstr "Roboty"
+
+msgid "Shortlink"
+msgstr "Skrócony odsyłacz"
+
+msgid "Standout"
+msgstr "Standout"
+
+msgid "Page title"
+msgstr "Tytuł strony"
+
+msgid "ICBM"
+msgstr "ICBM"
+
+msgid "Geographical region"
+msgstr "Region geograficzny"
+
+msgid "Geographical place name"
+msgstr "Nazwa lokalizacji geograficznej"
+
+msgid "Geographical position"
+msgstr "Położenie geograficzne"
+
+msgid "Set Cookie"
+msgstr "Ustaw informację cookie"
+
+msgid "Google"
+msgstr "Google"
+
+msgid "Author"
+msgstr "Autor"
+
+msgid "Default value"
+msgstr "Wartość domyślna"
+
+msgid "Advanced meta tags form"
+msgstr "Postać metaznaczników zaawansowanych"
+
+msgid "Place field in sidebar"
+msgstr "Umieść pole na pasku bocznym"
+
+msgid "Place field in collapsed details container"
+msgstr "Umieść pole w zwiniętym kontenerze szczegółów"
+
+msgid "Metatag settings"
+msgstr "Ustawienia modułu Metatag"
+
+msgid "Metatag groups that apply to each entity type"
+msgstr "Grupy modułu Metatag stosowane dla każdego typu jednostki"
+
+msgid "Entity type"
+msgstr "Typ encji"
+
+msgid "Bundle"
+msgstr "Zestaw"
+
+msgid "Group"
+msgstr "Grupa"
+
+msgid "Trim method for trimmable tags."
+msgstr "Metoda trim dla możliwych do przycięcia znaczników."
+
+msgid "Use Maxlength module to force these limits?"
+msgstr "Czy użyć modułu Maxlength do wymuszenia tych limitów?"
+
+msgid "Tag-specific maximum length"
+msgstr "Maksymalna długość specyficzna dla znacznika"
+
+msgid "Tag maximum length in characters"
+msgstr "Maksymalna długość znacznika w znakach"
+
+msgid "Add max height value"
+msgstr "Dodaj maksymalną wartość wysokości"
+
+msgid "Provides support for applinks.org meta tags."
+msgstr "Udostępnia obsługę metaznaczników serwisu applinks.org."
+
+msgid "Metatag: App Links"
+msgstr "Metaznacznik: App Links"
+
+msgid "Android app name"
+msgstr "Nazwa aplikacji systemu Android"
+
+msgid "Android app Activity Class"
+msgstr "Klasa działania aplikacji systemu Android"
+
+msgid "Android app package ID"
+msgstr "Identyfikator pakietu aplikacji systemu Android"
+
+msgid "Android app URL scheme"
+msgstr "Schemat adresu URL aplikacji systemu Android"
+
+msgid "iOS app URL scheme"
+msgstr "Schemat adresu URL aplikacji systemu iOS"
+
+msgid "iOS app store ID"
+msgstr "Identyfikator sklepu dla aplikacji systemu iOS"
+
+msgid "iOS app name"
+msgstr "Nazwa aplikacji systemu iOS"
+
+msgid "iPad app URL scheme"
+msgstr "Schemat adresu URL aplikacji tabletu iPad"
+
+msgid "iPad app store ID"
+msgstr "Identyfikator sklepu dla aplikacji tabletu iPad"
+
+msgid "iPad app name"
+msgstr "Nazwa aplikacji tabletu iPad"
+
+msgid "iPhone app URL scheme"
+msgstr "Schemat adresu URL aplikacji telefonu iPhone"
+
+msgid "iPhone app store ID"
+msgstr "Identyfikator sklepu dla aplikacji telefonu iPhone"
+
+msgid "Windows app GUID"
+msgstr "Identyfikator GUID aplikacji systemu Windows"
+
+msgid "Windows app name"
+msgstr "Nazwa aplikacji systemu Windows"
+
+msgid "Windows app URL scheme"
+msgstr "Schemat adresu URL aplikacji systemu Windows"
+
+msgid "Windows Phone app URL scheme"
+msgstr "Schemat adresu URL aplikacji systemu Windows Phone"
+
+msgid "Windows Phone app GUID"
+msgstr "Identyfikator GUID aplikacji systemu Windows Phone"
+
+msgid "Windows Phone app name"
+msgstr "Nazwa aplikacji systemu Windows Phone"
+
+msgid "Windows Universal app URL scheme"
+msgstr "Schemat adresu URL aplikacji uniwersalnej systemu Windows"
+
+msgid "Windows Universal app GUID"
+msgstr "Identyfikator GUID aplikacji uniwersalnej systemu Windows"
+
+msgid "Windows Universal app name"
+msgstr "Nazwa aplikacji uniwersalnej systemu Windows"
+
+msgid "Web URL"
+msgstr "Adres URL sieci WWW"
+
+msgid "Should fallback"
+msgstr "Powinno nastąpić wycofanie"
+
+msgid "App Links"
+msgstr "App Links"
+
+msgid "The name of the app (suitable for display)."
+msgstr "Nazwa aplikacji (odpowiednia do wyświetlania)."
+
+msgid "A fully-qualified Activity class name for intent generation."
+msgstr "Pełna nazwa klasy działania na potrzeby generowania zamiaru."
+
+msgid "A fully-qualified package name for intent generation. <strong>This attribute is required by the App Links specification.</strong>"
+msgstr "Pełna nazwa pakietu na potrzeby generowania zamiaru.<strong>Ten atrybut jest wymagany przez specyfikację metaznacznika App Links.</strong> "
+
+msgid "A custom scheme for the Android app."
+msgstr "Schemat niestandardowy dla aplikacji systemu Android."
+
+msgid "The name of the app (suitable for display)"
+msgstr "Nazwa aplikacji (odpowiednia do wyświetlania)"
+
+msgid "The app ID for the app store."
+msgstr "Identyfikator aplikacji dla sklepu z aplikacjami."
+
+msgid "A custom scheme for the iOS app. <strong>This attribute is required by the app Links specification.</strong>"
+msgstr "Schemat niestandardowy dla aplikacji systemu iOS. <strong>Ten atrybut jest wymagany przez specyfikację metaznacznika App Links.</strong> "
+
+msgid "iPhone app name"
+msgstr "Nazwa aplikacji telefonu iPhone"
+
+msgid "The web URL; defaults to the URL for the content that contains this tag."
+msgstr "Adres URL sieci WWW. Domyślnie jest to adres URL treści, która zawiera ten znacznik."
+
+msgid "Windows app ID"
+msgstr "Identyfikator aplikacji systemu Windows"
+
+msgid "Windows Phone app ID"
+msgstr "Identyfikator aplikacji systemu Windows Phone"
+
+msgid "Windows Universal app ID"
+msgstr "Identyfikator aplikacji uniwersalnej systemu Windows"
+
+msgid "Metatag: Dublin Core"
+msgstr "Metaznacznik: Dublin Core"
+
+msgid "Provides the fifteen <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "Udostępnia 15 metaznaczników z zestawu <a href=\"https://dublincore.org/documents/dces/\">Dublin Core Metadata Element Set 1.1</a> pochodzącego z organizacji <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+
+msgid "Dublin Core: Contributor"
+msgstr "Dublin Core: Współtwórca"
+
+msgid "Dublin Core: Coverage"
+msgstr "Dublin Core: Zasięg"
+
+msgid "Dublin Core: Creator"
+msgstr "Dublin Core: Twórca"
+
+msgid "Dublin Core: Date"
+msgstr "Dublin Core: Data"
+
+msgid "Dublin Core: Description"
+msgstr "Dublin Core: Opis"
+
+msgid "Dublin Core: Format"
+msgstr "Dublin Core: Format"
+
+msgid "Dublin Core: Identifier"
+msgstr "Dublin Core: Identyfikator"
+
+msgid "Dublin Core: Language"
+msgstr "Dublin Core: Język"
+
+msgid "Dublin Core: Publisher"
+msgstr "Dublin Core: Wydawca"
+
+msgid "Dublin Core: Relation"
+msgstr "Dublin Core: Powiązanie"
+
+msgid "Dublin Core: Rights"
+msgstr "Dublin Core: Prawa"
+
+msgid "Dublin Core: Source"
+msgstr "Dublin Core: Źródło"
+
+msgid "Dublin Core: Subject"
+msgstr "Dublin Core: Temat"
+
+msgid "Dublin Core: Title"
+msgstr "Dublin Core: Tytuł"
+
+msgid "Dublin Core: Type"
+msgstr "Dublin Core: Rodzaj"
+
+msgid "Dublin Core"
+msgstr "Dublin Core"
+
+msgid "Contributor"
+msgstr "Współtwórca"
+
+msgid "An entity responsible for making contributions to the resource. Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity."
+msgstr "Jednostka odpowiedzialna za wnoszenie elementów do zasobu. Przykładowe jednostki Współtwórca to osoba, organizacja lub usługa. Zwykle nazwa współtwórcy powinna wskazywać jednostkę. "
+
+msgid "Coverage"
+msgstr "Zasięg"
+
+msgid "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges."
+msgstr "Przestrzenny lub czasowy temat zasobu, zastosowanie przestrzenne zasobu lub jurysdykcja, w której zasób ma zastosowanie. Temat przestrzenny i zastosowanie przestrzenne mogą być nazwanym miejscem lub lokalizacją określoną przez odpowiednie współrzędne geograficzne. Temat czasowy może być nazwanym okresem, datą lub zakresem dat. Jurysdykcja może być nazwaną jednostką administracyjną lub lokalizacją geograficzną, w której zasób ma zastosowanie. Zalecana sprawdzona procedura to zastosowanie słownika kontrolowanego, takiego jak Thesaurus of Geographic Names [TGN]. Tam, gdzie jest to właściwe, można użyć nazwanych miejsc lub okresów zamiast identyfikatorów liczbowych, takich jak zestawy współrzędnych lub zakresy dat."
+
+msgid "Creator"
+msgstr "Twórca"
+
+msgid "An entity primarily responsible for making the resource. Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."
+msgstr "Jednostka, na której spoczywa główna odpowiedzialność za stworzenie zasobu. Przykładowe jednostki Twórca to osoba, organizacja lub usługa. Zwykle nazwa twórcy powinna być używana do wskazania jednostki. "
+
+msgid "Date"
+msgstr "Data"
+
+msgid "A point or period of time associated with an event in the lifecycle of the resource. Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF]."
+msgstr "Punkt w czasie lub okres powiązany ze zdarzeniem cyklu życia zasobu. Data umożliwia wyrażenie informacji czasowych z dowolnym poziomem szczegółowości. Zalecana sprawdzona procedura to użycie schematu kodowania, takiego jak profil W3CDTF zgodny z normą ISO 8601 [W3CDTF]. "
+
+msgid "An account of the resource. Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."
+msgstr "Omówienie zasobu. Opis może zawierać streszczenie, spis treści, reprezentację graficzną lub tekst stanowiący omówienie zasobu, przy czym nie jest ograniczony do tych elementów."
+
+msgid "Format"
+msgstr "Format"
+
+msgid "The file format, physical medium, or dimensions of the resource. Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME]."
+msgstr "Format pliku, nośnik fizyczny lub wymiary zasobu. Przykładowe wymiary to wielkość i czas trwania. Zalecaną sprawdzoną procedurą jest użycie słownika kontrolowanego, takiego jak lista Internet Media Types [MIME]."
+
+msgid "Identifier"
+msgstr "Identyfikator"
+
+msgid "An unambiguous reference to the resource within a given context. Recommended best practice is to identify the resource by means of a string conforming to a formal identification system."
+msgstr "Jednoznaczne odwołanie do zasobu w danym kontekście. Zalecana sprawdzona procedura to zidentyfikowanie zasobu za pomocą łańcucha zgodnego z formalnym systemem identyfikacji."
+
+msgid "Language"
+msgstr "Język"
+
+msgid "A language of the resource. Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646]."
+msgstr "Język zasobu. Zalecana sprawdzona procedura to zastosowanie słownika kontrolowanego, takiego jak przedstawiony w dokumencie RFC 4646 [RFC4646]. "
+
+msgid "Publisher"
+msgstr "Wydawca"
+
+msgid "An entity responsible for making the resource available. Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."
+msgstr "Jednostka odpowiedzialna za udostępnienie zasobu. Przykładowe jednostki Wydawca to osoba, organizacja lub usługa. Zwykle nazwa wydawcy powinna wskazywać jednostkę. "
+
+msgid "Relation"
+msgstr "Relacja"
+
+msgid "A related resource. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "Zasób pokrewny. Zalecana sprawdzona procedura to zidentyfikowanie zasobu pokrewnego za pomocą łańcucha zgodnego z formalnym systemem identyfikacji."
+
+msgid "Information about rights held in and over the resource. Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."
+msgstr "Informacje o prawach posiadanych w ramach zasobu i do niego. Zwykle informacje o prawach zawierają oświadczenie o różnych prawach własności powiązanych z zasobem, w tym o prawach własności intelektualnej. "
+
+msgid "Source"
+msgstr "Źródło"
+
+msgid "A related resource from which the described resource is derived. The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."
+msgstr "Zasób pokrewny, z którego pochodzi opisany zasób. Opisany zasób może pochodzić z zasobu pokrewnego w całości lub w części. Zalecana sprawdzona procedura to zidentyfikowanie zasobu pokrewnego za pomocą łańcucha zgodnego z formalnym systemem identyfikacji."
+
+msgid "Subject"
+msgstr "Tytuł"
+
+msgid "The topic of the resource. Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary. To describe the spatial or temporal topic of the resource, use the Coverage element."
+msgstr "Temat zasobu. Zwykle temat jest reprezentowany przy użyciu słów kluczowych, fraz kluczowych lub kodów klasyfikacji. Zalecana sprawdzona procedura to zastosowanie słownika kontrolowanego. Aby opisać przestrzenny lub czasowy temat zasobu, należy użyć jednostki Zasięg. "
+
+msgid "Title"
+msgstr "Tytuł"
+
+msgid "The name given to the resource."
+msgstr "Nazwa nadana zasobowi."
+
+msgid "The nature or genre of the resource. Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."
+msgstr "Rodzaj lub gatunek zasobu. Zalecana sprawdzona procedura to zastosowanie słownika kontrolowanego, takiego jak DCMI Type Vocabulary [DCMITYPE]. Aby opisać format pliku, nośnik fizyczny lub wymiary zasobu, należy użyć elementu Format. "
+
+msgid "Provides forty additional meta tags from the <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+msgstr "Udostępnia 40 dodatkowych metaznaczników pochodzących z organizacji <a href=\"https://dublincore.org/\">Dublin Core Metadata Institute</a>."
+
+msgid "Metatag: Dublin Core Advanced"
+msgstr "Metatag: Dublin Core Advanced"
+
+msgid "Dublin Core: Abstract"
+msgstr "Dublin Core: Abstrakt"
+
+msgid "Dublin Core: Access Rights"
+msgstr "Dublin Core: Prawa dostępu"
+
+msgid "Dublin Core: Accrual Method"
+msgstr "Dublin Core: Metoda uzupełnienia zbioru"
+
+msgid "Dublin Core: Accrual Periodicity"
+msgstr "Dublin Core: Częstotliwość uzupełniania zbioru"
+
+msgid "Dublin Core: Accrual Policy"
+msgstr "Dublin Core: Reguły uzupełniania zbioru"
+
+msgid "Dublin Core: Alternative Title"
+msgstr "Dublin Core: Wariant tytułu"
+
+msgid "Dublin Core: Audience"
+msgstr "Dublin Core: Odbiorcy"
+
+msgid "Dublin Core: Date Available"
+msgstr "Dublin Core: Data dostępu"
+
+msgid "Dublin Core: Bibliographic Citation"
+msgstr "Dublin Core: Cytata bibliograficzna"
+
+msgid "Dublin Core: Conforms To"
+msgstr "Dublin Core: Zgodny z"
+
+msgid "Dublin Core: Date Created"
+msgstr "Dublin Core: Data utworzenia"
+
+msgid "Dublin Core: Date Accepted"
+msgstr "Dublin Core: Data przyjęcia"
+
+msgid "Dublin Core: Date Copyrighted"
+msgstr "Dublin Core: Data copyright"
+
+msgid "Dublin Core: Date Submitted"
+msgstr "Dublin Core: Data złożenia"
+
+msgid "Dublin Core: Audience Education Level"
+msgstr "Dublin Core: Poziom edukacyjny odbiorcy"
+
+msgid "Dublin Core: Extent"
+msgstr "Dublin Core: Rozmiar"
+
+msgid "Dublin Core: Has Format"
+msgstr "Dublin Core: Jest w formacie"
+
+msgid "Dublin Core: Has Part"
+msgstr "Dublin Core: Składa się z"
+
+msgid "Dublin Core: Has Version"
+msgstr "Dublin Core: Ma wersję"
+
+msgid "Dublin Core: Instructional Method"
+msgstr "Dublin Core: Metoda szkolenia"
+
+msgid "Dublin Core: Is Format Of"
+msgstr "Dublin Core: Jest formatem"
+
+msgid "Dublin Core: Is Part Of"
+msgstr "Dublin Core: Jest częścią"
+
+msgid "Dublin Core: Is Referenced By"
+msgstr "Dublin Core: Jest cytowany przez"
+
+msgid "Dublin Core: Is Replaced By"
+msgstr "Dublin Core: Zastąpiony przez"
+
+msgid "Dublin Core: Is Required By"
+msgstr "Dublin Core: Jest wymagany przez"
+
+msgid "Dublin Core: Date Issued"
+msgstr "Dublin Core: Data wydania"
+
+msgid "Dublin Core: Is Version Of"
+msgstr "Dublin Core: Jest wersją"
+
+msgid "Dublin Core: License"
+msgstr "Dublin Core: Licencja"
+
+msgid "Dublin Core: Mediator"
+msgstr "Dublin Core: Pośrednik"
+
+msgid "Dublin Core: Medium"
+msgstr "Dublin Core: Nośnik"
+
+msgid "Dublin Core: Date Modified"
+msgstr "Dublin Core: Data modyfikacji"
+
+msgid "Dublin Core: Provenance"
+msgstr "Dublin Core: Pochodzenie"
+
+msgid "Dublin Core: References"
+msgstr "Dublin Core: Cytuje"
+
+msgid "Dublin Core: Replaces"
+msgstr "Dublin Core: Zastępuje"
+
+msgid "Dublin Core: Requires"
+msgstr "Dublin Core: Wymaga"
+
+msgid "Dublin Core: Rights Holder"
+msgstr "Dublin Core: Właściciel praw"
+
+msgid "Dublin Core: Spatial Coverage"
+msgstr "Dublin Core: Zasięg przestrzenny"
+
+msgid "Dublin Core: Table Of Contents"
+msgstr "Dublin Core: Spis treści"
+
+msgid "Dublin Core: Temporal Coverage"
+msgstr "Dublin Core: Zasięg czasowy"
+
+msgid "Dublin Core: Date Valid"
+msgstr "Dublin Core: Data ważności"
+
+msgid "Dublin Core Additional Tags"
+msgstr "Dodatkowe znaczniki zestawu Dublin Core"
+
+msgid "These tags are not part of the Metadata Element Set but may be useful for certain scenarios."
+msgstr "Te znaczniki nie są częścią zestawu Metadata Element Set, ale mogą być przydatne w przypadku niektórych scenariuszy. "
+
+msgid "A summary of the resource."
+msgstr "Podsumowanie zasobu. "
+
+msgid "Access Rights"
+msgstr "Prawa dostępu"
+
+msgid "Information about who can access the resource or an indication of its security status. Access Rights may include information regarding access or restrictions based on privacy, security, or other policies."
+msgstr "Informacje o tym, kto może uzyskać dostęp do zasobu, lub wskazanie jego statusu zabezpieczeń. Prawa dostępu mogą obejmować informacje dotyczące dostępu lub ograniczeń oparte na prywatności, zabezpieczeniach lub innych strategiach. "
+
+msgid "Accrual Method"
+msgstr "Metoda uzupełniania zbioru"
+
+msgid "The method by which items are added to a collection."
+msgstr "Metoda, według której elementy są dodawane do kolekcji. "
+
+msgid "Accrual Periodicity"
+msgstr "Częstotliwość uzupełniania zbioru"
+
+msgid "The frequency with which items are added to a collection."
+msgstr "Częstotliwość, z jaką elementy są dodawane do kolekcji. "
+
+msgid "Accrual Policy"
+msgstr "Reguły uzupełniania zbioru"
+
+msgid "The policy governing the addition of items to a collection."
+msgstr "Strategia zarządzająca dodawaniem elementów do kolekcji. "
+
+msgid "Alternative Title"
+msgstr "Wariant tytułu"
+
+msgid "An alternative name for the resource. The distinction between titles and alternative titles is application-specific."
+msgstr "Alternatywna nazwa zasobu. Rozróżnienie między tytułami i wariantami tytułu zależy od zastosowania. "
+
+msgid "Audience"
+msgstr "Odbiorcy"
+
+msgid "A class of entity for whom the resource is intended or useful."
+msgstr "Klasa jednostek, dla których zasób jest przeznaczony lub przydatny. "
+
+msgid "Date Available"
+msgstr "Data dostępu"
+
+msgid "Date (often a range) that the resource became or will become available."
+msgstr "Data (często okres) określająca, kiedy zasób stał się lub stanie się dostępny. "
+
+msgid "Bibliographic Citation"
+msgstr "Cytata bibliograficzna"
+
+msgid "A bibliographic reference for the resource. Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible."
+msgstr "Odniesienie bibliograficzne dla zasobu. Zalecana praktyka to dołączenie szczegółów bibliograficznych wystarczających do zidentyfikowania zasobu w sposób możliwie jednoznaczny. "
+
+msgid "Conforms To"
+msgstr "Zgodny z"
+
+msgid "An established standard to which the described resource conforms."
+msgstr "Ustanowiony standard, z którym jest zgodny opisany zasób. "
+
+msgid "Date Created"
+msgstr "Data utworzenia"
+
+msgid "Date of creation of the resource."
+msgstr "Data utworzenia zasobu. "
+
+msgid "Date Accepted"
+msgstr "Data przyjęcia"
+
+msgid "Date of acceptance of the resource. Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal)."
+msgstr "Data przyjęcia zasobu. Przykładowe zasoby, których może dotyczyć element Data przyjęcia, to praca magisterska (przyjmowana przez wydział uczelni wyższej) lub artykuł (przyjmowany przez czasopismo naukowe). "
+
+msgid "Date Copyrighted"
+msgstr "Data praw autorskich"
+
+msgid "Date of copyright."
+msgstr "Data dotycząca praw autorskich."
+
+msgid "Date Submitted"
+msgstr "Data złożenia"
+
+msgid "Date of submission of the resource. Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal)."
+msgstr "Data złożenia zasobu. Przykładowe zasoby, których może dotyczyć element Data złożenia, to praca magisterska (składana w wydziale uczelni wyższej) lub artykuł (składany do czasopisma naukowego). "
+
+msgid "Audience Education Level"
+msgstr "Poziom edukacyjny odbiorcy"
+
+msgid "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended."
+msgstr "Klasa jednostki określona w kategoriach zaawansowania w kontekście edukacji lub szkoleń, dla której opisywany zasób jest przeznaczony. "
+
+msgid "Extent"
+msgstr "Rozmiar"
+
+msgid "The size or duration of the resource."
+msgstr "Wielkość lub czas trwania zasobu. "
+
+msgid "Has Format"
+msgstr "Jest w formacie"
+
+msgid "A related resource that is substantially the same as the pre-existing described resource, but in another format."
+msgstr "Zasób pokrewny, który jest zasadniczo taki sam jak istniejący wcześniej opisywany zasób, ale ma inny format. "
+
+msgid "Has Part"
+msgstr "Składa się z"
+
+msgid "A related resource that is included either physically or logically in the described resource."
+msgstr "Zasób pokrewny, który jest włączony fizycznie lub logicznie do opisywanego zasobu. "
+
+msgid "Has Version"
+msgstr "Ma wersję"
+
+msgid "A related resource that is a version, edition, or adaptation of the described resource."
+msgstr "Zasób pokrewny, który jest wersją, wydaniem lub adaptacją opisywanego zasobu."
+
+msgid "Instructional Method"
+msgstr "Metoda szkolenia"
+
+msgid "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support. Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured. Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback."
+msgstr "Proces używany do zdobycia wiedzy, postaw i umiejętności, które opisywany zasób ma za zadanie wspierać. Element Metoda szkolenia obejmuje zazwyczaj sposoby prezentacji materiałów instruktażowych lub prowadzenia działań instruktażowych, wzorce interakcji między uczniami lub uczącymi i uczniami oraz mechanizmy, za pomocą których mierzy się poziom zaawansowania nauki grup lub poszczególnych osób. Elementy Metoda szkolenia obejmują wszystkie aspekty procesów instruowania i uczenia – od planowania i implementowania do wystawienia oceny i zgłoszenia opinii."
+
+msgid "Is Format Of"
+msgstr "Jest formatem"
+
+msgid "A related resource that is substantially the same as the described resource, but in another format."
+msgstr "Zasób pokrewny, który jest zasadniczo taki sam jak opisywany zasób, ale ma inny format. "
+
+msgid "Is Part Of"
+msgstr "Jest częścią"
+
+msgid "A related resource in which the described resource is physically or logically included."
+msgstr "Zasób pokrewny, do którego opisywany zasób jest fizycznie lub logicznie dołączony. "
+
+msgid "Is Referenced By"
+msgstr "Jest cytowany przez"
+
+msgid "A related resource that references, cites, or otherwise points to the described resource."
+msgstr "Zasób pokrewny, który przywołuje, cytuje lub w inny sposób wskazuje opisywany zasób."
+
+msgid "Is Replaced By"
+msgstr "Zastąpiony przez"
+
+msgid "A related resource that supplants, displaces, or supersedes the described resource."
+msgstr "Zasób pokrewny, który wypiera, eliminuje lub zastępuje opisywany zasób. "
+
+msgid "Is Required By"
+msgstr "Jest wymagany przez"
+
+msgid "A related resource that requires the described resource to support its function, delivery, or coherence."
+msgstr "Zasób pokrewny, który wymaga opisywanego zasobu jako wsparcia swojej funkcjonalności, sposobu dostarczania lub metody zachowania spójności. "
+
+msgid "Is Version Of"
+msgstr "Jest wersją"
+
+msgid "A related resource of which the described resource is a version, edition, or adaptation. Changes in version imply substantive changes in content rather than differences in format."
+msgstr "Zasób pokrewny, którego opisywany zasób jest wersją, wydaniem lub adaptacją. Zmiany wersji oznaczają zasadnicze zmiany treści, a nie różnice w formacie. "
+
+msgid "Date Issued"
+msgstr "Data wydania"
+
+msgid "Date of formal issuance (e.g., publication) of the resource."
+msgstr "Formalna data wydania (np. opublikowania) zasobu. "
+
+msgid "License"
+msgstr "Licencja"
+
+msgid "A legal document giving official permission to do something with the resource."
+msgstr "Dokument prawny, który nadaje oficjalne uprawnienia do wykonywania działań w związku z zasobem. "
+
+msgid "Mediator"
+msgstr "Pośrednik"
+
+msgid "An entity that mediates access to the resource and for whom the resource is intended or useful. In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver."
+msgstr "Jednostka, która pośredniczy w dostępie do zasobu i dla której zasób jest przeznaczony lub przydatny. W kontekście edukacyjnym pośrednikiem może być rodzic, nauczyciel, asystent dydaktyczny lub opiekun. "
+
+msgid "Medium"
+msgstr "Średnie"
+
+msgid "The material or physical carrier of the resource."
+msgstr "Materialny lub fizyczny nośnik zasobu. "
+
+msgid "Date Modified"
+msgstr "Data modyfikacji"
+
+msgid "Date on which the resource was changed."
+msgstr "Data zmiany zasobu. "
+
+msgid "Provenance"
+msgstr "Pochodzenie"
+
+msgid "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation. The statement may include a description of any changes successive custodians made to the resource."
+msgstr "Oświadczenie o wszelkich zmianach własności i pieczy zasobu od czasu jego utworzenia, które są istotne dla jego autentyczności, integralności i interpretacji. Oświadczenie może zawierać opis wszelkich zmian zasobu dokonywanych przez jego powierników. "
+
+msgid "References"
+msgstr "Powiązania"
+
+msgid "A related resource that is referenced, cited, or otherwise pointed to by the described resource."
+msgstr "Zasób pokrewny, który jest przywoływany, cytowany lub w inny sposób wskazywany przez opisywany zasób. "
+
+msgid "Replaces"
+msgstr "Zastępuje"
+
+msgid "A related resource that is supplanted, displaced, or superseded by the described resource."
+msgstr "Zasób pokrewny, który jest wypierany, eliminowany lub zastępowany przez opisywany zasób."
+
+msgid "Requires"
+msgstr "Wymaga"
+
+msgid "A related resource that is required by the described resource to support its function, delivery, or coherence."
+msgstr "Zasób pokrewny, który jest wymagany przez opisywany zasób jako wsparcie jego funkcjonalności, sposobu dostarczania lub metoda zachowania spójności. "
+
+msgid "Rights Holder"
+msgstr "Właściciel praw"
+
+msgid "A person or organization owning or managing rights over the resource."
+msgstr "Osoba lub organizacja posiadająca prawa do zasobu lub zarządzająca nimi. "
+
+msgid "Spatial Coverage"
+msgstr "Zasięg przestrzenny"
+
+msgid "Spatial characteristics of the resource."
+msgstr "Charakterystyka przestrzenna zasobu. "
+
+msgid "Table Of Contents"
+msgstr "Spis treści"
+
+msgid "A list of subunits of the resource."
+msgstr "Lista podjednostek zasobu. "
+
+msgid "Temporal Coverage"
+msgstr "Zasięg czasowy "
+
+msgid "Temporal characteristics of the resource."
+msgstr "Charakterystyka czasowa zasobu. "
+
+msgid "Date Valid"
+msgstr "Data ważności"
+
+msgid "Date (often a range) of validity of a resource."
+msgstr "Data (często okres) ważności zasobu. "
+
+msgid "Metatag Extended Permissions"
+msgstr "Rozszerzone uprawnienia do metaznaczników"
+
+msgid "Adds individual permissions for each meta tag, allowing for fine-grained access to the meta tags. Note: this may lead to performance issues on the permissions admin page, please see the included README.txt file for details."
+msgstr "Dodaje pojedyncze uprawnienia do każdego metaznacznika, co pozwala na precyzyjne kontrolowanie dostępu do metaznaczników. Uwaga: może to prowadzić do problemów z wydajnością na stronie administracyjnej uprawnień. Szczegółowe informacje można znaleźć w dołączonym pliku README.txt."
+
+msgid "Access %tag in %group"
+msgstr "Dostęp do %tag w %group"
+
+msgid "Metatag: Facebook"
+msgstr "Metaznacznik: Facebook"
+
+msgid "A set of meta tags specially for controlling advanced functionality with Facebook."
+msgstr "Zestaw metaznaczników przeznaczonych specjalnie do sterowania zaawansowanymi funkcjami serwisu Facebook. "
+
+msgid "Facebook Admins"
+msgstr "Administratorzy serwisu Facebook"
+
+msgid "Facebook App ID"
+msgstr "Facebook App ID"
+
+msgid "Facebook Pages"
+msgstr "Strony serwisu Facebook"
+
+msgid "facebook"
+msgstr "facebook"
+
+msgid "A comma-separated list of Facebook user IDs of people who are considered administrators or moderators of this page."
+msgstr "Rozdzielana przecinkami lista identyfikatorów użytkowników serwisu Facebook określająca osoby, które są traktowane jako administratorzy lub moderatorzy tej strony. "
+
+msgid "Facebook Application ID"
+msgstr "Identyfikator aplikacji serwisu Facebook"
+
+msgid "A comma-separated list of Facebook Platform Application IDs applicable for this site."
+msgstr "Rozdzielana przecinkami lista identyfikatorów aplikacji platformy Facebook, które dotyczą tego serwisu. "
+
+msgid "Facebook Instant Articles claim URL token."
+msgstr "Znacznik adresu URL roszczenia funkcji Instant Articles serwisu Facebook."
+
+msgid "Provides support for many different favicons."
+msgstr "Udostępnia obsługę wielu różnych ikon ulubionych. "
+
+msgid "Metatag: Favicons"
+msgstr "Metaznacznik: Favicons"
+
+msgid "Default shortcut icon"
+msgstr "Domyślna ikona skrótu"
+
+msgid "Icon: SVG"
+msgstr "Ikona: SVG"
+
+msgid "href"
+msgstr "href"
+
+msgid "Color"
+msgstr "Kolor"
+
+msgid "Icon: 16px x 16px"
+msgstr "Ikona: 16 px x 16 px"
+
+msgid "Icon: 32px x 32px"
+msgstr "Ikona: 32 px x 32 px"
+
+msgid "Icon: 96px x 96px"
+msgstr "Ikona: 96 px x 96 px"
+
+msgid "Icon: 192px x 192px"
+msgstr "Ikona: 192 px x 192 px"
+
+msgid "Apple touch icon: 60px x 60px"
+msgstr "Ikona dotykowa firmy Apple: 60 px x 60 px"
+
+msgid "Apple touch icon: 72px x 72px"
+msgstr "Ikona dotykowa firmy Apple: 72 px x 72 px"
+
+msgid "Apple touch icon: 76px x 76px"
+msgstr "Ikona dotykowa firmy Apple: 76 px x 76 px"
+
+msgid "Apple touch icon: 114px x 114px"
+msgstr "Ikona dotykowa firmy Apple: 114 px x 114 px"
+
+msgid "Apple touch icon: 120px x 120px"
+msgstr "Ikona dotykowa firmy Apple: 120 px x 120 px"
+
+msgid "Apple touch icon: 144px x 144px"
+msgstr "Ikona dotykowa firmy Apple: 144 px x 144 px"
+
+msgid "Apple touch icon: 152px x 152px"
+msgstr "Ikona dotykowa firmy Apple: 152 px x 152 px"
+
+msgid "Apple touch icon: 180px x 180px"
+msgstr "Ikona dotykowa firmy Apple: 180 px x 180 px"
+
+msgid "Apple touch icon (precomposed): 57px x 57px"
+msgstr "Ikona dotykowa firmy Apple (wstępnie przygotowana): 57 px x 57 px"
+
+msgid "Apple touch icon (precomposed): 72px x 72px"
+msgstr "Ikona dotykowa firmy Apple (wstępnie przygotowana): 72 px x 72 px"
+
+msgid "Apple touch icon (precomposed): 76px x 76px"
+msgstr "Ikona dotykowa firmy Apple (wstępnie przygotowana): 76 px x 76 px"
+
+msgid "Apple touch icon (precomposed): 114px x 114px"
+msgstr "Ikona dotykowa firmy Apple (wstępnie przygotowana): 114 px x 114 px"
+
+msgid "Apple touch icon (precomposed): 120px x 120px"
+msgstr "Ikona dotykowa firmy Apple (wstępnie przygotowana): 120 px x 120 px"
+
+msgid "Apple touch icon (precomposed): 144px x 144px"
+msgstr "Ikona dotykowa firmy Apple (wstępnie przygotowana): 144 px x 144 px"
+
+msgid "Apple touch icon (precomposed): 152px x 152px"
+msgstr "Ikona dotykowa firmy Apple (wstępnie przygotowana): 152 px x 152 px"
+
+msgid "Apple touch icon (precomposed): 180px x 180px"
+msgstr "Ikona dotykowa firmy Apple (wstępnie przygotowana): 180 px x 180 px"
+
+msgid "Favicons & touch icons"
+msgstr "Ikony ulubionych i dotykowe"
+
+msgid "A PNG image that is 60px wide by 60px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "Obraz PNG o szerokości 60 px i wysokości 60 px. Używany na urządzeniach iPhone z ekranem innym niż Retina, iPod Touch i Android 2.1+."
+
+msgid "A PNG image that is 114px wide by 114px high. Used with iPhone with @2x display running iOS <= 6."
+msgstr "Obraz PNG o szerokości 114 px i wysokości 114 px. Używany na telefonach iPhone z ekranem @2x i systemem iOS <= 6."
+
+msgid "A PNG image that is 120px wide by 120px high. Used with iPhone with @2x display running iOS >= 7."
+msgstr "Obraz PNG o szerokości 120 px i wysokości 120 px. Używany na telefonach iPhone z ekranem @2x i systemem iOS >= 7."
+
+msgid "A PNG image that is 144px wide by 144px high. Used with iPad with @2x display running iOS <= 6."
+msgstr "Obraz PNG o szerokości 144 px i wysokości 144 px. Używany na tabletach iPad z ekranem @2x i systemem iOS <= 6."
+
+msgid "A PNG image that is 152px wide by 152px high. Used with iPad with @2x display running iOS >= 7."
+msgstr "Obraz PNG o szerokości 152 px i wysokości 152 px. Używany na tabletach iPad z ekranem @2x i systemem iOS >= 7."
+
+msgid "A PNG image that is 180px wide by 180px high. Used with iPhone 6 Plus with @3x display."
+msgstr "Obraz PNG o szerokości 180 px i wysokości 180 px. Używany na telefonie iPhone 6 Plus z ekranem @3x."
+
+msgid "A PNG image that is 72px wide by 72px high. Used with the iPad mini and the first- and second-generation iPad (@1x display) on iOS <= 6."
+msgstr "Obraz PNG o szerokości 72 px i wysokości 72 px. Używany na tabletach iPad mini oraz iPad 1. i 2. generacji (ekran @1x) z systemem iOS <= 6."
+
+msgid "A PNG image that is 76px wide by 76px high. Used with the iPad mini and the second-generation iPad (@1x display) on iOS >= 7."
+msgstr "Obraz PNG o szerokości 76 px i wysokości 76 px. Używany na tabletach iPad mini oraz iPad 2. generacji (ekran @1x) z systemem iOS >= 7."
+
+msgid "A PNG image that is 57px wide by 57px high. Used with the non-Retina iPhone, iPod Touch, and Android 2.1+ devices."
+msgstr "Obraz PNG o szerokości 57 px i wysokości 57 px. Używany na urządzeniach iPhone z ekranem innym niż Retina, iPod Touch i Android 2.1+."
+
+msgid "A PNG image that is 16px wide by 16px high."
+msgstr "Obraz PNG o szerokości 16 px i wysokości 16 px. "
+
+msgid "A PNG image that is 192px wide by 192px high."
+msgstr "Obraz PNG o szerokości 192 px i wysokości 192 px. "
+
+msgid "A PNG image that is 32px wide by 32px high."
+msgstr "Obraz PNG o szerokości 32 px i wysokości 32 px. "
+
+msgid "A PNG image that is 96px wide by 96px high."
+msgstr "Obraz PNG o szerokości 96 px i wysokości 96 px. "
+
+msgid "Mask icon color"
+msgstr "Kolor ikony maski"
+
+msgid "Color attribute for SVG (mask) icon in hexadecimal format, e.g. '#0000ff'. Setting it will break HTML validation. If not set macOS Safari ignores the Mask Icon entirely, making the Icon: SVG completely useless."
+msgstr "Atrybut koloru dla ikony SVG (maska) w formacie szesnastkowym, np. „#0000ff”. Ustawienie tej opcji spowoduje przerwanie sprawdzania poprawności kodu HTML. Jeśli ta opcja nie zostanie ustawiona, przeglądarka macOS Safari zignoruje całkowicie ikonę maski, co sprawia, że ikona SVG będzie całkowicie bezużyteczna."
+
+msgid "Mask icon (SVG)"
+msgstr "Ikona maski (SVG)"
+
+msgid "A grayscale scalable vector graphic (SVG) file."
+msgstr "Plik skalowalnej grafiki wektorowej (SVG) w skali szarości."
+
+msgid "Default icon"
+msgstr "Domyślna ikona"
+
+msgid "The traditional favicon, must be either a GIF, ICO, JPG/JPEG or PNG image."
+msgstr "Tradycyjna ikona ulubionych – musi być obrazem w formacie GIF, ICO, JPG/JPEG lub PNG. "
+
+msgid "Provides support for meta tags used for Google Custom Search Engine."
+msgstr "Udostępnia obsługę metaznaczników używanych przez wyszukiwarkę Google Custom Search. "
+
+msgid "Metatag: Google Custom Search Engine (CSE)"
+msgstr "Metaznacznik: Google Custom Search Engine (CSE)"
+
+msgid "Thumbnail"
+msgstr "Miniaturka"
+
+msgid "Department"
+msgstr "Departament"
+
+msgid "Content audience"
+msgstr "Odbiorcy treści"
+
+msgid "Document status"
+msgstr "Status dokumentu"
+
+msgid "google_rating"
+msgstr "google_rating"
+
+msgid "Google Custom Search Engine (CSE)"
+msgstr "Google Custom Search Engine (CSE)"
+
+msgid "Meta tags used to control the mobile browser experience. Some of these meta tags have been replaced by newer mobile browsers. These meta tags usually only need to be set globally, rather than per-page."
+msgstr "Metaznaczniki używane do sterowania interfejsem przeglądarki mobilnej. Niektóre z tych metaznaczników mogły zostać zastąpione przez nowsze wersje przeglądarek mobilnych. Te metaznaczniki zazwyczaj należy ustawić tylko globalnie, a nie dla poszczególnych stron. "
+
+msgid "Department tag."
+msgstr "Znacznik działu."
+
+msgid "Content rating"
+msgstr "Ocena treści"
+
+msgid "Works only with numeric values."
+msgstr "Działa tylko z wartościami liczbowymi. "
+
+msgid "Use a url of a valid image."
+msgstr "Użyj adresu URL poprawnego obrazu. "
+
+msgid "Metatag: Google Plus"
+msgstr "Metaznacznik: Google Plus"
+
+msgid "Provides support for Google's Plus meta tags. Deprecated, will be removed in Metatag 2.0.0."
+msgstr "Udostępnia obsługę metaznaczników serwisu Google Plus. Nieaktualne, zostaną usunięte w Metatag 2.0.0."
+
+msgid "Google Plus: name"
+msgstr "Google Plus: nazwa"
+
+msgid "Google Plus: image"
+msgstr "Google Plus: obraz"
+
+msgid "Google Plus: description"
+msgstr "Google Plus: opis"
+
+msgid "Publisher URL"
+msgstr "Adres URL publikatora"
+
+msgid "Google Plus"
+msgstr "Google Plus"
+
+msgid "DEPRECATED, use Advanced-Author instead."
+msgstr "NIEAKTUALNE, zamiast tego użyj opcji Advanced-Author."
+
+msgid "Content description less than 200 characters."
+msgstr "Opis treści krótszy niż 200 znaków. "
+
+msgid "Image"
+msgstr "Obraz"
+
+msgid "The URL of an image which should represent the content. For best results use an image that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Supports PNG, JPEG and GIF formats."
+msgstr "Adres URL obrazu reprezentującego treść. W celu uzyskania najlepszych wyników należy użyć obrazu o wielkości co najmniej 1200 x 630 piksli, przy czym 600 x 316 piksli to zalecane minimum. Obsługiwane formaty to PNG, JPEG i GIF. "
+
+msgid "Name"
+msgstr "Nazwa"
+
+msgid "Content title."
+msgstr "Tytuł treści. "
+
+msgid "Used by some search engines to confirm publication of the content on a page. Should be the full URL for the publication's Google+ profile page."
+msgstr "Używany przez niektóre wyszukiwarki do potwierdzenia publikacji treści na stronie. Powinien to być pełny adres URL strony profilu Google+ dla publikacji. "
+
+msgid "Provides support for the hreflang meta tag with some extra logic to simplify it."
+msgstr "Udostępnia obsługę metaznacznika hreflang z dodatkową upraszczającą logiką. "
+
+msgid "Metatag: Hreflang"
+msgstr "Metaznacznik: hreflang"
+
+msgid "Default locale (x-default)"
+msgstr "Domyślne ustawienia narodowe (x-default)"
+
+msgid "Href per language"
+msgstr "Href na język"
+
+msgid "URL for a version of this page in %langcode"
+msgstr "Adres URL wersji tej strony w języku %langcode "
+
+msgid "Alternative language links (hreflang)"
+msgstr "Linki alternatywnych języków (hreflang)"
+
+msgid "These meta tags are designed to point visitors to versions of the current page in other languages."
+msgstr "Te metaznaczniki zostały zaprojektowane w taki sposób, aby wskazywały odwiedzającym wersje bieżącej strony w innych językach. "
+
+msgid "Hreflang per language"
+msgstr "Znacznik hreflang dla języka"
+
+msgid "This plugin will be cloned from these settings for each enabled language."
+msgstr "Ta wtyczka zostanie sklonowana z tych ustawień dla każdego włączonego języka. "
+
+msgid "This should point to the version of the page that is for the main or primary locale, e.g. the original version of an article that is translated into other languages."
+msgstr "Powinien wskazywać wersję strony przeznaczoną dla głównych lub podstawowych ustawień narodowych, np. oryginalną wersję artykułu, który jest tłumaczony na inne języki. "
+
+msgid "Provides support for meta tags used to control the mobile browser experience."
+msgstr "Udostępnia obsługę metaznaczników używanych do sterowania interfejsem przeglądarki mobilnej. "
+
+msgid "Metatag: Mobile & UI Adjustments"
+msgstr "Metaznacznik: Mobile & UI Adjustments"
+
+msgid "Handheld URL"
+msgstr "Adres URL dla prostych telefonów"
+
+msgid "Android Mobile: Android App Link Alternative"
+msgstr "Android Mobile: Alternatywny odsyłacz aplikacji systemu Android"
+
+msgid "Android Mobile: Manifest"
+msgstr "Android Mobile: Manifest"
+
+msgid "Apple Mobile: iTunes App"
+msgstr "Apple Mobile: Aplikacja iTunes"
+
+msgid "Apple Mobile: Web App Capable"
+msgstr "Apple Mobile: Obsługa aplikacji WWW"
+
+msgid "Apple Mobile: Web App Status bar color"
+msgstr "Apple Mobile: Kolor paska statusu aplikacji WWW"
+
+msgid "Apple Mobile: Web App Title"
+msgstr "Apple Mobile: Tytuł aplikacji WWW"
+
+msgid "Application name"
+msgstr "Nazwa aplikacji"
+
+msgid "Mobile: Cleartype"
+msgstr "Mobile: Cleartype"
+
+msgid "Apple Mobile: Format Detection"
+msgstr "Apple Mobile: Wykrywanie formatu"
+
+msgid "Mobile: Handheld-Friendly"
+msgstr "Mobile: Kieszonkowe"
+
+msgid "Apple Mobile: iOS App Link Alternative"
+msgstr "Apple Mobile: Alternatywny odsyłacz aplikacji systemu iOS"
+
+msgid "Mobile: Mobile Optimized"
+msgstr "Mobile: Optymalizacja dla urządzeń mobilnych"
+
+msgid "MSApplication - Allow domain API calls"
+msgstr "MSApplication – Zezwalaj na wywołania interfejsu API domeny"
+
+msgid "MSApplication - Allow domain meta tags"
+msgstr "MSApplication – Zezwalaj na metaznaczniki domeny"
+
+msgid "MSApplication - Badge"
+msgstr "MSApplication – Plakietka"
+
+msgid "MSApplication - Config"
+msgstr "MSApplication – Konfiguracja"
+
+msgid "MSApplication - Nav button color"
+msgstr "MSApplication – Kolor przycisku nawigacji"
+
+msgid "MSApplication - Notification"
+msgstr "MSApplication – Powiadomienie"
+
+msgid "MSApplication - Square logo, 150px x 150px"
+msgstr "MSApplication – Kwadratowe logo, 150 px x 150 px"
+
+msgid "MSApplication - Square logo, 310px x 310px"
+msgstr "MSApplication – Kwadratowe logo, 310 px x 310 px"
+
+msgid "MSApplication - Square logo, 70px x 70px"
+msgstr "MSApplication – Kwadratowe logo, 70 px x 70 px"
+
+msgid "MSApplication - Start URL"
+msgstr "MSApplication – Początkowy adres URL"
+
+msgid "MSApplication - Task"
+msgstr "MSApplication – Zadanie"
+
+msgid "MSApplication - Task separator"
+msgstr "MSApplication – Separator zadań"
+
+msgid "MSApplication - Tile color"
+msgstr "MSApplication – Kolor kafla"
+
+msgid "MSApplication - Tile image"
+msgstr "MSApplication – Obraz kafla"
+
+msgid "MSApplication - Tooltip"
+msgstr "MSApplication – Podpowiedź"
+
+msgid "MSApplication - Wide logo, 310px x 150px"
+msgstr "MSApplication – Szerokie logo, 310 px x 150 px"
+
+msgid "MSApplication - Window"
+msgstr "MSApplication – Okno"
+
+msgid "Mobile: Theme Color"
+msgstr "Mobile: Kolor kompozycji"
+
+msgid "Mobile: Viewport"
+msgstr "Mobile: Ekran graficzny"
+
+msgid "Mobile: Web Manifest"
+msgstr "Rozwiązanie mobilne: manifest WWW"
+
+msgid "X-UA-Compatible"
+msgstr "X-UA-Compatible"
+
+msgid "Android"
+msgstr "Android"
+
+msgid "Custom meta tags used by the Android OS, browser, etc."
+msgstr "Niestandardowe metaznaczniki używane przez system operacyjny Android, przeglądarkę itp. "
+
+msgid "Apple & iOS"
+msgstr "Firma Apple i system iOS"
+
+msgid "Custom meta tags used by Apple's software, iOS, Safari, etc."
+msgstr "Niestandardowe metaznaczniki używane przez oprogramowanie firmy Apple, system iOS, przeglądarkę Safari itp. "
+
+msgid "Mobile & UI Adjustments"
+msgstr "Mobile & UI Adjustments"
+
+msgid "Windows & Windows Mobile"
+msgstr "Systemy Windows i Windows Mobile"
+
+msgid "Custom meta tags used by the Windows and Windows Mobile OSes, IE browser, etc."
+msgstr "Niestandardowe metaznaczniki używane przez systemy operacyjne Windows i Windows Mobile, przeglądarkę IE itp."
+
+msgid "Provides an absolute URL to a specially formatted version of the current page designed for 'feature phones', mobile phones that do not support modern browser standards. See the <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>official Google Mobile SEO Guide</a> for details on how the page should be formatted."
+msgstr "Udostępnia bezwzględny adres URL do specjalnie sformatowanej wersji bieżącej strony zaprojektowanej z myślą o prostych telefonach komórkowych, które nie obsługują nowoczesnych standardów przeglądarek. Szczegółowe informacje na temat formatowania strony zawiera <a href='https://developers.google.com/webmasters/mobile-sites/mobile-seo/other-devices?hl=en#feature_phones'>oficjalna dokumentacja Google dotycząca SEO na urządzeniach mobilnych</a>."
+
+msgid "Android app link alternative"
+msgstr "Alternatywny odsyłacz aplikacji systemu Android"
+
+msgid "A custom string for deeplinking to an Android mobile app. Should be in the format 'package_name/host_path', e.g. 'com.example.android/example/hello-screen'. The 'android-app://' prefix will be included automatically."
+msgstr "Łańcuch niestandardowy służący jako odsyłacz bezpośredni do aplikacji mobilnej systemu Android. Powinien być w formacie nazwa_pakietu/ścieżka_na_hoście, np. com.example.android/example/hello-screen. Przedrostek android-app:// zostanie dołączony automatycznie. "
+
+msgid "iTunes App details"
+msgstr "Szczegóły aplikacji iTunes "
+
+msgid "This informs iOS devices to display a banner to a specific app. If used, it must provide the 'app-id' value, the 'affiliate-data' and 'app-argument' values are optional."
+msgstr "Informuje urządzenia z systemem iOS, że należy wyświetlić baner w konkretnej aplikacji. Jeśli zostanie użyty, musi udostępniać wartość app-id, a wartości afilliate-data i app-argument są opcjonalne. "
+
+msgid "Web app capable?"
+msgstr "Obsługuje aplikacje WWW?"
+
+msgid "If set to 'yes', the application will run in full-screen mode; the default behavior is to use Safari to display web content."
+msgstr "Jeśli wartość to yes, aplikacja będzie działać w trybie pełnoekranowym. Domyślnym zachowaniem jest użycie przeglądarki Safari do wyświetlenia treści WWW. "
+
+msgid "Status bar color"
+msgstr "Kolor paska statusu"
+
+msgid "Requires the 'Web app capable' meta tag to be set to 'yes'. May be set to 'default', 'black', or 'black-translucent'."
+msgstr "Wymaga, aby metaznacznik Obsługuje aplikacje WWW miał wartość yes. Istnieje możliwość ustawienia wartości default, black lub black-translucent. "
+
+msgid "Apple Web App Title"
+msgstr "Tytuł aplikacji WWW firmy Apple"
+
+msgid "Overrides the long site title when using the Apple Add to Home Screen."
+msgstr "Zastępuje długi tytuł serwisu w przypadku użycia opcji Dodaj do ekranu głównego na urządzeniu firmy Apple. "
+
+msgid "The default name displayed with the pinned sites tile (or icon). Set the content attribute to the desired name."
+msgstr "Nazwa domyślna wyświetlana dla przypiętego kafla (lub ikony) serwisu. Ustaw wybraną nazwę dla atrybutu treści. "
+
+msgid "Cleartype"
+msgstr "Cleartype"
+
+msgid "A legacy meta tag for older versions of Internet Explorer on Windows, use the value 'on' to enable it; this tag is ignored by all other browsers."
+msgstr "Wcześniejszy metaznacznik przeznaczony dla starszych wersji przeglądarki Internet Explorer w systemie Windows. Należy użyć wartości on, aby go włączyć. Ten znacznik jest ignorowany przez wszystkie inne przeglądarki. "
+
+msgid "Format detection"
+msgstr "Wykrywanie formatu"
+
+msgid "If set to 'telephone=no' the page will not be checked for phone numbers, which would be presented."
+msgstr "Jeśli zostanie ustawiona wartość telephone=no, strona nie będzie sprawdzana pod kątem numerów telefonów do przedstawienia. "
+
+msgid "Handheld-Friendly"
+msgstr "Kieszonkowe"
+
+msgid "Some older mobile browsers will expect this meta tag to be set to 'true' to indicate that the site has been designed with mobile browsers in mind."
+msgstr "Niektóre starsze przeglądarki mobilne oczekują, że ten metaznacznik ma wartość true, wskazując, że serwis został zaprojektowany z myślą o przeglądarkach mobilnych. "
+
+msgid "iOS app link alternative"
+msgstr "Alternatywny odsyłacz aplikacji systemu iOS"
+
+msgid "A custom string for deeplinking to an iOS mobile app. Should be in the format 'itunes_id/scheme/host_path', e.g. 123456/example/hello-screen'. The 'ios-app://' prefix will be included automatically."
+msgstr "Łańcuch niestandardowy służący jako odsyłacz bezpośredni do aplikacji mobilnej systemu iOS. Powinien być w formacie identyfikator_itunes/schemat/ścieżka_na_hoście, np. 123456/example/hello-screen. Przedrostek ios-app:// zostanie dołączony automatycznie. "
+
+msgid "Mobile Optimized"
+msgstr "Optymalizacja dla urządzeń mobilnych"
+
+msgid "Using the value 'width' tells certain mobile Internet Explorer browsers to display as-is, without being resized. Alternatively a numerical width may be used to indicate the desired page width the page should be rendered in: '240' is the suggested default, '176' for older browsers or '480' for newer devices with high DPI screens."
+msgstr "Użycie wartości width informuje niektóre mobilne przeglądarki Internet Explorer, że powinny wyświetlać treść w niezmienionej postaci, bez zmiany wielkości. Alternatywnie można użyć liczbowej wartości width, aby wskazać wymaganą szerokość strony na potrzeby wyświetlania: 240 to sugerowana wartość domyślna, 176 dla starszych przeglądarek lub 480 dla nowszych urządzeń z ekranami o wysokiej wartości DPI. "
+
+msgid "Allows tasks to be defined on child domains of the fully qualified domain name associated with the pinned site. Should be either 'true' or 'false'."
+msgstr "Zezwala na definiowanie zadań w domenach potomnych pełnej nazwy domeny powiązanej z przypiętym serwisem. Wartością powinno być true lub false."
+
+msgid "A semi-colon -separated string that must contain the 'polling-uri=' value with the full URL to a <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>Badge Schema XML file</a>. May also contain 'frequency=' value set to either 30, 60, 360, 720 or 1440 (default) which specifies (in minutes) how often the URL should be polled."
+msgstr "Łańcuch rozdzielany średnikami, który musi zawierać wartość polling-uri= z pełnym adresem URL <a href='https://go.microsoft.com/fwlink/p/?LinkID=314019'>pliku XML schematu plakietki</a>. Może także zawierać wartość frequency= ustawioną na 30, 60, 360, 720 lub 1440 (domyślnie), która określa częstotliwość odpytywania adresu URL w minutach."
+
+msgid "Should contain the full URL to a <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>Browser configuration schema</a> file that further controls tile customizations."
+msgstr "Powinien zawierać pełny adres URL pliku <a href='https://msdn.microsoft.com/en-us/library/dn320426(v=vs.85).aspx'>schematu konfiguracji przeglądarki</a>, który dodatkowo steruje dostosowaniami kafli. "
+
+msgid "Controls the color of the Back and Forward buttons in the pinned site browser window."
+msgstr "Steruje kolorem przycisków Wstecz i Dalej w oknie przeglądarki przypiętego serwisu. "
+
+msgid "A semi-colon -separated string containing 'polling-uri=' (required), 'polling-uri2=', 'polling-uri3=', 'polling-uri4=' and 'polling-uri5=' to indicate the URLs for notifications. May also contain a 'frequency=' value to specify how often (in minutes) the URLs will be polled; limited to 30, 60, 360, 720 or 1440 (default). May also contain the value 'cycle=' to control the notifications cycle."
+msgstr "Łańcuch rozdzielany średnikami zawierający elementy polling-uri= (wymagany), polling-uri2=, polling-uri3=, polling-uri4= i polling-uri5= wskazujące adresy URL dla powiadomień. Może także zawierać wartość frequency= określającą częstotliwość odpytywania adresów URL w minutach i wynoszącą 30, 60, 360, 720 lub 1440 (wartość domyślna). Może także zawierać wartość cycle= sterującą cyklem powiadomień. "
+
+msgid "The URL to a logo file that is 150px by 150px."
+msgstr "Adres URL pliku logo o wymiarach 150 px x 150 px. "
+
+msgid "The URL to a logo file that is 310px by 310px."
+msgstr "Adres URL pliku logo o wymiarach 310 px x 310 px. "
+
+msgid "The URL to a logo file that is 70px by 70px."
+msgstr "Adres URL pliku logo o wymiarach 70 px x 70 px. "
+
+msgid "The URL to the root page of the site."
+msgstr "Adres URL strony głównej serwisu. "
+
+msgid "A semi-colon -separated string defining the 'jump' list task. Should contain the 'name=' value to specify the task's name, the 'action-uri=' value to set the URL to load when the jump list is clicked, the 'icon-uri=' value to set the URL to an icon file to be displayed, and 'window-type=' set to either 'tab' (default), 'self' or 'window' to control how the link opens in the browser."
+msgstr "Łańcuch rozdzielany średnikami definiujący zadanie listy skoków. Powinien zawierać wartość name= określającą nazwę zadania, wartość action-uri= określającą adres URL do załadowania po kliknięciu listy skoków, wartość icon-uri= określającą adres URL pliku ikony do wyświetlenia i wartość window-type= równą tab (domyślnie), self lub window i sterującą sposobem otwierania odsyłaczy w przeglądarce."
+
+msgid "The HTML color to use as the background color for the live tile."
+msgstr "Kolor HTML, który ma być używany jako kolor tła dynamicznego kafla. "
+
+msgid "The URL to an image to use as the background for the live tile."
+msgstr "Adres URL obrazu, który ma być używany jako tło dynamicznego kafla. "
+
+msgid "Controls the text shown in the tooltip for the pinned site's shortcut."
+msgstr "Steruje tekstem wyświetlanym w podpowiedzi dla skrótu przypiętego serwisu. "
+
+msgid "The URL to a logo file that is 310px by 150px."
+msgstr "Adres URL pliku logo o wymiarach 310 px x 150 px. "
+
+msgid "A semi-colon -separated value that controls the dimensions of the initial window. Should contain the values 'width=' and 'height=' to control the width and height respectively."
+msgstr "Wartość rozdzielana średnikami, która steruje wymiarami okna początkowego. Powinna zawierać wartości width= i height= sterujące odpowiednio szerokością i wysokością. "
+
+msgid "Theme Color"
+msgstr "Kolor szablonu"
+
+msgid "A color in hexadecimal format, e.g. '#0000ff' for blue; must include the '#' symbol. Used by some browsers to control the background color of the toolbar, the color used with an icon, etc."
+msgstr "Kolor w formacie szesnastkowym, np. '#0000ff' dla niebieskiego. Musi zawierać symbol '#'. Używany przez niektóre przeglądarki do sterowania kolorem tła paska narzędzi, kolorem używanym w połączeniu z ikoną itp."
+
+msgid "Viewport"
+msgstr "Ekran graficzny"
+
+msgid "Used by most contemporary browsers to control the display for mobile browsers. Please read a guide on responsive web design for details of what values to use."
+msgstr "Używany przez większość współczesnych przeglądarek do sterowania wyświetlaniem w przeglądarkach mobilnych. Należy przeczytać podręcznik na temat reaktywnego projektowania serwisów WWW, aby poznać szczegóły dotyczące wartości do użycia."
+
+msgid "Web Manifest"
+msgstr "Manifest WWW"
+
+msgid "A URL to a manifest.json file that describes the application. The <a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>JSON-based manifest</a> provides developers with a centralized place to put metadata associated with a web application."
+msgstr "Adres URL pliku manifest.json opisującego aplikację. <a href='https://developer.mozilla.org/en-US/docs/Web/Manifest'>Manifest oparty na kodzie JSON</a> udostępnia programistom centralne miejsce, w którym mogą umieścić metadane powiązane z aplikacją WWW."
+
+msgid "Indicates to IE which rendering engine should be used for the current page."
+msgstr "Wskazuje przeglądarce IE mechanizm wyświetlania do użycia dla bieżącej strony. "
+
+msgid "Metatag: Open Graph"
+msgstr "Metaznacznik: Open Graph"
+
+msgid "Provides support for Open Graph Protocol meta tags."
+msgstr "Udostępnia obsługę metaznaczników protokołu Open Graph. "
+
+msgid "Article author"
+msgstr "Autor artykułu "
+
+msgid "Article expiration time"
+msgstr "Czas wygaśnięcia ważności artykułu"
+
+msgid "Article modified time"
+msgstr "Czas modyfikacji artykułu"
+
+msgid "Article published time"
+msgstr "Czas publikacji artykułu"
+
+msgid "Article publisher"
+msgstr "Publikator artykułu"
+
+msgid "Article section"
+msgstr "Sekcja artykułu"
+
+msgid "Article tag(s)"
+msgstr "Znaczniki artykułu"
+
+msgid "Book Author"
+msgstr "Autor książki"
+
+msgid "Book ISBN"
+msgstr "Numer ISBN książki"
+
+msgid "Book Release Date"
+msgstr "Data wydania książki"
+
+msgid "Book Tags"
+msgstr "Znaczniki książki"
+
+msgid "Audio URL"
+msgstr "Adres URL audio"
+
+msgid "Audio secure URL"
+msgstr "Bezpieczny adres URL audio"
+
+msgid "Audio type"
+msgstr "Typ audio"
+
+msgid "Open Graph: Country name"
+msgstr "Open Graph: Nazwa kraju "
+
+msgid "Open Graph: Description"
+msgstr "Open Graph: Opis"
+
+msgid "Open Graph: Determiner"
+msgstr "Open Graph: Przedimek"
+
+msgid "Open Graph: Email"
+msgstr "Open Graph: Adres e-mail"
+
+msgid "Open Graph: Fax number"
+msgstr "Open Graph: Numer faksu"
+
+msgid "Open Graph: Image"
+msgstr "Open Graph: Obraz"
+
+msgid "Open Graph: Image alt"
+msgstr "Open Graph: element alt obrazu"
+
+msgid "Open Graph: Image height"
+msgstr "Open Graph: Wysokość obrazu"
+
+msgid "Open Graph: Image secure URL"
+msgstr "Open Graph: Zabezpieczony adres URL obrazu"
+
+msgid "Open Graph: Image type"
+msgstr "Open Graph: Typ obrazu"
+
+msgid "Open Graph: Image URL"
+msgstr "Open Graph: Adres URL obrazu"
+
+msgid "Open Graph: Image width"
+msgstr "Open Graph: Szerokość obrazu"
+
+msgid "Open Graph: Latitude"
+msgstr "Open Graph: Szerokość geograficzna"
+
+msgid "Open Graph: Locale"
+msgstr "Open Graph: Ustawienia narodowe"
+
+msgid "Open Graph: Alternative locale"
+msgstr "Open Graph: Alternatywne ustawienia narodowe"
+
+msgid "Open Graph: Locality"
+msgstr "Open Graph: Miejscowość"
+
+msgid "Open Graph: Longitude"
+msgstr "Open Graph: Długość geograficzna"
+
+msgid "Open Graph: Phone number"
+msgstr "Open Graph: Numer telefonu"
+
+msgid "Open Graph: Postal code"
+msgstr "Open Graph: Kod pocztowy"
+
+msgid "Open Graph: Region"
+msgstr "Open Graph: Region"
+
+msgid "Open Graph: See also"
+msgstr "Open Graph: Patrz także"
+
+msgid "Open Graph: Site name"
+msgstr "Open Graph: Nazwa miejsca"
+
+msgid "Open Graph: Street address"
+msgstr "Open Graph: Adres"
+
+msgid "Open Graph: Title"
+msgstr "Open Graph: Tytuł"
+
+msgid "Open Graph: Type"
+msgstr "Open Graph: Typ"
+
+msgid "Open Graph: Updated time"
+msgstr "Open Graph: Czas aktualizacji"
+
+msgid "Open Graph: URL"
+msgstr "Open Graph: Adres URL"
+
+msgid "Open Graph: Video URL"
+msgstr "Open Graph: Adres URL filmu wideo"
+
+msgid "Open Graph: Video duration"
+msgstr "Open Graph: Czas trwania wideo"
+
+msgid "Open Graph: Video height"
+msgstr "Open Graph: Wysokość filmu wideo"
+
+msgid "Open Graph: Video Secure URL"
+msgstr "Open Graph: Zabezpieczony adres URL filmu wideo"
+
+msgid "Open Graph: Video type"
+msgstr "Open Graph: Typ filmu wideo"
+
+msgid "Open Graph: Video width"
+msgstr "Open Graph: Szerokość filmu wideo"
+
+msgid "First name"
+msgstr "Imię"
+
+msgid "Gender"
+msgstr "Płeć"
+
+msgid "Last name"
+msgstr "Nazwisko"
+
+msgid "Username"
+msgstr "Nazwa użytkownika"
+
+msgid "Actor(s)"
+msgstr "Aktorzy"
+
+msgid "Actor's role"
+msgstr "Rola aktora"
+
+msgid "Director(s)"
+msgstr "Reżyserzy"
+
+msgid "Release date"
+msgstr "Data wydania"
+
+msgid "Series"
+msgstr "Serie"
+
+msgid "Tag words"
+msgstr "Słowa-tagi"
+
+msgid "Scriptwriter(s)"
+msgstr "Scenarzyści"
+
+msgid "Open Graph"
+msgstr "Open Graph"
+
+msgid "The <a href='https://ogp.me/'>Open Graph meta tags</a> are used to control how Facebook, Pinterest, LinkedIn and other social networking sites interpret the site's content.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "<a href='https://ogp.me/'>Metaznaczniki Open Graph</a> umożliwiają sterowanie interpretacją treści serwisu przez serwisy Facebook, Pinterest, LinkedIn i inne serwisy sieciowych kontaktów społecznościowych.<br><br>Narzędzie Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> umożliwia sprawdzenie, jak treść będzie wyglądać po udostępnieniu w serwisie Facebook i w razie potrzeby debugowania wszelkich problemów ze znacznikami Open Graph."
+
+msgid "Links an article to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "Łączy artykuł z profilem autora w serwisie Facebook. Wartość powinna być adresem URL strony profilu autora lub identyfikatorem jego profilu w serwisie Facebook."
+
+msgid "Article expiration date & time"
+msgstr "Data i godzina wygaśnięcia ważności artykułu"
+
+msgid "The date this content will expire, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "Data utraty ważności przez tę treść (z opcjonalną wartością godziny). Musi być w formacie <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>."
+
+msgid "Article modification date & time"
+msgstr "Data i godzina modyfikacji artykułu"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "Data ostatniej modyfikacji tej treści (z opcjonalną wartością godziny). Musi być w formacie <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>."
+
+msgid "Article publication date & time"
+msgstr "Data i godzina publikacji artykułu"
+
+msgid "The date this content was published on, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format."
+msgstr "Data opublikowania tej treści (z opcjonalną wartością godziny). Musi być w formacie <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>."
+
+msgid "Links an article to a publisher's Facebook page."
+msgstr "Łączy artykuł ze stroną publikatora w serwisie Facebook."
+
+msgid "The primary section of this website the content belongs to."
+msgstr "Sekcja podstawowa tego serwisu WWW, do której należy treść."
+
+msgid "Appropriate keywords for this content."
+msgstr "Odpowiednie słowa kluczowe dla tej treści."
+
+msgid "Book author"
+msgstr "Autor książki"
+
+msgid "Links a book to an author's Facebook profile, should be either URLs to the author's profile page or their Facebook profile IDs."
+msgstr "Łączy książkę z profilem autora w serwisie Facebook. Powinny to być adresy URL strony profilu autora lub identyfikatory jego profilu w serwisie Facebook. "
+
+msgid "ISBN"
+msgstr "Numer ISBN"
+
+msgid "The Book's ISBN"
+msgstr "Numer ISBN książki"
+
+msgid "Release Date"
+msgstr "Data wydania"
+
+msgid "The date the book was released."
+msgstr "Data wydania książki."
+
+msgid "Book tag(s)"
+msgstr "Znaczniki książki"
+
+msgid "The URL to an audio file that complements this object."
+msgstr "Adres URL pliku audio, który dopełnia ten obiekt."
+
+msgid "The secure URL to an audio file that complements this object. All 'http://' URLs will automatically be converted to 'https://'."
+msgstr "Zabezpieczony adres URL pliku audio, który dopełnia ten obiekt. Wszystkie adresy URL http:// zostaną automatycznie przekształcone w adresy https://."
+
+msgid "The MIME type of the audio file. Examples include 'application/mp3' for an MP3 file."
+msgstr "Typ MIME pliku audio. Przykładowy typ to 'application/mp3' dla pliku MP3."
+
+msgid "Country name"
+msgstr "Nazwa kraju"
+
+msgid "A one to two sentence description of the content."
+msgstr "Opis treści składający się z jednego lub dwóch zdań."
+
+msgid "Determiner"
+msgstr "Przedimek"
+
+msgid "The word that appears before the content's title in a sentence. The default ignores this value, the 'Automatic' value should be sufficient if this is actually needed."
+msgstr "Słowo występujące przed tytułem treści w zdaniu. Domyślnie ta wartość jest ignorowana, a wartość Automatic powinna być wystarczająca, jeśli jest rzeczywiście potrzebna. "
+
+msgid "Email address"
+msgstr "Adres e-mail"
+
+msgid "Fax number"
+msgstr "Numer faksu"
+
+msgid "The URL of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats. Should not be used if og:image:url is used. Note: if multiple images are added many services (e.g. Facebook) will default to the largest image, not specifically the first one."
+msgstr "Adres URL obrazu reprezentującego treść. Wielkość obrazu to minimalnie 200 x 200 piksli, wielkość zalecana to 600 x 316 piksli, a wielkość optymalna to co najmniej 1200 x 630 piksli. Obsługiwane formaty to PNG, JPEG i GIF. Nie należy używać, jeśli jest używany znacznik og:image:url. Uwaga: jeśli zostanie dodane wiele obrazów, wiele serwisów (np. Facebook) domyślnie użyje największego obrazu, a nie pierwszego."
+
+msgid "Image 'alt'"
+msgstr "Element 'alt' obrazu"
+
+msgid "A description of what is in the image, not a caption. If the page specifies an og:image it should specify og:image:alt."
+msgstr "Opis zawartości obrazu, nie podpis. Jeśli strona określa element og:image, powinna także określać element og:image:alt."
+
+msgid "Image height"
+msgstr "Wysokość obrazu"
+
+msgid "The height of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "Wysokość powyższych obrazów. Uwaga: jeśli zostaną określone obrazy niezabezpieczone i zabezpieczone, to powinny mieć taką samą wielkość. "
+
+msgid "Image Secure URL"
+msgstr "Zabezpieczony adres URL obrazu"
+
+msgid "The secure URL (HTTPS) of an image which should represent the content. The image must be at least 200 x 200 pixels in size; 600 x 316 pixels is a recommended minimum size, and for best results use an image least 1200 x 630 pixels in size. Supports PNG, JPEG and GIF formats."
+msgstr "Zabezpieczony adres URL (HTTPS) obrazu reprezentującego treść. Wielkość obrazu to minimalnie 200 x 200 piksli, wielkość zalecana to 600 x 316 piksli, a wielkość optymalna to co najmniej 1200 x 630 piksli. Obsługiwane formaty to PNG, JPEG i GIF."
+
+msgid "Image type"
+msgstr "Typ obrazka"
+
+msgid "The type of image referenced above. Should be either 'image/gif' for a GIF image, 'image/jpeg' for a JPG/JPEG image, or 'image/png' for a PNG image. Note: there should be one value for each image, and having more than there are images may cause problems."
+msgstr "Typ obrazu przywoływanego powyżej. Wartością powinno być image/gif dla obrazu GIF, image/jpeg dla obrazu JPG/JPEG lub image/png dla obrazu PNG. Uwaga: powinna być określona jedna wartość dla każdego obrazu, a większa liczba wartości może powodować problemy."
+
+msgid "Image URL"
+msgstr "URL obrazka"
+
+msgid "A alternative version of og:image and has exactly the same requirements; only one needs to be used."
+msgstr "Alternatywna wersja znacznika og:image z dokładnie takimi samymi wymaganiami. Należy użyć tylko jednego z nich."
+
+msgid "Image width"
+msgstr "Szerokość obrazka"
+
+msgid "The width of the above image(s). Note: if both the unsecured and secured images are provided, they should both be the same size."
+msgstr "Szerokość powyższych obrazów. Uwaga: jeśli zostaną określone obrazy niezabezpieczone i zabezpieczone, to powinny mieć taką samą wielkość."
+
+msgid "Latitude"
+msgstr "Szerokość geograficzna"
+
+msgid "Locale"
+msgstr "Język"
+
+msgid "The locale these tags are marked up in, must be in the format language_TERRITORY. Default is 'en_US'."
+msgstr "Ustawienia narodowe dla tych znaczników. Muszą być w formacie język_TERYTORIUM. Wartość domyślna to en_US."
+
+msgid "Alternative locales"
+msgstr "Alternatywne ustawienia narodowe"
+
+msgid "Other locales this content is available in, must be in the format language_TERRITORY, e.g. 'fr_FR'."
+msgstr "Inne ustawienia narodowe, dla których ta treść jest dostępna. Muszą być w formacie język_TERYTORIUM, np. fr_FR. "
+
+msgid "Locality"
+msgstr "Miejscowość"
+
+msgid "Longitude"
+msgstr "Długość geograficzna"
+
+msgid "Phone number"
+msgstr "Numer telefonu"
+
+msgid "Postal/ZIP code"
+msgstr "Kod pocztowy"
+
+msgid "Region"
+msgstr "Region"
+
+msgid "See also"
+msgstr "Zobacz także"
+
+msgid "URLs to related content"
+msgstr "Adresy URL treści pokrewnej"
+
+msgid "Site name"
+msgstr "Nazwa witryny"
+
+msgid "A human-readable name for the site, e.g., <em>IMDb</em>."
+msgstr "Nazwa serwisu czytelna dla człowieka, np. <em>IMDb</em>. "
+
+msgid "Street address"
+msgstr "Ulica"
+
+msgid "The title of the content, e.g., <em>The Rock</em>."
+msgstr "Tytuł treści, np. <em>Twierdza</em>."
+
+msgid "Content type"
+msgstr "Rodzaj zawartości"
+
+msgid "The type of the content, e.g., <em>movie</em>."
+msgstr "Typ treści, np. <em>film</em>."
+
+msgid "Content modification date & time"
+msgstr "Data i godzina modyfikacji treści"
+
+msgid "The date this content was last modified, with an optional time value. Needs to be in <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a> format. Can be the same as the 'Article modification date' tag."
+msgstr "Data ostatniej modyfikacji tej treści (z opcjonalną wartością godziny). Musi być w formacie <a href='https://en.wikipedia.org/wiki/ISO_8601'>ISO 8601</a>. Może być taka sama jak dla znacznika Data modyfikacji artykułu."
+
+msgid "Page URL"
+msgstr "URL strony"
+
+msgid "Preferred page location or URL to help eliminate duplicate content for search engines, e.g., <em>https://www.imdb.com/title/tt0117500/</em>."
+msgstr "Preferowane położenie strony lub adres URL ułatwiający wyeliminowanie zduplikowanych treści w wyszukiwarkach, np. <em>https://www.imdb.com/title/tt0117500/</em>."
+
+msgid "Video URL"
+msgstr "URL Wideo"
+
+msgid "The URL of an video which should represent the content. For best results use a source that is at least 1200 x 630 pixels in size, but at least 600 x 316 pixels is a recommended minimum. Object types supported include video.episode, video.movie, video.other, and video.tv_show."
+msgstr "Adres URL filmu wideo reprezentującego treść. W celu uzyskania najlepszych wyników należy użyć źródła o wielkości co najmniej 1200 x 630 piksli, przy czym 600 x 316 piksli to zalecane minimum. Obsługiwane typy obiektów to video.episode, video.movie, video.other i video.tv_show."
+
+msgid "Video duration (seconds)"
+msgstr "Czas trwania wideo (w sekundach)"
+
+msgid "The length of the video in seconds"
+msgstr "Długość wideo w sekundach"
+
+msgid "Video height"
+msgstr "Wysokość filmu wideo"
+
+msgid "The height of the above video(s). Note: if both the unsecured and secured videos are provided, they should both be the same size."
+msgstr "Wysokość powyższych filmów wideo. Uwaga: jeśli zostaną określone niezabezpieczone i zabezpieczone filmy wideo, to powinny mieć taką samą wielkość. "
+
+msgid "Video Secure URL"
+msgstr "Zabezpieczony adres URL filmu wideo"
+
+msgid "The secure URL (HTTPS) of an video which should represent the content."
+msgstr "Zabezpieczony adres URL (HTTPS) filmu wideo reprezentującego treść."
+
+msgid "Video type"
+msgstr "Typ filmu wideo"
+
+msgid "The type of video referenced above. Should be either  video.episode, video.movie, video.other, and video.tv_show. Note: there should be one value for each video, and having more than there are videos may cause problems."
+msgstr "Typ filmu wideo przywoływanego powyżej. Obsługiwane wartości to video.episode, video.movie, video.other i video.tv_show. Uwaga: powinna być określona jedna wartość dla każdego filmu wideo, a większa liczba wartości może powodować problemy."
+
+msgid "Video width"
+msgstr "Szerokość filmu wideo"
+
+msgid "The first name of the person who's Profile page this is."
+msgstr "Imię osoby, do której należy ta strona profilu."
+
+msgid "Any of Facebook's gender values should be allowed, the initial two being 'male' and 'female'."
+msgstr "Powinna być dozwolona każda z wartości płci w serwisie Facebook, a dwie pierwsze to 'male' i 'female'."
+
+msgid "The person's last name."
+msgstr "Nazwisko osoby."
+
+msgid "A pseudonym / alias of this person."
+msgstr "Pseudonim/alias tej osoby."
+
+msgid "Links to the Facebook profiles for actor(s) that appear in the video."
+msgstr "Odsyłacze do profili facebookowych aktorów, którzy występują w materiale wideo."
+
+msgid "The roles of the actor(s)."
+msgstr "Role aktorów."
+
+msgid "Links to the Facebook profiles for director(s) that worked on the video."
+msgstr "Odsyłacze do profili facebookowych reżyserów tego materiału wideo."
+
+msgid "The date the video was released."
+msgstr "Data wydania wideo."
+
+msgid "The TV show this series belongs to."
+msgstr "Tytuł programu/serialu, do którego należy ta seria odcinków."
+
+msgid "Tag words associated with this video."
+msgstr "Słowa-tagi powiązane z tym materiałem wideo."
+
+msgid "Links to the Facebook profiles for scriptwriter(s) for the video."
+msgstr "Odsyłacze do profili facebookowych scenarzystów tego materiału wideo."
+
+msgid "Provides additional Open Graph Protocol meta tags for describing products."
+msgstr "Udostępnia dodatkowe metaznaczniki protokołu Open Graph na potrzeby opisywania produktów."
+
+msgid "Metatag: Open Graph Products"
+msgstr "Metaznacznik: Open Graph Products"
+
+msgid "Open Graph Product: Price availability"
+msgstr "Produkt Open Graph: dostępność i cena"
+
+msgid "Open Graph Product: Product condition"
+msgstr "Produkt Open Graph: stan produktu"
+
+msgid "Open Graph Product: Price amount"
+msgstr "Open Graph Product: Kwota"
+
+msgid "Open Graph Product: Price currency"
+msgstr "Open Graph Product: Waluta"
+
+msgid "Open Graph Product: Retailer Item ID"
+msgstr "Produkt Open Graph: identyfikator sprzedawcy detalicznego"
+
+msgid "Open Graph - Products"
+msgstr "Open Graph – Products"
+
+msgid "These <a href='https://ogp.me/'>Open Graph meta tags</a> are for describing products.<br><br>The Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> lets you preview how your content will look when it's shared to Facebook and debug any issues with your Open Graph tags."
+msgstr "Te <a href='https://ogp.me/'>metaznaczniki protokołu Open Graph</a> służą do opisywania produktów. <br><br>Narzędzie Facebook <a href='https://developers.facebook.com/tools/debug/'>Sharing Debugger</a> umożliwia sprawdzenie, jak treść będzie wyglądać po udostępnieniu w serwisie Facebook i w razie potrzeby debugowania wszelkich problemów ze znacznikami Open Graph."
+
+msgid "Product availability"
+msgstr "Dostępność produktu"
+
+msgid "The availability of the product."
+msgstr "Dostępność produktu."
+
+msgid "Product condition"
+msgstr "Stan produktu"
+
+msgid "The condition of the product."
+msgstr "Stan produktu."
+
+msgid "Product price amount"
+msgstr "Cena produktu"
+
+msgid "The price amount of the product."
+msgstr "Cena produktu."
+
+msgid "Product price currency"
+msgstr "Waluta ceny produktu"
+
+msgid "The price currency of the product."
+msgstr "Waluta ceny produktu."
+
+msgid "Retailer Item ID"
+msgstr "Identyfikator pozycji sprzedawcy detalicznego"
+
+msgid "The ID of the product as provided by the retailer."
+msgstr "Identyfikator produktu podany przez sprzedawcę detalicznego."
+
+msgid "Metatag: Page Manager"
+msgstr "Metaznacznik: Page Manager"
+
+msgid "Provides metatag support for Page Manager variants."
+msgstr "Udostępnia obsługę metaznaczników dla wariantów modułu Page Manager."
+
+msgid "Metatag: Pinterest"
+msgstr "Metaznacznik: Pinterest"
+
+msgid "Provides support for Pinterest's custom meta tags."
+msgstr "Udostępnia obsługę niestandardowych metaznaczników serwisu Pinterest."
+
+msgid "Pinterest: Description"
+msgstr "Pinterest: Opis"
+
+msgid "Pinterest: ID"
+msgstr "Pinterest: Identyfikator"
+
+msgid "Pinterest: Media"
+msgstr "Pinterest: Multimedia"
+
+msgid "Pinterest: No hover"
+msgstr "Pinterest: Bez opcji po wskazaniu"
+
+msgid "Pinterest: No pin"
+msgstr "Pinterest: Bez przypinania"
+
+msgid "Pinterest: No search"
+msgstr "Pinterest: Bez wyszukiwania"
+
+msgid "Pinterest: URL"
+msgstr "Pinterest: Adres URL"
+
+msgid "Pinterest"
+msgstr "Pinterest"
+
+msgid "A set of meta tags used to control how the site's content is consumed by <a href='https://pinterest.com/'>Pinterest</a>."
+msgstr "Zestaw metaznaczników używanych do sterowania korzystaniem z treści serwisu przez serwis <a href='https://pinterest.com/'>Pinterest</a>. "
+
+msgid "Id"
+msgstr "Id"
+
+msgid "The Canonical Pinterest object to pin."
+msgstr "Kanoniczny obiekt serwisu Pinterest do przypięcia."
+
+msgid "Media"
+msgstr "Media"
+
+msgid "The URL of media which should represent the content."
+msgstr "Adres URL elementu multimedialnego reprezentującego treść. "
+
+msgid "No hover"
+msgstr "Bez opcji po wskazaniu"
+
+msgid "Do not show hovering Save or Search buttons, generated by the Pinterest browser extensions."
+msgstr "Przyciski Zapisz lub Szukaj dostępne po wskazaniu i generowane przez rozszerzenia przeglądarek serwisu Pinterest nie są wyświetlane."
+
+msgid "No pin"
+msgstr "Bez przypinania"
+
+msgid "Do not pin anything from this page. When selected, this option will take precedence over all options below."
+msgstr "Nie ma możliwości przypięcia czegokolwiek z tej strony. Jeśli ta opcja zostanie wybrana, to ma priorytet nad wszystkimi opcjami poniżej."
+
+msgid "No search"
+msgstr "Bez wyszukiwania"
+
+msgid "Do not allow Pinterest visual search to happen from this page."
+msgstr "Na tej stronie nie można wykonywać wyszukiwania wizualnego w serwisie Pinterest."
+
+msgid "URL"
+msgstr "URL"
+
+msgid "The URL which should represent the content."
+msgstr "Adres URL reprezentujący treść."
+
+msgid "Enables metatags for custom routes"
+msgstr "Włącza znaczniki meta dla tras niestandardowych"
+
+msgid "Metatag Custom Routes (Paths)"
+msgstr "Trasy niestandardowe znaczników meta (ścieżki)"
+
+msgid "Allows assigning meta tags to be used on custom routes, equivalent to custom paths."
+msgstr "Umożliwia przypisywanie znaczników meta do użycia na trasach niestandardowych, co jest równoważne ścieżkom niestandardowym."
+
+msgid "Add meta tag for custom route"
+msgstr "Dodaj znacznik meta dla trasy niestandardowej"
+
+msgid "Add custom metatag"
+msgstr "Dodaj niestandardowy znacznik meta"
+
+msgid "Route / Path"
+msgstr "Trasa / ścieżka"
+
+msgid "Enter the route (path) for this new configuration, starting with a leading slash.<br />Note: this must already exist as a path in Drupal."
+msgstr "Wprowadź trasę (ścieżka) dla tej nowej konfiguracji, zaczynając od początkowego ukośnika. <br />Uwaga: ta ścieżka musi już istnieć jako ścieżka w systemie Drupal."
+
+msgid "Submit"
+msgstr "Zachowaj"
+
+msgid "The path must begin with /"
+msgstr "Ścieżka musi zaczynać się od znaku /"
+
+msgid "The admin routes should not have metatags."
+msgstr "Trasy administracyjne nie powinny mieć znaczników meta."
+
+msgid "The entities routes metatags must be added by fields. @entity_type - @id"
+msgstr "Znaczniki meta kierujące elementy muszą być dodawane według pól. @entity_type - @id"
+
+msgid "There are already metatags created for this route."
+msgstr "Dla tej trasy zostały utworzone już znaczniki meta."
+
+msgid "The path does not exist as an internal Drupal route."
+msgstr "Ścieżka nie istnieje jako wewnętrzna trasa Drupal."
+
+msgid "Created metatags for the path: @url. Internal route: @route."
+msgstr "Utworzono znaczniki meta dla ścieżki: @url. Trasa wewnętrzna: @route."
+
+msgid "The metatags could not be created for the path: @url."
+msgstr "Nie można utworzyć znaczników meta dla ścieżki: @url."
+
+msgid "Metatag: Twitter Cards"
+msgstr "Metaznacznik: Twitter Cards"
+
+msgid "Provides support for Twitter's Card meta tags."
+msgstr "Udostępnia obsługę metaznaczników kart serwisu Twitter."
+
+msgid "Twitter Cards: Google Play app ID"
+msgstr "Twitter Cards: Identyfikator aplikacji serwisu Google Play"
+
+msgid "Twitter Cards: iPad app ID"
+msgstr "Twitter Cards: Identyfikator aplikacji dla tabletu iPad"
+
+msgid "Twitter Cards: iPhone app ID"
+msgstr "Twitter Cards: Identyfikator aplikacji dla telefonu iPhone"
+
+msgid "Twitter Cards: Google Play app name"
+msgstr "Twitter Cards: Nazwa aplikacji serwisu Google Play"
+
+msgid "Twitter Cards: iPad app name"
+msgstr "Twitter Cards: Nazwa aplikacji dla tabletu iPad"
+
+msgid "Twitter Cards: iPhone app name"
+msgstr "Twitter Cards: Nazwa aplikacji dla telefonu iPhone"
+
+msgid "Twitter Cards: App store country"
+msgstr "Twitter Cards: Kraj sklepu z aplikacjami"
+
+msgid "Twitter Cards: Google Play app URL schema"
+msgstr "Twitter Cards: Schemat adresu URL aplikacji z serwisu Google Play"
+
+msgid "Twitter Cards: iPad app URL schema"
+msgstr "Twitter Cards: Schemat adresu URL aplikacji dla tabletu iPad"
+
+msgid "Twitter Cards: iPhone app URL schema"
+msgstr "Twitter Cards: Schemat adresu URL aplikacji dla telefonu iPhone"
+
+msgid "Twitter Cards: Creator's Twitter account"
+msgstr "Twitter Cards: Konto twórcy w serwisie Twitter"
+
+msgid "Twitter Cards: Creator's Twitter account ID"
+msgstr "Twitter Cards: Identyfikator konta twórcy w serwisie Twitter"
+
+msgid "Twitter Cards: Data 1"
+msgstr "Twitter Cards: Dane 1"
+
+msgid "Twitter Cards: Data 2"
+msgstr "Twitter Cards: Dane 2"
+
+msgid "Twitter Cards: Description"
+msgstr "Twitter Cards: Opis"
+
+msgid "Twitter Cards: Do Not Track"
+msgstr "Twitter Cards: Nie śledź"
+
+msgid "Twitter Cards: 1st gallery image"
+msgstr "Twitter Cards: 1. obraz w galerii"
+
+msgid "Twitter Cards: 2nd gallery image"
+msgstr "Twitter Cards: 2. obraz w galerii"
+
+msgid "Twitter Cards: 3rd gallery image"
+msgstr "Twitter Cards: 3. obraz w galerii"
+
+msgid "Twitter Cards: 4th gallery image"
+msgstr "Twitter Cards: 4. obraz w galerii"
+
+msgid "Twitter Cards: Image URL"
+msgstr "Twitter Cards: Adres URL obrazu"
+
+msgid "Twitter Cards: Image height"
+msgstr "Twitter Cards: Wysokość obrazu"
+
+msgid "Twitter Cards: Image width"
+msgstr "Twitter Cards: Szerokość obrazu"
+
+msgid "Twitter Cards: Image alternative text"
+msgstr "Twitter Cards: Tekst alternatywny obrazu"
+
+msgid "Twitter Cards: Label 1"
+msgstr "Twitter Cards: Etykieta 1"
+
+msgid "Twitter Cards: Label 2"
+msgstr "Twitter Cards: Etykieta 2"
+
+msgid "Twitter Cards: Page URL"
+msgstr "Twitter Cards: Adres URL strony"
+
+msgid "Twitter Cards: Media player URL"
+msgstr "Twitter Cards: Adres URL odtwarzacza"
+
+msgid "Twitter Cards: Media player height"
+msgstr "Twitter Cards: Wysokość odtwarzacza"
+
+msgid "Twitter Cards: MP4 media stream URL"
+msgstr "Twitter Cards: Adres URL strumienia medialnego MP4"
+
+msgid "Twitter Cards: MP4 media straem MIME-type"
+msgstr "Twitter Cards: Typ MIME strumienia medialnego MP4"
+
+msgid "Twitter Cards: Media player width"
+msgstr "Twitter Cards: Szerokość odtwarzacza"
+
+msgid "Twitter Cards: Site's Twitter account"
+msgstr "Twitter Cards: Konto serwisu w serwisie Twitter"
+
+msgid "Twitter Cards: Site's Twitter account ID"
+msgstr "Twitter Cards: Identyfikator konta serwisu w serwisie Twitter"
+
+msgid "Twitter Cards: Title"
+msgstr "Twitter Cards: Tytuł"
+
+msgid "Twitter Cards: Type"
+msgstr "Twitter Cards: Typ"
+
+msgid "Twitter Cards"
+msgstr "Twitter Cards"
+
+msgid "A set of meta tags specially for controlling the summaries displayed when content is shared on <a href='https://twitter.com/'>Twitter</a>."
+msgstr "Zestaw metaznaczników przeznaczonych specjalnie do sterowania podsumowaniami wyświetlanymi przy udostępnianiu treści do współużytkowania w serwisie <a href='https://twitter.com/'>Twitter</a>."
+
+msgid "Google Play app ID"
+msgstr "Identyfikator aplikacji serwisu Google Play"
+
+msgid "iPad app ID"
+msgstr "Identyfikator aplikacji dla tabletu iPad"
+
+msgid "String value, should be the numeric representation of your iPad app's ID in the App Store."
+msgstr "Wartość łańcuchowa, która powinna być liczbową reprezentacją identyfikatora aplikacji dla tabletu iPad w sklepie App Store."
+
+msgid "iPhone app ID"
+msgstr "Identyfikator aplikacji dla telefonu iPhone"
+
+msgid "String value, should be the numeric representation of your iPhone app's ID in the App Store."
+msgstr "Wartość łańcuchowa, która powinna być liczbową reprezentacją identyfikatora aplikacji dla telefonu iPhone w sklepie App Store."
+
+msgid "Google Play app name"
+msgstr "Nazwa aplikacji serwisu Google Play"
+
+msgid "The name of the app in the Google Play app store."
+msgstr "Nazwa aplikacji w sklepie z aplikacjami serwisu Google Play."
+
+msgid "The name of the iPad app."
+msgstr "Nazwa aplikacji dla tabletu iPad."
+
+msgid "The name of the iPhone app."
+msgstr "Nazwa aplikacji dla telefonu iPhone."
+
+msgid "App store country"
+msgstr "Kraj sklepu z aplikacjami"
+
+msgid "If your application is not available in the US App Store, you must set this value to the two-letter country code for the App Store that contains your application."
+msgstr "Jeśli aplikacja nie jest dostępna w sklepie App Store w Stanach Zjednoczonych, należy ustawić tę wartość na dwuliterowy kod kraju sklepu App Store, który zawiera aplikację. "
+
+msgid "Google Play app's custom URL scheme"
+msgstr "Schemat niestandardowego adresu URL aplikacji serwisu Google Play"
+
+msgid "iPad app's custom URL scheme"
+msgstr "Schemat niestandardowego adresu URL aplikacji dla tabletu iPad"
+
+msgid "iPhone app's custom URL scheme"
+msgstr "Schemat niestandardowego adresu URL aplikacji dla telefonu iPad"
+
+msgid "Creator's Twitter account"
+msgstr "Konto twórcy w serwisie Twitter"
+
+msgid "The @username for the content creator / author for this page, including the @ symbol."
+msgstr "Element @username twórcy/autora treści strony, włącznie z symbolem @. "
+
+msgid "Creator's Twitter account ID"
+msgstr "Identyfikator konta twórcy w serwisie Twitter"
+
+msgid "The numerical Twitter account ID for the content creator / author for this page."
+msgstr "Liczbowy identyfikator konta serwisu Twitter dla twórcy/autora treści strony. "
+
+msgid "Data 1"
+msgstr "Dane 1"
+
+msgid "This field expects a string, and allows you to specify the types of data you want to offer (price, country, etc.)."
+msgstr "W tym polu jest oczekiwany łańcuch i można w nim określić typy danych, które mają być oferowane (cena, kraj itp.)."
+
+msgid "Data 2"
+msgstr "Dane 2"
+
+msgid "A description that concisely summarizes the content of the page, as appropriate for presentation within a Tweet. Do not re-use the title text as the description, or use this field to describe the general services provided by the website. The string will be truncated, by Twitter, at the word to 200 characters."
+msgstr "Opis zwięźle podsumowujący treść strony w formie odpowiedniej do prezentacji w serwisie Twitter. Nie należy używać tytułu jako opisu ani opisywać w tym polu ogólnych usług udostępnianych przez serwis WWW. Łańcuch zostanie obcięty przez serwis Twitter do maksymalnie 200 znaków na granicy słowa. "
+
+msgid "Do Not Track"
+msgstr "Nie śledź"
+
+msgid "1st gallery image"
+msgstr "1. obraz w galerii"
+
+msgid "A URL to the image representing the first photo in your gallery."
+msgstr "Adres URL obrazu reprezentującego pierwsze zdjęcie w galerii."
+
+msgid "2nd gallery image"
+msgstr "2. obraz w galerii"
+
+msgid "A URL to the image representing the second photo in your gallery."
+msgstr "Adres URL obrazu reprezentującego drugie zdjęcie w galerii."
+
+msgid "3rd gallery image"
+msgstr "3. obraz w galerii"
+
+msgid "A URL to the image representing the third photo in your gallery."
+msgstr "Adres URL obrazu reprezentującego trzecie zdjęcie w galerii."
+
+msgid "4th gallery image"
+msgstr "4. obraz w galerii"
+
+msgid "A URL to the image representing the fourth photo in your gallery."
+msgstr "Adres URL obrazu reprezentującego czwarte zdjęcie w galerii."
+
+msgid "The URL to a unique image representing the content of the page. Do not use a generic image such as your website logo, author photo, or other image that spans multiple pages. Images larger than 120x120px will be resized and cropped square based on longest dimension. Images smaller than 60x60px will not be shown. If the 'type' is set to Photo then the image must be at least 280x150px."
+msgstr "Adres URL unikalnego obrazu reprezentującego treść strony. Nie należy używać ogólnego obrazu, takiego jak logo serwisu WWW, zdjęcie autora ani inny obraz dotyczący wielu stron. Obrazy o wielkości większej niż 120x120 px zostaną zmniejszone i przycięte do kwadratu z uwzględnieniem swojego najdłuższego wymiaru. Obrazy mniejsze niż 60x60 px nie będą wyświetlane. Jeśli wartość elementu type to Photo, obraz musi mieć wielkość co najmniej 280x150 px."
+
+msgid "Image alternative text"
+msgstr "Alternatywny tekst obrazu"
+
+msgid "The alternative text of the image being linked to. Limited to 420 characters."
+msgstr "Tekst alternatywny dla obrazu wskazywanego przez odsyłacz. Jest ograniczony do 420 znaków. "
+
+msgid "The height of the image being linked to, in pixels."
+msgstr "Wysokość obrazu wskazywanego przez odsyłacz w pikslach."
+
+msgid "The width of the image being linked to, in pixels."
+msgstr "Szerokość obrazu wskazywanego przez odsyłacz w pikslach."
+
+msgid "Label 1"
+msgstr "Etykieta 1"
+
+msgid "This field expects a string, and you can specify values for labels such as price, items in stock, sizes, etc."
+msgstr "W tym polu jest oczekiwany łańcuch i można w nim określić wartości dla etykiet, takie jak cena, liczba obiektów w magazynie, rozmiary itp. "
+
+msgid "Label 2"
+msgstr "Etykieta 2"
+
+msgid "The permalink / canonical URL of the current page."
+msgstr "Trwały odsyłacz / kanoniczny adres URL bieżącej strony."
+
+msgid "Media player URL"
+msgstr "Adres URL odtwarzacza"
+
+msgid "The full URL for loading a media player, specifically an iframe for an embedded video rather than the URL to a page that contains a player. Required when using the Player Card type."
+msgstr "Pełny adres URL do ładowania odtwarzacza multimedialnego, w szczególności iframe dla osadzonego filmu wideo, a nie adres URL strony, która zawiera odtwarzacz. Wymagane w przypadku korzystania z typu karty odtwarzacza."
+
+msgid "Media player height"
+msgstr "Wysokość odtwarzacza"
+
+msgid "The height of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "Wysokość elementu iframe odtwarzacza w pikslach. Wymagane w przypadku korzystania z karty odtwarzacza."
+
+msgid "MP4 media stream URL"
+msgstr "Adres URL strumienia medialnego MP4"
+
+msgid "The full URL for an MP4 video (h.264) or audio (AAC) stream, takes precedence over the other media player field."
+msgstr "Pełny adres URL strumienia transmisji wideo MP4 (h.264) lub audio (AAC). Ma priorytet nad innymi polami dotyczącymi odtwarzacza multimediów."
+
+msgid "MP4 media stream MIME-type"
+msgstr "Typ MIME strumienia medialnego MP4"
+
+msgid "Media player width"
+msgstr "Szerokość odtwarzacza"
+
+msgid "The width of the media player iframe, in pixels. Required when using the Player Card type."
+msgstr "Szerokość elementu iframe odtwarzacza w pikslach. Wymagane w przypadku korzystania z typu karty odtwarzacza."
+
+msgid "Site's Twitter account"
+msgstr "Konto serwisu w serwisie Twitter"
+
+msgid "The @username for the website, which will be displayed in the Card's footer; must include the @ symbol."
+msgstr "Element @username serwisu WWW, który będzie wyświetlany w stopce karty. Musi zawierać symbol @."
+
+msgid "Site's Twitter account ID"
+msgstr "Identyfikator konta serwisu w serwisie Twitter"
+
+msgid "The numerical Twitter account ID for the website, which will be displayed in the Card's footer."
+msgstr "Liczbowy identyfikator konta serwisu WWW w serwisie Twitter, który będzie wyświetlany w stopce karty. "
+
+msgid "The page's title, which should be concise; it will be truncated at 70 characters by Twitter. This field is required unless this the 'type' field is set to 'photo'."
+msgstr "Zwięzły tytuł strony. Zostanie obcięty do 70 znaków przez serwis Twitter. To pole jest wymagane, chyba że pole type ma wartość photo."
+
+msgid "- None -"
+msgstr "- Brak -"
+
+msgid "Summary Card"
+msgstr "Karta podsumowania"
+
+msgid "Summary Card with large image"
+msgstr "Karta podsumowania z dużym obrazem"
+
+msgid "Photo Card"
+msgstr "Karta zdjęcia"
+
+msgid "Gallery Card"
+msgstr "Karta galerii"
+
+msgid "App Card"
+msgstr "Karta aplikacji"
+
+msgid "Player Card"
+msgstr "Karta odtwarzacza"
+
+msgid "Product Card"
+msgstr "Karta produktu"
+
+msgid "Twitter card type"
+msgstr "Typ karty serwisu Twitter"
+
+msgid "Notes:<ul><li>no other fields are required for a Summary card</li><li>Photo card requires the 'image' field</li><li>Media player card requires the 'title', 'description', 'media player URL', 'media player width', 'media player height' and 'image' fields,</li><li>Summary Card with Large Image card requires the 'Summary' field and the 'image' field,</li><li>Gallery Card requires all the 'Gallery Image' fields,</li><li>App Card requires the 'iPhone app ID' field, the 'iPad app ID' field and the 'Google Play app ID' field,</li><li>Product Card requires the 'description' field, the 'image' field, the 'Label 1' field, the 'Data 1' field, the 'Label 2' field and the 'Data 2' field.</li></ul>"
+msgstr "Uwagi:<ul><li>Żadne inne pola nie są wymagane dla karty podsumowania.</li><li>Karta zdjęcia wymaga pola Obraz. </li><li>Karta odtwarzacza wymaga pól Tytuł, Opis, Adres URL odtwarzacza, Szerokość odtwarzacza, Wysokość odtwarzacza i Obraz.</li><li>Karta podsumowania z kartą dużego obrazu wymaga pól Podsumowanie i Obraz.</li><li>Karta galerii wymaga pola Obraz galerii.</li><li>Karta aplikacji wymaga pól Identyfikator aplikacji dla telefonu iPhone, Identyfikator aplikacji dla tabletu iPad i Identyfikator aplikacji serwisu Google Play.</li><li>Karta produktu wymaga pól Opis, Obraz, Etykieta 1, Dane 1, Etykieta 2 i Dane 2. </li></ul>"
+
+msgid "Metatag: Verification"
+msgstr "Metaznacznik: Verification"
+
+msgid "Verifies ownership of a site for search engines and other services."
+msgstr "Umożliwia zweryfikowanie serwisu na potrzeby wyszukiwarek i innych usług. "
+
+msgid "Site validation: Alexa"
+msgstr "Site validation: Alexa"
+
+msgid "Site validation: Baidu"
+msgstr "Site validation: Baidu"
+
+msgid "Site validation: Bing"
+msgstr "Site validation: Bing"
+
+msgid "Site validation: Facebook"
+msgstr "Sprawdzanie poprawności serwisu: Facebook"
+
+msgid "Site validation: Google"
+msgstr "Site validation: Google"
+
+msgid "Site validation: Norton Safe Web"
+msgstr "Site validation: Norton Safe Web"
+
+msgid "Site validation: Pinterest"
+msgstr "Site validation: Pinterest"
+
+msgid "Site validation: Pocket"
+msgstr "Sprawdzanie poprawności serwisu: Pocket"
+
+msgid "Site validation: SIWECOS"
+msgstr "Sprawdzanie poprawności serwisu: SIWECOS"
+
+msgid "Site validation: Yahoo"
+msgstr "Site validation: Yahoo"
+
+msgid "Site validation: Yandex"
+msgstr "Site validation: Yandex"
+
+msgid "Site validation: Zoom"
+msgstr "Sprawdzanie poprawności serwisu: Zoom"
+
+msgid "Site verification"
+msgstr "Weryfikacja serwisu"
+
+msgid "These meta tags are used to confirm site ownership for search engines and other services."
+msgstr "Te metaznaczniki umożliwiają potwierdzenie prawa własności serwisu na potrzeby wyszukiwarek i innych usług. "
+
+msgid "Baidu"
+msgstr "Baidu"
+
+msgid "Bing"
+msgstr "Bing"
+
+msgid "Facebook"
+msgstr "Facebook"
+
+msgid "Google Site Verification"
+msgstr "Sprawdzanie poprawności serwisu Google"
+
+msgid "Norton Safe Web"
+msgstr "Norton Safe Web"
+
+msgid "Pocket"
+msgstr "Pocket"
+
+msgid "SIWECOS"
+msgstr "SIWECOS"
+
+msgid "Yandex"
+msgstr "Yandex"
+
+msgid "Zoom"
+msgstr "Przybliżenie"
+
+msgid "The custom admin pages for managing Views meta tags at /admin/config/search/metatag/views have been disabled for now, hopefully they'll be back in a future release. Until then, the meta tags can be managed directly on each individual view via the \"Meta tags\" section."
+msgstr "Niestandardowe strony administracyjne umożliwiające zarządzanie metaznacznikami Views w ścieżce /admin/config/search/metatag/views są teraz wyłączone. Być może będą ponownie dostępne w przyszłej wersji. Do tego momentu można bezpośrednio zarządzać metaznacznikami w poszczególnych widokach za pomocą sekcji \"Metaznaczniki\". "
+
+msgid "Empty update script to clear the site's caches so the new token replacement functionality will work."
+msgstr "Wyczyść skrypt aktualizujący, aby wyczyścić pamięci podręczne serwisu, dzięki czemu nowa funkcjonalność zastępowania tokenów będzie działać."
+
+msgid "Metatag: Views"
+msgstr "Metaznacznik: Views"
+
+msgid "Provides views integration for metatags."
+msgstr "Udostępnia widoki integracji dla metaznaczników."
+
+msgid "Should replacement tokens be used from the first row"
+msgstr "Czy wzorce podstawiania powinno stosować się od pierwszego wiersza"
+
+msgid "To view a list of displays with meta tags set up, click on a view name. To view a summary of meta tags configuration for a particular display, click on the display name. If you need to set meta tags for a specific view, choose Add views meta tags. Reverting the meta tags removes the specific configuration and falls back to defaults."
+msgstr "Aby wyświetlić listę ekranów ze skonfigurowanymi metaznacznikami, należy kliknąć nazwę widoku. Aby wyświetlić podsumowanie konfiguracji metaznaczników dla konkretnego ekranu, należy kliknąć nazwę ekranu. Jeśli konieczne jest ustawienie metaznaczników dla konkretnego widoku, należy wybrać opcję Dodaj metaznaczniki widoków. Przywrócenie metaznaczników powoduje usunięcie konkretnej konfiguracji i przywrócenie wartości domyślnych."
+
+msgid ":label"
+msgstr ":label"
+
+msgid "Display"
+msgstr "Wyświetlanie"
+
+msgid "Operations"
+msgstr "Operacje"
+
+msgid "Edit"
+msgstr "Edytuj"
+
+msgid "Translate"
+msgstr "Tłumaczenia"
+
+msgid "Revert"
+msgstr "Przywróć"
+
+msgid "@language (original)"
+msgstr "@language (oryginalny)"
+
+msgid "Add"
+msgstr "Dodaj"
+
+msgid "- Select a view -"
+msgstr "- Wybierz widok -"
+
+msgid "View"
+msgstr "Widok"
+
+msgid "Metatags for @view : @display have been saved."
+msgstr "Metaznaczniki elementu @view : @display zostały zapisane."
+
+msgid "Do you want to revert meta tags for @view_name : @display_name?"
+msgstr "Czy chcesz przywrócić metaznaczniki dla elementu @view_name : @display_name? "
+
+msgid "You are about to revert the custom meta tags for the %display_name display on the %view_name view. This action cannot be undone."
+msgstr "Zamierzasz przywrócić niestandardowe metaznaczniki dla ekranu %display_name w widoku %view_name. Tego działania nie można cofnąć. "
+
+msgid "Cancel"
+msgstr "Anuluj"
+
+msgid "Reverted meta tags for @view_name : @display_name"
+msgstr "Przywrócono metaznaczniki dla elementu @view_name: @display_name "
+
+msgid "Edit @language translation for %view: %display metatags"
+msgstr "Edytuj tłumaczenie elementu @language dla metaznaczników %view: %display "
+
+msgid "Successfully updated @language translation."
+msgstr "Pomyślnie uaktualniono tłumaczenie na język @language."
+
+msgid "The meta tags for this display"
+msgstr "Metaznaczniki dla tego ekranu"
+
+msgid "Use replacement tokens from the first row"
+msgstr "Użyj wzorców podstawiania z pierwszego rzędu"
+
+msgid "@argument title"
+msgstr "Tytuł argumentu @title"
+
+msgid "@argument input"
+msgstr "@argument wejściowy"
+
+msgid "Replacement patterns"
+msgstr "Wzorce podstawiania"
+
+msgid "The following tokens are available. You may use Twig syntax in this field."
+msgstr "Dostępne są następujące wzorce. W tym polu można używać składni Twig."
+
+msgid "Meta tags"
+msgstr "Tagi meta"
+
+msgid "Overridden"
+msgstr "Nadpisany"
+
+msgid "Using defaults"
+msgstr "Użycie wartości domyślnych"
+
+msgid "Arguments"
+msgstr "Argumenty"
+
+msgid "Fields"
+msgstr "Pola"
+
+msgid "Metatag display extender"
+msgstr "Rozszerzenie ekranu metaznaczników"
+
+msgid "Metatag settings for this view."
+msgstr "Ustawienia metaznaczników dla tego widoku."
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Active"
+msgstr "Aktywne"
+
+msgid "Disabled"
+msgstr "Wyłączone"
+
+msgid "Inherits meta tags from: @inherits"
+msgstr "Powoduje dziedziczenie metaznaczników z elementu @inherits"
+
+msgid "Configure the meta tags below."
+msgstr "Skonfiguruj metaznaczniki poniżej."
+
+msgid "Undefined group '%group' on tag '%tag'"
+msgstr "Niezdefiniowana grupa %group w ramach znacznika %tag"
+
+msgid ""
+"This was expected to be an array but it is not: \n"
+"%value"
+msgstr ""
+"Oczekiwano tablicy, ale uzyskano wartość: \n"
+"%value"
+
+msgid ""
+"This could not be unserialized: \n"
+"%value"
+msgstr ""
+"Nie można tego przekształcić z postaci szeregowej: \n"
+"%value"
+
+msgid "Use tokens to avoid redundant meta data and search engine penalization. For example, a 'keyword' value of \"example\" will be shown on all content using this configuration, whereas using the [node:field_keywords] automatically inserts the \"keywords\" values from the current entity (node, term, etc)."
+msgstr "Należy użyć leksemów, aby uniknąć nadmiarowych metadanych i obniżenia rankingu w wyszukiwarkach. Na przykład wartość \"example\" dla elementu keyword będzie wyświetlana w całej treści za pomocą tej konfiguracji, a w przypadku użycia elementu [node:field_keywords] wartości elementu \"keywords\" będą automatycznie wstawiane z bieżącej jednostki (węzeł, termin itp.)."
+
+msgid "To use tokens to image fields, the image field on that entity bundle (content type, term, etc) must have the \"Token\" display settings enabled, the image field must not be hidden, and it must be set to output as an image, e.g. using the \"Thumbnail\" field formatter. It is also recommended to use an appropriate image style that resizes the image rather than output the original image; see individual meta tag descriptions for size recommendations."
+msgstr "Aby można było używać leksemów względem pól obrazu, pole obrazu w tym pakunku jednostki (typ treści, termin itp.) musi mieć włączone ustawienia wyświetlania \"Token\". Pole obrazu nie może być ukryte i musi zostać ustawione na wyświetlanie jako obraz, np. przy użyciu formatera pola \"Thumbnail\". Zalecane jest również użycie odpowiedniego stylu obrazu, który zmienia rozmiar pierwotnego obrazu zamiast go prezentować. Rekomendacje wielkości podano w opisach poszczególnych metaznaczników."
+
+msgid "Yes"
+msgstr "Tak"
+
+msgid "No"
+msgstr "Nie"
+
+msgid "Label / Description"
+msgstr "Etykieta / Opis"
+
+msgid "Weight"
+msgstr "Waga"
+
+msgid "Secure"
+msgstr "Zabezpieczanie"
+
+msgid "Multiple"
+msgstr "Wielokrotny"
+
+msgid "Provided by"
+msgstr "Dostarczone przez"
+
+msgid "All meta tags in the \"@group\" group."
+msgstr "Wszystkie znaczniki meta w grupie \"@group\"."
+
+msgid "Are you sure you want to delete %name?"
+msgstr "Czy na pewno chcesz usunąć %name?"
+
+msgid "Delete"
+msgstr "Usuń"
+
+msgid "Deleted @label defaults."
+msgstr "Usunięto wartości domyślne elementu @label."
+
+msgid "Select the type of default meta tags you would like to add."
+msgstr "Typ domyślnego meta tagu, który zostanie dodany."
+
+msgid "Warning: disabling the Global default metatag will prevent any metatags from being used."
+msgstr "Ostrzeżenie: wyłączenie domyślnego metaznacznika Global uniemożliwi użycie wszystkich metaznaczników."
+
+msgid "Created the %label Metatag defaults."
+msgstr "Utworzono wartości domyślne metaznacznika %label. "
+
+msgid "Saved the %label Metatag defaults."
+msgstr "Zapisano wartości domyślne metaznacznika %label."
+
+msgid "Edit default meta tags for @path"
+msgstr "Edytuj domyślne znaczniki meta dla elementu @path"
+
+msgid "Are you sure you want to revert %name to its default values?"
+msgstr "Czy na pewno chcesz przywrócić wartości domyślne elementu %name? "
+
+msgid "Reverted @label defaults."
+msgstr "Przywrócono wartości domyślne elementu @label."
+
+msgid "Entity type / Group Mapping"
+msgstr "Odwzorowanie typu jednostki / grupy"
+
+msgid "Identify which metatag groups should be available on which entity type / bundle combination. Unselected groups will not appear on the configuration form for that entity type, reducing the size of the form and increasing performance. If no groups are selected for a type, all groups will appear."
+msgstr "Określ, które grupy metaznaczników mają być dostępne dla których kombinacji typu jednostki i pakunku. Niewybrane grupy nie będą wyświetlane w formularzu konfiguracji dla danego typu jednostki, co zmniejsza wielkość formularza i podwyższa wydajność. Jeśli dla typu nie są wybrane żadne grupy, zostaną wyświetlone wszystkie grupy."
+
+msgid "Metatag Trimming Options"
+msgstr "Opcje przycinania znaczników meta"
+
+msgid "Many Meta-Tags can be trimmed on a specific length for search engine optimization.<br/>If the value is set to '0' or left empty, the whole Metatag will be untrimmed."
+msgstr "Wiele znaczników meta można przycinać na konkretną długość w celu optymalizacji mechanizmu wyszukiwania.<br/>Jeśli wartość zostanie ustawiona na „0” lub zostanie pozostawiona pusta, znacznik meta nie zostanie przycięty."
+
+msgid "Because of how tokens are processed in meta tags, use of the Maxlength module may not provide an accurate representation of the actual current length of each meta tag, so it may cause more problem than it is worth. "
+msgstr "Ze względu na sposób przetwarzania leksemów w metaznacznikach, użycie modułu Maxlength może nie zapewnić dokładnej reprezentacji bieżącej długości każdego metaznacznika, więc może spowodować więcej problemów, niż jest to warte. "
+
+msgid "Install the Maxlength module to enable this option."
+msgstr "Aby włączyć tę opcję, zainstaluj moduł Maxlength."
+
+msgid "Meta Tags:"
+msgstr "Znaczniki meta:"
+
+msgid "length"
+msgstr "długość"
+
+msgid "Meta Tags: Trimming Options"
+msgstr "Znaczniki meta: opcje przycinania"
+
+msgid "Trim the Meta Tag after the word on the given value"
+msgstr "Przytnij znacznik meta po słowie dla danej wartości"
+
+msgid "Trim the Meta Tag on the given value"
+msgstr "Przytnij znacznik meta dla danej wartości"
+
+msgid "Trim the Meta Tag before the word on the given value"
+msgstr "Przytnij znacznik meta przed słowem dla danej wartości"
+
+msgid "Metatag widget options"
+msgstr "Opcje widgetu Metatag"
+
+msgid "Various options for the field widget used on entity forms, e.g. on content type forms."
+msgstr "Różne opcje dla widgetu pola używane w formularzach obiektów, np. w formularzach typów treści."
+
+msgid "Scroll maximum height"
+msgstr "Maksymalna wysokość przewijania"
+
+msgid "eg 500px or 8rem"
+msgstr "np. 500px lub 8rem"
+
+msgid "To enable scrolling please enter a value and its units, e.g. 500px, 8rem, etc. Removing this value will remove the scroll."
+msgstr "Aby włączyć przewijanie, wprowadź wartość i jej jednostkę, np. 500px, 8rem, itp. Usunięcie tej wartości spowoduje usunięcie przewijania."
+
+msgid "Empty formatter"
+msgstr "Pusty formater"
+
+msgid "@label"
+msgstr "@label"
+
+msgid "This field stores code meta tags."
+msgstr "To pole zawiera metaznaczniki kodu. "
+
+msgid "If checked, the field will be placed in the sidebar on entity forms."
+msgstr "Jeśli ta opcja jest zaznaczona, pole zostanie umieszczone na pasku bocznym w formularzach jednostek."
+
+msgid "Wrap the meta tags in a collapsed details container."
+msgstr "Zawijaj znaczniki meta w zwiniętym kontenerze szczegółów."
+
+msgid "If checked, the contents of the field will be placed inside a collapsed details container."
+msgstr "Jeśli ta opcja jest zaznaczona, zawartość pola zostanie umieszczona wewnątrz zwiniętego kontenera szczegółów."
+
+msgid "Use sidebar: Yes"
+msgstr "Użyj paska bocznego: Tak"
+
+msgid "Use sidebar: No"
+msgstr "Użyj paska bocznego: Nie"
+
+msgid "Use details container: Yes"
+msgstr "Użyj kontenera szczegółów: Tak"
+
+msgid "Use details container: No"
+msgstr "Użyj kontenera szczegółów: Nie"
+
+msgid "Metatag Field Diff"
+msgstr "Różnica w polu Metatag"
+
+msgid "Advanced"
+msgstr "Zaawansowane"
+
+msgid "Meta tags that might not be needed by many sites."
+msgstr "Metaznaczniki, które mogą być niepotrzebne dla wielu serwisów. "
+
+msgid "Basic tags"
+msgstr "Znaczniki podstawowe"
+
+msgid "Simple meta tags."
+msgstr "Proste metaznaczniki."
+
+msgid "A brief and concise summary of the page's content, preferably 150 characters or less. Where as the description meta tag may be used by search engines to display a snippet about the page in search results, the abstract tag may be used to archive a summary about the page. This meta tag is <em>no longer</em> supported by major search engines."
+msgstr "Krótkie i zwięzłe podsumowanie treści strony, najlepiej 150 znaków lub mniej. O ile metaznacznik opisu może być używany przez wyszukiwarki do wyświetlania fragmentu treści na stronie wyników wyszukiwania, znacznik streszczenia umożliwia zarchiwizowanie podsumowania strony. Ten metaznacznik <em>nie jest już</em> obsługiwany przez główne wyszukiwarki. "
+
+msgid "Define the author of a page."
+msgstr "Zdefiniuj autora strony."
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Pragma meta tag."
+msgstr "Służy do określania, czy przeglądarka buforuje konkretną stronę lokalnie. Nie jest to opcja często używana. Ta opcja powinna być używana w połączeniu ze znacznikiem meta Pragma."
+
+msgid "A link to the preferred page location or URL of the content of this page, to help eliminate duplicate content penalties from search engines."
+msgstr "Odsyłacz do preferowanego położenia strony lub adres URL treści strony, który ułatwia uniknięcie obniżenia rankingu przez wyszukiwarki z powodu zduplikowanej treści. "
+
+msgid "A brief and concise summary of the page's content that is a maximum of 160 characters in length. The description meta tag may be used by search engines to display a snippet about the page in search results."
+msgstr "Krótkie i zwięzłe podsumowanie treści strony, o długości nieprzekraczającej 160 znaków. Wyszukiwarki mogą używać metaznacznika opisu do wyświetlania fragmentu dotyczącego strony w wynikach wyszukiwania."
+
+msgid "Control when the browser's internal cache of the current page should expire. The date must to be an <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a>-compliant date string that is represented in Greenwich Mean Time (GMT), e.g. 'Thu, 01 Sep 2016 00:12:56 GMT'. Set to '0' to stop the page being cached entirely."
+msgstr "Określa, kiedy wewnętrzny zapis bieżącej strony w pamięci podręcznej przeglądarki powinien tracić ważność. Data musi być łańcuchem daty zgodnym z <a href='https://www.csgnetwork.com/timerfc1123calc.html'>RFC-1123</a>, zapisanym w czasie GMT (Greenwich Mean Time), np. 'Thu, 01 Sep 2016 00:12:56 GMT'. Ustaw wartość '0', aby całkowicie wyłączyć buforowane strony."
+
+msgid "Describes the name and version number of the software or publishing tool used to create the page."
+msgstr "Określa nazwę i numer wersji oprogramowania lub narzędzia do publikowania użytego do stworzenia strony. "
+
+msgid "A location's formal name."
+msgstr "Formalna nazwa lokalizacji."
+
+msgid "Geo-spatial information in 'latitude; longitude' format, e.g. '50.167958; -97.133185'; <a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>see Wikipedia for details</a>."
+msgstr "Informacje geoprzestrzenne w formacie 'szerokość geograficzna; długość geograficzna', na przykład '50.167958; -97.133185'. <a href='https://en.wikipedia.org/wiki/Geographic_coordinate_system' aria-label='see Wikipedia for details on the geographic coordinate system'>Szczegóły są dostępne w serwisie Wikipedia</a>."
+
+msgid "A location's two-letter international country code, with an optional two-letter region, e.g. 'US-NH' for New Hampshire in the USA."
+msgstr "Dwu-literowy, międzynarodowy kod lokalizacyjny, z opcjonalnym dwu-literowym kodem regionu, np. 'US-NH' dla New Hampshire w USA."
+
+msgid "This meta tag communicates with Google. There are currently two directives supported: 'nositelinkssearchbox' to not to show the sitelinks search box, and 'notranslate' to ask Google not to offer a translation of the page. Both options may be added, just separate them with a comma. See <a href='https://support.google.com/webmasters/answer/79812?hl=en'>meta tags that Google understands</a> for further details."
+msgstr "Ten metaznacznik komunikuje się z serwisem Google. Obecnie są obsługiwane dwie dyrektywy: 'nositelinkssearchbox' wyłączająca wyświetlanie pola wyszukiwania odsyłaczy serwisu i 'notranslate' wyłączająca opcję tłumaczenia strony za pomocą serwisu Google. Istnieje możliwość dodania obu opcji rozdzielonych przecinkiem. Szczegółowe informacje, patrz <a href='https://support.google.com/webmasters/answer/79812?hl=en'>metaznaczniki znane serwisowi Google</a>."
+
+msgid "Geo-spatial information in 'latitude, longitude' format, e.g. '50.167958, -97.133185'; <a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>see Wikipedia for details</a>."
+msgstr "Informacje geoprzestrzenne w formacie szerokość geograficzna, długość geograficzna, na przykład 50.167958, -97.133185. <a href='https://en.wikipedia.org/wiki/ICBM_address' aria-label='see Wikipedia for details on ICBM addresses'>Szczegóły są dostępne w serwisie Wikipedia</a>."
+
+msgid "An image associated with this page, for use as a thumbnail in social networks and other services."
+msgstr "Obraz powiązany z tą stroną używany jako miniatura w sieciach społecznościowych i innych usługach. "
+
+msgid "A comma-separated list of keywords about the page. This meta tag is <em>no longer</em> supported by most search engines."
+msgstr "Rozdzielana przecinkami lista słów kluczowych dotyczących strony. Ten metaznacznik <em>nie jest już</em> obsługiwany przez większość wyszukiwarek. "
+
+msgid "Multiple values may be used, separated by a comma. Note: Tokens that return multiple values will be handled automatically."
+msgstr "Istnieje możliwość użycia wielu wartości rozdzielanych przecinkami. Uwaga: Leksemy zwracające wiele wartości są obsługiwane automatycznie."
+
+msgid "This will be able to extract the URL from an image field if the field is configured properly."
+msgstr "Będzie możliwe wyodrębnienie adresu URL z pola obrazu, jeśli pole jest skonfigurowane poprawnie."
+
+msgid "Any relative or protocol-relative URLs will be converted to absolute URLs."
+msgstr "Wszelkie względne lub względne dla protokołu adresy URL zostaną przekształcone w bezwzględne adresy URL. "
+
+msgid "Any URLs which start with \"http://\" will be converted to \"https://\"."
+msgstr "Wszystkie adresy URL, które rozpoczynają się od łańcucha \"http://\", będą przekształcane na \"https://\"."
+
+msgid "This will be truncated to a maximum of %max characters after any tokens are processsed."
+msgstr "Zostanie ona obcięta do maksymalnej liczby znaków (%max) po zakończeniu przetwarzania leksemów."
+
+msgid "News Keywords"
+msgstr "Nowe słowa kluczowe"
+
+msgid "Used for paginated content by providing URL with rel='next' link."
+msgstr "Służy do stronicowania treści przez podanie adresu URL z odsyłaczem rel='next'."
+
+msgid "Used to indicate the URL that broke the story, and can link to either an internal URL or an external source. If the full URL is not known it is acceptable to use a partial URL or just the domain name."
+msgstr "Używany do wskazania adresu URL, który przerwał historię. Może być odsyłaczem do wewnętrznego adresu URL lub źródła zewnętrznego. Jeśli pełny adres URL nie jest znany, jest dopuszczalne użycie częściowego adresu URL lub tylko nazwy domeny. "
+
+msgid "Used to control whether a browser caches a specific page locally. Not commonly used. Should be used in conjunction with the Cache-Control meta tag."
+msgstr "Służy do określania, czy przeglądarka buforuje konkretną stronę lokalnie. Nie jest to opcja często używana. Należy jej używać w połączeniu ze sterującym meta Cache-Control."
+
+msgid "Used for paginated content by providing URL with rel='prev' link."
+msgstr "Służy do stronicowania treści przez podanie adresu URL z odsyłaczem rel='prev'."
+
+msgid "Used to rate content for audience appropriateness. This tag has little known influence on search engine rankings, but can be used by browsers, browser extensions, and apps. The <a href='https://www.metatags.org/meta_name_rating'>most common options</a> are general, mature, restricted, 14 years, safe for kids. If you follow the <a href='https://www.rtalabel.org/index.php?content=howto'>RTA Documentation</a> you should enter RTA-5042-1996-1400-1577-RTA"
+msgstr "Służy do oceniania treści, aby była odpowiednia dla odbiorców. Wpływ tego znacznika na rankingi mechanizmu wyszukiwania rozszerzenia, ale może być on używany przez przeglądarki, rozszerzenia przeglądarek i aplikacje. <a href='https://www.metatags.org/meta_name_rating'>Najczęściej używane opcje</a>: ogólna, dla osób dorosłych, zastrzeżona, 14 lat, bezpieczna dla dzieci. Aby postępować zgodnie z <a href='https://www.rtalabel.org/index.php?content=howto'>dokumentacją RTA</a>, należy wprowadzić wartość RTA-5042-1996-1400-1577-RTA"
+
+msgid "No Referrer"
+msgstr "Bez strony odsyłającej"
+
+msgid "No Referrer When Downgrade"
+msgstr "Bez strony odsyłającej przy obniżeniu poziomu zabezpieczeń"
+
+msgid "Origin"
+msgstr "Źródło"
+
+msgid "Origin When Cross-Origin"
+msgstr "Pochodzenie w przypadku niejednolitego pochodzenia"
+
+msgid "Same Origin"
+msgstr "To samo pochodzenie"
+
+msgid "Strict Origin"
+msgstr "Ścisłe pochodzenie"
+
+msgid "Strict Origin When Cross-Origin"
+msgstr "Ścisłe pochodzenie w przypadku niejednolitego pochodzenia"
+
+msgid "Unsafe URL"
+msgstr "Niezabezpieczony adres URL"
+
+msgid "Indicate to search engines and other page scrapers whether or not links should be followed. See <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>the W3C specifications</a> for further details. Note: this serves the same purpose as the HTTP header by the same name."
+msgstr "Określa, czy można przechodzić zgodnie z odsyłaczami, na potrzeby wyszukiwarek i innych narzędzi pobierających dane ze stron. Więcej szczegółów zawierają <a href='https://w3c.github.io/webappsec/specs/referrer-policy/'>specyfikacje organizacji W3C</a>. Uwaga: służy to do tego samego celu, co nagłówek HTTP o takiej samej nazwie."
+
+msgid "The number of seconds to wait before refreshing the page. May also force redirect to another page using the format '5; url=https://example.com/', which would be triggered after five seconds."
+msgstr "Liczba sekund oczekiwania przed odświeżeniem strony. Może również wymusić przekierowanie do innej strony przy użyciu formatu '5; url=https: //example.com/'. Przekierowanie takie zostanie zainicjowane po upływie pięciu sekund."
+
+msgid "Tell search engines when to index the page again. Very few search engines support this tag, it is more useful to use an <a href='https://www.drupal.org/project/xmlsitemap'>XML Sitemap</a> file."
+msgstr "Powiadom wyszukiwarki, kiedy mają ponownie indeksować stronę. Bardzo niewiele wyszukiwarek obsługuje ten znacznik. Lepiej korzystać z pliku <a href='https://www.drupal.org/project/xmlsitemap'>XML Sitemap</a>."
+
+msgid "Details about intellectual property, such as copyright or trademarks; does not automatically protect the site's content or intellectual property."
+msgstr "Szczegółowe informacje dotyczące własności intelektualnej, takie jak prawa autorskie lub znaki towarowe. Nie powoduje automatycznej ochrony treści serwisu ani własności intelektualnej."
+
+msgid "Max Snippet"
+msgstr "Maksymalny fragment kodu"
+
+msgid "Use a number character as a textual snippet for this search result. \"0\" equals \"nosnippet\". \"-1\" will let the search engine decide the most effective length."
+msgstr "Użyj znaku liczby jako fragmentu tekstu dla tego wyniku wyszukiwania. Wartość \"0\" oznacza \"nosnippet\". Wartość \"-1\" pozwoli wyszukiwarce wybrać najefektywniejszą długość."
+
+msgid "Max Video Preview"
+msgstr "Maksymalny podgląd wideo"
+
+msgid "Use a maximum of number seconds as a video snippet for videos on this page in search results. \"0\" will use a static a image. \"-1\" means there is no limit."
+msgstr "Maksymalna liczba sekund, która może być używana w wynikach wyszukiwania jako fragment wideo dla filmów wideo na tej stronie. Wartość \"0\" powoduje użycie statycznego obrazu. Wartość \"-1\" oznacza brak limitu."
+
+msgid "Max Image Preview"
+msgstr "Maksymalny podgląd obrazu"
+
+msgid "Set the maximum size of an image preview for this page in a search results."
+msgstr "Ustaw maksymalną wielkość podglądu obrazu w wynikach wyszukiwania dla tej strony."
+
+msgid "None - no image preview is to be shown."
+msgstr "None (Brak) - podgląd obrazu nie będzie wyświetlany."
+
+msgid "Standard - a default image preview may be shown."
+msgstr "Standard - może być pokazany domyślny podgląd obrazu."
+
+msgid "Large - a larger image preview, up to the width of the viewport, may be shown."
+msgstr "Large (Duży) - może być wyświetlany większy podgląd obrazu, do szerokości ekranu graficznego."
+
+msgid "Select"
+msgstr "Wybierz"
+
+msgid "Unavailable after date"
+msgstr "Niedostępne po dacie"
+
+msgid "Do not show this page in search results after the specified date"
+msgstr "Nie pokazuj tej strony w wynikach wyszukiwania po podanej dacie"
+
+msgid "index - Allow search engines to index this page (assumed)."
+msgstr "index - Zezwalaj wyszukiwarkom na indeksowanie tej strony (zakładane domyślnie)."
+
+msgid "follow - Allow search engines to follow links on this page (assumed)."
+msgstr "follow - Zezwalaj wyszukiwarkom na podążanie za odsyłaczami z tej strony (zakładane domyślnie)."
+
+msgid "noindex - Prevents search engines from indexing this page."
+msgstr "noindex - Zapobiega indeksowaniu tej strony przez wyszukiwarki."
+
+msgid "nofollow - Prevents search engines from following links on this page."
+msgstr "nofollow - Zapobiega podążaniu za odsyłaczami z tej strony przez wyszukiwarki."
+
+msgid "noarchive - Prevents cached copies of this page from appearing in search results."
+msgstr "noarchive - Powoduje, że buforowane kopie tej strony nie będą pojawiać się w wynikach wyszukiwania."
+
+msgid "nosnippet - Prevents descriptions from appearing in search results, and prevents page caching."
+msgstr "nosnippet - Zapobiega pojawianiu się opisów w wynikach wyszukiwania i zapobiega buforowaniu strony."
+
+msgid "noimageindex - Prevent search engines from indexing images on this page."
+msgstr "noimageindex - Zapobiega indeksowaniu obrazów na tej stronie przez wyszukiwarki."
+
+msgid "notranslate - Prevent search engines from offering to translate this page in search results."
+msgstr "notranslate - Zapobiega oferowaniu tłumaczenia tej strony w wynikach wyszukiwania."
+
+msgid "Provides search engines with specific directions for what to do when this page is indexed."
+msgstr "Udostępnia mechanizmom wyszukiwania konkretne wskazówki dotyczące działań do wykonania podczas indeksowania tej strony."
+
+msgid "Set cookie"
+msgstr "Ustaw informację cookie "
+
+msgid "<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>Sets a cookie</a> on the visitor's browser. Can be in either NAME=VALUE format, or a more verbose format including the path and expiration date; see the link for full details on the syntax."
+msgstr "<a href='https://www.metatags.org/meta_http_equiv_set_cookie'>Ustawia informację cookie</a> w przeglądarce odwiedzającego. Może ona być w formacie NAZWA=WARTOŚĆ lub w formacje bardziej szczegółowym, który obejmuje ścieżkę i datę ważności. Pełne szczegóły dotyczące składni są dostępne za pomocą odsyłacza."
+
+msgid "Shortlink URL"
+msgstr "Krótki URL"
+
+msgid "A brief URL, often created by a URL shortening service."
+msgstr "Krótki adres URL, często utworzony za pomocą usługi skracania adresów URL. "
+
+msgid "The text to display in the title bar of a visitor's web browser when they view this page. This meta tag may also be used as the title of the page when a visitor bookmarks or favorites this page, or as the page title in a search engine result. It is common to append '[site:name]' to the end of this, so the site's name is automatically added. It is recommended that the title is no greater than 55 - 65 characters long, including spaces."
+msgstr "Tekst do wyświetlenia na pasku tytułu przeglądarki WWW odwiedzającego podczas przeglądania tej strony. Tego metaznacznika można także użyć jako tytułu stosowanego, gdy odwiedzający umieszcza tę stronę w zakładkach lub ulubionych, lub jako tytułu strony w wynikach wyszukiwarki. Na jego końcu często dołącza się element [site:name], więc nazwa serwisu jest dodawana automatycznie. Zaleca się, aby tytuł nie był dłuższy niż 55-65 znaków (w tym spacji)."
+
+msgid "Configuration type"
+msgstr "Typ konfiguracji"
+
+msgid "@label of @type"
+msgstr "@label typu @type"
+
+msgid "@label of @type @entity-type-label"
+msgstr "@label typu @type @entity-type-label"
+
+msgid "No default for \"%tag_name\" - entity_type: %type, entity_bundle: %bundle, id: %id. See src/TypedData/Metatags.php."
+msgstr "Brak wartości domyślnej dla \"%tag_name\" - entity_type: %type, entity_bundle: %bundle, id: %id. Patrz src/TypedData/Metatags.php."
+

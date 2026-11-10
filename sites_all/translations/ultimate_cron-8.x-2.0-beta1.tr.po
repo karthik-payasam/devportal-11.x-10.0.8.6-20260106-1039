@@ -1,0 +1,826 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Launched by drush"
+msgstr "Drush ile başlatıldı"
+
+msgid "This command will list cron jobs"
+msgstr "Bu komut dönemsel işleri listeler"
+
+msgid "This command will run a cron job"
+msgstr "Bu komut bir dönemsel işi çalıştırır"
+
+msgid "This command will enable a cron job"
+msgstr "Bu komut bir dönemsel işi etkinleştirir"
+
+msgid "This command will disable a cron job"
+msgstr "Bu komut bir dönemsel işi devre dışı bırakır"
+
+msgid "This command will unlock a cron job"
+msgstr "Bu komut bir dönemsel işin kilidini açar"
+
+msgid "Name"
+msgstr "İsim"
+
+msgid "Title"
+msgstr "Başlık"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Module"
+msgstr "Eklenti"
+
+msgid "Scheduled"
+msgstr "Zamanlandı"
+
+msgid "Started"
+msgstr "Başladı"
+
+msgid "Duration"
+msgstr "Süre"
+
+msgid "Status"
+msgstr "Durum"
+
+msgid "Legend: D = Disabled, R = Running, B = Behind schedule"
+msgstr "Açıklama: D = Devre Dışı, R = Çalışıyor, B = Zamanlamanın gerisinde"
+
+msgid "No job specified?"
+msgstr "İş belirtilmedi mi?"
+
+msgid "@name not found"
+msgstr "@name bulunamadı"
+
+msgid "User"
+msgstr "Kullanıcı"
+
+msgid "Initial message"
+msgstr "İlk ileti"
+
+msgid "Message"
+msgstr "İleti"
+
+msgid "Cron is running."
+msgstr "Cron çalışıyor."
+
+msgid "Cron is not running."
+msgstr "Cron çalışmıyor."
+
+msgid "@name enabled"
+msgstr "@name etkinleştirildi"
+
+msgid "@name disabled"
+msgstr "@name devre dışı"
+
+msgid "@name is not running"
+msgstr "@name çalışmıyor"
+
+msgid "Cron job @name unlocked"
+msgstr "Dönemsel işin @name kilidi açıldı"
+
+msgid "Could not unlock cron job @name"
+msgstr "Dönemsel işin @name kilidi açılamadı"
+
+msgid "@name manually unlocked by user @username (@uid)"
+msgstr "@name öğesinin kilidi, @username adlı kullanıcı (@uid) tarafından manuel olarak açıldı"
+
+msgid "Ultimate Cron Monitoring"
+msgstr "En Son Dönemsel Görev İzlemesi"
+
+msgid "Thresholds"
+msgstr "Eşikler"
+
+msgid "Thresholds for reporting critical alerts to Nagios."
+msgstr "Kritik uyarıları Nagios'a raporlama eşikleri."
+
+msgid "Running jobs count"
+msgstr "Çalıştırılan iş sayısı"
+
+msgid "Issue a critical alert when more than this number of jobs are running. Default is 50."
+msgstr "Bu sayıdan daha fazla iş çalıştırıldığında ciddi bir uyarı verir. Varsayılan değer 50'dir."
+
+msgid "Failed jobs count"
+msgstr "Başarısız iş sayısı"
+
+msgid "Issue a critical alert when more than this number of jobs failed their last run. Default is 10."
+msgstr "Bu sayıdan daha fazla iş son çalıştırmasında başarısız olduğunda ciddi bir uyarı verir. Varsayılan değer 10'dur"
+
+msgid "Long running jobs"
+msgstr "Uzun süreli işler"
+
+msgid "Issue a critical alert when more than this number of jobs are running longer than usual. Default is 0."
+msgstr "Bu sayıdan daha fazla iş normalden daha uzun süre çalıştığında ciddi bir uyarı verir. Varsayılan değer 0'dır."
+
+msgid "Check number of currently running jobs"
+msgstr "Şu anda çalıştırılmakta olan iş sayısını denetle"
+
+msgid "Check the number of jobs that failed last run"
+msgstr "Son çalıştırmada başarısız olan iş sayısını denetle"
+
+msgid "Check the number of jobs that are running longer than usual"
+msgstr "Normalden uzun süren iş sayısını denetle"
+
+msgid "@jobs currently running - it is more than @threshold"
+msgstr "Şu anda @jobs çalıştırılıyor - bu sayı @threshold eşiği üzerinde"
+
+msgid "@jobs currently running"
+msgstr "Şu anda @jobs çalıştırılıyor"
+
+msgid "@jobs failed their last run - it is more than @threshold"
+msgstr "@jobs son çalıştırmada başarısız oldu - bu sayı @threshold eşiğinin üzerinde"
+
+msgid "@jobs failed their last run"
+msgstr "@jobs son çalıştırmada başarısız oldu"
+
+msgid "@jobs jobs are running longer than usual - it is more than @threshold"
+msgstr "@jobs işin çalıştırılması normalden uzun sürüyor - bu sayı @threshold eşiğinin üzerinde"
+
+msgid "@jobs jobs are running longer than usual"
+msgstr "@jobs iş normalden uzun süre çalıştırılıyor"
+
+msgid "Never"
+msgstr "Asla"
+
+msgid "Some jobs are behind their schedule. Please check if <a href=\":system_cron_url\">Cron</a> is running properly."
+msgstr "Bazı işler zamanlamanın gerisinde. Lütfen <a href=\":system_cron_url\">dönemsel görevin</a> düzgün çalışıp çalışmadığını kontrol edin."
+
+msgid "Cron is running properly."
+msgstr "Dönemsel görev düzgün çalışıyor."
+
+msgid "@count job is behind schedule"
+msgid_plural "@count jobs are behind schedule"
+msgstr[0] "@count iş zamanlamanın gerisinde"
+msgstr[1] "@count iş zamanlamanın gerisinde"
+
+msgid "Ultimate Cron"
+msgstr "Son Dönemsel Görev"
+
+msgid "Cron"
+msgstr "Dönemsel görev"
+
+msgid "Discover jobs"
+msgstr "İşleri keşfet"
+
+msgid "Manage automatic site maintainenance tasks."
+msgstr "Otomatik site bakımı görevlerini yönetin."
+
+msgid "Cron Jobs"
+msgstr "Dönemsel İşler"
+
+msgid "Run cron"
+msgstr "Dönemsel görevleri (cron) çalıştır"
+
+msgid "Cron settings"
+msgstr "Cron ayarları"
+
+msgid "Queue"
+msgstr "Kuyruk"
+
+msgid "Launcher"
+msgstr "Başlatıcı"
+
+msgid "Logger"
+msgstr "Günlüğe Kaydedici"
+
+msgid "Scheduler"
+msgstr "Zamanlayıcı"
+
+msgid "Administer Ultimate Cron"
+msgstr "Son Dönemsel Görevi Yönet"
+
+msgid "Lets you configure everything in Ultimate Cron"
+msgstr "Son Dönemsel Görev içindeki her şeyi yapılandırmanızı sağlar"
+
+msgid "View cron jobs"
+msgstr "Dönemsel işleri görüntüle"
+
+msgid "Lets you view cron jobs and their logs"
+msgstr "Dönemsel işleri ve günlüklerini görüntülemenizi sağlar"
+
+msgid "Run cron jobs"
+msgstr "Dönemsel işleri çalıştır"
+
+msgid "Lets you run cron jobs"
+msgstr "Dönemsel işleri çalıştırmanızı sağlar"
+
+msgid "Manage Cron settings"
+msgstr "Dönemsel İş ayarlarını yönet"
+
+msgid "General Cron Settings"
+msgstr "Genel Dönemsel Görev Ayarları"
+
+msgid "Launcher settings"
+msgstr "Başlatıcı ayarları"
+
+msgid "Logger settings"
+msgstr "Günlüğe kaydedici ayarları"
+
+msgid "Scheduler settings"
+msgstr "Zamanlayıcı ayarları"
+
+msgid "Cron jobs"
+msgstr "Dönemsel görev işleri"
+
+msgid "Edit job"
+msgstr "İşi düzenle"
+
+msgid "Run Cron job"
+msgstr "Dönemsel işi çalıştır"
+
+msgid "Delete job"
+msgstr "İşi sil"
+
+msgid "Disable cron job"
+msgstr "Dönemsel işi devre dışı bırak"
+
+msgid "Enable cron job"
+msgstr "Dönemsel işi etkinleştir"
+
+msgid "Cron jobs logs"
+msgstr "Dönemsel iş günlükleri"
+
+msgid "Unlock Cron job"
+msgstr "Cron işinin kilidini aç"
+
+msgid "Ultimate cron settings"
+msgstr "Son dönemsel iş ayarları"
+
+msgid "Bypass transactional connection"
+msgstr "İşlemsel bağlantıyı atla"
+
+msgid "Queue settings"
+msgstr "Kuyruk ayarları"
+
+msgid "Toggle queing jobs"
+msgstr "İşleri kuyruğa almayı aç/kapat"
+
+msgid "Timeouts"
+msgstr "Zamanaşımı Değerleri"
+
+msgid "Time to claim item"
+msgstr "Öğe talep etme süresi"
+
+msgid "Time to process item"
+msgstr "Öğe işleme süresi"
+
+msgid "Delays"
+msgstr "Gecikmeler"
+
+msgid "Time to idle when finished with item"
+msgstr "Öğeyle işlem sonra erdiğinde boş geçen süre"
+
+msgid "Toggles throttling of queues"
+msgstr "Kuyrukların sınırlanmasını açar/kapatır"
+
+msgid "Number of threads for queues"
+msgstr "Kuyruklar için iş parçacığı sayısı"
+
+msgid "Number of items needed for a queue"
+msgstr "Bir kuyruk için gereken öğe sayısı"
+
+msgid "Which thread to use"
+msgstr "Kullanılacak iş parçacığı"
+
+msgid "Maximum number of threads"
+msgstr "Maksimum iş parçacığı sayısı"
+
+msgid "Time to lock job"
+msgstr "İşi kilitleme zamanı"
+
+msgid "Maximum time for the job to run"
+msgstr "İşin çalıştırılması için maksimum süre"
+
+msgid "Cache"
+msgstr "Önbellek"
+
+msgid "The cache bin to use"
+msgstr "Kullanılacak önbellek bölmesi"
+
+msgid "Time until cache expires"
+msgstr "Önbellek süresi dolana kadar geçen süre"
+
+msgid "Database"
+msgstr "Veritabanı"
+
+msgid "The method used for log retention"
+msgstr "Günlük tutma için kullanılan yöntem"
+
+msgid "Time until expiration"
+msgstr "Geçerlilik süresine kalan zaman"
+
+msgid "Maximum number of logs to keep"
+msgstr "Tutulacak maksimum günlük sayısı"
+
+msgid "Schedulr"
+msgstr "Zamanlayıcı"
+
+msgid "Crontab"
+msgstr "Crontab"
+
+msgid "Stop between job runs"
+msgstr "İşlerin çalıştırılması arasında durdur"
+
+msgid "Array with rules"
+msgstr "Kurallar içeren dizi"
+
+msgid "Formatted rule"
+msgstr "Biçimlendirilen kural"
+
+msgid "Simple"
+msgstr "Basit"
+
+msgid "Rule for Simple scheduler"
+msgstr "Basit zamanlayıcı için kural"
+
+msgid "Cron Job"
+msgstr "Dönemsel İş"
+
+msgid "Machine-readable name"
+msgstr "Makine tarafından okunabilir ad"
+
+msgid "Weight"
+msgstr "Ağırlık"
+
+msgid "Module Name"
+msgstr "Modül Adı"
+
+msgid "Callback"
+msgstr "Geri dönüş"
+
+msgid "Scheduler ID"
+msgstr "Zamanlayıcı Tanıtıcısı"
+
+msgid "Launcher ID"
+msgstr "Başlatıcı tanıtıcısı"
+
+msgid "Logger ID"
+msgstr "Günlüğe kaydedici tanıtıcısı"
+
+msgid "Scheduler configuration"
+msgstr "Zamanlayıcı yapılandırması"
+
+msgid "Scheduler rules"
+msgstr "Zamanlayıcı kuralları"
+
+msgid "Scheduling rule"
+msgstr "Zamanlama kuralı"
+
+msgid "Timeout (s) after job run"
+msgstr "İşin çalıştırılmasından sonra zamanaşımı (s)"
+
+msgid "Timeout settings"
+msgstr "Zamanaşımı ayarları"
+
+msgid "Lock timeout"
+msgstr "Kilit zamanaşımı"
+
+msgid "Max execution time"
+msgstr "Maksimum yürütme süresi"
+
+msgid "Max threads"
+msgstr "İş parçacığı sayısı üst sınırı"
+
+msgid "Thread"
+msgstr "Başlık"
+
+msgid "Method"
+msgstr "Yöntem"
+
+msgid "Expiration"
+msgstr "Son Kullanma Tarihi"
+
+msgid "Retain X amount of logs"
+msgstr "X günlük miktarını koru"
+
+msgid "Cache bin to use for storing logs"
+msgstr "Günlüklerin depolanması için kullanılacak önbellek bölmesi"
+
+msgid "Timeout (s) before cache entry expires"
+msgstr "Önbellek girdisi süresi dolmadan önce zamanaşımı (s)"
+
+msgid "Queue: @title"
+msgstr "Kuyruk: @title"
+
+msgid "Store the maximum possible comments per thread"
+msgstr "İş parçacığı başına olası maksimum yorumu depola"
+
+msgid "Remove expired log messages and flood control events"
+msgstr "Süresi dolan günlük iletilerini ve taşan denetim olaylarını kaldır"
+
+msgid "Purges deleted Field API data"
+msgstr "Silinen Alan API'si verilerini temizler"
+
+msgid "Deletes temporary files"
+msgstr "Geçici dosyaları siler"
+
+msgid "Deletes history"
+msgstr "Geçmişi siler"
+
+msgid "Updates indexable active search pages"
+msgstr "Dizinlenebilir etkin arama sayfalarını günceller"
+
+msgid "Cleanup (caches, batch, flood, temp-files, etc.)"
+msgstr "Temizleme (önbellekler, toplu iş, taşma, geçici dosyalar, vb.)"
+
+msgid "Update indexes"
+msgstr "Dizinleri güncelle"
+
+msgid "Updates search rankings for nodes"
+msgstr "Düğümler için arama sıralamalarını günceller"
+
+msgid "Refresh feeds"
+msgstr "Özet akışlarını yenile"
+
+msgid "Runs internal cleanup operations"
+msgstr "İç temizleme işlemlerini çalıştırır"
+
+msgid "Reset counts and clean up"
+msgstr "Sayıları sıfırla ve temizle"
+
+msgid "Update tracker index"
+msgstr "İzleyici dizinini güncelle"
+
+msgid "Default cron handler"
+msgstr "Varsayılan dönemsel görev işleyici"
+
+msgid "Last Run"
+msgstr "Son Çalıştırma"
+
+msgid "Job is behind schedule!"
+msgstr "İş zamanlamanın gerisinde!"
+
+msgid "Missing"
+msgstr "Kayıp"
+
+msgid "Disabled"
+msgstr "Etkin değil"
+
+msgid "Run"
+msgstr "Çalıştır"
+
+msgid "Unlock"
+msgstr "Kilidi aç"
+
+msgid "Logs"
+msgstr "Kayıtlar"
+
+msgid "Default (@default)"
+msgstr "Varsayılan (@default)"
+
+msgid "(Blank = @default)."
+msgstr "(Boş = @default)."
+
+msgid "Queue: @name"
+msgstr "Kuyruk: @name"
+
+msgid "Enable cron queue processing"
+msgstr "Dönemsel görev kuyruk işlemesini etkinleştir"
+
+msgid "If enabled, cron queues will be processed by this plugin. If another cron queue plugin is installed, it may be necessary/beneficial to disable this plugin."
+msgstr "Etkinleştirilmişse dönemsel görev kuyrukları bu eklenti tarafından işlenir. Başka bir dönemsel görev kuyruğu eklentisi kurulmuşsa bu eklentinin devre dışı bırakılması gerekli/yararlı olabilir."
+
+msgid "Queue lease time"
+msgstr "Kuyruk kiralama süresi"
+
+msgid "Seconds to claim a cron queue item."
+msgstr "Bir dönemsel görev kuyruğu öğesini talep etmek için saniye."
+
+msgid "Time"
+msgstr "Zaman"
+
+msgid "Time in seconds to process items during a cron run."
+msgstr "Bir dönemsel görevin çalıştırılması sırasında öğelerin işleneceği süre (saniye)."
+
+msgid "Empty delay"
+msgstr "Boş gecikme"
+
+msgid "Seconds to delay processing of queue if queue is empty (0 = end job)."
+msgstr "Kuyruk boşsa kuyruk işleminin geciktirileceği saniye sayısı (0 = işi sonlandır)."
+
+msgid "Item delay"
+msgstr "Öğe gecikmesi"
+
+msgid "Seconds to wait between processing each item in a queue."
+msgstr "Bir kuyruktaki her öğenin işlenmesi arasında beklenecek süre (saniye)."
+
+msgid "Throttle"
+msgstr "Kısıtlama"
+
+msgid "Throttle queues using multiple threads."
+msgstr "Birden çok iş parçacığı kullanan kuyrukları kısıtlayın."
+
+msgid "Throttling"
+msgstr "Kısıtlama"
+
+msgid "Threads"
+msgstr "İş Parçacıkları"
+
+msgid "Number of threads to use for queues."
+msgstr "Kuyruklar için kullanılacak iş parçacığı sayısı."
+
+msgid "Threshold"
+msgstr "Eşik"
+
+msgid "Number of items in queue required to activate the next cron job."
+msgstr "Sonraki dönemsel işin etkinleştirilmesi için kuyrukta bulunması gereken öğe sayısı."
+
+msgid "disabled"
+msgstr "etkin değil"
+
+msgid "enabled"
+msgstr "etkin"
+
+msgid "Processed @items items from queue @queue"
+msgstr "@queue kuyruğundan @items öğe işlendi"
+
+msgid "kill signal recieved"
+msgstr "bitirme sinyali alındı"
+
+msgid "Queue item @item_id from queue @queue failed with message @message"
+msgstr "@queue kuyruğundaki @item_id kuyruk öğesi @message iletisiyle başarısız oldu"
+
+msgid "Kill signal received for job @job_id"
+msgstr "@job_id işi için bitirme sinyali alındı"
+
+msgid "Running all cronjobs is not supported by Ultimate Cron's cron:run - please use Drupal Core's core:cron command!"
+msgstr "Tüm cronjobs öğelerinin Ultimate Cron'un cron:run komutuyla çalıştırılması desteklenmemektedir - lütfen Drupal Core'un core:cron komutunu kullanın!"
+
+msgid "Launched manually"
+msgstr "Manuel olarak başlatıldı"
+
+msgid "Cron job @job_label (@module) was successfully run."
+msgstr "@job_label (@module) dönemsel iş başarıyla çalıştırıldı."
+
+msgid "Completed discovery for new cron jobs."
+msgstr "Yeni dönemsel işler için keşif tamamlandı."
+
+msgid "Severity"
+msgstr "Önem seviyesi"
+
+msgid "Start Time"
+msgstr "Başlangıç Saati"
+
+msgid "End Time"
+msgstr "Bitiş Saati"
+
+msgid "No log information available."
+msgstr "Günlük bilgileri yok."
+
+msgid "Logs for %label"
+msgstr "%label için günlükler"
+
+msgid "Cron job @name unlocked successfully."
+msgstr "@name adlı Cron işinin kilidi başarıyla açıldı."
+
+msgid "Could not get lock for job @name"
+msgstr "@name işi için kilit alınamadı"
+
+msgid "Do you really want to disable @cronjob_id cron job?"
+msgstr "@cronjob_id dönemsel işini gerçekten devre dışı bırakmak istiyor musunuz?"
+
+msgid "This cron job will no longer be executed."
+msgstr "Bu dönemsel iş artık yürütülmeyecek."
+
+msgid "Disable"
+msgstr "Devre dışı bırak"
+
+msgid "Disabled cron job %cronjob."
+msgstr "%cronjob dnemsel işi devre dışı bırakıldı."
+
+msgid "Do you really want to enable @cronjob_id cron job?"
+msgstr "@cronjob_id dönemsel işini gerçekten etkinleştirmek istiyor musunuz?"
+
+msgid "This cron job will be executed again."
+msgstr "Bu dönemsel iş yeniden yürütülecek."
+
+msgid "Enable"
+msgstr "Etkinleştir"
+
+msgid "Enabled cron job %cronjob."
+msgstr "%cronjob dönemsel işi etkinleştirildi."
+
+msgid "This will appear in the administrative interface to easily identify it."
+msgstr "Bu, kolayca belirlenebilmesi için yönetim arabiriminde görünür."
+
+msgid "Enabled"
+msgstr "Etkin"
+
+msgid "This checkbox enables the cron job. Disabled Cron jobs are not run."
+msgstr "Bu onay kutusu dönemsel işi etkinleştirir. Devre dışı bırakılan dönemsel işler çalıştırılmaz."
+
+msgid "@title (Default)"
+msgstr "@title (Varsayılan)"
+
+msgid "Select which @plugin to use for this job."
+msgstr "Bu iş için kullanılacak @plugin eklentisini seçin."
+
+msgid "Select"
+msgstr "Seç"
+
+msgid "job %label has been updated."
+msgstr "İş %label güncellendi."
+
+msgid "nodejs"
+msgstr "nodejs"
+
+msgid "Enable nodejs integration (Live reload on jobs page. Requires the nodejs module to be installed and configured)."
+msgstr "nodejs bütünleştirmesini etkinleştir (İşler sayfasında Canlı yükleme. nodejs modülünün kurulmasını ve yapılandırılmasını gerektirir)."
+
+msgid "Override cron queue processing"
+msgstr "Dönemsel iş kuyruk işlemini geçersiz kıl"
+
+msgid "If enabled, queue workers are exposed as cron jobs and can be configured separately. When disabled, the standard queue processing is used. <strong>This feature is currently experimental, do not enable unless you need it.</strong>"
+msgstr "Etkinleştirilmişse kuyruk işçileri dönemsel işler olarak gösterilir ve ayrıca yapılandırılabilir. Devre dışı bırakıldığında standart kuyruk işlemesi kullanılır. <strong>Bu özellik şu anda deneme amaçlıdır, gerekmiyorsa etkinleştirmeyin.</strong>"
+
+msgid "Launching options"
+msgstr "Başlatma seçenekleri"
+
+msgid "Job lock timeout"
+msgstr "İş kilitleme zamanaşımı"
+
+msgid "Number of seconds to keep lock on job."
+msgstr "İşte kilidin tutulacağı saniye sayısı."
+
+msgid "Maximum execution time"
+msgstr "Maksimum yürütme süresi"
+
+msgid "Maximum execution time for a cron run in seconds."
+msgstr "Bir dönemsel işin çalıştırılacağı maksimum yürütme süresi (saniye)."
+
+msgid "Maximum number of launcher threads"
+msgstr "Maksimum başlatıcı iş parçacıkları sayısı"
+
+msgid "The maximum number of launch threads that can be running at any given time."
+msgstr "Herhangi bir zamanda çalıştırılabilecek maksimum başlatma iş parçacığı sayısı."
+
+msgid "Run in thread"
+msgstr "İş parçacığında çalıştır"
+
+msgid "Which thread to run jobs in."
+msgstr "İşlerin içinde çalıştırılacağı iş parçacığı."
+
+msgid "<strong>Any</strong>: Just use any available thread"
+msgstr "<strong>Herhangi bir</strong>: Herhangi bir iş parçacığını kullan"
+
+msgid "<strong>Fixed</strong>: Only run in one specific thread. The maximum number of threads is spread across the jobs."
+msgstr "<strong>Sabit</strong>: Yalnızca belirli bir iş parçacığında çalıştır. Maksimum sayıda iş parçacığı işlere dağıtılır."
+
+msgid "<strong>1-?</strong>: Only run when a specific thread is invoked. This setting only has an effect when cron is run through cron.php with an argument ?thread=N or through Drush with --options=thread=N."
+msgstr "<strong>1-?</strong>: Yalnızca belirli bir iş parçacığı çağrıldığında çalıştır. Bu ayar yalnızca dönemsel iş ?thread=N bağımsız değişkeniyle cron.php ile ya da --options=thread=N içeren Drush ile çalıştırıldığında etkili olur."
+
+msgid "Cache bin"
+msgstr "Önbellek bölmesi"
+
+msgid "Select which cache bin to use for storing logs."
+msgstr "Günlüklerin depolanması için kullanılacak önbellek bölmesini seçin."
+
+msgid "Cache timeout"
+msgstr "Önbellek zamanaşımı"
+
+msgid "Seconds before cache entry expires (0 = never, -1 = on next general cache wipe)."
+msgstr "Önbellek girdisinin son kullanma tarihinden önceki saniye (0 = hiçbir zaman, -1 = sonraki genel önbellek temizliğinde)."
+
+msgid "Remove logs older than a specified age"
+msgstr "Belli bir yaşın üzerindeki günlükleri kaldır"
+
+msgid "Retain only a specific amount of log entries"
+msgstr "Yalnızca belli miktarda günlük girdisi koru"
+
+msgid "Log entry cleanup method"
+msgstr "Günlük girdisi temizleme yöntemi"
+
+msgid "Select which method to use for cleaning up logs."
+msgstr "Günlüklerin temizlenmesi için kullanılacak yöntemi seçin."
+
+msgid "Log entry expiration"
+msgstr "Günlük girdisi süre sonu"
+
+msgid "Remove log entries older than X seconds."
+msgstr "X saniyeden eski günlük girdilerini kaldırın."
+
+msgid "Retain logs"
+msgstr "Günlükleri tut"
+
+msgid "Retain X amount of log entries."
+msgstr "X sayıda günlük girdisini tutun."
+
+msgid "Catch up"
+msgstr "Yakalama"
+
+msgid "Don't run job after X seconds of rule."
+msgstr "Kuraldan X saniye sonra iş çalıştırılmaz."
+
+msgid "Rules"
+msgstr "Kurallar"
+
+msgid "Semi-colon separated list of crontab rules."
+msgstr "Crontab kurallarının noktalı virgülle ayrılmış listesi."
+
+msgid "Rules help"
+msgstr "Kurallar yardımı"
+
+msgid "Run cron every"
+msgstr "Dönemsel görevleri çalıştır, her"
+
+msgid "Select the interval you wish cron to run on."
+msgstr "Dönemsel işin çalıştırılmasını istediğiniz aralığı seçin."
+
+msgid "running"
+msgstr "çalışıyor"
+
+msgid "unfinished but not locked?"
+msgstr "tamamlanmadı ancak kilitli değil mi?"
+
+msgid "Cleaned up @count expired locks"
+msgstr "Süresi dolan @count kilit temizlendi"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "anonymous"
+msgstr "anonim"
+
+msgid "by"
+msgstr "yazan"
+
+msgid "Registered at @datetime"
+msgstr "@datetime tarihinde kaydedildi"
+
+msgid "no info"
+msgstr "bilgi yok"
+
+msgid "-- Any -- "
+msgstr "-- Herhangi bir -- "
+
+msgid "-- Fixed -- "
+msgstr "-- Sabit -- "
+
+msgid "Which thread to run in when invoking with ?thread=N. Note: This setting only has an effect when cron is run through cron.php with an argument ?thread=N or through Drush with --options=thread=N."
+msgstr "?thread=N ile çağrıldığında çalıştırılacak iş parçacığı. Not: Bu ayar yalnızca dönemsel iş ?thread=N bağımsız değişkeniyle cron.php ile ya da --options=thread=N içeren Drush ile çalıştırıldığında etkili olur."
+
+msgid "%title must be greater than 0"
+msgstr "%title 0'dan büyük olmalıdır"
+
+msgid "Launched in thread @current_thread"
+msgstr "@current_thread iş parçacığında başlatıldı"
+
+msgid "Invalid thread available for starting launch thread"
+msgstr "Başlatma iş parçacığını başlatmak için geçersiz iş parçacığı"
+
+msgid "Thread @thread is already running"
+msgstr "@thread iş parçacığı şu anda çalışıyor"
+
+msgid "No free threads available for launching jobs"
+msgstr "Başlatma işleri için boş iş parçacığı yok"
+
+msgid "Serial"
+msgstr "Seri"
+
+msgid "Launches scheduled jobs in the same thread and runs them consecutively."
+msgstr "Aynı iş parçacığında zamanlanmış işleri başlatır ve bunları art arda çalıştırır."
+
+msgid "Stores the last log entry (and only the last) in the cache."
+msgstr "Son günlük girdisini (ve yalnızca son) önbellekte depolar."
+
+msgid "Lock #@original_lid was already closed and logged. Creating a new log entry #@lid"
+msgstr "#@original_lid kilidi zaten kapatıldı ve günlüğe kaydedildi. #@lid yeni günlük girdisi oluşturuluyor"
+
+msgid "@count_entries log entries removed for @jobs_count jobs"
+msgstr "@count_entries günlük girdisi @jobs_count iş için kaldırıldı"
+
+msgid "Invalid cleanup method: @method"
+msgstr "Geçersiz temizleme yöntemi: @method"
+
+msgid "Stores logs in the database."
+msgstr "Günlükleri veritabanında depolar."
+
+msgid "Next scheduled run at @datetime"
+msgstr "Sonraki zamanlanan çalıştırma: @datetime"
+
+msgid "Comma separated list of crontab rules."
+msgstr "Crontab kurallarının virgülle ayrılmış listesi."
+
+msgid "Rule is invalid"
+msgstr "Kural geçersiz"
+
+msgid "Use crontab rules for scheduling jobs."
+msgstr "Zamanlama işleri için crontab kurallarını kullanın."
+
+msgid "Every @interval"
+msgstr "Her @interval"
+
+msgid "Provides a set of predefined intervals for scheduling."
+msgstr "Zamanlama için önceden tanımlı aralıkları sağlar."
+

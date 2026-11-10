@@ -1,0 +1,260 @@
+<?php
+
+/**
+ * @file
+ * Encrypts Drupal login and registration passwords in the browser before
+ * submission.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ */
+function encrypted_login_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  // Keep the working login behavior and add the same protection to the
+  // standard Drupal registration form.
+  if ($form_id !== 'user_login_form' && $form_id !== 'user_register_form') {
+    return;
+  }
+
+  $public_key = encrypted_login_get_public_key();
+  if ($public_key === '') {
+    return;
+  }
+
+  // These fields carry the encrypted values. They are the only password
+  // values that should be submitted by the browser after JavaScript runs.
+  $form['encrypted_aes_key'] = [
+    '#type' => 'hidden',
+    '#default_value' => '',
+    '#attributes' => [
+      'id' => 'edit-encrypted-aes-key',
+      'autocomplete' => 'off',
+    ],
+  ];
+
+  $form['encrypted_password'] = [
+    '#type' => 'hidden',
+    '#default_value' => '',
+    '#attributes' => [
+      'id' => 'edit-encrypted-password',
+      'autocomplete' => 'off',
+    ],
+  ];
+
+  $form['#attached']['library'][] = 'encrypted_login/encrypted_login';
+  $form['#attached']['drupalSettings']['encrypted_login']['public_key'] = $public_key;
+
+  // Decrypt before Drupal's normal password validation/submit processing.
+  array_unshift($form['#validate'], 'encrypted_login_validate_encrypted_credentials');
+
+  if ($form_id === 'user_login_form') {
+    // The browser clears the normal password field before native submission.
+    $form['pass']['#required'] = FALSE;
+  }
+  elseif ($form_id === 'user_register_form') {
+    // Drupal registration uses pass[pass1] and pass[pass2]. Both are restored
+    // from the one decrypted password before the remaining validators run.
+    if (isset($form['account']['pass'])) {
+      $form['account']['pass']['#required'] = FALSE;
+    }
+  }
+}
+
+/**
+ * Returns a valid RSA public key matching the stored private key.
+ *
+ * @return string
+ *   PEM encoded RSA public key, or an empty string on failure.
+ */
+function encrypted_login_get_public_key(): string {
+  $state = \Drupal::state();
+  $private_key = $state->get('encrypted_login.rsa_private_key');
+  $public_key = $state->get('encrypted_login.rsa_public_key');
+
+  if (!empty($private_key) && !empty($public_key)) {
+    $private_resource = openssl_pkey_get_private($private_key);
+    if ($private_resource !== FALSE) {
+      $details = openssl_pkey_get_details($private_resource);
+      if (is_array($details) && !empty($details['key']) && hash_equals(trim($details['key']), trim($public_key))) {
+        return $public_key;
+      }
+    }
+  }
+
+  $config = [
+    'private_key_bits' => 2048,
+    'private_key_type' => OPENSSL_KEYTYPE_RSA,
+    'digest_alg' => 'sha256',
+  ];
+
+  $resource = openssl_pkey_new($config);
+  if ($resource === FALSE) {
+    \Drupal::logger('encrypted_login')->error('Unable to generate RSA key pair: @error', [
+      '@error' => openssl_error_string() ?: 'unknown OpenSSL error',
+    ]);
+    return '';
+  }
+
+  $new_private_key = '';
+  if (!openssl_pkey_export($resource, $new_private_key)) {
+    \Drupal::logger('encrypted_login')->error('Unable to export RSA private key: @error', [
+      '@error' => openssl_error_string() ?: 'unknown OpenSSL error',
+    ]);
+    return '';
+  }
+
+  $details = openssl_pkey_get_details($resource);
+  if (!is_array($details) || empty($details['key'])) {
+    \Drupal::logger('encrypted_login')->error('Unable to obtain RSA public key.');
+    return '';
+  }
+
+  $state->set('encrypted_login.rsa_private_key', $new_private_key);
+  $state->set('encrypted_login.rsa_public_key', $details['key']);
+
+  \Drupal::logger('encrypted_login')->notice('A matching RSA key pair was generated for encrypted login and registration.');
+
+  return $details['key'];
+}
+
+/**
+ * Validation callback for browser-encrypted login/registration credentials.
+ */
+function encrypted_login_validate_encrypted_credentials(array &$form, FormStateInterface $form_state) {
+  $encrypted_aes_key = (string) $form_state->getValue('encrypted_aes_key');
+  $encrypted_password = (string) $form_state->getValue('encrypted_password');
+
+  // If JavaScript did not run, leave normal Drupal processing untouched.
+  if ($encrypted_aes_key === '' || $encrypted_password === '') {
+    return;
+  }
+
+  $private_key = \Drupal::state()->get('encrypted_login.rsa_private_key');
+  if (empty($private_key)) {
+    \Drupal::logger('encrypted_login')->error('RSA private key is missing.');
+    $form_state->setErrorByName('pass', t('Authentication encryption is not configured.'));
+    return;
+  }
+
+  $wrapped_key = base64_decode($encrypted_aes_key, TRUE);
+  if ($wrapped_key === FALSE || $wrapped_key === '') {
+    \Drupal::logger('encrypted_login')->error('Invalid base64 RSA-wrapped AES key.');
+    $form_state->setErrorByName('pass', t('Authentication error. Please try again.'));
+    return;
+  }
+
+  $aes_key_base64 = '';
+  $success = openssl_private_decrypt(
+    $wrapped_key,
+    $aes_key_base64,
+    $private_key,
+    OPENSSL_PKCS1_PADDING
+  );
+\Drupal::logger('encrypted_login')->notice(
+  'RSA Private Key: @private_key',
+  [
+    '@private_key' => $private_key,
+  ]
+);
+  if (!$success || $aes_key_base64 === '') {
+    while (openssl_error_string()) {
+      // Clear OpenSSL's error queue.
+    }
+    \Drupal::logger('encrypted_login')->error('RSA decryption of AES key failed.');
+    $form_state->setErrorByName('pass', t('Authentication error. Please try again.'));
+    return;
+  }
+
+  $aes_key = base64_decode($aes_key_base64, TRUE);
+  if ($aes_key === FALSE || strlen($aes_key) !== 32) {
+    \Drupal::logger('encrypted_login')->error('RSA decrypted value is not a 32-byte AES key.');
+    $form_state->setErrorByName('pass', t('Authentication error. Please try again.'));
+    return;
+  }
+
+  $password = encrypted_login_decrypt_aes($encrypted_password, $aes_key);
+  if ($password === FALSE || $password === '') {
+    \Drupal::logger('encrypted_login')->error('AES password decryption failed.');
+    $form_state->setErrorByName('pass', t('Invalid password.'));
+    return;
+  }
+
+  // Login: pass is a scalar string.
+  // Registration: pass is an array containing pass1 and pass2.
+  $form_state->setValue('pass', $password);
+
+  // Also update raw user input. Drupal's registration form submits 'pass' 
+  // as an array (pass1, pass2) from the browser, while login submits a string.
+  $user_input = $form_state->getUserInput();
+  if (isset($user_input['pass']) && is_array($user_input['pass'])) {
+    $user_input['pass']['pass1'] = $password;
+    $user_input['pass']['pass2'] = $password;
+  }
+  else {
+    $user_input['pass'] = $password;
+  }
+  $form_state->setUserInput($user_input);
+ 
+}
+
+/**
+ * Decrypts base64(IV || AES-256-GCM ciphertext || authentication tag).
+ *
+ * Payload format:
+ *   12 bytes IV/nonce || ciphertext || 16 bytes GCM authentication tag.
+ *
+ * Web Crypto API returns the ciphertext with the authentication tag appended,
+ * so the JavaScript side sends the complete encrypted value in one field.
+ *
+ * @param string $encrypted_data
+ *   Base64 encoded AES-256-GCM payload.
+ * @param string $key
+ *   Raw 32-byte AES key.
+ *
+ * @return string|false
+ *   Decrypted password or FALSE on authentication/decryption failure.
+ */
+function encrypted_login_decrypt_aes(string $encrypted_data, string $key) {
+  if (strlen($key) !== 32) {
+    return FALSE;
+  }
+
+  $payload = base64_decode($encrypted_data, TRUE);
+  if ($payload === FALSE) {
+    return FALSE;
+  }
+
+  // 12-byte nonce + at least 1 byte ciphertext + 16-byte authentication tag.
+  if (strlen($payload) < 29) {
+    return FALSE;
+  }
+
+  $iv = substr($payload, 0, 12);
+  $ciphertext_and_tag = substr($payload, 12);
+
+  // Web Crypto AES-GCM uses a 128-bit authentication tag.
+  $tag = substr($ciphertext_and_tag, -16);
+  $ciphertext = substr($ciphertext_and_tag, 0, -16);
+
+  if ($ciphertext === '' || strlen($tag) !== 16) {
+    return FALSE;
+  }
+
+  // No additional authenticated data (AAD) is used in this protocol.
+  // openssl_decrypt() returns FALSE when the GCM authentication tag does not
+  // validate, so tampering is rejected before the password is accepted.
+  $password = openssl_decrypt(
+    $ciphertext,
+    'aes-256-gcm',
+    $key,
+    OPENSSL_RAW_DATA,
+    $iv,
+    $tag,
+    ''
+  );
+
+  return $password === FALSE ? FALSE : $password;
+}
+

@@ -1,0 +1,1 @@
+import a from"handlebars";export default a.compile("# Pipfile\n\n[[source]]\nurl = \"https://pypi.org/simple\"\nverify_ssl = true\nname = \"pypi\"\n\n[packages]\nkafka = \"*\"\n{{#if schema.isAvro}}\n{{#if encodingType.JSONEncoded}}\navro-json-serializer = \"*\"\n{{/if}}\navro = \"*\"\n{{/if}}\n");

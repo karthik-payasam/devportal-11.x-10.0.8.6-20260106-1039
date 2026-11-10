@@ -1,0 +1,1 @@
+import{get as a}from"lodash";import b from"./open-api-v2";import c from"./open-api-v3";import{AsyncApi as d}from"./async-api";var e=function(a){return a.openapi?new c(a):a.swagger?new b(a):void 0},f=function(a){return new d(a)};export default function g(c){if(c){if(c.openapi||c.swagger)return e(c);if(a(c,"_json.asyncapi"))return f(c)}return new b(c)}

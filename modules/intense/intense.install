@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Installation actions for Intense.
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function intense_requirements($phase) {
+  if ($phase != 'runtime') {
+    return [];
+  }
+
+  $requirements = [];
+  $path = intense_libraries_path() ?: \Drupal::root() . '/libraries/intense';
+  $exists = FALSE;
+
+  if ($path && is_dir($path)) {
+    $exists = is_file($path . '/intense.min.js');
+  }
+
+  $requirements['intense_library'] = [
+    'title'       => t('Intense library'),
+    'severity'    => $exists ? REQUIREMENT_OK : REQUIREMENT_ERROR,
+    'value'       => $exists ? t('Installed') : t('Not installed'),
+    'description' => $exists ? '' : t('The <a href="@url">Intense library</a> should be installed at <strong>/libraries/intense[-images]/intense.min.js</strong>, or any path supported by core library finder, or libraries.module. Check out file or folder permissions if troubled with 403 or 404.', [
+      '@url' => 'https://github.com/tholman/intense-images/',
+    ]),
+  ];
+
+  return $requirements;
+}

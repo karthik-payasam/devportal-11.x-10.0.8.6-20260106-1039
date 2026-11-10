@@ -1,0 +1,81 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\webform\WebformSubmissionInterface;
+
+/**
+ * Implements hook_form_alter() for all Webform edit forms.
+ */
+function approval_status_logic_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Only target Webform submission edit forms
+  if (str_starts_with($form_id, 'webform_submission_') && str_ends_with($form_id, '_edit_form')) {
+    $submission = $form_state->getFormObject()->getEntity();
+
+    if ($submission) {
+      // Get saved approval status
+      $saved_status = $submission->getElementData('approval_status');
+
+      // Disable Approval Status and Comment if already approved
+      if ($saved_status === 'Approved') {
+        if (isset($form['elements']['approval_status'])) {
+          $form['elements']['approval_status']['#disabled'] = TRUE;
+        }
+        if (isset($form['elements']['comment'])) {
+          $form['elements']['comment']['#disabled'] = TRUE;
+        }
+      }
+
+      // Approval Date/Time is always readonly
+      if (isset($form['elements']['approved_date_time'])) {
+        $form['elements']['approved_date_time']['#disabled'] = TRUE;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_webform_submission_presave().
+ */
+
+
+ function approval_status_logic_webform_submission_presave(WebformSubmissionInterface $submission) {
+
+ // Get current approval status stored in the submission.
+
+ $saved_status = $submission->getOriginalData('approval_status');
+ // Get new status being submitted.
+
+ $new_status = $submission->getElementData('approval_status');
+ // Create current time in IST.
+
+ $date = new \DateTime('now', new \DateTimeZone('Asia/Kolkata'));
+
+ $formatted_date = $date->format('Y-m-d H:i:s');
+ // Handle Approved date/time.
+
+ if ($new_status === 'Approved' && $saved_status !== 'Approved') {
+
+ $submission->setElementData('approved_date_time', $formatted_date);
+
+ }
+
+ elseif ($new_status !== 'Approved') {
+
+ $submission->setElementData('approved_date_time', NULL);
+
+ }
+ // Handle Rejected date/time.
+
+ if ($new_status === 'Rejected' && $saved_status !== 'Rejected') {
+
+ $submission->setElementData('rejected_date_time', $formatted_date);
+
+ }
+
+ elseif ($new_status !== 'Rejected') {
+
+ $submission->setElementData('rejected_date_time', NULL);
+
+ }
+
+}

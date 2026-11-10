@@ -1,0 +1,827 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Launched by drush"
+msgstr "Spuštěno v konzole drush"
+
+msgid "This command will list cron jobs"
+msgstr "Tento příkaz vypíše úlohy cron"
+
+msgid "This command will run a cron job"
+msgstr "Tento příkaz spustí úlohu cron"
+
+msgid "This command will enable a cron job"
+msgstr "Tento příkaz povolí úlohu cron"
+
+msgid "This command will disable a cron job"
+msgstr "Tento příkaz zakáže úlohu cron"
+
+msgid "This command will unlock a cron job"
+msgstr "Tento příkaz odemkne úlohu cron"
+
+msgid "Name"
+msgstr "Jméno"
+
+msgid "Title"
+msgstr "Nadpis"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Module"
+msgstr "Modul"
+
+msgid "Scheduled"
+msgstr "Naplánováno"
+
+msgid "Started"
+msgstr "Zahájeno"
+
+msgid "Duration"
+msgstr "Trvání"
+
+msgid "Status"
+msgstr "Stav"
+
+msgid "Legend: D = Disabled, R = Running, B = Behind schedule"
+msgstr "Legenda: D = vypnuto, R = spuštěno, B = opožděno"
+
+msgid "No job specified?"
+msgstr "Není zadána žádná úloha?"
+
+msgid "@name not found"
+msgstr "Úloha @name nebyla nalezena"
+
+msgid "User"
+msgstr "Uživatel"
+
+msgid "Initial message"
+msgstr "Počáteční zpráva"
+
+msgid "Message"
+msgstr "Zpráva"
+
+msgid "Cron is running."
+msgstr "Program cron je spuštěn."
+
+msgid "Cron is not running."
+msgstr "Program cron není spuštěn."
+
+msgid "@name enabled"
+msgstr "Úloha @name byla povolena"
+
+msgid "@name disabled"
+msgstr "Úloha @name byla zakázána"
+
+msgid "@name is not running"
+msgstr "Úloha @name není spuštěna"
+
+msgid "Cron job @name unlocked"
+msgstr "Úloha cron @name byla odemknuta"
+
+msgid "Could not unlock cron job @name"
+msgstr "Nelze odemknout úlohu cron @name"
+
+msgid "@name manually unlocked by user @username (@uid)"
+msgstr "Úloha @name byla ručně uzamknuta uživatelem @username (@uid)"
+
+msgid "Ultimate Cron Monitoring"
+msgstr "Podrobné monitorování úloh cron"
+
+msgid "Thresholds"
+msgstr "Prahové hodnoty"
+
+msgid "Thresholds for reporting critical alerts to Nagios."
+msgstr "Prahové hodnoty pro vykazování kritických výstrah pro prostředí Nagios."
+
+msgid "Running jobs count"
+msgstr "Počet spuštěných úloh"
+
+msgid "Issue a critical alert when more than this number of jobs are running. Default is 50."
+msgstr "Vygeneruje kritickou výstrahu, je-li spuštěn vyšší než tento počet úloh. Výchozí hodnota: 50."
+
+msgid "Failed jobs count"
+msgstr "Počet úloh s nezdarem"
+
+msgid "Issue a critical alert when more than this number of jobs failed their last run. Default is 10."
+msgstr "Vygeneruje kritickou výstrahu při překročení tohoto počtu úloh s nezdarem při posledním spuštění. Výchozí hodnota: 10."
+
+msgid "Long running jobs"
+msgstr "Dlouhodobě spuštěné úlohy"
+
+msgid "Issue a critical alert when more than this number of jobs are running longer than usual. Default is 0."
+msgstr "Vygeneruje kritickou výstrahu, dojde-li k překročení tohoto počtu úloh, které jsou spuštěny déle, než je obvyklé. Výchozí hodnota: 0."
+
+msgid "Check number of currently running jobs"
+msgstr "Zkontrolovat počet momentálně spuštěných úloh"
+
+msgid "Check the number of jobs that failed last run"
+msgstr "Zkontrolovat počet úloh, které se nezdařily při posledním spuštění"
+
+msgid "Check the number of jobs that are running longer than usual"
+msgstr "Zkontrolovat počet úloh, které jsou spuštěny déle, než je obvyklé"
+
+msgid "@jobs currently running - it is more than @threshold"
+msgstr "Momentálně spuštěné úlohy: @jobs - je překročen mezní počet @threshold"
+
+msgid "@jobs currently running"
+msgstr "Momentálně spuštěné úlohy: @jobs"
+
+msgid "@jobs failed their last run - it is more than @threshold"
+msgstr "Úlohy, jejichž poslední spuštění se nezdařilo: @jobs - je překročen mezní počet @threshold"
+
+msgid "@jobs failed their last run"
+msgstr "Úlohy, jejichž poslední spuštění se nezdařilo: @jobs"
+
+msgid "@jobs jobs are running longer than usual - it is more than @threshold"
+msgstr "Úlohy, které jsou spuštěny déle, než je obvyklé: @jobs - je překročen mezní počet @threshold"
+
+msgid "@jobs jobs are running longer than usual"
+msgstr "Úlohy, které jsou spuštěny déle, než je obvyklé: @jobs"
+
+msgid "Never"
+msgstr "Nikdy"
+
+msgid "Some jobs are behind their schedule. Please check if <a href=\":system_cron_url\">Cron</a> is running properly."
+msgstr "Některé úlohy vykazují zpoždění. Ověřte, zda je správně spuštěn program <a href=\":system_cron_url\">cron</a>."
+
+msgid "Cron is running properly."
+msgstr "Program cron je řádně spuštěn."
+
+msgid "@count job is behind schedule"
+msgid_plural "@count jobs are behind schedule"
+msgstr[0] "@count úloha se zpožděním"
+msgstr[1] "@count úloh se zpožděním"
+msgstr[2] "@count úloh se zpožděním"
+
+msgid "Ultimate Cron"
+msgstr "Ultimate Cron"
+
+msgid "Cron"
+msgstr "Cron"
+
+msgid "Discover jobs"
+msgstr "Zjišťovat úlohy"
+
+msgid "Manage automatic site maintainenance tasks."
+msgstr "Spravujte úlohy automatické údržby webu."
+
+msgid "Cron Jobs"
+msgstr "Úlohy cron"
+
+msgid "Run cron"
+msgstr "Spustit cron"
+
+msgid "Cron settings"
+msgstr "Nastavení Cron"
+
+msgid "Queue"
+msgstr "Fronta"
+
+msgid "Launcher"
+msgstr "Spouštěcí program"
+
+msgid "Logger"
+msgstr "Modul protokolování"
+
+msgid "Scheduler"
+msgstr "Scheduler"
+
+msgid "Administer Ultimate Cron"
+msgstr "Spravovat Ultimate Cron"
+
+msgid "Lets you configure everything in Ultimate Cron"
+msgstr "Umožňuje konfigurovat veškeré položky programu Ultimate Cron"
+
+msgid "View cron jobs"
+msgstr "Zobrazit úlohy cron"
+
+msgid "Lets you view cron jobs and their logs"
+msgstr "Umožňuje zobrazit úlohy cron a jejich protokoly"
+
+msgid "Run cron jobs"
+msgstr "Spustit úlohy cron"
+
+msgid "Lets you run cron jobs"
+msgstr "Umožňuje spuštění úloh cron"
+
+msgid "Manage Cron settings"
+msgstr "Spravovat nastavení Cron"
+
+msgid "General Cron Settings"
+msgstr "Obecná nastavení Cron"
+
+msgid "Launcher settings"
+msgstr "Nastavení spouštěcího programu"
+
+msgid "Logger settings"
+msgstr "Nastavení modulu protokolování"
+
+msgid "Scheduler settings"
+msgstr "Nastavení modulu Scheduler"
+
+msgid "Cron jobs"
+msgstr "Úlohy cron"
+
+msgid "Edit job"
+msgstr "Upravit úlohu"
+
+msgid "Run Cron job"
+msgstr "Spustit úlohu cron"
+
+msgid "Delete job"
+msgstr "Odstranit úlohu"
+
+msgid "Disable cron job"
+msgstr "Zakázat úlohu cron"
+
+msgid "Enable cron job"
+msgstr "Povolit úlohu cron"
+
+msgid "Cron jobs logs"
+msgstr "Protokoly úloh cron"
+
+msgid "Unlock Cron job"
+msgstr "Odemknout úlohu Cron"
+
+msgid "Ultimate cron settings"
+msgstr "Nastavení programu Ultimate cron"
+
+msgid "Bypass transactional connection"
+msgstr "Vynechat transakční připojení"
+
+msgid "Queue settings"
+msgstr "Nastavení fronty"
+
+msgid "Toggle queing jobs"
+msgstr "Přepnout zařazování úloh do fronty"
+
+msgid "Timeouts"
+msgstr "Vypršení časového limitu"
+
+msgid "Time to claim item"
+msgstr "Čas pro nárokování položky"
+
+msgid "Time to process item"
+msgstr "Čas pro zpracování položky"
+
+msgid "Delays"
+msgstr "Prodlevy"
+
+msgid "Time to idle when finished with item"
+msgstr "Čas pro nečinnost při dokončení položky"
+
+msgid "Toggles throttling of queues"
+msgstr "Přepíná snižování priority front"
+
+msgid "Number of threads for queues"
+msgstr "Počet vláken pro fronty"
+
+msgid "Number of items needed for a queue"
+msgstr "Počet položek požadovaných pro frontu"
+
+msgid "Which thread to use"
+msgstr "Které vlákno použít"
+
+msgid "Maximum number of threads"
+msgstr "Maximální počet vláken"
+
+msgid "Time to lock job"
+msgstr "Čas k uzamknutí úlohy"
+
+msgid "Maximum time for the job to run"
+msgstr "Maximální doba spuštění úlohy"
+
+msgid "Cache"
+msgstr "Cache"
+
+msgid "The cache bin to use"
+msgstr "Přihrádka mezipaměti k použití"
+
+msgid "Time until cache expires"
+msgstr "Čas do vypršení platnosti mezipaměti"
+
+msgid "Database"
+msgstr "databáze"
+
+msgid "The method used for log retention"
+msgstr "Metoda používaná k uchování protokolu"
+
+msgid "Time until expiration"
+msgstr "Čas do vypršení platnosti"
+
+msgid "Maximum number of logs to keep"
+msgstr "Maximální počet protokolů k uchování"
+
+msgid "Schedulr"
+msgstr "Scheduler"
+
+msgid "Crontab"
+msgstr "Crontab"
+
+msgid "Stop between job runs"
+msgstr "Zastavení mezi spouštěním úloh"
+
+msgid "Array with rules"
+msgstr "Pole s pravidly"
+
+msgid "Formatted rule"
+msgstr "Formátované pravidlo"
+
+msgid "Simple"
+msgstr "Jednoduché"
+
+msgid "Rule for Simple scheduler"
+msgstr "Pravidlo pro jednoduchý modul Scheduler"
+
+msgid "Cron Job"
+msgstr "Úloha cron"
+
+msgid "Machine-readable name"
+msgstr "Strojově čitelný název"
+
+msgid "Weight"
+msgstr "Váha"
+
+msgid "Module Name"
+msgstr "Název modulu"
+
+msgid "Callback"
+msgstr "Zpětné volání"
+
+msgid "Scheduler ID"
+msgstr "ID modulu Scheduler"
+
+msgid "Launcher ID"
+msgstr "ID spouštěcího programu"
+
+msgid "Logger ID"
+msgstr "ID modulu protokolování"
+
+msgid "Scheduler configuration"
+msgstr "Konfigurace modulu Scheduler"
+
+msgid "Scheduler rules"
+msgstr "Pravidla modulu Scheduler"
+
+msgid "Scheduling rule"
+msgstr "Pravidlo plánování"
+
+msgid "Timeout (s) after job run"
+msgstr "Uplynutí časového limitu (s) po spuštění úlohy"
+
+msgid "Timeout settings"
+msgstr "Nastavení uplynutí časového limitu"
+
+msgid "Lock timeout"
+msgstr "Časový limit uzamčení"
+
+msgid "Max execution time"
+msgstr "Maximální doba provádění"
+
+msgid "Max threads"
+msgstr "Max. počet vláken"
+
+msgid "Thread"
+msgstr "Vlákno"
+
+msgid "Method"
+msgstr "Metoda"
+
+msgid "Expiration"
+msgstr "Platnost do"
+
+msgid "Retain X amount of logs"
+msgstr "Uchovat objem X protokolů"
+
+msgid "Cache bin to use for storing logs"
+msgstr "Přihrádka mezipaměti k použití pro ukládání protokolů"
+
+msgid "Timeout (s) before cache entry expires"
+msgstr "Uplynutí časového limitu (s) před vypršením platnosti položky mezipaměti"
+
+msgid "Queue: @title"
+msgstr "Fronta: @title"
+
+msgid "Store the maximum possible comments per thread"
+msgstr "Ukládat maximální možné množství komentářů na vlákno"
+
+msgid "Remove expired log messages and flood control events"
+msgstr "Odebrat zprávy protokolu s vypršelou platností a událostí řízení flood"
+
+msgid "Purges deleted Field API data"
+msgstr "Vyprazdňuje odstraněná data rozhraní API pole"
+
+msgid "Deletes temporary files"
+msgstr "Odstraňuje dočasné soubory"
+
+msgid "Deletes history"
+msgstr "Odstraňuje historii"
+
+msgid "Updates indexable active search pages"
+msgstr "Aktualizuje indexovatelné stránky aktivního hledání"
+
+msgid "Cleanup (caches, batch, flood, temp-files, etc.)"
+msgstr "Vyčištění (mezipaměti, dávky, položky flood, dočasné soubory atd.)"
+
+msgid "Update indexes"
+msgstr "Aktualizovat indexy"
+
+msgid "Updates search rankings for nodes"
+msgstr "Aktualizuje relevanci výsledků pro uzly"
+
+msgid "Refresh feeds"
+msgstr "Aktualizovat kanály"
+
+msgid "Runs internal cleanup operations"
+msgstr "Spouští operace interního vyčištění"
+
+msgid "Reset counts and clean up"
+msgstr "Resetovat počty a provést vyčištění"
+
+msgid "Update tracker index"
+msgstr "Aktualizovat index sledovače"
+
+msgid "Default cron handler"
+msgstr "Výchozí obslužná rutina cron"
+
+msgid "Last Run"
+msgstr "Poslední spuštění"
+
+msgid "Job is behind schedule!"
+msgstr "Úloha je opožděna!"
+
+msgid "Missing"
+msgstr "Chybějící"
+
+msgid "Disabled"
+msgstr "Vypnuto"
+
+msgid "Run"
+msgstr "Spustit"
+
+msgid "Unlock"
+msgstr "Odemknout"
+
+msgid "Logs"
+msgstr "Logy"
+
+msgid "Default (@default)"
+msgstr "Výchozí (@default)"
+
+msgid "(Blank = @default)."
+msgstr "(Prázdné = @default)."
+
+msgid "Queue: @name"
+msgstr "Fronta: @name"
+
+msgid "Enable cron queue processing"
+msgstr "Aktivovat zpracování fronty cron"
+
+msgid "If enabled, cron queues will be processed by this plugin. If another cron queue plugin is installed, it may be necessary/beneficial to disable this plugin."
+msgstr "Je-li tato volba aktivní, bude tento modul plugin zpracovávat fronty cron. Je-li instalován jiný modul plugin front cron, může být zapotřebí/užitečné zakázání tohoto modulu plugin."
+
+msgid "Queue lease time"
+msgstr "Doba pronájmu fronty"
+
+msgid "Seconds to claim a cron queue item."
+msgstr "Doba v sekundách pro uplatnění nároku na položku fronty programu cron. "
+
+msgid "Time"
+msgstr "Čas"
+
+msgid "Time in seconds to process items during a cron run."
+msgstr "Doba v sekundách pro zpracování položek při spuštění programu cron. "
+
+msgid "Empty delay"
+msgstr "Prodleva pro prázdnou frontu"
+
+msgid "Seconds to delay processing of queue if queue is empty (0 = end job)."
+msgstr "Doba v sekundách pro zpoždění zpracování fronty, je-li fronta prázdná (0 = ukončit úlohu)."
+
+msgid "Item delay"
+msgstr "Prodleva položky"
+
+msgid "Seconds to wait between processing each item in a queue."
+msgstr "Doba čekání v sekundách mezi zpracováním jednotlivých položek ve frontě. "
+
+msgid "Throttle"
+msgstr "Urychlení"
+
+msgid "Throttle queues using multiple threads."
+msgstr "Snižovat prioritu front pomocí více vláken. "
+
+msgid "Throttling"
+msgstr "Snižování priority"
+
+msgid "Threads"
+msgstr "Vlákna"
+
+msgid "Number of threads to use for queues."
+msgstr "Počet vláken, jež mají být používány pro fronty. "
+
+msgid "Threshold"
+msgstr "Práh"
+
+msgid "Number of items in queue required to activate the next cron job."
+msgstr "Počet položek ve frontě, jež jsou zapotřebí k aktivaci následující úlohy cron. "
+
+msgid "disabled"
+msgstr "vypnuto"
+
+msgid "enabled"
+msgstr "zapnuto"
+
+msgid "Processed @items items from queue @queue"
+msgstr "Zpracované položky z fronty @queue: @items"
+
+msgid "kill signal recieved"
+msgstr "Byl přijat signál ukončení"
+
+msgid "Queue item @item_id from queue @queue failed with message @message"
+msgstr "Položka fronty @item_id z fronty @queue se nezdařila se zprávou @message"
+
+msgid "Kill signal received for job @job_id"
+msgstr "Byl přijat signál ukončení pro úlohu @job_id"
+
+msgid "Running all cronjobs is not supported by Ultimate Cron's cron:run - please use Drupal Core's core:cron command!"
+msgstr "Spuštění všech úloh cron není podporováno programem Ultimate Cron's cron:run - použijte příkaz core:cron jádra Drupal!"
+
+msgid "Launched manually"
+msgstr "Spuštěno ručně "
+
+msgid "Cron job @job_label (@module) was successfully run."
+msgstr "Úloha cron @job_label (@module) byla úspěšně spuštěna. "
+
+msgid "Completed discovery for new cron jobs."
+msgstr "Bylo dokončeno zjišťování nových úloh cron. "
+
+msgid "Severity"
+msgstr "Vážnost"
+
+msgid "Start Time"
+msgstr "Čas zahájení"
+
+msgid "End Time"
+msgstr "Čas ukončení"
+
+msgid "No log information available."
+msgstr "Nejsou k dispozici žádné informace protokolu. "
+
+msgid "Logs for %label"
+msgstr "Protokoly pro %label"
+
+msgid "Cron job @name unlocked successfully."
+msgstr "Úloha cron @name byla úspěšně odemknuta."
+
+msgid "Could not get lock for job @name"
+msgstr "Nelze získat zámek pro úlohu @name"
+
+msgid "Do you really want to disable @cronjob_id cron job?"
+msgstr "Opravdu chcete zakázat úlohu cron @cronjob_id? "
+
+msgid "This cron job will no longer be executed."
+msgstr "Tato úloha cron nadále nebude prováděna. "
+
+msgid "Disable"
+msgstr "Vypnout"
+
+msgid "Disabled cron job %cronjob."
+msgstr "Úloha cron %cronjob byla zakázána. "
+
+msgid "Do you really want to enable @cronjob_id cron job?"
+msgstr "Opravdu chcete povolit úlohu cron @cronjob_id? "
+
+msgid "This cron job will be executed again."
+msgstr "Tato úloha cron bude znovu prováděna. "
+
+msgid "Enable"
+msgstr "Zapnout"
+
+msgid "Enabled cron job %cronjob."
+msgstr "Úloha cron %cronjob byla povolena. "
+
+msgid "This will appear in the administrative interface to easily identify it."
+msgstr "Toto se zobrazí v administrativním rozhraní za účelem snadné identifikace. "
+
+msgid "Enabled"
+msgstr "Zapnuto"
+
+msgid "This checkbox enables the cron job. Disabled Cron jobs are not run."
+msgstr "Toto zaškrtávací políčko povolí úlohu cron. Zakázané úlohy cron se nespouštějí. "
+
+msgid "@title (Default)"
+msgstr "@title (výchozí)"
+
+msgid "Select which @plugin to use for this job."
+msgstr "Vyberte modul plug-in @plugin, který má být používán pro tuto úlohu. "
+
+msgid "Select"
+msgstr "Vybrat"
+
+msgid "job %label has been updated."
+msgstr "Úloha %label byla aktualizována. "
+
+msgid "nodejs"
+msgstr "nodejs"
+
+msgid "Enable nodejs integration (Live reload on jobs page. Requires the nodejs module to be installed and configured)."
+msgstr "Aktivovat integraci nodejs (Interaktivní opětovné načtení na stránce úloh. Vyžaduje instalaci a konfiguraci modulu nodejs.)"
+
+msgid "Override cron queue processing"
+msgstr "Potlačit zpracování fronty programu cron"
+
+msgid "If enabled, queue workers are exposed as cron jobs and can be configured separately. When disabled, the standard queue processing is used. <strong>This feature is currently experimental, do not enable unless you need it.</strong>"
+msgstr "Je-li tato volba povolena, jsou workery fronty vystaveny jako úlohy cron a lze je samostatně konfigurovat. Je-li tato volba zakázána, používá se standardní zpracování fronty. <strong>Tato funkce je v současné době experimentální. Nepovolujte ji, pokud ji nepotřebujete. </strong>"
+
+msgid "Launching options"
+msgstr "Volby spouštění"
+
+msgid "Job lock timeout"
+msgstr "Časový limit zámku úlohy"
+
+msgid "Number of seconds to keep lock on job."
+msgstr "Doba v sekundách pro udržování zámku úlohy. "
+
+msgid "Maximum execution time"
+msgstr "Maximální doba provádění"
+
+msgid "Maximum execution time for a cron run in seconds."
+msgstr "Maximální doba provádění pro spuštění úlohy v sekundách. "
+
+msgid "Maximum number of launcher threads"
+msgstr "Maximální počet vláken spouštěcího programu"
+
+msgid "The maximum number of launch threads that can be running at any given time."
+msgstr "Maximální počet souběžně spuštěných vláken spuštění. "
+
+msgid "Run in thread"
+msgstr "Spustit ve vláknu"
+
+msgid "Which thread to run jobs in."
+msgstr "Které vlákno použít ke spouštění úloh. "
+
+msgid "<strong>Any</strong>: Just use any available thread"
+msgstr "<strong>Libovolný</strong>: Použít libovolné dostupné vlákno"
+
+msgid "<strong>Fixed</strong>: Only run in one specific thread. The maximum number of threads is spread across the jobs."
+msgstr "<strong>Pevný</strong>: Spouštět pouze v jednom specifickém vláknu. Maximální počet vláken je rozdělen mezi úlohy. "
+
+msgid "<strong>1-?</strong>: Only run when a specific thread is invoked. This setting only has an effect when cron is run through cron.php with an argument ?thread=N or through Drush with --options=thread=N."
+msgstr "<strong>1-?</strong>: Spustit pouze při vyvolání specifického vlákna. Toto nastavení má vliv pouze tehdy, kdy se program cron spouští prostřednictvím souboru cron.php s argumentem ?thread=N nebo pomocí Drush s argumentem --options=thread=N. "
+
+msgid "Cache bin"
+msgstr "Přihrádka mezipaměti"
+
+msgid "Select which cache bin to use for storing logs."
+msgstr "Vyberte přihrádku mezipaměti, jež má být používána k ukládání protokolů. "
+
+msgid "Cache timeout"
+msgstr "Časový limit mezipaměti"
+
+msgid "Seconds before cache entry expires (0 = never, -1 = on next general cache wipe)."
+msgstr "Doba v sekundách před vypršením platnosti položky mezipaměti (0 = nikdy, -1 = při následujícím vymazání celé mezipaměti). "
+
+msgid "Remove logs older than a specified age"
+msgstr "Odebrat protokoly starší než uvedené stáří"
+
+msgid "Retain only a specific amount of log entries"
+msgstr "Uchovat pouze specifické množství položek protokolu"
+
+msgid "Log entry cleanup method"
+msgstr "Metoda vyčištění položky protokolu"
+
+msgid "Select which method to use for cleaning up logs."
+msgstr "Vyberte metodu, jež má být používána k čištění protokolů. "
+
+msgid "Log entry expiration"
+msgstr "Vypršení platnosti položky protokolu"
+
+msgid "Remove log entries older than X seconds."
+msgstr "Odebírat položky protokolu starší než X sekund. "
+
+msgid "Retain logs"
+msgstr "Uchovávat protokoly"
+
+msgid "Retain X amount of log entries."
+msgstr "Uchovávat X položek protokolu. "
+
+msgid "Catch up"
+msgstr "Zachytit"
+
+msgid "Don't run job after X seconds of rule."
+msgstr "Nespouštět úlohu po uplynutí X sekund pravidla. "
+
+msgid "Rules"
+msgstr "Rules"
+
+msgid "Semi-colon separated list of crontab rules."
+msgstr "Seznam pravidel crontab s položkami oddělenými středníkem. "
+
+msgid "Rules help"
+msgstr "Nápověda pravidel"
+
+msgid "Run cron every"
+msgstr "Spouštět cron v intervalu"
+
+msgid "Select the interval you wish cron to run on."
+msgstr "Vyberte interval, jenž má být použit ke spuštění programu cron. "
+
+msgid "running"
+msgstr "spuštěno"
+
+msgid "unfinished but not locked?"
+msgstr "nedokončeno, avšak uzamknuto? "
+
+msgid "Cleaned up @count expired locks"
+msgstr "Bylo vyčištěno @count zámků s vypršelou platností "
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "anonymous"
+msgstr "anonym"
+
+msgid "by"
+msgstr "od"
+
+msgid "Registered at @datetime"
+msgstr "Registrace proběhla @datetime"
+
+msgid "no info"
+msgstr "žádné informace"
+
+msgid "-- Any -- "
+msgstr "-- Libovolný -- "
+
+msgid "-- Fixed -- "
+msgstr "-- Pevný -- "
+
+msgid "Which thread to run in when invoking with ?thread=N. Note: This setting only has an effect when cron is run through cron.php with an argument ?thread=N or through Drush with --options=thread=N."
+msgstr "Které vlákno má být spuštěno při vyvolání s použitím ?thread=N. Poznámka: Toto nastavení má vliv pouze tehdy, když se program cron spouští prostřednictvím souboru cron.php s argumentem ?thread=N nebo prostřednictvím konzoly Drush s volbou --options=thread=N. "
+
+msgid "%title must be greater than 0"
+msgstr "%title musí být větší než 0"
+
+msgid "Launched in thread @current_thread"
+msgstr "Spuštěno ve vláknu @current_thread"
+
+msgid "Invalid thread available for starting launch thread"
+msgstr "Neplatné vlákno dostupné ke spuštění vlákna spuštění"
+
+msgid "Thread @thread is already running"
+msgstr "Vlákno @thread již je spuštěno"
+
+msgid "No free threads available for launching jobs"
+msgstr "Nejsou k dispozici žádná volná vlákna ke spuštění úloh"
+
+msgid "Serial"
+msgstr "Sériové číslo"
+
+msgid "Launches scheduled jobs in the same thread and runs them consecutively."
+msgstr "Spouští naplánované úlohy ve stejném vláknu a postupně. "
+
+msgid "Stores the last log entry (and only the last) in the cache."
+msgstr "Uchovává (výlučně) poslední položku protokolu v mezipaměti. "
+
+msgid "Lock #@original_lid was already closed and logged. Creating a new log entry #@lid"
+msgstr "Zámek #@original_lid již byl uzamknutý a zaprotokolovaný. Vytváří se nová položka protokolu #@lid"
+
+msgid "@count_entries log entries removed for @jobs_count jobs"
+msgstr "Bylo odebráno @count_entries položek protokolu pro @jobs_count úloh"
+
+msgid "Invalid cleanup method: @method"
+msgstr "Neplatná metoda vyčištění: @method"
+
+msgid "Stores logs in the database."
+msgstr "Uchovává protokoly v databázi"
+
+msgid "Next scheduled run at @datetime"
+msgstr "Následující naplánované spuštění v @datetime"
+
+msgid "Comma separated list of crontab rules."
+msgstr "Seznam pravidel crontab s položkami oddělenými čárkou. "
+
+msgid "Rule is invalid"
+msgstr "Pravidlo je neplatné"
+
+msgid "Use crontab rules for scheduling jobs."
+msgstr "Používat pravidla crontab pro naplánované úlohy. "
+
+msgid "Every @interval"
+msgstr "Každých @interval"
+
+msgid "Provides a set of predefined intervals for scheduling."
+msgstr "Poskytuje sadu předdefinovaných pravidel pro plánování. "
+

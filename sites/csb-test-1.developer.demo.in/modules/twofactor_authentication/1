@@ -1,0 +1,5 @@
+services:
+  custom_mfa.mfa_check_subscriber:
+    class: Drupal\custom_mfa\EventSubscriber\MfaCheckSubscriber
+    tags:
+      - { name: event_subscriber }

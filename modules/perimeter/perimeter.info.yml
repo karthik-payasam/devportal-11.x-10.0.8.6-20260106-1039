@@ -1,0 +1,12 @@
+type: module
+name: Drupal Perimeter Defence
+description: This module bans IPs who send suspicious requests to the site.
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:ban
+configure: perimeter.settings
+
+# Information added by Drupal.org packaging script on 2024-08-28
+version: '3.0.4'
+project: 'perimeter'
+datestamp: 1724855549

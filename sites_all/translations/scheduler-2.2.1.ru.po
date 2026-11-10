@@ -1,0 +1,503 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Publish on date"
+msgstr "Опубликовать в день"
+
+msgid "Unpublish on date"
+msgstr "Удалить публикацию в день"
+
+msgid "About"
+msgstr "Информация"
+
+msgid "You can read more in the <a href=\"@readme\">readme</a> file or our <a href=\"@project\">project page on Drupal.org</a>."
+msgstr "Дополнительную информацию можно найти в файле <a href=\"@readme\">readme</a> и <a href=\"@project\">на странице проекта на сайте Drupal.org</a>."
+
+msgid "When you have set up Drupal's standard crontab job cron.php then Scheduler will be executed during each cron run. However, if you would like finer granularity to scheduler, but don't want to run Drupal's cron more often then you can use the lightweight cron handler provided by Scheduler. This is an independent cron job which only runs the scheduler process and does not execute any cron tasks defined by Drupal core or any other modules."
+msgstr "После настройки в Drupal файла cron.php обычного задания crontab планировщик будет выполняться во время каждого выполнения cron. Но если требуется более тонкая настройка планировщика и при этом более частое выполнение cron Drupal нежелательно, то можно воспользоваться упрощенным обработчиком cron из модуля Планировщик. Это независимое задание cron, которое выполняет только процесс планировщика и не выполняет никаких задач cron, созданных ядром Drupal или другими модулями."
+
+msgid "Scheduler's cron is at /scheduler/cron/{access-key} and a sample crontab entry to run scheduler every minute might look like:"
+msgstr "cron модуля Планировщик находится в каталоге /scheduler/cron/{access-key}, а пример записи crontab для выполнения планировщика каждую минуту выглядит следующим образом:"
+
+msgid "or"
+msgstr "или"
+
+msgid "Scheduling options"
+msgstr "Параметры планирования"
+
+msgid "Enter a date. The time part is optional."
+msgstr "Введите дату. Значение времени можно не указывать."
+
+msgid "The default time is @default_time."
+msgstr "Время по умолчанию: @default_time."
+
+msgid "Enter a date and time."
+msgstr "Введите дату и время."
+
+msgid "Leave the date blank for no scheduled publishing."
+msgstr "Если не хотите планировать публикацию, оставьте поле даты пустым."
+
+msgid "Leave the date blank for no scheduled unpublishing."
+msgstr "Оставьте дату пустой, если нет запланированного удаления публикации."
+
+msgid "not available"
+msgstr "недоступно"
+
+msgid "Scheduler"
+msgstr "Планировщик"
+
+msgid "Publishing"
+msgstr "Публикация"
+
+msgid "Require scheduled publishing"
+msgstr "Обязательное планирование публикации"
+
+msgid "Create a new revision on publishing"
+msgstr "Создавать новую редакцию при публикации"
+
+msgid "Advanced options"
+msgstr "Дополнительные настройки"
+
+msgid "Action to be taken for publication dates in the past"
+msgstr "Что делать, если дата публикации в прошлом"
+
+msgid "Display an error message - do not allow dates in the past"
+msgstr "Показать сообщение об ошибке — не позволять даты в прошлом"
+
+msgid "Unpublishing"
+msgstr "Снятие с публикации"
+
+msgid "Require scheduled unpublishing"
+msgstr "Обязательное планирование снятия с публикации"
+
+msgid "Create a new revision on unpublishing"
+msgstr "Создавать новую редакцию при снятии с публикации"
+
+msgid "Vertical tab"
+msgstr "Вертикальная вкладка"
+
+msgid "Separate fieldset"
+msgstr "Отдельный набор полей"
+
+msgid "Expand fieldset or vertical tab"
+msgstr "Развернуть набор полей или вертикальную вкладку"
+
+msgid "Expand only when a scheduled date exists or when a date is required"
+msgstr "Раскрыть набор полей, когда дата планирования установлена или когда дата обязательная"
+
+msgid "Always open the fieldset or vertical tab"
+msgstr "Всегда открывать набор полей или вертикальную вкладку"
+
+msgid "Show message"
+msgstr "Показать сообщение"
+
+msgid "Scheduler settings"
+msgstr "Параметры планировщика"
+
+msgid "Enabled for publishing"
+msgstr "Включено для публикации"
+
+msgid "Enabled for unpublishing"
+msgstr "Включено для удаления публикации"
+
+msgid "None"
+msgstr "Нет"
+
+msgid "Now"
+msgstr "Сейчас"
+
+msgid "Publishing date for Scheduler"
+msgstr "Дата публикации для планировщика"
+
+msgid "Unpublishing date for Scheduler"
+msgstr "Дата удаления публикации для планировщика"
+
+msgid "Publish on"
+msgstr "Опубликовать"
+
+msgid "Unpublish on"
+msgstr "Снять с публикации"
+
+msgid "%title is scheduled to be published @publish_time and unpublished @unpublish_time."
+msgstr "%title запланирована публикация @publish_time и снятие с публикации @unpublish_time."
+
+msgid "%title is scheduled to be published @publish_time."
+msgstr "%title запланирована публикация @publish_time."
+
+msgid "%title is scheduled to be unpublished @unpublish_time."
+msgstr "Согласно расписанию %title будет удален в @unpublish_time."
+
+msgid "Scheduler Dates"
+msgstr "Даты планировщика"
+
+msgid "Fieldset containing Scheduler Publish-on and Unpublish-on date input fields"
+msgstr "Набор полей, содержащий поля ввода Дата публикации и Дата удаления публикации модуля Планировщик"
+
+msgid "Scheduler: publish on"
+msgstr "Планироващик: публиковать"
+
+msgid "Scheduler: unpublish on"
+msgstr "Планировщик: снять с публикации"
+
+msgid "currently in daylight saving mode"
+msgstr "в режиме перехода на летнее время"
+
+msgid "not in daylight saving mode"
+msgstr "не в режиме перехода на летнее время"
+
+msgid "In most cases the server time should match Coordinated Universal Time (UTC) / Greenwich Mean Time (GMT)."
+msgstr "В большинстве случаев время сервера должно соответствовать UTC/GMT."
+
+msgid "Default timezone: %date_default_timezone (%date_default_code), offset from UTC/GMT by %date_default_offset hours. This timezone can be <a href=\"@admin_regional_settings\">changed by admin users</a> with the appropriate access."
+msgstr "Часовой пояс по умолчанию: %date_default_timezone (%date_default_code), разность со временем UTC/GMT составляет %date_default_offset ч. Этот часовой пояс может быть <a href=\"@admin_regional_settings\">изменен администраторами</a> с соответствующими правами доступа."
+
+msgid "Local time: %localtime (%daylight_saving). You can change this via your <a href=\"@account_edit\">user account</a>."
+msgstr "Местное время: %localtime (%daylight_saving). Это значение можно изменить в <a href=\"@account_edit\">учетной записи пользователя</a>."
+
+msgid "Note: The user timezone has not been stored, so defaulting to the website timezone."
+msgstr "Примечание: часовой пояс пользователя не сохранен, поэтому по умолчанию используется часовой пояс веб-сайта."
+
+msgid "Your local time is %localtime (%daylight_saving). This is not configurable by you."
+msgstr "Местное время - %localtime (%daylight_saving). Не настраивается."
+
+msgid "Scheduler Time Check"
+msgstr "Проверка времени планировщика"
+
+msgid "Server time: @utc"
+msgstr "Время сервера: @utc"
+
+msgid "The date and time format has been reset."
+msgstr "Формат даты и времени сброшен."
+
+msgid "Default set on for new option \"Show a message after updating content\""
+msgstr "Значение по умолчанию для параметра \"Показывать сообщение после обновления содержимого\" "
+
+msgid "The \"Scheduled\" tab is now a \"Scheduled content\" sub-task under the \"Content\" tab"
+msgstr "Вкладка \"Запланировано\" теперь представляет собой подзадачу \"Запланированные материалы\" на вкладке \"Содержимое\""
+
+msgid "Configure settings for scheduled publishing and unpublishing."
+msgstr "Настройка параметров для запланированных публикации и удаления публикации."
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Lightweight cron"
+msgstr "Легковесный cron"
+
+msgid "Administer scheduler"
+msgstr "Управлять планировщиком"
+
+msgid "Allow date-only input with time taken from default time setting"
+msgstr "Разрешить ввод только даты (время по умолчанию)"
+
+msgid "Full date and time format"
+msgstr "Полный формат даты и времени"
+
+msgid "The set of PHP date letters allowed in the Scheduler date format"
+msgstr "Набор букв даты PHP, разрешенный в формате даты модуля Планировщик"
+
+msgid "Date part of the full format"
+msgstr "Часть полного формата со значением даты"
+
+msgid "Default Scheduling Time. This is used with the option to allow date only"
+msgstr "Время планирования по умолчанию. Оно используется вместе с параметром, разрешающим ввод только даты"
+
+msgid "Hide the seconds on the input control when entering a time"
+msgstr "Скрывать секунды в управляющем элементе ввода при вводе времени"
+
+msgid "Lightweight cron access key"
+msgstr "Ключ доступа к упрощенному cron"
+
+msgid "Log every Scheduler lightweight cron activation and completion message"
+msgstr "Заносить в протокол все сообщения об активации и завершении заданий упрощенного cron модуля Планировщик"
+
+msgid "The set of PHP time letters allowed in the Scheduler time format"
+msgstr "Набор букв времени PHP, разрешенный в формате времени модуля Планировщик"
+
+msgid "Time part of the full format"
+msgstr "Часть полного формата со значением времени"
+
+msgid "Enable scheduled publishing"
+msgstr "Включить публикацию по расписанию"
+
+msgid "Enable scheduled unpublishing"
+msgstr "Включить снятие с публикации по расписанию"
+
+msgid "Scheduled for publishing"
+msgstr "Запланированно на публикацию"
+
+msgid "Scheduled for unpublishing"
+msgstr "Запланированно на снятие с публикации"
+
+msgid "Not scheduled"
+msgstr "Не запланировано"
+
+msgid "Publishing enabled"
+msgstr "Публикация включена"
+
+msgid "Unpublishing enabled"
+msgstr "Снятие с публикации включено"
+
+msgid "Node form scheduler"
+msgstr "Планировщик формы Узел"
+
+msgid "Scheduler date options on the Node form."
+msgstr "Параметры даты планировщика на форме Узел."
+
+msgid "Form"
+msgstr "Форма"
+
+msgid "Scheduler options"
+msgstr "Настройки планировщика"
+
+msgid "Send e-mail when content is published by Scheduler"
+msgstr "Отправлять по электронной почте уведомление при публикации содержимого модулем Планировщик"
+
+msgid "'[node:title]' has been published on [site:name]"
+msgstr "Публикация '[node:title]' на сайте [site:name]"
+
+msgid ""
+"Dear [node:author:name],\r\n"
+"Your [node:type] '[node:title]' has been published on [site:name].\r\n"
+"The link is [node:url]\r\n"
+""
+msgstr ""
+"Уважаемый(-ая) [node:author:name]!\r\n"
+"Ваши материалы [node:type] '[node:title]' опубликованы на сайте [site:name].\r\n"
+"Ссылка: [node:url]\r\n"
+""
+
+msgid "Send e-mail when content is unpublished by Scheduler"
+msgstr "Отправлять по электронной почте уведомление при удалении публикации содержимого модулем Планировщик"
+
+msgid "'[node:title]' has been unpublished on [site:name]"
+msgstr "Публикация '[node:title]' удалена с сайта [site:name]"
+
+msgid ""
+"Dear [node:author:name],\r\n"
+"Your [node:type] '[node:title]' has been unpublished on [site:name].\r\n"
+"The link is [node:url]\r\n"
+""
+msgstr ""
+"Уважаемый(-ая) [node:author:name]!\r\n"
+"Ваши опубликованные материалы [node:type] '[node:title]' убраны с сайта [site:name].\r\n"
+"Ссылка: [node:url]\r\n"
+""
+
+msgid "Node"
+msgstr "Материал"
+
+msgid "The node for publishing via Scheduler."
+msgstr "Узел для публикации через модуль Планировщик."
+
+msgid "Publish-on Date"
+msgstr "Дата публикации"
+
+msgid "The publishing date to be used by Scheduler."
+msgstr "Дата публикации, используемая модулем Планировщик."
+
+msgid "Set scheduled publishing date"
+msgstr "Задать запланированную дату публикации"
+
+msgid "The node for unpublishing via Scheduler."
+msgstr "Узел для удаления публикации через модуль Планировщик."
+
+msgid "Unpublish-on Date"
+msgstr "Дата удаления публикации"
+
+msgid "The unpublishing date to be used by Scheduler."
+msgstr "Дата удаления публикации, используемая модулем Планировщик."
+
+msgid "Set scheduled unpublishing date"
+msgstr "Задать запланированную дату удаления публикации"
+
+msgid "The scheduled node"
+msgstr "Запланированный узел"
+
+msgid "The node scheduled for publishing via Scheduler."
+msgstr "Запланированный узел для публикации через модуль Планировщик."
+
+msgid "Remove scheduled publishing date"
+msgstr "Удалить запланированную дату публикации"
+
+msgid "The node scheduled for unpublishing via Scheduler."
+msgstr "Запланированный узел для удаления публикации через модуль Планировщик."
+
+msgid "Remove scheduled unpublishing date"
+msgstr "Удалить запланированную дату удаления публикации"
+
+msgid "Scheduler Rules Integration"
+msgstr "Интеграция правил планировщика"
+
+msgid "Scheduler sub-module providing conditions, actions and events for use with the Rules module."
+msgstr "Субмодуль модуля Планировщик, содержащий условия, действия и события для использования с модулем Правила."
+
+msgid "Node type is enabled for scheduled publishing"
+msgstr "Тип узла настроен для запланированной публикации"
+
+msgid "Node is scheduled for publishing"
+msgstr "Узел запланирован для публикации"
+
+msgid "Node is scheduled for unpublishing"
+msgstr "Узел запланирован для удаления публикации"
+
+msgid "Node type is enabled for scheduled unpublishing"
+msgstr "Тип узла настроен для запланированного удаления публикации"
+
+msgid "@type settings"
+msgstr "Настройка выборов типа @type"
+
+msgid "The node to be published now"
+msgstr "Узел, публикуемый сейчас"
+
+msgid "The node from which to remove the scheduled publishing date"
+msgstr "Узел, из которого удаляется дата запланированной публикации"
+
+msgid "The node from which to remove the scheduled unpublishing date"
+msgstr "Узел, из которого удаляется дата запланированного удаления публикации"
+
+msgid "Node for scheduling"
+msgstr "Узел для планирования"
+
+msgid "The node which is to have a scheduled publishing date set"
+msgstr "Узел, для которого задается дата запланированной публикации"
+
+msgid "The date for publishing"
+msgstr "Дата публикации"
+
+msgid "The date when Scheduler will publish the node"
+msgstr "Дата, когда планировщик опубликует узел"
+
+msgid "The node which is to have a scheduled unpublishing date set"
+msgstr "Узел, для которого задается дата запланированного удаления публикации"
+
+msgid "The date for unpublishing"
+msgstr "Дата удаления публикации"
+
+msgid "The date when Scheduler will unpublish the node"
+msgstr "Дата, когда планировщик удалит публикацию узла"
+
+msgid "The node to be unpublished now"
+msgstr "Узел, публикация которого сейчас удаляется"
+
+msgid "The previous creation date was @old_creation_date, now updated to match the publishing date."
+msgstr "Предыдущая дата создания была @old_creation_date, теперь обновлена и совпадает с датой публикации."
+
+msgid "Published by Scheduler. The scheduled publishing date was @publish_on."
+msgstr "Опубликовано планировщиком. Запланированная дата публикации была @publish_on."
+
+msgid "View @type"
+msgstr "Просмотр @type"
+
+msgid "@label settings"
+msgstr "Параметры @label"
+
+msgid "Unpublished by Scheduler. The scheduled unpublishing date was @unpublish_on."
+msgstr "Отменена публикация планировщиком. Запланированная дата отмены публикации была @unpublish_on."
+
+msgid "settings"
+msgstr "настройки"
+
+msgid "@type: scheduled publishing of %title."
+msgstr "@type: запланированная публикация %title."
+
+msgid "@type: scheduled unpublishing of %title."
+msgstr "@type: запланированное снятие с публикации %title."
+
+msgid "Lightweight cron run activated by @trigger."
+msgstr "Начато выполнение упрощенного cron по @trigger."
+
+msgid "Lightweight cron run completed."
+msgstr "Завершено выполнение упрощенного cron."
+
+msgid "Scheduler lightweight cron completed."
+msgstr "Завершена работа упрощенного cron планировщика."
+
+msgid "Entity Types"
+msgstr "Типы сущностей"
+
+msgid "Date only"
+msgstr "Только дата"
+
+msgid "Allow users to enter only a date and provide a default time."
+msgstr "Разрешить пользователям вводить только дату и использовать время по умолчанию."
+
+msgid "When only a date is entered the time will default to a specified value, but the user can change this if required."
+msgstr "Когда вводится только дата, используется время по умолчанию, но при необходимости пользователь может его изменить."
+
+msgid "Default time"
+msgstr "Время по умолчанию"
+
+msgid "Provide a default time in @format format that will be used if the user does not enter a value."
+msgstr "Укажите время по умолчанию в формате @format, которое будет применяться, если пользователь не введет значение."
+
+msgid "Time settings"
+msgstr "Установки времени"
+
+msgid "Hide the seconds."
+msgstr "Скрыть секунды."
+
+msgid "When entering a time, only show hours and minutes in the input field."
+msgstr "При вводе времени в поле ввода показываются только часы и минуты."
+
+msgid "The default time should be in the format @format"
+msgstr "Время по умолчанию должно указываться в формате @format"
+
+msgid "Lightweight cron settings"
+msgstr "Параметры упрощенного cron"
+
+msgid "Log every activation and completion message."
+msgstr "Заносить в протокол все сообщения об активации и завершении."
+
+msgid "When this option is checked, Scheduler will write an entry to the log every time the lightweight cron process is started and completed. This is useful during set up and testing, but can result in a large number of log entries. Any actions performed during the lightweight cron run will always be logged regardless of this setting."
+msgstr "Если этот параметр включен, планировщик будет добавлять запись в протокол при каждом запуске и завершении процесса упрощенного cron. Это полезно во время настройки и тестирования, но может значительно увеличить количество записей в протоколе. Действия, выполняемые во время работы упрощенного cron, заносятся протокол всегда, вне зависимости от этого параметра."
+
+msgid "Similar to Drupal's cron key this acts as a security token to prevent unauthorised calls to scheduler/cron. The key should be passed as scheduler/cron/{access key}"
+msgstr "Подобно ключу cron Drupal, этот ключ играет роль маркера защиты, предотвращающего несанкционированные вызовы планировщика/cron. Ключ должен передаваться как scheduler/cron/{access key}"
+
+msgid "Generate new random key"
+msgstr "Создать новый случайный ключ"
+
+msgid "You can test Scheduler's lightweight cron process interactively"
+msgstr "Вы можете протестировать, как работает легковесный cron Планировщика, в интерактивном режиме"
+
+msgid "Run Scheduler's lightweight cron now"
+msgstr "Выполнить упрощенный cron планировщика сейчас"
+
+msgid "Lightweight cron run completed. See the <a href=\"@url\">log</a> for details."
+msgstr "Завершено выполнение упрощенного cron. См. <a href=\"@url\">протокол</a>."
+
+msgid "Scheduled content"
+msgstr "Запланированные материалы"
+
+msgid "Overview"
+msgstr "Обзор"
+
+msgid "Leave blank for no date."
+msgstr "Оставьте пустым, если нет даты."
+
+msgid "Datetime Timestamp for Scheduler"
+msgstr "Значение даты и времени для планировщика"
+
+msgid "An optional datetime field. Does not fill in the current datetime if left blank. Defined by Scheduler module."
+msgstr "Необязательное поле даты и времени. Не заполнять текущие дату и время при пустых значениях. Определено модулем Планировщик."
+
+msgctxt "Validation"
+msgid "Scheduler publish on"
+msgstr "Дата публикации планировщиком"
+
+msgctxt "Validation"
+msgid "Scheduler unpublish on"
+msgstr "Дата удаления публикации планировщиком"
+

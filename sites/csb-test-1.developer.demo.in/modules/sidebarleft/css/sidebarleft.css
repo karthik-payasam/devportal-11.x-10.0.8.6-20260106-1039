@@ -1,0 +1,174 @@
+/* General reset - only inside this module */
+.sidebarleft-wrapper ul,
+.sidebarleft-wrapper li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* =========================================
+   Main Product API heading
+   ========================================= */
+
+.sidebarleft-wrapper .all-main-menu>a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #13398d;
+    color: white;
+    padding: 14px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 6px 6px 0 0;
+}
+
+
+
+.sidebarleft-wrapper .all-submenu {
+    background: #f5f8fa;
+    border: 1px solid #d0d7de;
+    border-top: none;
+}
+
+
+.sidebarleft-wrapper .all-submenu li>a {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    background: #f9f9f9;
+    border-bottom: 1px solid #e1e4e8;
+    transition: background 0.3s ease;
+}
+
+
+
+/* =========================================
+   API list
+   ========================================= */
+
+.sidebarleft-wrapper .thirdSubmenu {
+    background: white;
+    padding-left: 10px;
+}
+
+.sidebarleft-wrapper .thirdSubmenu li a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px 18px;
+    font-size: 13px;
+    color: #004080;
+    text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebarleft-wrapper .thirdSubmenu li a:hover {
+    background: #f0f8ff;
+}
+
+
+.sidebarleft-wrapper .sidebarleft-hide {
+    display: none;
+}
+
+.sidebarleft-wrapper .toggle-icon {
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #004080;
+    border-radius: 50%;
+    color: #004080;
+    background: white;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.sidebarleft-wrapper .toggle-icon.open {
+    background: #004080;
+    color: white;
+}
+
+
+.sidebarleft-wrapper .menu-toggle .toggle-icon::after {
+    content: "\25BC";
+    font-size: 12px;
+}
+
+.sidebarleft-wrapper .menu-toggle.active .toggle-icon::after {
+    content: "\25B2";
+    font-size: 12px;
+}
+
+
+
+.sidebarleft-wrapper .product-toggle .toggle-icon::after {
+    content: "\002B";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sidebarleft-wrapper .product-toggle.active .toggle-icon::after {
+    content: "\2212";
+    font-size: 12px;
+}
+
+.sidebarleft-wrapper .product-toggle.active {
+    background: linear-gradient(90deg,
+            #0d47a1,
+            #1976d2,
+            #42a5f5);
+    color: white;
+}
+
+
+.sidebarleft-wrapper .tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.sidebarleft-wrapper .tab-buttons a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #004080;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    transition: all 0.3s ease;
+}
+
+.sidebarleft-wrapper .tab-buttons a:hover {
+    background: #e0e7ff;
+    border-color: #94a3b8;
+    color: #1e40af;
+}
+
+.sidebarleft-wrapper .tab-buttons a.active {
+    background: linear-gradient(90deg,
+            #0d47a1,
+            #1976d2,
+            #42a5f5);
+    color: white;
+    border-color: #1976d2;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.sidebarleft-wrapper .title-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

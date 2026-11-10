@@ -1,0 +1,93 @@
+/**
+ * @file
+ */
+
+.blazy__intense {
+  position: relative;
+  display: block;
+  cursor: crosshair;
+}
+
+.blazy__intense.intense--loading {
+  cursor: wait;
+}
+
+/* @todo rename classes at 3.x due to placement change at 2.4. */
+.intensed__arrow {
+  position: fixed;
+  z-index: 9999999;
+  top: 50%;
+  right: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.is-intensed .intensed__arrow {
+  display: block;
+}
+
+.intensed__arrow button {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 42px;
+  height: 64px;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: all 0.4s;
+  text-indent: -9999px;
+  pointer-events: auto;
+  border: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 0;
+  line-height: 42px;
+}
+
+.intensed__arrow .is-hidden {
+  display: none;
+}
+
+.intensed__arrow button:hover,
+.intensed__arrow button:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.intensed__arrow button::before {
+  position: absolute;
+  top: 50%;
+  display: block;
+  transform: translateY(-50%);
+  text-indent: 0;
+  color: #ddd;
+  font-size: 36px;
+  font-size: 2rem;
+  line-height: 1px;
+}
+
+.intensed__arrow button:hover::before,
+.intensed__arrow button:active::before {
+  color: #fff;
+}
+
+.intensed__prev {
+  left: 0;
+}
+
+.intensed__next {
+  right: 0;
+}
+
+.intensed__prev::before {
+  left: 5px;
+  content: "\276e";
+}
+
+.intensed__next::before {
+  right: 5px;
+  content: "\276f";
+}

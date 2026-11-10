@@ -1,0 +1,457 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Vote Result \"@result_function\" for @plural_label"
+msgstr "@plural_label için Oylama Sonucu \"@result_function\""
+
+msgid "This includes vote result \"@result_function\" for the @plural_label"
+msgstr "Bu, @plural_label için oylama sonucunu \"@result_function\" içerir"
+
+msgid "Vote Result \"@result_function\" for @plural_label: @vote_type_label"
+msgstr "@plural_label için Oylama Sonucu \"@result_function\": @vote_type_label"
+
+msgid "This includes vote result \"@result_function\" for the @plural_label voted with @vote_type"
+msgstr "Bu, @vote_type ile oylanan @plural_label için oylama sonucunu \"@result_function\" içerir"
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "VotingAPI helps developers who want to use a standardized API and schema for storing, retrieving and tabulating votes for Drupal content."
+msgstr "VotingAPI, Drupal içeriği için oyları saklama, alma ve sınıflandırma için standart bir API ve şema kullanmak isteyen geliştiricilere yardımcı olur."
+
+msgid "Please view the %url page for more details."
+msgstr "Lütfen ayrıntılar için %url sayfasını görüntüleyin."
+
+msgid "Voting API"
+msgstr "Oylama API'si"
+
+msgid "Uses"
+msgstr "Kullanım alanları"
+
+msgid "General"
+msgstr "Genel"
+
+msgid "VotingAPI uses a flexible, easy-to-use framework for rating, voting, moderation, and consensus-gathering modules in Drupal. Module developers use it to focus on their ideas (say, providing a \"rate this thread\" widget at the bottom of each forum post) without worrying about the grunt work of storing votes, preventing ballot-stuffing, calculating the results, and so on."
+msgstr "VotingAPI Drupal'da derecelendirme, oylama, denetim ve fikir birliği toplama modülleri için esnek, kullanımı kolay bir çerçeve kullanır. Modül geliştiricileri, oyları depolama, oy pusulalarını biriktirme, sonuçları hesaplama gibi zor görevlerin endişesini duymadan fikirlerine odaklanmak (örneğin her forum gönderisinin altında \"bu diziyi değerlendir\" pencere bileşeni sağlama gibi) için bunu kullanır."
+
+msgid "Basic Concepts and Features"
+msgstr "Temel Kavramlar ve Özellikler"
+
+msgid "VotingAPI does NOT directly expose any voting mechanisms to end users. It is a framework designed to make life easier for other developers, and to standardize voting data for consumption by other modules (like Views)."
+msgstr "VotingAPI son kullanıcılara doğrudan bir oylama mekanizması SUNMAZ. Diğer geliştiriciler için hayatı kolaylaştırmak, diğer modüllerin (Görünümler gibi) kullanımı için oylama verilerini standartlaştırmak için tasarlanmış bir çerçevedir."
+
+msgid "Two kinds of records are stored: individual votes by each user on each piece of content, and cached \"result\" records. The cached records aggregate calculated values like the average vote for a piece of content, how many people voted on it, etc. Each time a user votes, the cached result records are automatically recalculated. This means that no \"on-the-fly\" calculations have to be done when displaying content ratings."
+msgstr "İki tip kayıt depolanır: Her içerik bölümünde her kullanıcının verdiği tek tek oylar ve önbelleğe alınan \"sonuç\" kayıtları. Önbelleğe alınan kayıtlar her içerik parçası için ortalama oy, buna kaç kişinin oy verdiği gibi hesaplanan değerleri toplar. Bir kullanıcı her oy kullandığında önbelleğe alınan sonuç kayıtları otomatik olarak yeniden hesaplanır. Bu da içerik puanları gösterilirken \"anında\" hesaplamaların yapılması gerekmediği anlamına gelir."
+
+msgid "Provides a voting API that other modules can make use of."
+msgstr "Diğer modüllerin kullanabileceği bir oylama API'si sağlar."
+
+msgid "Voting"
+msgstr "Oylama"
+
+msgid "Add vote type"
+msgstr "Oy tipi ekle"
+
+msgid "Voting API Settings"
+msgstr "Oylama API'si Ayarları"
+
+msgid "Vote Types"
+msgstr "Oy Tipleri"
+
+msgid "Configure Voting API."
+msgstr "Oylama API'sini yapılandırın."
+
+msgid "Manage Vote Types."
+msgstr "Oy Tiplerini yönetin."
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Edit"
+msgstr "Düzenle"
+
+msgid "List"
+msgstr "Liste"
+
+msgid "Administer Voting API"
+msgstr "Oylama API'sini Yönet"
+
+msgid "Allow access to configure Voting API."
+msgstr "Oylama API'sini yapılandırmak için erişime izin verin."
+
+msgid "Administer Vote Types"
+msgstr "Oy Tiplerini Yönet"
+
+msgid "Allow access to create/edit vote types."
+msgstr "Oy tiplerini oluşturma/düzenleme erişimine izin verin."
+
+msgid "Delete Votes"
+msgstr "Oyları Sil"
+
+msgid "Allow access to delete any vote."
+msgstr "Bir oyu silmek için erişim sağlayın."
+
+msgid "Voting API settings"
+msgstr "Oylama API'si ayarları"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "VotingApi settings"
+msgstr "VotingApi ayarları"
+
+msgid "Anonymous vote rollover"
+msgstr "Anonim oylama baştan başlat"
+
+msgid "Registered user vote rollover"
+msgstr "Kayıtlı kullanıcı oylamasını baştan başlat"
+
+msgid "Vote tallying"
+msgstr "Oy hesabı"
+
+msgid "Delete everywhere"
+msgstr "Her yerde sil"
+
+msgid "Vote Type"
+msgstr "Oy Tipi"
+
+msgid "Machine-readable name"
+msgstr "Makine tarafından okunabilir ad"
+
+msgid "Name"
+msgstr "Ad"
+
+msgid "Type of vote value (percentage, points, etc.)"
+msgstr "Oy değerinin tipi (yüzde, puan, vb.)"
+
+msgid "Description"
+msgstr "Açıklama"
+
+msgid "Voting API widget field settings."
+msgstr "Oylama API'si pencere aracı alanı ayarları."
+
+msgid "Vote plugin"
+msgstr "Oy eklentisi"
+
+msgid "Vote type"
+msgstr "Oy tipi"
+
+msgid "Status"
+msgstr "Durum"
+
+msgid "Result function"
+msgstr "Sonuç işlevi"
+
+msgid "Widget format"
+msgstr "Pencere aracı biçimi"
+
+msgid "Default value"
+msgstr "Varsayılan değer"
+
+msgid "VotingAPI tokens"
+msgstr "VotingAPI belirteçleri"
+
+msgid "Dynamic Tokens for VotingAPI."
+msgstr "VotingAPI için Dinamik Belirteçler."
+
+msgid "Vote count"
+msgstr "Oy sayısı"
+
+msgid "Number of votes."
+msgstr "Oy sayısı."
+
+msgid "Average Result"
+msgstr "Ortalama Sonuç"
+
+msgid "Average result of votes."
+msgstr "Oyların ortalama sonucu."
+
+msgid "Best Vote"
+msgstr "En İyi Oy"
+
+msgid "Best Vote cast."
+msgstr "Verilen En İyi Oy."
+
+msgid "Worst Vote"
+msgstr "En Kötü Oy"
+
+msgid "Worst Vote cast."
+msgstr "Verilen En Kötü Oy."
+
+msgid "This module enables tokens for all entity types that has <kbd>voting_api_field</kbd>."
+msgstr "Bu modül, <kbd>voting_api_field</kbd> içeren tüm varlık tipleri için belirteçler sağlar."
+
+msgid "Usage"
+msgstr "Kullanım"
+
+msgid "Tokens are dynamic and you have to pass <emph>vote_type</emph> as the last parameter. Module defines four tokens:"
+msgstr "Belirteçler dinamiktir ve son parametre olarak <emph>vote_type</emph> öğesini geçmeniz gerekir. Modül dört belirteç tanımlar:"
+
+msgid "<ul><li>Vote count :: <code>[votingapi_ENTITY_TYPE_token:vote_count:VOTE_TYPE]</code></li>"
+msgstr "<ul><li>Oy sayısı :: <code>[votingapi_ENTITY_TYPE_token:vote_count:VOTE_TYPE]</code></li>"
+
+msgid "<li>Vote average :: <code>[votingapi_ENTITY_TYPE_token:vote_average:VOTE_TYPE]</code></li>"
+msgstr "<li>Oy ortalaması :: <code>[votingapi_ENTITY_TYPE_token:vote_average:VOTE_TYPE]</code></li>"
+
+msgid "<li>Best vote :: <code>[votingapi_ENTITY_TYPE_token:best_vote:VOTE_TYPE]</code></li>"
+msgstr "<li>En iyi oy :: <code>[votingapi_ENTITY_TYPE_token:best_vote:VOTE_TYPE]</code></li>"
+
+msgid "<li>Worst vote :: <code>[votingapi_ENTITY_TYPE_token:worst_vote:VOTE_TYPE]</code></li>"
+msgstr "<li>En kötü oy :: <code>[votingapi_ENTITY_TYPE_token:worst_vote:VOTE_TYPE]</code></li>"
+
+msgid "Voting API Tokens"
+msgstr "Oylama API Belirteçleri"
+
+msgid "Token support for Voting API"
+msgstr "Oylama API'si için simge desteği"
+
+msgid "Edit %label vote type"
+msgstr "%label oy tipini düzenle"
+
+msgid "The human-readable name of this vote type. This text will be displayed as part of the list on the <em>Add vote type</em> page. This name must be unique."
+msgstr "Bu oy tipinin insan tarafından okunabilir adı. Bu metin, <em>Oy tipi ekle</em> sayfasında listesinin bir bölümü olarak görüntülenir. Bu ad benzersiz olmalıdır."
+
+msgid "A unique machine-readable name for this vote type. It must only contain lowercase letters, numbers, and underscores."
+msgstr "Bu oy tipi için makine tarafından okunabilir benzersiz bir ad. Yalnızca küçük harfler, rakamlar ve alt çizgiler içerebilir."
+
+msgid "Value type"
+msgstr "Değer tipi"
+
+msgid "The type of value for this vote (percentage, points, etc.)"
+msgstr "Bu oy için değer tipi (yüzde, puan, vb.)"
+
+msgid "Describe this vote type. The text will be displayed on administrative pages."
+msgstr "Bu oy tipini açıklayın. Metin, yönetim sayfalarında görüntülenir."
+
+msgid "Save vote type"
+msgstr "Oy tipini kaydet"
+
+msgid "Delete vote type"
+msgstr "Oy tipini sil"
+
+msgid "The vote type %name has been updated."
+msgstr "Oy tipi %name güncellendi."
+
+msgid "The vote type %name has been added."
+msgstr "Oy tipi %name eklendi."
+
+msgid "View"
+msgstr "Görünüm"
+
+msgid "Added vote type %name."
+msgstr "%name oy tipi eklendi."
+
+msgid "Id"
+msgstr "Tanıtıcı"
+
+msgid "Label"
+msgstr "Etiket"
+
+msgid "No vote types available. <a href=\"@link\">Add vote type</a>."
+msgstr "Kullanılabilir oy tipi yok. <a href=\"@link\">Oy tipi ekle</a>."
+
+msgid "Generated @vtype votes for @etype entities."
+msgstr "@etype varlıkları @vtype oyları oluşturuldu."
+
+msgid "Rebuilt voting results for @type votes."
+msgstr "@type oyları için oylama sonuçları yeniden oluşturuldu."
+
+msgid "Rebuilt voting results for @type id: @entity_id."
+msgstr "@type tanıtıcısı için oy sonuçları yeniden oluşturuldu: @entity_id."
+
+msgid "Delete @type voting data?"
+msgstr "@type oylama verileri silinsin mi?"
+
+msgid "Flushed vote data for @type entities."
+msgstr "@type varlıkları için oy verilerini boşalttı."
+
+msgid "ID"
+msgstr "Tanıtıcı"
+
+msgid "The vote ID."
+msgstr "Oy tanıtıcısı."
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "The vote UUID."
+msgstr "Oy UUID'si."
+
+msgid "Type"
+msgstr "Tip"
+
+msgid "The vote type."
+msgstr "Oy tipi."
+
+msgid "Entity Type"
+msgstr "Varlık Tipi"
+
+msgid "The type from the voted entity."
+msgstr "Oylanan varlıktan tip."
+
+msgid "Voted entity"
+msgstr "Oylanan varlık"
+
+msgid "The ID from the voted entity"
+msgstr "Oylanan varlığın tanıtıcısı"
+
+msgid "Value"
+msgstr "Değer"
+
+msgid "The numeric value of the vote."
+msgstr "Oyun sayısal değeri."
+
+msgid "Value Type"
+msgstr "Değer Tipi"
+
+msgid "Authored by"
+msgstr "Yazan"
+
+msgid "The user who submitted the vote."
+msgstr "Oyu gönderen kullanıcı."
+
+msgid "Created"
+msgstr "Oluşturulma Zamanı"
+
+msgid "The time that the entity was created."
+msgstr "Varlığın oluşturulduğu saat."
+
+msgid "Vote Source"
+msgstr "Oy Kaynağı"
+
+msgid "The IP address hash from the user who submitted the vote."
+msgstr "Oyu gönderen kullanıcının IP adresi karması."
+
+msgid "Vote"
+msgstr "Oy"
+
+msgid "Votes"
+msgstr "Oylar"
+
+msgid "vote"
+msgstr "oy"
+
+msgid "votes"
+msgstr "oylar"
+
+msgid "The vote result ID."
+msgstr "Oy sonucu tanıtıcısı."
+
+msgid "Function"
+msgstr "İşlev"
+
+msgid "Function to apply to the numbers."
+msgstr "Sayılara uygulanacak işlev."
+
+msgid "Vote result"
+msgstr "Oy sonucu"
+
+msgid "Vote results"
+msgstr "Oy sonuçları"
+
+msgid "vote result"
+msgstr "oy sonucu"
+
+msgid "vote results"
+msgstr "oy sonuçları"
+
+msgid "Vote Result"
+msgstr "Oy Sonucu"
+
+msgid "The Vote Result ID."
+msgstr "Oylama Sonucu Tanıtıcısı."
+
+msgid "Vote types"
+msgstr "Oy tipleri"
+
+msgid "vote type"
+msgstr "oy tipi"
+
+msgid "vote types"
+msgstr "oy tipleri"
+
+msgid "The Vote ID."
+msgstr "Oy tanıtıcısı."
+
+msgid "The amount of time that must pass before two anonymous votes from the same computer are considered unique. Setting this to 'never' will eliminate most double-voting, but will make it impossible for multiple anonymous on the same computer (like internet cafe customers) from casting votes."
+msgstr "Aynı bilgisayardan iki anonim oyun benzersiz olarak değerlendirilmesinden önce geçmesi gereken süre. Bunun 'hiçbir zaman' olarak ayarlanması birçok çift oylamayı ortadan kaldırır, ancak aynı bilgisayarda birden çok anonim kullanıcının (internet kafe müşterileri gibi) oy vermesini önler."
+
+msgid "The amount of time that must pass before two registered user votes from the same user ID are considered unique. Setting this to 'never' will eliminate most double-voting for registered users."
+msgstr "Aynı kullanıcı kimliğinden iki kayıtlı kullanıcı oyunun benzersiz olarak değerlendirilmesi için geçecek süre. Bunun 'hiçbir zaman' olarak ayarlanması kayıtlı kullanıcılar için çoğu çift oylamayı ortadan kaldırır."
+
+msgid "Calculation schedule"
+msgstr "Hesaplama takvimi"
+
+msgid "On high-traffic sites, administrators can use this setting to postpone the calculation of vote results."
+msgstr "Yüksek trafikli sitelerde yöneticiler, oy sonuçlarının hesaplamasını ertelemek için bu ayarı kullanabilirler."
+
+msgid "Tally results whenever a vote is cast"
+msgstr "Sonuçları her oy verilişinde hesapla"
+
+msgid "Tally results at cron-time"
+msgstr "Sonuçları dönemsel görev saatinde hesapla"
+
+msgid "Do not tally results automatically: I am using a module that manages its own vote results."
+msgstr "Sonuçları otomatik olarak hesaplama: Kendi oy sonuçlarını yöneten bir modül kullanıyorum."
+
+msgid "Allow deleting votes to someone else's entity when owner user of this votes is deleting."
+msgstr "Bu oyların sahip kullanıcısı sildiğinde başka birisinin varlığına yönelik oyların silinmesine izin verin."
+
+msgid "Are you sure you want to delete the vote?"
+msgstr "Oyu silmek istediğinizden emin misiniz?"
+
+msgid "The vote by %user on @entity-type %label has been deleted."
+msgstr "@entity-type %label üzerinde %user oyu silindi."
+
+msgid "You are about to delete a vote by %user on @entity-type %label. This action cannot be undone."
+msgstr "@entity-type %label üzerinde %user oyunu silmek üzeresiniz. Bu işlem geri alınamaz."
+
+msgid "%type is used by 1 piece of content on your site. You can not remove this vote type until you have removed that vote."
+msgid_plural "%type is used by @count pieces of content on your site. You may not remove %type until you have removed all of the %type votes."
+msgstr[0] "%type sitenizde 1 içerik parçası tarafından kullanılıyor. İlgili oyu kaldırıncaya kadar bu oy tipini kaldıramazsınız."
+msgstr[1] "%type, sitenizde @count içerik parçası tarafından kullanılıyor. %type oylarının tümünü kaldırıncaya kadar %type kaldırılamayabilir."
+
+msgid "Average"
+msgstr "Ortalama"
+
+msgid "The average vote value."
+msgstr "Ortalama oy değeri."
+
+msgid "Count"
+msgstr "Sayaç"
+
+msgid "The number of votes cast."
+msgstr "Verilen oy sayısı."
+
+msgid "Sum"
+msgstr "Toplam"
+
+msgid "The total of all vote values."
+msgstr "Tüm oy değerlerinin toplamı."
+
+msgid "Vote ID"
+msgstr "Oylama Tanıtıcısı"
+
+msgid "Entity ID"
+msgstr "Varlık Tanıtıcısı"
+
+msgid "Tag"
+msgstr "Etiket"
+
+msgid "User ID"
+msgstr "Kullanıcı kimliği"
+
+msgid "Timestamp"
+msgstr "Zaman damgası"
+

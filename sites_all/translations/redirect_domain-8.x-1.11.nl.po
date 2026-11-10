@@ -1,0 +1,101 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "About"
+msgstr "Over"
+
+msgid "The Redirect domain module allows users to redirect between domains."
+msgstr "Met de module Redirect domain kunnen gebruikers omgeleid worden tussen domeinen."
+
+msgid "Uses"
+msgstr "Toepassingen"
+
+msgid "Manage domain redirects"
+msgstr "Domeinomleidingen beheren"
+
+msgid "The domain redirect is accessed through <a href=\":domainlist\">Domain Redirects</a>. The user can add the domain redirects through the domain redirect table which consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected. The module also supports the usage of a wildcard redirecting, thus many requests can be handled with one instance of domain redirect."
+msgstr "De omleiding van het domein is toegankelijk via <a href=\":domainlist\">Domain Redirects</a>. De gebruiker kan het domein omleiden via de domeinomleidingstabel, die bestaat uit het domein waar vanuit hij moet worden omgeleid, het subpad en de volledige URL waarnaar hij moet worden doorgestuurd. De module ondersteunt ook het gebruik van een jokerteken, zodat veel aanvragen kunnen worden afgehandeld door één instance van het domein om te leiden."
+
+msgid "The domain redirect table consists of the domain from which it needs to be redirected, the sub path and the complete url destination to which it needs to be redirected."
+msgstr "De domeinomleidingstabel bestaat uit het domein waar vanuit hij moet worden omgeleid, het subpad en de volledige URL waarnaar hij moet worden omgeleid."
+
+msgid "Example Configuration"
+msgstr "Voorbeeldconfiguratie"
+
+msgid "Example Redirects"
+msgstr "Voorbeelden van omleidingen"
+
+msgid "Request: example.com/redirect => Response: redirected.com/example-path"
+msgstr "Aanvraag: example.com/redirect = > Respons: redirected.com/example-path"
+
+msgid "Request: foo.com/any-path => Response: bar.com"
+msgstr "Aanvraag: foo.com/any-path = > Respons: bar.com"
+
+msgid "Precedence"
+msgstr "Voorrang"
+
+msgid "Top-down precedence is used. This means the first matching redirect that is found will be taken. For example, assume these redirect rules:"
+msgstr "Top-down voorrang wordt gebruikt. Dit betekent dat de eerste overeenkomende omleiding die wordt gevonden, wordt uitgevoerd. Neem bijvoorbeeld deze omleidingsregels:"
+
+msgid "foo.com/some/path => somedomain.com/path"
+msgstr "foo.com/some/path => somedomain.com/path"
+
+msgid "foo.com/* => wildcardredirect.com"
+msgstr "foo.com/* => wildcardredirect.com"
+
+msgid "foo.com/other/path => otherdomain.com/path"
+msgstr "foo.com/other/path => otherdomain.com/path"
+
+msgid "The following redirects would actually occur:"
+msgstr "De volgende omleidingen doen zich dan voor:"
+
+msgid "foo.com/other/path => wildcardredirect.com"
+msgstr "foo.com/other/path => wildcardredirect.com"
+
+msgid "Redirect Domain"
+msgstr "Omleidingdomein"
+
+msgid "Allows users to redirect between domains."
+msgstr "Met deze functie kunnen gebruikers omgeleid worden tussen domeinen."
+
+msgid "Domain redirects"
+msgstr "Domeinomleidingen"
+
+msgid "Configure domain redirects."
+msgstr "Domein omleidingen configureren."
+
+msgid "Redirect domains"
+msgstr "Domeinen omleiden"
+
+msgid "Sub path"
+msgstr "Subpad"
+
+msgid "Destination"
+msgstr "Bestemming"
+
+msgid "From domain"
+msgstr "Van domein"
+
+msgid "Add another"
+msgstr "Ander item toevoegen"
+
+msgid "Save"
+msgstr "Opslaan"
+
+msgid "No protocol should be included in the redirect domain."
+msgstr "Er mag geen protocol worden opgenomen in het omleidingsdomein."
+
+msgid "The domain redirects have been saved."
+msgstr "De domeinomleidingen zijn opgeslagen."
+

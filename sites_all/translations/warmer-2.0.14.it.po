@@ -1,0 +1,176 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Warmer"
+msgstr "Warmer"
+
+msgid "Module that provides infrastructure for common cache warming/pre-fetching techniques."
+msgstr "Modulo che fornisce l'infrastruttura per le tecniche comuni di cache warming/pre-richiamo."
+
+msgid "Cache warming"
+msgstr "Cache warming"
+
+msgid "Configure cache warming behaviors to improve application performance."
+msgstr "Configurare il funzionamento del cache warming per migliorare le prestazioni dell'applicazione."
+
+msgid "Warm caches"
+msgstr "Cache warm"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Configure cache warmers"
+msgstr "Configura warmer della cache"
+
+msgid "Warmer Settings"
+msgstr "Impostazioni warmer"
+
+msgid "Warmers"
+msgstr "Warmer"
+
+msgid "CDN Warmer"
+msgstr "Warmer CDN"
+
+msgid "Executes HTTP requests to warm the edge caches. It is useful without a CDN as well, as it will also warm Varnish and Page Cache."
+msgstr "Esegue le richieste HTTP per eseguire il warming delle cache perimetrali. È utile anche senza un CDN, perché esegue il warming anche di Varnish e Cache della pagina."
+
+msgid "URLs"
+msgstr "URL"
+
+msgid "Enter the list of URLs. One on each line. Examples: https://example.org/foo/bar, /foo/bar."
+msgstr "Immettere l'elenco degli URL. Uno su ciascuna riga. Esempi: https://example.org/foo/bar, /foo/bar."
+
+msgid "Headers"
+msgstr "Intestazioni"
+
+msgid "Specific headers to use when making HTTP requests. Format: <code>Header-Name: value1; value2</code>"
+msgstr "Intestazioni specifiche da utilizzare quando si effettuano richieste HTTP. Formato: <code>Nome-Intestazione: valore1; valore2</code>"
+
+msgid "Enable SSL verification"
+msgstr "Abilita verifica SSL"
+
+msgid "Enable SSL verification. Recommended to keep it checked for security reasons."
+msgstr "Abilita la verifica SSL. Si consiglia di selezionare questa opzione per motivi di sicurezza."
+
+msgid "Maximum number of concurrent Requests."
+msgstr "Numero massimo di richieste simultanee"
+
+msgid "The maximum number of concurrent requests."
+msgstr "Il numero massimo di richieste simultanee"
+
+msgid "CDN"
+msgstr "CDN"
+
+msgid "minPriority should be a float between 0 and 1."
+msgstr "minPriority deve essere un float compreso tra 0 e 1."
+
+msgid "Sitemaps"
+msgstr "Sitemap"
+
+msgid "Enter the list of sitemap URLs. One on each line. Examples: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+msgstr "Immettere l'elenco degli URL della mappa del sito. Uno su ciascuna riga. Esempi: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+
+msgid "Minimum Priority"
+msgstr "Priorità minima"
+
+msgid "URLs with a lower priority than the configured will not be warmed. A float value between 0 and 1."
+msgstr "Gli URL con una priorità più bassa del valore configurato non saranno sottoposti a warming. Un valore float compreso tra 0 e 1."
+
+msgid "This defines the maximum number of concurrent requests."
+msgstr "Ciò definisce il numero massimo di richieste simultanee"
+
+msgid "There was an error parsing the Sitemap in %location. Please check the watchdog logs for more information."
+msgstr "Si è verificato un errore durante l'analisi della Sitemap in %location. Controllare i log watchdog per ulteriori informazioni."
+
+msgid "CDN via Sitemap"
+msgstr "CDN tramite Sitemap"
+
+msgid "Collects the URLs to warm from the sitemap. Then uses the CDN warmer for those."
+msgstr "Raccoglie gli URL da sottoporre a warming dalla mappa del sito. Quindi utilizza il warmer CDN."
+
+msgid "All headers must have a colon. Follow the format: <code>the-name: the-value</code>"
+msgstr "Tutte le intestazioni devono avere i due punti. Attenersi al formato: <code>il-nome: il-valore</code>"
+
+msgid "Entity Warmer"
+msgstr "Warmer entità"
+
+msgid "Warms the entity cache for the configured entity types."
+msgstr "Esegue il warming della cache dell'entità per i tipi di entità configurati."
+
+msgid "Entity Types"
+msgstr "Tipi di entità"
+
+msgid "Enable the entity types to warm asynchronously."
+msgstr "Abilitare i tipi di entità da sottoporre a warming in modo asincrono."
+
+msgid "Entity"
+msgstr "Entità"
+
+msgid "Loads entities from the selected entity types & bundles to warm the entity cache."
+msgstr "Carica le entità dai tipi di entità e bundle selezionati per eseguire il warming della cache dell'entità."
+
+msgid "@total items enqueued for cache warming."
+msgstr "@total elementi accodati per il cache warming."
+
+msgid "If you need your items into cache right away you can run \"drush queue-run warmer\"."
+msgstr "Se si richiedono elementi nella cache immediatamente, è possibile eseguire \"drush queue-run warmer\"."
+
+msgid "Warming caches in @count batches from the \"warmer\" queue."
+msgstr "Warming delle cache in @count batch dalla coda \"warmer\"."
+
+msgid "Warmer plugin(s) not found: !names."
+msgstr "Plugin warmer non trovato(i): !names."
+
+msgid "This page allows you to enqueue cache warming operations manually. This will put the cache warming operations in a queue. If you want to actually execute them right away you can force processing the queue. A good way to do that is by installing the <a href=\":url\">Queue UI</a> module or using Drush. This module will provide a UI to process an entire queue."
+msgstr "Questa pagina consente di accodare manualmente le operazioni di cache warming. Le operazioni di cache warming verranno inserite in una coda. Se si desidera eseguirle immediatamente, è possibile forzare l'elaborazione della coda. Un ottimo metodo per eseguire questa operazione è l'installazione del modulo <a href=\":url\">UI coda</a> o l'utilizzo di Drush. Questo modulo fornisce una UI per elaborare un'intera coda."
+
+msgid "Description"
+msgstr "Descrizione"
+
+msgid "No warmers available. Enable the Entity Warmer submodule, or try installing extending modules like JSON:API Boost."
+msgstr "Nessun warmer disponibile. Abilitare il modulo secondario Warmer entità o provare ad installare moduli di estensione come JSON:API Boost."
+
+msgid "Warm Caches"
+msgstr "Cache warm"
+
+msgid "List of queues"
+msgstr "Elenco delle code"
+
+msgid "Configure the cache warming behaviors. Each cache warmer is a plugin that may contain specific settings. They are all configured here."
+msgstr "Configurare il funzionamento del cache warming. Ciascun warmer della cache è un plugin che può contenere impostazioni specifiche. Sono tutti configurati in questo punto."
+
+msgid "Settings saved for plugin(s): %names"
+msgstr "Impostazioni salvate per i plugin: %names"
+
+msgid "Frequency should be a positive number."
+msgstr "La frequenza deve essere un numero positivo."
+
+msgid "Batch size should be a number greater than 1."
+msgstr "La dimensione batch deve essere un numero maggiore di 1."
+
+msgid "Frequency"
+msgstr "Frequenza"
+
+msgid "Only re-enqueue warming operations after at least this many seconds have passed."
+msgstr "Riaccodare le operazioni di warming solo dopo che è trascorso almeno questo numero di secondi."
+
+msgid "Batch Size"
+msgstr "Dimensione del batch"
+
+msgid "Number of items to enqueue and process in a single go."
+msgstr "Numero di elementi da accodare ed elaborare contemporaneamente."
+
+msgid "Cache warmer"
+msgstr "Warmer della cache"
+

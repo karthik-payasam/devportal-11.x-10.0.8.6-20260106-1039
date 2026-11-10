@@ -1,0 +1,102 @@
+{#
+/**
+ * @file
+ * Default card theme implementation for products.
+ *
+ * @ingroup themeable
+ */
+#}
+{%- set classes = [
+  'node',
+  'node--id-' ~ node.id,
+  ('node--type-' ~ node.bundle)|clean_class,
+  view_mode ? ('node--view-mode-' ~ view_mode)|clean_class,
+  'bx--card',
+  ('productNodeID-' ~ node.id)|clean_class,
+  ('productTitle-' ~ node.title[0].value)|clean_class,
+  ('productVersion-' ~ content.apic_version['#items'][0].value)|clean_class,
+  ('productState-' ~ content.product_state['#items'][0].value)|clean_class
+] -%}
+
+
+<article id="node-{{ node.id }}" aria-label="{{ node.title[0].value }}">
+{% if content.apic_pathalias['#items'][0].value is defined and content.apic_pathalias['#items'][0].value is not empty %}
+    {% set prodNode = content.apic_pathalias['#items'][0].value %}
+  {% else %}
+    {% set prodNode = node.id %}
+  {% endif %}
+<div class="feature">
+   <div class="views-field views-field-nothing-1">
+      <span class="field-content">
+         <div class="productname_icon_wrapper">
+           {% if content.apic_image is defined and content.apic_image|render|trim is not empty %}
+              {{ content.apic_image }}
+          {% elseif showPlaceholders %}
+              <img class="apicCardIcon" src="{{- placeholderUrl -}}" alt=""/>
+          {% endif %}
+            <a href="{{- path('product.view', {'prodNode': prodNode}) -}}" rel="bookmark">
+          <span id="node-{{ node.id }}-title" class="apicProductName apicTruncate" >{{- label -}}</span>
+          {% if showVersions %}
+            <div class="apicProductCardVersion">{{- content.apic_version -}}</div>
+          {% endif %}
+        </a>
+         </div>
+      </span>
+   </div>
+   <div class="views-field views-field-field-five-star">
+        <div class="apicProductRating" role="form"  aria-label="apic-product-rating-{{ node.id }}">
+        {{ content.apic_rating }}
+      </div>
+   </div>
+   <div class="views-field views-field-field-short-description">
+      <div class="field-content">
+          {% if content.apic_summary['#items'][0].value is defined and content.apic_summary['#items'][0].value is not empty %}
+      <div class="apicProductDesc summary"
+           title="{{- content.apic_summary['#items'][0].value|striptags -}}">{{ content.apic_summary }}</div>
+    {% else %}
+      <div class="apicProductDesc"
+           title="{{- content.apic_description['#items'][0].value|striptags -}}">{{ content.apic_description }}</div>
+    {% endif %}
+    {% if custom_fields is defined and custom_fields is not empty %}
+      <div class="customFields">
+        {% for custom_field in custom_fields %}
+          <div class="{{ custom_field|clean_class }}">
+            {{ content[custom_field] }}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+      </div>
+   </div>
+   <div class="views-field views-field-field-api-count">
+     <div class="apicApiCount">
+      {% for api in apiList %}
+        {% if loop.index < 4 %}
+          {% if api.node.apic_pathalias[0].value is defined and api.node.apic_pathalias[0].value is not empty %}
+            {% set apiNode = api.node.apic_pathalias[0].value %}
+          {% else %}
+            {% set apiNode = api.node.id %}
+          {% endif %}
+          <div class="apicProductCardApi apicTruncate" data-toggle="tooltip" data-placement="bottom"
+               title="{{- api.node.title[0].value -}}">
+            <a href="{{- path('product.api', {'prodNode': prodNode, 'apiNode': apiNode}) -}}" rel="bookmark">
+              {{ api.node.title[0].value }}
+              {% if showVersions %}
+                <span class="apicProductApiVersion">{{ api.node.apic_version[0].value }}</span>
+              {% endif %}
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% if apiCount > 4 %}
+        <div class="apicProductSeeAll"><a href="{{- path('product.view', {'prodNode': prodNode}) -}}"
+                                          rel="bookmark">{{ 'View all'|t }}</a></div>
+      {% endif %}
+     </div>
+   </div>
+   <div class="views-field views-field-nothing-2"><span class="field-content"> 
+      <a class="view-more" href="{{- path('product.view', {'prodNode': prodNode}) -}}"> View More</a>
+      </span>
+   </div>
+</div>
+</article> 

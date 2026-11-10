@@ -1,0 +1,78 @@
+# Field storage.
+field.storage_settings.voting_api_field:
+  type: mapping
+  label: 'Voting API field storage settings'
+  mapping:
+    vote_plugin:
+      type: machine_name
+      label: 'Vote plugin'
+      constraints:
+        PluginExists:
+          manager: plugin.manager.voting_api_widget.processor
+          interface: \Drupal\votingapi_widgets\Plugin\VotingApiWidgetInterface
+    vote_type:
+      type: machine_name
+      label: 'Vote type'
+    status:
+      type: integer
+      label: 'Status'
+      constraints:
+        AllowedValues: [0, 1, 2]
+
+# Field instance.
+field.field_settings.voting_api_field:
+  type: mapping
+  label: 'voting_api_field instance settings.'
+  mapping:
+    anonymous_window:
+      type: integer
+      label: 'Anonymous vote rollover'
+      constraints:
+        AllowedValues: [-2, -1, 0, 300, 900, 1800, 3600, 10800, 21600, 32400, 43200, 86400, 172800, 345600, 604800]
+    result_function:
+      type: string
+      label: 'Result function'
+    user_window:
+      type: integer
+      label: 'Registered user vote rollover'
+      constraints:
+        AllowedValues: [-2, -1, 0, 300, 900, 1800, 3600, 10800, 21600, 32400, 43200, 86400, 172800, 345600, 604800]
+    widget_format:
+      type: string
+      label: 'Widget format'
+
+# Default value.
+field.value.voting_api_field:
+  type: mapping
+  label: 'Default value'
+  mapping:
+    status:
+      type: string
+      label: 'Status'
+
+# Field widget.
+field.widget.settings.voting_api_widget:
+  type: mapping
+  label: 'Voting API field widget settings'
+  mapping:
+    show_initial_vote:
+      type: boolean
+      label: 'Show initial vote'
+
+# Field formatter.
+field.formatter.settings.voting_api_formatter:
+  type: mapping
+  label: 'Voting API field formatter settings'
+  mapping:
+    readonly:
+      type: boolean
+      label: 'Readonly is used to turn off voting'
+    style:
+      type: string
+      label: 'Style selected for the Voting API Widget plugin'
+    show_results:
+      type: boolean
+      label: 'Show results'
+    show_own_vote:
+      type: boolean
+      label: 'Show own cast vote instead of results'

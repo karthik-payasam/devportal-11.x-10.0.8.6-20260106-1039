@@ -1,0 +1,578 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Joined path"
+msgstr "結合路徑"
+
+msgid "The array values each cleaned by Pathauto and then joined with the slash into a string that resembles an URL."
+msgstr "陣列值分別由 Pathauto 清除，隨後結合斜線形成類似 URL 的字串。"
+
+msgid "About"
+msgstr "關於"
+
+msgid "The Pathauto module provides a mechanism to automate the creation of <a href=\"path\">path</a> aliases. This makes URLs more readable and helps search engines index content more effectively.  For more information, see the <a href=\":online\">online documentation for Pathauto</a>."
+msgstr "Pathauto 模組提供一種機制，以自動建立<a href=\"path\">路徑</a>別名。這讓 URL 的可讀性更強，並協助搜尋引擎更有效地編製內容索引。如需相關資訊，請參閱 <a href=\":online\">Pathauto 的線上文件</a>。"
+
+msgid "Uses"
+msgstr "使用"
+
+msgid "Pathauto is accessed from the tabs it adds to the list of <a href=\":aliases\">URL aliases</a>."
+msgstr "Pathauto 可以從其新增至 <a href=\":aliases\">URL 別名</a>清單的欄標中進行存取。"
+
+msgid "Creating Pathauto Patterns"
+msgstr "建立 Pathauto 型樣"
+
+msgid "The <a href=\":pathauto_pattern\">\"Patterns\"</a> page is used to configure automatic path aliasing.  New patterns are created here using the <a href=\":add_form\">Add Pathauto pattern</a> button which presents a form to simplify pattern creation thru the use of <a href=\"token\">available tokens</a>. The patterns page provides a list of all patterns on the site and allows you to edit and reorder them. An alias is generated for the first pattern that applies."
+msgstr "<a href=\":pathauto_pattern\">「型樣」</a>頁面用來配置自動路徑別名化。在這裡您可以使用<a href=\":add_form\">新增 Pathauto 型樣</a>按鈕來建立新的型樣，此按鈕呈現一個表單，可透過使用<a href=\"token\">可用的記號</a>來簡化型樣建立。型樣頁面提供一份網站上所有型樣的清單，並讓您編輯及重新排序型樣。系統會為第一個適用的型樣產生別名。"
+
+msgid "Pathauto Settings"
+msgstr "Pathauto 設定"
+
+msgid "The <a href=\":settings\">\"Settings\"</a> page is used to customize global Pathauto settings for automated pattern creation."
+msgstr "<a href=\":settings\">「設定」</a>頁面可用來自訂自動化型樣建立的廣域 Pathauto 設定。"
+
+msgid "The <strong>maximum alias length</strong> and <strong>maximum component length</strong> values default to 100 and have a limit of @max from Pathauto. You should enter a value that is the length of the \"alias\" column of the path_alias database table minus the length of any strings that might get added to the end of the URL. The recommended and default value is 100."
+msgstr "<strong>別名長度上限</strong>和<strong>元件長度上限</strong>值預設為 100，而且有來自 Pathauto 的上限 @max。您輸入的值應該是 path_alias 資料庫表格的「別名」直欄長度減去可能會新增至 URL 尾端的任何字串長度。建議預設值為 100。"
+
+msgid "Bulk Generation"
+msgstr "大量產生"
+
+msgid "The <a href=\":pathauto_bulk\">\"Bulk Generate\"</a> page allows you to create URL aliases for items that currently have no aliases. This is typically used when installing Pathauto on a site that has existing un-aliased content that needs to be aliased in bulk."
+msgstr "<a href=\":pathauto_bulk\">「大量產生」</a>頁面可讓您為目前沒有別名的項目建立 URL 別名。如果網站所具有的現有未建立別名內容需要大量建立別名，則在該網站上安裝 Pathauto 時通常會用到此選項。"
+
+msgid "Delete Aliases"
+msgstr "刪除別名"
+
+msgid "The <a href=\":pathauto_delete\">\"Delete Aliases\"</a> page allows you to remove URL aliases from items that have previously been assigned aliases using pathauto."
+msgstr "<a href=\":pathauto_delete\">「刪除別名」</a>頁面可讓您從先前使用 Pathauto 指派別名的項目中移除 URL 別名。"
+
+msgid "This page provides a list of all patterns on the site and allows you to edit and reorder them."
+msgstr "此頁面提供一份網站上所有型樣的清單，並讓您編輯及重新排序型樣。"
+
+msgid "You need to select a pattern type, then a pattern and filter, and a label. Additional types can be enabled on the <a href=\":settings\">Settings</a> page."
+msgstr "您需要選取一種型樣類型，然後選取型樣和過濾器，以及一個標籤。其他類型可以在<a href=\":settings\">設定</a>頁面上啟用。"
+
+msgid "Bulk generation can be used to generate URL aliases for items that currently have no aliases. This is typically used when installing Pathauto on a site that has existing un-aliased content that needs to be aliased in bulk."
+msgstr "可以使用大量產生，為目前沒有別名的項目產生 URL 別名。如果網站所具有的現有未建立別名內容需要大量建立別名，則在該網站上安裝 Pathauto 時通常會用到此選項。"
+
+msgid "It can also be used to regenerate URL aliases for items that have an old alias and for which the Pathauto pattern has been changed."
+msgstr "如果項目具有舊別名，或者項目的 Pathauto 型樣已變更，您也可以使用此選項來重新產生 URL 別名。"
+
+msgid "Note that this will only affect items which are configured to have their URL alias automatically set. Items whose URL alias is manually set are not affected."
+msgstr "請注意，這將僅影響已配置成自動設定其 URL 別名的項目。不影響手動設定其 URL 別名的項目。"
+
+msgid "URL alias"
+msgstr "路徑別名 (URL alias)"
+
+msgid "The %element-title is using the following invalid characters: @invalid-characters."
+msgstr "%element-title 正在使用下列無效字元：@invalid-characters。"
+
+msgid "The %element-title doesn't allow the patterns ending with whitespace."
+msgstr "%element-title 不容許型樣結尾為空格。"
+
+msgid "Entity of type @type was not processed. It defines the following patterns: @patterns"
+msgstr "未處理類型為 @type 的實體。它定義下列型樣：@patterns"
+
+msgid "Unrecognized entity bundle @entity:@bundle was not processed. It defines the following patterns: @patterns"
+msgstr "未處理無法辨識的實體組合 @entity:@bundle。它定義下列型樣：@patterns"
+
+msgid "Automatic alias"
+msgstr "自動別名"
+
+msgid "Alias: @alias"
+msgstr "別名：@alias"
+
+msgid "No alias"
+msgstr "沒有路徑別名"
+
+msgid "Pathauto"
+msgstr "Pathauto"
+
+msgid "Provides a mechanism for modules to automatically generate aliases for the content they manage."
+msgstr "此模組提供自動為網站內容產生網址別名的機制。"
+
+msgid "Add Pathauto pattern"
+msgstr "新增 Pathauto 型樣"
+
+msgid "Patterns"
+msgstr "型樣"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Bulk generate"
+msgstr "大量產生"
+
+msgid "Delete aliases"
+msgstr "刪除別名"
+
+msgid "Administer pathauto"
+msgstr "管理 pathauto"
+
+msgid "Allows a user to configure patterns for automated aliases and bulk delete URL-aliases."
+msgstr "允許使用者設定自動別名及大量刪除 URL-別名的模式。"
+
+msgid "Notify of Path Changes"
+msgstr "通知路徑變更"
+
+msgid "Determines whether or not users are notified."
+msgstr "設定用戶是否會被通知。"
+
+msgid "Duplicate Pathauto pattern"
+msgstr "複製 Pathauto 型樣"
+
+msgid "Enabled entity types"
+msgstr "已啟用的實體類型"
+
+msgid "Tokens that are safe to use and do not need to be cleaned."
+msgstr "可以安全使用且不需要清理的記號。"
+
+msgid "Update URL alias"
+msgstr "更新 URL 別名"
+
+msgid "Pathauto pattern config"
+msgstr "Pathauto 型樣配置"
+
+msgid "ID"
+msgstr "ID"
+
+msgid "Label"
+msgstr "標籤"
+
+msgid "Pattern type"
+msgstr "型樣類型"
+
+msgid "Pattern"
+msgstr "樣式"
+
+msgid "Selection criteria"
+msgstr "選項準則"
+
+msgid "Selection condition"
+msgstr "選擇條件"
+
+msgid "Selection logic"
+msgstr "選擇邏輯"
+
+msgid "Weight"
+msgstr "權重"
+
+msgid "Context definitions"
+msgstr "環境定義"
+
+msgid "Relationship"
+msgstr "關聯"
+
+msgid "Double quotation marks"
+msgstr "雙引號"
+
+msgid "Single quotation marks (apostrophe)"
+msgstr "單引號"
+
+msgid "Back tick"
+msgstr "反引號"
+
+msgid "Comma"
+msgstr "逗號"
+
+msgid "Period"
+msgstr "句點"
+
+msgid "Hyphen"
+msgstr "連字號"
+
+msgid "Underscore"
+msgstr "底線"
+
+msgid "Colon"
+msgstr "冒號"
+
+msgid "Semicolon"
+msgstr "分號"
+
+msgid "Vertical bar (pipe)"
+msgstr "垂直線（直立線）"
+
+msgid "Left curly bracket"
+msgstr "左大括弧"
+
+msgid "Left square bracket"
+msgstr "左方括弧"
+
+msgid "Right curly bracket"
+msgstr "右大括弧"
+
+msgid "Right square bracket"
+msgstr "右方括弧"
+
+msgid "Plus sign"
+msgstr "加號"
+
+msgid "Equal sign"
+msgstr "等號"
+
+msgid "Asterisk"
+msgstr "星號"
+
+msgid "Ampersand"
+msgstr "和"
+
+msgid "Percent sign"
+msgstr "百分比符號"
+
+msgid "Caret"
+msgstr "脫字符號"
+
+msgid "Dollar sign"
+msgstr "錢幣符號"
+
+msgid "Number sign (pound sign, hash)"
+msgstr "# 記號（井號、注釋符號）"
+
+msgid "At sign"
+msgstr "@ 符號"
+
+msgid "Exclamation mark"
+msgstr "驚嘆號"
+
+msgid "Tilde"
+msgstr "波狀符號"
+
+msgid "Left parenthesis"
+msgstr "左括弧"
+
+msgid "Right parenthesis"
+msgstr "右括弧"
+
+msgid "Question mark"
+msgstr "問號"
+
+msgid "Less-than sign"
+msgstr "小於符號"
+
+msgid "Greater-than sign"
+msgstr "大於符號"
+
+msgid "Slash"
+msgstr "斜線"
+
+msgid "Backslash"
+msgstr "反斜線"
+
+msgid "Ignoring alias %alias because it is the same as the internal path."
+msgstr "因為與內部路徑相同，請忽略別名 %alias。"
+
+msgid "Created new alias %alias for %source, replacing %old_alias."
+msgstr "為 %source 建立新別名 %alias，並且取代舊別名 %old_alias。"
+
+msgid "Created new alias %alias for %source."
+msgstr "為 %source 建立新別名 %alias"
+
+msgid "The automatically generated alias %original_alias conflicted with an existing alias. Alias changed to %alias."
+msgstr "自動創建的別名 %original_alias 與現有別名衝突。別名已更改為 %alias。"
+
+msgid "Pathauto state"
+msgstr "Pathauto 狀態"
+
+msgid "Whether an automated alias should be created or not."
+msgstr "是否應該建立自動化別名。"
+
+msgid "Conditions"
+msgstr "條件"
+
+msgid "Duplicate"
+msgstr "重製"
+
+msgid "Uncheck this to create a custom alias below. <a href=\"@admin_link\">Configure URL alias patterns.</a>"
+msgstr "取消勾選此選項，以在下面建立自訂別名。<a href=\"@admin_link\">配置 URL 別名型樣</a>。"
+
+msgid "Uncheck this to create a custom alias below."
+msgstr "取消勾選此選項，以在下面建立自訂別名。"
+
+msgid "Generate automatic URL alias"
+msgstr "產生自動 URL 別名"
+
+msgid "Bulk updating URL aliases"
+msgstr "大量更新URL別名中"
+
+msgid "Bulk deleting URL aliases"
+msgstr "大量刪除 URL 別名"
+
+msgid "All of your path aliases have been deleted."
+msgstr "已刪除所有路徑別名。"
+
+msgid "All of your %label path aliases have been deleted."
+msgstr "所有 %label 路徑別名都已刪除。"
+
+msgid "Choose the action to perform."
+msgstr "選擇要執行的動作。"
+
+msgid "Choose the alias type(s). Separate multiple choices with commas, e.g. \"1,2,4\", or choose \"0\" for all types."
+msgstr "選擇別名類型。以逗點區隔多個選項，例如 \"1,2,4\"，或選擇 \"0\" 以表示所有類型。"
+
+msgid "Invalid action argument \"@invalid_action\". Please use one of: @valid_actions"
+msgstr "無效的動作引數 \"@invalid_action\"。請使用下列其中一個引數：@valid_actions"
+
+msgid "Invalid type argument \"@invalid_types\". Please choose from the following: @valid_types"
+msgstr "無效的類型引數 \"@invalid_types\"。請從下列項目中選擇：@valid_types"
+
+msgid "Generate a URL alias for un-aliased paths only."
+msgstr "僅針對未建立別名的路徑產生 URL 別名。"
+
+msgid "Update the URL alias for paths having an old URL alias."
+msgstr "為具有舊 URL 別名的路徑更新 URL 別名。"
+
+msgid "Regenerate URL aliases for all paths."
+msgstr "為所有路徑重新產生 URL 別名。"
+
+msgid "Pathauto pattern"
+msgstr "Pathauto 型樣"
+
+msgid "Choose aliases to delete"
+msgstr "選擇要刪除的別名"
+
+msgid "All aliases"
+msgstr "所有別名"
+
+msgid "Delete all aliases. Number of aliases which will be deleted: %count."
+msgstr "刪除所有別名。將刪除的別名數: %count。"
+
+msgid "Delete aliases for all @label. Number of aliases which will be deleted: %count."
+msgstr "刪除所有 @label 的別名。將刪除的別名數: %count。"
+
+msgid "Delete options"
+msgstr "刪除選項"
+
+msgid "Only delete automatically generated aliases"
+msgstr "僅刪除自動產生的別名"
+
+msgid "When checked, aliases which have been manually set are not affected by this mass-deletion."
+msgstr "若已勾選，則手動設定的別名不會受到此大量刪除作業的影響。"
+
+msgid "<strong>Note:</strong> there is no confirmation. Be sure of your action before clicking the \"Delete aliases now!\" button.<br />You may want to make a backup of the database and/or the path_alias and path_alias_revision tables prior to using this feature."
+msgstr "<strong>附註：</strong>不會進行確認。在按一下「立即刪除別名！」按鈕之前，請先確定您的動作。<br />在使用此特性之前，您可能希望先備用資料庫及/或 path_alias 和 path_alias_revision 表格。"
+
+msgid "Delete aliases now!"
+msgstr "立刻刪除路徑別名！"
+
+msgid "All of your automatically generated path aliases have been deleted."
+msgstr "所有自動產生的路徑別名都已刪除。"
+
+msgid "All of your automatically generated %label path aliases have been deleted."
+msgstr "所有自動產生的 %label 路徑別名都已刪除。"
+
+msgid "An error occurred while processing @operation with arguments : @args"
+msgstr "處理含有引數 @args 的 @operation 時發生錯誤"
+
+msgid "Select the types of paths for which to generate URL aliases"
+msgstr "選取要產生 URL 別名的路徑類型"
+
+msgid "Select which URL aliases to generate"
+msgstr "選取要產生的 URL 別名"
+
+msgid "Generate a URL alias for un-aliased paths only"
+msgstr "僅針對未建立別名的路徑產生 URL 別名"
+
+msgid "<a href=\":url\">Pathauto settings</a> are set to ignore paths which already have a URL alias. You can only create URL aliases for paths having none."
+msgstr "<a href=\":url\">Pathauto 設定</a>已設為忽略已經具有 URL 別名的路徑。您只能為沒有 URL 別名的路徑建立 URL 別名。"
+
+msgid "Update the URL alias for paths having an old URL alias"
+msgstr "為具有舊 URL 別名的路徑更新 URL 別名"
+
+msgid "Regenerate URL aliases for all paths"
+msgstr "為所有路徑重新產生 URL 別名"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "No new URL aliases to generate."
+msgstr "沒有新的 URL 別名產生。"
+
+msgid "Generated 1 URL alias."
+msgid_plural "Generated @count URL aliases."
+msgstr[0] "產生了 1 URL 別名。"
+msgstr[1] "產生了 @count URL 別名。"
+
+msgid "Enable to add a path field and allow to define alias patterns for the given type. Disabled types already define a path field themselves or currently have a pattern."
+msgstr "啟用以新增路徑欄位，並容許為給定類型定義別名型樣。停用的類型已經自行定義路徑欄位，或者目前已具有型樣。"
+
+msgid "Verbose"
+msgstr "詳盡模式"
+
+msgid "Display alias changes (except during bulk updates)."
+msgstr "顯示別名變更 (批量更新的除外)。"
+
+msgid "Separator"
+msgstr "分隔符號"
+
+msgid "Character used to separate words in titles. This will replace any spaces and punctuation characters. Using a space or + character can cause unexpected results."
+msgstr "在標題中用來分隔單詞的字符。這將替代所有空格和標點符號。使用空格或者 + 符號可能會導致無法預料的後果。"
+
+msgid "Character case"
+msgstr "字符大小寫"
+
+msgid "Convert token values to lowercase."
+msgstr "將記號值轉換為小寫。"
+
+msgid "See <a href=\":pathauto-help\">Pathauto help</a> for details."
+msgstr "請參閱 <a href=\":pathauto-help\">Pathauto 說明</a>，以取得詳細資料。"
+
+msgid "Maximum alias length"
+msgstr "路徑別名的最大長度"
+
+msgid "Maximum length of aliases to generate. 100 is the recommended length. @max is the maximum possible length."
+msgstr "要產生的別名長度上限。100 是建議的長度。@max 是可能的長度上限。"
+
+msgid "Maximum component length"
+msgstr "最大的元件長度"
+
+msgid "Maximum text length of any component in the alias (e.g., [title]). 100 is the recommended length. @max is the maximum possible length."
+msgstr "別名中任何元件的文字長度上限（例如：[title]）。100 是建議的長度。@max 是可能的長度上限。"
+
+msgid "What should Pathauto do when updating an existing content item which already has an alias?"
+msgstr "當更新已擁有別名的內容時，Pathauto 應該如何處理？"
+
+msgid "The <a href=\":url\">Redirect module settings</a> affect whether a redirect is created when an alias is deleted."
+msgstr "<a href=\":url\">重新導向模組設定</a>會影響在刪除別名時是否建立重新導向。"
+
+msgid "Considering installing the <a href=\":url\">Redirect module</a> to get redirects when your aliases change."
+msgstr "考量安裝<a href=\":url\">重新導向模組</a>，以在別名變更時取得重新導向。"
+
+msgid "Update action"
+msgstr "更新動作"
+
+msgid "Do nothing. Leave the old alias intact."
+msgstr "不進行任何操作。讓別名保持原樣。"
+
+msgid "Create a new alias. Leave the existing alias functioning."
+msgstr "創建新別名。並保留現有別名。"
+
+msgid "Create a new alias. Delete the old alias."
+msgstr "創建新別名。刪除舊別名。"
+
+msgid "Transliterate prior to creating alias"
+msgstr "創建別名之前先進行音譯"
+
+msgid "When a pattern includes certain characters (such as those with accents) should Pathauto attempt to transliterate them into the US-ASCII alphabet?"
+msgstr "型樣併入特定字元（例如那些帶有重音符號的字元）時，Pathauto 是否應該嘗試將它們譯為 US-ASCII 英文字母？"
+
+msgid "Reduce strings to letters and numbers"
+msgstr "將字串減少成為字母與數字"
+
+msgid "Filters the new alias to only letters and numbers found in the ASCII-96 set."
+msgstr "將新建的別名過濾為 ASCII-96 字符集中僅有的字母和數字。"
+
+msgid "Strings to Remove"
+msgstr "要移除的字符串"
+
+msgid "Words to strip out of the URL alias, separated by commas. Do not use this to remove punctuation."
+msgstr "要從 URL 別名裡除去的字，以逗號分隔。請勿用來移除標點符號。"
+
+msgid "Safe tokens"
+msgstr "安全記號"
+
+msgid "List of tokens that are safe to use in alias patterns and do not need to be cleaned. For example urls, aliases, machine names. Separated with a comma."
+msgstr "可以在別名型樣中安全使用且不需要清理的記號清單。例如，URL、別名、機器名稱。以逗點區隔。"
+
+msgid "Punctuation"
+msgstr "標點"
+
+msgid "Remove"
+msgstr "移除"
+
+msgid "Replace by separator"
+msgstr "用分隔符替代"
+
+msgid "No action (do not replace)"
+msgstr "沒有動作 (不用替換)"
+
+msgid "Are you sure you want to disable the pattern %label?"
+msgstr "確定要停用型樣 %label 嗎？"
+
+msgid "Disable"
+msgstr "停用"
+
+msgid "Disabled patterns are ignored when generating aliases."
+msgstr "產生別名時忽略已停用的型樣。"
+
+msgid "Disabled pattern %label."
+msgstr "已停用的型樣 %label。"
+
+msgid "Path pattern"
+msgstr "路徑型樣"
+
+msgid "Check to which types this pattern should be applied. Leave empty to allow any."
+msgstr "勾選應該套用此型樣的類型。保留空白，表示容許任何類型。"
+
+msgid "Languages"
+msgstr "語言"
+
+msgid "Check to which languages this pattern should be applied. Leave empty to allow any."
+msgstr "勾選應該套用此型樣的語言。保留空白，表示容許任何語言。"
+
+msgid "A short name to help you identify this pattern in the patterns list."
+msgstr "此簡稱可協助您在型樣清單中識別此型樣。"
+
+msgid "Enabled"
+msgstr "啟用"
+
+msgid "Language"
+msgstr "語言"
+
+msgid "Pattern %label saved."
+msgstr "已儲存型樣 %label。"
+
+msgid "Are you sure you want to enable the pattern %label?"
+msgstr "確定要啟用型樣 %label 嗎？"
+
+msgid "Enable"
+msgstr "啟用"
+
+msgid "Enabled pattern %label."
+msgstr "已啟用的型樣 %label。"
+
+msgid "Update URL alias of an entity"
+msgstr "更新實體的 URL 別名"
+
+msgid "@label being aliased"
+msgstr "已建立 @label 的別名"
+
+msgid "The name of the pattern's variable."
+msgstr "型樣變數的名稱。"
+
+msgid "The value of the pattern's variable."
+msgstr "型樣變數的值。"
+
+msgid "Broken type"
+msgstr "已損毀的類型"
+
+msgid "Broken"
+msgstr "中斷"
+
+msgid "Broken/Missing"
+msgstr "毀損/遺失"
+
+msgid "AliasType"
+msgstr "AliasType"
+
+msgid "Updated alias for %label @id."
+msgstr "已更新 %label @id 的別名。"
+
+msgid "Updated 1 %label URL alias."
+msgid_plural "Updated @count %label URL aliases."
+msgstr[0] "已更新 @count 個 %label URL 別名。"
+
+msgid "Forum"
+msgstr "討論區"
+

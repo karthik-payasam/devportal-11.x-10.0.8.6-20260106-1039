@@ -1,0 +1,77 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "CDN Warmer"
+msgstr "Zahřívač CDN"
+
+msgid "Executes HTTP requests to warm the edge caches. It is useful without a CDN as well, as it will also warm Varnish and Page Cache."
+msgstr "Provádí požadavky HTTP na zahřívání mezipamětí Edge. Hodí se i bez CDN, protože také zahřívá mezipaměti Varnish a Page."
+
+msgid "URLs"
+msgstr "Adresy URL"
+
+msgid "Enter the list of URLs. One on each line. Examples: https://example.org/foo/bar, /foo/bar."
+msgstr "Zadejte seznam adres URL. Každá na jeden řádek. Příklady: https://example.org/foo/bar, /foo/bar."
+
+msgid "Headers"
+msgstr "Záhlaví"
+
+msgid "Specific headers to use when making HTTP requests. Format: <code>Header-Name: value1; value2</code>"
+msgstr "Specifická záhlaví, která se mají použít při vytváření požadavků HTTP.Formát: <code>Hlavička-Název: hodnota1; hodnota2</code>"
+
+msgid "Enable SSL verification"
+msgstr "Povolit ověření SSL"
+
+msgid "Enable SSL verification. Recommended to keep it checked for security reasons."
+msgstr "Povolte ověření SSL. Doporučuje se nechat zaškrtnuté z bezpečnostních důvodů."
+
+msgid "Maximum number of concurrent Requests."
+msgstr "Maximální počet souběžných požadavků."
+
+msgid "The maximum number of concurrent requests."
+msgstr "Maximální počet souběžných požadavků."
+
+msgid "CDN"
+msgstr "CDN"
+
+msgid "minPriority should be a float between 0 and 1."
+msgstr "minPriority by měla být hodnota typu float mezi 0 a 1."
+
+msgid "Sitemaps"
+msgstr "Mapy webu"
+
+msgid "Enter the list of sitemap URLs. One on each line. Examples: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+msgstr "Zadejte seznam adres URL mapy webu. Každá na jeden řádek. Příklady: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+
+msgid "Minimum Priority"
+msgstr "Minimální priorita"
+
+msgid "URLs with a lower priority than the configured will not be warmed. A float value between 0 and 1."
+msgstr "Adresy URL s nižší prioritou, než je nakonfigurovaná, se neohřívají. Hodnota typu float mezi 0 a 1."
+
+msgid "This defines the maximum number of concurrent requests."
+msgstr "Definuje maximální počet souběžných požadavků."
+
+msgid "There was an error parsing the Sitemap in %location. Please check the watchdog logs for more information."
+msgstr "Při analýze mapy webu v %location došlo k chybě. Zkontrolujte protokoly sledovacího zařízení, kde získáte další informace."
+
+msgid "CDN via Sitemap"
+msgstr "CDN přes mapu webu"
+
+msgid "Collects the URLs to warm from the sitemap. Then uses the CDN warmer for those."
+msgstr "Shromažďuje adresy URL pro zahřívání z mapy webu. Pak na ně používá Zahřívač CDN (CDN Warmer)."
+
+msgid "All headers must have a colon. Follow the format: <code>the-name: the-value</code>"
+msgstr "Všechna záhlaví musí obsahovat dvojtečku.Postupujte podle formátu: <code>název: hodnota</code>"
+

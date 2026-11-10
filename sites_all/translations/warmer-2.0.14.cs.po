@@ -1,0 +1,176 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Warmer"
+msgstr "Zahřívač"
+
+msgid "Module that provides infrastructure for common cache warming/pre-fetching techniques."
+msgstr "Modul, který zajišťuje infrastrukturu pro běžné metody zahřívání / předběžné načítání do mezipaměti."
+
+msgid "Cache warming"
+msgstr "Zahřátí mezipaměti"
+
+msgid "Configure cache warming behaviors to improve application performance."
+msgstr "Nakonfigurujte chování zahřívání mezipaměti, abyste zlepšili výkon aplikací."
+
+msgid "Warm caches"
+msgstr "Zahřát mezipaměti"
+
+msgid "Settings"
+msgstr "Nastavení"
+
+msgid "Configure cache warmers"
+msgstr "Konfigurace zahřívačů mezipaměti"
+
+msgid "Warmer Settings"
+msgstr "Nastavení zahřívače"
+
+msgid "Warmers"
+msgstr "Zahřívače"
+
+msgid "CDN Warmer"
+msgstr "Zahřívač CDN"
+
+msgid "Executes HTTP requests to warm the edge caches. It is useful without a CDN as well, as it will also warm Varnish and Page Cache."
+msgstr "Provádí požadavky HTTP na zahřívání mezipamětí Edge. Hodí se i bez CDN, protože také zahřívá mezipaměti Varnish a Page."
+
+msgid "URLs"
+msgstr "Adresy URL"
+
+msgid "Enter the list of URLs. One on each line. Examples: https://example.org/foo/bar, /foo/bar."
+msgstr "Zadejte seznam adres URL. Každá na jeden řádek. Příklady: https://example.org/foo/bar, /foo/bar."
+
+msgid "Headers"
+msgstr "Záhlaví"
+
+msgid "Specific headers to use when making HTTP requests. Format: <code>Header-Name: value1; value2</code>"
+msgstr "Specifická záhlaví, která se mají použít při vytváření požadavků HTTP. Formát: <code>Hlavička-Název: hodnota1; hodnota2</code>"
+
+msgid "Enable SSL verification"
+msgstr "Povolit ověření SSL"
+
+msgid "Enable SSL verification. Recommended to keep it checked for security reasons."
+msgstr "Povolte ověření SSL. Doporučuje se nechat zaškrtnuté z bezpečnostních důvodů."
+
+msgid "Maximum number of concurrent Requests."
+msgstr "Maximální počet souběžných požadavků."
+
+msgid "The maximum number of concurrent requests."
+msgstr "Maximální počet souběžných požadavků."
+
+msgid "CDN"
+msgstr "CDN"
+
+msgid "minPriority should be a float between 0 and 1."
+msgstr "minPriority by měla být hodnota typu float mezi 0 a 1."
+
+msgid "Sitemaps"
+msgstr "Mapy webu"
+
+msgid "Enter the list of sitemap URLs. One on each line. Examples: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+msgstr "Zadejte seznam adres URL mapy webu. Každá na jeden řádek. Příklady: https://example.org/sitemap.xml, /drupal-sitemap.xml."
+
+msgid "Minimum Priority"
+msgstr "Minimální priorita"
+
+msgid "URLs with a lower priority than the configured will not be warmed. A float value between 0 and 1."
+msgstr "Adresy URL s nižší prioritou, než je nakonfigurovaná, se neohřívají. Hodnota typu float mezi 0 a 1."
+
+msgid "This defines the maximum number of concurrent requests."
+msgstr "Definuje maximální počet souběžných požadavků."
+
+msgid "There was an error parsing the Sitemap in %location. Please check the watchdog logs for more information."
+msgstr "Při analýze mapy webu v %location došlo k chybě. Zkontrolujte protokoly sledovacího zařízení, kde získáte další informace."
+
+msgid "CDN via Sitemap"
+msgstr "CDN přes mapu webu"
+
+msgid "Collects the URLs to warm from the sitemap. Then uses the CDN warmer for those."
+msgstr "Shromažďuje adresy URL pro zahřívání z mapy webu. Pak na ně používá Zahřívač CDN (CDN Warmer)."
+
+msgid "All headers must have a colon. Follow the format: <code>the-name: the-value</code>"
+msgstr "Všechna záhlaví musí obsahovat dvojtečku. Postupujte podle formátu: <code>název: hodnota</code>"
+
+msgid "Entity Warmer"
+msgstr "Zahřívač entit"
+
+msgid "Warms the entity cache for the configured entity types."
+msgstr "Zahřívá mezipaměť entit pro konfigurované typy entit."
+
+msgid "Entity Types"
+msgstr "Typy entit"
+
+msgid "Enable the entity types to warm asynchronously."
+msgstr "Umožňuje asynchronní zahřívání typů entit."
+
+msgid "Entity"
+msgstr "Entita"
+
+msgid "Loads entities from the selected entity types & bundles to warm the entity cache."
+msgstr "Načte entity z vybraných typů a balíků entit k zahřívání mezipaměti entit."
+
+msgid "@total items enqueued for cache warming."
+msgstr "Celkem @total položek ve frontě na zahřátí mezipaměti."
+
+msgid "If you need your items into cache right away you can run \"drush queue-run warmer\"."
+msgstr "Pokud potřebujete své položky do vyrovnávací paměti okamžitě, můžete spustit \"drush queue-run warmer\"."
+
+msgid "Warming caches in @count batches from the \"warmer\" queue."
+msgstr "Zahřátí mezipamětí v dávkách @count z fronty \"warmer\"."
+
+msgid "Warmer plugin(s) not found: !names."
+msgstr "Zahřívač(e) nenalezen(y): !names."
+
+msgid "This page allows you to enqueue cache warming operations manually. This will put the cache warming operations in a queue. If you want to actually execute them right away you can force processing the queue. A good way to do that is by installing the <a href=\":url\">Queue UI</a> module or using Drush. This module will provide a UI to process an entire queue."
+msgstr "Tato stránka umožňuje ručně zařadit operace zahřívání mezipaměti do fronty. To vloží operace zahřívání mezipaměti do fronty. Chcete-li je však provést ihned, můžete vynutit zpracování fronty. Dobrým způsobem, jak to provést, je instalace modulu <a href=\":url\">Uživatelské rozhraní fronty</a> nebo použití funkce Drush. Tento modul nabízí uživatelské rozhraní pro zpracování celé fronty."
+
+msgid "Description"
+msgstr "Popis"
+
+msgid "No warmers available. Enable the Entity Warmer submodule, or try installing extending modules like JSON:API Boost."
+msgstr "Nejsou k dispozici žádné zahřívací moduly. Povolte dílčí modul Zahřívač entit nebo zkuste instalovat rozšiřující moduly, jako je například JSON:API Boost."
+
+msgid "Warm Caches"
+msgstr "Zahřát mezipaměti"
+
+msgid "List of queues"
+msgstr "Seznam front"
+
+msgid "Configure the cache warming behaviors. Each cache warmer is a plugin that may contain specific settings. They are all configured here."
+msgstr "Nakonfigurujte chování zahřívání mezipamětí. Každý zahřívač mezipaměti je modul plug-in, který může obsahovat specifická nastavení. Všechny jsou konfigurovány zde."
+
+msgid "Settings saved for plugin(s): %names"
+msgstr "Nastavení byla uložena pro moduly plug-in: %names"
+
+msgid "Frequency should be a positive number."
+msgstr "Frekvence musí být kladné číslo."
+
+msgid "Batch size should be a number greater than 1."
+msgstr "Velikost dávky musí být číslo větší než 1."
+
+msgid "Frequency"
+msgstr "Frekvence"
+
+msgid "Only re-enqueue warming operations after at least this many seconds have passed."
+msgstr "Zahřívací operace pro opětovné zařazení do fronty teprve po uplynutí nejméně tolika sekund."
+
+msgid "Batch Size"
+msgstr "Velikost dávky"
+
+msgid "Number of items to enqueue and process in a single go."
+msgstr "Počet položek do zařazení do fronty a zpracování v jednom provedení."
+
+msgid "Cache warmer"
+msgstr "Zahřívač mezipaměti"
+

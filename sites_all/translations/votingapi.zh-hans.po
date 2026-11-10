@@ -1,0 +1,456 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Vote Result \"@result_function\" for @plural_label"
+msgstr "@plural_label 的投票结果“@result_function”"
+
+msgid "This includes vote result \"@result_function\" for the @plural_label"
+msgstr "这包含 @plural_label 的投票结果“@result_function”"
+
+msgid "Vote Result \"@result_function\" for @plural_label: @vote_type_label"
+msgstr "@plural_label 的投票结果“@result_function”：@vote_type_label"
+
+msgid "This includes vote result \"@result_function\" for the @plural_label voted with @vote_type"
+msgstr "这包含使用 @vote_type 进行投票的 @plural_label 的投票结果“@result_function”"
+
+msgid "About"
+msgstr "关于"
+
+msgid "VotingAPI helps developers who want to use a standardized API and schema for storing, retrieving and tabulating votes for Drupal content."
+msgstr "投票 API 可帮助想要使用标准化 API 和模式的开发人员对 Drupal 内容投票进行存储、检索和制表。"
+
+msgid "Please view the %url page for more details."
+msgstr "请查看 %url 页面以获取更多详细信息。"
+
+msgid "Voting API"
+msgstr "投票 API"
+
+msgid "Uses"
+msgstr "用法"
+
+msgid "General"
+msgstr "常规 "
+
+msgid "VotingAPI uses a flexible, easy-to-use framework for rating, voting, moderation, and consensus-gathering modules in Drupal. Module developers use it to focus on their ideas (say, providing a \"rate this thread\" widget at the bottom of each forum post) without worrying about the grunt work of storing votes, preventing ballot-stuffing, calculating the results, and so on."
+msgstr "VotingAPI 将灵活且易于使用的框架用于 Drupal 中的评分、投票、审核和一致性收集模块。模块开发人员可使用其以关注于其想法（比如说，在每个论坛帖子的底部提供“对此主题帖打分”窗口小部件），而不必担心存储投票、避免选票填塞和计算结果等繁琐的工作。"
+
+msgid "Basic Concepts and Features"
+msgstr "基本概念和功能"
+
+msgid "VotingAPI does NOT directly expose any voting mechanisms to end users. It is a framework designed to make life easier for other developers, and to standardize voting data for consumption by other modules (like Views)."
+msgstr "VotingAPI 不会直接向最终用户公开任何投票机制。这是一个框架，旨在简化其他开发人员的工作，从而标准化投票数据以供其他模块（例如，“视图”）使用。"
+
+msgid "Two kinds of records are stored: individual votes by each user on each piece of content, and cached \"result\" records. The cached records aggregate calculated values like the average vote for a piece of content, how many people voted on it, etc. Each time a user votes, the cached result records are automatically recalculated. This means that no \"on-the-fly\" calculations have to be done when displaying content ratings."
+msgstr "存储两种记录：每个用户对于每个内容块的个人投票，以及高速缓存的“结果”记录。高速缓存记录汇总计算值，例如，一个内容的平均投票、投票人数等。每次用户投票时，将自动重新计算高速缓存的结果记录。这意味着在显示内容评级时不必执行“运行中”计算。"
+
+msgid "Provides a voting API that other modules can make use of."
+msgstr "提供其他模块可以使用的投票 API。"
+
+msgid "Voting"
+msgstr "投票"
+
+msgid "Add vote type"
+msgstr "添加投票类型"
+
+msgid "Voting API Settings"
+msgstr "投票 API 设置"
+
+msgid "Vote Types"
+msgstr "投票类型"
+
+msgid "Configure Voting API."
+msgstr "配置投票 API。"
+
+msgid "Manage Vote Types."
+msgstr "管理投票类型。"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "List"
+msgstr "列出"
+
+msgid "Administer Voting API"
+msgstr "管理投票 API"
+
+msgid "Allow access to configure Voting API."
+msgstr "允许访问以配置投票 API。"
+
+msgid "Administer Vote Types"
+msgstr "管理投票类型"
+
+msgid "Allow access to create/edit vote types."
+msgstr "允许访问以创建/编辑投票类型。"
+
+msgid "Delete Votes"
+msgstr "删除投票"
+
+msgid "Allow access to delete any vote."
+msgstr "允许访问以删除任何投票。"
+
+msgid "Voting API settings"
+msgstr "投票 API 设置"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "VotingApi settings"
+msgstr "VotingApi 设置"
+
+msgid "Anonymous vote rollover"
+msgstr "滚动匿名投票"
+
+msgid "Registered user vote rollover"
+msgstr "注册用户滚动投票"
+
+msgid "Vote tallying"
+msgstr "投票计算"
+
+msgid "Delete everywhere"
+msgstr "从所有位置删除"
+
+msgid "Vote Type"
+msgstr "投票类型"
+
+msgid "Machine-readable name"
+msgstr "机器可读名称"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Type of vote value (percentage, points, etc.)"
+msgstr "投票值的类型（百分比、积分等）。"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Voting API widget field settings."
+msgstr "投票 API 窗口小部件字段设置。"
+
+msgid "Vote plugin"
+msgstr "投票插件"
+
+msgid "Vote type"
+msgstr "投票类型"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Result function"
+msgstr "结果函数"
+
+msgid "Widget format"
+msgstr "窗口小部件格式"
+
+msgid "Default value"
+msgstr "缺省值"
+
+msgid "VotingAPI tokens"
+msgstr "VotingAPI 令牌"
+
+msgid "Dynamic Tokens for VotingAPI."
+msgstr "VotingAPI 的动态令牌。"
+
+msgid "Vote count"
+msgstr "投票计数"
+
+msgid "Number of votes."
+msgstr "投票数。"
+
+msgid "Average Result"
+msgstr "平均结果"
+
+msgid "Average result of votes."
+msgstr "投票的平均结果。"
+
+msgid "Best Vote"
+msgstr "最佳投票"
+
+msgid "Best Vote cast."
+msgstr "最佳投票。"
+
+msgid "Worst Vote"
+msgstr "最差投票"
+
+msgid "Worst Vote cast."
+msgstr "最差投票。"
+
+msgid "This module enables tokens for all entity types that has <kbd>voting_api_field</kbd>."
+msgstr "此模块针对具有 <kbd>voting_api_field</kbd> 的所有实体类型启用令牌。"
+
+msgid "Usage"
+msgstr "使用量"
+
+msgid "Tokens are dynamic and you have to pass <emph>vote_type</emph> as the last parameter. Module defines four tokens:"
+msgstr "令牌是动态的，必须作为最后一个参数传递 <emph>vote_type</emph>。模块定义四个令牌："
+
+msgid "<ul><li>Vote count :: <code>[votingapi_ENTITY_TYPE_token:vote_count:VOTE_TYPE]</code></li>"
+msgstr "<ul><li>投票计数：<code>[votingapi_ENTITY_TYPE_token:vote_count:VOTE_TYPE]</code></li>"
+
+msgid "<li>Vote average :: <code>[votingapi_ENTITY_TYPE_token:vote_average:VOTE_TYPE]</code></li>"
+msgstr "<li>投票平均值：<code>[votingapi_ENTITY_TYPE_token:vote_average:VOTE_TYPE]</code></li>"
+
+msgid "<li>Best vote :: <code>[votingapi_ENTITY_TYPE_token:best_vote:VOTE_TYPE]</code></li>"
+msgstr "<li>最佳投票：<code>[votingapi_ENTITY_TYPE_token:best_vote:VOTE_TYPE]</code></li>"
+
+msgid "<li>Worst vote :: <code>[votingapi_ENTITY_TYPE_token:worst_vote:VOTE_TYPE]</code></li>"
+msgstr "<li>最差投票：<code>[votingapi_ENTITY_TYPE_token:worst_vote:VOTE_TYPE]</code></li>"
+
+msgid "Voting API Tokens"
+msgstr "投票 API 令牌"
+
+msgid "Token support for Voting API"
+msgstr "投票 API 的令牌支持"
+
+msgid "Edit %label vote type"
+msgstr "编辑 %label 投票类型"
+
+msgid "The human-readable name of this vote type. This text will be displayed as part of the list on the <em>Add vote type</em> page. This name must be unique."
+msgstr "此投票类型的人类可以阅读的名称。此文本将在<em>添加投票类型</em>页面显示为列表的一部分。此名称必须唯一。"
+
+msgid "A unique machine-readable name for this vote type. It must only contain lowercase letters, numbers, and underscores."
+msgstr "此投票类型的唯一机器可读名称。它必须仅包含小写字母、数字和下划线。"
+
+msgid "Value type"
+msgstr "值类型"
+
+msgid "The type of value for this vote (percentage, points, etc.)"
+msgstr "此投票的值的类型（百分比、积分等）"
+
+msgid "Describe this vote type. The text will be displayed on administrative pages."
+msgstr "描述此投票类型。将在管理页面上显示文本。"
+
+msgid "Save vote type"
+msgstr "保存投票类型"
+
+msgid "Delete vote type"
+msgstr "删除投票类型"
+
+msgid "The vote type %name has been updated."
+msgstr "已更新投票类型 %name。"
+
+msgid "The vote type %name has been added."
+msgstr "已添加投票类型 %name。"
+
+msgid "View"
+msgstr "查看"
+
+msgid "Added vote type %name."
+msgstr "已添加投票类型 %name。"
+
+msgid "Id"
+msgstr "标识"
+
+msgid "Label"
+msgstr "标签"
+
+msgid "No vote types available. <a href=\"@link\">Add vote type</a>."
+msgstr "没有可用的投票类型。<a href=\"@link\">添加投票类型</a>。"
+
+msgid "Generated @vtype votes for @etype entities."
+msgstr "为 @etype 实体生成 @vtype 投票。"
+
+msgid "Rebuilt voting results for @type votes."
+msgstr "已重新构建 @type 投票的投票结果。"
+
+msgid "Rebuilt voting results for @type id: @entity_id."
+msgstr "已重新构建 @type 标识的投票结果：@entity_id。"
+
+msgid "Delete @type voting data?"
+msgstr "删除 @type 投票数据？"
+
+msgid "Flushed vote data for @type entities."
+msgstr "已清空 @type 实体的投票数据。"
+
+msgid "ID"
+msgstr "标识"
+
+msgid "The vote ID."
+msgstr "投票标识。"
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "The vote UUID."
+msgstr "投票 UUID。"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "The vote type."
+msgstr "投票类型。"
+
+msgid "Entity Type"
+msgstr "实体类型"
+
+msgid "The type from the voted entity."
+msgstr "已投票实体中的类型。"
+
+msgid "Voted entity"
+msgstr "已投票实体"
+
+msgid "The ID from the voted entity"
+msgstr "已投票实体中的标识"
+
+msgid "Value"
+msgstr "值"
+
+msgid "The numeric value of the vote."
+msgstr "投票的数字值。"
+
+msgid "Value Type"
+msgstr "值类型"
+
+msgid "Authored by"
+msgstr "作者"
+
+msgid "The user who submitted the vote."
+msgstr "提交投票的用户。"
+
+msgid "Created"
+msgstr "已创建"
+
+msgid "The time that the entity was created."
+msgstr "创建实体的时间。"
+
+msgid "Vote Source"
+msgstr "投票源"
+
+msgid "The IP address hash from the user who submitted the vote."
+msgstr "提交投票用户的 IP 地址散列。"
+
+msgid "Vote"
+msgstr "投票"
+
+msgid "Votes"
+msgstr "投票数"
+
+msgid "vote"
+msgstr "投票"
+
+msgid "votes"
+msgstr "投票数"
+
+msgid "The vote result ID."
+msgstr "投票结果标识。"
+
+msgid "Function"
+msgstr "函数"
+
+msgid "Function to apply to the numbers."
+msgstr "要应用于数字的函数。"
+
+msgid "Vote result"
+msgstr "投票结果"
+
+msgid "Vote results"
+msgstr "投票结果"
+
+msgid "vote result"
+msgstr "投票结果"
+
+msgid "vote results"
+msgstr "投票结果"
+
+msgid "Vote Result"
+msgstr "投票结果"
+
+msgid "The Vote Result ID."
+msgstr "投票结果标识。"
+
+msgid "Vote types"
+msgstr "投票类型"
+
+msgid "vote type"
+msgstr "投票类型"
+
+msgid "vote types"
+msgstr "投票类型"
+
+msgid "The Vote ID."
+msgstr "投票标识。"
+
+msgid "The amount of time that must pass before two anonymous votes from the same computer are considered unique. Setting this to 'never' will eliminate most double-voting, but will make it impossible for multiple anonymous on the same computer (like internet cafe customers) from casting votes."
+msgstr "将从同一台计算机的两次匿名投票视为唯一之前必须经过的时间量。将此项设置为“从不”将消除大多数二次投票，但同一台计算机上的多个匿名用户（如网吧客户）也将无法投票。"
+
+msgid "The amount of time that must pass before two registered user votes from the same user ID are considered unique. Setting this to 'never' will eliminate most double-voting for registered users."
+msgstr "在将相同用户标识的两次注册用户投票视为唯一之前必须经过的时间量。将此项设置为“从不”将消除已注册用户的大多数二次投票。"
+
+msgid "Calculation schedule"
+msgstr "计算调度"
+
+msgid "On high-traffic sites, administrators can use this setting to postpone the calculation of vote results."
+msgstr "在高流量站点上，管理员可以使用此设置来推迟计算投票结果。"
+
+msgid "Tally results whenever a vote is cast"
+msgstr "投票时计算结果"
+
+msgid "Tally results at cron-time"
+msgstr "在 Cron 时间计算结果"
+
+msgid "Do not tally results automatically: I am using a module that manages its own vote results."
+msgstr "不自动计算结果：我所使用的模块管理其自己的投票结果。"
+
+msgid "Allow deleting votes to someone else's entity when owner user of this votes is deleting."
+msgstr "允许在删除投票的所有者用户时删除对他人实体的投票。"
+
+msgid "Are you sure you want to delete the vote?"
+msgstr "确定要删除此投票吗？"
+
+msgid "The vote by %user on @entity-type %label has been deleted."
+msgstr "已删除 %user 对 @entity-type %label 的投票。"
+
+msgid "You are about to delete a vote by %user on @entity-type %label. This action cannot be undone."
+msgstr "您即将删除 %user 对 @entity-type %label 的投票。此操作无法撤销。"
+
+msgid "%type is used by 1 piece of content on your site. You can not remove this vote type until you have removed that vote."
+msgid_plural "%type is used by @count pieces of content on your site. You may not remove %type until you have removed all of the %type votes."
+msgstr[0] "站点上的 @count 个内容块都使用了 %type。无法移除 %type，除非已经移除了所有 %type 投票。"
+
+msgid "Average"
+msgstr "平均"
+
+msgid "The average vote value."
+msgstr "平均投票值。"
+
+msgid "Count"
+msgstr "计数"
+
+msgid "The number of votes cast."
+msgstr "已投票数。"
+
+msgid "Sum"
+msgstr "求和"
+
+msgid "The total of all vote values."
+msgstr "所有投票值总数。"
+
+msgid "Vote ID"
+msgstr "投票标识"
+
+msgid "Entity ID"
+msgstr "实体标识"
+
+msgid "Tag"
+msgstr "标记"
+
+msgid "User ID"
+msgstr "用户标识"
+
+msgid "Timestamp"
+msgstr "时间戳记"
+

@@ -1,0 +1,97 @@
+<?php
+
+/**
+ * @file
+ * Provides Intense images integration.
+ */
+
+use Drupal\Component\Utility\Html;
+
+/**
+ * Returns supported libraries path.
+ */
+function intense_libraries_path(): ?string {
+  $libs = ['intense', 'intense-images'];
+  return blazy()->getLibrariesPath($libs);
+}
+
+/**
+ * Implements hook_library_info_alter().
+ */
+function intense_library_info_alter(array &$libraries, $extension) {
+  if ($extension === 'intense') {
+    $libs = ['intense', 'intense-images'];
+    if ($path = blazy()->getLibrariesPath($libs)) {
+      $libraries['intense']['js'] = ['/' . $path . '/intense.min.js' => []];
+    }
+  }
+}
+
+/**
+ * Implements hook_blazy_attach_alter().
+ */
+function intense_blazy_attach_alter(array &$load, array $attach = []) {
+  if (!empty($attach['intense'])) {
+    $load['library'][] = 'intense/load';
+  }
+}
+
+/**
+ * Implements hook_blazy_lightboxes_alter().
+ */
+function intense_blazy_lightboxes_alter(array &$lightboxes) {
+  $lightboxes[] = 'intense';
+}
+
+/**
+ * Implements hook_blazy_settings_alter().
+ */
+function intense_blazy_settings_alter(array &$build, $items) {
+  // @todo remove check post blazy:2.17, only needed for mismatched versions.
+  $key = 'settings';
+  if (!isset($build["#$key"]) && isset($build[$key])) {
+    $build["#$key"] = $build[$key];
+  }
+
+  $settings = &$build['#settings'];
+  $blazies  = $settings['blazies'];
+
+  // Tell Blazy we are supporting rich box: local video, etc. within lightbox.
+  if ($blazies->get('intense')) {
+    $blazies->set('is.richbox', TRUE)
+      ->set('is.encodedbox', TRUE);
+  }
+}
+
+/**
+ * Overrides variables for blazy.html.twig.
+ */
+function intense_preprocess_blazy(array &$variables) {
+  $settings = $variables['settings'];
+  $blazies  = $settings['blazies'];
+
+  // Intense accept captions within [data-attribute], satisfy.
+  if ($blazies->get('intense')) {
+    $captions = ($variables['captions']['lightbox'] ?? FALSE);
+    if ($caption = $captions['#markup'] ?? NULL) {
+      $dom = Html::load($caption);
+      foreach (['h2' => 'title', 'p' => 'caption'] as $tag => $attribute) {
+        if ($dom->getElementsByTagName($tag) && $item = $dom->getElementsByTagName($tag)->item(0)) {
+          $content = $item->textContent;
+          $variables['url_attributes']['data-' . $attribute] = strip_tags($content);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function intense_help($route_name) {
+  if ($route_name == 'help.page.intense') {
+    $output = file_get_contents(dirname(__FILE__) . '/README.md');
+    return blazy()->markdown($output);
+  }
+  return '';
+}

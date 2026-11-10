@@ -1,0 +1,753 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:32+0000\n"
+"PO-Revision-Date: 2023-11-01 11:32+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "The answer you entered for the CAPTCHA was not correct."
+msgstr "您所输入的验证码答案不正确。"
+
+msgid "About"
+msgstr "关于"
+
+msgid "\"CAPTCHA\" is an acronym for \"Completely Automated Public Turing test to tell Computers and Humans Apart\". It is typically a challenge-response test to determine whether the user is human. The CAPTCHA module is a tool to fight automated submission by malicious users (spamming) of for example comments forms, user registration forms, guestbook forms, etc. You can extend the desired forms with an additional challenge, which should be easy for a human to solve correctly, but hard enough to keep automated scripts and spam bots out."
+msgstr "\"CAPTCHA\"项目是 \"Completely Automated Public Turing test to tell Computers and Humans Apart(全自动区分计算机和人类的图灵测试)\" 的简称，CAPTCHA的目的是区分计算机和人类的一种程序算法.验证码模块可以自动拦截机器程序在程序评论块、论坛、用户注册、留言板等的非人动作. 你可以自行增加拦截表单到验证码集合中，它将能很容易的被人识别，并且有效的把那些垃圾机器拦截."
+
+msgid "Note that the CAPTCHA module interacts with page caching (see <a href=\":performancesettings\">performance settings</a>). Because the challenge should be unique for each generated form, the caching of the page it appears on is prevented. Make sure that these forms do not appear on too many pages or you will lose much caching efficiency. For example, if you put a CAPTCHA on the user login block, which typically appears on each page for anonymous visitors, caching will practically be disabled. The comment submission forms are another example. In this case you should set the <em>Location of comment submission form</em> to <em>Display on separate page</em> in the comment settings of the relevant <a href=\":contenttypes\">content types</a> for better caching efficiency."
+msgstr "请注意，CAPTCHA 模块与页面高速缓存交互（请参阅<a href=\":performancesettings\">性能设置</a>）。由于生成的每个表单都面临不一样的挑战，因此将阻止对其显示所用的页面进行高速缓存。确保这些表单不在过多的页面上显示，否则高速缓存效率将大幅下降。例如，如果将 CAPTCHA 放在用户登录块上（通常显示在匿名访问者的每个页面上），那么实际上将禁用高速缓存。另一个示例是评论提交表单。在这种情况下，应在相关<a href=\":contenttypes\">内容类型</a>的评论设置中将<em>评论提交表单位置</em>设置为<em>在单独的页面上显示</em>，以提高高速缓存效率。"
+
+msgid "CAPTCHA is a trademark of Carnegie Mellon University."
+msgstr "CAPTCHA 商标属于卡耐基-梅隆大学。"
+
+msgid "A CAPTCHA can be added to virtually any Drupal form, through adding an affiliated <em>CAPTCHA Point</em>. Some default <em>CAPTCHA Points</em> are already provided in the <em>CAPTCHA Point</em> section, but arbitrary forms can be easily added and managed."
+msgstr "通过添加关联的 <em>CAPTCHA 点</em>，几乎可以将 CAPTCHA 添加到任何 Drupal 表单。 某些缺省 <em>CAPTCHA 点</em> 已在 <em>CAPTCHA 点</em>部分中提供，可以轻松添加和管理任意表单。"
+
+msgid "Users with the <em>Skip CAPTCHA</em> <a href=\":perm\">permission</a> won't be offered a challenge. Be sure to grant this permission to the trusted users (e.g. site administrators). If you want to test a protected form, be sure to do it as a user without the <em>Skip CAPTCHA</em> permission (e.g. as anonymous user)."
+msgstr "将不向具有<em>忽略 CAPTCHA</em> <a href=\":perm\">许可权</a>的用户提问。确保将此许可权授予可信的用户（例如，站点管理员）。如果您想测试受保护表单，请确保以不具有<em>忽略 CAPTCHA</em> 许可权的用户（例如，匿名用户）身份进行操作。"
+
+msgid "Note that the CAPTCHA module disables <a href=\":performancesettings\">page caching</a> of pages that include a CAPTCHA challenge."
+msgstr "请注意，CAPTCHA 模块会禁用包含 CAPTCHA 提问的页面的<a href=\":performancesettings\">页面高速缓存</a>。"
+
+msgid "CAPTCHA"
+msgstr "验证码"
+
+msgid "CAPTCHA: challenge \"@type\" enabled"
+msgstr "验证码: 提问 \"@type\" 已启用"
+
+msgid "CAPTCHA: challenge \"@type\" disabled"
+msgstr "CAPTCHA：提问“@type”已禁用"
+
+msgid "Users without the \"skip CAPTCHA\" permission will see a CAPTCHA here (<a href=\"@settings\">general CAPTCHA settings</a>)."
+msgstr "没有“跳过 CAPTCHA”许可权的用户将在此处看到 CAPTCHA（<a href=\"@settings\">常规 CAPTCHA 设置</a>）。"
+
+msgid "CAPTCHA disabled, Untrusted users won't see the captcha (<a href=\"@settings\">general CAPTCHA settings</a>)."
+msgstr "已禁用 CAPTCHA，不可信用户将不会看到 CAPTCHA（<a href=\"@settings\">常规 CAPTCHA 设置</a>）。"
+
+msgid "Enabled challenge"
+msgstr "提问已启用"
+
+msgid "change"
+msgstr "更改"
+
+msgid "CAPTCHA: no challenge enabled"
+msgstr "验证码: 无提问被启用"
+
+msgid "Place a CAPTCHA here for untrusted users."
+msgstr "在这里对非授信用户放置一个人机验证"
+
+msgid "Most CAPTCHA methods will disable the caching of pages that contain a CAPTCHA element. Check the different implementations to know more about how it affects caching."
+msgstr "大多数 CAPTCHA 方法将禁用包含 CAPTCHA 元素的页面高速缓存。请检查不同的实施以了解有关其如何影响高速缓存的更多信息。"
+
+msgid "Captcha is currently disabled via settings.php."
+msgstr "目前已通过 settings.php 禁用验证码。"
+
+msgid "CAPTCHA configuration error: Contact the site administrator."
+msgstr "CAPTCHA 配置错误：请与站点管理员联系。"
+
+msgid "CAPTCHA validation error: unknown CAPTCHA session ID. Contact the site administrator if this problem persists."
+msgstr "CAPTCHA 验证错误：未知 CAPTCHA 会话标识。如果此问题仍存在，请联系站点管理员。"
+
+msgid "Math question"
+msgstr "数学问题"
+
+msgid "Solve this simple math problem and enter the result. E.g. for 1+3, enter 4."
+msgstr "计算出这道简单的算术题并键入答案。例如、1+3,就输入 4。"
+
+msgid "@x + @y ="
+msgstr "@x + @y ="
+
+msgid "Test one two three"
+msgstr "测试一、二、三"
+
+msgid "CAPTCHA session reuse attack detected on @form_id <br/>Posted CAPTCHA token: @posted_captcha_token <br/>Expected captcha token: @expected_captcha_token"
+msgstr "在 @form_id 上检测到 CAPTCHA 会话复用攻击 <br/>已发布 CAPTCHA 令牌：@posted_captcha_token <br/>期望 的 captcha 令牌：@expected_captcha_token"
+
+msgid "%form_id post blocked by CAPTCHA module: challenge %challenge (by module %module)."
+msgstr "%form_id 帖子被 CAPTCHA 模块阻止：提问 %challenge（通过模块 %module）。"
+
+msgid "%form_id post blocked by CAPTCHA module: challenge %challenge (by module %module), user answered \"@response\", but the solution was \"@solution\"."
+msgstr "%form_id 帖子受 CAPTCHA 模块阻止：提问 %challenge（通过模块 %module），用户回答“@response”，但解答为“@solution”。"
+
+msgid "CAPTCHA validation error: unknown CAPTCHA session ID (%csid)."
+msgstr "CAPTCHA 验证错误：未知 CAPTCHA 会话标识 (%csid)。"
+
+msgid "CAPTCHA configuration error: cacheable CAPTCHA type %challenge did not provide a validation function."
+msgstr "CAPTCHA 配置错误：可缓存的 CAPTCHA 类型 %challenge 未提供验证功能。"
+
+msgid "Already 1 blocked form submission"
+msgid_plural "Already @count blocked form submissions"
+msgstr[0] "已有 @count 次表单提交被阻止"
+
+msgid "Provides the CAPTCHA API for adding challenges to arbitrary forms."
+msgstr "提供 CAPTCHA API 以将提问添加到任意表单中。"
+
+msgid "Spam control"
+msgstr "防垃圾控制"
+
+msgid "Add Captcha Point"
+msgstr "添加 CAPTCHA 点"
+
+msgid "CAPTCHA settings"
+msgstr "CAPTCHA 设置"
+
+msgid "CAPTCHA examples"
+msgstr "CAPTCHA 示例"
+
+msgid "Administer CAPTCHA settings"
+msgstr "管理验证码的设置"
+
+msgid "Overview of the available CAPTCHA challenge types with examples'"
+msgstr "包含示例的可用 CAPTCHA 提问类型的概述"
+
+msgid "CAPTCHA Settings"
+msgstr "CAPTCHA 设置"
+
+msgid "CAPTCHA Examples"
+msgstr "CAPTCHA 示例"
+
+msgid "Captcha Points"
+msgstr "CAPTCHA 点"
+
+msgid "Skip CAPTCHA"
+msgstr "跳过验证码程序"
+
+msgid "Users with this permission will not be offered a CAPTCHA."
+msgstr "具有这个权限的用户将不提供验证码。"
+
+msgid "CAPTCHA configuration"
+msgstr "CAPTCHA 配置"
+
+msgid "Add CAPTCHA point"
+msgstr "添加 CAPTCHA 点"
+
+msgid "Edit CAPTCHA point"
+msgstr "编辑 CAPTCHA 点"
+
+msgid "Disable CAPTCHA point"
+msgstr "禁用 CAPTCHA 点"
+
+msgid "Enable CAPTCHA point"
+msgstr "启用 CAPTCHA 点"
+
+msgid "Delete CAPTCHA point"
+msgstr "删除 CAPTCHA 点"
+
+msgid "CAPTCHA point"
+msgstr "CAPTCHA 点"
+
+msgid "Form ID"
+msgstr "表单ID"
+
+msgid "Captcha Type"
+msgstr "CAPTCHA 类型"
+
+msgid "Label"
+msgstr "标签"
+
+msgid "UUID"
+msgstr "UUID"
+
+msgid "Add captcha to all forms."
+msgstr "向所有表单添加 captcha。"
+
+msgid "Additionally add captcha to admin forms."
+msgstr "另外，将 captcha 添加到管理表单。"
+
+msgid "The default challenge for captcha."
+msgstr "CAPTCHA 的缺省提问。"
+
+msgid "The default captcha description."
+msgstr "缺省 CAPTCHA 说明。"
+
+msgid "The default captcha title."
+msgstr "缺省 captcha 标题。"
+
+msgid "Add CAPTCHA administration links to forms"
+msgstr "添加人机验证管理链接到表单"
+
+msgid "Additionally add administration links on admin pages"
+msgstr "此外，在管理页面上添加管理链接"
+
+msgid "IP addresses list"
+msgstr "IP 地址列表"
+
+msgid "The error message when a user has entered an incorrect CAPTCHA answer."
+msgstr "用户输入不正确的 CAPTCHA 答案时的错误消息。"
+
+msgid "Default CAPTCHA validation"
+msgstr "默认的验证码验证"
+
+msgid "CAPTCHA Persistence"
+msgstr "CAPTCHA 持久性"
+
+msgid "Enable statistics"
+msgstr "启用统计"
+
+msgid "Log wrong responses"
+msgstr "记录错误的反馈"
+
+msgid "The image CAPTCHA is a popular challenge where a random textual code is obfuscated in an image. The image is generated on the fly for each request, which is rather CPU intensive for the server. Be careful with the size and computation related settings."
+msgstr "图像验证码是一种很常见的难题，图像中的随机文本代码易于混淆。将为每个请求动态生成图像，但这会增加服务器的 CPU 处理量。请注意与大小和计算相关的设置。"
+
+msgid "Image CAPTCHA"
+msgstr "图形验证"
+
+msgid "What code is in the image?"
+msgstr "图片中的代码是什么？"
+
+msgid "Enter the characters shown in the image."
+msgstr "键入显示在图片中的字符"
+
+msgid "Encountered an illegal byte while splitting an utf8 string in characters."
+msgstr "分割 UTF-8 字符串时遇到了非法的字符。"
+
+msgid "Provides an image based CAPTCHA."
+msgstr "提供一个基于验证的图片。"
+
+msgid "Image Captcha"
+msgstr "图像验证码"
+
+msgid "Configure Image Captcha Settings."
+msgstr "配置图像验证码设置。"
+
+msgid "Image Captcha settings"
+msgstr "图像验证码设置"
+
+msgid "Font preview map cache"
+msgstr "字体预览图高速缓存"
+
+msgid "Uri"
+msgstr "Uri"
+
+msgid "Filename"
+msgstr "文件名"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Fonts"
+msgstr "字体"
+
+msgid "Font filepath"
+msgstr "字体文件路径"
+
+msgid "Font Size in Image Captcha"
+msgstr "图像验证码中的字体大小"
+
+msgid "Spacing between characters"
+msgstr "字符间距"
+
+msgid "String with allowed characters"
+msgstr "包含允许字符的字符串"
+
+msgid "Captcha code length"
+msgstr "验证码代码长度"
+
+msgid "Right to left support"
+msgstr "从右向左支持"
+
+msgid "Hexadecimal background color code"
+msgstr "十六进制背景色代码"
+
+msgid "Hexadecimal foreground color code"
+msgstr "十六进制前景色代码"
+
+msgid "Background color randomness"
+msgstr "背景色随机性"
+
+msgid "File format"
+msgstr "文件格式"
+
+msgid "Distortion amplitude"
+msgstr "失真振幅"
+
+msgid "Bilinear interpolation"
+msgstr "双线性插值"
+
+msgid "Dot noise"
+msgstr "点噪"
+
+msgid "Line noise"
+msgstr "行噪"
+
+msgid "Noise level"
+msgstr "噪点级别"
+
+msgid "Generation of image CAPTCHA failed. Check your image CAPTCHA configuration and especially the used font."
+msgstr "生成图片验证失败。检查您的图片验证设置特别是使用的字体。"
+
+msgid "Error has occurred. Please contact to site administrator."
+msgstr "发生错误。请联系站点管理员。"
+
+msgid "The Image CAPTCHA module can not generate images because your PHP setup does not support it (no <a href=\"!gdlib\" target=\"_blank\">GD library</a> with JPEG support)."
+msgstr "“图像验证码”模块无法生成图像，因为您的 PHP 设置不支持此操作（不存在具有 JPEG 支持的 <a href=\"!gdlib\" target=\"_blank\">GD 库</a>）。"
+
+msgid "Example"
+msgstr "示例"
+
+msgid "Presolved image CAPTCHA example, generated with the current settings."
+msgstr "使用当前设置生成的预先确定的图像验证码示例。"
+
+msgid "Code settings"
+msgstr "代码设置"
+
+msgid "Characters to use in the code"
+msgstr "代码中使用的字符"
+
+msgid "Code length"
+msgstr "代码长度"
+
+msgid "The code length influences the size of the image. Note that larger values make the image generation more CPU intensive."
+msgstr "代码长度影响图片的大小。注意值越大生成图片时消耗的 CPU 处理越多。"
+
+msgid "RTL support"
+msgstr "RTL(从右至左)支持"
+
+msgid "Enable this option to render the code from right to left for right to left languages."
+msgstr "启用此选项可针对从右向左语言以从右向左形式呈现代码。"
+
+msgid "Color and image settings"
+msgstr "颜色和图像设置"
+
+msgid "Configuration of the background, text colors and file format of the image CAPTCHA."
+msgstr "配置图像验证码的背景、文字颜色和文件格式。"
+
+msgid "Background color"
+msgstr "背景色"
+
+msgid "Enter the hexadecimal code for the background color (e.g. #FFF or #FFCE90). When using the PNG file format with transparent background, it is recommended to set this close to the underlying background color."
+msgstr "输入背景色的十六进制代码(例如：#FFF or #FFCE90)。当使用具有透明背景的PNG文件格式时，建议设置它尽可能接近使用它的网页的那个背景色。"
+
+msgid "Text color"
+msgstr "文本颜色"
+
+msgid "Enter the hexadecimal code for the text color (e.g. #000 or #004283)."
+msgstr "为文字颜色输入十六进制代码(比如：#000 或 #004283)。"
+
+msgid "Additional variation of text color"
+msgstr "其他文本颜色变体"
+
+msgid "No variation"
+msgstr "不变形"
+
+msgid "Little variation"
+msgstr "一点点变形"
+
+msgid "Medium variation"
+msgstr "中等程度变形"
+
+msgid "High variation"
+msgstr "高度变形"
+
+msgid "Very high variation"
+msgstr "极高程度变形"
+
+msgid "The different characters will have randomized colors in the specified range around the text color."
+msgstr "围绕文本颜色的各种字符将采用指定范围内的随机颜色。"
+
+msgid "Select the file format for the image. JPEG usually results in smaller files, PNG allows transparency."
+msgstr "选择图像的文件格式。 JPEG 通常会产生较小的文件，PNG 支持透明度。"
+
+msgid "JPEG"
+msgstr "JPEG"
+
+msgid "PNG"
+msgstr "PNG"
+
+msgid "PNG with transparent background"
+msgstr "有透明背景的PNG"
+
+msgid "Distortion and noise"
+msgstr "变形和干扰"
+
+msgid "With these settings you can control the degree of obfuscation by distortion and added noise. Do not exaggerate the obfuscation and assure that the code in the image is reasonably readable. For example, do not combine high levels of distortion and noise."
+msgstr "使用该设置您可以控制变形模糊的程度和增加干扰。注意不要模糊过多以至于图片内容无法识别。例如，不要同时使用高等级的变形和干扰。"
+
+msgid "Distortion level"
+msgstr "变形等级"
+
+msgid "@level - no distortion"
+msgstr "@level - 不变形"
+
+msgid "@level - low"
+msgstr "@level - 低"
+
+msgid "@level - medium"
+msgstr "@level - 中"
+
+msgid "@level - high"
+msgstr "@level - 高"
+
+msgid "Set the degree of wave distortion in the image."
+msgstr "设置图片中的水波纹变形等级。"
+
+msgid "Smooth distortion"
+msgstr "平滑变形"
+
+msgid "This option enables bilinear interpolation of the distortion which makes the image look smoother, but it is more CPU intensive."
+msgstr "此选项支持针对失真的双线性插值，从而使图像看起来更平滑，但 CPU 处理量会增加。"
+
+msgid "Add salt and pepper noise"
+msgstr "添加椒盐干扰"
+
+msgid "This option adds randomly colored point noise."
+msgstr "该选项添加随机的色彩点干扰。"
+
+msgid "Add line noise"
+msgstr "添加线性干扰"
+
+msgid "This option enables lines randomly drawn on top of the text code."
+msgstr "该选项启用后在文字代码上方添加随机的直线。"
+
+msgid "low"
+msgstr "低"
+
+msgid "medium"
+msgstr "中"
+
+msgid "high"
+msgstr "高"
+
+msgid "severe"
+msgstr "严重"
+
+msgid "Text Content"
+msgstr "文本内容"
+
+msgid "Customize image CAPTCHA text content."
+msgstr "定制图像 CAPTCHA 文本内容。"
+
+msgid "Refresh button text."
+msgstr "刷新按钮文本。"
+
+msgid "Customize the refresh button text."
+msgstr "定制刷新按钮文本。"
+
+msgid "The list of characters to use should not contain spaces."
+msgstr "使用的字符列表不能包含空格。"
+
+msgid "You need to select at least one font."
+msgstr "您必须至少选择一种字体。"
+
+msgid "The built-in font only supports Latin2 characters. Only use \"a\" to \"z\" and numbers."
+msgstr "内置字体仅支持Latin2字符，只能使用\"a\" 到 \"z\" 26个字母及数字。"
+
+msgid "The following fonts are not readable: %fonts."
+msgstr "下列字体不可读: %fonts."
+
+msgid "Background color is not a valid hexadecimal color value."
+msgstr "背景色不是一个合法的十六进制颜色值。"
+
+msgid "Text color is not a valid hexadecimal color value."
+msgstr "文字颜色不是一个合法的十六进制颜色值。"
+
+msgid "Font settings"
+msgstr "字体设置"
+
+msgid "No TrueType support"
+msgstr "不支持TrueType"
+
+msgid "The Image CAPTCHA module can not use TrueType fonts because your PHP setup does not support it. You can only use a PHP built-in bitmap font of fixed size."
+msgstr "图像验证码不能使用Truetype字体，因为您的PHP安装程序不支持它。您仅能使用PHP内置的大小固定的位图字体。"
+
+msgid "Font preview of @font (@file)"
+msgstr "@font (@file) 的字体预览"
+
+msgid "Preview of built-in font"
+msgstr "内置字体的预览"
+
+msgid "PHP built-in font: <img src=\"@font_preview_url\" alt=\"@title\" title=\"@title\">"
+msgstr "PHP 内置字体：<img src=\"@font_preview_url\" alt=\"@title\" title=\"@title\">"
+
+msgid "Select the fonts to use for the text in the image CAPTCHA. Apart from the provided defaults, you can also use your own TrueType fonts (filename extension .ttf) by putting them in %fonts_library_general or %fonts_library_specific."
+msgstr "选择图像验证码中文本所使用的字体。除了提供的缺省字体外，您还可以通过将字体放入 %fonts_library_general 或 %fonts_library_specific 中来使用自己的 TrueType 字体（文件扩展名 .ttf）。"
+
+msgid "Font size"
+msgstr "字体大小"
+
+msgid "tiny"
+msgstr "极小"
+
+msgid "small"
+msgstr "小"
+
+msgid "normal"
+msgstr "中等"
+
+msgid "large"
+msgstr "大"
+
+msgid "extra large"
+msgstr "特大号"
+
+msgid "The font size influences the size of the image. Note that larger values make the image generation more CPU intensive."
+msgstr "文字大小影响图片大小。注意值越大生成图片时消耗的 CPU 处理越多。"
+
+msgid "Character spacing"
+msgstr "字符间距"
+
+msgid "Define the average spacing between characters. Note that larger values make the image generation more CPU intensive."
+msgstr "定义字符间的平均间距。注意值越大生成图片时消耗的 CPU 处理越多。"
+
+msgid "tight"
+msgstr "紧凑"
+
+msgid "wide"
+msgstr "宽"
+
+msgid "extra wide"
+msgstr "特宽"
+
+msgid "Get new captcha!"
+msgstr "获取新的 captcha！"
+
+msgid "Missing required form ID on route @route"
+msgstr "路由 @route 上缺少必需的表单标识"
+
+msgid "Generate new CAPTCHA image"
+msgstr "生成新的 CAPTCHA 图像"
+
+msgid "CAPTCHA problem: unexpected result from hook_captcha() of module %module when trying to retrieve challenge type %type for form %form_id."
+msgstr "CAPTCHA 问题：尝试为表单 %form_id 检索提问类型 %type 时，模块 %module 的 hook_captcha() 出现意外结果。"
+
+msgid "Captcha Point"
+msgstr "CAPTCHA 点"
+
+msgid "Captcha Point form ID"
+msgstr "CAPTCHA 点表单标识"
+
+msgid "Captcha Point challenge type"
+msgstr "CAPTCHA 点提问类型"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Enabled"
+msgstr "启用"
+
+msgid "Disabled"
+msgstr "禁用"
+
+msgid "This page gives an overview of all available challenge types, generated with their current settings."
+msgstr "本页面对所有可用的提问方式提供了一个预览，这些预览均根据他们的当前设置生成。"
+
+msgid "Challenge %challenge by module %module"
+msgstr "模块 %module 的提问 %challenge"
+
+msgid "10 more examples of this challenge."
+msgstr "再来10个本类提问的例子"
+
+msgid "Are you sure you want to delete %name?"
+msgstr "你确定要删除  %name ?"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "Captcha point %label has been deleted."
+msgstr "已删除 CAPTCHA 点 %label。"
+
+msgid "Are you sure you want to disable the Captcha?"
+msgstr "是否确定要禁用 CAPTCHA？"
+
+msgid "This will disable the captcha."
+msgstr "这将禁用 CAPTCHA。"
+
+msgid "Disable"
+msgstr "禁用"
+
+msgid "Captcha point %label has been disabled."
+msgstr "已禁用 CAPTCHA 点 %label。"
+
+msgid "Are you sure you want to enable the Captcha?"
+msgstr "是否确定要启用 CAPTCHA？"
+
+msgid "This will enable the captcha."
+msgstr "这将启用 CAPTCHA。"
+
+msgid "Enable"
+msgstr "启用"
+
+msgid "Captcha point %label has been enabled."
+msgstr "已启用 CAPTCHA 点 %label。"
+
+msgid "Also works with the base form ID."
+msgstr "还可使用基本表单标识。"
+
+msgid "Challenge type"
+msgstr "提问方式"
+
+msgid "The CAPTCHA type to use for this form."
+msgstr "这个表单使用的验证码类型。"
+
+msgid "Captcha Point for %form_id form was created."
+msgstr "已创建 %form_id 表单的 CAPTCHA 点。"
+
+msgid "Captcha Point for %form_id form was updated."
+msgstr "已更新 %form_id 表单的 CAPTCHA 点。"
+
+msgid "Default challenge type"
+msgstr "默认的提问方式"
+
+msgid "Select the default <em>CAPTCHA Point</em> challenge type. This can be overridden for each <em>CAPTCHA Point</em> individually."
+msgstr "选择缺省 <em>CAPTCHA 点</em>提问类型。 对于每个 <em>CAPTCHA 点</em>，可以单独覆盖此值。"
+
+msgid "Add CAPTCHA challenges on all forms"
+msgstr "在所有表单上添加 CAPTCHA 提问"
+
+msgid "Adds CAPTCHA to all Drupal forms, regardless of the Captcha Points list. Note, that the captcha point <em>default challenge</em> will be used as the challenge type for the created CAPTCHA challenges."
+msgstr "将 CAPTCHA 添加到所有 Drupal 表单，而不考虑 Captcha 点列表。 请注意，captcha 点<em>缺省提问</em>将用作已创建的 CAPTCHA 提问的提问类型。"
+
+msgid "Additionally add CAPTCHA challenges on admin forms"
+msgstr "此外，在管理表单上添加 CAPTCHA 提问"
+
+msgid "Add CAPTCHA administration information to forms"
+msgstr "将 CAPTCHA 管理信息添加到表单"
+
+msgid "This option makes it easy to manage CAPTCHA settings on forms. When enabled, users with the <em>administer CAPTCHA settings</em> permission will see a fieldset with CAPTCHA administration links and informations on all forms, except on administrative pages."
+msgstr "该选项可使您轻松管理表单上的 CAPTCHA 设置。 启用后，具有<em>管理 CAPTCHA 设置</em>许可权的用户将在所有表单（管理页面除外）上看到具有 CAPTCHA 管理链接和信息的字段集。"
+
+msgid "Additionally add administration informations on admin pages"
+msgstr "此外，在管理页面上添加管理信息"
+
+msgid "Typically this isn't needed. In some situations, e.g. in the case of demo sites, it can be useful to allow CAPTCHAs on administrative pages."
+msgstr "通常不需要此操作。 在某些情况下（例如，在演示站点中），管理页面上允许 CAPTCHA 可能会很有用。"
+
+msgid "Whitelisted IP Addresses"
+msgstr "列入白名单的 IP 地址"
+
+msgid "Enter the IP addresses or IP address ranges you wish to whitelist. All CAPTCHA challenges will be skipped for these IP addresses."
+msgstr "输入要列入白名单的 IP 地址或 IP 地址范围。 对于这些 IP 地址，将跳过所有 CAPTCHA 提问。"
+
+msgid "Enter one IP-address per row in the format XXX.XXX.XXX.XXX. Alternatively you can also define IP-address ranges per row in the format XXX.XXX.XXX.YYY-XXX.XXX.XXX.ZZZ. No spaces allowed. Your current IP address is %ip_address."
+msgstr "每行输入一个 IP 地址，格式为 XXX.XXX.XXX.XXX。 或者，也可以每行定义以下格式的 IP 地址范围：XXX.XXX.XXX.YYY-XXX.XXX.XXX.ZZZ。 不允许空格。 当前 IP 地址为 %ip_address。"
+
+msgid "CAPTCHA placement caching"
+msgstr "验证码的缓存"
+
+msgid "For efficiency, the positions of the CAPTCHA elements in each of the configured forms are cached. Most of the time, the structure of a form does not change and it would be a waste to recalculate the positions every time. Occasionally however, the form structure can change (e.g. during site building) and clearing the CAPTCHA placement cache can be required to fix the CAPTCHA placement."
+msgstr "出于效率方面的考虑，每个已配置表单中的 CAPTCHA 元素的位置都将被缓存。在大部分时间，表单的结构不会改变，每次重新计算位置都属于浪费。然而，表单结构可能会偶尔改变（例如，在站点构建期间），可能需要清除 CAPTCHA 布局高速缓存来修正 CAPTCHA 布局。"
+
+msgid "Clear the CAPTCHA placement cache"
+msgstr "清除验证码缓存"
+
+msgid "Challenge title"
+msgstr "提问标题"
+
+msgid "Configure the title for the CAPTCHA form. Leave empty to show no title. Default: \"@title_default\""
+msgstr "配置 CAPTCHA 表单的标题。 留空以不显示标题。 缺省值：\"@title_default\""
+
+msgid "Challenge description"
+msgstr "提问说明"
+
+msgid "Configurable description of the CAPTCHA. Leave empty to show no description. Default: \"@description_default\""
+msgstr "CAPTCHA 的可配置说明。 留空以不显示描述。 缺省值：\"@description_default\""
+
+msgid "This question is for testing whether or not you are a human visitor and to prevent automated spam submissions."
+msgstr "此问题用于测试您是否是人类访客以及防止自动提交垃圾邮件。"
+
+msgid "Wrong CAPTCHA response error message"
+msgstr "错误的 CAPTCHA 响应错误消息"
+
+msgid "Configurable error message that the user gets when it enters an incorrect CAPTCHA answer."
+msgstr "用户在输入不正确的 CAPTCHA 答案时获取的可配置错误消息。"
+
+msgid "Define how the response should be processed by default. Note that the modules that provide the actual challenges can override or ignore this."
+msgstr "定义缺省情况下应如何处理响应。请注意，提供实际提问的模块可能会覆盖或忽略此设置。"
+
+msgid "Case sensitive validation: the response has to exactly match the solution."
+msgstr "大小写敏感性验证：回答必须精确匹配答案。"
+
+msgid "Case insensitive validation: lowercase/uppercase errors are ignored."
+msgstr "大小写敏感性验证：忽略大小写错误。"
+
+msgid "Persistence"
+msgstr "持续性"
+
+msgid "Always add a challenge."
+msgstr "总是添加提问。"
+
+msgid "Omit challenges in a multi-step/preview workflow once the user successfully responds to a challenge."
+msgstr "一旦用户成功应答提问，请忽略多步骤/预览工作流程中的提问。"
+
+msgid "Omit challenges on a form type once the user successfully responds to a challenge on a form of that type."
+msgstr "一旦用户成功应答某类型表单上的提问，请忽略此表单类型上的提问。"
+
+msgid "Omit challenges on all forms once the user successfully responds to any challenge on the site."
+msgstr "一旦用户成功应答站点上的任何提问，请忽略所有表单上的提问。"
+
+msgid "Define if challenges should be omitted during the rest of a session once the user successfully responds to a challenge."
+msgstr "定义一旦用户成功应答提问，是否应在其余会话期间忽略提问。"
+
+msgid "Keep CAPTCHA related counters in the <a href=\":statusreport\">status report</a>. Note that this comes with a performance penalty as updating the counters results in clearing the variable cache."
+msgstr "将 CAPTCHA 相关计数器保留在<a href=\":statusreport\">状态报告</a>中。请注意，这将对性能造成损失，因为更新计数器会致使清除可变高速缓存。"
+
+msgid "Report information about wrong responses to the log."
+msgstr "向日志报告有关错误应答的信息。"
+
+msgid "Report information about wrong responses to the <a href=\":dblog\">log</a>."
+msgstr "向<a href=\":dblog\">日志</a>报告有关错误应答的信息。"
+
+msgid "Save configuration"
+msgstr "保存配置"
+
+msgid "IP address %ip_address is not valid."
+msgstr "IP 地址 %ip_address 无效。"
+
+msgid "Lower IP address %ip_address in range %ip_range is not valid."
+msgstr "范围 %ip_range 中的下限 IP 地址 %ip_address 无效。"
+
+msgid "Upper IP address %ip_address in range %ip_range is not valid."
+msgstr "范围 %ip_range 中的上限 IP 地址 %ip_address 无效。"
+
+msgid "Lower and upper IP addresses should be different. Please correct range %ip_range."
+msgstr "下限和上限 IP 地址应该不同。 请更正范围 %ip_range。"
+
+msgid "Lower IP can't be greater than upper IP addresses in range. Please correct range %ip_range."
+msgstr "下限 IP 地址不能大于范围内的上限 IP 地址。 请更正范围 %ip_range。"
+
+msgid "The CAPTCHA settings have been saved."
+msgstr "验证码的设置已保存。"
+
+msgid "Cleared the CAPTCHA placement cache."
+msgstr "已清除 CAPTCHA 布局高速缓存。"
+
+msgid "The name of the form"
+msgstr "表单的名称"
+
+msgid "The captcha point providing module."
+msgstr "提供模块的验证码点。"
+
+msgid "The captcha type."
+msgstr "验证码类型。"
+
+msgid "@type (from module @module)"
+msgstr "@type (来自模块 @module)"
+

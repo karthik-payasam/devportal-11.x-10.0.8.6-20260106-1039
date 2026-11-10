@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Custom theme implementation for the navigation menu.
+ *
+ * This template renders a Bootstrap-style navigation menu with hover-based dropdowns.
+ */
+#}
+
+{# Attach the CSS and JS library from connect_theme #}
+{{ attach_library('connect_theme/custom') }}
+
+       <ul class="navbar-nav" role="menu" aria-labelledby="dropdownMenu">
+          {% for item in items %}
+            {% set item_classes = ['nav-item', item.below ? 'dropdown' : ''] %}
+            {% set link_classes = ['nav-link', item.below ? 'dropdown-toggle' : ''] %}
+
+            <li{{ item.attributes.addClass(item_classes) }}>
+              <a href="{{ item.url }}" class="{{ link_classes|join(' ') }} sign-in-page-icon"    <a href="{{ item.url }}" class="{{ link_classes|join(' ') }} sign-in-page-icon"
+                 {% if item.below %} data-toggle="dropdown" aria-expanded="false" {% endif %}>
+                          {# Check if the title contains "fa-" (FontAwesome icon) #}
+             {% if item.title starts with 'fa-' %}
+                    <a class ="nav-link" href="{{item.url}}"><i class="fas {{item.title}}"></i></a>
+         {% else %}
+             <span class="sign-in-circle">
+                         <img src="{{ file_url('public://inline-images/Orange-sign-in.png') }}" alt="Lock" width="24px" class="sign-in-image">
+
+                          </span>
+                           <span class="sign-in-text">   {{ item.title }}</span>
+        {# Render normal text #}
+         {% endif %}
+                {% if item.below %}
+                  <span class="caret"></span>
+                {% endif %}
+              </a>
+            
+
+              {% if item.below %}
+                <ul class="dropdown-menu">
+                  {% for sub_item in item.below %}
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ sub_item.url }}">{{ sub_item.title }}</a>
+                    </li>
+
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+    
+

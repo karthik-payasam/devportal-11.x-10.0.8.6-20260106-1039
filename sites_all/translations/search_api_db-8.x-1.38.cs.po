@@ -1,0 +1,137 @@
+# LANGUAGE translation of PROJECT
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-11-01 11:34+0000\n"
+"PO-Revision-Date: 2023-11-01 11:34+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Fulltext field database columns updated."
+msgstr "Sloupce databáze fulltextových polí byly aktualizovány."
+
+msgid "Primary keys added to all denormalized index tables."
+msgstr "Do všech denormalizovaných indexových tabulek byly přidány primární klíče."
+
+msgid "Database Search"
+msgstr "Vyhledávání databáze"
+
+msgid "Offers an implementation of the Search API that uses database tables for indexing content."
+msgstr "Nabízí implementaci rozhraní API pro vyhledávání, které používá databázové tabulky k indexaci obsahu."
+
+msgid "Search"
+msgstr "Hledat"
+
+msgid "Search API DB settings"
+msgstr "Nastavení databáze rozhraní API pro vyhledávání"
+
+msgid "Name of the database we are connecting to"
+msgstr "Název databáze, ke které se připojujeme"
+
+msgid "Minimum length of indexed words"
+msgstr "Minimální délka indexovaných slov"
+
+msgid "The matching mode – \"words\", \"prefix\" or \"partial\""
+msgstr "Režim porovnání - \"words\", \"prefix\" nebo \"partial\""
+
+msgid "Autocomplete configuration"
+msgstr "Automaticky dokončit konfiguraci"
+
+msgid "Suggest suffix"
+msgstr "Navrhnout příponu"
+
+msgid "Suggest words"
+msgstr "Navrhnout slova"
+
+msgid "Maximum occurrences of a term until autocomplete suggestions ignores it"
+msgstr "Maximální počet výskytů výrazu do okamžiku, kdy ho budou návrhy automatického dokončování ignorovat"
+
+msgid "Database Search Defaults"
+msgstr "Výchozí nastavení vyhledávání v databázi"
+
+msgid "Enable this module for a best-practice default setup of Search API with the Database backend. After installation it is recommended to uninstall this module again for performance reasons. The provided configuration will not be removed."
+msgstr "Povolte tento modul pro doporučený postup výchozího nastavení rozhraní API pro vyhledávání pomocí komponenty backend databáze. Po instalaci se doporučuje tento modul z důvodů výkonu zase odinstalovat. Zadaná konfigurace nebude odebrána."
+
+msgid "Database"
+msgstr "Databáze"
+
+msgid "Select the database key and target to use for storing indexing information in. Cannot be changed after creation."
+msgstr "Vyberte klíč databáze a cíl, který se má použít pro ukládání informací o indexování. Po vytvoření nelze změnit."
+
+msgid "Minimum word length"
+msgstr "Minimální délka slova"
+
+msgid "The minimum number of characters a word must consist of to be indexed"
+msgstr "Minimální počet znaků, které musí slovo obsahovat, aby bylo indexováno"
+
+msgid "Partial matching"
+msgstr "Částečná shoda"
+
+msgid "Match whole words only"
+msgstr "Rozlišovat pouze celá slova"
+
+msgid "Match on parts of a word"
+msgstr "Rozlišovat části slova"
+
+msgid "Match words starting with given keywords"
+msgstr "Rozlišovat slova začínající s danými klíčovými slovy"
+
+msgid "Autocomplete settings"
+msgstr "Nastavení automatického dokončování"
+
+msgid "These settings allow you to configure how suggestions are computed when autocompletion is used. If you are seeing many inappropriate suggestions you might want to deactivate the corresponding suggestion type. You can also deactivate one method to speed up the generation of suggestions."
+msgstr "Tato nastavení vám umožňují konfigurovat způsob výpočtu návrhů při použití automatického dokončování. Pokud se vám zobrazuje mnoho nevhodných návrhů, budete možná chtít příslušný typ návrhů deaktivovat. Abyste generování návrhů urychlili, můžete také deaktivovat jednu metodu."
+
+msgid "Suggest word endings"
+msgstr "Navrhovat konce slov"
+
+msgid "Suggest endings for the currently entered word."
+msgstr "Navrhovat konce aktuálně zadaného slova."
+
+msgid "Suggest additional words"
+msgstr "Navrhovat další slova"
+
+msgid "Suggest additional words the user might want to search for."
+msgstr "Navrhovat další slova, která může chtít uživatel vyhledat."
+
+msgid "None selected yet"
+msgstr "Dosud nebylo nic vybráno"
+
+msgid "none"
+msgstr "není"
+
+msgid "Autocomplete suggestions"
+msgstr "Návrhy automatického dokončování"
+
+msgid "No valid search keys were present in the query."
+msgstr "V dotazu nebyla uvedena žádná platná hledaná klíčová slova."
+
+msgid "Unknown sort order @order. Assuming \"@default\"."
+msgstr "Neznámé pořadí řazení @order. Předpokládá se \"@default\"."
+
+msgid "Unknown facet field @field."
+msgstr "Neznámé pole fazety @field."
+
+msgid "Facets on location fields are currently not supported."
+msgstr "Fazety v polích umístění nejsou momentálně podporovány."
+
+msgid "Unknown field @field: please check (and re-save) the index's fields settings."
+msgstr "Neznámé pole @field: Zkontrolujte (a znovu uložte) nastavení polí indexu."
+
+msgid "An overlong word (more than 50 characters) was encountered while indexing: %word.<br />Since database search servers currently cannot index words of more than 50 characters, the word was truncated for indexing. If this should not be a single word, please make sure the \"Tokenizer\" processor is enabled and configured correctly for index %index."
+msgstr "Při indexování bylo zjištěno příliš dlouhé slovo (více než 50 znaků): %word.<br />Vzhledem k tomu, že nemohou vyhledávací servery databáze aktuálně indexovat slova s více než 50 znaky, bylo slovo zkráceno pro indexování. Pokud by se nemělo jednat o jediné slovo, ujistěte se prosím, že je procesor \"Tokenizer\" povolen a správně nakonfigurován pro index %index."
+
+msgid "An overlong value (more than 255 characters) was encountered while indexing: %value.<br />Database search servers currently cannot index such values correctly – the value was therefore trimmed to the allowed length."
+msgstr "Při indexování byla zjištěna příliš dlouhá hodnota (více než 255 znaků): %value.<br />Vyhledávací servery databáze nemohou aktuálně tyto hodnoty správně indexovat - hodnota byla proto zkrácena na povolenou délku."
+
+msgid "Error while adding facets: only \"item_id\" field should be used, used are: @fields."
+msgstr "Chyba při přidávání fazet: Je třeba použít pouze pole \"item_id\", použitá jsou: @fields."
+
+msgid "Indexes items in the database. Supports several advanced features, but should not be used for large sites."
+msgstr "Indexuje položky v databázi. Podporuje několik rozšířených vlastností, ale nemělo by se používat pro velké weby."
+
